@@ -237,9 +237,9 @@ def fix_failure_mode(raw: str | None) -> tuple[str | None, str | None]:
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--input",
-                        default=str(ROOT / "insights" / "ARENA_delivery_registry_full_v1_clean.yaml"))
+                        default=str(ROOT / "insights" / "registry_deduped.yaml"))
     parser.add_argument("--output",
-                        default=str(ROOT / "insights" / "ARENA_delivery_registry_full_v2_clean.yaml"))
+                        default=str(ROOT / "insights" / "registry_deduped_clean.yaml"))
     args = parser.parse_args()
 
     in_path = Path(args.input)
@@ -319,9 +319,28 @@ def main():
     # ------------------------------------------------------------------
     # Tier 2: majority-vote harmonisation
     # ------------------------------------------------------------------
+    # Identify cross-cutting project groups — skip majority vote for these.
+    # A project group is cross-cutting if the majority of its records have
+    # no kb_associated_project (KB couldn't link to a single project) or
+    # if the majority have project_scale_band = programmatic/portfolio-level.
+    proj_record_counts: dict[str, int] = Counter()
+    proj_crosscutting_signals: dict[str, int] = Counter()
+    for r in records:
+        proj = r.get("project_name") or ""
+        proj_record_counts[proj] += 1
+        if not r.get("kb_associated_project") or r.get("project_scale_band") == "programmatic/portfolio-level":
+            proj_crosscutting_signals[proj] += 1
+    crosscutting_projects = {
+        proj for proj, signals in proj_crosscutting_signals.items()
+        if signals / proj_record_counts[proj] >= 0.5
+    }
+    print(f"  Cross-cutting project groups (skipping majority vote): {len(crosscutting_projects)}")
+
     proj_votes: dict[str, dict[str, Counter]] = defaultdict(lambda: defaultdict(Counter))
     for r in records:
         proj = r.get("project_name") or ""
+        if proj in crosscutting_projects:
+            continue
         for f in PROJECT_LEVEL_FIELDS:
             v = r.get(f)
             if v:

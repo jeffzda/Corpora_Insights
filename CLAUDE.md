@@ -1,19 +1,23 @@
 # ARENA Delivery Registry — Claude Context
 
+## Standing instructions
+
+- **After every code modification, create a git commit** — stage the changed files and commit with a concise message describing what changed and why.
+
 This project extracts structured delivery insight records from 1,440 ARENA Knowledge Bank PDFs
 using the Anthropic API, producing a cleaned, harmonised registry for reference-class analysis
 and an interactive dashboard.
 
-**Current status: v1 pipeline complete (v3_clean registry). v2 per-document extraction script
-built and tested on 10 documents. Full re-extraction run not yet started — planned for the
-owner's two-week break before starting at ARENA as a portfolio manager.**
+**Current status: v2 pipeline complete + QA verified + rechecked + project matching done.
+16,931 records from 1,440 documents (+ 8 oversized). QA: 92.2% confirmed grounding, 89.6%
+classification ok (after two recheck passes with wider window). 499 ARENA projects covered
+(64.9%). Dashboard deployed to root@85.155.188.202 (/var/www/arena/).**
 
 ---
 
 ## Context and intent
 
-The owner is joining ARENA as a portfolio manager in ~6 weeks. The goal is to have a polished,
-complete dataset and working dashboard before day one. The dashboard is for personal use
+The owner is joining ARENA as a portfolio manager shortly. The dashboard is for personal use
 initially — to surface insights casually in meetings when relevant, not to be formally presented.
 ARENA is "looking into" AI KB analysis itself but is likely 2–3 years away from anything
 comparable. Do not mention this project proactively; let it emerge naturally.
@@ -34,25 +38,40 @@ ARENA/
 ├── pdfs/                                    — raw downloaded PDFs
 ├── scripts/
 │   ├── 03_extract_registry.py               — SUPERSEDED: grouped extraction (v1 run)
-│   ├── 03b_extract_registry_per_doc.py      — NEW: per-document extraction (use this)
-│   ├── 04_consolidate_registry.py           — merge + fingerprint dedup
+│   ├── 03b_extract_registry_per_doc.py      — per-document extraction (v2 pipeline)
+│   ├── 03c_extract_oversized.py             — chunked extraction for 8 oversized docs (>600k chars)
+│   ├── 04_consolidate_registry.py           — merge + fingerprint dedup (v1 only)
+│   ├── 04b_verify_extractions.py            — QA verification (grounding + classification) via Haiku batch
+│   ├── 04c_recheck_flagged.py               — re-check fabricated/unsupported QA verdicts with wider window
+│   ├── 04c_dedup_within_project.py          — within-project dedup → per_project/ + registry_deduped.yaml
 │   ├── 05_clean_registry.py                 — Tier 1+2 taxonomy cleaning + majority-vote
 │   ├── 05b_reconcile_contested.py           — Tier 3 LLM resolution of contested fields
 │   ├── 06_build_document_mapping.py         — SUPERSEDED: mapping now baked into 03b
-│   ├── 07_run_analysis.py                   — YAML → reference class matrix report
-│   └── build_dashboard.py                   — NEW: generates insights.html from per_doc YAMLs
+│   ├── 07_run_analysis.py                   — SUPERSEDED for regular use: matrices now in dashboard
+│   ├── fix_taxonomy_violations.py           — deterministic fix for known taxonomy violations
+│   ├── match_unassigned_projects.py         — fuzzy + Haiku batch matching of unmatched project names
+│   ├── stamp_recovered_docs.py              — stamp KB metadata onto per_doc YAMLs missing it
+│   ├── stamp_temporal_confidence.py         — flag pre-2021 time-sensitive records
+│   └── build_dashboard.py                   — generates insights.html from per_doc YAMLs
 ├── sense_check.py                           — QA spot-check against source markdown
 ├── pilot_100_reports/
-│   ├── EXTRACTION_PROMPT.md                 — LLM extraction prompt template
+│   ├── EXTRACTION_PROMPT.md                 — LLM extraction prompt template (v1.3, with temporal flag)
 │   └── taxonomy/ARENA_Taxonomy_v1.1.md      — core 12-field schema and allowed values
 ├── insights/
 │   ├── full_run/group_001.yaml … group_150.yaml   — v1 extraction outputs (DO NOT USE)
-│   ├── per_doc/doc_0001.yaml … doc_1440.yaml      — v2 per-doc outputs (in progress)
-│   ├── ARENA_delivery_registry_full_v3_clean.yaml — v1 final registry (superseded by v2 run)
-│   ├── ARENA_delivery_registry_full_v3_audit.yaml — v1 audit trail
+│   ├── per_doc/doc_0001.yaml … doc_1440.yaml      — v2 per-doc outputs (16,931 records)
+│   ├── per_doc/doc_72001.yaml … doc_72nnn.yaml    — oversized doc outputs (8 docs, IDs 72001+)
+│   ├── per_doc_qa/doc_NNNN_qa.yaml                — QA verdicts per doc (grounding + classification)
+│   ├── per_doc_qa/batch_state.json                — last batch API state
+│   ├── per_project/<slug>.yaml                    — canonical deduped records per project
+│   ├── project_name_matches.yaml                  — fuzzy + Haiku project name match log
+│   ├── registry_deduped.yaml                      — flat deduped registry (15,457 records)
+│   ├── registry_deduped_clean.yaml                — after Tier 1+2 cleaning
+│   ├── registry_deduped_reconciled.yaml           — after Tier 3 LLM reconciliation (use this)
+│   ├── ARENA_delivery_registry_full_v3_clean.yaml — v1 final registry (superseded)
 │   └── reports/                                   — analysis outputs and sense check reports
 └── dashboard/
-    └── insights.html                        — single-file interactive dashboard (open in browser)
+    └── insights.html                        — single-file interactive dashboard
 ```
 
 ---
@@ -65,7 +84,7 @@ future extraction work.
 **Key differences from the original:**
 - One API call per document (not per group of ~10)
 - No per-document character truncation (full content sent)
-- Documents over 600k chars skipped (6 oversized reference docs — see below)
+- Documents over 600k chars handled by `03c_extract_oversized.py` instead
 - 10 ID slots per document: doc N → ARENA-DLV-((N-1)*10+1) to ARENA-DLV-(N*10)
 - `max_tokens` raised to 4096 (full output budget per document)
 - Extraction cap raised to 10 records per document (was effectively ~2-3 due to shared budget)
@@ -88,14 +107,16 @@ across all records from the same document by majority vote. Split votes are reco
 `confidence_note` with the full vote tally (e.g. "technology vendor (8/10), consortium (2/10)").
 This eliminates the need for Tier 2 majority-vote cleaning for within-document consistency.
 
-**The 6 documents skipped (over 600k chars — exceed model context window):**
+**The 8 oversized documents (handled by 03c_extract_oversized.py):**
 - Australian Energy Resource Assessment 2014 (1.3M chars)
 - Stocktake: Database of Renewable Energy Grid Integration Projects (1.2M chars)
 - AEMO Project EDGE Final Report (1.0M chars)
 - ESCRI South Australia General Project Report Phase 1 (798k chars)
 - ACAP 2024 Annual Report (747k chars)
 - ACAP 2022 Annual Report (639k chars)
-These are broad reference/annual report documents unlikely to yield targeted delivery records.
+- + 2 others
+These are extracted via 150k-char chunked multi-pass with prior records passed as context.
+IDs start at 72001 with 200 slots per doc. Produced ~495 records.
 
 **Usage:**
 ```bash
@@ -180,84 +201,106 @@ source_page_pdf: N                  # PDF page number verified via PyMuPDF (or n
 
 | Step | Script | Notes |
 |------|--------|-------|
-| Extract | `03b_extract_registry_per_doc.py` | Per-doc, ~$50-70 total, resumable |
-| Consolidate | `04_consolidate_registry.py` | Point at `insights/per_doc/` |
-| Clean Tier 1+2 | `05_clean_registry.py` | Taxonomy fixes, majority-vote |
-| Clean Tier 3 | `05b_reconcile_contested.py` | LLM reconciliation (~$0.50) |
-| Analysis | `07_run_analysis.py` | Reference class matrices |
-| Dashboard | `build_dashboard.py` | Regenerate after each pipeline step |
-| QA | `sense_check.py` | Stratified sample, ~200 records recommended |
+| Extract (regular) | `03b_extract_registry_per_doc.py` | Per-doc, resumable |
+| Extract (oversized) | `03c_extract_oversized.py` | 8 docs >600k chars, chunked |
+| Stamp metadata | `stamp_recovered_docs.py` | Fix any per_doc YAMLs missing KB metadata |
+| Temporal flags | `stamp_temporal_confidence.py` | Flag pre-2021 time-sensitive records |
+| Fix violations | `fix_taxonomy_violations.py` | Deterministic taxonomy fixes |
+| Dedup | `04c_dedup_within_project.py` | → `per_project/` + `registry_deduped.yaml` |
+| Clean Tier 1+2 | `05_clean_registry.py` | → `registry_deduped_clean.yaml` |
+| Clean Tier 3 | `05b_reconcile_contested.py` | → `registry_deduped_reconciled.yaml` |
+| QA verify | `04b_verify_extractions.py --batch submit/collect` | Haiku batch, ~$25 for full corpus |
+| QA recheck | `04c_recheck_flagged.py --run` | Re-run fabricated/unsupported with wider window (~$3) |
+| Project matching | `match_unassigned_projects.py --pass1 --pass2-submit/collect` | Fuzzy + Haiku; MAX_TOKENS=2048 |
+| Dashboard | `build_dashboard.py` | Reads `per_doc/` + `per_doc_qa/`, outputs `dashboard/insights.html` |
+| Deploy | `scp dashboard/insights.html root@85.155.188.202:/var/www/arena/index.html` | |
+| QA spot-check | `sense_check.py` | Stratified sample, ~200 records recommended |
 
-Step 6 (`06_build_document_mapping.py`) is **no longer needed** — KB metadata is stamped
-directly onto records during extraction.
+Steps 6 and 7 (`06_build_document_mapping.py`, `07_run_analysis.py`) are **no longer needed**
+for regular use — KB metadata is stamped during extraction, and reference class matrices are
+now embedded in the dashboard Analysis tab.
 
 ---
 
 ## Dashboard
 
-`dashboard/insights.html` — single self-contained file, open in any browser.
+`dashboard/insights.html` — single self-contained file. Deployed to `root@85.155.188.202:/var/www/arena/index.html`.
 
 ```bash
-python3 scripts/build_dashboard.py                                    # default
-python3 scripts/build_dashboard.py --input insights/per_doc --output dashboard/insights.html
+python3 scripts/build_dashboard.py                    # rebuild (reads per_doc/)
+scp dashboard/insights.html root@85.155.188.202:/var/www/arena/index.html  # deploy
 ```
 
+**Tabs:**
+- **Delivery Records** — filterable card view with project panel, full-text search, synthesis
+- **Analysis** — 8 charts (failure modes, lifecycle phase, technology, outcomes, severity,
+  co-occurrence) + 4 reference class matrix tables (Matrix A/B/C + discontinuation risk)
+- **Benchmarks** — LCOE, capex, LCOH, capacity factor, abatement cost, storage performance tables
+- **Reports** — (stub)
+
 **Filters:** failure mode, outcome, project type, scale, proponent, lifecycle phase,
-technology domain, ARENA project (by KB name), full-text search.
-
-**Each record:** colour-coded failure mode + outcome badges, evidence excerpt, all
-classification tags, link to ARENA KB source page and project page.
-
-**Stats bar:** records shown, ARENA portfolio coverage (X of 769 projects, X%),
-failure mode counts — all update live as filters change.
+technology domain, severity, transferability, QA verdict, full-text search.
 
 ---
 
 ## Portfolio coverage analysis
 
 - **Full ARENA portfolio:** 769 projects (`arena-projects-export_1772932404.csv`)
-- **Covered by KB documents:** ~491 projects exact name match (63.8%)
-- **Coverage by start year:** poor 2011–2013 (16–38%), excellent 2017–2022 (79–96%),
-  declining 2023+ (projects still active, reports not yet published)
+- **Covered by corpus:** 499 projects (64.9%) — after KB exact match + fuzzy + Haiku name matching
+- **Coverage by start year:** poor 2011–2013 (23–41%), excellent 2017–2022 (76–93%),
+  declining 2023+ (active projects, reports not yet published), 2025–2026 near-zero
+- **Uncovered projects are mostly:** Post-Fellowship Doctorates (83/84 uncovered — no KB docs),
+  International Engagement grants (12/13), small <$1m R&D feasibility studies, and recent
+  active projects. Not a meaningful gap for delivery insight analysis.
+- **12 KB-linked project names not in portfolio CSV** — minor omissions (e.g. AEMO CER Data
+  Exchange, Hysata electrolyser). Worth cross-referencing once inside ARENA.
 - **239 projects have only 1 KB document** — only 12% of these are clearly final reports;
   majority are posters, summaries, mid-project reports. Genuine rich coverage is ~30–40%.
 
-## Planned analyses (next session)
+---
 
-1. **Document quality scoring** — classify each project's KB documents by type
-   (final report, lessons learnt, interim, poster etc.) to identify which projects have
-   *meaningful* coverage vs thin coverage. Surface this in the dashboard.
+## Key corpus statistics (v2 — current)
 
-2. **Lifecycle phase coverage audit** — cross-tab `lifecycle_phase` against project count
-   to identify which delivery stages are systematically underdocumented in the knowledge bank.
-   Expected to find large gaps at `approvals/contracting` and `procurement` phases.
+- **Source documents:** 1,440 regular + 8 oversized = 1,448 total
+- **Records extracted:** 16,931 total in `per_doc/` (dashboard source)
+- **After within-project dedup:** 15,457 records (`registry_deduped.yaml`)
+- **Temporal confidence flags:** 945 records flagged (~5.7%) for pre-2021 time-sensitive claims
+- **Taxonomy violations fixed:** 550 (462 en-dash, 88 field cross-contamination)
 
-3. **Dashboard enhancements** — add portfolio coverage view, document quality indicator
-   per project, and lifecycle phase distribution chart.
+## Key findings (v2 — 16,931 records)
+
+- **Adversity rate:** 73% of records have a failure mode
+- Design assumption failure: 20% — largest single failure mode
+- Technical underperformance: 10%
+- Commercial/demand failure: 10%
+- Governance/coordination failure: 7%
+- Regulatory misfit: 7%
+- Top project types: DER/customer-side (3,730), storage (2,363), generation (2,093)
+- Highest adversity proponent: community/local body (83%), consortium (77%)
 
 ---
 
-## Key corpus statistics (v1 run — will update after v2)
+## QA verification summary (complete)
 
-- **Source documents:** 1,440 with markdown files
-- **Document size:** mean 65,714 chars, median 31,563 chars; 315 (22%) truncated at 80k in v1
-- **v1 records:** 1,968 raw → 1,752 after dedup → 1,703 after Tier 3 + 12 manual fixes
-- **v2 expected yield:** ~5 records/doc average (vs 1.2 in v1) → ~7,000+ records
-
-## Key findings (v1 v3_clean — expect to shift after v2)
-
-- Design assumption failure: 18% (n=310) — largest single failure mode
-- Regulatory misfit: 15% (n=256)
-- No major failure: 13% (n=234)
-- Integration failure: 11% (n=193)
-- Transport electrification: 98% any-failure rate (highest project type)
-- Consortia: 96% any-failure rate (highest proponent type)
-- 26.7% of projects have ≥2 failure modes
+- **Grounding:** 92.2% confirmed, 5.5% plausible, 0.3% unsupported, 0.2% fabricated, 1.8% parse errors
+- **Classification:** 89.6% ok, 8.0% questionable, 0.6% wrong, 1.8% parse errors
+- Both metrics reflect two recheck passes with 15k-char window (vs original 3k):
+  - Pass 1: 315 grounding-flagged records → 186 upgraded to confirmed/plausible
+  - Pass 2: 148 classification-wrong records → 27 upgraded to ok, 18 to questionable
+- **313 parse errors** (Haiku occasionally returns malformed YAML) — worth a retry pass someday
+- QA verdicts stored in `insights/per_doc_qa/` and merged into dashboard cards at build time
+- `04c_recheck_flagged.py` supports `--field grounding_verdict|classification_verdict` and
+  `--batch submit/collect` (use batch mode — sequential hits rate limits)
 
 ---
 
 ## Cost reference
 
-- v2 extraction (Sonnet, 1,434 docs individually): ~$50–70 USD
-- Tier 3 reconciliation (Haiku): ~$0.50 USD
+- v2 extraction (Sonnet, 1,440 docs): ~$50–70 USD (complete)
+- Oversized doc extraction (Sonnet, 8 docs chunked): ~$1 USD (complete)
+- Tier 3 reconciliation (Haiku): ~$0.50 USD (complete)
+- QA verification (Haiku batch, 16,931 records): ~$25 USD (complete)
+- QA recheck grounding (Haiku, 315 records, wider window): ~$3 USD (complete)
+- QA recheck classification (Haiku batch, 148 records, wider window): ~$0.50 USD (complete)
+- Project matching (Haiku batch, ~540 names): <$1 USD (complete)
 - Do NOT run API calls without explicit instruction — check existing outputs first

@@ -140,9 +140,9 @@ def parse_response(raw: str) -> dict:
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--input",
-                        default=str(ROOT / "insights" / "ARENA_delivery_registry_full_v2_clean.yaml"))
+                        default=str(ROOT / "insights" / "registry_deduped_clean.yaml"))
     parser.add_argument("--output",
-                        default=str(ROOT / "insights" / "ARENA_delivery_registry_full_v3_clean.yaml"))
+                        default=str(ROOT / "insights" / "registry_deduped_reconciled.yaml"))
     args = parser.parse_args()
 
     in_path = Path(args.input)

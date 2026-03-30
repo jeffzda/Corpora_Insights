@@ -11,6 +11,7 @@ import argparse
 import csv
 import glob
 import json
+from collections import Counter, defaultdict
 from pathlib import Path
 
 try:
@@ -23,6 +24,7 @@ DEFAULT_INPUT = ROOT / "insights" / "per_doc"
 DEFAULT_OUTPUT = ROOT / "dashboard" / "insights.html"
 PROJECTS_FILE = ROOT / "arena-projects-export_1772932404.csv"
 AGGREGATED_DIR = ROOT / "tables" / "aggregated"
+PER_PROJECT_DIR = ROOT / "insights" / "per_project"
 
 FAILURE_MODE_COLOURS = {
     "no major failure stated":        "#22c55e",
@@ -65,6 +67,355 @@ QA_VERDICT_COLOURS = {
 }
 
 QA_DIR = ROOT / "insights" / "per_doc_qa"
+
+# ── Reference class matrix constants ────────────────────────────────────────
+
+_NO_FAIL = "no major failure stated"
+_DISC_OC = "discontinued/not progressed"
+
+_PT_ORDER = [
+    "DER/customer-side", "software/data/digital", "industrial decarbonisation",
+    "storage", "generation", "transport electrification", "manufacturing/supply chain",
+    "network/grid", "multi-technology/hybrid", "enabling infrastructure",
+]
+_SB_ORDER = [
+    "lab/bench", "pilot", "demonstration", "first commercial/FOAK",
+    "commercial expansion", "utility/large-scale", "programmatic/portfolio-level",
+]
+_TD_ORDER = [
+    "solar PV", "battery storage", "DER", "hydrogen", "EV", "demand response",
+    "bioenergy", "solar thermal", "grid/system stability", "wind", "pumped hydro",
+    "industrial renewables", "hybrid systems", "other",
+]
+_PH_ORDER = [
+    "concept/feasibility", "development/design", "approvals/contracting",
+    "procurement", "construction/installation", "commissioning/integration",
+    "operations", "variation/re-scope", "close-out/post-project review",
+]
+
+
+_SEV_HIGH = {"moderate", "major", "critical"}
+
+
+def _adv_rate(recs):
+    return sum(1 for r in recs if (r.get("issue_severity") or "") in _SEV_HIGH) / len(recs) if recs else 0.0
+
+
+def _disc_rate(recs):
+    return sum(1 for r in recs if (r.get("outcome_class") or "") == _DISC_OC) / len(recs) if recs else 0.0
+
+
+def _top_fms(recs, n=2):
+    c = Counter(r.get("failure_mode") or "" for r in recs if (r.get("failure_mode") or "") != _NO_FAIL)
+    return [fm for fm, _ in c.most_common(n)]
+
+
+def _pct(x):
+    return f"{round(100 * x)}%"
+
+
+_INFERNO = [
+    (0.000, (0,    0,   4)),
+    (0.125, (31,  12,  72)),
+    (0.250, (85,  15, 109)),
+    (0.375, (139,  34,  82)),
+    (0.500, (188,  55,  84)),
+    (0.625, (229, 105,  56)),
+    (0.750, (249, 163,   7)),
+    (0.875, (252, 213,  82)),
+    (1.000, (252, 255, 164)),
+]
+
+
+def _viridis_cell(rate, vmin, vmax):
+    """Return (bg_hex, fg_hex) using inferno, normalised to [vmin, vmax]."""
+    t = (rate - vmin) / (vmax - vmin) if vmax > vmin else 0.5
+    t = max(0.0, min(1.0, t))
+    for i in range(len(_INFERNO) - 1):
+        t0, c0 = _INFERNO[i]
+        t1, c1 = _INFERNO[i + 1]
+        if t <= t1:
+            f = (t - t0) / (t1 - t0)
+            r = int(c0[0] + f * (c1[0] - c0[0]))
+            g = int(c0[1] + f * (c1[1] - c0[1]))
+            b = int(c0[2] + f * (c1[2] - c0[2]))
+            bg = f"#{r:02x}{g:02x}{b:02x}"
+            return bg, "#000000"
+    bg = f"#{_INFERNO[-1][1][0]:02x}{_INFERNO[-1][1][1]:02x}{_INFERNO[-1][1][2]:02x}"
+    return bg, "#000000"
+
+
+def load_project_profiles() -> list[dict]:
+    """
+    Build one profile per project from per_project/*.yaml files.
+    Each profile captures boolean flags and phase-level breakdown needed
+    for project-level matrix rates.
+    """
+    _SEV_HIGH_SET = {"moderate", "major", "critical"}
+    profiles = []
+    for path in sorted(PER_PROJECT_DIR.glob("*.yaml")):
+        records = yaml.safe_load(open(path, encoding="utf-8")) or []
+        if not records:
+            continue
+
+        def majority(field):
+            c = Counter(r.get(field) for r in records if r.get(field))
+            return c.most_common(1)[0][0] if c else None
+
+        # Aggregate per lifecycle phase
+        phase_recs: dict = defaultdict(list)
+        for r in records:
+            ph = r.get("lifecycle_phase")
+            if ph:
+                phase_recs[ph].append(r)
+
+        # Phase-level failure presence: phase → top failure mode among moderate+ records
+        phase_failures: dict = {}
+        for ph, recs in phase_recs.items():
+            bad = [r for r in recs if (r.get("issue_severity") or "") in _SEV_HIGH_SET]
+            if bad:
+                c = Counter(
+                    r.get("failure_mode") for r in bad
+                    if r.get("failure_mode") and r["failure_mode"] != _NO_FAIL
+                )
+                phase_failures[ph] = c.most_common(1)[0][0] if c else None
+
+        profiles.append({
+            "project_type":      majority("project_type"),
+            "project_scale_band": majority("project_scale_band"),
+            "proponent_type":    majority("proponent_type"),
+            "technology_domain": majority("technology_domain"),
+            "had_moderate_plus": any(
+                (r.get("issue_severity") or "") in _SEV_HIGH_SET for r in records
+            ),
+            "discontinued": any(
+                (r.get("outcome_class") or "") == _DISC_OC for r in records
+            ),
+            "failure_modes": {
+                r.get("failure_mode") for r in records
+                if r.get("failure_mode") and r["failure_mode"] != _NO_FAIL
+            },
+            "phases_covered":  set(phase_recs.keys()),
+            "phase_failures":  phase_failures,   # phase → top fm at that phase (moderate+ only)
+            "n_records":       len(records),
+        })
+    return profiles
+
+
+def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
+    """
+    Generate HTML for the four reference-class matrices.
+    Unit of analysis is the PROJECT (one profile per project), not the record.
+    Adv% = % of projects with at least one moderate/major/critical record.
+    Disc% = % of projects with at least one discontinued/not progressed record.
+    """
+
+    # ── Group profiles ────────────────────────────────────────────────────────
+    pt_sb: dict = defaultdict(list)
+    for p in profiles:
+        pt_sb[(p["project_type"] or "", p["project_scale_band"] or "")].append(p)
+
+    ptype_profiles: dict = defaultdict(list)
+    for p in profiles:
+        ptype_profiles[p["proponent_type"] or "null"].append(p)
+
+    n_projects = len(profiles)
+    corpus_adv = sum(1 for p in profiles if p["had_moderate_plus"]) / n_projects if n_projects else 0.0
+    corpus_disc = sum(1 for p in profiles if p["discontinued"]) / n_projects if n_projects else 0.0
+
+    def proj_adv(profs):
+        return sum(1 for p in profs if p["had_moderate_plus"]) / len(profs) if profs else 0.0
+
+    def proj_disc(profs):
+        return sum(1 for p in profs if p["discontinued"]) / len(profs) if profs else 0.0
+
+    def proj_top_fms(profs, n=2):
+        c = Counter(fm for p in profs for fm in p["failure_modes"])
+        return [fm for fm, _ in c.most_common(n)]
+
+    # ── Pre-pass: collect all cell rates for vmin/vmax ────────────────────────
+    all_rates = []
+    for pt in _PT_ORDER:
+        for sb in _SB_ORDER:
+            profs = pt_sb.get((pt, sb), [])
+            if len(profs) >= min_n:
+                all_rates.append(proj_adv(profs))
+    for profs in ptype_profiles.values():
+        if len(profs) >= min_n:
+            all_rates.append(proj_adv(profs))
+    # Matrix B rates added after computation below
+
+    # Also pre-compute Matrix B cells
+    # For each (tech_domain, phase): projects in that domain that covered that phase
+    # Adv% = % of those that had a moderate+ issue AT that phase specifically
+    td_ph_cells: dict = {}
+    min_n_b = 5
+    for td in _TD_ORDER:
+        td_profs = [p for p in profiles if p["technology_domain"] == td]
+        for ph in _PH_ORDER:
+            covered = [p for p in td_profs if ph in p["phases_covered"]]
+            if len(covered) < min_n_b:
+                continue
+            adv = sum(1 for p in covered if ph in p["phase_failures"]) / len(covered)
+            # top failure mode at this phase across covered projects
+            fm_c = Counter(
+                p["phase_failures"][ph] for p in covered
+                if ph in p["phase_failures"] and p["phase_failures"][ph]
+            )
+            fm1 = fm_c.most_common(1)[0][0] if fm_c else "—"
+            td_ph_cells[(td, ph)] = (len(covered), adv, fm1)
+            all_rates.append(adv)
+
+    vmin = min(all_rates) if all_rates else 0.0
+    vmax = max(all_rates) if all_rates else 1.0
+
+    def adv_cell(rate):
+        bg, fg = _viridis_cell(rate, vmin, vmax)
+        return f'background:{bg};color:{fg}'
+
+    # ── Matrix A: project_type × scale_band ──────────────────────────────────
+    ma_rows = []
+    for pt in _PT_ORDER:
+        for sb in _SB_ORDER:
+            profs = pt_sb.get((pt, sb), [])
+            if len(profs) < min_n:
+                continue
+            adv = proj_adv(profs)
+            disc = proj_disc(profs)
+            fms = proj_top_fms(profs, 2)
+            fm1 = fms[0] if fms else "—"
+            fm2 = fms[1] if len(fms) > 1 else "—"
+            ma_rows.append(
+                f'<tr><td>{pt}</td><td>{sb}</td>'
+                f'<td class="rcm-num">{len(profs)}</td>'
+                f'<td class="rcm-num rcm-rate" style="{adv_cell(adv)}">{_pct(adv)}</td>'
+                f'<td class="rcm-num">{_pct(disc)}</td>'
+                f'<td class="rcm-fm">{fm1}</td>'
+                f'<td class="rcm-fm">{fm2}</td>'
+                f'</tr>'
+            )
+
+    ma_empty = '<tr><td colspan="7" class="rcm-empty">No cells meet minimum n threshold</td></tr>'
+    ma_html = (
+        f'<div class="an-card an-wide">'
+        f'<div class="an-card-title">Matrix A — Delivery Archetype Reference Classes</div>'
+        f'<div class="an-card-sub">'
+        f'{n_projects:,} projects &nbsp;·&nbsp; '
+        f'Corpus: <strong>{_pct(corpus_adv)}</strong> had moderate+ issues, '
+        f'<strong>{_pct(corpus_disc)}</strong> discontinued &nbsp;·&nbsp; '
+        f'n = projects (not records) &nbsp;·&nbsp; cells &lt; {min_n} omitted &nbsp;·&nbsp; '
+        f'colour scale normalised to {_pct(vmin)}–{_pct(vmax)}</div>'
+        f'<div class="rcm-scroll"><table class="rcm-table">'
+        f'<thead><tr><th>Project type</th><th>Scale band</th><th>Projects</th>'
+        f'<th>Adv%</th><th>Disc%</th><th>Top failure mode</th><th>2nd failure mode</th></tr></thead>'
+        f'<tbody>{"".join(ma_rows) if ma_rows else ma_empty}</tbody>'
+        f'</table></div></div>'
+    )
+
+    # ── Matrix B: technology_domain × lifecycle_phase ─────────────────────────
+    mb_rows = []
+    for td in _TD_ORDER:
+        for ph in _PH_ORDER:
+            if (td, ph) not in td_ph_cells:
+                continue
+            n_cov, adv, fm1 = td_ph_cells[(td, ph)]
+            mb_rows.append(
+                f'<tr><td>{td}</td><td>{ph}</td>'
+                f'<td class="rcm-num">{n_cov}</td>'
+                f'<td class="rcm-num rcm-rate" style="{adv_cell(adv)}">{_pct(adv)}</td>'
+                f'<td class="rcm-fm">{fm1}</td>'
+                f'</tr>'
+            )
+
+    mb_empty = '<tr><td colspan="5" class="rcm-empty">No cells meet minimum n threshold</td></tr>'
+    mb_html = (
+        f'<div class="an-card an-wide">'
+        f'<div class="an-card-title">Matrix B — Phase Risk Watch-list</div>'
+        f'<div class="an-card-sub">'
+        f'Technology domain × lifecycle phase. '
+        f'n = projects that covered that phase. '
+        f'Adv% = % with a moderate+ issue at that specific phase. '
+        f'Cells &lt; {min_n_b} omitted.</div>'
+        f'<div class="rcm-scroll"><table class="rcm-table">'
+        f'<thead><tr><th>Technology domain</th><th>Lifecycle phase</th>'
+        f'<th>Projects</th><th>Adv%</th><th>Watch for</th></tr></thead>'
+        f'<tbody>{"".join(mb_rows) if mb_rows else mb_empty}</tbody>'
+        f'</table></div></div>'
+    )
+
+    # ── Matrix C: proponent_type ──────────────────────────────────────────────
+    mc_data = sorted(
+        [(pt, profs) for pt, profs in ptype_profiles.items() if len(profs) >= min_n],
+        key=lambda x: proj_adv(x[1]),
+    )
+    mc_rows = []
+    for pt, profs in mc_data:
+        adv = proj_adv(profs)
+        disc = proj_disc(profs)
+        delta = adv - corpus_adv
+        sign = "+" if delta >= 0 else ""
+        delta_col = "#dc2626" if delta >= 0.05 else ("#16a34a" if delta <= -0.05 else "#64748b")
+        fms = proj_top_fms(profs, 1)
+        mc_rows.append(
+            f'<tr><td>{pt}</td>'
+            f'<td class="rcm-num">{len(profs)}</td>'
+            f'<td class="rcm-num rcm-rate" style="{adv_cell(adv)}">{_pct(adv)}</td>'
+            f'<td class="rcm-num" style="color:{delta_col};font-weight:600">{sign}{round(100 * delta, 1):+.1f}pp</td>'
+            f'<td class="rcm-num">{_pct(disc)}</td>'
+            f'<td class="rcm-fm">{fms[0] if fms else "—"}</td>'
+            f'</tr>'
+        )
+
+    mc_empty = '<tr><td colspan="6" class="rcm-empty">Insufficient data</td></tr>'
+    mc_html = (
+        f'<div class="an-card an-wide">'
+        f'<div class="an-card-title">Matrix C — Proponent Type Adjustment Factor</div>'
+        f'<div class="an-card-sub">Corpus baseline: <strong>{_pct(corpus_adv)}</strong>.'
+        f' Red adjustment = above baseline, green = below.</div>'
+        f'<div class="rcm-scroll"><table class="rcm-table">'
+        f'<thead><tr><th>Proponent type</th><th>Projects</th><th>Adv%</th>'
+        f'<th>Adjustment</th><th>Disc%</th><th>Primary risk</th></tr></thead>'
+        f'<tbody>{"".join(mc_rows) if mc_rows else mc_empty}</tbody>'
+        f'</table></div></div>'
+    )
+
+    # ── Discontinuation risk summary ──────────────────────────────────────────
+    disc_data = []
+    for (pt, sb), profs in pt_sb.items():
+        if len(profs) < min_n:
+            continue
+        dr = proj_disc(profs)
+        if 100 * dr >= 3.0:
+            fms = proj_top_fms(profs, 1)
+            disc_data.append((dr, pt, sb, len(profs), fms[0] if fms else "—"))
+    disc_data.sort(reverse=True)
+
+    disc_vmin = disc_data[-1][0] if disc_data else 0.0
+    disc_vmax = disc_data[0][0] if disc_data else 1.0
+
+    disc_rows = []
+    for dr, pt, sb, n, fm1 in disc_data:
+        bg, fg = _viridis_cell(dr, disc_vmin, disc_vmax)
+        disc_rows.append(
+            f'<tr><td><strong>{pt}</strong> &times; {sb}</td>'
+            f'<td class="rcm-num">{n}</td>'
+            f'<td class="rcm-num rcm-rate" style="background:{bg};color:{fg}">{_pct(dr)}</td>'
+            f'<td class="rcm-fm">{fm1}</td>'
+            f'</tr>'
+        )
+
+    dt_empty = '<tr><td colspan="4" class="rcm-empty">No reference classes exceed threshold</td></tr>'
+    dt_html = (
+        f'<div class="an-card an-wide">'
+        f'<div class="an-card-title">Discontinuation Risk Summary</div>'
+        f'<div class="an-card-sub">Reference class cells with discontinuation rate ≥ 3% (n ≥ {min_n} projects).</div>'
+        f'<div class="rcm-scroll"><table class="rcm-table">'
+        f'<thead><tr><th>Reference class</th><th>Projects</th><th>Disc%</th><th>Primary driver</th></tr></thead>'
+        f'<tbody>{"".join(disc_rows) if disc_rows else dt_empty}</tbody>'
+        f'</table></div></div>'
+    )
+
+    return ma_html + mb_html + mc_html + dt_html
 
 
 def load_portfolio_size() -> int:
@@ -145,12 +496,15 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
     for r in records:
         rid = r.get("record_id")
         if rid and rid in qa_results:
-            r["qa_verdict"]      = qa_results[rid].get("verdict") or ""
-            r["qa_source_text"]  = qa_results[rid].get("source_text") or ""
-            r["qa_source_page"]  = qa_results[rid].get("source_page") or ""
-            r["qa_note"]         = qa_results[rid].get("note") or ""
+            r["qa_verdict"]              = qa_results[rid].get("grounding_verdict") or qa_results[rid].get("verdict") or ""
+            r["qa_classification"]       = qa_results[rid].get("classification_verdict") or ""
+            r["qa_classification_note"]  = qa_results[rid].get("classification_note") or ""
+            r["qa_source_text"]          = qa_results[rid].get("source_text") or ""
+            r["qa_source_page"]          = qa_results[rid].get("source_page") or ""
+            r["qa_note"]                 = qa_results[rid].get("grounding_note") or qa_results[rid].get("note") or ""
         else:
-            r["qa_verdict"] = r["qa_source_text"] = r["qa_source_page"] = r["qa_note"] = ""
+            r["qa_verdict"] = r["qa_classification"] = r["qa_classification_note"] = ""
+            r["qa_source_text"] = r["qa_source_page"] = r["qa_note"] = ""
 
     records = [clean_record(r) for r in records]
     data_json = json.dumps(records, ensure_ascii=False)
@@ -171,6 +525,7 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
     severity_levels = distinct_sorted(records, "issue_severity")
     transferability_vals = distinct_sorted(records, "transferability")
     qa_verdicts = distinct_sorted(records, "qa_verdict")
+    qa_classifications = distinct_sorted(records, "qa_classification")
 
     def options(values):
         return "\n".join(f'<option value="{v}">{v}</option>' for v in values)
@@ -180,6 +535,8 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
     portfolio_pct = f"{n_projects_covered/portfolio_size*100:.0f}%" if portfolio_size else "—"
     n_failures = len([r for r in records if r.get("failure_mode") and r["failure_mode"] != "no major failure stated"])
     kb_projects = distinct_sorted(records, "kb_associated_project")
+    project_profiles = load_project_profiles() if PER_PROJECT_DIR.exists() else []
+    matrix_html = build_reference_class_html(project_profiles) if project_profiles else ""
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -191,7 +548,8 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
 <script src="https://cdn.jsdelivr.net/npm/marked@9/marked.min.js"></script>
 <style>
   * {{ box-sizing: border-box; margin: 0; padding: 0; }}
-  body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f1f5f9; color: #1e293b; }}
+  html {{ height: 100%; }}
+  body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f1f5f9; color: #1e293b; height: 100%; display: flex; flex-direction: column; overflow: hidden; }}
 
   /* Header */
   header {{ background: #0f172a; color: white; padding: 20px 32px; display: flex; align-items: center; justify-content: space-between; }}
@@ -205,7 +563,7 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
   .tab:hover {{ color: #1e293b; }}
   .tab.active {{ color: #6366f1; border-bottom-color: #6366f1; }}
   .tab-content {{ display: none; flex-direction: column; }}
-  .tab-content.active {{ display: flex; }}
+  .tab-content.active {{ display: flex; flex: 1; min-height: 0; }}
 
   /* Stats bar */
   .stats {{ background: white; border-bottom: 1px solid #e2e8f0; padding: 16px 32px; display: flex; gap: 32px; }}
@@ -213,23 +571,44 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
   .stat-value {{ font-size: 24px; font-weight: 700; color: #0f172a; }}
   .stat-label {{ font-size: 12px; color: #64748b; margin-top: 2px; }}
 
-  /* Layout */
-  .layout {{ display: flex; height: calc(100vh - 163px); }}
+  /* Filter bar */
+  .filter-bar {{ background: white; border-bottom: 1px solid #e2e8f0; padding: 8px 20px; display: flex; align-items: flex-end; gap: 10px; overflow-x: auto; flex-shrink: 0; white-space: nowrap; }}
+  .fi {{ display: inline-flex; flex-direction: column; gap: 2px; }}
+  .fi label {{ font-size: 9px; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; }}
+  .fi select, .fi input {{ font-size: 12px; padding: 4px 7px; border: 1px solid #e2e8f0; border-radius: 5px; background: #f8fafc; color: #1e293b; height: 28px; }}
+  .fi select:focus, .fi input:focus {{ outline: none; border-color: #6366f1; }}
+  .fi-search input {{ width: 180px; }}
+  .fi select {{ min-width: 110px; }}
+  .filter-clear-btn {{ font-size: 11px; padding: 0 12px; height: 28px; background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 5px; cursor: pointer; color: #475569; flex-shrink: 0; align-self: flex-end; }}
+  .filter-clear-btn:hover {{ background: #e2e8f0; }}
 
-  /* Sidebar */
-  aside {{ width: 260px; min-width: 260px; background: white; border-right: 1px solid #e2e8f0; overflow-y: auto; padding: 20px 16px; display: flex; flex-direction: column; gap: 16px; }}
-  aside h2 {{ font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: #64748b; padding-bottom: 8px; border-bottom: 1px solid #f1f5f9; }}
-  .filter-group {{ display: flex; flex-direction: column; gap: 6px; }}
-  .filter-group label {{ font-size: 11px; font-weight: 600; color: #475569; text-transform: uppercase; letter-spacing: 0.5px; }}
-  .filter-group select {{ font-size: 13px; padding: 6px 8px; border: 1px solid #e2e8f0; border-radius: 6px; background: #f8fafc; color: #1e293b; width: 100%; }}
-  .filter-group select:focus {{ outline: none; border-color: #6366f1; }}
+  /* Two-panel layout */
+  .layout {{ display: flex; flex: 1; min-height: 0; overflow: hidden; }}
+
+  .project-panel {{ width: 320px; min-width: 320px; background: white; border-right: 1px solid #e2e8f0; display: flex; flex-direction: column; overflow: hidden; }}
+  .proj-panel-top {{ padding: 10px 12px 8px; border-bottom: 1px solid #f1f5f9; display: flex; flex-direction: column; gap: 6px; flex-shrink: 0; }}
+  .proj-panel-top .search-box {{ font-size: 13px; padding: 7px 10px; border: 1px solid #e2e8f0; border-radius: 6px; width: 100%; background: #f8fafc; }}
+  .proj-panel-top .search-box:focus {{ outline: none; border-color: #6366f1; }}
+  .proj-panel-count {{ font-size: 11px; color: #94a3b8; padding: 0 2px; display: flex; justify-content: space-between; align-items: center; }}
+  .proj-sel-clear {{ font-size: 11px; color: #6366f1; cursor: pointer; text-decoration: underline; flex-shrink: 0; }}
+  .proj-sel-clear:hover {{ color: #4f46e5; }}
+
+  .proj-list {{ flex: 1; overflow-y: auto; }}
+  .proj-item {{ padding: 10px 14px 10px 13px; border-bottom: 1px solid #f1f5f9; border-left: 3px solid transparent; cursor: pointer; transition: background 0.1s; }}
+  .proj-item:hover {{ background: #f8fafc; }}
+  .proj-item.selected {{ background: #eef2ff; border-left-color: #6366f1; }}
+  .proj-item-name {{ font-size: 12px; font-weight: 600; color: #1e293b; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 3px; }}
+  .proj-item-meta {{ font-size: 10px; color: #64748b; line-height: 1.6; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }}
+  .proj-item-footer {{ display: flex; justify-content: space-between; align-items: center; margin-top: 4px; gap: 6px; }}
+  .proj-item-loc {{ font-size: 10px; color: #94a3b8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1; min-width: 0; }}
+  .proj-item-count {{ font-size: 11px; font-weight: 700; color: #6366f1; background: #eef2ff; padding: 2px 7px; border-radius: 12px; flex-shrink: 0; white-space: nowrap; }}
+
+  .records-panel {{ flex: 1; overflow-y: auto; display: flex; flex-direction: column; padding: 16px 20px; gap: 0; min-width: 0; }}
+
+  /* Compat: search-box used in proj-panel-top */
   .search-box {{ font-size: 13px; padding: 8px 10px; border: 1px solid #e2e8f0; border-radius: 6px; width: 100%; background: #f8fafc; }}
   .search-box:focus {{ outline: none; border-color: #6366f1; }}
-  .clear-btn {{ font-size: 12px; padding: 7px 12px; background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 6px; cursor: pointer; color: #475569; width: 100%; }}
-  .clear-btn:hover {{ background: #e2e8f0; }}
 
-  /* Main content */
-  main {{ flex: 1; overflow-y: auto; padding: 20px 24px; }}
   .results-header {{ font-size: 13px; color: #64748b; margin-bottom: 14px; }}
   .results-header strong {{ color: #1e293b; }}
 
@@ -242,15 +621,15 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
   .card-year {{ font-size: 10px; color: #94a3b8; white-space: nowrap; }}
   .card-project {{ font-size: 13px; font-weight: 600; color: #1e293b; line-height: 1.4; }}
   .card-chips {{ display: flex; flex-wrap: wrap; gap: 4px; margin-top: 2px; }}
-  .chip {{ font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 20px; white-space: nowrap; }}
-  .chip-scale {{ background: #e0f2fe; color: #0369a1; }}
-  .chip-tech  {{ background: #ede9fe; color: #6d28d9; }}
+  .chip {{ font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 20px; white-space: nowrap; color: white; }}
+  .chip-scale {{ background: #0891b2; }}
+  .chip-tech  {{ background: #7c3aed; }}
   .card-what {{ font-size: 12px; color: #475569; line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }}
-  .card-footer {{ display: grid; grid-template-columns: 1fr 1fr; gap: 6px 10px; padding-top: 8px; border-top: 1px solid #f1f5f9; }}
-  .card-meta-item {{ display: flex; flex-direction: column; gap: 2px; min-width: 0; overflow: hidden; }}
+  .card-footer {{ display: flex; flex-wrap: wrap; gap: 6px; padding-top: 8px; border-top: 1px solid #f1f5f9; }}
+  .card-meta-item {{ display: flex; flex-direction: column; gap: 2px; min-width: 0; }}
   .card-meta-label {{ font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #94a3b8; }}
-  .badge {{ font-size: 10px; font-weight: 700; padding: 3px 9px; border-radius: 20px; color: white;
-            white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; display: block; }}
+  .badge {{ font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 20px; color: white;
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 160px; display: inline-block; }}
 
   /* Modal */
   .overlay {{ display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 100; align-items: center; justify-content: center; padding: 24px; }}
@@ -275,6 +654,7 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
   .link-btn-secondary:hover {{ background: #e2e8f0; }}
   .confidence-note {{ background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 10px 12px; font-size: 12px; color: #92400e; line-height: 1.6; }}
   .modal-tags {{ display: flex; flex-wrap: wrap; gap: 6px; }}
+  .tag {{ font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 20px; white-space: nowrap; color: white; display: inline-block; }}
   .hidden {{ display: none !important; }}
 
   /* ── Synthesis ── */
@@ -388,7 +768,7 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
   }}
 
   /* ── Project summary panel ── */
-  .proj-summary {{ background: white; border-bottom: 2px solid #e2e8f0; padding: 16px 32px 18px; display: none; }}
+  .proj-summary {{ background: white; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px 18px; margin-bottom: 12px; display: none; }}
   .proj-summary.visible {{ display: block; }}
   .proj-summary-header {{ display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; margin-bottom: 14px; }}
   .proj-summary-title {{ font-size: 15px; font-weight: 700; color: #0f172a; }}
@@ -423,6 +803,18 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
   .an-card-sub {{ font-size: 11px; color: #94a3b8; }}
   .an-card canvas {{ max-height: 280px; }}
   .an-card.an-wide canvas {{ max-height: 340px; }}
+  .rcm-scroll {{ overflow-x: auto; margin-top: 8px; }}
+  .rcm-table {{ border-collapse: collapse; width: 100%; font-size: 12px; }}
+  .rcm-table th {{ background: #f8fafc; padding: 8px 10px; text-align: left; font-size: 10px;
+                  font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.4px;
+                  border-bottom: 2px solid #e2e8f0; white-space: nowrap; }}
+  .rcm-table td {{ padding: 7px 10px; border-bottom: 1px solid #f1f5f9; vertical-align: middle; font-size: 12px; }}
+  .rcm-table tr:last-child td {{ border-bottom: none; }}
+  .rcm-table tr:hover td {{ background: #fafbff; }}
+  .rcm-num {{ text-align: center; white-space: nowrap; }}
+  .rcm-rate {{ font-weight: 700; }}
+  .rcm-fm {{ color: #475569; font-size: 11px; }}
+  .rcm-empty {{ color: #94a3b8; text-align: center; padding: 16px; }}
 
   /* ── Benchmarks tab ── */
   .bench-layout {{ display: flex; height: calc(100vh - 120px); }}
@@ -485,69 +877,42 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
     <div class="stat"><span class="stat-value">{n_failures}</span><span class="stat-label">With failure mode</span></div>
     <div class="stat"><span class="stat-value">{len(records) - n_failures}</span><span class="stat-label">No major failure</span></div>
   </div>
-  <div id="proj-summary" class="proj-summary">
-    <div class="proj-summary-header">
-      <div>
-        <div class="proj-summary-title" id="ps-title"></div>
-        <div class="proj-meta" id="ps-meta"></div>
-      </div>
-      <div class="coverage-strip" id="ps-coverage"></div>
-    </div>
-    <div class="phase-grid" id="ps-phases"></div>
+  <div class="filter-bar">
+    <div class="fi fi-search"><label>Search records</label><input id="search" type="text" placeholder="Keywords…"></div>
+    <div class="fi"><label>Failure mode</label><select id="f-failure"><option value="">All failures</option>{options(failure_modes)}</select></div>
+    <div class="fi"><label>Outcome</label><select id="f-outcome"><option value="">All outcomes</option>{options(outcome_classes)}</select></div>
+    <div class="fi"><label>Project type</label><select id="f-type"><option value="">All types</option>{options(project_types)}</select></div>
+    <div class="fi"><label>Scale</label><select id="f-scale"><option value="">All scales</option>{options(scale_bands)}</select></div>
+    <div class="fi"><label>Proponent</label><select id="f-proponent"><option value="">All proponents</option>{options(proponent_types)}</select></div>
+    <div class="fi"><label>Lifecycle phase</label><select id="f-phase"><option value="">All phases</option>{options(lifecycle_phases)}</select></div>
+    <div class="fi"><label>Technology</label><select id="f-tech"><option value="">All technologies</option>{options(tech_domains)}</select></div>
+    <div class="fi"><label>Severity</label><select id="f-severity"><option value="">All severities</option>{options(severity_levels)}</select></div>
+    <div class="fi"><label>Transferability</label><select id="f-transferability"><option value="">All</option>{options(transferability_vals)}</select></div>
+    <div class="fi"><label>QA grounding</label><select id="f-qa"><option value="">All</option>{options(qa_verdicts)}</select></div>
+    <div class="fi"><label>QA classification</label><select id="f-qa-class"><option value="">All</option>{options(qa_classifications)}</select></div>
+    <button class="filter-clear-btn" onclick="clearFilters()">Clear</button>
   </div>
   <div class="layout">
-    <aside>
-      <div class="filter-group">
-        <label>ARENA project</label>
-        <input class="search-box" id="f-project" list="project-datalist" placeholder="Type to search projects…" autocomplete="off">
-        <datalist id="project-datalist">{options(kb_projects)}</datalist>
+    <div class="project-panel">
+      <div class="proj-panel-top">
+        <input class="search-box" id="proj-search" type="text" placeholder="Search {n_projects_covered} projects…" oninput="renderProjectList()">
+        <div class="proj-panel-count" id="proj-count-badge"></div>
       </div>
-      <div><h2>Filters</h2></div>
-      <input class="search-box" id="search" placeholder="Search projects, findings…" type="text">
-      <div class="filter-group">
-        <label>Failure mode</label>
-        <select id="f-failure"><option value="">All</option>{options(failure_modes)}</select>
+      <div class="proj-list" id="proj-list"></div>
+    </div>
+
+    <div class="records-panel">
+      <div id="proj-summary" class="proj-summary">
+        <div class="proj-summary-header">
+          <div>
+            <div class="proj-summary-title" id="ps-title"></div>
+            <div class="proj-meta" id="ps-meta"></div>
+          </div>
+          <div class="coverage-strip" id="ps-coverage"></div>
+        </div>
+        <div class="phase-grid" id="ps-phases"></div>
       </div>
-      <div class="filter-group">
-        <label>Outcome</label>
-        <select id="f-outcome"><option value="">All</option>{options(outcome_classes)}</select>
-      </div>
-      <div class="filter-group">
-        <label>Project type</label>
-        <select id="f-type"><option value="">All</option>{options(project_types)}</select>
-      </div>
-      <div class="filter-group">
-        <label>Scale</label>
-        <select id="f-scale"><option value="">All</option>{options(scale_bands)}</select>
-      </div>
-      <div class="filter-group">
-        <label>Proponent type</label>
-        <select id="f-proponent"><option value="">All</option>{options(proponent_types)}</select>
-      </div>
-      <div class="filter-group">
-        <label>Lifecycle phase</label>
-        <select id="f-phase"><option value="">All</option>{options(lifecycle_phases)}</select>
-      </div>
-      <div class="filter-group">
-        <label>Technology domain</label>
-        <select id="f-tech"><option value="">All</option>{options(tech_domains)}</select>
-      </div>
-      <div class="filter-group">
-        <label>Severity</label>
-        <select id="f-severity"><option value="">All</option>{options(severity_levels)}</select>
-      </div>
-      <div class="filter-group">
-        <label>Transferability</label>
-        <select id="f-transferability"><option value="">All</option>{options(transferability_vals)}</select>
-      </div>
-      <div class="filter-group">
-        <label>QA verdict</label>
-        <select id="f-qa"><option value="">All</option>{options(qa_verdicts)}</select>
-      </div>
-      <button class="clear-btn" onclick="clearFilters()">Clear all filters</button>
-    </aside>
-    <main>
-      <div class="results-header" style="display:flex;align-items:center">
+      <div class="results-header" style="display:flex;align-items:center;padding-bottom:8px">
         <span><strong id="count-label">{n} records</strong> · click any card to view detail</span>
         <select id="synth-mode" style="font-size:12px;padding:5px 8px;border:1px solid #e2e8f0;border-radius:6px;background:#f8fafc;color:#475569;margin-left:12px;cursor:pointer">
           <option value="brief">Brief summary</option>
@@ -556,7 +921,7 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
         </select>
         <button class="synth-btn" id="synth-btn" onclick="openSynth()">Synthesise</button>
       </div>
-      <div style="padding:8px 0 4px 0">
+      <div style="padding-bottom:8px">
         <textarea id="synth-context" rows="2"
           placeholder="Optional: add focus or context for the synthesis — e.g. 'focus on grid connection risks' or 'I need evidence to assess a hydrogen proposal at approvals stage'"
           style="width:100%;font-size:12px;padding:7px 10px;border:1px solid #e2e8f0;border-radius:6px;background:#f8fafc;color:#1e293b;resize:vertical;font-family:inherit;box-sizing:border-box"></textarea>
@@ -567,7 +932,7 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
         <button class="page-btn" id="btn-next" onclick="changePage(1)">Next &#8594;</button>
       </div>
       <div class="cards" id="cards"></div>
-    </main>
+    </div>
   </div>
 </div>
 
@@ -616,6 +981,7 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
         <div class="an-card-sub">Rows = primary failure mode · Columns = secondary failure mode · Cell = record count</div>
         <div id="an-cooccur" style="overflow-x:auto;margin-top:4px"></div>
       </div>
+      {matrix_html}
     </div>
   </div>
 </div>
@@ -899,34 +1265,106 @@ function openReport(id) {{
   history.replaceState(null, '', '#report-' + id);
 }}
 
-function renderReports() {{
-  const list = loadReports();
-  const tab = document.getElementById('tab-reports');
-  if (tab) tab.textContent = list.length ? `Reports (${{list.length}})` : 'Reports';
+async function renderReports() {{
   const el = document.getElementById('rep-list');
-  if (!list.length) {{
-    el.innerHTML = '<div class="rep-empty">No reports saved yet. Run a synthesis and it will appear here automatically.</div>';
+  el.innerHTML = '<div class="rep-empty">Loading…</div>';
+
+  // Fetch server reports
+  let serverReports = [];
+  try {{
+    const res = await fetch('/list-reports');
+    serverReports = await res.json();
+  }} catch(e) {{
+    // Server unreachable — fall through and show localStorage only
+  }}
+  const serverIds = new Set(serverReports.map(r => r.id));
+
+  // Merge: server reports + any localStorage reports not yet on server
+  const localReports = loadReports();
+  const localOnly = localReports.filter(r => !serverIds.has(r.id));
+
+  // Combined list: server reports first (already have URLs), then local-only
+  const allReports = [...serverReports, ...localOnly];
+
+  const tab = document.getElementById('tab-reports');
+  if (tab) tab.textContent = allReports.length ? `Reports (${{allReports.length}})` : 'Reports';
+  if (!allReports.length) {{
+    el.innerHTML = '<div class="rep-empty">No reports yet. Generate a synthesis to create one.</div>';
     return;
   }}
-  el.innerHTML = list.map(rep => {{
+
+  el.innerHTML = allReports.map(rep => {{
+    const isLocal = !serverIds.has(rep.id);
     const modeLabel = rep.mode === 'brief' ? 'Brief' : rep.mode === 'short' ? 'Short' : 'Detailed';
-    const dateStr = new Date(rep.date).toLocaleDateString('en-AU', {{day:'numeric',month:'short',year:'numeric'}});
+    const rawDate = rep.date;
+    const dateStr = rawDate ? new Date(typeof rawDate === 'number' ? rawDate : rawDate).toLocaleDateString('en-AU', {{day:'numeric',month:'short',year:'numeric'}}) : '';
+    const countStr = rep.recordCount ? `${{rep.recordCount}} records` : '';
+    const localLabel = isLocal ? 'Local only' : '';
+    const meta = [modeLabel, countStr, dateStr, localLabel].filter(Boolean).join(' · ');
+    const safeUrl = (rep.url || '').replace(/"/g, '&quot;');
+    const safeId = rep.id.replace(/"/g, '');
+    const actions = isLocal
+      ? `<button class="rep-action-btn" style="color:#6366f1;font-weight:700" data-permalink="${{safeId}}" onclick="createPermalinkFromList('${{safeId}}',this)">Save permalink</button>`
+      : `<button class="rep-action-btn" onclick="window.open('${{safeUrl}}','_blank')">Open</button>
+         <button class="rep-action-btn" onclick="navigator.clipboard.writeText('${{safeUrl}}').then(()=>{{this.textContent='Copied!';setTimeout(()=>this.textContent='Copy link',2000)}}).catch(()=>{{}})">Copy link</button>
+         <button class="rep-action-btn" style="color:#dc2626" onclick="deleteServerReport('${{safeId}}',this)">Delete</button>`;
     return `<div class="rep-card">
       <div class="rep-card-header">
         <div>
-          <div class="rep-card-title" onclick="openReport('${{rep.id}}')">${{modeLabel}} · ${{rep.filterDesc}}</div>
-          <div class="rep-card-meta">${{dateStr}} · ${{rep.recordCount}} records</div>
+          <div class="rep-card-title">${{rep.filterDesc || '(no description)'}}</div>
+          <div class="rep-card-meta">${{meta}}</div>
         </div>
-        <div class="rep-card-actions">
-          <button class="rep-action-btn" onclick="openReport('${{rep.id}}')">Open</button>
-          <button class="rep-action-btn" data-permalink="${{rep.id}}" onclick="createPermalink('${{rep.id}}')">Permalink</button>
-          <button class="rep-action-btn" onclick="navigator.clipboard.writeText('${{reportUrl(rep.id)}}').then(()=>this.textContent='Copied!').catch(()=>{{}});setTimeout(()=>this.textContent='Copy link',1500)">Copy link</button>
-          <button class="rep-action-btn" style="color:#dc2626" onclick="if(confirm('Delete this report?'))deleteReport('${{rep.id}}')">Delete</button>
-        </div>
+        <div class="rep-card-actions">${{actions}}</div>
       </div>
       ${{rep.summary ? `<div class="rep-card-summary">${{rep.summary}}</div>` : ''}}
     </div>`;
   }}).join('');
+}}
+
+async function createPermalinkFromList(repId, btn) {{
+  const list = loadReports();
+  const rep = list.find(r => r.id === repId);
+  if (!rep) return;
+  btn.textContent = 'Saving…';
+  btn.disabled = true;
+  try {{
+    const html = generateReportHtml(rep);
+    const res = await fetch('/save-report', {{
+      method: 'POST',
+      headers: {{'Content-Type': 'application/json'}},
+      body: JSON.stringify({{
+        id: rep.id,
+        html,
+        meta: {{
+          filterDesc:  rep.filterDesc,
+          mode:        rep.mode,
+          date:        rep.date,
+          recordCount: rep.recordCount,
+          summary:     rep.summary || '',
+        }},
+      }}),
+    }});
+    const data = await res.json();
+    await navigator.clipboard.writeText(data.url);
+    btn.textContent = 'Link copied!';
+    setTimeout(() => renderReports(), 1500);
+  }} catch(e) {{
+    btn.textContent = 'Error';
+    btn.disabled = false;
+    console.error(e);
+  }}
+}}
+
+async function deleteServerReport(id, btn) {{
+  if (!confirm('Delete this report from the server? This cannot be undone.')) return;
+  btn.disabled = true;
+  try {{
+    await fetch('/delete-report/' + id, {{ method: 'DELETE' }});
+    renderReports();
+  }} catch(e) {{
+    btn.disabled = false;
+    alert('Could not delete report.');
+  }}
 }}
 
 // ── Delivery Records ──────────────────────────────────────────
@@ -1010,10 +1448,10 @@ function renderPage() {{
     if (r.technology_domain)  chips += `<span class="chip chip-tech">${{r.technology_domain}}</span>`;
     // Record-level footer items — labelled
     const footerItems = [];
-    if (r.lifecycle_phase)  footerItems.push(['Stage',    `<span class="badge" style="background:#64748b">${{r.lifecycle_phase}}</span>`]);
-    if (r.failure_mode)     footerItems.push(['Type',     `<span class="badge" style="background:${{fmColour(fm)}}">${{fm}}</span>`]);
-    if (r.issue_severity)   footerItems.push(['Severity', `<span class="badge" style="background:${{isColour(r.issue_severity)}}">${{r.issue_severity}}</span>`]);
-    if (r.outcome_class)    footerItems.push(['Outcome',  `<span class="badge" style="background:${{ocColour(oc)}}">${{oc}}</span>`]);
+    if (r.lifecycle_phase)  footerItems.push(['Stage',    `<span class="badge" style="background:#64748b;color:white">${{r.lifecycle_phase}}</span>`]);
+    if (r.failure_mode)     footerItems.push(['Type',     `<span class="badge" style="background:${{fmColour(fm)}};color:white">${{fm}}</span>`]);
+    if (r.issue_severity)   footerItems.push(['Severity', `<span class="badge" style="background:${{isColour(r.issue_severity)}};color:white">${{r.issue_severity}}</span>`]);
+    if (r.outcome_class)    footerItems.push(['Outcome',  `<span class="badge" style="background:${{ocColour(oc)}};color:white">${{oc}}</span>`]);
     const footerHtml = footerItems.map(([label, badge]) =>
       `<div class="card-meta-item"><span class="card-meta-label">${{label}}</span>${{badge}}</div>`
     ).join('');
@@ -1031,10 +1469,96 @@ function renderPage() {{
   }});
 }}
 
-const ALL_FILTER_IDS = ['search','f-failure','f-outcome','f-type','f-scale','f-proponent','f-phase','f-tech','f-project','f-severity','f-transferability','f-qa'];
+const ALL_FILTER_IDS = ['search','f-failure','f-outcome','f-type','f-scale','f-proponent','f-phase','f-tech','f-severity','f-transferability','f-qa','f-qa-class'];
 const PROJECT_SET = new Set(RECORDS.map(r => r.kb_associated_project).filter(Boolean));
 const PAGE_SIZE = 50;
 let _curPage = 0, _lastFiltered = [];
+
+// ── Project grouping ───────────────────────────────────────────
+const PROJECT_GROUPS = new Map();
+RECORDS.forEach(r => {{
+  const proj = r.kb_associated_project || '(No project)';
+  if (!PROJECT_GROUPS.has(proj)) PROJECT_GROUPS.set(proj, []);
+  PROJECT_GROUPS.get(proj).push(r);
+}});
+
+let _selectedProjects = new Set();
+
+function getMostCommon(recs, field) {{
+  const counts = {{}};
+  recs.forEach(r => {{ if (r[field]) counts[r[field]] = (counts[r[field]] || 0) + 1; }});
+  const top = Object.entries(counts).sort((a,b) => b[1]-a[1])[0];
+  return top ? top[0] : null;
+}}
+
+function renderProjectList() {{
+  const search = (document.getElementById('proj-search').value || '').toLowerCase();
+  const f = getFilters();
+
+  const projMatches = new Map();
+  RECORDS.forEach(r => {{
+    if (!matchesDimFilters(r, f)) return;
+    const proj = r.kb_associated_project || '(No project)';
+    if (!projMatches.has(proj)) projMatches.set(proj, []);
+    projMatches.get(proj).push(r);
+  }});
+
+  let projects = [...projMatches.entries()];
+  if (search) projects = projects.filter(([name]) => name.toLowerCase().includes(search));
+  projects.sort((a, b) => b[1].length - a[1].length);
+
+  const badge = document.getElementById('proj-count-badge');
+  if (badge) {{
+    const projCount = projects.length + ' project' + (projects.length !== 1 ? 's' : '');
+    const selCount = _selectedProjects.size;
+    if (selCount > 0) {{
+      badge.innerHTML = `<span>${{projCount}}</span><span class="proj-sel-clear" onclick="clearProjectSelection()">${{selCount}} selected · clear</span>`;
+    }} else {{
+      badge.textContent = projCount;
+    }}
+  }}
+
+  const list = document.getElementById('proj-list');
+  list.innerHTML = projects.map(([name, recs]) => {{
+    const isSelected = _selectedProjects.has(name);
+    const projType  = getMostCommon(recs, 'project_type') || '';
+    const projScale = getMostCommon(recs, 'project_scale_band') || '';
+    const proponent = getMostCommon(recs, 'proponent_type') || '';
+    const tech      = getMostCommon(recs, 'technology_domain') || '';
+    const location  = (recs.find(r => r.location) || {{}}).location || '';
+    const safeAttr  = name.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+    const meta1 = [projType, projScale].filter(Boolean).join(' · ');
+    const meta2 = [proponent, tech].filter(Boolean).join(' · ');
+    return `<div class="proj-item ${{isSelected ? 'selected' : ''}}" data-proj="${{safeAttr}}" onclick="selectProject(this.dataset.proj)">
+      <div class="proj-item-name">${{name}}</div>
+      ${{meta1 ? `<div class="proj-item-meta">${{meta1}}</div>` : ''}}
+      ${{meta2 ? `<div class="proj-item-meta">${{meta2}}</div>` : ''}}
+      <div class="proj-item-footer">
+        <span class="proj-item-loc">${{location}}</span>
+        <span class="proj-item-count">${{recs.length}}</span>
+      </div>
+    </div>`;
+  }}).join('');
+}}
+
+function selectProject(name) {{
+  if (_selectedProjects.has(name)) {{
+    _selectedProjects.delete(name);
+  }} else {{
+    _selectedProjects.add(name);
+  }}
+  renderProjectList();
+  applyFilters();
+  // Scroll records panel to top when first selection made
+  const rp = document.querySelector('.records-panel');
+  if (rp) rp.scrollTop = 0;
+}}
+
+function clearProjectSelection() {{
+  _selectedProjects.clear();
+  renderProjectList();
+  applyFilters();
+}}
 
 // ── Project summary panel ───────────────────────────────────────
 const PHASES = [
@@ -1052,40 +1576,38 @@ const PHASE_LABELS = {{
   'variation/re-scope':        'Variation / Re-scope',
 }};
 
-function setLayoutHeight() {{
-  const ps = document.getElementById('proj-summary');
-  const layout = document.querySelector('.layout');
-  if (!layout) return;
-  const psHeight = ps.classList.contains('visible') ? ps.offsetHeight : 0;
-  layout.style.height = 'calc(100vh - 163px - ' + psHeight + 'px)';
-}}
-
 function renderProjectSummary(filtered) {{
-  const proj = document.getElementById('f-project').value.trim();
   const panel = document.getElementById('proj-summary');
-  if (!proj || !PROJECT_SET.has(proj)) {{
+  const selSize = _selectedProjects.size;
+  if (selSize === 0) {{
     panel.classList.remove('visible');
-    setLayoutHeight();
     return;
   }}
-  const projRecords = filtered.filter(r => r.kb_associated_project === proj);
+
+  const projRecords = filtered.filter(r => _selectedProjects.has(r.kb_associated_project));
   if (projRecords.length === 0) {{
     panel.classList.remove('visible');
-    setLayoutHeight();
     return;
   }}
 
   panel.classList.add('visible');
 
   // Title
-  document.getElementById('ps-title').textContent = proj;
+  const proj = selSize === 1 ? [..._selectedProjects][0] : null;
+  document.getElementById('ps-title').textContent = proj || `${{selSize}} projects selected`;
 
-  // Meta tags
-  const r0 = projRecords[0];
-  const metaTags = [r0.project_type, r0.project_scale_band, r0.proponent_type,
-                    r0.technology_domain, r0.location].filter(Boolean);
-  document.getElementById('ps-meta').innerHTML =
-    metaTags.map(t => `<span class="proj-meta-tag">${{t}}</span>`).join('');
+  // Meta tags — for single project show detail; for multi show aggregated project types
+  if (selSize === 1) {{
+    const r0 = projRecords[0];
+    const metaTags = [r0.project_type, r0.project_scale_band, r0.proponent_type,
+                      r0.technology_domain, r0.location].filter(Boolean);
+    document.getElementById('ps-meta').innerHTML =
+      metaTags.map(t => `<span class="proj-meta-tag">${{t}}</span>`).join('');
+  }} else {{
+    const types = [...new Set(projRecords.map(r => r.project_type).filter(Boolean))];
+    document.getElementById('ps-meta').innerHTML =
+      types.map(t => `<span class="proj-meta-tag">${{t}}</span>`).join('');
+  }}
 
   // Coverage strip
   const nInsights = projRecords.length;
@@ -1137,8 +1659,6 @@ function renderProjectSummary(filtered) {{
     col.appendChild(dotsDiv);
     grid.appendChild(col);
   }});
-
-  setLayoutHeight();
 }}
 
 function getFilters() {{
@@ -1151,53 +1671,54 @@ function getFilters() {{
     proponent:      document.getElementById('f-proponent').value,
     phase:          document.getElementById('f-phase').value,
     tech:           document.getElementById('f-tech').value,
-    project:        document.getElementById('f-project').value,
     severity:       document.getElementById('f-severity').value,
     transferability:document.getElementById('f-transferability').value,
     qa:             document.getElementById('f-qa').value,
+    qaClass:        document.getElementById('f-qa-class').value,
   }};
+}}
+
+function matchesDimFilters(r, f) {{
+  if (f.failure && r.failure_mode !== f.failure) return false;
+  if (f.outcome && r.outcome_class !== f.outcome) return false;
+  if (f.type && r.project_type !== f.type) return false;
+  if (f.scale && r.project_scale_band !== f.scale) return false;
+  if (f.proponent && r.proponent_type !== f.proponent) return false;
+  if (f.phase && r.lifecycle_phase !== f.phase) return false;
+  if (f.tech && r.technology_domain !== f.tech) return false;
+  if (f.severity && r.issue_severity !== f.severity) return false;
+  if (f.transferability && r.transferability !== f.transferability) return false;
+  if (f.qa && r.qa_verdict !== f.qa) return false;
+  if (f.qaClass && r.qa_classification !== f.qaClass) return false;
+  if (f.search) {{
+    const blob = [r.project_name, r.what_happened, r.lesson_learnt, r.evidence_excerpt,
+                  r.source_title, r.kb_associated_project, r.intervention_note].join(' ').toLowerCase();
+    if (!blob.includes(f.search)) return false;
+  }}
+  return true;
 }}
 
 function applyFilters() {{
   const f = getFilters();
   const filtered = RECORDS.filter(r => {{
-    if (f.failure && r.failure_mode !== f.failure) return false;
-    if (f.outcome && r.outcome_class !== f.outcome) return false;
-    if (f.type && r.project_type !== f.type) return false;
-    if (f.scale && r.project_scale_band !== f.scale) return false;
-    if (f.proponent && r.proponent_type !== f.proponent) return false;
-    if (f.phase && r.lifecycle_phase !== f.phase) return false;
-    if (f.tech && r.technology_domain !== f.tech) return false;
-    if (f.project) {{
-      const kap = r.kb_associated_project || '';
-      if (PROJECT_SET.has(f.project)) {{
-        if (kap !== f.project) return false;
-      }} else {{
-        if (!kap.toLowerCase().includes(f.project.toLowerCase())) return false;
-      }}
-    }}
-    if (f.severity && r.issue_severity !== f.severity) return false;
-    if (f.transferability && r.transferability !== f.transferability) return false;
-    if (f.qa && r.qa_verdict !== f.qa) return false;
-    if (f.search) {{
-      const blob = [r.project_name, r.what_happened, r.lesson_learnt, r.evidence_excerpt,
-                    r.source_title, r.kb_associated_project, r.intervention_note].join(' ').toLowerCase();
-      if (!blob.includes(f.search)) return false;
-    }}
-    return true;
+    const proj = r.kb_associated_project || '(No project)';
+    if (_selectedProjects.size > 0 && !_selectedProjects.has(proj)) return false;
+    return matchesDimFilters(r, f);
   }});
   renderCards(filtered);
   renderProjectSummary(filtered);
+  renderProjectList();
 }}
 
 function changePage(delta) {{
   _curPage += delta;
   renderPage();
-  document.querySelector('main').scrollTop = 0;
+  document.querySelector('.records-panel').scrollTop = 0;
 }}
 
 function clearFilters() {{
-  ALL_FILTER_IDS.forEach(id => {{ document.getElementById(id).value = ''; }});
+  ALL_FILTER_IDS.forEach(id => {{ const el = document.getElementById(id); if (el) el.value = ''; }});
+  _selectedProjects.clear();
   applyFilters();
 }}
 
@@ -1229,12 +1750,12 @@ function openModal(r) {{
   const fm = r.failure_mode || '—';
   const oc = r.outcome_class || '—';
   const isBadge = r.issue_severity
-    ? ` <span class="badge" style="background:${{isColour(r.issue_severity)}}">${{r.issue_severity}}</span>`
+    ? ` <span class="badge" style="background:${{isColour(r.issue_severity)}};color:white">${{r.issue_severity}}</span>`
     : '';
   document.getElementById('m-failure').innerHTML =
-    `<span class="badge" style="background:${{fmColour(fm)}}">${{fm}}</span>${{isBadge}}`;
+    `<span class="badge" style="background:${{fmColour(fm)}};color:white">${{fm}}</span>${{isBadge}}`;
   document.getElementById('m-outcome').innerHTML =
-    `<span class="badge" style="background:${{ocColour(oc)}}">${{oc}}</span>`;
+    `<span class="badge" style="background:${{ocColour(oc)}};color:white">${{oc}}</span>`;
   document.getElementById('m-phase').textContent = r.lifecycle_phase || '—';
   document.getElementById('m-delay').textContent = r.delay_category || '—';
 
@@ -1259,11 +1780,16 @@ function openModal(r) {{
   // QA verdict
   const qw = document.getElementById('m-qa-wrap');
   if (r.qa_verdict) {{
-    document.getElementById('m-qa-verdict').innerHTML =
-      `<span class="badge" style="background:${{qaColour(r.qa_verdict)}}">${{r.qa_verdict}}</span>`;
+    const classColour = {{ok:'#16a34a', questionable:'#ca8a04', wrong:'#dc2626'}};
+    let verdictHtml = `<span class="badge" style="background:${{qaColour(r.qa_verdict)}};color:white">grounding: ${{r.qa_verdict}}</span>`;
+    if (r.qa_classification) {{
+      verdictHtml += ` <span class="badge" style="background:${{classColour[r.qa_classification]||'#64748b'}};color:white">taxonomy: ${{r.qa_classification}}</span>`;
+    }}
+    document.getElementById('m-qa-verdict').innerHTML = verdictHtml;
     document.getElementById('m-qa-text').textContent = r.qa_source_text || '';
     document.getElementById('m-qa-text').style.display = r.qa_source_text ? '' : 'none';
-    document.getElementById('m-qa-note').textContent = r.qa_note || '';
+    const noteText = [r.qa_note, r.qa_classification_note].filter(Boolean).join(' | ');
+    document.getElementById('m-qa-note').textContent = noteText;
     qw.classList.remove('hidden');
   }} else qw.classList.add('hidden');
 
@@ -2018,7 +2544,8 @@ const SYNTH_MAX = 500;
 function getActiveFilterDesc() {{
   const f = getFilters();
   const parts = [];
-  if (f.project)  parts.push(`project: ${{f.project}}`);
+  if (_selectedProjects.size === 1) parts.push(`project: ${{[..._selectedProjects][0]}}`);
+  else if (_selectedProjects.size > 1) parts.push(`${{_selectedProjects.size}} projects selected`);
   if (f.type)     parts.push(`project type: ${{f.type}}`);
   if (f.tech)     parts.push(`technology: ${{f.tech}}`);
   if (f.phase)    parts.push(`lifecycle phase: ${{f.phase}}`);
@@ -2252,13 +2779,13 @@ async function runSynthesis(apiKey) {{
 // ── Init ───────────────────────────────────────────────────────
 _lastFiltered = RECORDS;
 renderPage();
+renderProjectList();
 
-// Update Reports tab count on load
-(function() {{
-  const list = loadReports();
+// Update Reports tab count from server on load
+fetch('/list-reports').then(r => r.json()).then(list => {{
   const tab = document.getElementById('tab-reports');
   if (tab && list.length) tab.textContent = `Reports (${{list.length}})`;
-}})();
+}}).catch(() => {{}});
 
 // Hash navigation — open report if URL contains #report-{id}
 function handleHash() {{
@@ -2275,13 +2802,38 @@ handleHash();
 // ── Permalink generation ───────────────────────────────────────
 function generateReportHtml(rep) {{
   const renderedBody = marked.parse(rep.text);
-  // Extract cited record IDs from report text
+  // Extract cited record IDs from report text (full IDs + partial citation continuations)
   const cited = [];
-  const idRe = /\\b(ARENA-DLV-\\d{{4,}})\\b/g;
-  let m;
-  while ((m = idRe.exec(rep.text)) !== null) {{
-    const r = RECORD_MAP.get(m[1]);
-    if (r && !cited.find(x => x.record_id === r.record_id)) cited.push(r);
+  const seenIds = new Set();
+  function addIdToCited(id) {{
+    if (!seenIds.has(id)) {{
+      const r = RECORD_MAP.get(id);
+      if (r) {{ cited.push(r); seenIds.add(id); }}
+    }}
+  }}
+  // Match ARENA-DLV-N optionally followed by ranges/comma-lists like ", -M", " through -M", ", and -M"
+  const expandRe = /\\bARENA-DLV-(\\d+)((?:(?:\\s+through\\s+-\\d+)|(?:\\s*,\\s*(?:and\\s+)?-\\d+(?:\\s+through\\s+-\\d+)?))*)/g;
+  let em;
+  while ((em = expandRe.exec(rep.text)) !== null) {{
+    const first = parseInt(em[1]);
+    addIdToCited('ARENA-DLV-' + first);
+    const tail = em[2] || '';
+    const immRange = /^\\s+through\\s+-(\\d+)/.exec(tail);
+    const rest = immRange ? tail.slice(immRange[0].length) : tail;
+    if (immRange) {{
+      const s = first, e = parseInt(immRange[1]);
+      for (let ci = s + 1; ci <= Math.min(e, s + 50); ci++) addIdToCited('ARENA-DLV-' + ci);
+    }}
+    const itemRe = /,\\s*(?:and\\s+)?-(\\d+)(?:\\s+through\\s+-(\\d+))?/g;
+    let mx;
+    while ((mx = itemRe.exec(rest)) !== null) {{
+      if (mx[2]) {{
+        const sa = parseInt(mx[1]), ea = parseInt(mx[2]);
+        for (let cj = sa; cj <= Math.min(ea, sa + 50); cj++) addIdToCited('ARENA-DLV-' + cj);
+      }} else {{
+        addIdToCited('ARENA-DLV-' + mx[1]);
+      }}
+    }}
   }}
   const modeLabel = rep.mode === 'brief' ? 'Brief Summary' : rep.mode === 'short' ? 'Short Report' : 'Detailed Report';
   const dateStr = new Date(rep.date).toLocaleDateString('en-AU', {{day:'numeric',month:'long',year:'numeric'}});
@@ -2294,7 +2846,7 @@ function generateReportHtml(rep) {{
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${{modeLabel}} — ${{rep.filterDesc}}</title>
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"><\/script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"><\\/script>
 <style>
 *,*::before,*::after{{box-sizing:border-box}}
 body{{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f8fafc;color:#1e293b;margin:0;padding:0}}
@@ -2366,9 +2918,9 @@ function buildSrcUrl(r) {{
 // Linkify record IDs with sequential citation numbers
 const body = document.getElementById('rp-body');
 let rpHtml = body.innerHTML;
-// Expand partial citations: "ARENA-DLV-N, -M" and ranges "ARENA-DLV-N through -M"
+// Expand partial citations: "ARENA-DLV-N, -M", "through -M", ", and -M"
 rpHtml = rpHtml.replace(
-  /\\\\bARENA-DLV-(\\\\d+)((?:\\\\s+through\\\\s+-\\\\d+|(?:\\\\s*,\\\\s*-\\\\d+(?:\\\\s+through\\\\s+-\\\\d+)?))+)/g,
+  /\\\\bARENA-DLV-(\\\\d+)((?:(?:\\\\s+through\\\\s+-\\\\d+)|(?:\\\\s*,\\\\s*(?:and\\\\s+)?-\\\\d+(?:\\\\s+through\\\\s+-\\\\d+)?))+)/g,
   function(match, firstNum, tail) {{
     var ids = ['ARENA-DLV-' + firstNum];
     var immRange = /^\\\\s+through\\\\s+-(\\\\d+)/.exec(tail);
@@ -2377,7 +2929,7 @@ rpHtml = rpHtml.replace(
       var s = parseInt(firstNum), e = parseInt(immRange[1]);
       for (var i = s + 1; i <= Math.min(e, s + 50); i++) ids.push('ARENA-DLV-' + i);
     }}
-    var itemRe = /,\\\\s*-(\\\\d+)(?:\\\\s+through\\\\s+-(\\\\d+))?/g;
+    var itemRe = /,\\\\s*(?:and\\\\s+)?-(\\\\d+)(?:\\\\s+through\\\\s+-(\\\\d+))?/g;
     var mx;
     while ((mx = itemRe.exec(rest)) !== null) {{
       if (mx[2]) {{
@@ -2451,7 +3003,7 @@ document.addEventListener('click', e => {{
   if (!e.target.closest('#record-tooltip')) closeTooltip();
 }});
 document.addEventListener('keydown', e => {{ if (e.key === 'Escape') closeTooltip(); }});
-<\/script>
+<\\/script>
 </body>
 </html>`;
 }}
@@ -2467,7 +3019,17 @@ async function createPermalink(repId) {{
     const res = await fetch('/save-report', {{
       method: 'POST',
       headers: {{'Content-Type': 'application/json'}},
-      body: JSON.stringify({{ id: rep.id, html }}),
+      body: JSON.stringify({{
+        id: rep.id,
+        html,
+        meta: {{
+          filterDesc:  rep.filterDesc,
+          mode:        rep.mode,
+          date:        rep.date,
+          recordCount: rep.recordCount,
+          summary:     rep.summary || '',
+        }},
+      }}),
     }});
     const data = await res.json();
     await navigator.clipboard.writeText(data.url);
