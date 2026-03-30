@@ -1,0 +1,32 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Large data files
+pdfs/
+markdown/
+insights/
+dashboard/
+tables/
+docs/
+docx/
+old/
+
+# Generated outputs
+*.html
+download.log
+
+# Windows metadata
+*.Zone.Identifier
+*.OECustomProperty
+
+# Email files
+*.eml
+
+# Generated registries (large YAML outputs)
+ARENA_delivery_registry_*.yaml
+ARENA_insight_registry_*.yaml
+
+# PDFs
+*.pdf
