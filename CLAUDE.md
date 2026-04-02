@@ -8,10 +8,12 @@ This project extracts structured delivery insight records from 1,440 ARENA Knowl
 using the Anthropic API, producing a cleaned, harmonised registry for reference-class analysis
 and an interactive dashboard.
 
-**Current status: v2 pipeline complete + QA verified + rechecked + project matching done.
-16,931 records from 1,440 documents (+ 8 oversized). QA: 92.2% confirmed grounding, 89.6%
-classification ok (after two recheck passes with wider window). 499 ARENA projects covered
-(64.9%). Dashboard deployed to root@85.155.188.202 (/var/www/arena/).**
+**Current status: v2 pipeline complete + QA verified + rechecked + project matching done +
+taxonomy v2.0 stamped. 16,931 records from 1,440 documents (+ 8 oversized). QA: 92.2%
+confirmed grounding, 89.6% classification ok. 499 ARENA projects covered (64.9%).
+Taxonomy v2.0: arena_category (14 values, deterministic), activity_type (3 values,
+deterministic), is_consortium flag, proponent_type reclassified (10 values).
+Dashboard deployed to root@85.155.188.202 (/var/www/arena/).**
 
 ---
 
@@ -52,11 +54,15 @@ ARENA/
 │   ├── match_unassigned_projects.py         — fuzzy + Haiku batch matching of unmatched project names
 │   ├── stamp_recovered_docs.py              — stamp KB metadata onto per_doc YAMLs missing it
 │   ├── stamp_temporal_confidence.py         — flag pre-2021 time-sensitive records
+│   ├── arena_category_map.py                — taxonomy v2: category mapping + consortium reclassification
+│   ├── classify_activity_type.py            — taxonomy v2: deterministic activity type from projects CSV
+│   ├── stamp_taxonomy_v2.py                 — taxonomy v2: stamp new fields onto per_doc YAMLs
 │   └── build_dashboard.py                   — generates insights.html from per_doc YAMLs
 ├── sense_check.py                           — QA spot-check against source markdown
 ├── pilot_100_reports/
 │   ├── EXTRACTION_PROMPT.md                 — LLM extraction prompt template (v1.3, with temporal flag)
-│   └── taxonomy/ARENA_Taxonomy_v1.1.md      — core 12-field schema and allowed values
+│   ├── taxonomy/ARENA_Taxonomy_v1.1.md      — v1 schema (12 core fields, superseded)
+│   └── taxonomy/ARENA_Taxonomy_v2.0.md      — v2 schema (reference class framework, current)
 ├── insights/
 │   ├── full_run/group_001.yaml … group_150.yaml   — v1 extraction outputs (DO NOT USE)
 │   ├── per_doc/doc_0001.yaml … doc_1440.yaml      — v2 per-doc outputs (16,931 records)
@@ -128,7 +134,7 @@ python3 scripts/03b_extract_registry_per_doc.py --dry-run        # no API call
 
 ---
 
-## YAML record schema (v2 — full field list, Taxonomy v1.3)
+## YAML record schema (v2 — full field list, Taxonomy v2.0)
 
 ```yaml
 # Extracted by model — mandatory
@@ -193,6 +199,13 @@ in_arena_portfolio: true|false      # present in arena-projects-export CSV
 location: "..."                     # project location from portfolio CSV
 project_partners: "..."             # project partners from portfolio CSV
 source_page_pdf: N                  # PDF page number verified via PyMuPDF (or null)
+
+# Stamped by taxonomy v2 (stamp_taxonomy_v2.py)
+arena_category: ["Battery storage", "..."]  # list, from kb_category via ARENA_CATEGORY_MAP (14 values)
+activity_type: "Deployment"          # from projects CSV keywords (Study/Pilot/Deployment/R&D/null)
+is_consortium: true|false            # true if original proponent_type was consortium
+proponent_type_original: "..."       # pre-reclassification value (consortium records only)
+lifecycle_phase_original: "..."      # pre-remap value (variation/re-scope records only)
 ```
 
 ---
@@ -212,6 +225,7 @@ source_page_pdf: N                  # PDF page number verified via PyMuPDF (or n
 | QA verify | `04b_verify_extractions.py --batch submit/collect` | Haiku batch, ~$25 for full corpus |
 | QA recheck | `04c_recheck_flagged.py --run` | Re-run fabricated/unsupported with wider window (~$3) |
 | Project matching | `match_unassigned_projects.py --pass1 --pass2-submit/collect` | Fuzzy + Haiku; MAX_TOKENS=2048 |
+| **Taxonomy v2** | `stamp_taxonomy_v2.py` | Stamps arena_category, activity_type, is_consortium; reclassifies consortium; remaps lifecycle_phase |
 | Dashboard | `build_dashboard.py` | Reads `per_doc/` + `per_doc_qa/`, outputs `dashboard/insights.html` |
 | Deploy | `scp dashboard/insights.html root@85.155.188.202:/var/www/arena/index.html` | |
 | QA spot-check | `sense_check.py` | Stratified sample, ~200 records recommended |
@@ -233,13 +247,15 @@ scp dashboard/insights.html root@85.155.188.202:/var/www/arena/index.html  # dep
 
 **Tabs:**
 - **Delivery Records** — filterable card view with project panel, full-text search, synthesis
-- **Analysis** — 8 charts (failure modes, lifecycle phase, technology, outcomes, severity,
-  co-occurrence) + 4 reference class matrix tables (Matrix A/B/C + discontinuation risk)
+- **Analysis** — 8 charts (failure modes by ARENA category, lifecycle phase, outcomes, severity,
+  co-occurrence) + 4 reference class matrix tables (Matrix 1: arena_category × activity_type,
+  Matrix 2: arena_category × lifecycle_phase, Matrix 3: proponent_type + consortium adjustment,
+  Matrix 4: discontinuation risk)
 - **Benchmarks** — LCOE, capex, LCOH, capacity factor, abatement cost, storage performance tables
 - **Reports** — (stub)
 
-**Filters:** failure mode, outcome, project type, scale, proponent, lifecycle phase,
-technology domain, severity, transferability, QA verdict, full-text search.
+**Filters:** ARENA category, activity type, failure mode, outcome, proponent, lifecycle phase,
+severity, consortium (yes/no), transferability, QA verdict, full-text search.
 
 ---
 
