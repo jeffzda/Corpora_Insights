@@ -8,6 +8,10 @@
 
 - [ ] **Classification recheck for ~49 remaining `wrong` records** — one-per-document scattered records not yet addressed by full-doc passes. Run `04c_recheck_flagged.py --field classification_verdict --verdicts wrong --batch submit`.
 
+## Registry Maintenance
+
+- [ ] **Monthly KB export refresh** — pull a fresh `arena-kb-export_XXXXXXXXXX.csv`, diff against previous with the pattern used on 2026-04-02 to identify new documents. There is a ~weeks-to-months lag between ARENA publishing documents and them appearing in the KB catalogue, so monthly checks will catch new additions reliably. Extract lessons learnt reports as a priority. 31 new documents were found in the April 2026 refresh — 14 are lessons learnt reports not yet in the registry.
+
 ## Dashboard
 
 - [ ] **Portfolio coverage view** — show which of the 769 ARENA projects have KB documents vs not, filterable by year/type.
