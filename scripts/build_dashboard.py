@@ -594,14 +594,27 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
   .proj-sel-clear:hover {{ color: #4f46e5; }}
 
   .proj-list {{ flex: 1; overflow-y: auto; }}
-  .proj-item {{ padding: 10px 14px 10px 13px; border-bottom: 1px solid #f1f5f9; border-left: 3px solid transparent; cursor: pointer; transition: background 0.1s; }}
-  .proj-item:hover {{ background: #f8fafc; }}
+  .proj-item {{ border-bottom: 1px solid #f1f5f9; border-left: 3px solid transparent; transition: border-color 0.1s; }}
   .proj-item.selected {{ background: #eef2ff; border-left-color: #6366f1; }}
+  .proj-item-header {{ padding: 10px 14px 10px 13px; cursor: pointer; transition: background 0.1s; }}
+  .proj-item-header:hover {{ background: #f8fafc; }}
+  .proj-item.selected .proj-item-header:hover {{ background: #e0e7ff; }}
+  .proj-item-name-row {{ display: flex; align-items: flex-start; gap: 4px; }}
+  .proj-arrow {{ display: inline-block; font-size: 8px; color: #94a3b8; margin-top: 3px; flex-shrink: 0; transition: transform 0.15s; line-height: 1; }}
+  .proj-item.expanded .proj-arrow {{ transform: rotate(90deg); }}
   .proj-item-name {{ font-size: 12px; font-weight: 600; color: #1e293b; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 3px; }}
   .proj-item-meta {{ font-size: 10px; color: #64748b; line-height: 1.6; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }}
   .proj-item-footer {{ display: flex; justify-content: space-between; align-items: center; margin-top: 4px; gap: 6px; }}
   .proj-item-loc {{ font-size: 10px; color: #94a3b8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1; min-width: 0; }}
   .proj-item-count {{ font-size: 11px; font-weight: 700; color: #6366f1; background: #eef2ff; padding: 2px 7px; border-radius: 12px; flex-shrink: 0; white-space: nowrap; }}
+  .proj-docs {{ display: none; border-top: 1px solid #e2e8f0; }}
+  .proj-item.expanded .proj-docs {{ display: block; }}
+  .proj-doc-item {{ display: flex; align-items: center; gap: 8px; padding: 6px 12px 6px 26px; cursor: pointer; border-bottom: 1px solid #f1f5f9; background: #fafbff; transition: background 0.1s; }}
+  .proj-doc-item:last-child {{ border-bottom: none; }}
+  .proj-doc-item:hover {{ background: #eef2ff; }}
+  .proj-doc-item.selected {{ background: #e0e7ff; }}
+  .proj-doc-title {{ font-size: 10px; color: #475569; line-height: 1.4; flex: 1; min-width: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }}
+  .proj-doc-count {{ font-size: 10px; font-weight: 700; color: #818cf8; background: #eef2ff; padding: 1px 5px; border-radius: 10px; flex-shrink: 0; white-space: nowrap; }}
 
   .records-panel {{ flex: 1; overflow-y: auto; display: flex; flex-direction: column; padding: 16px 20px; gap: 0; min-width: 0; }}
 
@@ -1483,6 +1496,8 @@ RECORDS.forEach(r => {{
 }});
 
 let _selectedProjects = new Set();
+let _expandedProjects = new Set();
+let _selectedDoc = null; // {{ proj, title }} | null
 
 function getMostCommon(recs, field) {{
   const counts = {{}};
@@ -1495,32 +1510,38 @@ function renderProjectList() {{
   const search = (document.getElementById('proj-search').value || '').toLowerCase();
   const f = getFilters();
 
-  const projMatches = new Map();
+  // Build proj → docs → records map
+  const projDocs = new Map();
   RECORDS.forEach(r => {{
     if (!matchesDimFilters(r, f)) return;
     const proj = r.kb_associated_project || '(No project)';
-    if (!projMatches.has(proj)) projMatches.set(proj, []);
-    projMatches.get(proj).push(r);
+    if (!projDocs.has(proj)) projDocs.set(proj, new Map());
+    const title = r.source_title || '(Unknown document)';
+    if (!projDocs.get(proj).has(title)) projDocs.get(proj).set(title, []);
+    projDocs.get(proj).get(title).push(r);
   }});
 
-  let projects = [...projMatches.entries()];
+  let projects = [...projDocs.entries()].map(([name, docsMap]) => [name, docsMap, [...docsMap.values()].flat()]);
   if (search) projects = projects.filter(([name]) => name.toLowerCase().includes(search));
-  projects.sort((a, b) => b[1].length - a[1].length);
+  projects.sort((a, b) => b[2].length - a[2].length);
 
   const badge = document.getElementById('proj-count-badge');
   if (badge) {{
     const projCount = projects.length + ' project' + (projects.length !== 1 ? 's' : '');
-    const selCount = _selectedProjects.size;
-    if (selCount > 0) {{
-      badge.innerHTML = `<span>${{projCount}}</span><span class="proj-sel-clear" onclick="clearProjectSelection()">${{selCount}} selected · clear</span>`;
+    if (_selectedDoc) {{
+      badge.innerHTML = `<span>${{projCount}}</span><span class="proj-sel-clear" onclick="clearProjectSelection()">1 report selected · clear</span>`;
+    }} else if (_selectedProjects.size > 0) {{
+      badge.innerHTML = `<span>${{projCount}}</span><span class="proj-sel-clear" onclick="clearProjectSelection()">${{_selectedProjects.size}} selected · clear</span>`;
     }} else {{
       badge.textContent = projCount;
     }}
   }}
 
   const list = document.getElementById('proj-list');
-  list.innerHTML = projects.map(([name, recs]) => {{
+  list.innerHTML = projects.map(([name, docsMap, recs]) => {{
     const isSelected = _selectedProjects.has(name);
+    const isExpanded = _expandedProjects.has(name);
+    const isDocSel   = _selectedDoc && _selectedDoc.proj === name;
     const projType  = getMostCommon(recs, 'project_type') || '';
     const projScale = getMostCommon(recs, 'project_scale_band') || '';
     const proponent = getMostCommon(recs, 'proponent_type') || '';
@@ -1529,33 +1550,74 @@ function renderProjectList() {{
     const safeAttr  = name.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
     const meta1 = [projType, projScale].filter(Boolean).join(' · ');
     const meta2 = [proponent, tech].filter(Boolean).join(' · ');
-    return `<div class="proj-item ${{isSelected ? 'selected' : ''}}" data-proj="${{safeAttr}}" onclick="selectProject(this.dataset.proj)">
-      <div class="proj-item-name">${{name}}</div>
-      ${{meta1 ? `<div class="proj-item-meta">${{meta1}}</div>` : ''}}
-      ${{meta2 ? `<div class="proj-item-meta">${{meta2}}</div>` : ''}}
-      <div class="proj-item-footer">
-        <span class="proj-item-loc">${{location}}</span>
-        <span class="proj-item-count">${{recs.length}}</span>
+
+    const docs = [...docsMap.entries()].sort((a, b) => b[1].length - a[1].length);
+    const docsHtml = docs.map(([title, drecs]) => {{
+      const isSel = isDocSel && _selectedDoc.title === title;
+      const safeTitle = title.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+      return `<div class="proj-doc-item ${{isSel ? 'selected' : ''}}" data-proj="${{safeAttr}}" data-title="${{safeTitle}}" onclick="event.stopPropagation(); selectDoc(this.dataset.proj, this.dataset.title)">
+        <span class="proj-doc-title">${{title}}</span>
+        <span class="proj-doc-count">${{drecs.length}}</span>
+      </div>`;
+    }}).join('');
+
+    const classes = [(isSelected || isDocSel) ? 'selected' : '', isExpanded ? 'expanded' : ''].filter(Boolean).join(' ');
+    return `<div class="proj-item ${{classes}}">
+      <div class="proj-item-header" data-proj="${{safeAttr}}" onclick="selectProject(this.dataset.proj)">
+        <div class="proj-item-name-row">
+          <span class="proj-arrow">&#9654;</span>
+          <div class="proj-item-name">${{name}}</div>
+        </div>
+        ${{meta1 ? `<div class="proj-item-meta">${{meta1}}</div>` : ''}}
+        ${{meta2 ? `<div class="proj-item-meta">${{meta2}}</div>` : ''}}
+        <div class="proj-item-footer">
+          <span class="proj-item-loc">${{location}}</span>
+          <span class="proj-item-count">${{recs.length}}</span>
+        </div>
       </div>
+      <div class="proj-docs">${{docsHtml}}</div>
     </div>`;
   }}).join('');
 }}
 
 function selectProject(name) {{
-  if (_selectedProjects.has(name)) {{
+  if (_selectedProjects.has(name) && !_selectedDoc) {{
+    // already selected at project level — deselect and collapse
     _selectedProjects.delete(name);
+    _expandedProjects.delete(name);
   }} else {{
+    // select and expand (also upgrades from doc-level selection)
     _selectedProjects.add(name);
+    _expandedProjects.add(name);
+  }}
+  _selectedDoc = null;
+  renderProjectList();
+  applyFilters();
+  const rp = document.querySelector('.records-panel');
+  if (rp) rp.scrollTop = 0;
+}}
+
+function selectDoc(proj, title) {{
+  if (_selectedDoc && _selectedDoc.proj === proj && _selectedDoc.title === title) {{
+    // clicking the same doc again → upgrade to project-level selection
+    _selectedDoc = null;
+    _selectedProjects.add(proj);
+  }} else {{
+    _selectedDoc = {{ proj, title }};
+    _selectedProjects.clear();
+    _selectedProjects.add(proj); // keep parent project highlighted
+    _expandedProjects.add(proj);
   }}
   renderProjectList();
   applyFilters();
-  // Scroll records panel to top when first selection made
   const rp = document.querySelector('.records-panel');
   if (rp) rp.scrollTop = 0;
 }}
 
 function clearProjectSelection() {{
   _selectedProjects.clear();
+  _expandedProjects.clear();
+  _selectedDoc = null;
   renderProjectList();
   applyFilters();
 }}
@@ -1702,7 +1764,9 @@ function applyFilters() {{
   const f = getFilters();
   const filtered = RECORDS.filter(r => {{
     const proj = r.kb_associated_project || '(No project)';
-    if (_selectedProjects.size > 0 && !_selectedProjects.has(proj)) return false;
+    if (_selectedDoc) {{
+      if (proj !== _selectedDoc.proj || r.source_title !== _selectedDoc.title) return false;
+    }} else if (_selectedProjects.size > 0 && !_selectedProjects.has(proj)) return false;
     return matchesDimFilters(r, f);
   }});
   renderCards(filtered);
@@ -1719,6 +1783,8 @@ function changePage(delta) {{
 function clearFilters() {{
   ALL_FILTER_IDS.forEach(id => {{ const el = document.getElementById(id); if (el) el.value = ''; }});
   _selectedProjects.clear();
+  _expandedProjects.clear();
+  _selectedDoc = null;
   applyFilters();
 }}
 
@@ -2544,7 +2610,8 @@ const SYNTH_MAX = 500;
 function getActiveFilterDesc() {{
   const f = getFilters();
   const parts = [];
-  if (_selectedProjects.size === 1) parts.push(`project: ${{[..._selectedProjects][0]}}`);
+  if (_selectedDoc) parts.push(`report: ${{_selectedDoc.title}} (${{_selectedDoc.proj}})`);
+  else if (_selectedProjects.size === 1) parts.push(`project: ${{[..._selectedProjects][0]}}`);
   else if (_selectedProjects.size > 1) parts.push(`${{_selectedProjects.size}} projects selected`);
   if (f.type)     parts.push(`project type: ${{f.type}}`);
   if (f.tech)     parts.push(`technology: ${{f.tech}}`);
