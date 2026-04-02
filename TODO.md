@@ -10,7 +10,7 @@
 
 ## Registry Maintenance
 
-- [ ] **Monthly KB export refresh** — pull a fresh `arena-kb-export_XXXXXXXXXX.csv`, diff against previous with the pattern used on 2026-04-02 to identify new documents. There is a ~weeks-to-months lag between ARENA publishing documents and them appearing in the KB catalogue, so monthly checks will catch new additions reliably. Extract lessons learnt reports as a priority. 31 new documents were found in the April 2026 refresh — 14 are lessons learnt reports not yet in the registry.
+- [ ] **Monthly KB export refresh** — manually visit https://arena.gov.au/knowledge-bank/, click Export results before applying any filters, save the CSV. Diff against previous export to identify new documents (use the pattern from 2026-04-02 diff script). There is a ~weeks-to-months lag between ARENA publishing and KB cataloguing, so monthly checks will catch new additions reliably. Extract lessons learnt reports as a priority. 31 new documents found in April 2026 refresh — 14 are lessons learnt reports not yet in the registry. Export is JavaScript form-based, cannot be automated.
 
 ## Dashboard
 
