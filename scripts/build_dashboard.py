@@ -633,6 +633,7 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
   .card-id {{ font-size: 10px; font-weight: 700; color: #94a3b8; letter-spacing: 0.5px; white-space: nowrap; }}
   .card-year {{ font-size: 10px; color: #94a3b8; white-space: nowrap; }}
   .card-project {{ font-size: 13px; font-weight: 600; color: #1e293b; line-height: 1.4; }}
+  .card-source {{ font-size: 10px; color: #94a3b8; line-height: 1.4; margin-top: 2px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }}
   .card-chips {{ display: flex; flex-wrap: wrap; gap: 4px; margin-top: 2px; }}
   .chip {{ font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 20px; white-space: nowrap; color: white; }}
   .chip-scale {{ background: #0891b2; }}
@@ -1474,6 +1475,7 @@ function renderPage() {{
         <div class="card-top-right">${{corrBadge}}<span class="card-year">${{year}}</span>${{srcBtn}}</div>
       </div>
       <div class="card-project">${{r.project_name || r.source_title}}</div>
+      ${{r.source_title ? `<div class="card-source">${{r.source_title}}</div>` : ''}}
       ${{chips ? `<div class="card-chips">${{chips}}</div>` : ''}}
       <div class="card-what">${{r.what_happened}}</div>
       ${{lessonEl}}
