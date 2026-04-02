@@ -73,6 +73,21 @@ QA_DIR = ROOT / "insights" / "per_doc_qa"
 _NO_FAIL = "no major failure stated"
 _DISC_OC = "discontinued/not progressed"
 
+_AC_ORDER = [
+    "Solar PV", "Battery storage", "Distributed energy resources", "Hydrogen",
+    "Demand response", "Electric vehicles", "Industrial renewables",
+    "Grid stability", "Hybrid technologies", "Solar thermal",
+    "Bioenergy", "Wind", "Pumped hydro", "Off grid",
+]
+_AT_ORDER = [
+    "Study / feasibility", "Pilot / demonstration", "Deployment",
+]
+_PH_ORDER = [
+    "concept/feasibility", "development/design", "approvals/contracting",
+    "procurement", "construction/installation", "commissioning/integration",
+    "operations", "close-out/post-project review",
+]
+# Legacy orderings kept for backwards compatibility in profile loading
 _PT_ORDER = [
     "DER/customer-side", "software/data/digital", "industrial decarbonisation",
     "storage", "generation", "transport electrification", "manufacturing/supply chain",
@@ -86,11 +101,6 @@ _TD_ORDER = [
     "solar PV", "battery storage", "DER", "hydrogen", "EV", "demand response",
     "bioenergy", "solar thermal", "grid/system stability", "wind", "pumped hydro",
     "industrial renewables", "hybrid systems", "other",
-]
-_PH_ORDER = [
-    "concept/feasibility", "development/design", "approvals/contracting",
-    "procurement", "construction/installation", "commissioning/integration",
-    "operations", "variation/re-scope", "close-out/post-project review",
 ]
 
 
@@ -180,10 +190,21 @@ def load_project_profiles() -> list[dict]:
                 )
                 phase_failures[ph] = c.most_common(1)[0][0] if c else None
 
+        # arena_category: flatten list field, take most common
+        ac_counter = Counter()
+        for r in records:
+            for cat in (r.get("arena_category") or []):
+                ac_counter[cat] += 1
+        arena_cat = ac_counter.most_common(1)[0][0] if ac_counter else None
+
         profiles.append({
+            "arena_category":    arena_cat,
+            "activity_type":     majority("activity_type"),
+            "proponent_type":    majority("proponent_type"),
+            "is_consortium":     any(r.get("is_consortium") for r in records),
+            # Legacy fields for backwards compat
             "project_type":      majority("project_type"),
             "project_scale_band": majority("project_scale_band"),
-            "proponent_type":    majority("proponent_type"),
             "technology_domain": majority("technology_domain"),
             "had_moderate_plus": any(
                 (r.get("issue_severity") or "") in _SEV_HIGH_SET for r in records
@@ -211,13 +232,21 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
     """
 
     # ── Group profiles ────────────────────────────────────────────────────────
-    pt_sb: dict = defaultdict(list)
+    # Matrix 1: arena_category × activity_type
+    ac_at: dict = defaultdict(list)
     for p in profiles:
-        pt_sb[(p["project_type"] or "", p["project_scale_band"] or "")].append(p)
+        ac = p.get("arena_category") or ""
+        at = p.get("activity_type") or ""
+        if ac and at and at != "R&D":  # Exclude R&D from matrices
+            ac_at[(ac, at)].append(p)
 
     ptype_profiles: dict = defaultdict(list)
     for p in profiles:
         ptype_profiles[p["proponent_type"] or "null"].append(p)
+
+    # Consortium flag grouping
+    cons_yes = [p for p in profiles if p.get("is_consortium")]
+    cons_no = [p for p in profiles if not p.get("is_consortium")]
 
     n_projects = len(profiles)
     corpus_adv = sum(1 for p in profiles if p["had_moderate_plus"]) / n_projects if n_projects else 0.0
@@ -235,35 +264,31 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
 
     # ── Pre-pass: collect all cell rates for vmin/vmax ────────────────────────
     all_rates = []
-    for pt in _PT_ORDER:
-        for sb in _SB_ORDER:
-            profs = pt_sb.get((pt, sb), [])
+    for ac in _AC_ORDER:
+        for at in _AT_ORDER:
+            profs = ac_at.get((ac, at), [])
             if len(profs) >= min_n:
                 all_rates.append(proj_adv(profs))
     for profs in ptype_profiles.values():
         if len(profs) >= min_n:
             all_rates.append(proj_adv(profs))
-    # Matrix B rates added after computation below
 
-    # Also pre-compute Matrix B cells
-    # For each (tech_domain, phase): projects in that domain that covered that phase
-    # Adv% = % of those that had a moderate+ issue AT that phase specifically
-    td_ph_cells: dict = {}
+    # Matrix 2: arena_category × lifecycle_phase
+    ac_ph_cells: dict = {}
     min_n_b = 5
-    for td in _TD_ORDER:
-        td_profs = [p for p in profiles if p["technology_domain"] == td]
+    for ac in _AC_ORDER:
+        ac_profs = [p for p in profiles if p.get("arena_category") == ac]
         for ph in _PH_ORDER:
-            covered = [p for p in td_profs if ph in p["phases_covered"]]
+            covered = [p for p in ac_profs if ph in p["phases_covered"]]
             if len(covered) < min_n_b:
                 continue
             adv = sum(1 for p in covered if ph in p["phase_failures"]) / len(covered)
-            # top failure mode at this phase across covered projects
             fm_c = Counter(
                 p["phase_failures"][ph] for p in covered
                 if ph in p["phase_failures"] and p["phase_failures"][ph]
             )
             fm1 = fm_c.most_common(1)[0][0] if fm_c else "—"
-            td_ph_cells[(td, ph)] = (len(covered), adv, fm1)
+            ac_ph_cells[(ac, ph)] = (len(covered), adv, fm1)
             all_rates.append(adv)
 
     vmin = min(all_rates) if all_rates else 0.0
@@ -273,11 +298,11 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
         bg, fg = _viridis_cell(rate, vmin, vmax)
         return f'background:{bg};color:{fg}'
 
-    # ── Matrix A: project_type × scale_band ──────────────────────────────────
+    # ── Matrix 1: arena_category × activity_type ───────────────────────────
     ma_rows = []
-    for pt in _PT_ORDER:
-        for sb in _SB_ORDER:
-            profs = pt_sb.get((pt, sb), [])
+    for ac in _AC_ORDER:
+        for at in _AT_ORDER:
+            profs = ac_at.get((ac, at), [])
             if len(profs) < min_n:
                 continue
             adv = proj_adv(profs)
@@ -286,7 +311,7 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
             fm1 = fms[0] if fms else "—"
             fm2 = fms[1] if len(fms) > 1 else "—"
             ma_rows.append(
-                f'<tr><td>{pt}</td><td>{sb}</td>'
+                f'<tr><td>{ac}</td><td>{at}</td>'
                 f'<td class="rcm-num">{len(profs)}</td>'
                 f'<td class="rcm-num rcm-rate" style="{adv_cell(adv)}">{_pct(adv)}</td>'
                 f'<td class="rcm-num">{_pct(disc)}</td>'
@@ -298,29 +323,30 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
     ma_empty = '<tr><td colspan="7" class="rcm-empty">No cells meet minimum n threshold</td></tr>'
     ma_html = (
         f'<div class="an-card an-wide">'
-        f'<div class="an-card-title">Matrix A — Delivery Archetype Reference Classes</div>'
+        f'<div class="an-card-title">Matrix 1 — Technology × Activity Type</div>'
         f'<div class="an-card-sub">'
         f'{n_projects:,} projects &nbsp;·&nbsp; '
         f'Corpus: <strong>{_pct(corpus_adv)}</strong> had moderate+ issues, '
         f'<strong>{_pct(corpus_disc)}</strong> discontinued &nbsp;·&nbsp; '
         f'n = projects (not records) &nbsp;·&nbsp; cells &lt; {min_n} omitted &nbsp;·&nbsp; '
+        f'R&amp;D projects excluded &nbsp;·&nbsp; '
         f'colour scale normalised to {_pct(vmin)}–{_pct(vmax)}</div>'
         f'<div class="rcm-scroll"><table class="rcm-table">'
-        f'<thead><tr><th>Project type</th><th>Scale band</th><th>Projects</th>'
+        f'<thead><tr><th>ARENA category</th><th>Activity type</th><th>Projects</th>'
         f'<th>Adv%</th><th>Disc%</th><th>Top failure mode</th><th>2nd failure mode</th></tr></thead>'
         f'<tbody>{"".join(ma_rows) if ma_rows else ma_empty}</tbody>'
         f'</table></div></div>'
     )
 
-    # ── Matrix B: technology_domain × lifecycle_phase ─────────────────────────
+    # ── Matrix 2: arena_category × lifecycle_phase ──────────────────────────
     mb_rows = []
-    for td in _TD_ORDER:
+    for ac in _AC_ORDER:
         for ph in _PH_ORDER:
-            if (td, ph) not in td_ph_cells:
+            if (ac, ph) not in ac_ph_cells:
                 continue
-            n_cov, adv, fm1 = td_ph_cells[(td, ph)]
+            n_cov, adv, fm1 = ac_ph_cells[(ac, ph)]
             mb_rows.append(
-                f'<tr><td>{td}</td><td>{ph}</td>'
+                f'<tr><td>{ac}</td><td>{ph}</td>'
                 f'<td class="rcm-num">{n_cov}</td>'
                 f'<td class="rcm-num rcm-rate" style="{adv_cell(adv)}">{_pct(adv)}</td>'
                 f'<td class="rcm-fm">{fm1}</td>'
@@ -330,20 +356,20 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
     mb_empty = '<tr><td colspan="5" class="rcm-empty">No cells meet minimum n threshold</td></tr>'
     mb_html = (
         f'<div class="an-card an-wide">'
-        f'<div class="an-card-title">Matrix B — Phase Risk Watch-list</div>'
+        f'<div class="an-card-title">Matrix 2 — Phase Risk Watch-list</div>'
         f'<div class="an-card-sub">'
-        f'Technology domain × lifecycle phase. '
+        f'ARENA category × lifecycle phase. '
         f'n = projects that covered that phase. '
         f'Adv% = % with a moderate+ issue at that specific phase. '
         f'Cells &lt; {min_n_b} omitted.</div>'
         f'<div class="rcm-scroll"><table class="rcm-table">'
-        f'<thead><tr><th>Technology domain</th><th>Lifecycle phase</th>'
+        f'<thead><tr><th>ARENA category</th><th>Lifecycle phase</th>'
         f'<th>Projects</th><th>Adv%</th><th>Watch for</th></tr></thead>'
         f'<tbody>{"".join(mb_rows) if mb_rows else mb_empty}</tbody>'
         f'</table></div></div>'
     )
 
-    # ── Matrix C: proponent_type ──────────────────────────────────────────────
+    # ── Matrix 3: proponent_type + consortium adjustment ─────────────────────
     mc_data = sorted(
         [(pt, profs) for pt, profs in ptype_profiles.items() if len(profs) >= min_n],
         key=lambda x: proj_adv(x[1]),
@@ -366,38 +392,57 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
             f'</tr>'
         )
 
+    # Consortium governance adjustment row
+    cons_adj_html = ""
+    if len(cons_yes) >= min_n and len(cons_no) >= min_n:
+        adv_yes = proj_adv(cons_yes)
+        adv_no = proj_adv(cons_no)
+        uplift = adv_yes - adv_no
+        up_sign = "+" if uplift >= 0 else ""
+        up_col = "#dc2626" if uplift >= 0.03 else ("#16a34a" if uplift <= -0.03 else "#64748b")
+        cons_adj_html = (
+            f'<tr style="border-top:2px solid #cbd5e1;background:#f8fafc">'
+            f'<td><em>Consortium governance adjustment</em></td>'
+            f'<td class="rcm-num">{len(cons_yes)} vs {len(cons_no)}</td>'
+            f'<td class="rcm-num">{_pct(adv_yes)} vs {_pct(adv_no)}</td>'
+            f'<td class="rcm-num" style="color:{up_col};font-weight:600">{up_sign}{round(100 * uplift, 1):+.1f}pp</td>'
+            f'<td class="rcm-num">{_pct(proj_disc(cons_yes))} vs {_pct(proj_disc(cons_no))}</td>'
+            f'<td class="rcm-fm">governance/coordination failure</td>'
+            f'</tr>'
+        )
+
     mc_empty = '<tr><td colspan="6" class="rcm-empty">Insufficient data</td></tr>'
     mc_html = (
         f'<div class="an-card an-wide">'
-        f'<div class="an-card-title">Matrix C — Proponent Type Adjustment Factor</div>'
+        f'<div class="an-card-title">Matrix 3 — Proponent Type Adjustment Factor</div>'
         f'<div class="an-card-sub">Corpus baseline: <strong>{_pct(corpus_adv)}</strong>.'
         f' Red adjustment = above baseline, green = below.</div>'
         f'<div class="rcm-scroll"><table class="rcm-table">'
         f'<thead><tr><th>Proponent type</th><th>Projects</th><th>Adv%</th>'
         f'<th>Adjustment</th><th>Disc%</th><th>Primary risk</th></tr></thead>'
-        f'<tbody>{"".join(mc_rows) if mc_rows else mc_empty}</tbody>'
+        f'<tbody>{"".join(mc_rows) if mc_rows else mc_empty}{cons_adj_html}</tbody>'
         f'</table></div></div>'
     )
 
     # ── Discontinuation risk summary ──────────────────────────────────────────
     disc_data = []
-    for (pt, sb), profs in pt_sb.items():
+    for (ac, at), profs in ac_at.items():
         if len(profs) < min_n:
             continue
         dr = proj_disc(profs)
         if 100 * dr >= 3.0:
             fms = proj_top_fms(profs, 1)
-            disc_data.append((dr, pt, sb, len(profs), fms[0] if fms else "—"))
+            disc_data.append((dr, ac, at, len(profs), fms[0] if fms else "—"))
     disc_data.sort(reverse=True)
 
     disc_vmin = disc_data[-1][0] if disc_data else 0.0
     disc_vmax = disc_data[0][0] if disc_data else 1.0
 
     disc_rows = []
-    for dr, pt, sb, n, fm1 in disc_data:
+    for dr, ac, at, n, fm1 in disc_data:
         bg, fg = _viridis_cell(dr, disc_vmin, disc_vmax)
         disc_rows.append(
-            f'<tr><td><strong>{pt}</strong> &times; {sb}</td>'
+            f'<tr><td><strong>{ac}</strong> &times; {at}</td>'
             f'<td class="rcm-num">{n}</td>'
             f'<td class="rcm-num rcm-rate" style="background:{bg};color:{fg}">{_pct(dr)}</td>'
             f'<td class="rcm-fm">{fm1}</td>'
@@ -516,16 +561,20 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
     arena_root = str(ROOT).replace("\\", "/")
 
     failure_modes = distinct_sorted(records, "failure_mode")
-    project_types = distinct_sorted(records, "project_type")
     proponent_types = distinct_sorted(records, "proponent_type")
     outcome_classes = distinct_sorted(records, "outcome_class")
     lifecycle_phases = distinct_sorted(records, "lifecycle_phase")
-    tech_domains = distinct_sorted(records, "technology_domain")
-    scale_bands = distinct_sorted(records, "project_scale_band")
     severity_levels = distinct_sorted(records, "issue_severity")
     transferability_vals = distinct_sorted(records, "transferability")
     qa_verdicts = distinct_sorted(records, "qa_verdict")
     qa_classifications = distinct_sorted(records, "qa_classification")
+    # New taxonomy v2 fields
+    arena_categories = sorted({c for r in records for c in (r.get("arena_category") or []) if c})
+    activity_types = sorted({r.get("activity_type") for r in records if r.get("activity_type")})
+    # Legacy fields kept for card rendering
+    project_types = distinct_sorted(records, "project_type")
+    tech_domains = distinct_sorted(records, "technology_domain")
+    scale_bands = distinct_sorted(records, "project_scale_band")
 
     def options(values):
         return "\n".join(f'<option value="{v}">{v}</option>' for v in values)
@@ -893,14 +942,14 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
   </div>
   <div class="filter-bar">
     <div class="fi fi-search"><label>Search records</label><input id="search" type="text" placeholder="Keywords…"></div>
+    <div class="fi"><label>ARENA category</label><select id="f-category"><option value="">All categories</option>{options(arena_categories)}</select></div>
+    <div class="fi"><label>Activity type</label><select id="f-activity"><option value="">All activities</option>{options(activity_types)}</select></div>
     <div class="fi"><label>Failure mode</label><select id="f-failure"><option value="">All failures</option>{options(failure_modes)}</select></div>
     <div class="fi"><label>Outcome</label><select id="f-outcome"><option value="">All outcomes</option>{options(outcome_classes)}</select></div>
-    <div class="fi"><label>Project type</label><select id="f-type"><option value="">All types</option>{options(project_types)}</select></div>
-    <div class="fi"><label>Scale</label><select id="f-scale"><option value="">All scales</option>{options(scale_bands)}</select></div>
     <div class="fi"><label>Proponent</label><select id="f-proponent"><option value="">All proponents</option>{options(proponent_types)}</select></div>
     <div class="fi"><label>Lifecycle phase</label><select id="f-phase"><option value="">All phases</option>{options(lifecycle_phases)}</select></div>
-    <div class="fi"><label>Technology</label><select id="f-tech"><option value="">All technologies</option>{options(tech_domains)}</select></div>
     <div class="fi"><label>Severity</label><select id="f-severity"><option value="">All severities</option>{options(severity_levels)}</select></div>
+    <div class="fi"><label>Consortium</label><select id="f-consortium"><option value="">All</option><option value="true">Consortium only</option><option value="false">Non-consortium</option></select></div>
     <div class="fi"><label>Transferability</label><select id="f-transferability"><option value="">All</option>{options(transferability_vals)}</select></div>
     <div class="fi"><label>QA grounding</label><select id="f-qa"><option value="">All</option>{options(qa_verdicts)}</select></div>
     <div class="fi"><label>QA classification</label><select id="f-qa-class"><option value="">All</option>{options(qa_classifications)}</select></div>
@@ -966,13 +1015,13 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
         <canvas id="an-fm-freq"></canvas>
       </div>
       <div class="an-card">
-        <div class="an-card-title">Failure rate by project type</div>
+        <div class="an-card-title">Failure rate by ARENA category</div>
         <div class="an-card-sub">% of records with any failure mode, by delivery archetype</div>
         <canvas id="an-type-fail"></canvas>
       </div>
       <div class="an-card">
-        <div class="an-card-title">Failure modes by technology domain</div>
-        <div class="an-card-sub">Top 8 technology domains — stacked by failure type</div>
+        <div class="an-card-title">Failure modes by ARENA category</div>
+        <div class="an-card-sub">Top 10 categories — stacked by failure type</div>
         <canvas id="an-tech-fm"></canvas>
       </div>
       <div class="an-card">
@@ -1195,8 +1244,8 @@ document.addEventListener('click', e => {{
     const isCol = IS_COLOURS[r.issue_severity] || '#94a3b8';
     const srcUrl = buildSrcUrl(r);
     let chips = '';
-    if (r.project_scale_band) chips += `<span class="chip chip-scale">${{r.project_scale_band}}</span>`;
-    if (r.technology_domain)  chips += `<span class="chip chip-tech">${{r.technology_domain}}</span>`;
+    if (r.arena_category && r.arena_category.length) r.arena_category.forEach(c => {{ chips += `<span class="chip chip-tech">${{c}}</span>`; }});
+    if (r.activity_type) chips += `<span class="chip chip-scale">${{r.activity_type}}</span>`;
     const year = r.publish_date ? r.publish_date.slice(0,4) : (r.kb_year || '');
     _tooltip.innerHTML = `
       <div class="rt-header">
@@ -1456,10 +1505,11 @@ function renderPage() {{
     const corrBadge = (r.corroboration_count > 1)
       ? `<span class="corroboration-badge" title="Corroborated across ${{r.corroboration_count}} source records">×${{r.corroboration_count}}</span>`
       : '';
-    // Project-level chips (scale + tech) — shown under project name
+    // Project-level chips — arena_category + activity_type + consortium flag
     let chips = '';
-    if (r.project_scale_band) chips += `<span class="chip chip-scale">${{r.project_scale_band}}</span>`;
-    if (r.technology_domain)  chips += `<span class="chip chip-tech">${{r.technology_domain}}</span>`;
+    if (r.arena_category && r.arena_category.length) r.arena_category.forEach(c => {{ chips += `<span class="chip chip-tech">${{c}}</span>`; }});
+    if (r.activity_type) chips += `<span class="chip chip-scale">${{r.activity_type}}</span>`;
+    if (r.is_consortium) chips += `<span class="chip" style="background:#fef3c7;color:#92400e;border-color:#fcd34d">Consortium</span>`;
     // Record-level footer items — labelled
     const footerItems = [];
     if (r.lifecycle_phase)  footerItems.push(['Stage',    `<span class="badge" style="background:#64748b;color:white">${{r.lifecycle_phase}}</span>`]);
@@ -1484,7 +1534,7 @@ function renderPage() {{
   }});
 }}
 
-const ALL_FILTER_IDS = ['search','f-failure','f-outcome','f-type','f-scale','f-proponent','f-phase','f-tech','f-severity','f-transferability','f-qa','f-qa-class'];
+const ALL_FILTER_IDS = ['search','f-category','f-activity','f-failure','f-outcome','f-proponent','f-phase','f-severity','f-consortium','f-transferability','f-qa','f-qa-class'];
 const PROJECT_SET = new Set(RECORDS.map(r => r.kb_associated_project).filter(Boolean));
 const PAGE_SIZE = 50;
 let _curPage = 0, _lastFiltered = [];
@@ -1544,14 +1594,14 @@ function renderProjectList() {{
     const isSelected = _selectedProjects.has(name);
     const isExpanded = _expandedProjects.has(name);
     const isDocSel   = _selectedDoc && _selectedDoc.proj === name;
-    const projType  = getMostCommon(recs, 'project_type') || '';
-    const projScale = getMostCommon(recs, 'project_scale_band') || '';
+    const cats = [...new Set(recs.flatMap(r => r.arena_category || []))].join(', ');
+    const actType   = getMostCommon(recs, 'activity_type') || '';
     const proponent = getMostCommon(recs, 'proponent_type') || '';
-    const tech      = getMostCommon(recs, 'technology_domain') || '';
+    const isCons    = recs.some(r => r.is_consortium);
     const location  = (recs.find(r => r.location) || {{}}).location || '';
     const safeAttr  = name.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
-    const meta1 = [projType, projScale].filter(Boolean).join(' · ');
-    const meta2 = [proponent, tech].filter(Boolean).join(' · ');
+    const meta1 = [cats, actType].filter(Boolean).join(' · ');
+    const meta2 = [proponent, isCons ? '(consortium)' : ''].filter(Boolean).join(' · ');
 
     const docs = [...docsMap.entries()].sort((a, b) => b[1].length - a[1].length);
     const docsHtml = docs.map(([title, drecs]) => {{
@@ -1627,7 +1677,7 @@ function clearProjectSelection() {{
 // ── Project summary panel ───────────────────────────────────────
 const PHASES = [
   'concept/feasibility','development/design','approvals/contracting','procurement',
-  'construction/installation','commissioning/integration','operations','variation/re-scope'
+  'construction/installation','commissioning/integration','operations','close-out/post-project review'
 ];
 const PHASE_LABELS = {{
   'concept/feasibility':       'Concept / Feasibility',
@@ -1637,7 +1687,7 @@ const PHASE_LABELS = {{
   'construction/installation': 'Construction / Installation',
   'commissioning/integration': 'Commissioning / Integration',
   'operations':                'Operations',
-  'variation/re-scope':        'Variation / Re-scope',
+  'close-out/post-project review': 'Close-out / Review',
 }};
 
 function renderProjectSummary(filtered) {{
@@ -1663,14 +1713,15 @@ function renderProjectSummary(filtered) {{
   // Meta tags — for single project show detail; for multi show aggregated project types
   if (selSize === 1) {{
     const r0 = projRecords[0];
-    const metaTags = [r0.project_type, r0.project_scale_band, r0.proponent_type,
-                      r0.technology_domain, r0.location].filter(Boolean);
+    const cats = [...new Set(projRecords.flatMap(r => r.arena_category || []))];
+    const metaTags = [...cats, r0.activity_type, r0.proponent_type,
+                      r0.is_consortium ? 'Consortium' : '', r0.location].filter(Boolean);
     document.getElementById('ps-meta').innerHTML =
       metaTags.map(t => `<span class="proj-meta-tag">${{t}}</span>`).join('');
   }} else {{
-    const types = [...new Set(projRecords.map(r => r.project_type).filter(Boolean))];
+    const cats = [...new Set(projRecords.flatMap(r => r.arena_category || []))];
     document.getElementById('ps-meta').innerHTML =
-      types.map(t => `<span class="proj-meta-tag">${{t}}</span>`).join('');
+      cats.map(t => `<span class="proj-meta-tag">${{t}}</span>`).join('');
   }}
 
   // Coverage strip
@@ -1728,14 +1779,14 @@ function renderProjectSummary(filtered) {{
 function getFilters() {{
   return {{
     search:         document.getElementById('search').value.toLowerCase(),
+    category:       document.getElementById('f-category').value,
+    activity:       document.getElementById('f-activity').value,
     failure:        document.getElementById('f-failure').value,
     outcome:        document.getElementById('f-outcome').value,
-    type:           document.getElementById('f-type').value,
-    scale:          document.getElementById('f-scale').value,
     proponent:      document.getElementById('f-proponent').value,
     phase:          document.getElementById('f-phase').value,
-    tech:           document.getElementById('f-tech').value,
     severity:       document.getElementById('f-severity').value,
+    consortium:     document.getElementById('f-consortium').value,
     transferability:document.getElementById('f-transferability').value,
     qa:             document.getElementById('f-qa').value,
     qaClass:        document.getElementById('f-qa-class').value,
@@ -1743,14 +1794,15 @@ function getFilters() {{
 }}
 
 function matchesDimFilters(r, f) {{
+  if (f.category && !(r.arena_category || []).includes(f.category)) return false;
+  if (f.activity && r.activity_type !== f.activity) return false;
   if (f.failure && r.failure_mode !== f.failure) return false;
   if (f.outcome && r.outcome_class !== f.outcome) return false;
-  if (f.type && r.project_type !== f.type) return false;
-  if (f.scale && r.project_scale_band !== f.scale) return false;
   if (f.proponent && r.proponent_type !== f.proponent) return false;
   if (f.phase && r.lifecycle_phase !== f.phase) return false;
-  if (f.tech && r.technology_domain !== f.tech) return false;
   if (f.severity && r.issue_severity !== f.severity) return false;
+  if (f.consortium === 'true' && !r.is_consortium) return false;
+  if (f.consortium === 'false' && r.is_consortium) return false;
   if (f.transferability && r.transferability !== f.transferability) return false;
   if (f.qa && r.qa_verdict !== f.qa) return false;
   if (f.qaClass && r.qa_classification !== f.qaClass) return false;
@@ -1835,13 +1887,16 @@ function openModal(r) {{
 
   // classification tags
   const tags = [];
-  if (r.project_type) tags.push(['Project type', r.project_type, '#1e40af']);
-  if (r.project_scale_band) tags.push(['Scale', r.project_scale_band, '#0891b2']);
+  if (r.arena_category && r.arena_category.length) r.arena_category.forEach(c => tags.push(['ARENA category', c, '#1e40af']));
+  if (r.activity_type) tags.push(['Activity type', r.activity_type, '#0891b2']);
   if (r.proponent_type) tags.push(['Proponent', r.proponent_type, '#7c3aed']);
-  if (r.technology_domain) tags.push(['Technology', r.technology_domain, '#059669']);
+  if (r.is_consortium) tags.push(['Governance', 'Consortium', '#92400e']);
   if (r.transferability) tags.push(['Transferability', r.transferability, '#0f766e']);
   if (r.kb_associated_project) tags.push(['ARENA project', r.kb_associated_project, '#0f766e']);
-  if (r.kb_category) tags.push(['KB category', r.kb_category, '#64748b']);
+  // Legacy fields as grey metadata
+  if (r.project_type) tags.push(['Project type (legacy)', r.project_type, '#94a3b8']);
+  if (r.technology_domain) tags.push(['Technology (legacy)', r.technology_domain, '#94a3b8']);
+  if (r.project_scale_band) tags.push(['Scale (legacy)', r.project_scale_band, '#94a3b8']);
   document.getElementById('m-tags').innerHTML = tags.map(([label, val, colour]) =>
     `<span class="tag" style="background:${{colour}}" title="${{label}}">${{val}}</span>`).join('');
 
@@ -1943,8 +1998,8 @@ function initAnalysis() {{
 }}
 
 const AN_PHASES = ['concept/feasibility','development/design','approvals/contracting','procurement',
-  'construction/installation','commissioning/integration','operations','variation/re-scope','close-out/post-project review'];
-const AN_PHASE_SHORT = ['Concept','Design','Approvals','Procurement','Construction','Commissioning','Operations','Variation','Close-out'];
+  'construction/installation','commissioning/integration','operations','close-out/post-project review'];
+const AN_PHASE_SHORT = ['Concept','Design','Approvals','Procurement','Construction','Commissioning','Operations','Close-out'];
 const FM_LIST = Object.keys(FM_COLOURS);
 
 function anPhaseFM() {{
@@ -2004,11 +2059,12 @@ function anTypeFailRate() {{
   const totals = {{}};
   const matrix = {{}};
   RECORDS.forEach(r => {{
-    if (!r.project_type) return;
-    totals[r.project_type] = (totals[r.project_type] || 0) + 1;
-    if (!matrix[r.project_type]) matrix[r.project_type] = {{}};
-    const sev = r.issue_severity || 'none';
-    matrix[r.project_type][sev] = (matrix[r.project_type][sev] || 0) + 1;
+    (r.arena_category || []).forEach(cat => {{
+      totals[cat] = (totals[cat] || 0) + 1;
+      if (!matrix[cat]) matrix[cat] = {{}};
+      const sev = r.issue_severity || 'none';
+      matrix[cat][sev] = (matrix[cat][sev] || 0) + 1;
+    }});
   }});
   const MIN_N = 10;
   const types = Object.keys(totals)
@@ -2046,13 +2102,15 @@ function anTypeFailRate() {{
 
 function anTechFM() {{
   const techCounts = {{}};
-  RECORDS.forEach(r => {{ if (r.technology_domain) techCounts[r.technology_domain] = (techCounts[r.technology_domain]||0)+1; }});
-  const topTechs = Object.entries(techCounts).sort((a,b)=>b[1]-a[1]).slice(0,8).map(([k])=>k);
+  RECORDS.forEach(r => {{ (r.arena_category || []).forEach(cat => {{ techCounts[cat] = (techCounts[cat]||0)+1; }}); }});
+  const topTechs = Object.entries(techCounts).sort((a,b)=>b[1]-a[1]).slice(0,10).map(([k])=>k);
   const matrix = {{}};
   topTechs.forEach(t => {{ matrix[t] = {{}}; FM_LIST.forEach(fm => {{ matrix[t][fm] = 0; }}); }});
   RECORDS.forEach(r => {{
-    if (r.technology_domain && matrix[r.technology_domain] && r.failure_mode && matrix[r.technology_domain][r.failure_mode] !== undefined)
-      matrix[r.technology_domain][r.failure_mode]++;
+    (r.arena_category || []).forEach(cat => {{
+      if (matrix[cat] && r.failure_mode && matrix[cat][r.failure_mode] !== undefined)
+        matrix[cat][r.failure_mode]++;
+    }});
   }});
   const datasets = FM_LIST.map(fm => ({{
     label: fm,
@@ -3042,8 +3100,8 @@ document.addEventListener('click', e => {{
     const fm = r.failure_mode || '—';
     const oc = r.outcome_class || '—';
     let chips = '';
-    if (r.project_scale_band) chips += \`<span class="chip chip-scale">\${{r.project_scale_band}}</span>\`;
-    if (r.technology_domain)  chips += \`<span class="chip chip-tech">\${{r.technology_domain}}</span>\`;
+    if (r.arena_category && r.arena_category.length) r.arena_category.forEach(c => {{ chips += \`<span class="chip chip-tech">\${{c}}</span>\`; }});
+    if (r.activity_type) chips += \`<span class="chip chip-scale">\${{r.activity_type}}</span>\`;
     const srcUrl = buildSrcUrl(r);
     const year = r.publish_date ? r.publish_date.slice(0,4) : (r.kb_year || '');
     _tooltip.innerHTML = \`
