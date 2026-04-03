@@ -76,7 +76,7 @@ _PH_ORDER = [
 ]
 
 
-_SEV_HIGH = {"moderate", "major", "critical"}
+_SEV_HIGH = {"major", "critical"}
 _SEV_SEVERE = {"major", "critical"}
 _SEV_MILD = {"minor", "moderate"}
 
@@ -132,7 +132,7 @@ def load_project_profiles() -> list[dict]:
     Each profile captures boolean flags and phase-level breakdown needed
     for project-level matrix rates.
     """
-    _SEV_HIGH_SET = {"moderate", "major", "critical"}
+    _SEV_HIGH_SET = {"major", "critical"}
     profiles = []
     for path in sorted(PER_PROJECT_DIR.glob("*.yaml")):
         records = yaml.safe_load(open(path, encoding="utf-8")) or []
@@ -150,7 +150,7 @@ def load_project_profiles() -> list[dict]:
             if ph:
                 phase_recs[ph].append(r)
 
-        # Phase-level failure presence: phase → top failure mode among moderate+ records
+        # Phase-level failure presence: phase → top failure mode among major+ records
         phase_failures: dict = {}
         for ph, recs in phase_recs.items():
             bad = [r for r in recs if (r.get("issue_severity") or "") in _SEV_HIGH_SET]
@@ -196,7 +196,7 @@ def load_project_profiles() -> list[dict]:
                 if r.get("failure_mode") and r["failure_mode"] != _NO_FAIL
             },
             "phases_covered":  set(phase_recs.keys()),
-            "phase_failures":  phase_failures,   # phase → top fm at that phase (moderate+ only)
+            "phase_failures":  phase_failures,   # phase → top fm at that phase (major+ only)
             "n_records":       len(records),
             "sev_severe":      sev_severe,
             "sev_mild":        sev_mild,
@@ -247,7 +247,7 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
     """
     Generate HTML for the reference-class matrices.
     Unit of analysis is the PROJECT (one profile per project), not the record.
-    Adv% = % of projects with at least one moderate/major/critical record.
+    Adv% = % of projects with at least one major/critical record.
     Sev. ratio = (major+critical records) / (minor+moderate records) across all records in the group.
     """
 
@@ -345,7 +345,7 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
         f'<div class="an-card-title">Matrix 1 — Technology × Activity Type</div>'
         f'<div class="an-card-sub">'
         f'{n_projects:,} projects &nbsp;·&nbsp; '
-        f'Corpus: <strong>{_pct(corpus_adv)}</strong> had moderate+ issues, '
+        f'Corpus: <strong>{_pct(corpus_adv)}</strong> had major+ issues, '
         f'severity ratio <strong>{corpus_sr_fmt}</strong> &nbsp;·&nbsp; '
         f'n = projects (not records) &nbsp;·&nbsp; cells &lt; {min_n} omitted &nbsp;·&nbsp; '
         f'R&amp;D projects excluded &nbsp;·&nbsp; '
@@ -379,7 +379,7 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
         f'<div class="an-card-sub">'
         f'ARENA category × lifecycle phase. '
         f'n = projects that covered that phase. '
-        f'Adv% = % with a moderate+ issue at that specific phase. '
+        f'Adv% = % with a major+ issue at that specific phase. '
         f'Cells &lt; {min_n_b} omitted.</div>'
         f'<div class="rcm-scroll"><table class="rcm-table">'
         f'<thead><tr><th>ARENA category</th><th>Lifecycle phase</th>'
