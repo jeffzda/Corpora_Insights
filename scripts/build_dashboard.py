@@ -329,8 +329,8 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
             ac_ph_cells[(ac, ph)] = (len(covered), adv, fm1)
             all_rates.append(adv)
 
-    vmin = min(all_rates) if all_rates else 0.0
-    vmax = max(all_rates) if all_rates else 1.0
+    vmin = 0.0
+    vmax = 0.70
 
     def adv_cell(rate):
         bg, fg = _viridis_cell(rate, vmin, vmax)
