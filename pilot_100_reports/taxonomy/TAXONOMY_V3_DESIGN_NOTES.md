@@ -383,6 +383,48 @@ The success/failure/neutral classification is critical here — the LLM synthesi
 what went wrong against what went right in the same challenge context, rather than just listing
 problems.
 
+### Multiple records from the same project addressing the same challenge
+
+A single project may produce multiple records that reference the same challenge at different
+points in time — e.g., a grid connection barrier at commissioning (failure) followed by
+resolution after 12 months of renegotiation (success). These are **not confounding** — they
+are distinct delivery events that capture different information:
+
+- Record 1 tells you that grid connection challenges cause failures at commissioning
+- Record 2 tells you they're recoverable, and how recovery happens
+
+Both are true and both are needed. Collapsing them into a single outcome (was this project's
+grid connection a failure or a success?) loses the phase-specific information that makes the
+analysis actionable.
+
+**Effect on aggregate success rate:** A challenge that always fails first and then gets resolved
+generates one failure record and one success record, producing a 50% success rate. This is more
+informative than either "100% adversity" or "100% eventually succeeded" — it accurately
+represents "this fails reliably but is recoverable."
+
+**Effect on severity ratio:** The failure record carries the higher severity (major/critical
+during the crisis); the success record carries lower severity (none/minor after resolution).
+The ratio reflects severity at the point of failure, not diluted by recovery. This is correct
+behaviour.
+
+**Implication for LLM synthesis:** When generating a brief from filtered records, the synthesis
+prompt should instruct the LLM to recognise that multiple records from the same project
+describing the same challenge at different times represent a narrative arc (failure → recovery),
+not independent evidence. This is a prompt design consideration for Level 3, not a data
+structure problem.
+
+### Confidence thresholds
+
+The test pass showed that questionable tags tend to have lower confidence scores (0.65–0.78),
+while clearly correct tags are typically 0.85+. A confidence threshold of **0.80** for
+dashboard display would filter out most noise while keeping legitimate tags. This would shift
+the dual-tag rate from 51% to approximately 35–40%.
+
+Low confidence often indicates "this project probably involved this challenge, but this
+specific record doesn't describe the project addressing it" — the model is inferring from
+context rather than reading about the challenge being confronted. This is the right reason to
+have low confidence and the right reason to filter it out.
+
 ---
 
 ## Part 6: Revised Analytical Architecture
