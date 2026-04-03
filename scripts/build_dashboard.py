@@ -105,6 +105,8 @@ _TD_ORDER = [
 
 
 _SEV_HIGH = {"moderate", "major", "critical"}
+_SEV_SEVERE = {"major", "critical"}
+_SEV_MILD = {"minor", "moderate"}
 
 
 def _adv_rate(recs):
@@ -197,6 +199,21 @@ def load_project_profiles() -> list[dict]:
                 ac_counter[cat] += 1
         arena_cat = ac_counter.most_common(1)[0][0] if ac_counter else None
 
+        # Severity counts for escalation ratio
+        sev_severe = sum(1 for r in records if (r.get("issue_severity") or "") in _SEV_SEVERE)
+        sev_mild = sum(1 for r in records if (r.get("issue_severity") or "") in _SEV_MILD)
+
+        # Per-failure-mode severity counts
+        fm_sev: dict = defaultdict(lambda: [0, 0])  # fm → [severe, mild]
+        for r in records:
+            fm = r.get("failure_mode") or ""
+            sev = r.get("issue_severity") or ""
+            if fm and fm != _NO_FAIL:
+                if sev in _SEV_SEVERE:
+                    fm_sev[fm][0] += 1
+                elif sev in _SEV_MILD:
+                    fm_sev[fm][1] += 1
+
         profiles.append({
             "arena_category":    arena_cat,
             "activity_type":     majority("activity_type"),
@@ -219,16 +236,58 @@ def load_project_profiles() -> list[dict]:
             "phases_covered":  set(phase_recs.keys()),
             "phase_failures":  phase_failures,   # phase → top fm at that phase (moderate+ only)
             "n_records":       len(records),
+            "sev_severe":      sev_severe,
+            "sev_mild":        sev_mild,
+            "fm_severity":     dict(fm_sev),      # fm → [severe, mild]
         })
     return profiles
 
 
+def _sev_ratio(profs):
+    """Severity escalation ratio: (major+critical) / (minor+moderate) across project records."""
+    severe = sum(p["sev_severe"] for p in profs)
+    mild = sum(p["sev_mild"] for p in profs)
+    return severe / mild if mild > 0 else None
+
+
+def _sev_ratio_fmt(profs):
+    """Format severity ratio as string, or '—' if no mild records."""
+    r = _sev_ratio(profs)
+    return f"{r:.2f}" if r is not None else "—"
+
+
+def _sev_ratio_from_counts(severe, mild):
+    """Severity ratio from raw counts."""
+    return severe / mild if mild > 0 else None
+
+
+def _sev_ratio_cell(ratio, vmin=0.0, vmax=0.8):
+    """Return inline style for a severity ratio cell. Higher = more red."""
+    if ratio is None:
+        return 'background:#f8fafc;color:#94a3b8'
+    t = (ratio - vmin) / (vmax - vmin) if vmax > vmin else 0.5
+    t = max(0.0, min(1.0, t))
+    # Green (low) → Yellow (mid) → Red (high)
+    if t < 0.5:
+        f = t / 0.5
+        r = int(34 + f * (202 - 34))
+        g = int(197 + f * (138 - 197))
+        b = int(94 + f * (4 - 94))
+    else:
+        f = (t - 0.5) / 0.5
+        r = int(202 + f * (220 - 202))
+        g = int(138 + f * (38 - 138))
+        b = int(4 + f * (38 - 4))
+    return f'background:#{r:02x}{g:02x}{b:02x};color:#000;font-weight:600'
+
+
 def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
     """
-    Generate HTML for the four reference-class matrices.
+    Generate HTML for the reference-class matrices.
     Unit of analysis is the PROJECT (one profile per project), not the record.
     Adv% = % of projects with at least one moderate/major/critical record.
     Disc% = % of projects with at least one discontinued/not progressed record.
+    Sev. ratio = (major+critical records) / (minor+moderate records) across all records in the group.
     """
 
     # ── Group profiles ────────────────────────────────────────────────────────
@@ -299,6 +358,8 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
         return f'background:{bg};color:{fg}'
 
     # ── Matrix 1: arena_category × activity_type ───────────────────────────
+    corpus_sev_ratio = _sev_ratio(profiles)
+
     ma_rows = []
     for ac in _AC_ORDER:
         for at in _AT_ORDER:
@@ -307,33 +368,38 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
                 continue
             adv = proj_adv(profs)
             disc = proj_disc(profs)
+            sr = _sev_ratio(profs)
             fms = proj_top_fms(profs, 2)
             fm1 = fms[0] if fms else "—"
             fm2 = fms[1] if len(fms) > 1 else "—"
+            sr_fmt = f"{sr:.2f}" if sr is not None else "—"
             ma_rows.append(
                 f'<tr><td>{ac}</td><td>{at}</td>'
                 f'<td class="rcm-num">{len(profs)}</td>'
                 f'<td class="rcm-num rcm-rate" style="{adv_cell(adv)}">{_pct(adv)}</td>'
+                f'<td class="rcm-num" style="{_sev_ratio_cell(sr)}">{sr_fmt}</td>'
                 f'<td class="rcm-num">{_pct(disc)}</td>'
                 f'<td class="rcm-fm">{fm1}</td>'
                 f'<td class="rcm-fm">{fm2}</td>'
                 f'</tr>'
             )
 
-    ma_empty = '<tr><td colspan="7" class="rcm-empty">No cells meet minimum n threshold</td></tr>'
+    corpus_sr_fmt = f"{corpus_sev_ratio:.2f}" if corpus_sev_ratio is not None else "—"
+    ma_empty = '<tr><td colspan="8" class="rcm-empty">No cells meet minimum n threshold</td></tr>'
     ma_html = (
         f'<div class="an-card an-wide">'
         f'<div class="an-card-title">Matrix 1 — Technology × Activity Type</div>'
         f'<div class="an-card-sub">'
         f'{n_projects:,} projects &nbsp;·&nbsp; '
         f'Corpus: <strong>{_pct(corpus_adv)}</strong> had moderate+ issues, '
-        f'<strong>{_pct(corpus_disc)}</strong> discontinued &nbsp;·&nbsp; '
+        f'<strong>{_pct(corpus_disc)}</strong> discontinued, '
+        f'severity ratio <strong>{corpus_sr_fmt}</strong> &nbsp;·&nbsp; '
         f'n = projects (not records) &nbsp;·&nbsp; cells &lt; {min_n} omitted &nbsp;·&nbsp; '
         f'R&amp;D projects excluded &nbsp;·&nbsp; '
         f'colour scale normalised to {_pct(vmin)}–{_pct(vmax)}</div>'
         f'<div class="rcm-scroll"><table class="rcm-table">'
         f'<thead><tr><th>ARENA category</th><th>Activity type</th><th>Projects</th>'
-        f'<th>Adv%</th><th>Disc%</th><th>Top failure mode</th><th>2nd failure mode</th></tr></thead>'
+        f'<th>Adv%</th><th>Sev. ratio</th><th>Disc%</th><th>Top failure mode</th><th>2nd failure mode</th></tr></thead>'
         f'<tbody>{"".join(ma_rows) if ma_rows else ma_empty}</tbody>'
         f'</table></div></div>'
     )
@@ -378,15 +444,18 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
     for pt, profs in mc_data:
         adv = proj_adv(profs)
         disc = proj_disc(profs)
+        sr = _sev_ratio(profs)
         delta = adv - corpus_adv
         sign = "+" if delta >= 0 else ""
         delta_col = "#dc2626" if delta >= 0.05 else ("#16a34a" if delta <= -0.05 else "#64748b")
         fms = proj_top_fms(profs, 1)
+        sr_fmt = f"{sr:.2f}" if sr is not None else "—"
         mc_rows.append(
             f'<tr><td>{pt}</td>'
             f'<td class="rcm-num">{len(profs)}</td>'
             f'<td class="rcm-num rcm-rate" style="{adv_cell(adv)}">{_pct(adv)}</td>'
             f'<td class="rcm-num" style="color:{delta_col};font-weight:600">{sign}{round(100 * delta, 1):+.1f}pp</td>'
+            f'<td class="rcm-num" style="{_sev_ratio_cell(sr)}">{sr_fmt}</td>'
             f'<td class="rcm-num">{_pct(disc)}</td>'
             f'<td class="rcm-fm">{fms[0] if fms else "—"}</td>'
             f'</tr>'
@@ -400,26 +469,32 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
         uplift = adv_yes - adv_no
         up_sign = "+" if uplift >= 0 else ""
         up_col = "#dc2626" if uplift >= 0.03 else ("#16a34a" if uplift <= -0.03 else "#64748b")
+        sr_yes = _sev_ratio(cons_yes)
+        sr_no = _sev_ratio(cons_no)
+        sr_yes_fmt = f"{sr_yes:.2f}" if sr_yes is not None else "—"
+        sr_no_fmt = f"{sr_no:.2f}" if sr_no is not None else "—"
         cons_adj_html = (
             f'<tr style="border-top:2px solid #cbd5e1;background:#f8fafc">'
             f'<td><em>Consortium governance adjustment</em></td>'
             f'<td class="rcm-num">{len(cons_yes)} vs {len(cons_no)}</td>'
             f'<td class="rcm-num">{_pct(adv_yes)} vs {_pct(adv_no)}</td>'
             f'<td class="rcm-num" style="color:{up_col};font-weight:600">{up_sign}{round(100 * uplift, 1):+.1f}pp</td>'
+            f'<td class="rcm-num">{sr_yes_fmt} vs {sr_no_fmt}</td>'
             f'<td class="rcm-num">{_pct(proj_disc(cons_yes))} vs {_pct(proj_disc(cons_no))}</td>'
             f'<td class="rcm-fm">governance/coordination failure</td>'
             f'</tr>'
         )
 
-    mc_empty = '<tr><td colspan="6" class="rcm-empty">Insufficient data</td></tr>'
+    mc_empty = '<tr><td colspan="7" class="rcm-empty">Insufficient data</td></tr>'
     mc_html = (
         f'<div class="an-card an-wide">'
         f'<div class="an-card-title">Matrix 3 — Proponent Type Adjustment Factor</div>'
-        f'<div class="an-card-sub">Corpus baseline: <strong>{_pct(corpus_adv)}</strong>.'
+        f'<div class="an-card-sub">Corpus baseline: <strong>{_pct(corpus_adv)}</strong> adversity, '
+        f'severity ratio <strong>{corpus_sr_fmt}</strong>.'
         f' Red adjustment = above baseline, green = below.</div>'
         f'<div class="rcm-scroll"><table class="rcm-table">'
         f'<thead><tr><th>Proponent type</th><th>Projects</th><th>Adv%</th>'
-        f'<th>Adjustment</th><th>Disc%</th><th>Primary risk</th></tr></thead>'
+        f'<th>Adjustment</th><th>Sev. ratio</th><th>Disc%</th><th>Primary risk</th></tr></thead>'
         f'<tbody>{"".join(mc_rows) if mc_rows else mc_empty}{cons_adj_html}</tbody>'
         f'</table></div></div>'
     )
@@ -460,7 +535,88 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
         f'</table></div></div>'
     )
 
-    return ma_html + mb_html + mc_html + dt_html
+    # ── Matrix 5: Severity Escalation by Failure Mode ──────────────────────
+    fm_agg: dict = defaultdict(lambda: [0, 0])  # fm → [total_severe, total_mild]
+    for p in profiles:
+        for fm, (sev, mild) in p.get("fm_severity", {}).items():
+            fm_agg[fm][0] += sev
+            fm_agg[fm][1] += mild
+
+    se_data = []
+    for fm, (sev, mild) in fm_agg.items():
+        total = sev + mild
+        if total < 10:
+            continue
+        ratio = sev / mild if mild > 0 else None
+        se_data.append((ratio if ratio is not None else 999, fm, sev, mild, total, ratio))
+    se_data.sort(reverse=True)
+
+    se_rows = []
+    for _, fm, sev, mild, total, ratio in se_data:
+        r_fmt = f"{ratio:.2f}" if ratio is not None else "—"
+        se_rows.append(
+            f'<tr><td>{fm}</td>'
+            f'<td class="rcm-num">{total:,}</td>'
+            f'<td class="rcm-num">{sev:,}</td>'
+            f'<td class="rcm-num">{mild:,}</td>'
+            f'<td class="rcm-num" style="{_sev_ratio_cell(ratio)}">{r_fmt}</td>'
+            f'</tr>'
+        )
+
+    se_empty = '<tr><td colspan="5" class="rcm-empty">Insufficient data</td></tr>'
+    se_html = (
+        f'<div class="an-card an-wide">'
+        f'<div class="an-card-title">Matrix 5 — Severity Escalation by Failure Mode</div>'
+        f'<div class="an-card-sub">Which failure types tend to be severe when they occur? '
+        f'Ratio = (major + critical) / (minor + moderate). '
+        f'Corpus baseline: <strong>{corpus_sr_fmt}</strong>. '
+        f'High ratio = problems escalate; low ratio = problems stay manageable.</div>'
+        f'<div class="rcm-scroll"><table class="rcm-table">'
+        f'<thead><tr><th>Failure mode</th><th>Adverse records</th>'
+        f'<th>Major/critical</th><th>Minor/moderate</th><th>Sev. ratio</th></tr></thead>'
+        f'<tbody>{"".join(se_rows) if se_rows else se_empty}</tbody>'
+        f'</table></div></div>'
+    )
+
+    # ── Matrix 6: Severity Escalation by ARENA Category ──────────────────
+    ac_sev_data = []
+    for ac in _AC_ORDER:
+        ac_profs = [p for p in profiles if p.get("arena_category") == ac]
+        if len(ac_profs) < min_n:
+            continue
+        sr = _sev_ratio(ac_profs)
+        sev_total = sum(p["sev_severe"] for p in ac_profs)
+        mild_total = sum(p["sev_mild"] for p in ac_profs)
+        adv = proj_adv(ac_profs)
+        ac_sev_data.append((ac, len(ac_profs), sev_total, mild_total, sr, adv))
+
+    sc_rows = []
+    for ac, n_p, sev, mild, sr, adv in sorted(ac_sev_data, key=lambda x: (x[4] if x[4] is not None else -1), reverse=True):
+        sr_fmt = f"{sr:.2f}" if sr is not None else "—"
+        sc_rows.append(
+            f'<tr><td>{ac}</td>'
+            f'<td class="rcm-num">{n_p}</td>'
+            f'<td class="rcm-num rcm-rate" style="{adv_cell(adv)}">{_pct(adv)}</td>'
+            f'<td class="rcm-num">{sev:,}</td>'
+            f'<td class="rcm-num">{mild:,}</td>'
+            f'<td class="rcm-num" style="{_sev_ratio_cell(sr)}">{sr_fmt}</td>'
+            f'</tr>'
+        )
+
+    sc_empty = '<tr><td colspan="6" class="rcm-empty">Insufficient data</td></tr>'
+    sc_html = (
+        f'<div class="an-card an-wide">'
+        f'<div class="an-card-title">Matrix 6 — Severity Escalation by ARENA Category</div>'
+        f'<div class="an-card-sub">How severe are problems when they occur, by technology? '
+        f'Sorted by ratio. Corpus baseline: <strong>{corpus_sr_fmt}</strong>.</div>'
+        f'<div class="rcm-scroll"><table class="rcm-table">'
+        f'<thead><tr><th>ARENA category</th><th>Projects</th><th>Adv%</th>'
+        f'<th>Major/critical</th><th>Minor/moderate</th><th>Sev. ratio</th></tr></thead>'
+        f'<tbody>{"".join(sc_rows) if sc_rows else sc_empty}</tbody>'
+        f'</table></div></div>'
+    )
+
+    return ma_html + mb_html + mc_html + dt_html + se_html + sc_html
 
 
 def load_portfolio_size() -> int:
@@ -1981,10 +2137,14 @@ function initAnalysis() {{
   const withFailure = RECORDS.filter(r => r.failure_mode && r.failure_mode !== 'no major failure stated').length;
   const failPct = (withFailure / total * 100).toFixed(0);
   const avgPerProj = (total / nProjects).toFixed(1);
+  const sevMajCrit = RECORDS.filter(r => r.issue_severity === 'major' || r.issue_severity === 'critical').length;
+  const sevMinMod = RECORDS.filter(r => r.issue_severity === 'minor' || r.issue_severity === 'moderate').length;
+  const sevRatio = sevMinMod > 0 ? (sevMajCrit / sevMinMod).toFixed(2) : '—';
   document.getElementById('an-stats').innerHTML = `
     <div class="stat"><span class="stat-value">${{total.toLocaleString()}}</span><span class="stat-label">Total records</span></div>
     <div class="stat"><span class="stat-value">${{nProjects.toLocaleString()}}</span><span class="stat-label">Projects covered</span></div>
     <div class="stat"><span class="stat-value">${{withFailure.toLocaleString()}} <span style="font-size:14px;color:#64748b">(${{failPct}}%)</span></span><span class="stat-label">Records with any failure</span></div>
+    <div class="stat"><span class="stat-value">${{sevRatio}}</span><span class="stat-label">Severity ratio (major÷mild)</span></div>
     <div class="stat"><span class="stat-value">${{avgPerProj}}</span><span class="stat-label">Avg insights per project</span></div>`;
 
   anPhaseFM();
