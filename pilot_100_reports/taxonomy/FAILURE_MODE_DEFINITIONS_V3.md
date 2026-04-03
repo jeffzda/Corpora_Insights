@@ -53,13 +53,13 @@ Every category in this taxonomy must pass all four tests:
 ## Coding rule
 
 Classify based on **what was broken**, not **why it was broken**. If technical assumptions
-were wrong because the team lacked expertise to recognise the flaw, that's still "technical
-assumptions" — the broken mechanism is the unvalidated assumption. "Capability shortfall" is
-reserved for cases where the team knew what to do but couldn't do it.
+were wrong because the team lacked expertise to recognise the flaw, that's still "unvalidated
+technical assumptions" — the broken mechanism is the unvalidated assumption. If the team knew
+what to do but couldn't physically execute it, that's "execution & logistics".
 
 ---
 
-## The 9 failure modes
+## The 8 failure modes
 
 ### 1. Poor scoping
 
@@ -87,19 +87,18 @@ actually needed to deliver or operate within.
 
 **What does NOT belong here:**
 - A scope item was identified but the assumption about its value was wrong → **Unvalidated
-  performance** or **Unvalidated design parameters**
+  technical assumptions**
 - The scope was correct but the regulatory pathway to deliver it wasn't understood →
   **Regulatory & approvals**
 - The scope was correct but measurement systems to verify it were absent → **Data &
   measurement**
 - The scope was correct but the delivery plan was inadequate → **Execution & logistics**
 
-**Boundary rule with Unvalidated performance / Unvalidated design parameters:** Scoping is
-about *what* the project decided to attempt. The unvalidated categories are about *what the
-project believed would be true* about performance or parameters within that scope. If the
-item was never on anyone's radar as something that needed to be confirmed, it's poor scoping.
-If the item was identified but the team adopted an untested value, it's one of the
-unvalidated categories.
+**Boundary rule with Unvalidated technical assumptions:** Scoping is about *what* the project
+decided to attempt. Technical assumptions are about *what the project believed would be true*
+about performance or parameters within that scope. If the item was never on anyone's radar as
+something that needed to be confirmed, it's poor scoping. If the item was identified but the
+team adopted an untested value, it's unvalidated technical assumptions.
 
 **Examples from corpus:**
 - Solar field expansion and road upgrades excluded from preliminary estimate
@@ -109,17 +108,25 @@ unvalidated categories.
 
 ---
 
-### 2. Unvalidated performance
+### 2. Unvalidated technical assumptions
 
-**Definition:** The team assumed a technology, component, algorithm, or process would perform
-to a required specification in the deployment context, but never empirically tested that
-assumption against actual operating conditions before committing to it in design or
-procurement. The technology may be mature elsewhere — the failure is the absence of
-validation for *this* context.
+**Definition:** The team adopted technical assumptions — about technology performance,
+component behaviour, design parameters, or empirical inputs — that were not validated for the
+actual deployment context. The assumption may have been about whether a technology works here
+(performance) or about the numerical inputs describing the situation (parameters). Both are
+the same underlying mechanism: reliance on unverified technical beliefs.
 
-**The broken mechanism:** Performance validation was absent or inadequate. The project relied
-on manufacturer claims, lab results, or overseas benchmarks without field-testing against
-actual site conditions, scale, or operating environment.
+**The broken mechanism:** Technical assumptions were adopted without adequate validation for
+the specific site, scale, climate, feedstock, or operating context. The project relied on
+manufacturer claims, lab results, overseas benchmarks, literature values, or adjacent-context
+data without field-testing or local verification.
+
+**Why this is one category:** The boundary between "the technology didn't perform" and "the
+design numbers were wrong" is a matter of framing, not mechanism. A PV plant with soiling
+losses 3× the design assumption is simultaneously an unvalidated performance claim (the
+panels didn't perform) and an unvalidated parameter (the soiling rate was borrowed from the
+wrong climate). The PM due diligence is the same: "Have we verified that our technical
+beliefs hold in this specific context?"
 
 **PM due diligence questions:**
 1. Has each critical performance claim been independently tested under conditions that match
@@ -129,7 +136,10 @@ actual site conditions, scale, or operating environment.
 3. Has the technology been deployed at this scale, in this climate, and with this feedstock
    before?
 4. What is the actual TRL for this specific application (not the headline TRL)?
-5. Where technology is immature or unproven at scale, what is the fallback?
+5. Are all critical numerical inputs — cost benchmarks, performance parameters, physical
+   constants, demand profiles — derived from sources that match the actual context?
+6. Are design values based on site-specific measurements or on generic literature?
+7. Where technology is immature or unproven at scale, what is the fallback?
 
 **What belongs here:**
 - Lab or pilot performance extrapolated to field scale without validation
@@ -139,56 +149,6 @@ actual site conditions, scale, or operating environment.
 - Technology deployed before cost curves, supply chains, or standards were ready
 - Algorithm or control system performance assumed without field testing
 - Component degradation or reliability assumptions not validated for local conditions
-
-**What does NOT belong here:**
-- The design used wrong numerical inputs (soiling rates, cost benchmarks, load profiles) →
-  **Unvalidated design parameters**
-- Two separately-functional systems failed at their interface → **Unvalidated integration**
-- The parameter was never identified as something to validate → **Poor scoping**
-- The business case assumption was wrong → **Commercial & market**
-- The measurement system to verify performance was inadequate → **Data & measurement**
-
-**Boundary rule with Unvalidated design parameters:** If the failure was about *whether the
-technology works* in this context (performance, reliability, degradation), it's unvalidated
-performance. If the failure was about *numerical inputs to models and designs* being borrowed
-from the wrong context (cost benchmarks, soiling rates, load profiles), it's unvalidated
-design parameters. The question is: "Was the problem that the thing didn't perform, or that
-the numbers describing the situation were wrong?"
-
-**Boundary rule with Unvalidated integration:** If a single component or technology failed to
-meet its own specification, it's unvalidated performance. If two separately-functioning
-components failed at their interface, it's unvalidated integration. Unvalidated performance
-involves one system; unvalidated integration involves at least two.
-
-**Examples from corpus:**
-- Copper metallisation performance unvalidated at commercial scale
-- Grid-forming inverter performance unvalidated for transmission applications
-- Heat pump startup controls not validated for cold ambient conditions
-- Perovskite stability thresholds for moisture and field strength unvalidated
-- Laboratory fabrication method assumed viable at commercial scale
-
----
-
-### 3. Unvalidated design parameters
-
-**Definition:** The team used specific numerical inputs, empirical data, benchmarks, or
-physical parameters in their models and designs that were borrowed from literature, overseas
-projects, or adjacent contexts — without validating that those values were accurate for the
-actual site, feedstock, climate, or regulatory environment.
-
-**The broken mechanism:** The quantitative inputs to design and modelling were unvalidated for
-the specific context. The numbers describing the situation were wrong.
-
-**PM due diligence questions:**
-1. Are all critical numerical inputs — cost benchmarks, performance parameters, physical
-   constants, demand profiles — derived from sources that match the actual site, climate,
-   feedstock, and regulatory context?
-2. Are design values based on site-specific measurements or on generic literature?
-3. Have international benchmarks been validated against local conditions?
-4. Are cost estimates based on binding vendor quotes or on parametric estimates from different
-   markets?
-
-**What belongs here:**
 - Equipment sized using literature values instead of site-specific data (feedstock analysis,
   solar irradiance, wind profiles, load patterns)
 - Cost parameters adopted from international benchmarks without local validation
@@ -197,22 +157,45 @@ the specific context. The numbers describing the situation were wrong.
 - Load profiles or demand patterns assumed from international studies
 
 **What does NOT belong here:**
-- The technology itself didn't perform to spec → **Unvalidated performance**
-- Two systems failed at their interface → **Unvalidated integration**
-- The parameter was never identified as something to check → **Poor scoping**
-- The measurement system to collect the data was inadequate → **Data & measurement**
+- Two separately-functional systems failed at their interface → **Unvalidated integration**
+- The assumption was never identified as something to validate → **Poor scoping**
+- The business case assumption was about commercial viability, not technical performance →
+  **Commercial & market**
+- The measurement system to verify performance or collect data was inadequate → **Data &
+  measurement**
+- The work was attempted and done badly (execution quality, not wrong beliefs) →
+  **Execution & logistics**
 
-**Boundary rule with Unvalidated performance:** If the problem is "the thing didn't work as
-expected" (performance, reliability, degradation), it's unvalidated performance. If the
-problem is "we used the wrong numbers to describe our situation" (cost per unit, soiling rate,
-temperature coefficient), it's unvalidated design parameters.
+**Boundary rule with Poor scoping:** Scoping is about *what* the project decided to attempt.
+Technical assumptions are about *what the project believed would be true* within that scope.
+If the item was never on anyone's radar as something that needed to be confirmed, it's poor
+scoping. If the item was identified but the team adopted an untested value or unverified
+performance claim, it's unvalidated technical assumptions.
+
+**Boundary rule with Unvalidated integration:** If a single component or technology failed to
+meet its own specification or was designed with wrong parameters, it's unvalidated technical
+assumptions. If two separately-functioning components failed at their interface, it's
+unvalidated integration. This category involves one system's assumptions; integration involves
+at least two systems' interaction.
 
 **Boundary rule with Data & measurement:** If the right data existed but the team used wrong
-values from the wrong context (method error), it's unvalidated design parameters. If the
-right data did not exist because the measurement infrastructure was absent (availability
-error), it's data & measurement.
+values from the wrong context (method error — wrong soiling rates, wrong cost benchmarks),
+it's unvalidated technical assumptions. If the right data did not exist because the
+measurement infrastructure was absent or inadequate (availability error), it's data &
+measurement.
+
+**Boundary rule with Execution & logistics:** If the work was designed based on wrong beliefs
+about what would work (wrong assumptions about performance, parameters, or context), it's
+unvalidated technical assumptions. If the work was attempted and done badly (construction
+defects, supply chain mismanagement, workforce shortfalls), it's execution & logistics. The
+test: "Was the problem in the plan's beliefs, or in the plan's execution?"
 
 **Examples from corpus:**
+- Copper metallisation performance unvalidated at commercial scale
+- Grid-forming inverter performance unvalidated for transmission applications
+- Heat pump startup controls not validated for cold ambient conditions
+- Perovskite stability thresholds for moisture and field strength unvalidated
+- Laboratory fabrication method assumed viable at commercial scale
 - Soiling rates assumed from Middle East data without local validation
 - Transport cost assumptions based on US benchmarks not validated locally
 - PV module temperature coefficients unvalidated for site conditions
@@ -221,7 +204,7 @@ error), it's data & measurement.
 
 ---
 
-### 4. Unvalidated integration
+### 3. Unvalidated integration
 
 **Definition:** The team assumed that two or more separately-functioning components, systems,
 standards, or processes would work correctly in combination, but the interface, interaction,
@@ -253,15 +236,16 @@ validation, not the observable outcome.
 - Protection settings or trip configurations not coordinated across fleet
 
 **What does NOT belong here:**
-- A single component failed to meet its own specification → **Unvalidated performance**
+- A single component failed to meet its own specification → **Unvalidated technical
+  assumptions**
 - The interface was never identified as a scope item → **Poor scoping**
 - The integration failure was caused by organisational coordination gaps between parties →
   **Coordination & stakeholders**
 
-**Boundary rule with Unvalidated performance:** Unvalidated performance involves one system
-failing in isolation. Unvalidated integration requires at least two systems whose *interface*
-was not validated. If a battery doesn't hold charge, that's performance. If a battery and
-inverter can't communicate, that's integration.
+**Boundary rule with Unvalidated technical assumptions:** Technical assumptions involve one
+system's performance or parameters being wrong. Unvalidated integration requires at least two
+systems whose *interface* was not validated. If a battery doesn't hold charge, that's
+technical assumptions. If a battery and inverter can't communicate, that's integration.
 
 **Boundary rule with Coordination & stakeholders:** If the integration failure was caused by
 technical interface specifications being wrong or absent, it's unvalidated integration. If
@@ -278,7 +262,7 @@ primary gap was technical (interface spec) or organisational (governance of the 
 
 ---
 
-### 5. Regulatory & approvals
+### 4. Regulatory & approvals
 
 **Definition:** The project entered execution without a viable, well-understood pathway
 through the relevant regulatory, permitting, standards, or compliance landscape. The
@@ -308,9 +292,9 @@ underestimated.
 - A commercial counterparty or community group blocked progress → **Coordination &
   stakeholders** (unless the blocking party is a statutory authority)
 - The regulatory environment was understood but the technology couldn't comply →
-  **Technical assumptions**
-- The regulatory pathway was mapped but the team couldn't navigate it → **Capability
-  shortfall**
+  **Unvalidated technical assumptions**
+- The regulatory pathway was mapped but the team couldn't execute against it → **Execution
+  & logistics**
 
 **Boundary rule with Coordination & stakeholders:** Classify by the blocking entity. If a
 government body, regulator, or network operator with statutory powers is the party whose
@@ -328,7 +312,7 @@ mechanism.
 
 ---
 
-### 6. Commercial & market
+### 5. Commercial & market
 
 **Definition:** The project's business case rested on commercial or market conditions —
 demand, price, offtake, cost trajectory, revenue model, competitor landscape — that proved
@@ -352,18 +336,17 @@ wrong, were never adequately validated, or changed materially during delivery.
 - Input cost changes (commodity prices, exchange rates) undermining viability
 
 **What does NOT belong here:**
-- A technology didn't perform to the spec the business case assumed → **Unvalidated
-  performance** (the commercial failure is a consequence of the performance validation gap)
-- Design parameters (costs, yields) were borrowed from wrong context → **Unvalidated
-  design parameters**
+- A technology didn't perform to spec, or design parameters (costs, yields) were borrowed
+  from the wrong context → **Unvalidated technical assumptions** (the commercial failure is
+  a consequence of the technical validation gap)
 - A regulatory change made the business model unviable → **Regulatory & approvals**
 - A commercial counterparty couldn't be engaged or aligned → **Coordination & stakeholders**
 
-**Boundary rule with Unvalidated performance / Unvalidated design parameters:** If the
-business case failed because a technology didn't perform or a design parameter was wrong,
-classify by the broken mechanism (performance or parameters). The commercial failure is the
-consequence. If the technology performed as expected and the parameters were correct but
-market conditions changed, it's commercial & market.
+**Boundary rule with Unvalidated technical assumptions:** If the business case failed because
+a technology didn't perform or a design parameter was wrong, classify by the broken mechanism
+(technical assumptions). The commercial failure is the consequence. If the technology
+performed as expected and the parameters were correct but market conditions changed, it's
+commercial & market.
 
 **Scope note:** This category also absorbs records where the unvalidated assumption was
 specifically about commercial viability — demand levels, customer behaviour, revenue
@@ -378,7 +361,7 @@ market context hold?" belongs here.
 
 ---
 
-### 7. Coordination & stakeholders
+### 6. Coordination & stakeholders
 
 **Definition:** Parties who needed to work together — whether within the project (internal
 governance), between project organisations (inter-party coordination), or with external
@@ -433,7 +416,7 @@ coordination & stakeholders. See Regulatory & approvals entry for detail.
 
 ---
 
-### 8. Data & measurement
+### 7. Data & measurement
 
 **Definition:** The project could not generate, access, or rely on data of sufficient
 quality, resolution, coverage, or timeliness to support design decisions, performance
@@ -461,17 +444,17 @@ or insufficient for the project's information needs.
 
 **What does NOT belong here:**
 - The project had good data but used wrong values from the wrong context → **Unvalidated
-  design parameters**
+  technical assumptions**
 - The project scoped its measurement needs incorrectly (never identified what data was
   needed) → **Poor scoping**
 - The data problem was actually a commercial insight (customer behaviour different from
   assumed) → **Commercial & market**
 
-**Boundary rule with Unvalidated design parameters:** If the right data existed but the team
-used wrong values from a different context (method error — wrong soiling rates, wrong cost
-benchmarks), it's unvalidated design parameters. If the right data did not exist or could not
-be collected because the infrastructure was absent or inadequate (availability error), it's
-data & measurement.
+**Boundary rule with Unvalidated technical assumptions:** If the right data existed but the
+team used wrong values from a different context (method error — wrong soiling rates, wrong
+cost benchmarks), it's unvalidated technical assumptions. If the right data did not exist or
+could not be collected because the infrastructure was absent or inadequate (availability
+error), it's data & measurement.
 
 **Boundary rule with Poor scoping:** If the project never identified that certain data would
 be needed, that's poor scoping. If the project identified the data need but the measurement
@@ -485,7 +468,7 @@ system was inadequate to fulfil it, that's data & measurement.
 
 ---
 
-### 9. Execution & logistics
+### 8. Execution & logistics
 
 **Definition:** The project had a sound design and understood its requirements, but the plan
 for physically delivering the work — construction management, supply chain procurement,
@@ -513,8 +496,7 @@ physical demands of the project.
 - Quality assurance gaps during physical delivery
 
 **What does NOT belong here:**
-- The design itself was wrong → **Unvalidated performance**, **Unvalidated design
-  parameters**, or **Poor scoping**
+- The design itself was wrong → **Unvalidated technical assumptions** or **Poor scoping**
 - A regulatory process delayed physical works → **Regulatory & approvals**
 - A stakeholder or counterparty blocked site access → **Coordination & stakeholders**
 - Supply chain disruption caused by an external shock (pandemic, geopolitical event) →
@@ -528,6 +510,11 @@ execute the delivery plan. The former "capability shortfall" category (2.9% prev
 below threshold) is absorbed here when the capability gap manifested as a delivery execution
 problem. Where capability gaps caused wrong technical assumptions, classify by the broken
 assumption instead.
+
+**Tiebreaker with Unvalidated technical assumptions:** If the work was attempted and done
+badly, it's execution & logistics. If the work was designed based on wrong beliefs about what
+would work, it's unvalidated technical assumptions. The test: "Was the problem in what they
+believed, or in how they carried it out?"
 
 **Examples from corpus:**
 - Sales targets exceeded realistic installation capacity (700 committed, 250 delivered)
@@ -552,14 +539,13 @@ Approximately 27% of records (4,555) carry this label.
 | # | Failure mode | Mechanism (one sentence) | PM question |
 |---|---|---|---|
 | 1 | Poor scoping | Scope definition failed to capture what the project needed | "Was the full scope confirmed before design was locked?" |
-| 2 | Unvalidated performance | Technology not proven to work in the deployment context | "Does this work here?" |
-| 3 | Unvalidated design parameters | Numerical inputs borrowed from wrong context | "Are our numbers right for this context?" |
-| 4 | Unvalidated integration | Interfaces between systems never validated | "Do these work together?" |
-| 5 | Regulatory & approvals | Regulatory pathway unmapped or underestimated | "Is the regulatory pathway mapped and buffered?" |
-| 6 | Commercial & market | Business case rested on unvalidated commercial conditions | "Does the market context hold?" |
-| 7 | Coordination & stakeholders | Parties who needed to work together weren't set up to | "Are all parties set up to work together?" |
-| 8 | Data & measurement | Data infrastructure inadequate for design or verification | "Is the data infrastructure in place?" |
-| 9 | Execution & logistics | Delivery plan insufficient for physical realities | "Is the delivery plan robust?" |
+| 2 | Unvalidated technical assumptions | Technical beliefs about performance or parameters not validated for context | "Have we verified our technical assumptions for this context?" |
+| 3 | Unvalidated integration | Interfaces between systems never validated | "Do these work together?" |
+| 4 | Regulatory & approvals | Regulatory pathway unmapped or underestimated | "Is the regulatory pathway mapped and buffered?" |
+| 5 | Commercial & market | Business case rested on unvalidated commercial conditions | "Does the market context hold?" |
+| 6 | Coordination & stakeholders | Parties who needed to work together weren't set up to | "Are all parties set up to work together?" |
+| 7 | Data & measurement | Data infrastructure inadequate for design or verification | "Is the data infrastructure in place?" |
+| 8 | Execution & logistics | Delivery plan insufficient for physical realities | "Is the delivery plan robust?" |
 
 ---
 
@@ -567,13 +553,13 @@ Approximately 27% of records (4,555) carry this label.
 
 | Former failure mode | Disposition | Rationale |
 |---|---|---|
-| design assumption failure | Dissolved → #1, #2, #3 | Catch-all (20%); not a mechanism |
-| technical underperformance | Dissolved → #2, #3, others | Consequence, not mechanism |
-| integration failure | Dissolved → #4, #7, others | Reframed as mechanism (#4) |
-| schedule slippage | Dissolved → #5, #7, #9 | Consequence (fails mechanism test) |
-| cost overrun | Dissolved → #1, #9, others | Consequence; 1.1% prevalence |
-| data quality/measurement failure | Renamed → #8 | Validated by clustering |
-| regulatory misfit | Merged → #5 | Kept with expanded scope |
-| commercial/demand failure | Merged → #6 | Kept; absorbs commercial viability sub-cluster |
-| resource/capability shortfall | Dissolved → #9, #1, others | 2.9% prevalence (below threshold) |
-| governance/coordination failure | Merged → #7 | Kept with expanded scope |
+| design assumption failure | Dissolved → #1, #2 | Catch-all (20%); not a mechanism |
+| technical underperformance | Dissolved → #2, others | Consequence, not mechanism |
+| integration failure | Dissolved → #3, #6, others | Reframed as mechanism (#3) |
+| schedule slippage | Dissolved → #4, #6, #8 | Consequence (fails mechanism test) |
+| cost overrun | Dissolved → #1, #8, others | Consequence; 1.1% prevalence |
+| data quality/measurement failure | Renamed → #7 | Validated by clustering |
+| regulatory misfit | Merged → #4 | Kept with expanded scope |
+| commercial/demand failure | Merged → #5 | Kept; absorbs commercial viability sub-cluster |
+| resource/capability shortfall | Dissolved → #8, #1, others | 2.9% prevalence (below threshold) |
+| governance/coordination failure | Merged → #6 | Kept with expanded scope |

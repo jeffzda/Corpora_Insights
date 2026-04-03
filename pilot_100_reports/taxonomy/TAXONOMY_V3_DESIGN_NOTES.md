@@ -722,41 +722,49 @@ more granular than anything in the published literature.
 
 ---
 
-## Part 11: Final v3 Failure Mode Taxonomy (9 categories)
+## Part 11: Final v3 Failure Mode Taxonomy (8 categories)
 
 | # | Failure mode | Mechanism | Severity Ratio |
 |---|---|---|---|
 | 1 | Poor scoping | Scope definition failed to capture what the project needed | 0.21 |
-| 2 | Unvalidated performance | Technology/component not proven to work in deployment context | ~0.40* |
-| 3 | Unvalidated design parameters | Numerical inputs borrowed from wrong context without validation | ~0.25* |
-| 4 | Unvalidated integration | Interfaces between systems never validated before deployment | ~0.35* |
-| 5 | Regulatory & approvals | Regulatory pathway unmapped, misunderstood, or underestimated | 0.60 |
-| 6 | Commercial & market | Business case rested on unvalidated or unviable commercial conditions | 0.59 |
-| 7 | Coordination & stakeholders | Parties who needed to work together weren't set up to do so | 0.14 |
-| 8 | Data & measurement | Data infrastructure inadequate for design, verification, or operations | 0.14 |
-| 9 | Execution & logistics | Delivery plan insufficient for physical realities of implementation | 0.28 |
+| 2 | Unvalidated technical assumptions | Technical beliefs about performance or parameters not validated for context | ~0.30* |
+| 3 | Unvalidated integration | Interfaces between systems never validated before deployment | ~0.35* |
+| 4 | Regulatory & approvals | Regulatory pathway unmapped, misunderstood, or underestimated | 0.60 |
+| 5 | Commercial & market | Business case rested on unvalidated or unviable commercial conditions | 0.59 |
+| 6 | Coordination & stakeholders | Parties who needed to work together weren't set up to do so | 0.14 |
+| 7 | Data & measurement | Data infrastructure inadequate for design, verification, or operations | 0.14 |
+| 8 | Execution & logistics | Delivery plan insufficient for physical realities of implementation | 0.28 |
 
-*Severity ratios for categories 2–4 are estimated from sub-cluster proportions; actual ratios
+*Severity ratios for categories 2–3 are estimated from sub-cluster proportions; actual ratios
 will be confirmed after full corpus reclassification.
 
-### What changed from the 8-category proposal
+### What changed from the 8-category proposal (through 9, back to 8)
 
-- **"Technical assumptions" dissolved** — it was 30% of records, a catch-all. Split into
-  three mechanism-level categories (#2, #3, #4) each answering a different PM question.
+- **"Technical assumptions" dissolved** — it was 30% of records, a catch-all. Initially split
+  into three mechanism-level categories (unvalidated performance, unvalidated design
+  parameters, unvalidated integration).
+- **"Unvalidated performance" and "Unvalidated design parameters" re-merged** into
+  "Unvalidated technical assumptions" (#2). The boundary between "the thing didn't perform"
+  and "the numbers were wrong" is a matter of framing, not mechanism — a PV plant with
+  soiling losses 3× the design assumption is simultaneously both. The PM due diligence is
+  the same: "Have we verified our technical beliefs for this context?" The tiebreaker with
+  execution & logistics is: "Was the problem in what they believed, or in how they carried
+  it out?"
+- **"Unvalidated integration" retained** (#3) — the interface validation mechanism is
+  genuinely distinct from single-system assumptions.
 - **"Capability shortfall" absorbed** — 2.9% prevalence, records distribute naturally into
-  #1 (poor scoping), #9 (execution & logistics), and others.
-- **"Commercial viability" sub-cluster absorbed into #6** — overlaps with commercial & market
+  #1 (poor scoping), #8 (execution & logistics), and others.
+- **"Commercial viability" sub-cluster absorbed into #5** — overlaps with commercial & market
   and below prevalence threshold.
-- **Net result: 9 categories**, up from 8, but with no catch-all and each category passing
-  the mechanism, distinctiveness, actionability, and prevalence tests.
+- **Net result: 8 categories**, each passing the mechanism, distinctiveness, actionability,
+  and prevalence tests. No catch-all.
 
 ### Implementation: reclassification pass
 
 The full corpus reclassification will use Haiku batch to classify all 12,376 adverse records
-against the 9 v3 categories. Estimated cost: ~$8-12. The existing `failure_mode` field is
+against the 8 v3 categories. Estimated cost: ~$8-12. The existing `failure_mode` field is
 preserved as `failure_mode_v2`. The reclassification prompt is derived from
-`FAILURE_MODE_DEFINITIONS_V3.md`, which must be updated to reflect the 9-category taxonomy
-before the pass is run.
+`FAILURE_MODE_DEFINITIONS_V3.md`.
 
 ---
 
@@ -784,7 +792,7 @@ before the pass is run.
    overlap, or should challenge definitions be tightened to increase exclusivity?
 
 7. ~~After bottom-up clustering, how many of the original 10 failure modes survive intact vs
-   need splitting or merging?~~ **Resolved: 9 categories. See Part 11.**
+   need splitting or merging?~~ **Resolved: 8 categories. See Part 11.**
 
 8. The validation pass showed zero low-confidence records (all ≥0.77). Is Haiku's confidence
    calibration reliable, or should a manual review of 50 boundary cases be done before full
