@@ -518,13 +518,113 @@ project's ultimate fate.
 
 ---
 
+## Part 8: Field Disposition — Active vs Legacy
+
+### Decision: drop `delay_category` and `delay_magnitude`
+
+`delay_category` (9 values) maps almost 1:1 to `failure_mode`:
+
+| delay_category | Equivalent failure_mode |
+|---|---|
+| approvals/regulatory | regulatory misfit |
+| grid connection/system studies | integration failure / regulatory misfit |
+| procurement/supply chain | schedule slippage / cost overrun |
+| financing/commercial close | commercial/demand failure |
+| construction/installation | schedule slippage |
+| commissioning/integration | integration failure |
+| data/validation/testing | data quality/measurement failure |
+| stakeholder/land/community | governance/coordination failure |
+| internal governance/resourcing | resource/capability shortfall |
+
+It's a parallel classification of the same event — "what kind of problem was it" vs "what
+phase did the delay occur in" — but the LLM answers the same question twice in different words.
+52% of records have "no material delay stated" or no value at all.
+
+`delay_magnitude` is almost entirely empty: only **584 of 16,931 records (3.4%)** have an
+actual time range. Of the 6,371 records with a delay category, **91% have no quantified
+magnitude** — the LLM noted a delay but couldn't quantify it from the source text. The 584
+quantified records are spread thinly across 9 categories, too sparse for meaningful analysis.
+
+Both fields join the legacy pile. The temporal information they were trying to capture is
+already covered by `lifecycle_phase` (when it happened) and `failure_mode` (what kind of
+problem), and the source documents rarely contain enough specificity to populate delay_magnitude.
+
+### Active taxonomy fields (v3)
+
+**Deterministic (from metadata, not LLM-inferred):**
+- `arena_category` (14 values) — from KB metadata via ARENA_CATEGORY_MAP
+- `activity_type` (Study / Pilot / Deployment / R&D) — from projects CSV keywords
+- `is_consortium` (boolean) — from original proponent_type
+- `in_arena_portfolio` (boolean) — from projects CSV match
+
+**LLM-inferred, actively used in filters/matrices/analysis:**
+- `failure_mode` — being redesigned (currently 10, target TBD from bottom-up clustering)
+- `issue_severity` (none / minor / moderate / major / critical) — low dispute rate, strong metric
+- `lifecycle_phase` (8 values) — when in the project lifecycle the event occurred
+- `proponent_type` (10 values) — who is delivering
+- `transferability` (narrow / moderate / broad) — how widely the lesson applies
+
+**New in v3:**
+- `technical_challenge` — list of challenge tags per record (7 categories, multi-valued)
+- Challenge outcome (failure / success / neutral) — per challenge tag
+
+### Legacy fields (preserved on record for traceability, not in filters/display)
+
+- `outcome_class` — dropped: record-level guess at project-level property (see Part 7)
+- `project_type` — superseded by `arena_category` (deterministic)
+- `project_scale_band` — original LLM-inferred scale band
+- `technology_domain` — superseded by `arena_category` (deterministic)
+- `delay_category` — dropped: redundant shadow of failure_mode (see above)
+- `delay_magnitude` — dropped: 96.6% empty (see above)
+- `proponent_type_original` — pre-reclassification value (consortium records only)
+- `lifecycle_phase_original` — pre-remap value (variation/re-scope records only)
+- `failure_mode_v2` — original v2 failure mode label (after reclassification)
+
+---
+
+## Part 9: Failure Mode Redesign — Bottom-Up Approach
+
+### Revised methodology
+
+The initial top-down redesign (Part 1) proposed 7 categories but risked replacing one catch-all
+("design assumption failure") with another ("design & planning error") and lost signal by
+over-bundling categories that were working fine (integration failure, schedule slippage, data
+quality/measurement failure).
+
+**New approach:** bottom-up clustering from the data.
+
+1. **Sample 500 records** from the 4 problematic failure mode categories:
+   - 200 × design assumption failure (the catch-all, 3,457 total)
+   - 100 × integration failure (fuzzy boundary with technical underperformance, 645 total)
+   - 100 × schedule slippage (consequence not cause, 982 total)
+   - 100 × data quality/measurement failure (rarely primary, 730 total)
+
+2. **Phase 1 — Root-cause tagging** (Haiku batch): For each record, ask "what specifically
+   went wrong?" with no predefined categories. Output: a 5-10 word concrete root cause per
+   record. Batch submitted April 2026.
+
+3. **Phase 2 — Clustering** (Sonnet): Feed all 500 root-cause tags to a single call, ask it
+   to identify natural groupings and propose 6-12 categories that emerge from the data.
+
+4. **Phase 3 — Evaluation:** Compare proposed categories against the 6 failure modes that are
+   working fine (technical underperformance, regulatory misfit, commercial/demand failure,
+   resource/capability shortfall, governance/coordination failure, and possibly others). Decide
+   which existing categories to keep, which to merge, and what new categories the clustering
+   reveals.
+
+The goal is to fix what's broken without losing signal from categories that work. The 5,814
+records across the 4 problematic categories (34% of adverse records) need reclassification;
+the remaining 6,562 adverse records in working categories may not.
+
+---
+
 ## Open Questions
 
 1. Should the "no major failure stated" records be reclassified? Some may contain minor issues
    that were missed in v2 extraction. Others are genuine positive observations.
 
-2. Should `delay_category` be revised alongside `failure_mode`? The same boundary issues apply,
-   and 52% of records have blank delay_category.
+2. ~~Should `delay_category` be revised alongside `failure_mode`?~~ **Resolved: dropped entirely
+   alongside `delay_magnitude`. Both are legacy fields.** (See Part 8.)
 
 3. Can the failure mode reclassification and challenge tagging be done in a single LLM pass to
    reduce cost and ensure consistency? (Estimated combined cost: ~$10-15 for full corpus on
@@ -539,3 +639,7 @@ project's ultimate fate.
 
 6. The test pass showed 51% of records match exactly 2 challenges. Is this the right level of
    overlap, or should challenge definitions be tightened to increase exclusivity?
+
+7. After bottom-up clustering, how many of the original 10 failure modes survive intact vs
+   need splitting or merging? The working hypothesis is that 5-6 survive and the 4 problematic
+   categories redistribute into 3-5 new ones, yielding 8-11 total.
