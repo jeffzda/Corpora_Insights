@@ -2122,27 +2122,33 @@ const FM_LIST = Object.keys(FM_COLOURS);
 function anPhaseFM(recs) {{
   if (_anCharts.phaseFM) _anCharts.phaseFM.destroy();
   const matrix = {{}};
-  AN_PHASES.forEach(p => {{ matrix[p] = {{}}; FM_LIST.forEach(fm => {{ matrix[p][fm] = 0; }}); }});
+  const totals = {{}};
+  AN_PHASES.forEach(p => {{ matrix[p] = {{}}; totals[p] = 0; FM_LIST.forEach(fm => {{ matrix[p][fm] = 0; }}); }});
   recs.forEach(r => {{
-    if (r.lifecycle_phase && matrix[r.lifecycle_phase] && r.failure_mode && matrix[r.lifecycle_phase][r.failure_mode] !== undefined)
+    if (r.lifecycle_phase && matrix[r.lifecycle_phase] && r.failure_mode && matrix[r.lifecycle_phase][r.failure_mode] !== undefined) {{
       matrix[r.lifecycle_phase][r.failure_mode]++;
+      totals[r.lifecycle_phase]++;
+    }}
   }});
+  const labels = AN_PHASES.map((p, i) => `${{AN_PHASE_SHORT[i]}} (n=${{totals[p]}})`);
   const datasets = FM_LIST.map(fm => ({{
     label: fm,
-    data: AN_PHASES.map(p => matrix[p][fm] || 0),
+    data: AN_PHASES.map(p => totals[p] > 0 ? +((matrix[p][fm] || 0) / totals[p] * 100).toFixed(1) : 0),
     backgroundColor: FM_COLOURS[fm] + 'cc',
     borderColor: FM_COLOURS[fm],
     borderWidth: 1,
   }}));
   _anCharts.phaseFM = new Chart(document.getElementById('an-phase-fm'), {{
     type: 'bar',
-    data: {{ labels: AN_PHASE_SHORT, datasets }},
+    data: {{ labels, datasets }},
     options: {{
       responsive: true, maintainAspectRatio: true,
-      plugins: {{ legend: {{ position: 'right', labels: {{ font: {{ size: 14 }}, boxWidth: 14 }} }} }},
+      plugins: {{ legend: {{ position: 'right', labels: {{ font: {{ size: 14 }}, boxWidth: 14 }} }},
+        tooltip: {{ callbacks: {{ label: ctx => `${{ctx.dataset.label}}: ${{ctx.parsed.y.toFixed(1)}}%` }} }}
+      }},
       scales: {{
         x: {{ stacked: true, ticks: {{ font: {{ size: 14 }} }}, grid: {{ color: '#f1f5f9' }} }},
-        y: {{ stacked: true, title: {{ display: true, text: 'Record count', font: {{ size: 14 }} }}, grid: {{ color: '#f1f5f9' }} }}
+        y: {{ stacked: true, max: 100, title: {{ display: true, text: '% of records at phase', font: {{ size: 14 }} }}, grid: {{ color: '#f1f5f9' }} }}
       }}
     }}
   }});
