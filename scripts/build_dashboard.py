@@ -2118,20 +2118,22 @@ const AN_PHASES = ['concept/feasibility','development/design','approvals/contrac
   'construction/installation','commissioning/integration','operations','close-out/post-project review'];
 const AN_PHASE_SHORT = ['Concept','Design','Approvals','Procurement','Construction','Commissioning','Operations','Close-out'];
 const FM_LIST = Object.keys(FM_COLOURS);
+const FM_NO = 'no major failure stated';
+const FM_ADV = FM_LIST.filter(fm => fm !== FM_NO);
 
 function anPhaseFM(recs) {{
   if (_anCharts.phaseFM) _anCharts.phaseFM.destroy();
   const matrix = {{}};
   const totals = {{}};
-  AN_PHASES.forEach(p => {{ matrix[p] = {{}}; totals[p] = 0; FM_LIST.forEach(fm => {{ matrix[p][fm] = 0; }}); }});
+  AN_PHASES.forEach(p => {{ matrix[p] = {{}}; totals[p] = 0; FM_ADV.forEach(fm => {{ matrix[p][fm] = 0; }}); }});
   recs.forEach(r => {{
-    if (r.lifecycle_phase && matrix[r.lifecycle_phase] && r.failure_mode && matrix[r.lifecycle_phase][r.failure_mode] !== undefined) {{
+    if (r.lifecycle_phase && matrix[r.lifecycle_phase] && r.failure_mode && r.failure_mode !== FM_NO && matrix[r.lifecycle_phase][r.failure_mode] !== undefined) {{
       matrix[r.lifecycle_phase][r.failure_mode]++;
       totals[r.lifecycle_phase]++;
     }}
   }});
   const labels = AN_PHASES.map((p, i) => `${{AN_PHASE_SHORT[i]}} (n=${{totals[p]}})`);
-  const datasets = FM_LIST.map(fm => ({{
+  const datasets = FM_ADV.map(fm => ({{
     label: fm,
     data: AN_PHASES.map(p => totals[p] > 0 ? +((matrix[p][fm] || 0) / totals[p] * 100).toFixed(1) : 0),
     backgroundColor: FM_COLOURS[fm] + 'cc',
@@ -2233,14 +2235,14 @@ function anTechFM(recs) {{
   recs.forEach(r => {{ (r.arena_category || []).forEach(cat => {{ techCounts[cat] = (techCounts[cat]||0)+1; }}); }});
   const topTechs = Object.entries(techCounts).sort((a,b)=>b[1]-a[1]).slice(0,10).map(([k])=>k);
   const matrix = {{}};
-  topTechs.forEach(t => {{ matrix[t] = {{}}; FM_LIST.forEach(fm => {{ matrix[t][fm] = 0; }}); }});
+  topTechs.forEach(t => {{ matrix[t] = {{}}; FM_ADV.forEach(fm => {{ matrix[t][fm] = 0; }}); }});
   recs.forEach(r => {{
     (r.arena_category || []).forEach(cat => {{
-      if (matrix[cat] && r.failure_mode && matrix[cat][r.failure_mode] !== undefined)
+      if (matrix[cat] && r.failure_mode && r.failure_mode !== FM_NO && matrix[cat][r.failure_mode] !== undefined)
         matrix[cat][r.failure_mode]++;
     }});
   }});
-  const datasets = FM_LIST.map(fm => ({{
+  const datasets = FM_ADV.map(fm => ({{
     label: fm,
     data: topTechs.map(t => matrix[t][fm]||0),
     backgroundColor: FM_COLOURS[fm]+'cc', borderColor: FM_COLOURS[fm], borderWidth: 1,
