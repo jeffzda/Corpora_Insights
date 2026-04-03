@@ -1077,6 +1077,21 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
   <span>Prototype · {n} records · {n_projects_covered} of {portfolio_size} ARENA projects</span>
 </header>
 
+<div class="filter-bar">
+    <div class="fi fi-search"><label>Search records</label><input id="search" type="text" placeholder="Keywords…"></div>
+    <div class="fi"><label>ARENA category</label><select id="f-category"><option value="">All categories</option>{options(arena_categories)}</select></div>
+    <div class="fi"><label>Activity type</label><select id="f-activity"><option value="">All activities</option>{options(activity_types)}</select></div>
+    <div class="fi"><label>Failure mode</label><select id="f-failure"><option value="">All failures</option>{options(failure_modes)}</select></div>
+    <div class="fi"><label>Outcome</label><select id="f-outcome"><option value="">All outcomes</option>{options(outcome_classes)}</select></div>
+    <div class="fi"><label>Proponent</label><select id="f-proponent"><option value="">All proponents</option>{options(proponent_types)}</select></div>
+    <div class="fi"><label>Lifecycle phase</label><select id="f-phase"><option value="">All phases</option>{options(lifecycle_phases)}</select></div>
+    <div class="fi"><label>Severity</label><select id="f-severity"><option value="">All severities</option>{options(severity_levels)}</select></div>
+    <div class="fi"><label>Consortium</label><select id="f-consortium"><option value="">All</option><option value="true">Consortium only</option><option value="false">Non-consortium</option></select></div>
+    <div class="fi"><label>Transferability</label><select id="f-transferability"><option value="">All</option>{options(transferability_vals)}</select></div>
+    <div class="fi"><label>QA grounding</label><select id="f-qa"><option value="">All</option>{options(qa_verdicts)}</select></div>
+    <div class="fi"><label>QA classification</label><select id="f-qa-class"><option value="">All</option>{options(qa_classifications)}</select></div>
+    <button class="filter-clear-btn" onclick="clearFilters()">Clear</button>
+  </div>
 <div class="tabs">
   <div class="tab active" id="tab-records" onclick="switchTab('records')">Delivery Records</div>
   <div class="tab" id="tab-analysis" onclick="switchTab('analysis')">Analysis</div>
@@ -1093,21 +1108,6 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
     <div class="stat"><span class="stat-value">{n_projects_covered} <span style="font-size:14px;color:#64748b">of {portfolio_size} ({portfolio_pct})</span></span><span class="stat-label">ARENA portfolio covered</span></div>
     <div class="stat"><span class="stat-value">{n_failures}</span><span class="stat-label">With failure mode</span></div>
     <div class="stat"><span class="stat-value">{len(records) - n_failures}</span><span class="stat-label">No major failure</span></div>
-  </div>
-  <div class="filter-bar">
-    <div class="fi fi-search"><label>Search records</label><input id="search" type="text" placeholder="Keywords…"></div>
-    <div class="fi"><label>ARENA category</label><select id="f-category"><option value="">All categories</option>{options(arena_categories)}</select></div>
-    <div class="fi"><label>Activity type</label><select id="f-activity"><option value="">All activities</option>{options(activity_types)}</select></div>
-    <div class="fi"><label>Failure mode</label><select id="f-failure"><option value="">All failures</option>{options(failure_modes)}</select></div>
-    <div class="fi"><label>Outcome</label><select id="f-outcome"><option value="">All outcomes</option>{options(outcome_classes)}</select></div>
-    <div class="fi"><label>Proponent</label><select id="f-proponent"><option value="">All proponents</option>{options(proponent_types)}</select></div>
-    <div class="fi"><label>Lifecycle phase</label><select id="f-phase"><option value="">All phases</option>{options(lifecycle_phases)}</select></div>
-    <div class="fi"><label>Severity</label><select id="f-severity"><option value="">All severities</option>{options(severity_levels)}</select></div>
-    <div class="fi"><label>Consortium</label><select id="f-consortium"><option value="">All</option><option value="true">Consortium only</option><option value="false">Non-consortium</option></select></div>
-    <div class="fi"><label>Transferability</label><select id="f-transferability"><option value="">All</option>{options(transferability_vals)}</select></div>
-    <div class="fi"><label>QA grounding</label><select id="f-qa"><option value="">All</option>{options(qa_verdicts)}</select></div>
-    <div class="fi"><label>QA classification</label><select id="f-qa-class"><option value="">All</option>{options(qa_classifications)}</select></div>
-    <button class="filter-clear-btn" onclick="clearFilters()">Clear</button>
   </div>
   <div class="layout">
     <div class="project-panel">
@@ -1156,6 +1156,7 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
 <!-- ── Analysis tab ── -->
 <div class="tab-content" id="tc-analysis">
   <div class="an-page">
+    <div id="an-warn" style="display:none;background:#fef3c7;border:1px solid #f59e0b;border-radius:6px;padding:8px 14px;margin-bottom:10px;font-size:12px;color:#92400e"></div>
     <div class="an-stats" id="an-stats"></div>
     <div class="an-grid">
       <div class="an-card an-wide">
@@ -1330,7 +1331,11 @@ function switchTab(name) {{
   document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
   document.getElementById('tab-' + name).classList.add('active');
   document.getElementById('tc-' + name).classList.add('active');
-  if (name === 'analysis') initAnalysis();
+  if (name === 'analysis') {{
+    const f = getFilters();
+    const filtered = RECORDS.filter(r => matchesDimFilters(r, f));
+    renderAnalysis(filtered);
+  }}
   if (name === 'reports') renderReports();
 }}
 
@@ -1985,6 +1990,10 @@ function applyFilters() {{
   renderCards(filtered);
   renderProjectSummary(filtered);
   renderProjectList();
+  if (document.getElementById('tc-analysis').classList.contains('active')) {{
+    const dimFiltered = RECORDS.filter(r => matchesDimFilters(r, f));
+    renderAnalysis(dimFiltered);
+  }}
 }}
 
 function changePage(delta) {{
@@ -2129,36 +2138,42 @@ function closeModalDirect() {{ document.getElementById('overlay').classList.remo
 document.addEventListener('keydown', e => {{ if (e.key === 'Escape') closeModalDirect(); }});
 
 // ── Analysis tab ───────────────────────────────────────────────
-let _analysisInit = false;
+const _anCharts = {{}};
 
-function initAnalysis() {{
-  if (_analysisInit) return;
-  _analysisInit = true;
-
-  const total = RECORDS.length;
-  const nProjects = PROJECT_SET.size;
-  const withFailure = RECORDS.filter(r => r.failure_mode && r.failure_mode !== 'no major failure stated').length;
-  const failPct = (withFailure / total * 100).toFixed(0);
-  const avgPerProj = (total / nProjects).toFixed(1);
-  const sevMajCrit = RECORDS.filter(r => r.issue_severity === 'major' || r.issue_severity === 'critical').length;
-  const sevMinMod = RECORDS.filter(r => r.issue_severity === 'minor' || r.issue_severity === 'moderate').length;
+function renderAnalysis(recs) {{
+  const total = recs.length;
+  const projects = new Set(recs.map(r => r.kb_associated_project).filter(Boolean));
+  const nProjects = projects.size;
+  const withFailure = recs.filter(r => r.failure_mode && r.failure_mode !== 'no major failure stated').length;
+  const failPct = total > 0 ? (withFailure / total * 100).toFixed(0) : '0';
+  const sevMajCrit = recs.filter(r => r.issue_severity === 'major' || r.issue_severity === 'critical').length;
+  const sevMinMod = recs.filter(r => r.issue_severity === 'minor' || r.issue_severity === 'moderate').length;
   const sevRatio = sevMinMod > 0 ? (sevMajCrit / sevMinMod).toFixed(2) : '—';
+  const isFiltered = total < RECORDS.length;
+  const totalLabel = isFiltered ? `${{total.toLocaleString()}} <span style="font-size:14px;color:#64748b">of ${{RECORDS.length.toLocaleString()}}</span>` : total.toLocaleString();
   document.getElementById('an-stats').innerHTML = `
-    <div class="stat"><span class="stat-value">${{total.toLocaleString()}}</span><span class="stat-label">Total records</span></div>
+    <div class="stat"><span class="stat-value">${{totalLabel}}</span><span class="stat-label">${{isFiltered ? 'Filtered records' : 'Total records'}}</span></div>
     <div class="stat"><span class="stat-value">${{nProjects.toLocaleString()}}</span><span class="stat-label">Projects covered</span></div>
     <div class="stat"><span class="stat-value">${{withFailure.toLocaleString()}} <span style="font-size:14px;color:#64748b">(${{failPct}}%)</span></span><span class="stat-label">Records with any failure</span></div>
-    <div class="stat"><span class="stat-value">${{sevRatio}}</span><span class="stat-label">Severity ratio (major÷mild)</span></div>
-    <div class="stat"><span class="stat-value">${{avgPerProj}}</span><span class="stat-label">Avg insights per project</span></div>`;
+    <div class="stat"><span class="stat-value">${{sevRatio}}</span><span class="stat-label">Severity ratio (major÷mild)</span></div>`;
 
-  anPhaseFM();
-  anFMFreq();
-  anTypeFailRate();
-  anTechFM();
-  anOutcomes();
-  anSeverity();
-  anPhaseSev();
-  anSevRatio();
-  anCooccurrence();
+  const warnEl = document.getElementById('an-warn');
+  if (total > 0 && total < 30) {{
+    warnEl.style.display = 'block';
+    warnEl.textContent = 'Only ' + total + ' records match filters — ratios may not be reliable.';
+  }} else {{
+    warnEl.style.display = 'none';
+  }}
+
+  anPhaseFM(recs);
+  anFMFreq(recs);
+  anTypeFailRate(recs);
+  anTechFM(recs);
+  anOutcomes(recs);
+  anSeverity(recs);
+  anPhaseSev(recs);
+  anSevRatio(recs);
+  anCooccurrence(recs);
 }}
 
 const AN_PHASES = ['concept/feasibility','development/design','approvals/contracting','procurement',
@@ -2166,10 +2181,11 @@ const AN_PHASES = ['concept/feasibility','development/design','approvals/contrac
 const AN_PHASE_SHORT = ['Concept','Design','Approvals','Procurement','Construction','Commissioning','Operations','Close-out'];
 const FM_LIST = Object.keys(FM_COLOURS);
 
-function anPhaseFM() {{
+function anPhaseFM(recs) {{
+  if (_anCharts.phaseFM) _anCharts.phaseFM.destroy();
   const matrix = {{}};
   AN_PHASES.forEach(p => {{ matrix[p] = {{}}; FM_LIST.forEach(fm => {{ matrix[p][fm] = 0; }}); }});
-  RECORDS.forEach(r => {{
+  recs.forEach(r => {{
     if (r.lifecycle_phase && matrix[r.lifecycle_phase] && r.failure_mode && matrix[r.lifecycle_phase][r.failure_mode] !== undefined)
       matrix[r.lifecycle_phase][r.failure_mode]++;
   }});
@@ -2180,7 +2196,7 @@ function anPhaseFM() {{
     borderColor: FM_COLOURS[fm],
     borderWidth: 1,
   }}));
-  new Chart(document.getElementById('an-phase-fm'), {{
+  _anCharts.phaseFM = new Chart(document.getElementById('an-phase-fm'), {{
     type: 'bar',
     data: {{ labels: AN_PHASE_SHORT, datasets }},
     options: {{
@@ -2194,11 +2210,12 @@ function anPhaseFM() {{
   }});
 }}
 
-function anFMFreq() {{
+function anFMFreq(recs) {{
+  if (_anCharts.fmFreq) _anCharts.fmFreq.destroy();
   const counts = {{}};
-  RECORDS.forEach(r => {{ if (r.failure_mode) counts[r.failure_mode] = (counts[r.failure_mode] || 0) + 1; }});
+  recs.forEach(r => {{ if (r.failure_mode) counts[r.failure_mode] = (counts[r.failure_mode] || 0) + 1; }});
   const sorted = Object.entries(counts).sort((a,b) => b[1]-a[1]);
-  new Chart(document.getElementById('an-fm-freq'), {{
+  _anCharts.fmFreq = new Chart(document.getElementById('an-fm-freq'), {{
     type: 'bar',
     data: {{
       labels: sorted.map(([k]) => k),
@@ -2218,11 +2235,12 @@ function anFMFreq() {{
   }});
 }}
 
-function anTypeFailRate() {{
+function anTypeFailRate(recs) {{
+  if (_anCharts.typeFailRate) _anCharts.typeFailRate.destroy();
   const SEV_ORDER = ['critical','major','moderate','minor','none'];
   const totals = {{}};
   const matrix = {{}};
-  RECORDS.forEach(r => {{
+  recs.forEach(r => {{
     (r.arena_category || []).forEach(cat => {{
       totals[cat] = (totals[cat] || 0) + 1;
       if (!matrix[cat]) matrix[cat] = {{}};
@@ -2245,7 +2263,7 @@ function anTypeFailRate() {{
     borderColor: IS_COLOURS[sev],
     borderWidth: 1,
   }}));
-  new Chart(document.getElementById('an-type-fail'), {{
+  _anCharts.typeFailRate = new Chart(document.getElementById('an-type-fail'), {{
     type: 'bar',
     data: {{ labels: types.map(t => `${{t}} (n=${{totals[t]}})`), datasets }},
     options: {{
@@ -2264,13 +2282,14 @@ function anTypeFailRate() {{
   }});
 }}
 
-function anTechFM() {{
+function anTechFM(recs) {{
+  if (_anCharts.techFM) _anCharts.techFM.destroy();
   const techCounts = {{}};
-  RECORDS.forEach(r => {{ (r.arena_category || []).forEach(cat => {{ techCounts[cat] = (techCounts[cat]||0)+1; }}); }});
+  recs.forEach(r => {{ (r.arena_category || []).forEach(cat => {{ techCounts[cat] = (techCounts[cat]||0)+1; }}); }});
   const topTechs = Object.entries(techCounts).sort((a,b)=>b[1]-a[1]).slice(0,10).map(([k])=>k);
   const matrix = {{}};
   topTechs.forEach(t => {{ matrix[t] = {{}}; FM_LIST.forEach(fm => {{ matrix[t][fm] = 0; }}); }});
-  RECORDS.forEach(r => {{
+  recs.forEach(r => {{
     (r.arena_category || []).forEach(cat => {{
       if (matrix[cat] && r.failure_mode && matrix[cat][r.failure_mode] !== undefined)
         matrix[cat][r.failure_mode]++;
@@ -2281,7 +2300,7 @@ function anTechFM() {{
     data: topTechs.map(t => matrix[t][fm]||0),
     backgroundColor: FM_COLOURS[fm]+'cc', borderColor: FM_COLOURS[fm], borderWidth: 1,
   }}));
-  new Chart(document.getElementById('an-tech-fm'), {{
+  _anCharts.techFM = new Chart(document.getElementById('an-tech-fm'), {{
     type: 'bar',
     data: {{ labels: topTechs, datasets }},
     options: {{
@@ -2295,11 +2314,12 @@ function anTechFM() {{
   }});
 }}
 
-function anOutcomes() {{
+function anOutcomes(recs) {{
+  if (_anCharts.outcomes) _anCharts.outcomes.destroy();
   const counts = {{}};
-  RECORDS.forEach(r => {{ if (r.outcome_class) counts[r.outcome_class] = (counts[r.outcome_class]||0)+1; }});
+  recs.forEach(r => {{ if (r.outcome_class) counts[r.outcome_class] = (counts[r.outcome_class]||0)+1; }});
   const sorted = Object.entries(counts).sort((a,b)=>b[1]-a[1]);
-  new Chart(document.getElementById('an-outcomes'), {{
+  _anCharts.outcomes = new Chart(document.getElementById('an-outcomes'), {{
     type: 'doughnut',
     data: {{
       labels: sorted.map(([k])=>k),
@@ -2314,12 +2334,13 @@ function anOutcomes() {{
   }});
 }}
 
-function anSeverity() {{
+function anSeverity(recs) {{
+  if (_anCharts.severity) _anCharts.severity.destroy();
   const SEV_ORDER = ['critical','major','moderate','minor','none'];
   const counts = {{}};
-  RECORDS.forEach(r => {{ if (r.issue_severity) counts[r.issue_severity] = (counts[r.issue_severity]||0)+1; }});
+  recs.forEach(r => {{ if (r.issue_severity) counts[r.issue_severity] = (counts[r.issue_severity]||0)+1; }});
   const labels = SEV_ORDER.filter(s => counts[s]);
-  new Chart(document.getElementById('an-severity'), {{
+  _anCharts.severity = new Chart(document.getElementById('an-severity'), {{
     type: 'doughnut',
     data: {{
       labels,
@@ -2334,11 +2355,12 @@ function anSeverity() {{
   }});
 }}
 
-function anPhaseSev() {{
+function anPhaseSev(recs) {{
+  if (_anCharts.phaseSev) _anCharts.phaseSev.destroy();
   const SEV_ORDER = ['critical','major','moderate','minor','none'];
   const matrix = {{}};
   AN_PHASES.forEach(p => {{ matrix[p] = {{}}; SEV_ORDER.forEach(s => {{ matrix[p][s] = 0; }}); }});
-  RECORDS.forEach(r => {{
+  recs.forEach(r => {{
     if (r.lifecycle_phase && matrix[r.lifecycle_phase] && r.issue_severity)
       matrix[r.lifecycle_phase][r.issue_severity] = (matrix[r.lifecycle_phase][r.issue_severity] || 0) + 1;
   }});
@@ -2349,7 +2371,7 @@ function anPhaseSev() {{
     borderColor: IS_COLOURS[sev],
     borderWidth: 1,
   }}));
-  new Chart(document.getElementById('an-phase-sev'), {{
+  _anCharts.phaseSev = new Chart(document.getElementById('an-phase-sev'), {{
     type: 'bar',
     data: {{ labels: AN_PHASE_SHORT, datasets }},
     options: {{
@@ -2368,13 +2390,14 @@ function anPhaseSev() {{
   }});
 }}
 
-function anSevRatio() {{
+function anSevRatio(recs) {{
+  if (_anCharts.sevRatio) _anCharts.sevRatio.destroy();
   const FM_NO_FAILURE = 'no major failure stated';
   const fms = FM_LIST.filter(fm => fm !== FM_NO_FAILURE);
   const sevCounts = {{}};
   fms.forEach(fm => {{ sevCounts[fm] = {{major:0,critical:0,minor:0,moderate:0}}; }});
   let allMajCrit = 0, allMinMod = 0;
-  RECORDS.forEach(r => {{
+  recs.forEach(r => {{
     const fm = r.failure_mode;
     if (!fm || fm === FM_NO_FAILURE || !sevCounts[fm]) return;
     const s = r.issue_severity;
@@ -2389,7 +2412,7 @@ function anSevRatio() {{
   }});
   // Sort by ratio descending
   const indexed = fms.map((fm, i) => ({{fm, ratio: ratios[i]}})).sort((a,b) => b.ratio - a.ratio);
-  new Chart(document.getElementById('an-sev-ratio'), {{
+  _anCharts.sevRatio = new Chart(document.getElementById('an-sev-ratio'), {{
     type: 'bar',
     data: {{
       labels: indexed.map(d => d.fm),
@@ -2423,7 +2446,7 @@ function anSevRatio() {{
   }});
 }}
 
-function anCooccurrence() {{
+function anCooccurrence(recs) {{
   const FM_NO_FAILURE = 'no major failure stated';
   const FMS = FM_LIST.filter(fm => fm !== FM_NO_FAILURE);
   const SHORT = {{
@@ -2441,7 +2464,7 @@ function anCooccurrence() {{
   const matrix = {{}};
   FMS.forEach(p => {{ matrix[p] = {{}}; FMS.forEach(s => {{ matrix[p][s] = 0; }}); }});
   let maxVal = 0;
-  RECORDS.forEach(r => {{
+  recs.forEach(r => {{
     const p = r.failure_mode, s = r.secondary_failure_mode;
     if (p && s && p !== FM_NO_FAILURE && matrix[p] && matrix[p][s] !== undefined) {{
       matrix[p][s]++;
