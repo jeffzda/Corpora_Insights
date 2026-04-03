@@ -1322,6 +1322,10 @@ const FM_COLOURS = {fm_colours};
 const OC_COLOURS = {oc_colours};
 const IS_COLOURS = {is_colours};
 const QA_COLOURS = {qa_colours};
+Chart.defaults.font.size = 14;
+Chart.defaults.plugins.legend.labels.font = {{ size: 14 }};
+Chart.defaults.plugins.tooltip.bodyFont = {{ size: 14 }};
+Chart.defaults.plugins.tooltip.titleFont = {{ size: 14 }};
 const ARENA_ROOT = '{arena_root}';
 const BENCHMARKS = {benchmarks_json};
 
@@ -2201,7 +2205,7 @@ function anPhaseFM(recs) {{
     data: {{ labels: AN_PHASE_SHORT, datasets }},
     options: {{
       responsive: true, maintainAspectRatio: true,
-      plugins: {{ legend: {{ position: 'right', labels: {{ font: {{ size: 10 }}, boxWidth: 12 }} }} }},
+      plugins: {{ legend: {{ position: 'right', labels: {{ font: {{ size: 14 }}, boxWidth: 14 }} }} }},
       scales: {{
         x: {{ stacked: true, ticks: {{ font: {{ size: 10 }} }}, grid: {{ color: '#f1f5f9' }} }},
         y: {{ stacked: true, title: {{ display: true, text: 'Record count', font: {{ size: 10 }} }}, grid: {{ color: '#f1f5f9' }} }}
@@ -2270,7 +2274,7 @@ function anTypeFailRate(recs) {{
     options: {{
       indexAxis: 'y', responsive: true, maintainAspectRatio: true,
       plugins: {{
-        legend: {{ position: 'top', labels: {{ font: {{ size: 10 }}, boxWidth: 12 }} }},
+        legend: {{ position: 'top', labels: {{ font: {{ size: 14 }}, boxWidth: 14 }} }},
         tooltip: {{ callbacks: {{
           label: ctx => `${{ctx.dataset.label}}: ${{ctx.parsed.x.toFixed(1)}}%`
         }} }}
@@ -2329,7 +2333,7 @@ function anOutcomes(recs) {{
     }},
     options: {{
       responsive: true, maintainAspectRatio: true,
-      plugins: {{ legend: {{ position: 'right', labels: {{ font: {{ size: 10 }}, boxWidth: 12 }} }},
+      plugins: {{ legend: {{ position: 'right', labels: {{ font: {{ size: 14 }}, boxWidth: 14 }} }},
         tooltip: {{ callbacks: {{ label: ctx => `${{ctx.label}}: ${{ctx.parsed.toLocaleString()}} (${{(ctx.parsed/RECORDS.length*100).toFixed(1)}}%)` }} }} }}
     }}
   }});
@@ -2350,7 +2354,7 @@ function anSeverity(recs) {{
     }},
     options: {{
       responsive: true, maintainAspectRatio: true,
-      plugins: {{ legend: {{ position: 'right', labels: {{ font: {{ size: 10 }}, boxWidth: 12 }} }},
+      plugins: {{ legend: {{ position: 'right', labels: {{ font: {{ size: 14 }}, boxWidth: 14 }} }},
         tooltip: {{ callbacks: {{ label: ctx => `${{ctx.label}}: ${{ctx.parsed.toLocaleString()}} (${{(ctx.parsed/RECORDS.length*100).toFixed(1)}}%)` }} }} }}
     }}
   }});
@@ -2378,7 +2382,7 @@ function anPhaseSev(recs) {{
     options: {{
       responsive: true, maintainAspectRatio: true,
       plugins: {{
-        legend: {{ position: 'right', labels: {{ font: {{ size: 10 }}, boxWidth: 12 }} }},
+        legend: {{ position: 'right', labels: {{ font: {{ size: 14 }}, boxWidth: 14 }} }},
         tooltip: {{ callbacks: {{
           label: ctx => `${{ctx.dataset.label}}: ${{ctx.parsed.y}} records`
         }} }}
@@ -2726,7 +2730,7 @@ function buildCapexLine(rows) {{
     options: {{
       responsive: true,
       maintainAspectRatio: true,
-      plugins: {{ legend: {{ position: 'right', labels: {{ font: {{ size: 10 }}, boxWidth: 12 }} }} }},
+      plugins: {{ legend: {{ position: 'right', labels: {{ font: {{ size: 14 }}, boxWidth: 14 }} }} }},
       scales: {{
         x: {{ type: 'linear', title: {{ display: true, text: 'Scenario Year', font: {{ size: 11 }} }}, grid: {{ color: '#f1f5f9' }} }},
         y: {{ title: {{ display: true, text: 'AUD$/kW (midpoint)', font: {{ size: 11 }} }}, grid: {{ color: '#f1f5f9' }} }}
@@ -2778,7 +2782,7 @@ function buildMACcurve(rows) {{
       responsive: true,
       maintainAspectRatio: true,
       plugins: {{
-        legend: {{ display: true, labels: {{ font: {{ size: 10 }}, boxWidth: 12 }} }},
+        legend: {{ display: true, labels: {{ font: {{ size: 14 }}, boxWidth: 14 }} }},
         tooltip: {{ callbacks: {{ label: ctx => `${{ctx.dataset.label}}: ${{ctx.parsed.x?.toFixed(0) ?? ctx.raw?.toFixed(0)}}` }} }}
       }},
       scales: {{
@@ -2834,7 +2838,7 @@ function buildCFScatter(rows) {{
       responsive: true,
       maintainAspectRatio: true,
       plugins: {{
-        legend: {{ position: 'right', labels: {{ font: {{ size: 10 }}, boxWidth: 12 }} }},
+        legend: {{ position: 'right', labels: {{ font: {{ size: 14 }}, boxWidth: 14 }} }},
         tooltip: {{ callbacks: {{
           label: ctx => ctx.dataset.type === 'line' ? ctx.dataset.label
             : `${{ctx.dataset.label}}: designed ${{ctx.parsed.x}}% → actual ${{ctx.parsed.y}}%`
