@@ -1,0 +1,836 @@
+- record_id: ARENA-DLV-59401
+  source_title: RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+  publish_date: 2025-09
+  project_name: RELA Assess 2.0
+  what_happened: National GIS datasets used in the platform provided insufficient
+    resolution for detailed site-level analysis, creating a challenge for delivering
+    credible property-level assessments at continental scale.
+  lesson_learnt: Build a flexible data pipeline that can prioritise and integrate
+    higher-resolution local or state-based data where available — continental-scale
+    national datasets alone are insufficient for site-level renewable energy land
+    assessments.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: Established a flexible data pipeline architecture that prioritises
+    higher-resolution local and state-based data where available, and flags data quality
+    limitations to users within the assessment report.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: other
+  source_pages: &id001
+  - 13
+  evidence_excerpt: While national datasets provide excellent coverage, their resolution
+    can sometimes be insufficient for detailed site-level analysis. The key lesson
+    has been the need for a flexible data pipeline that can prioritise and integrate
+    higher-resolution local data (such as state-based imagery and data) where it is
+    available and necessary.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/rela-land-assessment-tool-project-interim-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/rela-land-assessment-tool-project/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 23/09/2025
+  kb_year: '2025'
+  kb_associated_project: RELA Land Assessment Tool Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.2m
+  lead_organisation: RELA Australia Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/02/2025
+  location: Mudgee, New South Wales
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/RELA-Assess-2.0-Interim-Knowledge-Sharing-Report.pdf
+  markdown_filename: rela_land_assessment_tool_project_interim_knowledge_sharing_report.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-59401
+  contributing_source_titles:
+  - RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+  contributing_sources:
+  - source_title: RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/09/RELA-Assess-2.0-Interim-Knowledge-Sharing-Report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/rela-land-assessment-tool-project-interim-knowledge-sharing-report/
+    markdown_filename: rela_land_assessment_tool_project_interim_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-59402
+  source_title: RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+  publish_date: 2025-09
+  project_name: RELA Assess 2.0
+  what_happened: Developing a land suitability model for wind turbine placement proved
+    significantly more complex than initially anticipated, requiring a shift from
+    a simple wind-speed heuristic to a simulation-based algorithm that iteratively
+    places turbines while respecting multiple overlapping spatial constraints.
+  lesson_learnt: Do not underestimate the analytical complexity of turbine placement
+    modelling — invest in sophisticated backend analytics from the outset rather than
+    starting with simplistic heuristics that will require substantial rework to deliver
+    genuinely valuable insights.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Moved from a simplistic heuristic model to a simulation-based
+    approach that accounts for turbine spacing, slope, and exclusion zones, described
+    as a significant leap in analytical capability from the Assess 1.0 product.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id002
+  - 13
+  evidence_excerpt: Moving from a simple wind speed heuristic to a simulation-based
+    algorithm that iteratively places turbines while respecting multiple, overlapping
+    constraints (e.g., turbine spacing, slope, exclusion zones) required significant
+    development effort. This highlighted the importance of investing in sophisticated
+    backend analytics to deliver genuinely valuable insights.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/rela-land-assessment-tool-project-interim-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/rela-land-assessment-tool-project/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 23/09/2025
+  kb_year: '2025'
+  kb_associated_project: RELA Land Assessment Tool Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.2m
+  lead_organisation: RELA Australia Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/02/2025
+  location: Mudgee, New South Wales
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/RELA-Assess-2.0-Interim-Knowledge-Sharing-Report.pdf
+  markdown_filename: rela_land_assessment_tool_project_interim_knowledge_sharing_report.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-59402
+  contributing_source_titles:
+  - RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+  contributing_sources:
+  - source_title: RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/09/RELA-Assess-2.0-Interim-Knowledge-Sharing-Report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/rela-land-assessment-tool-project-interim-knowledge-sharing-report/
+    markdown_filename: rela_land_assessment_tool_project_interim_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-59403
+  source_title: RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+  publish_date: 2025-09
+  project_name: RELA Assess 2.0
+  what_happened: Initial design of the Farm Plan Builder included complex features
+    such as land productivity ranking, but direct feedback from the Stakeholder Reference
+    Group on wireframes revealed that complexity would undermine usability for the
+    target landholder audience.
+  lesson_learnt: Prioritise simplicity and immediate usability over feature richness
+    in tools targeting non-technical end users — defer complex functionality to future
+    releases based on ongoing user feedback rather than building it into the first
+    iteration.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Complex functionality was deferred to future releases; the team
+    reoriented the Farm Plan Builder around a simple, intuitive interface that delivers
+    immediate value, informed by SRG wireframe feedback.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: other
+  source_pages: &id003
+  - 13
+  evidence_excerpt: Early planning regarding the 'Farm Plan Builder' revealed a tension
+    between functionality and usability. Initial concepts included complex features
+    like land productivity ranking. However, direct feedback from the SRG on the wireframes
+    highlighted that for this feature to be successful, simplicity is paramount. The
+    lesson was to prioritise a simple, intuitive tool that delivers immediate value,
+    while deferring more complex functionality to future releases based on ongoing
+    user feedback.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/rela-land-assessment-tool-project-interim-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/rela-land-assessment-tool-project/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 23/09/2025
+  kb_year: '2025'
+  kb_associated_project: RELA Land Assessment Tool Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.2m
+  lead_organisation: RELA Australia Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/02/2025
+  location: Mudgee, New South Wales
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/RELA-Assess-2.0-Interim-Knowledge-Sharing-Report.pdf
+  markdown_filename: rela_land_assessment_tool_project_interim_knowledge_sharing_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-59403
+  contributing_source_titles:
+  - RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+  contributing_sources:
+  - source_title: RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/09/RELA-Assess-2.0-Interim-Knowledge-Sharing-Report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/rela-land-assessment-tool-project-interim-knowledge-sharing-report/
+    markdown_filename: rela_land_assessment_tool_project_interim_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-59404
+  source_title: RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+  publish_date: 2025-09
+  project_name: RELA Assess 2.0
+  what_happened: Incorporating comprehensive environmental data proved an ongoing
+    challenge due to the fragmented nature of state and federal environmental regulations
+    and data sources, making it impossible to deliver a fully comprehensive environmental
+    assessment in the initial platform release.
+  lesson_learnt: Plan for environmental data integration as an iterative, multi-release
+    process — the fragmentation of state and federal environmental data sources means
+    a comprehensive environmental assessment cannot be achieved in a single development
+    phase and requires ongoing data discovery and integration.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: data & measurement
+  intervention_note: Integrated national datasets for land use and cultural heritage
+    as a foundational layer, with a roadmap for iterative expansion of environmental
+    data coverage in subsequent releases.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: other
+  source_pages: &id004
+  - 13
+  evidence_excerpt: Incorporating comprehensive environmental data presents an ongoing
+    challenge due to the fragmented nature of state and federal environmental regulations
+    and data sources... a key learning is that achieving a truly comprehensive environmental
+    assessment will be an iterative process requiring ongoing data discovery and integration.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/rela-land-assessment-tool-project-interim-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/rela-land-assessment-tool-project/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 23/09/2025
+  kb_year: '2025'
+  kb_associated_project: RELA Land Assessment Tool Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.2m
+  lead_organisation: RELA Australia Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/02/2025
+  location: Mudgee, New South Wales
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/RELA-Assess-2.0-Interim-Knowledge-Sharing-Report.pdf
+  markdown_filename: rela_land_assessment_tool_project_interim_knowledge_sharing_report.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-59404
+  contributing_source_titles:
+  - RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+  contributing_sources:
+  - source_title: RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/09/RELA-Assess-2.0-Interim-Knowledge-Sharing-Report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/rela-land-assessment-tool-project-interim-knowledge-sharing-report/
+    markdown_filename: rela_land_assessment_tool_project_interim_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-59405
+  source_title: RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+  publish_date: 2025-09
+  project_name: RELA Assess 2.0
+  what_happened: Gathering data layer requirements from diverse stakeholders produced
+    valuable but unstructured input that required a formal facilitation mechanism
+    — the Stakeholder Reference Group (SRG) — to translate broad needs into specific,
+    actionable technical requirements.
+  lesson_learnt: Establish a structured and facilitated stakeholder body (such as
+    a reference group) early in software development to translate broad stakeholder
+    needs into specific technical requirements — informal consultation alone is insufficient
+    to bridge the gap between user needs and technical specifications.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Established a Stakeholder Reference Group (SRG) as a structured
+    and facilitated process to translate broad stakeholder needs into actionable technical
+    requirements.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: other
+  source_pages: &id005
+  - 13
+  evidence_excerpt: The process of gathering data requirements from diverse stakeholders
+    was invaluable. The key lesson was the need for a structured and facilitated process
+    (the SRG) to translate broad stakeholder needs into specific, actionable technical
+    requirements.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/rela-land-assessment-tool-project-interim-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/rela-land-assessment-tool-project/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 23/09/2025
+  kb_year: '2025'
+  kb_associated_project: RELA Land Assessment Tool Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.2m
+  lead_organisation: RELA Australia Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/02/2025
+  location: Mudgee, New South Wales
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/RELA-Assess-2.0-Interim-Knowledge-Sharing-Report.pdf
+  markdown_filename: rela_land_assessment_tool_project_interim_knowledge_sharing_report.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-59405
+  contributing_source_titles:
+  - RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+  contributing_sources:
+  - source_title: RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/09/RELA-Assess-2.0-Interim-Knowledge-Sharing-Report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/rela-land-assessment-tool-project-interim-knowledge-sharing-report/
+    markdown_filename: rela_land_assessment_tool_project_interim_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-59406
+  source_title: RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+  publish_date: 2025-09
+  project_name: RELA Assess 2.0
+  what_happened: During data layer scoping, stakeholders raised expectations for data
+    that was either not publicly available or too complex to integrate in the initial
+    phase, creating tension between stakeholder demands and what was technically feasible
+    within the project scope.
+  lesson_learnt: Maintain a clear, defensible rationale for data layer inclusion and
+    exclusion tied directly to core strategic objectives — without this, stakeholder
+    expectation management becomes unworkable and scope creep is difficult to resist.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Developed a clear rationale for inclusion/exclusion of data layers
+    tied directly to the project's core strategic objectives, which was used to manage
+    stakeholder expectations.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: other
+  source_pages: &id006
+  - 13
+  - 14
+  evidence_excerpt: A significant challenge was managing stakeholder expectations
+    for data that was either not publicly available or too complex to integrate in
+    the initial phase. The lesson was the importance of having a clear, defensible
+    rationale for inclusion/exclusion, tied directly back to the project's core strategic
+    objectives.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/rela-land-assessment-tool-project-interim-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/rela-land-assessment-tool-project/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 23/09/2025
+  kb_year: '2025'
+  kb_associated_project: RELA Land Assessment Tool Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.2m
+  lead_organisation: RELA Australia Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/02/2025
+  location: Mudgee, New South Wales
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/RELA-Assess-2.0-Interim-Knowledge-Sharing-Report.pdf
+  markdown_filename: rela_land_assessment_tool_project_interim_knowledge_sharing_report.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-59406
+  contributing_source_titles:
+  - RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+  contributing_sources:
+  - source_title: RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/09/RELA-Assess-2.0-Interim-Knowledge-Sharing-Report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/rela-land-assessment-tool-project-interim-knowledge-sharing-report/
+    markdown_filename: rela_land_assessment_tool_project_interim_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-59407
+  source_title: RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+  publish_date: 2025-09
+  project_name: RELA Assess 2.0
+  what_happened: Early UX design discussions revealed that two fundamentally different
+    use cases existed — a desktop-first experience for detailed assessment authoring
+    and a mobile-first experience for viewing and sharing results — which had not
+    been adequately distinguished in initial design planning.
+  lesson_learnt: Explicitly design for distinct use cases and user contexts from the
+    outset of UX development — a tool used to author detailed assessments at a desk
+    requires a fundamentally different interface from one used to share results socially
+    on a mobile device.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Adopted a 'pub test' design philosophy as a core UX principle,
+    designing a mobile-first viewing and sharing experience alongside a separate desktop-first
+    authoring experience.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: other
+  source_pages: &id007
+  - 14
+  evidence_excerpt: 'A key insight from early design discussions was the need to design
+    for two distinct use cases: a desktop-first experience for the detailed authoring
+    of an assessment, and a mobile-first experience for viewing and sharing the results.
+    This ''pub test'' design philosophy, enabling a landowner to easily show their
+    results to a neighbour, has become a core principle of the UX design.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/rela-land-assessment-tool-project-interim-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/rela-land-assessment-tool-project/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 23/09/2025
+  kb_year: '2025'
+  kb_associated_project: RELA Land Assessment Tool Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.2m
+  lead_organisation: RELA Australia Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/02/2025
+  location: Mudgee, New South Wales
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/RELA-Assess-2.0-Interim-Knowledge-Sharing-Report.pdf
+  markdown_filename: rela_land_assessment_tool_project_interim_knowledge_sharing_report.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-59407
+  contributing_source_titles:
+  - RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+  contributing_sources:
+  - source_title: RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/09/RELA-Assess-2.0-Interim-Knowledge-Sharing-Report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/rela-land-assessment-tool-project-interim-knowledge-sharing-report/
+    markdown_filename: rela_land_assessment_tool_project_interim_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-59408
+  source_title: RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+  publish_date: 2025-09
+  project_name: RELA Assess 2.0
+  what_happened: The economic models underpinning the land assessment tool faced credibility
+    risk with both landholders and developers, who needed assurance that financial
+    calculations were independent and not biased toward either party.
+  lesson_learnt: Be transparent about data sources and assumptions in financial models
+    embedded in market-facing tools, and position outputs explicitly as preliminary
+    assessments to inform rather than replace detailed commercial due diligence —
+    credibility and independence must be actively demonstrated, not assumed.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: Committed to transparency about data sources and assumptions
+    in financial calculations, and explicitly positioned the tool as a preliminary
+    assessment instrument rather than a definitive commercial valuation.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: other
+  source_pages: &id008
+  - 14
+  evidence_excerpt: The lesson has been to be transparent about the data sources and
+    assumptions used in the financial calculations and to clearly position the tool
+    as a preliminary assessment to inform, rather than replace, detailed commercial
+    due diligence.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/rela-land-assessment-tool-project-interim-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/rela-land-assessment-tool-project/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 23/09/2025
+  kb_year: '2025'
+  kb_associated_project: RELA Land Assessment Tool Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.2m
+  lead_organisation: RELA Australia Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/02/2025
+  location: Mudgee, New South Wales
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/RELA-Assess-2.0-Interim-Knowledge-Sharing-Report.pdf
+  markdown_filename: rela_land_assessment_tool_project_interim_knowledge_sharing_report.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-59408
+  contributing_source_titles:
+  - RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+  contributing_sources:
+  - source_title: RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/09/RELA-Assess-2.0-Interim-Knowledge-Sharing-Report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/rela-land-assessment-tool-project-interim-knowledge-sharing-report/
+    markdown_filename: rela_land_assessment_tool_project_interim_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.72
+- record_id: ARENA-DLV-59409
+  source_title: RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+  publish_date: 2025-09
+  project_name: RELA Assess 2.0
+  what_happened: Coordinating data ingestion from multiple disparate government agencies
+    and data providers — each with different formats, update cycles, and access methods
+    — became the primary logistical challenge for maintaining a current, reliable
+    platform.
+  lesson_learnt: Invest early in a robust, automated data pipeline to manage the complexity
+    of ingesting data from multiple government and third-party sources with differing
+    formats and update cycles — manual coordination is not scalable for a national-coverage
+    platform.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: execution & logistics
+  intervention_note: Invested in building a robust, automated data pipeline to manage
+    data ingestion complexity and ensure the platform's data remains as current as
+    possible.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: other
+  source_pages: &id009
+  - 14
+  evidence_excerpt: The primary logistical challenge has been the coordination of
+    data ingestion from multiple, disparate government agencies and data providers,
+    each with their own formats, update cycles, and access methods. The key lesson
+    has been the importance of investing in a robust, automated data pipeline to manage
+    this complexity and ensure the platform's data remains as current as possible.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/rela-land-assessment-tool-project-interim-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/rela-land-assessment-tool-project/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 23/09/2025
+  kb_year: '2025'
+  kb_associated_project: RELA Land Assessment Tool Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.2m
+  lead_organisation: RELA Australia Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/02/2025
+  location: Mudgee, New South Wales
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/RELA-Assess-2.0-Interim-Knowledge-Sharing-Report.pdf
+  markdown_filename: rela_land_assessment_tool_project_interim_knowledge_sharing_report.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-59409
+  contributing_source_titles:
+  - RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+  contributing_sources:
+  - source_title: RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/09/RELA-Assess-2.0-Interim-Knowledge-Sharing-Report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/rela-land-assessment-tool-project-interim-knowledge-sharing-report/
+    markdown_filename: rela_land_assessment_tool_project_interim_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-59410
+  source_title: RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+  publish_date: 2025-09
+  project_name: RELA Assess 2.0
+  what_happened: The Cultural Heritage and Native Title data layer was identified
+    as the most sensitive data layer in the platform, requiring specific governance
+    controls to manage data rights, access, and Indigenous cultural considerations
+    at all times.
+  lesson_learnt: Implement a data registry system capturing ownership, rights, sources,
+    and access governance metadata for all sensitive data layers — particularly Indigenous
+    cultural heritage data — before integrating them into a publicly accessible platform,
+    and reference this explicitly in the cybersecurity and data management plan.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: data & measurement
+  intervention_note: Implemented a data registry system capturing ownership, rights,
+    sources, attestation notes, and acquisition dates for all data layers; made explicit
+    reference to geospatial layer data management in the Cybersecurity and Data Management
+    Plan.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: other
+  source_pages: &id010
+  - 12
+  evidence_excerpt: The most significant risk pertains to data sensitivity, particularly
+    concerning the Cultural Heritage & Native Title layer. To mitigate this, the project
+    has implemented a data registry system that captures relevant metadata such as
+    ownership, rights, sources, attestation notes, acquisition date/s, and other attributes
+    for all data layers incorporated into the tool.
+  confidence_note: 'failure_mode: regulatory misfit selected over governance/coordination
+    failure as the primary driver is the sensitivity and legal status of Indigenous
+    heritage data rather than internal coordination.'
+  source_url: https://arena.gov.au/knowledge-bank/rela-land-assessment-tool-project-interim-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/rela-land-assessment-tool-project/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 23/09/2025
+  kb_year: '2025'
+  kb_associated_project: RELA Land Assessment Tool Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.2m
+  lead_organisation: RELA Australia Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/02/2025
+  location: Mudgee, New South Wales
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/RELA-Assess-2.0-Interim-Knowledge-Sharing-Report.pdf
+  markdown_filename: rela_land_assessment_tool_project_interim_knowledge_sharing_report.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-59410
+  contributing_source_titles:
+  - RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+  contributing_sources:
+  - source_title: RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/09/RELA-Assess-2.0-Interim-Knowledge-Sharing-Report.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/rela-land-assessment-tool-project-interim-knowledge-sharing-report/
+    markdown_filename: rela_land_assessment_tool_project_interim_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-59411
+  source_title: RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+  publish_date: 2025-09
+  project_name: RELA Assess 2.0
+  what_happened: Information asymmetry between landholders and renewable energy developers
+    was identified as a key structural barrier to social licence and land access,
+    with landholders unable to independently assess the value and potential of their
+    own land in the context of renewable energy proposals.
+  lesson_learnt: Addressing information asymmetry between landholders and developers
+    is as much a socio-political challenge as a technical one — tools designed to
+    resolve it must build trust and be perceived as genuinely independent and fact-based
+    by both parties to be effective.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Developed the Assess 2.0 platform as a free, publicly accessible,
+    data-driven tool to provide independent land assessments, operationalising Free,
+    Prior, and Informed Consent (FPIC) for land agreements.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: other
+  source_pages: &id011
+  - 3
+  evidence_excerpt: The project's core purpose is to resolve the significant information
+    asymmetry between landholders and developers, which has been identified as one
+    of the key barriers to achieving social licence for the coexistence of food &
+    energy production on regional land... The project has confirmed that the central
+    challenge is as much socio-political as it is technical, the building of trust
+    being paramount.
+  confidence_note: This record captures the foundational market failure that motivated
+    the project — extractable as a delivery insight about barriers to renewable energy
+    land access relevant to the broader portfolio.
+  source_url: https://arena.gov.au/knowledge-bank/rela-land-assessment-tool-project-interim-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/rela-land-assessment-tool-project/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 23/09/2025
+  kb_year: '2025'
+  kb_associated_project: RELA Land Assessment Tool Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.2m
+  lead_organisation: RELA Australia Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/02/2025
+  location: Mudgee, New South Wales
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/RELA-Assess-2.0-Interim-Knowledge-Sharing-Report.pdf
+  markdown_filename: rela_land_assessment_tool_project_interim_knowledge_sharing_report.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-59411
+  contributing_source_titles:
+  - RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+  contributing_sources:
+  - source_title: RELA Land Assessment Tool Project - Interim Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/09/RELA-Assess-2.0-Interim-Knowledge-Sharing-Report.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/rela-land-assessment-tool-project-interim-knowledge-sharing-report/
+    markdown_filename: rela_land_assessment_tool_project_interim_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78

@@ -1,0 +1,282 @@
+- record_id: ARENA-DLV-16461
+  source_title: Flexible Hot Water Webinar
+  publish_date: 2024-12
+  project_name: United Energy Hot Water Load Control Trial
+  what_happened: Shifting all nighttime hot water load to the day resulted in some
+    customers experiencing a shortfall of hot water in the morning, indicating the
+    initial schedule design did not adequately account for peak morning demand.
+  lesson_learnt: Full overnight-to-daytime load shift for hot water creates morning
+    hot water shortfalls for some customers — scheduling must preserve a minimum overnight
+    heating allocation to cover morning demand, particularly for households with early
+    morning peak usage.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: United Energy committed to trialling different scheduling options
+    to more closely match energy consumption with the solar generation curve while
+    preserving morning hot water availability.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: demand response
+  source_pages: &id001
+  - 47
+  evidence_excerpt: Shifting all nighttime hot water load to the day resulted in some
+    customers having a shortfall of hot water in the morning. We are focused on finding
+    a solution that works for everybody.
+  confidence_note: 'proponent_type reconciled to ''utility/energy retailer'' from:
+    utility/energy retailer (12/25), network business (5/25), technology vendor (5/25),
+    research organisation/university (3/25)'
+  source_url: https://arena.gov.au/knowledge-bank/flexible-hot-water-webinar/
+  project_page_url: null
+  kb_category: Demand response
+  kb_publish_date: 16/12/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/ARENA-Flexible-Demand-Webinar-2024-Hot-water-learnings-and-opportunities.pdf
+  markdown_filename: flexible_hot_water_webinar.md
+  source_page_pdf: 47
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16461
+  contributing_source_titles:
+  - Flexible Hot Water Webinar
+  contributing_sources:
+  - source_title: Flexible Hot Water Webinar
+    pdf_url: https://arena.gov.au/assets/2024/12/ARENA-Flexible-Demand-Webinar-2024-Hot-water-learnings-and-opportunities.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/flexible-hot-water-webinar/
+    markdown_filename: flexible_hot_water_webinar.md
+  arena_category:
+  - Demand response
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-16462
+  source_title: Flexible Hot Water Webinar
+  publish_date: 2024-12
+  project_name: United Energy Hot Water Load Control Trial
+  what_happened: Obtaining a reliable dataset for the trial was challenging due to
+    multiple confounding factors including weather variation, network changes, change
+    in tenancy, holidays, relatives moving in, and Airbnb use affecting individual
+    household load profiles.
+  lesson_learnt: Hot water trial datasets are susceptible to numerous household-level
+    confounders — build data cleaning and anomaly detection protocols into trial design
+    from the outset to isolate genuine load response from lifestyle and tenancy changes.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: demand response
+  source_pages: &id002
+  - 49
+  evidence_excerpt: 'Obtaining a reliable dataset was a challenge. [Factors listed]:
+    Weather, Network changes, Change in tenancy, Holiday, Relatives moved in, Airbnb,
+    Trial participants.'
+  confidence_note: 'proponent_type reconciled to ''utility/energy retailer'' from:
+    utility/energy retailer (12/25), network business (5/25), technology vendor (5/25),
+    research organisation/university (3/25)'
+  source_url: https://arena.gov.au/knowledge-bank/flexible-hot-water-webinar/
+  project_page_url: null
+  kb_category: Demand response
+  kb_publish_date: 16/12/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/ARENA-Flexible-Demand-Webinar-2024-Hot-water-learnings-and-opportunities.pdf
+  markdown_filename: flexible_hot_water_webinar.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16462
+  contributing_source_titles:
+  - Flexible Hot Water Webinar
+  contributing_sources:
+  - source_title: Flexible Hot Water Webinar
+    pdf_url: https://arena.gov.au/assets/2024/12/ARENA-Flexible-Demand-Webinar-2024-Hot-water-learnings-and-opportunities.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/flexible-hot-water-webinar/
+    markdown_filename: flexible_hot_water_webinar.md
+  arena_category:
+  - Demand response
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-16463
+  source_title: Flexible Hot Water Webinar
+  publish_date: 2024-12
+  project_name: United Energy Hot Water Load Control Trial
+  what_happened: The United Energy trial demonstrated that daytime load increase and
+    voltage reduction were observable at the Distribution Sub Station level and below
+    when hot water load was shifted to daytime periods, confirming hot water load
+    control can deliver voltage regulation services.
+  lesson_learnt: Hot water load shifting to daytime solar periods produces measurable
+    voltage regulation benefits at DSS level and below — network businesses should
+    incorporate this capability into their flexible demand value propositions and
+    network planning.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: demand response
+  source_pages: &id003
+  - 47
+  evidence_excerpt: Observed daytime load increase and voltage reduction at Distribution
+    Sub Station level and below.
+  confidence_note: 'proponent_type reconciled to ''utility/energy retailer'' from:
+    utility/energy retailer (12/25), network business (5/25), technology vendor (5/25),
+    research organisation/university (3/25)'
+  source_url: https://arena.gov.au/knowledge-bank/flexible-hot-water-webinar/
+  project_page_url: null
+  kb_category: Demand response
+  kb_publish_date: 16/12/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/ARENA-Flexible-Demand-Webinar-2024-Hot-water-learnings-and-opportunities.pdf
+  markdown_filename: flexible_hot_water_webinar.md
+  source_page_pdf: 47
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16463
+  contributing_source_titles:
+  - Flexible Hot Water Webinar
+  contributing_sources:
+  - source_title: Flexible Hot Water Webinar
+    pdf_url: https://arena.gov.au/assets/2024/12/ARENA-Flexible-Demand-Webinar-2024-Hot-water-learnings-and-opportunities.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/flexible-hot-water-webinar/
+    markdown_filename: flexible_hot_water_webinar.md
+  arena_category:
+  - Demand response
+  is_consortium: false
+- record_id: ARENA-DLV-16464
+  source_title: Flexible Hot Water Webinar
+  publish_date: 2024-12
+  project_name: United Energy Hot Water Load Control Trial
+  what_happened: United Energy's trial showed that load shifted to the 11am–3pm window
+    did not fully match the actual solar generation curve, indicating room to improve
+    schedule alignment with solar output.
+  lesson_learnt: Initial fixed-window load control schedules will not optimally track
+    the solar generation curve — iterative schedule refinement or dynamic control
+    is needed to maximise the solar-soak benefit and grid value of hot water flexibility.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: United Energy committed to trialling different scheduling options
+    to more closely match energy consumption with the solar generation curve.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: demand response
+  source_pages: &id004
+  - 48
+  evidence_excerpt: The trial successfully increased load during the day by using
+    abundant solar generation to heat hot water systems. However, there is room to
+    build on the response. We will now trial different scheduling options to more
+    closely match energy consumption with the solar generation curve.
+  confidence_note: 'proponent_type reconciled to ''utility/energy retailer'' from:
+    utility/energy retailer (12/25), network business (5/25), technology vendor (5/25),
+    research organisation/university (3/25)'
+  source_url: https://arena.gov.au/knowledge-bank/flexible-hot-water-webinar/
+  project_page_url: null
+  kb_category: Demand response
+  kb_publish_date: 16/12/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/ARENA-Flexible-Demand-Webinar-2024-Hot-water-learnings-and-opportunities.pdf
+  markdown_filename: flexible_hot_water_webinar.md
+  source_page_pdf: 48
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16464
+  contributing_source_titles:
+  - Flexible Hot Water Webinar
+  contributing_sources:
+  - source_title: Flexible Hot Water Webinar
+    pdf_url: https://arena.gov.au/assets/2024/12/ARENA-Flexible-Demand-Webinar-2024-Hot-water-learnings-and-opportunities.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/flexible-hot-water-webinar/
+    markdown_filename: flexible_hot_water_webinar.md
+  arena_category:
+  - Demand response
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.9

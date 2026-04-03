@@ -1,0 +1,2170 @@
+- record_id: ARENA-DLV-52001
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: Of 28 generating units in the trial, 16 passed AEMO's initial assessment
+    at the minimum 8-week period, while six required double that time (16 weeks) to
+    meet the assessment criteria, causing unexpected operational costs and delays
+    for those participants.
+  lesson_learnt: Allocate contingency time in the project plan for the AEMO initial
+    assessment process — failure at the 8-week mark extends assessment by a further
+    8 weeks, which can substantially delay accreditation and the ability to use self-forecasts
+    in dispatch.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: government/public-sector body
+  delay_category: commissioning/integration
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: AEMO extended the assessment window week-by-week up to 16 weeks,
+    allowing participants additional time to meet reliability and performance criteria
+    before accreditation.
+  transferability: moderate
+  delay_magnitude: 1-3 months
+  technology_domain: solar PV
+  source_pages: &id001
+  - 25
+  evidence_excerpt: Of the 28 generating units, 16 passed the AEMO assessment at the
+    minimum period of eight weeks, whilst six of the remaining units required double
+    this time to meet the assessment criteria. Such a significant delay in meeting
+    the initial assessment requirements may result in unexpected operational costs
+    for participants.
+  confidence_note: technology_domain set to solar PV but trial covered both wind and
+    solar; issue applies to both — confidence moderate on this field.
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: 25
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52001
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-52002
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: Trial participants who were not registered market participants could
+    not communicate directly with AEMO regarding the MP5F API connection — all communications
+    had to be routed through the market participant, creating barriers when there
+    were conflicting priorities between the market participant and the trial forecaster.
+  lesson_learnt: Before commencing an AEMO API integration project as a non-market-participant,
+    establish clear communication and escalation protocols with the registered market
+    participant — AEMO's API registration process only recognises registered market
+    participants, and conflicting priorities between parties can block progress.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: government/public-sector body
+  delay_category: commissioning/integration
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: AEMO subsequently worked with the industry to improve the start-up
+    process and streamlined administrative procedures for new participants.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id002
+  - 25
+  evidence_excerpt: AEMO's API registration process only recongises market participants
+    who are registered in the dispatch system. Any communication with AEMO relating
+    the API connection must go through market participants. This caused communication
+    problems for the trial participants, who were not market participants. It is a
+    particular issue, if there are conflicting priorities between the market participants
+    and trial forecaster.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52002
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-52003
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: Several trial participants experienced delays because AEMO's API
+    documentation contained technical errors and lacked business process information,
+    making it difficult to interpret requirements and implement the connection correctly.
+  lesson_learnt: Allow sufficient time and resources to interpret AEMO API documentation
+    and verify it against actual system behaviour — technical errors in the documentation
+    and absent business process information were a recurring cause of implementation
+    delays across multiple trial participants.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: government/public-sector body
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: data & measurement
+  intervention_note: AEMO enhanced system documentation since commencing the trial
+    and continues to work with the industry to improve the start-up process.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id003
+  - 26
+  evidence_excerpt: Challenge interpreting AEMO documentation, including technical
+    errors in the documentation, and lacking business process information.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: 26
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52003
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-52004
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: Password expiry and reset processes caused operational delays for
+    several trial participants — passwords expired without adequate notification,
+    and the reset process was administratively burdensome, resulting in missed forecast
+    submissions.
+  lesson_learnt: Automate or closely monitor API credential management when integrating
+    with AEMO's MP5F platform — password expiry without sufficient notice created
+    an administrative burden and submission gaps for multiple participants.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: government/public-sector body
+  delay_category: data/validation/testing
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: AEMO implemented password automation in October 2020 to improve
+    its system authentication and password reset process, minimising the administrative
+    burden.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id004
+  - 26
+  - 27
+  evidence_excerpt: Problems with password expiry and reset caused delays for a few
+    trial participants. It was noted that passwords expired without enough notification.
+    This created an administrative burden as the process of resetting passwords was
+    not easy... AEMO implemented password automation in October 2020 to improve its
+    system authentication and password reset process to minimise administrative burden.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: 26
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52004
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-52005
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: AEMO's production server was at times too slow to process submitted
+    forecasts, resulting in delays of up to 12 seconds and missed dispatch intervals,
+    particularly when forecasts were submitted close to gate closure.
+  lesson_learnt: Submit self-forecasts well ahead of the gate closure deadline rather
+    than at the last moment — server processing delays of up to 12 seconds were observed
+    under load, causing dispatch intervals to be missed when submissions were made
+    close to the deadline.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: government/public-sector body
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: data & measurement
+  intervention_note: One participant submitted two forecasts 30 seconds apart so that
+    if the later submission missed the gate close, the first would still be lodged,
+    improving reliability to over 95%.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id005
+  - 27
+  - 29
+  evidence_excerpt: It was reported that the production server was, at times, too
+    slow to process the submitted forecast. Delays of up to 12 seconds were observed
+    and dispatch intervals missed as a result. It appears that the probability of
+    such a delay increases when submitting a forecast close to the deadline.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: 27
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52005
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-52006
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: Sky cameras ordered from overseas were not immediately suitable for
+    Australian conditions — images were overexposed due to the brightness of the Australian
+    sky, and high temperatures impacted hardware reliability, requiring physical modifications
+    (added vents and fan-cooled power supplies) and causing project delays.
+  lesson_learnt: When procuring sky camera or other solar forecasting hardware from
+    overseas suppliers, specify and test for Australian sky brightness and temperature
+    conditions before deployment — lenses and cooling systems designed for European
+    climates can fail under Australian conditions and require costly retrofit modifications.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: procurement
+  proponent_type: government/public-sector body
+  delay_category: procurement/supply chain
+  failure_mode: unvalidated technical assumptions
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: execution & logistics
+  intervention_note: Participants added vents and additional fan-cooled power supplies
+    to the sky camera units to address overheating and reliability issues in Australian
+    conditions.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id006
+  - 26
+  - 39
+  evidence_excerpt: Technical challenges associated with sky cameras, that were ordered
+    with filters for use in daylight hours and tested in the UK prior to delivery.
+    However, the lens filter is not suitable for Australia. Images captured from the
+    solar camera were overexposed due to the brightness of the Australian sky. Also,
+    Australia's high temperatures impacted reliability. To address the issue, it was
+    required to add vents and additional fan cooler power supplies. These problems
+    added to the project delay.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: 26
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52006
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-52007
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: Securing landholder agreements before installing forecasting equipment
+    on site caused delays for some trial participants, as the process of reaching
+    agreements between parties was lengthy.
+  lesson_learnt: Begin landholder agreement negotiations well in advance of planned
+    equipment installation — the process can be lengthy and delay commissioning of
+    on-site forecasting hardware if not started early.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: government/public-sector body
+  delay_category: stakeholder/land/community
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id007
+  - 25
+  evidence_excerpt: In certain instances, land-holder agreements must be secured before
+    installing equipment on site. Delays can be caused by lengthy process of reaching
+    agreements between parties.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: 25
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52007
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: schedule slippage
+  failure_mode_confidence: 0.95
+- record_id: ARENA-DLV-52008
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: Data licensing requirements between consortium partners, AEMO/ARENA,
+    and the public added time and resources during the trial, delaying data sharing
+    and integration.
+  lesson_learnt: Identify and resolve data licensing requirements between all consortium
+    parties and AEMO/ARENA before the project execution phase — licensing negotiations
+    add time and resources and can delay data sharing critical to forecast development
+    and assessment.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: government/public-sector body
+  delay_category: approvals/regulatory
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id008
+  - 25
+  - 26
+  evidence_excerpt: Some licensing was required before sharing data between consortium
+    partners, AEMO / ARENA and the public. This requires additional time and resources
+    to arrange.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: 26
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52008
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-52009
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: Market participants with multiple Dispatchable Unit Identifiers (DUIDs)
+    experienced additional complexity integrating with AEMO's API platform, requiring
+    extra time and resources compared with participants with a single DUID.
+  lesson_learnt: Organisations with multiple DUIDs should budget additional time and
+    resources for API integration — multiple registrations increase data integration
+    complexity with AEMO's MP5F platform and are a known source of delay.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: government/public-sector body
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: narrow
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id009
+  - 26
+  evidence_excerpt: Market participants who had multiple Dispatchable Unit Identifiers
+    (DUID) registered experienced additional complexity for data integration into
+    the API platform, which required additional time and resources.
+  confidence_note: 'proponent_type reconciled to ''consortium/multi-party venture''
+    from: consortium/multi-party venture (29/30), utility/energy retailer (1/30)'
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: 26
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52009
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-52010
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: Telecommunications network outages at remote sites disrupted data
+    connections and compromised forecast quality or prevented timely forecast submission
+    for some trial participants, as remote connection was not always available where
+    LIDAR forecasters were installed.
+  lesson_learnt: Design self-forecasting systems at remote sites with redundant telecommunications
+    and local data buffering — simultaneous telco outages can prevent forecast submission
+    and degrade quality, and existing AWEFS/ASEFS backup is the only fallback, which
+    undermines the purpose of self-forecasting.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: government/public-sector body
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: execution & logistics
+  intervention_note: Some participants submitted forecasts for multiple dispatch intervals
+    ahead and continuously updated them, ensuring at least one set of data was entered
+    before the submission deadline in the event of a brief outage.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id010
+  - 29
+  - 30
+  evidence_excerpt: Data connections are ongoing challenge for some remote sites;
+    especially when telecommunication networks had outages simultaneously... Remote
+    connection may not be available at some sites where the hardware like LIDAR forecasters
+    is installed.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: 29
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52010
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-52011
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: AEMO's API required forecast capacity to be stored as an integer
+    and always rounded down, meaning a generator with a rated capacity of 120.8 MW
+    could only submit forecasts up to 120 MW — forecasts at or near full capacity
+    were rejected if they exceeded the registered integer maximum.
+  lesson_learnt: Check the integer-rounding rule in AEMO's API registration before
+    configuring forecasting algorithms — the requirement to round down registered
+    capacity to the nearest MW creates an inherent ceiling error at full capacity
+    that causes forecast rejections if not accounted for in algorithm design.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: government/public-sector body
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id011
+  - 36
+  - 44
+  evidence_excerpt: When submitting a forecast to the AEMO API, it is required that
+    the capacity of an entity be between zero and the maximum capacity, be stored
+    as integer in AEMO's registration systems, and always rounded down. For example,
+    a wind farm has a rated capacity of 120.8 MW, then the maximum capacity forecast
+    cannot exceed 120MW; otherwise, AEMO rejects the submission.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: 36
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52011
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-52012
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: AEMO's power measurement location differed from the location used
+    by trial participants, creating a systematic discrepancy between expected and
+    reported power that negatively affected forecast accuracy assessments.
+  lesson_learnt: Confirm that the dispatch point used in the forecasting model matches
+    AEMO's power measurement location before commencing the trial assessment — a mismatch
+    creates systematic errors in reported accuracy that cannot be resolved by improving
+    the forecast algorithm alone.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: government/public-sector body
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: At least one participant relocated their dispatch point to the
+    onsite switchyard consistent with AEMO data feeds, then retrained the forecast
+    model, which improved accuracy levels.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id012
+  - 36
+  - 37
+  - 44
+  evidence_excerpt: AEMO took a power reading from a different location than the participants.
+    This creates a discrepancy between expected power and reported power... it was
+    also required to relocate its dispatch point to the onsite switchyard which is
+    consistent with AEMO data feeds and dispatch location and retrained forecasts.
+    This has improved levels of accuracy when collecting data.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: 36
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52012
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-52013
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: Several participants found that a single forecasting model was insufficient
+    to consistently outperform AWEFS/ASEFS across all operating conditions, especially
+    following constraint periods when generation output changes rapidly; those using
+    only a single model struggled to maintain accuracy.
+  lesson_learnt: Deploy an ensemble of multiple forecast models rather than a single
+    model — a combination that switches between normal operation, constraint-period,
+    and post-constraint-recovery modes consistently outperformed AWEFS/ASEFS, whereas
+    a single-model approach was less reliable across all conditions.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: government/public-sector body
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: One participant developed three separate models — for normal
+    operation, constraint periods, and post-constraint recovery — which improved forecast
+    accuracy after constraint periods compared with AEMO's forecast.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id013
+  - 36
+  - 44
+  evidence_excerpt: Several participants experienced difficulties in providing accurate
+    forecasts using a single forecasting model. This is largely because the output
+    of a power station often changes more rapidly than regular changes in wind speed
+    or solar radiation following a period of being constrained off. Instead, a combination
+    of models was recommended to deal with all circumstances and to consistently outperform
+    AWEFS / ASEFS.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: 44
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52013
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-52014
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: Poor quality or missing SCADA data — including missing or incorrect
+    data mapping, data dropout, and low resolution historical data — was identified
+    as a significant barrier to improving solar forecast accuracy across multiple
+    participants.
+  lesson_learnt: Establish high-resolution historical SCADA data capture and robust
+    data quality filtering before deploying a solar forecasting model — missing, incorrect,
+    or low-resolution training data directly degrades forecast accuracy and is one
+    of the most demanding aspects of solar forecasting.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: government/public-sector body
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Participants improved performance by filtering bad data from
+    training sets (specifically unchanging, missing, and incomplete SCADA data), using
+    larger training sets, and applying ensemble techniques to combine multiple model
+    forecasts.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id014
+  - 36
+  - 37
+  evidence_excerpt: 'It was highlighted that solar forecasting is one of the most
+    demanding forecasts partly due to problems in control system data. This includes:
+    • Missing or incorrect data mapping • Poor quality data or data drop out • High
+    resolution data is required for training the forecast model. It is important to
+    save historical data in high resolution.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: 36
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52014
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.95
+- record_id: ARENA-DLV-52015
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: A significant change to Bureau of Meteorology (BOM) data formats
+    required substantial time and resources from wind forecast participants to update
+    their code to download, read, and process the new dataset.
+  lesson_learnt: Monitor BOM and other external input data sources for format or content
+    changes and build procedures to detect and rapidly adapt to upgrades — an unannounced
+    significant alteration to BOM data consumed substantial time and resources across
+    affected participants.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: government/public-sector body
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id015
+  - 37
+  evidence_excerpt: A significant alteration in the Bureau of Meteorology data, which
+    requires a significant amount of time and resources to change the code before
+    downloading, reading, and processing the new dataset. Therefore, it is important
+    to be across potential upgrades and changes to external input data.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: 37
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52015
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-52016
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: Sky cameras used for solar forecasting without self-cleaning devices
+    showed significantly reduced forecast effectiveness due to atmospheric contamination
+    (dust and bird droppings), while cameras with self-cleaning devices improved forecast
+    performance by 20–30% relative to those without.
+  lesson_learnt: Specify self-cleaning devices on sky cameras used for solar forecasting
+    — atmospheric contamination is a persistent operational issue in Australian conditions,
+    and self-cleaning devices have been shown to improve forecast performance by 20–30%
+    relative to unprotected cameras.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: government/public-sector body
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Participants fitted self-cleaning devices to sky cameras, which
+    improved forecast performance by 20–30%.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id016
+  - 39
+  evidence_excerpt: Atmospheric contamination reduces the effectiveness of using Skycam
+    as a forecast input. Skycam with self-cleaning devices were reported to improve
+    forecast performance by 20-30% relative to those without self-cleaning devices.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: 39
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52016
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-52017
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: Cloud-based Global Operating Systems (GOS) used by some wind and
+    solar farms as plant monitoring platforms were found to be incompatible with self-forecasting
+    because they are not designed for real-time controls and lack robust continuous
+    communications capability.
+  lesson_learnt: Do not use cloud-based GOS plant monitoring systems as the primary
+    data integration pathway for self-forecasting — they are not designed for real-time
+    controls and can lose connectivity without disrupting plant monitoring but will
+    disrupt forecast submissions; SCADA-based onsite integration with a dedicated
+    RTU is the preferred architecture.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: government/public-sector body
+  delay_category: commissioning/integration
+  failure_mode: integration failure
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Participants migrated to SCADA data integration with onsite hardware
+    and a dedicated RTU, which continued to run smoothly even when communications
+    were interrupted.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id017
+  - 39
+  evidence_excerpt: Cloud based system such as the Global Operating System (GOS) are
+    not built for real time controls. It is therefore not compatible with self-forecasting...
+    SCADA data integration on the other hand is composed of onsite hardware and a
+    dedicated RTU and continues to run smoothly even if communications are interrupted.
+    It is therefore recommended to be a better system.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: 39
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52017
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+- record_id: ARENA-DLV-52018
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: AEMO's HTTP response codes were sometimes inconsistent with industry
+    convention, causing problems for downstream monitoring and supporting services
+    built by trial participants around the API.
+  lesson_learnt: When integrating with AEMO's MP5F API, do not assume standard HTTP
+    response code conventions — verify AEMO's specific response code implementations
+    and design monitoring and downstream services accordingly to avoid silent submission
+    failures.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: government/public-sector body
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: AEMO resolved many of the identified API issues during the course
+    of the trial.
+  transferability: narrow
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id018
+  - 26
+  evidence_excerpt: HTTP response codes which are standard protocols for responding
+    to an HTTP request. It appears that AEMO's use of HTTP response codes were sometimes
+    inconsistent with industry convention, impacting monitoring and supporting services
+    downstream from AEMO's API.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52018
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-52019
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: Wind farm forecast accuracy for self-forecasting reduced during winter
+    months and improved during warmer months, while solar forecast accuracy was more
+    volatile overall — with 50% of solar data falling in the 0–5% error band versus
+    only 34% of wind data.
+  lesson_learnt: Account for seasonal and weather-condition variability when designing
+    and evaluating forecasting systems — wind accuracy degrades in winter while solar
+    accuracy depends heavily on cloud cover, and these patterns directly affect FCAS
+    savings calculations and business case assumptions.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: government/public-sector body
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: hybrid systems
+  source_pages: &id019
+  - 31
+  - 32
+  evidence_excerpt: Their forecast accuracy reduces during winter months, while it
+    improves during warmer months... 50% of the measured time, the forecast error
+    of all solar available data fell into the 0% - 5% error band, whilst 34% of wind
+    farm available data resulted in the 0%-5% error band.
+  confidence_note: technology_domain set to hybrid systems as findings cover both
+    wind and solar.
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52019
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+- record_id: ARENA-DLV-52020
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: Self-forecasting by trial participants outperformed AEMO's AWEFS
+    by 11.7%–19.8% (MAE) and 11.5%–45.6% (RMSE) for wind farms, and outperformed ASEFS
+    by 13.1%–18.2% (MAE) and 2.8%–21.2% (RMSE) for solar farms, demonstrating the
+    effectiveness of site-specific self-forecasting.
+  lesson_learnt: Site-specific self-forecasting using machine learning and local sensors
+    reliably outperforms centralised AEMO forecasting systems — wind self-forecasts
+    improved on AWEFS by up to ~20% on MAE and ~46% on RMSE, validating the commercial
+    case for industry-wide rollout.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: government/public-sector body
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: hybrid systems
+  source_pages: &id020
+  - 34
+  evidence_excerpt: Based on MAE, self-forecasting on windfarm generation output outperformed
+    AWEFS by between 11.7% and 19.8%. Similar results for solar farms versus ASEFS
+    were in the range of 13.1% and 18.2%. Using this measure, self-forecasts for wind
+    farms outperformed AWEFS by between 11.5% and 45.6%, while self-forecasts for
+    solar farms outperformed ASEFS in the range of 2.8% and 21.2%.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: 34
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52020
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id020
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+- record_id: ARENA-DLV-52021
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: The trial demonstrated a positive NPV of $2.5 million at a 12-year
+    horizon with a 6-year payback and IRR of 5.7% at programme level; individual participants
+    who provided financial data reported simple paybacks as short as 3–6 months, confirming
+    commercial viability of self-forecasting investment.
+  lesson_learnt: Self-forecasting investment is commercially viable for most semi-scheduled
+    VRE generators — at programme level the NPV is positive with a 6-year payback,
+    and individual results can be much stronger, supporting the business case for
+    industry-wide rollout.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: government/public-sector body
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: hybrid systems
+  source_pages: &id021
+  - 40
+  - 41
+  evidence_excerpt: The NPV of cash flow to the trial program on a twelve-year basis
+    (two-year implementation and ten-year operation) is estimated to be $2.5 million
+    with a payback of six years, based on a real discount rate of 8%... Some simple
+    paybacks were less than six months.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: 40
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52021
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id021
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+- record_id: ARENA-DLV-52022
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: Self-forecast accuracy gains over ASEFS were significantly higher
+    on clear-sky days but were diminished on days with highly variable cloud cover;
+    sites near bodies of water and in the sub-tropics of Queensland saw lower FCAS
+    cost reductions compared with sites in NSW and Victoria.
+  lesson_learnt: Set location-adjusted financial expectations for self-forecasting
+    projects — sites with frequent variable cloud cover (coastal or sub-tropical Queensland)
+    will realise lower FCAS savings than inland sites in NSW and Victoria, and business
+    cases should reflect this geographical dependency.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: government/public-sector body
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: commercial & market
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id022
+  - 43
+  evidence_excerpt: On clear-sky days, the self-forecast performed significantly better
+    than ASEFS. On days with highly variable cloud cover, the self-forecast performance
+    gain over ASEFS was diminished. Extrapolating from this, it is clear that sites
+    in regions with more frequent periods of highly variable cloud cover (i.e., near
+    bodies of water and in the sub-tropics of Queensland) that apply self-forecasting
+    have lower CP fee reductions compared with regions with fewer periods of variable
+    cloud cover (NSW and Victoria).
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: 43
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52022
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id022
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-52023
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: The trial showed that a slight intentional forecast bias — not necessarily
+    the most accurate forecast — can result in lower FCAS costs; some participants
+    developed optimisation models to calculate the bias that minimises FCAS charges
+    rather than minimising forecast error per se.
+  lesson_learnt: When optimising a self-forecasting system for FCAS cost reduction,
+    target FCAS cost minimisation rather than raw forecast accuracy minimisation —
+    a deliberate slight underestimate of generation capability can reduce causer-pays
+    charges by enabling the generator to provide regulation raise capacity, and some
+    participants developed dedicated models to compute this optimal bias.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: government/public-sector body
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id023
+  - 44
+  - 45
+  evidence_excerpt: The self-forecast trial demonstrated that a slight forecast bias,
+    and not necessarily the most accurate forecast, may result in the lowest FCAS
+    costs. Some trial participants have developed a model to calculate how to minimise
+    FCAS costs by applying an appropriate bias to their self-forecasts.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: 45
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52023
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id023
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+- record_id: ARENA-DLV-52024
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: Analysis across seven trial participants over 111,000 dispatch periods
+    found that aggregating multiple small reductions in individual generator forecast
+    errors reduced the overall coincident forecast error by 42% compared with non-coincident
+    (additive) errors, indicating that portfolio-wide rollout of self-forecasting
+    would provide disproportionately large system stability benefits.
+  lesson_learnt: Prioritise industry-wide rollout of self-forecasting rather than
+    optimising individual generators in isolation — the coincident error reduction
+    effect means aggregate forecast accuracy improves by approximately double what
+    individual improvements alone would suggest, generating greater system stability
+    benefits.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: government/public-sector body
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: hybrid systems
+  source_pages: &id024
+  - 45
+  evidence_excerpt: Analysis of the available forecast data for seven of the trial
+    participants shows that over a comparable period of 111,000 dispatch periods,
+    average forecast errors for each of the individual participants added together
+    (non-coincident forecasts) were around 4.8 MW. Meanwhile the average sum of forecast
+    errors for each dispatch interval (coincident forecasts) was around 2.8 MW, a
+    reduction of 42%.
+  confidence_note: 'project_scale_band reconciled to ''demonstration'' from: demonstration
+    (29/30), programmatic/portfolio-level (1/30)'
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: 30
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52024
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id024
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+- record_id: ARENA-DLV-52025
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: Large investment in forecasting hardware such as LIDARs by some participants
+    did not deliver proportionate reductions in forecast error compared with participants
+    who reduced error primarily through improved forecasting algorithms without major
+    hardware investment.
+  lesson_learnt: Before committing to expensive forecasting hardware such as LIDARs,
+    evaluate whether algorithmic improvements alone can achieve comparable accuracy
+    gains — some participants achieved significant forecast error reductions purely
+    through algorithm development, suggesting hardware spend may not be proportionate
+    to accuracy benefits.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: government/public-sector body
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id025
+  - 45
+  evidence_excerpt: It appears that the relatively large investment in forecasting
+    hardware such as LIDARS may not represent a proportionate reduction in forecasting
+    error. Some participants were successful in reducing forecast error solely using
+    a forecasting algorithm.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: 45
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52025
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id025
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-52026
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: Modelling wind turbines individually and then aggregating forecasts
+    did not improve accuracy compared with grouping turbines; wind turbine layout
+    (whether turbines shadow each other) significantly influenced whether wind direction
+    needed to be emphasised in the forecast model.
+  lesson_learnt: Model wind farm turbines in groups rather than individually — individual
+    turbine modelling adds computational complexity without improving aggregate accuracy,
+    and the appropriate emphasis on wind direction in the model should reflect whether
+    turbines shadow each other given the farm layout.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: government/public-sector body
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id026
+  - 38
+  evidence_excerpt: The aggregate outcomes did not perform better than the forecast
+    model that grouped turbines. It was therefore recommended to model turbine groups
+    rather than individual turbines. The layout of wind farm turbines impacts the
+    wind direction forecast. Wind turbines that do not shadow each other have less
+    reliance on wind direction in the forecast.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: 38
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52026
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id026
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-52027
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: Solar forecast performance was significantly degraded during morning
+    and afternoon ramp periods (sunrise/sunset), with ASEFS errors exceeding 5 MW
+    throughout these ramps; better modelling of diffuse irradiance was identified
+    as delivering material accuracy improvements during these periods.
+  lesson_learnt: Explicitly model diffuse irradiance and low-sun-angle conditions
+    in solar forecasting systems — ASEFS and basic models produce persistent errors
+    exceeding 5 MW during morning and afternoon ramps on large solar farms, and improved
+    diffuse irradiance modelling has been shown to materially reduce these errors.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: government/public-sector body
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id027
+  - 38
+  evidence_excerpt: A clear sky power model is needed to better deal with sunrise
+    and sunset. Diffuse irradiance has a more significant effect at these lower light
+    times... better modelling of diffuse irradiance has delivered a material impact
+    on forecast accuracy. The magnitude of ASEFS errors during morning and afternoon
+    ramps can cause persistent forecast errors of >5 MW throughout the ramps.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: 38
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52027
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id027
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-52028
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: Redis cache problems with the AEMO API caused some forecast submissions
+    to be dropped; while participants could switch to another set of valid credentials
+    to restore submissions, this resulted in missing submissions during the window
+    before the workaround was applied.
+  lesson_learnt: Build credential-switching failover into the API submission system
+    for AEMO's MP5F platform — Redis cache issues have caused dropped submissions,
+    and the ability to automatically switch to an alternative valid credential set
+    can restore submissions with minimal gaps.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: government/public-sector body
+  delay_category: data/validation/testing
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: execution & logistics
+  intervention_note: AEMO subsequently fixed the Redis cache problems; in the interim,
+    participants could switch to another set of valid credentials to restore submissions.
+  transferability: narrow
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id028
+  - 26
+  evidence_excerpt: Redis cache problems were identified. It has been reported that
+    there were issues with the AEMO API. It is possible for participant to switch
+    to another set of valid credentials to restore submissions, but this did result
+    in some missing submissions. AEMO has since fixed the problems.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: 26
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52028
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id028
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-52029
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: Some control systems were unable to ramp plant output fast enough
+    to meet the dispatch target within one period when a generation cap was lifted,
+    resulting in causer-pays charges even where forecasting was accurate.
+  lesson_learnt: When evaluating FCAS savings from self-forecasting, account for plant
+    ramp-rate limitations — if the control system cannot ramp to the dispatch target
+    within one 5-minute period after a cap is lifted, causer-pays charges will be
+    incurred regardless of forecast accuracy.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: government/public-sector body
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id029
+  - 43
+  evidence_excerpt: If a generation cap is lifted, some control systems may not be
+    able to ramp the plant fast enough to meet the dispatch target within one period.
+    The plant could then incur CP charges.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: 43
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52029
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id029
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-52030
+  source_title: ARENA Short Term Forecasting Funding Round Evaluation
+  publish_date: 2021-10
+  project_name: ARENA Short-Term Self-Forecasting Trial
+  what_happened: Trial participants who had previous experience dealing with AEMO
+    encountered fewer administrative and data connectivity issues when implementing
+    their self-forecasting projects compared with those without prior AEMO experience.
+  lesson_learnt: Consider engaging personnel or partners with prior AEMO API and registration
+    experience when initiating a self-forecasting project — prior AEMO experience
+    materially reduces administrative and data connectivity friction during implementation.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: government/public-sector body
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id030
+  - 27
+  evidence_excerpt: Trial participants with previous experience dealing with AEMO
+    had fewer administrative and data connectivity issues when implementing their
+    projects.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 6/10/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+  markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  source_page_pdf: 27
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52030
+  contributing_source_titles:
+  - ARENA Short Term Forecasting Funding Round Evaluation
+  contributing_sources:
+  - source_title: ARENA Short Term Forecasting Funding Round Evaluation
+    pdf_url: https://arena.gov.au/assets/2021/10/arena-short-term-forecasting-funding-round-evaluation.pdf
+    source_pages: *id030
+    source_url: https://arena.gov.au/knowledge-bank/arena-short-term-forecasting-funding-round-evaluation/
+    markdown_filename: arena_short_term_forecasting_funding_round_evaluation.md
+  arena_category:
+  - Grid stability
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture

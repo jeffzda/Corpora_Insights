@@ -1,0 +1,3103 @@
+- record_id: ARENA-DLV-1208
+  source_title: AGL - Broken Hill Grid-Forming Battery - Lessons Learnt Report 1
+  publish_date: 2023-11
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: Grid-forming inverters operate without triggering Transient Reactive
+    Current (TRC) support during shallow faults (voltage events remaining within FRT
+    thresholds), producing a different response to fault events than grid-following
+    inverters. The NER requirement for reactive current injection during faults —
+    prescriptive at 2% of maximum continuous current per 1% voltage change — was incompatible
+    with voltage source (grid-forming) inverter operation and represented a structural
+    regulatory barrier to deploying BHBESS in full grid-forming mode.
+  lesson_learnt: Proponents deploying grid-forming BESS under the NER should be aware
+    that pre-April 2023 reactive current injection rules were designed for grid-following
+    inverters and effectively precluded grid-forming operation during faults. The
+    rule change on 20 April 2023 (relaxing the reactive current obligation to 'greater
+    than 0%') removes this barrier — but residual work is still required on reactive
+    current settling times and unbalanced fault stability before full grid-forming
+    FRT functionality can be implemented.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: grid connection/system studies
+  failure_mode: regulatory & approvals
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: A Working Group including AEMO and Transgrid was established
+    to validate methodology, assumptions and models; real-time EMT digital simulation
+    with hardware-in-the-loop (HiL) testing was adopted to validate grid-forming controller
+    performance in lieu of standard offline EMT simulations.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 9
+  - 10
+  - 16
+  - 22
+  - 59
+  - 60
+  - 61
+  - 62
+  evidence_excerpt: Due to the extremely low SCR of 1.997, BHBESS inverter current
+    controllers were tuned to provide ride through stability which resulted in slow
+    reactive current response times during a fault. Compliance was a concern to meet
+    the rule requirements of 40ms rise time and 70ms settling time. When considering
+    a higher SCR of 4.115, the current controller could be sped up to meet these requirements
+    without jeopardising fault ride through stability.
+  confidence_note: Canonical record merged from 4 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 16/01/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/01/AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-1.pdf
+  markdown_filename: agl_broken_hill_grid_forming_battery_lessons_learnt_report_1.md
+  source_page_pdf: 22
+  corroboration_count: 4
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-1201
+  - ARENA-DLV-1208
+  - ARENA-DLV-19707
+  - ARENA-DLV-19708
+  contributing_source_titles:
+  - AGL - Broken Hill Grid-Forming Battery - Lessons Learnt Report 1
+  - AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge Sharing
+    Report
+  contributing_sources:
+  - source_title: AGL - Broken Hill Grid-Forming Battery - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-1.pdf
+    source_pages:
+    - 9
+    - 10
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-lessons-learnt-report-1/
+    markdown_filename: agl_broken_hill_grid_forming_battery_lessons_learnt_report_1.md
+  - source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling
+      Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+    source_pages:
+    - 59
+    - 61
+    - 62
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+    markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-1207
+  source_title: AGL - Broken Hill Grid-Forming Battery - Lessons Learnt Report 1
+  publish_date: 2023-11
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: Sensitivity analysis on virtual inertia constant (IC) and damping
+    factor (DF) settings revealed that the initially configured values (IC=2.5, DF=62)
+    caused aggressive active power swings under low Short Circuit Ratio (SCR=2) conditions,
+    leading to voltage rise/drop and subsequent Fault Ride-Through (FRT) entry and
+    re-striking. Higher virtual inertia, generally considered beneficial for frequency
+    stability, was counterproductive in the weak Broken Hill network.
+  lesson_learnt: In weak-grid environments with low short-circuit ratios, higher virtual
+    inertia settings on grid-forming inverters can induce voltage instability rather
+    than improve frequency performance — there is an inherent trade-off between inertia
+    response and voltage stability. Grid-forming BESS projects in weak networks should
+    perform dedicated sensitivity analysis on inertia and damping factor settings
+    early in design, with minimised virtual inertia (e.g. IC=0.1, DF=12) likely to
+    be more appropriate than default high-inertia configurations.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: grid connection/system studies
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: data & measurement
+  intervention_note: AGL and Aurecon performed a four-scenario sensitivity analysis
+    of IC and DF combinations; minimised virtual inertia settings (IC=0.1, DF=12)
+    were adopted as providing the most stable voltage response across the range of
+    frequency disturbance tests.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 10
+  - 11
+  - 14
+  - 15
+  evidence_excerpt: a higher inertia constant (ie. more megawatts injected into system)
+    is not necessarily good for weak grid condition as it would lead to depressed
+    voltage levels resulting in fault ride through... in networks with lower system
+    strength, increasing inertia is observed to induce greater voltage swings during
+    frequency change tests.
+  confidence_note: Canonical record merged from 2 source records across 1 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 16/01/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/01/AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-1.pdf
+  markdown_filename: agl_broken_hill_grid_forming_battery_lessons_learnt_report_1.md
+  source_page_pdf: 14
+  corroboration_count: 2
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-1202
+  - ARENA-DLV-1207
+  contributing_source_titles:
+  - AGL - Broken Hill Grid-Forming Battery - Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: AGL - Broken Hill Grid-Forming Battery - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-1.pdf
+    source_pages:
+    - 10
+    - 11
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-lessons-learnt-report-1/
+    markdown_filename: agl_broken_hill_grid_forming_battery_lessons_learnt_report_1.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-1203
+  source_title: AGL - Broken Hill Grid-Forming Battery - Lessons Learnt Report 1
+  publish_date: 2023-11
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: At project commencement, grid-forming (GFM) inverter technology was
+    not well understood by the project team or industry stakeholders. Multiple briefings
+    were required to establish a common baseline understanding of GFM inverter capabilities,
+    operating principles (power-synchronisation loops vs. phase-locked loops), and
+    key differences from grid-following (GFL) inverters before technical discussions
+    could proceed effectively.
+  lesson_learnt: For projects deploying novel or emerging inverter technologies, conduct
+    structured technology education sessions with all key internal and external stakeholders
+    at project outset — establishing a shared vocabulary and technical baseline prevents
+    misaligned assumptions from compounding into design and approval delays later.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: concept/feasibility
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: successful demonstration
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Multiple briefings were held at project commencement to align
+    stakeholders on GFM inverter specifications, capabilities, and differences from
+    GFL inverters; subsequent technical discussions were anchored to these sessions.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id001
+  - 11
+  evidence_excerpt: At the commencement of the project, multiple briefings were held
+    to set the main specifications of grid-forming (GFM) inverters, their capabilities,
+    and their main differences to grid-following (GFL) inverters. Future discussions
+    on the Broken Hill Battery Energy Storage System were tied back to these meetings
+    for context.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 16/01/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/01/AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-1.pdf
+  markdown_filename: agl_broken_hill_grid_forming_battery_lessons_learnt_report_1.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-1203
+  contributing_source_titles:
+  - AGL - Broken Hill Grid-Forming Battery - Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: AGL - Broken Hill Grid-Forming Battery - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-1.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-lessons-learnt-report-1/
+    markdown_filename: agl_broken_hill_grid_forming_battery_lessons_learnt_report_1.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.72
+- record_id: ARENA-DLV-1205
+  source_title: AGL - Broken Hill Grid-Forming Battery - Lessons Learnt Report 1
+  publish_date: 2023-11
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: The connection application required submission of numerous critical
+    documents — including connection application checklists, R1 submission checklists,
+    power system model guidelines, communication failure guidelines, and dynamic model
+    acceptance guidelines — many of which needed to be provided by the OEM. Delays
+    in obtaining these OEM-supplied documents generated unnecessary queries from AEMO
+    and Transgrid and slowed the application process.
+  lesson_learnt: Establish regular structured communication channels (weekly meetings)
+    with AEMO and the TNSP from the start of the connection application process —
+    this cadence materially accelerates issue resolution and approval. Also engage
+    the OEM directly with the network operators rather than routing all technical
+    queries through the proponent, as direct OEM-TNSP/AEMO engagement can expedite
+    the overall process.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: grid connection/system studies
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: The team identified the required document list from AEMO checklists
+    and guidelines and worked to obtain OEM-supplied documents in advance of subsequent
+    application steps; confidential documents were submitted directly to AEMO following
+    prescribed procedures.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 11
+  - 12
+  - 13
+  - 21
+  - 74
+  evidence_excerpt: During the grid connection approval process, conducting regular
+    meetings with AEMO, Transgrid and the OEM, ensured that all model issues are being
+    actively addressed and progress is being made towards resolving them. These meetings
+    also provide a platform for discussing and sharing feedback on each specific issue
+    and served as a valuable mechanism to track the progress of resolving model issues,
+    gather feedback from all team members, and prioritize the resolution of these
+    issues.
+  confidence_note: Canonical record merged from 4 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 16/01/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/01/AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-1.pdf
+  markdown_filename: agl_broken_hill_grid_forming_battery_lessons_learnt_report_1.md
+  source_page_pdf: 13
+  corroboration_count: 4
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-1204
+  - ARENA-DLV-1205
+  - ARENA-DLV-19718
+  - ARENA-DLV-19720
+  contributing_source_titles:
+  - AGL - Broken Hill Grid-Forming Battery - Lessons Learnt Report 1
+  - AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge Sharing
+    Report
+  contributing_sources:
+  - source_title: AGL - Broken Hill Grid-Forming Battery - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-1.pdf
+    source_pages:
+    - 11
+    - 12
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-lessons-learnt-report-1/
+    markdown_filename: agl_broken_hill_grid_forming_battery_lessons_learnt_report_1.md
+  - source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling
+      Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+    source_pages:
+    - 21
+    - 74
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+    markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-1206
+  source_title: AGL - Broken Hill Grid-Forming Battery - Lessons Learnt Report 1
+  publish_date: 2023-11
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: Core grid-forming inverter intellectual property (IP) — including
+    functional block diagrams essential for AEMO and Transgrid due diligence — was
+    not made available to AGL or its engineering consultant Aurecon. There was no
+    direct communication channel between AGL/Aurecon and the OEM vendor, meaning AGL
+    relied on indirect feedback via Transgrid. This restricted information flow complicated
+    the connection approval process.
+  lesson_learnt: When procuring grid-forming inverters, proponents should negotiate
+    upfront contractual arrangements that give AEMO and the TNSP timely access to
+    functional block diagrams and other IP-protected technical documentation required
+    for due diligence — and establish a direct OEM-proponent-TNSP/AEMO communication
+    channel. Leaving these arrangements to be resolved during the connection application
+    process materially delays approvals.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: procurement
+  proponent_type: utility/energy retailer
+  delay_category: grid connection/system studies
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: Direct OEM involvement in the due diligence process was eventually
+    arranged; confidential IP agreements were put in place to enable restricted disclosure
+    of functional block diagrams to AEMO and Transgrid.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 13
+  - 14
+  - 75
+  evidence_excerpt: It is crucial for the functional block diagrams which are essential
+    for conducting due diligence by Transgrid and AEMO, to be made available to AEMO
+    and Transgrid in a timely manner, providing them with the necessary information
+    required for their assessments, while noting that the functional block diagrams
+    fall under Grid-Forming Inverter core intellectual property (IP) resources.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 16/01/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/01/AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-1.pdf
+  markdown_filename: agl_broken_hill_grid_forming_battery_lessons_learnt_report_1.md
+  source_page_pdf: 13
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-1206
+  - ARENA-DLV-19719
+  contributing_source_titles:
+  - AGL - Broken Hill Grid-Forming Battery - Lessons Learnt Report 1
+  - AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge Sharing
+    Report
+  contributing_sources:
+  - source_title: AGL - Broken Hill Grid-Forming Battery - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-1.pdf
+    source_pages:
+    - 13
+    - 14
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-lessons-learnt-report-1/
+    markdown_filename: agl_broken_hill_grid_forming_battery_lessons_learnt_report_1.md
+  - source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling
+      Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+    source_pages:
+    - 75
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+    markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: integration failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-1209
+  source_title: AGL - Broken Hill Grid-Forming Battery - Lessons Learnt Report 1
+  publish_date: 2023-11
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: Grid-forming inverters switch to grid-following mode during fault
+    events that exceed FRT thresholds, at which point the additional grid-forming
+    control layers (virtual inertia loop, PI voltage/frequency controller) are disabled
+    and the Power Plant Controller (PPC) commands are frozen. This mode-switching
+    behaviour required additional bespoke control layer design to translate PPC active/reactive
+    power commands into voltage and frequency references compatible with grid-forming
+    operation — a layer not required for standard grid-following plants.
+  lesson_learnt: Grid-forming BESS projects require an additional control layer between
+    the Power Plant Controller and the grid-forming inverter to convert power commands
+    into voltage and frequency references. This layer must be specifically designed
+    and tuned for grid-forming applications — project teams should not assume existing
+    PPC designs developed for grid-following inverters will be compatible, and should
+    engage the OEM early on control layer architecture and fault mode transitions.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: An additional control layer was designed to convert PPC active
+    and reactive power commands into voltage and frequency references for the grid-forming
+    inverter, bridging the incompatibility between standard PPC logic and grid-forming
+    control requirements.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 18
+  - 19
+  - 61
+  evidence_excerpt: When the switch in mode occurs, the inverter resets internal states
+    to pre-disturbance conditions. If pre-disturbance conditions are the same as post-disturbance,
+    then very little switching transient is observed... A transient is then introduced
+    as the inverters resettle to the new grid conditions. A transient due to change
+    in states is unavoidable for all scenarios, but the transient has been observed
+    to be sufficiently small such as to not drive an additional network disturbance.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 16/01/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/01/AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-1.pdf
+  markdown_filename: agl_broken_hill_grid_forming_battery_lessons_learnt_report_1.md
+  source_page_pdf: 18
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-1209
+  - ARENA-DLV-19709
+  contributing_source_titles:
+  - AGL - Broken Hill Grid-Forming Battery - Lessons Learnt Report 1
+  - AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge Sharing
+    Report
+  contributing_sources:
+  - source_title: AGL - Broken Hill Grid-Forming Battery - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-1.pdf
+    source_pages:
+    - 18
+    - 19
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-lessons-learnt-report-1/
+    markdown_filename: agl_broken_hill_grid_forming_battery_lessons_learnt_report_1.md
+  - source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling
+      Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+    source_pages:
+    - 61
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+    markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-1210
+  source_title: AGL - Broken Hill Grid-Forming Battery - Lessons Learnt Report 1
+  publish_date: 2023-11
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: Consultation with planning and environmental stakeholders (Transport
+    for NSW, Broken Hill City Council, DPE Biodiversity, DPE Water, Fire and Rescue
+    NSW, NSW Rural Fire Service) was mandated as a condition of development consent.
+    It proved difficult to establish contact with some referral agencies, and certain
+    management plans required Planning Secretary approval before construction could
+    commence, necessitating escalation to DPE Energy Assessments.
+  lesson_learnt: Where stakeholder consultation is a condition of development consent,
+    allocate additional schedule contingency for obtaining referral agency responses
+    and plan approvals — contact can be difficult to establish and approval chains
+    may require escalation. Seek direct engagement of referral agencies by the regulator
+    where available, as this materially reduces approval timeframes.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: stakeholder/land/community
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Escalation to DPE Energy Assessments was used to ensure effective
+    consultation where direct contact with referral agencies proved difficult.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id002
+  - 20
+  evidence_excerpt: Throughout the required consultation process, it proved challenging
+    to establish contact with some of these stakeholders. Additionally, certain plans
+    needed approval from the Planning Secretary before commencing construction, necessitating
+    escalation to DPE Energy Assessments to ensure effective consultation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 16/01/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/01/AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-1.pdf
+  markdown_filename: agl_broken_hill_grid_forming_battery_lessons_learnt_report_1.md
+  source_page_pdf: 20
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-1210
+  contributing_source_titles:
+  - AGL - Broken Hill Grid-Forming Battery - Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: AGL - Broken Hill Grid-Forming Battery - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-1.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-lessons-learnt-report-1/
+    markdown_filename: agl_broken_hill_grid_forming_battery_lessons_learnt_report_1.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-1211
+  source_title: AGL - Broken Hill Grid-Forming Battery - Lessons Learnt Report 1
+  publish_date: 2023-11
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: The Fire Safety Study for the Broken Hill BESS was submitted for
+    approval in August 2022 but was not accepted by Fire and Rescue NSW (FRNSW) until
+    mid-May 2023 — a process of approximately nine months. The extended duration arose
+    because FRNSW was concurrently developing its own technical guidance on large-scale
+    lithium-ion BESS fire safety (prompted partly by the 2021 Victorian Big Battery
+    thermal event), leaving assessment criteria undefined and requirements open-ended.
+    Development consent conditions were modified twice and a third modification was
+    refused by DPE, directly impacting project cost and schedule.
+  lesson_learnt: BESS projects should expect extended Fire Safety Study approval timelines
+    where fire authorities are still developing assessment criteria for large-scale
+    lithium-ion storage — the absence of an Australian Standard or legislative guidance
+    means requirements can remain open-ended throughout the process. Allow at least
+    9–12 months schedule contingency for fire safety approvals, engage FRNSW and the
+    relevant fire authority as early as possible, and monitor the development of FRNSW
+    technical guidance to anticipate evolving requirements.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: Development consent conditions were modified on two occasions
+    to accommodate the evolving fire safety requirements; multiple document reviews
+    and updates were undertaken until FRNSW acceptance was achieved in May 2023.
+  transferability: broad
+  delay_magnitude: 3-12 months
+  technology_domain: battery storage
+  source_pages:
+  - 20
+  - 21
+  - 76
+  evidence_excerpt: The Fire Safety Study was initially submitted for approval in
+    August 2022 but was not accepted by Fire and Rescue New South Wales (FRNSW) until
+    mid-May 2023. The process involved multiple reviews and updates of the document...
+    each Fire Authority has yet to clearly define the assessment criteria, leaving
+    the requirements open-ended and causing difficulty in adequately addressing or
+    understanding what is needed.
+  confidence_note: Delay magnitude inferred from submission date (August 2022) to
+    acceptance date (mid-May 2023) = approximately 9 months, coded as 3–12 months.
+    Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 16/01/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/01/AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-1.pdf
+  markdown_filename: agl_broken_hill_grid_forming_battery_lessons_learnt_report_1.md
+  source_page_pdf: 20
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-1211
+  - ARENA-DLV-19721
+  contributing_source_titles:
+  - AGL - Broken Hill Grid-Forming Battery - Lessons Learnt Report 1
+  - AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge Sharing
+    Report
+  contributing_sources:
+  - source_title: AGL - Broken Hill Grid-Forming Battery - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-1.pdf
+    source_pages:
+    - 20
+    - 21
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-lessons-learnt-report-1/
+    markdown_filename: agl_broken_hill_grid_forming_battery_lessons_learnt_report_1.md
+  - source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling
+      Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+    source_pages:
+    - 76
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+    markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: cost overrun
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-19713
+  source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge
+    Sharing Report
+  publish_date: 2023-11
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: The DMAT Guideline required studies at SCR = 3, but BHBESS had a
+    minimum SCR of 1.997, necessitating additional studies beyond the normal set and
+    precluding some standard tests (minimum SOC tests could not be performed because
+    the PSS®E and PSCAD models lacked SOC representation).
+  lesson_learnt: Where a project's minimum SCR falls below the SCR assumed in AEMO's
+    DMAT Guideline, additional non-standard studies will be required; plan for this
+    explicitly in the study scope and timeline, and confirm with AEMO early whether
+    model limitations (e.g. absence of SOC representation) will affect test coverage.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: grid connection/system studies
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: Studies were rerun at the credible SCR of 1.997 following direct
+    discussion with the NSP and AEMO; wide-area PSCAD studies confirmed no network
+    instability at the revised SCR.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 15
+  - 16
+  - 19
+  evidence_excerpt: AEMO's DMAT Guideline version 2 was used... The DMAT Guideline
+    requires a number of simulation studies to be performed at an SCR of 3 but due
+    to BHBESS having a minimum SCR of 1.997, additional tests were required at this
+    SCR beyond the normal set of studies... Minimum state of charge (SOC) tests are
+    included in the DMAT Guideline but could not be performed due to the PSS®E and
+    PSCAD models not containing an SOC representation.
+  confidence_note: Canonical record merged from 2 source records across 1 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 16/01/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+  markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-19701
+  - ARENA-DLV-19713
+  contributing_source_titles:
+  - AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge Sharing
+    Report
+  contributing_sources:
+  - source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling
+      Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+    source_pages:
+    - 15
+    - 16
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+    markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-19704
+  source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge
+    Sharing Report
+  publish_date: 2023-11
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: Under very low SCR conditions, a large active power change caused
+    voltage to rise or drop enough to enter FRT condition, and in some cases the plant
+    became stuck at a lower voltage operating point (0.86 pu instead of 1.0 pu) due
+    to the dual-solution nature of the AC power transfer equation — unable to exit
+    without an external change to grid voltage or plant setpoint.
+  lesson_learnt: For grid-forming BESS projects at very weak network locations (SCR
+    close to 2), active power changes will cause significant RMS voltage coupling
+    effects that do not appear in stronger networks; GPS compliance testing must account
+    for this and plant settings must be tuned accordingly rather than using parameters
+    optimised for stronger grid locations.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: grid connection/system studies
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated integration
+  intervention_note: Plant operating mode was constrained to voltage control mode
+    (which actively damps voltage oscillations) rather than reactive power or power
+    factor control modes where no voltage feedback exists.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 35
+  - 36
+  - 37
+  - 40
+  - 41
+  evidence_excerpt: If PoI voltage drops below the asymptote of the curve, a subsequent
+    increase in the infinite source voltage magnitude can cause the PoI voltage to
+    drop further and settle at lower voltage point (0.86 pu) instead of the intended
+    PoI voltage (1.0 pu). The plant then remains stuck in this state and is unable
+    to exit it without an external change to the grid voltage and phase angle, or
+    plant voltage setpoint change.
+  confidence_note: Canonical record merged from 2 source records across 1 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 16/01/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+  markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  source_page_pdf: 40
+  corroboration_count: 2
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-19702
+  - ARENA-DLV-19704
+  contributing_source_titles:
+  - AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge Sharing
+    Report
+  contributing_sources:
+  - source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling
+      Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+    source_pages:
+    - 35
+    - 36
+    - 37
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+    markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-19703
+  source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge
+    Sharing Report
+  publish_date: 2023-11
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: Under non-credible SCR conditions of 1.19 in a SMIB environment,
+    a ±10% change in reactive power flow caused a 15% change in point of interest
+    voltage — large enough to drive the plant into HVRT or LVRT.
+  lesson_learnt: In very weak grid SMIB test environments, reactive power and power
+    factor control modes expose grid-forming inverters to FRT triggering due to voltage-power
+    coupling; GPS studies should test these control modes explicitly and plant tuning
+    or mode selection must account for this risk.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: grid connection/system studies
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Additional studies at a higher SCR were conducted to demonstrate
+    the issue was SCR-dependent; NEM PSS®E studies confirmed reactive power step changes
+    in the network would not cause operational issues.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id003
+  - 41
+  evidence_excerpt: Under some non-credible operating conditions at Broken Hill exposing
+    the BESS to an SCR of 1.19, a ±10% change in reactive power flow through the SMIB
+    impedance could result in a 15% change in point of interest (PoI) voltage. This
+    change is large enough to drive the plant outside a continuous uninterrupted operation
+    range of 90% to 110% nominal voltage, and potentially enters into HVRT or LVRT
+    depending on the pre-disturbance condition.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 16/01/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+  markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  source_page_pdf: 41
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-19703
+  contributing_source_titles:
+  - AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge Sharing
+    Report
+  contributing_sources:
+  - source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling
+      Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+    markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-19705
+  source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge
+    Sharing Report
+  publish_date: 2023-11
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: Virtual inertia constants and damping factors were found to behave
+    fundamentally differently in a low SCR network compared to stronger grid locations.
+    A high inertia constant combined with low SCR active power-voltage sensitivity
+    could cause voltage collapse; a very small inertia constant (IC = 0.1) with damping
+    factor of 10 or 12 was found to be necessary for stable operation.
+  lesson_learnt: Virtual inertia and damping factor settings optimal for a strong
+    grid are not transferable to weak grid (low SCR) locations — for BESS projects
+    at SCR near 2, use a low inertia constant (e.g. IC = 0.1) and test a range of
+    damping factors; do not rely on default or higher inertia settings without site-specific
+    sensitivity analysis.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Extensive sensitivity analysis across multiple IC and DF combinations
+    was performed; IC = 0.1 with DF = 10 or 12 was confirmed as the optimal setting,
+    reducing active power dip on frequency disturbance clearance by up to 50%.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id004
+  - 46
+  - 49
+  - 50
+  - 58
+  evidence_excerpt: For BHBESS, when connected to such a weak network, a very small
+    inertia constant was found to be practical. Larger inertia response when combined
+    with low SCR active power and voltage sensitivity could cause voltage collapse...
+    The combination of DF = 10 or 12 and IC = 0.1 exhibited the best performance when
+    compared to the higher plant settings of DF = 62 and IC = 2.5.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 16/01/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+  markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  source_page_pdf: 46
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-19705
+  contributing_source_titles:
+  - AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge Sharing
+    Report
+  contributing_sources:
+  - source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling
+      Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+    markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-19706
+  source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge
+    Sharing Report
+  publish_date: 2023-11
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: Reducing the damping factor below 10 (e.g. DF = 5) caused oscillatory
+    active/reactive power and voltage profiles; reducing it further to DF = 1 caused
+    the PSCAD model to crash and fail to initialise.
+  lesson_learnt: There is a lower bound on the effective damping factor for grid-forming
+    BESS in low SCR networks — reducing DF below 10 in these conditions introduces
+    oscillatory instability, and values as low as 1 cause model simulation failure;
+    design teams should confirm a minimum DF threshold through sensitivity analysis
+    before finalising inverter settings.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: DF = 10 or 12 with IC = 0.1 was confirmed as the most suitable
+    setting pair across the operating range.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id005
+  - 56
+  evidence_excerpt: The reduced damping factor DF = 5 and IC = 0.1 causes worsening
+    the plant's performance and is likely to introduce oscillatory active/reactive
+    power and voltage profile for any frequency disturbance... the further reduction
+    of the Damping factor (e.g. DF = 1) has serious impacts causing the PSCAD model
+    to crash and initialisation failure.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 16/01/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+  markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-19706
+  contributing_source_titles:
+  - AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge Sharing
+    Report
+  contributing_sources:
+  - source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling
+      Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+    markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-19710
+  source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge
+    Sharing Report
+  publish_date: 2023-11
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: The restrike mask time implemented to prevent unintended re-triggering
+    of fault ride-through meant BHBESS did not inject the normal reactive current
+    profile for subsequent faults occurring within 250 ms of each other during multiple
+    fault ride-through (MFRT) events.
+  lesson_learnt: Grid-forming BESS with mode-switching will have an inherent limitation
+    in MFRT reactive current response for faults close together in time (within ~250
+    ms) due to the restrike mask time needed to prevent spurious retriggers — this
+    should be declared in the connection application and tested explicitly; the critical
+    MFRT objective is preventing cascaded network tripping, not reactive current injection
+    compliance for every fault.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: grid connection/system studies
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: Further tuning resolved initial trip behaviour identified in
+    MFRT testing; no MFRT compliance issue remained for BHBESS.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id006
+  - 63
+  evidence_excerpt: With respect to multiple fault ride through (MFRT), this does
+    result in the plant not responding with the normal reactive current injection
+    profile for subsequent faults close together... BHBESS is still able to ride through
+    these faults without tripping or exhibiting any unstable behaviour.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 16/01/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+  markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  source_page_pdf: 63
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-19710
+  contributing_source_titles:
+  - AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge Sharing
+    Report
+  contributing_sources:
+  - source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling
+      Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+    markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-19711
+  source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge
+    Sharing Report
+  publish_date: 2023-11
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: Real-time digital simulations demonstrated that a 50 MW grid-forming
+    BESS eliminated voltage oscillations (9–10 Hz) caused by both transmission faults
+    and maximum renewable generation conditions in the Broken Hill area, where a grid-feeding
+    (grid-following) BESS could not damp the oscillations.
+  lesson_learnt: A grid-forming BESS can provide effective system strength support
+    — damping sub-synchronous voltage oscillations from both fault events and high
+    IBR penetration — where a conventional grid-following BESS cannot; this capability
+    should be modelled with real-time EMT simulation to confirm performance before
+    finalising connection applications in weak grid areas.
+  issue_severity: none
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id007
+  - 27
+  evidence_excerpt: These results demonstrate how the Broken Hill BESS helps to damp
+    the oscillations, allowing a stable operation of the system and improving overall
+    system strength.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 16/01/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+  markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  source_page_pdf: 26
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-19711
+  contributing_source_titles:
+  - AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge Sharing
+    Report
+  contributing_sources:
+  - source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling
+      Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+    markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-19712
+  source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge
+    Sharing Report
+  publish_date: 2023-11
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: Grid hosting capacity in the Broken Hill area increased by up to
+    16.7% (from approximately 252 MW to 294 MW) when the BESS provided reactive power
+    support, compared to no improvement when operating in grid-following mode and
+    no BESS.
+  lesson_learnt: A grid-forming BESS providing reactive power support can materially
+    increase local renewable hosting capacity — the benefit scales with reactive output,
+    reaching 16.7% in this case — project developers and network planners should model
+    hosting capacity uplift from grid-forming BESS as a quantifiable co-benefit when
+    sizing and locating storage in weak grid areas.
+  issue_severity: none
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id008
+  - 64
+  evidence_excerpt: When increasing the renewable generation from Silverton Wind Farm,
+    the maximum hosting capacity of the Broken Hill Area increases 16.7% (i.e., from
+    252 MW to 294 MW)... When the Broken Hill BESS is providing reactive power to
+    the grid, it increases the hosting capacity, as there is more room for existing
+    SVCs to regulate the voltage of the grid.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 16/01/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+  markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  source_page_pdf: 64
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-19712
+  contributing_source_titles:
+  - AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge Sharing
+    Report
+  contributing_sources:
+  - source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling
+      Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+    markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-19714
+  source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge
+    Sharing Report
+  publish_date: 2023-11
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: Proprietary models for solar farms, wind farms, SVCs and HVDC links
+    were not available for real-time digital simulation, requiring replacement with
+    Thévenin equivalent circuits; generic detailed real-time EMT models were subsequently
+    implemented for the Broken Hill Solar Farm, Silverton Wind Farm and SVCs to improve
+    representational accuracy.
+  lesson_learnt: The unavailability of proprietary plant models for co-located assets
+    is a common constraint in wide-area EMT simulation — project teams should plan
+    for model substitution using validated generic equivalents early, and engage a
+    Modelling Working Group (including the NSP and AEMO) to endorse modelling assumptions
+    before investing heavily in simulation results.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: Generic detailed real-time EMT models with fully detailed power
+    electronics converters and controllers were implemented; a Modelling Working Group
+    including Transgrid and AEMO endorsed the modelling approach and assumptions.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id009
+  - 20
+  - 21
+  evidence_excerpt: Since proprietary models, including solar farms, wind farms, SVCs,
+    HVDC links, among others were not available, they were originally replaced by
+    Thévenin equivalent circuits. However, to better represent the Broken Hill substation
+    and its dynamic behaviour, generic detailed real-time EMT models with fully detailed
+    power electronics converters and controllers have been implemented.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 16/01/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+  markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  source_page_pdf: 20
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-19714
+  contributing_source_titles:
+  - AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge Sharing
+    Report
+  contributing_sources:
+  - source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling
+      Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+    markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-19715
+  source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge
+    Sharing Report
+  publish_date: 2023-11
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: The virtual inertia of grid-forming inverters incorporates a slight
+    measurement and switching delay (observed as 20–30 ms before the plant begins
+    to respond to a frequency change), unlike synchronous generators whose inertia
+    response begins instantaneously. The synthetic inertia constant also has a magnitude
+    limit at very high rates of change of frequency.
+  lesson_learnt: Project teams and network planners should not assume grid-forming
+    BESS synthetic inertia is equivalent to physical synchronous inertia — the 20–30
+    ms inherent delay and magnitude limits at high RoCoF are important differences;
+    this distinction is particularly material for extremely weak grids or microgrids
+    where even small response delays can affect stability.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id010
+  - 44
+  - 48
+  evidence_excerpt: The synthetic inertia of the BESS incorporates a slight delay
+    and a limit to the magnitude of inertia that can be replicated at very high Rates
+    of Change of Frequency... the plant does not begin to respond for at least 20-30ms.
+    Although this does not have significant impact on network performance, it is a
+    factor to be mindful of in extremely weak grids or microgrids where this small
+    delay could have a larger impact.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 16/01/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+  markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  source_page_pdf: 44
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-19715
+  contributing_source_titles:
+  - AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge Sharing
+    Report
+  contributing_sources:
+  - source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling
+      Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+    markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-19716
+  source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge
+    Sharing Report
+  publish_date: 2023-11
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: Grid-forming inverters require an additional power plant controller
+    (PPC) control layer to convert active and reactive power commands into voltage
+    and frequency references — a layer absent from grid-following inverter PPCs. The
+    virtual inertia response was found to be inherently slow (order of 1 second),
+    requiring slow PPC active power commands to maintain stability.
+  lesson_learnt: Standard grid-following PPC designs cannot be used directly with
+    grid-forming inverters without modification — an additional control conversion
+    layer must be designed and tuned, and PPC active power ramp rates must be constrained
+    to match the inherently slower virtual inertia response; project teams should
+    plan for this additional control engineering effort in schedule and budget.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: An additional control layer converting PPC power commands to
+    voltage and frequency references was implemented; a smaller virtual inertia constant
+    was used to facilitate faster PPC active power control.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id011
+  - 71
+  - 72
+  evidence_excerpt: Power plant controllers (PPC) for existing inverter-based resources
+    are most commonly designed to send active and reactive power commands to inverters
+    in alignment with grid-following control logic. For BHBESS, due to the grid-forming
+    need for a voltage and frequency reference, an additional layer of control is
+    required to convert the PPC active and reactive power commands into usable voltage
+    and frequency commands... The virtual inertia response of the plant is typically
+    slow compared to grid-following devices, in the order of 1s response times, and
+    as such a slow active power output from the PPC is required to ensure stability.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 16/01/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+  markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  source_page_pdf: 71
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-19716
+  contributing_source_titles:
+  - AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge Sharing
+    Report
+  contributing_sources:
+  - source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling
+      Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+    markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-19717
+  source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge
+    Sharing Report
+  publish_date: 2023-11
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: The islanding capability originally planned for the BHBESS — to supply
+    the Broken Hill load in the event of grid disconnection, replacing diesel generation
+    — was inhibited after Transgrid selected a compressed air storage alternative
+    through its RIT-T process. The battery was reconfigured to include an anti-islanding
+    scheme that also prevents provision of System Restart Services.
+  lesson_learnt: Where a battery project intends to provide islanding or black-start
+    services, proponents must monitor parallel network planning processes (such as
+    RIT-T) that could select competing solutions — if another asset is chosen, the
+    anti-islanding scheme required to avoid adverse interaction may eliminate the
+    islanding capability entirely, affecting both contracted services and revenue
+    assumptions.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: coordination & stakeholders
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated integration
+  intervention_note: The battery was reconfigured under Transgrid guidance to include
+    an anti-islanding scheme; islanding functionality remains contracted but is inhibited
+    to avoid interaction with the compressed air scheme.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id012
+  - 73
+  evidence_excerpt: Transgrid ran a RIT-T process to select its preferred provider
+    of standby supply for Broken Hill and chose a compressed air storage alternative.
+    As a consequence, and to avoid adverse interaction between the battery and the
+    compressed air system, the battery has been configured under Transgrid guidance
+    to include an anti-islanding scheme. The battery provider is still contracted
+    to include islanding functionality, but this functionality will be inhibited to
+    avoid interaction with the compressed air scheme.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 16/01/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+  markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  source_page_pdf: 73
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-19717
+  contributing_source_titles:
+  - AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge Sharing
+    Report
+  contributing_sources:
+  - source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling
+      Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+    markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-19722
+  source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge
+    Sharing Report
+  publish_date: 2023-11
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: Where consultation was a condition of project approval, insufficient
+    time had been allocated in the project schedule for development and approval of
+    required management plans.
+  lesson_learnt: Where regulatory consultation is a condition of approval, explicitly
+    build time for management plan development and agency sign-off into the project
+    schedule — this is frequently underestimated and can become a critical path item.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: Direct engagement of referral agencies by the regulator was identified
+    as significantly aiding proponents in obtaining approvals within a shorter timeframe.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id013
+  - 76
+  evidence_excerpt: In projects where consultation is a condition of approval, it
+    is recommended to allocate additional time in the project schedule for the development
+    and approval of the required management plans. Direct engagement of referral agencies
+    by the regulator can significantly aid proponents in obtaining the necessary approvals
+    within a shorter timeframe.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 16/01/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+  markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  source_page_pdf: 76
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-19722
+  contributing_source_titles:
+  - AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge Sharing
+    Report
+  contributing_sources:
+  - source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling
+      Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+    markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-19723
+  source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge
+    Sharing Report
+  publish_date: 2023-11
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: The connection application process did not include tests evaluating
+    future grid scenarios or site-specific capabilities of grid-forming IBRs for long-term
+    grid stability assessment — the standard process focused on commissioning-stage
+    compliance rather than forward-looking grid evolution.
+  lesson_learnt: The NEM grid connection application process should be extended to
+    include future-scenario tests that evaluate grid-forming IBR capabilities over
+    the long-term grid trajectory, not just compliance at time of connection — AEMO
+    and TNSPs should establish guidelines for such tests, including generic model
+    recommendations for preliminary wide-area feasibility studies.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: policy/market influence only
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id014
+  - 74
+  evidence_excerpt: To assess the overall stability of the grid in the long-term and
+    not only when commissioning a new project, the connection application process
+    should also include tests which enable evaluating future scenarios, site specific
+    capabilities of grid-forming Inverter based resources (IBRs). AEMO and TNSPs should
+    establish guidelines and/or recommendations for inclusion of generic models for
+    preliminary wide-area and feasibility studies.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 16/01/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+  markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  source_page_pdf: 74
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-19723
+  contributing_source_titles:
+  - AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge Sharing
+    Report
+  contributing_sources:
+  - source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling
+      Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+    markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-19724
+  source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge
+    Sharing Report
+  publish_date: 2023-11
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: During the 2016 Buronga–Redcliffs 220 kV line outage, sub-synchronous
+    oscillations (~7 Hz, 4.5% of fundamental) occurred between the Broken Hill Solar
+    Farm and SVCs, leading AEMO to limit solar generation in the Western Murray area
+    for many months while studies were conducted.
+  lesson_learnt: Sub-synchronous oscillations between grid-following solar inverters
+    and reactive compensation equipment are a real, demonstrated risk in electrically
+    remote weak-grid locations — projects planning to connect IBRs in such areas should
+    conduct oscillation risk assessments early and consider grid-forming or damping
+    solutions before grid disruption forces reactive curtailment.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: The issue was eventually resolved by relaxing Generator Performance
+    Standards with less aggressive settings for solar farm inverters in the Western
+    Murray area; the Broken Hill BESS project was subsequently initiated to provide
+    a longer-term grid-forming solution.
+  transferability: moderate
+  delay_magnitude: 3-12 months
+  technology_domain: solar PV
+  source_pages: &id015
+  - 11
+  evidence_excerpt: In 2016, an outage of the Buronga to Redcliffs 220kV line resulted
+    in Broken Hill being at the end of a single 700km circuit and electrically remote
+    from stronger part of the grid. In this weak grid environment, sub-synchronous
+    oscillations of around 7Hz between the Broken Hill Solar Farm and the SVCs at
+    the Broken Hill substation reached a magnitude of 4.5% of the fundamental frequency...
+    Uncertainty of what the implications were of sub-synchronous oscillations in electrically
+    remote locations led AEMO to limit generation from solar farms in the 'Western
+    Murray' area including Broken Hill for many months.
+  confidence_note: 'project_type set to generation as the primary asset affected was
+    the solar farm; technology_domain set to solar PV for the same reason.; project_type
+    reconciled to ''storage'' from: storage (25/26), generation (1/26); project_scale_band
+    reconciled to ''first commercial/FOAK'' from: first commercial/FOAK (25/26), commercial
+    expansion (1/26)'
+  source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 16/01/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+  markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-19724
+  contributing_source_titles:
+  - AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge Sharing
+    Report
+  contributing_sources:
+  - source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling
+      Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+    markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-19725
+  source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge
+    Sharing Report
+  publish_date: 2023-11
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: During shallow unbalanced faults in grid-forming mode, the inverter's
+    grid-side current estimation (based on a model from converter-side current and
+    grid voltage) had finite bandwidth, causing ramp-like rather than instantaneous
+    dynamics during fault events; voltage measurement bandwidth limitations further
+    contributed to delayed response.
+  lesson_learnt: Grid-forming inverter response to shallow unbalanced faults is constrained
+    by the bandwidth of grid-side current estimation and voltage measurement — project
+    teams should test shallow unbalanced fault performance explicitly and work with
+    the OEM to understand estimation accuracy limitations before finalising GPS compliance
+    submissions.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: grid connection/system studies
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id016
+  - 69
+  - 70
+  evidence_excerpt: The grid-side current is not directly measured by the inverter,
+    but it is estimated based on a model from measured converter-side current and
+    grid voltage. The estimation is having finite bandwidth resulting into estimation
+    error in case of transients. During the fault event, the estimate does not jump
+    but change with slower ramp-like dynamics. The grid voltage measurement has also
+    finite measurement bandwidth. This contributes to the delayed response of the
+    grid current estimation as well as forming voltage control.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 16/01/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+  markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  source_page_pdf: 69
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-19725
+  contributing_source_titles:
+  - AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge Sharing
+    Report
+  contributing_sources:
+  - source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling
+      Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+    markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-19726
+  source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge
+    Sharing Report
+  publish_date: 2023-11
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: BHBESS inverter level AC over-voltage threshold was approximately
+    1.3 pu, above which the BESS could lose control or stability — a threshold lower
+    than inverter protection settings and one that could be reached at the inverter
+    terminals even when connection point voltages nominally comply with NER network
+    voltage standards.
+  lesson_learnt: Unlike wind or solar farms, BESS inverters may have an AC over-voltage
+    stability threshold significantly below protection trip settings — project teams
+    must identify this threshold for their specific inverter and confirm through wide-area
+    PSCAD modelling that no credible network fault can drive inverter terminal voltage
+    above it.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: grid connection/system studies
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Wide-area PSCAD modelling by Transgrid and AEMO was used to confirm
+    that BHBESS was not observed to drive over-voltages on fault clearance as high
+    as in the SMIB environment.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id017
+  - 62
+  - 63
+  evidence_excerpt: Another learning from the wide-area PSCAD modelling is that, unlike
+    a windfarm or solar farm, when inverter level AC voltage exceeds a threshold,
+    the BESS may lose control or stability. This voltage can be less than the protection
+    settings on the inverter but result in uncontrolled response from the inverter.
+    For BHBESS, this threshold was approximately 1.3pu.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 16/01/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+  markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  source_page_pdf: 62
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-19726
+  contributing_source_titles:
+  - AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling Knowledge Sharing
+    Report
+  contributing_sources:
+  - source_title: AGL 'Broken Hill Grid-Forming Battery' System Strength Modelling
+      Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2024/01/AGL-–-Broken-Hill-Grid-Forming-Battery-–-System-Strength-Modelling-Knowledge-Sharing-Report.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/agl-broken-hill-grid-forming-battery-system-strength-modelling-knowledge-sharing-report/
+    markdown_filename: agl_broken_hill_grid_forming_battery_system_strength_modelling_knowledge_sharing_report.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-35751
+  source_title: AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report
+    2
+  publish_date: '2024-09-27'
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: The primary plant design was simplified due to space constraints,
+    omitting a dedicated incoming switchyard with primary circuit breaker switchgear
+    and instead relying on a single isolation point with direct feeds to downstream
+    switchgear. This created extensive intertripping and interlocking interdependencies
+    across downstream equipment, significantly increasing design coordination complexity,
+    construction coordination burden, and commissioning difficulty.
+  lesson_learnt: Adopt a standardised primary plant design even when space is constrained
+    — a simplified non-standard switchyard design that eliminates primary circuit
+    breakers creates complex downstream interdependencies that substantially increase
+    commissioning difficulty and ongoing maintenance risk.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: Additional technical speciality and attention was required from
+    the commissioning team to understand and test the highly meshed secondary system;
+    no design reversal was undertaken.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id018
+  - 9
+  evidence_excerpt: If the primary design had been more standard, then each piece
+    of high voltage switchgear on the site would have only had to be largely dependent
+    on its own self, with much less intertripping and interlocking requirements. This
+    would have made the design coordination, construction coordination and pre-commissioning
+    knowledge burdens simpler and easier to construct.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/agl-agl-broken-hill-grid-forming-battery-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 19/11/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/11/AGL-AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-2.pdf
+  markdown_filename: agl_agl_broken_hill_grid_forming_battery_lessons_learnt_report_2.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-35751
+  contributing_source_titles:
+  - AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report
+      2
+    pdf_url: https://arena.gov.au/assets/2024/11/AGL-AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-2.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/agl-agl-broken-hill-grid-forming-battery-lessons-learnt-report-2/
+    markdown_filename: agl_agl_broken_hill_grid_forming_battery_lessons_learnt_report_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: integration failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-35752
+  source_title: AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report
+    2
+  publish_date: '2024-09-27'
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: Transformers procured from an overseas facility exhibited multiple
+    quality defects on delivery — inaccuracies between drawings and hold-down points,
+    oil containment issues, tap changer mechanism faults, gas blanket pressure problems,
+    and electrical performance failures — requiring the units to be sent to a Victorian
+    manufacturer's workshop for corrections before and after site delivery. AGL resources
+    spent a disproportionate amount of time managing transformer quality issues.
+  lesson_learnt: Allow sufficient budget for quality supervision of critical equipment
+    items procured from overseas facilities, especially for remote project sites where
+    rework mobilisation costs are high — inadequate quality oversight of transformers
+    led to disproportionate AGL resource consumption and rework at remote locations.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: procurement
+  proponent_type: utility/energy retailer
+  delay_category: procurement/supply chain
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Transformers were shipped from the remote site to a Victorian
+    manufacturer's workshop for corrections and quality uplifts before returning to
+    site.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id019
+  - 9
+  - 10
+  evidence_excerpt: The transformers suffered from inaccuracies between drawings and
+    hold down points, oil containment quality, tap changer mechanism robustness, gas
+    blanket pressure issues, and electrical performance issues, all of which required
+    rework at remote locations as well as on site. The transformers were built in
+    an overseas facility, but upon delivery at site required to be sent to a Victorian
+    manufacturer's workshops for corrections and quality uplifts.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/agl-agl-broken-hill-grid-forming-battery-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 19/11/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/11/AGL-AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-2.pdf
+  markdown_filename: agl_agl_broken_hill_grid_forming_battery_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-35752
+  contributing_source_titles:
+  - AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report
+      2
+    pdf_url: https://arena.gov.au/assets/2024/11/AGL-AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-2.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/agl-agl-broken-hill-grid-forming-battery-lessons-learnt-report-2/
+    markdown_filename: agl_agl_broken_hill_grid_forming_battery_lessons_learnt_report_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: cost overrun
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-35753
+  source_title: AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report
+    2
+  publish_date: '2024-09-27'
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: Battery cooling systems experienced intermittent leaks at T-joints
+    during commissioning, caused by thread damage during cap fit-up using thread sealing
+    tape. Each battery cube had been pressure tested in the factory for only five
+    minutes, which was insufficient to detect the defect. T-joints required on-site
+    replacement and redesign.
+  lesson_learnt: Factory acceptance pressure testing of battery cooling systems should
+    be of sufficient duration and rigour to detect thread-seal defects — a 5-minute
+    test was insufficient to identify T-joint leak failures that emerged during site
+    commissioning, requiring rework at a remote location.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: commissioning/integration
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: T-joints were replaced on site with an o-ring seal; newer battery
+    cube designs have since eliminated the T-joint from the cooling system entirely.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id020
+  - 10
+  evidence_excerpt: The battery cubes have suffered some intermittent leaks on the
+    cooling system, mainly at a T-joint. Each battery cube has the cooling system
+    pressure tested in the factory for 5 minutes. During commissioning onsite, leaks
+    were observed due to the threads being damaged during cap fit-up (which had utilised
+    thread sealing tape). The T-joints were replaced and an o-ring has been included
+    to prevent future leaks.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/agl-agl-broken-hill-grid-forming-battery-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 19/11/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/11/AGL-AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-2.pdf
+  markdown_filename: agl_agl_broken_hill_grid_forming_battery_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-35753
+  contributing_source_titles:
+  - AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report
+      2
+    pdf_url: https://arena.gov.au/assets/2024/11/AGL-AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-2.pdf
+    source_pages: *id020
+    source_url: https://arena.gov.au/knowledge-bank/agl-agl-broken-hill-grid-forming-battery-lessons-learnt-report-2/
+    markdown_filename: agl_agl_broken_hill_grid_forming_battery_lessons_learnt_report_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-35754
+  source_title: AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report
+    2
+  publish_date: '2024-09-27'
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: The remote location of the BHBESS site near Broken Hill, combined
+    with inconvenient flight schedules and distance from major cities, caused severe
+    shortages of competent engineers, tradespeople, and contractors throughout construction
+    and commissioning. Contractors frequently flew in resources from interstate (including
+    Queensland), and rectification of issues was delayed due to extended mobilisation
+    times. Low resource retention was an ongoing problem.
+  lesson_learnt: Projects in remote locations should allocate additional time and
+    cost contingencies specifically to account for resource scarcity, high turnover,
+    and extended mobilisation times — the Broken Hill location severely impacted schedule
+    and required interstate resource mobilisation throughout construction and commissioning.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: construction/installation
+  proponent_type: utility/energy retailer
+  delay_category: internal governance/resourcing
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: AGL mobilised additional HSE experts including a full-time site
+    HSE representative, a full-time environmental advisor, and increased health and
+    safety advisor coverage to monitor contractor work and rectify shortfalls.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 10
+  - 11
+  evidence_excerpt: This shortage has severely impacted the project schedule. AGL's
+    contractors often had to fly in resources from other states, such as Queensland.
+    Rectification of construction and commissioning issues has also been delayed due
+    to the additional time required to mobilise people to the site. The remote location,
+    inconvenient flight schedules, and the distance from the nearest major city contribute
+    to a very low resource retention rate.
+  confidence_note: Canonical record merged from 2 source records across 1 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/agl-agl-broken-hill-grid-forming-battery-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 19/11/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/11/AGL-AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-2.pdf
+  markdown_filename: agl_agl_broken_hill_grid_forming_battery_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-35754
+  - ARENA-DLV-35755
+  contributing_source_titles:
+  - AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report
+      2
+    pdf_url: https://arena.gov.au/assets/2024/11/AGL-AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-2.pdf
+    source_pages:
+    - 10
+    source_url: https://arena.gov.au/knowledge-bank/agl-agl-broken-hill-grid-forming-battery-lessons-learnt-report-2/
+    markdown_filename: agl_agl_broken_hill_grid_forming_battery_lessons_learnt_report_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: schedule slippage
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-35756
+  source_title: AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report
+    2
+  publish_date: '2024-09-27'
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: During Hold Point 2 (HP2) commissioning testing, AEMO halted testing
+    for several days due to a forecasted Lack of Reserve (LOR) condition in NSW and
+    concerns about reactive power oscillations observed during HP1. The BESS also
+    had its output frequently curtailed below 50 MW by NEMDE during testing under
+    N-1 network conditions, based on real-time line loading and thermal limitations.
+  lesson_learnt: Commissioning testing schedules for grid-connected BESS at weak-grid
+    locations should account for the risk that AEMO may curtail or halt hold point
+    testing due to network conditions or LOR events — building schedule contingency
+    for testing interruptions beyond the proponent's control is essential.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: commissioning/integration
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated integration
+  intervention_note: Testing resumed after the LOR period passed and after initial
+    investigation into oscillation sources; no permanent resolution to curtailment
+    under N-1 conditions was noted.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id021
+  - 11
+  evidence_excerpt: Due to the forecasted Lack of Reserve (LOR) in NSW and concerns
+    reactive power oscillations observed during HP1 testing, AEMO also halted BHBESS
+    HP2 testing for a few days, which caused delays.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/agl-agl-broken-hill-grid-forming-battery-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 19/11/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/11/AGL-AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-2.pdf
+  markdown_filename: agl_agl_broken_hill_grid_forming_battery_lessons_learnt_report_2.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-35756
+  contributing_source_titles:
+  - AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report
+      2
+    pdf_url: https://arena.gov.au/assets/2024/11/AGL-AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-2.pdf
+    source_pages: *id021
+    source_url: https://arena.gov.au/knowledge-bank/agl-agl-broken-hill-grid-forming-battery-lessons-learnt-report-2/
+    markdown_filename: agl_agl_broken_hill_grid_forming_battery_lessons_learnt_report_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-35757
+  source_title: AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report
+    2
+  publish_date: '2024-09-27'
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: During HP1 commissioning testing, the BESS exhibited underdamped
+    reactive power oscillations (1–2 cycles) during a voltage reference step test
+    with a single inverter online. These oscillations could not initially be replicated
+    in either PSCAD or PSSE simulation models, raising questions about model validity
+    and blocking progression from HP1 to HP2. AGL and Fluence spent significant time
+    creating single-inverter modelling cases to replicate the observed behaviour.
+  lesson_learnt: For grid-forming BESS projects at weak-grid nodes, proponents should
+    plan from the outset for small-signal stability modelling — the standard SMIB
+    PSCAD model cannot capture network-driven oscillations from nearby assets such
+    as SVCs and wind farms, and reliance on AEMO/NSP FIA studies to diagnose oscillation
+    sources creates significant schedule dependency.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: data & measurement
+  intervention_note: AGL and Fluence created a single-inverter modelling case in PSCAD
+    and PSSE to replicate the oscillations; an extended SMIB model was subsequently
+    developed in HP2 to capture upstream network interactions including nearby SVCs,
+    solar farms, and wind farms.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 11
+  - 12
+  - 13
+  evidence_excerpt: Since AGL does not have a wide-area PSCAD model, it remained unclear
+    whether these oscillations result from network interactions. This can only be
+    confirmed through limited FIA studies, which can only be performed by AEMO or
+    the NSP. However, FIA studies might not always be sufficient to reproduce the
+    oscillations, hence a small-signal model analysis may be required to determine
+    the source of the oscillations. Therefore, development of a small-signal model
+    is a key lesson for future projects.
+  confidence_note: Canonical record merged from 2 source records across 1 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/agl-agl-broken-hill-grid-forming-battery-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 19/11/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/11/AGL-AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-2.pdf
+  markdown_filename: agl_agl_broken_hill_grid_forming_battery_lessons_learnt_report_2.md
+  source_page_pdf: 11
+  corroboration_count: 2
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-35757
+  - ARENA-DLV-35758
+  contributing_source_titles:
+  - AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report
+      2
+    pdf_url: https://arena.gov.au/assets/2024/11/AGL-AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-2.pdf
+    source_pages:
+    - 11
+    - 12
+    source_url: https://arena.gov.au/knowledge-bank/agl-agl-broken-hill-grid-forming-battery-lessons-learnt-report-2/
+    markdown_filename: agl_agl_broken_hill_grid_forming_battery_lessons_learnt_report_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-35759
+  source_title: AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report
+    2
+  publish_date: '2024-09-27'
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: Adjustments made to inverter tuning to dampen the reactive power
+    oscillation response observed during commissioning significantly degraded performance
+    on other GPS clauses, particularly frequency disturbance response. This created
+    a risk that further tuning would invalidate the GPS study, potentially requiring
+    the project to restart from the R0 regulatory stage.
+  lesson_learnt: Inverter tuning changes made during commissioning to resolve one
+    performance issue (oscillation damping) can adversely affect compliance with other
+    GPS clauses — if point-of-connection responses already meet GPS requirements,
+    avoid inverter re-tuning during commissioning as the GPS compliance risk and potential
+    regulatory re-work outweigh the benefit.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: A key lesson recorded was to avoid inverter re-tuning when POC
+    responses already meet GPS — the project proceeded without further tuning at this
+    stage to avoid restarting the GPS/FIA study process.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id022
+  - 12
+  evidence_excerpt: If the point of connection responses are in line with the GPS,
+    a key lesson learned is that any attempt at inverter tuning to improve responses
+    during the commissioning phase might delay the overall project timeline.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/agl-agl-broken-hill-grid-forming-battery-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 19/11/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/11/AGL-AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-2.pdf
+  markdown_filename: agl_agl_broken_hill_grid_forming_battery_lessons_learnt_report_2.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-35759
+  contributing_source_titles:
+  - AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report
+      2
+    pdf_url: https://arena.gov.au/assets/2024/11/AGL-AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-2.pdf
+    source_pages: *id022
+    source_url: https://arena.gov.au/knowledge-bank/agl-agl-broken-hill-grid-forming-battery-lessons-learnt-report-2/
+    markdown_filename: agl_agl_broken_hill_grid_forming_battery_lessons_learnt_report_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-35760
+  source_title: AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report
+    2
+  publish_date: '2024-09-27'
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: During NEM registration, AEMO requested modifications to BHBESS inverter
+    performance to align with AEMO's voluntary specifications for grid-forming inverters
+    — specifications that were not part of the NER or GPS but which AEMO treated as
+    necessary conditions for registration. At project inception, no recognised industrial
+    standards for grid-forming mode existed and AEMO's voluntary GFM specifications
+    had not yet been published.
+  lesson_learnt: Grid-forming BESS projects should engage AEMO early to understand
+    informal or voluntary performance expectations that may be applied as de facto
+    registration conditions — waiting until the registration stage to discover these
+    requirements creates scope changes and delays, particularly where the NER does
+    not yet formally address grid-forming technology.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: AGL modified the BHBESS inverter performance to align with AEMO's
+    voluntary GFM specifications as a condition of progressing registration; the project
+    was ultimately registered and achieved commercial operation on 21 August 2024.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id023
+  - 13
+  - 14
+  evidence_excerpt: Moreover, as part of the registration process, AEMO requested
+    modifications to the BHBESS inverter performance to align with their voluntary
+    specifications for grid-forming inverters. Although these voluntary specifications
+    are not part of the NER/GPS, complying with them was necessary for registration.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/agl-agl-broken-hill-grid-forming-battery-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 19/11/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/11/AGL-AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-2.pdf
+  markdown_filename: agl_agl_broken_hill_grid_forming_battery_lessons_learnt_report_2.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-35760
+  contributing_source_titles:
+  - AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report
+      2
+    pdf_url: https://arena.gov.au/assets/2024/11/AGL-AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-2.pdf
+    source_pages: *id023
+    source_url: https://arena.gov.au/knowledge-bank/agl-agl-broken-hill-grid-forming-battery-lessons-learnt-report-2/
+    markdown_filename: agl_agl_broken_hill_grid_forming_battery_lessons_learnt_report_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-35761
+  source_title: AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report
+    2
+  publish_date: '2024-09-27'
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: The NER technical requirements (s5.2.5) for reactive current injection
+    changed during the project lifecycle. The settling time requirement was removed
+    and a commencement time requirement was introduced; wording for reactive current
+    injection during balanced and unbalanced faults was also modified. These changes
+    were required because grid-forming inverters operate as voltage sources with no
+    direct current control, and the original NER requirements were written for grid-following
+    devices. This required significant functional and architectural changes to the
+    inverter.
+  lesson_learnt: The NER framework was not designed for grid-forming inverters and
+    requires flexibility to accommodate voltage-source-type devices — future grid-forming
+    BESS projects should advocate early for technology-appropriate GPS requirements
+    and engage with NSPs and AEMO during the design phase to understand how evolving
+    NER clauses will be applied to novel inverter architectures.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: NER s5.2.5 requirements were modified to accommodate grid-forming
+    inverter behaviour; BHBESS inverter architecture was adjusted accordingly and
+    the project proceeded to registration under the revised framework.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id024
+  - 13
+  - 17
+  evidence_excerpt: The contemporary NER primarily focuses on grid-following capabilities,
+    such as reactive current injection/absorption performance under S5.2.5.5 clauses.
+    Since grid-forming BESS does not have direct control over current, meeting this
+    GPS requirement necessitated significant functional and architectural changes
+    to the project. This highlights the need for future projects to have some flexibility
+    in the NER to accommodate new technologies and for NSPs or regulatory bodies to
+    treat them differently.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/agl-agl-broken-hill-grid-forming-battery-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 19/11/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/11/AGL-AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-2.pdf
+  markdown_filename: agl_agl_broken_hill_grid_forming_battery_lessons_learnt_report_2.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-35761
+  contributing_source_titles:
+  - AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report
+      2
+    pdf_url: https://arena.gov.au/assets/2024/11/AGL-AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-2.pdf
+    source_pages: *id024
+    source_url: https://arena.gov.au/knowledge-bank/agl-agl-broken-hill-grid-forming-battery-lessons-learnt-report-2/
+    markdown_filename: agl_agl_broken_hill_grid_forming_battery_lessons_learnt_report_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-35762
+  source_title: AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report
+    2
+  publish_date: '2024-09-27'
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: 'During wide-area PSCAD studies conducted by Transgrid and AEMO for
+    the 5.3.9 process, the BHBESS exhibited multiple technical non-conformances in
+    grid-forming mode: reactive current (Iq) did not follow the Iq reference during
+    shallow faults; the plant response was inconsistent and unstable during disturbances;
+    uncontrolled behaviour was observed for timeframes greater than 200ms; and the
+    plant tripped on certain multiple fault ride-through sequences with inter-fault
+    intervals less than 250ms. These issues were not fully resolved prior to registration
+    and required a post-registration s5.3.9 process.'
+  lesson_learnt: Grid-forming BESS projects should plan for a post-registration performance
+    improvement process (s5.3.9) from the outset when grid-forming expectations are
+    not fully defined at project inception — deferring resolution of GFM performance
+    gaps to after registration incurs additional cost, resourcing, and regulatory
+    process burden.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: approvals/regulatory
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: AGL accepted negotiated access standards for multiple FRT fault
+    sequences at registration and committed to a post-registration s5.3.9 firmware/software
+    update process with Transgrid and AEMO to address the identified GFM performance
+    gaps.
+  transferability: narrow
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id025
+  - 14
+  - 15
+  - 16
+  evidence_excerpt: As discussed earlier, GFM expectations were not well defined at
+    the project's outset, which is why the project is proceeding with this change
+    at a later stage instead of addressing these issues from the beginning. This highlights
+    the need for future projects to have some flexibility in the NER to accommodate
+    new technologies and for NSPs or regulatory bodies to treat them differently.
+  confidence_note: This record captures the cluster of GFM technical non-conformances
+    that collectively drove the 5.3.9 process. Individual sub-issues (Iq control,
+    HVRT exit oscillation, FRT tripping) are all part of this single post-registration
+    remediation programme.
+  source_url: https://arena.gov.au/knowledge-bank/agl-agl-broken-hill-grid-forming-battery-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 19/11/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/11/AGL-AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-2.pdf
+  markdown_filename: agl_agl_broken_hill_grid_forming_battery_lessons_learnt_report_2.md
+  source_page_pdf: 16
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-35762
+  contributing_source_titles:
+  - AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report
+      2
+    pdf_url: https://arena.gov.au/assets/2024/11/AGL-AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-2.pdf
+    source_pages: *id025
+    source_url: https://arena.gov.au/knowledge-bank/agl-agl-broken-hill-grid-forming-battery-lessons-learnt-report-2/
+    markdown_filename: agl_agl_broken_hill_grid_forming_battery_lessons_learnt_report_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-35763
+  source_title: AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report
+    2
+  publish_date: '2024-09-27'
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: Under minimum SCR conditions (new minimum of 4.12 at the 22kV POC
+    bus), the BHBESS exhibited oscillations in reactive current (Iq) response when
+    High Voltage Ride Through (HVRT) was activated, causing early HVRT exit. The cause
+    was identified as an overly aggressive voltage response under the new SCR tuning,
+    creating oscillation against the system voltage and a false trigger on the HVRT
+    exit threshold.
+  lesson_learnt: Grid-forming BESS inverter tuning must be validated across the full
+    range of SCR conditions anticipated at the connection point, including minimum
+    SCR cases — tuning optimised for nominal SCR conditions can produce oscillatory
+    instability and false protection triggers under weak grid conditions, requiring
+    post-registration remediation.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: AGL proposed applying a further filter to the Transient Reactive
+    Current (TRC) response and committed to demonstrating the fix prior to commercial
+    operation via the s5.3.9 process.
+  transferability: narrow
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id026
+  - 15
+  - 16
+  evidence_excerpt: When HVRT is activated, the plant shows an oscillation in Iq response
+    when operating under minimum SCR (new minimum of 4.12 at the 22kV POC bus). This
+    also leads to early HVRT exit. The issue is due to a more aggressive voltage response
+    with the new SCR tuning of 4.115 leading to an oscillation against the system
+    voltage and a false trigger on the HVRT exit threshold.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/agl-agl-broken-hill-grid-forming-battery-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 19/11/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/11/AGL-AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-2.pdf
+  markdown_filename: agl_agl_broken_hill_grid_forming_battery_lessons_learnt_report_2.md
+  source_page_pdf: 15
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-35763
+  contributing_source_titles:
+  - AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report
+      2
+    pdf_url: https://arena.gov.au/assets/2024/11/AGL-AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-2.pdf
+    source_pages: *id026
+    source_url: https://arena.gov.au/knowledge-bank/agl-agl-broken-hill-grid-forming-battery-lessons-learnt-report-2/
+    markdown_filename: agl_agl_broken_hill_grid_forming_battery_lessons_learnt_report_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-35764
+  source_title: AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report
+    2
+  publish_date: '2024-09-27'
+  project_name: Broken Hill Battery Energy Storage System (BHBESS)
+  what_happened: The BHBESS power system models (PSCAD SMIB) were not tuned for single-inverter
+    response during the early regulatory study stages (R0, R1), and were developed
+    as aggregated models only. When single-inverter behaviour observed during HP1
+    commissioning testing diverged from model predictions, this gap in model preparation
+    created significant uncertainty and rework, including repeat tests and new modelling
+    work during HP2.
+  lesson_learnt: Power system study models for BESS should be developed and validated
+    at the single-inverter level from the earliest regulatory study stages (R0/R1)
+    — aggregated models that are not validated for single-inverter response will create
+    model credibility challenges and costly retesting when single-inverter commissioning
+    behaviour diverges from predictions.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: data/validation/testing
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: data & measurement
+  intervention_note: AGL and Fluence created a single-inverter PSCAD/PSSE modelling
+    case during HP2 and developed an extended SMIB model to capture upstream network
+    asset interactions, enabling progression to commercial operation.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id027
+  - 12
+  evidence_excerpt: Additionally, the model was not previously tuned for single inverter
+    response during earlier stages (i.e., R0, R1). The proposed tuning could further
+    delay the commissioning process, potentially affecting the GPS study and necessitating
+    redoing the GPS and FIA studies, which could push the project back to the R0 stage.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/agl-agl-broken-hill-grid-forming-battery-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/agl-broken-hill-grid-forming-battery/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 19/11/2024
+  kb_year: '2021'
+  kb_associated_project: AGL Broken Hill Grid-Forming Battery
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $14.83m
+  total_project_value: $39.4m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/09/2021
+  location: New South Wales
+  project_partners: 'University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/11/AGL-AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-2.pdf
+  markdown_filename: agl_agl_broken_hill_grid_forming_battery_lessons_learnt_report_2.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-35764
+  contributing_source_titles:
+  - AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: AGL - AGL Broken Hill Grid-Forming Battery - Lessons Learnt Report
+      2
+    pdf_url: https://arena.gov.au/assets/2024/11/AGL-AGL-Broken-Hill-Grid-Forming-Battery-Lessons-Learnt-Report-2.pdf
+    source_pages: *id027
+    source_url: https://arena.gov.au/knowledge-bank/agl-agl-broken-hill-grid-forming-battery-lessons-learnt-report-2/
+    markdown_filename: agl_agl_broken_hill_grid_forming_battery_lessons_learnt_report_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: schedule slippage
+  failure_mode_confidence: 0.82

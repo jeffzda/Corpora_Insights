@@ -1,0 +1,2903 @@
+- record_id: ARENA-DLV-6851
+  source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing
+    Report
+  publish_date: '2018'
+  project_name: Hornsdale 2 Wind Farm FCAS Trial
+  what_happened: Hornsdale Stage 2 wind farm was not originally designed to participate
+    in frequency control ancillary services (FCAS) markets, requiring significant
+    additional technical upgrades beyond the original project scope to enable participation
+    in the AEMO FCAS trial.
+  lesson_learnt: Future wind farm projects intending to participate in FCAS markets
+    should include FCAS capability — including AGC signal reception, SCADA integration,
+    and wind farm controller configuration — in the conceptual design phase scope
+    rather than retrofitting it later.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: utility/large-scale
+  lifecycle_phase: operations
+  proponent_type: manufacturer/OEM
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Siemens Gamesa implemented upgrades to the High Performance Park
+    Pilot (HPPP) controller, updated the RTU, SCADA, EMS database and historian system,
+    and completed factory and site acceptance testing to enable FCAS participation.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id001
+  - 15
+  - 19
+  - 20
+  evidence_excerpt: Hornsdale Stage 2 wind farm in its original form was not envisaged
+    to participate in frequency control markets... In future these services will need
+    to be considered as part of the scope of work in the external control systems
+    in the conceptual design phase.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6851
+  contributing_source_titles:
+  - Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge
+      Sharing Report
+    pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-6852
+  source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing
+    Report
+  publish_date: '2018'
+  project_name: Hornsdale 2 Wind Farm FCAS Trial
+  what_happened: When AEMO assessed Hornsdale 2's ability to provide fast raise FCAS
+    (R6) under a combined frequency and short-circuit event, the wind farm's active
+    power dropped from 74 MW to 47 MW before recovering, resulting in zero contribution
+    to the 6-second fast raise service under that assessment scenario.
+  lesson_learnt: Inverter-connected wind farms prioritise fault ride-through and voltage
+    support over FCAS during concurrent voltage and frequency events — project teams
+    seeking R6 registration should engage AEMO to seek derogation from the combined-event
+    assessment requirement, or accept that R6 will not be achievable in that scenario.
+  issue_severity: major
+  project_type: generation
+  project_scale_band: utility/large-scale
+  lifecycle_phase: commissioning/integration
+  proponent_type: manufacturer/OEM
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: Siemens Gamesa proposed that AEMO exclude combined frequency
+    and voltage events from the FCAS capability assessment, arguing such events had
+    not historically co-occurred in the SA islanding scenarios.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id002
+  - 35
+  - 36
+  - 37
+  - 49
+  - 53
+  evidence_excerpt: The impact of the active power reducing is that the Hornsdale
+    Stage 2 wind farm demonstrates no contribution to FCAS for the six second fast
+    raise service (R6)... It may also require a relaxation by AEMO of the requirement
+    for the wind generation to provide R6 service where there is a concurrent voltage
+    and frequency events.
+  confidence_note: issue_severity assessed as major because R6 registration was blocked
+    by this finding, representing a significant limitation on the project's market
+    participation objective.
+  source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  source_page_pdf: 37
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6852
+  contributing_source_titles:
+  - Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge
+      Sharing Report
+    pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-6853
+  source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing
+    Report
+  publish_date: '2018'
+  project_name: Hornsdale 2 Wind Farm FCAS Trial
+  what_happened: The wind farm controller (HPPP) frequency mode settings were only
+    accessible by Siemens Gamesa personnel during the trial, meaning NEOEN's control
+    room operators could not independently switch the wind farm between FCAS modes,
+    limiting operational agility and reliability for ongoing market participation.
+  lesson_learnt: For a wind farm to participate in FCAS markets on a permanent basis,
+    the control room operator must have direct access to frequency mode selection
+    in the wind farm controller — projects should ensure SCADA interfaces expose these
+    controls to the operator before market registration, not as a post-trial upgrade.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: utility/large-scale
+  lifecycle_phase: operations
+  proponent_type: manufacturer/OEM
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: Siemens Gamesa identified the missing link as operator access
+    to frequency modes in the bidding control room and documented it as a required
+    upgrade for permanent FCAS operation.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id003
+  - 19
+  - 20
+  - 53
+  evidence_excerpt: Changes would need to be made to the wind farm SCADA interface
+    to allow the change in mode within the HPPP that is currently only accessible
+    by Siemens Gamesa... the missing link is for the bidding control room to have
+    access to the frequency modes that are available.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  source_page_pdf: 20
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6853
+  contributing_source_titles:
+  - Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge
+      Sharing Report
+    pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-6854
+  source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing
+    Report
+  publish_date: '2018'
+  project_name: Hornsdale 2 Wind Farm FCAS Trial
+  what_happened: The frequency injection tool used for FCAS testing updates the frequency
+    signal to the HPPP only once per second (1 Hz sample rate), introducing a zero-order-hold
+    artefact that caused a stepped rather than smooth wind farm power response, complicating
+    comparison between field test results and simulation outputs.
+  lesson_learnt: When using frequency injection tools for FCAS pre-registration testing,
+    project teams should be aware that a 1-second update rate introduces a zero-order-hold
+    effect that creates stepped responses not present in actual operation — simulation
+    models must replicate this artefact to produce valid comparisons with field test
+    results.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: utility/large-scale
+  lifecycle_phase: commissioning/integration
+  proponent_type: manufacturer/OEM
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The Power Factory input file was made more representative of
+    the stepped injection signal (overcoming automatic linearisation) to reconcile
+    simulation and field test results.
+  transferability: narrow
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id004
+  - 27
+  - 41
+  - 44
+  - 45
+  - 46
+  - 47
+  - 48
+  evidence_excerpt: There is also a limitation that the frequency injection tool will
+    only update the frequency in the HPPP every second... The main cause is an artefact
+    of the discrete signal and limitations updating the frequency signal... this accounts
+    for the stepped response from the wind farm.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6854
+  contributing_source_titles:
+  - Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge
+      Sharing Report
+    pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-6855
+  source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing
+    Report
+  publish_date: '2018'
+  project_name: Hornsdale 2 Wind Farm FCAS Trial
+  what_happened: The internet-based communication link between the frequency injection
+    tool and the HPPP introduced an unquantified time delay, creating uncertainty
+    in the accuracy of the test signal timing and complicating interpretation of test
+    results.
+  lesson_learnt: FCAS testing using web-based or internet-connected injection tools
+    should characterise and document communication latency before testing commences
+    — unquantified delays reduce confidence in test result interpretation and may
+    require additional test runs to isolate the delay contribution.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: utility/large-scale
+  lifecycle_phase: commissioning/integration
+  proponent_type: manufacturer/OEM
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: narrow
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id005
+  - 44
+  evidence_excerpt: The injection tool communicates with the target HPPP via an internet
+    data link, this creates a short time delay between the HPPP receiving, de-coding
+    and acting upon the signal. At this point the amount of delay in the communication
+    between them is unclear.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  source_page_pdf: 44
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6855
+  contributing_source_titles:
+  - Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge
+      Sharing Report
+    pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-6856
+  source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing
+    Report
+  publish_date: '2018'
+  project_name: Hornsdale 2 Wind Farm FCAS Trial
+  what_happened: Siemens Gamesa selected Power Factory over the more commonly used
+    PSS/E simulation platform for FCAS modelling because the simulation techniques
+    required had only recently matured in PSS/E's latest version, and the uncertainty
+    in PSS/E models and engineering effort to configure it as needed made it impractical
+    for this application.
+  lesson_learnt: Project teams should not default to the market-standard simulation
+    tool (PSS/E) when modelling inverter-connected wind farm FCAS response — Power
+    Factory offers more transparent communication between grid and wind farm models
+    and may be more suitable for this class of problem, particularly where PSS/E model
+    maturity is uncertain.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: manufacturer/OEM
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Siemens Gamesa ran simulations in Power Factory, noting that
+    the Siemens Gamesa Power Factory and PSS/E models are developed from the same
+    control block diagrams and produce identical model behaviour.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id006
+  - 15
+  evidence_excerpt: Siemens Gamesa investigated using the simulation program PSS/E
+    which is widely but not exclusively used by AEMO to conduct power system simulations.
+    However the simulation techniques used to produce the required results have only
+    become mature in the very latest versions of PSS/E and the uncertainty in the
+    models and engineering effort to run the way it was required meant that Siemens
+    Gamesa chose to run the simulations in Power Factory instead.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  source_page_pdf: 15
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6856
+  contributing_source_titles:
+  - Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge
+      Sharing Report
+    pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-6857
+  source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing
+    Report
+  publish_date: '2018'
+  project_name: Hornsdale 2 Wind Farm FCAS Trial
+  what_happened: Inverter-connected wind turbines at Hornsdale 2 are effectively decoupled
+    from grid frequency (often described as 'inertia-less'), because the power converter
+    synthesises the current waveform independently of the mechanical rotor speed,
+    unlike synchronous generators whose kinetic energy is immediately available to
+    resist frequency changes.
+  lesson_learnt: Project teams and market participants should understand that inverter-connected
+    wind generation does not provide inherent inertial response — any synthetic inertia
+    or FCAS capability must be explicitly programmed into the converter control system,
+    and curtailment headroom must be maintained to enable upward frequency response.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: manufacturer/OEM
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id007
+  - 8
+  - 9
+  evidence_excerpt: As the variable speed generator is effectively decoupled from
+    the fluctuations of grid frequency, inverter connected generation is crudely referred
+    to as 'inertia-less'... to respond to under frequency events the wind farm needs
+    to be operating at a generation level lower than the available power.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6857
+  contributing_source_titles:
+  - Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge
+      Sharing Report
+    pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-6858
+  source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing
+    Report
+  publish_date: '2018'
+  project_name: Hornsdale 2 Wind Farm FCAS Trial
+  what_happened: To provide raise FCAS, Hornsdale 2 had to be curtailed below available
+    output to maintain headroom — for example, curtailed by 14 MW or 28 MW for up
+    to 60 minutes per contingency test, and by 7 MW for regulation tests — representing
+    a direct opportunity cost to the wind farm operator.
+  lesson_learnt: Wind farm operators bidding into FCAS raise markets must factor in
+    mandatory curtailment costs when assessing FCAS revenue — the revenue from ancillary
+    services must outweigh lost energy revenue from the curtailment required to maintain
+    raise headroom.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: utility/large-scale
+  lifecycle_phase: operations
+  proponent_type: manufacturer/OEM
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id008
+  - 12
+  - 13
+  - 14
+  - 16
+  evidence_excerpt: Although to respond to under frequency events the wind farm needs
+    to be operating at a generation level lower than the available power. For example,
+    if 100 MW of power is available to ensure that the wind farm can provide 20 MW
+    of FCAS the active power would need to be curtailed to 80 MW... It is expected
+    that the plant would be curtailed by 14 MW for approximately 60 minutes.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  source_page_pdf: 16
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6858
+  contributing_source_titles:
+  - Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge
+      Sharing Report
+    pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-6859
+  source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing
+    Report
+  publish_date: '2018'
+  project_name: Hornsdale 2 Wind Farm FCAS Trial
+  what_happened: The wind farm's HPPP controller was highly configurable with a range
+    of frequency response modes and parameters (including Danish Grid Code, GB, and
+    Eire grid code profiles) that were not utilised in the FCAS trial, suggesting
+    the full capability of the technology was not assessed.
+  lesson_learnt: Future FCAS trials with wind farms should explore the full range
+    of configurable frequency response modes available in modern wind farm controllers
+    — the HPPP's unused capabilities (including spinning reserve offsets and alternative
+    droop profiles) may enable greater FCAS participation than the standard droop
+    mode trialled at Hornsdale 2.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: utility/large-scale
+  lifecycle_phase: commissioning/integration
+  proponent_type: manufacturer/OEM
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id009
+  - 50
+  - 51
+  - 52
+  evidence_excerpt: There are a range of functionalities and modes that have not been
+    implemented in this trial. The HPPP is highly configurable and could be shaped
+    to provide support where there are gaps in the FCAS landscape. There is also a
+    'spinning reserve' characteristic that maintains an offset between the available
+    active power and the amount of enabled frequency support.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  source_page_pdf: 50
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6859
+  contributing_source_titles:
+  - Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge
+      Sharing Report
+    pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-6860
+  source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing
+    Report
+  publish_date: '2018'
+  project_name: Hornsdale 2 Wind Farm FCAS Trial
+  what_happened: Hornsdale 2 was the first inverter-connected generation to provide
+    frequency control ancillary services to the NEM, demonstrating that converter-connected
+    wind turbines can successfully participate in all 8 FCAS markets in accordance
+    with MASS requirements.
+  lesson_learnt: Inverter-connected wind farms can successfully provide FCAS in the
+    NEM — the technology is capable and the regulatory pathway exists, making FCAS
+    participation a viable strategy for future wind projects subject to addressing
+    the identified limitations around fast raise services and operator control access.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: utility/large-scale
+  lifecycle_phase: commissioning/integration
+  proponent_type: manufacturer/OEM
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id010
+  - 7
+  - 53
+  evidence_excerpt: This is currently unique as it will be the first inverter connected
+    generation to provide frequency control ancillary services to the NEM... Siemens
+    Gamesa also believe the FCAS trial demonstrated the ability of converter connected
+    generation to participate in the FCAS markets with few limitations.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6860
+  contributing_source_titles:
+  - Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge
+      Sharing Report
+    pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-6861
+  source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing
+    Report
+  publish_date: '2018'
+  project_name: Hornsdale 2 Wind Farm FCAS Trial
+  what_happened: The FCAS N-1 simulation model, which showed the wind farm providing
+    zero fast raise FCAS during a combined frequency and voltage event, had never
+    been validated against real field data at the time of the report.
+  lesson_learnt: Simulation models used to determine FCAS registration capability
+    should be validated against real field event data before relying on them for market
+    registration decisions — unvalidated models introduce uncertainty that could either
+    over- or under-state a wind farm's FCAS capability.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: utility/large-scale
+  lifecycle_phase: commissioning/integration
+  proponent_type: manufacturer/OEM
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id011
+  - 49
+  evidence_excerpt: However this model response has never been validated.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  source_page_pdf: 49
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6861
+  contributing_source_titles:
+  - Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge
+      Sharing Report
+    pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-6862
+  source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing
+    Report
+  publish_date: '2018'
+  project_name: Hornsdale 2 Wind Farm FCAS Trial
+  what_happened: Multiple communication and polling time delays were identified in
+    the wind farm FCAS response chain — including a 0.125-second HPPP controller input
+    delay, a 0.2-second turbine polling delay, and an unquantified internet communication
+    delay from the injection tool — collectively affecting the speed and accuracy
+    of the FCAS response.
+  lesson_learnt: Wind farm developers seeking FCAS registration should characterise
+    and model all communication and polling delays across the full control chain (injection
+    tool, wind farm controller, turbine polling) as these compound delays can materially
+    affect compliance with fast FCAS timing requirements and must be accurately reflected
+    in simulation models submitted to AEMO.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: utility/large-scale
+  lifecycle_phase: commissioning/integration
+  proponent_type: manufacturer/OEM
+  delay_category: data/validation/testing
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: Time delays were explicitly modelled in Power Factory (Td_input
+    = 0.125s, Td_Psp_Park = 0.2s) to replicate the field test stepped response in
+    simulation.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id012
+  - 44
+  - 45
+  evidence_excerpt: The HPPP frequency controller takes some time to respond and calculate
+    new set-points and is modelled as Td_input (communication time delay) with a value
+    of 0.125 seconds... The wind farm also takes some time to send new set-points
+    to each turbine in a wind farm. This is modelled as Td_Psp_Park and is modelled
+    as 0.2 seconds this is mostly due to the time that is taken to pole each turbine
+    in the wind farm.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  source_page_pdf: 44
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6862
+  contributing_source_titles:
+  - Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge
+      Sharing Report
+    pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-6863
+  source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing
+    Report
+  publish_date: '2018'
+  project_name: Hornsdale 2 Wind Farm FCAS Trial
+  what_happened: Siemens Gamesa identified that converter-connected wind generation
+    is technically capable of providing Fast Frequency Response (FFR) beyond the current
+    MASS specifications, but noted that any FFR obligation would need a derogation
+    for concurrent short-circuit events.
+  lesson_learnt: Policy makers and market designers seeking to leverage wind generation
+    for FFR should engage with OEMs early to define a FFR characteristic that accounts
+    for the inverter control priority hierarchy during concurrent fault events — a
+    derogation or modified assessment methodology will be needed before wind FFR can
+    be formally registered.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: utility/large-scale
+  lifecycle_phase: operations
+  proponent_type: manufacturer/OEM
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: policy/market influence only
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id013
+  - 53
+  evidence_excerpt: Siemens Gamesa believes there is a role for wind farms providing
+    FFR. Converter connected generation is capable of providing very rapid changes
+    in power output and an FFR characteristic could easily be defined and implemented.
+    As discussed in section 8.1.2 wind farms would have to be given some derogation
+    for providing this kind of service should there be concurrent short circuit events.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  source_page_pdf: 53
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6863
+  contributing_source_titles:
+  - Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge
+      Sharing Report
+    pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-6864
+  source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing
+    Report
+  publish_date: '2018'
+  project_name: Hornsdale 2 Wind Farm FCAS Trial
+  what_happened: At the time of the report, data on wear and tear or additional maintenance
+    requirements from wind turbines providing FCAS was inconclusive and anecdotal,
+    both locally and internationally, meaning Siemens Gamesa could not confirm whether
+    FCAS participation affects turbine longevity.
+  lesson_learnt: Wind farm operators and developers considering FCAS participation
+    should monitor turbine maintenance data specifically for units providing FCAS
+    services, as the long-term maintenance implications remain unresolved — this gap
+    should be addressed before large-scale FCAS participation is commercially committed
+    to.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: utility/large-scale
+  lifecycle_phase: operations
+  proponent_type: manufacturer/OEM
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: Siemens Gamesa committed to continuing investigation of maintenance
+    requirements as data becomes available.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id014
+  - 54
+  evidence_excerpt: Siemens Gamesa has also looked into the impacts on the wind turbines
+    themselves to determine if there is any extra wear and tear while providing FCAS
+    or if any extra service and maintenance is required. To date the data back from
+    locally and internationally is inconclusive and anecdotal.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  source_page_pdf: 54
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6864
+  contributing_source_titles:
+  - Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Hornsdale 2 Frequency Control Ancillary Service Trial Knowledge
+      Sharing Report
+    pdf_url: https://arena.gov.au/assets/2017/07/siemens-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/siemens-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: hornsdale_2_frequency_control_ancillary_service_trial_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-22051
+  source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+  publish_date: 2018-07
+  project_name: Hornsdale Wind Farm 2 FCAS Trial
+  what_happened: HWF2 became the first Australian wind farm to be registered and offer
+    frequency control ancillary services (FCAS) in the NEM, successfully completing
+    a 48-hour in-market trial across six of the eight FCAS products between December
+    2017 and February 2018.
+  lesson_learnt: Inverter-connected wind plant can meet MASS requirements and provide
+    regulation and contingency FCAS in the NEM market — the registration and in-market
+    demonstration pathway is feasible for wind farms, and future projects should engage
+    AEMO early on classification, testing, and operational parameters to replicate
+    this outcome.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id015
+  - 3
+  - 4
+  - 5
+  evidence_excerpt: The Hornsdale Wind Farm 2 (HWF2) trial is the first in-market
+    technical demonstration of a wind or solar farm providing frequency control ancillary
+    services (FCAS) in the NEM. As a result of the trial, HWF2 is the first Australian
+    wind farm to be registered and offering FCAS in the NEM.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-22051
+  contributing_source_titles:
+  - AEMO Hornsdale Wind Farm 2 FCAS Trial
+  contributing_sources:
+  - source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+    pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-22052
+  source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+  publish_date: 2018-07
+  project_name: Hornsdale Wind Farm 2 FCAS Trial
+  what_happened: HWF2 could not be registered for fast raise and lower contingency
+    FCAS (6-second response) because Low Voltage Ride Through (LVRT) mode — required
+    under Generator Performance Standards — prioritises reactive power over active
+    power, preventing delivery of active power within six seconds of a simultaneous
+    frequency and voltage event.
+  lesson_learnt: Wind farms seeking FCAS classification must simulate combined frequency
+    and voltage disturbance scenarios before applying — the conflict between LVRT
+    obligations and fast FCAS delivery can disqualify a wind farm from fast contingency
+    services, and this cannot be detected by on-site frequency injection tests alone.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: partial success
+  secondary_failure_mode: poor scoping
+  intervention_note: AEMO requested power system simulations of simultaneous voltage
+    and frequency dips; simulation results confirmed the LVRT conflict and HWF2 was
+    classified for six of eight FCAS products, with fast services excluded.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id016
+  - 4
+  - 20
+  - 21
+  evidence_excerpt: Preliminary power system simulations produced for the trial identified
+    a conflict between the LVRT operation required for compliance with HWF2's technical
+    Generator Performance Standard (GPS) and the wind farm's ability to provide fast
+    raise and lower FCAS during a reasonably expectable contingency event... HWF2
+    could not be classified to provide fast raise and lower contingency service.
+  confidence_note: lifecycle_phase classified as approvals/contracting because the
+    exclusion occurred during the pre-classification assessment process, before market
+    trial.
+  source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  source_page_pdf: 20
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-22052
+  contributing_source_titles:
+  - AEMO Hornsdale Wind Farm 2 FCAS Trial
+  contributing_sources:
+  - source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+    pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-22053
+  source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+  publish_date: 2018-07
+  project_name: Hornsdale Wind Farm 2 FCAS Trial
+  what_happened: Prior to the trial, the MASS did not contain sufficient guidance
+    for wind or solar farms to apply for FCAS classification — AEMO was unsure whether
+    the existing specification adequately covered provision of FCAS by inverter-connected
+    generation, requiring the trial to identify gaps and inform updates to the MASS.
+  lesson_learnt: Regulators and system operators should proactively update market
+    ancillary service specifications to address inverter-connected generation before
+    commercial deployment — relying on a proof-of-concept trial to identify regulatory
+    gaps creates uncertainty and delays for subsequent wind and solar FCAS applicants.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: policy/market influence only
+  secondary_failure_mode: null
+  intervention_note: Following the trial, AEMO updated the MASS to provide additional
+    guidance for wind and solar generators seeking FCAS registration, and initiated
+    a consultation process for further MASS amendments in August 2018.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id017
+  - 5
+  - 13
+  - 16
+  evidence_excerpt: Prior to this trial, AEMO had not attempted to register a wind
+    or solar plant as an ancillary service provider... AEMO was unsure if information
+    on classification, testing, and operational parameters would need to be added
+    to the MASS to adequately cover the provision of FCAS by wind and solar farms.
+  confidence_note: 'proponent_type reconciled to ''utility/energy retailer'' from:
+    utility/energy retailer (12/14), government/public-sector body (2/14)'
+  source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-22053
+  contributing_source_titles:
+  - AEMO Hornsdale Wind Farm 2 FCAS Trial
+  contributing_sources:
+  - source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+    pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.95
+- record_id: ARENA-DLV-22054
+  source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+  publish_date: 2018-07
+  project_name: Hornsdale Wind Farm 2 FCAS Trial
+  what_happened: Wind farms seeking FCAS registration had no established minimum headroom
+    (pre-curtailment) requirement. AEMO developed a minimum headroom parameter for
+    HWF2 equivalent to approximately 10 MW (10% of registered capacity), representing
+    a 3 standard deviation error in the 5-minute ahead generation forecast, to ensure
+    reliable FCAS delivery.
+  lesson_learnt: Wind and solar farms registering for FCAS must maintain a minimum
+    headroom margin — calculated from 3 standard deviations of forecast error over
+    historical commissioning data — to prevent stranding and ensure contracted services
+    can be delivered; new farms without historical data should accept a generic AEMO-determined
+    baseline and review it after six months of operation.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: AEMO developed a procedure to assign a generic minimum headroom
+    factor for new wind or solar farms lacking historical forecast data, with provision
+    to review after six months of actual operation.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id018
+  - 21
+  - 22
+  evidence_excerpt: For HWF2, this calculation resulted in a minimum of around 10
+    MW of headroom to manage the risk of forecasting error (or 10% of registered capacity)
+    across all operating conditions... AEMO had developed a procedure for new wind
+    or solar farms seeking to register for FCAS that do not have historical forecasting
+    data to estimate forecast error.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  source_page_pdf: 21
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-22054
+  contributing_source_titles:
+  - AEMO Hornsdale Wind Farm 2 FCAS Trial
+  contributing_sources:
+  - source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+    pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-22055
+  source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+  publish_date: 2018-07
+  project_name: Hornsdale Wind Farm 2 FCAS Trial
+  what_happened: During the market trial, HWF2 delivered regulation FCAS with greater
+    precision than a comparable synchronous generator — its active power output closely
+    tracked AGC setpoints under both stable and declining wind conditions, demonstrating
+    that inverter-connected wind generation can outperform synchronous plant for regulation
+    services.
+  lesson_learnt: Wind farms with well-configured AGC and active power controls can
+    provide regulation FCAS more precisely than synchronous generators; this capability
+    should be factored into FCAS market design and procurement strategies as wind
+    penetration increases.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id019
+  - 24
+  - 25
+  evidence_excerpt: HWF2's regulation performance, as shown in Figure 8, is more precise
+    than that of the synchronous generator providing regulation services.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-22055
+  contributing_source_titles:
+  - AEMO Hornsdale Wind Farm 2 FCAS Trial
+  contributing_sources:
+  - source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+    pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-22056
+  source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+  publish_date: 2018-07
+  project_name: Hornsdale Wind Farm 2 FCAS Trial
+  what_happened: During the market trial, HWF2's raise contingency FCAS response to
+    a low-frequency event on 26 December 2017 was not sustained while frequency was
+    still recovering — active power momentarily increased after the frequency deviation
+    but then fell before frequency returned to the normal operating band, because
+    insufficient headroom was maintained.
+  lesson_learnt: Wind farms providing raise contingency FCAS must maintain adequate
+    headroom above their current output so that a raised active power response can
+    be sustained for the full response period — operating close to Possible Power
+    with minimal headroom will cause contingency raise responses to collapse before
+    frequency recovers.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The report notes that had HWF2 operated with greater headroom
+    between its active power output and Possible Power, the raise response could potentially
+    have been sustained; this finding informed updated headroom requirements for future
+    FCAS applicants.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id020
+  - 26
+  - 27
+  evidence_excerpt: While system frequency was still recovering and below 49.85 Hz,
+    HWF2 did not maintain an active power output above its initial output at the time
+    of the frequency disturbance. Had HWF2 operated with greater headroom between
+    its active power output and Possible Power, the raise response could potentially
+    have been sustained.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  source_page_pdf: 26
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-22056
+  contributing_source_titles:
+  - AEMO Hornsdale Wind Farm 2 FCAS Trial
+  contributing_sources:
+  - source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+    pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id020
+    source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-22057
+  source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+  publish_date: 2018-07
+  project_name: Hornsdale Wind Farm 2 FCAS Trial
+  what_happened: Full end-to-end contingency FCAS response could not be completely
+    evaluated during the 48-hour market trial because no significant frequency contingency
+    event occurred while HWF2 was enabled by NEMDE for contingency FCAS.
+  lesson_learnt: A short in-market trial window cannot be relied upon to validate
+    contingency FCAS response end-to-end — trial design should include staged or simulated
+    contingency events, or the trial period should be extended, to ensure that all
+    registered contingency services are fully exercised.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: partial success
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id021
+  - 4
+  - 26
+  evidence_excerpt: The market trial succeeded in meeting the scoped objectives, however
+    the absence of a significant frequency deviation during the market trial phase
+    of the trial meant that the full end-to-end contingency FCAS response of HWF2
+    couldn't be completely evaluated.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-22057
+  contributing_source_titles:
+  - AEMO Hornsdale Wind Farm 2 FCAS Trial
+  contributing_sources:
+  - source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+    pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id021
+    source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-22058
+  source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+  publish_date: 2018-07
+  project_name: Hornsdale Wind Farm 2 FCAS Trial
+  what_happened: Semi-scheduled generators such as HWF2 were frequently not enabled
+    for FCAS despite bidding below the dispatch price, because co-optimisation of
+    energy and FCAS in NEMDE makes it uneconomic to back off negative-price energy
+    offers to create FCAS headroom — in 50 of 863 dispatch intervals (5.8%) no FCAS
+    was enabled for this reason.
+  lesson_learnt: Semi-scheduled wind and solar generators offering energy at or near
+    the market floor price will rarely be enabled for raise FCAS through co-optimisation
+    — FCAS bidding strategy must account for the energy-FCAS trade-off in NEMDE, and
+    operators should consider whether FCAS offers priced to create a net economic
+    incentive for enablement are feasible given their energy pricing.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: commercial & market
+  intervention_note: AEMO documented the co-optimisation mechanics in detail in the
+    market trial report and Appendix A3 to inform future FCAS participants about this
+    non-intuitive outcome.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id022
+  - 28
+  - 29
+  evidence_excerpt: During the FCAS trial, there were 50 dispatch intervals (or 5.8%
+    of the time) when no FCAS was enabled for the HWF2 unit because its effective
+    FCAS offer was uneconomic due to the relative high cost of trading off its energy
+    target against FCAS enablement along the upper slope of its FCAS offer trapezium.
+  confidence_note: failure_mode set to commercial/demand failure as the root cause
+    is the economics of co-optimisation, not a technical incapability; secondary_failure_mode
+    set to design assumption failure because the bidding strategy did not anticipate
+    this dynamic.
+  source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  source_page_pdf: 29
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-22058
+  contributing_source_titles:
+  - AEMO Hornsdale Wind Farm 2 FCAS Trial
+  contributing_sources:
+  - source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+    pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id022
+    source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-22059
+  source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+  publish_date: 2018-07
+  project_name: Hornsdale Wind Farm 2 FCAS Trial
+  what_happened: FCAS 'stranding' — where a semi-scheduled generator's actual energy
+    output falls outside its FCAS enablement limits — occurred in 94 of 863 dispatch
+    intervals (11%) during the HWF2 market trial, split equally between operating
+    above Enablement Max/UIGF and below Enablement Min.
+  lesson_learnt: Semi-scheduled generators have less control over output and are inherently
+    more susceptible to FCAS stranding than scheduled units — FCAS offer trapeziums,
+    headroom settings, and enablement minimum levels must be calibrated to the natural
+    output variability of the wind or solar resource to minimise stranding incidence.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: AEMO documented the mechanics and incidence of FCAS stranding
+    in detail, benchmarked HWF2 against top FCAS providers in each NEM region, and
+    identified updated MASS guidance on trapezium design to address this for future
+    applicants.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id023
+  - 29
+  - 30
+  - 31
+  - 32
+  evidence_excerpt: There were 94 out of 863 dispatch intervals during the FCAS trial
+    (or 11% of the time) when the HWF2 unit was stranded for one or more FCAS. Of
+    these intervals, 50% were due to the unit initially operating above its FCAS Enablement
+    Max/UIGF, and the other 50% were due to the unit initially operating below its
+    FCAS Enablement Min of 20 MW.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  source_page_pdf: 30
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-22059
+  contributing_source_titles:
+  - AEMO Hornsdale Wind Farm 2 FCAS Trial
+  contributing_sources:
+  - source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+    pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id023
+    source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-22060
+  source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+  publish_date: 2018-07
+  project_name: Hornsdale Wind Farm 2 FCAS Trial
+  what_happened: AEMO's centralised wind farm forecasting model (AWEFS) uses an estimated
+    average wind speed across all turbines rather than individual turbine forecasts,
+    causing systemic under-forecasting when a greater number of turbines experience
+    above-average wind speeds — at HWF2 on 19 December 2017, individual turbine wind
+    speeds ranged from 4.3 to 9.5 m/s against a 7.2 m/s farm average.
+  lesson_learnt: Wind farm operators seeking to minimise FCAS headroom requirements
+    should develop self-forecasting capability based on individual turbine wind and
+    power forecasts rather than farm-average estimates — more accurate Possible Power
+    forecasts reduce the required headroom and increase the economic value of FCAS
+    participation.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: AEMO and ARENA initiated a Market Participant 5-minute Self-Forecasting
+    project to enable participants to submit their own Possible Power forecasts based
+    on individual turbine data, anticipated to improve forecast accuracy and reduce
+    required headroom.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id024
+  - 33
+  - 34
+  evidence_excerpt: Forecast accuracy is further impacted by AWEFS, AEMO's wind farm
+    forecasting model, using an estimated average wind speed from across each wind
+    turbine to determine forecast output via the turbine power curve, rather than
+    using wind speed forecasts for individual turbine power curves.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-22060
+  contributing_source_titles:
+  - AEMO Hornsdale Wind Farm 2 FCAS Trial
+  contributing_sources:
+  - source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+    pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id024
+    source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-22061
+  source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+  publish_date: 2018-07
+  project_name: Hornsdale Wind Farm 2 FCAS Trial
+  what_happened: Entry of HWF2 and Hornsdale Power Reserve (HPR) into South Australian
+    FCAS markets in early 2018 reduced average raise regulation FCAS prices by approximately
+    97% during a local South Australian FCAS constraint event on 14 January 2018 —
+    from approximately $9,000/MWh to $248/MWh — saving an estimated $3.5 million over
+    five hours.
+  lesson_learnt: Enabling wind farms and co-located batteries to participate in FCAS
+    markets can dramatically reduce concentrated FCAS costs in constrained regions
+    — project developers in weak-grid or islanding-risk regions should consider FCAS
+    participation as a key value stream that also delivers system security benefits.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id025
+  - 34
+  - 35
+  evidence_excerpt: The additional supply of cheaper-priced raise regulation FCAS
+    saw a 97% reduction in average regulation FCAS prices from approximately $9,000/MWh
+    to $248/MWh. This is estimated to have reduced the cost of the five-hour local
+    South Australian FCAS requirement on 14 January 2018 by approximately $3.5 million.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  source_page_pdf: 35
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-22061
+  contributing_source_titles:
+  - AEMO Hornsdale Wind Farm 2 FCAS Trial
+  contributing_sources:
+  - source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+    pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id025
+    source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-22062
+  source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+  publish_date: 2018-07
+  project_name: Hornsdale Wind Farm 2 FCAS Trial
+  what_happened: Tests 17 and 18 of the market trial — requiring high wind conditions
+    with binding system strength constraints — were not completed as planned because
+    those conditions occurred infrequently during the approximately two-month trial
+    span.
+  lesson_learnt: Market trial plans for wind FCAS should build in contingency mechanisms
+    or extended windows to capture low-probability operating conditions such as binding
+    system strength constraints — scheduling a fixed 48-hour trial without flexibility
+    may mean critical test conditions are never observed.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: data/validation/testing
+  failure_mode: poor scoping
+  outcome_class: partial success
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id026
+  - 23
+  evidence_excerpt: All tests were completed according to the descriptions shown in
+    Table 2, except for tests 17 and 18. These conditions occurred infrequently during
+    the approximately two-month span of the market trial.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  source_page_pdf: 23
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-22062
+  contributing_source_titles:
+  - AEMO Hornsdale Wind Farm 2 FCAS Trial
+  contributing_sources:
+  - source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+    pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id026
+    source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-22063
+  source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+  publish_date: 2018-07
+  project_name: Hornsdale Wind Farm 2 FCAS Trial
+  what_happened: Following the HWF2 trial, AEMO developed updated test requirements
+    for wind farms seeking contingency FCAS classification, including mandatory power
+    system simulations for combined voltage and frequency disturbances, frequency
+    injection tests at multiple hold points, and explicit headroom calculation requirements
+    — none of which were formalised prior to the trial.
+  lesson_learnt: Wind and solar farms planning FCAS registration should engage AEMO
+    before commissioning to understand the full suite of testing requirements — the
+    pre-trial absence of formalised test protocols for inverter-connected plant created
+    uncertainty about classification viability and required additional simulation
+    work to be negotiated during the project.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: policy/market influence only
+  secondary_failure_mode: poor scoping
+  intervention_note: AEMO published updated wind farm testing requirements for FCAS
+    classification following the trial, to be incorporated into the 2018 MASS consultation.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id027
+  - 35
+  - 36
+  evidence_excerpt: Following this trial, AEMO has developed test requirements for
+    operators to classify wind generation as ancillary services generating units for
+    contingency FCAS... Prior to this trial, AEMO had not attempted to register a
+    wind or solar plant as an ancillary service provider.
+  confidence_note: 'proponent_type reconciled to ''utility/energy retailer'' from:
+    utility/energy retailer (12/14), government/public-sector body (2/14)'
+  source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  source_page_pdf: 35
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-22063
+  contributing_source_titles:
+  - AEMO Hornsdale Wind Farm 2 FCAS Trial
+  contributing_sources:
+  - source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+    pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id027
+    source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-22064
+  source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+  publish_date: 2018-07
+  project_name: Hornsdale Wind Farm 2 FCAS Trial
+  what_happened: Basic frequency control capability — AGC remote control and autonomous
+    active power response to locally measured frequency — was confirmed by consultation
+    with wind turbine, solar inverter, and utility-scale battery manufacturers to
+    be achievable with little or no increase in capital cost, yet no wind or solar
+    farm had registered to provide FCAS in the NEM before this trial.
+  lesson_learnt: The barrier to wind and solar FCAS participation was not technology
+    cost but the absence of an established end-to-end registration, testing, and market
+    integration pathway — future projects should not assume technical capability alone
+    is sufficient and must plan for the regulatory and market integration steps required
+    for FCAS classification.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: AEMO and ARENA collaborated with NEOEN and Siemens-Gamesa to
+    conduct the first end-to-end registration and market trial, establishing the pathway
+    for subsequent wind and solar FCAS applicants.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id028
+  - 13
+  - 14
+  evidence_excerpt: Despite AEMO's finding that wind and solar plant could be equipped
+    with frequency control capabilities without significant increases in project capital
+    costs, end-to-end registration and testing processes with full integration into
+    AEMO's bidding and market systems would be required to assess the degree and extent
+    to which wind and solar generators could provide FCAS in accordance with the MASS.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-22064
+  contributing_source_titles:
+  - AEMO Hornsdale Wind Farm 2 FCAS Trial
+  contributing_sources:
+  - source_title: AEMO Hornsdale Wind Farm 2 FCAS Trial
+    pdf_url: https://arena.gov.au/assets/2017/07/aemo-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id028
+    source_url: https://arena.gov.au/knowledge-bank/aemo-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: aemo_hornsdale_wind_farm_2_fcas_trial.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-64651
+  source_title: Neoen Hornsdale Wind Farm FCAS Trial Report
+  publish_date: '2018'
+  project_name: Hornsdale Wind Farm Stage 2 FCAS Trial
+  what_happened: The HDWF2 trial ran for approximately 80 hours instead of the planned
+    48 hours due to difficulty attaining the right conditions for the test schedule
+    and inexperience in co-optimising bidding, resulting in 987 MWh of curtailed generation
+    and approximately $83,000 of lost spot market revenue offset by only $24,000 of
+    FCAS revenue.
+  lesson_learnt: Wind farm FCAS trials should account for the difficulty of attaining
+    required test conditions and co-optimising bids — plan for trial durations significantly
+    longer than the minimum test window and ensure operators have experience in FCAS
+    bid co-optimisation before commencing live market trials to minimise lost energy
+    revenue.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: project developer
+  delay_category: data/validation/testing
+  failure_mode: execution & logistics
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id029
+  - 2
+  - 6
+  evidence_excerpt: Due to difficulty in attaining the right conditions for the test
+    schedule, as well as inexperience in co-optimising bidding the trial ran over
+    the expected 48 hours to around 80 hours. This resulted in higher than expected
+    lost production and revenue.
+  confidence_note: delay_magnitude not quantified as the overrun was ~32 hours beyond
+    a 48-hour trial — not a classic project schedule delay but an operational trial
+    overrun.
+  source_url: https://arena.gov.au/knowledge-bank/neoen-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/07/neoen-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: neoen_hornsdale_wind_farm_fcas_trial_report.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64651
+  contributing_source_titles:
+  - Neoen Hornsdale Wind Farm FCAS Trial Report
+  contributing_sources:
+  - source_title: Neoen Hornsdale Wind Farm FCAS Trial Report
+    pdf_url: https://arena.gov.au/assets/2018/07/neoen-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id029
+    source_url: https://arena.gov.au/knowledge-bank/neoen-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: neoen_hornsdale_wind_farm_fcas_trial_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-64652
+  source_title: Neoen Hornsdale Wind Farm FCAS Trial Report
+  publish_date: '2018'
+  project_name: Hornsdale Wind Farm Stage 2 FCAS Trial
+  what_happened: HDWF2 could not qualify for the fast raise and fast lower (6-second)
+    FCAS markets because modelling could not demonstrate adequate active power injection
+    during a combined under-frequency and voltage ride-through event — the wind farm's
+    obligation to stay connected and support network voltage during disturbances conflicted
+    with the fast raise response requirement.
+  lesson_learnt: Wind farms seeking to register for fast contingency FCAS (6-second)
+    markets should assess early whether voltage ride-through obligations create a
+    conflict with fast raise response capability; additional voltage management plant
+    may be required and should be scoped before committing to registration in those
+    markets.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: partial success
+  secondary_failure_mode: poor scoping
+  intervention_note: Fast FCAS was noted as potentially resolvable by installing additional
+    voltage management plant, but this was outside the scope of the trial.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id030
+  - 2
+  - 4
+  - 5
+  evidence_excerpt: 'The HDWF2 trial did not meet the requirements of AEMO for the
+    fast raise and lower (6 seconds) market: the wind farm does not currently provide
+    adequate active power injection for fast raise (6 seconds) services in the event
+    of a combined frequency and voltage ride through event.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/07/neoen-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: neoen_hornsdale_wind_farm_fcas_trial_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64652
+  contributing_source_titles:
+  - Neoen Hornsdale Wind Farm FCAS Trial Report
+  contributing_sources:
+  - source_title: Neoen Hornsdale Wind Farm FCAS Trial Report
+    pdf_url: https://arena.gov.au/assets/2018/07/neoen-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id030
+    source_url: https://arena.gov.au/knowledge-bank/neoen-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: neoen_hornsdale_wind_farm_fcas_trial_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-64653
+  source_title: Neoen Hornsdale Wind Farm FCAS Trial Report
+  publish_date: '2018'
+  project_name: Hornsdale Wind Farm Stage 2 FCAS Trial
+  what_happened: To provide raise FCAS, the wind farm was required to operate in a
+    curtailed spinning reserve mode, spilling wind energy below available output;
+    the upper angle of the FCAS trapezium was set conservatively under MASS and the
+    Verification Tool, limiting the amount of FCAS that could be offered relative
+    to the amount of curtailment required.
+  lesson_learnt: Wind farm FCAS proponents should anticipate that conservative trapezium
+    upper-angle settings under MASS will limit FCAS capacity relative to curtailment
+    cost — engage with AEMO's self-forecasting process to obtain tighter headroom
+    estimates and reduce the curtailment-to-FCAS ratio before committing to registration
+    volumes.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: AEMO's self-forecasting process was identified as likely to provide
+    greater certainty of wind farm capabilities over the dispatch interval, allowing
+    tighter headroom and less curtailment.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id031
+  - 5
+  evidence_excerpt: The upper angle for the FCAS trapezium has been set rather conservatively
+    based on the MASS and the Verification Tool which limits the amount of FCAS that
+    can be provided relative to the amount that must be curtailed to provide the service.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/07/neoen-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: neoen_hornsdale_wind_farm_fcas_trial_report.md
+  source_page_pdf: 5
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64653
+  contributing_source_titles:
+  - Neoen Hornsdale Wind Farm FCAS Trial Report
+  contributing_sources:
+  - source_title: Neoen Hornsdale Wind Farm FCAS Trial Report
+    pdf_url: https://arena.gov.au/assets/2018/07/neoen-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id031
+    source_url: https://arena.gov.au/knowledge-bank/neoen-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: neoen_hornsdale_wind_farm_fcas_trial_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-64654
+  source_title: Neoen Hornsdale Wind Farm FCAS Trial Report
+  publish_date: '2018'
+  project_name: Hornsdale Wind Farm Stage 2 FCAS Trial
+  what_happened: The plant registration set the minimum enablement level at 15 MW,
+    preventing FCAS raise services from being offered in low wind conditions despite
+    the plant being technically capable of operating near 0 MW.
+  lesson_learnt: Wind farms registering for FCAS should set minimum enablement levels
+    as low as technically demonstrated — registering at 15 MW when 0 MW is achievable
+    forfeits FCAS revenue in low-wind conditions; future registrations should target
+    0 MW minimum enablement to capture full capability.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Neoen identified the intent to re-register with minimum enablement
+    set to 0 MW to capture full capability at lower wind speeds.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id032
+  - 5
+  evidence_excerpt: Despite technical capability at the plant to run at near 0MW,
+    the testing regime proposed did not contemplate providing FCAS from 0MW. The plant
+    registration has minimum enablement set at 15 MW which means that limited Raise
+    FCAS can be offered in low wind conditions.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/07/neoen-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: neoen_hornsdale_wind_farm_fcas_trial_report.md
+  source_page_pdf: 5
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64654
+  contributing_source_titles:
+  - Neoen Hornsdale Wind Farm FCAS Trial Report
+  contributing_sources:
+  - source_title: Neoen Hornsdale Wind Farm FCAS Trial Report
+    pdf_url: https://arena.gov.au/assets/2018/07/neoen-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id032
+    source_url: https://arena.gov.au/knowledge-bank/neoen-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: neoen_hornsdale_wind_farm_fcas_trial_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-64655
+  source_title: Neoen Hornsdale Wind Farm FCAS Trial Report
+  publish_date: '2018'
+  project_name: Hornsdale Wind Farm Stage 2 FCAS Trial
+  what_happened: For 5.8% of trial periods, FCAS was not enabled because the cost
+    of curtailing the wind farm to provide FCAS exceeded the FCAS price, and for 11%
+    of trial periods FCAS was stranded because the wind farm's energy output was outside
+    the FCAS trapezium enablement limits.
+  lesson_learnt: Wind farm FCAS revenues are materially constrained by co-optimisation
+    losses and stranding effects — project economics should account for the proportion
+    of time FCAS will not be enabled, and operators should develop co-optimisation
+    bidding capability before going to market to minimise stranded capacity.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: commercial & market
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id033
+  - 5
+  evidence_excerpt: For 5.8% of the trial periods, no FCAS was enabled because the
+    overall cost of enabling the wind farm to provide FCAS was greater than the FCAS
+    price... For 11% of the time the wind farm was not enabled for one or more frequency
+    control ancillary services because the energy being produced by the wind farm
+    at the start of the dispatch cycle was outside of the maximum and minimum enablement
+    limits of the scaled FCAS trapezium.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/07/neoen-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: neoen_hornsdale_wind_farm_fcas_trial_report.md
+  source_page_pdf: 5
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64655
+  contributing_source_titles:
+  - Neoen Hornsdale Wind Farm FCAS Trial Report
+  contributing_sources:
+  - source_title: Neoen Hornsdale Wind Farm FCAS Trial Report
+    pdf_url: https://arena.gov.au/assets/2018/07/neoen-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id033
+    source_url: https://arena.gov.au/knowledge-bank/neoen-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: neoen_hornsdale_wind_farm_fcas_trial_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-64656
+  source_title: Neoen Hornsdale Wind Farm FCAS Trial Report
+  publish_date: '2018'
+  project_name: Hornsdale Wind Farm Stage 2 FCAS Trial
+  what_happened: Despite FCAS having been an established NEM market for 20 years,
+    the depth of technical understanding within both the wind farm owner (Neoen) and
+    turbine vendor (Siemens Gamesa) organisations was limited, requiring significant
+    internal education and the creation of interim operational systems to manage FCAS
+    enablement and optimisation during the trial.
+  lesson_learnt: Wind farm proponents and their technology vendors should invest in
+    building FCAS-specific operational capability — including internal training and
+    control room systems — before commencing a live FCAS trial, as typical wind farm
+    operational systems do not natively support FCAS management.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: project developer
+  delay_category: commissioning/integration
+  failure_mode: execution & logistics
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: Neoen created interim control room systems to manage FCAS enablement
+    and optimisation during the trial periods.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id034
+  - 5
+  evidence_excerpt: Perhaps the greatest challenge in the project was around the depth
+    of understanding within the owner and vendor organisations. Despite FCAS being
+    in the market for the past 20 years, the level of technical understanding in this
+    technical area is limited, sometimes resulting in the need for significant education.
+    Similarly, within Neoen, there was a need to create interim systems to be able
+    to manage the enablement and optimisation during various trial periods, as typical
+    wind farm operational systems do not currently cater to this form of operation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/07/neoen-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: neoen_hornsdale_wind_farm_fcas_trial_report.md
+  source_page_pdf: 5
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64656
+  contributing_source_titles:
+  - Neoen Hornsdale Wind Farm FCAS Trial Report
+  contributing_sources:
+  - source_title: Neoen Hornsdale Wind Farm FCAS Trial Report
+    pdf_url: https://arena.gov.au/assets/2018/07/neoen-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id034
+    source_url: https://arena.gov.au/knowledge-bank/neoen-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: neoen_hornsdale_wind_farm_fcas_trial_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.72
+- record_id: ARENA-DLV-64657
+  source_title: Neoen Hornsdale Wind Farm FCAS Trial Report
+  publish_date: '2018'
+  project_name: Hornsdale Wind Farm Stage 2 FCAS Trial
+  what_happened: AEMO registration for FCAS was relatively straightforward in process,
+    but determining the correct registration values required specialist consultant
+    analysis; the process is expected to be significantly easier for future wind farms
+    given the knowledge accumulated by AEMO, Siemens, and Neoen through this trial.
+  lesson_learnt: Wind farms pursuing FCAS registration should engage specialist consultants
+    to determine registration parameter values — the process itself is manageable
+    but the technical determination of registration values (e.g. trapezium parameters)
+    is not straightforward without specialist expertise; subsequent projects can leverage
+    the precedent established by this trial.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: Specialist consultant analysis was engaged to determine the values
+    required for AEMO FCAS registration.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id035
+  - 5
+  evidence_excerpt: Registering with AEMO for the provision of FCAS was relatively
+    straight forward and consistent with other market operator processes. It is important
+    to note that the actual determination of the values required specialist consultant
+    analysis. It is possible that this process would be much easier in future with
+    the learnings gained by AEMO, Siemens and Neoen.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/07/neoen-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: neoen_hornsdale_wind_farm_fcas_trial_report.md
+  source_page_pdf: 5
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64657
+  contributing_source_titles:
+  - Neoen Hornsdale Wind Farm FCAS Trial Report
+  contributing_sources:
+  - source_title: Neoen Hornsdale Wind Farm FCAS Trial Report
+    pdf_url: https://arena.gov.au/assets/2018/07/neoen-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id035
+    source_url: https://arena.gov.au/knowledge-bank/neoen-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: neoen_hornsdale_wind_farm_fcas_trial_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-64658
+  source_title: Neoen Hornsdale Wind Farm FCAS Trial Report
+  publish_date: '2018'
+  project_name: Hornsdale Wind Farm Stage 2 FCAS Trial
+  what_happened: During a credible contingency period on 14 January 2018, HDWF2 bid
+    up to 10 MW into Regulation FCAS markets, helping to maintain Regulation prices
+    below $300/MWh and delivering savings to other South Australian wind farms and
+    consumers, demonstrating the commercial value of FCAS self-hedging for wind farms
+    with poor Causer Pays Factors.
+  lesson_learnt: Wind farms in South Australia with poor Causer Pays Factors should
+    consider providing Regulation FCAS as a self-hedge against high FCAS charges during
+    credible contingency periods — the savings from reduced Regulation prices can
+    significantly outweigh the lost energy revenue at these times.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id036
+  - 7
+  evidence_excerpt: In January, HDWF2 bid up to 10 MW into the Regulation markets
+    assisting in maintaining the price below $300/MWh. Although FCAS revenues were
+    largely offset by lost Energy revenue, the savings associated with the reduced
+    Regulation prices were significant. Other SA wind farms and SA consumers also
+    benefitted from the savings.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/07/neoen-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: neoen_hornsdale_wind_farm_fcas_trial_report.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64658
+  contributing_source_titles:
+  - Neoen Hornsdale Wind Farm FCAS Trial Report
+  contributing_sources:
+  - source_title: Neoen Hornsdale Wind Farm FCAS Trial Report
+    pdf_url: https://arena.gov.au/assets/2018/07/neoen-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id036
+    source_url: https://arena.gov.au/knowledge-bank/neoen-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: neoen_hornsdale_wind_farm_fcas_trial_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-64659
+  source_title: Neoen Hornsdale Wind Farm FCAS Trial Report
+  publish_date: '2018'
+  project_name: Hornsdale Wind Farm Stage 2 FCAS Trial
+  what_happened: The Hornsdale Wind Farm 2 operates without synthetic inertia because
+    the full-scale converters are not configured to provide it, meaning the wind farm
+    provides no resistance to frequency changes and does not assist transient stability
+    — a design characteristic with implications for FCAS capability assessment.
+  lesson_learnt: Future wind farm projects using full-scale converters should explicitly
+    evaluate and document whether synthetic inertia will be enabled at the design
+    stage — the absence of inertia affects the wind farm's FCAS profile and its contribution
+    to grid stability, and this should be factored into FCAS registration planning.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id037
+  - 2
+  evidence_excerpt: The converters are not set to provide synthetic inertia so in
+    simple terms the Wind Farm is 'inertia-less'. Therefore the Wind Farm does not
+    assist the grid in resisting frequency changes to maintain transient stability.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/07/neoen-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: neoen_hornsdale_wind_farm_fcas_trial_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64659
+  contributing_source_titles:
+  - Neoen Hornsdale Wind Farm FCAS Trial Report
+  contributing_sources:
+  - source_title: Neoen Hornsdale Wind Farm FCAS Trial Report
+    pdf_url: https://arena.gov.au/assets/2018/07/neoen-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id037
+    source_url: https://arena.gov.au/knowledge-bank/neoen-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: neoen_hornsdale_wind_farm_fcas_trial_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-64660
+  source_title: Neoen Hornsdale Wind Farm FCAS Trial Report
+  publish_date: '2018'
+  project_name: Hornsdale Wind Farm Stage 2 FCAS Trial
+  what_happened: The wind farm's existing PPA with a contracted offtaker was impacted
+    by curtailment during the FCAS trial; the PPA provider was satisfied the impacts
+    were small given the trial context, but identified that future commercially operating
+    wind farms providing FCAS could face more significant PPA implications.
+  lesson_learnt: Wind farm operators with PPA obligations must assess the commercial
+    impact of FCAS-related curtailment on contracted offtakers before committing to
+    FCAS provision — the curtailment required for spinning reserve operation may conflict
+    with PPA delivery obligations in a way that requires contractual negotiation or
+    is economically prohibitive.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: The PPA provider was satisfied that the impacts were small enough
+    in the trial circumstances and no contractual remedy was required.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id038
+  - 6
+  evidence_excerpt: It is important to note that the Hornsdale Windfarm was contracted
+    to a PPA provider during the whole duration of the trial. The financial impact
+    to the PPA was noted by the PPA provider, but the provider was satisfied that
+    the impacts were small enough in the circumstances. For future FCAS enabled farms,
+    this may not be the case.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-hornsdale-wind-farm-fcas-trial-report/
+  project_page_url: https://arena.gov.au/projects/hornsdale-wind-farm-stage-2/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 26/07/2018
+  kb_year: '2017'
+  kb_associated_project: Hornsdale Wind Farm Stage 2 FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $271k
+  total_project_value: $571k
+  lead_organisation: Hornsdale Wind Farm 2 Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/07/2017
+  location: Hornsdale, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/07/neoen-hornsdale-wind-farm-fcas-trial-report.pdf
+  markdown_filename: neoen_hornsdale_wind_farm_fcas_trial_report.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64660
+  contributing_source_titles:
+  - Neoen Hornsdale Wind Farm FCAS Trial Report
+  contributing_sources:
+  - source_title: Neoen Hornsdale Wind Farm FCAS Trial Report
+    pdf_url: https://arena.gov.au/assets/2018/07/neoen-hornsdale-wind-farm-fcas-trial-report.pdf
+    source_pages: *id038
+    source_url: https://arena.gov.au/knowledge-bank/neoen-hornsdale-wind-farm-fcas-trial-report/
+    markdown_filename: neoen_hornsdale_wind_farm_fcas_trial_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82

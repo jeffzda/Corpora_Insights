@@ -1,0 +1,1421 @@
+- record_id: ARENA-DLV-5151
+  source_title: LIDAR for Wind Forecasts End of Project Report
+  publish_date: '2021-03-05'
+  project_name: LIDAR for Wind Forecasts Project
+  what_happened: The project investigated whether upstream LIDAR measurements could
+    improve five-minute-ahead wind farm forecasts. Despite successful data collection
+    and ML model development, the accuracy improvement from including upstream LIDAR
+    measurements was only 2–2.5% RMSE reduction, which was insufficient to justify
+    commercial development of a forecast product.
+  lesson_learnt: 'Before investing in upstream measurement infrastructure for short-horizon
+    wind forecasting, conduct an upfront economic analysis: even a 3–4% RMSE improvement
+    with 3–4 LIDAR units is unlikely to generate sufficient commercial value to recover
+    equipment and operational costs at a small wind farm.'
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: commercial & market
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id001
+  - 5
+  - 6
+  - 7
+  evidence_excerpt: Though it was found that inclusion of upstream wind measurements
+    increased forecast performance, in the final stages of the project it was determined
+    that the increase in accuracy of the forecasts were not sufficient to warrant
+    further development of a forecast system based on the methodology.
+  confidence_note: failure_mode classified as commercial/demand failure because the
+    technical result was achieved but was insufficient for commercial viability; secondary
+    failure mode of technical underperformance reflects that accuracy gains were lower
+    than anticipated.
+  source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-end-of-project-report/
+  project_page_url: https://arena.gov.au/projects/using-upstream-lidar-measurements-to-improve-the-accuracy-of-5-minute-ahead-wind-forecasts/
+  kb_category: Wind energy
+  kb_publish_date: 5/03/2021
+  kb_year: '2019'
+  kb_associated_project: Using Upstream LIDAR Measurements
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $393k
+  total_project_value: $813k
+  lead_organisation: Windlab Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/03/2019
+  location: Hughenden, Queensland
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2021/07/lidar-for-wind-forecasts-project-end-of-project-report.pdf
+  markdown_filename: lidar_for_wind_forecasts_end_of_project_report.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-5151
+  contributing_source_titles:
+  - LIDAR for Wind Forecasts End of Project Report
+  contributing_sources:
+  - source_title: LIDAR for Wind Forecasts End of Project Report
+    pdf_url: https://arena.gov.au/assets/2021/07/lidar-for-wind-forecasts-project-end-of-project-report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-end-of-project-report/
+    markdown_filename: lidar_for_wind_forecasts_end_of_project_report.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-5152
+  source_title: LIDAR for Wind Forecasts End of Project Report
+  publish_date: '2021-03-05'
+  project_name: LIDAR for Wind Forecasts Project
+  what_happened: Ideal upstream measurement conditions — wind blowing directly along
+    a line between a LIDAR and a turbine at the right speed — existed only 3–6% of
+    the time across all turbines when both LIDARs were included, limiting the practical
+    benefit of the upstream measurement approach.
+  lesson_learnt: When designing upstream wind measurement schemes, calculate the fraction
+    of time that wind trajectories will pass through both the measurement point and
+    a turbine before committing to hardware — if this fraction is below ~5%, RMSE
+    gains will likely be under 2% and the approach may not be economically viable.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id002
+  - 5
+  - 6
+  evidence_excerpt: Careful analysis across all of the turbines showed that this ideal
+    situation existed only 3-6 percent of the time if both LIDARs were included and
+    more like 2-4 percent if only one of the LIDARs was included. This is consistent
+    with the forecast error levels found when including one or both of the LIDARs
+    in the ML algorithm.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-end-of-project-report/
+  project_page_url: https://arena.gov.au/projects/using-upstream-lidar-measurements-to-improve-the-accuracy-of-5-minute-ahead-wind-forecasts/
+  kb_category: Wind energy
+  kb_publish_date: 5/03/2021
+  kb_year: '2019'
+  kb_associated_project: Using Upstream LIDAR Measurements
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $393k
+  total_project_value: $813k
+  lead_organisation: Windlab Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/03/2019
+  location: Hughenden, Queensland
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2021/07/lidar-for-wind-forecasts-project-end-of-project-report.pdf
+  markdown_filename: lidar_for_wind_forecasts_end_of_project_report.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-5152
+  contributing_source_titles:
+  - LIDAR for Wind Forecasts End of Project Report
+  contributing_sources:
+  - source_title: LIDAR for Wind Forecasts End of Project Report
+    pdf_url: https://arena.gov.au/assets/2021/07/lidar-for-wind-forecasts-project-end-of-project-report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-end-of-project-report/
+    markdown_filename: lidar_for_wind_forecasts_end_of_project_report.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-5153
+  source_title: LIDAR for Wind Forecasts End of Project Report
+  publish_date: '2021-03-05'
+  project_name: LIDAR for Wind Forecasts Project
+  what_happened: Curtailment and individual turbine outages during the operational
+    forecast period significantly degraded forecast accuracy — when these factors
+    were included in the forecast submitted to the AEMO API, accuracy fell to roughly
+    the same level as the existing AWEFS benchmark forecast, eliminating most of the
+    LIDAR-derived improvement.
+  lesson_learnt: Wind farm forecasting systems intended for AEMO market submission
+    must explicitly account for curtailment and turbine outage signals; failure to
+    incorporate these factors can negate the accuracy gains achieved under clean evaluation
+    conditions and render a technically superior model commercially uncompetitive.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: The forecast formulation included contingencies to deal with
+    curtailment, transmission outages and individual turbine outages, but these factors
+    still diminished accuracy when submitted to the AEMO forecast API.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id003
+  - 4
+  - 5
+  - 7
+  evidence_excerpt: However, when curtailment and turbine outages were included (as
+    in the forecast submitted to the AEMO forecast API, the accuracy was diminished
+    somewhat, to be roughly equal to the AWEFS forecast.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-end-of-project-report/
+  project_page_url: https://arena.gov.au/projects/using-upstream-lidar-measurements-to-improve-the-accuracy-of-5-minute-ahead-wind-forecasts/
+  kb_category: Wind energy
+  kb_publish_date: 5/03/2021
+  kb_year: '2019'
+  kb_associated_project: Using Upstream LIDAR Measurements
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $393k
+  total_project_value: $813k
+  lead_organisation: Windlab Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/03/2019
+  location: Hughenden, Queensland
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2021/07/lidar-for-wind-forecasts-project-end-of-project-report.pdf
+  markdown_filename: lidar_for_wind_forecasts_end_of_project_report.md
+  source_page_pdf: 5
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-5153
+  contributing_source_titles:
+  - LIDAR for Wind Forecasts End of Project Report
+  contributing_sources:
+  - source_title: LIDAR for Wind Forecasts End of Project Report
+    pdf_url: https://arena.gov.au/assets/2021/07/lidar-for-wind-forecasts-project-end-of-project-report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-end-of-project-report/
+    markdown_filename: lidar_for_wind_forecasts_end_of_project_report.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-5154
+  source_title: LIDAR for Wind Forecasts End of Project Report
+  publish_date: '2021-03-05'
+  project_name: LIDAR for Wind Forecasts Project
+  what_happened: One LIDAR had to be relocated from its original position (location
+    B) to locations C and then D over the course of the project as analysis of the
+    wind climate revealed that the original placement was suboptimal for capturing
+    wind trajectories passing through the turbines.
+  lesson_learnt: LIDAR placement for upstream wind forecasting should be validated
+    against detailed parcel trajectory probability distributions before installation;
+    insufficient pre-deployment wind climate analysis can require costly mid-project
+    repositioning that delays the availability of usable training data.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: The LIDAR originally at location B was moved to location C and
+    then to its final position D by April 2020, based on additional wind climate information
+    gathered during the project.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id004
+  - 3
+  - 4
+  evidence_excerpt: Based on additional information about the wind climate gathered
+    from the LIDARs, the LIDAR originally at location B was moved to locations C and
+    then D, it's final position in the project where it has been since April, 2020.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-end-of-project-report/
+  project_page_url: https://arena.gov.au/projects/using-upstream-lidar-measurements-to-improve-the-accuracy-of-5-minute-ahead-wind-forecasts/
+  kb_category: Wind energy
+  kb_publish_date: 5/03/2021
+  kb_year: '2019'
+  kb_associated_project: Using Upstream LIDAR Measurements
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $393k
+  total_project_value: $813k
+  lead_organisation: Windlab Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/03/2019
+  location: Hughenden, Queensland
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2021/07/lidar-for-wind-forecasts-project-end-of-project-report.pdf
+  markdown_filename: lidar_for_wind_forecasts_end_of_project_report.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-5154
+  contributing_source_titles:
+  - LIDAR for Wind Forecasts End of Project Report
+  contributing_sources:
+  - source_title: LIDAR for Wind Forecasts End of Project Report
+    pdf_url: https://arena.gov.au/assets/2021/07/lidar-for-wind-forecasts-project-end-of-project-report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-end-of-project-report/
+    markdown_filename: lidar_for_wind_forecasts_end_of_project_report.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-5155
+  source_title: LIDAR for Wind Forecasts End of Project Report
+  publish_date: '2021-03-05'
+  project_name: LIDAR for Wind Forecasts Project
+  what_happened: Significant seasonal non-stationarity in the wind climate at Kiata
+    Wind Farm meant that ML models trained on the full annual dataset performed poorly
+    due to within-year variability, while models trained on short 2–3 month windows
+    performed poorly due to insufficient data volume — creating a fundamental tension
+    in model training strategy.
+  lesson_learnt: Wind forecasting ML models at sites with strong seasonal wind variability
+    require multi-year training datasets spanning multiple annual cycles; projects
+    with measurement campaigns shorter than 3–4 years should treat ML model accuracy
+    as provisional and budget for extended data collection before any commercial deployment
+    decision.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id005
+  - 10
+  - 11
+  evidence_excerpt: Experiments with training models on short periods of data, for
+    example only two to three months, so as to eliminate at least some of the non-stationarity
+    also diminished the model accuracy due to short record length. In a perfect world,
+    models would be trained on several seasons, one from each annual cycle. However,
+    we did not have that data available and would not have without several more years
+    of measurement than were available.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-end-of-project-report/
+  project_page_url: https://arena.gov.au/projects/using-upstream-lidar-measurements-to-improve-the-accuracy-of-5-minute-ahead-wind-forecasts/
+  kb_category: Wind energy
+  kb_publish_date: 5/03/2021
+  kb_year: '2019'
+  kb_associated_project: Using Upstream LIDAR Measurements
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $393k
+  total_project_value: $813k
+  lead_organisation: Windlab Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/03/2019
+  location: Hughenden, Queensland
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2021/07/lidar-for-wind-forecasts-project-end-of-project-report.pdf
+  markdown_filename: lidar_for_wind_forecasts_end_of_project_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-5155
+  contributing_source_titles:
+  - LIDAR for Wind Forecasts End of Project Report
+  contributing_sources:
+  - source_title: LIDAR for Wind Forecasts End of Project Report
+    pdf_url: https://arena.gov.au/assets/2021/07/lidar-for-wind-forecasts-project-end-of-project-report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-end-of-project-report/
+    markdown_filename: lidar_for_wind_forecasts_end_of_project_report.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-5156
+  source_title: LIDAR for Wind Forecasts End of Project Report
+  publish_date: '2021-03-05'
+  project_name: LIDAR for Wind Forecasts Project
+  what_happened: Spectral analysis of 1-minute SCADA and LIDAR samples revealed that
+    at the 2–10 minute time scales targeted by the forecast, wind signals have a large
+    random component (high entropy), which by definition is not predictable. This
+    fundamental characteristic of the wind signal imposed a hard ceiling on achievable
+    forecast accuracy.
+  lesson_learnt: Five-minute-ahead wind forecasting projects should conduct spectral
+    analysis of the target signal before selecting a forecast approach — high entropy
+    at the target time scale indicates a physical predictability ceiling that no algorithm
+    or additional upstream measurement can overcome, and this should be factored into
+    the commercial viability assessment at project inception.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id006
+  - 11
+  - 12
+  evidence_excerpt: Spectral analysis of this data showed that at between 0.5Hz and
+    0.1Hz (motions with periods between 2 and 10 minutes – a range surrounding the
+    period for which we wish to forecast), the motions had a large random component.
+    Near midday when surface heating is strongest and helps to create turbulent motions,
+    even in winter months, wind measurements contain significant randomness (entropy).
+    This means that, by definition, much of the signal at these time scales is not
+    predictable.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-end-of-project-report/
+  project_page_url: https://arena.gov.au/projects/using-upstream-lidar-measurements-to-improve-the-accuracy-of-5-minute-ahead-wind-forecasts/
+  kb_category: Wind energy
+  kb_publish_date: 5/03/2021
+  kb_year: '2019'
+  kb_associated_project: Using Upstream LIDAR Measurements
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $393k
+  total_project_value: $813k
+  lead_organisation: Windlab Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/03/2019
+  location: Hughenden, Queensland
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2021/07/lidar-for-wind-forecasts-project-end-of-project-report.pdf
+  markdown_filename: lidar_for_wind_forecasts_end_of_project_report.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-5156
+  contributing_source_titles:
+  - LIDAR for Wind Forecasts End of Project Report
+  contributing_sources:
+  - source_title: LIDAR for Wind Forecasts End of Project Report
+    pdf_url: https://arena.gov.au/assets/2021/07/lidar-for-wind-forecasts-project-end-of-project-report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-end-of-project-report/
+    markdown_filename: lidar_for_wind_forecasts_end_of_project_report.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-5157
+  source_title: LIDAR for Wind Forecasts End of Project Report
+  publish_date: '2021-03-05'
+  project_name: LIDAR for Wind Forecasts Project
+  what_happened: ML algorithms trained on raw (unfiltered) 1-minute wind data containing
+    high random components learned to predict persistence rather than actual wind
+    changes, degrading forecast skill. Applying a multi-point running mean filter
+    (Hamming window) to the training data resolved the issue and allowed the models
+    to train properly.
+  lesson_learnt: When training ML wind forecast models on high-frequency data, apply
+    a smoothing filter optimised for the target forecast horizon before training —
+    using raw data with high entropy at the target time scale causes the model to
+    revert to persistence and suppresses genuine predictive skill.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: A multi-point running mean filter with a Hamming window was applied
+    to the training data; filter length was optimised to minimise forecast RMSE, balancing
+    noise removal against signal retention.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id007
+  - 12
+  evidence_excerpt: Filtering the data with a multi-point running mean filters eliminated
+    much of the randomness and allowed the ML algorithm to train properly... The length
+    of the filter was optimized to give the lowest forecast RMSE. Using too long a
+    filter, though resulting in less randomness, tends to remove some of the signal
+    that we are trying to forecast. Using too short a filter (or no filter at all)
+    tends to get in the way of proper training of the ML algorithm.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-end-of-project-report/
+  project_page_url: https://arena.gov.au/projects/using-upstream-lidar-measurements-to-improve-the-accuracy-of-5-minute-ahead-wind-forecasts/
+  kb_category: Wind energy
+  kb_publish_date: 5/03/2021
+  kb_year: '2019'
+  kb_associated_project: Using Upstream LIDAR Measurements
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $393k
+  total_project_value: $813k
+  lead_organisation: Windlab Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/03/2019
+  location: Hughenden, Queensland
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2021/07/lidar-for-wind-forecasts-project-end-of-project-report.pdf
+  markdown_filename: lidar_for_wind_forecasts_end_of_project_report.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-5157
+  contributing_source_titles:
+  - LIDAR for Wind Forecasts End of Project Report
+  contributing_sources:
+  - source_title: LIDAR for Wind Forecasts End of Project Report
+    pdf_url: https://arena.gov.au/assets/2021/07/lidar-for-wind-forecasts-project-end-of-project-report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-end-of-project-report/
+    markdown_filename: lidar_for_wind_forecasts_end_of_project_report.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-5158
+  source_title: LIDAR for Wind Forecasts End of Project Report
+  publish_date: '2021-03-05'
+  project_name: LIDAR for Wind Forecasts Project
+  what_happened: The second LIDAR contributed only approximately one-quarter to one-third
+    of the accuracy improvement provided by the first LIDAR, demonstrating strong
+    diminishing returns from additional upstream measurement locations.
+  lesson_learnt: When planning upstream wind measurement networks, model the marginal
+    accuracy benefit of each additional measurement location before procurement —
+    diminishing returns set in quickly, and the cost of additional LIDAR units is
+    unlikely to be recovered beyond the first one or two instruments at a small wind
+    farm.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id008
+  - 4
+  - 5
+  - 7
+  evidence_excerpt: As expected, forecast accuracy was better with two LIDARs included,
+    but inclusion of the second LIDAR contributed an improvement of only one quarter
+    to one third of the first LIDAR.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-end-of-project-report/
+  project_page_url: https://arena.gov.au/projects/using-upstream-lidar-measurements-to-improve-the-accuracy-of-5-minute-ahead-wind-forecasts/
+  kb_category: Wind energy
+  kb_publish_date: 5/03/2021
+  kb_year: '2019'
+  kb_associated_project: Using Upstream LIDAR Measurements
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $393k
+  total_project_value: $813k
+  lead_organisation: Windlab Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/03/2019
+  location: Hughenden, Queensland
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2021/07/lidar-for-wind-forecasts-project-end-of-project-report.pdf
+  markdown_filename: lidar_for_wind_forecasts_end_of_project_report.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-5158
+  contributing_source_titles:
+  - LIDAR for Wind Forecasts End of Project Report
+  contributing_sources:
+  - source_title: LIDAR for Wind Forecasts End of Project Report
+    pdf_url: https://arena.gov.au/assets/2021/07/lidar-for-wind-forecasts-project-end-of-project-report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-end-of-project-report/
+    markdown_filename: lidar_for_wind_forecasts_end_of_project_report.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-5159
+  source_title: LIDAR for Wind Forecasts End of Project Report
+  publish_date: '2021-03-05'
+  project_name: LIDAR for Wind Forecasts Project
+  what_happened: Low-height (10–20m) tower-based wind measurements retained disproportionately
+    high forecast utility relative to their cost compared to hub-height LIDAR measurements,
+    suggesting a potentially more cost-effective instrumentation approach. However,
+    this benefit was diminished when significant vegetation (e.g. forest canopies)
+    was present at measurement height.
+  lesson_learnt: Consider low-cost meteorological towers at 10–20m as a more economical
+    alternative to hub-height LIDARs for upstream wind forecasting — their effectiveness
+    is disproportionately high relative to cost, provided the site is free of significant
+    vegetation at measurement height that would degrade the signal.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id009
+  - 5
+  - 6
+  evidence_excerpt: Using single-direction single-turbine forecast models, it was
+    shown that under ideal circumstances the efficacy of upstream measurements made
+    from much lower (10-20m) heights remained disproportionately high – particularly
+    compared to the significantly reduced costs of the lower measurements. This suggests
+    that if inexpensive low tower measurements can be made, their effectiveness would
+    be disproportionately large relative to the cost reduction over much taller masts.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-end-of-project-report/
+  project_page_url: https://arena.gov.au/projects/using-upstream-lidar-measurements-to-improve-the-accuracy-of-5-minute-ahead-wind-forecasts/
+  kb_category: Wind energy
+  kb_publish_date: 5/03/2021
+  kb_year: '2019'
+  kb_associated_project: Using Upstream LIDAR Measurements
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $393k
+  total_project_value: $813k
+  lead_organisation: Windlab Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/03/2019
+  location: Hughenden, Queensland
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2021/07/lidar-for-wind-forecasts-project-end-of-project-report.pdf
+  markdown_filename: lidar_for_wind_forecasts_end_of_project_report.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-5159
+  contributing_source_titles:
+  - LIDAR for Wind Forecasts End of Project Report
+  contributing_sources:
+  - source_title: LIDAR for Wind Forecasts End of Project Report
+    pdf_url: https://arena.gov.au/assets/2021/07/lidar-for-wind-forecasts-project-end-of-project-report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-end-of-project-report/
+    markdown_filename: lidar_for_wind_forecasts_end_of_project_report.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-5160
+  source_title: LIDAR for Wind Forecasts End of Project Report
+  publish_date: '2021-03-05'
+  project_name: LIDAR for Wind Forecasts Project
+  what_happened: The ML training dataset contained a large overrepresentation of zero
+    production-ratio values (persistence cases) at the Kiata Wind Farm, where 31%
+    of operating time had output below 5% or above 95% of rated power — significantly
+    above the 26% average for seven comparable wind farms in the region. Left unfiltered,
+    this caused the model to learn persistence rather than genuine change predictions.
+  lesson_learnt: Before training ML wind forecast models, analyse the production-ratio
+    distribution of the specific wind farm and filter out near-persistence training
+    points — sites with high proportions of time at curtailment limits or near rated
+    output require more aggressive filtering to prevent the model defaulting to a
+    persistence forecast.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Training points with absolute production ratio below 5% were
+    filtered out to prevent overrepresentation of persistence in the training dataset.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id010
+  - 8
+  evidence_excerpt: The figure shows that zero production ratio is significantly overrepresented
+    in cases such as when turbine output is at zero or its maximum. These data must
+    be filtered out to ensure the model does not just learn persistence... Kiata is
+    somewhat unique in this respect in that the amount of time its output is below
+    5% or above 95% is 31% (17% + 14%) – an easy persistence forecast. This is above
+    the average calculated for seven wind farms in the region which is 26%.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-end-of-project-report/
+  project_page_url: https://arena.gov.au/projects/using-upstream-lidar-measurements-to-improve-the-accuracy-of-5-minute-ahead-wind-forecasts/
+  kb_category: Wind energy
+  kb_publish_date: 5/03/2021
+  kb_year: '2019'
+  kb_associated_project: Using Upstream LIDAR Measurements
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $393k
+  total_project_value: $813k
+  lead_organisation: Windlab Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/03/2019
+  location: Hughenden, Queensland
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2021/07/lidar-for-wind-forecasts-project-end-of-project-report.pdf
+  markdown_filename: lidar_for_wind_forecasts_end_of_project_report.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-5160
+  contributing_source_titles:
+  - LIDAR for Wind Forecasts End of Project Report
+  contributing_sources:
+  - source_title: LIDAR for Wind Forecasts End of Project Report
+    pdf_url: https://arena.gov.au/assets/2021/07/lidar-for-wind-forecasts-project-end-of-project-report.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-end-of-project-report/
+    markdown_filename: lidar_for_wind_forecasts_end_of_project_report.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-5161
+  source_title: LIDAR for Wind Forecasts End of Project Report
+  publish_date: '2021-03-05'
+  project_name: LIDAR for Wind Forecasts Project
+  what_happened: The LIDAR hardware (ZephIR ZX300 units) and stand-alone power supplies
+    performed reliably throughout the project with only a single modem failure that
+    was promptly resolved, resulting in minimal data loss.
+  lesson_learnt: ZephIR ZX300 profiling LIDARs with Energy3 stand-alone power supplies
+    are a reliable hardware combination for remote wind measurement campaigns — proponents
+    can have confidence in this equipment configuration for extended field deployments
+    with minimal maintenance overhead.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: A failed modem in one power supply was replaced promptly with
+    minimal data loss.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id011
+  - 9
+  evidence_excerpt: Both the LIDARs and the power supplies performed very well with
+    both suppliers (ZephIR and Energy3) providing good support. The only hardware
+    failure was a modem in one of the power supplies which was replaced promptly with
+    minimal loss of data.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-end-of-project-report/
+  project_page_url: https://arena.gov.au/projects/using-upstream-lidar-measurements-to-improve-the-accuracy-of-5-minute-ahead-wind-forecasts/
+  kb_category: Wind energy
+  kb_publish_date: 5/03/2021
+  kb_year: '2019'
+  kb_associated_project: Using Upstream LIDAR Measurements
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $393k
+  total_project_value: $813k
+  lead_organisation: Windlab Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/03/2019
+  location: Hughenden, Queensland
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2021/07/lidar-for-wind-forecasts-project-end-of-project-report.pdf
+  markdown_filename: lidar_for_wind_forecasts_end_of_project_report.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-5161
+  contributing_source_titles:
+  - LIDAR for Wind Forecasts End of Project Report
+  contributing_sources:
+  - source_title: LIDAR for Wind Forecasts End of Project Report
+    pdf_url: https://arena.gov.au/assets/2021/07/lidar-for-wind-forecasts-project-end-of-project-report.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-end-of-project-report/
+    markdown_filename: lidar_for_wind_forecasts_end_of_project_report.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-5162
+  source_title: LIDAR for Wind Forecasts End of Project Report
+  publish_date: '2021-03-05'
+  project_name: LIDAR for Wind Forecasts Project
+  what_happened: The economic model developed to assess commercial viability of the
+    LIDAR-enhanced forecasting system contained substantial uncertainty, to the point
+    where even a 10% forecast improvement could not be confidently determined to be
+    sufficient to support a commercial forecasting business — leaving the go/no-go
+    decision unresolvable with available data.
+  lesson_learnt: Develop a robust commercial viability financial model early in the
+    project — if the economic case cannot be adequately modelled to resolve a go/no-go
+    decision even under optimistic accuracy scenarios, this signals that the project's
+    commercial pathway is too uncertain to justify continued investment without addressing
+    the financial modelling gap first.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id012
+  - 10
+  evidence_excerpt: However, the financial model built for the project has more uncertainty
+    than would be necessary to determine if even a 10 percent improvement would be
+    sufficient to base a commercial forecasting undertaking on.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-end-of-project-report/
+  project_page_url: https://arena.gov.au/projects/using-upstream-lidar-measurements-to-improve-the-accuracy-of-5-minute-ahead-wind-forecasts/
+  kb_category: Wind energy
+  kb_publish_date: 5/03/2021
+  kb_year: '2019'
+  kb_associated_project: Using Upstream LIDAR Measurements
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $393k
+  total_project_value: $813k
+  lead_organisation: Windlab Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/03/2019
+  location: Hughenden, Queensland
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2021/07/lidar-for-wind-forecasts-project-end-of-project-report.pdf
+  markdown_filename: lidar_for_wind_forecasts_end_of_project_report.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-5162
+  contributing_source_titles:
+  - LIDAR for Wind Forecasts End of Project Report
+  contributing_sources:
+  - source_title: LIDAR for Wind Forecasts End of Project Report
+    pdf_url: https://arena.gov.au/assets/2021/07/lidar-for-wind-forecasts-project-end-of-project-report.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-end-of-project-report/
+    markdown_filename: lidar_for_wind_forecasts_end_of_project_report.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-15301
+  source_title: Windlab Limited - LIDAR for Wind Forecasts Lessons Learnt 2
+  publish_date: 2020-04
+  project_name: LIDAR for Wind Forecasts
+  what_happened: Raw RMSE/MAE accuracy metrics from machine learning forecast algorithms
+    were significantly degraded by edge cases and a mismatch between 4-second and
+    1-minute sampling times, causing error scores to be much worse than anticipated
+    when evaluated against AEMO's error calculation methodology.
+  lesson_learnt: Build a validation framework that replicates the target operational
+    environment (e.g. AEMO's error calculation methodology) before using raw algorithm
+    metrics to assess forecast performance — mismatches in sampling frequency and
+    edge cases can substantially degrade apparent accuracy and mislead algorithm selection.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: project developer
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: data & measurement
+  intervention_note: Built a framework for objective testing that as closely as possible
+    replicates the AEMO environment in which error metrics are calculated.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id013
+  - 1
+  - 2
+  evidence_excerpt: the raw accuracy metrics from forecast algorithms were being strongly
+    degraded by edge cases and incompatibilities with AEMO's error calculation methodology
+    – a situation we are currently addressing.
+  confidence_note: lifecycle_phase assigned as commissioning/integration as the issue
+    arose during algorithm testing and validation prior to stable operational deployment;
+    delay_magnitude not quantified in document.
+  source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/using-upstream-lidar-measurements-to-improve-the-accuracy-of-5-minute-ahead-wind-forecasts/
+  kb_category: Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2019'
+  kb_associated_project: Using Upstream LIDAR Measurements
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $393k
+  total_project_value: $813k
+  lead_organisation: Windlab Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/03/2019
+  location: Hughenden, Queensland
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/07/windlab-wind-forecasting-lessons-learnt-report-2.pdf
+  markdown_filename: windlab_limited_lidar_for_wind_forecasts_lessons_learnt_2.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-15301
+  contributing_source_titles:
+  - Windlab Limited - LIDAR for Wind Forecasts Lessons Learnt 2
+  contributing_sources:
+  - source_title: Windlab Limited - LIDAR for Wind Forecasts Lessons Learnt 2
+    pdf_url: https://arena.gov.au/assets/2020/07/windlab-wind-forecasting-lessons-learnt-report-2.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-lessons-learnt-2/
+    markdown_filename: windlab_limited_lidar_for_wind_forecasts_lessons_learnt_2.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-15302
+  source_title: Windlab Limited - LIDAR for Wind Forecasts Lessons Learnt 2
+  publish_date: 2020-04
+  project_name: LIDAR for Wind Forecasts
+  what_happened: The project found that backtracking wind trajectory methods using
+    turbine nacelle measurements can accurately produce trajectory probability density
+    maps to identify optimal upstream LIDAR measurement locations, and that these
+    results are largely equivalent to forward-tracking methods — removing the need
+    for an iterative measure-and-move approach.
+  lesson_learnt: Use turbine-based backtracking trajectory methods to select upstream
+    measurement locations before installing any devices; this avoids costly iterative
+    repositioning and performs equivalently to forward-tracking, provided measurements
+    span a full year or are statistically corrected for seasonality.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id014
+  - 2
+  evidence_excerpt: With several months of LIDAR measurements in hand at a number
+    of locations around the Kiata Wind Farm, we have shown that these methods are
+    largely equivalent. An expected caveat is that the measurements must be representative
+    of a full year to avoid the effects of seasonality.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/using-upstream-lidar-measurements-to-improve-the-accuracy-of-5-minute-ahead-wind-forecasts/
+  kb_category: Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2019'
+  kb_associated_project: Using Upstream LIDAR Measurements
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $393k
+  total_project_value: $813k
+  lead_organisation: Windlab Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/03/2019
+  location: Hughenden, Queensland
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/07/windlab-wind-forecasting-lessons-learnt-report-2.pdf
+  markdown_filename: windlab_limited_lidar_for_wind_forecasts_lessons_learnt_2.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-15302
+  contributing_source_titles:
+  - Windlab Limited - LIDAR for Wind Forecasts Lessons Learnt 2
+  contributing_sources:
+  - source_title: Windlab Limited - LIDAR for Wind Forecasts Lessons Learnt 2
+    pdf_url: https://arena.gov.au/assets/2020/07/windlab-wind-forecasting-lessons-learnt-report-2.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-lessons-learnt-2/
+    markdown_filename: windlab_limited_lidar_for_wind_forecasts_lessons_learnt_2.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-15303
+  source_title: Windlab Limited - LIDAR for Wind Forecasts Lessons Learnt 2
+  publish_date: 2020-04
+  project_name: LIDAR for Wind Forecasts
+  what_happened: One-turbine/one-direction forecast model experiments showed that
+    LIDAR measurements taken as low as 10–20 m above the surface remain effective
+    inputs for short-term wind forecasts, despite the theoretical expectation that
+    forecast accuracy would diminish significantly at lower measurement heights due
+    to smaller turbulent length scales.
+  lesson_learnt: When designing upstream measurement infrastructure for short-term
+    wind forecasting, measurements at 10–20 m height are viable — this enables use
+    of inexpensive low meteorological towers instead of costly tall LIDARs or masts,
+    potentially reducing measurement infrastructure costs by up to 75% compared to
+    40 m towers, substantially improving commercial viability.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id015
+  - 3
+  evidence_excerpt: it appears that the accuracy of the forecast does not diminish
+    with decreasing measurement height so quickly as to preclude their use at measurement
+    heights of 10-20m. This opens the door to very inexpensive measurements.
+  confidence_note: issue_severity set to none as this is a positive finding with no
+    delivery issue; outcome_class set to follow-on scale-up enabled as the finding
+    directly informs the commercial deployment pathway.
+  source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/using-upstream-lidar-measurements-to-improve-the-accuracy-of-5-minute-ahead-wind-forecasts/
+  kb_category: Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2019'
+  kb_associated_project: Using Upstream LIDAR Measurements
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $393k
+  total_project_value: $813k
+  lead_organisation: Windlab Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/03/2019
+  location: Hughenden, Queensland
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/07/windlab-wind-forecasting-lessons-learnt-report-2.pdf
+  markdown_filename: windlab_limited_lidar_for_wind_forecasts_lessons_learnt_2.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-15303
+  contributing_source_titles:
+  - Windlab Limited - LIDAR for Wind Forecasts Lessons Learnt 2
+  contributing_sources:
+  - source_title: Windlab Limited - LIDAR for Wind Forecasts Lessons Learnt 2
+    pdf_url: https://arena.gov.au/assets/2020/07/windlab-wind-forecasting-lessons-learnt-report-2.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/lidar-for-wind-forecasts-lessons-learnt-2/
+    markdown_filename: windlab_limited_lidar_for_wind_forecasts_lessons_learnt_2.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-71851
+  source_title: 'Windlab Limited - LIDAR for Wind Forecasts Lessons Learnt Report
+    #1'
+  publish_date: 2019-10
+  project_name: Windlab Limited - LIDAR for Wind Forecasts Project
+  what_happened: Early analysis at the Kiata Wind Farm demonstrated that atmospheric
+    randomness (turbulence) substantially degrades the performance of time-series
+    wind-speed prediction algorithms, with turbulence levels varying diurnally — strongest
+    during daytime heating periods — making naive forecast approaches unreliable.
+  lesson_learnt: Any 5-minute wind or generation forecast algorithm must explicitly
+    model and accommodate diurnal variation in atmospheric turbulence; failing to
+    separate signal from noise in upstream measurements will reduce forecast skill
+    to little better than a persistence forecast regardless of algorithm sophistication.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Applied a wavelet filter to LIDAR wind-speed measurements to
+    separate turbulent noise from the predictable signal, achieving near-Gaussian
+    residuals and providing a basis for skill improvement in forecast algorithms.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id016
+  - 2
+  - 3
+  - 6
+  - 7
+  - 8
+  evidence_excerpt: Theory and practice show that randomness essentially dilutes the
+    performance of all-time series prediction algorithms... Any forecast algorithm
+    needs to accommodate this diurnal change in variance.
+  confidence_note: issue_severity set to moderate as the finding reorients the forecast
+    methodology but does not indicate project failure; delay_category data/validation/testing
+    used as the issue emerged during data analysis phase.
+  source_url: https://arena.gov.au/knowledge-bank/windlab-limited-lidar-for-wind-forecasts-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/using-upstream-lidar-measurements-to-improve-the-accuracy-of-5-minute-ahead-wind-forecasts/
+  kb_category: Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Using Upstream LIDAR Measurements
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $393k
+  total_project_value: $813k
+  lead_organisation: Windlab Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/03/2019
+  location: Hughenden, Queensland
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2019/03/windlab-lidar-for-wind-forecasts-lessons-learnt.pdf
+  markdown_filename: windlab_limited_lidar_for_wind_forecasts_lessons_learnt_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-71851
+  contributing_source_titles:
+  - 'Windlab Limited - LIDAR for Wind Forecasts Lessons Learnt Report #1'
+  contributing_sources:
+  - source_title: 'Windlab Limited - LIDAR for Wind Forecasts Lessons Learnt Report
+      #1'
+    pdf_url: https://arena.gov.au/assets/2019/03/windlab-lidar-for-wind-forecasts-lessons-learnt.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/windlab-limited-lidar-for-wind-forecasts-lessons-learnt-1/
+    markdown_filename: windlab_limited_lidar_for_wind_forecasts_lessons_learnt_1.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-71852
+  source_title: 'Windlab Limited - LIDAR for Wind Forecasts Lessons Learnt Report
+    #1'
+  publish_date: 2019-10
+  project_name: Windlab Limited - LIDAR for Wind Forecasts Project
+  what_happened: Analysis of LIDAR placement at Kiata Wind Farm revealed that the
+    geographic coverage pattern of any single LIDAR measurement position varies significantly
+    across even a small wind farm, meaning the initial northern LIDAR placement provided
+    little direct turbine coverage, and one or both LIDARs were planned for relocation
+    after four months.
+  lesson_learnt: LIDAR placement must be determined through spatial probability analysis
+    of wind transport paths before installation — coverage of all turbines varies
+    significantly with position, and deploying movable platforms allows iterative
+    optimisation rather than committing to sub-optimal fixed positions.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Planned relocation of one or both LIDARs in November 2019 to
+    improve turbine coverage, enabled by use of movable (non-fixed) measurement platforms.
+  transferability: moderate
+  delay_magnitude: 3-12 months
+  technology_domain: wind
+  source_pages: &id017
+  - 2
+  - 4
+  - 5
+  evidence_excerpt: The placement of the LIDARs is key to optimising the correlation
+    between upstream measurements and measured wind speed (or generation) at any turbine
+    location... careful choice of measurement locations is key to coverage of all
+    turbines... It is expected that one or both of the LiDARs will be relocated in
+    November of this year.
+  confidence_note: delay_magnitude estimated from ~4 months of sub-optimal placement
+    before planned relocation.
+  source_url: https://arena.gov.au/knowledge-bank/windlab-limited-lidar-for-wind-forecasts-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/using-upstream-lidar-measurements-to-improve-the-accuracy-of-5-minute-ahead-wind-forecasts/
+  kb_category: Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Using Upstream LIDAR Measurements
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $393k
+  total_project_value: $813k
+  lead_organisation: Windlab Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/03/2019
+  location: Hughenden, Queensland
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2019/03/windlab-lidar-for-wind-forecasts-lessons-learnt.pdf
+  markdown_filename: windlab_limited_lidar_for_wind_forecasts_lessons_learnt_1.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-71852
+  contributing_source_titles:
+  - 'Windlab Limited - LIDAR for Wind Forecasts Lessons Learnt Report #1'
+  contributing_sources:
+  - source_title: 'Windlab Limited - LIDAR for Wind Forecasts Lessons Learnt Report
+      #1'
+    pdf_url: https://arena.gov.au/assets/2019/03/windlab-lidar-for-wind-forecasts-lessons-learnt.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/windlab-limited-lidar-for-wind-forecasts-lessons-learnt-1/
+    markdown_filename: windlab_limited_lidar_for_wind_forecasts_lessons_learnt_1.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-71853
+  source_title: 'Windlab Limited - LIDAR for Wind Forecasts Lessons Learnt Report
+    #1'
+  publish_date: 2019-10
+  project_name: Windlab Limited - LIDAR for Wind Forecasts Project
+  what_happened: The project confirmed that upstream LIDAR measurements at ~3 km separation
+    successfully captured wind-speed signals that arrived at downstream turbines approximately
+    5 minutes later, validating the physical principle underpinning the 5-minute ahead
+    forecast approach.
+  lesson_learnt: Upstream LIDAR placement at a distance matching the 5-minute wind-transport
+    distance (approximately wind speed in m/s × 300 seconds) is a viable basis for
+    short-term wind generation forecasting; investing in high-quality multi-level
+    LIDAR measurements up front is critical to characterising atmospheric processes
+    before developing forecast algorithms.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id018
+  - 3
+  - 4
+  evidence_excerpt: Figure 1 shows the wind speed measured at a wind turbine at the
+    Kiata Wind Farm (blue line) and a lidar located approximately 3km upstream from
+    the turbine... The arrows show the peaks in the wind speed that are roughly 5min
+    apart in time... point to significant potential for this principle to provide
+    information useful in forecasting wind speeds and/or generation up to several
+    minutes in advance.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/windlab-limited-lidar-for-wind-forecasts-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/using-upstream-lidar-measurements-to-improve-the-accuracy-of-5-minute-ahead-wind-forecasts/
+  kb_category: Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Using Upstream LIDAR Measurements
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $393k
+  total_project_value: $813k
+  lead_organisation: Windlab Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/03/2019
+  location: Hughenden, Queensland
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2019/03/windlab-lidar-for-wind-forecasts-lessons-learnt.pdf
+  markdown_filename: windlab_limited_lidar_for_wind_forecasts_lessons_learnt_1.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-71853
+  contributing_source_titles:
+  - 'Windlab Limited - LIDAR for Wind Forecasts Lessons Learnt Report #1'
+  contributing_sources:
+  - source_title: 'Windlab Limited - LIDAR for Wind Forecasts Lessons Learnt Report
+      #1'
+    pdf_url: https://arena.gov.au/assets/2019/03/windlab-lidar-for-wind-forecasts-lessons-learnt.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/windlab-limited-lidar-for-wind-forecasts-lessons-learnt-1/
+    markdown_filename: windlab_limited_lidar_for_wind_forecasts_lessons_learnt_1.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-71854
+  source_title: 'Windlab Limited - LIDAR for Wind Forecasts Lessons Learnt Report
+    #1'
+  publish_date: 2019-10
+  project_name: Windlab Limited - LIDAR for Wind Forecasts Project
+  what_happened: The project identified a knowledge gap in understanding the time
+    scales of turbulent motions under varying atmospheric conditions, which is required
+    before forecast algorithms can be appropriately tuned to filter turbulent noise;
+    this gap prevented algorithm development work from commencing within the initial
+    reporting period.
+  lesson_learnt: Before applying forecast algorithms to short-term wind prediction,
+    dedicated effort must be invested in characterising turbulent time-scale distributions
+    under varied atmospheric conditions — proceeding to algorithm selection without
+    this understanding risks over-fitting to noise and underperforming against a simple
+    persistence baseline.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Project resequenced to complete turbulent time-scale characterisation
+    before progressing to forecast algorithm selection and testing.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id019
+  - 3
+  evidence_excerpt: Understanding the time scales associated with turbulent motions
+    under various atmospheric conditions is likely to be key to being able to appropriately
+    filter out their effects and increasing the accuracy of the 5-minute forecast.
+    Given this understanding, as the project moves forward the focus will turn to
+    applying this understanding to a number of forecast algorithms to determine the
+    most appropriate to the task.
+  confidence_note: issue_severity minor — this is a sequencing gap identified mid-project
+    rather than a failure; no schedule quantification available.
+  source_url: https://arena.gov.au/knowledge-bank/windlab-limited-lidar-for-wind-forecasts-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/using-upstream-lidar-measurements-to-improve-the-accuracy-of-5-minute-ahead-wind-forecasts/
+  kb_category: Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Using Upstream LIDAR Measurements
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $393k
+  total_project_value: $813k
+  lead_organisation: Windlab Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/03/2019
+  location: Hughenden, Queensland
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2019/03/windlab-lidar-for-wind-forecasts-lessons-learnt.pdf
+  markdown_filename: windlab_limited_lidar_for_wind_forecasts_lessons_learnt_1.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-71854
+  contributing_source_titles:
+  - 'Windlab Limited - LIDAR for Wind Forecasts Lessons Learnt Report #1'
+  contributing_sources:
+  - source_title: 'Windlab Limited - LIDAR for Wind Forecasts Lessons Learnt Report
+      #1'
+    pdf_url: https://arena.gov.au/assets/2019/03/windlab-lidar-for-wind-forecasts-lessons-learnt.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/windlab-limited-lidar-for-wind-forecasts-lessons-learnt-1/
+    markdown_filename: windlab_limited_lidar_for_wind_forecasts_lessons_learnt_1.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false

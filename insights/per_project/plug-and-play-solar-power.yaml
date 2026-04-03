@@ -1,0 +1,959 @@
+- record_id: ARENA-DLV-61251
+  source_title: Plug and Play Solar Project Results
+  publish_date: '2017-03-10'
+  project_name: Plug and Play Solar Project
+  what_happened: During field trials at Weipa, the skycam-based solar forecasting
+    and ramp-rate reduction algorithm reduced high ramp rate events in diesel generators
+    by 97% (from 490 to 13 events over the test period), achieved with only an 18%
+    curtailment in solar energy production and less than 1% increase in diesel fuel
+    consumption.
+  lesson_learnt: Skycam-based short-term solar forecasting combined with pre-emptive
+    PV curtailment can reduce high generator ramp rate events by over 97% at a minimal
+    fuel cost penalty (<1%), making it a viable stability management tool for solar-diesel
+    hybrid remote area power systems.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Deployed skycam hardware at Weipa site and trained machine learning
+    regression model on first half of 4-month dataset; applied predictive ramp optimisation
+    algorithm to pre-curtail PV output before cloud-caused ramp events.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id001
+  - 7
+  - 13
+  - 14
+  evidence_excerpt: the total reduction in the nominated 2 month period for high ramp
+    rate events was 97% (from 490 events to 13). This was achieved with only an 18%
+    curtailment in solar energy production, which was reduced from 521 to 427MWh over
+    this period.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/plug-and-play-solar-project-results/
+  project_page_url: https://arena.gov.au/projects/plug-and-play-solar-power/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 10/03/2017
+  kb_year: '2012'
+  kb_associated_project: Plug and Play Solar Power
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.29m
+  total_project_value: $2.91m
+  lead_organisation: CSIRO
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 01/11/2012
+  location: New South Wales
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/05/Attachment-1-Public-Dissemination-Report-CSIRO-Plug-and-Play.pdf
+  markdown_filename: plug_and_play_solar_project_results.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61251
+  contributing_source_titles:
+  - Plug and Play Solar Project Results
+  contributing_sources:
+  - source_title: Plug and Play Solar Project Results
+    pdf_url: https://arena.gov.au/assets/2017/05/Attachment-1-Public-Dissemination-Report-CSIRO-Plug-and-Play.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/plug-and-play-solar-project-results/
+    markdown_filename: plug_and_play_solar_project_results.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-61252
+  source_title: Plug and Play Solar Project Results
+  publish_date: '2017-03-10'
+  project_name: Plug and Play Solar Project
+  what_happened: The ramp-rate reduction algorithm was configured to be conservative
+    — preferring ramp mitigation over maximising solar output — which caused it to
+    curtail more PV power than necessary during smaller-than-predicted ramp events,
+    as demonstrated in a specific 15:22 event at Weipa.
+  lesson_learnt: Ramp-rate reduction algorithm conservatism settings create a trade-off
+    between ramp mitigation reliability and maximising solar energy yield; operators
+    should tune these settings to site-specific conditions rather than applying a
+    single default configuration, as over-conservative settings unnecessarily spill
+    solar generation.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Algorithm settings were identified as adjustable to suit particular
+    sites; the document notes the results presented represent only one of a range
+    of customisable settings.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id002
+  - 13
+  evidence_excerpt: The second event (at 15:22) was smaller than expected by the forecast,
+    which meant that the inverter setpoint was reduced earlier than necessary, successfully
+    avoiding the fast ramp event, but curtailing more power than necessary. This is
+    caused by the algorithm having settings causing it to tend toward being more conservative
+    – preferring ramp mitigation over maximising solar energy output. These settings
+    can be adjusted to suit a particular site.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/plug-and-play-solar-project-results/
+  project_page_url: https://arena.gov.au/projects/plug-and-play-solar-power/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 10/03/2017
+  kb_year: '2012'
+  kb_associated_project: Plug and Play Solar Power
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.29m
+  total_project_value: $2.91m
+  lead_organisation: CSIRO
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 01/11/2012
+  location: New South Wales
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/05/Attachment-1-Public-Dissemination-Report-CSIRO-Plug-and-Play.pdf
+  markdown_filename: plug_and_play_solar_project_results.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61252
+  contributing_source_titles:
+  - Plug and Play Solar Project Results
+  contributing_sources:
+  - source_title: Plug and Play Solar Project Results
+    pdf_url: https://arena.gov.au/assets/2017/05/Attachment-1-Public-Dissemination-Report-CSIRO-Plug-and-Play.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/plug-and-play-solar-project-results/
+    markdown_filename: plug_and_play_solar_project_results.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-61253
+  source_title: Plug and Play Solar Project Results
+  publish_date: '2017-03-10'
+  project_name: Plug and Play Solar Project
+  what_happened: Pre-curtailment of PV output to reduce fast ramp events increased
+    diesel fuel consumption by only 0.7% (from 3,000 kL to 3,021 kL) while eliminating
+    all ramp events beyond the response capabilities of the genset, demonstrating
+    that the stability benefit of ramp optimisation does not come at a meaningful
+    fuel cost penalty.
+  lesson_learnt: Optimising for grid stability through PV pre-curtailment does not
+    necessarily reduce fuel savings — the diesel cost of ramp mitigation at Weipa
+    was less than 1%, making stability and fuel-efficiency goals compatible rather
+    than competing in solar-diesel hybrid systems.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id003
+  - 14
+  evidence_excerpt: Given the scale of the reduction in high ramp events, an estimated
+    increase of less than 1% of diesel fuel consumed is likely to be considered quite
+    a worthwhile trade-off for improved stability.
+  confidence_note: The lesson title in the document is 'Optimising does not always
+    reduce fuel usage' — this record captures the positive finding that stability
+    optimisation incurs minimal fuel penalty, consistent with the document's framing.
+  source_url: https://arena.gov.au/knowledge-bank/plug-and-play-solar-project-results/
+  project_page_url: https://arena.gov.au/projects/plug-and-play-solar-power/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 10/03/2017
+  kb_year: '2012'
+  kb_associated_project: Plug and Play Solar Power
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.29m
+  total_project_value: $2.91m
+  lead_organisation: CSIRO
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 01/11/2012
+  location: New South Wales
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/05/Attachment-1-Public-Dissemination-Report-CSIRO-Plug-and-Play.pdf
+  markdown_filename: plug_and_play_solar_project_results.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61253
+  contributing_source_titles:
+  - Plug and Play Solar Project Results
+  contributing_sources:
+  - source_title: Plug and Play Solar Project Results
+    pdf_url: https://arena.gov.au/assets/2017/05/Attachment-1-Public-Dissemination-Report-CSIRO-Plug-and-Play.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/plug-and-play-solar-project-results/
+    markdown_filename: plug_and_play_solar_project_results.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-61254
+  source_title: Plug and Play Solar Project Results
+  publish_date: '2017-03-10'
+  project_name: Plug and Play Solar Project
+  what_happened: The diesel fuel estimation algorithm used to evaluate control modifications
+    over-estimated actual fuel consumption by 5.5% (3,800 kL estimated vs 3,600 kL
+    actual) when validated against real fuel data supplied by Rio Tinto at the Weipa
+    site.
+  lesson_learnt: Manufacturer fuel consumption curves provide only a broad estimation
+    of actual dynamic diesel operation; when real operational fuel data is available
+    from site operators, validate estimation algorithms against it before using them
+    to assess control modifications — an unvalidated algorithm may misrepresent the
+    true benefit of proposed changes.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: Rio Tinto supplied actual fuel consumption data which was used
+    to validate the estimation algorithm; both 'control' and 'modified' scenarios
+    were then evaluated using the same estimation method to ensure like-for-like comparison.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id004
+  - 12
+  evidence_excerpt: 'Total fuel used during the analysis period: 3,600kL (approximate).
+    Fuel usage from estimation algorithm: 3,800kL (approximate). Over-estimation:
+    5.5%. While clearly not perfect, it is within the bounds of a reasonable estimate.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/plug-and-play-solar-project-results/
+  project_page_url: https://arena.gov.au/projects/plug-and-play-solar-power/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 10/03/2017
+  kb_year: '2012'
+  kb_associated_project: Plug and Play Solar Power
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.29m
+  total_project_value: $2.91m
+  lead_organisation: CSIRO
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 01/11/2012
+  location: New South Wales
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/05/Attachment-1-Public-Dissemination-Report-CSIRO-Plug-and-Play.pdf
+  markdown_filename: plug_and_play_solar_project_results.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61254
+  contributing_source_titles:
+  - Plug and Play Solar Project Results
+  contributing_sources:
+  - source_title: Plug and Play Solar Project Results
+    pdf_url: https://arena.gov.au/assets/2017/05/Attachment-1-Public-Dissemination-Report-CSIRO-Plug-and-Play.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/plug-and-play-solar-project-results/
+    markdown_filename: plug_and_play_solar_project_results.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-61255
+  source_title: Plug and Play Solar Project Results
+  publish_date: '2017-03-10'
+  project_name: Plug and Play Solar Project
+  what_happened: Battery sizing analysis at the Port Hedland (Meta Maya) site showed
+    that the actual 76.8 kWh battery was smaller than optimal — simulations indicated
+    a 140 kWh battery represented a knee-point, reducing generator starts from 444
+    to 96 and fuel consumption from 4,214 L to 2,439 L, while further increases beyond
+    140 kWh yielded diminishing returns.
+  lesson_learnt: Battery sizing in solar-diesel hybrid systems should be validated
+    post-deployment against real operational data — the Meta Maya site was designed
+    to minimise capital cost with a smaller-than-typical battery, but modelling showed
+    a 140 kWh battery (vs 77 kWh actual) would have reduced generator starts by 78%
+    and fuel consumption by 42%, representing the economic optimum before diminishing
+    returns set in.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Post-deployment simulation analysis using collected operational
+    data identified the 140 kWh knee-point; findings were documented to inform future
+    system sizing decisions as battery costs continue to fall.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages:
+  - 15
+  - 16
+  evidence_excerpt: There does appear to be something of a knee-point in both the
+    PV-penetration and generator-start curves around 140kWh – further increasing the
+    battery size beyond this appears to have a substantially reduced impact on these
+    metrics. The real system has been designed to minimise both diesel operation and
+    capital costs in terms of battery sizing. This has resulted in a smaller than
+    typical battery.
+  confidence_note: Canonical record merged from 2 source records across 1 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/plug-and-play-solar-project-results/
+  project_page_url: https://arena.gov.au/projects/plug-and-play-solar-power/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 10/03/2017
+  kb_year: '2012'
+  kb_associated_project: Plug and Play Solar Power
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.29m
+  total_project_value: $2.91m
+  lead_organisation: CSIRO
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 01/11/2012
+  location: New South Wales
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/05/Attachment-1-Public-Dissemination-Report-CSIRO-Plug-and-Play.pdf
+  markdown_filename: plug_and_play_solar_project_results.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61255
+  - ARENA-DLV-61256
+  contributing_source_titles:
+  - Plug and Play Solar Project Results
+  contributing_sources:
+  - source_title: Plug and Play Solar Project Results
+    pdf_url: https://arena.gov.au/assets/2017/05/Attachment-1-Public-Dissemination-Report-CSIRO-Plug-and-Play.pdf
+    source_pages:
+    - 15
+    - 16
+    source_url: https://arena.gov.au/knowledge-bank/plug-and-play-solar-project-results/
+    markdown_filename: plug_and_play_solar_project_results.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-61257
+  source_title: Plug and Play Solar Project Results
+  publish_date: '2017-03-10'
+  project_name: Plug and Play Solar Project
+  what_happened: The project was unable to identify suitable real-world test sites
+    with the specific required hardware configuration in either Australia or the US
+    during the prototype deployment phase, causing delays in transitioning from laboratory
+    to field testing.
+  lesson_learnt: Identifying suitable real-world test sites for hybrid energy control
+    system prototypes requires early engagement with potential host operators and
+    flexibility in site selection criteria — the inability to find sites with pre-existing
+    compatible hardware in either Australia or the US delayed field deployment and
+    necessitated partnership negotiations with Energy Made Clean and First Solar Australia
+    late in the project.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: procurement
+  proponent_type: research organisation/university
+  delay_category: stakeholder/land/community
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: Further discussions with Energy Made Clean (EMC) and First Solar
+    Australia ultimately identified two suitable test sites at Port Hedland and Weipa,
+    where prototype hardware was installed.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id005
+  - 6
+  evidence_excerpt: As the testing moved to real world locations, we were unable to
+    identify suitable test sites, with the specific hardware, in either Australia
+    or the US. After further discussions with Energy Made Clean (EMC) and First Solar
+    Australia, two test sites were found and our prototype hardware was installed.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/plug-and-play-solar-project-results/
+  project_page_url: https://arena.gov.au/projects/plug-and-play-solar-power/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 10/03/2017
+  kb_year: '2012'
+  kb_associated_project: Plug and Play Solar Power
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.29m
+  total_project_value: $2.91m
+  lead_organisation: CSIRO
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 01/11/2012
+  location: New South Wales
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/05/Attachment-1-Public-Dissemination-Report-CSIRO-Plug-and-Play.pdf
+  markdown_filename: plug_and_play_solar_project_results.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61257
+  contributing_source_titles:
+  - Plug and Play Solar Project Results
+  contributing_sources:
+  - source_title: Plug and Play Solar Project Results
+    pdf_url: https://arena.gov.au/assets/2017/05/Attachment-1-Public-Dissemination-Report-CSIRO-Plug-and-Play.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/plug-and-play-solar-project-results/
+    markdown_filename: plug_and_play_solar_project_results.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-61258
+  source_title: Plug and Play Solar Project Results
+  publish_date: '2017-03-10'
+  project_name: Plug and Play Solar Project
+  what_happened: At both the Weipa and Port Hedland field sites, the operational nature
+    of the grids prevented CSIRO from fully controlling them during trials, meaning
+    the team could not run controlled experiments and instead had to rely on post-hoc
+    data analysis to generate predictions of outcomes.
+  lesson_learnt: When deploying prototype control systems at operational commercial
+    sites, researchers should negotiate clearly defined test windows or fallback simulation
+    rights at the outset — inability to control the grid at either test site meant
+    that performance results could only be modelled from collected data rather than
+    demonstrated in controlled conditions, limiting the evidentiary strength of the
+    findings.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: coordination & stakeholders
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Collected operational data was used to train forecasting algorithms
+    and run simulation-based predictions of outcomes, allowing performance characterisation
+    despite the lack of grid control.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id006
+  - 10
+  evidence_excerpt: Due to the operational nature of both sites, we were not able
+    to fully control the grids. However, the data collected during the trials has
+    been used in this report to generate predictions of outcomes from the solar forecasting
+    in energy production and grid stability.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/plug-and-play-solar-project-results/
+  project_page_url: https://arena.gov.au/projects/plug-and-play-solar-power/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 10/03/2017
+  kb_year: '2012'
+  kb_associated_project: Plug and Play Solar Power
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.29m
+  total_project_value: $2.91m
+  lead_organisation: CSIRO
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 01/11/2012
+  location: New South Wales
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/05/Attachment-1-Public-Dissemination-Report-CSIRO-Plug-and-Play.pdf
+  markdown_filename: plug_and_play_solar_project_results.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61258
+  contributing_source_titles:
+  - Plug and Play Solar Project Results
+  contributing_sources:
+  - source_title: Plug and Play Solar Project Results
+    pdf_url: https://arena.gov.au/assets/2017/05/Attachment-1-Public-Dissemination-Report-CSIRO-Plug-and-Play.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/plug-and-play-solar-project-results/
+    markdown_filename: plug_and_play_solar_project_results.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-61259
+  source_title: Plug and Play Solar Project Results
+  publish_date: '2017-03-10'
+  project_name: Plug and Play Solar Project
+  what_happened: Laboratory and in-field testing phases at CSIRO REIF (Newcastle)
+    and NREL (Colorado) were identified as critical prerequisites before real-world
+    deployment, enabling hardware/software debugging and the development of a body
+    of knowledge for system operation that directly supported successful field deployments
+    at Weipa and Port Hedland.
+  lesson_learnt: For complex hardware-software integrated systems deployed in remote
+    or operational environments, phased testing through laboratory then external test
+    facility then field deployment provides essential debugging and knowledge-building
+    that reduces risk at each subsequent stage; skipping intermediate testing phases
+    would likely increase the risk of field deployment failure.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id007
+  - 7
+  evidence_excerpt: The system performance testing in Australia, utilising the REIF
+    laboratory, and in the US at the NREL facility, allowed an excellent opportunity
+    for debugging and error checking the hardware and software interactions. This
+    initial phase was critical in developing a body of knowledge for system operation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/plug-and-play-solar-project-results/
+  project_page_url: https://arena.gov.au/projects/plug-and-play-solar-power/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 10/03/2017
+  kb_year: '2012'
+  kb_associated_project: Plug and Play Solar Power
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.29m
+  total_project_value: $2.91m
+  lead_organisation: CSIRO
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 01/11/2012
+  location: New South Wales
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/05/Attachment-1-Public-Dissemination-Report-CSIRO-Plug-and-Play.pdf
+  markdown_filename: plug_and_play_solar_project_results.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61259
+  contributing_source_titles:
+  - Plug and Play Solar Project Results
+  contributing_sources:
+  - source_title: Plug and Play Solar Project Results
+    pdf_url: https://arena.gov.au/assets/2017/05/Attachment-1-Public-Dissemination-Report-CSIRO-Plug-and-Play.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/plug-and-play-solar-project-results/
+    markdown_filename: plug_and_play_solar_project_results.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-61260
+  source_title: Plug and Play Solar Project Results
+  publish_date: '2017-03-10'
+  project_name: Plug and Play Solar Project
+  what_happened: The project developed an interface between the HOMER energy modelling
+    platform and the OpenDSS power-flow software, enabling automated translation of
+    HOMER outputs into OpenDSS — a process previously done manually — thereby accelerating
+    the transition from high-level planning to detailed network modelling.
+  lesson_learnt: Developing automated interfacing between high-level energy system
+    planning tools (e.g. HOMER) and detailed power-flow modelling platforms (e.g.
+    OpenDSS) can substantially reduce the time and labour required for network design
+    studies in hybrid renewable systems; this integration capability should be considered
+    a reusable infrastructure investment for organisations conducting repeated planning
+    studies.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id008
+  - 5
+  evidence_excerpt: The key technological advancement here is the development of interfacing
+    systems that allow for the efficient translation of HOMER outputs into the OpenDSS
+    platform – a process that would otherwise be laborious and manual. The result
+    is an improved work-flow that enables a more rapid transition from initial high-level
+    planning and to deeper network modelling.
+  confidence_note: 'project_type reconciled to ''generation'' from: generation (13/14),
+    software/data/digital (1/14)'
+  source_url: https://arena.gov.au/knowledge-bank/plug-and-play-solar-project-results/
+  project_page_url: https://arena.gov.au/projects/plug-and-play-solar-power/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 10/03/2017
+  kb_year: '2012'
+  kb_associated_project: Plug and Play Solar Power
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.29m
+  total_project_value: $2.91m
+  lead_organisation: CSIRO
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 01/11/2012
+  location: New South Wales
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/05/Attachment-1-Public-Dissemination-Report-CSIRO-Plug-and-Play.pdf
+  markdown_filename: plug_and_play_solar_project_results.md
+  source_page_pdf: 5
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61260
+  contributing_source_titles:
+  - Plug and Play Solar Project Results
+  contributing_sources:
+  - source_title: Plug and Play Solar Project Results
+    pdf_url: https://arena.gov.au/assets/2017/05/Attachment-1-Public-Dissemination-Report-CSIRO-Plug-and-Play.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/plug-and-play-solar-project-results/
+    markdown_filename: plug_and_play_solar_project_results.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-61261
+  source_title: Plug and Play Solar Project Results
+  publish_date: '2017-03-10'
+  project_name: Plug and Play Solar Project
+  what_happened: The project successfully transferred its core skycam and plug-and-play
+    technology to two Department of Defence facilities in the Northern Territory post-completion,
+    with a further three Defence sites scoped for future deployment, demonstrating
+    the technology's applicability beyond the original remote mining/industrial test
+    sites.
+  lesson_learnt: Proactively engaging new deployment partners during the latter stages
+    of a research project — rather than waiting for project completion — accelerates
+    technology transfer and increases the likelihood of post-project uptake; the Plug
+    and Play project secured Defence and VPS2 partnerships while still active, enabling
+    immediate follow-on deployments.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id009
+  - 8
+  evidence_excerpt: The CSIRO have deployed technologies outlined within the Plug
+    and Play project at two Defence facilities in the Northern Territory. A further
+    3 Defence sites have been scoped for deployment in the future.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/plug-and-play-solar-project-results/
+  project_page_url: https://arena.gov.au/projects/plug-and-play-solar-power/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 10/03/2017
+  kb_year: '2012'
+  kb_associated_project: Plug and Play Solar Power
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.29m
+  total_project_value: $2.91m
+  lead_organisation: CSIRO
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 01/11/2012
+  location: New South Wales
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/05/Attachment-1-Public-Dissemination-Report-CSIRO-Plug-and-Play.pdf
+  markdown_filename: plug_and_play_solar_project_results.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61261
+  contributing_source_titles:
+  - Plug and Play Solar Project Results
+  contributing_sources:
+  - source_title: Plug and Play Solar Project Results
+    pdf_url: https://arena.gov.au/assets/2017/05/Attachment-1-Public-Dissemination-Report-CSIRO-Plug-and-Play.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/plug-and-play-solar-project-results/
+    markdown_filename: plug_and_play_solar_project_results.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-61262
+  source_title: Plug and Play Solar Project Results
+  publish_date: '2017-03-10'
+  project_name: Plug and Play Solar Project
+  what_happened: An independent market analysis by Navigant Consulting projected that
+    solar forecasting technologies for microgrids could generate cumulative diesel
+    fuel savings exceeding $330 million in Australia by 2025 under a moderate impact
+    scenario, with $660 million under an aggressive scenario, providing a quantified
+    commercial rationale for the technology.
+  lesson_learnt: Commissioning independent market analysis to quantify the addressable
+    commercial value of a research technology — expressed in fuel savings and diesel
+    displacement rather than technical metrics — substantially strengthens the case
+    for commercialisation and helps secure follow-on investment; this is particularly
+    valuable for RAPS technologies where cost-of-supply data is readily available.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id010
+  - 8
+  evidence_excerpt: even with moderate impact of the technology the cumulative diesel
+    savings to 2025 exceeds $330M.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/plug-and-play-solar-project-results/
+  project_page_url: https://arena.gov.au/projects/plug-and-play-solar-power/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 10/03/2017
+  kb_year: '2012'
+  kb_associated_project: Plug and Play Solar Power
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.29m
+  total_project_value: $2.91m
+  lead_organisation: CSIRO
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 01/11/2012
+  location: New South Wales
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/05/Attachment-1-Public-Dissemination-Report-CSIRO-Plug-and-Play.pdf
+  markdown_filename: plug_and_play_solar_project_results.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61262
+  contributing_source_titles:
+  - Plug and Play Solar Project Results
+  contributing_sources:
+  - source_title: Plug and Play Solar Project Results
+    pdf_url: https://arena.gov.au/assets/2017/05/Attachment-1-Public-Dissemination-Report-CSIRO-Plug-and-Play.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/plug-and-play-solar-project-results/
+    markdown_filename: plug_and_play_solar_project_results.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-61263
+  source_title: Plug and Play Solar Project Results
+  publish_date: '2017-03-10'
+  project_name: Plug and Play Solar Project
+  what_happened: The project's skycam forecasting algorithm used only a 1-minute-ahead
+    forecast horizon trained on the first half of a 4-month dataset, with the second
+    half used for validation — a relatively short training window that may limit generalisability
+    across seasons or atypical weather patterns.
+  lesson_learnt: When training machine learning forecasting models on operational
+    data from remote sites, ensure training datasets cover sufficient seasonal and
+    meteorological variability — a 2-month training window may not capture enough
+    cloud pattern diversity to generalise well across all conditions, and longer data
+    collection periods or multi-site training should be planned from the outset.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: Both sites retained deployed equipment post-project completion
+    to allow ongoing data collection for further model development.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id011
+  - 12
+  evidence_excerpt: Skycam based imagery was used to produce a 1-minute ahead forecast
+    of solar power production by training a machine learning regression model using
+    measured power produced by the Weipa solar farm during the first half of the 4-month
+    data set available. The second half of the data was then used for validation.
+  confidence_note: The document does not explicitly flag data volume as a limitation;
+    this record is inferred from the short training window described. Classified as
+    minor rather than moderate given results were still technically successful.
+  source_url: https://arena.gov.au/knowledge-bank/plug-and-play-solar-project-results/
+  project_page_url: https://arena.gov.au/projects/plug-and-play-solar-power/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 10/03/2017
+  kb_year: '2012'
+  kb_associated_project: Plug and Play Solar Power
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.29m
+  total_project_value: $2.91m
+  lead_organisation: CSIRO
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 01/11/2012
+  location: New South Wales
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/05/Attachment-1-Public-Dissemination-Report-CSIRO-Plug-and-Play.pdf
+  markdown_filename: plug_and_play_solar_project_results.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61263
+  contributing_source_titles:
+  - Plug and Play Solar Project Results
+  contributing_sources:
+  - source_title: Plug and Play Solar Project Results
+    pdf_url: https://arena.gov.au/assets/2017/05/Attachment-1-Public-Dissemination-Report-CSIRO-Plug-and-Play.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/plug-and-play-solar-project-results/
+    markdown_filename: plug_and_play_solar_project_results.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-61264
+  source_title: Plug and Play Solar Project Results
+  publish_date: '2017-03-10'
+  project_name: Plug and Play Solar Project
+  what_happened: The ramp-rate reduction algorithm at Weipa produced a slight increase
+    in upward solar ramps because the algorithm did not implement upward ramp rate
+    limits — however, these remained within the response capabilities of a single
+    generator and were identified as easily correctable in future development.
+  lesson_learnt: Control algorithms for solar ramp management should include both
+    upward and downward ramp rate constraints from the outset — omitting upward ramp
+    limits in the initial implementation created a secondary ramp issue that, while
+    minor in this case, could be problematic at sites with less generator headroom.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The document notes the upward ramp issue 'can be easily corrected
+    in future development' — no correction was applied within the project scope.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id012
+  - 14
+  evidence_excerpt: There was a slight increase in upward ramps because the optimisation
+    algorithm does not yet implement any upward ramp rate limits, but these are still
+    well within the rate capabilities of a single generator, and this can be easily
+    corrected in future development.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/plug-and-play-solar-project-results/
+  project_page_url: https://arena.gov.au/projects/plug-and-play-solar-power/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 10/03/2017
+  kb_year: '2012'
+  kb_associated_project: Plug and Play Solar Power
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.29m
+  total_project_value: $2.91m
+  lead_organisation: CSIRO
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 01/11/2012
+  location: New South Wales
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/05/Attachment-1-Public-Dissemination-Report-CSIRO-Plug-and-Play.pdf
+  markdown_filename: plug_and_play_solar_project_results.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61264
+  contributing_source_titles:
+  - Plug and Play Solar Project Results
+  contributing_sources:
+  - source_title: Plug and Play Solar Project Results
+    pdf_url: https://arena.gov.au/assets/2017/05/Attachment-1-Public-Dissemination-Report-CSIRO-Plug-and-Play.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/plug-and-play-solar-project-results/
+    markdown_filename: plug_and_play_solar_project_results.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92

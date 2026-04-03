@@ -1,0 +1,225 @@
+- record_id: ARENA-DLV-72292
+  source_title: 'Stocktake: Database of Renewable Energy Grid Integration Projects
+    - First Edition Results'
+  publish_date: '2015'
+  project_name: 'SGSC: Distributed Generation and Storage'
+  what_happened: Ausgrid's SGSC distributed storage field trial found that batteries
+    scheduled to discharge across too wide a time window (4–9pm) diluted the peak-shaving
+    effect, and that battery charging cycles created a risk of generating a new peak
+    demand spike if deployed at scale.
+  lesson_learnt: Distributed battery storage dispatch windows must be tightly tuned
+    to actual peak tariff periods — scheduling discharge across a broad window dilutes
+    peak shaving benefit and risks creating secondary demand peaks from simultaneous
+    charging.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id001
+  - 523
+  - 524
+  evidence_excerpt: In the field trial, it was observed that the distributed storage
+    devices were scheduled to discharge between 4 pm and 9 pm, which was probably
+    too wide a time range and diluted the peak shaving effect of the batteries. There
+    is a risk that the battery charging cycles will create a new peak demand spike,
+    if a larger number of batteries are installed.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/stocktake-database-of-renewable-energy-grid-integration-projects-first-edition-results/
+  project_page_url: null
+  kb_category: Hybrid technologies
+  kb_publish_date: 1/01/2016
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2016/01/stocktake_database_results_dec_2015.pdf
+  markdown_filename: stocktake_database_of_renewable_energy_grid_integration_projects_first_edition_results.md
+  source_page_pdf: 523
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-72292
+  contributing_source_titles:
+  - 'Stocktake: Database of Renewable Energy Grid Integration Projects - First Edition
+    Results'
+  contributing_sources:
+  - source_title: 'Stocktake: Database of Renewable Energy Grid Integration Projects
+      - First Edition Results'
+    pdf_url: https://arena.gov.au/assets/2016/01/stocktake_database_results_dec_2015.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/stocktake-database-of-renewable-energy-grid-integration-projects-first-edition-results/
+    markdown_filename: stocktake_database_of_renewable_energy_grid_integration_projects_first_edition_results.md
+  arena_category:
+  - Hybrid technologies
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-72293
+  source_title: 'Stocktake: Database of Renewable Energy Grid Integration Projects
+    - First Edition Results'
+  publish_date: '2015'
+  project_name: 'SGSC: Distributed Generation and Storage'
+  what_happened: The SGSC distributed storage trial found that battery systems designed
+    to float-charge when fully charged consumed approximately 300W continuously during
+    non-discharge periods, adding costs rather than reducing them and requiring careful
+    alignment of discharge patterns with tariff periods.
+  lesson_learnt: Battery system float power consumption during non-discharge periods
+    is a hidden cost that must be factored into dispatch algorithms — discharge schedules
+    must be tightly aligned with peak tariff windows to avoid float losses eroding
+    economic benefit.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id002
+  - 524
+  evidence_excerpt: The design of the batteries means that, once charged, they must
+    operate in a float mode which consumes roughly 300 W of power, until discharged.
+    This battery 'float' power consumption during non-discharge periods add costs
+    rather than reduce cost.
+  confidence_note: Published 2015 — technical performance benchmarks for battery storage
+    may be superseded by subsequent developments in this rapidly evolving field.
+  source_url: https://arena.gov.au/knowledge-bank/stocktake-database-of-renewable-energy-grid-integration-projects-first-edition-results/
+  project_page_url: null
+  kb_category: Hybrid technologies
+  kb_publish_date: 1/01/2016
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2016/01/stocktake_database_results_dec_2015.pdf
+  markdown_filename: stocktake_database_of_renewable_energy_grid_integration_projects_first_edition_results.md
+  source_page_pdf: 524
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-72293
+  contributing_source_titles:
+  - 'Stocktake: Database of Renewable Energy Grid Integration Projects - First Edition
+    Results'
+  contributing_sources:
+  - source_title: 'Stocktake: Database of Renewable Energy Grid Integration Projects
+      - First Edition Results'
+    pdf_url: https://arena.gov.au/assets/2016/01/stocktake_database_results_dec_2015.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/stocktake-database-of-renewable-energy-grid-integration-projects-first-edition-results/
+    markdown_filename: stocktake_database_of_renewable_energy_grid_integration_projects_first_edition_results.md
+  arena_category:
+  - Hybrid technologies
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-72294
+  source_title: 'Stocktake: Database of Renewable Energy Grid Integration Projects
+    - First Edition Results'
+  publish_date: '2015'
+  project_name: 'SGSC: Distributed Generation and Storage'
+  what_happened: The SGSC trial found that PV distributed generation in its current
+    configuration had negligible impact on peak shaving, while fuel cell distributed
+    generation reduced peak demand in a reliable and predictable manner, and wind
+    turbine generation was not reliable or predictable enough to reduce peak load.
+  lesson_warnt: PV generation alone should not be relied upon for network peak demand
+    reduction — its generation profile does not align with evening peaks; dispatchable
+    technologies such as fuel cells or storage are required for reliable peak shaving.
+  lesson_learnt: PV generation alone should not be relied upon for network peak demand
+    reduction — its generation profile does not align with evening peaks; dispatchable
+    technologies such as fuel cells or storage are required for reliable peak shaving.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id003
+  - 524
+  evidence_excerpt: The current configuration of photovoltaic distributed generation
+    has negligible impact on peak shaving. The fuel cell distributed generation does
+    reduce the peak demand in a reliable and predictable manner. Wind turbine generation
+    distribution is not a reliable or predictable source of energy to reduce the peak
+    load.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/stocktake-database-of-renewable-energy-grid-integration-projects-first-edition-results/
+  project_page_url: null
+  kb_category: Hybrid technologies
+  kb_publish_date: 1/01/2016
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2016/01/stocktake_database_results_dec_2015.pdf
+  markdown_filename: stocktake_database_of_renewable_energy_grid_integration_projects_first_edition_results.md
+  source_page_pdf: 524
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-72294
+  contributing_source_titles:
+  - 'Stocktake: Database of Renewable Energy Grid Integration Projects - First Edition
+    Results'
+  contributing_sources:
+  - source_title: 'Stocktake: Database of Renewable Energy Grid Integration Projects
+      - First Edition Results'
+    pdf_url: https://arena.gov.au/assets/2016/01/stocktake_database_results_dec_2015.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/stocktake-database-of-renewable-energy-grid-integration-projects-first-edition-results/
+    markdown_filename: stocktake_database_of_renewable_energy_grid_integration_projects_first_edition_results.md
+  arena_category:
+  - Hybrid technologies
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.9

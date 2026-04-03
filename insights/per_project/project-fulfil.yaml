@@ -1,0 +1,1999 @@
+- record_id: ARENA-DLV-26901
+  source_title: Project Fulfil Lessons Learnt Report
+  publish_date: 2020-12
+  project_name: Project Fulfil (Ecoult/UltraBattery)
+  what_happened: Project Fulfil was mutually terminated without Ecoult achieving its
+    goals. The project aimed to commercialise a battery monitoring and management
+    system for lead-acid batteries in partial state of charge (PSoC) applications
+    but ran out of time and funding to establish the proof of performance and consistency
+    required.
+  lesson_learnt: The process of evolving from idea to a cost-effective, warrantable
+    product with all necessary standards compliance and certification must be the
+    dominant priority at each step — commercialisation before sufficient fundamental
+    understanding is established creates field support overheads that drain the resources
+    needed to complete development.
+  issue_severity: critical
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: discontinued/not progressed
+  secondary_failure_mode: commercial & market
+  intervention_note: EPM took a professional approach to stand behind Ecoult, support
+    the team to resolve outcomes with every field customer, and transfer some activities
+    and IP to EPM's battery engineering team.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id001
+  - 3
+  - 11
+  - 12
+  evidence_excerpt: circumstances have resulted in an outcome that will see Project
+    Fulfil mutually terminated without Ecoult achieving all of its goals.
+  confidence_note: outcome_class is discontinued/not progressed rather than knowledge
+    generated despite setback because the commercial entity was wound down, though
+    substantial knowledge was generated.
+  source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/project-fulfil/
+  kb_category: Battery storage, Hybrid technologies
+  kb_publish_date: 27/12/2020
+  kb_year: '2016'
+  kb_associated_project: Project Fulfil
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $3.08m
+  total_project_value: $10.79m
+  lead_organisation: Smart Storage Pty Ltd (trading as Ecoult)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 30/11/2016
+  location: New South Wales, Sydney, Victoria
+  project_partners: East Penn, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+  markdown_filename: project_fulfil_lessons_learnt_report.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26901
+  contributing_source_titles:
+  - Project Fulfil Lessons Learnt Report
+  contributing_sources:
+  - source_title: Project Fulfil Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+    markdown_filename: project_fulfil_lessons_learnt_report.md
+  arena_category:
+  - Battery storage
+  - Hybrid technologies
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-26902
+  source_title: Project Fulfil Lessons Learnt Report
+  publish_date: 2020-12
+  project_name: Project Fulfil (Ecoult/UltraBattery)
+  what_happened: Ecoult moved to commercial deployment of the 12V monobloc UltraBattery
+    system before understanding that cells inside monoblocs could drift relative to
+    each other under the power profiles being serviced, causing inconsistent field
+    performance and requiring high levels of ongoing field support.
+  lesson_learnt: Do not commercialise a battery architecture before verifying that
+    cells within multi-cell modules remain aligned under the intended field power
+    profiles — internal cell divergence inside monoblocs is not detectable from external
+    monitoring and creates irrecoverable performance degradation in PSoC operation.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Ecoult identified the root cause (cell variance inside monoblocs)
+    and decided to transition to a 2V architecture with individual cell management
+    to reduce support levels.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id002
+  - 10
+  - 11
+  evidence_excerpt: The move to 12V missed the risk that cell behaviour inside the
+    monobloc could present inconsistencies in performance depending on aspects of
+    how the systems were used. (given high levels of observation and attention 12V
+    systems could be coaxed/customized to adequate performance but with high overhead).
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/project-fulfil/
+  kb_category: Battery storage, Hybrid technologies
+  kb_publish_date: 27/12/2020
+  kb_year: '2016'
+  kb_associated_project: Project Fulfil
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $3.08m
+  total_project_value: $10.79m
+  lead_organisation: Smart Storage Pty Ltd (trading as Ecoult)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 30/11/2016
+  location: New South Wales, Sydney, Victoria
+  project_partners: East Penn, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+  markdown_filename: project_fulfil_lessons_learnt_report.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26902
+  contributing_source_titles:
+  - Project Fulfil Lessons Learnt Report
+  contributing_sources:
+  - source_title: Project Fulfil Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+    markdown_filename: project_fulfil_lessons_learnt_report.md
+  arena_category:
+  - Battery storage
+  - Hybrid technologies
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-26903
+  source_title: Project Fulfil Lessons Learnt Report
+  publish_date: 2020-12
+  project_name: Project Fulfil (Ecoult/UltraBattery)
+  what_happened: 'The verification and validation test of the new 2V UltraBattery
+    cell management system failed unexpectedly: cells required up to 90 hours of overcharge
+    to restore/sustain capacity under the test cycling pattern, making the system
+    unfit for commercial deployment. This blocked the major contract opportunity Ecoult
+    had established and ultimately led to discontinuation of Australian operations.'
+  lesson_learnt: Before accepting a large commercial contract contingent on a new
+    architecture, conduct verification and validation testing early enough that a
+    negative result leaves time for further development — a failed V&V test with no
+    runway remaining leaves the organisation with no viable path forward.
+  issue_severity: critical
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: discontinued/not progressed
+  secondary_failure_mode: poor scoping
+  intervention_note: EPM decided to discontinue support for Ecoult's Australian operations
+    and transfer the relevant IP and activities to EPM's battery engineering team
+    to continue the two fundamental cell-level work items identified during V&V.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id003
+  - 7
+  - 11
+  evidence_excerpt: During the verification and validation test we found that the
+    combination of the system and the new 2V cell did not meet the criteria. Most
+    directly it was found that very extensive overcharge periods (up to 90 hours)
+    were needed to restore/sustain the capacity of the cells when applied to the test
+    cycling pattern.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/project-fulfil/
+  kb_category: Battery storage, Hybrid technologies
+  kb_publish_date: 27/12/2020
+  kb_year: '2016'
+  kb_associated_project: Project Fulfil
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $3.08m
+  total_project_value: $10.79m
+  lead_organisation: Smart Storage Pty Ltd (trading as Ecoult)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 30/11/2016
+  location: New South Wales, Sydney, Victoria
+  project_partners: East Penn, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+  markdown_filename: project_fulfil_lessons_learnt_report.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26903
+  contributing_source_titles:
+  - Project Fulfil Lessons Learnt Report
+  contributing_sources:
+  - source_title: Project Fulfil Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+    markdown_filename: project_fulfil_lessons_learnt_report.md
+  arena_category:
+  - Battery storage
+  - Hybrid technologies
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-26904
+  source_title: Project Fulfil Lessons Learnt Report
+  publish_date: 2020-12
+  project_name: Project Fulfil (Ecoult/UltraBattery)
+  what_happened: Ecoult's original business plan assumed UltraBattery cell cost could
+    be reduced to no more than 1.2× the cost of a standard VRLA cell, but the actual
+    EPM cost multiplier reached approximately 2× (Exide cells at 1.4×). This cost
+    premium became a commercial showstopper when competing against lithium prices.
+  lesson_learnt: Validate cell cost reduction assumptions rigorously and early — if
+    the cost premium of a novel cell chemistry against incumbent alternatives cannot
+    be compressed to the business-plan target, the entire commercial model is at risk
+    regardless of technical performance gains.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: discontinued/not progressed
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: In later stages Ecoult identified that its system engineering
+    methods could be applied to lower-cost standard VRLA cells, offering a potential
+    pivot, but ran out of time to establish proof of this alternative path.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id004
+  - 3
+  evidence_excerpt: Our original business plan assumption was that we would get the
+    UltraBattery device cost to a target cost of not more than 1.2X the cost of a
+    standard valve regulated lead acid (VRLA) cell. In fact, the final EPM multiplier
+    (based on actual cost of manufacture and conventional margin) was closer to 2X.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/project-fulfil/
+  kb_category: Battery storage, Hybrid technologies
+  kb_publish_date: 27/12/2020
+  kb_year: '2016'
+  kb_associated_project: Project Fulfil
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $3.08m
+  total_project_value: $10.79m
+  lead_organisation: Smart Storage Pty Ltd (trading as Ecoult)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 30/11/2016
+  location: New South Wales, Sydney, Victoria
+  project_partners: East Penn, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+  markdown_filename: project_fulfil_lessons_learnt_report.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26904
+  contributing_source_titles:
+  - Project Fulfil Lessons Learnt Report
+  contributing_sources:
+  - source_title: Project Fulfil Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+    markdown_filename: project_fulfil_lessons_learnt_report.md
+  arena_category:
+  - Battery storage
+  - Hybrid technologies
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-26905
+  source_title: Project Fulfil Lessons Learnt Report
+  publish_date: 2020-12
+  project_name: Project Fulfil (Ecoult/UltraBattery)
+  what_happened: Ecoult was structured around commercialising a specific cell chemistry
+    (UltraBattery) rather than first defining a user story and then selecting the
+    best technology to meet it. This technology-first focus constrained the company's
+    ability to pivot when the UltraBattery approach encountered fundamental barriers.
+  lesson_learnt: Structure product development around a clearly defined user story
+    rather than a specific technology — a technology-first approach locks in assumptions
+    that may later prove incorrect and limits pivot options when technical barriers
+    emerge.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: concept/feasibility
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id005
+  - 9
+  evidence_excerpt: The effort was born trying to fit a specific technology to a market
+    rather than defining the market need via a user story and developing a solution.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/project-fulfil/
+  kb_category: Battery storage, Hybrid technologies
+  kb_publish_date: 27/12/2020
+  kb_year: '2016'
+  kb_associated_project: Project Fulfil
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $3.08m
+  total_project_value: $10.79m
+  lead_organisation: Smart Storage Pty Ltd (trading as Ecoult)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 30/11/2016
+  location: New South Wales, Sydney, Victoria
+  project_partners: East Penn, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+  markdown_filename: project_fulfil_lessons_learnt_report.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26905
+  contributing_source_titles:
+  - Project Fulfil Lessons Learnt Report
+  contributing_sources:
+  - source_title: Project Fulfil Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+    markdown_filename: project_fulfil_lessons_learnt_report.md
+  arena_category:
+  - Battery storage
+  - Hybrid technologies
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-26906
+  source_title: Project Fulfil Lessons Learnt Report
+  publish_date: 2020-12
+  project_name: Project Fulfil (Ecoult/UltraBattery)
+  what_happened: Commercialising the UltraFlex system across a wide range of small,
+    ad hoc applications with different power profiles created a large field support
+    burden. Managing diverse inverter integrations and maintaining field performance
+    consumed resources that were needed for the fundamental technical development
+    required to achieve performance consistency.
+  lesson_learnt: Avoid broad commercialisation across diverse small-system configurations
+    before achieving stable, consistent performance — the support overhead of heterogeneous
+    field deployments directly competes with the engineering resources needed to complete
+    core technology development.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: internal governance/resourcing
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: execution & logistics
+  intervention_note: Business development teams found market segments where customers
+    used multiple UltraFlex units in the same application to lessen individual support
+    needs, and Ecoult refocused on the 2V system for a single large-volume customer
+    commitment.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id006
+  - 10
+  - 11
+  evidence_excerpt: This proved to be a sensible decision from a market positioning
+    perspective but resulted in the need to apportion a lot of the available Ecoult
+    resource to finding ways to integrate the UltraFlex with inverters, make systems
+    work as intended, and to maintain performance in the field for customers. This
+    need became a resource soak on Ecoult, conflicting with the parallel effort needed
+    to attain the minimum consistent performance level required by the market.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/project-fulfil/
+  kb_category: Battery storage, Hybrid technologies
+  kb_publish_date: 27/12/2020
+  kb_year: '2016'
+  kb_associated_project: Project Fulfil
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $3.08m
+  total_project_value: $10.79m
+  lead_organisation: Smart Storage Pty Ltd (trading as Ecoult)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 30/11/2016
+  location: New South Wales, Sydney, Victoria
+  project_partners: East Penn, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+  markdown_filename: project_fulfil_lessons_learnt_report.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26906
+  contributing_source_titles:
+  - Project Fulfil Lessons Learnt Report
+  contributing_sources:
+  - source_title: Project Fulfil Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+    markdown_filename: project_fulfil_lessons_learnt_report.md
+  arena_category:
+  - Battery storage
+  - Hybrid technologies
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-26907
+  source_title: Project Fulfil Lessons Learnt Report
+  publish_date: 2020-12
+  project_name: Project Fulfil (Ecoult/UltraBattery)
+  what_happened: Project Fulfil's laboratory testing and advanced analytics work —
+    which proved critical to understanding the performance and consistency challenges
+    — was implemented during the project as catch-up rather than being established
+    at the outset of the Ecoult journey before commercialisation began.
+  lesson_learnt: Establish rigorous laboratory testing capabilities and advanced data
+    analytics for battery characterisation before commencing commercialisation — implementing
+    these capabilities as remediation after field problems emerge is less effective
+    and more costly than using them to de-risk the technology upfront.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: concept/feasibility
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id007
+  - 3
+  evidence_excerpt: with 20/20 hindsight, the workplan of Project Fulfil, the testing
+    capabilities Ecoult established in Macquarie Park, and the advanced data analytics
+    techniques that we applied to the challenge should have been put in place by Ecoult
+    earlier in its journey, rather than being used for catch-up.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/project-fulfil/
+  kb_category: Battery storage, Hybrid technologies
+  kb_publish_date: 27/12/2020
+  kb_year: '2016'
+  kb_associated_project: Project Fulfil
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $3.08m
+  total_project_value: $10.79m
+  lead_organisation: Smart Storage Pty Ltd (trading as Ecoult)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 30/11/2016
+  location: New South Wales, Sydney, Victoria
+  project_partners: East Penn, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+  markdown_filename: project_fulfil_lessons_learnt_report.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26907
+  contributing_source_titles:
+  - Project Fulfil Lessons Learnt Report
+  contributing_sources:
+  - source_title: Project Fulfil Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+    markdown_filename: project_fulfil_lessons_learnt_report.md
+  arena_category:
+  - Battery storage
+  - Hybrid technologies
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-26908
+  source_title: Project Fulfil Lessons Learnt Report
+  publish_date: 2020-12
+  project_name: Project Fulfil (Ecoult/UltraBattery)
+  what_happened: Lead-acid batteries in PSoC operation require overcharge to be administered
+    at the individual cell level — each cell requires a different amount and duration
+    of overcharge for optimal maintenance. String-level overcharge using standard
+    industry equalization practices was insufficient to maintain cell alignment and
+    capacity, and excessive or inadequate overcharge contributed to degradation.
+  lesson_learnt: 'For lead-acid systems in PSoC applications, overcharge maintenance
+    must be cell-specific: design systems that can administer overcharge individually
+    to each cell in the string at the optimum level for that cell, rather than applying
+    a uniform string-level equalization charge.'
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Ecoult developed a 2V cell management system (CMS) that bypasses
+    current selectively to individually align cells in strings, providing the means
+    to administer cell-specific overcharge.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id008
+  - 6
+  - 7
+  - 8
+  evidence_excerpt: The lesson learnt in this is that, as well as the cell being appropriate
+    for the application in terms of its resistance to accumulation of sulphation,
+    whatever process is needed for overcharge maintenance (regardless of cell type)
+    must also be understood and appropriate.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/project-fulfil/
+  kb_category: Battery storage, Hybrid technologies
+  kb_publish_date: 27/12/2020
+  kb_year: '2016'
+  kb_associated_project: Project Fulfil
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $3.08m
+  total_project_value: $10.79m
+  lead_organisation: Smart Storage Pty Ltd (trading as Ecoult)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 30/11/2016
+  location: New South Wales, Sydney, Victoria
+  project_partners: East Penn, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+  markdown_filename: project_fulfil_lessons_learnt_report.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26908
+  contributing_source_titles:
+  - Project Fulfil Lessons Learnt Report
+  contributing_sources:
+  - source_title: Project Fulfil Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+    markdown_filename: project_fulfil_lessons_learnt_report.md
+  arena_category:
+  - Battery storage
+  - Hybrid technologies
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-26909
+  source_title: Project Fulfil Lessons Learnt Report
+  publish_date: 2020-12
+  project_name: Project Fulfil (Ecoult/UltraBattery)
+  what_happened: Cells within 12V monoblocs progressively diversified in state during
+    cycling in PSoC applications. Because external monitoring only reported the average
+    response across the six cells in each monobloc, control algorithms were blind
+    to individual cell voltage excursions, leading to unseen secondary reactions and
+    accelerated degradation.
+  lesson_learnt: For lead-acid PSoC applications, individual cell monitoring and management
+    within multi-cell modules is essential — string-level or monobloc-level monitoring
+    masks internal cell divergence and makes it impossible to prevent secondary degradation
+    reactions.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: data & measurement
+  intervention_note: Ecoult developed a 2V BMS with individual cell charge control
+    and automated commissioning charge, and migrated all product development to 2V
+    systems.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id009
+  - 39
+  - 40
+  evidence_excerpt: To achieve commercially competitive performance and longevity
+    in Partial State of Charge (PSoC) applications, individual cell monitoring, management
+    and maintenance are essential... cells within monoblocs progressively diversify
+    during cycling between refreshes.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/project-fulfil/
+  kb_category: Battery storage, Hybrid technologies
+  kb_publish_date: 27/12/2020
+  kb_year: '2016'
+  kb_associated_project: Project Fulfil
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $3.08m
+  total_project_value: $10.79m
+  lead_organisation: Smart Storage Pty Ltd (trading as Ecoult)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 30/11/2016
+  location: New South Wales, Sydney, Victoria
+  project_partners: East Penn, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+  markdown_filename: project_fulfil_lessons_learnt_report.md
+  source_page_pdf: 39
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26909
+  contributing_source_titles:
+  - Project Fulfil Lessons Learnt Report
+  contributing_sources:
+  - source_title: Project Fulfil Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+    markdown_filename: project_fulfil_lessons_learnt_report.md
+  arena_category:
+  - Battery storage
+  - Hybrid technologies
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-26910
+  source_title: Project Fulfil Lessons Learnt Report
+  publish_date: 2020-12
+  project_name: Project Fulfil (Ecoult/UltraBattery)
+  what_happened: Software development for the UltraFlex system involved multiple teams
+    working on separate integrated components. Inadequate integration management —
+    relying only on weekly meetings between team leaders — meant integration points
+    were delayed, bugs emerged late, and significant rework was required.
+  lesson_learnt: When multiple teams are developing integrated software components,
+    mandate scheduled integration sprints (not just team-leader meetings) throughout
+    the project; assign a dedicated systems engineer to own the integration process;
+    and implement automated regression testing to catch inadvertent cross-team impacts
+    early.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: execution & logistics
+  intervention_note: Ecoult implemented fortnightly sprints with a unified deliverable
+    forcing cross-team communication, and introduced daily standup meetings during
+    testing phases to accelerate bug resolution.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id010
+  - 19
+  - 20
+  evidence_excerpt: A standard Project Management approach of weekly meetings between
+    team leaders was used, however was not adequate to initiate the integration process
+    earlier. There must be an additional process to manage the integration phases.
+    We implemented fortnightly sprints, where at the end of each sprint a new software
+    version is delivered that can be deployed to our pilot sites.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/project-fulfil/
+  kb_category: Battery storage, Hybrid technologies
+  kb_publish_date: 27/12/2020
+  kb_year: '2016'
+  kb_associated_project: Project Fulfil
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $3.08m
+  total_project_value: $10.79m
+  lead_organisation: Smart Storage Pty Ltd (trading as Ecoult)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 30/11/2016
+  location: New South Wales, Sydney, Victoria
+  project_partners: East Penn, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+  markdown_filename: project_fulfil_lessons_learnt_report.md
+  source_page_pdf: 20
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26910
+  contributing_source_titles:
+  - Project Fulfil Lessons Learnt Report
+  contributing_sources:
+  - source_title: Project Fulfil Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+    markdown_filename: project_fulfil_lessons_learnt_report.md
+  arena_category:
+  - Battery storage
+  - Hybrid technologies
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-26911
+  source_title: Project Fulfil Lessons Learnt Report
+  publish_date: 2020-12
+  project_name: Project Fulfil (Ecoult/UltraBattery)
+  what_happened: Each power electronics component (inverter) that Ecoult integrated
+    with required significant bespoke development because both Ecoult's interface
+    and the inverter's interface were unique. The control algorithms of the inverter
+    constrained how Ecoult could control the batteries, and there was no standardised
+    interface across manufacturers.
+  lesson_learnt: Identify and standardise on a single inverter interface that can
+    be leveraged across the greatest number of third-party power electronics components
+    — custom per-inverter integrations are a significant ongoing resource drain and
+    limit the flexibility of battery control.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id011
+  - 19
+  evidence_excerpt: Each power electronic component we interface with requires significant
+    development, because our interface is unique and the power electronic interface
+    is unique. The interfaces and battery control methods in power electronics will
+    limit the flexibility in how we can control the batteries.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/project-fulfil/
+  kb_category: Battery storage, Hybrid technologies
+  kb_publish_date: 27/12/2020
+  kb_year: '2016'
+  kb_associated_project: Project Fulfil
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $3.08m
+  total_project_value: $10.79m
+  lead_organisation: Smart Storage Pty Ltd (trading as Ecoult)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 30/11/2016
+  location: New South Wales, Sydney, Victoria
+  project_partners: East Penn, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+  markdown_filename: project_fulfil_lessons_learnt_report.md
+  source_page_pdf: 19
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26911
+  contributing_source_titles:
+  - Project Fulfil Lessons Learnt Report
+  contributing_sources:
+  - source_title: Project Fulfil Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+    markdown_filename: project_fulfil_lessons_learnt_report.md
+  arena_category:
+  - Battery storage
+  - Hybrid technologies
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-26912
+  source_title: Project Fulfil Lessons Learnt Report
+  publish_date: 2020-12
+  project_name: Project Fulfil (Ecoult/UltraBattery)
+  what_happened: When upgrading the UltraFlex controller from a FitPC to a Single
+    Board Computer (BeagleBone), the new hardware failed electromagnetic compatibility
+    (EMC) compliance testing despite the previous version being compliant. Late-stage
+    hardware changes required full system-level retesting and caused delays to the
+    manufacturing schedule.
+  lesson_learnt: Freeze the hardware design as early as possible and begin EMC testing
+    at the system level as soon as the design is stable — last-minute design changes
+    require full system retesting and can delay manufacturing release; allow explicit
+    schedule contingency for EMC rectification at the end of the product delivery
+    schedule.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: unvalidated technical assumptions
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: execution & logistics
+  intervention_note: Ecoult resolved to freeze the design earlier in future projects
+    and allow explicit schedule contingency for EMC compliance issues and rectification.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id012
+  - 21
+  - 22
+  evidence_excerpt: Although the previous version of UltraFlex using a FitPC was compliant,
+    the new version with the Single Board Computer (BeagleBone) showed failures...
+    last minute system design changes will require testing the entire system again.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/project-fulfil/
+  kb_category: Battery storage, Hybrid technologies
+  kb_publish_date: 27/12/2020
+  kb_year: '2016'
+  kb_associated_project: Project Fulfil
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $3.08m
+  total_project_value: $10.79m
+  lead_organisation: Smart Storage Pty Ltd (trading as Ecoult)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 30/11/2016
+  location: New South Wales, Sydney, Victoria
+  project_partners: East Penn, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+  markdown_filename: project_fulfil_lessons_learnt_report.md
+  source_page_pdf: 21
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26912
+  contributing_source_titles:
+  - Project Fulfil Lessons Learnt Report
+  contributing_sources:
+  - source_title: Project Fulfil Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+    markdown_filename: project_fulfil_lessons_learnt_report.md
+  arena_category:
+  - Battery storage
+  - Hybrid technologies
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-26913
+  source_title: Project Fulfil Lessons Learnt Report
+  publish_date: 2020-12
+  project_name: Project Fulfil (Ecoult/UltraBattery — ARENA Lab)
+  what_happened: When establishing the Macquarie Park laboratory, Ecoult discovered
+    late in contract negotiation that the basement space classified as warehouse —
+    not laboratory — requiring a development approval process. The building switchboard
+    also failed to meet current standards, requiring an upgrade that added cost and
+    delayed the timeline.
+  lesson_learnt: Before committing to a laboratory lease, conduct detailed due diligence
+    on building zoning and classification, and engage an experienced commercial electrician
+    to inspect the main switchboard — relying on agent representations without independent
+    verification risks discovering disqualifying issues only after contract execution.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: technology vendor
+  delay_category: approvals/regulatory
+  failure_mode: poor scoping
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Ecoult applied for a development approval to change the function
+    of the space and upgraded the building switchboard to meet current standards.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id013
+  - 23
+  - 24
+  evidence_excerpt: Despite clear communication of our space and laboratory requirements
+    to our agent, we did not discover the building (zoning) limitations until late
+    in the contract negotiation stage... the building switchboard did not meet current
+    standards and needed to be upgraded adding to our costs and delaying our timeline.
+  confidence_note: 'project_scale_band reconciled to ''first commercial/FOAK'' from:
+    first commercial/FOAK (20/26), demonstration (6/26)'
+  source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/project-fulfil/
+  kb_category: Battery storage, Hybrid technologies
+  kb_publish_date: 27/12/2020
+  kb_year: '2016'
+  kb_associated_project: Project Fulfil
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $3.08m
+  total_project_value: $10.79m
+  lead_organisation: Smart Storage Pty Ltd (trading as Ecoult)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 30/11/2016
+  location: New South Wales, Sydney, Victoria
+  project_partners: East Penn, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+  markdown_filename: project_fulfil_lessons_learnt_report.md
+  source_page_pdf: 23
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26913
+  contributing_source_titles:
+  - Project Fulfil Lessons Learnt Report
+  contributing_sources:
+  - source_title: Project Fulfil Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+    markdown_filename: project_fulfil_lessons_learnt_report.md
+  arena_category:
+  - Battery storage
+  - Hybrid technologies
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: cost overrun
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-26914
+  source_title: Project Fulfil Lessons Learnt Report
+  publish_date: 2020-12
+  project_name: Project Fulfil (Ecoult/UltraBattery — ARENA Lab)
+  what_happened: Constructing the battery test room revealed a conflict between the
+    Building Code of Australia (requiring a 120-minute fire-rated enclosure for batteries
+    over 24V in commercial buildings) and the proposed AS5139 standard (requiring
+    only 60-minute enclosures). Builders with battery room experience were scarce,
+    and the regulatory confusion added time and cost to construction.
+  lesson_learnt: Engage a builder with demonstrated battery room experience and clarify
+    the applicable fire rating standard (BCA vs AS5139) with the certifier before
+    beginning construction — conflicting standards and inexperienced builders create
+    avoidable cost and schedule overruns.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: construction/installation
+  proponent_type: technology vendor
+  delay_category: construction/installation
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: execution & logistics
+  intervention_note: Ecoult constructed the battery room compliant with the more stringent
+    BCA 120/120/120 requirement and committed to participating more actively in industry
+    discussions to clarify battery installation standards.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id014
+  - 25
+  - 26
+  evidence_excerpt: BCA's 120-minute fire rating limit (FRL) for any type of battery
+    greater than 24V in commercial buildings in fact conflicts with an alternate proposed
+    standard, AS5139, which proposes a 60-minute fire rating. This confusion added
+    time and costs to the process. A significant challenge when building our battery
+    room was finding builders with battery room experience.
+  confidence_note: 'project_scale_band reconciled to ''first commercial/FOAK'' from:
+    first commercial/FOAK (20/26), demonstration (6/26)'
+  source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/project-fulfil/
+  kb_category: Battery storage, Hybrid technologies
+  kb_publish_date: 27/12/2020
+  kb_year: '2016'
+  kb_associated_project: Project Fulfil
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $3.08m
+  total_project_value: $10.79m
+  lead_organisation: Smart Storage Pty Ltd (trading as Ecoult)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 30/11/2016
+  location: New South Wales, Sydney, Victoria
+  project_partners: East Penn, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+  markdown_filename: project_fulfil_lessons_learnt_report.md
+  source_page_pdf: 25
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26914
+  contributing_source_titles:
+  - Project Fulfil Lessons Learnt Report
+  contributing_sources:
+  - source_title: Project Fulfil Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+    markdown_filename: project_fulfil_lessons_learnt_report.md
+  arena_category:
+  - Battery storage
+  - Hybrid technologies
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: cost overrun
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-26915
+  source_title: Project Fulfil Lessons Learnt Report
+  publish_date: 2020-12
+  project_name: Project Fulfil (Ecoult/UltraBattery — field installations)
+  what_happened: At one grid-connected customer site, the battery system was installed
+    on a single phase of a three-phase supply to maximise solar self-consumption.
+    This caused outages when backed-up loads exceeded inverter capacity, created problems
+    with three-phase equipment downstream, and resulted in more frequent grid disconnections
+    than anticipated due to power quality issues.
+  lesson_learnt: At system design stage, explicitly model backup load requirements
+    separately from grid-connect optimisation goals — single-phase battery installations
+    on three-phase sites create synchronisation and phase-loss risks for three-phase
+    equipment, and backup capacity must be sized for actual load not just primary
+    use-case load.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: Ecoult worked with the installer to minimise disconnections and
+    helped upgrade the system with additional batteries; for future projects Ecoult
+    recommended using an external CT and contactor to separate backed-up loads from
+    grid-connect managed loads.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id015
+  - 27
+  - 28
+  evidence_excerpt: on one site the battery was installed at the main meter board
+    and connected to the single phase with the highest load on a 3-phase site... The
+    load (energy and max power) on the backed-up phase was often greater than the
+    battery and inverter could handle, causing outages.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/project-fulfil/
+  kb_category: Battery storage, Hybrid technologies
+  kb_publish_date: 27/12/2020
+  kb_year: '2016'
+  kb_associated_project: Project Fulfil
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $3.08m
+  total_project_value: $10.79m
+  lead_organisation: Smart Storage Pty Ltd (trading as Ecoult)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 30/11/2016
+  location: New South Wales, Sydney, Victoria
+  project_partners: East Penn, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+  markdown_filename: project_fulfil_lessons_learnt_report.md
+  source_page_pdf: 27
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26915
+  contributing_source_titles:
+  - Project Fulfil Lessons Learnt Report
+  contributing_sources:
+  - source_title: Project Fulfil Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+    markdown_filename: project_fulfil_lessons_learnt_report.md
+  arena_category:
+  - Battery storage
+  - Hybrid technologies
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-26916
+  source_title: Project Fulfil Lessons Learnt Report
+  publish_date: 2020-12
+  project_name: Project Fulfil (Ecoult/UltraBattery — field installations)
+  what_happened: AS4777:2015 requires inverters to shut down when grid voltage exceeds
+    255V. Ecoult observed grid voltage frequently exceeding 255V at customer sites,
+    causing unnecessary system trips. The standard did not account for energy storage
+    systems that may have been actively helping to suppress voltage at the time of
+    disconnection.
+  lesson_learnt: When deploying battery storage systems on networks with frequent
+    voltage excursions, set grid voltage trip settings at the maximum allowable range,
+    and engage with the relevant standard-setting process — AS4777 should mandate
+    that storage systems cease exporting above 255V rather than fully disconnecting,
+    to avoid voltage issues worsening after disconnection.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Ecoult set grid voltage trip settings at the maximum range allowable
+    to minimise system disconnections and committed to participating in standards
+    discussions.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id016
+  - 28
+  evidence_excerpt: The recently released AS4777:2015 requires inverters to shut down
+    when grid voltage exceeds 255V... We have noticed grid voltage to often be over
+    255V on a number of our sites, causing system trips. It appears this rule has
+    not been made with energy storage in mind.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/project-fulfil/
+  kb_category: Battery storage, Hybrid technologies
+  kb_publish_date: 27/12/2020
+  kb_year: '2016'
+  kb_associated_project: Project Fulfil
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $3.08m
+  total_project_value: $10.79m
+  lead_organisation: Smart Storage Pty Ltd (trading as Ecoult)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 30/11/2016
+  location: New South Wales, Sydney, Victoria
+  project_partners: East Penn, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+  markdown_filename: project_fulfil_lessons_learnt_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26916
+  contributing_source_titles:
+  - Project Fulfil Lessons Learnt Report
+  contributing_sources:
+  - source_title: Project Fulfil Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+    markdown_filename: project_fulfil_lessons_learnt_report.md
+  arena_category:
+  - Battery storage
+  - Hybrid technologies
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-26917
+  source_title: Project Fulfil Lessons Learnt Report
+  publish_date: 2020-12
+  project_name: Project Fulfil (Ecoult/UltraBattery — UFGA/BMS-Inverter integration)
+  what_happened: Testing of integrated BMS/inverter systems revealed that manual testing
+    of all possible operating scenarios was impractical and that bugs introduced when
+    fixing specific issues would inadvertently affect other operating modes. Developer-led
+    testing without independent test execution also allowed systematic gaps.
+  lesson_learnt: Automated regression testing of integrated BMS/inverter systems is
+    essential — manual testing cannot cover the full operating scenario space, and
+    changes by development teams must be verified by an independent test function
+    to catch inadvertent regressions before field deployment.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: data & measurement
+  intervention_note: Ecoult implemented automated testing using real value manipulation
+    to allow efficient and robust regression testing as both the BMS and inverter
+    products matured.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id017
+  - 29
+  - 30
+  evidence_excerpt: As battery/inverter system have many different use cases, it is
+    difficult and cumbersome to manually test all possible scenarios. Automation is
+    a good method of being able to change the possible operating scenarios and ensuring
+    the system operates as intended. The testing should be done independently from
+    the developers.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/project-fulfil/
+  kb_category: Battery storage, Hybrid technologies
+  kb_publish_date: 27/12/2020
+  kb_year: '2016'
+  kb_associated_project: Project Fulfil
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $3.08m
+  total_project_value: $10.79m
+  lead_organisation: Smart Storage Pty Ltd (trading as Ecoult)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 30/11/2016
+  location: New South Wales, Sydney, Victoria
+  project_partners: East Penn, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+  markdown_filename: project_fulfil_lessons_learnt_report.md
+  source_page_pdf: 29
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26917
+  contributing_source_titles:
+  - Project Fulfil Lessons Learnt Report
+  contributing_sources:
+  - source_title: Project Fulfil Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+    markdown_filename: project_fulfil_lessons_learnt_report.md
+  arena_category:
+  - Battery storage
+  - Hybrid technologies
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-26918
+  source_title: Project Fulfil Lessons Learnt Report
+  publish_date: 2020-12
+  project_name: Project Fulfil (Ecoult/UltraBattery — Hosur Project)
+  what_happened: Partnering with an external company experienced in traditional lead-acid
+    batteries but not in the UltraBattery system led to difficulties in field implementation
+    of the inverter/EMS integration. Differing levels of technical understanding across
+    commercial and engineering stakeholders, combined with time-zone communication
+    barriers, caused misaligned expectations and conflicting customer advice.
+  lesson_learnt: When transferring complex battery technology to a partner, establish
+    explicit rules of engagement covering scope, roles, responsibilities, and customer
+    engagement protocols at the commercial and technical levels before deployment
+    — and invest in face-to-face workshops and detailed documentation to close the
+    knowledge gap.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: construction/installation
+  proponent_type: technology vendor
+  delay_category: stakeholder/land/community
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated integration
+  intervention_note: Ecoult arranged regular visits, agreed a method of engagement
+    for future projects, and invited the partner to the local office for training,
+    workshops, and information sharing.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id018
+  - 31
+  - 32
+  evidence_excerpt: Partnering with other companies which are in the same business
+    but at a different level of understanding of the work involved to integrate a
+    complex inverter/EMS system can lead to difficulties when implementing field projects.
+  confidence_note: 'project_scale_band reconciled to ''first commercial/FOAK'' from:
+    first commercial/FOAK (20/26), demonstration (6/26)'
+  source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/project-fulfil/
+  kb_category: Battery storage, Hybrid technologies
+  kb_publish_date: 27/12/2020
+  kb_year: '2016'
+  kb_associated_project: Project Fulfil
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $3.08m
+  total_project_value: $10.79m
+  lead_organisation: Smart Storage Pty Ltd (trading as Ecoult)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 30/11/2016
+  location: New South Wales, Sydney, Victoria
+  project_partners: East Penn, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+  markdown_filename: project_fulfil_lessons_learnt_report.md
+  source_page_pdf: 31
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26918
+  contributing_source_titles:
+  - Project Fulfil Lessons Learnt Report
+  contributing_sources:
+  - source_title: Project Fulfil Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+    markdown_filename: project_fulfil_lessons_learnt_report.md
+  arena_category:
+  - Battery storage
+  - Hybrid technologies
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-26919
+  source_title: Project Fulfil Lessons Learnt Report
+  publish_date: 2020-12
+  project_name: Project Fulfil (Ecoult/UltraBattery)
+  what_happened: Refresh protocols used across UltraBattery deployments were found
+    to be insufficient — they did not reliably bring all cells to top of charge or
+    correct plate misalignment, resulting in progressive capacity loss and shortened
+    battery life across multiple sites.
+  lesson_learnt: Develop, validate, and mandate a rigorous refresh protocol that brings
+    all cells to top of charge with minimum secondary reactions before deploying a
+    battery system commercially — treat any implementation that cannot achieve a good
+    refresh (e.g. due to insufficient energy source availability) as a formal project
+    risk requiring senior-level approval.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Ecoult committed to developing a good refresh protocol, exposing
+    conclusions to internal stakeholders, and designing self-configuring refresh methods
+    into the 2V CMS product.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id019
+  - 33
+  evidence_excerpt: Good refreshes are necessary to maintain BESS performance and
+    longevity. A 'good' refresh is one that brings all cells to top of charge, corrects
+    misalignment (charge imbalance) of plates, and does so with the minimum of forced
+    secondary reactions. Our refresh protocols to date have not been sufficient.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/project-fulfil/
+  kb_category: Battery storage, Hybrid technologies
+  kb_publish_date: 27/12/2020
+  kb_year: '2016'
+  kb_associated_project: Project Fulfil
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $3.08m
+  total_project_value: $10.79m
+  lead_organisation: Smart Storage Pty Ltd (trading as Ecoult)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 30/11/2016
+  location: New South Wales, Sydney, Victoria
+  project_partners: East Penn, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+  markdown_filename: project_fulfil_lessons_learnt_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26919
+  contributing_source_titles:
+  - Project Fulfil Lessons Learnt Report
+  contributing_sources:
+  - source_title: Project Fulfil Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+    markdown_filename: project_fulfil_lessons_learnt_report.md
+  arena_category:
+  - Battery storage
+  - Hybrid technologies
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-26920
+  source_title: Project Fulfil Lessons Learnt Report
+  publish_date: 2020-12
+  project_name: Project Fulfil (Ecoult/UltraBattery — IT Power project)
+  what_happened: The state-of-charge (SoC) algorithm deployed on the IT Power external
+    test project was found to be unsuitable for the specific cycling profile used
+    in that test. The bespoke engineering approach — driven by an incomplete product
+    and unclear requirements — meant the system did not receive the standard KPI assessment
+    and monitoring applied to other sites.
+  lesson_learnt: External test projects should be run on standard released product
+    wherever possible so they benefit from the same control algorithm updates and
+    monitoring as other deployments — if a profile substantially departs from normal,
+    validate SoC algorithm accuracy in-house against that profile before external
+    deployment.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id020
+  - 34
+  evidence_excerpt: The SoC algorithm used on the IT Power external test project may
+    not have been suitable for the profile being used... Undertake external test projects
+    on standard product - so they get the standard routine KPI assessment, and human
+    monitoring, of other systems.
+  confidence_note: 'project_scale_band reconciled to ''first commercial/FOAK'' from:
+    first commercial/FOAK (20/26), demonstration (6/26)'
+  source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/project-fulfil/
+  kb_category: Battery storage, Hybrid technologies
+  kb_publish_date: 27/12/2020
+  kb_year: '2016'
+  kb_associated_project: Project Fulfil
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $3.08m
+  total_project_value: $10.79m
+  lead_organisation: Smart Storage Pty Ltd (trading as Ecoult)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 30/11/2016
+  location: New South Wales, Sydney, Victoria
+  project_partners: East Penn, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+  markdown_filename: project_fulfil_lessons_learnt_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26920
+  contributing_source_titles:
+  - Project Fulfil Lessons Learnt Report
+  contributing_sources:
+  - source_title: Project Fulfil Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+    source_pages: *id020
+    source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+    markdown_filename: project_fulfil_lessons_learnt_report.md
+  arena_category:
+  - Battery storage
+  - Hybrid technologies
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-26921
+  source_title: Project Fulfil Lessons Learnt Report
+  publish_date: 2020-12
+  project_name: Project Fulfil (Ecoult/UltraBattery)
+  what_happened: One-off, small-volume, customised battery systems built for various
+    projects required disproportionate engineering and maintenance effort — similar
+    personnel overhead to large systems but without commensurate revenue, and lacking
+    the systematic verification and validation applied to standard products.
+  lesson_learnt: Limit custom one-off systems to situations where no standard product
+    alternative exists, require senior management sign-off for departures from standard
+    product, and ensure the corporate goals being served justify the overhead — custom
+    small systems carry the same support burden as large standard ones but without
+    the scale benefits.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: internal governance/resourcing
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: execution & logistics
+  intervention_note: Ecoult resolved to base external test systems on standard hardware
+    and software wherever possible, with departures identified, reviewed, and signed
+    off.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id021
+  - 35
+  - 36
+  evidence_excerpt: One-off or small volume, small-scale, custom systems require significant
+    effort to design and maintain. They often do not inherit the advantages of scale
+    and systematic verification and validation as apply to a standard product... Small
+    customised systems require similar personnel overhead to a large system, possibly
+    without the profit/income to justify it.
+  confidence_note: 'project_scale_band reconciled to ''first commercial/FOAK'' from:
+    first commercial/FOAK (20/26), demonstration (6/26)'
+  source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/project-fulfil/
+  kb_category: Battery storage, Hybrid technologies
+  kb_publish_date: 27/12/2020
+  kb_year: '2016'
+  kb_associated_project: Project Fulfil
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $3.08m
+  total_project_value: $10.79m
+  lead_organisation: Smart Storage Pty Ltd (trading as Ecoult)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 30/11/2016
+  location: New South Wales, Sydney, Victoria
+  project_partners: East Penn, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+  markdown_filename: project_fulfil_lessons_learnt_report.md
+  source_page_pdf: 35
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26921
+  contributing_source_titles:
+  - Project Fulfil Lessons Learnt Report
+  contributing_sources:
+  - source_title: Project Fulfil Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+    source_pages: *id021
+    source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+    markdown_filename: project_fulfil_lessons_learnt_report.md
+  arena_category:
+  - Battery storage
+  - Hybrid technologies
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-26922
+  source_title: Project Fulfil Lessons Learnt Report
+  publish_date: 2020-12
+  project_name: Project Fulfil (Ecoult/UltraBattery — external test projects)
+  what_happened: Independent test laboratories (IT Power, CSIRO, SANDIA) typically
+    wished to test bare batteries without Ecoult's battery management system. Test
+    protocols sometimes required features (e.g. power command following) that standard
+    inverters did not support, leading Ecoult to build custom control systems. These
+    bespoke systems did not incorporate all necessary management technology and produced
+    results unrepresentative of the commercial product.
+  lesson_learnt: Independent battery tests should be carried out on commercially released
+    standard systems — not batteries in custom test configurations; work with test
+    laboratories to embed the manufacturer's BMS into the test setup, and equip the
+    commercial product with any special test-mode features required, to ensure results
+    are representative.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: Ecoult resolved to work with test laboratories to build test
+    systems around Ecoult's standard BMS and to equip the product with special features
+    for test purposes, avoiding submission of bare batteries for arbitrary testing.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id022
+  - 37
+  - 38
+  evidence_excerpt: independent tests should be carried out on commercially released
+    standard systems, not batteries in custom test configurations... Bespoke systems
+    may not incorporate all of the necessary technology, may not go through the same
+    exhaustive verification processes as a commercial product, and likely will not
+    be kept updated with improvements in the commercial product.
+  confidence_note: 'project_scale_band reconciled to ''first commercial/FOAK'' from:
+    first commercial/FOAK (20/26), demonstration (6/26)'
+  source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/project-fulfil/
+  kb_category: Battery storage, Hybrid technologies
+  kb_publish_date: 27/12/2020
+  kb_year: '2016'
+  kb_associated_project: Project Fulfil
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $3.08m
+  total_project_value: $10.79m
+  lead_organisation: Smart Storage Pty Ltd (trading as Ecoult)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 30/11/2016
+  location: New South Wales, Sydney, Victoria
+  project_partners: East Penn, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+  markdown_filename: project_fulfil_lessons_learnt_report.md
+  source_page_pdf: 37
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26922
+  contributing_source_titles:
+  - Project Fulfil Lessons Learnt Report
+  contributing_sources:
+  - source_title: Project Fulfil Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+    source_pages: *id022
+    source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+    markdown_filename: project_fulfil_lessons_learnt_report.md
+  arena_category:
+  - Battery storage
+  - Hybrid technologies
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: integration failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-26923
+  source_title: Project Fulfil Lessons Learnt Report
+  publish_date: 2020-12
+  project_name: Project Fulfil (Ecoult/UltraBattery)
+  what_happened: Field deployments revealed that system integrators and installers
+    working with microgrids integrating multiple generation sources and ad hoc loads
+    could not be relied upon to commission systems correctly or follow battery maintenance
+    directions. Incorrect system configuration at customer sites caused operational
+    failures and battery damage.
+  lesson_learnt: Energy storage products for microgrid and remote power applications
+    must be self-configuring and self-healing — do not assume integrators will commission
+    systems correctly or that end users will follow maintenance instructions, because
+    in field conditions with variable climates and ad hoc loads, they often will not.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: Self-configuring methods were designed into the 2V CMS product
+    and commissioning practices were adopted for 12V systems.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id023
+  - 41
+  evidence_excerpt: When it comes to modern microgrids, which integrate multiple different
+    types of generation sources and can have haphazard loads, it cannot be assumed
+    that the integrator is going to implement a sensible solution or commission it
+    correctly.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/project-fulfil/
+  kb_category: Battery storage, Hybrid technologies
+  kb_publish_date: 27/12/2020
+  kb_year: '2016'
+  kb_associated_project: Project Fulfil
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $3.08m
+  total_project_value: $10.79m
+  lead_organisation: Smart Storage Pty Ltd (trading as Ecoult)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 30/11/2016
+  location: New South Wales, Sydney, Victoria
+  project_partners: East Penn, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+  markdown_filename: project_fulfil_lessons_learnt_report.md
+  source_page_pdf: 41
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26923
+  contributing_source_titles:
+  - Project Fulfil Lessons Learnt Report
+  contributing_sources:
+  - source_title: Project Fulfil Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+    source_pages: *id023
+    source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+    markdown_filename: project_fulfil_lessons_learnt_report.md
+  arena_category:
+  - Battery storage
+  - Hybrid technologies
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-26924
+  source_title: Project Fulfil Lessons Learnt Report
+  publish_date: 2020-12
+  project_name: Project Fulfil (Ecoult/UltraBattery)
+  what_happened: Ecoult commenced commercialisation of the UltraBattery system without
+    sufficient understanding of the frequency, duration, and optimal conditions for
+    overcharge maintenance at the individual cell level. This gap was based on trial
+    and observation rather than scientific rigour, creating high post-sales support
+    costs as the team had to make qualitative adjustments site-by-site.
+  lesson_learnt: Before commercialising a lead-acid PSoC battery system, establish
+    a scientifically rigorous understanding of overcharge maintenance requirements
+    at the cell level — a single manufacturer-specified overcharge practice cannot
+    fit all systems or power profiles, and without state-based adaptive control the
+    outcome is either over-charge-induced degradation or under-charge-induced sulphation.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Ecoult formed a cross-functional Battery Guild with EPM engineers,
+    developed a finite element model of the lead-acid cell, and commenced electrochemical
+    impedance spectroscopy analysis.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id024
+  - 42
+  - 43
+  evidence_excerpt: There is a significant gap in regard to full understanding about
+    the processes inside lead acid battery chemistry during overcharge maintenance
+    and hence the frequency, duration, and conditions for primary maintenance activity...
+    Without progress in this area, the extended Ecoult/EPM team had to make qualitative
+    adjustments based on diligent observation... This created a high post sales cost.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/project-fulfil/
+  kb_category: Battery storage, Hybrid technologies
+  kb_publish_date: 27/12/2020
+  kb_year: '2016'
+  kb_associated_project: Project Fulfil
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $3.08m
+  total_project_value: $10.79m
+  lead_organisation: Smart Storage Pty Ltd (trading as Ecoult)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 30/11/2016
+  location: New South Wales, Sydney, Victoria
+  project_partners: East Penn, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+  markdown_filename: project_fulfil_lessons_learnt_report.md
+  source_page_pdf: 42
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26924
+  contributing_source_titles:
+  - Project Fulfil Lessons Learnt Report
+  contributing_sources:
+  - source_title: Project Fulfil Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+    source_pages: *id024
+    source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+    markdown_filename: project_fulfil_lessons_learnt_report.md
+  arena_category:
+  - Battery storage
+  - Hybrid technologies
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-26925
+  source_title: Project Fulfil Lessons Learnt Report
+  publish_date: 2020-12
+  project_name: Project Fulfil (Ecoult/UltraBattery)
+  what_happened: Ecoult moved rapidly toward commercialisation under competitive pressure
+    from lithium — driven by concern that delay would cede market incumbency — before
+    completing the fundamental understanding needed for consistent performance. Early
+    commercial deployments generated high field maintenance overheads that diverted
+    resources from completing necessary development, creating a compounding cycle.
+  lesson_learnt: Resist competitive pressure to commercialise before achieving a fully
+    warrantable product with all necessary compliance and certification — the overhead
+    of supporting premature field deployments directly competes with the engineering
+    resources needed to close fundamental understanding gaps, and the compounding
+    effect can be fatal to the programme.
+  issue_severity: critical
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: internal governance/resourcing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: discontinued/not progressed
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id025
+  - 44
+  - 45
+  evidence_excerpt: Ecoult progressed very quickly on our path to commercialization.
+    At all stages there was a concern that, if we did not move quickly, lithium would
+    establish an incumbency in the markets we were addressing... early commercialization
+    created a high overhead in terms of field maintenance, detracting from the resourcing
+    available to focus on completion of the understanding needed for performance and
+    consistency.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/project-fulfil/
+  kb_category: Battery storage, Hybrid technologies
+  kb_publish_date: 27/12/2020
+  kb_year: '2016'
+  kb_associated_project: Project Fulfil
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $3.08m
+  total_project_value: $10.79m
+  lead_organisation: Smart Storage Pty Ltd (trading as Ecoult)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 30/11/2016
+  location: New South Wales, Sydney, Victoria
+  project_partners: East Penn, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+  markdown_filename: project_fulfil_lessons_learnt_report.md
+  source_page_pdf: 44
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26925
+  contributing_source_titles:
+  - Project Fulfil Lessons Learnt Report
+  contributing_sources:
+  - source_title: Project Fulfil Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+    source_pages: *id025
+    source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+    markdown_filename: project_fulfil_lessons_learnt_report.md
+  arena_category:
+  - Battery storage
+  - Hybrid technologies
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-26926
+  source_title: Project Fulfil Lessons Learnt Report
+  publish_date: 2020-12
+  project_name: Project Fulfil (Ecoult/UltraBattery)
+  what_happened: Ecoult operated as a 100% subsidiary of EPM focused tightly on commercialising
+    UltraBattery, which constrained access to external innovation funding and market-opening
+    investors. Governance was oriented toward getting the product to market rather
+    than assessing technology readiness objectively, and the level of fundamental
+    understanding required was not anticipated at the outset.
+  lesson_learnt: For innovation programmes at an early technology readiness level,
+    governance frameworks should include explicit, objective technology readiness
+    assessments at each decision gate — market-entry governance that does not critically
+    assess readiness can accelerate a programme toward commercial failure rather than
+    commercial success.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: concept/feasibility
+  proponent_type: technology vendor
+  delay_category: internal governance/resourcing
+  failure_mode: poor scoping
+  outcome_class: discontinued/not progressed
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id026
+  - 46
+  - 47
+  evidence_excerpt: Governance was oriented at getting the product to market whereas
+    in hindsight a greater focus could have been on readiness. For future projects
+    more critical and objective assessment of technology readiness would be appropriate.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/project-fulfil/
+  kb_category: Battery storage, Hybrid technologies
+  kb_publish_date: 27/12/2020
+  kb_year: '2016'
+  kb_associated_project: Project Fulfil
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $3.08m
+  total_project_value: $10.79m
+  lead_organisation: Smart Storage Pty Ltd (trading as Ecoult)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 30/11/2016
+  location: New South Wales, Sydney, Victoria
+  project_partners: East Penn, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+  markdown_filename: project_fulfil_lessons_learnt_report.md
+  source_page_pdf: 46
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26926
+  contributing_source_titles:
+  - Project Fulfil Lessons Learnt Report
+  contributing_sources:
+  - source_title: Project Fulfil Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2021/01/lessons-learnt-project-fulfil.pdf
+    source_pages: *id026
+    source_url: https://arena.gov.au/knowledge-bank/project-fulfil-lessons-learnt-report/
+    markdown_filename: project_fulfil_lessons_learnt_report.md
+  arena_category:
+  - Battery storage
+  - Hybrid technologies
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82

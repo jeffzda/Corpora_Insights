@@ -1,0 +1,73 @@
+- record_id: ARENA-DLV-53853
+  source_title: Demand Flexibility Portfolio Retrospective Analysis Report
+  publish_date: 2023-07
+  project_name: ARENA Demand Flexibility Portfolio — Air-Conditioning Projects (AGL
+    RERT, Zen Ecosystems)
+  what_happened: The AEMO 10-day average baseline systematically undercounted air-conditioning
+    demand response because it used consumption from the preceding 10 (lower-temperature)
+    days as the counterfactual for a hot-day RERT event, and the same-day adjustment
+    was calculated too early to capture air-conditioning load. This reduced financial
+    incentives for participation and made air-conditioning a poor fit for RERT.
+  lesson_learnt: AEMO baseline methodologies are unsuitable for temperature-sensitive
+    loads such as residential air-conditioning; programs targeting these loads via
+    RERT or the WDR mechanism should advocate for revised baseline methodologies before
+    committing customer portfolios to these value streams.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: Zen Ecosystems tested an alternative 'line of best fit' methodology
+    based on daily usage as a comparison, but no market-accepted alternative was implemented
+    during the trials.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: demand response
+  source_pages:
+  - 26
+  - 41
+  - 42
+  evidence_excerpt: '''high demand in the NEM on very hot days is often blamed on
+    air-conditioning, however, counter-intuitively, air-conditioning loads don''t
+    work well as a DR resource in the RERT program because they often don''t baseline
+    well… In the case the 10-day average in the RERT baseline tends to discount the
+    air-conditioning load on the very hot day because the average air-conditioning
+    load on the previous 10 days has been much lower.'''
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/demand-flexibility-portfolio-retrospective-analysis-report/
+  project_page_url: null
+  kb_category: Demand response
+  kb_publish_date: 25/07/2023
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2023/07/demand-flexibility-portfolio-retrospective-analysis-report.pdf
+  markdown_filename: demand_flexibility_portfolio_retrospective_analysis_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53853
+  contributing_source_titles:
+  - Demand Flexibility Portfolio Retrospective Analysis Report
+  arena_category:
+  - Demand response
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82

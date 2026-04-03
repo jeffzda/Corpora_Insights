@@ -1,0 +1,802 @@
+- record_id: ARENA-DLV-37201
+  source_title: openCEM Knowledge Sharing Report
+  publish_date: 2023-02
+  project_name: openCEM – Open Source Grid Integration Model for the National Electricity
+    Market
+  what_happened: The scale of simultaneously modelling capacity and dispatch decisions
+    for the entire NEM with detailed storage treatment proved larger than ITP originally
+    anticipated, requiring a change in optimisation methodology from the original
+    approach to Linear Programming.
+  lesson_learnt: When scoping open-source energy system models for NEM-scale capacity
+    expansion, anticipate that simultaneous treatment of capacity, dispatch and storage
+    across all regions will exceed initial complexity estimates — plan for Linear
+    Programming or equivalent scalable methods from the outset rather than discovering
+    the need mid-development.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: internal governance/resourcing
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Adopted Linear Programming as the optimisation method, which
+    is well-suited to the scale of the problem despite being relatively simplistic
+    in its treatment of physical NEM behaviour.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id001
+  - 7
+  evidence_excerpt: Modelling capacity and dispatch decisions for the entire National
+    Electricity Market simultaneously, taking into consideration a detailed treatment
+    of storage, was larger scale problem than ITP originally anticipated. Combined
+    with the aim to keep the model entirely open source, led us to use Linear Programming
+    as the method to perform the optimisation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/opencem-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/open-source-grid-integration-model/
+  kb_category: Renewables for industry
+  kb_publish_date: 27/02/2023
+  kb_year: '2018'
+  kb_associated_project: Open Source Grid Integration Model for the National Electricity
+    Market
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $624k
+  total_project_value: $2.42m
+  lead_organisation: ITP Renewables
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 06/04/2018
+  location: Australian Capital Territory
+  project_partners: United States Strategic Energy Analysis Center of the National
+    Renewable Energy Laboratory, The Centre for Energy and Environmental Markets,
+    University of New South Wales, Energy Transitions Hub, University of Melbourne,
+    ThoughtWorks Australia Pty Ltd, New South Wales State Government, Victorian State
+    Government, South Australian State Government
+  pdf_url: https://arena.gov.au/assets/2023/02/open-cem-knowledge-sharing-report.pdf
+  markdown_filename: opencem_knowledge_sharing_report.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37201
+  contributing_source_titles:
+  - openCEM Knowledge Sharing Report
+  contributing_sources:
+  - source_title: openCEM Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2023/02/open-cem-knowledge-sharing-report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/opencem-knowledge-sharing-report/
+    markdown_filename: opencem_knowledge_sharing_report.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-37202
+  source_title: openCEM Knowledge Sharing Report
+  publish_date: 2023-02
+  project_name: openCEM – Open Source Grid Integration Model for the National Electricity
+    Market
+  what_happened: During development it became evident that without the ability to
+    model transmission upgrades, openCEM would not produce results comparable to other
+    publicly available modelling efforts such as the AEMO ISP, requiring a significant
+    addition to the model scope.
+  lesson_learnt: Energy system models intended to be comparable to industry-standard
+    tools (e.g. AEMO ISP) must include transmission upgrade modelling from the design
+    stage — retrofitting transmission capability after initial build requires substantial
+    scope expansion and risks producing non-comparable results in the interim.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: internal governance/resourcing
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Implemented a pipeline model for transmission between NEM planning
+    zones computing hourly flows with bidirectional limits, loss factors, and continuous
+    capacity expansion decisions aligned with generation/storage expansion logic.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id002
+  - 7
+  evidence_excerpt: Transmission constraints and transmission upgrades have a crucial
+    role to play in supporting a future grid that includes renewable energy generation
+    and storage. It became evident that without the ability to model transmission
+    upgrades, openCEM would not produce comparable results to other publicly available
+    modelling efforts (e.g. AEMO ISP).
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/opencem-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/open-source-grid-integration-model/
+  kb_category: Renewables for industry
+  kb_publish_date: 27/02/2023
+  kb_year: '2018'
+  kb_associated_project: Open Source Grid Integration Model for the National Electricity
+    Market
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $624k
+  total_project_value: $2.42m
+  lead_organisation: ITP Renewables
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 06/04/2018
+  location: Australian Capital Territory
+  project_partners: United States Strategic Energy Analysis Center of the National
+    Renewable Energy Laboratory, The Centre for Energy and Environmental Markets,
+    University of New South Wales, Energy Transitions Hub, University of Melbourne,
+    ThoughtWorks Australia Pty Ltd, New South Wales State Government, Victorian State
+    Government, South Australian State Government
+  pdf_url: https://arena.gov.au/assets/2023/02/open-cem-knowledge-sharing-report.pdf
+  markdown_filename: opencem_knowledge_sharing_report.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37202
+  contributing_source_titles:
+  - openCEM Knowledge Sharing Report
+  contributing_sources:
+  - source_title: openCEM Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2023/02/open-cem-knowledge-sharing-report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/opencem-knowledge-sharing-report/
+    markdown_filename: opencem_knowledge_sharing_report.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-37203
+  source_title: openCEM Knowledge Sharing Report
+  publish_date: 2023-02
+  project_name: openCEM – Open Source Grid Integration Model for the National Electricity
+    Market
+  what_happened: ITP's original approach of treating coal generators with the same
+    flexibility as other technologies produced impractical ramp rates, requiring the
+    addition of linearised unit commitment constraints for fossil fuel generators
+    mid-development.
+  lesson_learnt: Energy system models that include fossil fuel generators must implement
+    unit commitment constraints (ramp rates, minimum load, minimum up times) from
+    the outset — treating coal generators with the same flexibility as renewables
+    produces physically unrealistic results and requires disruptive rework.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: internal governance/resourcing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Added linearised unit commitment constraints for fossil fuel
+    generators on the recommendation of NREL, incorporating ramp rates, minimum load
+    and minimum up times to emulate unit commitment in each planning zone.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id003
+  - 7
+  evidence_excerpt: ITP's original idea of treating coal generators with the same
+    flexibility as other technologies resulted in impractical ramp rates for those
+    generators. We therefore adding linearised unit commitment constraints for some
+    fossil fuel generators in order to more realistically represent ramp rates and
+    flexibility. This decision has been made on the recommendation from NREL based
+    on their extensive experience of simulating fossil fuel generators in the US.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/opencem-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/open-source-grid-integration-model/
+  kb_category: Renewables for industry
+  kb_publish_date: 27/02/2023
+  kb_year: '2018'
+  kb_associated_project: Open Source Grid Integration Model for the National Electricity
+    Market
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $624k
+  total_project_value: $2.42m
+  lead_organisation: ITP Renewables
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 06/04/2018
+  location: Australian Capital Territory
+  project_partners: United States Strategic Energy Analysis Center of the National
+    Renewable Energy Laboratory, The Centre for Energy and Environmental Markets,
+    University of New South Wales, Energy Transitions Hub, University of Melbourne,
+    ThoughtWorks Australia Pty Ltd, New South Wales State Government, Victorian State
+    Government, South Australian State Government
+  pdf_url: https://arena.gov.au/assets/2023/02/open-cem-knowledge-sharing-report.pdf
+  markdown_filename: opencem_knowledge_sharing_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37203
+  contributing_source_titles:
+  - openCEM Knowledge Sharing Report
+  contributing_sources:
+  - source_title: openCEM Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2023/02/open-cem-knowledge-sharing-report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/opencem-knowledge-sharing-report/
+    markdown_filename: opencem_knowledge_sharing_report.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-37204
+  source_title: openCEM Knowledge Sharing Report
+  publish_date: 2023-02
+  project_name: openCEM – Open Source Grid Integration Model for the National Electricity
+    Market
+  what_happened: During a period when only AEMO NTNDP data was available and ISP data
+    had not yet been released, the team experienced difficulty integrating data because
+    the two sources organised records differently and the openCEM data structure was
+    still being defined.
+  lesson_learnt: When developing energy models dependent on external data sources,
+    define and lock the internal data structure before ingesting source data — mixing
+    data sources with different record organisation during a period of undefined internal
+    structure causes integration difficulty that resolves only once the data structure
+    matures.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: Once the openCEM data structure matured, the issue was resolved;
+    the mature structure also made future adoption of other data sources with different
+    organisation more straightforward.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id004
+  - 8
+  evidence_excerpt: the experienced difficulty for a period where only the AEMO NTNDP
+    data was available and the ISP data had not yet been released. Data records of
+    both sources were organised in a slightly different way and the structure of openCEM
+    data was still being defined. Once the data structure for openCEM matured this
+    no longer was a problem and future adoption of other data sources with different
+    structures is more straightforward.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/opencem-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/open-source-grid-integration-model/
+  kb_category: Renewables for industry
+  kb_publish_date: 27/02/2023
+  kb_year: '2018'
+  kb_associated_project: Open Source Grid Integration Model for the National Electricity
+    Market
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $624k
+  total_project_value: $2.42m
+  lead_organisation: ITP Renewables
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 06/04/2018
+  location: Australian Capital Territory
+  project_partners: United States Strategic Energy Analysis Center of the National
+    Renewable Energy Laboratory, The Centre for Energy and Environmental Markets,
+    University of New South Wales, Energy Transitions Hub, University of Melbourne,
+    ThoughtWorks Australia Pty Ltd, New South Wales State Government, Victorian State
+    Government, South Australian State Government
+  pdf_url: https://arena.gov.au/assets/2023/02/open-cem-knowledge-sharing-report.pdf
+  markdown_filename: opencem_knowledge_sharing_report.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37204
+  contributing_source_titles:
+  - openCEM Knowledge Sharing Report
+  contributing_sources:
+  - source_title: openCEM Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2023/02/open-cem-knowledge-sharing-report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/opencem-knowledge-sharing-report/
+    markdown_filename: opencem_knowledge_sharing_report.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-37205
+  source_title: openCEM Knowledge Sharing Report
+  publish_date: 2023-02
+  project_name: openCEM – Open Source Grid Integration Model for the National Electricity
+    Market
+  what_happened: Consultation with the Industry Reference Group revealed that the
+    raw JSON output file, while complete, was cumbersome for casual users or those
+    without advanced Python skills, necessitating the development of an additional
+    reporting tool not originally planned.
+  lesson_learnt: Open-source energy modelling tools should include a user-friendly
+    output reporting layer from the initial design phase — relying on raw JSON or
+    equivalent machine-readable output files excludes non-technical users and requires
+    a costly post-hoc reporting tool to be built in response to user feedback.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: internal governance/resourcing
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Developed a reporting tool that processes the JSON output into
+    a detailed report containing generation, capacity, hourly dispatch graphs, transmission,
+    reserve margins and other metrics for users running custom scenarios.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id005
+  - 8
+  evidence_excerpt: Based on consultation with the Industry Reference Group it was
+    clear that it was necessary to develop a reporting tool to collate output file
+    results and presents them in in a user friendly form.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/opencem-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/open-source-grid-integration-model/
+  kb_category: Renewables for industry
+  kb_publish_date: 27/02/2023
+  kb_year: '2018'
+  kb_associated_project: Open Source Grid Integration Model for the National Electricity
+    Market
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $624k
+  total_project_value: $2.42m
+  lead_organisation: ITP Renewables
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 06/04/2018
+  location: Australian Capital Territory
+  project_partners: United States Strategic Energy Analysis Center of the National
+    Renewable Energy Laboratory, The Centre for Energy and Environmental Markets,
+    University of New South Wales, Energy Transitions Hub, University of Melbourne,
+    ThoughtWorks Australia Pty Ltd, New South Wales State Government, Victorian State
+    Government, South Australian State Government
+  pdf_url: https://arena.gov.au/assets/2023/02/open-cem-knowledge-sharing-report.pdf
+  markdown_filename: opencem_knowledge_sharing_report.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37205
+  contributing_source_titles:
+  - openCEM Knowledge Sharing Report
+  contributing_sources:
+  - source_title: openCEM Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2023/02/open-cem-knowledge-sharing-report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/opencem-knowledge-sharing-report/
+    markdown_filename: opencem_knowledge_sharing_report.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-37206
+  source_title: openCEM Knowledge Sharing Report
+  publish_date: 2023-02
+  project_name: openCEM – Open Source Grid Integration Model for the National Electricity
+    Market
+  what_happened: Post-launch user feedback revealed a gap between openCEM's automatic
+    transmission upgrade feature and the real-world planning and regulatory constraints
+    governing NEM transmission upgrades, with the model not observing lead times and
+    regulatory factors that affect generator investment decisions.
+  lesson_learnt: NEM capacity expansion models must incorporate planning and regulatory
+    lead-time constraints on transmission upgrades — automatic least-cost transmission
+    upgrade logic without these constraints produces results that diverge from real-world
+    investment timelines and misleads users about achievable generator decisions.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Developed and released a 'manual transmission upgrade' feature
+    allowing users to disable automatic upgrades for a user-defined horizon and prescribe
+    specific transmission projects to be incorporated.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id006
+  - 8
+  - 9
+  evidence_excerpt: openCEM did not observe planning and regulatory factors that impact
+    the lead time to deliver upgrades, and this in turn may affect generator decisions.
+    Therefore, the team has developed and released a 'manual transmission upgrade'
+    feature that allow users to disable automatic transmission upgrades for a user-defined
+    horizon and prescribe specific transmission projects that need to be incorporated
+    into the mix.
+  confidence_note: lifecycle_phase assigned as operations because the gap was discovered
+    post-launch during user engagement, not during development.
+  source_url: https://arena.gov.au/knowledge-bank/opencem-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/open-source-grid-integration-model/
+  kb_category: Renewables for industry
+  kb_publish_date: 27/02/2023
+  kb_year: '2018'
+  kb_associated_project: Open Source Grid Integration Model for the National Electricity
+    Market
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $624k
+  total_project_value: $2.42m
+  lead_organisation: ITP Renewables
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 06/04/2018
+  location: Australian Capital Territory
+  project_partners: United States Strategic Energy Analysis Center of the National
+    Renewable Energy Laboratory, The Centre for Energy and Environmental Markets,
+    University of New South Wales, Energy Transitions Hub, University of Melbourne,
+    ThoughtWorks Australia Pty Ltd, New South Wales State Government, Victorian State
+    Government, South Australian State Government
+  pdf_url: https://arena.gov.au/assets/2023/02/open-cem-knowledge-sharing-report.pdf
+  markdown_filename: opencem_knowledge_sharing_report.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37206
+  contributing_source_titles:
+  - openCEM Knowledge Sharing Report
+  contributing_sources:
+  - source_title: openCEM Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2023/02/open-cem-knowledge-sharing-report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/opencem-knowledge-sharing-report/
+    markdown_filename: opencem_knowledge_sharing_report.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-37207
+  source_title: openCEM Knowledge Sharing Report
+  publish_date: 2023-02
+  project_name: openCEM – Open Source Grid Integration Model for the National Electricity
+    Market
+  what_happened: Post-launch, the openCEM analysis tool was initially limited to processing
+    results from a single scenario at a time, constraining the comparative scenario
+    analysis that users identified as the primary source of value from the model.
+  lesson_learnt: Open-source energy system models designed for policy and planning
+    analysis should support multi-scenario comparison from launch — users derive the
+    most value from comparing scenarios, and a tool limited to single-scenario output
+    requires costly redevelopment and delays adoption.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Rewrote the analysis tool to allow multiple scenario comparisons
+    and detailed analysis of cost and operational parameters, also reducing the data
+    footprint so the tool runs on personal computers with moderate RAM and CPU; released
+    in the second half of 2020.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id007
+  - 9
+  evidence_excerpt: openCEM offers the most value to users when comparing a baseline
+    scenario to changes... initially the openCEM_analysis tool was currently limited
+    to unpacking the results of a single scenario at a time. The team has rewritten
+    the analysis tool to allow multiple scenario comparisons and detailed analysis
+    of cost and operational parameters.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/opencem-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/open-source-grid-integration-model/
+  kb_category: Renewables for industry
+  kb_publish_date: 27/02/2023
+  kb_year: '2018'
+  kb_associated_project: Open Source Grid Integration Model for the National Electricity
+    Market
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $624k
+  total_project_value: $2.42m
+  lead_organisation: ITP Renewables
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 06/04/2018
+  location: Australian Capital Territory
+  project_partners: United States Strategic Energy Analysis Center of the National
+    Renewable Energy Laboratory, The Centre for Energy and Environmental Markets,
+    University of New South Wales, Energy Transitions Hub, University of Melbourne,
+    ThoughtWorks Australia Pty Ltd, New South Wales State Government, Victorian State
+    Government, South Australian State Government
+  pdf_url: https://arena.gov.au/assets/2023/02/open-cem-knowledge-sharing-report.pdf
+  markdown_filename: opencem_knowledge_sharing_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37207
+  contributing_source_titles:
+  - openCEM Knowledge Sharing Report
+  contributing_sources:
+  - source_title: openCEM Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2023/02/open-cem-knowledge-sharing-report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/opencem-knowledge-sharing-report/
+    markdown_filename: opencem_knowledge_sharing_report.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-37208
+  source_title: openCEM Knowledge Sharing Report
+  publish_date: 2023-02
+  project_name: openCEM – Open Source Grid Integration Model for the National Electricity
+    Market
+  what_happened: Post-launch consultation with users revealed significant interest
+    in modelling demand-side technologies (demand response, EVs, coordinated distributed
+    resources) that were not fully incorporated in the initial openCEM design, representing
+    a gap between tool capability and user needs.
+  lesson_learnt: Energy system models for future NEM planning should incorporate demand-side
+    technology optimisation (demand response, EVs, distributed resources) as a first-class
+    feature — post-launch user demand for this capability indicates it should be scoped
+    in from the design stage rather than added reactively.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: With the release of ISP 2020 data, demand-side technologies were
+    more explicitly defined, enabling openCEM users to modify data query templates
+    to alter the mix of demand-side technologies; e.g. specifying higher EV penetration
+    than AEMO's central scenario.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: demand response
+  source_pages: &id008
+  - 9
+  evidence_excerpt: There is considerable interest in the role that demand side technologies
+    may play in the future mix of technologies. Demand response, electric vehicles
+    and coordinated distributed resources can all play a significant role in the cost
+    and reliability of the NEM by managing demand and shifting peak load on a daily
+    basis and at critical times. Users are interested in extending openCEM to include
+    optimisation decisions that model demand side technologies.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/opencem-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/open-source-grid-integration-model/
+  kb_category: Renewables for industry
+  kb_publish_date: 27/02/2023
+  kb_year: '2018'
+  kb_associated_project: Open Source Grid Integration Model for the National Electricity
+    Market
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $624k
+  total_project_value: $2.42m
+  lead_organisation: ITP Renewables
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 06/04/2018
+  location: Australian Capital Territory
+  project_partners: United States Strategic Energy Analysis Center of the National
+    Renewable Energy Laboratory, The Centre for Energy and Environmental Markets,
+    University of New South Wales, Energy Transitions Hub, University of Melbourne,
+    ThoughtWorks Australia Pty Ltd, New South Wales State Government, Victorian State
+    Government, South Australian State Government
+  pdf_url: https://arena.gov.au/assets/2023/02/open-cem-knowledge-sharing-report.pdf
+  markdown_filename: opencem_knowledge_sharing_report.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37208
+  contributing_source_titles:
+  - openCEM Knowledge Sharing Report
+  contributing_sources:
+  - source_title: openCEM Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2023/02/open-cem-knowledge-sharing-report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/opencem-knowledge-sharing-report/
+    markdown_filename: opencem_knowledge_sharing_report.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-37209
+  source_title: openCEM Knowledge Sharing Report
+  publish_date: 2023-02
+  project_name: openCEM – Open Source Grid Integration Model for the National Electricity
+    Market
+  what_happened: Using time slicing to split capacity and dispatch simulations achieved
+    substantial computation time savings at modest cost in accuracy, resolving the
+    impracticality of full-resolution NEM-scale optimisation runs on standard hardware.
+  lesson_learnt: NEM-scale capacity expansion models should implement time-sliced
+    simulation splitting between capacity and dispatch decisions to achieve tractable
+    run times — a single full-resolution run taking 1.5 days on a good desktop is
+    at the edge of usability; time slicing provides substantial time savings at modest
+    accuracy cost, though the optimal balance requires ongoing calibration.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Split simulations into capacity and dispatch components and applied
+    time slicing to the capacity component, achieving substantial computation savings
+    with modest accuracy reduction; ongoing work continues to find the optimal balance.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id009
+  - 7
+  - 8
+  evidence_excerpt: Splitting simulations into capacity and dispatch and using time
+    slicing to speed up the former has enabled substantial savings in computation
+    time for the model at a very modest cost in accuracy. Finding the best balance
+    between time slicing and full simulations is ongoing.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/opencem-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/open-source-grid-integration-model/
+  kb_category: Renewables for industry
+  kb_publish_date: 27/02/2023
+  kb_year: '2018'
+  kb_associated_project: Open Source Grid Integration Model for the National Electricity
+    Market
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $624k
+  total_project_value: $2.42m
+  lead_organisation: ITP Renewables
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 06/04/2018
+  location: Australian Capital Territory
+  project_partners: United States Strategic Energy Analysis Center of the National
+    Renewable Energy Laboratory, The Centre for Energy and Environmental Markets,
+    University of New South Wales, Energy Transitions Hub, University of Melbourne,
+    ThoughtWorks Australia Pty Ltd, New South Wales State Government, Victorian State
+    Government, South Australian State Government
+  pdf_url: https://arena.gov.au/assets/2023/02/open-cem-knowledge-sharing-report.pdf
+  markdown_filename: opencem_knowledge_sharing_report.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37209
+  contributing_source_titles:
+  - openCEM Knowledge Sharing Report
+  contributing_sources:
+  - source_title: openCEM Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2023/02/open-cem-knowledge-sharing-report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/opencem-knowledge-sharing-report/
+    markdown_filename: opencem_knowledge_sharing_report.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-37210
+  source_title: openCEM Knowledge Sharing Report
+  publish_date: 2023-02
+  project_name: openCEM – Open Source Grid Integration Model for the National Electricity
+    Market
+  what_happened: Consultation with the Industry Reference Group confirmed that adopting
+    AEMO ISP data as the primary data source was broadly supported, providing a robust,
+    publicly consulted and checked data foundation for openCEM scenarios.
+  lesson_learnt: Open-source NEM modelling tools should adopt AEMO ISP data as the
+    primary data source — it is the most robust and reliable publicly available data
+    source due to extensive public consultation, and its use is broadly supported
+    by industry stakeholders, reducing the data credibility challenge for new modelling
+    tools.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id010
+  - 8
+  evidence_excerpt: Based on consultation with the Industry Reference Group it was
+    clear that adopting the AEMO ISP data as the main source of data for the model
+    for widely supported. AEMOs data and modelling are the most robust and reliable
+    publicly available data source to date because of their extensive public consultation
+    and checking process.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/opencem-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/open-source-grid-integration-model/
+  kb_category: Renewables for industry
+  kb_publish_date: 27/02/2023
+  kb_year: '2018'
+  kb_associated_project: Open Source Grid Integration Model for the National Electricity
+    Market
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $624k
+  total_project_value: $2.42m
+  lead_organisation: ITP Renewables
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 06/04/2018
+  location: Australian Capital Territory
+  project_partners: United States Strategic Energy Analysis Center of the National
+    Renewable Energy Laboratory, The Centre for Energy and Environmental Markets,
+    University of New South Wales, Energy Transitions Hub, University of Melbourne,
+    ThoughtWorks Australia Pty Ltd, New South Wales State Government, Victorian State
+    Government, South Australian State Government
+  pdf_url: https://arena.gov.au/assets/2023/02/open-cem-knowledge-sharing-report.pdf
+  markdown_filename: opencem_knowledge_sharing_report.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37210
+  contributing_source_titles:
+  - openCEM Knowledge Sharing Report
+  contributing_sources:
+  - source_title: openCEM Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2023/02/open-cem-knowledge-sharing-report.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/opencem-knowledge-sharing-report/
+    markdown_filename: opencem_knowledge_sharing_report.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false

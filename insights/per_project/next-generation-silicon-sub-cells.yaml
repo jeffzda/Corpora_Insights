@@ -1,0 +1,324 @@
+- record_id: ARENA-DLV-41651
+  source_title: Next Generation Silicon Sub-cells for High Efficiency III-V/Si Multi-Junction
+    Solar Cells
+  publish_date: '2019-08-28'
+  project_name: Next Generation Silicon Sub-cells for High Efficiency III-V/Si Multi-Junction
+    Solar Cells
+  what_happened: 'During III-V deposition on silicon substrates, severe degradation
+    of silicon minority carrier lifetime was observed, posing a major barrier to high-performance
+    III-V/Si multi-junction solar cell fabrication. The degradation was found to have
+    two distinct causes: activation of grown-in defects from heating the substrate,
+    and contamination within the deposition chamber. Existing remedies reported in
+    the literature were found to be inconsistent and sometimes ineffective.'
+  lesson_learnt: When subjecting silicon substrates to high-temperature III-V deposition,
+    perform a high-temperature anneal before processing begins and apply a silicon
+    nitride layer on the rear of the silicon prior to deposition — this combination
+    prevents both grown-in defect activation and chamber contamination, the two independent
+    causes of minority carrier lifetime degradation. Projects working with silicon
+    at elevated temperatures should anticipate this dual-cause mechanism rather than
+    relying on single-remedy approaches from the literature.
+  issue_severity: major
+  project_type: generation
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: Conducted targeted annealing experiments and cross-checked silicon
+    substrates at multiple facilities; identified that a high-temperature pre-anneal
+    combined with a silicon nitride rear layer resolves the degradation, with simpler
+    alternatives being investigated to reduce process complexity.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id001
+  - 8
+  - 9
+  evidence_excerpt: We then used the exact same procedure as employed in a report
+    that suggested silicon nitride layers on the rear of the silicon prevents contamination
+    during III-V processing. We still observed a degradation... Our results showed
+    unambiguously that the presence of grown-in defects could also catastrophically
+    degrade silicon performance. This led us to the conclusion that the degradation
+    is due to two reasons, grown-in defect activation from simply heating the substrate,
+    plus contamination in the deposition chamber.
+  confidence_note: delay_category set to data/validation/testing as the issue manifested
+    during experimental characterisation work; lifecycle_phase set to development/design
+    as this occurred during the early fabrication development phase of the research
+    project.
+  source_url: https://arena.gov.au/knowledge-bank/next-generation-silicon-sub-cells-for-high-efficiency-iii-v-si-multi-junction-solar-cells/
+  project_page_url: https://arena.gov.au/projects/next-generation-silicon-sub-cells/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 28/08/2019
+  kb_year: '2017'
+  kb_associated_project: Next Generation Silicon Sub-Cells
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.14m
+  total_project_value: $3.66m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 16/12/2017
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/01/next-generation-silicon-sub-cells-high-efficiency-multi-junction-solar-cells.pdf
+  markdown_filename: next_generation_silicon_sub_cells_for_high_efficiency_iii_vsi_multi_junction_solar_cells.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-41651
+  contributing_source_titles:
+  - Next Generation Silicon Sub-cells for High Efficiency III-V/Si Multi-Junction
+    Solar Cells
+  contributing_sources:
+  - source_title: Next Generation Silicon Sub-cells for High Efficiency III-V/Si Multi-Junction
+      Solar Cells
+    pdf_url: https://arena.gov.au/assets/2018/01/next-generation-silicon-sub-cells-high-efficiency-multi-junction-solar-cells.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/next-generation-silicon-sub-cells-for-high-efficiency-iii-v-si-multi-junction-solar-cells/
+    markdown_filename: next_generation_silicon_sub_cells_for_high_efficiency_iii_vsi_multi_junction_solar_cells.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-41652
+  source_title: Next Generation Silicon Sub-cells for High Efficiency III-V/Si Multi-Junction
+    Solar Cells
+  publish_date: '2019-08-28'
+  project_name: Next Generation Silicon Sub-cells for High Efficiency III-V/Si Multi-Junction
+    Solar Cells
+  what_happened: Use of silicon substrates thinner than 200 microns to reduce material
+    usage caused substrate bowing during fabrication, reducing device yield. Managing
+    strain build-up in the full III-V/Si structure was identified as a critical and
+    underestimated fabrication challenge.
+  lesson_learnt: When designing III-V/Si multi-junction devices with thin silicon
+    substrates (below 200 microns), strain management and substrate bowing must be
+    explicitly planned for in the process flow — these issues directly limit device
+    yield and require dedicated process optimisation before thin-substrate approaches
+    can deliver reliable output.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Identified strain build-up and substrate bowing as the root cause
+    of yield loss; ongoing work planned to refine processing of thin-substrate structures.
+  transferability: narrow
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id002
+  - 4
+  - 6
+  evidence_excerpt: The results have shown that management of the strain build up
+    in the full structure will be an important parameter to control during the fabrication.
+    High quality material has been found to be possible, there are, however, downstream
+    issues to resolve to produce a greater yield of devices due to bowing of the substrates.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/next-generation-silicon-sub-cells-for-high-efficiency-iii-v-si-multi-junction-solar-cells/
+  project_page_url: https://arena.gov.au/projects/next-generation-silicon-sub-cells/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 28/08/2019
+  kb_year: '2017'
+  kb_associated_project: Next Generation Silicon Sub-Cells
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.14m
+  total_project_value: $3.66m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 16/12/2017
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/01/next-generation-silicon-sub-cells-high-efficiency-multi-junction-solar-cells.pdf
+  markdown_filename: next_generation_silicon_sub_cells_for_high_efficiency_iii_vsi_multi_junction_solar_cells.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-41652
+  contributing_source_titles:
+  - Next Generation Silicon Sub-cells for High Efficiency III-V/Si Multi-Junction
+    Solar Cells
+  contributing_sources:
+  - source_title: Next Generation Silicon Sub-cells for High Efficiency III-V/Si Multi-Junction
+      Solar Cells
+    pdf_url: https://arena.gov.au/assets/2018/01/next-generation-silicon-sub-cells-high-efficiency-multi-junction-solar-cells.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/next-generation-silicon-sub-cells-for-high-efficiency-iii-v-si-multi-junction-solar-cells/
+    markdown_filename: next_generation_silicon_sub_cells_for_high_efficiency_iii_vsi_multi_junction_solar_cells.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-41653
+  source_title: Next Generation Silicon Sub-cells for High Efficiency III-V/Si Multi-Junction
+    Solar Cells
+  publish_date: '2019-08-28'
+  project_name: Next Generation Silicon Sub-cells for High Efficiency III-V/Si Multi-Junction
+    Solar Cells
+  what_happened: Integration of a room-temperature metal contacting technique (developed
+    in a separate ARENA-funded project) with III-V/Si structures produced only modest
+    performance due to unrelated handling and processing issues, rather than any fundamental
+    barrier in the technique itself.
+  lesson_learnt: When transferring a technique developed in one project context into
+    a new device architecture, budget for additional process integration effort —
+    handling procedures and process flows may require substantial refinement before
+    the imported technique performs as expected in the new configuration.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: execution & logistics
+  intervention_note: Root causes of performance limitation were identified as handling
+    procedure deficiencies; refinements are in progress and no fundamental barrier
+    to achieving target outcomes was identified.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id003
+  - 6
+  - 7
+  evidence_excerpt: Incorporation of a patented room temperature metal contacting
+    technique with a III-V on silicon structure has proven challenging, with handling
+    procedures for the structures requiring refinements. Again, a modest performance
+    is expected to be rectified quickly, as the issues limiting their performance
+    have been identified and are currently being rectified.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/next-generation-silicon-sub-cells-for-high-efficiency-iii-v-si-multi-junction-solar-cells/
+  project_page_url: https://arena.gov.au/projects/next-generation-silicon-sub-cells/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 28/08/2019
+  kb_year: '2017'
+  kb_associated_project: Next Generation Silicon Sub-Cells
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.14m
+  total_project_value: $3.66m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 16/12/2017
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/01/next-generation-silicon-sub-cells-high-efficiency-multi-junction-solar-cells.pdf
+  markdown_filename: next_generation_silicon_sub_cells_for_high_efficiency_iii_vsi_multi_junction_solar_cells.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-41653
+  contributing_source_titles:
+  - Next Generation Silicon Sub-cells for High Efficiency III-V/Si Multi-Junction
+    Solar Cells
+  contributing_sources:
+  - source_title: Next Generation Silicon Sub-cells for High Efficiency III-V/Si Multi-Junction
+      Solar Cells
+    pdf_url: https://arena.gov.au/assets/2018/01/next-generation-silicon-sub-cells-high-efficiency-multi-junction-solar-cells.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/next-generation-silicon-sub-cells-for-high-efficiency-iii-v-si-multi-junction-solar-cells/
+    markdown_filename: next_generation_silicon_sub_cells_for_high_efficiency_iii_vsi_multi_junction_solar_cells.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-41654
+  source_title: Next Generation Silicon Sub-cells for High Efficiency III-V/Si Multi-Junction
+    Solar Cells
+  publish_date: '2019-08-28'
+  project_name: Next Generation Silicon Sub-cells for High Efficiency III-V/Si Multi-Junction
+    Solar Cells
+  what_happened: An unplanned additive textured Polydimethylsiloxane (PDMS) layer
+    was introduced during the project and found to significantly improve device performance
+    by enhancing light trapping, also offering the potential to reduce III-V layer
+    thickness. This approach was not in the original project scope.
+  lesson_learnt: In early-stage photovoltaic R&D projects, allow process flexibility
+    for unplanned additive approaches — the PDMS texturing layer, discovered opportunistically,
+    delivered meaningful performance gains applicable across multiple device architectures
+    beyond the original project scope.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id004
+  - 5
+  - 6
+  evidence_excerpt: An unexpected highlight for the project was the improvement of
+    performance using an additive textured Polydimethylsiloxane (PDMS) layer to improve
+    performance... The additive layer was not originally planned, but offers advantages
+    in that the thickness of the III-V device may also be reduced due to the enhanced
+    light path length in the device.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/next-generation-silicon-sub-cells-for-high-efficiency-iii-v-si-multi-junction-solar-cells/
+  project_page_url: https://arena.gov.au/projects/next-generation-silicon-sub-cells/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 28/08/2019
+  kb_year: '2017'
+  kb_associated_project: Next Generation Silicon Sub-Cells
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.14m
+  total_project_value: $3.66m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 16/12/2017
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/01/next-generation-silicon-sub-cells-high-efficiency-multi-junction-solar-cells.pdf
+  markdown_filename: next_generation_silicon_sub_cells_for_high_efficiency_iii_vsi_multi_junction_solar_cells.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-41654
+  contributing_source_titles:
+  - Next Generation Silicon Sub-cells for High Efficiency III-V/Si Multi-Junction
+    Solar Cells
+  contributing_sources:
+  - source_title: Next Generation Silicon Sub-cells for High Efficiency III-V/Si Multi-Junction
+      Solar Cells
+    pdf_url: https://arena.gov.au/assets/2018/01/next-generation-silicon-sub-cells-high-efficiency-multi-junction-solar-cells.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/next-generation-silicon-sub-cells-for-high-efficiency-iii-v-si-multi-junction-solar-cells/
+    markdown_filename: next_generation_silicon_sub_cells_for_high_efficiency_iii_vsi_multi_junction_solar_cells.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false

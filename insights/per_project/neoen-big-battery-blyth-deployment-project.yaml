@@ -1,0 +1,2033 @@
+- record_id: ARENA-DLV-45051
+  source_title: Neoen - Blyth Battery Deployment - Lessons Learnt Report No.2 H2 2024
+  publish_date: 2024-12
+  project_name: Blyth Battery Energy Storage System (BBESS)
+  what_happened: When BBESS was converted from Grid-Following (GFL) to Grid-Forming
+    (GFM) operation, contractual responsibilities for delivering the GFM technical
+    requirements across the multi-party consortium — including the EPC, inverter OEM,
+    and Power Plant Controller (PPC) OEM — were not clearly defined. The original
+    contracts had been scoped for GFL delivery only, leaving overlapping and ambiguous
+    technical responsibilities for GFM that caused uncertainty about timelines and
+    downstream O&M obligations.
+  lesson_learnt: When contracting for a large-scale BESS with multiple component suppliers,
+    explicitly define which party owns each technical requirement for all intended
+    operational modes — including any planned future capability upgrades — before
+    contracts are executed. Reducing the number of separate device suppliers and OEMs
+    in the control system simplifies responsibility allocation, contract management,
+    and risk during both commissioning and O&M phases.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: commissioning/integration
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated integration
+  intervention_note: Discussions were ongoing within the consortium on how to contract
+    and deliver the GFM transition work following successful GFL commissioning; simplifying
+    the number of OEM devices in the control system was identified as the preferred
+    path forward.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 7
+  - 8
+  - 10
+  evidence_excerpt: The complex nature of standard multi-party agreements for delivery
+    of projects like a large-scale battery mean it can become unclear when requirements
+    changed for GFM, to the point it is not possible to determine with certainty where
+    within the multi-party arrangement technical requirements and responsibilities
+    lie.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-battery-deployment-lessons-learnt-report-no-2-h2-2024/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-blyth-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 4/02/2025
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Blyth) Deployment Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $17m
+  total_project_value: $337.45m
+  lead_organisation: 'Victorian Big Battery HoldCo Pty Ltd (ABN 73 644 551 940) '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Blyth, South Australia
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/02/Neoen-Blyth-Battery-Deployment-Lessons-Learnt-Report-No.2-H2-2024.pdf
+  markdown_filename: neoen_blyth_battery_deployment_lessons_learnt_report_no2_h2_2024.md
+  source_page_pdf: 7
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-45051
+  - ARENA-DLV-60853
+  contributing_source_titles:
+  - Neoen - Blyth Battery Deployment - Lessons Learnt Report No.2 H2 2024
+  - Neoen - Blyth Battery - Lessons Learnt 3
+  contributing_sources:
+  - source_title: Neoen - Blyth Battery Deployment - Lessons Learnt Report No.2 H2
+      2024
+    pdf_url: https://arena.gov.au/assets/2025/02/Neoen-Blyth-Battery-Deployment-Lessons-Learnt-Report-No.2-H2-2024.pdf
+    source_pages:
+    - 7
+    - 8
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-battery-deployment-lessons-learnt-report-no-2-h2-2024/
+    markdown_filename: neoen_blyth_battery_deployment_lessons_learnt_report_no2_h2_2024.md
+  - source_title: Neoen - Blyth Battery - Lessons Learnt 3
+    pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Blyth-Battery-Lessons-Learnt-3.pdf
+    source_pages:
+    - 10
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-battery-lessons-learnt-3/
+    markdown_filename: neoen_blyth_battery_lessons_learnt_3.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-45052
+  source_title: Neoen - Blyth Battery Deployment - Lessons Learnt Report No.2 H2 2024
+  publish_date: 2024-12
+  project_name: Blyth Battery Energy Storage System (BBESS)
+  what_happened: The PPC supplier selected at notice-to-proceed was a different OEM
+    from the inverter supplier, because the inverter OEM's PPC was not available in
+    the Australian market at that time. When the project later decided to enable GFM
+    capability, it was discovered — after GFM contracts had already been executed
+    — that the existing PPC could not provide the full signal set (P, Q, and Vref)
+    required by the GFM inverters, rendering the original PPC incompatible with GFM
+    operation.
+  lesson_learnt: Before selecting a Power Plant Controller from a different OEM than
+    the inverter supplier, verify the full software and hardware interfacing requirements
+    for all intended operational modes — including GFM — in both simulation models
+    (PSCAD/PSSE) and real-world hardware. Mismatched OEMs for inverters and PPCs create
+    significant integration risk when advanced inverter capabilities are later required.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: commissioning/integration
+  proponent_type: project developer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: The additional work, hardware and outage times required to resolve
+    the PPC incompatibility were scoped and costed; the revised scope was incorporated
+    into the project budget with risks managed accordingly, though replacement of
+    the PPC OEM was required.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 9
+  - 10
+  - 11
+  evidence_excerpt: At this time, and after contracts to implement GFM were executed,
+    a different PPC provider would be necessary for the generating system to be able
+    to deliver the GFM capability… it was found the PPC operating in that way was
+    not compatible with the GFM inverters as the PCC could only provide the P and
+    Q signals and not all three signals (P, Q and Vref) required by the inverters
+    to also operate in GFM.
+  confidence_note: Canonical record merged from 3 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-battery-deployment-lessons-learnt-report-no-2-h2-2024/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-blyth-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 4/02/2025
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Blyth) Deployment Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $17m
+  total_project_value: $337.45m
+  lead_organisation: 'Victorian Big Battery HoldCo Pty Ltd (ABN 73 644 551 940) '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Blyth, South Australia
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/02/Neoen-Blyth-Battery-Deployment-Lessons-Learnt-Report-No.2-H2-2024.pdf
+  markdown_filename: neoen_blyth_battery_deployment_lessons_learnt_report_no2_h2_2024.md
+  source_page_pdf: 9
+  corroboration_count: 3
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-45052
+  - ARENA-DLV-45055
+  - ARENA-DLV-60854
+  contributing_source_titles:
+  - Neoen - Blyth Battery Deployment - Lessons Learnt Report No.2 H2 2024
+  - Neoen - Blyth Battery - Lessons Learnt 3
+  contributing_sources:
+  - source_title: Neoen - Blyth Battery Deployment - Lessons Learnt Report No.2 H2
+      2024
+    pdf_url: https://arena.gov.au/assets/2025/02/Neoen-Blyth-Battery-Deployment-Lessons-Learnt-Report-No.2-H2-2024.pdf
+    source_pages:
+    - 9
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-battery-deployment-lessons-learnt-report-no-2-h2-2024/
+    markdown_filename: neoen_blyth_battery_deployment_lessons_learnt_report_no2_h2_2024.md
+  - source_title: Neoen - Blyth Battery - Lessons Learnt 3
+    pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Blyth-Battery-Lessons-Learnt-3.pdf
+    source_pages:
+    - 11
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-battery-lessons-learnt-3/
+    markdown_filename: neoen_blyth_battery_lessons_learnt_3.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-45053
+  source_title: Neoen - Blyth Battery Deployment - Lessons Learnt Report No.2 H2 2024
+  publish_date: 2024-12
+  project_name: Blyth Battery Energy Storage System (BBESS)
+  what_happened: Well into the connection process, a gap was discovered between the
+    control loop cycle time achievable by the third-party PPC in its simulation model
+    versus what it could achieve with real hardware. This prevented BBESS from meeting
+    the Very Fast FCAS and Fast Frequency Response (FFR) performance requirements
+    set by the South Australian Office of the Technical Regulator (OTR), despite extensive
+    multi-party efforts to resolve it.
+  lesson_learnt: Validate the complete control system loop time — including communication
+    delays, internal calculation times, and signal measurement averaging — in both
+    software and hardware environments before committing to specific fast-response
+    generator performance characteristics such as Very Fast FCAS or FFR. Simulation
+    models from individual OEMs may not reflect real-world integrated system performance.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: project developer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Virtual synchronous inertia was enabled in the inverter to allow
+    native frequency response without relying on the PPC control loop; separately,
+    the PPC function was consolidated into the BMS unit to eliminate the separate
+    PPC hardware and reduce control loop latency, enabling some level of Very Fast
+    FCAS participation.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 4
+  - 9
+  - 10
+  - 12
+  evidence_excerpt: Well into the connection process, there was an identified gap
+    in communication and control loop time between what the third-party OEM's PPC
+    could achieve in its model versus what it would be able to achieve in reality…
+    it was not possible to improve this control loop time to the point the original
+    objectives related to Very Fast FCAS and FFR could be achieved.
+  confidence_note: Canonical record merged from 3 source records across 3 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-battery-deployment-lessons-learnt-report-no-2-h2-2024/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-blyth-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 4/02/2025
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Blyth) Deployment Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $17m
+  total_project_value: $337.45m
+  lead_organisation: 'Victorian Big Battery HoldCo Pty Ltd (ABN 73 644 551 940) '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Blyth, South Australia
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/02/Neoen-Blyth-Battery-Deployment-Lessons-Learnt-Report-No.2-H2-2024.pdf
+  markdown_filename: neoen_blyth_battery_deployment_lessons_learnt_report_no2_h2_2024.md
+  source_page_pdf: 10
+  corroboration_count: 3
+  source_doc_count: 3
+  contributing_record_ids:
+  - ARENA-DLV-45053
+  - ARENA-DLV-60855
+  - ARENA-DLV-70852
+  contributing_source_titles:
+  - Neoen - Blyth Battery Deployment - Lessons Learnt Report No.2 H2 2024
+  - Neoen - Blyth Big Battery Deployment Project - Lessons Learnt Report No.1
+  - Neoen - Blyth Battery - Lessons Learnt 3
+  contributing_sources:
+  - source_title: Neoen - Blyth Battery Deployment - Lessons Learnt Report No.2 H2
+      2024
+    pdf_url: https://arena.gov.au/assets/2025/02/Neoen-Blyth-Battery-Deployment-Lessons-Learnt-Report-No.2-H2-2024.pdf
+    source_pages:
+    - 10
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-battery-deployment-lessons-learnt-report-no-2-h2-2024/
+    markdown_filename: neoen_blyth_battery_deployment_lessons_learnt_report_no2_h2_2024.md
+  - source_title: Neoen - Blyth Battery - Lessons Learnt 3
+    pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Blyth-Battery-Lessons-Learnt-3.pdf
+    source_pages:
+    - 12
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-battery-lessons-learnt-3/
+    markdown_filename: neoen_blyth_battery_lessons_learnt_3.md
+  - source_title: Neoen - Blyth Big Battery Deployment Project - Lessons Learnt Report
+      No.1
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-Big-Battery-Deployment-Project-Lessons-Learnt-Report-No.1.pdf
+    source_pages:
+    - 4
+    - 9
+    - 10
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-lessons-learnt-report-no-1/
+    markdown_filename: neoen_blyth_big_battery_deployment_project_lessons_learnt_report_no1.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-45054
+  source_title: Neoen - Blyth Battery Deployment - Lessons Learnt Report No.2 H2 2024
+  publish_date: 2024-12
+  project_name: Blyth Battery Energy Storage System (BBESS)
+  what_happened: The BBESS was originally designed and registered as a Grid-Following
+    (GFL) facility. A later decision to retrofit Grid-Forming (GFM) capability created
+    cascading technical and contractual complications — including incompatible control
+    system components, unclear responsibility allocation, and delays to the 5.3.9
+    connection application process — that would not have arisen had GFM been designed
+    in from the outset.
+  lesson_learnt: Avoid retrofitting GFM capability to a BESS site initially designed
+    and registered as GFL. If GFM capability is a project objective or a likely future
+    requirement, it should be incorporated into the original system design, equipment
+    selection, and contracts — not added after the GFL design is substantially complete.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: commissioning/integration
+  failure_mode: poor scoping
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated integration
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id001
+  - 5
+  - 7
+  evidence_excerpt: This again highlights the challenges and risks associated with
+    retrofitting GFM capability to a site initially designed and registered as GFL.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-battery-deployment-lessons-learnt-report-no-2-h2-2024/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-blyth-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 4/02/2025
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Blyth) Deployment Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $17m
+  total_project_value: $337.45m
+  lead_organisation: 'Victorian Big Battery HoldCo Pty Ltd (ABN 73 644 551 940) '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Blyth, South Australia
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/02/Neoen-Blyth-Battery-Deployment-Lessons-Learnt-Report-No.2-H2-2024.pdf
+  markdown_filename: neoen_blyth_battery_deployment_lessons_learnt_report_no2_h2_2024.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45054
+  contributing_source_titles:
+  - Neoen - Blyth Battery Deployment - Lessons Learnt Report No.2 H2 2024
+  contributing_sources:
+  - source_title: Neoen - Blyth Battery Deployment - Lessons Learnt Report No.2 H2
+      2024
+    pdf_url: https://arena.gov.au/assets/2025/02/Neoen-Blyth-Battery-Deployment-Lessons-Learnt-Report-No.2-H2-2024.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-battery-deployment-lessons-learnt-report-no-2-h2-2024/
+    markdown_filename: neoen_blyth_battery_deployment_lessons_learnt_report_no2_h2_2024.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-45056
+  source_title: Neoen - Blyth Battery Deployment - Lessons Learnt Report No.2 H2 2024
+  publish_date: 2024-12
+  project_name: Blyth Battery Energy Storage System (BBESS)
+  what_happened: Compatibility issues between the advanced inverters and the site
+    PPC, together with unresolved contractual responsibilities for GFM delivery, delayed
+    the commencement of the 5.3.9 network studies and the GFM connection application.
+    As at the report date, the project had completed construction and GFL holdpoint
+    testing but had not yet commenced the GFM connection process.
+  lesson_learnt: For BESS projects targeting GFM capability, the 5.3.9 connection
+    process should be initiated as early as possible — ideally in parallel with GFL
+    commissioning — and the NSP should be included in early technical discussions
+    to avoid delays caused by unresolved technical or contractual issues between system
+    component suppliers.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: grid connection/system studies
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Neoen identified that including the NSP in early technical discussions
+    would help reduce misplaced risk assumptions and facilitate timely connection
+    applications.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 4
+  - 5
+  - 7
+  evidence_excerpt: Compatibility issues with the advanced inverters and site controller
+    and contract uncertainties (discussed in this report) have delayed the commencement
+    of the 5.3.9 studies and connection application for GFM capability.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-battery-deployment-lessons-learnt-report-no-2-h2-2024/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-blyth-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 4/02/2025
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Blyth) Deployment Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $17m
+  total_project_value: $337.45m
+  lead_organisation: 'Victorian Big Battery HoldCo Pty Ltd (ABN 73 644 551 940) '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Blyth, South Australia
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/02/Neoen-Blyth-Battery-Deployment-Lessons-Learnt-Report-No.2-H2-2024.pdf
+  markdown_filename: neoen_blyth_battery_deployment_lessons_learnt_report_no2_h2_2024.md
+  source_page_pdf: 5
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-45056
+  - ARENA-DLV-70853
+  contributing_source_titles:
+  - Neoen - Blyth Battery Deployment - Lessons Learnt Report No.2 H2 2024
+  - Neoen - Blyth Big Battery Deployment Project - Lessons Learnt Report No.1
+  contributing_sources:
+  - source_title: Neoen - Blyth Battery Deployment - Lessons Learnt Report No.2 H2
+      2024
+    pdf_url: https://arena.gov.au/assets/2025/02/Neoen-Blyth-Battery-Deployment-Lessons-Learnt-Report-No.2-H2-2024.pdf
+    source_pages:
+    - 5
+    - 7
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-battery-deployment-lessons-learnt-report-no-2-h2-2024/
+    markdown_filename: neoen_blyth_battery_deployment_lessons_learnt_report_no2_h2_2024.md
+  - source_title: Neoen - Blyth Big Battery Deployment Project - Lessons Learnt Report
+      No.1
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-Big-Battery-Deployment-Project-Lessons-Learnt-Report-No.1.pdf
+    source_pages:
+    - 4
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-lessons-learnt-report-no-1/
+    markdown_filename: neoen_blyth_big_battery_deployment_project_lessons_learnt_report_no1.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-60851
+  source_title: Neoen - Blyth Battery - Lessons Learnt 3
+  publish_date: 2025-06
+  project_name: Blyth Battery Energy Storage System (BBESS)
+  what_happened: The GFL-to-GFM retrofit project discovered that new inverter-level
+    harmonic filters would be required to enable grid-forming capabilities — contrary
+    to the original assumption that only firmware and software changes would be needed,
+    as advised by the OEM. This unforeseen hardware requirement added significant
+    cost and necessitated taking the plant offline to complete upgrades at each inverter.
+  lesson_learnt: Projects planning a GFL-to-GFM retrofit should not rely solely on
+    OEM assurances that only firmware/software changes are needed — validate physical
+    hardware upgrade requirements early by reviewing comparable GFM deployments in
+    overseas markets, and include a hardware upgrade budget contingency from the outset.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: close-out/post-project review
+  proponent_type: project developer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: execution & logistics
+  intervention_note: Discussions were initiated to procure required inverter filter
+    components and prepare an installation plan designed to minimise impact on facility
+    operations; the OEM developed bespoke filter modifications during the course of
+    BBESS construction.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id002
+  - 7
+  - 8
+  evidence_excerpt: The delivery of GFM capabilities was expected to be delivered
+    mostly through updates to the site firmware and software. However, it is now clear
+    that the inverters will require hardware updates to the physical equipment in
+    order to deliver GFM. The specifics of the upgrade relate to the specialised filters
+    that reside within the inverters units and will need to be swapped out with an
+    alternate design that has been configured specifically for GFM operation.
+  confidence_note: delay_magnitude not quantified — document describes 5.3.9 application
+    process not yet commenced but does not give a specific duration for the delay.
+  source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-battery-lessons-learnt-3/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-blyth-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 14/01/2026
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Blyth) Deployment Project
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $17m
+  total_project_value: $337.45m
+  lead_organisation: 'Victorian Big Battery HoldCo Pty Ltd (ABN 73 644 551 940) '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Blyth, South Australia
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Blyth-Battery-Lessons-Learnt-3.pdf
+  markdown_filename: neoen_blyth_battery_lessons_learnt_3.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60851
+  contributing_source_titles:
+  - Neoen - Blyth Battery - Lessons Learnt 3
+  contributing_sources:
+  - source_title: Neoen - Blyth Battery - Lessons Learnt 3
+    pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Blyth-Battery-Lessons-Learnt-3.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-battery-lessons-learnt-3/
+    markdown_filename: neoen_blyth_battery_lessons_learnt_3.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  lifecycle_phase_original: variation/re-scope
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: cost overrun
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-60852
+  source_title: Neoen - Blyth Battery - Lessons Learnt 3
+  publish_date: 2025-06
+  project_name: Blyth Battery Energy Storage System (BBESS)
+  what_happened: GFM plant tuning on the retrofit BBESS project revealed that delivering
+    a set quantity of inertia requires reserving headroom in plant capacity, reducing
+    available active power and energy for market dispatch compared to GFL operations.
+    Existing contractual performance obligations from the GFL phase made it extremely
+    difficult to accept any reduction in market availability during the GFM transition.
+  lesson_learnt: Retrofit GFM projects face a structural conflict between system-strength
+    delivery commitments and market revenue obligations inherited from the GFL phase;
+    future developers should design GFM capacity requirements into the original plant
+    design so that tuning trade-offs do not impinge on contracted market performance.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: project developer
+  delay_category: commissioning/integration
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Plant tuning was calibrated to an intermediate set of parameters
+    that maximise grid-strengthening output while aiming for no net negative impact
+    on market availability, seeking a middle ground between GFM performance and GFL
+    revenue obligations.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id003
+  - 8
+  - 9
+  evidence_excerpt: This challenge is particularly pressing for retrofit projects,
+    as the original agreements in place for the operations and delivery of the GFL
+    plant has assumed a certain level of performance. The result of which, means it
+    is extremely difficult to progress a plant upgrade that would result in potentially
+    lower market performance post completion.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-battery-lessons-learnt-3/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-blyth-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 14/01/2026
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Blyth) Deployment Project
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $17m
+  total_project_value: $337.45m
+  lead_organisation: 'Victorian Big Battery HoldCo Pty Ltd (ABN 73 644 551 940) '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Blyth, South Australia
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Blyth-Battery-Lessons-Learnt-3.pdf
+  markdown_filename: neoen_blyth_battery_lessons_learnt_3.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60852
+  contributing_source_titles:
+  - Neoen - Blyth Battery - Lessons Learnt 3
+  contributing_sources:
+  - source_title: Neoen - Blyth Battery - Lessons Learnt 3
+    pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Blyth-Battery-Lessons-Learnt-3.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-battery-lessons-learnt-3/
+    markdown_filename: neoen_blyth_battery_lessons_learnt_3.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-60856
+  source_title: Neoen - Blyth Battery - Lessons Learnt 3
+  publish_date: 2025-06
+  project_name: Blyth Battery Energy Storage System (BBESS)
+  what_happened: The original BBESS plant (238.5 MW / 477 MWh) was delivered as a
+    GFL project on schedule and to budget by the Elecnor/NHOA EPC consortium, demonstrating
+    successful delivery of the originally scoped GFL scope by a multi-party consortium.
+  lesson_learnt: Clear scope definition and contractual allocation of responsibilities
+    for the initial GFL delivery scope within a multi-OEM consortium can deliver a
+    utility-scale BESS on schedule and to budget — the GFL success at BBESS confirms
+    that complexity is manageable when roles are unambiguous.
+  issue_severity: none
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: construction/installation
+  proponent_type: project developer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id004
+  - 7
+  evidence_excerpt: The project's initial completion as a grid following BESS was
+    completed on schedule and to budget, highlighting how well all parties were able
+    to deliver the initially scoped project.
+  confidence_note: 'project_scale_band set to utility/large-scale for the GFL delivery
+    event, which is the primary delivery achievement described; first commercial/FOAK
+    applies to the GFM retrofit strand.; project_scale_band reconciled to ''first
+    commercial/FOAK'' from: first commercial/FOAK (5/6), utility/large-scale (1/6)'
+  source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-battery-lessons-learnt-3/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-blyth-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 14/01/2026
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Blyth) Deployment Project
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $17m
+  total_project_value: $337.45m
+  lead_organisation: 'Victorian Big Battery HoldCo Pty Ltd (ABN 73 644 551 940) '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Blyth, South Australia
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Blyth-Battery-Lessons-Learnt-3.pdf
+  markdown_filename: neoen_blyth_battery_lessons_learnt_3.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60856
+  contributing_source_titles:
+  - Neoen - Blyth Battery - Lessons Learnt 3
+  contributing_sources:
+  - source_title: Neoen - Blyth Battery - Lessons Learnt 3
+    pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Blyth-Battery-Lessons-Learnt-3.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-battery-lessons-learnt-3/
+    markdown_filename: neoen_blyth_battery_lessons_learnt_3.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-61151
+  source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+    Milestone 2
+  publish_date: 2024-10
+  project_name: Blyth Battery Energy Storage System (BBESS)
+  what_happened: The BBESS project initially obtained grid connection approval and
+    registration in grid-following (GFL) mode rather than grid-forming (GFM) mode,
+    because the GFM regulatory pathway was too uncertain and slow to meet the target
+    Commercial Operations Date. The project then initiated a separate NER clause 5.3.9
+    process to transition from GFL to GFM after registration.
+  lesson_learnt: To protect the target COD for a GFM BESS project, obtain grid connection
+    approval in GFL mode first, then pursue GFM conversion via the 5.3.9 process —
+    this decouples the schedule-critical registration milestone from the more complex
+    and uncertain GFM approval process.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: grid connection/system studies
+  failure_mode: regulatory & approvals
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: Obtained grid connection approval and registration in GFL mode
+    first, allowing COD to be reached and revenues to begin; then initiated the 5.3.9
+    process for GFM conversion separately.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id005
+  - 19
+  evidence_excerpt: To mitigate against this risk, the BBESS has obtained grid connection
+    approval and registration in GFL mode first. This reduces the grid connection
+    schedule risk to ensure COD is reached and revenues begin generating according
+    to plan, albeit in GFL mode.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-blyth-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Blyth) Deployment Project
+  kb_document_type: Reports, Milestones
+  kb_document_folder: Reports_Milestones
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $17m
+  total_project_value: $337.45m
+  lead_organisation: 'Victorian Big Battery HoldCo Pty Ltd (ABN 73 644 551 940) '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Blyth, South Australia
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+  markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  source_page_pdf: 20
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61151
+  contributing_source_titles:
+  - Neoen - Blyth Big Battery Deployment Project - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+      Milestone 2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+    markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-61152
+  source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+    Milestone 2
+  publish_date: 2024-10
+  project_name: Blyth Battery Energy Storage System (BBESS)
+  what_happened: The NER clause S5.2.5.5 requirement for a reactive current settling
+    time of no greater than 70 milliseconds was written for GFL asynchronous generating
+    systems. When BBESS transitions to GFM mode, the inverter will behave more like
+    a synchronous machine with longer settling times, creating a compliance gap because
+    no NER provisions or GPS categories exist for this mode of operation.
+  lesson_learnt: Future GFM BESS projects should anticipate that NER clause S5.2.5.5
+    will require negotiation and that existing GPS standards do not accommodate synchronous
+    machine behaviour from asynchronous GFM inverters — engage AEMO and the NSP early
+    on this regulatory gap to avoid hold points during commissioning.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: grid connection/system studies
+  failure_mode: regulatory & approvals
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Used the existing GFL GPS as a baseline for the 5.3.9 negotiation
+    while pursuing a negotiated outcome with AEMO and ElectraNet on the settling time
+    requirement.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id006
+  - 24
+  - 25
+  evidence_excerpt: The GPS compliance is not yet specifically defined in the NER
+    for the synchronous generator behaviour of inverters with GFM capability... Presently,
+    there is no such section in the NER or provisions in the GPS to recognise this
+    category.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-blyth-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Blyth) Deployment Project
+  kb_document_type: Reports, Milestones
+  kb_document_folder: Reports_Milestones
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $17m
+  total_project_value: $337.45m
+  lead_organisation: 'Victorian Big Battery HoldCo Pty Ltd (ABN 73 644 551 940) '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Blyth, South Australia
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+  markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61152
+  contributing_source_titles:
+  - Neoen - Blyth Big Battery Deployment Project - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+      Milestone 2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+    markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-61153
+  source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+    Milestone 2
+  publish_date: 2024-10
+  project_name: Blyth Battery Energy Storage System (BBESS)
+  what_happened: 'The third-party Power Plant Controller (PPC) selected for BBESS
+    was incompatible with the GFM inverter: in GFL mode the inverter accepts P and
+    Q commands from the controller, but in GFM mode it requires P, Q and Vref. The
+    PPC could only supply P and Q, creating an interface incompatibility that required
+    resolution mid-project. Early procurement discussions did not include GFM requirements,
+    and the PPC OEM had no tested compatible model.'
+  lesson_learnt: CHIL testing benchmarked against PSCAD must be completed before any
+    PPC–inverter combination that has not previously obtained NEM approval is deployed
+    — software model compatibility alone is insufficient and real-device benchmarking
+    is necessary to identify communication and control loop issues that only appear
+    in hardware.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: The controller compatibility issue was in the process of being
+    resolved at the time of reporting, with the controller OEM engaged to implement
+    the additional Vref command capability.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 25
+  - 26
+  evidence_excerpt: The third-party controller OEM provided an integrated PPC model
+    with the GFM inverter PSCAD model, however it was not initially compatible as
+    the GFM inverters require three commands from the controller (P, Q and Vref) but
+    the third-party controller could only provide P and Q.
+  confidence_note: Canonical record merged from 2 source records across 1 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-blyth-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Blyth) Deployment Project
+  kb_document_type: Reports, Milestones
+  kb_document_folder: Reports_Milestones
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $17m
+  total_project_value: $337.45m
+  lead_organisation: 'Victorian Big Battery HoldCo Pty Ltd (ABN 73 644 551 940) '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Blyth, South Australia
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+  markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  source_page_pdf: 26
+  corroboration_count: 2
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61153
+  - ARENA-DLV-61164
+  contributing_source_titles:
+  - Neoen - Blyth Big Battery Deployment Project - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+      Milestone 2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+    source_pages:
+    - 25
+    - 26
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+    markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-61154
+  source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+    Milestone 2
+  publish_date: 2024-10
+  project_name: Blyth Battery Energy Storage System (BBESS)
+  what_happened: Well into the grid connection process for BBESS, a gap was identified
+    between the control loop cycle time achievable in the PPC model and what the controller
+    could achieve in reality. This meant the system could not meet the OTR's Fast
+    Frequency Response (FFR) requirements via the PPC as originally planned, requiring
+    virtual synchronous inertia to instead be enabled natively in the inverter.
+  lesson_learnt: Controller communication and full cycle response times must be confirmed
+    against real-world hardware performance — not just model performance — before
+    finalising a grid connection application; relying on modelled cycle times risks
+    a late-stage redesign of the control architecture.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: grid connection/system studies
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated integration
+  intervention_note: Virtual synchronous inertia was enabled natively in the inverter
+    to allow its native control functions to meet OTR FFR requirements, bypassing
+    the PPC cycle time limitation.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id007
+  - 26
+  evidence_excerpt: Well into the connection process, there was an identified gap
+    in communication and control loop time between what a controller could achieve
+    in its model versus what it would be able to achieve in reality. This introduced
+    issues for how certain advanced inverter capabilities could be driven and controlled.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-blyth-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Blyth) Deployment Project
+  kb_document_type: Reports, Milestones
+  kb_document_folder: Reports_Milestones
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $17m
+  total_project_value: $337.45m
+  lead_organisation: 'Victorian Big Battery HoldCo Pty Ltd (ABN 73 644 551 940) '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Blyth, South Australia
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+  markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  source_page_pdf: 27
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61154
+  contributing_source_titles:
+  - Neoen - Blyth Big Battery Deployment Project - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+      Milestone 2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+    markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: integration failure
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-61155
+  source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+    Milestone 2
+  publish_date: 2024-10
+  project_name: Blyth Battery Energy Storage System (BBESS)
+  what_happened: At the time of inverter and PPC selection for BBESS, no NEM market
+    mechanism existed to value GFM services, meaning there was no financial incentive
+    for the proponent to implement GFM capability without grant funding. The project
+    would not have proceeded as a GFM deployment without ARENA's $17 million grant.
+  lesson_learnt: In the absence of market mechanisms that monetise GFM services, grant
+    funding or equivalent incentives are essential to enable proponents to deploy
+    advanced inverter technologies — project sponsors should identify and secure such
+    incentives before committing to GFM capability in the design.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: concept/feasibility
+  proponent_type: project developer
+  delay_category: financing/commercial close
+  failure_mode: commercial & market
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: ARENA provided $17 million in grant funding to bridge the gap
+    between the cost of GFM capability and the absence of market revenue for GFM services.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id008
+  - 17
+  - 22
+  evidence_excerpt: Since at the time of securing ARENA funding, there was no market
+    mechanism in the NEM to value the GFM services offered by advanced inverters,
+    meaning there was generally no incentive to implement inverters with GFM capability.
+    Grant funding or other incentives have been required to provide this incentive.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-blyth-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Blyth) Deployment Project
+  kb_document_type: Reports, Milestones
+  kb_document_folder: Reports_Milestones
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $17m
+  total_project_value: $337.45m
+  lead_organisation: 'Victorian Big Battery HoldCo Pty Ltd (ABN 73 644 551 940) '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Blyth, South Australia
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+  markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  source_page_pdf: 18
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61155
+  contributing_source_titles:
+  - Neoen - Blyth Big Battery Deployment Project - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+      Milestone 2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+    markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.95
+- record_id: ARENA-DLV-61156
+  source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+    Milestone 2
+  publish_date: 2024-10
+  project_name: Blyth Battery Energy Storage System (BBESS)
+  what_happened: EPC companies in the Australian BESS market commonly mandate their
+    own PPC and BMS solutions as part of their tender, meaning the grid connection
+    application package cannot be finalised until the EPC tenderer is selected, because
+    the connection application is specific to the PPC–inverter combination. This created
+    a sequential dependency that delayed the connection application process relative
+    to the EPC tender process.
+  lesson_learnt: Because the NEM connection application is specific to the PPC–inverter
+    combination, the EPC tender and grid connection application processes cannot run
+    fully in parallel when EPC contractors mandate their own PPCs — project programmes
+    should account for this sequential dependency or specify the inverter and PPC
+    before EPC tender to enable parallel processing.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: procurement
+  proponent_type: project developer
+  delay_category: procurement/supply chain
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id009
+  - 18
+  evidence_excerpt: This means that a package cannot be finalised for a project until
+    the combination of PPC and inverter has been determined. If EPC contractors mandate
+    the use of different PPCs during a tender process, then the connection application
+    cannot be finalised until the successful tenderer has been selected.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-blyth-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Blyth) Deployment Project
+  kb_document_type: Reports, Milestones
+  kb_document_folder: Reports_Milestones
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $17m
+  total_project_value: $337.45m
+  lead_organisation: 'Victorian Big Battery HoldCo Pty Ltd (ABN 73 644 551 940) '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Blyth, South Australia
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+  markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  source_page_pdf: 19
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61156
+  contributing_source_titles:
+  - Neoen - Blyth Big Battery Deployment Project - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+      Milestone 2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+    markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-61157
+  source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+    Milestone 2
+  publish_date: 2024-10
+  project_name: Blyth Battery Energy Storage System (BBESS)
+  what_happened: GFM inverter implementation introduced additional costs compared
+    to conventional GFL inverters, including higher inverter capital costs for advanced
+    features such as overload capability, and added costs for grid connection approval,
+    installation, and commissioning due to the increased complexity. At the time of
+    the report, these additional costs were not offset by market revenues for GFM
+    services.
+  lesson_learnt: Project budgets for GFM BESS must explicitly account for the additional
+    capital and grid connection costs of advanced GFM inverters; in the current NEM,
+    these incremental costs cannot be recovered through GFM service revenues and must
+    be funded through grants or justified by SSC avoidance.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: ARENA grant funding of $17 million was used to cover the incremental
+    GFM-related costs that could not be recovered from market revenues.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id010
+  - 17
+  - 22
+  evidence_excerpt: There are considerable additional costs for GFM projects, especially
+    for projects undergoing a transition from GFL via the 5.3.9 process... the costs
+    to do so are significant, whilst benefits to developers remain theoretical.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-blyth-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Blyth) Deployment Project
+  kb_document_type: Reports, Milestones
+  kb_document_folder: Reports_Milestones
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $17m
+  total_project_value: $337.45m
+  lead_organisation: 'Victorian Big Battery HoldCo Pty Ltd (ABN 73 644 551 940) '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Blyth, South Australia
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+  markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  source_page_pdf: 23
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61157
+  contributing_source_titles:
+  - Neoen - Blyth Big Battery Deployment Project - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+      Milestone 2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+    markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: cost overrun
+  secondary_failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-61158
+  source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+    Milestone 2
+  publish_date: 2024-10
+  project_name: Blyth Battery Energy Storage System (BBESS)
+  what_happened: 'The BBESS project identified that transitioning from GFL to GFM
+    via the NER 5.3.9 process is not practically scalable: reverting inverter firmware
+    back to GFL settings between each hold point test to minimise commercial operations
+    impact is workable for one project but not as a standard industry pathway. The
+    project also found that AEMO and NSPs are not yet sufficiently familiar with GFM
+    models and performance to provide predictable approval timelines.'
+  lesson_learnt: The 5.3.9 GFL-to-GFM transition pathway carries inherent schedule
+    unpredictability because AEMO and NSPs are still developing familiarity with GFM
+    models — this risk will reduce as more projects complete the process, and industry
+    should advocate for NER updates that create a dedicated GFM compliance pathway.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: grid connection/system studies
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Firmware reversion to GFL between hold point tests was adopted
+    as a workaround to protect commercial revenues during the 5.3.9 process.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id011
+  - 19
+  evidence_excerpt: This process is not practical going forward and ideally, with
+    the support of the ARENA LSBS Funding and learnings from the associated projects,
+    will not be necessary. This risk will be mitigated as more projects in different
+    regions with multiple inverter and PPC OEMs proceed through the connection application
+    process.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-blyth-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Blyth) Deployment Project
+  kb_document_type: Reports, Milestones
+  kb_document_folder: Reports_Milestones
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $17m
+  total_project_value: $337.45m
+  lead_organisation: 'Victorian Big Battery HoldCo Pty Ltd (ABN 73 644 551 940) '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Blyth, South Australia
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+  markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  source_page_pdf: 20
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61158
+  contributing_source_titles:
+  - Neoen - Blyth Big Battery Deployment Project - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+      Milestone 2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+    markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-61159
+  source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+    Milestone 2
+  publish_date: 2024-10
+  project_name: Blyth Battery Energy Storage System (BBESS)
+  what_happened: The GFM inverter's faster control loop means that fault current behaviour
+    under GFM operation differs significantly from GFL, requiring redesign of protection
+    and arc-flash settings within the generating system's electrical balance of plant.
+    This was not fully anticipated during initial design, creating additional engineering
+    work during the detailed design and connection application phases.
+  lesson_learnt: When upgrading a BESS from GFL to GFM, protection and arc-flash settings
+    must be re-evaluated from first principles — the GFM inverter's faster control
+    loop can produce materially different fault currents that invalidate existing
+    protection settings designed for GFL operation.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id012
+  - 17
+  evidence_excerpt: Since the GFM inverter is typically operating on a much faster
+    control loop than a GFL inverter, current supplied under fault conditions can
+    vary significantly and necessitate re-design of protection settings within the
+    generating system's electrical BoP.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-blyth-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Blyth) Deployment Project
+  kb_document_type: Reports, Milestones
+  kb_document_folder: Reports_Milestones
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $17m
+  total_project_value: $337.45m
+  lead_organisation: 'Victorian Big Battery HoldCo Pty Ltd (ABN 73 644 551 940) '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Blyth, South Australia
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+  markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  source_page_pdf: 18
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61159
+  contributing_source_titles:
+  - Neoen - Blyth Big Battery Deployment Project - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+      Milestone 2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+    markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-61160
+  source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+    Milestone 2
+  publish_date: 2024-10
+  project_name: Blyth Battery Energy Storage System (BBESS)
+  what_happened: The transition from GFL to GFM risked altering harmonic emissions
+    and immunity characteristics of the BBESS, potentially triggering a requirement
+    to re-design existing harmonic filters that were critical for maintaining compliance
+    with the generation performance standard.
+  lesson_learnt: When converting an existing GFL BESS to GFM, assess the impact on
+    harmonic emissions and filter design before finalising the conversion — changes
+    to inverter control mode can invalidate existing harmonic filter designs and trigger
+    GPS re-compliance requirements.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id013
+  - 16
+  evidence_excerpt: It is important that the change from GFL to GFM does not significantly
+    alter the generating system's harmonic emission and immunity which could potentially
+    trigger the need to re-design already existing harmonic filters which are critical
+    for maintaining compliance with a generation performance standard.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-blyth-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Blyth) Deployment Project
+  kb_document_type: Reports, Milestones
+  kb_document_folder: Reports_Milestones
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $17m
+  total_project_value: $337.45m
+  lead_organisation: 'Victorian Big Battery HoldCo Pty Ltd (ABN 73 644 551 940) '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Blyth, South Australia
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+  markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61160
+  contributing_source_titles:
+  - Neoen - Blyth Big Battery Deployment Project - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+      Milestone 2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+    markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-61161
+  source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+    Milestone 2
+  publish_date: 2024-10
+  project_name: Blyth Battery Energy Storage System (BBESS)
+  what_happened: The NER requires frequency control of a generating system to be delivered
+    by the PPC rather than natively by the inverter terminals. In practice, inverter-native
+    frequency control allows a much faster response than is achievable through the
+    PPC communication loop. This regulatory constraint prevented BBESS from exploiting
+    the full FFR capability of the GFM inverters and required a workaround using virtual
+    synchronous inertia.
+  lesson_learnt: NER requirements that mandate PPC-delivered frequency control rather
+    than inverter-native control create a regulatory barrier to optimal GFM performance;
+    proponents and regulators should explore alternate compliance pathways — such
+    as accepting inverter-native P(f) response — to unlock faster, tighter frequency
+    control from grid-forming batteries.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: grid connection/system studies
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated integration
+  intervention_note: Virtual synchronous inertia was enabled in the inverter so that
+    native control functions could respond to frequency changes automatically, partially
+    circumventing the PPC cycle-time limitation within the existing regulatory framework.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 9
+  - 10
+  - 26
+  evidence_excerpt: Part of this challenge lies in that the perceived requirements
+    in the National Electricity Rules (NER) relating to how performance is established
+    during commissioning and R2 testing. Specifically, the NER requirement for frequency
+    control of a plant being delivered by the generating system PPC rather than allowing
+    the control to instead be provided natively via the inverter terminals which allows
+    for a much faster response.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-blyth-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Blyth) Deployment Project
+  kb_document_type: Reports, Milestones
+  kb_document_folder: Reports_Milestones
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $17m
+  total_project_value: $337.45m
+  lead_organisation: 'Victorian Big Battery HoldCo Pty Ltd (ABN 73 644 551 940) '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Blyth, South Australia
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+  markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  source_page_pdf: 27
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-61161
+  - ARENA-DLV-70854
+  contributing_source_titles:
+  - Neoen - Blyth Big Battery Deployment Project - Development Report Milestone 2
+  - Neoen - Blyth Big Battery Deployment Project - Lessons Learnt Report No.1
+  contributing_sources:
+  - source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+      Milestone 2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+    source_pages:
+    - 26
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+    markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  - source_title: Neoen - Blyth Big Battery Deployment Project - Lessons Learnt Report
+      No.1
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-Big-Battery-Deployment-Project-Lessons-Learnt-Report-No.1.pdf
+    source_pages:
+    - 9
+    - 10
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-lessons-learnt-report-no-1/
+    markdown_filename: neoen_blyth_big_battery_deployment_project_lessons_learnt_report_no1.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-61162
+  source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+    Milestone 2
+  publish_date: 2024-10
+  project_name: Blyth Battery Energy Storage System (BBESS)
+  what_happened: Frequency injection testing for FFR validation requires testing at
+    the point of connection and is impractical to conduct simultaneously across multiple
+    generating units within the generating system, creating a compliance bottleneck
+    during commissioning.
+  lesson_learnt: Plan for the practical constraints of frequency injection testing
+    at the point of connection during commissioning — the requirement to test each
+    unit sequentially rather than simultaneously can be a significant schedule constraint
+    for large multi-unit BESS facilities pursuing GFM compliance.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: project developer
+  delay_category: commissioning/integration
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id014
+  - 26
+  evidence_excerpt: Frequency injection testing, requiring validation at a point of
+    connection, is impractical to do simultaneously across multiple generating units
+    within a generating system.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-blyth-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Blyth) Deployment Project
+  kb_document_type: Reports, Milestones
+  kb_document_folder: Reports_Milestones
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $17m
+  total_project_value: $337.45m
+  lead_organisation: 'Victorian Big Battery HoldCo Pty Ltd (ABN 73 644 551 940) '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Blyth, South Australia
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+  markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  source_page_pdf: 27
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61162
+  contributing_source_titles:
+  - Neoen - Blyth Big Battery Deployment Project - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+      Milestone 2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+    markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-61163
+  source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+    Milestone 2
+  publish_date: 2024-10
+  project_name: Blyth Battery Energy Storage System (BBESS)
+  what_happened: The PPC was a low-value component (less than 0.1% of total contract
+    value) but critical to the performance and ongoing NER compliance of the generating
+    system. Because the PPC OEM was not the main EPC contractor, there was risk that
+    the controller OEM was not sufficiently engaged or incentivised to deliver the
+    required performance, particularly for a novel GFM configuration.
+  lesson_learnt: Contractual structures for BESS projects must ensure the PPC OEM
+    is directly engaged and incentivised to deliver — the controller's low contract
+    value relative to total project cost means it can be under-resourced or deprioritised
+    by the EPC, yet it is critical to NER compliance and long-term operations.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: procurement
+  proponent_type: project developer
+  delay_category: procurement/supply chain
+  failure_mode: coordination & stakeholders
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id015
+  - 26
+  evidence_excerpt: It is critical since although the controller is a critical piece
+    of hardware for the operation of the generator and ongoing compliance, in the
+    scale of a BESS it is very low value (<0.1% of a total contract value).
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-blyth-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Blyth) Deployment Project
+  kb_document_type: Reports, Milestones
+  kb_document_folder: Reports_Milestones
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $17m
+  total_project_value: $337.45m
+  lead_organisation: 'Victorian Big Battery HoldCo Pty Ltd (ABN 73 644 551 940) '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Blyth, South Australia
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+  markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61163
+  contributing_source_titles:
+  - Neoen - Blyth Big Battery Deployment Project - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+      Milestone 2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+    markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-61165
+  source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+    Milestone 2
+  publish_date: 2024-10
+  project_name: Blyth Battery Energy Storage System (BBESS)
+  what_happened: The BBESS project determined that selecting an inverter OEM with
+    a strong local NEM market presence and track record of registering and commissioning
+    their models in Australia materially reduces GPS process risk. The GFM technology
+    was still evolving at the time of selection, making it difficult to always achieve
+    this, but OEMs with experience in microgrid or off-grid operation and in international
+    grid jurisdictions with FFR-type requirements were identified as better prepared
+    for the NEM GFM process.
+  lesson_learnt: When selecting a GFM inverter OEM, prioritise those with demonstrated
+    NEM registration history, active grid models in PSS/E and PSCAD, microgrid or
+    off-grid operating experience, and experience in international jurisdictions with
+    FFR requirements — these characteristics are the strongest proxies for the OEM's
+    ability to support the Australian GFM connection and commissioning process.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: procurement
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id016
+  - 17
+  - 18
+  evidence_excerpt: The ideal approach to de-risk the GPS process is to select an
+    inverter OEM that has an established local market presence and a strong track
+    record in registering and commissioning their inverter models in the NEM.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-blyth-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Blyth) Deployment Project
+  kb_document_type: Reports, Milestones
+  kb_document_folder: Reports_Milestones
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $17m
+  total_project_value: $337.45m
+  lead_organisation: 'Victorian Big Battery HoldCo Pty Ltd (ABN 73 644 551 940) '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Blyth, South Australia
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+  markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  source_page_pdf: 18
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61165
+  contributing_source_titles:
+  - Neoen - Blyth Big Battery Deployment Project - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+      Milestone 2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+    markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-61166
+  source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+    Milestone 2
+  publish_date: 2024-10
+  project_name: Blyth Battery Energy Storage System (BBESS)
+  what_happened: Control system changes required to accommodate GFM capability on
+    BBESS risked impacting the delivery of FCAS and potentially requiring re-registration
+    with AEMO, creating a commercial risk to core revenue streams during and after
+    the GFM transition.
+  lesson_learnt: Include FCAS validation in the commissioning test plan for any GFM
+    conversion and engage the AEMO FCAS team early to understand re-registration requirements
+    — control system changes for GFM can inadvertently invalidate existing FCAS registration
+    and jeopardise core revenue streams.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: project developer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: FCAS validation was identified as a required inclusion in the
+    test plan, with early AEMO FCAS team engagement recommended as a mitigation.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id017
+  - 18
+  evidence_excerpt: Control system changes required to accommodate GFM could impact
+    the delivery of FCAS and require re-registration. To mitigate this risk, FCAS
+    validation should be included in the test plan along with early discussions with
+    the AEMO FCAS team and OEM to understand impact.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-blyth-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Blyth) Deployment Project
+  kb_document_type: Reports, Milestones
+  kb_document_folder: Reports_Milestones
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $17m
+  total_project_value: $337.45m
+  lead_organisation: 'Victorian Big Battery HoldCo Pty Ltd (ABN 73 644 551 940) '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Blyth, South Australia
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+  markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  source_page_pdf: 19
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61166
+  contributing_source_titles:
+  - Neoen - Blyth Big Battery Deployment Project - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Blyth Big Battery Deployment Project - Development Report
+      Milestone 2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-South-Australia-BESS-Development-Report.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-development-report-milestone-2/
+    markdown_filename: neoen_blyth_big_battery_deployment_project_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-70851
+  source_title: Neoen - Blyth Big Battery Deployment Project - Lessons Learnt Report
+    No.1
+  publish_date: 2024-11
+  project_name: Blyth BESS
+  what_happened: When Blyth BESS was converted from grid-following to grid-forming
+    mode after contracts were executed, the third-party Power Plant Controller (PPC)
+    OEM — selected because the inverter OEM had not released its own PPC in the Australian
+    market — was found to be incompatible with the GFM inverters. The PPC could only
+    provide P and Q signals, whereas GFM operation required P, Q, and Vref signals,
+    necessitating a different PPC provider.
+  lesson_learnt: Before committing to GFM inverters (or any mode change), confirm
+    PPC compatibility with the inverter OEM through desktop studies and CHIL-to-PSCAD
+    benchmarking — not just technical discussions. Where possible, use the inverter
+    OEM's native PPC; where a third-party PPC is required, rigorously validate compatibility
+    in both models and hardware before executing contracts.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: project developer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: A different PPC provider was selected to replace the original
+    third-party PPC OEM, enabling the generating system to deliver the required GFM
+    capability.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id018
+  - 4
+  - 6
+  - 7
+  - 8
+  evidence_excerpt: At this time, and after contracts to implement GFM were executed,
+    a different PPC provider would be necessary for the generating system to be able
+    to deliver the grid forming capability.
+  confidence_note: issue_severity rated major because incompatibility was discovered
+    after contract execution and required replacement of a core system component,
+    delaying the 5.3.9 studies and connection application for GFM capability.
+  source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-lessons-learnt-report-no-1/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-blyth-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 18/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Blyth) Deployment Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $17m
+  total_project_value: $337.45m
+  lead_organisation: 'Victorian Big Battery HoldCo Pty Ltd (ABN 73 644 551 940) '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Blyth, South Australia
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-Big-Battery-Deployment-Project-Lessons-Learnt-Report-No.1.pdf
+  markdown_filename: neoen_blyth_big_battery_deployment_project_lessons_learnt_report_no1.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-70851
+  contributing_source_titles:
+  - Neoen - Blyth Big Battery Deployment Project - Lessons Learnt Report No.1
+  contributing_sources:
+  - source_title: Neoen - Blyth Big Battery Deployment Project - Lessons Learnt Report
+      No.1
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-Big-Battery-Deployment-Project-Lessons-Learnt-Report-No.1.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-lessons-learnt-report-no-1/
+    markdown_filename: neoen_blyth_big_battery_deployment_project_lessons_learnt_report_no1.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-70855
+  source_title: Neoen - Blyth Big Battery Deployment Project - Lessons Learnt Report
+    No.1
+  publish_date: 2024-11
+  project_name: Blyth BESS
+  what_happened: The Australian market for full-wrap EPC delivery of BESS projects
+    is narrow compared to solar and wind, with few providers. EPC contractors typically
+    supply their own PPC (integrated with BMS and O&M functions) rather than the inverter
+    OEM's native controller, creating a structural tension between market competition
+    and PPC-inverter compatibility requirements.
+  lesson_learnt: Restricting BESS projects to inverter-OEM native PPCs would narrow
+    the already limited EPC market in Australia, risking higher project costs; industry
+    and procurement policy should actively develop the multi-OEM integration capability
+    of third-party PPCs (through standardised interfaces and CHIL benchmarking) rather
+    than mandating single-OEM stacks.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: procurement
+  proponent_type: project developer
+  delay_category: procurement/supply chain
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id019
+  - 7
+  - 8
+  evidence_excerpt: Currently the options available in the Australian market for undertaking
+    EPC of a BESS project is quite narrow (when compared for example to solar or wind).
+    The companies offering this in the market will all tend to use their own PPC rather
+    than an inverter OEM's native controller, since they will also roll in other functionality
+    such as BMS, and other ongoing operation and maintenance (O&M) requirements.
+  confidence_note: 'delay_category set to procurement/supply chain because the narrow
+    EPC market is a procurement-phase constraint; issue_severity moderate because
+    this is a systemic market risk rather than a project-specific failure on Blyth
+    BESS.; project_scale_band reconciled to ''first commercial/FOAK'' from: first
+    commercial/FOAK (4/5), utility/large-scale (1/5)'
+  source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-lessons-learnt-report-no-1/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-blyth-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 18/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Blyth) Deployment Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $17m
+  total_project_value: $337.45m
+  lead_organisation: 'Victorian Big Battery HoldCo Pty Ltd (ABN 73 644 551 940) '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Blyth, South Australia
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-Big-Battery-Deployment-Project-Lessons-Learnt-Report-No.1.pdf
+  markdown_filename: neoen_blyth_big_battery_deployment_project_lessons_learnt_report_no1.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-70855
+  contributing_source_titles:
+  - Neoen - Blyth Big Battery Deployment Project - Lessons Learnt Report No.1
+  contributing_sources:
+  - source_title: Neoen - Blyth Big Battery Deployment Project - Lessons Learnt Report
+      No.1
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Blyth-Big-Battery-Deployment-Project-Lessons-Learnt-Report-No.1.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/neoen-blyth-big-battery-deployment-project-lessons-learnt-report-no-1/
+    markdown_filename: neoen_blyth_big_battery_deployment_project_lessons_learnt_report_no1.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78

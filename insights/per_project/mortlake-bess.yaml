@@ -1,0 +1,373 @@
+- record_id: ARENA-DLV-21608
+  source_title: 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update Report'
+  publish_date: 2025-10
+  project_name: Mortlake BESS
+  what_happened: At Mortlake BESS, the original technical memorandum provided by the
+    selected OEM was insufficiently detailed, causing the modelling engineer to make
+    incorrect assumptions, resulting in rework and delays during the GPS connection
+    process.
+  lesson_learnt: Require OEMs to provide a sufficiently detailed technical manual
+    before commencing GPS modelling; inadequate OEM documentation forces trial-and-error
+    tuning approaches that significantly increase both time and cost — contractually
+    mandate documentation standards at OEM engagement.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: grid connection/system studies
+  failure_mode: poor scoping
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id001
+  - 24
+  evidence_excerpt: Grid connection modelling is highly specialized and labour-intensive.
+    Each setting update requires at least two weeks for full verification as hundreds
+    of tests must be reviewed against performance standards. Without a clear technical
+    manual being provided by the OEM, the modelling engineer is forced to use trial
+    and error to determine the most suitable settings, which significantly increases
+    both time and cost associated with conducting the modelling.
+  confidence_note: 'proponent_type reconciled to ''project developer'' from: project
+    developer (22/29), utility/energy retailer (7/29)'
+  source_url: https://arena.gov.au/knowledge-bank/ekistica-arena-grid-forming-battery-portfolio-series/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 3/07/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/10/ARENA-Grid-Forming-Battery-Portfolio-Series-Update-Report.pdf
+  markdown_filename: ekistica_arena_grid_forming_battery_portfolio_series.md
+  source_page_pdf: 23
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-21608
+  contributing_source_titles:
+  - 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update Report'
+  contributing_sources:
+  - source_title: 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update
+      Report'
+    pdf_url: https://arena.gov.au/assets/2025/10/ARENA-Grid-Forming-Battery-Portfolio-Series-Update-Report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/ekistica-arena-grid-forming-battery-portfolio-series/
+    markdown_filename: ekistica_arena_grid_forming_battery_portfolio_series.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: cost overrun
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-21609
+  source_title: 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update Report'
+  publish_date: 2025-10
+  project_name: Mortlake BESS
+  what_happened: During firmware updates at Mortlake BESS, the OEM provided insufficiently
+    detailed information about new functionalities introduced, resulting in AEMO limiting
+    the settings that could be used, constraining the project's GFM capability.
+  lesson_learnt: Require OEMs to provide comprehensive changelogs and technical documentation
+    for all firmware updates before deployment; inadequate documentation of new functionalities
+    can result in regulators limiting permissible settings and constraining operational
+    capability.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: commissioning/integration
+  proponent_type: project developer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: data & measurement
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id002
+  - 24
+  evidence_excerpt: In a later instance, insufficiently detailed information from
+    the OEM on new functionalities introduced with a firmware update resulted in AEMO
+    limiting the settings which could be used.
+  confidence_note: 'proponent_type reconciled to ''project developer'' from: project
+    developer (22/29), utility/energy retailer (7/29)'
+  source_url: https://arena.gov.au/knowledge-bank/ekistica-arena-grid-forming-battery-portfolio-series/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 3/07/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/10/ARENA-Grid-Forming-Battery-Portfolio-Series-Update-Report.pdf
+  markdown_filename: ekistica_arena_grid_forming_battery_portfolio_series.md
+  source_page_pdf: 24
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-21609
+  contributing_source_titles:
+  - 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update Report'
+  contributing_sources:
+  - source_title: 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update
+      Report'
+    pdf_url: https://arena.gov.au/assets/2025/10/ARENA-Grid-Forming-Battery-Portfolio-Series-Update-Report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/ekistica-arena-grid-forming-battery-portfolio-series/
+    markdown_filename: ekistica_arena_grid_forming_battery_portfolio_series.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.75
+- record_id: ARENA-DLV-21610
+  source_title: 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update Report'
+  publish_date: 2025-10
+  project_name: Mortlake BESS
+  what_happened: Origin Energy and AEMO had a dispute over the reactive current rise
+    time calculation methodology — Origin calculated based on positive sequence current
+    only, while AEMO assessed using total reactive current including both positive
+    and negative sequence components — which needed to be resolved before the connection
+    could progress.
+  lesson_learnt: Confirm with AEMO upfront which reactive current measurement convention
+    (positive sequence vs. total reactive current) will be applied to GPS compliance
+    assessment to avoid mid-process disputes; the May 2025 NER rule change now clarifies
+    that reactive current rise and commencement times refer to positive sequence current
+    only.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: grid connection/system studies
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: The AEMC's May 2025 rule change (Improving the NEM Access Standards
+    Package 1) clarified that reactive current rise and commencement times are measured
+    using positive sequence current only.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id003
+  - 20
+  - 31
+  evidence_excerpt: Origin reported discrepancies between reactive current rise time
+    calculation methodologies where they calculated based on the positive sequence
+    component whereas AEMO assessed this using the total reactive current (which includes
+    both positive and negative components).
+  confidence_note: 'proponent_type reconciled to ''project developer'' from: project
+    developer (22/29), utility/energy retailer (7/29)'
+  source_url: https://arena.gov.au/knowledge-bank/ekistica-arena-grid-forming-battery-portfolio-series/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 3/07/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/10/ARENA-Grid-Forming-Battery-Portfolio-Series-Update-Report.pdf
+  markdown_filename: ekistica_arena_grid_forming_battery_portfolio_series.md
+  source_page_pdf: 31
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-21610
+  contributing_source_titles:
+  - 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update Report'
+  contributing_sources:
+  - source_title: 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update
+      Report'
+    pdf_url: https://arena.gov.au/assets/2025/10/ARENA-Grid-Forming-Battery-Portfolio-Series-Update-Report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/ekistica-arena-grid-forming-battery-portfolio-series/
+    markdown_filename: ekistica_arena_grid_forming_battery_portfolio_series.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-21611
+  source_title: 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update Report'
+  publish_date: 2025-10
+  project_name: Mortlake BESS
+  what_happened: Origin Energy was required to install harmonic filters at Mortlake
+    BESS due to harmonic issues with the existing high-voltage grid that were not
+    identified until full GPS modelling was underway, adding unanticipated scope and
+    cost.
+  lesson_learnt: Proponents should request that AEMO and NSPs proactively share existing
+    network harmonic data at the connection point before commencing GPS modelling;
+    harmonic issues discovered only during full modelling add late-stage scope, cost,
+    and delay that could be avoided with earlier network-level visibility.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: grid connection/system studies
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Origin installed harmonic filters to address the identified harmonic
+    distortion issues.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id004
+  - 25
+  evidence_excerpt: Origin Energy were required to install harmonic filters due to
+    harmonic issues with the existing HV grid which were not identified until full
+    GPS modelling was underway.
+  confidence_note: 'proponent_type reconciled to ''project developer'' from: project
+    developer (22/29), utility/energy retailer (7/29)'
+  source_url: https://arena.gov.au/knowledge-bank/ekistica-arena-grid-forming-battery-portfolio-series/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 3/07/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/10/ARENA-Grid-Forming-Battery-Portfolio-Series-Update-Report.pdf
+  markdown_filename: ekistica_arena_grid_forming_battery_portfolio_series.md
+  source_page_pdf: 25
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-21611
+  contributing_source_titles:
+  - 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update Report'
+  contributing_sources:
+  - source_title: 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update
+      Report'
+    pdf_url: https://arena.gov.au/assets/2025/10/ARENA-Grid-Forming-Battery-Portfolio-Series-Update-Report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/ekistica-arena-grid-forming-battery-portfolio-series/
+    markdown_filename: ekistica_arena_grid_forming_battery_portfolio_series.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: cost overrun
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-21623
+  source_title: 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update Report'
+  publish_date: 2025-10
+  project_name: Mortlake BESS
+  what_happened: During Mortlake BESS GPS modelling, an excessive active power drop
+    during unbalanced faults was identified; AEMO expressed concern that this could
+    threaten power system frequency stability, requiring efforts to mitigate it and
+    revealing a trade-off between improved reactive power output and reduced active
+    power output during fault conditions.
+  lesson_learnt: Model active power behaviour during unbalanced fault conditions explicitly
+    as part of GFM BESS GPS compliance assessment; anticipate AEMO scrutiny of active
+    power drops during unbalanced faults and quantify the trade-off between reactive
+    power output and active power retention early in the tuning process.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: grid connection/system studies
+  failure_mode: unvalidated technical assumptions
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: Origin made tuning adjustments to mitigate the active power drop
+    during unbalanced faults; the May 2025 NER rule change specifying control objectives
+    for unbalanced faults should clarify control priorities for future projects.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id005
+  - 31
+  evidence_excerpt: Origin (Mortlake BESS) brought up an issue of significant drop
+    in active power output during unbalanced faults. With AEMO believing excessive
+    active power drops could threaten power system frequency stability, efforts were
+    made to mitigate this. They noted a trade-off between improved reactive power
+    output and reduced active power output during faults.
+  confidence_note: 'proponent_type reconciled to ''project developer'' from: project
+    developer (22/29), utility/energy retailer (7/29)'
+  source_url: https://arena.gov.au/knowledge-bank/ekistica-arena-grid-forming-battery-portfolio-series/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 3/07/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/10/ARENA-Grid-Forming-Battery-Portfolio-Series-Update-Report.pdf
+  markdown_filename: ekistica_arena_grid_forming_battery_portfolio_series.md
+  source_page_pdf: 31
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-21623
+  contributing_source_titles:
+  - 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update Report'
+  contributing_sources:
+  - source_title: 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update
+      Report'
+    pdf_url: https://arena.gov.au/assets/2025/10/ARENA-Grid-Forming-Battery-Portfolio-Series-Update-Report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/ekistica-arena-grid-forming-battery-portfolio-series/
+    markdown_filename: ekistica_arena_grid_forming_battery_portfolio_series.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82

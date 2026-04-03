@@ -1,0 +1,338 @@
+- record_id: ARENA-DLV-7901
+  source_title: ANU - Cost-effective Si/Perovskite Tandem Modules on Passivating Contact
+    Si Cells - R&D Interim Report
+  publish_date: '2024-05-31'
+  project_name: Cost-effective Si/Perovskite Tandem Modules on Passivating Contact
+    Si Cells (2022/TRAC005)
+  what_happened: A custom LED-based stability test chamber was built to test perovskite
+    cells under inert atmosphere, but the LED light source proved unstable — light
+    intensity decreased rapidly after switch-on due to a chemical change in the LED
+    cover layer caused by the absence of oxygen. This required significant redesign
+    of the test setup, moving the light source outside the chamber and coupling light
+    through a transparent window.
+  lesson_learnt: LED-based light sources must not be housed inside inert (oxygen-free)
+    test chambers — the lack of oxygen causes a reversible but practically disruptive
+    chemical degradation of the LED cover layer. When designing perovskite stability
+    test rigs using LEDs, keep the light source in an ambient atmosphere and couple
+    light into the inert test zone via a transparent window.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: The light source was relocated outside the inert test chamber
+    and coupled in via a transparent window, restoring stable illumination conditions.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id001
+  - 9
+  - 10
+  evidence_excerpt: one major problem we encountered was that the light source was
+    unstable. The light intensity would decrease rapidly once it was turned on...
+    It was necessary to move the light source outside the test chamber and couple
+    the light into the chamber using a transparent window. This required significant
+    changes to the test setup which resulted in significant delays.
+  confidence_note: 'project_type field used ''research organisation/university'' which
+    is a proponent_type value; no dedicated project_type value exists for pure R&D
+    — classified as ''enabling infrastructure'' would be a stretch; confidence_note
+    reflects that this is a lab R&D project without a clean project_type mapping.
+    Delay magnitude not quantified in document.; project_type reconciled to ''generation''
+    from: generation (2/4), research organisation/university (1/4), software/data/digital
+    (1/4)'
+  source_url: https://arena.gov.au/knowledge-bank/anu-cost-effective-si-perovskite-tandem-modules-on-passivating-contact-si-cells-rd-interim-report/
+  project_page_url: https://arena.gov.au/projects/cost-effective-si-perovskite-tandem-modules-on-passivating-contact-si-cells/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 2/10/2024
+  kb_year: '2022'
+  kb_associated_project: Cost-effective Si/Perovskite Tandem Modules on Passivating
+    Contact Si Cells
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $4.3m
+  total_project_value: $19.01m
+  lead_organisation: 'The Australian National University '
+  arena_program: Ultra Low Cost Solar PV Research and Development Round
+  project_status: Current
+  project_start_date: 02/12/2022
+  location: Australian Capital Territory, Canberra
+  project_partners: The University of New South Wales (UNSW), The University of Melbourne,
+    JinkoSolar Holding
+  pdf_url: https://arena.gov.au/assets/2024/10/ANU_Cost-effective-Si-and-Perovskite-Tandem-Modules-on-Passivating-Contact-Si-Cells_Interim-Report.pdf
+  markdown_filename: anu_cost_effective_siperovskite_tandem_modules_on_passivating_contact_si_cells_rd_interim_report.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-7901
+  contributing_source_titles:
+  - ANU - Cost-effective Si/Perovskite Tandem Modules on Passivating Contact Si Cells
+    - R&D Interim Report
+  contributing_sources:
+  - source_title: ANU - Cost-effective Si/Perovskite Tandem Modules on Passivating
+      Contact Si Cells - R&D Interim Report
+    pdf_url: https://arena.gov.au/assets/2024/10/ANU_Cost-effective-Si-and-Perovskite-Tandem-Modules-on-Passivating-Contact-Si-Cells_Interim-Report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/anu-cost-effective-si-perovskite-tandem-modules-on-passivating-contact-si-cells-rd-interim-report/
+    markdown_filename: anu_cost_effective_siperovskite_tandem_modules_on_passivating_contact_si_cells_rd_interim_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-7902
+  source_title: ANU - Cost-effective Si/Perovskite Tandem Modules on Passivating Contact
+    Si Cells - R&D Interim Report
+  publish_date: '2024-05-31'
+  project_name: Cost-effective Si/Perovskite Tandem Modules on Passivating Contact
+    Si Cells (2022/TRAC005)
+  what_happened: Investigations into alternatives to the commonly used but thermally
+    unstable hole transport material Spiro-OMeTAD identified Spiro-TTB as a promising
+    candidate with better thermal stability. However, cells using Spiro-TTB showed
+    performance that was unexpectedly highly dependent on the electron transport layer
+    used — a synergistic inter-layer interaction not observed with Spiro-OMeTAD and
+    not anticipated.
+  lesson_learnt: Different layers in a perovskite solar cell can interact strongly
+    and unpredictably with each other; when substituting a new material for one layer,
+    its compatibility with all other cell layers must be empirically validated rather
+    than assumed. Future R&D programmes should incorporate cross-layer interaction
+    testing and invest in device modelling tools capable of predicting multi-layer
+    performance.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Investigations into the cause of the electron-transport-layer
+    dependency are ongoing; no resolution stated in this report.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id002
+  - 11
+  - 12
+  evidence_excerpt: further investigation showed that the cell performance tended
+    to be highly dependent on the electron transport layer used, in contrast to Spiro-OMeTAD,
+    where cell performance was insensitive to the electron transport layer. This was
+    unexpected. The reasons are currently under investigation.
+  confidence_note: 'project_type ''software/data/digital'' is not a good fit; this
+    is a materials R&D event. Nearest available value is null or ''enabling infrastructure''.
+    Classified null-adjacent — confidence_note flags ambiguity. The secondary_failure_mode
+    of design assumption failure captures the unexpected interaction.; project_type
+    reconciled to ''generation'' from: generation (2/4), research organisation/university
+    (1/4), software/data/digital (1/4)'
+  source_url: https://arena.gov.au/knowledge-bank/anu-cost-effective-si-perovskite-tandem-modules-on-passivating-contact-si-cells-rd-interim-report/
+  project_page_url: https://arena.gov.au/projects/cost-effective-si-perovskite-tandem-modules-on-passivating-contact-si-cells/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 2/10/2024
+  kb_year: '2022'
+  kb_associated_project: Cost-effective Si/Perovskite Tandem Modules on Passivating
+    Contact Si Cells
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $4.3m
+  total_project_value: $19.01m
+  lead_organisation: 'The Australian National University '
+  arena_program: Ultra Low Cost Solar PV Research and Development Round
+  project_status: Current
+  project_start_date: 02/12/2022
+  location: Australian Capital Territory, Canberra
+  project_partners: The University of New South Wales (UNSW), The University of Melbourne,
+    JinkoSolar Holding
+  pdf_url: https://arena.gov.au/assets/2024/10/ANU_Cost-effective-Si-and-Perovskite-Tandem-Modules-on-Passivating-Contact-Si-Cells_Interim-Report.pdf
+  markdown_filename: anu_cost_effective_siperovskite_tandem_modules_on_passivating_contact_si_cells_rd_interim_report.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-7902
+  contributing_source_titles:
+  - ANU - Cost-effective Si/Perovskite Tandem Modules on Passivating Contact Si Cells
+    - R&D Interim Report
+  contributing_sources:
+  - source_title: ANU - Cost-effective Si/Perovskite Tandem Modules on Passivating
+      Contact Si Cells - R&D Interim Report
+    pdf_url: https://arena.gov.au/assets/2024/10/ANU_Cost-effective-Si-and-Perovskite-Tandem-Modules-on-Passivating-Contact-Si-Cells_Interim-Report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/anu-cost-effective-si-perovskite-tandem-modules-on-passivating-contact-si-cells-rd-interim-report/
+    markdown_filename: anu_cost_effective_siperovskite_tandem_modules_on_passivating_contact_si_cells_rd_interim_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-7903
+  source_title: ANU - Cost-effective Si/Perovskite Tandem Modules on Passivating Contact
+    Si Cells - R&D Interim Report
+  publish_date: '2024-05-31'
+  project_name: Cost-effective Si/Perovskite Tandem Modules on Passivating Contact
+    Si Cells (2022/TRAC005)
+  what_happened: Scaling perovskite-silicon tandem cells from 1 cm² to 20 cm² required
+    modification of several process steps, particularly metallisation (metal finger
+    design for current collection across the larger area). After successful development,
+    the team achieved 23.7% efficiency on 20 cm² devices, exceeding the 23% target.
+  lesson_learnt: Upscaling perovskite-silicon tandem cells requires non-trivial process
+    redesign — current collection metallisation that works at 1 cm² does not transfer
+    directly to larger areas and must be re-engineered. Plan explicit scale-up work
+    packages and associated resourcing when moving from small-area proof-of-concept
+    to commercially relevant cell sizes.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Metallisation and other process steps were redesigned specifically
+    for the 20 cm² format, enabling the efficiency target to be exceeded.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id003
+  - 8
+  evidence_excerpt: For large area, 20cm2 devices, it was necessary to modify several
+    process steps. One of the challenges in scaling up to larger areas lies in the
+    collection of the electrical current from the cell... Successful development of
+    the metallisation and other improvements enabled us to achieve an efficiency of
+    23.7%.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/anu-cost-effective-si-perovskite-tandem-modules-on-passivating-contact-si-cells-rd-interim-report/
+  project_page_url: https://arena.gov.au/projects/cost-effective-si-perovskite-tandem-modules-on-passivating-contact-si-cells/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 2/10/2024
+  kb_year: '2022'
+  kb_associated_project: Cost-effective Si/Perovskite Tandem Modules on Passivating
+    Contact Si Cells
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $4.3m
+  total_project_value: $19.01m
+  lead_organisation: 'The Australian National University '
+  arena_program: Ultra Low Cost Solar PV Research and Development Round
+  project_status: Current
+  project_start_date: 02/12/2022
+  location: Australian Capital Territory, Canberra
+  project_partners: The University of New South Wales (UNSW), The University of Melbourne,
+    JinkoSolar Holding
+  pdf_url: https://arena.gov.au/assets/2024/10/ANU_Cost-effective-Si-and-Perovskite-Tandem-Modules-on-Passivating-Contact-Si-Cells_Interim-Report.pdf
+  markdown_filename: anu_cost_effective_siperovskite_tandem_modules_on_passivating_contact_si_cells_rd_interim_report.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-7903
+  contributing_source_titles:
+  - ANU - Cost-effective Si/Perovskite Tandem Modules on Passivating Contact Si Cells
+    - R&D Interim Report
+  contributing_sources:
+  - source_title: ANU - Cost-effective Si/Perovskite Tandem Modules on Passivating
+      Contact Si Cells - R&D Interim Report
+    pdf_url: https://arena.gov.au/assets/2024/10/ANU_Cost-effective-Si-and-Perovskite-Tandem-Modules-on-Passivating-Contact-Si-Cells_Interim-Report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/anu-cost-effective-si-perovskite-tandem-modules-on-passivating-contact-si-cells-rd-interim-report/
+    markdown_filename: anu_cost_effective_siperovskite_tandem_modules_on_passivating_contact_si_cells_rd_interim_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-7904
+  source_title: ANU - Cost-effective Si/Perovskite Tandem Modules on Passivating Contact
+    Si Cells - R&D Interim Report
+  publish_date: '2024-05-31'
+  project_name: Cost-effective Si/Perovskite Tandem Modules on Passivating Contact
+    Si Cells (2022/TRAC005)
+  what_happened: Perovskite cells are chemically reactive with the widely used encapsulant
+    EVA and cannot withstand the high lamination temperatures (>150 °C) standard in
+    silicon module production. This materials incompatibility means standard silicon
+    module encapsulation processes cannot be applied directly to perovskite or tandem
+    modules, requiring new encapsulation process development.
+  lesson_learnt: Standard silicon module encapsulation processes (EVA encapsulant,
+    >150 °C lamination) are incompatible with perovskite cells and cannot be assumed
+    transferable to tandem modules. Projects commercialising perovskite-containing
+    modules must budget for dedicated encapsulation process and materials development
+    as a distinct workstream, not a late-stage integration task.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: A dedicated work package (WP-3) was established to develop and
+    evaluate modified encapsulation processes and materials compatible with perovskite
+    cells.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id004
+  - 5
+  evidence_excerpt: perovskite materials are reactive to the widely used encapsulant
+    ethylene vinyl acetate (EVA) and they cannot withstand the high temperature (generally
+    over 150 °C) involved in the lamination process. Therefore, it is necessary to
+    modify the typical encapsulation processes to reduce moisture and oxygen ingress.
+  confidence_note: 'project_scale_band reconciled to ''lab/bench'' from: lab/bench
+    (3/4), demonstration (1/4)'
+  source_url: https://arena.gov.au/knowledge-bank/anu-cost-effective-si-perovskite-tandem-modules-on-passivating-contact-si-cells-rd-interim-report/
+  project_page_url: https://arena.gov.au/projects/cost-effective-si-perovskite-tandem-modules-on-passivating-contact-si-cells/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 2/10/2024
+  kb_year: '2022'
+  kb_associated_project: Cost-effective Si/Perovskite Tandem Modules on Passivating
+    Contact Si Cells
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $4.3m
+  total_project_value: $19.01m
+  lead_organisation: 'The Australian National University '
+  arena_program: Ultra Low Cost Solar PV Research and Development Round
+  project_status: Current
+  project_start_date: 02/12/2022
+  location: Australian Capital Territory, Canberra
+  project_partners: The University of New South Wales (UNSW), The University of Melbourne,
+    JinkoSolar Holding
+  pdf_url: https://arena.gov.au/assets/2024/10/ANU_Cost-effective-Si-and-Perovskite-Tandem-Modules-on-Passivating-Contact-Si-Cells_Interim-Report.pdf
+  markdown_filename: anu_cost_effective_siperovskite_tandem_modules_on_passivating_contact_si_cells_rd_interim_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-7904
+  contributing_source_titles:
+  - ANU - Cost-effective Si/Perovskite Tandem Modules on Passivating Contact Si Cells
+    - R&D Interim Report
+  contributing_sources:
+  - source_title: ANU - Cost-effective Si/Perovskite Tandem Modules on Passivating
+      Contact Si Cells - R&D Interim Report
+    pdf_url: https://arena.gov.au/assets/2024/10/ANU_Cost-effective-Si-and-Perovskite-Tandem-Modules-on-Passivating-Contact-Si-Cells_Interim-Report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/anu-cost-effective-si-perovskite-tandem-modules-on-passivating-contact-si-cells-rd-interim-report/
+    markdown_filename: anu_cost_effective_siperovskite_tandem_modules_on_passivating_contact_si_cells_rd_interim_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92

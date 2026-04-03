@@ -1,0 +1,252 @@
+- record_id: ARENA-DLV-2251
+  source_title: Maximising Solar PV with Phase Change Thermal Energy Storage
+  publish_date: '2019-02-13'
+  project_name: Maximising Solar PV with Phase Change Thermal Energy Storage
+  what_happened: The original project scope planned a single demonstration system
+    to serve both technical testing and commercial showcasing purposes. Feedback from
+    potential end users revealed that a single system could not convince diverse audiences
+    — technical audiences required controlled laboratory experiments while commercial
+    audiences required in-field demonstrations matching their specific operational
+    context.
+  lesson_learnt: Plan for multiple demonstration systems from the outset when targeting
+    both technical and commercial audiences — a single system cannot simultaneously
+    satisfy the evidence requirements of both groups, and relying on one risks failing
+    to convert either audience.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: An opportunity arose to conduct a second demonstration system
+    with additional funding from industry and UniSA, resulting in both an in-house
+    controlled laboratory system and an in-field system at The Bends Motorsports Park.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id001
+  - 8
+  evidence_excerpt: A single demonstration system was originally planned both for
+    testing and as an example for potential end users. It was clear from feedback
+    that end users are only convinced of the viability of research in a demonstration
+    that matches their specific requirements.
+  confidence_note: technology_domain coded as 'battery storage' is imprecise — PCM
+    thermal storage is not battery storage; 'other' could apply but battery storage
+    is the closest allowed value for a thermal energy storage system functioning analogously
+    to a battery.
+  source_url: https://arena.gov.au/knowledge-bank/maximising-solar-pv-with-phase-change-thermal-energy-storage/
+  project_page_url: https://arena.gov.au/projects/maximising-solar-photovoltaic-with-phase-change-thermal-energy-storage/
+  kb_category: Renewables for industry, Renewables in buildings, Solar energy, Solar
+    PV R&amp;D
+  kb_publish_date: 7/05/2019
+  kb_year: '2016'
+  kb_associated_project: Maximising Solar PV with Phase Change Thermal Energy Storage
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $995k
+  total_project_value: $2.16m
+  lead_organisation: University of South Australia
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 08/04/2016
+  location: Adelaide, South Australia
+  project_partners: University of Lleida, The Solar Project, Glaciem
+  pdf_url: https://arena.gov.au/assets/2017/02/maximising-solar-pv-phase-change-thermal-energy-storage.pdf
+  markdown_filename: maximising_solar_pv_with_phase_change_thermal_energy_storage.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-2251
+  contributing_source_titles:
+  - Maximising Solar PV with Phase Change Thermal Energy Storage
+  contributing_sources:
+  - source_title: Maximising Solar PV with Phase Change Thermal Energy Storage
+    pdf_url: https://arena.gov.au/assets/2017/02/maximising-solar-pv-phase-change-thermal-energy-storage.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/maximising-solar-pv-with-phase-change-thermal-energy-storage/
+    markdown_filename: maximising_solar_pv_with_phase_change_thermal_energy_storage.md
+  arena_category:
+  - Industrial renewables
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-2252
+  source_title: Maximising Solar PV with Phase Change Thermal Energy Storage
+  publish_date: '2019-02-13'
+  project_name: Maximising Solar PV with Phase Change Thermal Energy Storage
+  what_happened: The optimal control strategy was initially designed to be evaluated
+    through simulation alone. When implemented on the physical thermal storage system,
+    the complexity and uniqueness of the control strategy relative to conventional
+    control options created practical integration challenges — mode definitions, forecast
+    internet feed compatibility, and control reliability required iterative refinement
+    before satisfactory operation was achieved.
+  lesson_learnt: When developing advanced control strategies for thermal storage or
+    similar systems, practical implementation constraints must be evaluated in parallel
+    with simulation-based optimisation — complexity that is invisible in simulation
+    can become a significant integration barrier when applied to real hardware and
+    live forecast data feeds.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Mode definitions were iteratively reviewed until satisfactory,
+    relevant forecast internet feeds were integrated via software, and reliability,
+    speed, and forecast accuracy impacts were systematically tested before finalising
+    the control strategy.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id002
+  - 9
+  evidence_excerpt: The complexity of the control strategy and its uniqueness relative
+    to the conventional control options applied to the thermal storage system could
+    not be ignored. The output of the control strategy is to provide modes of operation.
+    The nature of these modes and how the thermal storage system would respond was
+    iteratively reviewed until a satisfactory mode definition was established.
+  confidence_note: lifecycle_phase assigned as commissioning/integration because the
+    issue arose during physical implementation and integration testing of the control
+    system, not during design simulation. technology_domain imprecision noted as per
+    record 2251.
+  source_url: https://arena.gov.au/knowledge-bank/maximising-solar-pv-with-phase-change-thermal-energy-storage/
+  project_page_url: https://arena.gov.au/projects/maximising-solar-photovoltaic-with-phase-change-thermal-energy-storage/
+  kb_category: Renewables for industry, Renewables in buildings, Solar energy, Solar
+    PV R&amp;D
+  kb_publish_date: 7/05/2019
+  kb_year: '2016'
+  kb_associated_project: Maximising Solar PV with Phase Change Thermal Energy Storage
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $995k
+  total_project_value: $2.16m
+  lead_organisation: University of South Australia
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 08/04/2016
+  location: Adelaide, South Australia
+  project_partners: University of Lleida, The Solar Project, Glaciem
+  pdf_url: https://arena.gov.au/assets/2017/02/maximising-solar-pv-phase-change-thermal-energy-storage.pdf
+  markdown_filename: maximising_solar_pv_with_phase_change_thermal_energy_storage.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-2252
+  contributing_source_titles:
+  - Maximising Solar PV with Phase Change Thermal Energy Storage
+  contributing_sources:
+  - source_title: Maximising Solar PV with Phase Change Thermal Energy Storage
+    pdf_url: https://arena.gov.au/assets/2017/02/maximising-solar-pv-phase-change-thermal-energy-storage.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/maximising-solar-pv-with-phase-change-thermal-energy-storage/
+    markdown_filename: maximising_solar_pv_with_phase_change_thermal_energy_storage.md
+  arena_category:
+  - Industrial renewables
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-2253
+  source_title: Maximising Solar PV with Phase Change Thermal Energy Storage
+  publish_date: '2019-02-13'
+  project_name: Maximising Solar PV with Phase Change Thermal Energy Storage
+  what_happened: The project's original PCM technology was developed for ammonia refrigeration
+    systems operating at -11°C, positioned for a market expected to grow under the
+    carbon tax. When the carbon tax was removed, ammonia refrigeration lost commercial
+    attractiveness, and the existing PCM freeze temperature was incompatible with
+    conventional HFC systems. Simultaneously, a market shift toward demand tariffs
+    and solar PV uptake reduced the attractiveness of classical load-shifting operation,
+    rendering the original technology and business case obsolete before the ARENA
+    project commenced.
+  lesson_learnt: Research projects built on a specific regulatory or market assumption
+    (e.g. carbon pricing, a dominant refrigerant type) should stress-test their commercial
+    premise against plausible policy reversals before committing to a technology pathway
+    — a single policy change can invalidate both the technology specification and
+    the business case simultaneously.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: The team redesigned the PCM to freeze at -6°C (compatible with
+    all refrigeration systems) and developed a new optimal control algorithm capable
+    of operating across variable solar PV and demand tariff regimes, effectively rebuilding
+    the technology for the new market conditions.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id003
+  - 4
+  evidence_excerpt: With the removal of the carbon tax, ammonia refrigeration was
+    no longer a technology of interest in the market, and the PCM developed froze
+    at too low a temperature for conventional HFC systems. Furthermore, a shift towards
+    demand tariffs and the uptake of solar PV reduced the attractiveness of PCM thermal
+    storage operating in a classical load shifting role. This research project aimed
+    to re-develop the PCM storage technology suitable for these new market conditions.
+  confidence_note: This event predates the ARENA project but directly shaped its scope
+    and objectives; classified as concept/feasibility because the rescope occurred
+    before the funded project's technical work began.
+  source_url: https://arena.gov.au/knowledge-bank/maximising-solar-pv-with-phase-change-thermal-energy-storage/
+  project_page_url: https://arena.gov.au/projects/maximising-solar-photovoltaic-with-phase-change-thermal-energy-storage/
+  kb_category: Renewables for industry, Renewables in buildings, Solar energy, Solar
+    PV R&amp;D
+  kb_publish_date: 7/05/2019
+  kb_year: '2016'
+  kb_associated_project: Maximising Solar PV with Phase Change Thermal Energy Storage
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $995k
+  total_project_value: $2.16m
+  lead_organisation: University of South Australia
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 08/04/2016
+  location: Adelaide, South Australia
+  project_partners: University of Lleida, The Solar Project, Glaciem
+  pdf_url: https://arena.gov.au/assets/2017/02/maximising-solar-pv-phase-change-thermal-energy-storage.pdf
+  markdown_filename: maximising_solar_pv_with_phase_change_thermal_energy_storage.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-2253
+  contributing_source_titles:
+  - Maximising Solar PV with Phase Change Thermal Energy Storage
+  contributing_sources:
+  - source_title: Maximising Solar PV with Phase Change Thermal Energy Storage
+    pdf_url: https://arena.gov.au/assets/2017/02/maximising-solar-pv-phase-change-thermal-energy-storage.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/maximising-solar-pv-with-phase-change-thermal-energy-storage/
+    markdown_filename: maximising_solar_pv_with_phase_change_thermal_energy_storage.md
+  arena_category:
+  - Industrial renewables
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92

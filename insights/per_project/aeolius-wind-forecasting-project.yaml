@@ -1,0 +1,2185 @@
+- record_id: ARENA-DLV-45459
+  source_title: Aeolius Wind Forecasting Demonstration Project - Lessons Learnt Report
+    4a
+  publish_date: 2025-02
+  project_name: Aeolius Wind Systems Wind Forecasting Demonstration Project
+  what_happened: Four machine learning models evaluated on data from Macarthur and
+    Hallett Hill wind farms successfully predicted the general trend of the five-minute-ahead
+    wind field but failed to accurately capture short-duration 'turning points' —
+    transitions in wind speed (deviating ≥50%) and direction (≥20 degrees) from the
+    prevailing trend. Model performance was found to be comparable to the existing
+    AEMO forecaster, providing no material improvement.
+  lesson_learnt: Machine learning models trained on historical time-series data consistently
+    fail at turning points (rapid ramp events), which are precisely the moments of
+    highest operational value. Future development must prioritise custom metrics that
+    weight turning points more heavily in training, and incorporate atmospheric variables
+    such as stability, turbulence intensity, and wind shear to improve predictive
+    skill at these critical junctures.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: The Dual Doppler LiDAR strategy was refocused specifically on
+    detecting turning points (ramp-up/ramp-down transitions); ML model retraining
+    using upstream LiDAR data rather than turbine anemometer data was identified as
+    the required corrective pathway.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages:
+  - 1
+  - 2
+  - 3
+  - 14
+  evidence_excerpt: The forecast models were successful in predicting the broad trend
+    in the incoming wind field in the 5minute ahead time frame, however failed to
+    capture the turning points with the required level of accuracy. It was concluded
+    that further model development is required to improve forecast skills to allow
+    the use of these tools in operational settings.
+  confidence_note: Canonical record merged from 3 source records across 3 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-forecasting-demonstration-project-lessons-learnt-report-4a/
+  project_page_url: https://arena.gov.au/projects/aeolius-wind-forecasting-project/
+  kb_category: Wind energy
+  kb_publish_date: 12/05/2025
+  kb_year: '2019'
+  kb_associated_project: Aeolius Wind Forecasting Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $1.89m
+  total_project_value: $4.96m
+  lead_organisation: Aeolius Wind Systems
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 31/01/2019
+  location: MacArthur, Victoria
+  project_partners: AGL Energy Ltd, Curtin University, Adelaide University
+  pdf_url: https://arena.gov.au/assets/2025/05/Aeolius-–-Wind-Forecasting-Demonstration-Project-Lessons-Learnt-Report-4a.pdf
+  markdown_filename: aeolius_wind_forecasting_demonstration_project_lessons_learnt_report_4a.md
+  source_page_pdf: 14
+  corroboration_count: 3
+  source_doc_count: 3
+  contributing_record_ids:
+  - ARENA-DLV-26251
+  - ARENA-DLV-45459
+  - ARENA-DLV-58055
+  contributing_source_titles:
+  - 'Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons Learnt Report
+    #4'
+  - Aeolius Wind Forecasting Demonstration Project - Lessons Learnt Report 4a
+  - Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons Learnt 2
+  contributing_sources:
+  - source_title: Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+      Learnt 2
+    pdf_url: https://arena.gov.au/assets/2020/07/aeolius-wind-systems-wind-forecasting-lessons-learnt-report-2.pdf
+    source_pages:
+    - 1
+    - 2
+    - 3
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-2/
+    markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_2.md
+  - source_title: Aeolius Wind Forecasting Demonstration Project - Lessons Learnt
+      Report 4a
+    pdf_url: https://arena.gov.au/assets/2025/05/Aeolius-–-Wind-Forecasting-Demonstration-Project-Lessons-Learnt-Report-4a.pdf
+    source_pages:
+    - 14
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-forecasting-demonstration-project-lessons-learnt-report-4a/
+    markdown_filename: aeolius_wind_forecasting_demonstration_project_lessons_learnt_report_4a.md
+  - source_title: 'Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+      Learnt Report #4'
+    pdf_url: https://arena.gov.au/assets/2024/07/Aeolius-Wind-forecasting-project-lessons-learnt-report-4.pdf
+    source_pages:
+    - 2
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-report-4/
+    markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_report_4.md
+  arena_category:
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-45460
+  source_title: Aeolius Wind Forecasting Demonstration Project - Lessons Learnt Report
+    4a
+  publish_date: 2025-02
+  project_name: Aeolius Wind Systems Wind Forecasting Demonstration Project
+  what_happened: 'Machine learning forecast models were trained using time series
+    data from anemometers mounted on wind turbines. In retrospect, this was identified
+    as a fundamental data source error: turbine-mounted sensors measure wind at the
+    turbine location rather than upstream, so they cannot capture the upstream wind
+    field dynamics that drive forecast skill for approaching events.'
+  lesson_learnt: Train wind forecast machine learning models on upstream wind field
+    data (e.g. from scanning LiDAR) rather than turbine-mounted anemometer data —
+    anemometers measure wind at the wrong location for predicting incoming changes,
+    which limits model skill regardless of algorithmic sophistication.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The project pivoted to training models using LiDAR-derived upstream
+    wind field data, with the expectation that this will also reduce long-term dependence
+    on the LiDAR instrument once the model is trained.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages:
+  - 2
+  - 15
+  evidence_excerpt: The source of time series data used to train the four machine-learning
+    models was sourced from anemometers mounted on wind turbines. In hindsight, it
+    is unsurprising that the model skill was limited, as the data was collected in
+    the wrong location. The relevant consideration is the wind field dynamics upstream
+    of the wind farm, not the historical trend at the turbines.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-forecasting-demonstration-project-lessons-learnt-report-4a/
+  project_page_url: https://arena.gov.au/projects/aeolius-wind-forecasting-project/
+  kb_category: Wind energy
+  kb_publish_date: 12/05/2025
+  kb_year: '2019'
+  kb_associated_project: Aeolius Wind Forecasting Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $1.89m
+  total_project_value: $4.96m
+  lead_organisation: Aeolius Wind Systems
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 31/01/2019
+  location: MacArthur, Victoria
+  project_partners: AGL Energy Ltd, Curtin University, Adelaide University
+  pdf_url: https://arena.gov.au/assets/2025/05/Aeolius-–-Wind-Forecasting-Demonstration-Project-Lessons-Learnt-Report-4a.pdf
+  markdown_filename: aeolius_wind_forecasting_demonstration_project_lessons_learnt_report_4a.md
+  source_page_pdf: 15
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-26252
+  - ARENA-DLV-45460
+  contributing_source_titles:
+  - Aeolius Wind Forecasting Demonstration Project - Lessons Learnt Report 4a
+  - Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons Learnt 2
+  contributing_sources:
+  - source_title: Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+      Learnt 2
+    pdf_url: https://arena.gov.au/assets/2020/07/aeolius-wind-systems-wind-forecasting-lessons-learnt-report-2.pdf
+    source_pages:
+    - 2
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-2/
+    markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_2.md
+  - source_title: Aeolius Wind Forecasting Demonstration Project - Lessons Learnt
+      Report 4a
+    pdf_url: https://arena.gov.au/assets/2025/05/Aeolius-–-Wind-Forecasting-Demonstration-Project-Lessons-Learnt-Report-4a.pdf
+    source_pages:
+    - 15
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-forecasting-demonstration-project-lessons-learnt-report-4a/
+    markdown_filename: aeolius_wind_forecasting_demonstration_project_lessons_learnt_report_4a.md
+  arena_category:
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-26253
+  source_title: Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+    Learnt 2
+  publish_date: 2020-04
+  project_name: Aeolius Wind Systems Wind Forecasting Demonstration Project
+  what_happened: Machine learning model performance was degraded by data gaps caused
+    by communications outages within the Macarthur Windfarm SCADA and telecommunications
+    systems, requiring assumptions to be made about power output from individual turbines
+    and introducing further forecast uncertainty.
+  lesson_learnt: Data infrastructure reliability — particularly SCADA and telecommunications
+    continuity — is a prerequisite for operational ML forecasting. Future deployments
+    should audit communications reliability at prospective sites before committing
+    to ML-based forecasting trials, and design data-gap imputation strategies in advance.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Assumptions were made on individual turbine power output to fill
+    gaps, though this introduced additional uncertainty rather than resolving the
+    underlying data quality issue.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages:
+  - 3
+  - 4
+  evidence_excerpt: Technical problems were encountered with the available data sets
+    that adversely affect the skill of the models. In some instances, data was unavailable
+    due to communications outages within the windfarm. Here assumptions must be made
+    on the power output from individual wind turbines to obtain the overall forecast.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/aeolius-wind-forecasting-project/
+  kb_category: Wind energy
+  kb_publish_date: 3/04/2020
+  kb_year: '2019'
+  kb_associated_project: Aeolius Wind Forecasting Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $1.89m
+  total_project_value: $4.96m
+  lead_organisation: Aeolius Wind Systems
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 31/01/2019
+  location: MacArthur, Victoria
+  project_partners: AGL Energy Ltd, Curtin University, Adelaide University
+  pdf_url: https://arena.gov.au/assets/2020/07/aeolius-wind-systems-wind-forecasting-lessons-learnt-report-2.pdf
+  markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_2.md
+  source_page_pdf: 3
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-26253
+  - ARENA-DLV-28704
+  contributing_source_titles:
+  - Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons Learnt 1
+  - Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons Learnt 2
+  contributing_sources:
+  - source_title: Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+      Learnt 2
+    pdf_url: https://arena.gov.au/assets/2020/07/aeolius-wind-systems-wind-forecasting-lessons-learnt-report-2.pdf
+    source_pages:
+    - 3
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-2/
+    markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_2.md
+  - source_title: Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+      Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/12/aeolius-wind-systems-wind-forecasting-demonstration.pdf
+    source_pages:
+    - 4
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-1/
+    markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_1.md
+  arena_category:
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-26254
+  source_title: Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+    Learnt 2
+  publish_date: 2020-04
+  project_name: Aeolius Wind Systems Wind Forecasting Demonstration Project
+  what_happened: A short-range (2–5 km) scanning Doppler lidar trialled at Warradarge
+    Windfarm in Western Australia was found unsuitable for five-minute ahead power
+    forecasting due to limited range, low scanning speed, and low data availability
+    beyond 2.5 km across the full 24-hour diurnal cycle — including during daytime
+    high-turbulence periods and under rain and fog conditions.
+  lesson_learnt: Short-range scanning Doppler lidar (2–5 km class) is not fit for
+    purpose as a standalone wind power forecasting instrument under typical Australian
+    windfarm environmental conditions; the technology class should not be selected
+    for operational forecasting applications without first confirming that measurement
+    range exceeds minimum upstream detection requirements across the full diurnal
+    cycle and in adverse weather.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The project team identified that a higher-powered lidar class
+    combined with advanced signal processing could address the range and availability
+    limitations; a dual Doppler demonstration using high-powered lidar technology
+    was scheduled for late 2020 at Macarthur Windfarm.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages:
+  - 2
+  - 3
+  - 4
+  evidence_excerpt: The initial results suggest that this technology is unsuitable
+    for the application due to limited range, low scanning speed, and low data availability
+    at range beyond 2.5 km across the entire 24hr cycle. It is likely that there will
+    be significant period where forecaster will be 'blind' to changes in upstream
+    flow conditions, especially during the daytime where there are high levels of
+    atmospheric turbulence, or under rain and fog.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/aeolius-wind-forecasting-project/
+  kb_category: Wind energy
+  kb_publish_date: 3/04/2020
+  kb_year: '2019'
+  kb_associated_project: Aeolius Wind Forecasting Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $1.89m
+  total_project_value: $4.96m
+  lead_organisation: Aeolius Wind Systems
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 31/01/2019
+  location: MacArthur, Victoria
+  project_partners: AGL Energy Ltd, Curtin University, Adelaide University
+  pdf_url: https://arena.gov.au/assets/2020/07/aeolius-wind-systems-wind-forecasting-lessons-learnt-report-2.pdf
+  markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_2.md
+  source_page_pdf: 3
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-26254
+  - ARENA-DLV-58054
+  contributing_source_titles:
+  - 'Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons Learnt Report
+    #4'
+  - Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons Learnt 2
+  contributing_sources:
+  - source_title: Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+      Learnt 2
+    pdf_url: https://arena.gov.au/assets/2020/07/aeolius-wind-systems-wind-forecasting-lessons-learnt-report-2.pdf
+    source_pages:
+    - 3
+    - 4
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-2/
+    markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_2.md
+  - source_title: 'Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+      Learnt Report #4'
+    pdf_url: https://arena.gov.au/assets/2024/07/Aeolius-Wind-forecasting-project-lessons-learnt-report-4.pdf
+    source_pages:
+    - 2
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-report-4/
+    markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_report_4.md
+  arena_category:
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-26255
+  source_title: Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+    Learnt 2
+  publish_date: 2020-04
+  project_name: Aeolius Wind Systems Wind Forecasting Demonstration Project
+  what_happened: Measurement range of the short-range scanning Doppler lidar at Warradarge
+    fluctuated significantly over the 24-hour diurnal cycle, attributed to changes
+    in aerosol concentration levels, creating unpredictable gaps in upstream wind
+    field observation capability.
+  lesson_learnt: Aerosol-driven diurnal variability in lidar measurement range must
+    be characterised at a candidate site before committing to lidar-based forecasting
+    deployment; sites with high daytime atmospheric turbulence or variable aerosol
+    loading may require higher-powered instruments or hybrid approaches to maintain
+    forecast continuity.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Further investigations were initiated to better understand the
+    aerosol concentration challenge, and multiple measurement strategies were planned
+    for the next trial stage to address lidar range limitations.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id001
+  - 3
+  evidence_excerpt: Measurement range was observed to fluctuate significantly over
+    the 24-hr diurnal cycle at the Warradarge site, presumably as a result of changes
+    in aerosol concentration levels. This has implications to the deployment of this
+    class of scanning lidar in short-range forecasting applications under the environmental
+    conditions experienced on site.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/aeolius-wind-forecasting-project/
+  kb_category: Wind energy
+  kb_publish_date: 3/04/2020
+  kb_year: '2019'
+  kb_associated_project: Aeolius Wind Forecasting Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $1.89m
+  total_project_value: $4.96m
+  lead_organisation: Aeolius Wind Systems
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 31/01/2019
+  location: MacArthur, Victoria
+  project_partners: AGL Energy Ltd, Curtin University, Adelaide University
+  pdf_url: https://arena.gov.au/assets/2020/07/aeolius-wind-systems-wind-forecasting-lessons-learnt-report-2.pdf
+  markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_2.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26255
+  contributing_source_titles:
+  - Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons Learnt 2
+  contributing_sources:
+  - source_title: Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+      Learnt 2
+    pdf_url: https://arena.gov.au/assets/2020/07/aeolius-wind-systems-wind-forecasting-lessons-learnt-report-2.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-2/
+    markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_2.md
+  arena_category:
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-26256
+  source_title: Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+    Learnt 2
+  publish_date: 2020-04
+  project_name: Aeolius Wind Systems Wind Forecasting Demonstration Project
+  what_happened: Despite its unsuitability as a standalone forecasting instrument,
+    the short-range scanning lidar successfully confirmed the accuracy of wind retrievals
+    in the far field using data from meteorological masts, and yielded insights into
+    the required scanning strategies for the planned dual Doppler lidar demonstration.
+  lesson_learnt: Even when a technology trial fails its primary objective, the ancillary
+    data and methodological insights generated can directly inform the design of successor
+    trials — failed instrument trials should be structured to extract maximum transferable
+    learning about scanning strategies and site characterisation.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id002
+  - 1
+  - 4
+  evidence_excerpt: The investigation confirmed the accuracy of the wind retrievals
+    in the far field using data from meteorological masts and provided insights into
+    the required scanning strategies for the planned dual Doppler lidar demonstration
+    at Macarthur windfarm in late 2020.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/aeolius-wind-forecasting-project/
+  kb_category: Wind energy
+  kb_publish_date: 3/04/2020
+  kb_year: '2019'
+  kb_associated_project: Aeolius Wind Forecasting Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $1.89m
+  total_project_value: $4.96m
+  lead_organisation: Aeolius Wind Systems
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 31/01/2019
+  location: MacArthur, Victoria
+  project_partners: AGL Energy Ltd, Curtin University, Adelaide University
+  pdf_url: https://arena.gov.au/assets/2020/07/aeolius-wind-systems-wind-forecasting-lessons-learnt-report-2.pdf
+  markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_2.md
+  source_page_pdf: 1
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26256
+  contributing_source_titles:
+  - Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons Learnt 2
+  contributing_sources:
+  - source_title: Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+      Learnt 2
+    pdf_url: https://arena.gov.au/assets/2020/07/aeolius-wind-systems-wind-forecasting-lessons-learnt-report-2.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-2/
+    markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_2.md
+  arena_category:
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-26257
+  source_title: Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+    Learnt 2
+  publish_date: 2020-04
+  project_name: Aeolius Wind Systems Wind Forecasting Demonstration Project
+  what_happened: The project identified a significant knowledge gap in understanding
+    the causal atmospheric factors — such as atmospheric stability, turbulence intensity,
+    surface roughness, wind shear, direction and velocity — that drive random fluctuations
+    in wind flow, which directly undermine the performance of neural network forecasters
+    at turning points.
+  lesson_learnt: A collaborative research effort between local and international researchers
+    already working on atmospheric turbulence characterisation is the most cost-effective
+    pathway to closing the knowledge gap that limits neural network wind forecaster
+    skill; future wind forecasting projects should budget for and formalise such research
+    partnerships before entering operational trials.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: The document notes that research at Notre Dame University, Indiana
+    is underway to identify key atmospheric processes needed to predict turbulence
+    frequency and intensity, and recommends a collaborative international research
+    effort as a cost-effective pathway.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id003
+  - 2
+  - 5
+  evidence_excerpt: There is a significant knowledge gap in identifying the causal
+    factors driving random fluctuations in atmospheric flow field behaviour which
+    undermines the performance of neural network forecasters. Further research is
+    required to identify the main atmospheric variables (or combination of variables)
+    such as atmospheric stability, turbulence intensity, surface roughness, wind shear,
+    direction, velocity etc. that need to be incorporated into the models to improve
+    predictive skill.
+  confidence_note: lifecycle_phase set to concept/feasibility as this record concerns
+    a foundational research gap that must be addressed before future project design,
+    rather than an event within this project's own delivery lifecycle.
+  source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/aeolius-wind-forecasting-project/
+  kb_category: Wind energy
+  kb_publish_date: 3/04/2020
+  kb_year: '2019'
+  kb_associated_project: Aeolius Wind Forecasting Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $1.89m
+  total_project_value: $4.96m
+  lead_organisation: Aeolius Wind Systems
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 31/01/2019
+  location: MacArthur, Victoria
+  project_partners: AGL Energy Ltd, Curtin University, Adelaide University
+  pdf_url: https://arena.gov.au/assets/2020/07/aeolius-wind-systems-wind-forecasting-lessons-learnt-report-2.pdf
+  markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_2.md
+  source_page_pdf: 5
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-26257
+  contributing_source_titles:
+  - Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons Learnt 2
+  contributing_sources:
+  - source_title: Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+      Learnt 2
+    pdf_url: https://arena.gov.au/assets/2020/07/aeolius-wind-systems-wind-forecasting-lessons-learnt-report-2.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-2/
+    markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_2.md
+  arena_category:
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-28701
+  source_title: Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+    Learnt 1
+  publish_date: 2019-10
+  project_name: Aeolius Wind Systems Wind Forecasting Demonstration Project
+  what_happened: During deployment of the short-range scanning Doppler lidar at Macarthur
+    windfarm, reliable high-speed telecommunication connectivity was not available
+    at the lidar installation site, even though suitable infrastructure existed at
+    the windfarm control centre. Remote operation of the forecaster depended on this
+    connectivity.
+  lesson_learnt: Assess and confirm high-speed remote telecommunication capability
+    at the specific lidar installation location — not just the windfarm control centre
+    — during early planning, as a gap here can prevent the forecaster from operating
+    and is difficult to rectify once deployed.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id004
+  - 2
+  evidence_excerpt: Access to reliable, high speed telecommunication capability is
+    critical to the success of the lidar wind forecaster. Whilst suitable infrastructure
+    may be in place at the windfarm control centre, remote connection may not be available
+    at the site where the forecaster is installed. This challenge needs to be addressed
+    in the early stages of planning a monitoring demonstration.
+  confidence_note: Issue severity assessed as moderate based on operational impact
+    described; no explicit duration or cost data provided.
+  source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/aeolius-wind-forecasting-project/
+  kb_category: Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Aeolius Wind Forecasting Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $1.89m
+  total_project_value: $4.96m
+  lead_organisation: Aeolius Wind Systems
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 31/01/2019
+  location: MacArthur, Victoria
+  project_partners: AGL Energy Ltd, Curtin University, Adelaide University
+  pdf_url: https://arena.gov.au/assets/2019/12/aeolius-wind-systems-wind-forecasting-demonstration.pdf
+  markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_1.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-28701
+  contributing_source_titles:
+  - Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons Learnt 1
+  contributing_sources:
+  - source_title: Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+      Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/12/aeolius-wind-systems-wind-forecasting-demonstration.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-1/
+    markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_1.md
+  arena_category:
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-58056
+  source_title: 'Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+    Learnt Report #4'
+  publish_date: '2024'
+  project_name: Aeolius Wind Systems Wind Forecasting Demonstration Project
+  what_happened: Installation and commissioning of the Doppler lidar forecaster at
+    Macarthur wind farm revealed that the technology requires highly trained and experienced
+    operators for installation, configuration, operation, and maintenance, with multiple
+    complex site-specific factors to assess — a profile substantially more demanding
+    than conventional wind measurement devices.
+  lesson_learnt: Establish a formal commercial arrangement with a trained onsite technician
+    (e.g. a turbine supplier subcontractor) before deploying remotely operated monitoring
+    equipment — the absence of a guaranteed rapid-response agreement creates operational
+    vulnerability each time a physical restart or inspection is needed.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: internal governance/resourcing
+  failure_mode: execution & logistics
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: A workshop at Macarthur wind farm was planned to familiarise
+    technical staff on operation and maintenance requirements of the technology.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages:
+  - 3
+  - 5
+  evidence_excerpt: A Doppler Lidar Forecast system is a sophisticated instrument
+    requiring trained and experienced operators to install, configure, operate, and
+    maintain. It is not simply a 'put in place, switch-on, run and download data'
+    technology as is largely the case with the current generation of wind measurement
+    devices such as mast anemometry, acoustic sounders, or lidar vertical wind profilers.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-report-4/
+  project_page_url: https://arena.gov.au/projects/aeolius-wind-forecasting-project/
+  kb_category: Wind energy
+  kb_publish_date: 4/07/2024
+  kb_year: '2019'
+  kb_associated_project: Aeolius Wind Forecasting Project
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $1.89m
+  total_project_value: $4.96m
+  lead_organisation: Aeolius Wind Systems
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 31/01/2019
+  location: MacArthur, Victoria
+  project_partners: AGL Energy Ltd, Curtin University, Adelaide University
+  pdf_url: https://arena.gov.au/assets/2024/07/Aeolius-Wind-forecasting-project-lessons-learnt-report-4.pdf
+  markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_report_4.md
+  source_page_pdf: 5
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-28702
+  - ARENA-DLV-58056
+  contributing_source_titles:
+  - 'Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons Learnt Report
+    #4'
+  - Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons Learnt 1
+  contributing_sources:
+  - source_title: Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+      Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/12/aeolius-wind-systems-wind-forecasting-demonstration.pdf
+    source_pages:
+    - 3
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-1/
+    markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_1.md
+  - source_title: 'Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+      Learnt Report #4'
+    pdf_url: https://arena.gov.au/assets/2024/07/Aeolius-Wind-forecasting-project-lessons-learnt-report-4.pdf
+    source_pages:
+    - 5
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-report-4/
+    markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_report_4.md
+  arena_category:
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-28703
+  source_title: Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+    Learnt 1
+  publish_date: 2019-10
+  project_name: Aeolius Wind Systems Wind Forecasting Demonstration Project
+  what_happened: The short-range lidar achieved a consistent useful range of approximately
+    2.5 km for deriving vector wind fields at Macarthur windfarm, enabling evaluation
+    of only 6 turbines within the horizontal scanning plane — limiting the scope of
+    wake behaviour analysis across the full farm.
+  lesson_learnt: When planning lidar-based wind monitoring at large windfarms, ensure
+    hardware range capability (beyond 6 km recommended) is matched to the number of
+    turbines that need to be assessed; a 2.5 km effective range restricts evaluation
+    to a small subset of turbines and constrains the representativeness of wake analysis.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id005
+  - 2
+  evidence_excerpt: The short range scanning Doppler lidar provided capacity to map
+    windfield in high spatial resolution (100m) at Macarthur windfarm with a consistent
+    range of 3 km, sometimes longer when atmospheric aerosol loadings are heavier.
+    The maximum distance where data of sufficient quality and quantity could be obtained
+    to derive vector wind fields using AWS proprietary data post processing strategies
+    was approximately 2.5 km. The range capability provided opportunities to evaluate
+    the performance of a limited number of turbines which fell within the horizontal
+    scanning plane (6 in the case of this deployment).
+  confidence_note: Classified as minor technical underperformance — the lidar functioned
+    but its effective range constrained scope; the project continued and data was
+    deemed sufficient for next-stage planning.
+  source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/aeolius-wind-forecasting-project/
+  kb_category: Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Aeolius Wind Forecasting Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $1.89m
+  total_project_value: $4.96m
+  lead_organisation: Aeolius Wind Systems
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 31/01/2019
+  location: MacArthur, Victoria
+  project_partners: AGL Energy Ltd, Curtin University, Adelaide University
+  pdf_url: https://arena.gov.au/assets/2019/12/aeolius-wind-systems-wind-forecasting-demonstration.pdf
+  markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_1.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-28703
+  contributing_source_titles:
+  - Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons Learnt 1
+  contributing_sources:
+  - source_title: Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+      Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/12/aeolius-wind-systems-wind-forecasting-demonstration.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-1/
+    markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_1.md
+  arena_category:
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-28705
+  source_title: Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+    Learnt 1
+  publish_date: 2019-10
+  project_name: Aeolius Wind Systems Wind Forecasting Demonstration Project
+  what_happened: The demonstration confirmed that a lidar-based monitoring strategy
+    can be deployed at an Australian windfarm at relatively short notice (several
+    weeks) provided the proponent has access to appropriate hardware, post-processing
+    software, and analytical skills.
+  lesson_learnt: Lidar-based wind monitoring can be mobilised rapidly at Australian
+    windfarms — plan for a several-week deployment lead time when hardware with range
+    capability beyond 6 km, advanced post-processing software, and in-house analytical
+    expertise are all available from the outset.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id006
+  - 2
+  evidence_excerpt: It's possible to deploy and implement a lidar based monitoring
+    strategy at an Australian windfarm at relatively short notice (several weeks)
+    if the proponent has access to hardware with range measurement capability beyond
+    6 km, advanced data post processing software, and analytical skills.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/aeolius-wind-forecasting-project/
+  kb_category: Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Aeolius Wind Forecasting Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $1.89m
+  total_project_value: $4.96m
+  lead_organisation: Aeolius Wind Systems
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 31/01/2019
+  location: MacArthur, Victoria
+  project_partners: AGL Energy Ltd, Curtin University, Adelaide University
+  pdf_url: https://arena.gov.au/assets/2019/12/aeolius-wind-systems-wind-forecasting-demonstration.pdf
+  markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-28705
+  contributing_source_titles:
+  - Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons Learnt 1
+  contributing_sources:
+  - source_title: Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+      Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/12/aeolius-wind-systems-wind-forecasting-demonstration.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-1/
+    markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_1.md
+  arena_category:
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-28706
+  source_title: Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+    Learnt 1
+  publish_date: 2019-10
+  project_name: Aeolius Wind Systems Wind Forecasting Demonstration Project
+  what_happened: The project identified that current industry-standard computer-based
+    wake models used in wind energy resource assessment are unreliable due to difficulty
+    in modelling complex meteorological and topographical processes, leading to inaccurate
+    turbine micro-siting and maintenance cost overruns at greenfield developments.
+  lesson_learnt: Do not rely solely on licensed third-party wake models for turbine
+    micro-siting decisions at greenfield sites — these models are notoriously unreliable;
+    supplement with lidar-based field characterisation where possible to reduce the
+    risk of incorrect turbine positioning and consequent maintenance cost overruns.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id007
+  - 3
+  evidence_excerpt: These models are notoriously unreliable due to the difficulty
+    of accurately complex meteorological and topographical processes effecting the
+    3 – D flow behaviour. Inaccurate predictions on flow field behaviour on greenfield
+    sites can lead to incorrect positioning of turbines (micro-siting) and cost over
+    runs with maintenance. This in term can undermine the wind farm developer's business
+    case. The industry is full of underperforming windfarms!
+  confidence_note: 'Severity assessed as major based on the explicit statement that
+    incorrect micro-siting undermines the business case; this is a systemic industry
+    finding rather than an event specific to this project.; project_type reconciled
+    to ''software/data/digital'' from: software/data/digital (6/7), generation (1/7)'
+  source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/aeolius-wind-forecasting-project/
+  kb_category: Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Aeolius Wind Forecasting Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $1.89m
+  total_project_value: $4.96m
+  lead_organisation: Aeolius Wind Systems
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 31/01/2019
+  location: MacArthur, Victoria
+  project_partners: AGL Energy Ltd, Curtin University, Adelaide University
+  pdf_url: https://arena.gov.au/assets/2019/12/aeolius-wind-systems-wind-forecasting-demonstration.pdf
+  markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_1.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-28706
+  contributing_source_titles:
+  - Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons Learnt 1
+  contributing_sources:
+  - source_title: Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+      Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/12/aeolius-wind-systems-wind-forecasting-demonstration.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-1/
+    markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_1.md
+  arena_category:
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: cost overrun
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-28707
+  source_title: Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+    Learnt 1
+  publish_date: 2019-10
+  project_name: Aeolius Wind Systems Wind Forecasting Demonstration Project
+  what_happened: The project found that turbine wake behaviour under unstable atmospheric
+    conditions at Macarthur was not fully characterised, as such conditions amplify
+    the downstream reach of wakes and cause greater-than-expected reductions in power
+    output. High-frequency sensors required for this investigation were not available
+    within the current project scope.
+  lesson_learnt: Plan for high-frequency atmospheric sensors when deploying lidar
+    at windfarms where unstable boundary layer conditions are likely — without them,
+    wake behaviour under conditions that most strongly degrade power output cannot
+    be quantified, leaving a significant knowledge gap for forecasting model development.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: The document notes this will be addressed in the next stage of
+    the project work plan.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id008
+  - 4
+  evidence_excerpt: Additional information is required on turbine wake behaviour under
+    unstable atmospheric conditions at the Macarthur windfarm. These conditions are
+    known to amplify the downstream 'reach' of wakes resulting in greater than expected
+    reductions on power output from affected turbines. Additional equipment in the
+    form of high frequency sensors are required for this investigation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/aeolius-wind-forecasting-project/
+  kb_category: Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Aeolius Wind Forecasting Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $1.89m
+  total_project_value: $4.96m
+  lead_organisation: Aeolius Wind Systems
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 31/01/2019
+  location: MacArthur, Victoria
+  project_partners: AGL Energy Ltd, Curtin University, Adelaide University
+  pdf_url: https://arena.gov.au/assets/2019/12/aeolius-wind-systems-wind-forecasting-demonstration.pdf
+  markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_1.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-28707
+  contributing_source_titles:
+  - Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons Learnt 1
+  contributing_sources:
+  - source_title: Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+      Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/12/aeolius-wind-systems-wind-forecasting-demonstration.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-1/
+    markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_1.md
+  arena_category:
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-45451
+  source_title: Aeolius Wind Forecasting Demonstration Project - Lessons Learnt Report
+    4a
+  publish_date: 2025-02
+  project_name: Aeolius Wind Systems Wind Forecasting Demonstration Project
+  what_happened: Commercial scanning LiDAR products vary significantly in measurement
+    range, scanning speed, and pointing accuracy. The project found that a minimum
+    measurement range of 4–6 km is required at Macarthur Wind Farm to provide redundancy
+    during adverse winter weather conditions (fog, light rain) that attenuate the
+    laser beam and degrade return signals.
+  lesson_learnt: When selecting a scanning LiDAR for wind forecasting, require a minimum
+    measurement range of 4–6 km and specify a target range measurement frequency of
+    95% at 5 km in every calendar month — LiDAR manufacturers' standard technical
+    data sheets are insufficient to assess fitness for purpose in site-specific conditions.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Developed a proposed standardised metric — 95% data retention
+    rate at 5 km per calendar month — to assess LiDAR range performance under prescribed
+    atmospheric conditions.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id009
+  - 7
+  - 8
+  - 9
+  evidence_excerpt: A minimum measurement range between 4 and 6 km would appear reasonable
+    under the prevailing meteorological conditions at Macarthur wind farm. This is
+    required to provide redundancy in the event of unfavourable weather conditions
+    (fog, light rain) which frequently occur during the winter months.
+  confidence_note: project_type classified as software/data/digital as the dominant
+    delivery object is the forecasting system rather than the wind farm itself.
+  source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-forecasting-demonstration-project-lessons-learnt-report-4a/
+  project_page_url: https://arena.gov.au/projects/aeolius-wind-forecasting-project/
+  kb_category: Wind energy
+  kb_publish_date: 12/05/2025
+  kb_year: '2019'
+  kb_associated_project: Aeolius Wind Forecasting Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $1.89m
+  total_project_value: $4.96m
+  lead_organisation: Aeolius Wind Systems
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 31/01/2019
+  location: MacArthur, Victoria
+  project_partners: AGL Energy Ltd, Curtin University, Adelaide University
+  pdf_url: https://arena.gov.au/assets/2025/05/Aeolius-–-Wind-Forecasting-Demonstration-Project-Lessons-Learnt-Report-4a.pdf
+  markdown_filename: aeolius_wind_forecasting_demonstration_project_lessons_learnt_report_4a.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45451
+  contributing_source_titles:
+  - Aeolius Wind Forecasting Demonstration Project - Lessons Learnt Report 4a
+  contributing_sources:
+  - source_title: Aeolius Wind Forecasting Demonstration Project - Lessons Learnt
+      Report 4a
+    pdf_url: https://arena.gov.au/assets/2025/05/Aeolius-–-Wind-Forecasting-Demonstration-Project-Lessons-Learnt-Report-4a.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-forecasting-demonstration-project-lessons-learnt-report-4a/
+    markdown_filename: aeolius_wind_forecasting_demonstration_project_lessons_learnt_report_4a.md
+  arena_category:
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-45452
+  source_title: Aeolius Wind Forecasting Demonstration Project - Lessons Learnt Report
+    4a
+  publish_date: 2025-02
+  project_name: Aeolius Wind Systems Wind Forecasting Demonstration Project
+  what_happened: 'LiDAR scanning speed was found to be a critical hardware parameter:
+    if scanning is too slow, fast-moving wind features such as gusts can pass through
+    the forecast domain before being recorded, rendering the five-minute-ahead forecast
+    ineffective. Trade-offs between scanning speed, spatial resolution, and data management
+    strategies were identified during the initial fibre LiDAR deployment.'
+  lesson_learnt: Specify minimum scanning speed requirements before procuring LiDAR
+    hardware for wind forecasting — insufficient scanning speed allows fast-moving
+    wind features to pass through the measurement domain undetected, directly degrading
+    forecast skill.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Various scanning and data management strategies were explored
+    to address scanning speed trade-offs, informed by results from the earlier fibre
+    LiDAR measurement at Macarthur.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id010
+  - 8
+  evidence_excerpt: If scanning is too slow, fast-moving wind features like gusts
+    may pass through the forecast domain before being recorded, rendering the forecast
+    ineffective.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-forecasting-demonstration-project-lessons-learnt-report-4a/
+  project_page_url: https://arena.gov.au/projects/aeolius-wind-forecasting-project/
+  kb_category: Wind energy
+  kb_publish_date: 12/05/2025
+  kb_year: '2019'
+  kb_associated_project: Aeolius Wind Forecasting Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $1.89m
+  total_project_value: $4.96m
+  lead_organisation: Aeolius Wind Systems
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 31/01/2019
+  location: MacArthur, Victoria
+  project_partners: AGL Energy Ltd, Curtin University, Adelaide University
+  pdf_url: https://arena.gov.au/assets/2025/05/Aeolius-–-Wind-Forecasting-Demonstration-Project-Lessons-Learnt-Report-4a.pdf
+  markdown_filename: aeolius_wind_forecasting_demonstration_project_lessons_learnt_report_4a.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45452
+  contributing_source_titles:
+  - Aeolius Wind Forecasting Demonstration Project - Lessons Learnt Report 4a
+  contributing_sources:
+  - source_title: Aeolius Wind Forecasting Demonstration Project - Lessons Learnt
+      Report 4a
+    pdf_url: https://arena.gov.au/assets/2025/05/Aeolius-–-Wind-Forecasting-Demonstration-Project-Lessons-Learnt-Report-4a.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-forecasting-demonstration-project-lessons-learnt-report-4a/
+    markdown_filename: aeolius_wind_forecasting_demonstration_project_lessons_learnt_report_4a.md
+  arena_category:
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-45453
+  source_title: Aeolius Wind Forecasting Demonstration Project - Lessons Learnt Report
+    4a
+  publish_date: 2025-02
+  project_name: Aeolius Wind Systems Wind Forecasting Demonstration Project
+  what_happened: 'LiDAR platform stability during scanning was identified as a material
+    issue: vibrations and shifts in instrument orientation cause the laser beam to
+    be directed to incorrect locations in space, resulting in suboptimal data collection
+    and reduced measurement repeatability — particularly critical for long-range measurements
+    of 5 km or more.'
+  lesson_learnt: Ensure LiDAR mounting platforms are mechanically stable and include
+    orientation monitoring — vibration-induced pointing drift at long ranges (5 km+)
+    materially degrades measurement accuracy and must be actively managed through
+    instrument orientation checks and regular recalibration.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: Ongoing monitoring of instrument orientation was identified as
+    a key maintenance requirement, with scan synchronisation and orientation drift
+    listed as regular oversight items.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id011
+  - 8
+  - 12
+  evidence_excerpt: Vibrations and/or shifts in the orientation of the instrument
+    result in the laser beam being directed to different locations in space and suboptimal
+    collection of data.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-forecasting-demonstration-project-lessons-learnt-report-4a/
+  project_page_url: https://arena.gov.au/projects/aeolius-wind-forecasting-project/
+  kb_category: Wind energy
+  kb_publish_date: 12/05/2025
+  kb_year: '2019'
+  kb_associated_project: Aeolius Wind Forecasting Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $1.89m
+  total_project_value: $4.96m
+  lead_organisation: Aeolius Wind Systems
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 31/01/2019
+  location: MacArthur, Victoria
+  project_partners: AGL Energy Ltd, Curtin University, Adelaide University
+  pdf_url: https://arena.gov.au/assets/2025/05/Aeolius-–-Wind-Forecasting-Demonstration-Project-Lessons-Learnt-Report-4a.pdf
+  markdown_filename: aeolius_wind_forecasting_demonstration_project_lessons_learnt_report_4a.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45453
+  contributing_source_titles:
+  - Aeolius Wind Forecasting Demonstration Project - Lessons Learnt Report 4a
+  contributing_sources:
+  - source_title: Aeolius Wind Forecasting Demonstration Project - Lessons Learnt
+      Report 4a
+    pdf_url: https://arena.gov.au/assets/2025/05/Aeolius-–-Wind-Forecasting-Demonstration-Project-Lessons-Learnt-Report-4a.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-forecasting-demonstration-project-lessons-learnt-report-4a/
+    markdown_filename: aeolius_wind_forecasting_demonstration_project_lessons_learnt_report_4a.md
+  arena_category:
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-45454
+  source_title: Aeolius Wind Forecasting Demonstration Project - Lessons Learnt Report
+    4a
+  publish_date: 2025-02
+  project_name: Aeolius Wind Systems Wind Forecasting Demonstration Project
+  what_happened: Physical land-use conflicts at LiDAR installation sites — including
+    farm animals, vehicle traffic, and fire risk — required physical structures to
+    separate and protect the instruments. Failure to resolve these matters upfront
+    with landowners caused potential delays to LiDAR measurement commencement.
+  lesson_learnt: Resolve all land-use conflict issues (farm animals, vehicle traffic,
+    fire risk) with landowners before finalising LiDAR siting — these matters, if
+    not addressed upfront, can cause lengthy delays to commencing measurement campaigns.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: technology vendor
+  delay_category: stakeholder/land/community
+  failure_mode: coordination & stakeholders
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: At Macarthur, an electric fence was installed to keep animals
+    away, security cameras were added, and LiDARs were chained to heavy objects for
+    security.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id012
+  - 8
+  - 12
+  evidence_excerpt: In many situations, physical structures may be required to separate
+    and/or protect the LiDARs from existing land-use activities (farm animals, vehicle
+    traffic, fire risk). These matters should be resolved upfront with the landowner/manager
+    to avoid lengthy delays with commencing the LiDAR measurement.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-forecasting-demonstration-project-lessons-learnt-report-4a/
+  project_page_url: https://arena.gov.au/projects/aeolius-wind-forecasting-project/
+  kb_category: Wind energy
+  kb_publish_date: 12/05/2025
+  kb_year: '2019'
+  kb_associated_project: Aeolius Wind Forecasting Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $1.89m
+  total_project_value: $4.96m
+  lead_organisation: Aeolius Wind Systems
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 31/01/2019
+  location: MacArthur, Victoria
+  project_partners: AGL Energy Ltd, Curtin University, Adelaide University
+  pdf_url: https://arena.gov.au/assets/2025/05/Aeolius-–-Wind-Forecasting-Demonstration-Project-Lessons-Learnt-Report-4a.pdf
+  markdown_filename: aeolius_wind_forecasting_demonstration_project_lessons_learnt_report_4a.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45454
+  contributing_source_titles:
+  - Aeolius Wind Forecasting Demonstration Project - Lessons Learnt Report 4a
+  contributing_sources:
+  - source_title: Aeolius Wind Forecasting Demonstration Project - Lessons Learnt
+      Report 4a
+    pdf_url: https://arena.gov.au/assets/2025/05/Aeolius-–-Wind-Forecasting-Demonstration-Project-Lessons-Learnt-Report-4a.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-forecasting-demonstration-project-lessons-learnt-report-4a/
+    markdown_filename: aeolius_wind_forecasting_demonstration_project_lessons_learnt_report_4a.md
+  arena_category:
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-45455
+  source_title: Aeolius Wind Forecasting Demonstration Project - Lessons Learnt Report
+    4a
+  publish_date: 2025-02
+  project_name: Aeolius Wind Systems Wind Forecasting Demonstration Project
+  what_happened: Power supply to one of the scanning LiDARs at Macarthur Wind Farm
+    was provided via a cable to a 240V outlet in a nearby wind turbine. Wind farm
+    maintenance technicians performing routine turbine maintenance occasionally switched
+    off this supply, causing the LiDAR to shut down and disrupting the entire forecasting
+    system.
+  lesson_learnt: Never rely solely on incidental power outlets within wind turbines
+    for LiDAR power supply — integrate a dedicated backup power source (e.g. hybrid
+    solar PV/battery system) from the outset to prevent unscheduled shutdowns caused
+    by routine turbine maintenance activities.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: coordination & stakeholders
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: A backup power source incorporating a hybrid solar PV/battery
+    system was planned for installation to prevent recurrence.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id013
+  - 13
+  evidence_excerpt: In this instance, power was supplied via a cable connected to
+    a 240V outlet in a nearby wind tower. However, technicians performing routine
+    maintenance occasionally switched off the supply, causing the LiDAR to shut down
+    and, consequently, disrupting the forecaster for the entire wind farm.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-forecasting-demonstration-project-lessons-learnt-report-4a/
+  project_page_url: https://arena.gov.au/projects/aeolius-wind-forecasting-project/
+  kb_category: Wind energy
+  kb_publish_date: 12/05/2025
+  kb_year: '2019'
+  kb_associated_project: Aeolius Wind Forecasting Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $1.89m
+  total_project_value: $4.96m
+  lead_organisation: Aeolius Wind Systems
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 31/01/2019
+  location: MacArthur, Victoria
+  project_partners: AGL Energy Ltd, Curtin University, Adelaide University
+  pdf_url: https://arena.gov.au/assets/2025/05/Aeolius-–-Wind-Forecasting-Demonstration-Project-Lessons-Learnt-Report-4a.pdf
+  markdown_filename: aeolius_wind_forecasting_demonstration_project_lessons_learnt_report_4a.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45455
+  contributing_source_titles:
+  - Aeolius Wind Forecasting Demonstration Project - Lessons Learnt Report 4a
+  contributing_sources:
+  - source_title: Aeolius Wind Forecasting Demonstration Project - Lessons Learnt
+      Report 4a
+    pdf_url: https://arena.gov.au/assets/2025/05/Aeolius-–-Wind-Forecasting-Demonstration-Project-Lessons-Learnt-Report-4a.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-forecasting-demonstration-project-lessons-learnt-report-4a/
+    markdown_filename: aeolius_wind_forecasting_demonstration_project_lessons_learnt_report_4a.md
+  arena_category:
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-45456
+  source_title: Aeolius Wind Forecasting Demonstration Project - Lessons Learnt Report
+    4a
+  publish_date: 2025-02
+  project_name: Aeolius Wind Systems Wind Forecasting Demonstration Project
+  what_happened: Weak telecommunications signal strength at the rural LiDAR sites
+    at Macarthur Wind Farm caused delays in commissioning and operating the forecasting
+    system. Standard mobile or fixed communications infrastructure was insufficient
+    for reliable real-time data transfer and scan synchronisation between the two
+    LiDAR units.
+  lesson_learnt: Assess telecommunications signal strength at each LiDAR site before
+    finalising deployment plans — in rural locations, plan for high-gain CPE antennas
+    and signal amplifiers as standard equipment rather than retrofitting them after
+    commissioning delays occur.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: High-gain CPE antennas and specialised signal amplifiers were
+    installed and designated as standard equipment for all future projects.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id014
+  - 12
+  - 13
+  evidence_excerpt: Weak signal strength from the local telecommunications network
+    at the LiDAR sites led to delays in commissioning and operating the forecaster.
+    This challenge was addressed by installing high-gain antennas and specialized
+    signal amplifiers, which will be standard equipment in all future projects.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-forecasting-demonstration-project-lessons-learnt-report-4a/
+  project_page_url: https://arena.gov.au/projects/aeolius-wind-forecasting-project/
+  kb_category: Wind energy
+  kb_publish_date: 12/05/2025
+  kb_year: '2019'
+  kb_associated_project: Aeolius Wind Forecasting Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $1.89m
+  total_project_value: $4.96m
+  lead_organisation: Aeolius Wind Systems
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 31/01/2019
+  location: MacArthur, Victoria
+  project_partners: AGL Energy Ltd, Curtin University, Adelaide University
+  pdf_url: https://arena.gov.au/assets/2025/05/Aeolius-–-Wind-Forecasting-Demonstration-Project-Lessons-Learnt-Report-4a.pdf
+  markdown_filename: aeolius_wind_forecasting_demonstration_project_lessons_learnt_report_4a.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45456
+  contributing_source_titles:
+  - Aeolius Wind Forecasting Demonstration Project - Lessons Learnt Report 4a
+  contributing_sources:
+  - source_title: Aeolius Wind Forecasting Demonstration Project - Lessons Learnt
+      Report 4a
+    pdf_url: https://arena.gov.au/assets/2025/05/Aeolius-–-Wind-Forecasting-Demonstration-Project-Lessons-Learnt-Report-4a.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-forecasting-demonstration-project-lessons-learnt-report-4a/
+    markdown_filename: aeolius_wind_forecasting_demonstration_project_lessons_learnt_report_4a.md
+  arena_category:
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-45457
+  source_title: Aeolius Wind Forecasting Demonstration Project - Lessons Learnt Report
+    4a
+  publish_date: 2025-02
+  project_name: Aeolius Wind Systems Wind Forecasting Demonstration Project
+  what_happened: Eye safety concerns about LiDAR laser beams in public areas created
+    misconceptions about health risks that had the potential to prevent optimal LiDAR
+    placement or impede broader acceptance of LiDAR technology in certain locations.
+  lesson_learnt: Develop and implement a proactive communication strategy to address
+    public misconceptions about LiDAR eye safety before deployment — combine physical
+    mitigation measures (raised platforms, adjusted scan angles) with community communication
+    to avoid siting constraints driven by perceived rather than actual risk.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: technology vendor
+  delay_category: stakeholder/land/community
+  failure_mode: coordination & stakeholders
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: LiDARs were mounted on raised platforms to prevent laser exposure,
+    scanning angles were adjusted to avoid public areas, and a communication strategy
+    was implemented to address public concerns.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id015
+  - 12
+  evidence_excerpt: Key concerns include misconceptions about health risks that may
+    prevent optimal placement or even hinder the acceptance of LiDAR technology in
+    certain areas.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-forecasting-demonstration-project-lessons-learnt-report-4a/
+  project_page_url: https://arena.gov.au/projects/aeolius-wind-forecasting-project/
+  kb_category: Wind energy
+  kb_publish_date: 12/05/2025
+  kb_year: '2019'
+  kb_associated_project: Aeolius Wind Forecasting Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $1.89m
+  total_project_value: $4.96m
+  lead_organisation: Aeolius Wind Systems
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 31/01/2019
+  location: MacArthur, Victoria
+  project_partners: AGL Energy Ltd, Curtin University, Adelaide University
+  pdf_url: https://arena.gov.au/assets/2025/05/Aeolius-–-Wind-Forecasting-Demonstration-Project-Lessons-Learnt-Report-4a.pdf
+  markdown_filename: aeolius_wind_forecasting_demonstration_project_lessons_learnt_report_4a.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45457
+  contributing_source_titles:
+  - Aeolius Wind Forecasting Demonstration Project - Lessons Learnt Report 4a
+  contributing_sources:
+  - source_title: Aeolius Wind Forecasting Demonstration Project - Lessons Learnt
+      Report 4a
+    pdf_url: https://arena.gov.au/assets/2025/05/Aeolius-–-Wind-Forecasting-Demonstration-Project-Lessons-Learnt-Report-4a.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-forecasting-demonstration-project-lessons-learnt-report-4a/
+    markdown_filename: aeolius_wind_forecasting_demonstration_project_lessons_learnt_report_4a.md
+  arena_category:
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-45458
+  source_title: Aeolius Wind Forecasting Demonstration Project - Lessons Learnt Report
+    4a
+  publish_date: 2025-02
+  project_name: Aeolius Wind Systems Wind Forecasting Demonstration Project
+  what_happened: Site selection for the Dual Doppler LiDAR configuration at Macarthur
+    Wind Farm was highly constrained by the wind farm's large size (550 ha), 140 turbines
+    arranged in a narrow north–south orientation, and flat terrain. The final siting
+    resulted in scan overlap covering only approximately two-thirds of the wind farm
+    area, with the remaining third requiring reconstruction from single-Doppler returns
+    using an advanced algorithm.
+  lesson_learnt: For Dual Doppler LiDAR deployments at large wind farms, conduct a
+    thorough multi-criteria siting assessment (measurement range, elevation, line-of-sight,
+    scan overlap, wake dynamics) before installation — post-installation sensitivity
+    testing may still be required to determine whether repositioning is necessary
+    to achieve adequate forecast skill.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: An advanced vector reconstruction algorithm was applied to derive
+    wind vectors from single-Doppler returns in the one-third of the wind farm not
+    covered by dual-beam overlap; sensitivity testing of scanning pattern variations
+    was planned.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id016
+  - 10
+  - 11
+  - 13
+  evidence_excerpt: The above requirement poses a significant challenge at Macarthur
+    wind farm due to its large size (550 ha), the number of turbines (140) which are
+    distributed in a narrow north-south orientation, and flat terrain... only one-third
+    of vector retrievals are derived using radial data from both systems. The balance
+    is derived from single Doppler returns.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-forecasting-demonstration-project-lessons-learnt-report-4a/
+  project_page_url: https://arena.gov.au/projects/aeolius-wind-forecasting-project/
+  kb_category: Wind energy
+  kb_publish_date: 12/05/2025
+  kb_year: '2019'
+  kb_associated_project: Aeolius Wind Forecasting Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $1.89m
+  total_project_value: $4.96m
+  lead_organisation: Aeolius Wind Systems
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 31/01/2019
+  location: MacArthur, Victoria
+  project_partners: AGL Energy Ltd, Curtin University, Adelaide University
+  pdf_url: https://arena.gov.au/assets/2025/05/Aeolius-–-Wind-Forecasting-Demonstration-Project-Lessons-Learnt-Report-4a.pdf
+  markdown_filename: aeolius_wind_forecasting_demonstration_project_lessons_learnt_report_4a.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45458
+  contributing_source_titles:
+  - Aeolius Wind Forecasting Demonstration Project - Lessons Learnt Report 4a
+  contributing_sources:
+  - source_title: Aeolius Wind Forecasting Demonstration Project - Lessons Learnt
+      Report 4a
+    pdf_url: https://arena.gov.au/assets/2025/05/Aeolius-–-Wind-Forecasting-Demonstration-Project-Lessons-Learnt-Report-4a.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-forecasting-demonstration-project-lessons-learnt-report-4a/
+    markdown_filename: aeolius_wind_forecasting_demonstration_project_lessons_learnt_report_4a.md
+  arena_category:
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-45461
+  source_title: Aeolius Wind Forecasting Demonstration Project - Lessons Learnt Report
+    4a
+  publish_date: 2025-02
+  project_name: Aeolius Wind Systems Wind Forecasting Demonstration Project
+  what_happened: Forecast models struggled to detect fast-moving, low-level mesoscale
+    frontal features approaching Macarthur Wind Farm from the east or west along the
+    coastline, due to insufficient observational data over the Southern Ocean, insufficient
+    model resolution to capture fine-scale mesoscale dynamics, difficulties integrating
+    observational data (nudging), and coastal effects on wind behaviour.
+  lesson_learnt: When deploying wind forecasting systems in coastal Victoria, specifically
+    design measurement and model strategies to address the detection of fast-moving
+    mesoscale frontal systems — standard NWP models lack sufficient resolution and
+    upstream ocean observational data to capture these events, which represent the
+    primary source of forecast failure.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: The Dual Doppler LiDAR strategy was refocused to detect this
+    class of meteorological events upstream of the wind farm, with strategic upstream
+    positioning identified as likely to address this gap.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id017
+  - 14
+  evidence_excerpt: The challenges faced by forecast models in detecting fast-moving,
+    low-level mesoscale frontal features, particularly as they approach the coastline
+    from an east/west direction, are significant. Forecast skill is influenced by
+    several factors, including the lack of data measurement points in the Southern
+    Ocean to refine models.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-forecasting-demonstration-project-lessons-learnt-report-4a/
+  project_page_url: https://arena.gov.au/projects/aeolius-wind-forecasting-project/
+  kb_category: Wind energy
+  kb_publish_date: 12/05/2025
+  kb_year: '2019'
+  kb_associated_project: Aeolius Wind Forecasting Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $1.89m
+  total_project_value: $4.96m
+  lead_organisation: Aeolius Wind Systems
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 31/01/2019
+  location: MacArthur, Victoria
+  project_partners: AGL Energy Ltd, Curtin University, Adelaide University
+  pdf_url: https://arena.gov.au/assets/2025/05/Aeolius-–-Wind-Forecasting-Demonstration-Project-Lessons-Learnt-Report-4a.pdf
+  markdown_filename: aeolius_wind_forecasting_demonstration_project_lessons_learnt_report_4a.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45461
+  contributing_source_titles:
+  - Aeolius Wind Forecasting Demonstration Project - Lessons Learnt Report 4a
+  contributing_sources:
+  - source_title: Aeolius Wind Forecasting Demonstration Project - Lessons Learnt
+      Report 4a
+    pdf_url: https://arena.gov.au/assets/2025/05/Aeolius-–-Wind-Forecasting-Demonstration-Project-Lessons-Learnt-Report-4a.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-forecasting-demonstration-project-lessons-learnt-report-4a/
+    markdown_filename: aeolius_wind_forecasting_demonstration_project_lessons_learnt_report_4a.md
+  arena_category:
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-45462
+  source_title: Aeolius Wind Forecasting Demonstration Project - Lessons Learnt Report
+    4a
+  publish_date: 2025-02
+  project_name: Aeolius Wind Systems Wind Forecasting Demonstration Project
+  what_happened: Analysis of wind farm operators' business model revealed that improved
+    forecast accuracy — the primary technical objective of the project — does not
+    directly translate to improved cash flow for wind farm operators. The key commercial
+    value of improved forecasting lies instead in providing better situational awareness
+    of meteorological drivers behind market price fluctuations, enabling strategic
+    market participation.
+  lesson_learnt: When developing advanced wind forecasting technology for commercial
+    adoption, frame the value proposition around market price situational awareness
+    and strategic response capability rather than forecast accuracy metrics alone
+    — operators prioritise profitability, and improved accuracy only creates value
+    if it enables better commercial decisions.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: A scoping study involving a local university was under consideration
+    to investigate the relationship between forecast accuracy and revenue generation
+    at Macarthur Wind Farm.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id018
+  - 16
+  evidence_excerpt: A technical improvement in forecasting accuracy through methods
+    such as Dual Doppler LiDAR may not necessarily enhance a business's cash flow.
+    Technology's key value may instead lie in providing a comprehensive understanding
+    of the meteorological conditions responsible for significant price fluctuations
+    in the market, allowing operators to develop strategies to capitalize on these
+    opportunities as they arise.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-forecasting-demonstration-project-lessons-learnt-report-4a/
+  project_page_url: https://arena.gov.au/projects/aeolius-wind-forecasting-project/
+  kb_category: Wind energy
+  kb_publish_date: 12/05/2025
+  kb_year: '2019'
+  kb_associated_project: Aeolius Wind Forecasting Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $1.89m
+  total_project_value: $4.96m
+  lead_organisation: Aeolius Wind Systems
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 31/01/2019
+  location: MacArthur, Victoria
+  project_partners: AGL Energy Ltd, Curtin University, Adelaide University
+  pdf_url: https://arena.gov.au/assets/2025/05/Aeolius-–-Wind-Forecasting-Demonstration-Project-Lessons-Learnt-Report-4a.pdf
+  markdown_filename: aeolius_wind_forecasting_demonstration_project_lessons_learnt_report_4a.md
+  source_page_pdf: 16
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45462
+  contributing_source_titles:
+  - Aeolius Wind Forecasting Demonstration Project - Lessons Learnt Report 4a
+  contributing_sources:
+  - source_title: Aeolius Wind Forecasting Demonstration Project - Lessons Learnt
+      Report 4a
+    pdf_url: https://arena.gov.au/assets/2025/05/Aeolius-–-Wind-Forecasting-Demonstration-Project-Lessons-Learnt-Report-4a.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-forecasting-demonstration-project-lessons-learnt-report-4a/
+    markdown_filename: aeolius_wind_forecasting_demonstration_project_lessons_learnt_report_4a.md
+  arena_category:
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-58051
+  source_title: 'Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+    Learnt Report #4'
+  publish_date: '2024'
+  project_name: Aeolius Wind Systems Wind Forecasting Demonstration Project
+  what_happened: Construction of two purpose-built Doppler lidar systems in the USA
+    was significantly delayed due to COVID-19 supply chain disruptions, including
+    long delays sourcing critical electro-optical components from US aerospace and
+    defence sector manufacturers, restricted access to advanced laboratory facilities,
+    and the unplanned retirement of a senior software engineer due to ill health.
+  lesson_learnt: Manufacturers of high-tech systems should not rely on just-in-time
+    delivery for essential components — sourcing from multiple suppliers and maintaining
+    an in-house inventory reduces vulnerability to supply chain disruption. Over-reliance
+    on specialised facilities or third-party expertise for construction of bespoke
+    instruments is a high risk that should be addressed through a formal risk management
+    strategy.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: procurement
+  proponent_type: technology vendor
+  delay_category: procurement/supply chain
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Aeolius Wind Systems developed plans to manufacture the product
+    in Australia and to work with experienced partners on an appropriate risk management
+    strategy to reduce future supply chain dependency.
+  transferability: broad
+  delay_magnitude: 1-3 years
+  technology_domain: wind
+  source_pages: &id019
+  - 3
+  evidence_excerpt: Significant challenges were encountered with completing the construction
+    of both lidars, because of the Covid 19 health crisis. This included long-time
+    delays in sourcing critical electro-optical components from specialised manufacturers
+    in the US aerospace and defence sectors. Restrictions with obtaining access to
+    advanced laboratory facilities to align the laser telescope, and the unplanned
+    retirement of a senior software engineer due to ill health exacerbated the delay.
+  confidence_note: project_type classified as software/data/digital as the primary
+    delivery object is a forecasting demonstration system; wind is the technology
+    domain.
+  source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-report-4/
+  project_page_url: https://arena.gov.au/projects/aeolius-wind-forecasting-project/
+  kb_category: Wind energy
+  kb_publish_date: 4/07/2024
+  kb_year: '2019'
+  kb_associated_project: Aeolius Wind Forecasting Project
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $1.89m
+  total_project_value: $4.96m
+  lead_organisation: Aeolius Wind Systems
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 31/01/2019
+  location: MacArthur, Victoria
+  project_partners: AGL Energy Ltd, Curtin University, Adelaide University
+  pdf_url: https://arena.gov.au/assets/2024/07/Aeolius-Wind-forecasting-project-lessons-learnt-report-4.pdf
+  markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_report_4.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-58051
+  contributing_source_titles:
+  - 'Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons Learnt Report
+    #4'
+  contributing_sources:
+  - source_title: 'Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+      Learnt Report #4'
+    pdf_url: https://arena.gov.au/assets/2024/07/Aeolius-Wind-forecasting-project-lessons-learnt-report-4.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-report-4/
+    markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_report_4.md
+  arena_category:
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-58052
+  source_title: 'Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+    Learnt Report #4'
+  publish_date: '2024'
+  project_name: Aeolius Wind Systems Wind Forecasting Demonstration Project
+  what_happened: The first Doppler lidar system (System 1) was damaged during shipping
+    from the USA to Australia after the purpose-built packing crate was mishandled
+    — laid on its side — causing the laser transceiver to separate from its mountings,
+    severing optical cables and damaging other components. The transceiver had to
+    be returned to the USA for repair as the required facilities were unavailable
+    in Australia, incurring both time delay and budget impact.
+  lesson_learnt: Delicate high-tech instruments shipped internationally require trusted
+    freight agents with strict cargo-handling protocols, trained operators, and Chain
+    of Custody documentation at every stage; accelerometers should be fixed to crates
+    to record shock events and signal to handlers that the goods require careful treatment.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: procurement
+  proponent_type: technology vendor
+  delay_category: procurement/supply chain
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: Accelerometers were fixed to the outside of the shipping crate
+    for subsequent shipments to record shock and signal to shipping staff that the
+    goods require gentle handling; use of trusted shipping agents with strict protocols
+    was also specified.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id020
+  - 3
+  - 4
+  evidence_excerpt: During the unpacking and inspection process, the laser transceiver
+    was found to have separated from its mountings severing optical cables and damaging
+    the other system components... the lidar Transceiver had to be removed and returned
+    to the USA for repair as the required facilities are currently unavailable in
+    Australia. Apart from the time delay with the return of the transceiver, the incident
+    had financial implications for the project budget.
+  confidence_note: secondary_failure_mode of cost overrun inferred from explicit statement
+    that the incident 'had financial implications for the project budget', though
+    no figure is given.
+  source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-report-4/
+  project_page_url: https://arena.gov.au/projects/aeolius-wind-forecasting-project/
+  kb_category: Wind energy
+  kb_publish_date: 4/07/2024
+  kb_year: '2019'
+  kb_associated_project: Aeolius Wind Forecasting Project
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $1.89m
+  total_project_value: $4.96m
+  lead_organisation: Aeolius Wind Systems
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 31/01/2019
+  location: MacArthur, Victoria
+  project_partners: AGL Energy Ltd, Curtin University, Adelaide University
+  pdf_url: https://arena.gov.au/assets/2024/07/Aeolius-Wind-forecasting-project-lessons-learnt-report-4.pdf
+  markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_report_4.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-58052
+  contributing_source_titles:
+  - 'Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons Learnt Report
+    #4'
+  contributing_sources:
+  - source_title: 'Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+      Learnt Report #4'
+    pdf_url: https://arena.gov.au/assets/2024/07/Aeolius-Wind-forecasting-project-lessons-learnt-report-4.pdf
+    source_pages: *id020
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-report-4/
+    markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_report_4.md
+  arena_category:
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: cost overrun
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-58053
+  source_title: 'Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+    Learnt Report #4'
+  publish_date: '2024'
+  project_name: Aeolius Wind Systems Wind Forecasting Demonstration Project
+  what_happened: Following the repair and return of the lidar transceiver to Australia
+    in late 2023, installation at Macarthur wind farm was further delayed due to inability
+    to secure an accredited contractor to assist with installation and administrative
+    changes at the wind farm. The combined effect of all delays pushed the project
+    timeframe out by over two years.
+  lesson_learnt: Identify and pre-qualify accredited installation contractors and
+    align with wind farm administrative requirements before equipment arrives on-site
+    — failure to do so can add significant delay even after hardware issues are resolved.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: technology vendor
+  delay_category: construction/installation
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: execution & logistics
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id021
+  - 4
+  evidence_excerpt: There was a further delay with installing the lidar at Macarthur
+    wind farm on the return of the Transceiver to Australia in late 2023. This was
+    due to the inability to secure an accredited contractor to assist with the installation
+    and administrative changes at the wind farm. The net result of the above challenges
+    pushed out the project timeframe by over two years.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-report-4/
+  project_page_url: https://arena.gov.au/projects/aeolius-wind-forecasting-project/
+  kb_category: Wind energy
+  kb_publish_date: 4/07/2024
+  kb_year: '2019'
+  kb_associated_project: Aeolius Wind Forecasting Project
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $1.89m
+  total_project_value: $4.96m
+  lead_organisation: Aeolius Wind Systems
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 31/01/2019
+  location: MacArthur, Victoria
+  project_partners: AGL Energy Ltd, Curtin University, Adelaide University
+  pdf_url: https://arena.gov.au/assets/2024/07/Aeolius-Wind-forecasting-project-lessons-learnt-report-4.pdf
+  markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_report_4.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-58053
+  contributing_source_titles:
+  - 'Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons Learnt Report
+    #4'
+  contributing_sources:
+  - source_title: 'Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+      Learnt Report #4'
+    pdf_url: https://arena.gov.au/assets/2024/07/Aeolius-Wind-forecasting-project-lessons-learnt-report-4.pdf
+    source_pages: *id021
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-report-4/
+    markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_report_4.md
+  arena_category:
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-58057
+  source_title: 'Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+    Learnt Report #4'
+  publish_date: '2024'
+  project_name: Aeolius Wind Systems Wind Forecasting Demonstration Project
+  what_happened: The knowledge base and skill base in Australia for long-range scanning
+    Doppler lidar in wind energy forecasting applications is in its infancy, with
+    no transparency regarding the forecast skill of commercial lidar products' data
+    post-processing pipelines and no industry guidelines for installation, commissioning,
+    operation, or technical certification.
+  lesson_learnt: The absence of Best Practice Guidelines for lidar wind forecasting
+    is a barrier to industry uptake — developing such guidelines through an industry
+    working group (modelled on IEA lidar resource assessment guidelines) would accelerate
+    technology adoption and reduce project delivery risk for future deployments.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: policy/market influence only
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: A proposal was made to develop Best Practice Guidelines for lidar
+    forecasting via an Australian-based industry working group, following a similar
+    pathway to IEA guidelines for lidar wind resource assessment.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id022
+  - 6
+  evidence_excerpt: The knowledge base for the use of long-range Scanning Doppler
+    lidar in forecaster applications in the wind energy sector is in its infancy.
+    Apart from the experimentation with the technology within the Advancing Renewables
+    Program, there is a limited skill base in Australia... there is no transparency
+    regarding the skill of associated data post-processing for deriving a forecast.
+  confidence_note: failure_mode set to regulatory misfit as the closest available
+    value for a gap in standards/guidelines framework; governance/coordination failure
+    was also considered. outcome_class set to policy/market influence only as the
+    primary output of this record is a recommendation rather than a project delivery
+    event.
+  source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-report-4/
+  project_page_url: https://arena.gov.au/projects/aeolius-wind-forecasting-project/
+  kb_category: Wind energy
+  kb_publish_date: 4/07/2024
+  kb_year: '2019'
+  kb_associated_project: Aeolius Wind Forecasting Project
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $1.89m
+  total_project_value: $4.96m
+  lead_organisation: Aeolius Wind Systems
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 31/01/2019
+  location: MacArthur, Victoria
+  project_partners: AGL Energy Ltd, Curtin University, Adelaide University
+  pdf_url: https://arena.gov.au/assets/2024/07/Aeolius-Wind-forecasting-project-lessons-learnt-report-4.pdf
+  markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_report_4.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-58057
+  contributing_source_titles:
+  - 'Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons Learnt Report
+    #4'
+  contributing_sources:
+  - source_title: 'Aeolius Wind Systems Wind Forecasting Demonstration Project Lessons
+      Learnt Report #4'
+    pdf_url: https://arena.gov.au/assets/2024/07/Aeolius-Wind-forecasting-project-lessons-learnt-report-4.pdf
+    source_pages: *id022
+    source_url: https://arena.gov.au/knowledge-bank/aeolius-wind-systems-wind-forecasting-demonstration-project-lessons-learnt-report-4/
+    markdown_filename: aeolius_wind_systems_wind_forecasting_demonstration_project_lessons_learnt_report_4.md
+  arena_category:
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78

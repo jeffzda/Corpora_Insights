@@ -1,0 +1,143 @@
+- record_id: ARENA-DLV-45004
+  source_title: Network Hosting Capacity Projects Progress Report (Year One)
+  publish_date: 2020-03
+  project_name: 'SA Power Networks: Advanced VPP Grid Integration'
+  what_happened: Integrating SAPN's distribution network API with Tesla's VPP management
+    and market trading systems required global updates to Tesla's Powerwall firmware
+    to support the dynamic export limit function, demonstrating that network-side
+    API integration with third-party DER platforms can require changes to embedded
+    device firmware at scale.
+  lesson_learnt: When designing network APIs that interact with third-party DER hardware,
+    plan for the possibility that firmware changes to end-user devices will be required
+    — this involves coordinating across the network operator, aggregator, and device
+    manufacturer, and can affect large numbers of devices globally, not just the trial
+    cohort.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Tesla issued global Powerwall firmware updates to support the
+    dynamic export limit function, enabling the API integration and live field trial
+    to commence in July 2019.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id001
+  - 6
+  evidence_excerpt: The API has been integrated with Tesla's VPP management and market
+    trading systems, including global updates to Tesla's Powerwall firmware to support
+    the dynamic export limit function, and commenced live field trials in July 2019.
+  confidence_note: The need for global firmware updates is flagged as a notable integration
+    complexity; it is unclear whether this caused delay, but the multi-party coordination
+    required warrants a minor severity rating.
+  source_url: https://arena.gov.au/knowledge-bank/network-hosting-capacity-projects-progress-report-year-one/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 26/03/2020
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2020/03/network-hosting-capacity-projects-progress-report-year-one.pdf
+  markdown_filename: network_hosting_capacity_projects_progress_report_year_one.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45004
+  contributing_source_titles:
+  - Network Hosting Capacity Projects Progress Report (Year One)
+  contributing_sources:
+  - source_title: Network Hosting Capacity Projects Progress Report (Year One)
+    pdf_url: https://arena.gov.au/assets/2020/03/network-hosting-capacity-projects-progress-report-year-one.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/network-hosting-capacity-projects-progress-report-year-one/
+    markdown_filename: network_hosting_capacity_projects_progress_report_year_one.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-45005
+  source_title: Network Hosting Capacity Projects Progress Report (Year One)
+  publish_date: 2020-03
+  project_name: 'SA Power Networks: Advanced VPP Grid Integration'
+  what_happened: SAPN established a DER integration API working group drawing together
+    multiple related ARENA projects to collaborate on API design and development,
+    accelerating progress and reducing duplication across the portfolio.
+  lesson_learnt: Where multiple concurrent projects are developing similar API or
+    integration interfaces, establishing a cross-project working group early creates
+    shared design standards and reduces duplicated effort — SAPN's API working group,
+    which brought together several ARENA projects, is a replicable coordination mechanism
+    for DER integration programmes.
+  issue_severity: none
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id002
+  - 6
+  evidence_excerpt: SAPN have established a DER integration API working group, which
+    brings together several related ARENA projects to collaborate on API design and
+    development.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/network-hosting-capacity-projects-progress-report-year-one/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 26/03/2020
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2020/03/network-hosting-capacity-projects-progress-report-year-one.pdf
+  markdown_filename: network_hosting_capacity_projects_progress_report_year_one.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45005
+  contributing_source_titles:
+  - Network Hosting Capacity Projects Progress Report (Year One)
+  contributing_sources:
+  - source_title: Network Hosting Capacity Projects Progress Report (Year One)
+    pdf_url: https://arena.gov.au/assets/2020/03/network-hosting-capacity-projects-progress-report-year-one.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/network-hosting-capacity-projects-progress-report-year-one/
+    markdown_filename: network_hosting_capacity_projects_progress_report_year_one.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false

@@ -1,0 +1,850 @@
+- record_id: ARENA-DLV-32001
+  source_title: Tandem PV Micro Concentrator Final Report
+  publish_date: 2021-02
+  project_name: Tandem PV Micro Concentrator
+  what_happened: Mechanical dicing of GaAs wafers to form SLIVER grooves achieved
+    a minimum pitch of ~45 µm but produced chipping on both surfaces, sidewall roughness,
+    and kerf losses that limited groove width and pitch. The method was found to be
+    extremely challenging to scale up or produce high-efficiency cells from.
+  lesson_learnt: Dicing alone is not suitable for producing the narrow, high-quality
+    GaAs Sliver grooves required for this application — ICP/RIE etching should be
+    investigated as the primary groove formation method from the outset, as it demonstrated
+    superior groove width (23 µm) and sidewall quality.
+  issue_severity: moderate
+  project_type: null
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Switched to ICP/RIE etching using a 10 µm-thick SiO2 mask, successfully
+    producing grooves 100 µm deep and 23 µm wide with good selectivity and highly
+    vertical walls.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages:
+  - 6
+  - 7
+  - 12
+  - 13
+  evidence_excerpt: there was some chipping on both surfaces and tapering of the groove
+    as well as roughness on the Sliver sidewall to contend with. Adjusting parameters
+    such as spindle speed and dicing cut rate reduced the amount of taper, although
+    the chipping was still significant. The minimum pitch (groove + GaAs Sliver) which
+    could be produced was 150 µm.
+  confidence_note: project_type field is not applicable here — proponent_type used
+    for research organisation/university; project_type set to null as this is a lab
+    research project with no standard delivery archetype. Canonical record merged
+    from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/tandem-pv-micro-concentrator-final-report/
+  project_page_url: https://arena.gov.au/projects/tandem-pv-micro-concentrator/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/03/2021
+  kb_year: '2017'
+  kb_associated_project: Tandem PV Micro Concentrator
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $837k
+  total_project_value: $2.12m
+  lead_organisation: Australian National University (ANU)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 05/12/2017
+  location: Australian Capital Territory, Canberra
+  project_partners: National Renewable Energy Laboratory&nbsp;(&#8203;NREL), Solar
+    Energy Research Institute of Singapore (SERIS)
+  pdf_url: https://arena.gov.au/assets/2021/06/tandem-pv-micro-concentrator-final-report.pdf
+  markdown_filename: tandem_pv_micro_concentrator_final_report.md
+  source_page_pdf: 6
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-32001
+  - ARENA-DLV-60451
+  contributing_source_titles:
+  - Tandem PV Micro Concentrator Final Report
+  - Tandem PV Micro Concentrator Project Results and Lessons Learnt
+  contributing_sources:
+  - source_title: Tandem PV Micro Concentrator Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/tandem-pv-micro-concentrator-final-report.pdf
+    source_pages:
+    - 6
+    - 12
+    - 13
+    source_url: https://arena.gov.au/knowledge-bank/tandem-pv-micro-concentrator-final-report/
+    markdown_filename: tandem_pv_micro_concentrator_final_report.md
+  - source_title: Tandem PV Micro Concentrator Project Results and Lessons Learnt
+    pdf_url: https://arena.gov.au/assets/2018/01/tandem-pv-micro-concentrator.pdf
+    source_pages:
+    - 6
+    - 7
+    source_url: https://arena.gov.au/knowledge-bank/tandem-pv-micro-concentrator/
+    markdown_filename: tandem_pv_micro_concentrator_project_results_and_lessons_learnt.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-32002
+  source_title: Tandem PV Micro Concentrator Final Report
+  publish_date: 2021-02
+  project_name: Tandem PV Micro Concentrator
+  what_happened: Accelerated lifetime thermal cycling testing of the tandem micro
+    concentrator module (0°C to 80°C, −20°C to 80°C, and −40°C to 80°C, 30 cycles
+    each) resulted in a 10% relative reduction in module efficiency, attributed to
+    degradation of electrical contacts to the GaAs cell.
+  lesson_learnt: Electrical contacts to GaAs cells in tandem concentrator modules
+    are a reliability vulnerability under thermal cycling — contact robustness must
+    be specifically engineered and tested early in module design, not treated as a
+    standard packaging assumption.
+  issue_severity: moderate
+  project_type: null
+  project_scale_band: lab/bench
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The report identified that electrical contacts can be made more
+    robust and reliable as a corrective action for future module iterations.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id001
+  - 7
+  evidence_excerpt: The overall efficiency of the module only decreased by 10% relative
+    to the initial efficiency. A degradation in the electrical contacts to the GaAs
+    cell are the likely cause for the reduction in efficiency. The electrical contacts
+    can be made more robust and reliable.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/tandem-pv-micro-concentrator-final-report/
+  project_page_url: https://arena.gov.au/projects/tandem-pv-micro-concentrator/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/03/2021
+  kb_year: '2017'
+  kb_associated_project: Tandem PV Micro Concentrator
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $837k
+  total_project_value: $2.12m
+  lead_organisation: Australian National University (ANU)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 05/12/2017
+  location: Australian Capital Territory, Canberra
+  project_partners: National Renewable Energy Laboratory&nbsp;(&#8203;NREL), Solar
+    Energy Research Institute of Singapore (SERIS)
+  pdf_url: https://arena.gov.au/assets/2021/06/tandem-pv-micro-concentrator-final-report.pdf
+  markdown_filename: tandem_pv_micro_concentrator_final_report.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-32002
+  contributing_source_titles:
+  - Tandem PV Micro Concentrator Final Report
+  contributing_sources:
+  - source_title: Tandem PV Micro Concentrator Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/tandem-pv-micro-concentrator-final-report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/tandem-pv-micro-concentrator-final-report/
+    markdown_filename: tandem_pv_micro_concentrator_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-32003
+  source_title: Tandem PV Micro Concentrator Final Report
+  publish_date: 2021-02
+  project_name: Tandem PV Micro Concentrator
+  what_happened: The prototype tandem module used only one acrylic micro concentrator
+    (7.5 cm × 2.2 cm) over a standard large-area silicon cell (12.5 cm × 12.5 cm),
+    meaning only a small fraction of the silicon cell area was illuminated. This caused
+    the silicon cell efficiency to be measured at 3% — a significant underestimate
+    of its real contribution in a full commercial module.
+  lesson_learnt: When building prototype tandem concentrator modules, ensure the micro
+    concentrator array covers the full silicon cell area, or explicitly account for
+    partial-illumination bias in efficiency measurements — otherwise performance data
+    will materially understate the commercial potential of the silicon bottom cell.
+  issue_severity: minor
+  project_type: null
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The report corrected for this in analysis, estimating a ~1% absolute
+    efficiency gain for the silicon cell once its full area is covered with micro
+    concentrators in a commercial module.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id002
+  - 7
+  evidence_excerpt: The efficiency of the silicon cell is underestimated because with
+    only one acrylic micro concentrator of dimensions 7.5 cm x 2.2 cm only a small
+    fraction of the standard large-area silicon cell (12.5 cm x 12.5 cm) is under
+    illumination. In a commercial module, the full area of the silicon cells would
+    be covered with micro concentrators so the efficiency of the silicon cell would
+    be higher than in this prototype tandem module.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/tandem-pv-micro-concentrator-final-report/
+  project_page_url: https://arena.gov.au/projects/tandem-pv-micro-concentrator/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/03/2021
+  kb_year: '2017'
+  kb_associated_project: Tandem PV Micro Concentrator
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $837k
+  total_project_value: $2.12m
+  lead_organisation: Australian National University (ANU)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 05/12/2017
+  location: Australian Capital Territory, Canberra
+  project_partners: National Renewable Energy Laboratory&nbsp;(&#8203;NREL), Solar
+    Energy Research Institute of Singapore (SERIS)
+  pdf_url: https://arena.gov.au/assets/2021/06/tandem-pv-micro-concentrator-final-report.pdf
+  markdown_filename: tandem_pv_micro_concentrator_final_report.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-32003
+  contributing_source_titles:
+  - Tandem PV Micro Concentrator Final Report
+  contributing_sources:
+  - source_title: Tandem PV Micro Concentrator Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/tandem-pv-micro-concentrator-final-report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/tandem-pv-micro-concentrator-final-report/
+    markdown_filename: tandem_pv_micro_concentrator_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-32004
+  source_title: Tandem PV Micro Concentrator Final Report
+  publish_date: 2021-02
+  project_name: Tandem PV Micro Concentrator
+  what_happened: The project could not determine whether GaAs wafer costs at very
+    large production scales would be sufficiently low to make the GaAs/Si tandem concentrator
+    system commercially competitive. This uncertainty remained unresolved at project
+    close and was identified as the main impediment to commercial progression.
+  lesson_learnt: Future projects developing high-efficiency III-V/Si tandem systems
+    should commission independent techno-economic analysis of GaAs wafer cost trajectories
+    at scale before committing to concentrator-based cost-reduction pathways — the
+    viability of the entire system depends on an input cost that cannot be reliably
+    estimated at lab scale.
+  issue_severity: major
+  project_type: null
+  project_scale_band: lab/bench
+  lifecycle_phase: close-out/post-project review
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: commercial & market
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id003
+  - 3
+  evidence_excerpt: The main impediment to progression of GaAs/Si tandem cells is
+    the high cost of GaAs. A concentrator system such as the one described above substantially
+    ameliorates this cost. However, it is very difficult to obtain reliable estimates
+    for the cost of GaAs wafers when produced at very large scales. It will certainly
+    be much lower than at present, but whether it is sufficiently low could not be
+    ascertained.
+  confidence_note: issue_severity rated major because this unresolved uncertainty
+    blocks the entire commercial pathway for the technology, even though no schedule
+    or cost overrun occurred within the project itself.
+  source_url: https://arena.gov.au/knowledge-bank/tandem-pv-micro-concentrator-final-report/
+  project_page_url: https://arena.gov.au/projects/tandem-pv-micro-concentrator/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/03/2021
+  kb_year: '2017'
+  kb_associated_project: Tandem PV Micro Concentrator
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $837k
+  total_project_value: $2.12m
+  lead_organisation: Australian National University (ANU)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 05/12/2017
+  location: Australian Capital Territory, Canberra
+  project_partners: National Renewable Energy Laboratory&nbsp;(&#8203;NREL), Solar
+    Energy Research Institute of Singapore (SERIS)
+  pdf_url: https://arena.gov.au/assets/2021/06/tandem-pv-micro-concentrator-final-report.pdf
+  markdown_filename: tandem_pv_micro_concentrator_final_report.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-32004
+  contributing_source_titles:
+  - Tandem PV Micro Concentrator Final Report
+  contributing_sources:
+  - source_title: Tandem PV Micro Concentrator Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/tandem-pv-micro-concentrator-final-report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/tandem-pv-micro-concentrator-final-report/
+    markdown_filename: tandem_pv_micro_concentrator_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-32005
+  source_title: Tandem PV Micro Concentrator Final Report
+  publish_date: 2021-02
+  project_name: Tandem PV Micro Concentrator
+  what_happened: The combination of non-imaging micro concentrators with commercially
+    available single-axis trackers was not experimentally validated with a real commercial
+    system during the project. The ideal pairing of micro concentrator design parameters
+    with commercially available tracker specifications remained an open knowledge
+    gap at project close.
+  lesson_learnt: Future projects scaling this technology should prioritise early experimental
+    integration with a commercially available single-axis tracker to determine the
+    practical design trade-off between concentration ratio and tracking-error tolerance
+    — this cannot be resolved through modelling alone and is a prerequisite for commercial
+    viability assessment.
+  issue_severity: moderate
+  project_type: null
+  project_scale_band: lab/bench
+  lifecycle_phase: close-out/post-project review
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id004
+  - 11
+  evidence_excerpt: The combination of non-imaging micro concentrators and single-axis
+    tracking has yet to be investigated experimentally with a commercially available
+    system. As a result, it is unclear as to what will be the ideal pairing of non-imaging
+    micro concentrator design with the commercially available single-axis sun-trackers.
+  confidence_note: issue_severity moderate because this gap directly limits the next
+    development stage, though it represents a known future work item rather than a
+    project failure.
+  source_url: https://arena.gov.au/knowledge-bank/tandem-pv-micro-concentrator-final-report/
+  project_page_url: https://arena.gov.au/projects/tandem-pv-micro-concentrator/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/03/2021
+  kb_year: '2017'
+  kb_associated_project: Tandem PV Micro Concentrator
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $837k
+  total_project_value: $2.12m
+  lead_organisation: Australian National University (ANU)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 05/12/2017
+  location: Australian Capital Territory, Canberra
+  project_partners: National Renewable Energy Laboratory&nbsp;(&#8203;NREL), Solar
+    Energy Research Institute of Singapore (SERIS)
+  pdf_url: https://arena.gov.au/assets/2021/06/tandem-pv-micro-concentrator-final-report.pdf
+  markdown_filename: tandem_pv_micro_concentrator_final_report.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-32005
+  contributing_source_titles:
+  - Tandem PV Micro Concentrator Final Report
+  contributing_sources:
+  - source_title: Tandem PV Micro Concentrator Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/tandem-pv-micro-concentrator-final-report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/tandem-pv-micro-concentrator-final-report/
+    markdown_filename: tandem_pv_micro_concentrator_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-32006
+  source_title: Tandem PV Micro Concentrator Final Report
+  publish_date: 2021-02
+  project_name: Tandem PV Micro Concentrator
+  what_happened: The project successfully demonstrated a fully integrated tandem PV
+    micro concentrator module — bonding glass, acrylic micro concentrator, GaAs cell,
+    and silicon cell into a weatherproof enclosure — achieving a measured tandem module
+    efficiency of 25% and a demonstrated underlying GaAs/Si cell efficiency of 30%
+    under concentration.
+  lesson_learnt: Early integration testing of all sub-components as a combined package
+    — rather than testing components individually in isolation — should be prioritised
+    to reveal system-level fabrication issues (such as antireflection coating optimisation
+    and bonding gel application) that are not apparent from component-level results
+    alone.
+  issue_severity: minor
+  project_type: null
+  project_scale_band: lab/bench
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages:
+  - 6
+  - 7
+  - 8
+  evidence_excerpt: The integration of the micro concentrator, GaAs and Si cells into
+    an improved tandem PV micro concentrator module capable of being mounted on a
+    solar tracker has been completed, demonstrating that all the components can function
+    together effectively. The underlying efficiency of the GaAs/Si cells combined
+    was 30%.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/tandem-pv-micro-concentrator-final-report/
+  project_page_url: https://arena.gov.au/projects/tandem-pv-micro-concentrator/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/03/2021
+  kb_year: '2017'
+  kb_associated_project: Tandem PV Micro Concentrator
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $837k
+  total_project_value: $2.12m
+  lead_organisation: Australian National University (ANU)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 05/12/2017
+  location: Australian Capital Territory, Canberra
+  project_partners: National Renewable Energy Laboratory&nbsp;(&#8203;NREL), Solar
+    Energy Research Institute of Singapore (SERIS)
+  pdf_url: https://arena.gov.au/assets/2021/06/tandem-pv-micro-concentrator-final-report.pdf
+  markdown_filename: tandem_pv_micro_concentrator_final_report.md
+  source_page_pdf: 3
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-32006
+  - ARENA-DLV-60454
+  contributing_source_titles:
+  - Tandem PV Micro Concentrator Final Report
+  - Tandem PV Micro Concentrator Project Results and Lessons Learnt
+  contributing_sources:
+  - source_title: Tandem PV Micro Concentrator Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/tandem-pv-micro-concentrator-final-report.pdf
+    source_pages:
+    - 6
+    - 7
+    source_url: https://arena.gov.au/knowledge-bank/tandem-pv-micro-concentrator-final-report/
+    markdown_filename: tandem_pv_micro_concentrator_final_report.md
+  - source_title: Tandem PV Micro Concentrator Project Results and Lessons Learnt
+    pdf_url: https://arena.gov.au/assets/2018/01/tandem-pv-micro-concentrator.pdf
+    source_pages:
+    - 8
+    source_url: https://arena.gov.au/knowledge-bank/tandem-pv-micro-concentrator/
+    markdown_filename: tandem_pv_micro_concentrator_project_results_and_lessons_learnt.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-32007
+  source_title: Tandem PV Micro Concentrator Final Report
+  publish_date: 2021-02
+  project_name: Tandem PV Micro Concentrator
+  what_happened: ICP/RIE was demonstrated as a viable method for forming high-quality,
+    narrow vertical grooves in GaAs wafers, achieving groove widths of 13 µm and depths
+    of 100 µm using a SiO2 etch mask, with good selectivity and directionality. However,
+    the process had not yet been developed into a repeatable, high-throughput production
+    process capable of achieving the full 250+ µm depth required.
+  lesson_learnt: ICP/RIE with a SiO2 mask is a promising path to high-quality GaAs
+    groove etching for SLIVER cells, but future projects must invest in process repeatability
+    and throughput optimisation before the method can support commercial cell production
+    — isolated lab demonstrations are insufficient proof of manufacturability.
+  issue_severity: minor
+  project_type: null
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id005
+  - 12
+  - 13
+  evidence_excerpt: Using SiO2 as an etch mask, grooves up to 100 µm deep have been
+    etched in a GaAs wafer with a groove width of 13 µm. Ultimately, grooves of at
+    least 250 µm depth will be required... The promising results achieved here for
+    the micro machining of GaAs need to be further developed into a repeatable high-throughput
+    process that is able to achieve consistent, clean groove etching.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/tandem-pv-micro-concentrator-final-report/
+  project_page_url: https://arena.gov.au/projects/tandem-pv-micro-concentrator/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/03/2021
+  kb_year: '2017'
+  kb_associated_project: Tandem PV Micro Concentrator
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $837k
+  total_project_value: $2.12m
+  lead_organisation: Australian National University (ANU)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 05/12/2017
+  location: Australian Capital Territory, Canberra
+  project_partners: National Renewable Energy Laboratory&nbsp;(&#8203;NREL), Solar
+    Energy Research Institute of Singapore (SERIS)
+  pdf_url: https://arena.gov.au/assets/2021/06/tandem-pv-micro-concentrator-final-report.pdf
+  markdown_filename: tandem_pv_micro_concentrator_final_report.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-32007
+  contributing_source_titles:
+  - Tandem PV Micro Concentrator Final Report
+  contributing_sources:
+  - source_title: Tandem PV Micro Concentrator Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/tandem-pv-micro-concentrator-final-report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/tandem-pv-micro-concentrator-final-report/
+    markdown_filename: tandem_pv_micro_concentrator_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-32008
+  source_title: Tandem PV Micro Concentrator Final Report
+  publish_date: 2021-02
+  project_name: Tandem PV Micro Concentrator
+  what_happened: The tandem micro concentrator system was intentionally designed using
+    non-imaging optics to achieve tolerance to tracking errors of approximately ±5°,
+    enabling compatibility with low-cost single-axis trackers rather than requiring
+    the highly precise and expensive dual-axis or high-accuracy trackers typically
+    needed for high-concentration systems (100× and above).
+  lesson_learnt: Designing concentrator PV systems around non-imaging optics at moderate
+    concentration ratios (5–30×) is a viable strategy for reducing tracker cost and
+    complexity — future concentrator PV projects should evaluate whether this design
+    trade-off (lower concentration for greater tracking tolerance) enables a better
+    commercial cost structure than high-concentration alternatives.
+  issue_severity: none
+  project_type: null
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id006
+  - 10
+  - 11
+  evidence_excerpt: The ANU tandem concentrator system utilises non-imaging micro
+    concentrators in order to improve the tolerance of the system to errors in the
+    sun-tracking system, thus enabling less accurate but much cheaper sun-trackers
+    to be used. This is in contrast to other solar concentrators that require very
+    precise and very expensive sun-trackers.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/tandem-pv-micro-concentrator-final-report/
+  project_page_url: https://arena.gov.au/projects/tandem-pv-micro-concentrator/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/03/2021
+  kb_year: '2017'
+  kb_associated_project: Tandem PV Micro Concentrator
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $837k
+  total_project_value: $2.12m
+  lead_organisation: Australian National University (ANU)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 05/12/2017
+  location: Australian Capital Territory, Canberra
+  project_partners: National Renewable Energy Laboratory&nbsp;(&#8203;NREL), Solar
+    Energy Research Institute of Singapore (SERIS)
+  pdf_url: https://arena.gov.au/assets/2021/06/tandem-pv-micro-concentrator-final-report.pdf
+  markdown_filename: tandem_pv_micro_concentrator_final_report.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-32008
+  contributing_source_titles:
+  - Tandem PV Micro Concentrator Final Report
+  contributing_sources:
+  - source_title: Tandem PV Micro Concentrator Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/tandem-pv-micro-concentrator-final-report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/tandem-pv-micro-concentrator-final-report/
+    markdown_filename: tandem_pv_micro_concentrator_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-60452
+  source_title: Tandem PV Micro Concentrator Project Results and Lessons Learnt
+  publish_date: '2019-08-12'
+  project_name: Tandem PV Micro Concentrator
+  what_happened: ICP/RIE etching demonstrated the ability to produce 23 µm-wide grooves
+    to 100 µm depth in GaAs, but full wafer depth (250 µm) etching had not yet been
+    demonstrated, and the RIE-lag effect was identified as requiring etching from
+    both sides of the wafer — a process not yet tested.
+  lesson_learnt: When planning GaAs Sliver groove etching via ICP/RIE, account for
+    RIE-lag effects that will likely require double-sided etching to achieve full
+    wafer depth — this capability must be validated before relying on the method for
+    full-depth groove production.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id007
+  - 6
+  evidence_excerpt: Using ICP/RIE etching to etch through an entire GaAs wafer has
+    yet to be demonstrated. Due to the effect of RIE-lag, this will most likely require
+    etching from both sides of the wafer, something that is yet to be tested.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/tandem-pv-micro-concentrator/
+  project_page_url: https://arena.gov.au/projects/tandem-pv-micro-concentrator/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 12/08/2019
+  kb_year: '2017'
+  kb_associated_project: Tandem PV Micro Concentrator
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $837k
+  total_project_value: $2.12m
+  lead_organisation: Australian National University (ANU)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 05/12/2017
+  location: Australian Capital Territory, Canberra
+  project_partners: National Renewable Energy Laboratory&nbsp;(&#8203;NREL), Solar
+    Energy Research Institute of Singapore (SERIS)
+  pdf_url: https://arena.gov.au/assets/2018/01/tandem-pv-micro-concentrator.pdf
+  markdown_filename: tandem_pv_micro_concentrator_project_results_and_lessons_learnt.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60452
+  contributing_source_titles:
+  - Tandem PV Micro Concentrator Project Results and Lessons Learnt
+  contributing_sources:
+  - source_title: Tandem PV Micro Concentrator Project Results and Lessons Learnt
+    pdf_url: https://arena.gov.au/assets/2018/01/tandem-pv-micro-concentrator.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/tandem-pv-micro-concentrator/
+    markdown_filename: tandem_pv_micro_concentrator_project_results_and_lessons_learnt.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-60453
+  source_title: Tandem PV Micro Concentrator Project Results and Lessons Learnt
+  publish_date: '2019-08-12'
+  project_name: Tandem PV Micro Concentrator
+  what_happened: The quality of the ICP/RIE etched groove sidewall had not been extensively
+    characterised, leaving surface roughness parameters and required post-etch treatment
+    undefined at the midpoint of the project.
+  lesson_learnt: Surface roughness of etched sidewalls should be measured and etching
+    parameters systematically varied early in the process development phase — leaving
+    sidewall quality uncharacterised delays determination of whether additional treatment
+    steps are needed before subsequent processing.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: null
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id008
+  - 6
+  evidence_excerpt: The quality of the groove sidewall has not been extensively investigated.
+    Parameters such as surface roughness should be measured and etching parameters
+    tested to indicate what treatment is necessary to produce a surface smooth enough
+    for the subsequent processing steps.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/tandem-pv-micro-concentrator/
+  project_page_url: https://arena.gov.au/projects/tandem-pv-micro-concentrator/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 12/08/2019
+  kb_year: '2017'
+  kb_associated_project: Tandem PV Micro Concentrator
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $837k
+  total_project_value: $2.12m
+  lead_organisation: Australian National University (ANU)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 05/12/2017
+  location: Australian Capital Territory, Canberra
+  project_partners: National Renewable Energy Laboratory&nbsp;(&#8203;NREL), Solar
+    Energy Research Institute of Singapore (SERIS)
+  pdf_url: https://arena.gov.au/assets/2018/01/tandem-pv-micro-concentrator.pdf
+  markdown_filename: tandem_pv_micro_concentrator_project_results_and_lessons_learnt.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60453
+  contributing_source_titles:
+  - Tandem PV Micro Concentrator Project Results and Lessons Learnt
+  contributing_sources:
+  - source_title: Tandem PV Micro Concentrator Project Results and Lessons Learnt
+    pdf_url: https://arena.gov.au/assets/2018/01/tandem-pv-micro-concentrator.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/tandem-pv-micro-concentrator/
+    markdown_filename: tandem_pv_micro_concentrator_project_results_and_lessons_learnt.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-60455
+  source_title: Tandem PV Micro Concentrator Project Results and Lessons Learnt
+  publish_date: '2019-08-12'
+  project_name: Tandem PV Micro Concentrator
+  what_happened: Integration of the complete module identified that antireflection
+    coatings were sub-optimal for concentrator operation and that the silicone gel
+    bonding method was applied in excess quantities and with suboptimal refractive
+    index, reducing optical coupling efficiency.
+  lesson_learnt: Antireflection coating specifications and bonding gel selection (type
+    and quantity) must be co-optimised for the specific optical environment of the
+    concentrator module — coatings and adhesives validated on standalone cells will
+    not perform equivalently when integrated into a concentrator package.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: lab/bench
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated integration
+  intervention_note: Identified that antireflection coating thicknesses need to be
+    re-optimised for bonded concentrator conditions and that a higher refractive index
+    silicone gel should be substituted to improve optical coupling; to be addressed
+    in the second project phase.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id009
+  - 8
+  evidence_excerpt: Fabrication aspects of the cell and module designs were identified
+    as sub-optimal which can be addressed in future stages of the project to improve
+    the efficiency of the module. Specifically, the antireflection coatings can be
+    optimised for better performance in the concentrator module, the application of
+    silicone gel for bonding with the GaAs cell can be improved to minimise the amount
+    used and the type of silicone gel can be changed to one with a higher refractive
+    index for better optical coupling.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/tandem-pv-micro-concentrator/
+  project_page_url: https://arena.gov.au/projects/tandem-pv-micro-concentrator/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 12/08/2019
+  kb_year: '2017'
+  kb_associated_project: Tandem PV Micro Concentrator
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $837k
+  total_project_value: $2.12m
+  lead_organisation: Australian National University (ANU)
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 05/12/2017
+  location: Australian Capital Territory, Canberra
+  project_partners: National Renewable Energy Laboratory&nbsp;(&#8203;NREL), Solar
+    Energy Research Institute of Singapore (SERIS)
+  pdf_url: https://arena.gov.au/assets/2018/01/tandem-pv-micro-concentrator.pdf
+  markdown_filename: tandem_pv_micro_concentrator_project_results_and_lessons_learnt.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60455
+  contributing_source_titles:
+  - Tandem PV Micro Concentrator Project Results and Lessons Learnt
+  contributing_sources:
+  - source_title: Tandem PV Micro Concentrator Project Results and Lessons Learnt
+    pdf_url: https://arena.gov.au/assets/2018/01/tandem-pv-micro-concentrator.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/tandem-pv-micro-concentrator/
+    markdown_filename: tandem_pv_micro_concentrator_project_results_and_lessons_learnt.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82

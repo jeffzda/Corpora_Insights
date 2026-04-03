@@ -1,0 +1,1365 @@
+- record_id: ARENA-DLV-12151
+  source_title: Battery of the Nation - Operation of Storages Without Perfect Foresight
+  publish_date: 2019-09
+  project_name: Battery of the Nation
+  what_happened: Power system planning models for the NEM have used perfect foresight
+    as a standard simplification, which was historically acceptable when energy storage
+    played a minor role. As storage is projected to dominate future flexible supply,
+    analysis showed this assumption materially overestimates the value and capability
+    of shorter-duration storages, leading to an underestimation of total storage required
+    to meet reliability targets.
+  lesson_learnt: Battery storage project models must explicitly account for cycling
+    costs and limits — optimisation models that ignore start/stop constraints will
+    produce unrealistically high cycle rates that substantially overstate asset life
+    and understate lifetime costs; non-linear optimisation tools that incorporate
+    cycling degradation are needed for realistic battery project appraisal.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: concept/feasibility
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Hydro Tasmania developed a linear programming methodology using
+    historic Victorian price data paired with real historic forecasts (rather than
+    perfect foresight) to quantify the value loss by storage duration, providing an
+    empirical correction factor for planners.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: hybrid systems
+  source_pages:
+  - 5
+  - 6
+  - 13
+  - 15
+  - 16
+  - 17
+  - 20
+  evidence_excerpt: Without any modelling of cycling costs or limits, the optimisation
+    resulted in around 3000 starts per year (around 900 full charge/discharge cycles)
+    for the shorter duration storages, potentially substantially shortening the operating
+    life of electrochemical storages... 3000 cycles in a year would likely shorten
+    the practical life of a lithium ion battery to a few years at most.
+  confidence_note: project_scale_band set to programmatic/portfolio-level as this
+    is a planning/modelling study with system-wide implications rather than a single
+    project; technology_domain set to hybrid systems to reflect both battery and pumped
+    hydro storage coverage. Canonical record merged from 7 source records across 1
+    document(s).
+  source_url: https://arena.gov.au/knowledge-bank/battery-of-the-nation-operation-of-storages-without-perfect-foresight/
+  project_page_url: https://arena.gov.au/projects/battery-of-the-nation-future-state-nem-analysis-stage-2/
+  kb_category: Hydropower / Pumped Hydro Energy Storage
+  kb_publish_date: 28/08/2019
+  kb_year: '2019'
+  kb_associated_project: Battery of the Nation Future State NEM Analysis (Stage 2)
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $2m
+  lead_organisation: Hydro-Electric Corporation
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/07/2019
+  location: Tasmania
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/04/battery-of-the-nation-operation-of-storages-without-perfect-foresight.pdf
+  markdown_filename: battery_of_the_nation_operation_of_storages_without_perfect_foresight.md
+  source_page_pdf: 5
+  corroboration_count: 7
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-12151
+  - ARENA-DLV-12152
+  - ARENA-DLV-12153
+  - ARENA-DLV-12154
+  - ARENA-DLV-12155
+  - ARENA-DLV-12156
+  - ARENA-DLV-12157
+  contributing_source_titles:
+  - Battery of the Nation - Operation of Storages Without Perfect Foresight
+  contributing_sources:
+  - source_title: Battery of the Nation - Operation of Storages Without Perfect Foresight
+    pdf_url: https://arena.gov.au/assets/2020/04/battery-of-the-nation-operation-of-storages-without-perfect-foresight.pdf
+    source_pages:
+    - 5
+    - 6
+    source_url: https://arena.gov.au/knowledge-bank/battery-of-the-nation-operation-of-storages-without-perfect-foresight/
+    markdown_filename: battery_of_the_nation_operation_of_storages_without_perfect_foresight.md
+  arena_category:
+  - Pumped hydro
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-12158
+  source_title: Battery of the Nation - Operation of Storages Without Perfect Foresight
+  publish_date: 2019-09
+  project_name: Battery of the Nation
+  what_happened: Analysis of the Hornsdale Power Reserve operating model — where 70
+    MW/10 MWh is reserved for ancillary services and 30 MW/119 MWh for arbitrage —
+    was used to assess the value of maintaining an energy reserve to manage forecast
+    uncertainty. The analysis confirmed that longer-duration storages can hold a reserve
+    with little impact on arbitrage opportunity, while shorter-duration storages lose
+    material arbitrage opportunities when holding a reserve.
+  lesson_learnt: When structuring operational dispatch strategies for battery storage
+    projects, longer-duration assets should be designed with an explicit energy reserve
+    allocation to manage forecast uncertainty and cap contract obligations — short-duration
+    assets face an inherent trade-off between reserve holding and arbitrage capture
+    that limits this strategy's effectiveness.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Hornsdale Power Reserve reserved a portion of capacity (70 MW/10
+    MWh) for ancillary services while keeping 30 MW/119 MWh available for market arbitrage,
+    providing a practical model for reserve management under forecast uncertainty.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id001
+  - 17
+  - 18
+  evidence_excerpt: The Hornsdale Power Reserve in South Australia has such an arrangement.
+    70 MW and 10 MWh are reserved for managing ancillary services and the remaining
+    30 MW and 119MWh are available for arbitrage trading in the NEM... longer duration
+    storages could generally hold a valuable reserve with little impact on opportunity
+    while shorter duration storages lose more arbitrage opportunities by holding a
+    reserve.
+  confidence_note: 'project_scale_band set to first commercial/FOAK reflecting Hornsdale
+    as the specific operational example; other fields reflect the Hornsdale context
+    within a broader analytical finding.; project_scale_band reconciled to ''programmatic/portfolio-level''
+    from: programmatic/portfolio-level (8/9), first commercial/FOAK (1/9); proponent_type
+    reconciled to ''research organisation/university'' from: research organisation/university
+    (8/9), project developer (1/9)'
+  source_url: https://arena.gov.au/knowledge-bank/battery-of-the-nation-operation-of-storages-without-perfect-foresight/
+  project_page_url: https://arena.gov.au/projects/battery-of-the-nation-future-state-nem-analysis-stage-2/
+  kb_category: Hydropower / Pumped Hydro Energy Storage
+  kb_publish_date: 28/08/2019
+  kb_year: '2019'
+  kb_associated_project: Battery of the Nation Future State NEM Analysis (Stage 2)
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $2m
+  lead_organisation: Hydro-Electric Corporation
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/07/2019
+  location: Tasmania
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/04/battery-of-the-nation-operation-of-storages-without-perfect-foresight.pdf
+  markdown_filename: battery_of_the_nation_operation_of_storages_without_perfect_foresight.md
+  source_page_pdf: 17
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-12158
+  contributing_source_titles:
+  - Battery of the Nation - Operation of Storages Without Perfect Foresight
+  contributing_sources:
+  - source_title: Battery of the Nation - Operation of Storages Without Perfect Foresight
+    pdf_url: https://arena.gov.au/assets/2020/04/battery-of-the-nation-operation-of-storages-without-perfect-foresight.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/battery-of-the-nation-operation-of-storages-without-perfect-foresight/
+    markdown_filename: battery_of_the_nation_operation_of_storages_without_perfect_foresight.md
+  arena_category:
+  - Pumped hydro
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-12159
+  source_title: Battery of the Nation - Operation of Storages Without Perfect Foresight
+  publish_date: 2019-09
+  project_name: Battery of the Nation
+  what_happened: The analysis was constrained to historic data because realistic synthetic
+    forecasts for future NEM conditions (incorporating increased VRE penetration,
+    EV demand uncertainty, and changed bidding behaviour) do not yet exist. This limited
+    the study's ability to quantify the impact of forecast uncertainty in the future,
+    higher-VRE NEM where conditions are expected to be more challenging than the historic
+    period.
+  lesson_learnt: Investment in developing realistic synthetic forecast datasets for
+    future NEM scenarios — incorporating VRE variability, EV charging uncertainty,
+    and bidding behaviour — is a critical prerequisite for accurate storage project
+    appraisal; planning decisions made without such datasets will systematically underestimate
+    storage requirements.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: concept/feasibility
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The paper recommended developing synthetic forecasts using historic
+    wind, solar and demand data paired with actual outcomes, scaled to forward scenarios
+    and adjusted for bidding behaviour uncertainty, with hindcasting used to validate
+    residual uncertainty.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: hybrid systems
+  source_pages: &id002
+  - 19
+  - 20
+  evidence_excerpt: The analysis presented in this paper is limited to historic data,
+    to avoid the need to synthesise new forecasts. Future market behaviours will change...
+    Realistic synthetic forecasts should be developed to enable the industry to properly
+    assess future operations rather than relying on past behaviour to represent a
+    rapidly changing system.
+  confidence_note: delay_category of data/validation/testing reflects the methodological
+    gap (absence of synthetic forecast data) as a constraint on planning accuracy
+    rather than a project delay per se.
+  source_url: https://arena.gov.au/knowledge-bank/battery-of-the-nation-operation-of-storages-without-perfect-foresight/
+  project_page_url: https://arena.gov.au/projects/battery-of-the-nation-future-state-nem-analysis-stage-2/
+  kb_category: Hydropower / Pumped Hydro Energy Storage
+  kb_publish_date: 28/08/2019
+  kb_year: '2019'
+  kb_associated_project: Battery of the Nation Future State NEM Analysis (Stage 2)
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $2m
+  lead_organisation: Hydro-Electric Corporation
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/07/2019
+  location: Tasmania
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/04/battery-of-the-nation-operation-of-storages-without-perfect-foresight.pdf
+  markdown_filename: battery_of_the_nation_operation_of_storages_without_perfect_foresight.md
+  source_page_pdf: 19
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-12159
+  contributing_source_titles:
+  - Battery of the Nation - Operation of Storages Without Perfect Foresight
+  contributing_sources:
+  - source_title: Battery of the Nation - Operation of Storages Without Perfect Foresight
+    pdf_url: https://arena.gov.au/assets/2020/04/battery-of-the-nation-operation-of-storages-without-perfect-foresight.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/battery-of-the-nation-operation-of-storages-without-perfect-foresight/
+    markdown_filename: battery_of_the_nation_operation_of_storages_without_perfect_foresight.md
+  arena_category:
+  - Pumped hydro
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-47101
+  source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+    and Objectives
+  publish_date: 2019-08
+  project_name: Battery of the Nation
+  what_happened: During the January 2019 Victorian heatwave, AEMO directed over 250
+    MW of load shedding affecting 200,000 customers over two days, despite more than
+    500 MW of Tasmanian hydropower being available in the market but unable to be
+    dispatched due to insufficient interconnection capacity on Basslink.
+  lesson_learnt: Transmission interconnection constraints can prevent available dispatchable
+    generation from reaching load centres during system stress events — interconnection
+    capacity must be sized to deliver latent generation assets to market, not just
+    to meet average transfer requirements.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: pumped hydro
+  source_pages: &id003
+  - 35
+  evidence_excerpt: On 24 and 25 January, AEMO directed over 250 MW of load shedding
+    for several hours each day... more than 500 MW of Tasmanian hydropower was available
+    to the market but not able to be supplied due to insufficient interconnection.
+  confidence_note: 'project_type reconciled to ''storage'' from: storage (5/14), network/grid
+    (3/14), multi-technology/hybrid (3/14), generation (3/14); project_scale_band
+    reconciled to ''programmatic/portfolio-level'' from: programmatic/portfolio-level
+    (6/14), utility/large-scale (5/14), first commercial/FOAK (2/14), demonstration
+    (1/14); proponent_type reconciled to ''project developer'' from: project developer
+    (7/14), utility/energy retailer (5/14), government/public-sector body (2/14)'
+  source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+  project_page_url: https://arena.gov.au/projects/battery-of-the-nation-future-state-nem-analysis-stage-2/
+  kb_category: Hydropower / Pumped Hydro Energy Storage
+  kb_publish_date: 28/08/2019
+  kb_year: '2019'
+  kb_associated_project: Battery of the Nation Future State NEM Analysis (Stage 2)
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $2m
+  lead_organisation: Hydro-Electric Corporation
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/07/2019
+  location: Tasmania
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+  markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-47101
+  contributing_source_titles:
+  - How Battery of the Nation Can Contribute to Victoria's Energy Needs and Objectives
+  contributing_sources:
+  - source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+      and Objectives
+    pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+    markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  arena_category:
+  - Pumped hydro
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-47102
+  source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+    and Objectives
+  publish_date: 2019-08
+  project_name: Battery of the Nation
+  what_happened: 'Large-scale, long-lead-time energy infrastructure investments (such
+    as pumped hydro and interconnection) face a structural market barrier: the investor''s
+    commercial interest favours late investment to avoid oversupply and suppressed
+    prices, while consumer interest requires early investment to avoid supply shortfalls
+    — creating a persistent under-investment dynamic during market transitions.'
+  lesson_learnt: De-risking mechanisms or underwriting arrangements are necessary
+    to align investor and consumer interests during energy market transitions — without
+    them, long-lead-time infrastructure will systematically be built too late to prevent
+    supply shortfalls and price spikes.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: concept/feasibility
+  proponent_type: project developer
+  delay_category: financing/commercial close
+  failure_mode: commercial & market
+  outcome_class: policy/market influence only
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: The paper recommends market-based underwriting or de-risking
+    mechanisms designed as market insurance, only called upon in unexpected circumstances,
+    to minimise market interference while protecting investors.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: pumped hydro
+  source_pages: &id004
+  - 25
+  - 26
+  evidence_excerpt: It is in the interest of consumers to enjoy the benefits of early
+    investment; yet in the current market structure, it is not in the interest of
+    investors themselves. Early investment can result in excessive competition and
+    suppressed profitability – potentially even putting solvency at risk.
+  confidence_note: 'project_type reconciled to ''storage'' from: storage (5/14), network/grid
+    (3/14), multi-technology/hybrid (3/14), generation (3/14)'
+  source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+  project_page_url: https://arena.gov.au/projects/battery-of-the-nation-future-state-nem-analysis-stage-2/
+  kb_category: Hydropower / Pumped Hydro Energy Storage
+  kb_publish_date: 28/08/2019
+  kb_year: '2019'
+  kb_associated_project: Battery of the Nation Future State NEM Analysis (Stage 2)
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $2m
+  lead_organisation: Hydro-Electric Corporation
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/07/2019
+  location: Tasmania
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+  markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  source_page_pdf: 25
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-47102
+  contributing_source_titles:
+  - How Battery of the Nation Can Contribute to Victoria's Energy Needs and Objectives
+  contributing_sources:
+  - source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+      and Objectives
+    pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+    markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  arena_category:
+  - Pumped hydro
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-47103
+  source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+    and Objectives
+  publish_date: 2019-08
+  project_name: Battery of the Nation
+  what_happened: Some components of the least-cost future power system, including
+    interconnection, have construction lead times longer than the minimum notice period
+    for coal generator retirement (three years), meaning that if investment is deferred
+    until a retirement is announced, the replacement capacity cannot be available
+    in time.
+  lesson_learnt: For long-lead-time energy infrastructure, investment decisions must
+    be made well before the triggering event (e.g. coal retirement) occurs — waiting
+    for market trigger signals will systematically favour short-build-cycle but higher-cost
+    options (batteries, gas peakers) over least-cost long-duration solutions.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: approvals/regulatory
+  failure_mode: poor scoping
+  outcome_class: policy/market influence only
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: Paper recommends proactive support for interconnection and early
+    de-risking mechanisms to allow long-lead-time projects to commence before market
+    trigger signals are clear.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: pumped hydro
+  source_pages: &id005
+  - 24
+  - 25
+  evidence_excerpt: Some components of the least-cost future power system, such as
+    interconnection, take longer to build than the proposed retirement notice periods
+    (and the proposed Retailer Reliability Obligation trigger period).
+  confidence_note: 'project_type reconciled to ''storage'' from: storage (5/14), network/grid
+    (3/14), multi-technology/hybrid (3/14), generation (3/14)'
+  source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+  project_page_url: https://arena.gov.au/projects/battery-of-the-nation-future-state-nem-analysis-stage-2/
+  kb_category: Hydropower / Pumped Hydro Energy Storage
+  kb_publish_date: 28/08/2019
+  kb_year: '2019'
+  kb_associated_project: Battery of the Nation Future State NEM Analysis (Stage 2)
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $2m
+  lead_organisation: Hydro-Electric Corporation
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/07/2019
+  location: Tasmania
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+  markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  source_page_pdf: 24
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-47103
+  contributing_source_titles:
+  - How Battery of the Nation Can Contribute to Victoria's Energy Needs and Objectives
+  contributing_sources:
+  - source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+      and Objectives
+    pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+    markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  arena_category:
+  - Pumped hydro
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-47104
+  source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+    and Objectives
+  publish_date: 2019-08
+  project_name: Battery of the Nation
+  what_happened: Transmission congestion from concentrated renewable energy development
+    in certain corridors has caused substantial changes to marginal loss factors (MLFs)
+    for some renewable energy projects in Victoria, having material financial implications
+    for market participants and investors and contributing to project curtailment.
+  lesson_learnt: Renewable energy project developers must account for transmission
+    congestion risk and its effect on MLFs during project development and financial
+    modelling — concentration of generation on constrained corridors can materially
+    erode project revenues and undermine project viability post-commissioning.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: commercial & market
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id006
+  - 21
+  evidence_excerpt: Transmission congestion, a localised form of over-supply, is already
+    causing substantial changes to the marginal loss factors from transmission lines
+    for some renewable energy projects and is having material financial implications
+    for market participants and investors.
+  confidence_note: 'Technology domain assigned as solar PV as the primary context
+    is Victorian solar development, though wind is also affected.; project_type reconciled
+    to ''storage'' from: storage (5/14), network/grid (3/14), multi-technology/hybrid
+    (3/14), generation (3/14); project_scale_band reconciled to ''programmatic/portfolio-level''
+    from: programmatic/portfolio-level (6/14), utility/large-scale (5/14), first commercial/FOAK
+    (2/14), demonstration (1/14)'
+  source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+  project_page_url: https://arena.gov.au/projects/battery-of-the-nation-future-state-nem-analysis-stage-2/
+  kb_category: Hydropower / Pumped Hydro Energy Storage
+  kb_publish_date: 28/08/2019
+  kb_year: '2019'
+  kb_associated_project: Battery of the Nation Future State NEM Analysis (Stage 2)
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $2m
+  lead_organisation: Hydro-Electric Corporation
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/07/2019
+  location: Tasmania
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+  markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  source_page_pdf: 21
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-47104
+  contributing_source_titles:
+  - How Battery of the Nation Can Contribute to Victoria's Energy Needs and Objectives
+  contributing_sources:
+  - source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+      and Objectives
+    pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+    markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  arena_category:
+  - Pumped hydro
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-47105
+  source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+    and Objectives
+  publish_date: 2019-08
+  project_name: Battery of the Nation
+  what_happened: Victorian ageing brown coal generators operated at only 73% of expected
+    summer capacity during the January 2019 heatwave due to forced outages, contributing
+    to involuntary load shedding, despite being the primary dispatchable generation
+    resource relied upon to meet peak summer demand.
+  lesson_learnt: System planners and project developers should not rely on ageing
+    thermal generation assets to meet peak demand contingencies — forced outage rates
+    for ageing coal have increased materially (brown coal forced outage factor rose
+    from 4.1% in 2017 ESOO to 5.3% in 2018 ESOO) and alternative dispatchable capacity
+    must be available before it is needed.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id007
+  - 17
+  evidence_excerpt: During load shedding events, Victorian coal plants were at just
+    73% of their expected summer capacity. Further, due to cooling issues experienced
+    in higher ambient temperatures, the summer capacity of Victorian coal is normally
+    reduced by 304 MW.
+  confidence_note: 'project_type reconciled to ''storage'' from: storage (5/14), network/grid
+    (3/14), multi-technology/hybrid (3/14), generation (3/14); project_scale_band
+    reconciled to ''programmatic/portfolio-level'' from: programmatic/portfolio-level
+    (6/14), utility/large-scale (5/14), first commercial/FOAK (2/14), demonstration
+    (1/14); proponent_type reconciled to ''project developer'' from: project developer
+    (7/14), utility/energy retailer (5/14), government/public-sector body (2/14)'
+  source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+  project_page_url: https://arena.gov.au/projects/battery-of-the-nation-future-state-nem-analysis-stage-2/
+  kb_category: Hydropower / Pumped Hydro Energy Storage
+  kb_publish_date: 28/08/2019
+  kb_year: '2019'
+  kb_associated_project: Battery of the Nation Future State NEM Analysis (Stage 2)
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $2m
+  lead_organisation: Hydro-Electric Corporation
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/07/2019
+  location: Tasmania
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+  markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-47105
+  contributing_source_titles:
+  - How Battery of the Nation Can Contribute to Victoria's Energy Needs and Objectives
+  contributing_sources:
+  - source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+      and Objectives
+    pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+    markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  arena_category:
+  - Pumped hydro
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-47106
+  source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+    and Objectives
+  publish_date: 2019-08
+  project_name: Battery of the Nation
+  what_happened: Flexible generation set the Victorian market price only 25% of the
+    time in Q4 2018, yet accounted for 60% of the total cost of the Victorian market,
+    with two participants setting the price for more than two-thirds of total cost
+    during flexible supply events — indicating a highly concentrated and illiquid
+    flexible generation market.
+  lesson_learnt: Introducing even modest additional flexible dispatchable capacity
+    into a concentrated market can have a disproportionately large impact on wholesale
+    prices — new entrant flexible generation or storage projects should be assessed
+    not just on their own revenue but on their system-level price reduction value,
+    which substantially exceeds their energy output share.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: concept/feasibility
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: policy/market influence only
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: pumped hydro
+  source_pages: &id008
+  - 12
+  - 13
+  evidence_excerpt: Although flexible generation only set the price 25% of the time,
+    this accounted for 60% of the cost in the Victorian market... Two participants
+    are setting the price for more than two-thirds of the total cost in Victoria (when
+    flexible supply is needed).
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+  project_page_url: https://arena.gov.au/projects/battery-of-the-nation-future-state-nem-analysis-stage-2/
+  kb_category: Hydropower / Pumped Hydro Energy Storage
+  kb_publish_date: 28/08/2019
+  kb_year: '2019'
+  kb_associated_project: Battery of the Nation Future State NEM Analysis (Stage 2)
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $2m
+  lead_organisation: Hydro-Electric Corporation
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/07/2019
+  location: Tasmania
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+  markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-47106
+  contributing_source_titles:
+  - How Battery of the Nation Can Contribute to Victoria's Energy Needs and Objectives
+  contributing_sources:
+  - source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+      and Objectives
+    pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+    markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  arena_category:
+  - Pumped hydro
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-47107
+  source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+    and Objectives
+  publish_date: 2019-08
+  project_name: Battery of the Nation
+  what_happened: Despite a positive business case on prevailing market signals, there
+    has been little development of pumped hydro storage in Australia's energy-only
+    NEM, because the investment is exposed to risk from price spread variability and
+    there is no capacity mechanism to underwrite long-duration storage assets during
+    the transition period.
+  lesson_learnt: An energy-only market design is insufficient to support timely investment
+    in long-duration storage during an energy transition — project developers for
+    pumped hydro and similar long-lead-time storage must engage early with market
+    reform processes and seek offtake or de-risking arrangements, as market price
+    signals alone will not reliably trigger investment at the right time.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: concept/feasibility
+  proponent_type: project developer
+  delay_category: financing/commercial close
+  failure_mode: commercial & market
+  outcome_class: policy/market influence only
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: pumped hydro
+  source_pages: &id009
+  - 28
+  evidence_excerpt: A large price spread between high and low spot prices (over a
+    period of days) creates a signal for storage; yet during the transition to the
+    future market, investment in storage is risky, especially in an energy-only market.
+    For this reason, even though the business case looks positive on today's market,
+    there has been little development of pumped storage.
+  confidence_note: 'project_scale_band reconciled to ''programmatic/portfolio-level''
+    from: programmatic/portfolio-level (6/14), utility/large-scale (5/14), first commercial/FOAK
+    (2/14), demonstration (1/14)'
+  source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+  project_page_url: https://arena.gov.au/projects/battery-of-the-nation-future-state-nem-analysis-stage-2/
+  kb_category: Hydropower / Pumped Hydro Energy Storage
+  kb_publish_date: 28/08/2019
+  kb_year: '2019'
+  kb_associated_project: Battery of the Nation Future State NEM Analysis (Stage 2)
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $2m
+  lead_organisation: Hydro-Electric Corporation
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/07/2019
+  location: Tasmania
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+  markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  source_page_pdf: 28
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-47107
+  contributing_source_titles:
+  - How Battery of the Nation Can Contribute to Victoria's Energy Needs and Objectives
+  contributing_sources:
+  - source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+      and Objectives
+    pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+    markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  arena_category:
+  - Pumped hydro
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-47108
+  source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+    and Objectives
+  publish_date: 2019-08
+  project_name: Battery of the Nation
+  what_happened: Pumped hydro projects in Tasmania leverage existing storages, roads,
+    transmission infrastructure, and Hydro Tasmania's existing water licence, materially
+    reducing delivery risk compared with greenfield pumped hydro on mainland Australia
+    where no such supporting infrastructure or legal frameworks exist.
+  lesson_learnt: When evaluating pumped hydro development options, reuse of existing
+    water storage infrastructure, access roads, transmission connections, and established
+    water licences significantly reduces delivery risk and construction complexity
+    — developers should prioritise sites that integrate with existing hydropower schemes
+    over greenfield locations where permitting and infrastructure gaps add substantial
+    schedule and cost risk.
+  issue_severity: none
+  project_type: storage
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: pumped hydro
+  source_pages: &id010
+  - 44
+  evidence_excerpt: Reusing existing storages and other supporting infrastructure,
+    such as roads and transmission lines, simplifies the projects and removes some
+    potential obstacles that can add more time, cost and complications. Moreover,
+    existing legal agreements such as Hydro Tasmania's water licence increase certainty
+    compared with other locations.
+  confidence_note: 'project_scale_band reconciled to ''programmatic/portfolio-level''
+    from: programmatic/portfolio-level (6/14), utility/large-scale (5/14), first commercial/FOAK
+    (2/14), demonstration (1/14); proponent_type reconciled to ''project developer''
+    from: project developer (7/14), utility/energy retailer (5/14), government/public-sector
+    body (2/14)'
+  source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+  project_page_url: https://arena.gov.au/projects/battery-of-the-nation-future-state-nem-analysis-stage-2/
+  kb_category: Hydropower / Pumped Hydro Energy Storage
+  kb_publish_date: 28/08/2019
+  kb_year: '2019'
+  kb_associated_project: Battery of the Nation Future State NEM Analysis (Stage 2)
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $2m
+  lead_organisation: Hydro-Electric Corporation
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/07/2019
+  location: Tasmania
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+  markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  source_page_pdf: 44
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-47108
+  contributing_source_titles:
+  - How Battery of the Nation Can Contribute to Victoria's Energy Needs and Objectives
+  contributing_sources:
+  - source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+      and Objectives
+    pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+    markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  arena_category:
+  - Pumped hydro
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-47109
+  source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+    and Objectives
+  publish_date: 2019-08
+  project_name: Battery of the Nation
+  what_happened: 'Pumped hydro projects with longer conveyance tunnels face a capital-versus-efficiency
+    trade-off: a smaller diameter tunnel costs less but generates higher head losses,
+    reducing round-trip efficiency from approximately 83% (1% head loss) to 70% (10%
+    head loss) — a difference of almost 20% in annual energy consumed, requiring additional
+    wind or solar generation to compensate.'
+  lesson_learnt: Pumped hydro project design must optimise conveyance diameter against
+    both capital cost and operational efficiency — a 20% variation in round-trip efficiency
+    between high and low head-loss designs can require an additional $0.25 million
+    of wind or solar per installed MW of pumped hydro, materially affecting whole-of-system
+    cost and should be included in feasibility assessments.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Battery of the Nation pumped hydro opportunities use steep, short
+    conveyances to achieve efficiencies in the low 80s%, among the most efficient
+    options in the NEM.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: pumped hydro
+  source_pages: &id011
+  - 43
+  evidence_excerpt: Assuming a fixed machine efficiency of 92%, head losses ranging
+    from 1% to 10% would result in cyclic efficiencies ranging from 83% to 70%. This
+    can change the amount of energy consumed each year by almost 20%... Assuming the
+    pumped hydro supplies 25% of the time, the difference between the highest and
+    lowest efficiencies could require an additional $0.25 million to be spent on wind
+    or solar for every MW of installed pumped hydro.
+  confidence_note: 'project_scale_band reconciled to ''programmatic/portfolio-level''
+    from: programmatic/portfolio-level (6/14), utility/large-scale (5/14), first commercial/FOAK
+    (2/14), demonstration (1/14); proponent_type reconciled to ''project developer''
+    from: project developer (7/14), utility/energy retailer (5/14), government/public-sector
+    body (2/14)'
+  source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+  project_page_url: https://arena.gov.au/projects/battery-of-the-nation-future-state-nem-analysis-stage-2/
+  kb_category: Hydropower / Pumped Hydro Energy Storage
+  kb_publish_date: 28/08/2019
+  kb_year: '2019'
+  kb_associated_project: Battery of the Nation Future State NEM Analysis (Stage 2)
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $2m
+  lead_organisation: Hydro-Electric Corporation
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/07/2019
+  location: Tasmania
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+  markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  source_page_pdf: 43
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-47109
+  contributing_source_titles:
+  - How Battery of the Nation Can Contribute to Victoria's Energy Needs and Objectives
+  contributing_sources:
+  - source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+      and Objectives
+    pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+    markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  arena_category:
+  - Pumped hydro
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-47110
+  source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+    and Objectives
+  publish_date: 2019-08
+  project_name: Battery of the Nation
+  what_happened: Solar farms in some locations in Australia were already being curtailed
+    most days at the time of publication (2019) due to surplus generation driving
+    wholesale prices to zero or negative during peak solar hours, demonstrating that
+    without storage or flexible demand, solar penetration can reach commercial viability
+    limits well before physical grid limits.
+  lesson_learnt: Solar project developers and portfolio planners should model the
+    revenue impact of price cannibalisation at high penetration levels — the first
+    MW of consistently surplus solar generation can erode the value of all active
+    solar in the market, meaning projects viable today may become commercially unviable
+    as more solar enters the system without accompanying storage or flexible demand.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id012
+  - 22
+  evidence_excerpt: While the 50% solar scenario is presented as a hypothetical case
+    study, there are already solar farms in some places in Australia that are curtailed
+    most days.
+  confidence_note: 'project_type reconciled to ''storage'' from: storage (5/14), network/grid
+    (3/14), multi-technology/hybrid (3/14), generation (3/14); project_scale_band
+    reconciled to ''programmatic/portfolio-level'' from: programmatic/portfolio-level
+    (6/14), utility/large-scale (5/14), first commercial/FOAK (2/14), demonstration
+    (1/14)'
+  source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+  project_page_url: https://arena.gov.au/projects/battery-of-the-nation-future-state-nem-analysis-stage-2/
+  kb_category: Hydropower / Pumped Hydro Energy Storage
+  kb_publish_date: 28/08/2019
+  kb_year: '2019'
+  kb_associated_project: Battery of the Nation Future State NEM Analysis (Stage 2)
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $2m
+  lead_organisation: Hydro-Electric Corporation
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/07/2019
+  location: Tasmania
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+  markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  source_page_pdf: 22
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-47110
+  contributing_source_titles:
+  - How Battery of the Nation Can Contribute to Victoria's Energy Needs and Objectives
+  contributing_sources:
+  - source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+      and Objectives
+    pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+    markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  arena_category:
+  - Pumped hydro
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-47111
+  source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+    and Objectives
+  publish_date: 2019-08
+  project_name: Battery of the Nation
+  what_happened: The retirement of Hazelwood power station in March 2017 proceeded
+    with relatively short notice and caused sustained high wholesale electricity prices
+    and loss of power to customers in Victoria, demonstrating that the NEM's planning
+    horizon for replacement capacity was insufficient to manage the transition smoothly.
+  lesson_learnt: Coal generator retirement decisions can be made and implemented on
+    short timelines regardless of regulatory minimum notice periods — system planners
+    and developers of replacement capacity should treat announced retirement dates
+    as upper bounds, not certain commitments, and size planning contingencies accordingly.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: concept/feasibility
+  proponent_type: project developer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: commercial & market
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id013
+  - 3
+  - 27
+  evidence_excerpt: Victoria has experienced firsthand the impacts of this rapid change
+    in the supply–demand balance with the retirement of the Hazelwood coal-fired power
+    station in 2017. This event contributed to sustained high prices and even loss
+    of power to customers... the decision to close can occur with little warning and
+    be implemented in a fairly short time frame.
+  confidence_note: 'project_type reconciled to ''storage'' from: storage (5/14), network/grid
+    (3/14), multi-technology/hybrid (3/14), generation (3/14); proponent_type reconciled
+    to ''project developer'' from: project developer (7/14), utility/energy retailer
+    (5/14), government/public-sector body (2/14)'
+  source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+  project_page_url: https://arena.gov.au/projects/battery-of-the-nation-future-state-nem-analysis-stage-2/
+  kb_category: Hydropower / Pumped Hydro Energy Storage
+  kb_publish_date: 28/08/2019
+  kb_year: '2019'
+  kb_associated_project: Battery of the Nation Future State NEM Analysis (Stage 2)
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $2m
+  lead_organisation: Hydro-Electric Corporation
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/07/2019
+  location: Tasmania
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+  markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-47111
+  contributing_source_titles:
+  - How Battery of the Nation Can Contribute to Victoria's Energy Needs and Objectives
+  contributing_sources:
+  - source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+      and Objectives
+    pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+    markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  arena_category:
+  - Pumped hydro
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-47112
+  source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+    and Objectives
+  publish_date: 2019-08
+  project_name: Battery of the Nation
+  what_happened: Around 400 MW of latent hydro capacity existed in Tasmania's existing
+    hydropower system that could be made available to the NEM at little or no additional
+    cost, with a further 340 MW developable at minimal cost, yet none of this capacity
+    had been developed because the limited existing interconnection did not create
+    sufficient market incentive.
+  lesson_learnt: Transmission constraints can systematically prevent cost-effective
+    capacity from entering the market — before investing in new generation assets,
+    portfolio planners should assess whether existing generation capacity in adjacent
+    regions is being suppressed by interconnection limits, as lifting constraints
+    may deliver capacity more cheaply than building new plant.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: concept/feasibility
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: policy/market influence only
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: pumped hydro
+  source_pages: &id014
+  - 35
+  evidence_excerpt: These opportunities are low cost and low risk, but have not been
+    pursued as yet because the limited existing interconnection does not necessitate
+    additional capacity. This is a clear example where removing existing constraints,
+    and thus increasing the utilisation of existing assets, is a low-cost option for
+    providing additional generation capacity.
+  confidence_note: 'project_type reconciled to ''storage'' from: storage (5/14), network/grid
+    (3/14), multi-technology/hybrid (3/14), generation (3/14); project_scale_band
+    reconciled to ''programmatic/portfolio-level'' from: programmatic/portfolio-level
+    (6/14), utility/large-scale (5/14), first commercial/FOAK (2/14), demonstration
+    (1/14); proponent_type reconciled to ''project developer'' from: project developer
+    (7/14), utility/energy retailer (5/14), government/public-sector body (2/14)'
+  source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+  project_page_url: https://arena.gov.au/projects/battery-of-the-nation-future-state-nem-analysis-stage-2/
+  kb_category: Hydropower / Pumped Hydro Energy Storage
+  kb_publish_date: 28/08/2019
+  kb_year: '2019'
+  kb_associated_project: Battery of the Nation Future State NEM Analysis (Stage 2)
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $2m
+  lead_organisation: Hydro-Electric Corporation
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/07/2019
+  location: Tasmania
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+  markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  source_page_pdf: 35
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-47112
+  contributing_source_titles:
+  - How Battery of the Nation Can Contribute to Victoria's Energy Needs and Objectives
+  contributing_sources:
+  - source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+      and Objectives
+    pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+    markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  arena_category:
+  - Pumped hydro
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-47113
+  source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+    and Objectives
+  publish_date: 2019-08
+  project_name: Battery of the Nation
+  what_happened: A lack of enduring national policy certainty on emissions contributed
+    to a wait-and-see attitude from potential energy developers, with a missed opportunity
+    being treated as significantly less damaging by investors than a stranded asset,
+    resulting in delayed deployment of new generation and storage capacity.
+  lesson_learnt: Policy uncertainty is a primary constraint on private investment
+    in long-lead-time energy infrastructure — project developers and ARENA should
+    factor policy risk into project business cases and seek contractual structures
+    (e.g. underwriting, CfDs) that insulate projects from policy reversals, particularly
+    for capital-intensive assets with long payback periods.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: concept/feasibility
+  proponent_type: project developer
+  delay_category: financing/commercial close
+  failure_mode: commercial & market
+  outcome_class: policy/market influence only
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: pumped hydro
+  source_pages: &id015
+  - 26
+  evidence_excerpt: A lack of policy certainty discourages project developers from
+    committing to particular technologies. The lack of an enduring national approach
+    to emissions, in particular, is contributing to a wait-and-see attitude from many
+    potential developers. For a potential investor, a missed opportunity is much less
+    damaging than a stranded asset.
+  confidence_note: 'project_type reconciled to ''storage'' from: storage (5/14), network/grid
+    (3/14), multi-technology/hybrid (3/14), generation (3/14)'
+  source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+  project_page_url: https://arena.gov.au/projects/battery-of-the-nation-future-state-nem-analysis-stage-2/
+  kb_category: Hydropower / Pumped Hydro Energy Storage
+  kb_publish_date: 28/08/2019
+  kb_year: '2019'
+  kb_associated_project: Battery of the Nation Future State NEM Analysis (Stage 2)
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $2m
+  lead_organisation: Hydro-Electric Corporation
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/07/2019
+  location: Tasmania
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+  markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  source_page_pdf: 26
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-47113
+  contributing_source_titles:
+  - How Battery of the Nation Can Contribute to Victoria's Energy Needs and Objectives
+  contributing_sources:
+  - source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+      and Objectives
+    pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+    markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  arena_category:
+  - Pumped hydro
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-47114
+  source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+    and Objectives
+  publish_date: 2019-08
+  project_name: Battery of the Nation
+  what_happened: AEMO's 2018 ISP modelled a need for 14 GW of pumped hydro to be built
+    over the foreseeable future, with most required over a few years in the late 2030s
+    — a rate of construction the analysis assessed as unlikely to be achievable, raising
+    the risk of a boom-bust investment cycle and potential energy shortfalls during
+    transition.
+  lesson_learnt: When planning large-scale storage or generation portfolios, project
+    developers and system planners must assess not just the total quantum of required
+    capacity but the feasibility of the required construction rate — an accelerated
+    construction boom creates supply chain, workforce, and financing constraints that
+    can make technically optimal outcomes physically undeliverable, arguing for early
+    and distributed investment.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: concept/feasibility
+  proponent_type: project developer
+  delay_category: construction/installation
+  failure_mode: poor scoping
+  outcome_class: policy/market influence only
+  secondary_failure_mode: execution & logistics
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: pumped hydro
+  source_pages: &id016
+  - 28
+  evidence_excerpt: The ISP 'neutral' scenario showed a need for 14 GWs of pumped
+    hydro to be built over the foreseeable future, most of which is required over
+    a few years in the late 2030s. Even following an ideal coal retirement projection,
+    it is unlikely that this rapid increase in pumped hydro construction will be possible
+    and the broader economics of a boom-bust investment cycle could be damaging.
+  confidence_note: 'proponent_type reconciled to ''project developer'' from: project
+    developer (7/14), utility/energy retailer (5/14), government/public-sector body
+    (2/14)'
+  source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+  project_page_url: https://arena.gov.au/projects/battery-of-the-nation-future-state-nem-analysis-stage-2/
+  kb_category: Hydropower / Pumped Hydro Energy Storage
+  kb_publish_date: 28/08/2019
+  kb_year: '2019'
+  kb_associated_project: Battery of the Nation Future State NEM Analysis (Stage 2)
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $2m
+  lead_organisation: Hydro-Electric Corporation
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/07/2019
+  location: Tasmania
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+  markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-47114
+  contributing_source_titles:
+  - How Battery of the Nation Can Contribute to Victoria's Energy Needs and Objectives
+  contributing_sources:
+  - source_title: How Battery of the Nation Can Contribute to Victoria's Energy Needs
+      and Objectives
+    pdf_url: https://arena.gov.au/assets/2020/04/how-botn-can-contribute-to-victorias-energy-needs-and-objectives.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/how-battery-of-the-nation-can-contribute-to-victorias-energy-needs-and-objectives/
+    markdown_filename: how_battery_of_the_nation_can_contribute_to_victorias_energy_needs_and_objectives.md
+  arena_category:
+  - Pumped hydro
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82

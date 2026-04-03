@@ -1,0 +1,150 @@
+- record_id: ARENA-DLV-21607
+  source_title: 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update Report'
+  publish_date: 2025-10
+  project_name: Liddell BESS
+  what_happened: AGL identified that Liddell BESS required oversizing of inverters
+    and limiting operation to 86% of maximum capacity in order to reserve overcurrent
+    headroom for inertial responses to active and reactive current disturbances, adding
+    unexpected capital cost.
+  lesson_learnt: Account for inverter oversizing requirements (potentially up to 10–14%
+    of rated capacity) when evaluating OEM tenders for GFM BESS; reserve overcurrent
+    capability for GFM inertial responses needs to be factored into the CAPEX model
+    at the design stage, not identified post-procurement.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: AGL limited Liddell BESS to 86% of maximum inverter capacity
+    to preserve the necessary overcurrent headroom for GFM inertial responses.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id001
+  - 17
+  evidence_excerpt: At Liddell BESS, AGL identified a requirement to oversize the
+    inverters and limit to 86% of maximum capacity to reserve overcurrent capability
+    for inertial responses in active and reactive current to disturbances.
+  confidence_note: 'proponent_type reconciled to ''project developer'' from: project
+    developer (22/29), utility/energy retailer (7/29)'
+  source_url: https://arena.gov.au/knowledge-bank/ekistica-arena-grid-forming-battery-portfolio-series/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 3/07/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/10/ARENA-Grid-Forming-Battery-Portfolio-Series-Update-Report.pdf
+  markdown_filename: ekistica_arena_grid_forming_battery_portfolio_series.md
+  source_page_pdf: 17
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-21607
+  contributing_source_titles:
+  - 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update Report'
+  contributing_sources:
+  - source_title: 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update
+      Report'
+    pdf_url: https://arena.gov.au/assets/2025/10/ARENA-Grid-Forming-Battery-Portfolio-Series-Update-Report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/ekistica-arena-grid-forming-battery-portfolio-series/
+    markdown_filename: ekistica_arena_grid_forming_battery_portfolio_series.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: cost overrun
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-21614
+  source_title: 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update Report'
+  publish_date: 2025-10
+  project_name: Liddell BESS
+  what_happened: At Liddell BESS, the coupled nature of active and reactive current
+    control loops in GFM inverters — unlike the decoupled loops in GFL inverters —
+    created challenges during GPS compliance assessment and required development of
+    an intimate understanding of inverter control schemes and extensive tuning exercises.
+  lesson_learnt: GFM project teams must develop a detailed understanding of their
+    specific inverter's control scheme architecture — particularly the coupling between
+    active and reactive current control — before commencing GPS compliance tuning;
+    engage the OEM for comprehensive control scheme documentation and plan for additional
+    technical resource effort relative to GFL BESS.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: grid connection/system studies
+  failure_mode: unvalidated technical assumptions
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: AGL developed an intimate understanding of the inverter control
+    schemes and conducted extensive tuning exercises to resolve NER cl S5.2.5.5 compliance
+    requirements.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id002
+  - 22
+  - 23
+  evidence_excerpt: For GFM operation, 'the swing equation would only dictate the
+    angle of the virtual voltage source and the outer voltage control loop would control
+    the magnitude of the voltage', with both control loops affecting both active and
+    reactive current outputs. To address this required 'development of an intimate
+    understanding of the inverter control schemes and extensive tuning exercises'.
+  confidence_note: 'proponent_type reconciled to ''project developer'' from: project
+    developer (22/29), utility/energy retailer (7/29)'
+  source_url: https://arena.gov.au/knowledge-bank/ekistica-arena-grid-forming-battery-portfolio-series/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 3/07/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/10/ARENA-Grid-Forming-Battery-Portfolio-Series-Update-Report.pdf
+  markdown_filename: ekistica_arena_grid_forming_battery_portfolio_series.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-21614
+  contributing_source_titles:
+  - 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update Report'
+  contributing_sources:
+  - source_title: 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update
+      Report'
+    pdf_url: https://arena.gov.au/assets/2025/10/ARENA-Grid-Forming-Battery-Portfolio-Series-Update-Report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/ekistica-arena-grid-forming-battery-portfolio-series/
+    markdown_filename: ekistica_arena_grid_forming_battery_portfolio_series.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92

@@ -1,0 +1,2111 @@
+- record_id: ARENA-DLV-31355
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: Movement of the overhead earth wire caused positioning inconsistencies
+    and misalignments in sensor readings, reducing the accuracy of sag measurements
+    derived from ground-based GPS reference points.
+  lesson_learnt: Use static GPS points (RTK) directly on the sensor unit rather than
+    ground-based measurements to eliminate errors caused by overhead earth wire movement
+    — ground-based reference points are unreliable for LiDAR calibration on dynamic
+    overhead lines.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: The sensor form factor was redesigned from a linear/square profile
+    to a spherical design, incorporating elements aligned with standard industry marker
+    balls, which reduced rocking and improved sag measurement accuracy by 10–30%.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages:
+  - 8
+  - 11
+  - 26
+  evidence_excerpt: Movement of the overhead earth wire introduced inconsistencies
+    in positioning, leading to misalignments in sensor readings. The solution has
+    since involved transitioning to static GPS points directly on the sensor unit
+    utilising RTK, reducing dependency on fluctuating ground-based measurements due
+    to the OHEW movement.
+  confidence_note: Canonical record merged from 2 source records across 1 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: 11
+  corroboration_count: 2
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31351
+  - ARENA-DLV-31355
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages:
+    - 8
+    - 26
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-31352
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: During installation on span 652, a sensor detachment failure occurred
+    due to a faulty third-party raptor clamp, resulting in forced removal of the unit
+    and an unplanned in-field failure.
+  lesson_learnt: Implement a rigorous incoming quality inspection plan for all third-party
+    components before field deployment — faulty raptor clamps caused an in-field sensor
+    detachment failure that required forced unit removal.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: technology vendor
+  delay_category: construction/installation
+  failure_mode: execution & logistics
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: A rigorous quality inspection control plan for all incoming components
+    was implemented, ensuring defective parts are identified before deployment.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id001
+  - 10
+  evidence_excerpt: During one particular installation on span 652, a sensor detachment
+    failure was encountered due to a faulty third-party raptor clamp. This resulted
+    in a forced removal of the unit, prompting an immediate investigation into component
+    reliability.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31352
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-31353
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: Early risk assessment identified that the sensor detachment mechanism
+    could fail, potentially leaving devices permanently stranded on the overhead earth
+    wire, creating costly retrieval challenges.
+  lesson_learnt: Assess and design the device removal/detachment mechanism as a primary
+    safety and serviceability requirement before live deployment — an unreliable removal
+    system would make maintenance and retrieval costly and require specialised equipment.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: The detachment system was redesigned to allow more even load
+    distribution across the raptor clamps and tested in multiple live-line environments
+    to ensure reliable release.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id002
+  - 10
+  evidence_excerpt: An early risk assessment identified that the sensor detachment
+    mechanism could fail, leaving devices stranded on the overhead earth wire. Without
+    a reliable removal method, maintenance and retrieval would become costly and difficult,
+    potentially requiring specialised equipment or personnel.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31353
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-31354
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: High wind conditions caused unexpected oscillations in sensor units,
+    which introduced excessive noise in LiDAR point cloud data, undermining the reliability
+    of the dynamic line rating model.
+  lesson_learnt: Integrate a tuned mass damper into sensor hardware and implement
+    point-cloud software filtering for stability thresholds — oscillation-induced
+    LiDAR noise in high winds will otherwise render sag data unreliable for DLR calculations.
+  issue_severity: major
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: A tuned mass damper was added to the device form factor to dampen
+    oscillations, and point cloud processing software was modified to filter out unreliable
+    data points outside a specified stability threshold.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id003
+  - 11
+  evidence_excerpt: High wind conditions caused unexpected oscillations in the sensor
+    units, which negatively impacted the point cloud stability of the LiDAR system.
+    Data captured during extreme conditions showed excessive noise, making it difficult
+    to extract meaningful insights from the collected readings.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31354
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-31356
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: Static discharge between the drone and the earth wire during installation
+    caused intermittent camera failures, reducing real-time visual feedback during
+    sensor deployment and creating operational safety risks.
+  lesson_learnt: Implement cable earth shielding and material modifications to payload
+    guides before live-line drone installations — static discharge between the unmanned
+    aircraft and energised earth wire can disrupt camera systems critical for safe
+    installation guidance.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: technology vendor
+  delay_category: construction/installation
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: execution & logistics
+  intervention_note: Additional cable earth shielding was implemented and material
+    modifications were made to the payload guides to reduce susceptibility to static
+    discharge.
+  transferability: narrow
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id004
+  - 11
+  evidence_excerpt: During installation, a failure in the drone video camera system
+    was observed, leading to intermittent communication issues and reducing overall
+    system availability. The problem was traced back to static discharge between the
+    unmanned aircraft and the earth wire, which disrupted the camera's operation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31356
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-31357
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: Intermittent 4G connectivity and sensor outages disrupted data transfer
+    and storage, reducing system availability and affecting the reliability of conductor
+    temperature monitoring across the feeder.
+  lesson_learnt: Specify and test communications infrastructure — including SIM card
+    provider, packet size, and timestamp intervals — before committing to a deployment
+    architecture; public dynamic IP services provide insufficient reliability for
+    remote transmission line monitoring.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: SIM card provider was changed from a public dynamic IP service
+    to Telstra's M2M network for fixed bandwidth; timestamp intervals were halved;
+    and a node-to-gateway solution was scoped for development, increasing availability
+    by 10–20%.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id005
+  - 11
+  - 26
+  evidence_excerpt: Communication challenges also impacted system reliability, as
+    intermittent connectivity and sensor outages disrupted data transfer and storage
+    and overall affecting the system reliability of addressing conductor temperature
+    of the feeder. Sim card provider was changed from an original public dynamic IP
+    service to Telstra's M2M network for fixed/ known bandwidth capabilities. In conjunction
+    with packet size monitoring we were effectively able to increase our availability
+    to 10-20%.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31357
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-31358
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: Temperature and humidity readings from Romeo unit weather sensors
+    were inaccurate compared to ground-based weather stations, raising concerns about
+    dataset reliability for DLR calculations.
+  lesson_learnt: Standardise all sensor hardware to a single validated configuration
+    before field deployment — inconsistent sensor specifications across parallel development
+    pathways produced unreliable weather data that required additional engineering
+    effort to resolve.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated integration
+  intervention_note: Romeo unit sensors were standardised to match those used in Delta
+    units, which had demonstrated greater accuracy; the updated sensor configuration
+    was incorporated into the next five production units.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id006
+  - 11
+  - 12
+  evidence_excerpt: Another major challenge was inconsistencies in weather sensor
+    data, particularly on the Romeo units, where temperature and humidity readings
+    were inaccurate compared to ground-based weather stations. The issue was resolved
+    by standardizing the Romeo unit sensors to match those used in Delta units, which
+    had demonstrated greater accuracy.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31358
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-31359
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: Wind direction measurements from Infravision sensors did not exhibit
+    consistent correlation with Transgrid's ground-based weather station data, and
+    wind speed readings at low speeds were systematically inaccurate due to sensor
+    obstruction and firmware limitations.
+  lesson_learnt: Validate sensor placement and firmware settings for wind measurement
+    before committing to a DLR deployment — obstruction from the solar panel and antenna
+    biased low-wind-speed readings, and a firmware update lowering the detection threshold
+    to 0.2 m/s was required to achieve acceptable accuracy below 1.5 m/s.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: Firmware was updated to lower the wind detection threshold to
+    0.2 m/s; sensor position on the device was changed to remove obstruction from
+    the solar panel and antenna; device form factor was transitioned to spherical
+    to improve wind direction measurement.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id007
+  - 12
+  - 13
+  - 14
+  - 26
+  evidence_excerpt: The largest source of error in wind speed is at low wind. A firmware
+    change is required to improve the sensitivity of the device at low wind speeds
+    and the position of the sensor on the device was being obstructed by the solar
+    panel and antenna. The wind direction data, did not exhibit a consistent correlation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31359
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-31360
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: The Infravision TNSP heat balance model produced different conductor
+    temperature estimates from Transgrid's model due to differing emissivity, absorptivity,
+    and elevation factors, requiring calibration to align the two approaches.
+  lesson_learnt: Obtain and match the TNSP's specific heat balance equation parameters
+    — including emissivity, absorptivity, and elevation/air density factors — before
+    conducting DLR validation; undisclosed differences in these parameters will produce
+    systematic conductor temperature discrepancies that undermine rating comparisons.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Infravision adjusted emissivity from 0.8 to 0.75 and implemented
+    an elevation/air density factor consistent with the IEEE model, reducing convection
+    heat loss discrepancy; further tuning was identified as required.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id008
+  - 17
+  - 18
+  evidence_excerpt: 'The sources of difference are due to: Different emissivity and
+    absorptivity values; Application of elevation on convection heat losses; Application
+    of a radial heat difference along the conductors radius. Further tuning of the
+    absorptivity and emissivity parameters, and potentially the inclusion of an elevation
+    factor would improve alignment between both calculations.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31360
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-31361
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: Infravision's wind speed measurements averaged 0.9 m/s lower than
+    Transgrid's, causing the TNSP model to produce higher (more conservative) conductor
+    temperature estimates, which would result in reduced available transmission capacity
+    under the DLR framework.
+  lesson_learnt: Wind speed measurement bias directly translates into conservative
+    dynamic ratings — resolve wind sensor calibration and placement issues before
+    using DLR outputs for operational capacity decisions, as systematic under-measurement
+    of wind speed leads to unnecessarily restricted line ratings.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Wind gust measurements were found to produce TNSP outputs more
+    closely correlated with Transgrid's data than 10-minute average wind speed, informing
+    a recommended change to the TNSP equation inputs.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id009
+  - 19
+  - 20
+  evidence_excerpt: The average wind speed variance across the two systems also differed,
+    with Infravision's wind speed measurement averaging -0.9 m/s lower than Transgrid's,
+    leading to a higher calculated temperature. Infravision's TNSP model appears to
+    require calibration adjustments to align more closely with Transgrid's methods,
+    particularly regarding wind speed and gust data.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: 19
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31361
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-31362
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: Sag-based conductor temperature measurement (DLM-004) showed a mean
+    variance of -2.9°C compared to the TNSP weather-based model, with sag-based estimates
+    consistently lower — providing a more representative assessment of actual conductor
+    conditions across the full span.
+  lesson_learnt: Sag-based monitoring provides a more representative and less conservative
+    conductor temperature estimate than weather-based TNSP models — integrating sag
+    monitoring alongside weather-based DLR can unlock additional transmission capacity
+    while maintaining safety, particularly during peak daytime load hours.
+  issue_severity: none
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id010
+  - 21
+  - 22
+  - 23
+  evidence_excerpt: The mean variance in conductor temperature derived from sag measurements
+    was -2.9°C compared to the TNSP model using Transgrid's weather data. The sag-monitor
+    consistently predicted lower temperatures than weather-based calculations, with
+    an average difference of -2°C. This outcome is expected, as sag-based measurements
+    account for wind effects averaged over the entire span.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: 23
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31362
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-31363
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: The initial sag detection algorithm could not differentiate between
+    bundled conductors, misinterpreting point cloud data and reducing sag measurement
+    accuracy.
+  lesson_learnt: Configure the sag detection algorithm to target the closest conductor
+    in a bundle rather than treating the bundle as a single object — failure to account
+    for bundled conductor geometry will degrade sag measurement accuracy by 10–20%.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: The algorithm was modified to select the closest conductor in
+    the bundle as its measurement reference, improving sag measurement accuracy by
+    10–20%.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id011
+  - 26
+  evidence_excerpt: Algorithm used to analyse the point cloud did not detect between
+    conductors when in a bundle initially. Algorithm was modified to choose the closest
+    conductor in the bundle as its measurement. Improvement in change in sag measurement
+    accuracy by 10-20%.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31363
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-31364
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: The selected weather station hardware (TriSonica) was made redundant
+    by its parent company during the trial, forcing an unplanned supplier change mid-project.
+  lesson_learnt: Assess the commercial viability and supply continuity of third-party
+    sensor suppliers before committing to a hardware selection — product discontinuation
+    mid-trial forces unplanned procurement and re-validation effort.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: procurement
+  proponent_type: technology vendor
+  delay_category: procurement/supply chain
+  failure_mode: execution & logistics
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: A new weather station (Calypso) was selected and implemented
+    as a replacement.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id012
+  - 26
+  evidence_excerpt: The initial weather station (TriSonica) selected was made redundant
+    from the parent company. A new weather station (Calypso) was selected and implemented.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: 26
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31364
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-31365
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: The lever mechanism on linear-form sensor units became difficult
+    to operate for removal after extended time in the field environment, creating
+    a maintenance risk and potential stuck-device scenario.
+  lesson_learnt: Design field-deployed sensor removal mechanisms with reduced-friction
+    components rated for long-term environmental exposure — standard levers can seize
+    after extended outdoor deployment, making retrieval unreliable or impossible.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: The lever was fitted with linear bearings to provide a reduced-friction
+    surface, achieving 0% removal incidents or failures since the change.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id013
+  - 26
+  evidence_excerpt: The lever proved to become difficult to remove after some time
+    of sitting in the environment. The lever was fitted with linear bearings to ensure
+    a reduced friction surface for reliable and safe removal. 0% removal incidents
+    or failures since change.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31365
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-31366
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: Unexpected system downtime occurred due to inconsistent cloud connectivity,
+    reducing sensor availability and data completeness across the TL-39 monitoring
+    network.
+  lesson_learnt: Design communications architecture with redundancy and local buffering
+    before live deployment — reliance on a single cloud connectivity path without
+    a node-to-gateway fallback creates availability gaps that compromise continuous
+    transmission line monitoring.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: data & measurement
+  intervention_note: The communications stack was revised and a node-to-gateway solution
+    was scoped and developed, achieving a tested range of 10 km radius.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id014
+  - 26
+  - 29
+  evidence_excerpt: 'Unexpected downtime occurred due to inconsistent cloud connectivity.
+    Comms stack revised and node to gateway scoping/ development. In development:
+    Testing resulted in 10k radius. Connectivity issues are caused by intermittent
+    dropouts in the 4G network provided by our ISP, Telstra, leading to data gaps
+    in transmission from remote monitoring devices to the gateway.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: 26
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31366
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-31367
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: LiDAR sensors on spans with dense vegetation or tall trees produced
+    inaccurate ground clearance measurements because tree canopies partially blocked
+    or scattered laser pulses, creating risk of miscalculating sag and tension data
+    critical for DLR safety assessments.
+  lesson_learnt: Conduct a vegetation survey and flag high-vegetation spans before
+    finalising sensor placement — LiDAR-based sag monitoring is unreliable in spans
+    with dense tree canopies, and alternative measurement methods or additional filtering
+    must be specified for such spans.
+  issue_severity: major
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id015
+  - 29
+  evidence_excerpt: In areas with dense vegetation or tall trees, LiDAR sensors are
+    struggling to accurately measure the distance between power lines and the ground.
+    The laser pulses from the LiDAR system are either partially blocked or scattered
+    by tree canopies, resulting in distorted readings. These inaccuracies pose a risk
+    when assessing clearances in dynamic line rating, potentially causing miscalculations
+    of sag and tension data.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: 29
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31367
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-31368
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: During high wind events, the IMU used to stabilise and orient the
+    LiDAR sensors experienced excessive movement and vibrations, causing the LiDAR
+    system to misalign and produce faulty clearance, sag, and tension measurements.
+  lesson_learnt: Specify IMU performance thresholds for the expected wind environment
+    and implement hardware damping before live deployment — IMU instability in high
+    winds causes LiDAR misalignment that can produce safety-critical errors in sag
+    and clearance calculations.
+  issue_severity: major
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: execution & logistics
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id016
+  - 29
+  evidence_excerpt: During periods of high wind, the Inertial Measurement Unit (IMU)
+    used to stabilise and orient LiDAR sensors experiences excessive movement and
+    vibrations. This causes the LiDAR system to misalign, leading to faulty distance
+    measurements. The sensor's instability in these conditions results in inaccurate
+    readings of power line clearances, sag, and tension.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: 29
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31368
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-31369
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: The trial demonstrated that Infravision's DLR sensors on TL-39 can
+    deliver an average marginal capacity of 473 MVA above the probabilistic static
+    rating and 579 MVA above the deterministic static rating during constraint binding
+    periods.
+  lesson_learnt: Distributed DLR sensor deployment on critical constrained transmission
+    lines can unlock substantial marginal capacity — on TL-39, average uplift of 473–579
+    MVA above static ratings was quantified, providing evidence for business case
+    development for broader TNSP adoption.
+  issue_severity: none
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id017
+  - 28
+  evidence_excerpt: It is estimated that through the use of Infravision's scalable
+    sensors during the constraint binding periods, an average Marginal Capacity of
+    473 MVA over the Probabilistic Static rating and 579 MVA over the Deterministic
+    Static rating can be achieved.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31369
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-31370
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: Drone-based sensor installation on energised 330 kV transmission
+    lines was successfully demonstrated without outages or electrical workers interacting
+    with transmission structures, achieving up to 5 sensor deployments per day on
+    close spans and 2 on regular spans.
+  lesson_learnt: Remotely piloted aircraft can enable non-intrusive, outage-free installation
+    of line monitoring sensors on energised high-voltage transmission lines at commercially
+    viable deployment rates — a structured risk management framework including SWMS,
+    Safety in Design, and ISO-accredited procedures is required to obtain TNSP approval
+    for live-line operations.
+  issue_severity: none
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id018
+  - 10
+  - 27
+  evidence_excerpt: Deploying the sensor units onto the overhead earth wire required
+    the development of a pioneering installation method using remotely piloted aircraft.
+    This scalability can be up to 5 deployments in a day with close spans and 2 deployments
+    on regular spans with travel. The rate of sensor deployments has been critical
+    to easily enable real time visibility across tl-39 as opposed to the use of traditional
+    ground based sensors.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31370
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-31371
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: A formal Safety in Design workshop with Transgrid was required before
+    Infravision could obtain approval to install sensors on the energised TL-39 line,
+    adding a milestone that had to be completed before live-line operations could
+    commence.
+  lesson_learnt: Incorporate a formal Safety in Design process with the TNSP as a
+    mandatory prerequisite milestone before any live-line sensor deployment — this
+    is the gateway approval step for operating on energised transmission infrastructure
+    and cannot be shortcut.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: technology vendor
+  delay_category: approvals/regulatory
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id019
+  - 38
+  evidence_excerpt: Safety in Design WorkShop - Live Line Sign Off, Nov 2022. Transgrid
+    & Infravision safety in the design process. Approval for the device to be installed
+    on Energised Line.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31371
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-31372
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: The trial was conducted without SCADA integration with Transgrid,
+    limiting the operational applicability of real-time DLR outputs during the trial
+    period.
+  lesson_learnt: Plan for SCADA integration with the TNSP's operational systems from
+    the outset of DLR trials — operating without SCADA integration limits the trial
+    to data validation only and prevents demonstration of real operational value to
+    the network operator.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id020
+  - 24
+  evidence_excerpt: This trial was not connected to the Transgrid SCADA, however with
+    the intention of being looked at in the future and integrating as a development
+    with Infravision and Transgrid.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: 24
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31372
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages: *id020
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-31373
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: Integrating DLR into AEMO's market dispatch processes and Transgrid's
+    operational frameworks proved complex, with no clear commercial model for distributing
+    DLR costs and benefits among network operators, regulators, and market participants.
+  lesson_learnt: Engage AEMO and TNSPs on regulatory and commercial integration pathways
+    in parallel with technical development — market participation frameworks, data-sharing
+    protocols, and revenue models for DLR are not yet mature and require proactive
+    engagement to shape, not just react to.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: commercial & market
+  intervention_note: Engagement with AEMO and TNSPs during the trial provided insights
+    into regulatory evolution pathways and future market design considerations for
+    DLR incorporation.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id021
+  - 48
+  - 49
+  evidence_excerpt: Aligning this capability with existing market structures, dispatch
+    processes, and regulatory compliance frameworks requires ongoing engagement with
+    AEMO and TNSPs. Developing commercial models that fairly distribute costs and
+    benefits among stakeholders is an evolving challenge. While commercial integration
+    remains complex, the trial has highlighted the potential of DLR to improve grid
+    efficiency and enable greater renewable energy dispatch.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: 48
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31373
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages: *id021
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-31374
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: Pursuing two parallel hardware development pathways (Robotics Systems/Romeo
+    and Cube Technologies/Delta) accelerated sensor development but required reconciliation
+    of differing implementation strategies and sensor configurations before a unified
+    product could be achieved.
+  lesson_learnt: Dual-track hardware development can accelerate capability delivery
+    but requires explicit convergence planning from the outset — without pre-agreed
+    functional specifications and a defined integration point, parallel pathways generate
+    reconciliation overhead that can delay final product consolidation.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: coordination & stakeholders
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: Cube Technologies was successfully integrated into Infravision's
+    product and engineering team; both pathways were developed to the same functional
+    specifications, with the sensor stack to consolidate strengths of both into a
+    single optimised solution.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id022
+  - 8
+  evidence_excerpt: 'To accelerate development, Infravision pursued two parallel sensor
+    technology pathways: One with Robotics Systems and another with Cube Technologies.
+    This dual-track approach allowed for rapid advancement in LIDAR and weather station
+    capabilities while maintaining project momentum. Ultimately, the sensor stack
+    will consolidate the strengths of both pathways into a single, optimised solution.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31374
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages: *id022
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-31375
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: A graduated testing plan progressing from de-energised trials to
+    live-line installations, with each phase documented through video footage and
+    operational assessments, enabled iterative refinement of the drone installation
+    methodology before full deployment.
+  lesson_learnt: Structure novel aerial installation methods using a phased escalation
+    from non-energised to live-line environments, with documented assessment gates
+    at each stage — this iterative approach allows methodology refinement before exposure
+    to the highest-risk operational conditions.
+  issue_severity: none
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id023
+  - 10
+  evidence_excerpt: A graduated testing plan was developed, beginning with non-energised
+    trials and progressing to live installations. Each phase was meticulously documented,
+    including video footage and operational assessments, allowing the team to refine
+    the methodology iteratively.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31375
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages: *id023
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-31376
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: The trial did not achieve SCADA integration or operational deployment
+    of DLR ratings into Transgrid's network management systems, meaning the study
+    demonstrated technical feasibility but did not realise market or operational ROI
+    outcomes during the trial period.
+  lesson_learnt: Scope DLR demonstration projects to include a clear pathway to operational
+    integration — without SCADA connectivity and market mechanism alignment, the project
+    can only demonstrate sensor and calculation accuracy, not actual operational or
+    financial return on investment.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id024
+  - 47
+  evidence_excerpt: While our study did not achieve these outcomes, our goal is to
+    demonstrate how integrating DLR into transmission network operations can be a
+    valuable investment with both immediate and long-term benefits.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: 47
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31376
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages: *id024
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-31377
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: The device total lifecycle cost and extended lifespan had not been
+    fully considered during initial design, requiring a retrospective maintenance
+    schedule and scalable device solutions to be developed during the trial.
+  lesson_learnt: Assess total lifecycle cost and device longevity requirements before
+    finalising hardware design for long-term field deployment — deferred consideration
+    of maintenance schedules and component lifespan forces reactive redesign and adds
+    cost.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: A maintenance schedule and scalable device solutions were developed;
+    form and component changes for longevity were implemented.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id025
+  - 26
+  evidence_excerpt: The total lifecycle cost and extended lifespan of the device will
+    need to be considered. Maintenance schedule and scalable device solutions developed.
+    Form and component changes for longevity.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31377
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages: *id025
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-31378
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: Span selection for sensor deployment required balancing five criteria
+    simultaneously — critical span safety clearance, proximity to existing weather
+    stations, drone access, communication signal strength, and local environmental
+    conditions — resulting in a structured multi-criteria selection methodology.
+  lesson_learnt: Develop a documented multi-criteria span selection methodology before
+    finalising sensor deployment locations for DLR trials — proximity to TNSP reference
+    weather stations and drone access are often overlooked criteria that materially
+    affect both data quality and installation feasibility.
+  issue_severity: none
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id026
+  - 15
+  evidence_excerpt: 'The main factors considered during the span selection included:
+    1. Critical Span for the feeder line ie potential risk to violate ground clearance
+    limits; 2. Location close to existing Transgrid owned weather station; 3. Access
+    for installation with uncrewed aircraft; 4. Adequate communication signal strength;
+    5. Local environment conditions.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31378
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages: *id026
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-31379
+  source_title: Infravision - Next Generation Line Monitoring System Demonstration
+    Project - Knowledge Sharing Report
+  publish_date: 2025-01
+  project_name: TL-39 Next-Gen Dynamic Line Monitoring Trial
+  what_happened: Secondary data (historical weather records, past grid loading patterns,
+    existing transmission network reports) played a crucial role in validating sensor
+    accuracy and benchmarking DLR-calculated ratings, reducing implementation risk
+    and enabling scenario analysis for past constraint events.
+  lesson_learnt: Leverage existing TNSP historical weather and grid loading data as
+    a validation and benchmarking resource for DLR trials — this reduces the sensor
+    calibration effort and enables retroactive constraint analysis without requiring
+    the trial to coincide with binding constraint periods.
+  issue_severity: none
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id027
+  - 45
+  evidence_excerpt: Historical static line ratings and transmission loading data were
+    used to compare DLR-calculated ratings, ensuring alignment with expected operational
+    trends. Historical weather data, including temperature, wind speed, and direction,
+    was used to verify the reliability of real-time DLR sensor readings.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/infravision-next-generation-line-monitoring-system-demonstration/
+  kb_category: System security and reliability
+  kb_publish_date: 23/05/2025
+  kb_year: '2022'
+  kb_associated_project: Infravision Next Generation Line Monitoring System Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $732k
+  total_project_value: $1.78m
+  lead_organisation: Infravision
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 26/08/2022
+  location: Camperdown, New South Wales
+  project_partners: Transgrid
+  pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+  markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  source_page_pdf: 45
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-31379
+  contributing_source_titles:
+  - Infravision - Next Generation Line Monitoring System Demonstration Project - Knowledge
+    Sharing Report
+  contributing_sources:
+  - source_title: Infravision - Next Generation Line Monitoring System Demonstration
+      Project - Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2025/05/Infravision-Next-Generation-Line-Monitoring-System-Demonstration-Project-Knowledge-Sharing-Report.pdf
+    source_pages: *id027
+    source_url: https://arena.gov.au/knowledge-bank/infravision-next-generation-line-monitoring-system-demonstration-project-knowledge-sharing-report/
+    markdown_filename: infravision_next_generation_line_monitoring_system_demonstration_project_knowledge_sharing_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Pilot / demonstration
+  is_consortium: false

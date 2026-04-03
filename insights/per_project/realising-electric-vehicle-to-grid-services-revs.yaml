@@ -1,0 +1,314 @@
+- record_id: ARENA-DLV-51468
+  source_title: UTS - Flexible Demand State of Play in Australia - Report
+  publish_date: 2024-05
+  project_name: Realising Electric Vehicle-to-Grid Services (REVS)
+  what_happened: The REVS pilot was ultimately unable to deliver FCAS from its 51-vehicle
+    ACT Government EV fleet, primarily because certification of the bidirectional
+    charger against the Australian technical standard AS4777.2:2020 was extremely
+    difficult — the standard requires an earthing point that EVs do not provide, requiring
+    the charger to be modified and then re-tested for Electromagnetic Compatibility
+    compliance.
+  lesson_learnt: V2G FCAS pilots using Australian-certified bidirectional chargers
+    must plan for extended charger certification timelines — the AS4777.2:2020 standard
+    contains earthing requirements fundamentally incompatible with EV architecture,
+    requiring bespoke engineering solutions; the standard should be updated to include
+    a dedicated bidirectional charger category before future pilots rely on it.
+  issue_severity: critical
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: The charger was modified to comply with AS4777.2:2020 earthing
+    requirements and re-tested for Electromagnetic Compatibility; Wallback Quasar
+    became the first and only bidirectional charger certified against AS4777.2:2020
+    as a result, though FCAS delivery was not achieved.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages:
+  - 37
+  evidence_excerpt: Certification of the charger against the technical standard (AS4777.2:2020)
+    was very difficult and delayed the project. The fundamental problem is that the
+    standard requires an earthing point whereas EVs do not provide any connection
+    to the ground. The charger was modified to comply but then also the Electromagnetic
+    Compatibility test. Wallback Quasar became the first and only bidirectional charger
+    certified against AS4777.2:2020.
+  confidence_note: 'proponent_type reconciled to ''network business'' from: network
+    business (20/50), utility/energy retailer (8/50), government/public-sector body
+    (7/50), technology vendor (6/50), manufacturer/OEM (3/50), research organisation/university
+    (3/50), project developer (2/50), consortium/multi-party venture (1/50) Canonical
+    record merged from 2 source records across 1 document(s).'
+  source_url: https://arena.gov.au/knowledge-bank/uts-flexible-demand-state-of-play-in-aust-report/
+  project_page_url: null
+  kb_category: Demand response
+  kb_publish_date: 12/06/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/06/UTS-Flexible-Demand-State-of-Play-in-Aust-Report.pdf
+  markdown_filename: uts_flexible_demand_state_of_play_in_australia_report.md
+  source_page_pdf: 37
+  corroboration_count: 2
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-51468
+  - ARENA-DLV-51469
+  contributing_source_titles:
+  - UTS - Flexible Demand State of Play in Australia - Report
+  contributing_sources:
+  - source_title: UTS - Flexible Demand State of Play in Australia - Report
+    pdf_url: https://arena.gov.au/assets/2024/06/UTS-Flexible-Demand-State-of-Play-in-Aust-Report.pdf
+    source_pages:
+    - 37
+    source_url: https://arena.gov.au/knowledge-bank/uts-flexible-demand-state-of-play-in-aust-report/
+    markdown_filename: uts_flexible_demand_state_of_play_in_australia_report.md
+  arena_category:
+  - Demand response
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-51470
+  source_title: UTS - Flexible Demand State of Play in Australia - Report
+  publish_date: 2024-05
+  project_name: Realising Electric Vehicle-to-Grid Services (REVS)
+  what_happened: The REVS pilot experienced complexities and delays in its set-up
+    phase including procurement delays that caused EVs to be allocated to other customers,
+    bespoke site approvals with technical challenges at each location, and a finding
+    that hard-wired internet connections were required for adequate charging speeds.
+  lesson_learnt: V2G fleet pilots should treat infrastructure procurement, site approval,
+    and connectivity requirements as long-lead activities requiring early resolution
+    — each of these independently caused delays in REVS, and their combined effect
+    will be magnified at scale unless standardised site assessment and approval processes
+    are established upfront.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: procurement
+  proponent_type: network business
+  delay_category: procurement/supply chain
+  failure_mode: execution & logistics
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages: &id001
+  - 37
+  evidence_excerpt: Complexities and delays were experienced in the set-up phase e.g.
+    delays in charging infrastructure led to EVs going to other customers and procurement
+    delays, site approvals were bespoke and subject to technical challenges, hard-wired
+    internet connections were found to be required for charging speeds.
+  confidence_note: 'proponent_type reconciled to ''network business'' from: network
+    business (20/50), utility/energy retailer (8/50), government/public-sector body
+    (7/50), technology vendor (6/50), manufacturer/OEM (3/50), research organisation/university
+    (3/50), project developer (2/50), consortium/multi-party venture (1/50)'
+  source_url: https://arena.gov.au/knowledge-bank/uts-flexible-demand-state-of-play-in-aust-report/
+  project_page_url: null
+  kb_category: Demand response
+  kb_publish_date: 12/06/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/06/UTS-Flexible-Demand-State-of-Play-in-Aust-Report.pdf
+  markdown_filename: uts_flexible_demand_state_of_play_in_australia_report.md
+  source_page_pdf: 37
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-51470
+  contributing_source_titles:
+  - UTS - Flexible Demand State of Play in Australia - Report
+  contributing_sources:
+  - source_title: UTS - Flexible Demand State of Play in Australia - Report
+    pdf_url: https://arena.gov.au/assets/2024/06/UTS-Flexible-Demand-State-of-Play-in-Aust-Report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/uts-flexible-demand-state-of-play-in-aust-report/
+    markdown_filename: uts_flexible_demand_state_of_play_in_australia_report.md
+  arena_category:
+  - Demand response
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-68251
+  source_title: Evaluation of ARENA's transport strategic priority
+  publish_date: 2024-11
+  project_name: Realising Electric Vehicle-to-Grid Services (REVS)
+  what_happened: The REVS project demonstrated proof of feasibility for V2G technology
+    in Australia, progressing TRL from 4 to 7 and delivering 10 published reports.
+    However, one stakeholder interview revealed that the published reports led to
+    an adverse decision to pursue the technology commercially, and multiple barriers
+    to commercial implementation remain.
+  lesson_learnt: Demonstrating feasibility and publishing comprehensive research reports
+    does not guarantee commercial uptake — findings that surface barriers (regulatory,
+    technical, economic) can discourage as well as inform potential adopters. V2G
+    project teams should pair research outputs with targeted engagement to ensure
+    findings are interpreted constructively and remaining barriers are actively addressed
+    alongside publication.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Project published recommendations for further regulatory, technical,
+    economic and social work to address remaining barriers to V2G commercialisation.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id002
+  - 31
+  - 55
+  evidence_excerpt: The reports contributed significant learnings to the technology,
+    however, there remains multiple barriers to commercial implementation with a separate
+    stakeholder interview revealing that these published report led to an adverse
+    decision to pursue the technology.
+  confidence_note: 'outcome_class chosen as ''knowledge generated despite setback''
+    — the technology was not commercially progressed by at least one stakeholder,
+    but the project itself succeeded in TRL progression and knowledge generation.;
+    project_scale_band reconciled to ''first commercial/FOAK'' from: first commercial/FOAK
+    (7/21), programmatic/portfolio-level (6/21), commercial expansion (4/21), demonstration
+    (2/21), pilot (2/21)'
+  source_url: https://arena.gov.au/knowledge-bank/evaluation-of-arenas-transport-strategic-priority/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 11/04/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/04/ARENA-Impact-Evaluation-on-Decarbonising-Transport-Funding-Programs.pdf
+  markdown_filename: evaluation_of_arenarsquos_transport_strategic_priority.md
+  source_page_pdf: 55
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-68251
+  contributing_source_titles:
+  - Evaluation of ARENA's transport strategic priority
+  contributing_sources:
+  - source_title: Evaluation of ARENA's transport strategic priority
+    pdf_url: https://arena.gov.au/assets/2025/04/ARENA-Impact-Evaluation-on-Decarbonising-Transport-Funding-Programs.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/evaluation-of-arenas-transport-strategic-priority/
+    markdown_filename: evaluation_of_arenarsquos_transport_strategic_priority.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.72
+- record_id: ARENA-DLV-68252
+  source_title: Evaluation of ARENA's transport strategic priority
+  publish_date: 2024-11
+  project_name: Realising Electric Vehicle-to-Grid Services (REVS)
+  what_happened: The REVS project introduced the first bi-directional charger approved
+    for use in Australia and catalysed a rewrite of Australian Standards governing
+    inverters used in solar and battery systems, with rewrites expected to be finalised
+    by end of 2024. In February 2024, 16 V2G-capable fleet vehicles fed power back
+    into the grid during a major power emergency.
+  lesson_learnt: Innovation-stage V2G projects can generate regulatory reform as a
+    key outcome beyond technology demonstration — proponents should explicitly track
+    and document regulatory barrier identification and engage standards bodies as
+    part of the project scope to maximise this pathway to commercialisation.
+  issue_severity: none
+  project_type: transport electrification
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: policy/market influence only
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id003
+  - 28
+  evidence_excerpt: The REVS project introduced the first bi-directional charger approved
+    for use in Australia and has been a catalyst for a rewrite of the relevant Australian
+    Standards that govern the installation and performance of inverters used in solar
+    and battery systems.
+  confidence_note: 'project_scale_band reconciled to ''first commercial/FOAK'' from:
+    first commercial/FOAK (7/21), programmatic/portfolio-level (6/21), commercial
+    expansion (4/21), demonstration (2/21), pilot (2/21)'
+  source_url: https://arena.gov.au/knowledge-bank/evaluation-of-arenas-transport-strategic-priority/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 11/04/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/04/ARENA-Impact-Evaluation-on-Decarbonising-Transport-Funding-Programs.pdf
+  markdown_filename: evaluation_of_arenarsquos_transport_strategic_priority.md
+  source_page_pdf: 28
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-68252
+  contributing_source_titles:
+  - Evaluation of ARENA's transport strategic priority
+  contributing_sources:
+  - source_title: Evaluation of ARENA's transport strategic priority
+    pdf_url: https://arena.gov.au/assets/2025/04/ARENA-Impact-Evaluation-on-Decarbonising-Transport-Funding-Programs.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/evaluation-of-arenas-transport-strategic-priority/
+    markdown_filename: evaluation_of_arenarsquos_transport_strategic_priority.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture

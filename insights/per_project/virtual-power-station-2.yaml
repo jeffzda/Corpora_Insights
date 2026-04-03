@@ -1,0 +1,778 @@
+- record_id: ARENA-DLV-27501
+  source_title: Virtual Power Station 2.0 - Project Results and Lessons Learnt
+  publish_date: 2018-01
+  project_name: Virtual Power Station 2.0 (VPS2)
+  what_happened: During Yarrabilba trials, some air-conditioning units responded to
+    DRM3 commands (75% rated power) as if they were DRM1 commands (compressor off),
+    due to an ambiguous wiring diagram in the installation manual. This resulted in
+    spurious demand response test results.
+  lesson_learnt: Verify air-conditioner wiring and DRM implementation against the
+    correct standard version before relying on demand response functionality — ambiguous
+    installation manual wiring diagrams can cause units to respond to DRM3 as DRM1,
+    invalidating trial results and undermining grid control reliability.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: pilot
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: execution & logistics
+  intervention_note: The wiring fault was identified, brought to the attention of
+    Energex, and the wiring was fixed to restore correct DRM response behaviour.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: demand response
+  source_pages: &id001
+  - 8
+  - 16
+  evidence_excerpt: One significantly interesting result was the disparity in response
+    to demand response modes by specific air-conditioner models. In some cases, the
+    air-conditioner responded to a DRM3 (75% rated power) as if it was a DRM1 (compressor
+    off- that is, don't heat or cool). The cause of the problem appears to be an ambiguous
+    wiring diagram in the installation manual.
+  confidence_note: lifecycle_phase assigned as commissioning/integration as the fault
+    was discovered during initial hardware testing rather than stable operational
+    use.
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-station-2-0/
+  project_page_url: https://arena.gov.au/projects/virtual-power-station-2/
+  kb_category: Distributed energy resources
+  kb_publish_date: 7/02/2018
+  kb_year: '2014'
+  kb_associated_project: Virtual Power Station 2
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $850k
+  total_project_value: $2.58m
+  lead_organisation: CSIRO
+  arena_program: Solar Research Excellence
+  project_status: Past
+  project_start_date: 18/07/2014
+  location: New South Wales, Newcastle
+  project_partners: University of Newcastle, Tritium Pty Ltd, SMA, Selectronic Australia
+    Pty Ltd, Lend Lease Communities (Australia) Ltd., Latronic Sunpower Ltd., Ergon
+    Energy Corporation
+  pdf_url: https://arena.gov.au/assets/2017/02/csiro-virtual-power-station-2.pdf
+  markdown_filename: virtual_power_station_20.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-27501
+  contributing_source_titles:
+  - Virtual Power Station 2.0 - Project Results and Lessons Learnt
+  contributing_sources:
+  - source_title: Virtual Power Station 2.0 - Project Results and Lessons Learnt
+    pdf_url: https://arena.gov.au/assets/2017/02/csiro-virtual-power-station-2.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-station-2-0/
+    markdown_filename: virtual_power_station_20.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-27502
+  source_title: Virtual Power Station 2.0 - Project Results and Lessons Learnt
+  publish_date: 2018-01
+  project_name: Virtual Power Station 2.0 (VPS2)
+  what_happened: Air-conditioners installed in Yarrabilba households built after 2015
+    did not consistently respond to DRM2 and DRM3 commands in accordance with the
+    2014 version of AS/NZS 4755, indicating that at least some manufacturers implemented
+    the 2012 version's behaviour — or failed to implement the updated standard at
+    all.
+  lesson_learnt: Do not assume that air-conditioners installed after a standard update
+    comply with the updated version — confirm the specific standard version implemented
+    by each manufacturer before designing demand response trials, as non-mandatory
+    DRM modes (DRM2 and DRM3) may not be implemented or may follow superseded definitions.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: pilot
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: demand response
+  source_pages: &id002
+  - 8
+  - 17
+  evidence_excerpt: As all of the houses in our trials were built after 2015, all
+    of the air-conditioners should have had 2014 Standard responses... at least some
+    of the air-conditioning manufacturers seem to be unaware of the subtle definition
+    changes in the 2014 standard.
+  confidence_note: The 2012 vs 2014 standard difference — DRM2/3 relative to rated
+    capacity vs. current operating demand — is a significant functional distinction
+    with major implications for oversized units, as detailed in the document's worked
+    example.
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-station-2-0/
+  project_page_url: https://arena.gov.au/projects/virtual-power-station-2/
+  kb_category: Distributed energy resources
+  kb_publish_date: 7/02/2018
+  kb_year: '2014'
+  kb_associated_project: Virtual Power Station 2
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $850k
+  total_project_value: $2.58m
+  lead_organisation: CSIRO
+  arena_program: Solar Research Excellence
+  project_status: Past
+  project_start_date: 18/07/2014
+  location: New South Wales, Newcastle
+  project_partners: University of Newcastle, Tritium Pty Ltd, SMA, Selectronic Australia
+    Pty Ltd, Lend Lease Communities (Australia) Ltd., Latronic Sunpower Ltd., Ergon
+    Energy Corporation
+  pdf_url: https://arena.gov.au/assets/2017/02/csiro-virtual-power-station-2.pdf
+  markdown_filename: virtual_power_station_20.md
+  source_page_pdf: 17
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-27502
+  contributing_source_titles:
+  - Virtual Power Station 2.0 - Project Results and Lessons Learnt
+  contributing_sources:
+  - source_title: Virtual Power Station 2.0 - Project Results and Lessons Learnt
+    pdf_url: https://arena.gov.au/assets/2017/02/csiro-virtual-power-station-2.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-station-2-0/
+    markdown_filename: virtual_power_station_20.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-27503
+  source_title: Virtual Power Station 2.0 - Project Results and Lessons Learnt
+  publish_date: 2018-01
+  project_name: Virtual Power Station 2.0 (VPS2)
+  what_happened: Oversized air-conditioning units (e.g. 12kW units in homes requiring
+    only 5kW) do not respond to DRM2 or DRM3 commands under the 2012 version of AS/NZS
+    4755 because their actual load never exceeds the 50% or 75% rated capacity threshold
+    required to trigger a response, effectively making demand response unavailable
+    for a significant portion of the installed base.
+  lesson_learnt: Account for air-conditioner sizing relative to actual load when designing
+    demand response programmes — units significantly oversized for their application
+    will not respond to DRM2/DRM3 under the 2012 standard, materially reducing the
+    controllable load pool and programme effectiveness.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: pilot
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: demand response
+  source_pages: &id003
+  - 16
+  - 17
+  evidence_excerpt: Under the older version of the standard (2012), the first household,
+    with the 12kW unit, will not ever see a demand response mode. When the DRM2 command
+    is sent, to decrease the power to 50% (6kW) of the rated power, the house is only
+    requiring 5kW to cool.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-station-2-0/
+  project_page_url: https://arena.gov.au/projects/virtual-power-station-2/
+  kb_category: Distributed energy resources
+  kb_publish_date: 7/02/2018
+  kb_year: '2014'
+  kb_associated_project: Virtual Power Station 2
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $850k
+  total_project_value: $2.58m
+  lead_organisation: CSIRO
+  arena_program: Solar Research Excellence
+  project_status: Past
+  project_start_date: 18/07/2014
+  location: New South Wales, Newcastle
+  project_partners: University of Newcastle, Tritium Pty Ltd, SMA, Selectronic Australia
+    Pty Ltd, Lend Lease Communities (Australia) Ltd., Latronic Sunpower Ltd., Ergon
+    Energy Corporation
+  pdf_url: https://arena.gov.au/assets/2017/02/csiro-virtual-power-station-2.pdf
+  markdown_filename: virtual_power_station_20.md
+  source_page_pdf: 16
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-27503
+  contributing_source_titles:
+  - Virtual Power Station 2.0 - Project Results and Lessons Learnt
+  contributing_sources:
+  - source_title: Virtual Power Station 2.0 - Project Results and Lessons Learnt
+    pdf_url: https://arena.gov.au/assets/2017/02/csiro-virtual-power-station-2.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-station-2-0/
+    markdown_filename: virtual_power_station_20.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-27504
+  source_title: Virtual Power Station 2.0 - Project Results and Lessons Learnt
+  publish_date: 2018-01
+  project_name: Virtual Power Station 2.0 (VPS2)
+  what_happened: In sky-camera demand response tests, DRM commands were activated
+    via verbal phone requests from CSIRO in Newcastle to Energex staff in Brisbane,
+    who then manually transmitted AFLC signals. This human-in-the-loop communication
+    process introduced significant delays between cloud detection and load curtailment,
+    reducing the effectiveness of fast demand response.
+  lesson_learnt: Automate the communication path between forecasting systems and demand
+    response dispatch — manual verbal relay between control centres introduces delays
+    that make fast demand response (e.g. cloud-driven PV fluctuation mitigation) ineffective;
+    forecasting computers should transmit DRM commands directly without human intermediation.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: pilot
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: execution & logistics
+  intervention_note: The document identifies direct automated linkage of sky imaging
+    feeds to Energex's Load Control System as the required solution for future implementations.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: demand response
+  source_pages: &id004
+  - 10
+  evidence_excerpt: Note, however, the delay in the drops in aggregate air conditioning
+    load, which should be expected given that the activation of DRMs was by verbal
+    request on the phone to Energex staff at the Load Control Centre. Besides the
+    impact of a human in the communication loop, there appeared to be intrinsic delays
+    in transmitting the AFLC signals through the network and in the air-conditioners
+    to respond. This appears as a clear area for improvement in future trials.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-station-2-0/
+  project_page_url: https://arena.gov.au/projects/virtual-power-station-2/
+  kb_category: Distributed energy resources
+  kb_publish_date: 7/02/2018
+  kb_year: '2014'
+  kb_associated_project: Virtual Power Station 2
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $850k
+  total_project_value: $2.58m
+  lead_organisation: CSIRO
+  arena_program: Solar Research Excellence
+  project_status: Past
+  project_start_date: 18/07/2014
+  location: New South Wales, Newcastle
+  project_partners: University of Newcastle, Tritium Pty Ltd, SMA, Selectronic Australia
+    Pty Ltd, Lend Lease Communities (Australia) Ltd., Latronic Sunpower Ltd., Ergon
+    Energy Corporation
+  pdf_url: https://arena.gov.au/assets/2017/02/csiro-virtual-power-station-2.pdf
+  markdown_filename: virtual_power_station_20.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-27504
+  contributing_source_titles:
+  - Virtual Power Station 2.0 - Project Results and Lessons Learnt
+  contributing_sources:
+  - source_title: Virtual Power Station 2.0 - Project Results and Lessons Learnt
+    pdf_url: https://arena.gov.au/assets/2017/02/csiro-virtual-power-station-2.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-station-2-0/
+    markdown_filename: virtual_power_station_20.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-27505
+  source_title: Virtual Power Station 2.0 - Project Results and Lessons Learnt
+  publish_date: 2018-01
+  project_name: Virtual Power Station 2.0 (VPS2)
+  what_happened: Energex pre-programmed a 15-minute randomised release period into
+    the DREDs following each DRM release. While appropriate for slow demand response
+    applications (peak demand shaving), this pre-programmed delay prevented the system
+    from being used effectively for fast demand response applications such as mitigating
+    PV generation fluctuations caused by passing clouds.
+  lesson_learnt: Configure DRED release parameters to match the target demand response
+    application — the 15-minute randomised release period suited for peak demand shaving
+    is an obstacle to fast cloud-following PV fluctuation mitigation; fast DR applications
+    require configurable or minimal release delays.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: pilot
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: demand response
+  source_pages: &id005
+  - 10
+  - 11
+  evidence_excerpt: It is also observed that the 15-minute randomised release period
+    programmed in the DREDs following the release of DRMs, while convenient in slow
+    demand response applications (such as peak demand shaving) to prevent undesired
+    surges in demand following a prolonged period of air conditioning curtailment,
+    is an obstacle to fast demand response applications (such as load balancing of
+    PV fluctuations).
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-station-2-0/
+  project_page_url: https://arena.gov.au/projects/virtual-power-station-2/
+  kb_category: Distributed energy resources
+  kb_publish_date: 7/02/2018
+  kb_year: '2014'
+  kb_associated_project: Virtual Power Station 2
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $850k
+  total_project_value: $2.58m
+  lead_organisation: CSIRO
+  arena_program: Solar Research Excellence
+  project_status: Past
+  project_start_date: 18/07/2014
+  location: New South Wales, Newcastle
+  project_partners: University of Newcastle, Tritium Pty Ltd, SMA, Selectronic Australia
+    Pty Ltd, Lend Lease Communities (Australia) Ltd., Latronic Sunpower Ltd., Ergon
+    Energy Corporation
+  pdf_url: https://arena.gov.au/assets/2017/02/csiro-virtual-power-station-2.pdf
+  markdown_filename: virtual_power_station_20.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-27505
+  contributing_source_titles:
+  - Virtual Power Station 2.0 - Project Results and Lessons Learnt
+  contributing_sources:
+  - source_title: Virtual Power Station 2.0 - Project Results and Lessons Learnt
+    pdf_url: https://arena.gov.au/assets/2017/02/csiro-virtual-power-station-2.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-station-2-0/
+    markdown_filename: virtual_power_station_20.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-27506
+  source_title: Virtual Power Station 2.0 - Project Results and Lessons Learnt
+  publish_date: 2018-01
+  project_name: Virtual Power Station 2.0 (VPS2)
+  what_happened: SMA PV inverters were found to have a default power ramp rate of
+    16% of rated capacity per minute, which was discovered only during on-site testing.
+    This rate was too slow for fast demand response applications requiring rapid reductions
+    in PV output to mitigate cloud-driven fluctuations.
+  lesson_learnt: Check and reconfigure default inverter ramp rates before field trials
+    requiring fast response — the SMA default of 16% per minute is adequate for slow
+    applications but must be reset (e.g. to 10% per second) for fast demand response
+    or cloud-following PV control.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: pilot
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Default ramp rates were reset from 16% capacity per minute to
+    10% capacity per second in SMA inverters prior to the November 2017 combined control
+    tests, enabling fast responses required for cloud-event mitigation.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id006
+  - 8
+  - 11
+  evidence_excerpt: The test revealed the 16% per minute power ramp rate set up by
+    default in SMA inverters, which is an obstacle for applications requiring fast
+    control action, and prompted resetting ramp rates in SMA inverters for future
+    tests.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-station-2-0/
+  project_page_url: https://arena.gov.au/projects/virtual-power-station-2/
+  kb_category: Distributed energy resources
+  kb_publish_date: 7/02/2018
+  kb_year: '2014'
+  kb_associated_project: Virtual Power Station 2
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $850k
+  total_project_value: $2.58m
+  lead_organisation: CSIRO
+  arena_program: Solar Research Excellence
+  project_status: Past
+  project_start_date: 18/07/2014
+  location: New South Wales, Newcastle
+  project_partners: University of Newcastle, Tritium Pty Ltd, SMA, Selectronic Australia
+    Pty Ltd, Lend Lease Communities (Australia) Ltd., Latronic Sunpower Ltd., Ergon
+    Energy Corporation
+  pdf_url: https://arena.gov.au/assets/2017/02/csiro-virtual-power-station-2.pdf
+  markdown_filename: virtual_power_station_20.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-27506
+  contributing_source_titles:
+  - Virtual Power Station 2.0 - Project Results and Lessons Learnt
+  contributing_sources:
+  - source_title: Virtual Power Station 2.0 - Project Results and Lessons Learnt
+    pdf_url: https://arena.gov.au/assets/2017/02/csiro-virtual-power-station-2.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-station-2-0/
+    markdown_filename: virtual_power_station_20.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-27507
+  source_title: Virtual Power Station 2.0 - Project Results and Lessons Learnt
+  publish_date: 2018-01
+  project_name: Virtual Power Station 2.0 (VPS2)
+  what_happened: Allocating all 53 trial air-conditioners to a single Energex AFLC
+    communication channel enabled control of a large aggregate load block but prevented
+    individual or sub-group control, limiting the granularity of demand response that
+    could be demonstrated in the pilot.
+  lesson_learnt: Allocate demand response loads across multiple independent communication
+    channels from the outset — a single channel enables coarse aggregate control but
+    prevents finer load segmentation; CSIRO modelling demonstrated that three channels
+    would deliver up to 94% reduction in PV output fluctuations, comparable to individual
+    thermostat control.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: pilot
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: CSIRO conducted simulation studies to model the impact of using
+    multiple communication channels, demonstrating that three clusters of 20 air-conditioners
+    each on independent channels would achieve 94% reduction in PV output fluctuations.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: demand response
+  source_pages: &id007
+  - 5
+  - 6
+  - 18
+  evidence_excerpt: Having all units on one channel had the advantage of being able
+    to control a large block of energy without being interfered by (or interfering
+    with) other Energex control signals. On the other hand, allocating all air-conditioners
+    to the same channel disables the control of individual air-conditioning loads,
+    or even the control of groups smaller than 53.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-station-2-0/
+  project_page_url: https://arena.gov.au/projects/virtual-power-station-2/
+  kb_category: Distributed energy resources
+  kb_publish_date: 7/02/2018
+  kb_year: '2014'
+  kb_associated_project: Virtual Power Station 2
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $850k
+  total_project_value: $2.58m
+  lead_organisation: CSIRO
+  arena_program: Solar Research Excellence
+  project_status: Past
+  project_start_date: 18/07/2014
+  location: New South Wales, Newcastle
+  project_partners: University of Newcastle, Tritium Pty Ltd, SMA, Selectronic Australia
+    Pty Ltd, Lend Lease Communities (Australia) Ltd., Latronic Sunpower Ltd., Ergon
+    Energy Corporation
+  pdf_url: https://arena.gov.au/assets/2017/02/csiro-virtual-power-station-2.pdf
+  markdown_filename: virtual_power_station_20.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-27507
+  contributing_source_titles:
+  - Virtual Power Station 2.0 - Project Results and Lessons Learnt
+  contributing_sources:
+  - source_title: Virtual Power Station 2.0 - Project Results and Lessons Learnt
+    pdf_url: https://arena.gov.au/assets/2017/02/csiro-virtual-power-station-2.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-station-2-0/
+    markdown_filename: virtual_power_station_20.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-27508
+  source_title: Virtual Power Station 2.0 - Project Results and Lessons Learnt
+  publish_date: 2018-01
+  project_name: Virtual Power Station 2.0 (VPS2)
+  what_happened: Battery energy storage systems experienced minor issues around charge
+    cycles after initial setup, principally related to time zone settings that determined
+    when the batteries charged on off-peak power in the absence of solar generation.
+    The issues were resolved in a timely manner without materially affecting the trial.
+  lesson_learnt: Verify time zone configuration of battery management systems during
+    commissioning — incorrect time zone settings can disrupt off-peak charging schedules
+    and may not be immediately apparent, particularly when solar availability masks
+    the issue during daytime operation.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: pilot
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: execution & logistics
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: The time zone configuration issues were identified and solved
+    in a timely manner; batteries have been running continuously since January 2017.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id008
+  - 6
+  evidence_excerpt: Some minor issues after setup were noted, principally around charge
+    cycles. The main cause appeared to be time zone dependant as the batteries are
+    charged on off peak power if solar is not available. These issues were solved
+    in a timely manner.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-station-2-0/
+  project_page_url: https://arena.gov.au/projects/virtual-power-station-2/
+  kb_category: Distributed energy resources
+  kb_publish_date: 7/02/2018
+  kb_year: '2014'
+  kb_associated_project: Virtual Power Station 2
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $850k
+  total_project_value: $2.58m
+  lead_organisation: CSIRO
+  arena_program: Solar Research Excellence
+  project_status: Past
+  project_start_date: 18/07/2014
+  location: New South Wales, Newcastle
+  project_partners: University of Newcastle, Tritium Pty Ltd, SMA, Selectronic Australia
+    Pty Ltd, Lend Lease Communities (Australia) Ltd., Latronic Sunpower Ltd., Ergon
+    Energy Corporation
+  pdf_url: https://arena.gov.au/assets/2017/02/csiro-virtual-power-station-2.pdf
+  markdown_filename: virtual_power_station_20.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-27508
+  contributing_source_titles:
+  - Virtual Power Station 2.0 - Project Results and Lessons Learnt
+  contributing_sources:
+  - source_title: Virtual Power Station 2.0 - Project Results and Lessons Learnt
+    pdf_url: https://arena.gov.au/assets/2017/02/csiro-virtual-power-station-2.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-station-2-0/
+    markdown_filename: virtual_power_station_20.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-27509
+  source_title: Virtual Power Station 2.0 - Project Results and Lessons Learnt
+  publish_date: 2018-01
+  project_name: Virtual Power Station 2.0 (VPS2)
+  what_happened: The VPS2 pilot successfully demonstrated full coordination of air-conditioning
+    load, PV generation, and battery storage to mitigate network power and voltage
+    swings with minimal impact on end-use comfort, using 5-minute-ahead sky imaging
+    forecasts. All four planned work streams were delivered and 67 households were
+    enrolled, exceeding the 50-household target.
+  lesson_learnt: Co-locating a sky imaging solar forecasting system with a VPS pilot
+    enables effective 5-minute-ahead cloud event prediction sufficient to pre-emptively
+    coordinate air-conditioner loads, PV curtailment and battery dispatch — this integrated
+    approach is mature enough for automated implementation linked to a DNSP Load Control
+    System.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: pilot
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: hybrid systems
+  source_pages: &id009
+  - 11
+  - 12
+  - 14
+  evidence_excerpt: From a project delivery point of view, all of the planned outcomes
+    were achieved, and from an experimental perspective, the pilot successfully demonstrated
+    the ability of the deployed hardware and software to effectively control devices
+    enabling greater deployment of solar power.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-station-2-0/
+  project_page_url: https://arena.gov.au/projects/virtual-power-station-2/
+  kb_category: Distributed energy resources
+  kb_publish_date: 7/02/2018
+  kb_year: '2014'
+  kb_associated_project: Virtual Power Station 2
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $850k
+  total_project_value: $2.58m
+  lead_organisation: CSIRO
+  arena_program: Solar Research Excellence
+  project_status: Past
+  project_start_date: 18/07/2014
+  location: New South Wales, Newcastle
+  project_partners: University of Newcastle, Tritium Pty Ltd, SMA, Selectronic Australia
+    Pty Ltd, Lend Lease Communities (Australia) Ltd., Latronic Sunpower Ltd., Ergon
+    Energy Corporation
+  pdf_url: https://arena.gov.au/assets/2017/02/csiro-virtual-power-station-2.pdf
+  markdown_filename: virtual_power_station_20.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-27509
+  contributing_source_titles:
+  - Virtual Power Station 2.0 - Project Results and Lessons Learnt
+  contributing_sources:
+  - source_title: Virtual Power Station 2.0 - Project Results and Lessons Learnt
+    pdf_url: https://arena.gov.au/assets/2017/02/csiro-virtual-power-station-2.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-station-2-0/
+    markdown_filename: virtual_power_station_20.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-27510
+  source_title: Virtual Power Station 2.0 - Project Results and Lessons Learnt
+  publish_date: 2018-01
+  project_name: Virtual Power Station 2.0 (VPS2)
+  what_happened: VPS2 demonstrated that coordinated control of distributed PV, batteries,
+    and loads provides a viable third alternative to network upgrades or PV export
+    restrictions, but the commercial viability of the approach could not be established
+    because no market mechanism exists for distributed energy resources to provide
+    locational distribution network services.
+  lesson_learnt: Technical demonstration of a VPS/DER coordination approach alone
+    is insufficient to progress to commercial deployment — future pilots should be
+    co-designed with a path to commercial viability, including identification of regulatory
+    mechanisms or market structures (e.g. Distribution System Operator arrangements
+    or demand management incentive schemes) that would allow DERs to be rewarded for
+    providing distribution network services.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: pilot
+  lifecycle_phase: close-out/post-project review
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id010
+  - 14
+  - 15
+  evidence_excerpt: The commercial viability of the approach ultimately depends on
+    the development of markets that allow distributed energy resources to provide
+    grid services. While no such markets exist yet, we are buoyed by the recent announcement
+    of the Demand Management Incentive Scheme and discussions between the Australian
+    Energy Market Operator (AEMO), Energy Networks Australia (ENA) and others on the
+    consideration of a Distribution System Operator role being assigned.
+  confidence_note: lifecycle_phase set to close-out/post-project review as this is
+    a forward-looking observation made at project completion, not an event during
+    execution. failure_mode set to commercial/demand failure as the absence of market
+    structures is the binding constraint on progression.
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-station-2-0/
+  project_page_url: https://arena.gov.au/projects/virtual-power-station-2/
+  kb_category: Distributed energy resources
+  kb_publish_date: 7/02/2018
+  kb_year: '2014'
+  kb_associated_project: Virtual Power Station 2
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $850k
+  total_project_value: $2.58m
+  lead_organisation: CSIRO
+  arena_program: Solar Research Excellence
+  project_status: Past
+  project_start_date: 18/07/2014
+  location: New South Wales, Newcastle
+  project_partners: University of Newcastle, Tritium Pty Ltd, SMA, Selectronic Australia
+    Pty Ltd, Lend Lease Communities (Australia) Ltd., Latronic Sunpower Ltd., Ergon
+    Energy Corporation
+  pdf_url: https://arena.gov.au/assets/2017/02/csiro-virtual-power-station-2.pdf
+  markdown_filename: virtual_power_station_20.md
+  source_page_pdf: 15
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-27510
+  contributing_source_titles:
+  - Virtual Power Station 2.0 - Project Results and Lessons Learnt
+  contributing_sources:
+  - source_title: Virtual Power Station 2.0 - Project Results and Lessons Learnt
+    pdf_url: https://arena.gov.au/assets/2017/02/csiro-virtual-power-station-2.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-station-2-0/
+    markdown_filename: virtual_power_station_20.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82

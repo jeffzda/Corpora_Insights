@@ -1,0 +1,520 @@
+- record_id: ARENA-DLV-52201
+  source_title: Barcaldine Solar Farm Knowledge Sharing Report
+  publish_date: 2022-05
+  project_name: Barcaldine Solar Farm
+  what_happened: During commissioning, the Barcaldine Solar Farm was found unable
+    to meet Voltage and Reactive Power Control standards because a Q-limit had not
+    been set. The plant experienced four unexpected trip events between August 2020
+    and June 2021, was directed to shut down on 18 August 2021, and was not reinstated
+    until 22 October 2021 — a forced outage of approximately two months.
+  lesson_learnt: Define a Voltage Control Strategy early in project development and
+    include Q-limiters and control architecture in the Connection Agreement — failure
+    to do so led to repeated trips, a two-month enforced shutdown, and ongoing rectification
+    works.
+  issue_severity: major
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: project developer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: O&M contractor adjusted logic and control system settings in
+    the remote telemetry units, and a ramp was applied to inverter Q output to enable
+    soft transition of voltage control between the solar farm and the substation.
+  transferability: broad
+  delay_magnitude: 1-3 months
+  technology_domain: solar PV
+  source_pages: &id001
+  - 4
+  - 5
+  - 6
+  - 7
+  evidence_excerpt: It was discovered that the Barcaldine Solar Farm was unable to
+    meet the Voltage and Reactive Power Control during the commissioning process...
+    the plant was directed to shut down on 18th Aug 2021 and was not reinstated until
+    22 Oct 21.
+  confidence_note: Shutdown period of ~2 months treated as delay_magnitude 1–3 months;
+    broader project schedule impact not quantified.
+  source_url: https://arena.gov.au/knowledge-bank/barcaldine-solar-farm-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/barcaldine-remote-community-solar-farm/
+  kb_category: Large-scale solar, Solar energy
+  kb_publish_date: 18/05/2022
+  kb_year: '2014'
+  kb_associated_project: Barcaldine Remote Community Solar Farm
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $22.8m
+  total_project_value: $70.1m
+  lead_organisation: Elecnor Australia Pty Ltd
+  arena_program: Regional Australia’s Renewables
+  project_status: Past
+  project_start_date: 24/07/2014
+  location: Barcaldine, Queensland
+  project_partners: Kingsway Europe S.L, Elecnor Australia
+  pdf_url: https://arena.gov.au/assets/2022/05/barcaldine-knowledge-sharing-report.pdf
+  markdown_filename: barcaldine_solar_farm_knowledge_sharing_report.md
+  source_page_pdf: 5
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52201
+  contributing_source_titles:
+  - Barcaldine Solar Farm Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Barcaldine Solar Farm Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2022/05/barcaldine-knowledge-sharing-report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/barcaldine-solar-farm-knowledge-sharing-report/
+    markdown_filename: barcaldine_solar_farm_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-52202
+  source_title: Barcaldine Solar Farm Knowledge Sharing Report
+  publish_date: 2022-05
+  project_name: Barcaldine Solar Farm
+  what_happened: The Voltage Control Strategy (VCS) for integrating the solar farm's
+    output into the existing grid was not defined until three months before plant
+    connection, leaving insufficient time for a normal design process and creating
+    integration difficulties during commissioning.
+  lesson_learnt: The Voltage Control Strategy must be developed and simulated during
+    project development — not immediately before connection — to allow adequate design
+    time and prevent commissioning delays and cost increases.
+  issue_severity: major
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: commissioning/integration
+  failure_mode: poor scoping
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated integration
+  intervention_note: EPC contractor conducted detailed grid network modelling and
+    on-site testing, eventually agreeing with Ergon on a reactive power ramp to enable
+    smooth voltage control handover.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id002
+  - 7
+  evidence_excerpt: The VCS was defined 3 months prior the connection of the plant,
+    which did not allow time for a normal design process to occur.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/barcaldine-solar-farm-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/barcaldine-remote-community-solar-farm/
+  kb_category: Large-scale solar, Solar energy
+  kb_publish_date: 18/05/2022
+  kb_year: '2014'
+  kb_associated_project: Barcaldine Remote Community Solar Farm
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $22.8m
+  total_project_value: $70.1m
+  lead_organisation: Elecnor Australia Pty Ltd
+  arena_program: Regional Australia’s Renewables
+  project_status: Past
+  project_start_date: 24/07/2014
+  location: Barcaldine, Queensland
+  project_partners: Kingsway Europe S.L, Elecnor Australia
+  pdf_url: https://arena.gov.au/assets/2022/05/barcaldine-knowledge-sharing-report.pdf
+  markdown_filename: barcaldine_solar_farm_knowledge_sharing_report.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52202
+  contributing_source_titles:
+  - Barcaldine Solar Farm Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Barcaldine Solar Farm Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2022/05/barcaldine-knowledge-sharing-report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/barcaldine-solar-farm-knowledge-sharing-report/
+    markdown_filename: barcaldine_solar_farm_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-52203
+  source_title: Barcaldine Solar Farm Knowledge Sharing Report
+  publish_date: 2022-05
+  project_name: Barcaldine Solar Farm
+  what_happened: One of the two connection points at the Barcaldine Solar Farm was
+    out of service from 6 June 2020 to 19 January 2021, and the plant then operated
+    at only 70% output capacity from 19 January 2021 onward while voltage control
+    issues were being rectified.
+  lesson_learnt: Voltage and reactive power control requirements for grid-connected
+    solar farms should be fully defined, simulated, and agreed with the NSP before
+    commissioning — unresolved control issues can force prolonged partial-capacity
+    operation and connection point outages.
+  issue_severity: major
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: project developer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: 3-12 months
+  technology_domain: solar PV
+  source_pages: &id003
+  - 6
+  evidence_excerpt: One of the two connection points out of service from 6 June 2020
+    to 19 January 2021 and operating at 70% output capacity from 19 January 2021.
+  confidence_note: lifecycle_phase assigned as operations because the connection point
+    outage and capacity restriction occurred after the plant had commenced generation.
+  source_url: https://arena.gov.au/knowledge-bank/barcaldine-solar-farm-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/barcaldine-remote-community-solar-farm/
+  kb_category: Large-scale solar, Solar energy
+  kb_publish_date: 18/05/2022
+  kb_year: '2014'
+  kb_associated_project: Barcaldine Remote Community Solar Farm
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $22.8m
+  total_project_value: $70.1m
+  lead_organisation: Elecnor Australia Pty Ltd
+  arena_program: Regional Australia’s Renewables
+  project_status: Past
+  project_start_date: 24/07/2014
+  location: Barcaldine, Queensland
+  project_partners: Kingsway Europe S.L, Elecnor Australia
+  pdf_url: https://arena.gov.au/assets/2022/05/barcaldine-knowledge-sharing-report.pdf
+  markdown_filename: barcaldine_solar_farm_knowledge_sharing_report.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52203
+  contributing_source_titles:
+  - Barcaldine Solar Farm Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Barcaldine Solar Farm Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2022/05/barcaldine-knowledge-sharing-report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/barcaldine-solar-farm-knowledge-sharing-report/
+    markdown_filename: barcaldine_solar_farm_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: integration failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-52204
+  source_title: Barcaldine Solar Farm Knowledge Sharing Report
+  publish_date: 2022-05
+  project_name: Barcaldine Solar Farm
+  what_happened: The Barcaldine Solar Farm — the first solar generator in Australia
+    designed to control distribution network voltage — experienced flicker emissions
+    caused by DC voltage fluctuations from the inverter MPPT algorithm interacting
+    with the weak grid, particularly during winter and low-irradiance periods.
+  lesson_learnt: When connecting a solar farm to a weak grid, the inverter MPPT algorithm
+    should be simulated in a laboratory with site-representative parameters before
+    deployment, and inverter suppliers should provide a default MPPT setting profile
+    for weak-grid environments to mitigate flicker.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id004
+  - 9
+  evidence_excerpt: DC voltage fluctuations is able to create small Q fluctuations,
+    that when applied to a weak grid can cause a high level of flicker emissions.
+    Those fluctuation on the DC voltage and the flickers, will be higher in periods
+    of maximum activity for the MPPT of the inverters, which is winter and days with
+    poor irradiance.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/barcaldine-solar-farm-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/barcaldine-remote-community-solar-farm/
+  kb_category: Large-scale solar, Solar energy
+  kb_publish_date: 18/05/2022
+  kb_year: '2014'
+  kb_associated_project: Barcaldine Remote Community Solar Farm
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $22.8m
+  total_project_value: $70.1m
+  lead_organisation: Elecnor Australia Pty Ltd
+  arena_program: Regional Australia’s Renewables
+  project_status: Past
+  project_start_date: 24/07/2014
+  location: Barcaldine, Queensland
+  project_partners: Kingsway Europe S.L, Elecnor Australia
+  pdf_url: https://arena.gov.au/assets/2022/05/barcaldine-knowledge-sharing-report.pdf
+  markdown_filename: barcaldine_solar_farm_knowledge_sharing_report.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52204
+  contributing_source_titles:
+  - Barcaldine Solar Farm Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Barcaldine Solar Farm Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2022/05/barcaldine-knowledge-sharing-report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/barcaldine-solar-farm-knowledge-sharing-report/
+    markdown_filename: barcaldine_solar_farm_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-52205
+  source_title: Barcaldine Solar Farm Knowledge Sharing Report
+  publish_date: 2022-05
+  project_name: Barcaldine Solar Farm
+  what_happened: The inverter sizing and DC field design did not adequately account
+    for the effect of high ambient temperatures on PV module DC voltage, which reduced
+    the inverters' reactive power capacity — particularly in the capacitive zone —
+    below the required ±3.95 MVAr at full power.
+  lesson_learnt: During inverter and DC field sizing, conduct a detailed study of
+    PV module temperatures under maximum ambient conditions to ensure the array Vmpp
+    remains above the minimum DC voltage needed to deliver the required reactive power
+    — this factor is commonly overlooked relative to the better-known inverter current
+    de-rating effect.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: EPC contractor performed a detailed environmental conditions
+    and de-rating study using BOM data, determining a minimum 620 VDC requirement
+    and driving selection of 2150 kVA inverters to deliver 2000 kW plus required reactive
+    power.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id005
+  - 10
+  evidence_excerpt: The design of the Solar Farm, and more specifically during the
+    sizing and rating of the inverters and the DC solar field, is extremely important
+    take into account the maximum ambient temperature that will limit the Q capacity...
+    the point b) is not the case, and is the factor that will drive the AC voltage
+    of the inverter.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/barcaldine-solar-farm-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/barcaldine-remote-community-solar-farm/
+  kb_category: Large-scale solar, Solar energy
+  kb_publish_date: 18/05/2022
+  kb_year: '2014'
+  kb_associated_project: Barcaldine Remote Community Solar Farm
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $22.8m
+  total_project_value: $70.1m
+  lead_organisation: Elecnor Australia Pty Ltd
+  arena_program: Regional Australia’s Renewables
+  project_status: Past
+  project_start_date: 24/07/2014
+  location: Barcaldine, Queensland
+  project_partners: Kingsway Europe S.L, Elecnor Australia
+  pdf_url: https://arena.gov.au/assets/2022/05/barcaldine-knowledge-sharing-report.pdf
+  markdown_filename: barcaldine_solar_farm_knowledge_sharing_report.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52205
+  contributing_source_titles:
+  - Barcaldine Solar Farm Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Barcaldine Solar Farm Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2022/05/barcaldine-knowledge-sharing-report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/barcaldine-solar-farm-knowledge-sharing-report/
+    markdown_filename: barcaldine_solar_farm_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-52206
+  source_title: Barcaldine Solar Farm Knowledge Sharing Report
+  publish_date: 2022-05
+  project_name: Barcaldine Solar Farm
+  what_happened: The original PSSE grid connection model stated a 20 ms delay between
+    metering and Power Plant Controller (PPC) data acquisition, which proved nearly
+    impossible to achieve due to hardware limitations. This was discovered during
+    hot commissioning and required the model to be updated with real measured delays
+    and a new set of dynamic parameters.
+  lesson_learnt: The inverter, PPC, and metering system should be tested together
+    in a hardware laboratory before commissioning to confirm actual PSSE parameters
+    — including communication delays — using a simulated grid impedance matching the
+    point of connection; relying on manufacturer-stated or default parameters for
+    weak-grid voltage control applications risks unexpected behaviour during commissioning.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: project developer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated technical assumptions
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated integration
+  intervention_note: During hot commissioning, the PSSE model was updated with real
+    laboratory-measured delays and a new set of dynamic parameters was tested to achieve
+    the dynamic response required by the Generator Performance Standards.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id006
+  - 11
+  - 12
+  evidence_excerpt: Original PSSE model provided stated that 20ms was the delay between
+    metering and PPC data acquisition, which was nearly impossible to achieved due
+    to hardware limitations.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/barcaldine-solar-farm-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/barcaldine-remote-community-solar-farm/
+  kb_category: Large-scale solar, Solar energy
+  kb_publish_date: 18/05/2022
+  kb_year: '2014'
+  kb_associated_project: Barcaldine Remote Community Solar Farm
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $22.8m
+  total_project_value: $70.1m
+  lead_organisation: Elecnor Australia Pty Ltd
+  arena_program: Regional Australia’s Renewables
+  project_status: Past
+  project_start_date: 24/07/2014
+  location: Barcaldine, Queensland
+  project_partners: Kingsway Europe S.L, Elecnor Australia
+  pdf_url: https://arena.gov.au/assets/2022/05/barcaldine-knowledge-sharing-report.pdf
+  markdown_filename: barcaldine_solar_farm_knowledge_sharing_report.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52206
+  contributing_source_titles:
+  - Barcaldine Solar Farm Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Barcaldine Solar Farm Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2022/05/barcaldine-knowledge-sharing-report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/barcaldine-solar-farm-knowledge-sharing-report/
+    markdown_filename: barcaldine_solar_farm_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-52207
+  source_title: Barcaldine Solar Farm Knowledge Sharing Report
+  publish_date: 2022-05
+  project_name: Barcaldine Solar Farm
+  what_happened: The Barcaldine Solar Farm's interconnection construction required
+    building assets that would be owned by the NSP (Ergon Energy) as Contestable Works,
+    including two new 22 kV underground feeders and upgrades to existing substation
+    protection and control systems. Managing the NSP's requirements and coordinating
+    construction across both parties was identified as a critical delivery risk.
+  lesson_learnt: Include all Contestable Asset tasks in the Connection Agreement from
+    the outset, and establish a weekly coordination meeting between the NSP and EPC
+    contractor from the earliest project stage — both measures were found essential
+    to timely delivery of interconnection works.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: construction/installation
+  proponent_type: project developer
+  delay_category: grid connection/system studies
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Ergon Energy was involved from project development, performed
+    design and construction of its assets, and a weekly NSP–EPC coordination meeting
+    was maintained throughout, resulting in timely delivery.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id007
+  - 13
+  - 14
+  evidence_excerpt: A weekly coordination meeting between the NSP and the EPC contractor,
+    has been a key for a smooth design and construction process, as both teams were
+    aware of the current status of the project, the issues and the next steps.
+  confidence_note: issue_severity set to minor because the document reports a positive
+    outcome — no delay materialised as a result of the NSP coordination approach adopted.
+  source_url: https://arena.gov.au/knowledge-bank/barcaldine-solar-farm-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/barcaldine-remote-community-solar-farm/
+  kb_category: Large-scale solar, Solar energy
+  kb_publish_date: 18/05/2022
+  kb_year: '2014'
+  kb_associated_project: Barcaldine Remote Community Solar Farm
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $22.8m
+  total_project_value: $70.1m
+  lead_organisation: Elecnor Australia Pty Ltd
+  arena_program: Regional Australia’s Renewables
+  project_status: Past
+  project_start_date: 24/07/2014
+  location: Barcaldine, Queensland
+  project_partners: Kingsway Europe S.L, Elecnor Australia
+  pdf_url: https://arena.gov.au/assets/2022/05/barcaldine-knowledge-sharing-report.pdf
+  markdown_filename: barcaldine_solar_farm_knowledge_sharing_report.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52207
+  contributing_source_titles:
+  - Barcaldine Solar Farm Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Barcaldine Solar Farm Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2022/05/barcaldine-knowledge-sharing-report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/barcaldine-solar-farm-knowledge-sharing-report/
+    markdown_filename: barcaldine_solar_farm_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false

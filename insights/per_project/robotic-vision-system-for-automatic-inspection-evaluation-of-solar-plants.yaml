@@ -1,0 +1,585 @@
+- record_id: ARENA-DLV-10701
+  source_title: A Robotic Vision System for Rapid Inspection and Evaluation of Solar
+    Plant Infrastructure
+  publish_date: 2019-11
+  project_name: A Robotic Vision System for Rapid Inspection and Evaluation of Solar
+    Plant Infrastructure
+  what_happened: The first two UAV service providers engaged by the project both ceased
+    operations within the first year — one went broke within six months, the other
+    ceased aerial services after a further six months due to staffing changes. The
+    third provider, a sole owner-operator, remained active but was limited to a single
+    quadrotor with restricted flight times, and hardware faults and crashes cost the
+    project significant experiment time and compromised data acquisition.
+  lesson_learnt: Do not rely on small commercial UAV operators as project-critical
+    delivery partners — the sector has high attrition. Budget significant time for
+    mission-planning and flight-control software development tailored to the specific
+    inspection task, and plan for hardware failure contingency; sourcing a capable
+    hobby-grade drone platform with open-source autopilot support is more reliable
+    than commercial UAV service contracts for non-standard inspection missions.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: research organisation/university
+  delay_category: procurement/supply chain
+  failure_mode: coordination & stakeholders
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: execution & logistics
+  intervention_note: Pivoted to an owner-operator provider and focused software development
+    on open-source autopilot platforms compatible with hobby-grade hardware.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar thermal
+  source_pages: &id001
+  - 15
+  evidence_excerpt: We initially partnered with an aerial services company in the
+    project proposal. This company went broke in the first six months of the project.
+    We then partnered with a surveying company that provided aerial services. This
+    company ceased aerial services after an additional six months of the project due
+    to a change in staffing levels... Faults and crashes in the hardware cost the
+    project significant lost experiment time and compromised data acquisition.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/a-robotic-vision-system-for-rapid-inspection-and-evaluation-of-solar-plant-infrastructure/
+  project_page_url: https://arena.gov.au/projects/a-robotic-vision-system-for-automatic-inspection-and-evaluation-of-solar-plants/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 29/11/2019
+  kb_year: '2016'
+  kb_associated_project: Robotic Vision System for Automatic Inspection & Evaluation
+    of Solar Plants
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $444k
+  total_project_value: $1.73m
+  lead_organisation: Australian National University
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 11/04/2016
+  location: Acton, Australian Capital Territory
+  project_partners: White Knight Unmanned Arial Systems PTY LTD, Vast Solar Pty Ltd,
+    NICTA, FRV Services Australia Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2020/06/robotic-vision-system-for-rapid-inspection-evaluation-solar-plant-infrastructure.pdf
+  markdown_filename: a_robotic_vision_system_for_rapid_inspection_and_evaluation_of_solar_plant_infrastructure.md
+  source_page_pdf: 15
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-10701
+  contributing_source_titles:
+  - A Robotic Vision System for Rapid Inspection and Evaluation of Solar Plant Infrastructure
+  contributing_sources:
+  - source_title: A Robotic Vision System for Rapid Inspection and Evaluation of Solar
+      Plant Infrastructure
+    pdf_url: https://arena.gov.au/assets/2020/06/robotic-vision-system-for-rapid-inspection-evaluation-solar-plant-infrastructure.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/a-robotic-vision-system-for-rapid-inspection-and-evaluation-of-solar-plant-infrastructure/
+    markdown_filename: a_robotic_vision_system_for_rapid_inspection_and_evaluation_of_solar_plant_infrastructure.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: schedule slippage
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-10702
+  source_title: A Robotic Vision System for Rapid Inspection and Evaluation of Solar
+    Plant Infrastructure
+  publish_date: 2019-11
+  project_name: A Robotic Vision System for Rapid Inspection and Evaluation of Solar
+    Plant Infrastructure
+  what_happened: The project employed three successive research fellows from the computer
+    vision community before finding a suitable contributor; the first three had short
+    tenures and focused on pure computer vision problems, resulting in slow overall
+    progress. The breakthrough on soiling estimation algorithms came only after hiring
+    a researcher from a renewables energy background who was then trained in computer
+    vision.
+  lesson_learnt: For applied computer vision projects in the renewables sector, recruiting
+    staff with a renewables or domain-science background and training them in computer
+    vision is more effective than hiring specialist computer vision researchers who
+    lack domain context — domain-specific algorithm development requires deep understanding
+    of the physical problem, not just algorithmic expertise.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: internal governance/resourcing
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Hired Charles-Alexis Asselineau, a researcher from a renewables
+    background, who led development of the final algorithms achieving soiling estimation
+    within 1% accuracy.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id002
+  - 16
+  evidence_excerpt: The project employed three different research fellows drawn from
+    the computer vision community before finally employing Charles-Alexis Asselineau
+    from a renewables background. It was Charles-Alexis that led the development of
+    the final algorithms that estimated soiling levels to the required accuracy. Although
+    all three of the earlier research fellows made contributions to the project, their
+    short tenure and focus on more pure computer vision problems meant that the overall
+    progress in the project was slow.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/a-robotic-vision-system-for-rapid-inspection-and-evaluation-of-solar-plant-infrastructure/
+  project_page_url: https://arena.gov.au/projects/a-robotic-vision-system-for-automatic-inspection-and-evaluation-of-solar-plants/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 29/11/2019
+  kb_year: '2016'
+  kb_associated_project: Robotic Vision System for Automatic Inspection & Evaluation
+    of Solar Plants
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $444k
+  total_project_value: $1.73m
+  lead_organisation: Australian National University
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 11/04/2016
+  location: Acton, Australian Capital Territory
+  project_partners: White Knight Unmanned Arial Systems PTY LTD, Vast Solar Pty Ltd,
+    NICTA, FRV Services Australia Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2020/06/robotic-vision-system-for-rapid-inspection-evaluation-solar-plant-infrastructure.pdf
+  markdown_filename: a_robotic_vision_system_for_rapid_inspection_and_evaluation_of_solar_plant_infrastructure.md
+  source_page_pdf: 16
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-10702
+  contributing_source_titles:
+  - A Robotic Vision System for Rapid Inspection and Evaluation of Solar Plant Infrastructure
+  contributing_sources:
+  - source_title: A Robotic Vision System for Rapid Inspection and Evaluation of Solar
+      Plant Infrastructure
+    pdf_url: https://arena.gov.au/assets/2020/06/robotic-vision-system-for-rapid-inspection-evaluation-solar-plant-infrastructure.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/a-robotic-vision-system-for-rapid-inspection-and-evaluation-of-solar-plant-infrastructure/
+    markdown_filename: a_robotic_vision_system_for_rapid_inspection_and_evaluation_of_solar_plant_infrastructure.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.72
+- record_id: ARENA-DLV-10703
+  source_title: A Robotic Vision System for Rapid Inspection and Evaluation of Solar
+    Plant Infrastructure
+  publish_date: 2019-11
+  project_name: A Robotic Vision System for Rapid Inspection and Evaluation of Solar
+    Plant Infrastructure
+  what_happened: The original industry partner for photovoltaic plant access (FRV
+    / Fotowatio Renewable Ventures) experienced a change of personnel and new management
+    withdrew support from the project. The project was unable to secure a replacement
+    full partner and resorted to using a local operator (One Sun Solar) under a Visitor/Non-Disclosure
+    Agreement only, limiting the depth of engagement and experimental scope for PV
+    activities.
+  lesson_learnt: Industry partner engagement for PV inspection R&D is fragile — personnel
+    changes can eliminate organisational support entirely. Secure contractual commitments
+    that survive management turnover, or identify backup site-access arrangements
+    early; reliance on a single industry partner for site access creates a critical
+    dependency.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: research organisation/university
+  delay_category: stakeholder/land/community
+  failure_mode: coordination & stakeholders
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Identified One Sun Solar as an alternative site host and conducted
+    experimental work under a Visitor/Non-Disclosure Agreement, enabling partial continuation
+    of PV field activities.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id003
+  - 17
+  evidence_excerpt: There was a change of personnel in FRV and the new management
+    were not in favour of supporting the project. The project identified a local operator
+    One Sun Solar and used the Williamsdale solar field for experimental activities.
+    However, One Sun Solar were never a full partner of the project and experimental
+    work was undertaken under a Visitor/Non-Disclosure Agreement.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/a-robotic-vision-system-for-rapid-inspection-and-evaluation-of-solar-plant-infrastructure/
+  project_page_url: https://arena.gov.au/projects/a-robotic-vision-system-for-automatic-inspection-and-evaluation-of-solar-plants/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 29/11/2019
+  kb_year: '2016'
+  kb_associated_project: Robotic Vision System for Automatic Inspection & Evaluation
+    of Solar Plants
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $444k
+  total_project_value: $1.73m
+  lead_organisation: Australian National University
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 11/04/2016
+  location: Acton, Australian Capital Territory
+  project_partners: White Knight Unmanned Arial Systems PTY LTD, Vast Solar Pty Ltd,
+    NICTA, FRV Services Australia Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2020/06/robotic-vision-system-for-rapid-inspection-evaluation-solar-plant-infrastructure.pdf
+  markdown_filename: a_robotic_vision_system_for_rapid_inspection_and_evaluation_of_solar_plant_infrastructure.md
+  source_page_pdf: 17
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-10703
+  contributing_source_titles:
+  - A Robotic Vision System for Rapid Inspection and Evaluation of Solar Plant Infrastructure
+  contributing_sources:
+  - source_title: A Robotic Vision System for Rapid Inspection and Evaluation of Solar
+      Plant Infrastructure
+    pdf_url: https://arena.gov.au/assets/2020/06/robotic-vision-system-for-rapid-inspection-evaluation-solar-plant-infrastructure.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/a-robotic-vision-system-for-rapid-inspection-and-evaluation-of-solar-plant-infrastructure/
+    markdown_filename: a_robotic_vision_system_for_rapid_inspection_and_evaluation_of_solar_plant_infrastructure.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-10704
+  source_title: A Robotic Vision System for Rapid Inspection and Evaluation of Solar
+    Plant Infrastructure
+  publish_date: 2019-11
+  project_name: A Robotic Vision System for Rapid Inspection and Evaluation of Solar
+    Plant Infrastructure
+  what_happened: The project found no economic advantage in using automated visual
+    (RGB) inspection for detection of defects in PV modules. Existing methods — manual
+    inspection, string-level power monitoring, and biannual infrared aerial surveys
+    — were already economical and sufficient for the timescales of PV fault rectification,
+    rendering the project's original PV defect detection objective redundant.
+  lesson_learnt: Before investing in automated visible-spectrum inspection for PV
+    fault detection, verify that existing infrared aerial survey methods do not already
+    provide an adequate and cost-effective solution — infrared imaging identifies
+    PV faults effectively from high altitude and does not require the high-resolution
+    close-up imaging that RGB robotic inspection demands, making the latter hard to
+    justify economically.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Pivoted project focus away from PV defect detection toward CSP
+    heliostat soiling monitoring, where automated visual inspection demonstrated clear
+    economic value.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id004
+  - 18
+  evidence_excerpt: The cost benefit of automated defect identification in solar PV
+    fields showed that existing methods are economical. Infrared imaging of solar
+    PV is effective at identifying a wide range of faults. Infrared aerial surveys
+    of solar fields are already in active use. The resolution of image data required
+    is fairly low and existing photometric aerial survey software packages produce
+    good quality results. The associated data analysis is simple and does not require
+    automated systems.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/a-robotic-vision-system-for-rapid-inspection-and-evaluation-of-solar-plant-infrastructure/
+  project_page_url: https://arena.gov.au/projects/a-robotic-vision-system-for-automatic-inspection-and-evaluation-of-solar-plants/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 29/11/2019
+  kb_year: '2016'
+  kb_associated_project: Robotic Vision System for Automatic Inspection & Evaluation
+    of Solar Plants
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $444k
+  total_project_value: $1.73m
+  lead_organisation: Australian National University
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 11/04/2016
+  location: Acton, Australian Capital Territory
+  project_partners: White Knight Unmanned Arial Systems PTY LTD, Vast Solar Pty Ltd,
+    NICTA, FRV Services Australia Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2020/06/robotic-vision-system-for-rapid-inspection-evaluation-solar-plant-infrastructure.pdf
+  markdown_filename: a_robotic_vision_system_for_rapid_inspection_and_evaluation_of_solar_plant_infrastructure.md
+  source_page_pdf: 18
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-10704
+  contributing_source_titles:
+  - A Robotic Vision System for Rapid Inspection and Evaluation of Solar Plant Infrastructure
+  contributing_sources:
+  - source_title: A Robotic Vision System for Rapid Inspection and Evaluation of Solar
+      Plant Infrastructure
+    pdf_url: https://arena.gov.au/assets/2020/06/robotic-vision-system-for-rapid-inspection-evaluation-solar-plant-infrastructure.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/a-robotic-vision-system-for-rapid-inspection-and-evaluation-of-solar-plant-infrastructure/
+    markdown_filename: a_robotic_vision_system_for_rapid_inspection_and_evaluation_of_solar_plant_infrastructure.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-10705
+  source_title: A Robotic Vision System for Rapid Inspection and Evaluation of Solar
+    Plant Infrastructure
+  publish_date: 2019-11
+  project_name: A Robotic Vision System for Rapid Inspection and Evaluation of Solar
+    Plant Infrastructure
+  what_happened: The project demonstrated that automated robotic monitoring of soiling
+    levels on CSP heliostats is economically justified, with estimated lifetime savings
+    approximately 14 times the cost of the initial hardware investment and NPV benefits
+    of $1.5–2.4 million for a commercial-scale 115 MWe plant. The image processing
+    software achieved soiling reflectivity estimation within 1% accuracy at panel
+    level.
+  lesson_learnt: CSP plant operators should consider investing in automated UAV-based
+    soiling monitoring systems for heliostat fields — spatially resolved soiling data
+    enables prioritised cleaning schedules that yield NPV benefits of $1.5–2.4M at
+    commercial scale, far exceeding system hardware costs, particularly where non-homogeneous
+    soiling allows differential cleaning prioritisation based on each heliostat's
+    optical contribution.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar thermal
+  source_pages: &id005
+  - 19
+  evidence_excerpt: Lifetime savings from improving cleaning efficiency based on high
+    quality spatially resolved soiling data is estimated to be approximately 14x the
+    cost of the initial investment in automated data acquisition system hardware.
+    Benefits in terms of Net Present Value are estimated to be in the range $1.5-2.4
+    million for a commercial scale plant.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/a-robotic-vision-system-for-rapid-inspection-and-evaluation-of-solar-plant-infrastructure/
+  project_page_url: https://arena.gov.au/projects/a-robotic-vision-system-for-automatic-inspection-and-evaluation-of-solar-plants/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 29/11/2019
+  kb_year: '2016'
+  kb_associated_project: Robotic Vision System for Automatic Inspection & Evaluation
+    of Solar Plants
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $444k
+  total_project_value: $1.73m
+  lead_organisation: Australian National University
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 11/04/2016
+  location: Acton, Australian Capital Territory
+  project_partners: White Knight Unmanned Arial Systems PTY LTD, Vast Solar Pty Ltd,
+    NICTA, FRV Services Australia Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2020/06/robotic-vision-system-for-rapid-inspection-evaluation-solar-plant-infrastructure.pdf
+  markdown_filename: a_robotic_vision_system_for_rapid_inspection_and_evaluation_of_solar_plant_infrastructure.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-10705
+  contributing_source_titles:
+  - A Robotic Vision System for Rapid Inspection and Evaluation of Solar Plant Infrastructure
+  contributing_sources:
+  - source_title: A Robotic Vision System for Rapid Inspection and Evaluation of Solar
+      Plant Infrastructure
+    pdf_url: https://arena.gov.au/assets/2020/06/robotic-vision-system-for-rapid-inspection-evaluation-solar-plant-infrastructure.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/a-robotic-vision-system-for-rapid-inspection-and-evaluation-of-solar-plant-infrastructure/
+    markdown_filename: a_robotic_vision_system_for_rapid_inspection_and_evaluation_of_solar_plant_infrastructure.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-10706
+  source_title: A Robotic Vision System for Rapid Inspection and Evaluation of Solar
+    Plant Infrastructure
+  publish_date: 2019-11
+  project_name: A Robotic Vision System for Rapid Inspection and Evaluation of Solar
+    Plant Infrastructure
+  what_happened: Existing commercial aerial platforms and mission-planning software
+    were found to be unsuitable for detailed solar infrastructure inspection tasks.
+    Standard photogrammetric survey software fuses images into large-scale maps at
+    insufficient resolution for defect and soiling analysis, and no purpose-built
+    software existed for the close-up, waypoint-specific inspection missions required.
+  lesson_learnt: Projects deploying UAVs for solar infrastructure inspection should
+    not assume commercial mapping or survey software is fit for purpose — close-up
+    infrastructure inspection requires custom mission-planning software with waypoint-level
+    control, gimbal management, and panel-specific image resolution that existing
+    photogrammetric survey packages do not provide. Budget for custom software development
+    from the outset.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Developed a bespoke mission planning software suite using the
+    Travelling Salesman Optimisation algorithm and interfaced it with open-source
+    ArduPilot autopilot software.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id006
+  - 6
+  - 15
+  - 19
+  evidence_excerpt: Existing commercial aerial platforms, mission planning software,
+    and present service operators are not well adapted to the specific requirements
+    of infrastructure inspection missions. In particular, existing aerial mapping
+    software is not appropriate for infrastructure inspection as the resolution and
+    accuracy of the images acquired during mapping missions are insufficient for detailed
+    defect and soiling analysis.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/a-robotic-vision-system-for-rapid-inspection-and-evaluation-of-solar-plant-infrastructure/
+  project_page_url: https://arena.gov.au/projects/a-robotic-vision-system-for-automatic-inspection-and-evaluation-of-solar-plants/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 29/11/2019
+  kb_year: '2016'
+  kb_associated_project: Robotic Vision System for Automatic Inspection & Evaluation
+    of Solar Plants
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $444k
+  total_project_value: $1.73m
+  lead_organisation: Australian National University
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 11/04/2016
+  location: Acton, Australian Capital Territory
+  project_partners: White Knight Unmanned Arial Systems PTY LTD, Vast Solar Pty Ltd,
+    NICTA, FRV Services Australia Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2020/06/robotic-vision-system-for-rapid-inspection-evaluation-solar-plant-infrastructure.pdf
+  markdown_filename: a_robotic_vision_system_for_rapid_inspection_and_evaluation_of_solar_plant_infrastructure.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-10706
+  contributing_source_titles:
+  - A Robotic Vision System for Rapid Inspection and Evaluation of Solar Plant Infrastructure
+  contributing_sources:
+  - source_title: A Robotic Vision System for Rapid Inspection and Evaluation of Solar
+      Plant Infrastructure
+    pdf_url: https://arena.gov.au/assets/2020/06/robotic-vision-system-for-rapid-inspection-evaluation-solar-plant-infrastructure.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/a-robotic-vision-system-for-rapid-inspection-and-evaluation-of-solar-plant-infrastructure/
+    markdown_filename: a_robotic_vision_system_for_rapid_inspection_and_evaluation_of_solar_plant_infrastructure.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-10707
+  source_title: A Robotic Vision System for Rapid Inspection and Evaluation of Solar
+    Plant Infrastructure
+  publish_date: 2019-11
+  project_name: A Robotic Vision System for Rapid Inspection and Evaluation of Solar
+    Plant Infrastructure
+  what_happened: The project concluded that the Australian and global CSP market is
+    too small and geographically dispersed to support commercialisation of automated
+    inspection services through a dedicated spin-off company. With approximately 50
+    CSP plants worldwide and NPV savings of only $1.5–2M per plant, the total addressable
+    market capital for automated inspection was assessed as under $100M — insufficient
+    to justify a standalone service business.
+  lesson_learnt: When commercialisation of an enabling technology depends on a niche
+    market (such as CSP O&M inspection), spin-off or direct-service business models
+    are unlikely to be viable; open-sourcing the software and enabling existing multi-service
+    aerial operators to add the capability as an incremental service is a more effective
+    commercialisation pathway.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Recommended open-sourcing the full mission planning and visual
+    analysis software to enable the existing aerial services ecosystem to offer soiling
+    inspection as an add-on service.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar thermal
+  source_pages: &id007
+  - 14
+  - 20
+  evidence_excerpt: The relative savings even in single CSP plant is only in the region
+    of $1.5-2M and the total market in Australia is small. Even internationally, there
+    are only approximately 50 CSP plants making the total international market capital
+    for automated inspection less than $100M... It is infeasible to try and commercialise
+    such technology through a spinoff company based on physical provision of automated
+    inspection services.
+  confidence_note: lifecycle_phase assigned as close-out/post-project review because
+    this is a commercialisation pathway assessment made at project end, not a delivery
+    failure during execution.
+  source_url: https://arena.gov.au/knowledge-bank/a-robotic-vision-system-for-rapid-inspection-and-evaluation-of-solar-plant-infrastructure/
+  project_page_url: https://arena.gov.au/projects/a-robotic-vision-system-for-automatic-inspection-and-evaluation-of-solar-plants/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 29/11/2019
+  kb_year: '2016'
+  kb_associated_project: Robotic Vision System for Automatic Inspection & Evaluation
+    of Solar Plants
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $444k
+  total_project_value: $1.73m
+  lead_organisation: Australian National University
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 11/04/2016
+  location: Acton, Australian Capital Territory
+  project_partners: White Knight Unmanned Arial Systems PTY LTD, Vast Solar Pty Ltd,
+    NICTA, FRV Services Australia Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2020/06/robotic-vision-system-for-rapid-inspection-evaluation-solar-plant-infrastructure.pdf
+  markdown_filename: a_robotic_vision_system_for_rapid_inspection_and_evaluation_of_solar_plant_infrastructure.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-10707
+  contributing_source_titles:
+  - A Robotic Vision System for Rapid Inspection and Evaluation of Solar Plant Infrastructure
+  contributing_sources:
+  - source_title: A Robotic Vision System for Rapid Inspection and Evaluation of Solar
+      Plant Infrastructure
+    pdf_url: https://arena.gov.au/assets/2020/06/robotic-vision-system-for-rapid-inspection-evaluation-solar-plant-infrastructure.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/a-robotic-vision-system-for-rapid-inspection-and-evaluation-of-solar-plant-infrastructure/
+    markdown_filename: a_robotic_vision_system_for_rapid_inspection_and_evaluation_of_solar_plant_infrastructure.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.92

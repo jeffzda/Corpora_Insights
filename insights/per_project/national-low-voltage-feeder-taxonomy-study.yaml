@@ -1,0 +1,2062 @@
+- record_id: ARENA-DLV-29301
+  source_title: National Low-Voltage Feeder Taxonomy Study
+  publish_date: 2021-10
+  project_name: National Low-Voltage Feeder Taxonomy Study
+  what_happened: The project's more ambitious objective — to develop a national taxonomy
+    representative of real-world distribution networks — was not fully achieved. Instead,
+    the team produced a taxonomy of distribution network data based on the incomplete
+    data DNSPs had assembled, meaning some clusters may reflect data artefacts rather
+    than real-world network features.
+  lesson_learnt: Data-driven taxonomy projects that depend on DNSP-supplied network
+    data should account for significant incompleteness and bias in that data; the
+    resulting models should be explicitly scoped as testbeds for simulation, not as
+    bases for extrapolating real-world hosting capacity.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: data & measurement
+  intervention_note: The team explicitly re-scoped the taxonomy as a simulation testbed
+    only, documented known biases, and published the 23 representative network models
+    with caveats on their representativeness.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id001
+  - 10
+  - 101
+  evidence_excerpt: To a certain extent the project's more ambitious objective, to
+    develop a national taxonomy representative of real-world distribution networks,
+    was a failure – instead we developed a taxonomy of distribution network data,
+    based on the incomplete data that the DNSPs we collaborated with have assembled
+    it so-far.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+  project_page_url: https://arena.gov.au/projects/national-low-voltage-feeder-taxonomy-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 30/10/2021
+  kb_year: '2018'
+  kb_associated_project: National Low-Voltage Feeder Taxonomy Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $485k
+  total_project_value: $2.7m
+  lead_organisation: CSIRO
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/12/2018
+  location: New South Wales, Newcastle
+  project_partners: Energy Networks Australia, Ausgrid, AusNet Electricity Services,
+    Western Power, Endeavour Energy, Energy Queensland, Essential Energy, Horizon
+    Power, SA Power Networks, TasNetworks
+  pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+  markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-29301
+  contributing_source_titles:
+  - National Low-Voltage Feeder Taxonomy Study
+  contributing_sources:
+  - source_title: National Low-Voltage Feeder Taxonomy Study
+    pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+    markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-29302
+  source_title: National Low-Voltage Feeder Taxonomy Study
+  publish_date: 2021-10
+  project_name: National Low-Voltage Feeder Taxonomy Study
+  what_happened: DNSP-provided network data was characterised by varying and often
+    severe completeness issues across all seven participating DNSPs, including missing
+    distributed generators, loads and service lines, missing grounding data, undocumented
+    GIS coordinate systems, and inconsistent impedance representations. For all but
+    two DNSPs, the data were incomplete and biased samples of actual LV network assets.
+  lesson_learnt: Projects relying on DNSP network data should budget substantial time
+    and resources for data cleaning before any analysis can begin; standardised data
+    formats and quality expectations should be agreed with DNSPs at project inception
+    to avoid biased results.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: The team developed automated cleaning pipelines and applied manual
+    review for a subset of networks; biased networks were dropped from clustering
+    rather than corrected, and remaining biases were documented.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id002
+  - 13
+  - 16
+  - 17
+  evidence_excerpt: Varying levels of network data completeness, missing distributed
+    generators, loads and service lines, missing grounding data, missing feeder information,
+    undocumented GIS coordinate systems, and inconsistent or missing switch labelling,
+    impedance representations and transformer configurations were among the most problematic
+    and prevalent features of the majority of network models provided.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+  project_page_url: https://arena.gov.au/projects/national-low-voltage-feeder-taxonomy-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 30/10/2021
+  kb_year: '2018'
+  kb_associated_project: National Low-Voltage Feeder Taxonomy Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $485k
+  total_project_value: $2.7m
+  lead_organisation: CSIRO
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/12/2018
+  location: New South Wales, Newcastle
+  project_partners: Energy Networks Australia, Ausgrid, AusNet Electricity Services,
+    Western Power, Endeavour Energy, Energy Queensland, Essential Energy, Horizon
+    Power, SA Power Networks, TasNetworks
+  pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+  markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-29302
+  contributing_source_titles:
+  - National Low-Voltage Feeder Taxonomy Study
+  contributing_sources:
+  - source_title: National Low-Voltage Feeder Taxonomy Study
+    pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+    markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-29303
+  source_title: National Low-Voltage Feeder Taxonomy Study
+  publish_date: 2021-10
+  project_name: National Low-Voltage Feeder Taxonomy Study
+  what_happened: Processing the network model data required conversion from multiple
+    proprietary formats (Excel, PowerFactory, PSS/Sincal) into a common open format.
+    The diversity of formats, proprietary access restrictions, differing data models,
+    and absence of commercial-grade conversion tools made data ingestion a major proportion
+    of total project effort.
+  lesson_learnt: Data-intensive energy research projects that ingest data from multiple
+    proprietary DNSP formats should treat format conversion as a first-class engineering
+    task requiring dedicated software engineering resources and multi-platform testing;
+    trial-and-error approaches against subsets of actual data are insufficient.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: execution & logistics
+  intervention_note: Custom parsers were written for PowerFactory and PSS/Sincal formats
+    and contributed to the open-source DiTTo framework; the final automated pipeline
+    processed 5.2 GB across 330 files in approximately 12 hours.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id003
+  - 16
+  - 17
+  - 18
+  evidence_excerpt: Processing the network model data proved to be a major proportion
+    of the effort for this project… Many issues with data ingestion and feature extraction
+    were ultimately caused by the lack of standardisation with the ways DNSPs describe
+    and maintain network models, and limitations and proprietary nature of the software
+    packages used to do so.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+  project_page_url: https://arena.gov.au/projects/national-low-voltage-feeder-taxonomy-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 30/10/2021
+  kb_year: '2018'
+  kb_associated_project: National Low-Voltage Feeder Taxonomy Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $485k
+  total_project_value: $2.7m
+  lead_organisation: CSIRO
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/12/2018
+  location: New South Wales, Newcastle
+  project_partners: Energy Networks Australia, Ausgrid, AusNet Electricity Services,
+    Western Power, Endeavour Energy, Energy Queensland, Essential Energy, Horizon
+    Power, SA Power Networks, TasNetworks
+  pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+  markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-29303
+  contributing_source_titles:
+  - National Low-Voltage Feeder Taxonomy Study
+  contributing_sources:
+  - source_title: National Low-Voltage Feeder Taxonomy Study
+    pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+    markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-29304
+  source_title: National Low-Voltage Feeder Taxonomy Study
+  publish_date: 2021-10
+  project_name: National Low-Voltage Feeder Taxonomy Study
+  what_happened: The project initially placed electrical engineers in charge of a
+    project whose core challenges were at the intersection of data science and software
+    engineering. This mismatch was identified during delivery and required re-staffing,
+    causing growing pains and rework.
+  lesson_learnt: Data-intensive electrical network projects should be led by software
+    engineers or data scientists with domain expert input, not the reverse; misaligning
+    project leadership with the dominant technical challenge causes avoidable delays
+    and rework.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: internal governance/resourcing
+  failure_mode: coordination & stakeholders
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: The team eventually identified and assembled the appropriate
+    mix of software engineers and data scientists, correcting the initial staffing
+    mismatch.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id004
+  - 13
+  - 14
+  evidence_excerpt: At first, we put electrical engineers in charge of this project,
+    whereas the more sensible approach would have been to have software engineers
+    or data scientists take the lead. While eventually we identified the proper team,
+    the project experienced growing pains along the way.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+  project_page_url: https://arena.gov.au/projects/national-low-voltage-feeder-taxonomy-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 30/10/2021
+  kb_year: '2018'
+  kb_associated_project: National Low-Voltage Feeder Taxonomy Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $485k
+  total_project_value: $2.7m
+  lead_organisation: CSIRO
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/12/2018
+  location: New South Wales, Newcastle
+  project_partners: Energy Networks Australia, Ausgrid, AusNet Electricity Services,
+    Western Power, Endeavour Energy, Energy Queensland, Essential Energy, Horizon
+    Power, SA Power Networks, TasNetworks
+  pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+  markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-29304
+  contributing_source_titles:
+  - National Low-Voltage Feeder Taxonomy Study
+  contributing_sources:
+  - source_title: National Low-Voltage Feeder Taxonomy Study
+    pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+    markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-29305
+  source_title: National Low-Voltage Feeder Taxonomy Study
+  publish_date: 2021-10
+  project_name: National Low-Voltage Feeder Taxonomy Study
+  what_happened: Confidentiality constraints prevented the software developer responsible
+    for data extraction code from accessing actual DNSP network data during development
+    and testing. The developer could only work against a small set of public test
+    data that was not representative of the real data, and a second person with data
+    access was required to be involved in all testing cycles, significantly complicating
+    the development process.
+  lesson_learnt: When data confidentiality prevents developers from accessing actual
+    data, projects should establish a sanitised but representative sample of real
+    data for testing, or accept substantially longer development timelines; indirect
+    access models that require a separate intermediary for every test cycle are inefficient
+    and should be anticipated in project planning.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: A two-person testing arrangement was established where a second
+    person with data access supported the developer; ultimately differential privacy-based
+    approaches were recommended for future projects to allow broader developer access.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id005
+  - 18
+  - 19
+  evidence_excerpt: Due to confidentiality and privacy constraints, the software developer
+    responsible for developing the data extraction code was not permitted direct access
+    to the model data for actual networks… This significantly complicated the development
+    process, which was required to address numerous features in the data of the actual
+    networks, but which had not been present in the test data set.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+  project_page_url: https://arena.gov.au/projects/national-low-voltage-feeder-taxonomy-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 30/10/2021
+  kb_year: '2018'
+  kb_associated_project: National Low-Voltage Feeder Taxonomy Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $485k
+  total_project_value: $2.7m
+  lead_organisation: CSIRO
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/12/2018
+  location: New South Wales, Newcastle
+  project_partners: Energy Networks Australia, Ausgrid, AusNet Electricity Services,
+    Western Power, Endeavour Energy, Energy Queensland, Essential Energy, Horizon
+    Power, SA Power Networks, TasNetworks
+  pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+  markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  source_page_pdf: 37
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-29305
+  contributing_source_titles:
+  - National Low-Voltage Feeder Taxonomy Study
+  contributing_sources:
+  - source_title: National Low-Voltage Feeder Taxonomy Study
+    pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+    markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-29306
+  source_title: National Low-Voltage Feeder Taxonomy Study
+  publish_date: 2021-10
+  project_name: National Low-Voltage Feeder Taxonomy Study
+  what_happened: Virtually all LV network data received from DNSPs was provided in
+    Kron-reduced form with impedance specified in sequence components, an approximation
+    that assumes perfect transposition and balanced loading. This is inappropriate
+    for LV networks, which are inherently unbalanced and have single-phase branches,
+    limiting the accuracy of power flow simulations.
+  lesson_learnt: Projects requiring accurate unbalanced LV power flow simulation should
+    specify at project outset that DNSPs must provide non-Kron-reduced, phase-domain
+    impedance data; accepting sequence-component data for LV networks introduces systematic
+    inaccuracy that cannot be corrected after data collection.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: The team recommended development of first-principles cable and
+    overhead line libraries in the 'abcn' coordinate space using Carson's equations
+    as a future work item to address this systematic data gap.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id006
+  - 20
+  - 21
+  evidence_excerpt: In the data we received from the DNSPs, it was observed that virtually
+    all LV network data was in Kron-reduced form. Furthermore, the impedance data
+    was specified in sequence components (symmetrical components)… transposition does
+    not occur in the LV system, and would not resolve the fact that some parts of
+    the network are inherently unbalanced.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+  project_page_url: https://arena.gov.au/projects/national-low-voltage-feeder-taxonomy-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 30/10/2021
+  kb_year: '2018'
+  kb_associated_project: National Low-Voltage Feeder Taxonomy Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $485k
+  total_project_value: $2.7m
+  lead_organisation: CSIRO
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/12/2018
+  location: New South Wales, Newcastle
+  project_partners: Energy Networks Australia, Ausgrid, AusNet Electricity Services,
+    Western Power, Endeavour Energy, Energy Queensland, Essential Energy, Horizon
+    Power, SA Power Networks, TasNetworks
+  pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+  markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  source_page_pdf: 40
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-29306
+  contributing_source_titles:
+  - National Low-Voltage Feeder Taxonomy Study
+  contributing_sources:
+  - source_title: National Low-Voltage Feeder Taxonomy Study
+    pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+    markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-29314
+  source_title: National Low-Voltage Feeder Taxonomy Study
+  publish_date: 2021-10
+  project_name: National Low-Voltage Feeder Taxonomy Study
+  what_happened: DNSP network records were generally maintained to reflect the network
+    as designed rather than as built and operated. When field changes such as line
+    replacements or reconfigurations occurred, updates were not consistently propagated
+    across GIS, ADMS, and power engineering simulation platforms, meaning no single
+    system represented a reliable source of truth.
+  lesson_learnt: Research projects that depend on DNSP network models should verify
+    whether those models reflect as-designed or as-built conditions; projects requiring
+    operational accuracy should push for DNSP commitment to maintain a single source
+    of truth across GIS and simulation platforms, supported by business process changes
+    for field crews.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: An automated cycle-removal algorithm was developed that successfully
+    de-looped approximately 3,000 LV networks by identifying and opening likely switch
+    elements; approximately 20 networks with unresolvable cycles were excluded from
+    analysis.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages:
+  - 13
+  - 14
+  - 84
+  - 85
+  evidence_excerpt: Another challenge is that network asset data should be maintained
+    to be consistent with the assets in the field… At many DNSPs, it is not clear
+    that any of these software solutions today represents a 'single source of truth'.
+    Moreover, existing records are likely based primarily on the network as designed,
+    rather than the network as built.
+  confidence_note: Canonical record merged from 2 source records across 1 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+  project_page_url: https://arena.gov.au/projects/national-low-voltage-feeder-taxonomy-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 30/10/2021
+  kb_year: '2018'
+  kb_associated_project: National Low-Voltage Feeder Taxonomy Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $485k
+  total_project_value: $2.7m
+  lead_organisation: CSIRO
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/12/2018
+  location: New South Wales, Newcastle
+  project_partners: Energy Networks Australia, Ausgrid, AusNet Electricity Services,
+    Western Power, Endeavour Energy, Energy Queensland, Essential Energy, Horizon
+    Power, SA Power Networks, TasNetworks
+  pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+  markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-29307
+  - ARENA-DLV-29314
+  contributing_source_titles:
+  - National Low-Voltage Feeder Taxonomy Study
+  contributing_sources:
+  - source_title: National Low-Voltage Feeder Taxonomy Study
+    pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+    source_pages:
+    - 14
+    - 84
+    - 85
+    source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+    markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-29308
+  source_title: National Low-Voltage Feeder Taxonomy Study
+  publish_date: 2021-10
+  project_name: National Low-Voltage Feeder Taxonomy Study
+  what_happened: The dataset was strongly geographically biased, with over 90% of
+    LV networks located in south-eastern Australia, dominated by Ausgrid (63,580%)
+    and TasNetworks (28,546% of raw dataset). DNSPs from other regions provided very
+    few networks, and several states were entirely absent, meaning the resulting 23-cluster
+    taxonomy under-represents important network topologies.
+  lesson_learnt: National LV network taxonomy projects should negotiate minimum data
+    quotas from each state or DNSP region before commencing analysis to avoid geographic
+    bias dominating cluster outcomes; if equitable data cannot be obtained, results
+    should be clearly scoped as regional rather than national.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: The geographic bias was documented and the taxonomy was explicitly
+    scoped as a testbed rather than a nationally representative dataset; additional
+    data collection was recommended as future work.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id007
+  - 17
+  - 30
+  - 31
+  evidence_excerpt: The locational distribution of network data was strongly biased
+    towards south-eastern Australia, with over 90% of low-voltage networks in the
+    dataset… these data issues undoubtedly biased results towards the more complete
+    datasets, and likely resulted in the identified clusters missing important network
+    topologies.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+  project_page_url: https://arena.gov.au/projects/national-low-voltage-feeder-taxonomy-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 30/10/2021
+  kb_year: '2018'
+  kb_associated_project: National Low-Voltage Feeder Taxonomy Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $485k
+  total_project_value: $2.7m
+  lead_organisation: CSIRO
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/12/2018
+  location: New South Wales, Newcastle
+  project_partners: Energy Networks Australia, Ausgrid, AusNet Electricity Services,
+    Western Power, Endeavour Energy, Energy Queensland, Essential Energy, Horizon
+    Power, SA Power Networks, TasNetworks
+  pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+  markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  source_page_pdf: 17
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-29308
+  contributing_source_titles:
+  - National Low-Voltage Feeder Taxonomy Study
+  contributing_sources:
+  - source_title: National Low-Voltage Feeder Taxonomy Study
+    pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+    markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-29309
+  source_title: National Low-Voltage Feeder Taxonomy Study
+  publish_date: 2021-10
+  project_name: National Low-Voltage Feeder Taxonomy Study
+  what_happened: An error in the custom parser for Ausgrid's non-standard Excel format
+    caused load data to be missing from many nodes. The issue was discovered after
+    the internal release of the final report when Ausgrid identified that the average
+    number of loads per network was approximately half the correct figure (10 vs 20
+    loads per network across ~45,000 networks).
+  lesson_learnt: Custom parsers written for non-standard proprietary data formats
+    should include automated validation checks against known summary statistics provided
+    by the data owner; post-hoc error discovery at the reporting stage requires expensive
+    re-analysis and risks delaying publication.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: The clustering was re-run with corrected load counts; results
+    showed minimal change (Davies-Bouldin score worsened marginally from 2.3 to 2.6)
+    and domain experts confirmed the original medoids could be retained, with corrected
+    loads added to the Ausgrid network models for release.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id008
+  - 130
+  - 131
+  evidence_excerpt: Ausgrid identified an issue with missing load data on many of
+    their nodes and raised valid concerns that this would skew any resulting network
+    simulations outputs. The issue was traced back to an error in the custom-built
+    parser… Once corrected, the average number of loads per network increase from
+    10 to 20.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+  project_page_url: https://arena.gov.au/projects/national-low-voltage-feeder-taxonomy-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 30/10/2021
+  kb_year: '2018'
+  kb_associated_project: National Low-Voltage Feeder Taxonomy Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $485k
+  total_project_value: $2.7m
+  lead_organisation: CSIRO
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/12/2018
+  location: New South Wales, Newcastle
+  project_partners: Energy Networks Australia, Ausgrid, AusNet Electricity Services,
+    Western Power, Endeavour Energy, Energy Queensland, Essential Energy, Horizon
+    Power, SA Power Networks, TasNetworks
+  pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+  markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  source_page_pdf: 150
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-29309
+  contributing_source_titles:
+  - National Low-Voltage Feeder Taxonomy Study
+  contributing_sources:
+  - source_title: National Low-Voltage Feeder Taxonomy Study
+    pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+    markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.95
+- record_id: ARENA-DLV-29310
+  source_title: National Low-Voltage Feeder Taxonomy Study
+  publish_date: 2021-10
+  project_name: National Low-Voltage Feeder Taxonomy Study
+  what_happened: Data extraction and transformation software had to be developed concurrently
+    with actually performing the extraction and transformation, because testing on
+    a subset of source data invariably failed to expose all data idiosyncrasies. This
+    required both software and processed data to be version-controlled, and the workflow
+    required iterative development throughout the project.
+  lesson_learnt: Data pipeline development for novel, heterogeneous network datasets
+    should be planned as an iterative engineering process with version control for
+    both code and data from the outset; do not assume that a test subset will expose
+    all production data issues before the pipeline is finalised.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: The team adopted concurrent software development and data processing
+    with version control for both, eventually achieving a fully automated extraction
+    workflow.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id009
+  - 86
+  evidence_excerpt: It became necessary to develop the data extraction and transformation
+    process and software concurrently with performing the data extraction and transformation
+    process itself, as testing on a subset of the source data invariably failed to
+    identify all the data idiosyncrasies. This became an iterative development process
+    that required both software and processed data to be version controlled.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+  project_page_url: https://arena.gov.au/projects/national-low-voltage-feeder-taxonomy-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 30/10/2021
+  kb_year: '2018'
+  kb_associated_project: National Low-Voltage Feeder Taxonomy Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $485k
+  total_project_value: $2.7m
+  lead_organisation: CSIRO
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/12/2018
+  location: New South Wales, Newcastle
+  project_partners: Energy Networks Australia, Ausgrid, AusNet Electricity Services,
+    Western Power, Endeavour Energy, Energy Queensland, Essential Energy, Horizon
+    Power, SA Power Networks, TasNetworks
+  pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+  markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  source_page_pdf: 105
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-29310
+  contributing_source_titles:
+  - National Low-Voltage Feeder Taxonomy Study
+  contributing_sources:
+  - source_title: National Low-Voltage Feeder Taxonomy Study
+    pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+    markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-29311
+  source_title: National Low-Voltage Feeder Taxonomy Study
+  publish_date: 2021-10
+  project_name: National Low-Voltage Feeder Taxonomy Study
+  what_happened: The DiTTo parser was modified to include LV-splitting functionality
+    directly within the parser classes rather than as a separate post-processing function.
+    This architectural decision made it difficult to reintegrate the changes back
+    into the open-source DiTTo codebase, and the PowerFactory parser — which relies
+    on a single-threaded proprietary API — could not benefit from multi-processing
+    improvements.
+  lesson_learnt: When extending open-source tools for project-specific needs, implement
+    project-specific functionality as separate modules rather than modifying core
+    classes; this preserves the ability to contribute improvements upstream and avoids
+    creating unresolvable dependencies on proprietary interfaces.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id010
+  - 86
+  - 87
+  evidence_excerpt: In hindsight, it would have been preferable to add this splitting
+    functionality as a separate function rather than making structural changes to
+    the DiTTo parser, which makes it difficult to contribute these changes back to
+    this open-source project.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+  project_page_url: https://arena.gov.au/projects/national-low-voltage-feeder-taxonomy-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 30/10/2021
+  kb_year: '2018'
+  kb_associated_project: National Low-Voltage Feeder Taxonomy Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $485k
+  total_project_value: $2.7m
+  lead_organisation: CSIRO
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/12/2018
+  location: New South Wales, Newcastle
+  project_partners: Energy Networks Australia, Ausgrid, AusNet Electricity Services,
+    Western Power, Endeavour Energy, Energy Queensland, Essential Energy, Horizon
+    Power, SA Power Networks, TasNetworks
+  pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+  markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  source_page_pdf: 104
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-29311
+  contributing_source_titles:
+  - National Low-Voltage Feeder Taxonomy Study
+  contributing_sources:
+  - source_title: National Low-Voltage Feeder Taxonomy Study
+    pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+    markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-29312
+  source_title: National Low-Voltage Feeder Taxonomy Study
+  publish_date: 2021-10
+  project_name: National Low-Voltage Feeder Taxonomy Study
+  what_happened: Despite wide agreement among DNSP partners on the need for greater
+    data sharing, many networks refrained from sharing significant amounts of useful
+    data. Reasons included privacy and security concerns, lack of DNSP capability
+    or resources to facilitate sharing, and concern about sacrificing strategic opportunities.
+    This limited the representativeness of the national taxonomy.
+  lesson_learnt: Data sharing agreements with DNSPs should be negotiated early and
+    explicitly, with a clear framework separating customer privacy data from network
+    topology data; proponents should not assume willingness to share data will translate
+    into actual data flows without structured governance and defined data-sharing
+    protocols.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: research organisation/university
+  delay_category: stakeholder/land/community
+  failure_mode: coordination & stakeholders
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: data & measurement
+  intervention_note: The team recommended development of differential privacy-based
+    network data cleaning tools as a future step to enable broader data sharing while
+    protecting sensitive information.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id011
+  - 14
+  - 88
+  evidence_excerpt: Despite wide agreement on the need for greater data sharing between
+    the electricity industry, researchers, and the public, sharing data in an effective
+    manner remains a challenge… it was clear that many of the networks refrained from
+    sharing significant amounts of useful data.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+  project_page_url: https://arena.gov.au/projects/national-low-voltage-feeder-taxonomy-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 30/10/2021
+  kb_year: '2018'
+  kb_associated_project: National Low-Voltage Feeder Taxonomy Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $485k
+  total_project_value: $2.7m
+  lead_organisation: CSIRO
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/12/2018
+  location: New South Wales, Newcastle
+  project_partners: Energy Networks Australia, Ausgrid, AusNet Electricity Services,
+    Western Power, Endeavour Energy, Energy Queensland, Essential Energy, Horizon
+    Power, SA Power Networks, TasNetworks
+  pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+  markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  source_page_pdf: 107
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-29312
+  contributing_source_titles:
+  - National Low-Voltage Feeder Taxonomy Study
+  contributing_sources:
+  - source_title: National Low-Voltage Feeder Taxonomy Study
+    pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+    markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-29313
+  source_title: National Low-Voltage Feeder Taxonomy Study
+  publish_date: 2021-10
+  project_name: National Low-Voltage Feeder Taxonomy Study
+  what_happened: No publicly available Australian customer load data with sufficient
+    time resolution and both active and reactive power profiles existed for use in
+    the power flow simulations. The best available dataset — the Smart Grid Smart
+    Cities Ausgrid Solar Homes data — was limited to 30-minute resolution, one geographic
+    region (coastal NSW), and real power only, with no commercial or industrial customers.
+  lesson_learnt: Future DER integration simulation projects should explicitly scope
+    the availability of suitable public load data before committing to power flow
+    analysis deliverables; where data gaps exist, budget for load profile synthesis
+    or advocate for AEMO/DNSP data releases with higher time resolution and reactive
+    power components.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: The team used the Smart Grid Smart Cities dataset as the best
+    available option and explicitly noted its limitations in all results presentations.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id012
+  - 13
+  - 85
+  - 86
+  evidence_excerpt: The load data wasn't harmonised. We would ideally have access
+    to public, realistic, customer load data with high time resolution, with both
+    active and reactive power profiles. Such data currently does not exist for Australia.
+    Most data sources provide only active power and 30-minute resolution, or they
+    are too limited in diversity.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+  project_page_url: https://arena.gov.au/projects/national-low-voltage-feeder-taxonomy-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 30/10/2021
+  kb_year: '2018'
+  kb_associated_project: National Low-Voltage Feeder Taxonomy Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $485k
+  total_project_value: $2.7m
+  lead_organisation: CSIRO
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/12/2018
+  location: New South Wales, Newcastle
+  project_partners: Energy Networks Australia, Ausgrid, AusNet Electricity Services,
+    Western Power, Endeavour Energy, Energy Queensland, Essential Energy, Horizon
+    Power, SA Power Networks, TasNetworks
+  pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+  markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-29313
+  contributing_source_titles:
+  - National Low-Voltage Feeder Taxonomy Study
+  contributing_sources:
+  - source_title: National Low-Voltage Feeder Taxonomy Study
+    pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+    markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-29315
+  source_title: National Low-Voltage Feeder Taxonomy Study
+  publish_date: 2021-10
+  project_name: National Low-Voltage Feeder Taxonomy Study
+  what_happened: The project identified a significant deficit in digital literacy
+    and capability across DNSPs, regulators, and researchers, particularly in the
+    intersection of data science and electrical engineering. Most data scientists
+    are trained for time-series or tabular data and lack skills in graph-based network
+    data processing, while most electrical engineers lack software engineering and
+    data science skills.
+  lesson_learnt: Programmes involving LV network data should proactively assess the
+    digital capabilities of all project participants at inception and provide targeted
+    training or recruit specialised staff; the scarcity of professionals skilled in
+    both power systems and data science is a systemic constraint that should be treated
+    as a project risk.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: internal governance/resourcing
+  failure_mode: coordination & stakeholders
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: The project recommended establishing a baseline of digital capabilities
+    across relevant industry sectors and developing a coherent plan to build necessary
+    skills and tools.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id013
+  - 13
+  - 14
+  - 87
+  evidence_excerpt: Due to the large quantities of data in propriety data formats
+    with a complex data model, the key challenges in this project were at the intersection
+    of data science and software engineering, with input from domain expertise required
+    for integration. Resourcing such multidisciplinary projects is well-known to be
+    challenging.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+  project_page_url: https://arena.gov.au/projects/national-low-voltage-feeder-taxonomy-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 30/10/2021
+  kb_year: '2018'
+  kb_associated_project: National Low-Voltage Feeder Taxonomy Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $485k
+  total_project_value: $2.7m
+  lead_organisation: CSIRO
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/12/2018
+  location: New South Wales, Newcastle
+  project_partners: Energy Networks Australia, Ausgrid, AusNet Electricity Services,
+    Western Power, Endeavour Energy, Energy Queensland, Essential Energy, Horizon
+    Power, SA Power Networks, TasNetworks
+  pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+  markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-29315
+  contributing_source_titles:
+  - National Low-Voltage Feeder Taxonomy Study
+  contributing_sources:
+  - source_title: National Low-Voltage Feeder Taxonomy Study
+    pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+    markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.72
+- record_id: ARENA-DLV-29316
+  source_title: National Low-Voltage Feeder Taxonomy Study
+  publish_date: 2021-10
+  project_name: National Low-Voltage Feeder Taxonomy Study
+  what_happened: The initial clustering runs using standard elbow-method and mean
+    silhouette score both yielded k=6 clusters, which domain experts considered too
+    few to capture all expected LV network types. The final cluster count of k=23
+    was chosen based on Davies-Bouldin index performance combined with domain expert
+    review, after testing k=2 through k=40.
+  lesson_learnt: Automated statistical methods for choosing cluster counts in network
+    taxonomy projects are insufficient without domain expert review; projects should
+    plan for an iterative cluster evaluation process that combines multiple performance
+    metrics with expert validation of resulting network representatives.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: The team trialled k=2 through k=40 and used the Davies-Bouldin
+    index combined with domain expert review of cluster medoids to select k=23 as
+    the final taxonomy.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id014
+  - 29
+  - 30
+  evidence_excerpt: Both methods were run 100 times each yielding k=6 clusters. Upon
+    advice from domain experts, the value of k for the elbow method and mean silhouette
+    score seemed too low to capture all the expected information about the low-voltage
+    networks, so we trialled for k=2, 3, …, 40 clusters, settling on k=23.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+  project_page_url: https://arena.gov.au/projects/national-low-voltage-feeder-taxonomy-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 30/10/2021
+  kb_year: '2018'
+  kb_associated_project: National Low-Voltage Feeder Taxonomy Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $485k
+  total_project_value: $2.7m
+  lead_organisation: CSIRO
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/12/2018
+  location: New South Wales, Newcastle
+  project_partners: Energy Networks Australia, Ausgrid, AusNet Electricity Services,
+    Western Power, Endeavour Energy, Energy Queensland, Essential Energy, Horizon
+    Power, SA Power Networks, TasNetworks
+  pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+  markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-29316
+  contributing_source_titles:
+  - National Low-Voltage Feeder Taxonomy Study
+  contributing_sources:
+  - source_title: National Low-Voltage Feeder Taxonomy Study
+    pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+    markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-29317
+  source_title: National Low-Voltage Feeder Taxonomy Study
+  publish_date: 2021-10
+  project_name: National Low-Voltage Feeder Taxonomy Study
+  what_happened: Clustering runs with k values below 16 produced clusters that almost
+    exclusively split the dataset by DNSP rather than by genuine network topology
+    characteristics, an artefact of the highly imbalanced dataset in which Ausgrid
+    and TasNetworks dominated. This made low-k results unreliable for use as a national
+    taxonomy.
+  lesson_learnt: When clustering heterogeneous datasets from multiple data providers
+    with very unequal sample sizes, validate cluster outputs to ensure clusters reflect
+    real-world features rather than data provenance; consider stratified sampling
+    or weighting approaches to reduce provider-dominance effects before proceeding
+    to higher-k analysis.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Clustering runs with k<16 were dismissed and higher-k values
+    were used, which produced more topologically diverse clusters from smaller DNSP
+    datasets.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id015
+  - 30
+  evidence_excerpt: Clustering runs with lower values (k<16) were dismissed as they
+    were observed to select clusters that appeared primarily to merely split the dataset
+    into clusters consisting almost exclusively of networks from one of two DNSPs,
+    partly due to the highly imbalanced dataset.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+  project_page_url: https://arena.gov.au/projects/national-low-voltage-feeder-taxonomy-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 30/10/2021
+  kb_year: '2018'
+  kb_associated_project: National Low-Voltage Feeder Taxonomy Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $485k
+  total_project_value: $2.7m
+  lead_organisation: CSIRO
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/12/2018
+  location: New South Wales, Newcastle
+  project_partners: Energy Networks Australia, Ausgrid, AusNet Electricity Services,
+    Western Power, Endeavour Energy, Energy Queensland, Essential Energy, Horizon
+    Power, SA Power Networks, TasNetworks
+  pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+  markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-29317
+  contributing_source_titles:
+  - National Low-Voltage Feeder Taxonomy Study
+  contributing_sources:
+  - source_title: National Low-Voltage Feeder Taxonomy Study
+    pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+    markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-29318
+  source_title: National Low-Voltage Feeder Taxonomy Study
+  publish_date: 2021-10
+  project_name: National Low-Voltage Feeder Taxonomy Study
+  what_happened: The LVFT project's scope and modelling approach should have been
+    conceptualised as the first step in a series of projects rather than as a standalone
+    deliverable. The project identified that clustering should have used power flow
+    metrics in addition to static network metrics, but this would have required significantly
+    more data cleaning than was achievable within the project.
+  lesson_learnt: Large-scale network data and taxonomy projects should be explicitly
+    structured as multi-stage programmes; the first stage should focus on understanding
+    data properties and limitations before committing to representative clustering,
+    rather than attempting comprehensive taxonomy development in a single project.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: 'The project team recommended a phased approach for follow-on
+    work: first understand data properties, then identify gaps relative to real-world
+    networks, then develop cleaning tools for real-world representativeness.'
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id016
+  - 87
+  evidence_excerpt: 'This project should have been conceptualised as the first step
+    in a series of projects. For example, first we try to understand the properties
+    and limitations of the existing network data: perform statistical analysis, explore
+    biases and identify limited-scope representatives. Next, we focus on understanding
+    the gap between the existing network data and what we know about real-world networks
+    from the electrical engineering perspective.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+  project_page_url: https://arena.gov.au/projects/national-low-voltage-feeder-taxonomy-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 30/10/2021
+  kb_year: '2018'
+  kb_associated_project: National Low-Voltage Feeder Taxonomy Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $485k
+  total_project_value: $2.7m
+  lead_organisation: CSIRO
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/12/2018
+  location: New South Wales, Newcastle
+  project_partners: Energy Networks Australia, Ausgrid, AusNet Electricity Services,
+    Western Power, Endeavour Energy, Energy Queensland, Essential Energy, Horizon
+    Power, SA Power Networks, TasNetworks
+  pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+  markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  source_page_pdf: 106
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-29318
+  contributing_source_titles:
+  - National Low-Voltage Feeder Taxonomy Study
+  contributing_sources:
+  - source_title: National Low-Voltage Feeder Taxonomy Study
+    pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+    markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-29319
+  source_title: National Low-Voltage Feeder Taxonomy Study
+  publish_date: 2021-10
+  project_name: National Low-Voltage Feeder Taxonomy Study
+  what_happened: The project found a sizeable gap between the amount of data, tools,
+    skills, and capabilities required to enable a low-cost bidirectional grid and
+    what currently exists in the Australian electricity sector. DNSPs underestimate
+    their network hosting capacity because they lack reliable data, leading to conservative
+    constraints that reduce overall network utilisation and increase costs to customers.
+  lesson_learnt: DNSP investment cases for improved network data collection should
+    be framed around quantified hosting capacity uplift and reduced customer costs,
+    rather than data quality as an abstract goal; without a clear link between data
+    investment and network utilisation outcomes, DNSPs will continue to under-invest
+    in data.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id017
+  - 11
+  - 12
+  evidence_excerpt: The challenge with this perspective is that it fails to recognise
+    that the network constraints that are communicated are likely quite conservative,
+    because with limited information the natural and proper course for DNSP businesses
+    is to avoid exceeding the capacity of the network by underestimating its limits.
+    This approach lowers the overall utilisation of the network, increasing costs
+    to customers.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (22/27), network/grid (5/27); project_scale_band reconciled to ''demonstration''
+    from: demonstration (24/27), programmatic/portfolio-level (3/27); proponent_type
+    reconciled to ''research organisation/university'' from: research organisation/university
+    (21/27), network business (6/27)'
+  source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+  project_page_url: https://arena.gov.au/projects/national-low-voltage-feeder-taxonomy-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 30/10/2021
+  kb_year: '2018'
+  kb_associated_project: National Low-Voltage Feeder Taxonomy Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $485k
+  total_project_value: $2.7m
+  lead_organisation: CSIRO
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/12/2018
+  location: New South Wales, Newcastle
+  project_partners: Energy Networks Australia, Ausgrid, AusNet Electricity Services,
+    Western Power, Endeavour Energy, Energy Queensland, Essential Energy, Horizon
+    Power, SA Power Networks, TasNetworks
+  pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+  markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-29319
+  contributing_source_titles:
+  - National Low-Voltage Feeder Taxonomy Study
+  contributing_sources:
+  - source_title: National Low-Voltage Feeder Taxonomy Study
+    pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+    markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-29320
+  source_title: National Low-Voltage Feeder Taxonomy Study
+  publish_date: 2021-10
+  project_name: National Low-Voltage Feeder Taxonomy Study
+  what_happened: The project confirmed that AEMO's NMI smart meter data provides only
+    real power at 30-minute resolution, which is insufficient for accurate LV network
+    analysis. High time resolution (sub-5-minute) data and reactive power data are
+    both needed to accurately assess network losses and voltage quality, particularly
+    given cloud cover variability and phase unbalance effects common in LV networks.
+  lesson_learnt: DER integration research requiring accurate LV power flow analysis
+    should not rely on AEMO NMI data as its primary load dataset; projects should
+    either commission sub-5-minute active and reactive power monitoring on selected
+    networks, or explicitly acknowledge that 30-minute active-power-only data will
+    produce optimistic loss and voltage assessments.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: The project recommended synthesis of high-resolution active and
+    reactive power load profiles from existing WattWatchers, SwitchDin, and similar
+    monitoring datasets as near-term actionable steps.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id018
+  - 13
+  evidence_excerpt: AEMO's NMI data contains only real power data with a 30-minute
+    time resolution. Integrating DER requires significant attention to reactive power,
+    making data on reactive power as valuable as that for real power. High time resolution
+    is required to accurately assess network losses, given significant short-term
+    changes in cloud cover that impacts solar customers and unbalanced phases, both
+    common in LV networks.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+  project_page_url: https://arena.gov.au/projects/national-low-voltage-feeder-taxonomy-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 30/10/2021
+  kb_year: '2018'
+  kb_associated_project: National Low-Voltage Feeder Taxonomy Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $485k
+  total_project_value: $2.7m
+  lead_organisation: CSIRO
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/12/2018
+  location: New South Wales, Newcastle
+  project_partners: Energy Networks Australia, Ausgrid, AusNet Electricity Services,
+    Western Power, Endeavour Energy, Energy Queensland, Essential Energy, Horizon
+    Power, SA Power Networks, TasNetworks
+  pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+  markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-29320
+  contributing_source_titles:
+  - National Low-Voltage Feeder Taxonomy Study
+  contributing_sources:
+  - source_title: National Low-Voltage Feeder Taxonomy Study
+    pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+    markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-29321
+  source_title: National Low-Voltage Feeder Taxonomy Study
+  publish_date: 2021-10
+  project_name: National Low-Voltage Feeder Taxonomy Study
+  what_happened: Power flow simulation of Network S — a single-phase rural network
+    with high feeder impedance — showed a load voltage of approximately 218 V at the
+    customer end, which is below the AS 61000.3.100 lower limit of 216 V (1st percentile)
+    and outside the preferred operating range, even with a relatively small load assigned.
+    This occurred because the reference bus was set to 225 V (0.9 pu) due to the long
+    high-impedance feeder.
+  lesson_learnt: Long rural single-phase feeders with high impedance are particularly
+    susceptible to under-voltage even at low load levels; network planners deploying
+    DER on such feeders should include conservation voltage reduction or tap-changer
+    management as standard mitigations rather than optional enhancements.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The simulation notebooks demonstrated conservation voltage reduction
+    as an available intervention for such networks.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id019
+  - 62
+  - 63
+  evidence_excerpt: Network S has only a sole, single-phase customer… owing to the
+    relatively long length (high impedance) of the feeder, there is a reasonable voltage
+    drop magnitude from the reference bus. In this case we have set the reference
+    bus to 225V (0.9 Vpu) resulting in a load voltage at about 218V, which is outside
+    the target range.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (22/27), network/grid (5/27); proponent_type reconciled to ''research organisation/university''
+    from: research organisation/university (21/27), network business (6/27)'
+  source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+  project_page_url: https://arena.gov.au/projects/national-low-voltage-feeder-taxonomy-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 30/10/2021
+  kb_year: '2018'
+  kb_associated_project: National Low-Voltage Feeder Taxonomy Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $485k
+  total_project_value: $2.7m
+  lead_organisation: CSIRO
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/12/2018
+  location: New South Wales, Newcastle
+  project_partners: Energy Networks Australia, Ausgrid, AusNet Electricity Services,
+    Western Power, Endeavour Energy, Energy Queensland, Essential Energy, Horizon
+    Power, SA Power Networks, TasNetworks
+  pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+  markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-29321
+  contributing_source_titles:
+  - National Low-Voltage Feeder Taxonomy Study
+  contributing_sources:
+  - source_title: National Low-Voltage Feeder Taxonomy Study
+    pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+    markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-29322
+  source_title: National Low-Voltage Feeder Taxonomy Study
+  publish_date: 2021-10
+  project_name: National Low-Voltage Feeder Taxonomy Study
+  what_happened: Power flow analysis of Network Q with PV showed that overvoltage
+    was largely avoided at 50% PV penetration but that little margin remained to increase
+    PV uptake further. The presence of phase unbalance and mutual impedance also caused
+    the lowest voltages in some phases to fall lower than in the base case without
+    PV.
+  lesson_learnt: LV networks with pre-existing phase unbalance have reduced headroom
+    for additional PV penetration; DER hosting capacity assessments on such networks
+    should use unbalanced three-phase power flow simulation rather than balanced approximations
+    to avoid overestimating available capacity.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id020
+  - 69
+  - 70
+  evidence_excerpt: Overvoltage is largely avoided, however, there is little margin
+    left to increase the uptake of PV. In the presence of phase unbalance and mutual
+    impedance, we see that the lowest voltages become lower.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (22/27), network/grid (5/27); proponent_type reconciled to ''research organisation/university''
+    from: research organisation/university (21/27), network business (6/27)'
+  source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+  project_page_url: https://arena.gov.au/projects/national-low-voltage-feeder-taxonomy-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 30/10/2021
+  kb_year: '2018'
+  kb_associated_project: National Low-Voltage Feeder Taxonomy Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $485k
+  total_project_value: $2.7m
+  lead_organisation: CSIRO
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/12/2018
+  location: New South Wales, Newcastle
+  project_partners: Energy Networks Australia, Ausgrid, AusNet Electricity Services,
+    Western Power, Endeavour Energy, Energy Queensland, Essential Energy, Horizon
+    Power, SA Power Networks, TasNetworks
+  pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+  markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  source_page_pdf: 89
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-29322
+  contributing_source_titles:
+  - National Low-Voltage Feeder Taxonomy Study
+  contributing_sources:
+  - source_title: National Low-Voltage Feeder Taxonomy Study
+    pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+    source_pages: *id020
+    source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+    markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-29323
+  source_title: National Low-Voltage Feeder Taxonomy Study
+  publish_date: 2021-10
+  project_name: National Low-Voltage Feeder Taxonomy Study
+  what_happened: Network G power flow with PV showed overvoltage occurring during
+    periods of reverse power flow. The network operates nominally at 250 V, leaving
+    little margin before overvoltage limits are breached, and the mutual induction
+    between unbalanced phases also caused the lowest voltages to be lower than in
+    the base case.
+  lesson_learnt: Networks with nominal operating voltages at or near the upper end
+    of the permissible range (e.g. 250 V phase-to-neutral) are disproportionately
+    constrained in their ability to host rooftop PV; voltage setpoint optimisation
+    at the distribution transformer is a prerequisite for maximising PV hosting capacity
+    on such networks.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: The simulation notebooks demonstrated conservation voltage reduction
+    (changing transformer tap setpoints) as an intervention to create headroom for
+    PV.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id021
+  - 65
+  - 66
+  evidence_excerpt: Network G has limited unbalance in the power flow through the
+    substation. Nevertheless, unbalance in the voltage magnitudes is more easily observed.
+    As the network operates at 250 V nominally, there is little margin to avoid overvoltage,
+    and observe the overvoltage during the periods of reverse flow.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (22/27), network/grid (5/27); proponent_type reconciled to ''research organisation/university''
+    from: research organisation/university (21/27), network business (6/27)'
+  source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+  project_page_url: https://arena.gov.au/projects/national-low-voltage-feeder-taxonomy-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 30/10/2021
+  kb_year: '2018'
+  kb_associated_project: National Low-Voltage Feeder Taxonomy Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $485k
+  total_project_value: $2.7m
+  lead_organisation: CSIRO
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/12/2018
+  location: New South Wales, Newcastle
+  project_partners: Energy Networks Australia, Ausgrid, AusNet Electricity Services,
+    Western Power, Endeavour Energy, Energy Queensland, Essential Energy, Horizon
+    Power, SA Power Networks, TasNetworks
+  pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+  markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  source_page_pdf: 85
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-29323
+  contributing_source_titles:
+  - National Low-Voltage Feeder Taxonomy Study
+  contributing_sources:
+  - source_title: National Low-Voltage Feeder Taxonomy Study
+    pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+    source_pages: *id021
+    source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+    markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-29324
+  source_title: National Low-Voltage Feeder Taxonomy Study
+  publish_date: 2021-10
+  project_name: National Low-Voltage Feeder Taxonomy Study
+  what_happened: The project observed that DNSPs today often rely on load data for
+    planning that is similarly inaccurate to data available to external researchers
+    — suggesting that the data quality problem in Australian LV distribution affects
+    internal DNSP planning processes as well as external research.
+  lesson_learnt: DNSPs should not assume their internal planning load data is materially
+    better than publicly available data; investment in high-resolution sub-metering
+    and realistic customer load profile libraries would benefit both internal DNSP
+    planning and the broader research community.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id022
+  - 13
+  evidence_excerpt: This project revealed that DNSPs today often rely on load data
+    for planning that is similarly inaccurate to that available to researchers.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (22/27), network/grid (5/27); project_scale_band reconciled to ''demonstration''
+    from: demonstration (24/27), programmatic/portfolio-level (3/27); proponent_type
+    reconciled to ''research organisation/university'' from: research organisation/university
+    (21/27), network business (6/27)'
+  source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+  project_page_url: https://arena.gov.au/projects/national-low-voltage-feeder-taxonomy-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 30/10/2021
+  kb_year: '2018'
+  kb_associated_project: National Low-Voltage Feeder Taxonomy Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $485k
+  total_project_value: $2.7m
+  lead_organisation: CSIRO
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/12/2018
+  location: New South Wales, Newcastle
+  project_partners: Energy Networks Australia, Ausgrid, AusNet Electricity Services,
+    Western Power, Endeavour Energy, Energy Queensland, Essential Energy, Horizon
+    Power, SA Power Networks, TasNetworks
+  pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+  markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-29324
+  contributing_source_titles:
+  - National Low-Voltage Feeder Taxonomy Study
+  contributing_sources:
+  - source_title: National Low-Voltage Feeder Taxonomy Study
+    pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+    source_pages: *id022
+    source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+    markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-29325
+  source_title: National Low-Voltage Feeder Taxonomy Study
+  publish_date: 2021-10
+  project_name: National Low-Voltage Feeder Taxonomy Study
+  what_happened: The project confirmed that 23 representative LV network models and
+    associated Julia/Pluto simulation notebooks were successfully developed and released
+    publicly via the NEAR platform, with OpenDSS as the power flow engine and support
+    for residential load, PV, battery storage, and demand response scenarios.
+  lesson_learnt: Releasing simulation models and notebooks together as a combined
+    testbed — with interactive parameter controls for load scaling, PV penetration,
+    battery dispatch, and voltage reduction — significantly lowers the barrier to
+    entry for researchers and DNSPs wishing to evaluate DER integration technologies
+    without building models from scratch.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id023
+  - 9
+  - 17
+  - 18
+  evidence_excerpt: These 23 low-voltage network data sets have been disseminated
+    for free and unfettered use by the energy sector via the publicly accessible data
+    platform the Australian National Energy Analytics Research (NEAR, near.csiro.au)
+    platform. The network data sets are accompanied by notebooks that illustrate their
+    use for power systems analysis, with OpenDSS as the simulation engine for unbalanced
+    power flow analysis.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+  project_page_url: https://arena.gov.au/projects/national-low-voltage-feeder-taxonomy-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 30/10/2021
+  kb_year: '2018'
+  kb_associated_project: National Low-Voltage Feeder Taxonomy Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $485k
+  total_project_value: $2.7m
+  lead_organisation: CSIRO
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/12/2018
+  location: New South Wales, Newcastle
+  project_partners: Energy Networks Australia, Ausgrid, AusNet Electricity Services,
+    Western Power, Endeavour Energy, Energy Queensland, Essential Energy, Horizon
+    Power, SA Power Networks, TasNetworks
+  pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+  markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  source_page_pdf: 17
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-29325
+  contributing_source_titles:
+  - National Low-Voltage Feeder Taxonomy Study
+  contributing_sources:
+  - source_title: National Low-Voltage Feeder Taxonomy Study
+    pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+    source_pages: *id023
+    source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+    markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-29326
+  source_title: National Low-Voltage Feeder Taxonomy Study
+  publish_date: 2021-10
+  project_name: National Low-Voltage Feeder Taxonomy Study
+  what_happened: The project found that DNSPs lack appropriate middle-ware to synchronise
+    network changes across multiple software platforms (GIS, ADMS, simulation tools),
+    making it likely that some clusters identified were artefacts of specific DNSP
+    data practices rather than genuine distinct network topologies. This echoes findings
+    from an earlier ARENA-funded Solar Enablement Initiative project.
+  lesson_learnt: Future ARENA-funded DER integration projects that rely on DNSP network
+    data should explicitly address the inter-system synchronisation problem at project
+    scoping; without a reliable single source of truth for network topology, simulation
+    results cannot be confidently linked to real-world network conditions.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id024
+  - 85
+  - 101
+  evidence_excerpt: Better middle-ware for tracking network data across different
+    information system siloes (e.g. SAP, GIS, PowerFactory/Sincal) is needed… There
+    is a risk that a few of the clusters are selected accidentally for data artefacts,
+    yet these artefacts do not represent the real world, and therefore the cluster
+    or archetype is not representative of the underlying features in the real world.
+  confidence_note: 'The lesson references the earlier Solar Enablement Initiative
+    findings (Krause 2019) as confirming the same pattern.; project_scale_band reconciled
+    to ''demonstration'' from: demonstration (24/27), programmatic/portfolio-level
+    (3/27); proponent_type reconciled to ''research organisation/university'' from:
+    research organisation/university (21/27), network business (6/27)'
+  source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+  project_page_url: https://arena.gov.au/projects/national-low-voltage-feeder-taxonomy-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 30/10/2021
+  kb_year: '2018'
+  kb_associated_project: National Low-Voltage Feeder Taxonomy Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $485k
+  total_project_value: $2.7m
+  lead_organisation: CSIRO
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/12/2018
+  location: New South Wales, Newcastle
+  project_partners: Energy Networks Australia, Ausgrid, AusNet Electricity Services,
+    Western Power, Endeavour Energy, Energy Queensland, Essential Energy, Horizon
+    Power, SA Power Networks, TasNetworks
+  pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+  markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-29326
+  contributing_source_titles:
+  - National Low-Voltage Feeder Taxonomy Study
+  contributing_sources:
+  - source_title: National Low-Voltage Feeder Taxonomy Study
+    pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+    source_pages: *id024
+    source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+    markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-29327
+  source_title: National Low-Voltage Feeder Taxonomy Study
+  publish_date: 2021-10
+  project_name: National Low-Voltage Feeder Taxonomy Study
+  what_happened: The project identified that proprietary power engineering data formats
+    — particularly PowerFactory's .pfd format — require expensive software licences
+    for data access, and no commercial-grade tools exist to convert between formats.
+    OpenDSS, while technically capable, has a steep learning curve and lacks user-friendly
+    debugging functionality for network data issues.
+  lesson_learnt: ARENA-funded research programmes involving LV network simulation
+    should advocate for and contribute to the development of open, licence-free network
+    data formats and conversion tools; projects that depend on proprietary formats
+    should budget for licence costs and tool development, and should not assume off-the-shelf
+    conversion solutions exist.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated integration
+  intervention_note: Custom parsers were contributed to the open-source DiTTo framework,
+    and the team recommended platforms such as LFEnergy, RACE for Networks, and GlobalPST
+    as venues for collaborative tool development.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id025
+  - 84
+  evidence_excerpt: Proprietary data formats, such as the PowerFactory '.pfd', are
+    a significant barrier, particularly when they require expensive licenses. Furthermore,
+    there are no commercial-grade tools to convert between different formats, or to
+    open them up.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+  project_page_url: https://arena.gov.au/projects/national-low-voltage-feeder-taxonomy-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 30/10/2021
+  kb_year: '2018'
+  kb_associated_project: National Low-Voltage Feeder Taxonomy Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $485k
+  total_project_value: $2.7m
+  lead_organisation: CSIRO
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/12/2018
+  location: New South Wales, Newcastle
+  project_partners: Energy Networks Australia, Ausgrid, AusNet Electricity Services,
+    Western Power, Endeavour Energy, Energy Queensland, Essential Energy, Horizon
+    Power, SA Power Networks, TasNetworks
+  pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+  markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-29327
+  contributing_source_titles:
+  - National Low-Voltage Feeder Taxonomy Study
+  contributing_sources:
+  - source_title: National Low-Voltage Feeder Taxonomy Study
+    pdf_url: https://arena.gov.au/assets/2022/08/national-low-voltage-feeder-taxonomy-study.pdf
+    source_pages: *id025
+    source_url: https://arena.gov.au/knowledge-bank/national-low-voltage-feeder-taxonomy-study/
+    markdown_filename: national_low_voltage_feeder_taxonomy_study.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82

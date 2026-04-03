@@ -1,0 +1,1523 @@
+- record_id: ARENA-DLV-14801
+  source_title: 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons
+    Learnt 1'
+  publish_date: 2019-10
+  project_name: Proa Analytics Solar Farm Short Term Forecasting Project
+  what_happened: The AEMO self-forecast registration and assessment process required
+    close, repeated coordination between the solar farm owner, asset manager, AEMO
+    Operational Forecasting team, and the forecasting provider, with each party holding
+    essential information or permissions that the others lacked.
+  lesson_learnt: Establish and maintain a strong working relationship between all
+    self-forecasting stakeholders — solar farm owner, asset manager, AEMO Operational
+    Forecasting, and the forecasting provider — before commencing registration, as
+    each party holds critical permissions or technical knowledge that cannot be substituted
+    by any other party.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: coordination & stakeholders
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Proa proactively cultivated working relationships with all stakeholders,
+    which they report worked well and enabled the AEMO assessment process to proceed
+    successfully.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id001
+  - 4
+  evidence_excerpt: The most significant lesson learnt in the project so far is the
+    importance of a good working relationship and communication between solar farm
+    owner, asset manager, AEMO Operational Forecasting, and solar forecasting provider.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/proa-analytics-solar-farm-short-term-forecasting-project-lessons-learned-1/
+  project_page_url: https://arena.gov.au/projects/proa-analytics-solar-forecasts/
+  kb_category: Solar energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Proa Analytics Solar Forecasts
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $728k
+  total_project_value: $1.39m
+  lead_organisation: Proa Analytics Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 21/01/2019
+  location: Queensland, Victoria
+  project_partners: Sieltec Canarias, Oakey 1 Asset Company Pty Ltd, Genex Power Limited
+  pdf_url: https://arena.gov.au/assets/2019/12/proa-solar-farm-short-term-forecasting-lessons-learnt.pdf
+  markdown_filename: proa_analytics_solar_farm_short_term_forecasting_project_lessons_learnt_1.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14801
+  contributing_source_titles:
+  - 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons Learnt 1'
+  contributing_sources:
+  - source_title: 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons
+      Learnt 1'
+    pdf_url: https://arena.gov.au/assets/2019/12/proa-solar-farm-short-term-forecasting-lessons-learnt.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/proa-analytics-solar-farm-short-term-forecasting-project-lessons-learned-1/
+    markdown_filename: proa_analytics_solar_farm_short_term_forecasting_project_lessons_learnt_1.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-14802
+  source_title: 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons
+    Learnt 1'
+  publish_date: 2019-10
+  project_name: Proa Analytics Solar Farm Short Term Forecasting Project
+  what_happened: Under AEMO's self-forecast registration process, only the officially
+    registered market participant is permitted to complete most registration tasks,
+    including resetting the EMMS API password every 90 days, creating coordination
+    overhead and potential delays when the forecasting provider needs a password reset
+    but cannot action it directly.
+  lesson_learnt: When engaging an independent self-forecasting provider, solar farm
+    operators should establish a clear password renewal protocol well ahead of the
+    90-day expiry threshold; until AEMO's API-based self-service reset is available,
+    this administrative dependency is a material operational risk that increases costs
+    and can disrupt forecast submissions.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: AEMO was developing an API-based password reset capability for
+    self-forecasters at the time of reporting, expected to eliminate the manual renewal
+    process and its associated overhead.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages:
+  - 3
+  - 4
+  - 6
+  evidence_excerpt: Such passwords expire automatically every 90 days and need to
+    be manually reset before this time, otherwise any self-forecast submission will
+    be automatically rejected by AEMO systems... Such a process had a significant
+    overhead in communication and administration, as well as creating risk that a
+    key person would be unavailable at a critical time.
+  confidence_note: Issue severity assessed as minor because delays are described as
+    potential and recurring rather than a single acute event; lifecycle_phase set
+    to operations as the password-reset burden recurs during ongoing forecast submission.
+    Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/proa-analytics-solar-farm-short-term-forecasting-project-lessons-learned-1/
+  project_page_url: https://arena.gov.au/projects/proa-analytics-solar-forecasts/
+  kb_category: Solar energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Proa Analytics Solar Forecasts
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $728k
+  total_project_value: $1.39m
+  lead_organisation: Proa Analytics Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 21/01/2019
+  location: Queensland, Victoria
+  project_partners: Sieltec Canarias, Oakey 1 Asset Company Pty Ltd, Genex Power Limited
+  pdf_url: https://arena.gov.au/assets/2019/12/proa-solar-farm-short-term-forecasting-lessons-learnt.pdf
+  markdown_filename: proa_analytics_solar_farm_short_term_forecasting_project_lessons_learnt_1.md
+  source_page_pdf: 4
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-14802
+  - ARENA-DLV-43102
+  contributing_source_titles:
+  - 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons Learnt 2'
+  - 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons Learnt 1'
+  contributing_sources:
+  - source_title: 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons
+      Learnt 1'
+    pdf_url: https://arena.gov.au/assets/2019/12/proa-solar-farm-short-term-forecasting-lessons-learnt.pdf
+    source_pages:
+    - 4
+    - 6
+    source_url: https://arena.gov.au/knowledge-bank/proa-analytics-solar-farm-short-term-forecasting-project-lessons-learned-1/
+    markdown_filename: proa_analytics_solar_farm_short_term_forecasting_project_lessons_learnt_1.md
+  - source_title: 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons
+      Learnt 2'
+    pdf_url: https://arena.gov.au/assets/2020/07/proa-analytics-solar-forecasting-lessons-learnt-report-2.pdf
+    source_pages:
+    - 3
+    source_url: https://arena.gov.au/knowledge-bank/proa-analytics-solar-farm-short-term-forecasting-project-lessons-learnt-2/
+    markdown_filename: proa_analytics_solar_farm_short_term_forecasting_project_lessons_learnt_2.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-14803
+  source_title: 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons
+    Learnt 1'
+  publish_date: 2019-10
+  project_name: Proa Analytics Solar Farm Short Term Forecasting Project
+  what_happened: AEMO's self-forecast assessment procedure requires that 80% or more
+    of dispatch intervals (DIs) during the assessment period be 'included'; DIs are
+    excluded when a solar farm is network-constrained or when spot prices fall below
+    the farm's offer price, meaning farms in high-constraint or negative-price environments
+    may be unable to pass assessment regardless of forecast accuracy.
+  lesson_learnt: When selecting sites for self-forecast demonstration, prioritise
+    solar farms with low frequency of network constraints and negative spot prices
+    — high exclusion rates under AEMO's 80% eligibility criterion can prevent assessment
+    entirely, even if forecasts are technically superior to AWEFS/ASEFS.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: technology vendor
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: 'Proa proposed two regulatory fixes to AEMO: replacing the percentage-based
+    eligibility criterion with a fixed minimum number of DIs, and enabling submission
+    of Possible Power values via the self-forecast API to restore excluded DIs to
+    assessment eligibility.'
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id002
+  - 4
+  - 5
+  evidence_excerpt: Frequent network constraints or negative NEM spot prices may make
+    it difficult or impossible to pass the AEMO self-forecast assessment process,
+    even if the self-forecast accuracy is greater than AWEFS/ASEFS.
+  confidence_note: lifecycle_phase assigned as approvals/contracting because the barrier
+    is the AEMO regulatory assessment gate that must be passed before self-forecasting
+    can operate commercially; the issue is structural/regulatory rather than an operational
+    commissioning failure.
+  source_url: https://arena.gov.au/knowledge-bank/proa-analytics-solar-farm-short-term-forecasting-project-lessons-learned-1/
+  project_page_url: https://arena.gov.au/projects/proa-analytics-solar-forecasts/
+  kb_category: Solar energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Proa Analytics Solar Forecasts
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $728k
+  total_project_value: $1.39m
+  lead_organisation: Proa Analytics Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 21/01/2019
+  location: Queensland, Victoria
+  project_partners: Sieltec Canarias, Oakey 1 Asset Company Pty Ltd, Genex Power Limited
+  pdf_url: https://arena.gov.au/assets/2019/12/proa-solar-farm-short-term-forecasting-lessons-learnt.pdf
+  markdown_filename: proa_analytics_solar_farm_short_term_forecasting_project_lessons_learnt_1.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14803
+  contributing_source_titles:
+  - 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons Learnt 1'
+  contributing_sources:
+  - source_title: 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons
+      Learnt 1'
+    pdf_url: https://arena.gov.au/assets/2019/12/proa-solar-farm-short-term-forecasting-lessons-learnt.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/proa-analytics-solar-farm-short-term-forecasting-project-lessons-learned-1/
+    markdown_filename: proa_analytics_solar_farm_short_term_forecasting_project_lessons_learnt_1.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-14804
+  source_title: 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons
+    Learnt 1'
+  publish_date: 2019-10
+  project_name: Proa Analytics Solar Farm Short Term Forecasting Project
+  what_happened: Self-forecasting providers lacked real-time access to AEMO's Intermittent_DS
+    data tables (INTERMITTENT_DS_RUN, INTERMITTENT_DS_PRED, INTERMITTENT_FORECAST_TRK)
+    during the assessment day; only the Registered Market Participant could access
+    current-day values via the EMMS portal, but sharing EMMS credentials was impractical
+    due to confidential market information in that portal.
+  lesson_learnt: Forecasting projects relying on real-time AEMO data feeds should
+    identify data-access constraints before design, and advocate for AEMO to provide
+    a separate secure data feed for current-day Intermittent_DS reports to forecasting
+    providers, enabling same-day forecast validation rather than next-day-only review.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Proa identified a workaround whereby the Registered Market Participant
+    could forward the relevant EMMS portal data manually, but noted this was cumbersome
+    and proposed AEMO publish the data via a separate secure feed.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id003
+  - 6
+  evidence_excerpt: It can be useful to see the current ASEFS/AWEFS forecasts for
+    a site, as well as to confirm that previously submitted self-forecasts were accepted
+    correctly by AEMO. Currently, this can only be done in real time if the Registered
+    Participant arranges to forward on the relevant data from the EMMS portal.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/proa-analytics-solar-farm-short-term-forecasting-project-lessons-learned-1/
+  project_page_url: https://arena.gov.au/projects/proa-analytics-solar-forecasts/
+  kb_category: Solar energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Proa Analytics Solar Forecasts
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $728k
+  total_project_value: $1.39m
+  lead_organisation: Proa Analytics Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 21/01/2019
+  location: Queensland, Victoria
+  project_partners: Sieltec Canarias, Oakey 1 Asset Company Pty Ltd, Genex Power Limited
+  pdf_url: https://arena.gov.au/assets/2019/12/proa-solar-farm-short-term-forecasting-lessons-learnt.pdf
+  markdown_filename: proa_analytics_solar_farm_short_term_forecasting_project_lessons_learnt_1.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14804
+  contributing_source_titles:
+  - 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons Learnt 1'
+  contributing_sources:
+  - source_title: 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons
+      Learnt 1'
+    pdf_url: https://arena.gov.au/assets/2019/12/proa-solar-farm-short-term-forecasting-lessons-learnt.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/proa-analytics-solar-farm-short-term-forecasting-project-lessons-learned-1/
+    markdown_filename: proa_analytics_solar_farm_short_term_forecasting_project_lessons_learnt_1.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-30701
+  source_title: 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons
+    Learnt 3'
+  publish_date: 2020-10
+  project_name: Innovative Optimally Combined Solar Forecasts
+  what_happened: The project demonstrated that Causer Pays Factor (MPF) calculations
+    can be replicated using publicly available AEMO data, and that self-forecast corrections
+    based on market factors can minimise a participant's MPF — provided the self-forecast
+    still outperforms ASEFS in MAE and RMSE.
+  lesson_learnt: Solar farm operators should replicate the Causer Pays Factor procedure
+    using public AEMO data and apply market-factor corrections to self-forecasts to
+    minimise MPF liability; however, the self-forecast must still outperform ASEFS
+    on MAE and RMSE to be eligible for use in dispatch.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id004
+  - 3
+  evidence_excerpt: It is possible to replicate the Causer Pays Factor procedure based
+    on publicly available data from AEMO. Corrections can be made to self-forecasts
+    based on market factors to minimise the MPF for a participant. The self-forecast
+    must still outperform ASEFS in terms of MAE and RMSE to be used in dispatch.
+  confidence_note: issue_severity set to minor — this is a positive commercial finding,
+    not a failure event.
+  source_url: https://arena.gov.au/knowledge-bank/proa-analytics-solar-farm-short-term-forecasting-project-lessons-learnt-3/
+  project_page_url: https://arena.gov.au/projects/proa-analytics-solar-forecasts/
+  kb_category: Solar energy
+  kb_publish_date: 28/01/2021
+  kb_year: '2019'
+  kb_associated_project: Proa Analytics Solar Forecasts
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $728k
+  total_project_value: $1.39m
+  lead_organisation: Proa Analytics Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 21/01/2019
+  location: Queensland, Victoria
+  project_partners: Sieltec Canarias, Oakey 1 Asset Company Pty Ltd, Genex Power Limited
+  pdf_url: https://arena.gov.au/assets/2021/01/proa-analytics-solar-forecasting-lessons-learnt-report-3.pdf
+  markdown_filename: proa_analytics_solar_farm_short_term_forecasting_project_lessons_learnt_3.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-30701
+  contributing_source_titles:
+  - 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons Learnt 3'
+  contributing_sources:
+  - source_title: 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons
+      Learnt 3'
+    pdf_url: https://arena.gov.au/assets/2021/01/proa-analytics-solar-forecasting-lessons-learnt-report-3.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/proa-analytics-solar-farm-short-term-forecasting-project-lessons-learnt-3/
+    markdown_filename: proa_analytics_solar_farm_short_term_forecasting_project_lessons_learnt_3.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-30702
+  source_title: 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons
+    Learnt 3'
+  publish_date: 2020-10
+  project_name: Innovative Optimally Combined Solar Forecasts
+  what_happened: Cloud dynamics modelling proved to be the dominant source of uncertainty
+    in solar generation forecasts, capable of reducing power output by 80–90% and
+    causing large ramps within minutes. Entry-level self-forecasting models that ignore
+    cloud dynamics showed limited improvement potential, while more complex cloud-aware
+    models (using skycam, satellite, and NWP data) introduced new challenges around
+    calibration, computing time, and deployment risk.
+  lesson_learnt: Developers of solar self-forecasting systems should invest in cloud
+    dynamics modelling to unlock material accuracy gains, but must budget for fine
+    calibration, algorithm optimisation to manage compute latency at 5-minute horizons,
+    and additional testing to handle the higher risk of unexpected model behaviour
+    in deployment.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: Further development and optimisation of algorithms was undertaken
+    to reduce computing time and maintain forecast accuracy at short time frames.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id005
+  - 3
+  - 4
+  evidence_excerpt: 'Clouds are the main source of uncertainty and are responsible
+    for the greatest errors in solar generation forecasts... their complexity has
+    presented additional challenges: First, the sensitivity of the forecasts to inaccuracies
+    in intermediate modelling steps... Second, more complex models require increased
+    computing time which can negatively impact forecast accuracy, especially at short
+    time frames such as 5 minutes ahead... Third, they require additional testing
+    and monitoring to handle the increased risk of unexpected outcomes in the deployment
+    process.'
+  confidence_note: delay_category data/validation/testing applied as the main friction
+    was in calibration and testing of complex models during development.
+  source_url: https://arena.gov.au/knowledge-bank/proa-analytics-solar-farm-short-term-forecasting-project-lessons-learnt-3/
+  project_page_url: https://arena.gov.au/projects/proa-analytics-solar-forecasts/
+  kb_category: Solar energy
+  kb_publish_date: 28/01/2021
+  kb_year: '2019'
+  kb_associated_project: Proa Analytics Solar Forecasts
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $728k
+  total_project_value: $1.39m
+  lead_organisation: Proa Analytics Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 21/01/2019
+  location: Queensland, Victoria
+  project_partners: Sieltec Canarias, Oakey 1 Asset Company Pty Ltd, Genex Power Limited
+  pdf_url: https://arena.gov.au/assets/2021/01/proa-analytics-solar-forecasting-lessons-learnt-report-3.pdf
+  markdown_filename: proa_analytics_solar_farm_short_term_forecasting_project_lessons_learnt_3.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-30702
+  contributing_source_titles:
+  - 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons Learnt 3'
+  contributing_sources:
+  - source_title: 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons
+      Learnt 3'
+    pdf_url: https://arena.gov.au/assets/2021/01/proa-analytics-solar-forecasting-lessons-learnt-report-3.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/proa-analytics-solar-farm-short-term-forecasting-project-lessons-learnt-3/
+    markdown_filename: proa_analytics_solar_farm_short_term_forecasting_project_lessons_learnt_3.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-30703
+  source_title: 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons
+    Learnt 3'
+  publish_date: 2020-10
+  project_name: Innovative Optimally Combined Solar Forecasts
+  what_happened: Soiling of skycams from dust and bird droppings degraded forecasting
+    accuracy, and periodic manual cleaning by O&M staff was insufficient to maintain
+    instrument quality due to personnel availability, cost, and access constraints.
+    Proa designed and installed an automatic self-cleaning system (ACS) using pressurised
+    water that successfully removed dust and atmospheric contaminants but still required
+    manual intervention for bird droppings, prompting an extension of the ACS to include
+    active wildlife deterrence.
+  lesson_learnt: When installing skycam systems at solar farms for forecasting purposes,
+    plan for regular lens cleaning from the outset — install safe anchor points, permanent
+    ladders, or equivalent access infrastructure to make cleaning practical and cost-effective,
+    particularly at remote, arid sites where dust accumulation is rapid.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Proa designed, installed, and tested an automatic self-cleaning
+    system using pressurised water at two participating sites, successfully removing
+    atmospheric contaminants including dust and rain mud; bird-related soiling still
+    requires manual intervention.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages:
+  - 4
+  - 5
+  - 6
+  evidence_excerpt: Proa has designed and installed an innovative automatic self-cleaning
+    system able to clean the lenses of skycams with pressurised water on a periodic
+    basis. The project has demonstrated very good results of the self-cleaning system
+    to remove dust or other atmospheric contaminants, but traces or droppings from
+    birds still required manual intervention. For this reason, the functionality of
+    the automatic self-cleaning has been extended to actively deter wildlife from
+    approaching the instruments.
+  confidence_note: Canonical record merged from 3 source records across 3 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/proa-analytics-solar-farm-short-term-forecasting-project-lessons-learnt-3/
+  project_page_url: https://arena.gov.au/projects/proa-analytics-solar-forecasts/
+  kb_category: Solar energy
+  kb_publish_date: 28/01/2021
+  kb_year: '2019'
+  kb_associated_project: Proa Analytics Solar Forecasts
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $728k
+  total_project_value: $1.39m
+  lead_organisation: Proa Analytics Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 21/01/2019
+  location: Queensland, Victoria
+  project_partners: Sieltec Canarias, Oakey 1 Asset Company Pty Ltd, Genex Power Limited
+  pdf_url: https://arena.gov.au/assets/2021/01/proa-analytics-solar-forecasting-lessons-learnt-report-3.pdf
+  markdown_filename: proa_analytics_solar_farm_short_term_forecasting_project_lessons_learnt_3.md
+  source_page_pdf: 4
+  corroboration_count: 3
+  source_doc_count: 3
+  contributing_record_ids:
+  - ARENA-DLV-30703
+  - ARENA-DLV-43105
+  - ARENA-DLV-54553
+  contributing_source_titles:
+  - Pro Analytics Final Report and Cost Benefit Analysis
+  - 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons Learnt 3'
+  - 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons Learnt 2'
+  contributing_sources:
+  - source_title: 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons
+      Learnt 3'
+    pdf_url: https://arena.gov.au/assets/2021/01/proa-analytics-solar-forecasting-lessons-learnt-report-3.pdf
+    source_pages:
+    - 4
+    source_url: https://arena.gov.au/knowledge-bank/proa-analytics-solar-farm-short-term-forecasting-project-lessons-learnt-3/
+    markdown_filename: proa_analytics_solar_farm_short_term_forecasting_project_lessons_learnt_3.md
+  - source_title: 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons
+      Learnt 2'
+    pdf_url: https://arena.gov.au/assets/2020/07/proa-analytics-solar-forecasting-lessons-learnt-report-2.pdf
+    source_pages:
+    - 6
+    source_url: https://arena.gov.au/knowledge-bank/proa-analytics-solar-farm-short-term-forecasting-project-lessons-learnt-2/
+    markdown_filename: proa_analytics_solar_farm_short_term_forecasting_project_lessons_learnt_2.md
+  - source_title: Pro Analytics Final Report and Cost Benefit Analysis
+    pdf_url: https://arena.gov.au/assets/2021/05/proa-analytics-final-report-and-cost-benefit-analysis.pdf
+    source_pages:
+    - 5
+    - 6
+    source_url: https://arena.gov.au/knowledge-bank/pro-analytics-final-report-and-cost-benefit-analysis/
+    markdown_filename: pro_analytics_final_report_and_cost_benefit_analysis.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-43101
+  source_title: 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons
+    Learnt 2'
+  publish_date: 2020-04
+  project_name: Proa Analytics Solar Forecasts Project
+  what_happened: Proa's self-forecasting service reduced the Causer Pays Factor for
+    Kidston Solar Project from an average of 0.383 (ASEFS) to 0.200 (Proa) over a
+    comparable 5-month period, producing significant financial savings for the solar
+    farm operator.
+  lesson_learnt: Self-forecasting using a specialist provider can materially reduce
+    Causer Pays Factors compared to ASEFS — solar farm operators should evaluate self-forecasting
+    as a cost-reduction lever given that NEM-wide Causer Pays costs have grown from
+    $2M in 2014 to $115M in 2019.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id006
+  - 2
+  - 3
+  evidence_excerpt: Proa self-forecasts have produced an average Causer Pays factor
+    of 0.200 for the period of November 2019 to March 2020 compared to 0.383 from
+    ASEFS over the same 5 month period the previous year (November 2018 to March 2019).
+  confidence_note: issue_severity set to none as this is a positive outcome record
+    with no delivery failure.
+  source_url: https://arena.gov.au/knowledge-bank/proa-analytics-solar-farm-short-term-forecasting-project-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/proa-analytics-solar-forecasts/
+  kb_category: Solar energy
+  kb_publish_date: 6/04/2020
+  kb_year: '2019'
+  kb_associated_project: Proa Analytics Solar Forecasts
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $728k
+  total_project_value: $1.39m
+  lead_organisation: Proa Analytics Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 21/01/2019
+  location: Queensland, Victoria
+  project_partners: Sieltec Canarias, Oakey 1 Asset Company Pty Ltd, Genex Power Limited
+  pdf_url: https://arena.gov.au/assets/2020/07/proa-analytics-solar-forecasting-lessons-learnt-report-2.pdf
+  markdown_filename: proa_analytics_solar_farm_short_term_forecasting_project_lessons_learnt_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-43101
+  contributing_source_titles:
+  - 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons Learnt 2'
+  contributing_sources:
+  - source_title: 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons
+      Learnt 2'
+    pdf_url: https://arena.gov.au/assets/2020/07/proa-analytics-solar-forecasting-lessons-learnt-report-2.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/proa-analytics-solar-farm-short-term-forecasting-project-lessons-learnt-2/
+    markdown_filename: proa_analytics_solar_farm_short_term_forecasting_project_lessons_learnt_2.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-43103
+  source_title: 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons
+    Learnt 2'
+  publish_date: 2020-04
+  project_name: Proa Analytics Solar Forecasts Project
+  what_happened: 'Satellite imagery (Himawari-8) used for 5-minute-ahead solar forecasts
+    was found to have significant limitations: images could be more than 15 minutes
+    old when used, and the solar farm footprint was represented by only 2–5 pixels,
+    reducing accuracy for local cloud structures. Skycam imagery installed on-site
+    delivered images in seconds with 10–20 times greater spatial resolution for nearby
+    clouds.'
+  lesson_learnt: For very short-term solar forecasting (5 minutes ahead), on-site
+    skycam systems are significantly superior to satellite imagery due to near-real-time
+    data transfer and much higher local spatial resolution; projects targeting NEM
+    dispatch self-forecasting accuracy should plan to install skycams at participating
+    solar farms.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Proa installed on-site skycam systems at the project solar farms,
+    providing near-real-time high-resolution cloud imagery that compensated for satellite
+    image latency and low pixel resolution.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id007
+  - 3
+  - 4
+  - 5
+  evidence_excerpt: Delays in data transfer mean that satellite image can be more
+    than 15 minutes old when used to make some forecasts... the footprint of solar
+    farms may only be represented by 2-5 pixels in these images, which can introduce
+    inaccuracies when modelling local cloud structures.
+  confidence_note: failure_mode set to technical underperformance reflecting the limitation
+    of satellite-only forecasting for 5-minute horizons; outcome is knowledge generated
+    as new techniques were developed in response.
+  source_url: https://arena.gov.au/knowledge-bank/proa-analytics-solar-farm-short-term-forecasting-project-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/proa-analytics-solar-forecasts/
+  kb_category: Solar energy
+  kb_publish_date: 6/04/2020
+  kb_year: '2019'
+  kb_associated_project: Proa Analytics Solar Forecasts
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $728k
+  total_project_value: $1.39m
+  lead_organisation: Proa Analytics Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 21/01/2019
+  location: Queensland, Victoria
+  project_partners: Sieltec Canarias, Oakey 1 Asset Company Pty Ltd, Genex Power Limited
+  pdf_url: https://arena.gov.au/assets/2020/07/proa-analytics-solar-forecasting-lessons-learnt-report-2.pdf
+  markdown_filename: proa_analytics_solar_farm_short_term_forecasting_project_lessons_learnt_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-43103
+  contributing_source_titles:
+  - 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons Learnt 2'
+  contributing_sources:
+  - source_title: 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons
+      Learnt 2'
+    pdf_url: https://arena.gov.au/assets/2020/07/proa-analytics-solar-forecasting-lessons-learnt-report-2.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/proa-analytics-solar-farm-short-term-forecasting-project-lessons-learnt-2/
+    markdown_filename: proa_analytics_solar_farm_short_term_forecasting_project_lessons_learnt_2.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-43104
+  source_title: 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons
+    Learnt 2'
+  publish_date: 2020-04
+  project_name: Proa Analytics Solar Forecasts Project
+  what_happened: Tropical cloud conditions at Kidston Solar Farm during the wet season
+    (numerous small, dense, rapidly evolving clouds forming and dissipating within
+    minutes) reduced short-term forecast accuracy compared to the dry season, prompting
+    Proa to develop new forecasting techniques specifically for these conditions.
+  lesson_learnt: Solar forecasting projects in tropical climates should anticipate
+    materially reduced short-term forecast accuracy during the wet season due to rapidly
+    evolving convective cloud; forecasting models developed primarily on mid-latitude
+    or dry-season data will require specific adaptation for tropical wet-season conditions.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Proa developed several new forecasting techniques specifically
+    targeting tropical wet-season convective cloud conditions; testing was near completion
+    with promising results at time of reporting.
+  transferability: narrow
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id008
+  - 4
+  - 5
+  evidence_excerpt: As is common in tropical areas during summer months, there were
+    numerous small, dense, and rapidly evolving clouds which can form and dissipate
+    over the time scales of minutes. To forecast such clouds is challenging and forecast
+    accuracy is reduced during the wet season compared to the dry season.
+  confidence_note: transferability narrow — specific to tropical climate zone solar
+    forecasting; not applicable to temperate or sub-tropical sites without adaptation.
+  source_url: https://arena.gov.au/knowledge-bank/proa-analytics-solar-farm-short-term-forecasting-project-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/proa-analytics-solar-forecasts/
+  kb_category: Solar energy
+  kb_publish_date: 6/04/2020
+  kb_year: '2019'
+  kb_associated_project: Proa Analytics Solar Forecasts
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $728k
+  total_project_value: $1.39m
+  lead_organisation: Proa Analytics Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 21/01/2019
+  location: Queensland, Victoria
+  project_partners: Sieltec Canarias, Oakey 1 Asset Company Pty Ltd, Genex Power Limited
+  pdf_url: https://arena.gov.au/assets/2020/07/proa-analytics-solar-forecasting-lessons-learnt-report-2.pdf
+  markdown_filename: proa_analytics_solar_farm_short_term_forecasting_project_lessons_learnt_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-43104
+  contributing_source_titles:
+  - 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons Learnt 2'
+  contributing_sources:
+  - source_title: 'Proa Analytics Solar Farm Short Term Forecasting Project: Lessons
+      Learnt 2'
+    pdf_url: https://arena.gov.au/assets/2020/07/proa-analytics-solar-forecasting-lessons-learnt-report-2.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/proa-analytics-solar-farm-short-term-forecasting-project-lessons-learnt-2/
+    markdown_filename: proa_analytics_solar_farm_short_term_forecasting_project_lessons_learnt_2.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-54551
+  source_title: Pro Analytics Final Report and Cost Benefit Analysis
+  publish_date: 2021-01
+  project_name: Innovative Optimally Combined Solar Forecasts
+  what_happened: Proa Analytics demonstrated across three NEM solar farms that combining
+    live SCADA data, satellite imagery, and skycam data produced the best short-term
+    forecasting accuracy, with the full combination reducing 5-minute-ahead forecast
+    errors by 15–20% relative to persistence forecasts.
+  lesson_learnt: No single forecasting technology dominates across all weather conditions
+    — deploy a combination of live data, satellite, and skycam inputs to capture the
+    complementary strengths of each technology across low, medium, and high variability
+    days.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id009
+  - 4
+  - 5
+  evidence_excerpt: Including the skycam in the forecast results in a substantial
+    15-20% reduction in errors relative to the persistence forecast.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/pro-analytics-final-report-and-cost-benefit-analysis/
+  project_page_url: https://arena.gov.au/projects/proa-analytics-solar-forecasts/
+  kb_category: Solar energy
+  kb_publish_date: 30/01/2021
+  kb_year: '2019'
+  kb_associated_project: Proa Analytics Solar Forecasts
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $728k
+  total_project_value: $1.39m
+  lead_organisation: Proa Analytics Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 21/01/2019
+  location: Queensland, Victoria
+  project_partners: Sieltec Canarias, Oakey 1 Asset Company Pty Ltd, Genex Power Limited
+  pdf_url: https://arena.gov.au/assets/2021/05/proa-analytics-final-report-and-cost-benefit-analysis.pdf
+  markdown_filename: pro_analytics_final_report_and_cost_benefit_analysis.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-54551
+  contributing_source_titles:
+  - Pro Analytics Final Report and Cost Benefit Analysis
+  contributing_sources:
+  - source_title: Pro Analytics Final Report and Cost Benefit Analysis
+    pdf_url: https://arena.gov.au/assets/2021/05/proa-analytics-final-report-and-cost-benefit-analysis.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/pro-analytics-final-report-and-cost-benefit-analysis/
+    markdown_filename: pro_analytics_final_report_and_cost_benefit_analysis.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-54552
+  source_title: Pro Analytics Final Report and Cost Benefit Analysis
+  publish_date: 2021-01
+  project_name: Innovative Optimally Combined Solar Forecasts
+  what_happened: On high-variability days — characterised by small, dense, rapidly
+    evolving clouds — skycam-based forecasts delivered a 20–25% improvement over persistence
+    forecasts, while satellite alone provided only 8–12% improvement, demonstrating
+    a material performance gap between the two technologies in the most challenging
+    forecasting conditions.
+  lesson_learnt: For solar farms in tropical or sub-tropical climates with frequent
+    high-variability conditions, skycams provide materially superior short-term forecasting
+    accuracy over satellite alone; the incremental investment in skycam hardware is
+    justified by the disproportionate accuracy gains on the highest-error days.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id010
+  - 5
+  evidence_excerpt: For high variability days, when forecasting errors are largest,
+    forecasts utilising skycams have substantial performance benefits, demonstrating
+    a 20-25% improvement over the persistence forecasts, while the satellite shows
+    an 8-12% improvement.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/pro-analytics-final-report-and-cost-benefit-analysis/
+  project_page_url: https://arena.gov.au/projects/proa-analytics-solar-forecasts/
+  kb_category: Solar energy
+  kb_publish_date: 30/01/2021
+  kb_year: '2019'
+  kb_associated_project: Proa Analytics Solar Forecasts
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $728k
+  total_project_value: $1.39m
+  lead_organisation: Proa Analytics Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 21/01/2019
+  location: Queensland, Victoria
+  project_partners: Sieltec Canarias, Oakey 1 Asset Company Pty Ltd, Genex Power Limited
+  pdf_url: https://arena.gov.au/assets/2021/05/proa-analytics-final-report-and-cost-benefit-analysis.pdf
+  markdown_filename: pro_analytics_final_report_and_cost_benefit_analysis.md
+  source_page_pdf: 5
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-54552
+  contributing_source_titles:
+  - Pro Analytics Final Report and Cost Benefit Analysis
+  contributing_sources:
+  - source_title: Pro Analytics Final Report and Cost Benefit Analysis
+    pdf_url: https://arena.gov.au/assets/2021/05/proa-analytics-final-report-and-cost-benefit-analysis.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/pro-analytics-final-report-and-cost-benefit-analysis/
+    markdown_filename: pro_analytics_final_report_and_cost_benefit_analysis.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-54554
+  source_title: Pro Analytics Final Report and Cost Benefit Analysis
+  publish_date: 2021-01
+  project_name: Innovative Optimally Combined Solar Forecasts
+  what_happened: Remote monitoring of skycam operational status was found to be essential
+    because prompt manual intervention from site staff was sometimes required — for
+    example, to clean lenses after soiling events or to restore power supply — and
+    without remote visibility these issues went undetected and degraded forecast quality.
+  lesson_learnt: Include remote operational monitoring for skycam instruments as a
+    standard design requirement; without real-time visibility of instrument status,
+    soiling and power supply faults will silently degrade forecast accuracy before
+    site staff can respond.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Proa implemented remote monitoring of instrument operational
+    status to enable timely alerts for manual cleaning or power restoration by site
+    staff.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id011
+  - 5
+  - 6
+  evidence_excerpt: This project showed that remote monitoring of the operational
+    status of the instruments is important when prompt, manual intervention from site
+    staff was required (e.g. to clean the lenses after a soiling event or to ensure
+    the supply of power).
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/pro-analytics-final-report-and-cost-benefit-analysis/
+  project_page_url: https://arena.gov.au/projects/proa-analytics-solar-forecasts/
+  kb_category: Solar energy
+  kb_publish_date: 30/01/2021
+  kb_year: '2019'
+  kb_associated_project: Proa Analytics Solar Forecasts
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $728k
+  total_project_value: $1.39m
+  lead_organisation: Proa Analytics Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 21/01/2019
+  location: Queensland, Victoria
+  project_partners: Sieltec Canarias, Oakey 1 Asset Company Pty Ltd, Genex Power Limited
+  pdf_url: https://arena.gov.au/assets/2021/05/proa-analytics-final-report-and-cost-benefit-analysis.pdf
+  markdown_filename: pro_analytics_final_report_and_cost_benefit_analysis.md
+  source_page_pdf: 5
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-54554
+  contributing_source_titles:
+  - Pro Analytics Final Report and Cost Benefit Analysis
+  contributing_sources:
+  - source_title: Pro Analytics Final Report and Cost Benefit Analysis
+    pdf_url: https://arena.gov.au/assets/2021/05/proa-analytics-final-report-and-cost-benefit-analysis.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/pro-analytics-final-report-and-cost-benefit-analysis/
+    markdown_filename: pro_analytics_final_report_and_cost_benefit_analysis.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-54555
+  source_title: Pro Analytics Final Report and Cost Benefit Analysis
+  publish_date: 2021-01
+  project_name: Innovative Optimally Combined Solar Forecasts
+  what_happened: The project demonstrated that skycam hardware must be ruggedised
+    to withstand the full range of Australian climate conditions encountered across
+    NEM solar farm sites, from hot, humid north Queensland to the extreme temperature
+    variability of north-west Victoria, to avoid degradation in image quality or instrument
+    alignment.
+  lesson_learnt: Specify and procure skycam instruments and mountings to industrial-grade
+    environmental standards before deployment at remote NEM solar farms — climate-induced
+    degradation of image quality or alignment will silently reduce forecast accuracy
+    over the instrument lifetime.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: procurement
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Proa's equipment demonstrated robustness across the full climate
+    range tested; the ruggedised design prevented alignment or image quality failures
+    during the project period.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id012
+  - 5
+  evidence_excerpt: Skycams must withstand long-term exposure to inclement weather
+    at solar farms located across the diverse and at times challenging climate zones
+    of Australia. This requires the robust design of instruments and mountings to
+    avoid any degradation in image quality or the sensitive alignment of the instrument.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/pro-analytics-final-report-and-cost-benefit-analysis/
+  project_page_url: https://arena.gov.au/projects/proa-analytics-solar-forecasts/
+  kb_category: Solar energy
+  kb_publish_date: 30/01/2021
+  kb_year: '2019'
+  kb_associated_project: Proa Analytics Solar Forecasts
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $728k
+  total_project_value: $1.39m
+  lead_organisation: Proa Analytics Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 21/01/2019
+  location: Queensland, Victoria
+  project_partners: Sieltec Canarias, Oakey 1 Asset Company Pty Ltd, Genex Power Limited
+  pdf_url: https://arena.gov.au/assets/2021/05/proa-analytics-final-report-and-cost-benefit-analysis.pdf
+  markdown_filename: pro_analytics_final_report_and_cost_benefit_analysis.md
+  source_page_pdf: 5
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-54555
+  contributing_source_titles:
+  - Pro Analytics Final Report and Cost Benefit Analysis
+  contributing_sources:
+  - source_title: Pro Analytics Final Report and Cost Benefit Analysis
+    pdf_url: https://arena.gov.au/assets/2021/05/proa-analytics-final-report-and-cost-benefit-analysis.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/pro-analytics-final-report-and-cost-benefit-analysis/
+    markdown_filename: pro_analytics_final_report_and_cost_benefit_analysis.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-54556
+  source_title: Pro Analytics Final Report and Cost Benefit Analysis
+  publish_date: 2021-01
+  project_name: Innovative Optimally Combined Solar Forecasts
+  what_happened: FCAS causer-pays charges for NEM semi-scheduled solar farms without
+    self-forecasting averaged approximately $1M per 100 MW per year in 2019, declining
+    to $650k per 100 MW per year in 2020, with the decline driven largely by widespread
+    adoption of self-forecasting and commissioning of BESS regulation services rather
+    than by any single project.
+  lesson_learnt: The financial case for self-forecasting at NEM solar farms is anchored
+    primarily in avoided FCAS causer-pays charges, not incremental energy market revenue;
+    project developers should size the forecasting investment against FCAS exposure,
+    and should act before market-wide adoption further compresses available savings.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id013
+  - 6
+  - 9
+  evidence_excerpt: FCAS costs for solar farms without self-forecasting in place were
+    found to average around $1M/100 MW/year in 2019 and $650k/100 MW/year in 2020.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/pro-analytics-final-report-and-cost-benefit-analysis/
+  project_page_url: https://arena.gov.au/projects/proa-analytics-solar-forecasts/
+  kb_category: Solar energy
+  kb_publish_date: 30/01/2021
+  kb_year: '2019'
+  kb_associated_project: Proa Analytics Solar Forecasts
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $728k
+  total_project_value: $1.39m
+  lead_organisation: Proa Analytics Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 21/01/2019
+  location: Queensland, Victoria
+  project_partners: Sieltec Canarias, Oakey 1 Asset Company Pty Ltd, Genex Power Limited
+  pdf_url: https://arena.gov.au/assets/2021/05/proa-analytics-final-report-and-cost-benefit-analysis.pdf
+  markdown_filename: pro_analytics_final_report_and_cost_benefit_analysis.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-54556
+  contributing_source_titles:
+  - Pro Analytics Final Report and Cost Benefit Analysis
+  contributing_sources:
+  - source_title: Pro Analytics Final Report and Cost Benefit Analysis
+    pdf_url: https://arena.gov.au/assets/2021/05/proa-analytics-final-report-and-cost-benefit-analysis.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/pro-analytics-final-report-and-cost-benefit-analysis/
+    markdown_filename: pro_analytics_final_report_and_cost_benefit_analysis.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-54557
+  source_title: Pro Analytics Final Report and Cost Benefit Analysis
+  publish_date: 2021-01
+  project_name: Innovative Optimally Combined Solar Forecasts
+  what_happened: The incremental energy market revenue benefit from self-forecasting
+    was found to be marginal — significant only for solar farms where the semi-dispatch
+    flag is raised for extended periods, and negligible for farms in parts of the
+    grid where the flag is rarely raised.
+  lesson_learnt: Do not build the primary financial case for self-forecasting on incremental
+    dispatch revenue; the dominant value driver is FCAS causer-pays cost avoidance,
+    and energy market revenue upside should be treated as secondary and site-specific.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id014
+  - 8
+  evidence_excerpt: The results showed only a marginal benefit for solar farms where
+    the semi-dispatch is raised for extended periods of time, and no benefit for solar
+    farms in more robust parts of the grid where the semi-dispatch cap is not frequently
+    raised.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/pro-analytics-final-report-and-cost-benefit-analysis/
+  project_page_url: https://arena.gov.au/projects/proa-analytics-solar-forecasts/
+  kb_category: Solar energy
+  kb_publish_date: 30/01/2021
+  kb_year: '2019'
+  kb_associated_project: Proa Analytics Solar Forecasts
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $728k
+  total_project_value: $1.39m
+  lead_organisation: Proa Analytics Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 21/01/2019
+  location: Queensland, Victoria
+  project_partners: Sieltec Canarias, Oakey 1 Asset Company Pty Ltd, Genex Power Limited
+  pdf_url: https://arena.gov.au/assets/2021/05/proa-analytics-final-report-and-cost-benefit-analysis.pdf
+  markdown_filename: pro_analytics_final_report_and_cost_benefit_analysis.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-54557
+  contributing_source_titles:
+  - Pro Analytics Final Report and Cost Benefit Analysis
+  contributing_sources:
+  - source_title: Pro Analytics Final Report and Cost Benefit Analysis
+    pdf_url: https://arena.gov.au/assets/2021/05/proa-analytics-final-report-and-cost-benefit-analysis.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/pro-analytics-final-report-and-cost-benefit-analysis/
+    markdown_filename: pro_analytics_final_report_and_cost_benefit_analysis.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-54558
+  source_title: Pro Analytics Final Report and Cost Benefit Analysis
+  publish_date: 2021-01
+  project_name: Innovative Optimally Combined Solar Forecasts
+  what_happened: Early adopters of self-forecasting were able to reduce their Market
+    Participant Factor (MPF) to near zero by applying artificial corrections to self-forecasts
+    designed to minimise MPF, a benefit that is expected to diminish as more participants
+    adopt the same approach and market conditions mature.
+  lesson_learnt: Early adoption of self-forecasting in the NEM provides a first-mover
+    advantage through MPF optimisation beyond forecast accuracy alone; however, project
+    developers should base long-term financial modelling on accuracy-driven FCAS reductions
+    of 20–30% rather than the 70–100% achievable in current market conditions.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id015
+  - 6
+  - 10
+  evidence_excerpt: Early adopters of self-forecasting are taking advantage of this
+    opportunity, though the benefit is likely to diminish as the market matures...
+    In the current market conditions, artificial corrections to self-forecasts designed
+    to minimise MPF have a greater influence on the reduction of MPFs than forecasting
+    accuracy.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/pro-analytics-final-report-and-cost-benefit-analysis/
+  project_page_url: https://arena.gov.au/projects/proa-analytics-solar-forecasts/
+  kb_category: Solar energy
+  kb_publish_date: 30/01/2021
+  kb_year: '2019'
+  kb_associated_project: Proa Analytics Solar Forecasts
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $728k
+  total_project_value: $1.39m
+  lead_organisation: Proa Analytics Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 21/01/2019
+  location: Queensland, Victoria
+  project_partners: Sieltec Canarias, Oakey 1 Asset Company Pty Ltd, Genex Power Limited
+  pdf_url: https://arena.gov.au/assets/2021/05/proa-analytics-final-report-and-cost-benefit-analysis.pdf
+  markdown_filename: pro_analytics_final_report_and_cost_benefit_analysis.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-54558
+  contributing_source_titles:
+  - Pro Analytics Final Report and Cost Benefit Analysis
+  contributing_sources:
+  - source_title: Pro Analytics Final Report and Cost Benefit Analysis
+    pdf_url: https://arena.gov.au/assets/2021/05/proa-analytics-final-report-and-cost-benefit-analysis.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/pro-analytics-final-report-and-cost-benefit-analysis/
+    markdown_filename: pro_analytics_final_report_and_cost_benefit_analysis.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-54559
+  source_title: Pro Analytics Final Report and Cost Benefit Analysis
+  publish_date: 2021-01
+  project_name: Innovative Optimally Combined Solar Forecasts
+  what_happened: The cost-benefit analysis showed that the live data + satellite +
+    skycam combination delivered the highest NPV across all solar farm sizes from
+    30 to 240 MW under current FCAS pricing, despite higher capex and opex, with skycam
+    equipment and installation representing approximately 40% of total cost over a
+    3-year period.
+  lesson_learnt: For solar farms operating under current NEM FCAS pricing, the live
+    data + satellite + skycam combination offers the best financial return despite
+    higher upfront costs; the business case improves further over longer asset life
+    because skycam capex is amortised over a 10+ year instrument design life.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id016
+  - 7
+  - 11
+  evidence_excerpt: The combination which includes this hardware provides the highest
+    return based on current FCAS prices... The cost of the equipment, testing and
+    installation of skycams represents around 40% of the total cost over a 3-year
+    period and 20% over the design life of the instruments.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/pro-analytics-final-report-and-cost-benefit-analysis/
+  project_page_url: https://arena.gov.au/projects/proa-analytics-solar-forecasts/
+  kb_category: Solar energy
+  kb_publish_date: 30/01/2021
+  kb_year: '2019'
+  kb_associated_project: Proa Analytics Solar Forecasts
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $728k
+  total_project_value: $1.39m
+  lead_organisation: Proa Analytics Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 21/01/2019
+  location: Queensland, Victoria
+  project_partners: Sieltec Canarias, Oakey 1 Asset Company Pty Ltd, Genex Power Limited
+  pdf_url: https://arena.gov.au/assets/2021/05/proa-analytics-final-report-and-cost-benefit-analysis.pdf
+  markdown_filename: pro_analytics_final_report_and_cost_benefit_analysis.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-54559
+  contributing_source_titles:
+  - Pro Analytics Final Report and Cost Benefit Analysis
+  contributing_sources:
+  - source_title: Pro Analytics Final Report and Cost Benefit Analysis
+    pdf_url: https://arena.gov.au/assets/2021/05/proa-analytics-final-report-and-cost-benefit-analysis.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/pro-analytics-final-report-and-cost-benefit-analysis/
+    markdown_filename: pro_analytics_final_report_and_cost_benefit_analysis.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-54560
+  source_title: Pro Analytics Final Report and Cost Benefit Analysis
+  publish_date: 2021-01
+  project_name: Innovative Optimally Combined Solar Forecasts
+  what_happened: On clear, low-variability days, forecasting errors could be reduced
+    by 30–40% by correcting for morning and evening generation ramps — a benefit achievable
+    without satellite or skycam imagery, demonstrating that ramp-correction algorithms
+    are the dominant accuracy lever on cloud-free days.
+  lesson_learnt: Implement ramp-correction algorithms targeting morning and evening
+    generation profiles as a baseline accuracy improvement for clear-sky days; this
+    delivers 30–40% error reduction without any hardware investment and should be
+    a standard component of any solar self-forecasting system.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id017
+  - 4
+  - 5
+  evidence_excerpt: For low variability conditions, forecasting errors could be reduced
+    by 30-40% on clear days by correcting the forecasts for the morning and evening
+    ramps. These are days with an absence of clouds, and therefore no benefit to using
+    satellite or skycam imagery.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/pro-analytics-final-report-and-cost-benefit-analysis/
+  project_page_url: https://arena.gov.au/projects/proa-analytics-solar-forecasts/
+  kb_category: Solar energy
+  kb_publish_date: 30/01/2021
+  kb_year: '2019'
+  kb_associated_project: Proa Analytics Solar Forecasts
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $728k
+  total_project_value: $1.39m
+  lead_organisation: Proa Analytics Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 21/01/2019
+  location: Queensland, Victoria
+  project_partners: Sieltec Canarias, Oakey 1 Asset Company Pty Ltd, Genex Power Limited
+  pdf_url: https://arena.gov.au/assets/2021/05/proa-analytics-final-report-and-cost-benefit-analysis.pdf
+  markdown_filename: pro_analytics_final_report_and_cost_benefit_analysis.md
+  source_page_pdf: 5
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-54560
+  contributing_source_titles:
+  - Pro Analytics Final Report and Cost Benefit Analysis
+  contributing_sources:
+  - source_title: Pro Analytics Final Report and Cost Benefit Analysis
+    pdf_url: https://arena.gov.au/assets/2021/05/proa-analytics-final-report-and-cost-benefit-analysis.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/pro-analytics-final-report-and-cost-benefit-analysis/
+    markdown_filename: pro_analytics_final_report_and_cost_benefit_analysis.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-54561
+  source_title: Pro Analytics Final Report and Cost Benefit Analysis
+  publish_date: 2021-01
+  project_name: Innovative Optimally Combined Solar Forecasts
+  what_happened: The project generated lessons and operational processes for integrating
+    skycams with SCADA systems that Proa identified as directly transferable to solar
+    forecasting projects outside the NEM and internationally, and also applicable
+    to solar-plus-battery dispatch optimisation.
+  lesson_learnt: SCADA integration protocols and skycam operational procedures developed
+    for NEM self-forecasting projects are transferable to non-NEM and international
+    contexts, and should be documented and packaged as reusable assets at project
+    close-out to maximise the value of the R&D investment.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id018
+  - 13
+  evidence_excerpt: The experience gained throughout the project has led to valuable
+    developments in the mechanisms and processes required to operate skycams and integrate
+    them with SCADA systems which can be directly transferred to solar forecasting
+    projects outside the NEM and internationally.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/pro-analytics-final-report-and-cost-benefit-analysis/
+  project_page_url: https://arena.gov.au/projects/proa-analytics-solar-forecasts/
+  kb_category: Solar energy
+  kb_publish_date: 30/01/2021
+  kb_year: '2019'
+  kb_associated_project: Proa Analytics Solar Forecasts
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $728k
+  total_project_value: $1.39m
+  lead_organisation: Proa Analytics Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 21/01/2019
+  location: Queensland, Victoria
+  project_partners: Sieltec Canarias, Oakey 1 Asset Company Pty Ltd, Genex Power Limited
+  pdf_url: https://arena.gov.au/assets/2021/05/proa-analytics-final-report-and-cost-benefit-analysis.pdf
+  markdown_filename: pro_analytics_final_report_and_cost_benefit_analysis.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-54561
+  contributing_source_titles:
+  - Pro Analytics Final Report and Cost Benefit Analysis
+  contributing_sources:
+  - source_title: Pro Analytics Final Report and Cost Benefit Analysis
+    pdf_url: https://arena.gov.au/assets/2021/05/proa-analytics-final-report-and-cost-benefit-analysis.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/pro-analytics-final-report-and-cost-benefit-analysis/
+    markdown_filename: pro_analytics_final_report_and_cost_benefit_analysis.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false

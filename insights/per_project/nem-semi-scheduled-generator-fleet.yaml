@@ -1,0 +1,75 @@
+- record_id: ARENA-DLV-59254
+  source_title: 'The Generator Operations Series: Negative Pricing and Bidding Behaviour
+    on the NEM'
+  publish_date: 2021-09
+  project_name: NEM Semi-Scheduled Generator Fleet
+  what_happened: Semi-scheduled VRE generators increasingly self-curtailed output
+    to zero to avoid negative prices without first receiving a revised dispatch target
+    from AEMO, in violation of National Electricity Rules dispatch compliance obligations.
+    This behaviour created system security and reliability risks, ultimately triggering
+    a rule change in April 2021 requiring semi-scheduled generators to always rebid
+    and receive a revised dispatch target before deviating from anticipated generation.
+  lesson_learnt: VRE project operators must ensure their bidding and curtailment systems
+    are designed for full NER dispatch compliance — self-curtailment without a corresponding
+    rebid and AEMO dispatch instruction is non-compliant and exposes the project to
+    regulatory sanction, regardless of the commercial rationale for avoiding negative
+    prices.
+  issue_severity: major
+  project_type: generation
+  project_scale_band: utility/large-scale
+  lifecycle_phase: operations
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: AEMC/AER rule change in April 2021 requiring semi-scheduled generators
+    to rebid and receive a dispatch target before deviating from anticipated output;
+    AER also submitted a separate rule change proposal.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages:
+  - 20
+  evidence_excerpt: As the frequency of negative pricing intervals has increased,
+    so too has the non-compliance with dispatch instructions from semi-scheduled generators.
+    Output from semi-scheduled generators has been rapidly reducing to zero to avoid
+    negative pricing without first receiving approval from AEMO to do so... This rule
+    change requires them to always inform the market operator of the intention to
+    move from anticipated generation output by rebidding and waiting to receive a
+    price dispatch target.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/genops-three-negative-pricing-and-bidding-behaviour-on-the-nem/
+  project_page_url: null
+  kb_category: Large-scale solar
+  kb_publish_date: 30/09/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/09/the-generator-operations-series.pdf
+  markdown_filename: the_generator_operations_series_negative_pricing_and_bidding_behaviour_on_the_nem.md
+  source_page_pdf: 20
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-59254
+  contributing_source_titles:
+  - 'The Generator Operations Series: Negative Pricing and Bidding Behaviour on the
+    NEM'
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.82

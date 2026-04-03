@@ -1,0 +1,1066 @@
+- record_id: ARENA-DLV-46601
+  source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  publish_date: 2022-03
+  project_name: DEIP Dynamic Operating Envelopes Workstream
+  what_happened: Static export limits, set conservatively for worst-case network conditions
+    occurring only 1–5% of the year, were found to excessively curtail customer solar
+    exports for the remaining 95–99% of the time, creating a systemic barrier to DER
+    integration that DOE trials were designed to address.
+  lesson_learnt: When designing network access frameworks for DER, static worst-case
+    limits impose disproportionate curtailment — dynamic operating envelopes that
+    vary limits in real time can double effective customer connection capacity without
+    network augmentation and should be considered early in DER integration planning.
+  issue_severity: major
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: DNSPs developed dynamic operating envelope trials (SAPN, AusNet,
+    Energy Queensland) replacing static limits with dynamically calculated per-customer
+    export allowances updated in near-real time.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id001
+  - 18
+  evidence_excerpt: Network limits have historically been based on an estimate of
+    diversified maximum or minimum demand conditions that may only occur on the network
+    for 1-5% of the year. This means that customers are constrained further than what
+    the physical limits of the system require for the remainder of the time.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 3/03/2022
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+  markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  source_page_pdf: 18
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46601
+  contributing_source_titles:
+  - 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  contributing_sources:
+  - source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+    pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+    markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-46602
+  source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  publish_date: 2022-03
+  project_name: DEIP Dynamic Operating Envelopes Workstream
+  what_happened: Early DOE trials in Australia found that the international IEEE 2030.5
+    CSIP standard, developed for the California Rule 21 context, lacked a concept
+    of 'site' or point of connection and did not support group limits across multiple
+    NMIs — both features fundamental to the Australian network context — making direct
+    adoption impossible.
+  lesson_learnt: Before adopting an international communications standard for DER
+    integration, verify it supports the specific architectural concepts required in
+    your jurisdiction (e.g. site-level metering, group limits); expect to develop
+    a local implementation profile (as DEIP did with CSIP-AUS) rather than assuming
+    direct adoption will suffice.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: The DEIP DER Integration API Technical Working Group spent 18
+    months developing CSIP-AUS v1.0 (published August 2021), a localised implementation
+    guide extending IEEE 2030.5 CSIP to add site-level and group-limit concepts for
+    the Australian context.
+  transferability: moderate
+  delay_magnitude: 1-3 years
+  technology_domain: DER
+  source_pages: &id002
+  - 28
+  evidence_excerpt: The lack of site level management is one of the reasons why identical
+    IEEE 2030.5 CSIP adoption is not possible to enable DOEs within the Australian
+    context. This was the basis for the DER Integration Application Programming Interface
+    Technical Working Group to develop CSIP-AUS v1.0, published in August 2021.
+  confidence_note: 'Delay magnitude estimated from the Working Group''s 18-month development
+    period described at page 62.; proponent_type reconciled to ''network business''
+    from: network business (13/20), consortium/multi-party venture (4/20), government/public-sector
+    body (2/20), research organisation/university (1/20)'
+  source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 3/03/2022
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+  markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  source_page_pdf: 28
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46602
+  contributing_source_titles:
+  - 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  contributing_sources:
+  - source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+    pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+    markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-46606
+  source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  publish_date: 2022-03
+  project_name: DEIP Dynamic Operating Envelopes Workstream
+  what_happened: Across DOE trials and stakeholder consultation, it was found that
+    the absence of accessible, affordable dispute resolution for consumers interacting
+    with new energy technology — including DOE-enabled solar systems — represents
+    a systemic gap, with customers facing high-friction escalation paths and organisations
+    'passing the buck' when issues arise.
+  lesson_learnt: Before scaling DOE programs, regulators and program designers should
+    confirm that accessible dispute resolution pathways exist for customers — the
+    absence of fit-for-purpose ombudsman coverage for new energy technology was identified
+    as a material barrier to social licence and should be resolved proactively, not
+    reactively.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: policy/market influence only
+  secondary_failure_mode: null
+  intervention_note: The Working Group recommended that regulatory bodies lead a collaborative
+    process to extend ombudsman powers and create a national public register for complaints,
+    disputes and outcomes.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id003
+  - 35
+  - 36
+  evidence_excerpt: The absence of accessible and affordable dispute resolution for
+    consumers interacting with new energy tech is clear... in practice this process
+    is not always easy to navigate, and customers sometimes face instances of organisations
+    'passing the buck'.
+  confidence_note: 'proponent_type reconciled to ''network business'' from: network
+    business (13/20), consortium/multi-party venture (4/20), government/public-sector
+    body (2/20), research organisation/university (1/20)'
+  source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 3/03/2022
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+  markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46606
+  contributing_source_titles:
+  - 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  contributing_sources:
+  - source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+    pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+    markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-46607
+  source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  publish_date: 2022-03
+  project_name: DEIP Dynamic Operating Envelopes Workstream
+  what_happened: Stakeholder consultation found that DOE non-compliance in trials
+    was frequently associated with on-site configuration issues caused by equipment
+    OEMs and installers rather than by customers themselves, yet under the current
+    framework customers are the legally responsible party for DOE compliance.
+  lesson_learnt: When designing compliance frameworks for DER programs involving third-party
+    devices and installers, ensure that responsibility for compliance is assigned
+    to the party best placed to manage it — placing legal compliance risk on customers
+    for installer or OEM configuration errors creates unfair outcomes and weakens
+    the compliance regime.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: The Working Group recommended market body reforms to assign compliance
+    risk to the party best positioned to manage it, including potential formalisation
+    of agent/aggregator obligations through connection agreement reform.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id004
+  - 47
+  evidence_excerpt: A large proportion of DOE non-compliance may also be due to site-configuration
+    issues and relate to the work of equipment OEMs and installers... under current
+    frameworks customers are the ones ultimately responsible for complying with a
+    DOE and any other party helping to manage compliance does so as the customer's
+    agent.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 3/03/2022
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+  markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  source_page_pdf: 47
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46607
+  contributing_source_titles:
+  - 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  contributing_sources:
+  - source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+    pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+    markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-46608
+  source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  publish_date: 2022-03
+  project_name: DEIP Dynamic Operating Envelopes Workstream
+  what_happened: The ENEA Smarter Homes for Distributed Energy study found that behind-the-meter
+    (BTM) device interoperability was a material barrier to customers receiving the
+    full potential benefit of DOEs — while HEMS products capable of responding to
+    DOEs existed, device-to-device communication between multiple BTM devices (solar,
+    battery, EV, water heater) used proprietary or non-standardised protocols that
+    limited orchestration capability.
+  lesson_learnt: When designing DOE or DER integration programs involving multi-device
+    residential sites, BTM interoperability constraints should be assessed early —
+    the absence of open BTM device standards limits HEMS market development and means
+    customers with complex BTM configurations cannot realise full DOE benefits without
+    additional gateways or system-specific solutions.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The Working Group recommended that market bodies, governments
+    and industry consider the cost and benefit of introducing mandatory or voluntary
+    behind-the-meter open device standards.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id005
+  - 49
+  - 50
+  evidence_excerpt: The Working Group considers that greater BTM device interoperability,
+    to support HEMS market development will help customers achieve the greatest benefits
+    from DOEs... there are limitations on what types of energy-using devices can be
+    realistically controlled.
+  confidence_note: 'project_type reconciled to ''network/grid'' from: network/grid
+    (16/20), DER/customer-side (4/20); proponent_type reconciled to ''network business''
+    from: network business (13/20), consortium/multi-party venture (4/20), government/public-sector
+    body (2/20), research organisation/university (1/20)'
+  source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 3/03/2022
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+  markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46608
+  contributing_source_titles:
+  - 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  contributing_sources:
+  - source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+    pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+    markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-46609
+  source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  publish_date: 2022-03
+  project_name: DEIP Dynamic Operating Envelopes Workstream
+  what_happened: DNSPs participating in and planning DOE trials were found to have
+    highly variable approaches to compliance reporting and enforcement — CutlerMerz's
+    review found DNSP responses on how DOE outcomes should be reported and how compliance
+    should be verified were 'quite variable', with no consistent national framework
+    in place.
+  lesson_learnt: National programs involving multiple network operators should establish
+    shared compliance reporting and enforcement frameworks before widespread deployment
+    — variable approaches across DNSPs create unequal customer outcomes and make it
+    difficult for regulators, aggregators and customers to assess program performance.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: The Working Group recommended regular DOE data reporting to the
+    AER similar to the Regulatory Information Notices (RIN) framework for reliability
+    reporting, and ongoing consultation between DNSPs, market bodies and customers.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id006
+  - 69
+  evidence_excerpt: 'Reporting and compliance: DNSP responses were quite variable
+    on how DOE outcomes should be reported and how compliance should be verified and
+    enforced.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 3/03/2022
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+  markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  source_page_pdf: 69
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46609
+  contributing_source_titles:
+  - 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  contributing_sources:
+  - source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+    pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+    markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-46610
+  source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  publish_date: 2022-03
+  project_name: DEIP Dynamic Operating Envelopes Workstream
+  what_happened: Stakeholder consultation revealed that DOE programs risk limited
+    customer uptake if consumers lack awareness of their current static export limits
+    — customers unaware of their constraints may not perceive the benefit of a dynamic
+    offer, and existing customers in SA who were more exposed to information about
+    constraints still expressed scepticism, suggesting information provision alone
+    is insufficient.
+  lesson_learnt: Program designers should not assume customers understand their current
+    network limitations before presenting a dynamic alternative — baseline consumer
+    awareness research should precede DOE rollout design, and communication must go
+    beyond informational framing to address values-based trust concerns and the perceived
+    loss of control over customer-owned assets.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: stakeholder/land/community
+  failure_mode: coordination & stakeholders
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id007
+  - 31
+  - 32
+  evidence_excerpt: Research indicates customers have very little awareness of this
+    limit and the challenges associated with increased solar exports on onto the grid...
+    consumers' knowledge of the challenges related to excess solar on the electricity
+    system is low. The research found that 'grid health' was not a strong unpromoted
+    concern for consumers.
+  confidence_note: 'project_type reconciled to ''network/grid'' from: network/grid
+    (16/20), DER/customer-side (4/20)'
+  source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 3/03/2022
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+  markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  source_page_pdf: 31
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46610
+  contributing_source_titles:
+  - 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  contributing_sources:
+  - source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+    pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+    markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-46611
+  source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  publish_date: 2022-03
+  project_name: DEIP Dynamic Operating Envelopes Workstream
+  what_happened: Consultation found that customers participating in AEMO's VPP trial
+    disengaged when they were unable to recognise the financial benefits of VPP participation
+    on their electricity bills, suggesting that financial transparency is a prerequisite
+    for sustained consumer participation in DER control programs.
+  lesson_learnt: DER control programs — including DOEs — must give customers visible,
+    timely feedback on the financial impact of their participation; without this,
+    even motivated early adopters disengage, eroding both social licence and the program's
+    ability to deliver system benefits at scale.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id008
+  - 39
+  evidence_excerpt: In the AEMO VPP trial, the market operator found that customers'
+    motivations and interests waivered when they were unable to recognise the financial
+    benefits of being part of a VPP.
+  confidence_note: 'project_type reconciled to ''network/grid'' from: network/grid
+    (16/20), DER/customer-side (4/20); project_scale_band reconciled to ''programmatic/portfolio-level''
+    from: programmatic/portfolio-level (12/20), demonstration (6/20), first commercial/FOAK
+    (1/20), utility/large-scale (1/20); proponent_type reconciled to ''network business''
+    from: network business (13/20), consortium/multi-party venture (4/20), government/public-sector
+    body (2/20), research organisation/university (1/20)'
+  source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 3/03/2022
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+  markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  source_page_pdf: 39
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46611
+  contributing_source_titles:
+  - 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  contributing_sources:
+  - source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+    pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+    markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-46612
+  source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  publish_date: 2022-03
+  project_name: DEIP Dynamic Operating Envelopes Workstream
+  what_happened: The Working Group found that a reliable internet connection is necessary
+    for DER devices to receive DOE signals, and that loss of communications would
+    require devices to revert to conservative static export limits — but research
+    into how often compliance issues and connection losses actually occur had not
+    yet been completed at the time of reporting.
+  lesson_learnt: Before scaling DOE deployment, program designers should quantify
+    the frequency and duration of communications failures and their impact on customer
+    benefit — the gap between expected dynamic exports and actual curtailed output
+    during communication outages is a material customer harm that should be documented
+    and addressed in connection agreement design.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: CSIP-AUS includes a mechanism to set fall-back controls via IEEE
+    2030.5 protocol; the Working Group recommended a nationally consistent framework
+    for device fall-back behaviour.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id009
+  - 38
+  - 39
+  - 55
+  evidence_excerpt: Research is required to determine how often compliance issues
+    currently occur, as well the current status of connection loss and what benefits
+    are being missed... If communications between the DNSP and DER devices are lost,
+    it is likely that DER devices will be required to revert to a conservative static
+    export limit.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 3/03/2022
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+  markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46612
+  contributing_source_titles:
+  - 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  contributing_sources:
+  - source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+    pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+    markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-46614
+  source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  publish_date: 2022-03
+  project_name: DEIP Dynamic Operating Envelopes Workstream
+  what_happened: Stakeholder consultation found that adopting a national communications
+    standard for DOEs too early risks locking in a specification later found unsuitable,
+    while waiting too long reduces the ability of customers to access DOE benefits
+    — at time of reporting, DNSPs were already diverging in their implementation approaches
+    creating potential fragmentation risk.
+  lesson_learnt: For national DER integration standards, timing of standardisation
+    is critical — adopt too early and risk stranding investment in an unsuitable specification;
+    adopt too late and allow fragmentation that increases costs for OEMs and limits
+    consumer choice; the standard should take effect 'on the earliest date after it
+    is agreed that does not materially impact competition outcomes.'
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: CSIP-AUS v1.0 was developed as a national implementation guide
+    and was being submitted for standardisation through Standards Australia at time
+    of publication.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id010
+  - 51
+  evidence_excerpt: Adopting a standard too early or too late could have consequences
+    for the timing and costs of DOE implementation. An adoption that is too early
+    could force the industry to converge to a standard that is later found to be unsuitable.
+    Waiting too long to adopt a standard could lead to insufficient level of latent
+    interoperability reducing the ability of customers to access the benefits of DOEs
+    at the earliest opportunity.
+  confidence_note: 'proponent_type reconciled to ''network business'' from: network
+    business (13/20), consortium/multi-party venture (4/20), government/public-sector
+    body (2/20), research organisation/university (1/20)'
+  source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 3/03/2022
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+  markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  source_page_pdf: 51
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46614
+  contributing_source_titles:
+  - 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  contributing_sources:
+  - source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+    pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+    markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-46616
+  source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  publish_date: 2022-03
+  project_name: DEIP Dynamic Operating Envelopes Workstream
+  what_happened: The CutlerMerz review found that most DNSPs were considering 5-minute
+    intervals and 24-hour forecasting periods for DOE deployment, but no nationally
+    consistent framework for constraint forecasting existed — creating a risk that
+    inconsistent forecasting approaches would increase integration costs and complexities
+    for market participants such as aggregators providing FCAS, RERT and wholesale
+    demand response.
+  lesson_learnt: Before scaling DOE deployment across multiple DNSPs, a nationally
+    consistent constraint forecasting framework should be agreed — aggregators and
+    retailers cannot efficiently hedge or dispatch against DOE-constrained resources
+    without advance notice, and inconsistent forecast horizons and intervals across
+    networks create material market integration barriers.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: The Working Group recommended development of a nationally consistent
+    framework for constraint forecasting guided by customer and market participant
+    information needs, with further work to assess costs and benefits of national
+    settings.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id011
+  - 57
+  evidence_excerpt: Ineffective, inefficient, or nationally inconsistent approaches
+    to forecasting system design would create additional DOE integration costs and
+    complexities for market participants... An aggregator providing services such
+    as RERT, FCAS or W-DR could find themselves unable to make good on a dispatch
+    instruction if a DOE unexpectedly constrains their ability to respond.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 3/03/2022
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+  markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  source_page_pdf: 58
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46616
+  contributing_source_titles:
+  - 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  contributing_sources:
+  - source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+    pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+    markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-46617
+  source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  publish_date: 2022-03
+  project_name: DEIP Dynamic Operating Envelopes Workstream
+  what_happened: Consultation found that longer DOE interval periods (e.g. 30 minutes)
+    would limit a DNSP's ability to respond to emergency system security instructions
+    from AEMO within the required 15-minute window, potentially forcing more costly
+    interventions such as feeder-level generation shedding in lieu of targeted export
+    curtailment.
+  lesson_learnt: DOE interval duration is a system security parameter, not merely
+    a market efficiency setting — DNSPs should implement or plan to transition to
+    5-minute intervals to preserve their ability to respond to AEMO system security
+    directions within required timeframes and avoid being forced into blunter, more
+    costly network interventions.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The Working Group recommended DNSPs implement or provide a plan
+    to transition to 5-minute DOE interval duration.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id012
+  - 56
+  evidence_excerpt: A longer DOE internal period (e.g., 30 minutes) could limit the
+    DNSPs ability to respond to such a request in a timely manner and require the
+    DNSP to undertake more costly measures such as 'load shedding' (in this case generation
+    shedding) at the feeder or zone substation level.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 3/03/2022
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+  markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  source_page_pdf: 56
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46617
+  contributing_source_titles:
+  - 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  contributing_sources:
+  - source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+    pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+    markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-46618
+  source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  publish_date: 2022-03
+  project_name: DEIP Dynamic Operating Envelopes Workstream
+  what_happened: Project EDGE and Project Symphony — the most complex DOE trials involving
+    AEMO, DNSP, and aggregator/retailer participation — found that the degree of delivery
+    complexity scaled with the number of market participants involved and the breadth
+    of use cases being trialled; simpler, direct-integration projects (Flexible Exports,
+    Evolve, Project Edith) proceeded to field trial faster.
+  lesson_learnt: For DOE trials, scope the number of market participants and use cases
+    to match the maturity of available systems — multi-party integration trials (DNSP
+    + AEMO + aggregators + market exchange) require significantly greater coordination
+    overhead and should be staged; begin with simpler DNSP-direct integrations to
+    establish baseline capability before adding market complexity.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id013
+  - 30
+  evidence_excerpt: It is evident that the degree of complexity in the project increases
+    with the number of market participants involved and the use cases to be trialled.
+    For example, projects like EDGE and Symphony involving a DNSP, AEMO and Aggregator/Retailers
+    seek to understand what market systems and capabilities give the flexibility to
+    efficiently scale into a high DER future.
+  confidence_note: 'project_scale_band reconciled to ''programmatic/portfolio-level''
+    from: programmatic/portfolio-level (12/20), demonstration (6/20), first commercial/FOAK
+    (1/20), utility/large-scale (1/20); proponent_type reconciled to ''network business''
+    from: network business (13/20), consortium/multi-party venture (4/20), government/public-sector
+    body (2/20), research organisation/university (1/20)'
+  source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 3/03/2022
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+  markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  source_page_pdf: 30
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46618
+  contributing_source_titles:
+  - 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  contributing_sources:
+  - source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+    pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+    markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-46619
+  source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  publish_date: 2022-03
+  project_name: DEIP Dynamic Operating Envelopes Workstream
+  what_happened: The Working Group found that designing DOE programs solely to solve
+    a technical network management problem — without framing benefits from a consumer-outcomes
+    perspective — risks failing to achieve the social licence necessary for customer
+    uptake, potentially limiting the program's ability to deliver system benefits.
+  lesson_learnt: DER and network management programs should be framed and communicated
+    from a consumer-outcomes perspective from inception — programs perceived by customers
+    as purely a network management tool (fixing a grid problem by constraining their
+    assets) will face greater resistance than those that are co-designed around customer
+    values including financial benefit, sustainability motivations, and control.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: coordination & stakeholders
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id014
+  - 31
+  evidence_excerpt: A social licence cannot exist unless industry and policy makers
+    frame the design and solution of DOEs (and other DER activities) from a consumer
+    outcomes perspective, and not from the perspective of fixing a system problem...
+    Without a social licence DER control programs are more likely to be unsuccessful
+    and not realise the full potential of benefits.
+  confidence_note: 'project_type reconciled to ''network/grid'' from: network/grid
+    (16/20), DER/customer-side (4/20)'
+  source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 3/03/2022
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+  markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  source_page_pdf: 31
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46619
+  contributing_source_titles:
+  - 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+  contributing_sources:
+  - source_title: 'DEIP Dynamic Operating Envelopes Workstream: Outcomes Report'
+    pdf_url: https://arena.gov.au/assets/2022/03/dynamic-operating-envelope-working-group-outcomes-report.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/deip-dynamic-operating-envelopes-workstream-outcomes-report/
+    markdown_filename: deip_dynamic_operating_envelopes_workstream_outcomes_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82

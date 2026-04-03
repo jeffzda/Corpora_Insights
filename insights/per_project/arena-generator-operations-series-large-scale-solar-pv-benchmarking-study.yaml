@@ -1,0 +1,568 @@
+- record_id: ARENA-DLV-36101
+  source_title: 'The Generator Operations Series Report Five: Benchmarking Large-scale
+    Solar PV Performance in Australia using satellite weather data'
+  publish_date: 2022-08
+  project_name: ARENA Generator Operations Series – Large-Scale Solar PV Benchmarking
+    Study
+  what_happened: Performance data for large-scale solar farms in Australia is temporally
+    and spatially scarce, expensive to maintain, and unavailable to the public because
+    it relies on privately-owned high-quality ground station measurements, making
+    cross-project performance benchmarking impossible without proprietary data access.
+  lesson_learnt: Investors, developers and operators should not rely solely on privately-held
+    ground station data for portfolio-level performance benchmarking — satellite-based
+    PR calculations using public AEMO generation data provide a viable alternative
+    accurate to ±4.6% (95% confidence) for annual irradiance, sufficient for relative
+    performance comparisons across farms.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Used Solcast satellite irradiance data combined with public AEMO
+    dispatch data to calculate PRs across 26 NEM solar farms, validated against ground
+    station data from 10 ARENA LSS projects, achieving ±4.6% expanded uncertainty
+    at 95% confidence.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id001
+  - 2
+  evidence_excerpt: The reliance on privately-owned high-quality ground station data
+    means that; performance data for solar farms is temporally and spatially scarce,
+    is expensive to maintain, and remains unavailable to the public. Without this
+    data, it is impossible to compare performance between projects or benchmark the
+    performance of solar farms operating in a particular market.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/the-generator-operations-series-benchmarking-large-scale-solar-pv-performance-in-australia/
+  project_page_url: null
+  kb_category: Large-scale solar
+  kb_publish_date: 31/08/2022
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2022/08/the-generator-operations-series-benchmarkin-large-scale-solar-pv-performance-in-australia.pdf
+  markdown_filename: the_generator_operations_series_benchmarking_large_scale_solar_pv_performance_in_australia.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-36101
+  contributing_source_titles:
+  - 'The Generator Operations Series Report Five: Benchmarking Large-scale Solar PV
+    Performance in Australia using satellite weather data'
+  contributing_sources:
+  - source_title: 'The Generator Operations Series Report Five: Benchmarking Large-scale
+      Solar PV Performance in Australia using satellite weather data'
+    pdf_url: https://arena.gov.au/assets/2022/08/the-generator-operations-series-benchmarkin-large-scale-solar-pv-performance-in-australia.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/the-generator-operations-series-benchmarking-large-scale-solar-pv-performance-in-australia/
+    markdown_filename: the_generator_operations_series_benchmarking_large_scale_solar_pv_performance_in_australia.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-36102
+  source_title: 'The Generator Operations Series Report Five: Benchmarking Large-scale
+    Solar PV Performance in Australia using satellite weather data'
+  publish_date: 2022-08
+  project_name: ARENA Generator Operations Series – Large-Scale Solar PV Benchmarking
+    Study
+  what_happened: Across 26 large-scale solar farms on the NEM in 2020, the average
+    raw performance ratio was 68.4% but the average unconstrained performance ratio
+    was 75.4%, indicating that curtailment reduced aggregate performance by approximately
+    7 percentage points. Victorian farms showed the most severe curtailment impact,
+    with a raw PR of only 59.1% versus an unconstrained PR of 76.0%.
+  lesson_learnt: Yield models and revenue forecasts for large-scale solar farms —
+    particularly in Victoria and South Australia — must explicitly model curtailment
+    risk; a gap of 7–17 percentage points between raw and unconstrained PR demonstrates
+    that curtailment can materially reduce realised generation relative to technical
+    capacity, with significant implications for project financing and PPA structuring.
+  issue_severity: major
+  project_type: generation
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id002
+  - 2
+  - 23
+  evidence_excerpt: The average raw performance ratio was 68.4 per cent... The average
+    unconstrained performance ratio was 75.4 per cent... VIC [raw] 59.1 [unconstrained]
+    76.0
+  confidence_note: 'secondary_failure_mode assigned because curtailment is driven
+    by market/grid conditions (commercial/demand failure) as well as technical factors;
+    primary is technical underperformance because the PR metric captures it as an
+    output shortfall.; proponent_type reconciled to ''research organisation/university''
+    from: research organisation/university (4/7), utility/energy retailer (3/7)'
+  source_url: https://arena.gov.au/knowledge-bank/the-generator-operations-series-benchmarking-large-scale-solar-pv-performance-in-australia/
+  project_page_url: null
+  kb_category: Large-scale solar
+  kb_publish_date: 31/08/2022
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2022/08/the-generator-operations-series-benchmarkin-large-scale-solar-pv-performance-in-australia.pdf
+  markdown_filename: the_generator_operations_series_benchmarking_large_scale_solar_pv_performance_in_australia.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-36102
+  contributing_source_titles:
+  - 'The Generator Operations Series Report Five: Benchmarking Large-scale Solar PV
+    Performance in Australia using satellite weather data'
+  contributing_sources:
+  - source_title: 'The Generator Operations Series Report Five: Benchmarking Large-scale
+      Solar PV Performance in Australia using satellite weather data'
+    pdf_url: https://arena.gov.au/assets/2022/08/the-generator-operations-series-benchmarkin-large-scale-solar-pv-performance-in-australia.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/the-generator-operations-series-benchmarking-large-scale-solar-pv-performance-in-australia/
+    markdown_filename: the_generator_operations_series_benchmarking_large_scale_solar_pv_performance_in_australia.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-36103
+  source_title: 'The Generator Operations Series Report Five: Benchmarking Large-scale
+    Solar PV Performance in Australia using satellite weather data'
+  publish_date: 2022-08
+  project_name: ARENA Generator Operations Series – Large-Scale Solar PV Benchmarking
+    Study
+  what_happened: AEMO did not publicly record local limit data tags for generator
+    assets until November 2021, meaning that for analysis of 2020 operational data,
+    curtailment periods had to be identified by manual visual inspection of dispatch
+    data. This conservative approach caused entire days to be excluded whenever a
+    local limit was detected at any point, unnecessarily reducing the dataset available
+    for unconstrained and temperature-corrected PR calculations.
+  lesson_learnt: Performance analysis and benchmarking of solar farm operations for
+    periods prior to November 2021 is materially hampered by the absence of public
+    local limit data from AEMO; future analyses covering post-November 2021 data will
+    achieve significantly more comprehensive unconstrained datasets with fewer unnecessary
+    exclusions, improving reliability of results.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Conservative whole-day exclusions were applied whenever a local
+    limit was visually detected; AEMO began publishing local limit data tags publicly
+    from November 2021, eliminating this limitation for future analyses.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id003
+  - 9
+  - 25
+  evidence_excerpt: This limits the amount of data available for detecting the likely
+    set-up and for calculating the unconstrained and temperature-corrected performance
+    ratios. This stage of data cleansing is particularly difficult because local limit
+    data tags in 2020 are not publicly available through AEMO. AEMO began publicly
+    recording local limit data in November 2021 and therefore this data cleansing
+    stage will be more accurate and quicker to implement on operational data post
+    November 2021.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/the-generator-operations-series-benchmarking-large-scale-solar-pv-performance-in-australia/
+  project_page_url: null
+  kb_category: Large-scale solar
+  kb_publish_date: 31/08/2022
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2022/08/the-generator-operations-series-benchmarkin-large-scale-solar-pv-performance-in-australia.pdf
+  markdown_filename: the_generator_operations_series_benchmarking_large_scale_solar_pv_performance_in_australia.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-36103
+  contributing_source_titles:
+  - 'The Generator Operations Series Report Five: Benchmarking Large-scale Solar PV
+    Performance in Australia using satellite weather data'
+  contributing_sources:
+  - source_title: 'The Generator Operations Series Report Five: Benchmarking Large-scale
+      Solar PV Performance in Australia using satellite weather data'
+    pdf_url: https://arena.gov.au/assets/2022/08/the-generator-operations-series-benchmarkin-large-scale-solar-pv-performance-in-australia.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/the-generator-operations-series-benchmarking-large-scale-solar-pv-performance-in-australia/
+    markdown_filename: the_generator_operations_series_benchmarking_large_scale_solar_pv_performance_in_australia.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-36104
+  source_title: 'The Generator Operations Series Report Five: Benchmarking Large-scale
+    Solar PV Performance in Australia using satellite weather data'
+  publish_date: 2022-08
+  project_name: ARENA Generator Operations Series – Large-Scale Solar PV Benchmarking
+    Study
+  what_happened: Satellite-based performance ratio estimates were validated against
+    ground station data from 10 ARENA LSS projects and found to be within ±4.6% of
+    ground station measurements at 95% confidence for raw and unconstrained PR, and
+    within ±5.0% for temperature-corrected PR. However, this accuracy is insufficient
+    for determining contractual PR guarantee liabilities under EPC or O&M contracts.
+  lesson_learnt: Satellite-based PR calculations are suitable for portfolio-level
+    benchmarking and relative performance comparisons between farms, but operators
+    and contractors must continue to use calibrated on-site ground station measurements
+    when determining EPC or O&M performance guarantee compliance and associated liquidated
+    damages liability.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id004
+  - 21
+  - 25
+  evidence_excerpt: While this degree of accuracy is not sufficient for the purposes
+    of determining the liability of contractors under performance ratio guarantees,
+    it is suitable for comparing the relative performance of different sites with
+    a degree of confidence, for comparing the aggregate performance of multiple farms,
+    and for setting a benchmark of observed performance across the industry as at
+    2020.
+  confidence_note: 'proponent_type reconciled to ''research organisation/university''
+    from: research organisation/university (4/7), utility/energy retailer (3/7)'
+  source_url: https://arena.gov.au/knowledge-bank/the-generator-operations-series-benchmarking-large-scale-solar-pv-performance-in-australia/
+  project_page_url: null
+  kb_category: Large-scale solar
+  kb_publish_date: 31/08/2022
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2022/08/the-generator-operations-series-benchmarkin-large-scale-solar-pv-performance-in-australia.pdf
+  markdown_filename: the_generator_operations_series_benchmarking_large_scale_solar_pv_performance_in_australia.md
+  source_page_pdf: 21
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-36104
+  contributing_source_titles:
+  - 'The Generator Operations Series Report Five: Benchmarking Large-scale Solar PV
+    Performance in Australia using satellite weather data'
+  contributing_sources:
+  - source_title: 'The Generator Operations Series Report Five: Benchmarking Large-scale
+      Solar PV Performance in Australia using satellite weather data'
+    pdf_url: https://arena.gov.au/assets/2022/08/the-generator-operations-series-benchmarkin-large-scale-solar-pv-performance-in-australia.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/the-generator-operations-series-benchmarking-large-scale-solar-pv-performance-in-australia/
+    markdown_filename: the_generator_operations_series_benchmarking_large_scale_solar_pv_performance_in_australia.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+- record_id: ARENA-DLV-36105
+  source_title: 'The Generator Operations Series Report Five: Benchmarking Large-scale
+    Solar PV Performance in Australia using satellite weather data'
+  publish_date: 2022-08
+  project_name: ARENA Generator Operations Series – Large-Scale Solar PV Benchmarking
+    Study
+  what_happened: 'The study established the first NEM-wide benchmark of temperature-corrected
+    performance ratios for large-scale solar farms, finding a mean of 79.3% (95% CI:
+    78.6%–80.1%) with the middle 50% of farms falling between 75.4% and 83.5% in 2020.
+    State-level means were similar across QLD (79.8%), NSW (78.3%) and VIC (78.5%),
+    with SA farms showing higher mean performance (83.0%) based on a small sample
+    of two farms.'
+  lesson_learnt: Investors and asset managers can use 79.3% as a reference-class temperature-corrected
+    PR benchmark for NEM large-scale solar farms as at 2020; a farm's temperature-corrected
+    PR below 75.4% is likely in the bottom quartile of industry performance and warrants
+    investigation, while a PR above 83.5% is likely in the top quartile.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id005
+  - 2
+  - 3
+  - 24
+  evidence_excerpt: 'The average temperature-corrected performance ratio was 79.3
+    per cent, with the middle 50 per cent of farms in the sample falling within the
+    range of 75.4 per cent to 83.5 per cent... PR Range for Middle 50% of Solar Farms
+    (95% Confidence): 75.4 – 83.5'
+  confidence_note: 'issue_severity set to none as this is a positive benchmarking
+    finding with no delivery failure; the SA result (83.0%) is based on n=2 and should
+    be used with caution.; proponent_type reconciled to ''research organisation/university''
+    from: research organisation/university (4/7), utility/energy retailer (3/7)'
+  source_url: https://arena.gov.au/knowledge-bank/the-generator-operations-series-benchmarking-large-scale-solar-pv-performance-in-australia/
+  project_page_url: null
+  kb_category: Large-scale solar
+  kb_publish_date: 31/08/2022
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2022/08/the-generator-operations-series-benchmarkin-large-scale-solar-pv-performance-in-australia.pdf
+  markdown_filename: the_generator_operations_series_benchmarking_large_scale_solar_pv_performance_in_australia.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-36105
+  contributing_source_titles:
+  - 'The Generator Operations Series Report Five: Benchmarking Large-scale Solar PV
+    Performance in Australia using satellite weather data'
+  contributing_sources:
+  - source_title: 'The Generator Operations Series Report Five: Benchmarking Large-scale
+      Solar PV Performance in Australia using satellite weather data'
+    pdf_url: https://arena.gov.au/assets/2022/08/the-generator-operations-series-benchmarkin-large-scale-solar-pv-performance-in-australia.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/the-generator-operations-series-benchmarking-large-scale-solar-pv-performance-in-australia/
+    markdown_filename: the_generator_operations_series_benchmarking_large_scale_solar_pv_performance_in_australia.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+- record_id: ARENA-DLV-36106
+  source_title: 'The Generator Operations Series Report Five: Benchmarking Large-scale
+    Solar PV Performance in Australia using satellite weather data'
+  publish_date: 2022-08
+  project_name: ARENA Generator Operations Series – Large-Scale Solar PV Benchmarking
+    Study
+  what_happened: No publicly available database of solar farm installation details
+    (tracking type, tilt angle, azimuth) exists in Australia, requiring the study
+    to develop an automated method to infer site setup by modelling 52 different configurations
+    per site and comparing simulated generation profiles to AEMO dispatch data. Several
+    sites had limited usable training data due to curtailment, reducing the reliability
+    of detected configurations.
+  lesson_learnt: The absence of a public registry of large-scale solar farm technical
+    specifications (tracking type, tilt, azimuth) imposes significant analytical overhead
+    for any performance benchmarking or yield modelling exercise — the industry and
+    regulators should consider establishing a public database of installation parameters
+    to reduce duplication of effort and improve the accuracy of portfolio-level assessments.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Developed an automated set-up detection method running 52 pvlib
+    simulations per site (one single-axis tracking and 51 fixed-tilt configurations)
+    and selecting the configuration with the highest r-squared correlation to AEMO
+    dispatch data.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id006
+  - 6
+  - 9
+  evidence_excerpt: After extensive research, no known public database (i.e., free
+    access) providing installation details of solar farms in Australia seems to exist.
+    As a result, this study attempts to automatically determine the installation set-up
+    at each solar farm by modelling a range of different set-ups and comparing the
+    generation profiles to the Australian Energy Market Operator's (AEMO) public dispatch
+    data.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/the-generator-operations-series-benchmarking-large-scale-solar-pv-performance-in-australia/
+  project_page_url: null
+  kb_category: Large-scale solar
+  kb_publish_date: 31/08/2022
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2022/08/the-generator-operations-series-benchmarkin-large-scale-solar-pv-performance-in-australia.pdf
+  markdown_filename: the_generator_operations_series_benchmarking_large_scale_solar_pv_performance_in_australia.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-36106
+  contributing_source_titles:
+  - 'The Generator Operations Series Report Five: Benchmarking Large-scale Solar PV
+    Performance in Australia using satellite weather data'
+  contributing_sources:
+  - source_title: 'The Generator Operations Series Report Five: Benchmarking Large-scale
+      Solar PV Performance in Australia using satellite weather data'
+    pdf_url: https://arena.gov.au/assets/2022/08/the-generator-operations-series-benchmarkin-large-scale-solar-pv-performance-in-australia.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/the-generator-operations-series-benchmarking-large-scale-solar-pv-performance-in-australia/
+    markdown_filename: the_generator_operations_series_benchmarking_large_scale_solar_pv_performance_in_australia.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-36107
+  source_title: 'The Generator Operations Series Report Five: Benchmarking Large-scale
+    Solar PV Performance in Australia using satellite weather data'
+  publish_date: 2022-08
+  project_name: ARENA Generator Operations Series – Large-Scale Solar PV Benchmarking
+    Study
+  what_happened: Using a single set of module temperature coefficients across all
+    10 ARENA LSS validation sites resulted in higher relative error for satellite
+    cell temperature estimates (mean RMSE of 16.65% at 5-minute resolution) compared
+    to irradiance estimates (mean RMSE of 27.76% W/m² but only 2.92% at monthly level),
+    reflecting that module temperature behaviour varies with site-specific installation
+    conditions and module types.
+  lesson_learnt: Cell temperature models applied across multiple solar farms should
+    incorporate site-specific thermal coefficients derived from on-site measurements
+    or correlation analysis — applying generic SAPM coefficients introduces systematic
+    bias that, while having limited impact on annual PR calculations (±1.1% contribution
+    to expanded uncertainty), can materially affect short-interval performance assessments.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The 'a' coefficient in the Sandia temperature model was iteratively
+    optimised across all LSS sites to minimise mean bias error, shifting from the
+    recommended value of -3.56 to an adapted value of -4.1, reducing systematic bias
+    in cell temperature estimates.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id007
+  - 15
+  - 16
+  - 17
+  evidence_excerpt: The relative MBE, standard deviation of MBE, and RMSE are all
+    higher for cell temperature estimates than was observed for irradiance estimates.
+    This likely reflects the fact that a single set of coefficients has been assumed
+    to describe the cell temperature model at all sites. In reality, the way that
+    weather conditions translate to module temperatures over the course of the day
+    will vary depending on the particular module and installation conditions at each
+    site.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/the-generator-operations-series-benchmarking-large-scale-solar-pv-performance-in-australia/
+  project_page_url: null
+  kb_category: Large-scale solar
+  kb_publish_date: 31/08/2022
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2022/08/the-generator-operations-series-benchmarkin-large-scale-solar-pv-performance-in-australia.pdf
+  markdown_filename: the_generator_operations_series_benchmarking_large_scale_solar_pv_performance_in_australia.md
+  source_page_pdf: 16
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-36107
+  contributing_source_titles:
+  - 'The Generator Operations Series Report Five: Benchmarking Large-scale Solar PV
+    Performance in Australia using satellite weather data'
+  contributing_sources:
+  - source_title: 'The Generator Operations Series Report Five: Benchmarking Large-scale
+      Solar PV Performance in Australia using satellite weather data'
+    pdf_url: https://arena.gov.au/assets/2022/08/the-generator-operations-series-benchmarkin-large-scale-solar-pv-performance-in-australia.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/the-generator-operations-series-benchmarking-large-scale-solar-pv-performance-in-australia/
+    markdown_filename: the_generator_operations_series_benchmarking_large_scale_solar_pv_performance_in_australia.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92

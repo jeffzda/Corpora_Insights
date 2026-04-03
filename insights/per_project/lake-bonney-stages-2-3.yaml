@@ -1,0 +1,2942 @@
+- record_id: ARENA-DLV-23301
+  source_title: 'Spotlight: Short Term Forecasting Trial on the NEM'
+  publish_date: 2020-09
+  project_name: Vestas Lake Bonney Wind Farm Short-Term Forecasting Trial
+  what_happened: A short-term forecasting trial using machine learning models at Infigen
+    Energy's Lake Bonney 2 and 3 wind farms achieved a 26% improvement in forecasting
+    accuracy compared with AEMO's AWEFS system, reducing the Causer Pays Factor by
+    an equivalent margin and delivering estimated annual cost savings of $198,000
+    (approximately $1,000/MW).
+  lesson_learnt: ML-based self-forecasting solutions can materially outperform the
+    market operator's default forecasting system for wind farms — a 26% accuracy improvement
+    translated directly into ~$1,000/MW/year in reduced FCAS Causer Pays costs, making
+    a SaaS subscription commercially justifiable for asset owners.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Continued running all four models in parallel with AEMO's production
+    environment and committed to further experiments to isolate performance gains
+    under a wider range of operating conditions.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages:
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  evidence_excerpt: It was estimated by Infigen that the Causer Pays Factor (CPF)
+    at Lake Bonney 2 and 3 reduced by 26% due to the more accurate self-forecast.
+    The estimated cost saving was $198,000 (or $1,000 per MW) annually based on the
+    median 28-day cost reductions.
+  confidence_note: project_scale_band could be first commercial/FOAK given subsequent
+    commercial SaaS subscription, but the ARENA framing is explicitly a trial/demonstration.
+    Canonical record merged from 4 source records across 3 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/spotlight-short-term-forecasting-trial-on-the-nem/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 23/09/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/09/spotlight-short-term-forecasting-vestas-interview.pdf
+  markdown_filename: spotlight_short_term_forecasting_trial_on_the_nem.md
+  source_page_pdf: 4
+  corroboration_count: 4
+  source_doc_count: 3
+  contributing_record_ids:
+  - ARENA-DLV-0851
+  - ARENA-DLV-23301
+  - ARENA-DLV-23302
+  - ARENA-DLV-45901
+  contributing_source_titles:
+  - Vestas – Wind Forecasting for the NEM Lessons Learnt Report 2
+  - 'Spotlight: Short Term Forecasting Trial on the NEM'
+  - Improving Accuracy of Short-Term Forecasting in the NEM
+  contributing_sources:
+  - source_title: Vestas – Wind Forecasting for the NEM Lessons Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2020/07/vestas-wind-forecasting-for-the-nem.-lessons-learnt-report-2pdf.pdf
+    source_pages:
+    - 2
+    - 5
+    - 6
+    source_url: https://arena.gov.au/knowledge-bank/vestas-wind-forecasting-for-the-nem-lessons-learnt-report-2/
+    markdown_filename: vestas_wind_forecasting_for_the_nem_lessons_learnt_report_2.md
+  - source_title: 'Spotlight: Short Term Forecasting Trial on the NEM'
+    pdf_url: https://arena.gov.au/assets/2020/09/spotlight-short-term-forecasting-vestas-interview.pdf
+    source_pages:
+    - 2
+    - 4
+    source_url: https://arena.gov.au/knowledge-bank/spotlight-short-term-forecasting-trial-on-the-nem/
+    markdown_filename: spotlight_short_term_forecasting_trial_on_the_nem.md
+  - source_title: Improving Accuracy of Short-Term Forecasting in the NEM
+    pdf_url: https://arena.gov.au/assets/2020/09/improving-accuracy-of-short-term-forecasting-in-nem.pdf
+    source_pages:
+    - 2
+    - 3
+    source_url: https://arena.gov.au/knowledge-bank/improving-accuracy-of-short-term-forecasting-in-the-nem/
+    markdown_filename: improving_accuracy_of_short_term_forecasting_in_the_nem.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+- record_id: ARENA-DLV-45902
+  source_title: Improving Accuracy of Short-Term Forecasting in the NEM
+  publish_date: '2020'
+  project_name: Lake Bonney Stages 2 & 3 Short-Term Forecasting Pilot Project
+  what_happened: LB2's self-forecast took longer to pass AEMO's assessment than LB3
+    because ongoing curtailment at LB2 caused the self-forecast to fail the qualification
+    threshold, despite the self-forecast performing better than AWEFS during non-curtailment
+    periods, which AEMO's assessment procedure excluded.
+  lesson_learnt: Wind farms subject to ongoing network curtailment may fail AEMO's
+    self-forecast assessment procedure even when their forecast outperforms AWEFS,
+    because curtailment periods are excluded from the assessment — proponents should
+    anticipate and flag this procedural constraint early with AEMO.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: The issue resolved itself over time as curtailment conditions
+    changed, and LB2 ultimately passed AEMO assessment on December 24, 2019.
+  transferability: moderate
+  delay_magnitude: 1-3 months
+  technology_domain: wind
+  source_pages:
+  - 2
+  - 5
+  evidence_excerpt: On the 12th of November 2019 Lake Bonney 3 passed AEMO's initial
+    assessment by performing better than AWEFS in terms of the MAE and RMSE and by
+    providing reliable and consistent forecasts to AEMO's production environment.
+    Similarly, on the 24th of December 2019 Lake Bonney 2 passed AEMO's initial assessment.
+  confidence_note: Delay magnitude estimated from LB3 passing assessment 12 November
+    2019 and LB2 passing 24 December 2019 — approximately 6 weeks difference. Canonical
+    record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/improving-accuracy-of-short-term-forecasting-in-the-nem/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 23/09/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/09/improving-accuracy-of-short-term-forecasting-in-nem.pdf
+  markdown_filename: improving_accuracy_of_short_term_forecasting_in_the_nem.md
+  source_page_pdf: 2
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-0852
+  - ARENA-DLV-45902
+  contributing_source_titles:
+  - Vestas – Wind Forecasting for the NEM Lessons Learnt Report 2
+  - Improving Accuracy of Short-Term Forecasting in the NEM
+  contributing_sources:
+  - source_title: Vestas – Wind Forecasting for the NEM Lessons Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2020/07/vestas-wind-forecasting-for-the-nem.-lessons-learnt-report-2pdf.pdf
+    source_pages:
+    - 2
+    - 5
+    source_url: https://arena.gov.au/knowledge-bank/vestas-wind-forecasting-for-the-nem-lessons-learnt-report-2/
+    markdown_filename: vestas_wind_forecasting_for_the_nem_lessons_learnt_report_2.md
+  - source_title: Improving Accuracy of Short-Term Forecasting in the NEM
+    pdf_url: https://arena.gov.au/assets/2020/09/improving-accuracy-of-short-term-forecasting-in-nem.pdf
+    source_pages:
+    - 2
+    source_url: https://arena.gov.au/knowledge-bank/improving-accuracy-of-short-term-forecasting-in-the-nem/
+    markdown_filename: improving_accuracy_of_short_term_forecasting_in_the_nem.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-0853
+  source_title: Vestas – Wind Forecasting for the NEM Lessons Learnt Report 2
+  publish_date: 2020-04
+  project_name: Vestas Wind Forecasting for the NEM
+  what_happened: The new VMET data logger installed at Met Mast A could not stream
+    data via the existing 4G network and required use of the SCADA network instead,
+    causing a temporary communication loss between Met Mast A and Infigen's independent
+    met mast data service provider because data routed through the Vestas VOB server
+    was no longer considered truly raw data.
+  lesson_learnt: Before installing new data loggers at met mast sites, conduct a thorough
+    investigation of all existing and required data-streaming pathways — including
+    third-party independent data service provider requirements — to avoid disrupting
+    parallel data flows that depend on connectivity assumptions baked into the existing
+    setup.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: Vestas configured direct access to the VMET panel via the SCADA
+    network bypassing the VOB server, and Infigen developed a new FTP-based data transfer
+    system to its independent met mast data service provider.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id001
+  - 7
+  evidence_excerpt: The new data logger (Vestas VMET panel) installed at Met Mast
+    A, required to stream data for the forecasting models, was unable to continue
+    to stream data via the existing 4G network and instead the SCADA network was the
+    only point of connection… This led to temporary communication loss between Met
+    Mast A and the independent service provider.
+  confidence_note: secondary_failure_mode of design assumption failure included because
+    the 4G connectivity assumption was embedded in the original installation scope
+    and not validated before deployment.
+  source_url: https://arena.gov.au/knowledge-bank/vestas-wind-forecasting-for-the-nem-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/07/vestas-wind-forecasting-for-the-nem.-lessons-learnt-report-2pdf.pdf
+  markdown_filename: vestas_wind_forecasting_for_the_nem_lessons_learnt_report_2.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-0853
+  contributing_source_titles:
+  - Vestas – Wind Forecasting for the NEM Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: Vestas – Wind Forecasting for the NEM Lessons Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2020/07/vestas-wind-forecasting-for-the-nem.-lessons-learnt-report-2pdf.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/vestas-wind-forecasting-for-the-nem-lessons-learnt-report-2/
+    markdown_filename: vestas_wind_forecasting_for_the_nem_lessons_learnt_report_2.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-0854
+  source_title: Vestas – Wind Forecasting for the NEM Lessons Learnt Report 2
+  publish_date: 2020-04
+  project_name: Vestas Wind Forecasting for the NEM
+  what_happened: The FTP data transfer methodology developed to resolve the Met Mast
+    A communication issue was subsequently adopted as standard practice for all new
+    met mast installations across Infigen's wind farm portfolio where the new data
+    logger is being used.
+  lesson_learnt: When a data transfer solution is developed to resolve an integration
+    issue on one site, systematically apply it to all equivalent installations in
+    the portfolio rather than treating it as a one-off fix — this prevents recurrence
+    of the same issue at other sites.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: FTP data transfer methodology standardised and rolled out across
+    all new Infigen wind farm met mast installations using the new logger.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id002
+  - 7
+  evidence_excerpt: The FTP data transfer methodology is now being implemented at
+    all the new met masts that are being installed across Infigen's new wind farms
+    where the new logger is being used.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/vestas-wind-forecasting-for-the-nem-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/07/vestas-wind-forecasting-for-the-nem.-lessons-learnt-report-2pdf.pdf
+  markdown_filename: vestas_wind_forecasting_for_the_nem_lessons_learnt_report_2.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-0854
+  contributing_source_titles:
+  - Vestas – Wind Forecasting for the NEM Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: Vestas – Wind Forecasting for the NEM Lessons Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2020/07/vestas-wind-forecasting-for-the-nem.-lessons-learnt-report-2pdf.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/vestas-wind-forecasting-for-the-nem-lessons-learnt-report-2/
+    markdown_filename: vestas_wind_forecasting_for_the_nem_lessons_learnt_report_2.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-0855
+  source_title: Vestas – Wind Forecasting for the NEM Lessons Learnt Report 2
+  publish_date: 2020-04
+  project_name: Vestas Wind Forecasting for the NEM
+  what_happened: The Causer Pays Factor (CPF) analysis intended to quantify the commercial
+    benefit of self-forecasting was inconclusive at the time of reporting because
+    only three CPF calculation periods had included self-forecasting data, the historical
+    CPF data was highly variable, and the CPF calculation procedure was difficult
+    to replicate against AEMO's published figures.
+  lesson_learnt: When designing a commercial benefit assessment for a self-forecasting
+    project, account for the lag in CPF calculation cycles (computed monthly, applied
+    prospectively) — plan for at least 12 months of self-forecasting operation before
+    drawing conclusions, and seek early engagement with AEMO on the CPF calculation
+    methodology to avoid replication difficulties.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Vestas and Infigen are developing a tool using 4-second SCADA
+    data to directly calculate theoretical CPFs under AWEFS and self-forecasting scenarios,
+    and requested ARENA/AEMO provide a workshop on the CPF calculation procedure.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages:
+  - 4
+  - 5
+  - 8
+  evidence_excerpt: Based on the observed period, the corresponding annual bounds
+    from extrapolating individual 28-day periods becomes $35,600 to $2,306,400 in
+    savings... Extrapolating monthly 28-day CPF values could result in grossly varied
+    annual saving and needs to be understood when discussing a monthly 'average' CPF
+    value or savings.
+  confidence_note: issue_severity moderate because the inability to quantify CPF benefit
+    directly impairs the project's ability to demonstrate commercial value, which
+    is a stated project objective. Canonical record merged from 3 source records across
+    3 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/vestas-wind-forecasting-for-the-nem-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/07/vestas-wind-forecasting-for-the-nem.-lessons-learnt-report-2pdf.pdf
+  markdown_filename: vestas_wind_forecasting_for_the_nem_lessons_learnt_report_2.md
+  source_page_pdf: 8
+  corroboration_count: 3
+  source_doc_count: 3
+  contributing_record_ids:
+  - ARENA-DLV-0855
+  - ARENA-DLV-23303
+  - ARENA-DLV-45904
+  contributing_source_titles:
+  - Vestas – Wind Forecasting for the NEM Lessons Learnt Report 2
+  - 'Spotlight: Short Term Forecasting Trial on the NEM'
+  - Improving Accuracy of Short-Term Forecasting in the NEM
+  contributing_sources:
+  - source_title: Vestas – Wind Forecasting for the NEM Lessons Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2020/07/vestas-wind-forecasting-for-the-nem.-lessons-learnt-report-2pdf.pdf
+    source_pages:
+    - 8
+    source_url: https://arena.gov.au/knowledge-bank/vestas-wind-forecasting-for-the-nem-lessons-learnt-report-2/
+    markdown_filename: vestas_wind_forecasting_for_the_nem_lessons_learnt_report_2.md
+  - source_title: 'Spotlight: Short Term Forecasting Trial on the NEM'
+    pdf_url: https://arena.gov.au/assets/2020/09/spotlight-short-term-forecasting-vestas-interview.pdf
+    source_pages:
+    - 4
+    source_url: https://arena.gov.au/knowledge-bank/spotlight-short-term-forecasting-trial-on-the-nem/
+    markdown_filename: spotlight_short_term_forecasting_trial_on_the_nem.md
+  - source_title: Improving Accuracy of Short-Term Forecasting in the NEM
+    pdf_url: https://arena.gov.au/assets/2020/09/improving-accuracy-of-short-term-forecasting-in-nem.pdf
+    source_pages:
+    - 5
+    source_url: https://arena.gov.au/knowledge-bank/improving-accuracy-of-short-term-forecasting-in-the-nem/
+    markdown_filename: improving_accuracy_of_short_term_forecasting_in_the_nem.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-9051
+  source_title: Vestas Short Term Forecasting of Wind Farms Lessons Learnt 1
+  publish_date: 2019-10
+  project_name: Vestas Short Term Forecasting of Wind Farms
+  what_happened: The initial project plan underestimated the time required to establish
+    API infrastructure connectivity with AEMO and reach a stable state for forecast
+    submission. The pipeline took longer than anticipated to test and stabilise, delaying
+    productive operational runtime.
+  lesson_learnt: Allow additional time in project plans to test and stabilise self-forecast
+    API pipelines before commencing assessment periods — infrastructure connectivity
+    with AEMO's environment is more complex than typical software integrations and
+    requires extended stabilisation time.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: unvalidated technical assumptions
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: Extended the operational runtime to allow the system to collect
+    critical information on forecast reliability and operating conditions, and deployed
+    additional infrastructure monitoring to strengthen 24/7 operational support.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id003
+  - 1
+  evidence_excerpt: The initial project plan anticipated a shorter duration for establishing
+    the infrastructure connectivity using the API and get to a stable state for the
+    forecast submittal via this API. Future deployment should allow for additional
+    time to test and stabilize the self-forecast pipeline.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/vestas-short-term-forecasting-of-wind-farms-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2019/12/vestas-lessons-learnt-report.pdf
+  markdown_filename: vestas_short_term_forecasting_of_wind_farms_lessons_learnt_1.md
+  source_page_pdf: 1
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-9051
+  contributing_source_titles:
+  - Vestas Short Term Forecasting of Wind Farms Lessons Learnt 1
+  contributing_sources:
+  - source_title: Vestas Short Term Forecasting of Wind Farms Lessons Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/12/vestas-lessons-learnt-report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/vestas-short-term-forecasting-of-wind-farms-lessons-learnt-1/
+    markdown_filename: vestas_short_term_forecasting_of_wind_farms_lessons_learnt_1.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-9052
+  source_title: Vestas Short Term Forecasting of Wind Farms Lessons Learnt 1
+  publish_date: 2019-10
+  project_name: Vestas Short Term Forecasting of Wind Farms
+  what_happened: Infigen were unaware of password length requirements for AEMO's E-hub
+    REST API accessed via the older Web Services API, resulting in periods where no
+    forecast data was transmitted to AEMO. Troubleshooting by trial and error eventually
+    revealed that the old API does not accept passwords longer than 20 characters,
+    causing further delay.
+  lesson_learnt: Before integrating with AEMO's API environment, explicitly confirm
+    all authentication requirements — including undocumented password acceptance and
+    rejection criteria — to avoid outages and costly trial-and-error troubleshooting.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: data & measurement
+  intervention_note: Troubleshooting via trial and error identified the 20-character
+    password limit; once discovered, the credentials were updated and data submission
+    resumed.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id004
+  - 2
+  evidence_excerpt: Infigen were unaware of the password requirements and password
+    acceptance/rejection criteria required to access AEMO's new E-hub Rest API via
+    the older Web Services API which resulted in periods where no forecast data was
+    being sent to AEMO. Troubleshooting via trial and error identified this problem
+    and revealed that the old API does not accept passwords more than 20 characters
+    long which resulted in further delay.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/vestas-short-term-forecasting-of-wind-farms-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2019/12/vestas-lessons-learnt-report.pdf
+  markdown_filename: vestas_short_term_forecasting_of_wind_farms_lessons_learnt_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-9052
+  contributing_source_titles:
+  - Vestas Short Term Forecasting of Wind Farms Lessons Learnt 1
+  contributing_sources:
+  - source_title: Vestas Short Term Forecasting of Wind Farms Lessons Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/12/vestas-lessons-learnt-report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/vestas-short-term-forecasting-of-wind-farms-lessons-learnt-1/
+    markdown_filename: vestas_short_term_forecasting_of_wind_farms_lessons_learnt_1.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-9053
+  source_title: Vestas Short Term Forecasting of Wind Farms Lessons Learnt 1
+  publish_date: 2019-10
+  project_name: Vestas Short Term Forecasting of Wind Farms
+  what_happened: Lack of prior knowledge of how to interact with AEMO's environment
+    caused the team to apply principles from other software integrations that were
+    not appropriate, consuming resources and slowing progress on the API integration.
+  lesson_learnt: Treat AEMO API integration as a specialist domain — teams without
+    prior experience of AEMO's environment should seek specific guidance or expertise
+    early rather than extrapolating from general software integration practice.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated integration
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id005
+  - 2
+  evidence_excerpt: Lack of knowledge in how to interact with AEMO's environment meant
+    that resource was spent trying to apply principles typically used in other software
+    integrations.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/vestas-short-term-forecasting-of-wind-farms-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2019/12/vestas-lessons-learnt-report.pdf
+  markdown_filename: vestas_short_term_forecasting_of_wind_farms_lessons_learnt_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-9053
+  contributing_source_titles:
+  - Vestas Short Term Forecasting of Wind Farms Lessons Learnt 1
+  contributing_sources:
+  - source_title: Vestas Short Term Forecasting of Wind Farms Lessons Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/12/vestas-lessons-learnt-report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/vestas-short-term-forecasting-of-wind-farms-lessons-learnt-1/
+    markdown_filename: vestas_short_term_forecasting_of_wind_farms_lessons_learnt_1.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: integration failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-9054
+  source_title: Vestas Short Term Forecasting of Wind Farms Lessons Learnt 1
+  publish_date: 2019-10
+  project_name: Vestas Short Term Forecasting of Wind Farms
+  what_happened: The project assessment methodology contained a condition whereby
+    AEMO constraints on a park equal to the park's forecasted AWEFS availability were
+    not excluded from the MAE/RMSE calculation. This condition structurally favoured
+    AWEFS over the self-forecast when the actual MW output followed the AWEFS-set
+    constraint ceiling, making the self-forecast appear less accurate than it was.
+  lesson_learnt: When designing assessment frameworks for self-forecast trials, exclude
+    all periods where AEMO dispatch constraints are binding from accuracy metrics
+    (MAE/RMSE) — failure to do so systematically biases results in favour of the incumbent
+    AWEFS benchmark and misrepresents self-forecast reliability.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: The project team identified the flaw and recommended that the
+    assessment condition be revised to exclude all AEMO-constrained periods.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id006
+  - 1
+  evidence_excerpt: The assessment condition stating that any AEMO constraint on a
+    park that is equal to the park's forecasted AWEFS availability will not be excluded
+    from the MAE/RMSE calculation should be revised. This condition will favour the
+    AWEFS when the actual availability and self-forecast availability is higher than
+    the AWEFS availability, as the actual MW will directly follow the AWEFS availability
+    due to the constraint limiting the park.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/vestas-short-term-forecasting-of-wind-farms-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2019/12/vestas-lessons-learnt-report.pdf
+  markdown_filename: vestas_short_term_forecasting_of_wind_farms_lessons_learnt_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-9054
+  contributing_source_titles:
+  - Vestas Short Term Forecasting of Wind Farms Lessons Learnt 1
+  contributing_sources:
+  - source_title: Vestas Short Term Forecasting of Wind Farms Lessons Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/12/vestas-lessons-learnt-report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/vestas-short-term-forecasting-of-wind-farms-lessons-learnt-1/
+    markdown_filename: vestas_short_term_forecasting_of_wind_farms_lessons_learnt_1.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-9055
+  source_title: Vestas Short Term Forecasting of Wind Farms Lessons Learnt 1
+  publish_date: 2019-10
+  project_name: Vestas Short Term Forecasting of Wind Farms
+  what_happened: AEMO constraints were binding at Lake Bonney 3 for over 24% of periods
+    in the last 20 days of the trial. Because the assessment required forecast data
+    to cover 80% of the trial period, suppressing constrained periods risked failing
+    the 80% coverage condition even though the self-forecast was performing correctly.
+  lesson_learnt: The 80% data-coverage threshold in self-forecast trial assessments
+    should be revised to account for high frequencies of binding AEMO constraints
+    — a threshold that penalises proponents for correctly suppressing constrained
+    periods creates a perverse incentive and invalidates the assessment.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: The team recommended revising the 80% coverage condition in the
+    assessment framework to address this structural conflict.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id007
+  - 1
+  evidence_excerpt: Over the last 20 days, AEMO constraints (where the constraint
+    was both less than or equal to the AWEFS availability), were binding at Lake Bonney
+    3 for over 24% of the periods. Therefore, if Lake Bonney were to suppress the
+    forecast where AEMO is constraining the park to its AWEFS maximum availability,
+    then the trial might not pass the condition that forecast data must cover 80%
+    of the trial period.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/vestas-short-term-forecasting-of-wind-farms-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2019/12/vestas-lessons-learnt-report.pdf
+  markdown_filename: vestas_short_term_forecasting_of_wind_farms_lessons_learnt_1.md
+  source_page_pdf: 1
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-9055
+  contributing_source_titles:
+  - Vestas Short Term Forecasting of Wind Farms Lessons Learnt 1
+  contributing_sources:
+  - source_title: Vestas Short Term Forecasting of Wind Farms Lessons Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/12/vestas-lessons-learnt-report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/vestas-short-term-forecasting-of-wind-farms-lessons-learnt-1/
+    markdown_filename: vestas_short_term_forecasting_of_wind_farms_lessons_learnt_1.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-45903
+  source_title: Improving Accuracy of Short-Term Forecasting in the NEM
+  publish_date: '2020'
+  project_name: Lake Bonney Stages 2 & 3 Short-Term Forecasting Pilot Project
+  what_happened: The self-forecast was found to be skewed toward underestimating generation
+    while AWEFS overestimates; the CPF improvement of 26% was driven primarily by
+    this underestimation bias coinciding with a market structural preference for raise
+    regulation FCAS, rather than purely by improved forecast accuracy.
+  lesson_learnt: A self-forecast's CPF benefit can be driven by directional bias (underestimation)
+    rather than raw accuracy improvement — proponents should assess whether market
+    FCAS conditions favour their forecast bias direction, and should not assume CPF
+    improvement will persist if market raise/lower regulation dynamics shift.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: The team recommended revising the assessment condition to permit
+    negative forecast values.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages:
+  - 1
+  - 3
+  - 4
+  evidence_excerpt: On further analysis, it was observed that most of the improvements
+    to CPF are because the self-forecast tends to underestimate generation, while
+    AWEFS overestimates generation... the CPF improvement of 26% can be explained
+    by the observation that over the period considered, the market consistently required
+    more Regulation Raise FCAS than Regulation Lower FCAS.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/improving-accuracy-of-short-term-forecasting-in-the-nem/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 23/09/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/09/improving-accuracy-of-short-term-forecasting-in-nem.pdf
+  markdown_filename: improving_accuracy_of_short_term_forecasting_in_the_nem.md
+  source_page_pdf: 4
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-9056
+  - ARENA-DLV-45903
+  contributing_source_titles:
+  - Vestas Short Term Forecasting of Wind Farms Lessons Learnt 1
+  - Improving Accuracy of Short-Term Forecasting in the NEM
+  contributing_sources:
+  - source_title: Vestas Short Term Forecasting of Wind Farms Lessons Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/12/vestas-lessons-learnt-report.pdf
+    source_pages:
+    - 1
+    source_url: https://arena.gov.au/knowledge-bank/vestas-short-term-forecasting-of-wind-farms-lessons-learnt-1/
+    markdown_filename: vestas_short_term_forecasting_of_wind_farms_lessons_learnt_1.md
+  - source_title: Improving Accuracy of Short-Term Forecasting in the NEM
+    pdf_url: https://arena.gov.au/assets/2020/09/improving-accuracy-of-short-term-forecasting-in-nem.pdf
+    source_pages:
+    - 3
+    - 4
+    source_url: https://arena.gov.au/knowledge-bank/improving-accuracy-of-short-term-forecasting-in-the-nem/
+    markdown_filename: improving_accuracy_of_short_term_forecasting_in_the_nem.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-9057
+  source_title: Vestas Short Term Forecasting of Wind Farms Lessons Learnt 1
+  publish_date: 2019-10
+  project_name: Vestas Short Term Forecasting of Wind Farms
+  what_happened: Significant time was spent working through the intricacies of SCADA
+    data available from the Lake Bonney wind farms and AEMO's dispatch systems in
+    order to forecast accurately through non-business-as-usual operating scenarios.
+    Anticipating curtailed time periods for the two farms also proved challenging.
+  lesson_learnt: Plan for an extended data familiarisation phase when integrating
+    wind farm SCADA data with AEMO dispatch systems — non-standard operating scenarios
+    (curtailment, constraints) require dedicated investigation time and should be
+    explicitly scoped into project plans for self-forecasting deployments.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id008
+  - 2
+  evidence_excerpt: Time was spent working through the intricacies of both the SCADA
+    data available from the Lake Bonney wind farms and AEMO's dispatch systems. This
+    was necessary to be able to forecast accurately through numerous non 'business-as-usual'
+    scenarios. It was also challenging anticipating curtailed time period for the
+    two farms.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/vestas-short-term-forecasting-of-wind-farms-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2019/12/vestas-lessons-learnt-report.pdf
+  markdown_filename: vestas_short_term_forecasting_of_wind_farms_lessons_learnt_1.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-9057
+  contributing_source_titles:
+  - Vestas Short Term Forecasting of Wind Farms Lessons Learnt 1
+  contributing_sources:
+  - source_title: Vestas Short Term Forecasting of Wind Farms Lessons Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/12/vestas-lessons-learnt-report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/vestas-short-term-forecasting-of-wind-farms-lessons-learnt-1/
+    markdown_filename: vestas_short_term_forecasting_of_wind_farms_lessons_learnt_1.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-9058
+  source_title: Vestas Short Term Forecasting of Wind Farms Lessons Learnt 1
+  publish_date: 2019-10
+  project_name: Vestas Short Term Forecasting of Wind Farms
+  what_happened: Managing self-forecast submissions for multiple DUIDs registered
+    under a single participant required additional complexity in the API submission
+    process. The API platform introduced per-DUID access controls so forecast providers
+    could only submit for their specific DUIDs, not the full participant portfolio.
+  lesson_learnt: When a participant holds multiple DUIDs, design the API integration
+    architecture to handle per-DUID access controls from the outset — adding this
+    security layer later increases submission complexity and requires additional development
+    effort.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: poor scoping
+  intervention_note: The API platform was configured to restrict forecast providers
+    to only their specific DUIDs, improving security while adding submission complexity.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id009
+  - 2
+  evidence_excerpt: As Infigen has multiple DUIDs registered under a single participant,
+    the addition of the API platform allowed Infigen greater security that forecast
+    providers could only submit self-forecasts for the specific DUIDs they were providing
+    the service for and not the full participant. While this gives Infigen control
+    and monitoring over the data being submitted on behalf of Infigen's participants,
+    it does add additional complexity to the submission process.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/vestas-short-term-forecasting-of-wind-farms-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2019/12/vestas-lessons-learnt-report.pdf
+  markdown_filename: vestas_short_term_forecasting_of_wind_farms_lessons_learnt_1.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-9058
+  contributing_source_titles:
+  - Vestas Short Term Forecasting of Wind Farms Lessons Learnt 1
+  contributing_sources:
+  - source_title: Vestas Short Term Forecasting of Wind Farms Lessons Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/12/vestas-lessons-learnt-report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/vestas-short-term-forecasting-of-wind-farms-lessons-learnt-1/
+    markdown_filename: vestas_short_term_forecasting_of_wind_farms_lessons_learnt_1.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-9059
+  source_title: Vestas Short Term Forecasting of Wind Farms Lessons Learnt 1
+  publish_date: 2019-10
+  project_name: Vestas Short Term Forecasting of Wind Farms
+  what_happened: By completing the project, Infigen established a functional API platform
+    for bidirectional communication with AEMO's environment, creating reusable digital
+    infrastructure ahead of AEMO's broader transition to API-based communications.
+  lesson_learnt: Early investment in API integration with AEMO's environment yields
+    durable infrastructure benefits — the platform built for self-forecasting creates
+    reusable capability as AEMO progressively migrates more communications to API
+    channels.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id010
+  - 2
+  evidence_excerpt: Infigen now has an API platform for channelling information to
+    and from AEMO's environment. This will be beneficial moving forward as AEMO move
+    more of their communications into APIs.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/vestas-short-term-forecasting-of-wind-farms-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2019/12/vestas-lessons-learnt-report.pdf
+  markdown_filename: vestas_short_term_forecasting_of_wind_farms_lessons_learnt_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-9059
+  contributing_source_titles:
+  - Vestas Short Term Forecasting of Wind Farms Lessons Learnt 1
+  contributing_sources:
+  - source_title: Vestas Short Term Forecasting of Wind Farms Lessons Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/12/vestas-lessons-learnt-report.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/vestas-short-term-forecasting-of-wind-farms-lessons-learnt-1/
+    markdown_filename: vestas_short_term_forecasting_of_wind_farms_lessons_learnt_1.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-23304
+  source_title: 'Spotlight: Short Term Forecasting Trial on the NEM'
+  publish_date: 2020-09
+  project_name: Vestas Lake Bonney Wind Farm Short-Term Forecasting Trial
+  what_happened: Access to reliable, high-resolution, low-latency real-time data from
+    assets was identified as the fundamental constraint limiting the ability of AI/ML
+    models to solve intermittent generation forecasting challenges in time-critical
+    self-forecasting applications.
+  lesson_learnt: Before deploying ML-based short-term forecasting solutions, project
+    teams should audit the quality, resolution, and latency of available SCADA and
+    sensor data — data access gaps are the primary technical bottleneck for AI/ML
+    forecasting performance in real-time NEM dispatch applications.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id011
+  - 4
+  evidence_excerpt: Data science is built on the foundation of reliable, high-resolution
+    accurate data from assets. This access, while fundamental, can be complex, especially
+    in the case of real-time, low latency, time-critical applications such as short-term
+    forecasting. It thereby limits the ability of technologies like Artificial Intelligence/Machine
+    Learning to solve the challenges of intermittent generation.
+  confidence_note: lifecycle_phase assigned to commissioning/integration as data access
+    issues were encountered during solution integration and setup; issue_severity
+    moderate as it is described as a fundamental structural constraint on model performance.
+  source_url: https://arena.gov.au/knowledge-bank/spotlight-short-term-forecasting-trial-on-the-nem/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 23/09/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/09/spotlight-short-term-forecasting-vestas-interview.pdf
+  markdown_filename: spotlight_short_term_forecasting_trial_on_the_nem.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-23304
+  contributing_source_titles:
+  - 'Spotlight: Short Term Forecasting Trial on the NEM'
+  contributing_sources:
+  - source_title: 'Spotlight: Short Term Forecasting Trial on the NEM'
+    pdf_url: https://arena.gov.au/assets/2020/09/spotlight-short-term-forecasting-vestas-interview.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/spotlight-short-term-forecasting-trial-on-the-nem/
+    markdown_filename: spotlight_short_term_forecasting_trial_on_the_nem.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-23305
+  source_title: 'Spotlight: Short Term Forecasting Trial on the NEM'
+  publish_date: 2020-09
+  project_name: Vestas Lake Bonney Wind Farm Short-Term Forecasting Trial
+  what_happened: During the trial, an observed tendency for the self-forecast model
+    to slightly under-forecast production was identified. Under the existing NEM conditions
+    — where Raise Regulation FCAS was required more often than Lower Regulation FCAS
+    — this bias was actually advantageous, reducing cost exposure. However, if all
+    semi-scheduled generators adopted the same under-forecasting bias, the market
+    dynamic could reverse.
+  lesson_learnt: Self-forecasting strategies should be designed with awareness of
+    portfolio-level market effects — a forecast bias that is individually advantageous
+    under current NEM FCAS conditions could become harmful if widely adopted, and
+    operators should monitor evolving FCAS market dynamics rather than hard-coding
+    a directional bias.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id012
+  - 4
+  evidence_excerpt: It was observed in our trial that Raise Regulation FCAS was required
+    in the NEM more often than Lower Regulation FCAS. Therefore, due to an observed
+    slight tendency of the self-forecast to under-forecast production there was less
+    risk of actual production being lower than the forecasted production and less
+    exposure to the more frequent Raise Regulation FCAS. However, if every semi-scheduled
+    generator was to intentionally under-forecast production, we may see a need for
+    more Lower Regulation FCAS and a bias to over-forecast would be advantageous from
+    a cost perspective.
+  confidence_note: failure_mode set to design assumption failure — the model's implicit
+    directional bias was not a deliberate design choice and its broader systemic implications
+    were only recognised post-trial.
+  source_url: https://arena.gov.au/knowledge-bank/spotlight-short-term-forecasting-trial-on-the-nem/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 23/09/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/09/spotlight-short-term-forecasting-vestas-interview.pdf
+  markdown_filename: spotlight_short_term_forecasting_trial_on_the_nem.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-23305
+  contributing_source_titles:
+  - 'Spotlight: Short Term Forecasting Trial on the NEM'
+  contributing_sources:
+  - source_title: 'Spotlight: Short Term Forecasting Trial on the NEM'
+    pdf_url: https://arena.gov.au/assets/2020/09/spotlight-short-term-forecasting-vestas-interview.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/spotlight-short-term-forecasting-trial-on-the-nem/
+    markdown_filename: spotlight_short_term_forecasting_trial_on_the_nem.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-45906
+  source_title: Improving Accuracy of Short-Term Forecasting in the NEM
+  publish_date: '2020'
+  project_name: Lake Bonney Stages 2 & 3 Short-Term Forecasting Pilot Project
+  what_happened: Infigen developed an intermediate API layer between Utopus Insights'
+    forecasting system and AEMO's API to implement additional cyber security controls,
+    with a one-off setup cost of $25,700 and estimated ongoing monitoring costs of
+    approximately $200 per week; this infrastructure is reusable for additional assets
+    at marginal incremental cost.
+  lesson_learnt: When integrating third-party forecasting systems with AEMO's API,
+    building an intermediate API layer for security and control is advisable and cost-effective
+    at scale — the one-off setup cost of ~$25,700 is largely fixed and additional
+    assets can be onboarded for $1,000–$1,500 per year in marginal running costs.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages:
+  - 2
+  - 4
+  - 6
+  evidence_excerpt: A one-off cost of $25,700 was incurred by Infigen to build the
+    IT application and infrastructure to submit and monitor self-forecasts received
+    from Utopus and sent to AEMO. If Infigen were to configure another self-forecast
+    for a different asset they would be using the already configured IT application
+    and infrastructure where extra costs would be incurred (in the order of $1000
+    - $1500/year).
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/improving-accuracy-of-short-term-forecasting-in-the-nem/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 23/09/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/09/improving-accuracy-of-short-term-forecasting-in-nem.pdf
+  markdown_filename: improving_accuracy_of_short_term_forecasting_in_the_nem.md
+  source_page_pdf: 6
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-23306
+  - ARENA-DLV-45906
+  contributing_source_titles:
+  - 'Spotlight: Short Term Forecasting Trial on the NEM'
+  - Improving Accuracy of Short-Term Forecasting in the NEM
+  contributing_sources:
+  - source_title: 'Spotlight: Short Term Forecasting Trial on the NEM'
+    pdf_url: https://arena.gov.au/assets/2020/09/spotlight-short-term-forecasting-vestas-interview.pdf
+    source_pages:
+    - 4
+    source_url: https://arena.gov.au/knowledge-bank/spotlight-short-term-forecasting-trial-on-the-nem/
+    markdown_filename: spotlight_short_term_forecasting_trial_on_the_nem.md
+  - source_title: Improving Accuracy of Short-Term Forecasting in the NEM
+    pdf_url: https://arena.gov.au/assets/2020/09/improving-accuracy-of-short-term-forecasting-in-nem.pdf
+    source_pages:
+    - 2
+    - 6
+    source_url: https://arena.gov.au/knowledge-bank/improving-accuracy-of-short-term-forecasting-in-the-nem/
+    markdown_filename: improving_accuracy_of_short_term_forecasting_in_the_nem.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+- record_id: ARENA-DLV-39601
+  source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+    October 2019)
+  publish_date: 2020-01
+  project_name: ARENA Short-Term Forecasting Trial on the NEM
+  what_happened: Trial participants encountered delays in completing MP5F API registration
+    and self-forecast accreditation due to the 90-day password expiry on AEMO's MP5F
+    API user accounts. When passwords expired, AEMO's authentication service made
+    the account inactive and blocked forecast submissions; only the wind or solar
+    farm operator (not the forecasting service provider) could reset the password,
+    creating a diffusion of responsibility that caused delays in restoring submissions.
+  lesson_learnt: Forecasting service providers should not assume they can independently
+    manage all system credentials — where a third-party system (such as AEMO's MP5F
+    API) assigns account management responsibilities to the asset operator rather
+    than the service provider, this dependency must be explicitly documented in the
+    project risk plan and a clear password-renewal protocol agreed with the operator
+    before go-live.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated integration
+  intervention_note: AEMO developed a new API to allow self-forecast providers to
+    directly update their password without requiring market participant involvement,
+    resolving the diffusion-of-responsibility issue.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id013
+  - 7
+  evidence_excerpt: A common challenge has been that the MP5F API user account password
+    expires every 90 days. If not renewed beforehand, AEMO's authentication service
+    will make that user account inactive and block any further self-forecast submissions
+    from that user. Only the operator of the wind or solar farm can reset the MP5F
+    API User account password. This diffusion of responsibility has created delays
+    in getting the submissions accepted again.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 31/01/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+  markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39601
+  contributing_source_titles:
+  - Short-Term Forecasting Trial on the NEM Progress Report (April to October 2019)
+  contributing_sources:
+  - source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+      October 2019)
+    pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+    markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-39602
+  source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+    October 2019)
+  publish_date: 2020-01
+  project_name: ARENA Short-Term Forecasting Trial on the NEM
+  what_happened: Trial participants commonly underestimated the complexity of AEMO's
+    MP5F API registration and self-forecast assessment process, consuming time contingency
+    in project plans to avoid delays to project completion dates.
+  lesson_learnt: Although the AEMO self-forecast assessment process is a known prerequisite,
+    future STF project plans should explicitly budget time and resources for navigating
+    the MP5F API registration and accreditation process — drawing on AEMO's published
+    Participant Forecasting FAQ (September 2019) and engaging AEMO's operational forecasting
+    team early.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: technology vendor
+  delay_category: approvals/regulatory
+  failure_mode: poor scoping
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: AEMO collated commonly asked questions into a Participant Forecasting
+    FAQ published in September 2019, providing clarification on the registration and
+    assessment process for current and future participants.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id014
+  - 7
+  evidence_excerpt: A common challenge was fully understanding the MP5F API registration
+    and self-forecast assessment process. AEMO collated these lessons learnt and commonly
+    asked questions into a Participant Forecasting FAQ (published in September 2019)
+    that includes clarification and further information on the processes.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 31/01/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+  markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39602
+  contributing_source_titles:
+  - Short-Term Forecasting Trial on the NEM Progress Report (April to October 2019)
+  contributing_sources:
+  - source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+      October 2019)
+    pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+    markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-39603
+  source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+    October 2019)
+  publish_date: 2020-01
+  project_name: ARENA Short-Term Forecasting Trial on the NEM
+  what_happened: Wind forecasting algorithms required revision during the trial because
+    existing machine learning and physical models failed to adequately account for
+    site terrain, wind turbine wakes, extreme wind speeds, and turbulence — factors
+    that significantly degraded forecast accuracy.
+  lesson_learnt: Wind STF algorithm design must explicitly incorporate site-specific
+    terrain effects, turbine wake interactions, and diurnal turbulence variation before
+    deployment; treating these as post-hoc calibration issues rather than design inputs
+    will require costly algorithm rework during the trial period.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Participants revised forecasting algorithms and machine learning
+    designs to better account for terrain, wake effects, extreme wind speeds, and
+    turbulence; summer 2019/2020 data was identified as the next validation point.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id015
+  - 8
+  evidence_excerpt: Early lessons learnt for wind forecasting found that there was
+    a need to revise existing algorithms and machine learning designs to better forecast
+    the effect of; site terrain, wind turbine wakes, extreme wind speeds and turbulence.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 31/01/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+  markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39603
+  contributing_source_titles:
+  - Short-Term Forecasting Trial on the NEM Progress Report (April to October 2019)
+  contributing_sources:
+  - source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+      October 2019)
+    pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+    markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-39604
+  source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+    October 2019)
+  publish_date: 2020-01
+  project_name: ARENA Short-Term Forecasting Trial on the NEM
+  what_happened: Meridian Energy found during detailed design that accurate placement
+    of LIDAR and meteorological masts required access to terrain and topographical
+    maps with 50 cm contour lines, and that designing LIDAR equipment to be easily
+    repositioned across a site was beneficial for optimising correlation between upstream
+    measurements and turbine-level wind speed or generation.
+  lesson_learnt: In the detailed design phase of wind STF projects, procure terrain
+    and topographical maps with at least 50 cm contour resolution before finalising
+    LIDAR and met-mast placement, and specify that LIDAR equipment must be mobile
+    enough to be repositioned across the site — fixed installations risk suboptimal
+    measurement correlation.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id016
+  - 9
+  evidence_excerpt: it is useful to have access to terrain and topographical maps
+    with 50cm contour lines to ensure the optimal placement of the Light Detection
+    and Ranging (LIDAR) and meteorological masts. Additionally, designing LIDAR equipment
+    that can be easily moved across the site is beneficial to optimise the correlation
+    between upstream measurements and measured wind speed (or generation) at any turbine
+    location.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 31/01/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+  markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39604
+  contributing_source_titles:
+  - Short-Term Forecasting Trial on the NEM Progress Report (April to October 2019)
+  contributing_sources:
+  - source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+      October 2019)
+    pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+    markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-39605
+  source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+    October 2019)
+  publish_date: 2020-01
+  project_name: ARENA Short-Term Forecasting Trial on the NEM
+  what_happened: Windlab found that the placement of LIDAR measurement locations produces
+    a pattern of influence that is highly variable across a geographic area, even
+    at a small wind farm, meaning that poor choice of measurement locations left some
+    turbines without adequate forecast coverage.
+  lesson_learnt: Careful selection of LIDAR measurement locations is critical to ensure
+    all turbines in a wind farm are covered — even at small sites, the spatial influence
+    of each measurement point varies substantially, and this must be resolved during
+    detailed design rather than discovered during trial operation.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id017
+  - 9
+  evidence_excerpt: the placement of LIDAR measurement locations gives a pattern of
+    influence that is quite variable across a geographic area, even a small wind farm.
+    As such, careful choice of measurement locations is key to cover all turbines.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 31/01/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+  markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39605
+  contributing_source_titles:
+  - Short-Term Forecasting Trial on the NEM Progress Report (April to October 2019)
+  contributing_sources:
+  - source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+      October 2019)
+    pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+    markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-39606
+  source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+    October 2019)
+  publish_date: 2020-01
+  project_name: ARENA Short-Term Forecasting Trial on the NEM
+  what_happened: Aeolius Wind Systems found at Macarthur wind farm that the short-range
+    scanning Doppler LIDAR could only accurately forecast generation for six turbines
+    within its 2.5 km effective operating range, limiting the coverage achievable
+    with a single unit.
+  lesson_learnt: When specifying LIDAR hardware for wind STF projects, verify that
+    the effective range of the instrument (not the nominal maximum range) is sufficient
+    to cover the required number of turbines — at Macarthur wind farm only six turbines
+    could be accurately forecast within the effective 2.5 km range of the scanning
+    Doppler LIDAR.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id018
+  - 9
+  evidence_excerpt: The maximum distance where data of sufficient quality and quantity
+    could be obtained to derive vector wind fields was approximately 2.5 km. Within
+    that range only six turbines could be accurately forecast.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 31/01/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+  markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39606
+  contributing_source_titles:
+  - Short-Term Forecasting Trial on the NEM Progress Report (April to October 2019)
+  contributing_sources:
+  - source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+      October 2019)
+    pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+    markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-39607
+  source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+    October 2019)
+  publish_date: 2020-01
+  project_name: ARENA Short-Term Forecasting Trial on the NEM
+  what_happened: Aeolius Wind Systems identified that understanding turbine wake behaviour
+    in large wind farms with multiple turbines is critical for physical-based LIDAR
+    forecasting strategies to succeed, but that the knowledge and data needed to quantify
+    upstream turbine impacts on leeward turbines represented a significant gap at
+    the time of the trial.
+  lesson_learnt: STF projects relying on physical LIDAR forecasting at large wind
+    farms should treat turbine wake characterisation as a prerequisite data requirement
+    — without quantifying upstream wake impacts on leeward turbines, forecast accuracy
+    will be materially limited and the knowledge gap should be addressed in parallel
+    with project delivery.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Aeolius Wind Systems planned to address the wake knowledge gap
+    through additional research conducted in parallel with the ARENA STF trial.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id019
+  - 9
+  evidence_excerpt: it is critical to understand wake behaviour in large wind farms
+    with multiple turbines in order for physical based LIDAR forecasting strategies
+    to succeed. This includes quantifying the impacts of 'upstream' turbines on leeward
+    (facing away from the wind) turbines to evaluate the impacts on electricity production
+    and in turn STF accuracy. High frequency sensors and additional information on
+    turbine wake behaviour is needed to help fill this knowledge gap.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 31/01/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+  markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39607
+  contributing_source_titles:
+  - Short-Term Forecasting Trial on the NEM Progress Report (April to October 2019)
+  contributing_sources:
+  - source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+      October 2019)
+    pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+    markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-39608
+  source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+    October 2019)
+  publish_date: 2020-01
+  project_name: ARENA Short-Term Forecasting Trial on the NEM
+  what_happened: Windlab found that wind turbulence — driven by daytime solar heating
+    creating turbulent eddies — produces a daily changing variance in both horizontal
+    and vertical wind speeds that requires a forecast algorithm specifically designed
+    to accommodate this varying pattern; existing approaches did not handle this adequately.
+  lesson_learnt: Wind forecasting algorithms for NEM sites must be designed to handle
+    diurnally varying turbulence, particularly in summer — the algorithm must accommodate
+    daily changing variance in wind speeds caused by thermal convection, or forecast
+    accuracy will degrade predictably during daytime hours.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id020
+  - 10
+  evidence_excerpt: Windlab found that forecasting wind speed and turbulence requires
+    a forecast algorithm that can accommodate this daily changing variance in wind.
+    This turbulence or randomness of wind is strongest during the daytime when the
+    sun's heating provides buoyancy for the creation of turbulent eddies.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 31/01/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+  markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39608
+  contributing_source_titles:
+  - Short-Term Forecasting Trial on the NEM Progress Report (April to October 2019)
+  contributing_sources:
+  - source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+      October 2019)
+    pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+    source_pages: *id020
+    source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+    markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-39609
+  source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+    October 2019)
+  publish_date: 2020-01
+  project_name: ARENA Short-Term Forecasting Trial on the NEM
+  what_happened: Both wind and solar forecasters found that rainfall had a non-trivial
+    impact on forecast accuracy. For solar farms, rainfall correlates with cloud cover
+    but also reduces panel temperatures and soiling. For wind farms, SODAR instruments
+    perform better than LIDARs in rain, fog, and low-visibility conditions, but both
+    have limitations in arid environments with clean air.
+  lesson_learnt: Hardware selection for STF projects must account for local climate
+    and rainfall patterns — SODARs should be preferred over LIDARs in high-rainfall
+    or low-visibility environments, while short masts may be more appropriate in arid
+    clean-air conditions; in all cases, adequate hardware redundancy should be installed
+    to maintain forecast accuracy during and after rain events.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: It was recommended that adequate hardware redundancy be installed
+    on site to counter the impact of rainfall on weather forecasting equipment.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id021
+  - 10
+  evidence_excerpt: For wind forecasting, SODARs perform better than LIDARs in rain,
+    fog, smog and other low visibility scenarios. There are some environments where
+    both SODARs and LIDARs have performance limitations (e.g. arid areas with clean
+    air), a short mast may be a better solution in these situations. To manage the
+    effect of rainfall on forecast accuracy it is suggested that adequate hardware
+    redundancy is installed on site.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 31/01/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+  markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39609
+  contributing_source_titles:
+  - Short-Term Forecasting Trial on the NEM Progress Report (April to October 2019)
+  contributing_sources:
+  - source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+      October 2019)
+    pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+    source_pages: *id021
+    source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+    markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-39610
+  source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+    October 2019)
+  publish_date: 2020-01
+  project_name: ARENA Short-Term Forecasting Trial on the NEM
+  what_happened: Solar forecasters found there is no industry standard for control
+    system interfaces on solar farms. Forecasting service providers had to build bespoke
+    workarounds for power plant controller and inverter controller algorithms because
+    documentation on DC current sensors, control system interfaces, and inverters
+    was obscure and non-standardised.
+  lesson_learnt: Solar STF projects should list standardised control system interface
+    documentation (for DC current sensors, inverter controllers, and power plant controllers)
+    as a procurement requirement from equipment suppliers — without this, forecasting
+    service providers will need to build costly workarounds, and the absence of a
+    standard degrades the accuracy of detailed power models that are essential for
+    accurate forecasting.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: procurement
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Proponents built workarounds for power plant controller and inverter
+    controller algorithms to overcome the obscure non-standard control system interfaces.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id022
+  - 10
+  evidence_excerpt: Currently, there is no 'standard' for control system interfaces
+    on solar farms. Instead, proponents had to build workarounds for power plant controller
+    and inverter controller algorithms to overcome the currently obscure systems.
+    The need for improved, standardised documentation on this equipment (DC current
+    sensors, control system interfaces and inverters) is a lesson learnt for suppliers.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 31/01/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+  markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39610
+  contributing_source_titles:
+  - Short-Term Forecasting Trial on the NEM Progress Report (April to October 2019)
+  contributing_sources:
+  - source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+      October 2019)
+    pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+    source_pages: *id022
+    source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+    markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-39611
+  source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+    October 2019)
+  publish_date: 2020-01
+  project_name: ARENA Short-Term Forecasting Trial on the NEM
+  what_happened: Meridian found a trade-off between spatial resolution and sampling
+    frequency when configuring LIDAR scanning parameters, determining that higher
+    sampling frequency was preferable for short-term forecasting purposes. Meridian
+    also identified that simple machine learning approaches perform no better than
+    statistical methods when given only on-site farm data, indicating a skill cap
+    that can only be exceeded using deep learning or off-farm data.
+  lesson_learnt: When configuring LIDAR scanning parameters for wind STF, prioritise
+    sampling frequency over spatial resolution; and when selecting machine learning
+    approaches, recognise that simple models trained solely on on-site data have a
+    hard skill ceiling — deep learning methods combined with off-farm data are likely
+    necessary to achieve material improvements in forecast accuracy.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id023
+  - 11
+  evidence_excerpt: Meridian found higher sampling frequency was preferable for the
+    purposes of short-term forecasting. Meridian also found through their work that
+    there are skill caps (maximum level of forecasting ability for a given approach)
+    on all forecasting techniques. Meridian's examination of simple machine learning
+    approaches has shown that the approaches perform no better than statistical methods
+    when given on-site farm data. Deep learning/off-farm data is likely to be essential
+    to greatly increase the skill cap of forecasting.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 31/01/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+  markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39611
+  contributing_source_titles:
+  - Short-Term Forecasting Trial on the NEM Progress Report (April to October 2019)
+  contributing_sources:
+  - source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+      October 2019)
+    pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+    source_pages: *id023
+    source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+    markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-39612
+  source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+    October 2019)
+  publish_date: 2020-01
+  project_name: ARENA Short-Term Forecasting Trial on the NEM
+  what_happened: Advisian found that constraint periods — where wind and solar farm
+    output was artificially reduced due to maintenance outages or AEMO restrictions
+    — needed to be excluded from model training datasets. The volume of excluded data
+    was greater than originally expected, materially reducing the amount of data available
+    for model training and reducing initial model accuracy.
+  lesson_learnt: When designing training datasets for self-forecasting models, account
+    for the volume of constrained-off periods that will need to be excluded — this
+    is consistently larger than expected at Australian wind and solar farms, and under-provisioning
+    training data reduces model accuracy; plan for periodic model retraining after
+    project completion to recover accuracy incrementally.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: Advisian planned periodic retraining of the self-forecasting
+    model following production to achieve incremental improvements in model accuracy.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id024
+  - 11
+  evidence_excerpt: Advisian noted that constraint periods for future projects (where
+    the output of the wind and solar farms are artificially reduced due to maintenance
+    outages or AEMO restrictions) needed to be removed from the training data set.
+    Excluded data was more than had been originally expected, which reduced the amount
+    of data available for model training.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 31/01/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+  markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39612
+  contributing_source_titles:
+  - Short-Term Forecasting Trial on the NEM Progress Report (April to October 2019)
+  contributing_sources:
+  - source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+      October 2019)
+    pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+    source_pages: *id024
+    source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+    markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-39613
+  source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+    October 2019)
+  publish_date: 2020-01
+  project_name: ARENA Short-Term Forecasting Trial on the NEM
+  what_happened: Several trial participants experienced project delays connected in
+    part to complex contracting structures and terms and conditions between multiple
+    parties involved in delivering self-forecasting solutions.
+  lesson_learnt: Self-forecast service providers should build additional contingency
+    into project schedules specifically for multi-party contract negotiation periods,
+    and ensure the project risk management plan has adequate mitigation strategies
+    for site and project partner changes — complex contracting structures between
+    multiple parties are a predictable source of delay in STF projects.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: technology vendor
+  delay_category: financing/commercial close
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id025
+  - 12
+  evidence_excerpt: There were a range of delays to projects that were (in part) connected
+    to the complex contracting structures, and terms and conditions between multiple
+    parties. It is recommended for future projects that self-forecast service providers
+    build in additional contingency for the contract negotiation period to ensure
+    that the project risk management plan has adequate mitigation strategies to deal
+    with site and project partner changes.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 31/01/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+  markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39613
+  contributing_source_titles:
+  - Short-Term Forecasting Trial on the NEM Progress Report (April to October 2019)
+  contributing_sources:
+  - source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+      October 2019)
+    pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+    source_pages: *id025
+    source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+    markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-39614
+  source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+    October 2019)
+  publish_date: 2020-01
+  project_name: ARENA Short-Term Forecasting Trial on the NEM
+  what_happened: When sourcing forecasting equipment, some participants encountered
+    mismatches between supplier lead times and project timeline requirements, contributing
+    to schedule pressure.
+  lesson_learnt: When procuring forecasting hardware, explicitly verify that supplier
+    lead times align with project timeline requirements before contract award — lead
+    time mismatches are a predictable source of schedule pressure in STF projects
+    and should be identified as a risk in the procurement phase.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: procurement
+  proponent_type: technology vendor
+  delay_category: procurement/supply chain
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id026
+  - 12
+  evidence_excerpt: When sourcing equipment, self-forecast service providers should
+    identify suppliers with lead times that align with project timeline requirements.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 31/01/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+  markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39614
+  contributing_source_titles:
+  - Short-Term Forecasting Trial on the NEM Progress Report (April to October 2019)
+  contributing_sources:
+  - source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+      October 2019)
+    pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+    source_pages: *id026
+    source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+    markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-39615
+  source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+    October 2019)
+  publish_date: 2020-01
+  project_name: ARENA Short-Term Forecasting Trial on the NEM
+  what_happened: Advisian identified that high seasonality in underlying wind farm
+    data and large training dataset sizes together required substantially more computational
+    power than anticipated to train models within a reasonable timeframe, representing
+    an underestimated infrastructure requirement.
+  lesson_learnt: STF project infrastructure planning must account for the computational
+    demands of training seasonal wind or solar forecasting models on large datasets
+    — cloud-hosted, scalable computing resources are a practical solution that avoids
+    the need to pre-provision fixed infrastructure for peak training loads.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Advisian used cloud-hosted computing resources to allow their
+    platform to scale as needed to support model training iterations.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id027
+  - 12
+  evidence_excerpt: Advisian identified that there are high degrees of seasonality
+    in the underlying wind farm data that requires more complex modelling approaches.
+    The data used to train the models is also large. Together, these factors have
+    considerable impact on the computation power needed to train models within a reasonable
+    time frame. Advisian have used cloud-hosted computing resources, which allow their
+    computing platform to scale as needed.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 31/01/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+  markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39615
+  contributing_source_titles:
+  - Short-Term Forecasting Trial on the NEM Progress Report (April to October 2019)
+  contributing_sources:
+  - source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+      October 2019)
+    pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+    source_pages: *id027
+    source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+    markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-39616
+  source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+    October 2019)
+  publish_date: 2020-01
+  project_name: ARENA Short-Term Forecasting Trial on the NEM
+  what_happened: Aeolius Wind Systems found that reliable, high-speed telecommunications
+    at the specific site where the LIDAR forecaster is installed — as distinct from
+    the wind farm control centre — was a critical requirement that was not always
+    available, limiting the ability to operate and maintain the forecasting system
+    remotely.
+  lesson_learnt: Remote telecommunications capability must be assessed at the specific
+    location where forecasting equipment will be installed, not just at the farm control
+    centre — if adequate connectivity is not in place, remote operation and maintenance
+    of LIDAR forecasting systems will not be possible, and this must be addressed
+    in the early stages of project planning.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Fulcrum 3D implemented dedicated NBN connections at their project
+    sites, enabling remote system maintenance.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id028
+  - 12
+  evidence_excerpt: it is important for a site to have access to reliable, high-speed
+    telecommunication capability, for the LIDAR wind forecaster to succeed. Whilst
+    suitable infrastructure may be in place at the wind farm control centre, remote
+    connection may not be available at the site where the forecaster is installed.
+    This challenge needs to be addressed in the early stages of planning a monitoring
+    demonstration.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 31/01/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+  markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39616
+  contributing_source_titles:
+  - Short-Term Forecasting Trial on the NEM Progress Report (April to October 2019)
+  contributing_sources:
+  - source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+      October 2019)
+    pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+    source_pages: *id028
+    source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+    markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-39617
+  source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+    October 2019)
+  publish_date: 2020-01
+  project_name: ARENA Short-Term Forecasting Trial on the NEM
+  what_happened: The trial demonstrated that self-forecasting for semi-scheduled generators
+    cannot be fully subcontracted to a third-party turnkey solution because the Semi-Scheduled
+    Generator asset owner/operator must remain actively engaged with the forecasting
+    technology provider to submit self-forecasts, and remains legally responsible
+    for forecast accuracy regardless of the service provider used.
+  lesson_learnt: Wind and solar farm operators considering third-party STF service
+    arrangements must understand that they cannot fully delegate self-forecasting
+    responsibility — asset owners retain ongoing obligations for AEMO submission and
+    forecast accuracy, and this engagement requirement must be resourced and factored
+    into operational costs when evaluating the STF business case.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: coordination & stakeholders
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id029
+  - 12
+  evidence_excerpt: the ability for a wind or solar farm to self-forecast is currently
+    not able to be subcontracted to a third-party owned, turnkey solution. This is
+    due to the need for Semi-Scheduled Generator asset owners/operators to be actively
+    engaged with their third-party forecasting technology providers to send self-forecasts
+    to the AEMO MP5F API. Market participant will also always be responsible for ensuring
+    to the accuracy of their self-forecast to the market regardless of the technology
+    service provider.
+  confidence_note: 'proponent_type reconciled to ''technology vendor'' from: technology
+    vendor (17/18), utility/energy retailer (1/18)'
+  source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 31/01/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+  markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39617
+  contributing_source_titles:
+  - Short-Term Forecasting Trial on the NEM Progress Report (April to October 2019)
+  contributing_sources:
+  - source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+      October 2019)
+    pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+    source_pages: *id029
+    source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+    markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-39618
+  source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+    October 2019)
+  publish_date: 2020-01
+  project_name: ARENA Short-Term Forecasting Trial on the NEM
+  what_happened: IMC identified that an economic model relating FCAS causer pays penalties
+    to the quality of solar forecasts in the NEM did not exist at the time of the
+    trial, creating a knowledge gap that prevented quantification of the commercial
+    benefit of improved solar self-forecasting.
+  lesson_learnt: Before committing to a solar STF investment, proponents and service
+    providers should confirm that an economic model exists to quantify the FCAS causer
+    pays savings attributable to improved forecast accuracy — without this model,
+    the business case cannot be robustly evaluated and demonstration of commercial
+    benefit to the market will be deferred.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Some trial participants began developing economic models to fill
+    this gap, with findings to be shared in a future report.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id030
+  - 12
+  evidence_excerpt: IMC noted that an economic model that relates the Frequency Control
+    Ancillary Services (FCAS) causer pays penalty to the quality of solar forecasts
+    in the NEM does not currently exist. Some trial participants are currently working
+    on filling this gap by developing economic models.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 31/01/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+  markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39618
+  contributing_source_titles:
+  - Short-Term Forecasting Trial on the NEM Progress Report (April to October 2019)
+  contributing_sources:
+  - source_title: Short-Term Forecasting Trial on the NEM Progress Report (April to
+      October 2019)
+    pdf_url: https://arena.gov.au/assets/2020/01/short-term-forecasting-on-the-nem-progress-report.pdf
+    source_pages: *id030
+    source_url: https://arena.gov.au/knowledge-bank/short-term-forecasting-trial-on-the-nem-progress-report-april-to-october-2019/
+    markdown_filename: short_term_forecasting_trial_on_the_nem_progress_report_april_to_october_2019.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-45905
+  source_title: Improving Accuracy of Short-Term Forecasting in the NEM
+  publish_date: '2020'
+  project_name: Lake Bonney Stages 2 & 3 Short-Term Forecasting Pilot Project
+  what_happened: Calculating the Causer Pays Factor required processing approximately
+    30 GB of 4-second interval data per 28-day period (870 million rows across 8,064
+    CSV files), in formats poorly suited to large-scale data processing and with incomplete
+    documentation from AEMO, making accurate CPF replication extremely resource-intensive.
+  lesson_learnt: Proponents undertaking CPF analysis should budget significant data
+    engineering resources and request AEMO's procedural clarification early — AEMO's
+    published CPF data is fragmented across incompatible formats, contains gaps, and
+    the calculation methodology is poorly documented, making independent replication
+    disproportionately difficult.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: pilot
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: execution & logistics
+  intervention_note: Infigen engaged directly with AEMO during the project to clarify
+    the CPF methodology; AEMO was responsive in answering questions and clarifying
+    the proposed approach.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id031
+  - 6
+  evidence_excerpt: The dataset for CPF calculation for a 28-day period using 4-second
+    data is ~30 GB, with a total of 8.064 csv files and 870 million rows of data.
+    Moreover, the dataset is in a format which is not well-suited for large volumes
+    of data, and is also not easily accessible. Furthermore, the procedure to calculate
+    CPF is not very straightforward as the exact process is poorly documented, complex
+    and resource-intensive, making it hard to replicate and match AEMO's published
+    data.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/improving-accuracy-of-short-term-forecasting-in-the-nem/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 23/09/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/09/improving-accuracy-of-short-term-forecasting-in-nem.pdf
+  markdown_filename: improving_accuracy_of_short_term_forecasting_in_the_nem.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45905
+  contributing_source_titles:
+  - Improving Accuracy of Short-Term Forecasting in the NEM
+  contributing_sources:
+  - source_title: Improving Accuracy of Short-Term Forecasting in the NEM
+    pdf_url: https://arena.gov.au/assets/2020/09/improving-accuracy-of-short-term-forecasting-in-nem.pdf
+    source_pages: *id031
+    source_url: https://arena.gov.au/knowledge-bank/improving-accuracy-of-short-term-forecasting-in-the-nem/
+    markdown_filename: improving_accuracy_of_short_term_forecasting_in_the_nem.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-45907
+  source_title: Improving Accuracy of Short-Term Forecasting in the NEM
+  publish_date: '2020'
+  project_name: Lake Bonney Stages 2 & 3 Short-Term Forecasting Pilot Project
+  what_happened: It remained unconfirmed at project close whether the SCADA-based
+    self-forecast model is turbine-agnostic, as the model relies on specific SCADA
+    signals that may not be available on all wind turbine types, meaning transferability
+    of the approach to other fleets requires operational validation.
+  lesson_learnt: Proponents seeking to replicate SCADA-based self-forecasting on turbines
+    not covered by this pilot must first validate SCADA signal availability and quality
+    — the model's performance is dependent on specific signal types and operational
+    validation on new turbine types is required before assuming equivalent accuracy.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: pilot
+  lifecycle_phase: close-out/post-project review
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id032
+  - 3
+  evidence_excerpt: It is yet to be concluded whether the self-forecast is turbine-agnostic
+    as it relies upon certain SCADA signals that may not be available on all wind
+    turbines. While we anticipate the same performance results to be possible for
+    other turbines, operational validation would be required as signal quality also
+    plays a great role in achieving high accuracy results.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/improving-accuracy-of-short-term-forecasting-in-the-nem/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 23/09/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/09/improving-accuracy-of-short-term-forecasting-in-nem.pdf
+  markdown_filename: improving_accuracy_of_short_term_forecasting_in_the_nem.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45907
+  contributing_source_titles:
+  - Improving Accuracy of Short-Term Forecasting in the NEM
+  contributing_sources:
+  - source_title: Improving Accuracy of Short-Term Forecasting in the NEM
+    pdf_url: https://arena.gov.au/assets/2020/09/improving-accuracy-of-short-term-forecasting-in-nem.pdf
+    source_pages: *id032
+    source_url: https://arena.gov.au/knowledge-bank/improving-accuracy-of-short-term-forecasting-in-the-nem/
+    markdown_filename: improving_accuracy_of_short_term_forecasting_in_the_nem.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-45908
+  source_title: Improving Accuracy of Short-Term Forecasting in the NEM
+  publish_date: '2020'
+  project_name: Lake Bonney Stages 2 & 3 Short-Term Forecasting Pilot Project
+  what_happened: A Hybrid SCADA model that switches between two sub-models depending
+    on whether AEMO curtailment is active achieved the highest ranking performance
+    for both LB2 and LB3, outperforming single-mode SCADA models and all other model
+    variants tested.
+  lesson_learnt: Wind farm self-forecast accuracy can be improved by using operationally-aware
+    model switching — deploying separate optimised models for curtailment and non-curtailment
+    operating states, rather than a single model across all conditions, yielded the
+    best overall forecast performance in this pilot.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: pilot
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id033
+  - 2
+  evidence_excerpt: The model with the highest ranking when compared to AWEFS was
+    the 'Hybrid' SCADA model for both LB2 and LB3. The Hybrid model is a combination
+    of two SCADA models. It alternates between the two models, based on whether AEMO
+    curtailment is occurring or not... this approach allows for the bounds of each
+    model to be simplified, and hence they can be optimised better.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/improving-accuracy-of-short-term-forecasting-in-the-nem/
+  project_page_url: https://arena.gov.au/projects/lake-bonney-stages-2-3/
+  kb_category: Wind energy
+  kb_publish_date: 23/09/2020
+  kb_year: '2019'
+  kb_associated_project: Lake Bonney Stages 2/3
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $405k
+  total_project_value: $1.1m
+  lead_organisation: Vestas - Australian Wind Technology Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/03/2019
+  location: German Flat, South Australia
+  project_partners: Infigen Energy Services Pty Limited, Utopus Insights, Inc.\
+  pdf_url: https://arena.gov.au/assets/2020/09/improving-accuracy-of-short-term-forecasting-in-nem.pdf
+  markdown_filename: improving_accuracy_of_short_term_forecasting_in_the_nem.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45908
+  contributing_source_titles:
+  - Improving Accuracy of Short-Term Forecasting in the NEM
+  contributing_sources:
+  - source_title: Improving Accuracy of Short-Term Forecasting in the NEM
+    pdf_url: https://arena.gov.au/assets/2020/09/improving-accuracy-of-short-term-forecasting-in-nem.pdf
+    source_pages: *id033
+    source_url: https://arena.gov.au/knowledge-bank/improving-accuracy-of-short-term-forecasting-in-the-nem/
+    markdown_filename: improving_accuracy_of_short_term_forecasting_in_the_nem.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false

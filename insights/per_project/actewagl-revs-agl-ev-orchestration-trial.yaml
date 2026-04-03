@@ -1,0 +1,153 @@
+- record_id: ARENA-DLV-53855
+  source_title: Demand Flexibility Portfolio Retrospective Analysis Report
+  publish_date: 2023-07
+  project_name: ActewAGL REVS / AGL EV Orchestration Trial
+  what_happened: FCAS revenue was not generated in either the AGL or ActewAGL EV trials
+    because of supply chain delays and certification/standards issues with bidirectional
+    chargers, leading to delayed response times or insufficient aggregated volume
+    to qualify for FCAS.
+  lesson_learnt: EV projects targeting FCAS revenue streams should not assume bidirectional
+    charger supply and certification timelines at the outset; supply chain and standards
+    compliance pathways for V2G chargers should be fully mapped and contingency-planned
+    before FCAS participation is included in business cases.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: procurement/supply chain
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: AGL decided to terminate the V2G and FCAS component of its trial
+    following initial delays and challenges; ActewAGL continued despite barriers.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages: &id001
+  - 18
+  - 23
+  evidence_excerpt: FCAS revenue wasn't generated in either the AGL or ActewAGL trial
+    because of various issues with supply chain delays, certification and standards
+    with the bidirectional chargers. The knock-on effects were a delay in response
+    times or insufficient volume to qualify for FCAS.
+  confidence_note: 'project_type reconciled to ''DER/customer-side'' from: DER/customer-side
+    (36/49), transport electrification (12/49), industrial decarbonisation (1/49)'
+  source_url: https://arena.gov.au/knowledge-bank/demand-flexibility-portfolio-retrospective-analysis-report/
+  project_page_url: null
+  kb_category: Demand response
+  kb_publish_date: 25/07/2023
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2023/07/demand-flexibility-portfolio-retrospective-analysis-report.pdf
+  markdown_filename: demand_flexibility_portfolio_retrospective_analysis_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53855
+  contributing_source_titles:
+  - Demand Flexibility Portfolio Retrospective Analysis Report
+  contributing_sources:
+  - source_title: Demand Flexibility Portfolio Retrospective Analysis Report
+    pdf_url: https://arena.gov.au/assets/2023/07/demand-flexibility-portfolio-retrospective-analysis-report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/demand-flexibility-portfolio-retrospective-analysis-report/
+    markdown_filename: demand_flexibility_portfolio_retrospective_analysis_report.md
+  arena_category:
+  - Demand response
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-53856
+  source_title: Demand Flexibility Portfolio Retrospective Analysis Report
+  publish_date: 2023-07
+  project_name: ActewAGL REVS / AGL EV Orchestration Trial
+  what_happened: 'The AS/NZS 4777 inverter standard proved a major impediment to bidirectional
+    EV charging: it classified V2G chargers as stationary battery inverters requiring
+    an earthing point that EVs do not have, necessitating charger hardware modifications
+    that then failed electromagnetic compatibility (EMC) tests, adding cost, complexity,
+    delay, and aesthetic issues. AGL ultimately abandoned the V2G component.'
+  lesson_learnt: The AS/NZS 4777 standard is not fit for purpose for bidirectional
+    EV chargers; regulators and project developers should prioritise reform of this
+    standard — or adopt an equivalent of the UK's G99 approach — before V2G projects
+    are structured around FCAS or export revenue streams, otherwise compliance efforts
+    will consume project budgets and timelines.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Analysis by ANU's Battery Storage and Grid Integration Program
+    recommended extension of AS4777.2:2020 to directly apply to bidirectional chargers;
+    ActewAGL pursued V2G despite challenges while AGL terminated that component.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages: &id002
+  - 23
+  - 47
+  evidence_excerpt: The technical standard classes bidirectional EV chargers as a
+    multiple model inverter as if it was connected to a stationary battery energy
+    storage system. The standard requires that a battery is connected to an earthing
+    point but with EVs, there is no need for one… Modifications to rectify the situation
+    led to further issues with high frequency noise which meant it failed the Electromagnetic
+    Compatibility (EMC) test.
+  confidence_note: 'project_type reconciled to ''DER/customer-side'' from: DER/customer-side
+    (36/49), transport electrification (12/49), industrial decarbonisation (1/49)'
+  source_url: https://arena.gov.au/knowledge-bank/demand-flexibility-portfolio-retrospective-analysis-report/
+  project_page_url: null
+  kb_category: Demand response
+  kb_publish_date: 25/07/2023
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2023/07/demand-flexibility-portfolio-retrospective-analysis-report.pdf
+  markdown_filename: demand_flexibility_portfolio_retrospective_analysis_report.md
+  source_page_pdf: 47
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53856
+  contributing_source_titles:
+  - Demand Flexibility Portfolio Retrospective Analysis Report
+  contributing_sources:
+  - source_title: Demand Flexibility Portfolio Retrospective Analysis Report
+    pdf_url: https://arena.gov.au/assets/2023/07/demand-flexibility-portfolio-retrospective-analysis-report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/demand-flexibility-portfolio-retrospective-analysis-report/
+    markdown_filename: demand_flexibility_portfolio_retrospective_analysis_report.md
+  arena_category:
+  - Demand response
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92

@@ -1,0 +1,2831 @@
+- record_id: ARENA-DLV-37101
+  source_title: Musselroe Wind Farm Provision of FCAS
+  publish_date: 2021-09
+  project_name: Musselroe Wind Farm FCAS Project
+  what_happened: The project required 21 separate tests over multiple years to verify
+    FCAS capability, with each test group identifying the need for further control
+    system refinements before the final successful tests in May 2021.
+  lesson_learnt: When retrofitting FCAS capability to an existing wind farm, plan
+    for an iterative multi-year testing program with multiple control system revision
+    cycles — a single test campaign is insufficient to achieve market compliance.
+  issue_severity: major
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: Iterative refinement of control system logic across six test
+    groups between March 2020 and May 2021 ultimately achieved a successful final
+    test result.
+  transferability: moderate
+  delay_magnitude: 1-3 years
+  technology_domain: wind
+  source_pages: &id001
+  - 8
+  evidence_excerpt: 21 separate testing and performance evaluation events have been
+    required over the life of the project to date to verify the specifications of
+    the plant to date. Each test group has identified the requirement for further
+    refinements to control system logic.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/09/2021
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+  markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37101
+  contributing_source_titles:
+  - Musselroe Wind Farm Provision of FCAS
+  contributing_sources:
+  - source_title: Musselroe Wind Farm Provision of FCAS
+    pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+    markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-52651
+  source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  publish_date: 2019-11
+  project_name: Musselroe Wind Farm FCAS Enablement Project
+  what_happened: The individual wind turbine generator (WTG) frequency controllers
+    documented in the Vestas controller design and maintenance manuals could not be
+    enabled during on-site testing. Despite engagement with Vestas Australia and their
+    Danish control experts, Vestas was unable to explain the discrepancy and stated
+    they do not support frequency control enablement at the WTG level. The project
+    team abandoned the WTG-level frequency control pathway.
+  lesson_learnt: Before committing to a turbine-level frequency control design, confirm
+    with the OEM that the feature can actually be enabled remotely and on-site — assuming
+    turbine-level capability without vendor verification led to a fundamental design
+    rework and fallback to Power Plant Controller level.
+  issue_severity: major
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated integration
+  intervention_note: Frequency control was successfully implemented at the Power Plant
+    Controller (PPC) level as a fallback, replacing the originally planned turbine-level
+    implementation.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages:
+  - 6
+  - 11
+  evidence_excerpt: The WTG controller design and maintenance manuals supplied with
+    the project indicated a capability to provide a frequency response at the individual
+    generator level... On-site testing was conducted in February and March 2019 to
+    enable the frequency controller an individual turbine controller at WTG D08...
+    The test results determined that the frequency controller function built into
+    the individual WTG controllers cannot be enabled. Despite engagement with Vestas
+    Australia and their control experts from Denmark in May and July 2019, Vestas
+    were not able to verify the reason for the turbine controller discrepancies. Vestas
+    also responded that they do not support enablement of frequency control at the
+    WTG level.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/11/2019
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+  markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  source_page_pdf: 6
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-37102
+  - ARENA-DLV-52651
+  contributing_source_titles:
+  - Musselroe Wind Farm Provision of FCAS
+  - Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  contributing_sources:
+  - source_title: Musselroe Wind Farm Provision of FCAS
+    pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+    source_pages:
+    - 11
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+    markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  - source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+    pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+    source_pages:
+    - 6
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+    markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-52657
+  source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  publish_date: 2019-11
+  project_name: Musselroe Wind Farm FCAS Enablement Project
+  what_happened: The weak grid connection at Musselroe (Short Circuit Ratio of 2.1
+    at Derby substation) created a fundamental conflict between Low Voltage Fault
+    Ride Through (LVRT) management and frequency control enablement. The PPC's blocking/freeze
+    function — required to prevent active power oscillations post-fault — potentially
+    limits enablement of 6-second contingency frequency services.
+  lesson_learnt: In weak grid connections, active power and voltage control cannot
+    be optimised independently — LVRT requirements will constrain frequency control
+    capability and should be assessed together at the design stage; projects in low-SCR
+    environments should expect that fast contingency FCAS services (6-second) may
+    not be achievable.
+  issue_severity: major
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: Extensive interaction with TasNetworks and AEMO was undertaken
+    to coordinate testing and ensure compliance standards were maintained while the
+    team assessed changes to the LVRT freeze function.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages:
+  - 4
+  - 9
+  - 10
+  - 14
+  evidence_excerpt: Low Voltage Fault Ride Through (LVRT) remains a primary issue
+    for all inverter-based equipment that must be managed at all times in conjunction
+    with frequency control. This means that within weak networks it is not possible
+    to look at AP or frequency control in isolation... This potentially limits enablement
+    of 6 second contingency frequency services at Musselroe.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/11/2019
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+  markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  source_page_pdf: 9
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-37103
+  - ARENA-DLV-52657
+  contributing_source_titles:
+  - Musselroe Wind Farm Provision of FCAS
+  - Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  contributing_sources:
+  - source_title: Musselroe Wind Farm Provision of FCAS
+    pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+    source_pages:
+    - 4
+    - 14
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+    markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  - source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+    pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+    source_pages:
+    - 9
+    - 10
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+    markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-37104
+  source_title: Musselroe Wind Farm Provision of FCAS
+  publish_date: 2021-09
+  project_name: Musselroe Wind Farm FCAS Project
+  what_happened: Capacitor bank (CapBank) availability was identified as the primary
+    limitation on maximum FCAS supply, restricting FCAS provision to below 130 MW
+    — a constraint that had been masked by earlier active power management issues
+    and was not identified until the December 2020 test round.
+  lesson_learnt: Capacitor bank switching limits must be explicitly modelled when
+    deriving FCAS trapezium parameters for large wind farms — failure to account for
+    these limits will result in unexpected FCAS trapping signals from AEMO and unreliable
+    FCAS availability at higher generation levels.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: A maximum enablement limit of 129 MW was established as the FCAS
+    operating ceiling to avoid triggering CapBank switching and associated GPS compliance
+    issues.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages:
+  - 8
+  - 10
+  - 13
+  evidence_excerpt: The availability of CapBanks is identified as the primary limitation
+    on the provision of FCAS (this issue had been masked by the previous AP management
+    issues)... MRWF will not be able to achieve FCAS above 130MW due to CapBank availability
+    issues that cannot be changed easily without further voltage assessments and modelling.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/09/2021
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+  markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  source_page_pdf: 8
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-37104
+  - ARENA-DLV-54603
+  contributing_source_titles:
+  - Musselroe Wind Farm Provision of FCAS
+  - Musselroe Wind Farm FCAS Trial Public Report
+  contributing_sources:
+  - source_title: Musselroe Wind Farm Provision of FCAS
+    pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+    source_pages:
+    - 8
+    - 10
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+    markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  - source_title: Musselroe Wind Farm FCAS Trial Public Report
+    pdf_url: https://arena.gov.au/assets/2022/02/musselroe-wind-farm-public-report.pdf
+    source_pages:
+    - 13
+    source_url: https://arena.gov.au/knowledge-bank/musselroe-wind-farm-public-report/
+    markdown_filename: musselroe_wind_farm_public_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-37105
+  source_title: Musselroe Wind Farm Provision of FCAS
+  publish_date: 2021-09
+  project_name: Musselroe Wind Farm FCAS Project
+  what_happened: The March 2021 test series was halted due to unexpected interactions
+    with the Unconstrained Intermittent Generation Forecast (UIGF), adding an additional
+    delay before the final successful tests in May 2021.
+  lesson_learnt: FCAS test plans for semi-scheduled wind generators must account for
+    UIGF interactions — NEMDE uses the UIGF as a binding constraint on the FCAS trapezium
+    enablement maximum, and failure to manage this interaction can abort an otherwise
+    successful test series.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: data/validation/testing
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: The final tests were rescheduled to May 2021 and successfully
+    completed once the UIGF interaction was understood and managed.
+  transferability: moderate
+  delay_magnitude: 1-3 months
+  technology_domain: wind
+  source_pages: &id002
+  - 8
+  evidence_excerpt: 'March 2021: Performance Tests — Test series halted due to UIGF
+    interactions. May 2021: Final Tests — Final tests conducted and completed successfully.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/09/2021
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+  markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37105
+  contributing_source_titles:
+  - Musselroe Wind Farm Provision of FCAS
+  contributing_sources:
+  - source_title: Musselroe Wind Farm Provision of FCAS
+    pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+    markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-37106
+  source_title: Musselroe Wind Farm Provision of FCAS
+  publish_date: 2021-09
+  project_name: Musselroe Wind Farm FCAS Project
+  what_happened: FCAS provision at Musselroe was constrained to a narrow operating
+    band of 50–129 MW due to the combination of CapBank switching limits at high output
+    and wind turbine mode-switching (pausing) at low output, establishing an unexpected
+    and narrow technical envelope not anticipated at project commencement.
+  lesson_learnt: Existing wind farms retrofitting FCAS should map the full operating
+    envelope constraints — both upper voltage management limits and lower turbine
+    mode-switching thresholds — before commercial modelling, as the resulting FCAS
+    availability window may be materially narrower than the installed capacity implies.
+  issue_severity: major
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: A minimum enablement level of 50 MW and maximum of 129 MW were
+    formally established as the FCAS operating envelope, constraining but enabling
+    commercial participation.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages:
+  - 9
+  - 10
+  - 12
+  - 13
+  evidence_excerpt: A maximum enablement limit of 129MW was required to prevent changes
+    to the voltage management scheme of the site... A minimum enablement level of
+    50MW was required to prevent the pausing of turbines (and switching to alternate
+    control modes)... These limitations were not expected when the project was commenced.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/09/2021
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+  markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-37106
+  - ARENA-DLV-54604
+  contributing_source_titles:
+  - Musselroe Wind Farm Provision of FCAS
+  - Musselroe Wind Farm FCAS Trial Public Report
+  contributing_sources:
+  - source_title: Musselroe Wind Farm Provision of FCAS
+    pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+    source_pages:
+    - 9
+    - 10
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+    markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  - source_title: Musselroe Wind Farm FCAS Trial Public Report
+    pdf_url: https://arena.gov.au/assets/2022/02/musselroe-wind-farm-public-report.pdf
+    source_pages:
+    - 12
+    - 13
+    source_url: https://arena.gov.au/knowledge-bank/musselroe-wind-farm-public-report/
+    markdown_filename: musselroe_wind_farm_public_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-37117
+  source_title: Musselroe Wind Farm Provision of FCAS
+  publish_date: 2021-09
+  project_name: Musselroe Wind Farm FCAS Project
+  what_happened: The October 2020 test series found that tests conducted from high
+    generation levels produced voltage movements, requiring further refinement of
+    capacitor bank switching control logic before testing could continue.
+  lesson_learnt: Pre-existing frequency response capability at commissioning does
+    not imply FCAS market compliance — a comprehensive multi-system control logic
+    overhaul should be budgeted for when enabling FCAS on existing plant, even where
+    basic frequency response was previously demonstrated.
+  issue_severity: major
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Multiple rounds of control system logic changes were made to
+    the Vestas VOB, Citect RTAC, and PPC systems, culminating in a finalised setup
+    enabling five key FCAS operational scenarios by May 2021.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages:
+  - 8
+  - 11
+  evidence_excerpt: Perhaps the most important series of key developments from this
+    entire project has been the additional control system changes that were required
+    despite some existing frequency control capability in the plant from its commissioning
+    days. Significant changes were required on the control system logic within the
+    active power control loops.
+  confidence_note: Canonical record merged from 2 source records across 1 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/09/2021
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+  markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37107
+  - ARENA-DLV-37117
+  contributing_source_titles:
+  - Musselroe Wind Farm Provision of FCAS
+  contributing_sources:
+  - source_title: Musselroe Wind Farm Provision of FCAS
+    pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+    source_pages:
+    - 11
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+    markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-37108
+  source_title: Musselroe Wind Farm Provision of FCAS
+  publish_date: 2021-09
+  project_name: Musselroe Wind Farm FCAS Project
+  what_happened: AEMO does not configure its AGC system with new assets until market
+    registration is completed, which meant no end-to-end AGC testing could be conducted
+    at Musselroe prior to the registration milestone still being in progress at the
+    time of this report.
+  lesson_learnt: Project schedules for FCAS-enabling projects must sequence market
+    registration before end-to-end AGC testing — AEMO's process does not permit AGC
+    configuration for unregistered assets, so delayed registration directly prevents
+    final integration testing from being completed.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: A functional test receiving AEMO test signals was completed in
+    February 2019 to partially verify the SCADA interface; full end-to-end AGC testing
+    was deferred pending registration completion.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id003
+  - 12
+  evidence_excerpt: It should be noted there has been no end-to-end AGC tests at this
+    stage because AEMO do not test without configuration of their AGC system, and
+    they do not configure their AGC system with new assets until the Market Registration
+    is completed, which is still in progress.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/09/2021
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+  markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37108
+  contributing_source_titles:
+  - Musselroe Wind Farm Provision of FCAS
+  contributing_sources:
+  - source_title: Musselroe Wind Farm Provision of FCAS
+    pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+    markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-52661
+  source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  publish_date: 2019-11
+  project_name: Musselroe Wind Farm FCAS Enablement Project
+  what_happened: Operational forecasting and dispatch systems at Musselroe were disconnected
+    from the real-time SCADA system, which impaired dispatch conformance, FCAS enablement,
+    and commercial outcomes. SCADA updates and gaining access to market data portals
+    were required to resolve the disconnect.
+  lesson_learnt: Ensure that operational forecasting, dispatch management, and SCADA
+    systems are integrated end-to-end before pursuing FCAS market participation —
+    a disconnected forecasting and dispatch system will undermine both technical enablement
+    and commercial performance once market registration is obtained.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: execution & logistics
+  intervention_note: SCADA updates were implemented and access to market data portals
+    was obtained; coordination of pre-dispatch planning, central forecasting, and
+    real-time operational activities was identified as an ongoing workstream.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages:
+  - 11
+  - 15
+  evidence_excerpt: 'Operational forecasting and dispatch were disconnected from the
+    real time SCADA, impacting the: dispatch conformance; FCAS enablement; and commercial
+    outcomes. SCADA updates and gaining access to the market data/portals were required.'
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/11/2019
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+  markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-37109
+  - ARENA-DLV-52661
+  contributing_source_titles:
+  - Musselroe Wind Farm Provision of FCAS
+  - Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  contributing_sources:
+  - source_title: Musselroe Wind Farm Provision of FCAS
+    pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+    source_pages:
+    - 15
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+    markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  - source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+    pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+    source_pages:
+    - 11
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+    markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-37110
+  source_title: Musselroe Wind Farm Provision of FCAS
+  publish_date: 2021-09
+  project_name: Musselroe Wind Farm FCAS Project
+  what_happened: In weak grid environments (such as MRWF with SCR of 1.8–2.1), active
+    power and frequency control cannot be managed in isolation from voltage control
+    — voltage disturbances trigger PPC freeze functions that suspend active power
+    control, making simultaneous management of LVRT and FCAS structurally difficult.
+  lesson_learnt: Projects providing FCAS from inverter-based plant in weak grids must
+    treat voltage control, LVRT management, and frequency response as a unified control
+    problem — PPC suspension during voltage disturbances fundamentally limits the
+    achievable FCAS response speed and availability.
+  issue_severity: major
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated integration
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id004
+  - 14
+  evidence_excerpt: Within weak networks it is not possible to look at AP or frequency
+    control in isolation – the voltage control strategy must be also be carefully
+    maintained and monitored. Most PPC's are designed to suspend any AP control during
+    voltage disturbances. Due to filtering of the voltage signal in the PPC and inherent
+    latency, a blocking/freeze function is required to prevent excited active power
+    oscillations post a fault event. This potentially limits enablement of 6 second
+    contingency frequency services at MRWF and all wind and solar sites across the
+    NEM.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/09/2021
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+  markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37110
+  contributing_source_titles:
+  - Musselroe Wind Farm Provision of FCAS
+  contributing_sources:
+  - source_title: Musselroe Wind Farm Provision of FCAS
+    pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+    markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-52653
+  source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  publish_date: 2019-11
+  project_name: Musselroe Wind Farm FCAS Enablement Project
+  what_happened: Access to experienced local engineering support with detailed knowledge
+    of wind farm control systems, grid, and Australian market requirements was severely
+    limited. Specialist knowledge was not available domestically; an overseas Vestas
+    engineer had to travel to Australia to design and implement PPC control system
+    upgrades, causing considerable project delays.
+  lesson_learnt: For FCAS enablement projects on large wind farms, assume that specialist
+    control system engineering will need to be sourced internationally and plan for
+    the associated lead times and coordination overhead — domestic capability is insufficient
+    for this work in the current Australian market.
+  issue_severity: major
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: commissioning/integration
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: An overseas engineer was engaged to travel to Australia to design
+    and implement PPC upgrades; local capability gaps were partially addressed through
+    workshops with Vestas, CPP, and Entura.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages:
+  - 8
+  - 14
+  - 15
+  evidence_excerpt: Manufacturers and equipment suppliers are reluctant to provide
+    detailed modelling information on their plant and associated control due to intellectual
+    property concerns making it difficult for owners of the generating plant to optimise
+    their assets. In the case of MRWF, even where extensive network models were developed,
+    they require updating and to date are inadequate and still not detailed enough
+    for frequency control assessment, resulting in additional delays and complexities
+    for the project.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/11/2019
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+  markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  source_page_pdf: 8
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-37111
+  - ARENA-DLV-52653
+  contributing_source_titles:
+  - Musselroe Wind Farm Provision of FCAS
+  - Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  contributing_sources:
+  - source_title: Musselroe Wind Farm Provision of FCAS
+    pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+    source_pages:
+    - 14
+    - 15
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+    markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  - source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+    pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+    source_pages:
+    - 8
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+    markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.72
+- record_id: ARENA-DLV-52660
+  source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  publish_date: 2019-11
+  project_name: Musselroe Wind Farm FCAS Enablement Project
+  what_happened: Ongoing and concurrent changes to the market regulatory environment
+    — including changes to the Tasmanian Frequency Operating Standard, AEMO's proposed
+    mandatory primary frequency control rule change, and consultations on the Market
+    Ancillary Services Specification and Marginal Loss Factors — competed for limited
+    internal and external resources and required repeated re-evaluation of technical
+    requirements and economic benefits.
+  lesson_learnt: FCAS enablement projects must build in explicit schedule and resource
+    contingency for regulatory change — the Australian frequency control regulatory
+    environment was in active flux during this project, requiring repeated re-evaluation
+    of technical and commercial assumptions; treat regulatory stability as a risk,
+    not an assumption.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: The project team conducted ongoing re-evaluation of technical
+    requirements and economic benefits in response to regulatory changes; the test
+    plan was revised to focus on PPC-level frequency control only.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages:
+  - 9
+  - 10
+  - 11
+  evidence_excerpt: 'The market regulation area of the industry and business is constantly
+    changing, thereby competing for already limited resources within all the partnered
+    business. Re-evaluation of the technical requirements and economic benefits analysis
+    has added complexity to the project. Examples include: Changes to the Frequency
+    Operating Standard for Tasmania; Mandatory Primary Frequency Control rule change
+    proposed by AEMO.'
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/11/2019
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+  markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  source_page_pdf: 10
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-37112
+  - ARENA-DLV-52660
+  contributing_source_titles:
+  - Musselroe Wind Farm Provision of FCAS
+  - Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  contributing_sources:
+  - source_title: Musselroe Wind Farm Provision of FCAS
+    pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+    source_pages:
+    - 9
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+    markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  - source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+    pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+    source_pages:
+    - 10
+    - 11
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+    markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-37113
+  source_title: Musselroe Wind Farm Provision of FCAS
+  publish_date: 2021-09
+  project_name: Musselroe Wind Farm FCAS Project
+  what_happened: COVID-19 travel restrictions limited site visits to Tasmania, requiring
+    the project team to conduct engagement with OEMs, network specialists, and regulatory
+    bodies virtually during a critical phase of control system development.
+  lesson_learnt: Projects involving complex control system changes at remote sites
+    should establish remote access and virtual engagement protocols with OEMs and
+    regulators early — COVID-era experience at Musselroe demonstrates that virtual
+    engagement can substitute for on-site presence but requires pre-established technical
+    interfaces.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: commissioning/integration
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Continuing virtual engagement with OEMs, network specialists,
+    and regulatory bodies was maintained throughout the COVID-19 period.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id005
+  - 8
+  - 9
+  evidence_excerpt: Continuing virtual engagement with OEM's, network specialists
+    and regulatory bodies during the COVID19 period, including limitations on site
+    visits and travel restrictions to Tasmania.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/09/2021
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+  markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37113
+  contributing_source_titles:
+  - Musselroe Wind Farm Provision of FCAS
+  contributing_sources:
+  - source_title: Musselroe Wind Farm Provision of FCAS
+    pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+    markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-37114
+  source_title: Musselroe Wind Farm Provision of FCAS
+  publish_date: 2021-09
+  project_name: Musselroe Wind Farm FCAS Project
+  what_happened: Private AEMO data (via a private AEMO infoserver) was found to be
+    essential for FCAS optimisation; without this data feed, the project team could
+    not optimise FCAS bid positions in real time.
+  lesson_learnt: Establish access to a private AEMO infoserver at the outset of any
+    FCAS enabling project — FCAS optimisation is not achievable without private AEMO
+    data, and setting up this data feed should be treated as a prerequisite rather
+    than an implementation-phase task.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: A private AEMO infoserver was set up early in the project to
+    enable FCAS enablement level management.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id006
+  - 13
+  evidence_excerpt: 'All the FCAS enablement levels are managed through AEMO data
+    that is made available by a private AEMO infoserver that was set up very early
+    on in the project: FCAS optimisation is not able to be achieved without private
+    AEMO data being available.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/09/2021
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+  markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37114
+  contributing_source_titles:
+  - Musselroe Wind Farm Provision of FCAS
+  contributing_sources:
+  - source_title: Musselroe Wind Farm Provision of FCAS
+    pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+    markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-37115
+  source_title: Musselroe Wind Farm Provision of FCAS
+  publish_date: 2021-09
+  project_name: Musselroe Wind Farm FCAS Project
+  what_happened: The project demonstrated that an existing inverter-based wind farm
+    can be successfully configured to deliver FCAS and meet NEM requirements for linear
+    ramping between dispatch targets and primary frequency response, despite not achieving
+    fast contingency FCAS.
+  lesson_learnt: Existing inverter-based wind farms can be configured to participate
+    in slow FCAS markets (raise and lower regulation and contingency services above
+    the 6-second band) — the Musselroe experience provides a replicable technical
+    pathway for other wind farm operators seeking FCAS market access.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id007
+  - 4
+  evidence_excerpt: MRWF was able to successfully test and prove compatibility with
+    the NEM requirements for FCAS provision. These tests, complete with linear ramping
+    between dispatch targets and primary frequency response, clearly demonstrate that
+    inverter based intermittent generation can be configured and operate within the
+    general parameters required by AEMO with the context of the NEM.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/09/2021
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+  markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37115
+  contributing_source_titles:
+  - Musselroe Wind Farm Provision of FCAS
+  contributing_sources:
+  - source_title: Musselroe Wind Farm Provision of FCAS
+    pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+    markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-37116
+  source_title: Musselroe Wind Farm Provision of FCAS
+  publish_date: 2021-09
+  project_name: Musselroe Wind Farm FCAS Project
+  what_happened: FCAS participation for wind generators requires co-optimisation of
+    energy and FCAS revenues and costs simultaneously, which is significantly more
+    complex than maximising energy generation alone; the project found that auto-bidding
+    optimisation (rather than pure bid submission tools) is likely to become mandatory
+    for viable participation.
+  lesson_learnt: Prospective wind farm FCAS participants should invest in auto-bidding
+    optimisation capability — the revenue and cost co-optimisation problem across
+    energy and FCAS markets is too complex for manual bid management and requires
+    automated systems aligned with real-time control outputs.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id008
+  - 14
+  evidence_excerpt: 'Given the nature and complexity of energy, FCAS cost and FCAS
+    revenue co-optimisation, auto-bidding optimisation (as opposed to pure bid submission
+    solutions) are highly desirable and likely to be mandatory for any participant.
+    Participants entering this form of financial optimisation need to have a higher
+    degree of revenue and cost management understanding to ensure optimal outcomes:
+    it is far more complex than simply maximising energy generation.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/09/2021
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+  markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37116
+  contributing_source_titles:
+  - Musselroe Wind Farm Provision of FCAS
+  contributing_sources:
+  - source_title: Musselroe Wind Farm Provision of FCAS
+    pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+    markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-37118
+  source_title: Musselroe Wind Farm Provision of FCAS
+  publish_date: 2021-09
+  project_name: Musselroe Wind Farm FCAS Project
+  what_happened: Existing Functional Design Specifications, Generator Performance
+    Standards, Site Data Sheets, and modelling documentation all required detailed
+    review and updating as part of the FCAS enablement process, adding unforeseen
+    workload to the project.
+  lesson_learnt: When enabling FCAS on an existing wind farm, budget for a full review
+    and update of all existing technical documentation including FDS, GPS, and site
+    data sheets — these documents are unlikely to reflect the additional control requirements
+    for FCAS market participation and will require revision before compliance can
+    be confirmed.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: commissioning/integration
+  failure_mode: poor scoping
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id009
+  - 14
+  evidence_excerpt: Existing Functional Design Specifications, agreed Generator Performance
+    Standards, Site Data Sheets and modelling may require detailed reviews and updating.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/09/2021
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+  markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37118
+  contributing_source_titles:
+  - Musselroe Wind Farm Provision of FCAS
+  contributing_sources:
+  - source_title: Musselroe Wind Farm Provision of FCAS
+    pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+    markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-37119
+  source_title: Musselroe Wind Farm Provision of FCAS
+  publish_date: 2021-09
+  project_name: Musselroe Wind Farm FCAS Project
+  what_happened: Enabling FCAS at an operational wind farm required extensive interaction
+    with the TNSP (TasNetworks) and AEMO to ensure compliance standards were maintained,
+    testing was coordinated, and control system changes were understood and approved
+    by the relevant counterparties.
+  lesson_learnt: When retrofitting FCAS capability to an existing wind farm, budget
+    substantial time and resource for multi-stakeholder control system modifications
+    — the involvement of the OEM, network service provider, and market operator simultaneously
+    creates coordination complexity that extends the implementation timeline.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Completed AEMO registration on 9 November 2021 and conducted
+    successful market tests on 12 November 2021 and early December 2021 after resolving
+    all multi-stakeholder control system requirements.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages:
+  - 15
+  - 16
+  evidence_excerpt: Extensive interaction with the TNSP and AEMO has been required
+    to ensure compliance standards are maintained, coordination of testing occurs,
+    and control system changes are well understood.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/09/2021
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+  markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  source_page_pdf: 15
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-37119
+  - ARENA-DLV-54602
+  contributing_source_titles:
+  - Musselroe Wind Farm Provision of FCAS
+  - Musselroe Wind Farm FCAS Trial Public Report
+  contributing_sources:
+  - source_title: Musselroe Wind Farm Provision of FCAS
+    pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+    source_pages:
+    - 15
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+    markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  - source_title: Musselroe Wind Farm FCAS Trial Public Report
+    pdf_url: https://arena.gov.au/assets/2022/02/musselroe-wind-farm-public-report.pdf
+    source_pages:
+    - 16
+    source_url: https://arena.gov.au/knowledge-bank/musselroe-wind-farm-public-report/
+    markdown_filename: musselroe_wind_farm_public_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-37120
+  source_title: Musselroe Wind Farm Provision of FCAS
+  publish_date: 2021-09
+  project_name: Musselroe Wind Farm FCAS Project
+  what_happened: Enabling FCAS participation triggered a requirement to review commercial
+    agreements including potential Power Purchase Agreement changes, Operation and
+    Maintenance agreement impacts, and NEM registration intermediary arrangements
+    — commercial considerations that were not fully scoped at project outset.
+  lesson_learnt: FCAS enabling projects should conduct a commercial agreement review
+    at the outset, covering PPA change-of-use clauses, O&M agreement impacts, and
+    NEM registration intermediary requirements — these contractual dependencies can
+    constrain or delay FCAS market participation if not identified early.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: financing/commercial close
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id010
+  - 15
+  evidence_excerpt: 'Commercial considerations: NEM Registration requirements including
+    Intermediary arrangements; Potential for Power Purchase Agreement changes; Operation
+    and Maintenance agreements; Market interfaces and access.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/09/2021
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+  markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37120
+  contributing_source_titles:
+  - Musselroe Wind Farm Provision of FCAS
+  contributing_sources:
+  - source_title: Musselroe Wind Farm Provision of FCAS
+    pdf_url: https://arena.gov.au/assets/2021/09/mussleroe-wind-farm-provision-of-fcas.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-provision-of-fcas/
+    markdown_filename: mussleroe_wind_farm_provision_of_fcas.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-52652
+  source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  publish_date: 2019-11
+  project_name: Musselroe Wind Farm FCAS Enablement Project
+  what_happened: During May 2019 on-site testing, the existing Power Plant Controller
+    (PPC) active power dispatch controller logic was found to not adhere to plant
+    limits when frequency control was enabled, differing from the Functional Design
+    Specification and preventing safe operational control. This required an unplanned
+    PPC software and control logic change.
+  lesson_learnt: Treat Functional Design Specifications for older wind farm control
+    systems as unverified until on-site testing confirms conformance — PPC logic that
+    deviates from the FDS under new operating modes (such as FCAS enablement) will
+    require software changes and should be budgeted for at project outset.
+  issue_severity: major
+  project_type: generation
+  project_scale_band: utility/large-scale
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated integration
+  intervention_note: SCADA control logic changes to the PPC and Real-Time Automation
+    Controller (RTAC) were implemented in October 2019, enabling effective management
+    of overall site limits, AEMO dispatch targets, and frequency control; testing
+    in October 2019 was successful.
+  transferability: moderate
+  delay_magnitude: 3-12 months
+  technology_domain: wind
+  source_pages: &id011
+  - 6
+  - 7
+  evidence_excerpt: It was discovered that the existing PPC AP dispatch controller
+    logic, when being enabled for frequency control, did not adhere to plant limits,
+    differed from the Functional Design Specification (FDS) and prevented safe operational
+    control. This outcome required further work to scope a PPC software and logic
+    change.
+  confidence_note: Delay magnitude estimated from May 2019 discovery to October 2019
+    resolution — approximately 5 months.
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/11/2019
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+  markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52652
+  contributing_source_titles:
+  - Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  contributing_sources:
+  - source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+    pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+    markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: integration failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-52654
+  source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  publish_date: 2019-11
+  project_name: Musselroe Wind Farm FCAS Enablement Project
+  what_happened: Rapid technological change in the wind industry reduced OEM capability
+    to retain experienced engineering support for older generating platforms and their
+    control systems. OEM knowledge of Australian grid and market requirements was
+    also limited, and the time required to bring overseas and local OEM staff up to
+    speed caused considerable project delays.
+  lesson_learnt: When enabling new market services on legacy wind farm platforms,
+    explicitly assess OEM support depth for that platform before project commencement
+    — degraded OEM institutional knowledge for older systems is a predictable source
+    of delay and should be factored into schedules and contingency budgets.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: internal governance/resourcing
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Workshops were held with Vestas locally and overseas to build
+    shared understanding of Australian grid and market requirements.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id012
+  - 8
+  evidence_excerpt: Rapid technological change has impacted the OEM capabilities to
+    retain experienced engineering support capability for the older generating platforms
+    and their associated control systems. OEM knowledge of the Australian grid and
+    market requirements is limited, bringing people both locally and overseas up to
+    speed resulted in considerable project delays.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/11/2019
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+  markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52654
+  contributing_source_titles:
+  - Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  contributing_sources:
+  - source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+    pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+    markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.72
+- record_id: ARENA-DLV-52655
+  source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  publish_date: 2019-11
+  project_name: Musselroe Wind Farm FCAS Enablement Project
+  what_happened: The multi-vendor control system architecture at Musselroe — spanning
+    Vestas PPC, RTAC, SCADA, and synchronous condensers — required coordination across
+    numerous engineering and regulatory stakeholders, adding to delays in implementing
+    SCADA changes for FCAS enablement.
+  lesson_learnt: Multi-vendor control system environments require a dedicated systems
+    integration role and explicit coordination protocols across vendors from project
+    inception; underestimating this coordination overhead is a primary source of delay
+    in FCAS enablement projects on existing wind farms.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: SCADA control logic changes were developed in conjunction with
+    Vestas, CPP, and Entura; PPC and RTAC modifications were implemented in October
+    2019 following coordinated sign-off.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id013
+  - 8
+  evidence_excerpt: Multi-vendor control systems and the need to coordinate with numerous
+    engineering and regulatory staff added to delays in implementing SCADA changes.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/11/2019
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+  markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52655
+  contributing_source_titles:
+  - Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  contributing_sources:
+  - source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+    pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+    markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: integration failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-52656
+  source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  publish_date: 2019-11
+  project_name: Musselroe Wind Farm FCAS Enablement Project
+  what_happened: The existing plant configuration at Musselroe did not adequately
+    support active power dispatch accuracy and upper generation site limit management
+    when FCAS was enabled, requiring extensive control system changes. Inherent latency
+    in the OEM control system design also limited FCAS enablement capability.
+  lesson_learnt: Before committing to an FCAS enablement project on an existing wind
+    farm, conduct a detailed control system audit to assess whether the existing PPC
+    and SCADA architecture can meet the active power accuracy and site limit management
+    requirements — retrofitting these capabilities after project commencement is costly
+    and time-consuming.
+  issue_severity: major
+  project_type: generation
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated integration
+  intervention_note: PPC software was upgraded and PPC/RTAC control logic was modified
+    to ensure FCAS contingency pre-curtailment was not interpreted as a hard limit;
+    SCADA elements including Possible Power, Local Limit, AGC limits, ramp rates,
+    and FCAS enablement state were added.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id014
+  - 9
+  - 11
+  evidence_excerpt: The existing plant configuration did not facilitate the AP dispatch
+    accuracy and upper generation site limit management under FCAS enablement requiring
+    extensive control system changes; Latency of the OEM control system design limits
+    the FCAS enablement capability.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/11/2019
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+  markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52656
+  contributing_source_titles:
+  - Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  contributing_sources:
+  - source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+    pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+    markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-52658
+  source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  publish_date: 2019-11
+  project_name: Musselroe Wind Farm FCAS Enablement Project
+  what_happened: Existing PSS/E network models for Musselroe were found to be generic,
+    inadequate, and insufficiently detailed for frequency control assessment in the
+    weak Tasmanian network. Manufacturers and equipment suppliers were also reluctant
+    to provide detailed modelling information due to intellectual property concerns,
+    resulting in additional delays and complexities.
+  lesson_learnt: For FCAS enablement in weak grid environments, verify upfront that
+    network models are sufficiently detailed for frequency control analysis — generic
+    PSS/E models will not suffice; factor in time to update models, noting that OEM
+    IP restrictions may prevent access to detailed control system model parameters.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Extensive network models were developed, though these remained
+    inadequate for full frequency control assessment at the time of reporting; model
+    updating was identified as an ongoing requirement.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id015
+  - 10
+  evidence_excerpt: In the case of Musselroe, even where extensive network models
+    were developed, they require updating and to date are inadequate and still not
+    detailed enough for frequency control assessment, resulting in additional delays
+    and complexities for the project. Manufacturers and equipment suppliers are reluctant
+    to provide detailed modelling information on their plant and associated control
+    due to intellectual property concerns.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/11/2019
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+  markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52658
+  contributing_source_titles:
+  - Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  contributing_sources:
+  - source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+    pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+    markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-52659
+  source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  publish_date: 2019-11
+  project_name: Musselroe Wind Farm FCAS Enablement Project
+  what_happened: Entry into FCAS markets exposed several pre-existing contractual
+    constraints — including NEM registration arrangements, power purchase agreements,
+    competition law considerations, operation and maintenance agreements, and counterparty
+    capability — that were not fully assessed at project outset, causing delays and
+    requiring legal and commercial review.
+  lesson_learnt: Before pursuing FCAS market participation, conduct a systematic review
+    of all existing contractual and registration arrangements — PPA terms, O&M agreements,
+    intermediary arrangements, and competition law obligations — as any of these can
+    block or delay market entry independently of technical readiness.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: financing/commercial close
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: Pre-existing agreements were assessed during the project; specific
+    details were withheld due to commercial sensitivities; initial market registration
+    documents were submitted to AEMO by November 2019.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id016
+  - 10
+  evidence_excerpt: Entry into new markets posed several challenges and delays to
+    the project as a result of assessing pre-existing agreements, although specific
+    details are not able to be detailed due to commercial sensitivities. Participants
+    may need to consider their; NEM Registration requirements including Intermediary
+    arrangements; Power Purchase arrangements; Competition law; Operation and Maintenance
+    agreements; Counterparty capability or scope; Market interface access.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/11/2019
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+  markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52659
+  contributing_source_titles:
+  - Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  contributing_sources:
+  - source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+    pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+    markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-52662
+  source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  publish_date: 2019-11
+  project_name: Musselroe Wind Farm FCAS Enablement Project
+  what_happened: The Musselroe project demonstrated that frequency response capability
+    (Frequency Sensitive Mode) on an existing large wind farm with Vestas V90 turbines
+    could be achieved at the PPC level, with a 60-minute supervised trial successfully
+    demonstrating FSM operation in May 2019, and further successful tests of PPC/RTAC
+    logic changes in October 2019. However, FCAS registration and market participation
+    remained incomplete at the time of this report.
+  lesson_learnt: PPC-level frequency control is achievable on existing Vestas V90
+    wind farms but requires substantial control system modifications, extensive testing
+    in small steps to ensure system security, and ongoing coordination with AEMO and
+    the TNSP — budget and schedule accordingly for a multi-year implementation.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: utility/large-scale
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: PPC software was upgraded and RTAC control logic was modified
+    in October 2019; SCADA elements for FCAS regulation were added; initial market
+    registration documents were submitted to AEMO.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id017
+  - 6
+  - 7
+  - 11
+  evidence_excerpt: A trial was conducted under supervised controlled conditions that
+    successfully demonstrated the existing PPC being enabled for frequency control
+    for a period of 60 minutes... Testing was successful as noted in Figure 5... Further
+    improvements to the loop control functionality were identified and requires refinement
+    prior to undertaking the FCAS registration and market testing.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/11/2019
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+  markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52662
+  contributing_source_titles:
+  - Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  contributing_sources:
+  - source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+    pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+    markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-52663
+  source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  publish_date: 2019-11
+  project_name: Musselroe Wind Farm FCAS Enablement Project
+  what_happened: The frequency response capability of the Musselroe wind farm (via
+    Vestas V90 turbines) was found to be technically substantial during validation
+    testing, but actual enablement of FCAS was not pursued at the initial project
+    stage primarily due to unfavourable FCAS economic conditions at that time.
+  lesson_learnt: Technical capability for FCAS does not automatically translate to
+    commercial viability — conduct an explicit economic assessment of FCAS participation
+    before committing to the enablement investment, and time the project to align
+    with favourable market conditions or anticipated regulatory changes that will
+    improve the economics.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: utility/large-scale
+  lifecycle_phase: concept/feasibility
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id018
+  - 4
+  evidence_excerpt: The results showed that the frequency response capability can
+    be substantial, however, actual enablement of Frequency Control Ancillary Services
+    (FCAS) capability was not a project deliverable at that stage primarily due to
+    the wider FCAS economic conditions.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/11/2019
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+  markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52663
+  contributing_source_titles:
+  - Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  contributing_sources:
+  - source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+    pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+    markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-52664
+  source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  publish_date: 2019-11
+  project_name: Musselroe Wind Farm FCAS Enablement Project
+  what_happened: Control system changes to the PPC and RTAC required sign-off from
+    relevant authorities including intermediaries and counterparties due to the complex
+    interaction of all generating systems and market interfaces, adding time and coordination
+    overhead to each modification cycle.
+  lesson_learnt: Map all required sign-off authorities — including intermediaries
+    and counterparties — for control system changes before project commencement; the
+    approval chain for PPC and SCADA modifications on a grid-connected wind farm is
+    longer and more complex than for purely internal changes, and this must be reflected
+    in the project schedule.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: utility/large-scale
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: PPC and RTAC modifications were ultimately signed off and implemented
+    in October 2019 following coordination with all relevant parties.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id019
+  - 11
+  evidence_excerpt: Modifications to control systems take time and must be signed
+    off by the relevant authorities. Importantly this includes intermediary and counterparty
+    implications due to the complex interaction of all generating systems and market
+    interfaces.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/11/2019
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+  markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52664
+  contributing_source_titles:
+  - Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+  contributing_sources:
+  - source_title: Mussleroe Wind Farm Lessons Learnt Progress Report 2019
+    pdf_url: https://arena.gov.au/assets/2018/03/mussleroe-wind-farm-lessons-learnt-progress-report-2019.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/mussleroe-wind-farm-lessons-learnt-progress-report-2019/
+    markdown_filename: mussleroe_wind_farm_lessons_learnt_progress_report_2019.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-54601
+  source_title: Musselroe Wind Farm FCAS Trial Public Report
+  publish_date: 2022-01
+  project_name: Musselroe Wind Farm FCAS Trial
+  what_happened: The Balance of Plant configuration at Musselroe Wind Farm (including
+    CapBanks, STATCOMs, and synchronous condensers) proved to be a significant constraint
+    on the FCAS trapezium, limiting the wind farm to spending only 25–30% of its time
+    within the theoretical generating boundary required for FCAS enablement.
+  lesson_learnt: For existing wind farms seeking FCAS registration, the Balance of
+    Plant configuration must be assessed early — existing reactive power equipment
+    and plant controller logic can severely restrict the FCAS trapezium and limit
+    the proportion of time the facility can actually participate in FCAS markets.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: commercial expansion
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: partial success
+  secondary_failure_mode: poor scoping
+  intervention_note: Developed an Excel Solver-based FCAS optimisation tool to help
+    determine the most optimal FCAS/Energy position given the constrained trapezium.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id020
+  - 8
+  - 12
+  evidence_excerpt: The Balance of Plant configuration for MRWF proved to be a significant
+    issue in the development of the FCAS trapezium used for the Registration approval
+    by AEMO. This configuration limits the potential of the wind farm to provide FCAS
+    services... the FCAS trapezium for MRWF limits the potential time for MRWF to
+    be enabled with MRWF only spending 25-30% of its time within that theoretical
+    generating boundary.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/musselroe-wind-farm-public-report/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/01/2022
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2022/02/musselroe-wind-farm-public-report.pdf
+  markdown_filename: musselroe_wind_farm_public_report.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-54601
+  contributing_source_titles:
+  - Musselroe Wind Farm FCAS Trial Public Report
+  contributing_sources:
+  - source_title: Musselroe Wind Farm FCAS Trial Public Report
+    pdf_url: https://arena.gov.au/assets/2022/02/musselroe-wind-farm-public-report.pdf
+    source_pages: *id020
+    source_url: https://arena.gov.au/knowledge-bank/musselroe-wind-farm-public-report/
+    markdown_filename: musselroe_wind_farm_public_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-54605
+  source_title: Musselroe Wind Farm FCAS Trial Public Report
+  publish_date: 2022-01
+  project_name: Musselroe Wind Farm FCAS Trial
+  what_happened: Despite MRWF being bid available in FCAS markets, actual enablement
+    during November 2021 was minimal because FCAS service prices were stable and low,
+    meaning the economic co-optimisation rarely favoured FCAS dispatch even when the
+    plant was technically within its trapezium.
+  lesson_learnt: Technical FCAS capability alone does not guarantee revenue — wind
+    farm operators must model FCAS price dynamics and co-optimisation economics carefully
+    before committing capital to FCAS enablement retrofits, as low FCAS prices can
+    render participation uneconomic for extended periods.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: commercial expansion
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: partial success
+  secondary_failure_mode: null
+  intervention_note: Developed a dedicated Excel Solver optimisation tool to dynamically
+    calculate the optimal FCAS/Energy position for the trading team.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id021
+  - 12
+  evidence_excerpt: Despite being bid available, the actual enablement of MRWF is
+    based on the price of the FCAS services, which through much of November 2021 was
+    stable and low.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/musselroe-wind-farm-public-report/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/01/2022
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2022/02/musselroe-wind-farm-public-report.pdf
+  markdown_filename: musselroe_wind_farm_public_report.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-54605
+  contributing_source_titles:
+  - Musselroe Wind Farm FCAS Trial Public Report
+  contributing_sources:
+  - source_title: Musselroe Wind Farm FCAS Trial Public Report
+    pdf_url: https://arena.gov.au/assets/2022/02/musselroe-wind-farm-public-report.pdf
+    source_pages: *id021
+    source_url: https://arena.gov.au/knowledge-bank/musselroe-wind-farm-public-report/
+    markdown_filename: musselroe_wind_farm_public_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-54606
+  source_title: Musselroe Wind Farm FCAS Trial Public Report
+  publish_date: 2022-01
+  project_name: Musselroe Wind Farm FCAS Trial
+  what_happened: MRWF's very low connection point fault level (360 MVA, SCR 1.8–2.1)
+    required installation of 4 STATCOMs, 4 capacitor banks, and 2 synchronous condensers
+    to meet performance standards, adding significant plant complexity that in turn
+    created the FCAS trapezium constraints experienced during the trial.
+  lesson_learnt: Wind farms at weak grid connection points require extensive reactive
+    compensation plant to meet performance standards; project developers should assess
+    upfront how this compensation equipment will interact with future FCAS or ancillary
+    service ambitions, as it can introduce operational limits not apparent at commissioning.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: commercial expansion
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id022
+  - 7
+  - 8
+  evidence_excerpt: The Connection Point at the Derby Substation has a very low fault
+    level (360 MVA) resulting in Short Circuit Ratio (SCR) range at the wind farm
+    of between 1.8 - 2.1... The Balance of Plant configuration for MRWF proved to
+    be a significant issue in the development of the FCAS trapezium used for the Registration
+    approval by AEMO.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/musselroe-wind-farm-public-report/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/01/2022
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2022/02/musselroe-wind-farm-public-report.pdf
+  markdown_filename: musselroe_wind_farm_public_report.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-54606
+  contributing_source_titles:
+  - Musselroe Wind Farm FCAS Trial Public Report
+  contributing_sources:
+  - source_title: Musselroe Wind Farm FCAS Trial Public Report
+    pdf_url: https://arena.gov.au/assets/2022/02/musselroe-wind-farm-public-report.pdf
+    source_pages: *id022
+    source_url: https://arena.gov.au/knowledge-bank/musselroe-wind-farm-public-report/
+    markdown_filename: musselroe_wind_farm_public_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-54607
+  source_title: Musselroe Wind Farm FCAS Trial Public Report
+  publish_date: 2022-01
+  project_name: Musselroe Wind Farm FCAS Trial
+  what_happened: No automated bidding solution existed for wind farm FCAS co-optimisation
+    at the time of the trial, requiring the project team to develop a bespoke Excel
+    Solver tool to assist with determining the optimal FCAS/Energy position for each
+    dispatch interval.
+  lesson_learnt: Wind farm operators entering FCAS markets should not assume that
+    automated bidding and co-optimisation tools are available off-the-shelf — budget
+    time and resource for developing proprietary optimisation capability, or procure
+    this from a specialist trading platform provider before market registration.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: commercial expansion
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Developed a small Excel Solver optimisation tool linked to UIGF
+    forecasts to determine the most optimal FCAS/Energy position for the trading team.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id023
+  - 12
+  evidence_excerpt: Given there is no automated bidding solution to solve this issue
+    at present, and to assist with the optimisation process, we developed a small
+    Excel Solver that can help determine the most optimal FCAS/Energy position.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/musselroe-wind-farm-public-report/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/01/2022
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2022/02/musselroe-wind-farm-public-report.pdf
+  markdown_filename: musselroe_wind_farm_public_report.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-54607
+  contributing_source_titles:
+  - Musselroe Wind Farm FCAS Trial Public Report
+  contributing_sources:
+  - source_title: Musselroe Wind Farm FCAS Trial Public Report
+    pdf_url: https://arena.gov.au/assets/2022/02/musselroe-wind-farm-public-report.pdf
+    source_pages: *id023
+    source_url: https://arena.gov.au/knowledge-bank/musselroe-wind-farm-public-report/
+    markdown_filename: musselroe_wind_farm_public_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-54608
+  source_title: Musselroe Wind Farm FCAS Trial Public Report
+  publish_date: 2022-01
+  project_name: Musselroe Wind Farm FCAS Trial
+  what_happened: As of 30 November 2021, there were no genuine wind/battery hybrid
+    units registered in the NEM, leaving MRWF without a registration precedent or
+    established regulatory pathway for a hybrid wind-BESS facility when assessing
+    storage integration.
+  lesson_learnt: Projects seeking to register hybrid wind-BESS configurations in the
+    NEM should engage AEMO early to clarify the registration pathway, as the absence
+    of precedents means the process is likely to require bespoke negotiation and potentially
+    novel technical submissions.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: commercial expansion
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Developed a preliminary BESS integration business model assessing
+    multiple storage locations (within farm, near connection point, at RRN) and multiple
+    vendors, to prepare for future hybrid registration.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: hybrid systems
+  source_pages: &id024
+  - 15
+  evidence_excerpt: There are no genuine wind/battery hybrid units registered in the
+    NEM as of 30 November 2021.
+  confidence_note: 'project_type reconciled to ''generation'' from: generation (9/11),
+    multi-technology/hybrid (2/11)'
+  source_url: https://arena.gov.au/knowledge-bank/musselroe-wind-farm-public-report/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/01/2022
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2022/02/musselroe-wind-farm-public-report.pdf
+  markdown_filename: musselroe_wind_farm_public_report.md
+  source_page_pdf: 15
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-54608
+  contributing_source_titles:
+  - Musselroe Wind Farm FCAS Trial Public Report
+  contributing_sources:
+  - source_title: Musselroe Wind Farm FCAS Trial Public Report
+    pdf_url: https://arena.gov.au/assets/2022/02/musselroe-wind-farm-public-report.pdf
+    source_pages: *id024
+    source_url: https://arena.gov.au/knowledge-bank/musselroe-wind-farm-public-report/
+    markdown_filename: musselroe_wind_farm_public_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-54609
+  source_title: Musselroe Wind Farm FCAS Trial Public Report
+  publish_date: 2022-01
+  project_name: Musselroe Wind Farm FCAS Trial
+  what_happened: On 18 November 2021, a rapid wind ramp event lifted MRWF generation
+    from near 0 MW to full output in 30 minutes, pushing output above 129 MW and triggering
+    FCAS trapping signals from AEMO — an expected but operationally significant outcome
+    that temporarily locked the plant out of FCAS participation.
+  lesson_learnt: Wind farms providing FCAS must establish automated protocols for
+    handling rapid ramp events that push generation outside the FCAS trapezium — trapping
+    signals from AEMO during ramp events are foreseeable and should be modelled in
+    the operational playbook before market go-live.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: commercial expansion
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: execution & logistics
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id025
+  - 13
+  evidence_excerpt: On the evening 18 November, a strong front came through site,
+    lifting generation from near 0MW to full output in 30 minutes. As the wind increased
+    above 129MW, MRWF began to receive trapped signals from AEMO, an outcome that
+    was expected under these conditions.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/musselroe-wind-farm-public-report/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/01/2022
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2022/02/musselroe-wind-farm-public-report.pdf
+  markdown_filename: musselroe_wind_farm_public_report.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-54609
+  contributing_source_titles:
+  - Musselroe Wind Farm FCAS Trial Public Report
+  contributing_sources:
+  - source_title: Musselroe Wind Farm FCAS Trial Public Report
+    pdf_url: https://arena.gov.au/assets/2022/02/musselroe-wind-farm-public-report.pdf
+    source_pages: *id025
+    source_url: https://arena.gov.au/knowledge-bank/musselroe-wind-farm-public-report/
+    markdown_filename: musselroe_wind_farm_public_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.72
+- record_id: ARENA-DLV-54610
+  source_title: Musselroe Wind Farm FCAS Trial Public Report
+  publish_date: 2022-01
+  project_name: Musselroe Wind Farm FCAS Trial
+  what_happened: MRWF successfully demonstrated FCAS capability on an existing Vestas
+    wind farm, completing AEMO registration on 9 November 2021, conducting successful
+    contingency raise and regulation market tests in November and December 2021, and
+    achieving AGC enablement and dispatch by AEMO on 6 December 2021.
+  lesson_learnt: Retrofitting FCAS capability to an existing Vestas wind farm is technically
+    achievable — the project confirmed that with sufficient control system modification,
+    existing wind farms can be registered for both contingency and regulation FCAS
+    services, providing a viable pathway for the broader wind fleet.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: commercial expansion
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id026
+  - 9
+  - 10
+  - 11
+  evidence_excerpt: AEMO registration was completed, effective 9 November 2021...
+    A market test for raise contingency and regulation enablement was conducted successfully
+    on 12 November 2021 and early December 2021... AGC was enabled and dispatched
+    by AEMO on the Dec 6 2021.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/musselroe-wind-farm-public-report/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/01/2022
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2022/02/musselroe-wind-farm-public-report.pdf
+  markdown_filename: musselroe_wind_farm_public_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-54610
+  contributing_source_titles:
+  - Musselroe Wind Farm FCAS Trial Public Report
+  contributing_sources:
+  - source_title: Musselroe Wind Farm FCAS Trial Public Report
+    pdf_url: https://arena.gov.au/assets/2022/02/musselroe-wind-farm-public-report.pdf
+    source_pages: *id026
+    source_url: https://arena.gov.au/knowledge-bank/musselroe-wind-farm-public-report/
+    markdown_filename: musselroe_wind_farm_public_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-54611
+  source_title: Musselroe Wind Farm FCAS Trial Public Report
+  publish_date: 2022-01
+  project_name: Musselroe Wind Farm FCAS Trial
+  what_happened: The preliminary business case modelling for a co-located BESS at
+    MRWF indicated that multiple configuration options were economically feasible,
+    and that a battery could assist with CPF mitigation, power quality, and FCAS capability
+    while also capturing otherwise curtailed wind energy.
+  lesson_learnt: For wind farms with existing curtailment issues and run-back control
+    schemes, co-located battery storage can deliver stacked value across FCAS, energy,
+    CPF mitigation, and spilled wind capture — a multi-value business case model should
+    be used from the outset rather than assessing FCAS revenue alone.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: commercial expansion
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: Developed a custom Excel-based storage model assessing multiple
+    locations (within farm, near connection point, at RRN) and multiple vendors, incorporating
+    MLF, CPF, PPA conditions, and FCAS revenue streams.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: hybrid systems
+  source_pages: &id027
+  - 15
+  - 16
+  evidence_excerpt: Given some of the existing wind curtailment issues on site at
+    MRWF, 'filling' a storage device (and providing FCAS capability) is a technically
+    plausible and economically viable option. In the preliminary business case model
+    runs, several configurations' options have been considered and appear economically
+    feasible.
+  confidence_note: 'project_type reconciled to ''generation'' from: generation (9/11),
+    multi-technology/hybrid (2/11)'
+  source_url: https://arena.gov.au/knowledge-bank/musselroe-wind-farm-public-report/
+  project_page_url: https://arena.gov.au/projects/musselroe-wind-farm-fcas-trial/
+  kb_category: System security and reliability, Wind energy
+  kb_publish_date: 30/01/2022
+  kb_year: '2018'
+  kb_associated_project: Musselroe Wind Farm FCAS Trial
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $477k
+  total_project_value: $991k
+  lead_organisation: Musselroe Wind Farm Pty Ltd (Woolnorth Wind Farm Holding Pty
+    Ltd)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/01/2018
+  location: Tasmania, Woolnorth
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2022/02/musselroe-wind-farm-public-report.pdf
+  markdown_filename: musselroe_wind_farm_public_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-54611
+  contributing_source_titles:
+  - Musselroe Wind Farm FCAS Trial Public Report
+  contributing_sources:
+  - source_title: Musselroe Wind Farm FCAS Trial Public Report
+    pdf_url: https://arena.gov.au/assets/2022/02/musselroe-wind-farm-public-report.pdf
+    source_pages: *id027
+    source_url: https://arena.gov.au/knowledge-bank/musselroe-wind-farm-public-report/
+    markdown_filename: musselroe_wind_farm_public_report.md
+  arena_category:
+  - Grid stability
+  - Wind
+  activity_type: Pilot / demonstration
+  is_consortium: false

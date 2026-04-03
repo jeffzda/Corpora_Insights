@@ -1,0 +1,1186 @@
+- record_id: ARENA-DLV-6801
+  source_title: Navigating Dynamic Operating Envelopes
+  publish_date: 2025-12
+  project_name: DEIP Dynamic Operating Envelopes Framework
+  what_happened: CSIP-AUS has been applied differently across DNSPs in Australian
+    DOE trials, leading to device compatibility issues and limiting interoperability
+    and scalability — a device compatible with one DNSP's utility server may require
+    modifications to work with another.
+  lesson_learnt: Establish and enforce a consistent national interpretation of CSIP-AUS
+    before scaling DOE rollout — inconsistent application across DNSPs creates device
+    compatibility barriers that fragment the market and require repeated device modifications.
+    Industry collaboration, specific server test procedures, and a reference utility
+    server implementation are needed to resolve this.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: Efforts are underway through industry collaboration, DEIP ISC
+    CSIP-AUS utility server test procedures, and a BSGIP reference utility server
+    implementation to improve consistency.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id001
+  - 22
+  evidence_excerpt: 'Inconsistent interpretation and application of CSIP-AUS: CSIP-AUS
+    has been applied differently across DNSPs, leading to device compatibility issues
+    and limiting interoperability and scalability. A device that is compatible with
+    one DNSP''s server may require modifications to work with another.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/01/2026
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+  markdown_filename: navigating_dynamic_operating_envelopes.md
+  source_page_pdf: 22
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6801
+  contributing_source_titles:
+  - Navigating Dynamic Operating Envelopes
+  contributing_sources:
+  - source_title: Navigating Dynamic Operating Envelopes
+    pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+    markdown_filename: navigating_dynamic_operating_envelopes.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-6802
+  source_title: Navigating Dynamic Operating Envelopes
+  publish_date: 2025-12
+  project_name: DEIP Dynamic Operating Envelopes Framework
+  what_happened: Across Australian DOE trials, DNSPs were found to have incomplete
+    or inaccurate network electrical models because power flows have historically
+    been unidirectional and detailed models were not previously required — this directly
+    impairs the accuracy of DOE calculations and dynamic network capacity forecasts.
+  lesson_learnt: Invest in network model accuracy as a prerequisite for effective
+    DOE implementation — incomplete or outdated models degrade dynamic capacity forecasts,
+    leading to overly conservative DOE limits that unnecessarily restrict consumer
+    flexibility. Budget for measurement devices (e.g. intelligent switchgear) and
+    iterative model validation before deploying DOEs at scale.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: State estimation techniques demonstrated in Project SHIELD can
+    aggregate data from network infrastructure, smart meters, and DER devices to compensate
+    for incomplete models in areas with low smart meter penetration.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id002
+  - 14
+  evidence_excerpt: Given that power flows have historically been unidirectional,
+    DNSPs have not always required detailed or up-to-date network models, which has
+    led to some network models being incomplete or inaccurate. Improving model accuracy
+    requires investment in measurement devices (e.g. intelligent switchgear) to capture
+    real-time power flows and voltage and thermal conditions.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/01/2026
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+  markdown_filename: navigating_dynamic_operating_envelopes.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6802
+  contributing_source_titles:
+  - Navigating Dynamic Operating Envelopes
+  contributing_sources:
+  - source_title: Navigating Dynamic Operating Envelopes
+    pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+    markdown_filename: navigating_dynamic_operating_envelopes.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-6803
+  source_title: Navigating Dynamic Operating Envelopes
+  publish_date: 2025-12
+  project_name: DEIP Dynamic Operating Envelopes Framework
+  what_happened: Smart meter coverage varies significantly across Australian jurisdictions
+    — Victoria has near-universal coverage while others have limited interval data
+    — constraining real-time network visibility and limiting DOE calculation accuracy
+    in lower-coverage regions.
+  lesson_learnt: Do not assume uniform smart meter coverage when designing DOE systems
+    for national deployment — in jurisdictions with limited smart meter penetration,
+    DNSPs must use consumer archetypes or state estimation as proxies, which reduce
+    DOE precision and may require recalibration as coverage improves. Design DOE architectures
+    to accommodate data gaps from the outset.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: Where smart meter data is lacking, DNSPs may use consumer archetypes
+    as proxies for consumer data, or approximation algorithms (such as that developed
+    by AusNet in Project EDGE) that use historical LV transformer data without requiring
+    network state forecasts.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id003
+  - 14
+  evidence_excerpt: Jurisdictions like Victoria benefit from near-universal smart
+    meter coverage, while others have limited access to interval data, constraining
+    real-time visibility.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/01/2026
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+  markdown_filename: navigating_dynamic_operating_envelopes.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6803
+  contributing_source_titles:
+  - Navigating Dynamic Operating Envelopes
+  contributing_sources:
+  - source_title: Navigating Dynamic Operating Envelopes
+    pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+    markdown_filename: navigating_dynamic_operating_envelopes.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-6804
+  source_title: Navigating Dynamic Operating Envelopes
+  publish_date: 2025-12
+  project_name: DEIP Dynamic Operating Envelopes Framework
+  what_happened: Australian DOE trials found that including controllable (active)
+    loads and generation in the network-level load profile — rather than separating
+    them as allocatable spare capacity — causes DNSPs to underestimate the spare network
+    capacity available for DOE allocation, resulting in unnecessarily conservative
+    DOE limits for consumers.
+  lesson_learnt: When calculating DOE spare capacity, separate controllable (active)
+    loads and generation from the passive network load profile — conflating the two
+    artificially reduces calculated spare capacity, leading to DOE limits that are
+    more conservative than the network actually requires and unnecessarily curtailing
+    consumer flexibility and revenue.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The report recommends constructing a passive-only network-level
+    load profile (excluding controllable resources) as the baseline for spare capacity
+    calculation, with controllable resources allocated to DOE capacity instead.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id004
+  - 16
+  - 17
+  evidence_excerpt: Including both non-controllable (passive or opted out) and controllable
+    (active) loads/generation in the network load profile can lead to underestimating
+    the spare network capacity available for DOEs. This is because the controllable
+    loads/generation are considered part of the passive network load profile, when
+    it should be apportioned to the spare network capacity allocated to DOEs.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/01/2026
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+  markdown_filename: navigating_dynamic_operating_envelopes.md
+  source_page_pdf: 16
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6804
+  contributing_source_titles:
+  - Navigating Dynamic Operating Envelopes
+  contributing_sources:
+  - source_title: Navigating Dynamic Operating Envelopes
+    pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+    markdown_filename: navigating_dynamic_operating_envelopes.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-6805
+  source_title: Navigating Dynamic Operating Envelopes
+  publish_date: 2025-12
+  project_name: DEIP Dynamic Operating Envelopes Framework
+  what_happened: University of Melbourne research under Project EDGE modelled the
+    impact of different DOE update frequencies (day-ahead, intra-day, near real-time)
+    and found that near real-time DOEs are the most accurate, especially under high
+    DER penetration and network constraints.
+  lesson_learnt: Plan for near real-time DOE calculation as DER penetration grows
+    — day-ahead and intra-day approaches perform adequately at low DER levels but
+    degrade in accuracy as penetration and network constraints increase. Investment
+    in the supporting communications and computational infrastructure needed to sustain
+    near real-time updates should be scoped early in the design phase.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id005
+  - 18
+  evidence_excerpt: Research by the University of Melbourne under Project EDGE modelled
+    the impact of day-ahead, intra-day and near real time approaches on network performance
+    across different network types (e.g. urban, regional). Findings show that near
+    real-time DOEs are the most accurate, especially under high DER penetration and
+    network constraints.
+  confidence_note: 'project_scale_band reconciled to ''programmatic/portfolio-level''
+    from: programmatic/portfolio-level (13/20), demonstration (7/20)'
+  source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/01/2026
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+  markdown_filename: navigating_dynamic_operating_envelopes.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6805
+  contributing_source_titles:
+  - Navigating Dynamic Operating Envelopes
+  contributing_sources:
+  - source_title: Navigating Dynamic Operating Envelopes
+    pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+    markdown_filename: navigating_dynamic_operating_envelopes.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+- record_id: ARENA-DLV-6806
+  source_title: Navigating Dynamic Operating Envelopes
+  publish_date: 2025-12
+  project_name: DEIP Dynamic Operating Envelopes Framework
+  what_happened: Insights from Project EDGE and Project Symphony found that at low
+    DER penetration levels and low network constraint, all DOE allocation methods
+    (equal, proportional, maximising total generation) produce similar outcomes —
+    but as penetration and constraints increase, unequal allocation methods enable
+    significantly higher generation and network utilisation.
+  lesson_learnt: Select DOE capacity allocation methods with future DER growth in
+    mind — at low penetration all methods are equivalent, but early design choices
+    that lock in equal allocation may limit network efficiency and consumer benefit
+    as DER uptake grows. Plan for a transition to more sophisticated allocation methods
+    as part of the staged DOE implementation roadmap.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id006
+  - 19
+  evidence_excerpt: Insights from Project EDGE and Project Symphony indicate that
+    all allocation methods result in similar outcomes where there are low levels of
+    DER penetration and low levels of network constraints. However, as DER penetration
+    levels and network constraints exist, allocation methods that allocate capacity
+    unequally to sites (such as maximising total generation) may enable higher amounts
+    of generation and network utilisation compared to more equal allocations.
+  confidence_note: 'project_scale_band reconciled to ''programmatic/portfolio-level''
+    from: programmatic/portfolio-level (13/20), demonstration (7/20)'
+  source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/01/2026
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+  markdown_filename: navigating_dynamic_operating_envelopes.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6806
+  contributing_source_titles:
+  - Navigating Dynamic Operating Envelopes
+  contributing_sources:
+  - source_title: Navigating Dynamic Operating Envelopes
+    pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+    markdown_filename: navigating_dynamic_operating_envelopes.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+- record_id: ARENA-DLV-6808
+  source_title: Navigating Dynamic Operating Envelopes
+  publish_date: 2025-12
+  project_name: DEIP Dynamic Operating Envelopes Framework
+  what_happened: Desktop analyses referenced in Australian DOE work found that applying
+    DOEs only to controllable devices (device-level DOEs), rather than at the NMI
+    site level, can enable up to 20% more PV exports by making better use of network
+    diversity.
+  lesson_learnt: Device-level DOE application should be evaluated as part of the DOE
+    architecture design — assigning limits only to controllable devices rather than
+    the entire NMI can unlock up to 20% additional PV export capacity, improve network
+    utilisation efficiency, and enable multi-aggregator business models, though it
+    requires more granular behind-the-meter data and more complex control coordination.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id007
+  - 27
+  evidence_excerpt: Desktop analyses indicate that assigning DOEs to controllable
+    devices only, can enable up to 20% more PV exports compared to site-level DOEs.
+    This is because device-level DOEs make better use of network diversity, allowing
+    more rooftop PV.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/01/2026
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+  markdown_filename: navigating_dynamic_operating_envelopes.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6808
+  contributing_source_titles:
+  - Navigating Dynamic Operating Envelopes
+  contributing_sources:
+  - source_title: Navigating Dynamic Operating Envelopes
+    pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+    markdown_filename: navigating_dynamic_operating_envelopes.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+- record_id: ARENA-DLV-6809
+  source_title: Navigating Dynamic Operating Envelopes
+  publish_date: 2025-12
+  project_name: DEIP Dynamic Operating Envelopes Framework
+  what_happened: Under NMI-level DOE implementations trialled in Australia, aggregators
+    are required to manage the full site power flow including non-controllable devices,
+    forcing them to withhold portfolio capacity as a hedge against variability outside
+    their control — reducing overall network utilisation efficiency.
+  lesson_learnt: When designing NMI-level DOE frameworks, account for the operational
+    burden placed on aggregators to manage passive load variability — this forces
+    aggregators to maintain larger consumer enrolment reserves than necessary, reducing
+    efficient utilisation of available network capacity. Device-level DOEs or better
+    behind-the-meter visibility can reduce this inefficiency.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Device-level DOEs are identified as a design alternative that
+    separates passive forecasting from controllable dispatch, reducing aggregator
+    reserve requirements.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id008
+  - 24
+  evidence_excerpt: 'Risk management: This places the risk of non-controllable load
+    and generation on aggregators, requiring them to withhold capacity to hedge against
+    variability outside their control, reducing overall efficiency. To manage this
+    uncertainty, aggregators may need to maintain larger portfolio reserves through
+    additional consumer enrolment, which can reduce the efficient use of available
+    capacity.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/01/2026
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+  markdown_filename: navigating_dynamic_operating_envelopes.md
+  source_page_pdf: 24
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6809
+  contributing_source_titles:
+  - Navigating Dynamic Operating Envelopes
+  contributing_sources:
+  - source_title: Navigating Dynamic Operating Envelopes
+    pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+    markdown_filename: navigating_dynamic_operating_envelopes.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-6810
+  source_title: Navigating Dynamic Operating Envelopes
+  publish_date: 2025-12
+  project_name: DEIP Dynamic Operating Envelopes Framework
+  what_happened: Current frameworks for DOE calculation split forecasting responsibilities
+    between DNSPs and aggregators (aggregators forecast non-controllable loads), which
+    trial experience shows can reduce forecast accuracy and create unclear accountability
+    when DOE limits are inaccurate.
+  lesson_learnt: Clarify and formalise forecasting responsibilities between DNSPs
+    and aggregators at project design stage — split forecasting arrangements where
+    aggregators forecast non-controllable loads can degrade DOE accuracy and obscure
+    accountability. Device-level DOE architectures that assign passive load forecasting
+    solely to DNSPs and controllable dispatch to aggregators offer a cleaner accountability
+    boundary.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id009
+  - 15
+  evidence_excerpt: Current frameworks often split forecasting responsibilities, for
+    example, aggregators forecast non-controllable loads, which can impact accuracy
+    and accountability.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/01/2026
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+  markdown_filename: navigating_dynamic_operating_envelopes.md
+  source_page_pdf: 15
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6810
+  contributing_source_titles:
+  - Navigating Dynamic Operating Envelopes
+  contributing_sources:
+  - source_title: Navigating Dynamic Operating Envelopes
+    pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+    markdown_filename: navigating_dynamic_operating_envelopes.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-6812
+  source_title: Navigating Dynamic Operating Envelopes
+  publish_date: 2025-12
+  project_name: DEIP Dynamic Operating Envelopes Framework
+  what_happened: Conservative buffers applied by DNSPs to DOE limits to account for
+    data uncertainty and forecasting errors reduce the network capacity available
+    to consumers and aggregators, potentially denying revenue during periods where
+    the network in fact has more spare capacity than assumed.
+  lesson_learnt: Size DOE buffers explicitly and track their cost to consumers — while
+    buffers are necessary to manage forecasting uncertainty, the level of conservatism
+    should be calibrated against actual confidence in network and DER forecasts, DER
+    visibility, and conformance rates. Overly large buffers suppress consumer revenue
+    and reduce the business case for DER investment; tracking curtailment cost can
+    inform when buffers should be reduced.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id010
+  - 17
+  evidence_excerpt: While buffers enhance operational security, they also reduce the
+    capacity available to consumers. Aggregators and consumers may also lose potential
+    revenue streams if the network is assumed to have less spare capacity than it
+    truly does.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/01/2026
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+  markdown_filename: navigating_dynamic_operating_envelopes.md
+  source_page_pdf: 17
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6812
+  contributing_source_titles:
+  - Navigating Dynamic Operating Envelopes
+  contributing_sources:
+  - source_title: Navigating Dynamic Operating Envelopes
+    pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+    markdown_filename: navigating_dynamic_operating_envelopes.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-6813
+  source_title: Navigating Dynamic Operating Envelopes
+  publish_date: 2025-12
+  project_name: DEIP Dynamic Operating Envelopes Framework
+  what_happened: Home energy management systems (HEMS), which are required to coordinate
+    multiple controllable devices at a site under DOE limits, are an emerging technology
+    with unresolved challenges including conflicting device commands, unclear control
+    hierarchies, and unstable control behaviours — issues that become more complex
+    in multi-aggregator settings.
+  lesson_learnt: Do not assume HEMS interoperability and control stability in DOE
+    projects involving multiple controllable devices — HEMS remain immature and must
+    have clearly defined control hierarchies (with network security taking precedence
+    over market signals) embedded by design. Projects involving multi-aggregator scenarios
+    at a single site require additional control systems engineering to prevent conflicting
+    commands and instabilities.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: AS 5438 (Interoperability requirements for inverter energy systems)
+    is currently being developed to address device communication challenges and enable
+    consistent response to site-level limits.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id011
+  - 27
+  evidence_excerpt: HEMS remain an emerging technology, and further work is needed
+    to improve BTM device monitoring, define clear control and operational hierarchies
+    (e.g. embedding requirements for network security needs to take precedence over
+    market signals), and prevent issues such as conflicting commands or unstable control
+    behaviours.
+  confidence_note: 'project_scale_band reconciled to ''programmatic/portfolio-level''
+    from: programmatic/portfolio-level (13/20), demonstration (7/20)'
+  source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/01/2026
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+  markdown_filename: navigating_dynamic_operating_envelopes.md
+  source_page_pdf: 27
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6813
+  contributing_source_titles:
+  - Navigating Dynamic Operating Envelopes
+  contributing_sources:
+  - source_title: Navigating Dynamic Operating Envelopes
+    pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+    markdown_filename: navigating_dynamic_operating_envelopes.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-6814
+  source_title: Navigating Dynamic Operating Envelopes
+  publish_date: 2025-12
+  project_name: DEIP Dynamic Operating Envelopes Framework
+  what_happened: In operational DOE deployments, there is currently no automated process
+    to update DOE limits from the DNSP when a new NMI is added to an aggregator's
+    portfolio — meaning aggregators may operate without correct DOE limits for new
+    sites for a period, creating a conformance gap.
+  lesson_learnt: Automate DOE limit provisioning when new NMIs join an aggregator
+    portfolio — the current manual or batch-update process creates a window during
+    which aggregators lack correct DOE limits for new sites, generating conformance
+    breaches that are not the result of intentional non-compliance. This should be
+    addressed in DOE platform design before scaling.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id012
+  - 36
+  evidence_excerpt: There is currently no process to automatically update DOE limits
+    from the DNSP when a new NMI is added to an aggregator's portfolio. As a result,
+    aggregators may not have all the correct DOE limits for some sites for a period
+    of time.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/01/2026
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+  markdown_filename: navigating_dynamic_operating_envelopes.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6814
+  contributing_source_titles:
+  - Navigating Dynamic Operating Envelopes
+  contributing_sources:
+  - source_title: Navigating Dynamic Operating Envelopes
+    pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+    markdown_filename: navigating_dynamic_operating_envelopes.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-6815
+  source_title: Navigating Dynamic Operating Envelopes
+  publish_date: 2025-12
+  project_name: DEIP Dynamic Operating Envelopes Framework
+  what_happened: DOE trials found that without a harmonised approach to compensatory
+    responses (fallback behaviours when communications fail), different DNSPs and
+    aggregators apply different fallback settings — increasing the risk of conflicting
+    responses and reducing the reliability of network protection during communication
+    outages as DER fleets grow.
+  lesson_learnt: Standardise compensatory response settings (fallback limits, ramp-down
+    rates, disconnection thresholds) across DNSPs and aggregators before scaling DOE
+    deployments — inconsistent fallback behaviour across a large DER fleet can create
+    unpredictable network conditions during communication failures, and the risk increases
+    proportionally with DER penetration. Conformance of compensatory control settings
+    should be a pre-qualification requirement for VPPs.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: The report recommends that compensatory response conformance
+    become a pre-qualification requirement for VPPs and part of ongoing compliance
+    checks, supported by risk-proportionate response hierarchies.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id013
+  - 35
+  evidence_excerpt: 'Harmonisation: Applying uniform compensatory responses across
+    DNSPs and aggregators can help streamline the rollout of DOEs, reduce the risk
+    of conflicting responses, and support the continuity of network and market processes
+    during communication failures.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/01/2026
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+  markdown_filename: navigating_dynamic_operating_envelopes.md
+  source_page_pdf: 35
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6815
+  contributing_source_titles:
+  - Navigating Dynamic Operating Envelopes
+  contributing_sources:
+  - source_title: Navigating Dynamic Operating Envelopes
+    pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+    markdown_filename: navigating_dynamic_operating_envelopes.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-6816
+  source_title: Navigating Dynamic Operating Envelopes
+  publish_date: 2025-12
+  project_name: DEIP Dynamic Operating Envelopes Framework
+  what_happened: 'Evidence from multiple Australian DOE trials (including Project
+    EDGE, Project Symphony, and others) supports a staged approach to DOE sophistication:
+    beginning with simple DOE models to unlock early value and build capability, then
+    progressively adopting more advanced methods as DER uptake and network utilisation
+    grow.'
+  lesson_learnt: Structure DOE programs with an explicitly staged implementation roadmap
+    — do not attempt to deploy advanced DOE models from the outset. Evidence from
+    trials confirms that simple models deliver early value, build organisational capability,
+    and support prudent investment, while advanced models (market-integrated, capacity-optimised)
+    become cost-effective only as DER penetration increases and the simpler models
+    reach their limits.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: concept/feasibility
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id014
+  - 3
+  - 38
+  evidence_excerpt: 'Evidence from trials supports a staged approach: 1. Begin with
+    simple DOE models to unlock early value and build capability. 2. Progressively
+    adopt more advanced methods as DER uptake and network utilisation grow. This incremental
+    rollout enables prudent investment, shared learning, and delivers new value streams
+    for consumers.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/01/2026
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+  markdown_filename: navigating_dynamic_operating_envelopes.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6816
+  contributing_source_titles:
+  - Navigating Dynamic Operating Envelopes
+  contributing_sources:
+  - source_title: Navigating Dynamic Operating Envelopes
+    pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+    markdown_filename: navigating_dynamic_operating_envelopes.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+- record_id: ARENA-DLV-6817
+  source_title: Navigating Dynamic Operating Envelopes
+  publish_date: 2025-12
+  project_name: DEIP Dynamic Operating Envelopes Framework
+  what_happened: DOE trials found that if VPPs and aggregators are not required to
+    inform DNSPs when and what signals are sent to sites or devices, this creates
+    uncertainty around roles and responsibilities for signal coordination and DOE
+    compliance — making it difficult to diagnose and attribute conformance breaches.
+  lesson_learnt: Require aggregators and VPPs to notify DNSPs of signals sent to sites
+    as a condition of participation in DOE programs — without this visibility, DNSPs
+    cannot distinguish conformance breaches caused by network events from those caused
+    by aggregator instructions, undermining the integrity of monitoring frameworks.
+    Policy frameworks must clarify responsibilities before DOE implementation scales.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: coordination & stakeholders
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: The report suggests that using distributed decision-making capabilities
+    within monitoring devices could enable real-time DOE conformance to be managed
+    locally, with devices only reporting when a breach or anomaly occurs, reducing
+    data volumes.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id015
+  - 29
+  evidence_excerpt: If VPPs are not required to inform DNSPs when or what signals
+    are sent to the site/device, this could create uncertainty around roles and responsibilities
+    for signal coordination and DOE compliance.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/01/2026
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+  markdown_filename: navigating_dynamic_operating_envelopes.md
+  source_page_pdf: 29
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6817
+  contributing_source_titles:
+  - Navigating Dynamic Operating Envelopes
+  contributing_sources:
+  - source_title: Navigating Dynamic Operating Envelopes
+    pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+    markdown_filename: navigating_dynamic_operating_envelopes.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-6820
+  source_title: Navigating Dynamic Operating Envelopes
+  publish_date: 2025-12
+  project_name: DEIP Dynamic Operating Envelopes Framework
+  what_happened: DOE trials and analysis found that if spare network capacity is incorrectly
+    calculated or over-allocated via DOEs, DER devices operating within their assigned
+    limits may still push the network to its operational threshold — and without effective
+    monitoring and conformance, this can trigger compensatory responses, limit DER
+    market participation, reduce consumer export revenue, and cause localised outages.
+  lesson_learnt: Build robust DOE monitoring and conformance capability before scaling
+    — over-allocation of spare capacity is not prevented by devices complying with
+    their DOE limits; network-level monitoring is required to detect aggregate threshold
+    breaches. Inadequate monitoring can cause outages and restrict consumer revenue
+    even when individual devices are technically compliant, undermining the business
+    case for DOE adoption.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated integration
+  intervention_note: The report recommends developing a national DOE monitoring and
+    conformance framework with clear roles and responsibilities for oversight, assessment,
+    and enforcement, including compliance testing as a VPP pre-qualification requirement.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id016
+  - 36
+  evidence_excerpt: 'If spare network capacity is incorrectly calculated or overallocated
+    via DOEs, DERs operating within their assigned limits may still push the network
+    to its operational threshold. Without effective monitoring and conformance, there''s
+    a risk that DER operating outside their DOE limits could still stress the network,
+    triggering compensatory responses or network protection system. This can: limit
+    DER participation in services like ancillary services or network support services...
+    reduce energy exports during high-price periods, impacting consumer revenue...
+    result in localised power outages.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/01/2026
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+  markdown_filename: navigating_dynamic_operating_envelopes.md
+  source_page_pdf: 36
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6820
+  contributing_source_titles:
+  - Navigating Dynamic Operating Envelopes
+  contributing_sources:
+  - source_title: Navigating Dynamic Operating Envelopes
+    pdf_url: https://arena.gov.au/assets/2026/01/Final-DEIP-DOEs-Report-Feb-2026.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/navigating-dynamic-operating-envelopes/
+    markdown_filename: navigating_dynamic_operating_envelopes.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82

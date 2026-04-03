@@ -1,0 +1,332 @@
+- record_id: ARENA-DLV-16101
+  source_title: Efficient, Low-Cost, Eco-Friendly Solar PV Recycling Technology Interim
+    Dissemination Report
+  publish_date: 2023-03
+  project_name: End-of-Life, highly efficient, low-cost and eco-friendly recycling
+    technology for silicon photovoltaic panels
+  what_happened: In developing a novel PV recycling system, the project found that
+    the design space for reactor geometry, type, throughput, input rate, and temperature
+    was too large to evaluate through physical prototype construction alone — building
+    large-scale prototypes for each candidate design was deemed infeasible.
+  lesson_learnt: For new recycling technology development where reactor design space
+    is large and poorly constrained, use low-cost numerical simulations first to screen
+    and select optimal designs before committing to physical prototype construction
+    — this reduces cost and accelerates scale-up from lab to pilot to industrial scale.
+  issue_severity: moderate
+  project_type: manufacturing/supply chain
+  project_scale_band: pilot
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: Adopted a simulation-first strategy using rCFD-DEM numerical
+    models to identify optimal reactor designs before physical prototyping, allowing
+    cost-effective scale-up from lab to pilot scale.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id001
+  - 3
+  evidence_excerpt: PV recycling is a newly emerging area and suitable reactor designs
+    and operational strategy design are not yet available. Thus, the possible reactor
+    designs in terms of e.g., geometry and type, and operation designs in terms of
+    throughput, input rate and temperatures are massive. Constructing such large-scale
+    prototypes to evaluate these designs is unfeasible.
+  confidence_note: issue_severity set to moderate as the design space problem constrained
+    the project approach but did not cause a failure — the team adapted early via
+    simulation-first strategy.
+  source_url: https://arena.gov.au/knowledge-bank/efficient-low-cost-eco-friendly-solar-pv-recycling-technology-interim-dissemination-report/
+  project_page_url: https://arena.gov.au/projects/efficient-low-cost-eco-friendly-solar-pv-recycling-technology/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 13/03/2023
+  kb_year: '2020'
+  kb_associated_project: Efficient, Low-Cost, Eco-Friendly Solar PV Recycling Technology
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.36m
+  total_project_value: $7.23m
+  lead_organisation: University of New South Wales
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Kensington, New South Wales
+  project_partners: Azure Mining Technology, GrapheneX, Visy Recycling Australia,
+    Providences Assets, JinkoSolar, Trina Solar, Central South University, DuPont,
+    Research and Development Center China, Silicon Corporation (ENFI Group)
+  pdf_url: https://arena.gov.au/assets/2023/03/efficient-low-cost-eco-friendly-solar-pv-recycling-technology-interim-report.pdf
+  markdown_filename: efficient_low_cost_eco_friendly_solar_pv_recycling_technology_interim_dissemination_report.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16101
+  contributing_source_titles:
+  - Efficient, Low-Cost, Eco-Friendly Solar PV Recycling Technology Interim Dissemination
+    Report
+  contributing_sources:
+  - source_title: Efficient, Low-Cost, Eco-Friendly Solar PV Recycling Technology
+      Interim Dissemination Report
+    pdf_url: https://arena.gov.au/assets/2023/03/efficient-low-cost-eco-friendly-solar-pv-recycling-technology-interim-report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/efficient-low-cost-eco-friendly-solar-pv-recycling-technology-interim-dissemination-report/
+    markdown_filename: efficient_low_cost_eco_friendly_solar_pv_recycling_technology_interim_dissemination_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-16102
+  source_title: Efficient, Low-Cost, Eco-Friendly Solar PV Recycling Technology Interim
+    Dissemination Report
+  publish_date: 2023-03
+  project_name: End-of-Life, highly efficient, low-cost and eco-friendly recycling
+    technology for silicon photovoltaic panels
+  what_happened: During development of the thermal delamination (pyrolysis) stage,
+    standard modelling approaches were found to be inadequate for representing chip-like
+    PV particles in fluidised and fixed bed reactors, requiring development of a novel
+    superquadric particle model integrated into the rCFD-DEM framework — a capability
+    not previously available for this application.
+  lesson_learnt: When developing recycling processes for non-spherical or irregular
+    waste materials (such as chip-like PV fragments), standard computational fluid
+    dynamics models will misrepresent particle behaviour; invest in adapting particle
+    geometry representations before attempting reactor optimisation, as inaccurate
+    models will propagate errors into reactor design and operating conditions.
+  issue_severity: moderate
+  project_type: manufacturing/supply chain
+  project_scale_band: pilot
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Developed a novel super-quadric model coupled with rCFD-DEM to
+    accurately represent chip-like PV particle movement, enabling valid simulation
+    of pyrolysis reactor behaviour and supporting optimised prototype design.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id002
+  - 4
+  evidence_excerpt: This is the first time to incorporate the chip-like particle into
+    the reacting flow system, which aims to more accurately describe the PV particle
+    movement in the fluidised bed and fixed bed reactors.
+  confidence_note: transferability set to narrow — the chip-like particle geometry
+    challenge is specific to PV recycling and similar WEEE fragmentation contexts.
+  source_url: https://arena.gov.au/knowledge-bank/efficient-low-cost-eco-friendly-solar-pv-recycling-technology-interim-dissemination-report/
+  project_page_url: https://arena.gov.au/projects/efficient-low-cost-eco-friendly-solar-pv-recycling-technology/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 13/03/2023
+  kb_year: '2020'
+  kb_associated_project: Efficient, Low-Cost, Eco-Friendly Solar PV Recycling Technology
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.36m
+  total_project_value: $7.23m
+  lead_organisation: University of New South Wales
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Kensington, New South Wales
+  project_partners: Azure Mining Technology, GrapheneX, Visy Recycling Australia,
+    Providences Assets, JinkoSolar, Trina Solar, Central South University, DuPont,
+    Research and Development Center China, Silicon Corporation (ENFI Group)
+  pdf_url: https://arena.gov.au/assets/2023/03/efficient-low-cost-eco-friendly-solar-pv-recycling-technology-interim-report.pdf
+  markdown_filename: efficient_low_cost_eco_friendly_solar_pv_recycling_technology_interim_dissemination_report.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16102
+  contributing_source_titles:
+  - Efficient, Low-Cost, Eco-Friendly Solar PV Recycling Technology Interim Dissemination
+    Report
+  contributing_sources:
+  - source_title: Efficient, Low-Cost, Eco-Friendly Solar PV Recycling Technology
+      Interim Dissemination Report
+    pdf_url: https://arena.gov.au/assets/2023/03/efficient-low-cost-eco-friendly-solar-pv-recycling-technology-interim-report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/efficient-low-cost-eco-friendly-solar-pv-recycling-technology-interim-dissemination-report/
+    markdown_filename: efficient_low_cost_eco_friendly_solar_pv_recycling_technology_interim_dissemination_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-16103
+  source_title: Efficient, Low-Cost, Eco-Friendly Solar PV Recycling Technology Interim
+    Dissemination Report
+  publish_date: 2023-03
+  project_name: End-of-Life, highly efficient, low-cost and eco-friendly recycling
+    technology for silicon photovoltaic panels
+  what_happened: The conventional physical sieving process was found to be incapable
+    of effectively separating glass and solar cell materials from the debris mixture
+    produced after pyrolysis delamination, creating a bottleneck in the recycling
+    chain that directly affects energy costs and reagent consumption in the downstream
+    chemical leaching stage.
+  lesson_learnt: When designing PV recycling process chains, do not assume conventional
+    sieving technology will adequately separate post-pyrolysis debris — the conventional
+    process fails at this step; optimise sieving aids and machine conditions specifically
+    for PV debris mixtures, as separation quality at this stage directly determines
+    acid consumption and waste management burden in the downstream leaching process.
+  issue_severity: moderate
+  project_type: manufacturing/supply chain
+  project_scale_band: pilot
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Developed an optimised sieving technique incorporating specific
+    sieving aids and adjusted machine conditions to effectively separate solar cell
+    and glass materials from pyrolysis debris; filed Australian Patent AU2002903639
+    for the resulting method and apparatus.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id003
+  - 6
+  evidence_excerpt: the conventional physical sieving process couldn't effectively
+    separate glass and solar cell materials from the mixture, and adding the optimal
+    sieving aids and adjusting the sieving machine conditions could achieve the objective
+    that effectively separating the materials from the debris mixture resulting from
+    the pyrolysis process.
+  confidence_note: transferability set to moderate — the finding is specific to PV
+    recycling but the principle of validating separation technology for novel waste
+    streams applies to other WEEE recycling process development projects.
+  source_url: https://arena.gov.au/knowledge-bank/efficient-low-cost-eco-friendly-solar-pv-recycling-technology-interim-dissemination-report/
+  project_page_url: https://arena.gov.au/projects/efficient-low-cost-eco-friendly-solar-pv-recycling-technology/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 13/03/2023
+  kb_year: '2020'
+  kb_associated_project: Efficient, Low-Cost, Eco-Friendly Solar PV Recycling Technology
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.36m
+  total_project_value: $7.23m
+  lead_organisation: University of New South Wales
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Kensington, New South Wales
+  project_partners: Azure Mining Technology, GrapheneX, Visy Recycling Australia,
+    Providences Assets, JinkoSolar, Trina Solar, Central South University, DuPont,
+    Research and Development Center China, Silicon Corporation (ENFI Group)
+  pdf_url: https://arena.gov.au/assets/2023/03/efficient-low-cost-eco-friendly-solar-pv-recycling-technology-interim-report.pdf
+  markdown_filename: efficient_low_cost_eco_friendly_solar_pv_recycling_technology_interim_dissemination_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16103
+  contributing_source_titles:
+  - Efficient, Low-Cost, Eco-Friendly Solar PV Recycling Technology Interim Dissemination
+    Report
+  contributing_sources:
+  - source_title: Efficient, Low-Cost, Eco-Friendly Solar PV Recycling Technology
+      Interim Dissemination Report
+    pdf_url: https://arena.gov.au/assets/2023/03/efficient-low-cost-eco-friendly-solar-pv-recycling-technology-interim-report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/efficient-low-cost-eco-friendly-solar-pv-recycling-technology-interim-dissemination-report/
+    markdown_filename: efficient_low_cost_eco_friendly_solar_pv_recycling_technology_interim_dissemination_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-16104
+  source_title: Efficient, Low-Cost, Eco-Friendly Solar PV Recycling Technology Interim
+    Dissemination Report
+  publish_date: 2023-03
+  project_name: End-of-Life, highly efficient, low-cost and eco-friendly recycling
+    technology for silicon photovoltaic panels
+  what_happened: The leaching process optimisation study found that temperature and
+    particle size are the dominant parameters controlling metal recovery efficiency
+    from post-delamination PV material, a finding not previously established for this
+    application and which needed to be determined empirically and validated through
+    coupled experimental-numerical methods before reactor scale-up could proceed.
+  lesson_learnt: For chemical leaching stages in PV or WEEE recycling process development,
+    prioritise experimental characterisation of temperature and particle size sensitivities
+    early — these parameters dominate leaching efficiency and must be quantified before
+    attempting reactor scale-up, as assuming standard leaching kinetics from other
+    applications will lead to under-optimised designs.
+  issue_severity: minor
+  project_type: manufacturing/supply chain
+  project_scale_band: pilot
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Built a lab-scale leaching prototype and developed a coupled
+    rCFD-DEM leaching kinetics model validated against experimental data to identify
+    optimal temperature and particle size parameters before scale-up.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id004
+  - 5
+  evidence_excerpt: The study found that optimising the temperature and particle size
+    can significantly improve the leaching efficiency of solar panels. The optimised
+    process can help in the recovery of valuable metals such as Ag and minimize environmental
+    impact.
+  confidence_note: issue_severity minor — this is a knowledge gap discovered and resolved
+    within the R&D programme rather than a failure causing material schedule or cost
+    impact.
+  source_url: https://arena.gov.au/knowledge-bank/efficient-low-cost-eco-friendly-solar-pv-recycling-technology-interim-dissemination-report/
+  project_page_url: https://arena.gov.au/projects/efficient-low-cost-eco-friendly-solar-pv-recycling-technology/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 13/03/2023
+  kb_year: '2020'
+  kb_associated_project: Efficient, Low-Cost, Eco-Friendly Solar PV Recycling Technology
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.36m
+  total_project_value: $7.23m
+  lead_organisation: University of New South Wales
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Kensington, New South Wales
+  project_partners: Azure Mining Technology, GrapheneX, Visy Recycling Australia,
+    Providences Assets, JinkoSolar, Trina Solar, Central South University, DuPont,
+    Research and Development Center China, Silicon Corporation (ENFI Group)
+  pdf_url: https://arena.gov.au/assets/2023/03/efficient-low-cost-eco-friendly-solar-pv-recycling-technology-interim-report.pdf
+  markdown_filename: efficient_low_cost_eco_friendly_solar_pv_recycling_technology_interim_dissemination_report.md
+  source_page_pdf: 5
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16104
+  contributing_source_titles:
+  - Efficient, Low-Cost, Eco-Friendly Solar PV Recycling Technology Interim Dissemination
+    Report
+  contributing_sources:
+  - source_title: Efficient, Low-Cost, Eco-Friendly Solar PV Recycling Technology
+      Interim Dissemination Report
+    pdf_url: https://arena.gov.au/assets/2023/03/efficient-low-cost-eco-friendly-solar-pv-recycling-technology-interim-report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/efficient-low-cost-eco-friendly-solar-pv-recycling-technology-interim-dissemination-report/
+    markdown_filename: efficient_low_cost_eco_friendly_solar_pv_recycling_technology_interim_dissemination_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92

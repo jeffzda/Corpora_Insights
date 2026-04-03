@@ -1,0 +1,599 @@
+- record_id: ARENA-DLV-70801
+  source_title: Grid Forming Battery Webinar 23 July 2025
+  publish_date: 2025-07
+  project_name: ARENA Grid-Forming Battery Portfolio (all projects)
+  what_happened: NER clause S5.2.5.5 (reactive current settling time) was cited as
+    a key grid connection challenge across all four ARENA-funded GFM BESS projects,
+    and both WGB and DPESS explicitly reported that further increasing plant inertia
+    was infeasible due to constraints imposed by this clause. HPRX's inertial capacity
+    was limited to 2,070 MWs of available 3,000 MWs primarily for the same reason.
+  lesson_learnt: NER cl S5.2.5.5 reactive current settling time requirements directly
+    constrain the inertial response that GFM BESS can be configured to provide — project
+    teams should account for this regulatory ceiling early in design and engage with
+    AEMO and NSPs to negotiate performance standards that reflect the holistic capabilities
+    of GFM technology.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: Subsequent rule changes (April 2023 and May 2025) removed the
+    reactive current settling time requirement from the Minimum Access Standard, reducing
+    the constraint for future projects.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id001
+  - 15
+  - 16
+  evidence_excerpt: NER clause S5.2.5.5 was specifically cited as a key challenge
+    for all projects, particularly regarding the reactive current settling time components
+    of the clause… Both WGB and DPESS explicitly reported that further increasing
+    plant inertia – an approach that would have delivered benefit to the grid – was
+    infeasible due to the constraints imposed by NER cl S5.2.5.5. HPRX's inertial
+    capacity was limited to just 2070 MWs of the available 3000 MWs primarily due
+    to NER cl S5.2.5.5.
+  confidence_note: 'proponent_type reconciled to ''project developer'' from: project
+    developer (10/19), utility/energy retailer (4/19), consortium/multi-party venture
+    (3/19), network business (2/19)'
+  source_url: https://arena.gov.au/knowledge-bank/grid-forming-battery-webinar-2025/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 1/08/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/08/GFM_Webinar_Slides_full.pdf
+  markdown_filename: grid_forming_battery_webinar_23_july_2025.md
+  source_page_pdf: 15
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-70801
+  contributing_source_titles:
+  - Grid Forming Battery Webinar 23 July 2025
+  contributing_sources:
+  - source_title: Grid Forming Battery Webinar 23 July 2025
+    pdf_url: https://arena.gov.au/assets/2025/08/GFM_Webinar_Slides_full.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/grid-forming-battery-webinar-2025/
+    markdown_filename: grid_forming_battery_webinar_23_july_2025.md
+  arena_category:
+  - Grid stability
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-70803
+  source_title: Grid Forming Battery Webinar 23 July 2025
+  publish_date: 2025-07
+  project_name: ARENA Grid-Forming Battery Portfolio (all projects)
+  what_happened: All four initial GFM BESS projects had to engage in a highly iterative
+    process to define appropriate testing methodologies in collaboration with AEMO
+    and Network Service Providers (NSPs), as no established testing framework existed
+    for GFM BESS at the time of connection.
+  lesson_learnt: Early and continuous collaboration between proponents, OEMs, AEMO,
+    and NSPs is essential for GFM BESS grid connection — projects should budget time
+    and resources for an iterative testing methodology development process, as standardised
+    frameworks did not exist for the first wave of projects.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: commissioning/integration
+  proponent_type: project developer
+  delay_category: commissioning/integration
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Wallgrove BESS knowledge sharing explicitly noted that resolution
+    required 'regular communication, flexibility and a willingness to cooperate and
+    compromise by all parties'.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id002
+  - 19
+  evidence_excerpt: These initial projects had to engage in a highly iterative process
+    to define appropriate testing methodologies in collaboration with AEMO and Network
+    Service Providers (NSPs). Wallgrove BESS knowledge sharing explicitly noted that
+    this required 'regular communication, flexibility and a willingness to cooperate
+    and compromise by all parties'.
+  confidence_note: 'proponent_type reconciled to ''project developer'' from: project
+    developer (10/19), utility/energy retailer (4/19), consortium/multi-party venture
+    (3/19), network business (2/19)'
+  source_url: https://arena.gov.au/knowledge-bank/grid-forming-battery-webinar-2025/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 1/08/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/08/GFM_Webinar_Slides_full.pdf
+  markdown_filename: grid_forming_battery_webinar_23_july_2025.md
+  source_page_pdf: 19
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-70803
+  contributing_source_titles:
+  - Grid Forming Battery Webinar 23 July 2025
+  contributing_sources:
+  - source_title: Grid Forming Battery Webinar 23 July 2025
+    pdf_url: https://arena.gov.au/assets/2025/08/GFM_Webinar_Slides_full.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/grid-forming-battery-webinar-2025/
+    markdown_filename: grid_forming_battery_webinar_23_july_2025.md
+  arena_category:
+  - Grid stability
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-70807
+  source_title: Grid Forming Battery Webinar 23 July 2025
+  publish_date: 2025-07
+  project_name: ARENA Grid-Forming Battery Portfolio (all projects)
+  what_happened: Across all projects, the inertial response provided by GFM BESS was
+    found to not be a like-for-like substitution for synchronous machines — key differences
+    include OEM-specific variation in inertial response magnitude, dependency on active
+    power headroom, and saturation at 1.2–1.3 per unit output compared to much higher
+    limits for synchronous machines.
+  lesson_learnt: GFM BESS synthetic inertia should not be assumed equivalent to synchronous
+    machine inertia in system planning — project designers and system planners must
+    account for OEM-specific inertial response characteristics, headroom constraints,
+    and saturation limits when sizing GFM plant to meet inertia requirements.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id003
+  - 23
+  evidence_excerpt: The inertia response provided by GFM is not a like-for-like substitution
+    for synchronous machines… Inertial response provided varies by OEM, e.g. Proponents
+    noted that for some GFM inverters the inertial response varies depending on the
+    magnitude of the event triggering the response… Active power capacity headroom
+    available impacts inertial response. Inertia response saturation at 1.2-1.3 per
+    unit output, vs much higher limit for synchronous machines.
+  confidence_note: 'proponent_type reconciled to ''project developer'' from: project
+    developer (10/19), utility/energy retailer (4/19), consortium/multi-party venture
+    (3/19), network business (2/19)'
+  source_url: https://arena.gov.au/knowledge-bank/grid-forming-battery-webinar-2025/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 1/08/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/08/GFM_Webinar_Slides_full.pdf
+  markdown_filename: grid_forming_battery_webinar_23_july_2025.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-70807
+  contributing_source_titles:
+  - Grid Forming Battery Webinar 23 July 2025
+  contributing_sources:
+  - source_title: Grid Forming Battery Webinar 23 July 2025
+    pdf_url: https://arena.gov.au/assets/2025/08/GFM_Webinar_Slides_full.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/grid-forming-battery-webinar-2025/
+    markdown_filename: grid_forming_battery_webinar_23_july_2025.md
+  arena_category:
+  - Grid stability
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-70815
+  source_title: Grid Forming Battery Webinar 23 July 2025
+  publish_date: 2025-07
+  project_name: ARENA Grid-Forming Battery Portfolio (all projects)
+  what_happened: There is currently no inertia market in the NEM, and the AEMC's June
+    2025 draft determination proposed not to introduce one. The commercial value of
+    inertia can only be captured through bilateral network support service agreements
+    with an NSP, which creates uncertainty and limits revenue visibility for GFM BESS
+    projects.
+  lesson_learnt: In the absence of a formal inertia market, GFM BESS proponents must
+    negotiate bilateral NSP agreements to capture the commercial value of synthetic
+    inertia — project developers should engage with TNSPs early in the development
+    phase to test appetite for and structure of such agreements, and model conservative
+    revenue scenarios given the absence of a liquid market.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: financing/commercial close
+  failure_mode: commercial & market
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id004
+  - 32
+  evidence_excerpt: Presently, there is no inertia market & AEMC June 2025 'Efficient
+    provision of inertia' draft determination proposes not to introduce an inertia
+    market. Notwithstanding, the commercial value of inertia can be captured via a
+    bilateral network support services agreement with an NSP.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/grid-forming-battery-webinar-2025/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 1/08/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/08/GFM_Webinar_Slides_full.pdf
+  markdown_filename: grid_forming_battery_webinar_23_july_2025.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-70815
+  contributing_source_titles:
+  - Grid Forming Battery Webinar 23 July 2025
+  contributing_sources:
+  - source_title: Grid Forming Battery Webinar 23 July 2025
+    pdf_url: https://arena.gov.au/assets/2025/08/GFM_Webinar_Slides_full.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/grid-forming-battery-webinar-2025/
+    markdown_filename: grid_forming_battery_webinar_23_july_2025.md
+  arena_category:
+  - Grid stability
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-70816
+  source_title: Grid Forming Battery Webinar 23 July 2025
+  publish_date: 2025-07
+  project_name: ARENA Grid-Forming Battery Portfolio (all projects)
+  what_happened: Variation in GFM inverter implementations across OEMs means that
+    inertial response characteristics, control architecture, and behaviour under grid
+    disturbances differ materially between manufacturers, creating challenges for
+    consistent specification, regulatory compliance, and network service contracting.
+  lesson_learnt: The lack of standardisation across GFM OEM implementations creates
+    uncertainty in project specification and regulatory compliance — proponents should
+    require OEMs to provide detailed capability documentation against emerging standards
+    (e.g. AEMO's Voluntary Specification) during procurement, and advocate for harmonised
+    GFM standards to reduce project-level negotiation burden.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: procurement
+  proponent_type: project developer
+  delay_category: procurement/supply chain
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id005
+  - 29
+  - 35
+  evidence_excerpt: 'Implementations differ across Original Equipment Manufacturers
+    (OEMs), and international efforts are underway to harmonize definitions and standards
+    for GFM technology… Standardisation: Of capabilities among GFM inverters supplied
+    by various OEMs to facilitate consistent specification, integration, and alignment
+    with both regulatory requirements and contractual frameworks for grid service
+    provision.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/grid-forming-battery-webinar-2025/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 1/08/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/08/GFM_Webinar_Slides_full.pdf
+  markdown_filename: grid_forming_battery_webinar_23_july_2025.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-70816
+  contributing_source_titles:
+  - Grid Forming Battery Webinar 23 July 2025
+  contributing_sources:
+  - source_title: Grid Forming Battery Webinar 23 July 2025
+    pdf_url: https://arena.gov.au/assets/2025/08/GFM_Webinar_Slides_full.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/grid-forming-battery-webinar-2025/
+    markdown_filename: grid_forming_battery_webinar_23_july_2025.md
+  arena_category:
+  - Grid stability
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-70817
+  source_title: Grid Forming Battery Webinar 23 July 2025
+  publish_date: 2025-07
+  project_name: ARENA Grid-Forming Battery Portfolio (all projects)
+  what_happened: Industry analysis (2024 Vysus Report commissioned by AEMO) found
+    that only approximately 10% of installed IBR generation capacity needs to be GFM
+    to achieve material system benefits, and the SSIAG framework has been structured
+    to incentivise GFM adoption through the ability to self-remediate and avoid system
+    strength charges.
+  lesson_learnt: The SSIAG self-remediation framework creates a clear commercial incentive
+    for new BESS projects to adopt GFM technology to avoid system strength charges
+    — project developers should assess their likely system strength charge exposure
+    early in development and evaluate GFM adoption as a cost-effective mitigation,
+    particularly for DC-coupled hybrid solar-plus-storage projects.
+  issue_severity: none
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id006
+  - 28
+  - 29
+  evidence_excerpt: The current SSIAG framework incentivises GFM, such that generators
+    can self-remediate and avoid the requirement to pay system strength charges (SSC)…
+    Edify observed that new hybrid projects are increasingly opting for DC-coupled
+    solar farms co-located with GFM BESS in order to meet system strength obligations
+    and mitigate system strength charges from the outset.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/grid-forming-battery-webinar-2025/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 1/08/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/08/GFM_Webinar_Slides_full.pdf
+  markdown_filename: grid_forming_battery_webinar_23_july_2025.md
+  source_page_pdf: 29
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-70817
+  contributing_source_titles:
+  - Grid Forming Battery Webinar 23 July 2025
+  contributing_sources:
+  - source_title: Grid Forming Battery Webinar 23 July 2025
+    pdf_url: https://arena.gov.au/assets/2025/08/GFM_Webinar_Slides_full.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/grid-forming-battery-webinar-2025/
+    markdown_filename: grid_forming_battery_webinar_23_july_2025.md
+  arena_category:
+  - Grid stability
+  is_consortium: false
+- record_id: ARENA-DLV-70818
+  source_title: Grid Forming Battery Webinar 23 July 2025
+  publish_date: 2025-07
+  project_name: ARENA Grid-Forming Battery Portfolio (all projects)
+  what_happened: 'Key reforms between 2023 and 2025 progressively removed barriers
+    to GFM BESS grid connection: the April 2023 rule change removed reactive current
+    settling time from the Minimum Access Standard; the June 2024 change allowed GPS
+    renegotiation under the 5.3.9 process to the lesser of current or existing standards;
+    and the May 2025 Package 1 explicitly recognised that existing access standards
+    may disincentivise beneficial grid-forming responses.'
+  lesson_learnt: The regulatory environment for GFM BESS connection has materially
+    improved since the first-wave projects — teams planning GFM projects should assess
+    connection requirements under the updated NER standards rather than relying on
+    lessons from HPRX or WGB, which were subject to significantly more onerous requirements,
+    and should monitor the impact of May 2025 Package 1 changes as they are tested
+    by new connections.
+  issue_severity: none
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: policy/market influence only
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id007
+  - 18
+  evidence_excerpt: 'Effective Reactive Current Access Standards for Inverter-Based
+    Resources (April 2023) removed the reactive current settling time requirement
+    from the Minimum Access Standard… Improving the NEM Access Standards – Package
+    1 (May 2025): Explicitly recognised that ''some existing access standards are
+    no longer fit for purpose in an increasingly inverter-based resources connected
+    NEM'' which ''may unintentionally disincentivise beneficial grid-forming responses''.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/grid-forming-battery-webinar-2025/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 1/08/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/08/GFM_Webinar_Slides_full.pdf
+  markdown_filename: grid_forming_battery_webinar_23_july_2025.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-70818
+  contributing_source_titles:
+  - Grid Forming Battery Webinar 23 July 2025
+  contributing_sources:
+  - source_title: Grid Forming Battery Webinar 23 July 2025
+    pdf_url: https://arena.gov.au/assets/2025/08/GFM_Webinar_Slides_full.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/grid-forming-battery-webinar-2025/
+    markdown_filename: grid_forming_battery_webinar_23_july_2025.md
+  arena_category:
+  - Grid stability
+  is_consortium: false
+- record_id: ARENA-DLV-70819
+  source_title: Grid Forming Battery Webinar 23 July 2025
+  publish_date: 2025-07
+  project_name: ARENA Grid-Forming Battery Portfolio (all projects)
+  what_happened: Proponents across all four projects identified trade-offs between
+    providing strong inertial response and effectively responding to voltage disturbances,
+    particularly in weak grid areas, as well as the impact of headroom constraints
+    and control architecture interactions on the inertial response available at any
+    given time.
+  lesson_learnt: GFM BESS project design must explicitly manage the trade-off between
+    inertial response configuration and voltage disturbance response, especially in
+    weak grid locations — system designers should conduct detailed small-signal and
+    wide-area network studies during the design phase to optimise the control parameter
+    settings for the specific network context rather than using default OEM configurations.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Multiple proponents noted the need for more wide-area network
+    studies and advanced simulation methodologies including real-time digital simulations,
+    HIL testing, and small signal studies.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id008
+  - 16
+  - 35
+  evidence_excerpt: Trade-offs between providing strong inertial response and effectively
+    responding to voltage disturbances, particularly in weak grid areas. Headroom
+    constraints and interaction of control architecture.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/grid-forming-battery-webinar-2025/
+  project_page_url: null
+  kb_category: System security and reliability
+  kb_publish_date: 1/08/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/08/GFM_Webinar_Slides_full.pdf
+  markdown_filename: grid_forming_battery_webinar_23_july_2025.md
+  source_page_pdf: 35
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-70819
+  contributing_source_titles:
+  - Grid Forming Battery Webinar 23 July 2025
+  contributing_sources:
+  - source_title: Grid Forming Battery Webinar 23 July 2025
+    pdf_url: https://arena.gov.au/assets/2025/08/GFM_Webinar_Slides_full.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/grid-forming-battery-webinar-2025/
+    markdown_filename: grid_forming_battery_webinar_23_july_2025.md
+  arena_category:
+  - Grid stability
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92

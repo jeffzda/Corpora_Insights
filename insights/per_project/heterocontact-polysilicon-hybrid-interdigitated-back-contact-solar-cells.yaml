@@ -1,0 +1,854 @@
+- record_id: ARENA-DLV-0151
+  source_title: Public Dissemination Report - Heterocontact-Polysilicon Hybrid IBC
+    Solar Cell
+  publish_date: 2024-03
+  project_name: Heterocontact-Polysilicon Hybrid IBC Solar Cell (2020/RND013)
+  what_happened: The prototype Hybrid IBC cell achieved a measured efficiency of 14.04%,
+    substantially below the 18.48% pseudo-efficiency (which excludes series resistance
+    losses) and well below the simulated potential of 25%. The primary cause was high
+    series resistance exceeding 5 Ωcm², attributed to film degradation from oxidation
+    and humidity during the slow laboratory fabrication sequence that took weeks rather
+    than hours.
+  lesson_learnt: When fabricating prototype cells in a laboratory setting, allow for
+    significant efficiency gap between contact-test results and full-cell results
+    caused by inter-step oxidation and film degradation — either compress the fabrication
+    timeline or implement inert storage between steps. Report pseudo-efficiency alongside
+    measured efficiency to clearly communicate the recoverable portion of the gap.
+  issue_severity: major
+  project_type: manufacturing/supply chain
+  project_scale_band: lab/bench
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: execution & logistics
+  intervention_note: The team used pseudo-FF and pseudo-efficiency analysis to quantify
+    the resistive loss component, confirming 18.48% was achievable once series resistance
+    is eliminated, and mapped a roadmap of incremental improvements to reach 25%.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id001
+  - 9
+  - 13
+  evidence_excerpt: The series resistance (Rseries) of the cell as measured using
+    the double-light method is 5.1 Ωcm², which is a key factor in the measured final
+    fill factor and overall efficiency of the prototype cells... This is higher [than]
+    industrial standards, and is likely due to the slow pace at which the device progress
+    through the fabrication sequences which takes weeks rather than in a span of hours
+    in an industrial setting. The amount of time elapsed between processing allows
+    degradation of films due to oxidation and humidity.
+  confidence_note: project_type classified as manufacturing/supply chain because the
+    central research question concerns fabrication process design for future manufacturing,
+    not generation deployment.
+  source_url: https://arena.gov.au/knowledge-bank/public-dissemination-report-heterocontact-polysilicon-hybrid-ibc-solar-cell/
+  project_page_url: https://arena.gov.au/projects/heterocontact-polysilicon-hybrid-interdigitated-back-contact-solar-cells/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 24/06/2024
+  kb_year: '2020'
+  kb_associated_project: Heterocontact-Polysilicon Hybrid Interdigitated Back Contact
+    Solar Cells
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $507k
+  total_project_value: $1.59m
+  lead_organisation: The Australian National University
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Australian Capital Territory, Canberra
+  project_partners: Jinko Solar
+  pdf_url: https://arena.gov.au/assets/2024/06/Public-Dis-Report-2020RND013_Reviewed.pdf
+  markdown_filename: public_dissemination_report_heterocontact_polysilicon_hybrid_ibc_solar_cell.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-0151
+  contributing_source_titles:
+  - Public Dissemination Report - Heterocontact-Polysilicon Hybrid IBC Solar Cell
+  contributing_sources:
+  - source_title: Public Dissemination Report - Heterocontact-Polysilicon Hybrid IBC
+      Solar Cell
+    pdf_url: https://arena.gov.au/assets/2024/06/Public-Dis-Report-2020RND013_Reviewed.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/public-dissemination-report-heterocontact-polysilicon-hybrid-ibc-solar-cell/
+    markdown_filename: public_dissemination_report_heterocontact_polysilicon_hybrid_ibc_solar_cell.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-0152
+  source_title: Public Dissemination Report - Heterocontact-Polysilicon Hybrid IBC
+    Solar Cell
+  publish_date: 2024-03
+  project_name: Heterocontact-Polysilicon Hybrid IBC Solar Cell (2020/RND013)
+  what_happened: Polysilicon patterning was identified as the single largest unresolved
+    barrier to industrialisation of the Hybrid IBC cell design. Photolithography used
+    in the laboratory prototype is economically impractical at scale, and alternative
+    approaches (selective ink-jet doping/etching, laser doping/ablation) remain under
+    development and have not yet been demonstrated for doped polysilicon structures.
+  lesson_learnt: For R&D projects developing novel cell architectures that rely on
+    polysilicon patterning, do not defer industrialisation pathway assessment for
+    patterning to post-prototype — the absence of a cost-effective patterning solution
+    at project completion is the primary commercial viability risk and should be scoped
+    as a parallel workstream from project inception.
+  issue_severity: major
+  project_type: manufacturing/supply chain
+  project_scale_band: lab/bench
+  lifecycle_phase: close-out/post-project review
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: The report identifies selective doping/etching via ink-jet printing
+    and laser-based patterning as the most promising future pathways, with references
+    to active research programs in each area.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id002
+  - 14
+  - 15
+  evidence_excerpt: While polysilicon patterning is feasible in laboratory settings
+    and for prototype cell development, employing photolithography and etching for
+    this purpose is considered economically impractical for large-scale production...
+    The largest unknown cost of the final cell fabrication process will therefore
+    depend heavily on the polysilicon patterning process which is currently yet to
+    be determined, and is likely the biggest factor in the commercial viability of
+    this technology.
+  confidence_note: lifecycle_phase set to close-out/post-project review because the
+    barrier is identified at project completion as an unresolved future challenge,
+    not an event that occurred during an earlier phase.
+  source_url: https://arena.gov.au/knowledge-bank/public-dissemination-report-heterocontact-polysilicon-hybrid-ibc-solar-cell/
+  project_page_url: https://arena.gov.au/projects/heterocontact-polysilicon-hybrid-interdigitated-back-contact-solar-cells/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 24/06/2024
+  kb_year: '2020'
+  kb_associated_project: Heterocontact-Polysilicon Hybrid Interdigitated Back Contact
+    Solar Cells
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $507k
+  total_project_value: $1.59m
+  lead_organisation: The Australian National University
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Australian Capital Territory, Canberra
+  project_partners: Jinko Solar
+  pdf_url: https://arena.gov.au/assets/2024/06/Public-Dis-Report-2020RND013_Reviewed.pdf
+  markdown_filename: public_dissemination_report_heterocontact_polysilicon_hybrid_ibc_solar_cell.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-0152
+  contributing_source_titles:
+  - Public Dissemination Report - Heterocontact-Polysilicon Hybrid IBC Solar Cell
+  contributing_sources:
+  - source_title: Public Dissemination Report - Heterocontact-Polysilicon Hybrid IBC
+      Solar Cell
+    pdf_url: https://arena.gov.au/assets/2024/06/Public-Dis-Report-2020RND013_Reviewed.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/public-dissemination-report-heterocontact-polysilicon-hybrid-ibc-solar-cell/
+    markdown_filename: public_dissemination_report_heterocontact_polysilicon_hybrid_ibc_solar_cell.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-0153
+  source_title: Public Dissemination Report - Heterocontact-Polysilicon Hybrid IBC
+    Solar Cell
+  publish_date: 2024-03
+  project_name: Heterocontact-Polysilicon Hybrid IBC Solar Cell (2020/RND013)
+  what_happened: The thermal evaporation process used to deposit metal-oxide (MoOx)
+    layers at laboratory scale delivered high consistency and accuracy but is low-throughput
+    and high-cost, making it impractical for industrial-scale production. No industrial-compatible
+    deposition process for MoOx was demonstrated within the project scope.
+  lesson_learnt: Solar cell R&D projects incorporating novel metal-oxide contact layers
+    should include a parallel workstream to validate a high-throughput deposition
+    method (e.g. ALD or sputtering) alongside the laboratory process — otherwise the
+    project concludes with a proven material but an unvalidated manufacturing route,
+    requiring a separate follow-on project before commercialisation can proceed.
+  issue_severity: moderate
+  project_type: manufacturing/supply chain
+  project_scale_band: lab/bench
+  lifecycle_phase: close-out/post-project review
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: The report recommends transitioning to ALD for maximal deposition
+    control or sputtering/APCVD for throughput, and notes that ALD of MoOx has been
+    demonstrated elsewhere, identifying a clear next step.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id003
+  - 15
+  evidence_excerpt: Although this high level of accuracy is demonstrated via a high-vacuum
+    thermal evaporation process in the laboratory, it is a low-throughput and high-cost
+    process which is impractical for up-scaling. The evaporation process should therefore
+    be replaced with a higher throughput process such as the atomic-layer-deposition
+    (ALD).
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/public-dissemination-report-heterocontact-polysilicon-hybrid-ibc-solar-cell/
+  project_page_url: https://arena.gov.au/projects/heterocontact-polysilicon-hybrid-interdigitated-back-contact-solar-cells/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 24/06/2024
+  kb_year: '2020'
+  kb_associated_project: Heterocontact-Polysilicon Hybrid Interdigitated Back Contact
+    Solar Cells
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $507k
+  total_project_value: $1.59m
+  lead_organisation: The Australian National University
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Australian Capital Territory, Canberra
+  project_partners: Jinko Solar
+  pdf_url: https://arena.gov.au/assets/2024/06/Public-Dis-Report-2020RND013_Reviewed.pdf
+  markdown_filename: public_dissemination_report_heterocontact_polysilicon_hybrid_ibc_solar_cell.md
+  source_page_pdf: 15
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-0153
+  contributing_source_titles:
+  - Public Dissemination Report - Heterocontact-Polysilicon Hybrid IBC Solar Cell
+  contributing_sources:
+  - source_title: Public Dissemination Report - Heterocontact-Polysilicon Hybrid IBC
+      Solar Cell
+    pdf_url: https://arena.gov.au/assets/2024/06/Public-Dis-Report-2020RND013_Reviewed.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/public-dissemination-report-heterocontact-polysilicon-hybrid-ibc-solar-cell/
+    markdown_filename: public_dissemination_report_heterocontact_polysilicon_hybrid_ibc_solar_cell.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-0154
+  source_title: Public Dissemination Report - Heterocontact-Polysilicon Hybrid IBC
+    Solar Cell
+  publish_date: 2024-03
+  project_name: Heterocontact-Polysilicon Hybrid IBC Solar Cell (2020/RND013)
+  what_happened: Prototype cells exhibited significant non-ideal recombination attributable
+    to imprecise alignment in the patterning process and poorly managed doping profiles
+    at the boundaries of the doped polysilicon layer. This was identified as a discrete
+    loss mechanism contributing approximately 2.53 percentage points of efficiency
+    gap between the prototype and the simulated optimum.
+  lesson_learnt: IBC cell prototypes using polysilicon patterning should include dedicated
+    test structures to characterise junction boundary recombination before full cell
+    fabrication — patterning alignment errors and boundary doping profiles are difficult
+    to detect at the cell level and can account for multi-percentage-point efficiency
+    penalties that are misattributed to other loss mechanisms.
+  issue_severity: moderate
+  project_type: manufacturing/supply chain
+  project_scale_band: lab/bench
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: The roadmap identifies resolving non-ideal recombination through
+    optimised patterning alignment and controlled doping profiles at polysilicon boundaries
+    as the second-largest efficiency improvement step after series resistance reduction.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id004
+  - 13
+  evidence_excerpt: 'Resolved non-ideal recombination: The prototype cells demonstrated
+    significant level of non-ideal recombination. Addressing this involves optimising
+    the patterning process, particularly ensuring accurate alignment, and managing
+    the doping profiles and junction depths along the boundaries of the doped polysilicon
+    layer. Resolving non-ideal recombination will add another 2.53% to the cell efficiency.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/public-dissemination-report-heterocontact-polysilicon-hybrid-ibc-solar-cell/
+  project_page_url: https://arena.gov.au/projects/heterocontact-polysilicon-hybrid-interdigitated-back-contact-solar-cells/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 24/06/2024
+  kb_year: '2020'
+  kb_associated_project: Heterocontact-Polysilicon Hybrid Interdigitated Back Contact
+    Solar Cells
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $507k
+  total_project_value: $1.59m
+  lead_organisation: The Australian National University
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Australian Capital Territory, Canberra
+  project_partners: Jinko Solar
+  pdf_url: https://arena.gov.au/assets/2024/06/Public-Dis-Report-2020RND013_Reviewed.pdf
+  markdown_filename: public_dissemination_report_heterocontact_polysilicon_hybrid_ibc_solar_cell.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-0154
+  contributing_source_titles:
+  - Public Dissemination Report - Heterocontact-Polysilicon Hybrid IBC Solar Cell
+  contributing_sources:
+  - source_title: Public Dissemination Report - Heterocontact-Polysilicon Hybrid IBC
+      Solar Cell
+    pdf_url: https://arena.gov.au/assets/2024/06/Public-Dis-Report-2020RND013_Reviewed.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/public-dissemination-report-heterocontact-polysilicon-hybrid-ibc-solar-cell/
+    markdown_filename: public_dissemination_report_heterocontact_polysilicon_hybrid_ibc_solar_cell.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-0155
+  source_title: Public Dissemination Report - Heterocontact-Polysilicon Hybrid IBC
+    Solar Cell
+  publish_date: 2024-03
+  project_name: Heterocontact-Polysilicon Hybrid IBC Solar Cell (2020/RND013)
+  what_happened: The prototype cells had low shunt resistance, causing fill-factor
+    losses and overall power reduction in the device. This was linked to inadequate
+    contact isolation and misalignment of dielectric layers, contributing approximately
+    0.88 percentage points of efficiency loss.
+  lesson_learnt: In laboratory IBC cell fabrication using shadow-mask metallisation,
+    invest in alignment verification tooling and characterise shunt resistance on
+    test structures before full cell metallisation — low shunt resistance from misalignment
+    is a fabrication quality issue that is costly to diagnose after the full cell
+    is completed.
+  issue_severity: minor
+  project_type: manufacturing/supply chain
+  project_scale_band: lab/bench
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: execution & logistics
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The roadmap prescribes improving alignment and optimising isolating
+    dielectric layers as the resolution pathway, projected to recover 0.88% efficiency.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id005
+  - 13
+  evidence_excerpt: 'Resolving Low Shunt Resistance: The prototype cell had low shunt
+    resistances, which causes low fill-factor and overall power losses within the
+    cell. Improving alignment, and optimising isolating dielectric layers are expected
+    to resolve this issue, and to improve the cell efficiency by 0.88%.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/public-dissemination-report-heterocontact-polysilicon-hybrid-ibc-solar-cell/
+  project_page_url: https://arena.gov.au/projects/heterocontact-polysilicon-hybrid-interdigitated-back-contact-solar-cells/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 24/06/2024
+  kb_year: '2020'
+  kb_associated_project: Heterocontact-Polysilicon Hybrid Interdigitated Back Contact
+    Solar Cells
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $507k
+  total_project_value: $1.59m
+  lead_organisation: The Australian National University
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Australian Capital Territory, Canberra
+  project_partners: Jinko Solar
+  pdf_url: https://arena.gov.au/assets/2024/06/Public-Dis-Report-2020RND013_Reviewed.pdf
+  markdown_filename: public_dissemination_report_heterocontact_polysilicon_hybrid_ibc_solar_cell.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-0155
+  contributing_source_titles:
+  - Public Dissemination Report - Heterocontact-Polysilicon Hybrid IBC Solar Cell
+  contributing_sources:
+  - source_title: Public Dissemination Report - Heterocontact-Polysilicon Hybrid IBC
+      Solar Cell
+    pdf_url: https://arena.gov.au/assets/2024/06/Public-Dis-Report-2020RND013_Reviewed.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/public-dissemination-report-heterocontact-polysilicon-hybrid-ibc-solar-cell/
+    markdown_filename: public_dissemination_report_heterocontact_polysilicon_hybrid_ibc_solar_cell.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-0156
+  source_title: Public Dissemination Report - Heterocontact-Polysilicon Hybrid IBC
+    Solar Cell
+  publish_date: 2024-03
+  project_name: Heterocontact-Polysilicon Hybrid IBC Solar Cell (2020/RND013)
+  what_happened: The project successfully developed and demonstrated a MoOx/n+ poly-Si
+    recombination junction contact stack achieving contact resistivity below 1 mΩcm²
+    and implied-VOC of approximately 720 mV, validating the core materials science
+    hypothesis of the Hybrid IBC cell concept at the component level even though full-cell
+    efficiency was limited by fabrication process constraints.
+  lesson_learnt: In novel cell architecture R&D projects, structuring the programme
+    so that individual contact stacks and sub-cells are characterised and validated
+    independently before full cell integration provides reliable evidence of technology
+    potential even when full-cell results are degraded by fabrication process immaturity
+    — this allows differentiation between material limits and process limits.
+  issue_severity: none
+  project_type: manufacturing/supply chain
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id006
+  - 4
+  - 5
+  evidence_excerpt: The contact resistivity of this stack was characterised using
+    the Cox and Strack method, with a resulting analysis indicating that a relatively
+    low resistivity of approximately 1 mΩcm2 is attained with the proposed contact
+    stack. This is consistent with high performance Si cell devices enabling > 25%
+    cell efficiency.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/public-dissemination-report-heterocontact-polysilicon-hybrid-ibc-solar-cell/
+  project_page_url: https://arena.gov.au/projects/heterocontact-polysilicon-hybrid-interdigitated-back-contact-solar-cells/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 24/06/2024
+  kb_year: '2020'
+  kb_associated_project: Heterocontact-Polysilicon Hybrid Interdigitated Back Contact
+    Solar Cells
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $507k
+  total_project_value: $1.59m
+  lead_organisation: The Australian National University
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Australian Capital Territory, Canberra
+  project_partners: Jinko Solar
+  pdf_url: https://arena.gov.au/assets/2024/06/Public-Dis-Report-2020RND013_Reviewed.pdf
+  markdown_filename: public_dissemination_report_heterocontact_polysilicon_hybrid_ibc_solar_cell.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-0156
+  contributing_source_titles:
+  - Public Dissemination Report - Heterocontact-Polysilicon Hybrid IBC Solar Cell
+  contributing_sources:
+  - source_title: Public Dissemination Report - Heterocontact-Polysilicon Hybrid IBC
+      Solar Cell
+    pdf_url: https://arena.gov.au/assets/2024/06/Public-Dis-Report-2020RND013_Reviewed.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/public-dissemination-report-heterocontact-polysilicon-hybrid-ibc-solar-cell/
+    markdown_filename: public_dissemination_report_heterocontact_polysilicon_hybrid_ibc_solar_cell.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-0157
+  source_title: Public Dissemination Report - Heterocontact-Polysilicon Hybrid IBC
+    Solar Cell
+  publish_date: 2024-03
+  project_name: Heterocontact-Polysilicon Hybrid IBC Solar Cell (2020/RND013)
+  what_happened: The project demonstrated a texture-through-polysilicon process that
+    achieves random pyramid texturing while maintaining localised doped polysilicon
+    coverage, resolving a fabrication integration challenge specific to IBC cell designs
+    that require simultaneous surface texturing and contact patterning.
+  lesson_learnt: Texture-through-polysilicon process development should be treated
+    as a discrete workstream requiring dedicated process optimisation in IBC cell
+    R&D projects — it is not a standard process adaptation but a novel integration
+    step with potential to affect both optical performance and polysilicon contact
+    quality if not controlled.
+  issue_severity: minor
+  project_type: manufacturing/supply chain
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: ANU developed and trialled a KOH-based texture-through-polysilicon
+    process that provides excellent random-texture uniformity while maintaining localised
+    polysilicon coverage.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id007
+  - 7
+  evidence_excerpt: This texture-through-polysilicon process was successfully developed
+    and trialled at ANU, which provides excellent random-texture uniformity, while
+    maintaining localised coverage of doped polysilicon regions.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/public-dissemination-report-heterocontact-polysilicon-hybrid-ibc-solar-cell/
+  project_page_url: https://arena.gov.au/projects/heterocontact-polysilicon-hybrid-interdigitated-back-contact-solar-cells/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 24/06/2024
+  kb_year: '2020'
+  kb_associated_project: Heterocontact-Polysilicon Hybrid Interdigitated Back Contact
+    Solar Cells
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $507k
+  total_project_value: $1.59m
+  lead_organisation: The Australian National University
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Australian Capital Territory, Canberra
+  project_partners: Jinko Solar
+  pdf_url: https://arena.gov.au/assets/2024/06/Public-Dis-Report-2020RND013_Reviewed.pdf
+  markdown_filename: public_dissemination_report_heterocontact_polysilicon_hybrid_ibc_solar_cell.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-0157
+  contributing_source_titles:
+  - Public Dissemination Report - Heterocontact-Polysilicon Hybrid IBC Solar Cell
+  contributing_sources:
+  - source_title: Public Dissemination Report - Heterocontact-Polysilicon Hybrid IBC
+      Solar Cell
+    pdf_url: https://arena.gov.au/assets/2024/06/Public-Dis-Report-2020RND013_Reviewed.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/public-dissemination-report-heterocontact-polysilicon-hybrid-ibc-solar-cell/
+    markdown_filename: public_dissemination_report_heterocontact_polysilicon_hybrid_ibc_solar_cell.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-0158
+  source_title: Public Dissemination Report - Heterocontact-Polysilicon Hybrid IBC
+    Solar Cell
+  publish_date: 2024-03
+  project_name: Heterocontact-Polysilicon Hybrid IBC Solar Cell (2020/RND013)
+  what_happened: The project identified that progression of the Hybrid IBC technology
+    from laboratory prototype to pilot scale requires long-term stability testing,
+    accelerated aging tests, and field trials that were outside the scope of the current
+    project, and that this progression depends on strong industry partnership and
+    industry funding not yet secured.
+  lesson_learnt: ARENA-funded solar cell R&D projects that aim for eventual commercialisation
+    should include explicit milestones for initiating industry partnership discussions
+    and stability/durability testing frameworks before project completion — leaving
+    these as post-project prerequisites creates a funding and partnership gap that
+    delays the transition from laboratory to pilot scale.
+  issue_severity: moderate
+  project_type: manufacturing/supply chain
+  project_scale_band: lab/bench
+  lifecycle_phase: close-out/post-project review
+  proponent_type: research organisation/university
+  delay_category: financing/commercial close
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: commercial & market
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id008
+  - 15
+  evidence_excerpt: Progression of this technology will require strong industry partnership,
+    industry funding and continual research collaborations with existing and possibly
+    new partners towards adoption to pilot scale trials, module fabrication, and the
+    subsequent outdoor testings.
+  confidence_note: delay_category set to financing/commercial close as the binding
+    constraint on progression is securing industry funding and partnership, not a
+    technical blocker.
+  source_url: https://arena.gov.au/knowledge-bank/public-dissemination-report-heterocontact-polysilicon-hybrid-ibc-solar-cell/
+  project_page_url: https://arena.gov.au/projects/heterocontact-polysilicon-hybrid-interdigitated-back-contact-solar-cells/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 24/06/2024
+  kb_year: '2020'
+  kb_associated_project: Heterocontact-Polysilicon Hybrid Interdigitated Back Contact
+    Solar Cells
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $507k
+  total_project_value: $1.59m
+  lead_organisation: The Australian National University
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Australian Capital Territory, Canberra
+  project_partners: Jinko Solar
+  pdf_url: https://arena.gov.au/assets/2024/06/Public-Dis-Report-2020RND013_Reviewed.pdf
+  markdown_filename: public_dissemination_report_heterocontact_polysilicon_hybrid_ibc_solar_cell.md
+  source_page_pdf: 15
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-0158
+  contributing_source_titles:
+  - Public Dissemination Report - Heterocontact-Polysilicon Hybrid IBC Solar Cell
+  contributing_sources:
+  - source_title: Public Dissemination Report - Heterocontact-Polysilicon Hybrid IBC
+      Solar Cell
+    pdf_url: https://arena.gov.au/assets/2024/06/Public-Dis-Report-2020RND013_Reviewed.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/public-dissemination-report-heterocontact-polysilicon-hybrid-ibc-solar-cell/
+    markdown_filename: public_dissemination_report_heterocontact_polysilicon_hybrid_ibc_solar_cell.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-12901
+  source_title: Heterocontact-Polysilicon Hybrid IBC Solar Cell Lessons Learnt
+  publish_date: 2021-09
+  project_name: Heterocontact-Polysilicon Hybrid IBC Solar Cell (2020/RND013)
+  what_happened: COVID-19 lockdowns and changing restrictions caused unexpected delays
+    to the project, affecting quotations, shipment of materials, and recruitment of
+    staff members.
+  lesson_learnt: Build contingency into R&D project schedules and resourcing plans
+    for pandemic or similar external disruption scenarios — supply chain and staffing
+    delays can compound across procurement, materials and recruitment simultaneously,
+    requiring active replanning and flexibility.
+  issue_severity: moderate
+  project_type: manufacturing/supply chain
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: procurement/supply chain
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: The project team responded with flexibility and resourcefulness
+    to manage the compounding disruptions across quotations, materials shipment, and
+    staff recruitment.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id009
+  - 4
+  evidence_excerpt: Resourcing and managing the project during the COVID-19 lockdown
+    and ever-changing restrictions has resulted in unexpected delays regarding quotations,
+    shipment of materials, and recruitment of staff members.
+  confidence_note: project_type classified as manufacturing/supply chain given the
+    lab-based fabrication process focus; solar PV used for technology_domain as the
+    project concerns silicon solar cell development.
+  source_url: https://arena.gov.au/knowledge-bank/heterocontact-polysilicon-hybrid-ibc-solar-cell-lessons-learnt/
+  project_page_url: https://arena.gov.au/projects/heterocontact-polysilicon-hybrid-interdigitated-back-contact-solar-cells/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 30/09/2021
+  kb_year: '2020'
+  kb_associated_project: Heterocontact-Polysilicon Hybrid Interdigitated Back Contact
+    Solar Cells
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $507k
+  total_project_value: $1.59m
+  lead_organisation: The Australian National University
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Australian Capital Territory, Canberra
+  project_partners: Jinko Solar
+  pdf_url: https://arena.gov.au/assets/2021/11/heterocontact-polysilicon-hybrid-ibc-solar-cell-lessons-learnt.pdf
+  markdown_filename: heterocontact_polysilicon_hybrid_ibc_solar_cell_lessons_learnt.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-12901
+  contributing_source_titles:
+  - Heterocontact-Polysilicon Hybrid IBC Solar Cell Lessons Learnt
+  contributing_sources:
+  - source_title: Heterocontact-Polysilicon Hybrid IBC Solar Cell Lessons Learnt
+    pdf_url: https://arena.gov.au/assets/2021/11/heterocontact-polysilicon-hybrid-ibc-solar-cell-lessons-learnt.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/heterocontact-polysilicon-hybrid-ibc-solar-cell-lessons-learnt/
+    markdown_filename: heterocontact_polysilicon_hybrid_ibc_solar_cell_lessons_learnt.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-12902
+  source_title: Heterocontact-Polysilicon Hybrid IBC Solar Cell Lessons Learnt
+  publish_date: 2021-09
+  project_name: Heterocontact-Polysilicon Hybrid IBC Solar Cell (2020/RND013)
+  what_happened: During thermal metal evaporation, bowing of the shadow mask degraded
+    the resolution of evaporated metal and MoOx features, requiring a physical fix
+    to achieve acceptable fabrication quality.
+  lesson_learnt: Attach front and rear magnets between the shadow mask and silicon
+    solar cell during thermal metal evaporation to prevent shadow mask bowing — this
+    directly improves the resolution of evaporated metal and MoOx features and is
+    a simple, low-cost process improvement for IBC cell fabrication using shadow masks.
+  issue_severity: minor
+  project_type: manufacturing/supply chain
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Front and rear magnets were attached between the shadow mask
+    and silicon solar cell to reduce bowing, which improved the resolution of evaporated
+    metal and MoOx features.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id010
+  - 4
+  evidence_excerpt: Front and rear magnets were attached between the shadow mask and
+    silicon solar cell to reduce the bowing of the shadow mask during thermal metal
+    evaporation. This improved the resolution of the evaporated metal and MoOx features.
+  confidence_note: Transferability rated narrow as this lesson is specific to shadow-mask-based
+    IBC cell fabrication processes.
+  source_url: https://arena.gov.au/knowledge-bank/heterocontact-polysilicon-hybrid-ibc-solar-cell-lessons-learnt/
+  project_page_url: https://arena.gov.au/projects/heterocontact-polysilicon-hybrid-interdigitated-back-contact-solar-cells/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 30/09/2021
+  kb_year: '2020'
+  kb_associated_project: Heterocontact-Polysilicon Hybrid Interdigitated Back Contact
+    Solar Cells
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $507k
+  total_project_value: $1.59m
+  lead_organisation: The Australian National University
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Australian Capital Territory, Canberra
+  project_partners: Jinko Solar
+  pdf_url: https://arena.gov.au/assets/2021/11/heterocontact-polysilicon-hybrid-ibc-solar-cell-lessons-learnt.pdf
+  markdown_filename: heterocontact_polysilicon_hybrid_ibc_solar_cell_lessons_learnt.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-12902
+  contributing_source_titles:
+  - Heterocontact-Polysilicon Hybrid IBC Solar Cell Lessons Learnt
+  contributing_sources:
+  - source_title: Heterocontact-Polysilicon Hybrid IBC Solar Cell Lessons Learnt
+    pdf_url: https://arena.gov.au/assets/2021/11/heterocontact-polysilicon-hybrid-ibc-solar-cell-lessons-learnt.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/heterocontact-polysilicon-hybrid-ibc-solar-cell-lessons-learnt/
+    markdown_filename: heterocontact_polysilicon_hybrid_ibc_solar_cell_lessons_learnt.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-12903
+  source_title: Heterocontact-Polysilicon Hybrid IBC Solar Cell Lessons Learnt
+  publish_date: 2021-09
+  project_name: Heterocontact-Polysilicon Hybrid IBC Solar Cell (2020/RND013)
+  what_happened: A heavy phosphorus gettering layer was implemented during cell fabrication
+    to address the risk of bulk lifetime degradation from metal impurities within
+    the silicon bulk.
+  lesson_learnt: Incorporate a heavy phosphorus gettering step in the IBC cell fabrication
+    process to maintain bulk carrier lifetime by removing metal impurities — this
+    is a process design decision with direct impact on cell electrical performance.
+  issue_severity: minor
+  project_type: manufacturing/supply chain
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: A heavy phosphorus gettering layer was implemented during fabrication,
+    successfully maintaining bulk lifetime by gettering metal impurities.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id011
+  - 4
+  evidence_excerpt: The implementation of a heavy phosphorus gettering layer during
+    the cell fabrication process is able to maintain the bulk lifetime by gettering
+    metal impurities within the silicon bulk.
+  confidence_note: Transferability rated narrow as this is specific to polysilicon/IBC
+    solar cell fabrication contexts.
+  source_url: https://arena.gov.au/knowledge-bank/heterocontact-polysilicon-hybrid-ibc-solar-cell-lessons-learnt/
+  project_page_url: https://arena.gov.au/projects/heterocontact-polysilicon-hybrid-interdigitated-back-contact-solar-cells/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 30/09/2021
+  kb_year: '2020'
+  kb_associated_project: Heterocontact-Polysilicon Hybrid Interdigitated Back Contact
+    Solar Cells
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $507k
+  total_project_value: $1.59m
+  lead_organisation: The Australian National University
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Australian Capital Territory, Canberra
+  project_partners: Jinko Solar
+  pdf_url: https://arena.gov.au/assets/2021/11/heterocontact-polysilicon-hybrid-ibc-solar-cell-lessons-learnt.pdf
+  markdown_filename: heterocontact_polysilicon_hybrid_ibc_solar_cell_lessons_learnt.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-12903
+  contributing_source_titles:
+  - Heterocontact-Polysilicon Hybrid IBC Solar Cell Lessons Learnt
+  contributing_sources:
+  - source_title: Heterocontact-Polysilicon Hybrid IBC Solar Cell Lessons Learnt
+    pdf_url: https://arena.gov.au/assets/2021/11/heterocontact-polysilicon-hybrid-ibc-solar-cell-lessons-learnt.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/heterocontact-polysilicon-hybrid-ibc-solar-cell-lessons-learnt/
+    markdown_filename: heterocontact_polysilicon_hybrid_ibc_solar_cell_lessons_learnt.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.72

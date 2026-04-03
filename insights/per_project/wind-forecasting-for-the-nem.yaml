@@ -1,0 +1,1781 @@
+- record_id: ARENA-DLV-35451
+  source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 2
+  publish_date: 2020-04
+  project_name: 'Fulcrum3D: Wind Forecasting for the NEM'
+  what_happened: The MP5F API registration process continued to change as AEMO refined
+    its processes, and regular expiration of API passwords created operational disruptions.
+    No automated or semi-automated system for resetting passwords was in place, requiring
+    manual intervention and reducing operational efficiency.
+  lesson_learnt: When connecting to the AEMO MP5F API, ensure the DUID market participant
+    is actively engaged and up to date with the API protocol from the outset — routing
+    communications through a participant unfamiliar with recent MP5F developments
+    adds delay. Verify current API specifications against any prior connection experience,
+    as protocols may have changed.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: execution & logistics
+  intervention_note: AEMO was engaged and understood to be working on an improved
+    password management system; project team continued operations while awaiting resolution.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages:
+  - 2
+  evidence_excerpt: 'Connection to the MP5F API took longer than expected because:
+    Formal communications with AEMO must be via the DUID participant and not with
+    independent forecasters. The participants have not necessarily followed the MP5F
+    development as closely as the forecasters and are having to learn it now. The
+    API connection protocol appears to have changed since we set up the Kidston API.'
+  confidence_note: Canonical record merged from 3 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/wind-forecasting-nem/
+  kb_category: Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2019'
+  kb_associated_project: Wind Forecasting for the NEM
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $493k
+  total_project_value: $911k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/02/2019
+  location: New South Wales, South Australia, Victoria
+  project_partners: Pacific Hydro Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2.pdf
+  markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_2.md
+  source_page_pdf: 2
+  corroboration_count: 3
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-18201
+  - ARENA-DLV-18202
+  - ARENA-DLV-35451
+  contributing_source_titles:
+  - Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 1
+  - Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 2
+  contributing_sources:
+  - source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/12/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt.pdf
+    source_pages:
+    - 2
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-1/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_1.md
+  - source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 2
+    pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2.pdf
+    source_pages:
+    - 2
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_2.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-18203
+  source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 1
+  publish_date: 2019-10
+  project_name: Fulcrum3D Wind Forecasting for the NEM
+  what_happened: Early analysis showed that higher-dimensional models built from SCADA
+    data alone outperformed AEMO's AWEFS, and upstream sensing data from the Clements
+    Gap Sodar gave early confidence that incorporating upstream sensing would further
+    improve forecast accuracy.
+  lesson_learnt: Future wind forecasting projects should consider deploying upstream
+    sensing (e.g. sodar) alongside SCADA-based modelling — early evidence indicates
+    this combination outperforms the incumbent AWEFS benchmark and warrants investment
+    in sensor infrastructure.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id001
+  - 2
+  evidence_excerpt: Early analysis indicates that higher dimensional models of SCADA
+    data alone perform better than AWEFS. Early data from the upstream Clements Gap
+    Sodar gives confidence that upstream sensing will improve this further.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/wind-forecasting-nem/
+  kb_category: Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Wind Forecasting for the NEM
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $493k
+  total_project_value: $911k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/02/2019
+  location: New South Wales, South Australia, Victoria
+  project_partners: Pacific Hydro Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2019/12/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt.pdf
+  markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_1.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-18203
+  contributing_source_titles:
+  - Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 1
+  contributing_sources:
+  - source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/12/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-1/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_1.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-18204
+  source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 1
+  publish_date: 2019-10
+  project_name: Fulcrum3D Wind Forecasting for the NEM
+  what_happened: The Taralga wind farm model presented ongoing complexity due to its
+    terrain, making it a particularly challenging and informative case study within
+    the project.
+  lesson_learnt: Wind forecasting projects in complex terrain require additional model
+    development effort; such sites should be identified early as high-effort cases
+    requiring dedicated modelling resources rather than standard parameterisation.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id002
+  - 2
+  evidence_excerpt: The Taralga model continues to be particularly interesting because
+    of the terrain complexity.
+  confidence_note: Issue severity set to minor — terrain complexity is described as
+    a modelling challenge rather than a project-level failure; the site appears to
+    be yielding useful learning.
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/wind-forecasting-nem/
+  kb_category: Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Wind Forecasting for the NEM
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $493k
+  total_project_value: $911k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/02/2019
+  location: New South Wales, South Australia, Victoria
+  project_partners: Pacific Hydro Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2019/12/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt.pdf
+  markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_1.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-18204
+  contributing_source_titles:
+  - Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 1
+  contributing_sources:
+  - source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/12/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-1/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_1.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-18205
+  source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 1
+  publish_date: 2019-10
+  project_name: Fulcrum3D Wind Forecasting for the NEM
+  what_happened: Handling extreme wind speed events was identified as a non-trivial
+    knowledge gap during project execution, with no clear resolution documented at
+    the time of reporting.
+  lesson_learnt: Future wind forecasting projects should explicitly scope and resource
+    the treatment of extreme wind speed events — this is a technically non-trivial
+    problem that standard forecasting models may not handle adequately and should
+    be addressed in the design phase.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id003
+  - 2
+  evidence_excerpt: Dealing with extreme wind speed events is non-trivial.
+  confidence_note: Lifecycle phase assigned as development/design because the gap
+    is a scoping/design issue to address in future projects, even though it surfaced
+    during operations; failure_mode set to design assumption failure as the standard
+    modelling approach implicitly assumed extreme events were tractable.
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/wind-forecasting-nem/
+  kb_category: Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Wind Forecasting for the NEM
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $493k
+  total_project_value: $911k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/02/2019
+  location: New South Wales, South Australia, Victoria
+  project_partners: Pacific Hydro Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2019/12/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt.pdf
+  markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_1.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-18205
+  contributing_source_titles:
+  - Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 1
+  contributing_sources:
+  - source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/12/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-1/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_1.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-35452
+  source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 2
+  publish_date: 2020-04
+  project_name: 'Fulcrum3D: Wind Forecasting for the NEM'
+  what_happened: Fulcrum3D's self-forecasting models achieved greater accuracy than
+    AEMO's AWEFS benchmark, passing AEMO's accuracy requirements for RMSE and MAE
+    on 5-minute power production across the three Pacific Hydro wind farms in the
+    project.
+  lesson_learnt: Site-specific self-forecasting solutions can outperform AEMO's centralised
+    AWEFS forecasts on 5-minute accuracy metrics — investing in self-forecasting infrastructure
+    is technically viable and can meet AEMO's formal accuracy thresholds.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id004
+  - 2
+  evidence_excerpt: Our forecasting models continue to be more accurate than AWEFS
+    such that they have passed AEMO's accuracy requirements with respect to RMSE and
+    MAE on 5-minute power production.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/wind-forecasting-nem/
+  kb_category: Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2019'
+  kb_associated_project: Wind Forecasting for the NEM
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $493k
+  total_project_value: $911k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/02/2019
+  location: New South Wales, South Australia, Victoria
+  project_partners: Pacific Hydro Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2.pdf
+  markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-35452
+  contributing_source_titles:
+  - Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 2
+  contributing_sources:
+  - source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 2
+    pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_2.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-35453
+  source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 2
+  publish_date: 2020-04
+  project_name: 'Fulcrum3D: Wind Forecasting for the NEM'
+  what_happened: Pacific Hydro developed a remote SCADA access system (GOS — Global
+    Operating System), which Fulcrum3D began using at Clements Gap and Taralga to
+    query wind farm SCADA from off-site servers. This eliminated the need for on-site
+    data loggers and reduced points of failure.
+  lesson_learnt: Remote SCADA access systems (such as a centralised GOS) significantly
+    streamline wind farm self-forecasting by removing on-site hardware requirements,
+    reducing cost, and lowering system complexity — wind farm operators and forecasting
+    providers should explore this architecture early in integration design.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Pacific Hydro's GOS was adopted at two of the three project sites,
+    removing the need for onsite loggers and streamlining SCADA data access.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id005
+  - 2
+  evidence_excerpt: This is an exciting development as it is removing the need for
+    onsite loggers and will potentially streamline SCADA access on other wind farms
+    where a GOS (or similar) is available. This solution is faster, simpler, lower
+    cost and there are less points of failure.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/wind-forecasting-nem/
+  kb_category: Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2019'
+  kb_associated_project: Wind Forecasting for the NEM
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $493k
+  total_project_value: $911k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/02/2019
+  location: New South Wales, South Australia, Victoria
+  project_partners: Pacific Hydro Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2.pdf
+  markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_2.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-35453
+  contributing_source_titles:
+  - Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 2
+  contributing_sources:
+  - source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 2
+    pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_2.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-35454
+  source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 2
+  publish_date: 2020-04
+  project_name: 'Fulcrum3D: Wind Forecasting for the NEM'
+  what_happened: Upstream sodars installed at the prevailing upstream locations at
+    all three wind farms detected wind changes affecting wind farm generation at useful
+    forecast horizons of approximately 30 minutes at site mean wind speeds.
+  lesson_learnt: Positioning sodars at upstream locations relative to the prevailing
+    wind direction enables detection of approaching wind fronts with sufficient lead
+    time (~30 minutes) to meaningfully improve short-term generation forecasts — upstream
+    sodar placement should be a standard consideration in self-forecasting deployments.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id006
+  - 3
+  evidence_excerpt: The Clements Gap upstream sodar is detecting wind changes that
+    affect wind farm generation at useful time frames (30 minutes at site mean wind
+    speed).
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/wind-forecasting-nem/
+  kb_category: Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2019'
+  kb_associated_project: Wind Forecasting for the NEM
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $493k
+  total_project_value: $911k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/02/2019
+  location: New South Wales, South Australia, Victoria
+  project_partners: Pacific Hydro Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2.pdf
+  markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_2.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-35454
+  contributing_source_titles:
+  - Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 2
+  contributing_sources:
+  - source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 2
+    pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_2.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-35455
+  source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 2
+  publish_date: 2020-04
+  project_name: 'Fulcrum3D: Wind Forecasting for the NEM'
+  what_happened: Sodar hardware enhancements — including baffle testing at Taralga
+    and the use of 20-metre range bins — improved data availability at lower and higher
+    measurement heights, increasing robustness of the forecasting inputs. Higher-height
+    availability improved to approximately 80% at 200m.
+  lesson_learnt: Sodar performance for wind forecasting can be materially improved
+    through baffle testing to reduce ground clutter at lower heights and by using
+    wider range bins at higher heights — these hardware tuning steps should be incorporated
+    into sodar commissioning procedures for future forecasting deployments.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Baffle testing at Taralga and adoption of 20-metre range bins
+    improved sodar data availability at lower and higher heights respectively, with
+    higher-height availability reaching ~80% at 200m.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id007
+  - 3
+  evidence_excerpt: Baffle testing at Taralga validated improved availability at all
+    heights with a significant boost at the lower heights due to reduction of ground
+    clutter, while using 20-meter range bins is improving higher height availability
+    to the order of 80% availability at 200m.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/wind-forecasting-nem/
+  kb_category: Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2019'
+  kb_associated_project: Wind Forecasting for the NEM
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $493k
+  total_project_value: $911k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/02/2019
+  location: New South Wales, South Australia, Victoria
+  project_partners: Pacific Hydro Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2.pdf
+  markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_2.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-35455
+  contributing_source_titles:
+  - Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 2
+  contributing_sources:
+  - source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 2
+    pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_2.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-35456
+  source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 2
+  publish_date: 2020-04
+  project_name: 'Fulcrum3D: Wind Forecasting for the NEM'
+  what_happened: Fulcrum3D developed a model that replicates AEMO's Causer Pays calculation
+    using publicly available NEMWeb data, enabling commercial benefit assessment of
+    self-forecasting to be undertaken without proprietary data access.
+  lesson_learnt: A Causer Pays replication model built on public NEMWeb data is a
+    practical tool for assessing the commercial case for self-forecasting investment
+    — future projects should develop or adopt this type of model early to quantify
+    financial exposure and forecast value.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id008
+  - 3
+  evidence_excerpt: We have developed a model that replicates AEMO's calculation of
+    causer pays charges using publicly available NEMWeb data. This will allow the
+    commercial benefits of self-forecasting to be assessed.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/wind-forecasting-nem/
+  kb_category: Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2019'
+  kb_associated_project: Wind Forecasting for the NEM
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $493k
+  total_project_value: $911k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/02/2019
+  location: New South Wales, South Australia, Victoria
+  project_partners: Pacific Hydro Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2.pdf
+  markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-35456
+  contributing_source_titles:
+  - Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 2
+  contributing_sources:
+  - source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 2
+    pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_2.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-35457
+  source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 2
+  publish_date: 2020-04
+  project_name: 'Fulcrum3D: Wind Forecasting for the NEM'
+  what_happened: The NEM dispatch engine sets a zero floor for dispatch targets submitted
+    via MP5F, but the FCAS calculation uses negative numbers when a generator is a
+    net consumer. This means wind farms consuming from the grid incur FCAS costs that
+    cannot be managed through self-forecasting, contrary to earlier AEMO operational
+    forecasting meeting notes from 2018 that indicated MP5F would allow negative submissions.
+    AEMO validated that this effect can contribute 10–20% to a generator's market
+    performance factor (MPF), and 25 wind farms on the NEM exhibit negative generation.
+  lesson_learnt: Wind farm operators should be aware that MP5F does not allow negative
+    dispatch targets, so FCAS Causer Pays charges incurred during periods of negative
+    net generation cannot be managed via self-forecasting; this is a structural limitation
+    disproportionately affecting wind farms (25 wind farms vs. 4 solar farms show
+    negative generation >5% of the time).
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: Fulcrum3D engaged AEMO to validate the internal analysis; AEMO
+    confirmed the negative generation effect can contribute 10–20% to a generator's
+    MPF, but no system fix was in place at the time of reporting.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages:
+  - 3
+  - 11
+  evidence_excerpt: AEMO have been able to validate our internal analysis that this
+    effect can contribute 10-20% to a generator's MPF. There are 25 wind farms that
+    do [show negative generation for more than 5% of the time]. There appears to be
+    a systematic modification of some SCADA power feeds which may bias FCAS Causer
+    Pays costs towards wind farms.
+  confidence_note: secondary_failure_mode of design assumption failure reflects that
+    the project initially assumed negative forecast submissions would be supported,
+    per 2018 meeting notes. Canonical record merged from 2 source records across 2
+    document(s).
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/wind-forecasting-nem/
+  kb_category: Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2019'
+  kb_associated_project: Wind Forecasting for the NEM
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $493k
+  total_project_value: $911k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/02/2019
+  location: New South Wales, South Australia, Victoria
+  project_partners: Pacific Hydro Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2.pdf
+  markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_2.md
+  source_page_pdf: 3
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-35457
+  - ARENA-DLV-61304
+  contributing_source_titles:
+  - Fulcrum3D Wind Forecasting For the NEM Final Report
+  - Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 2
+  contributing_sources:
+  - source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 2
+    pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2.pdf
+    source_pages:
+    - 3
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_2.md
+  - source_title: Fulcrum3D Wind Forecasting For the NEM Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/fulcrum3d-wind-forecasting-for-the-nem-project-results.pdf
+    source_pages:
+    - 11
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-final-report/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_final_report.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-35458
+  source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 2
+  publish_date: 2020-04
+  project_name: 'Fulcrum3D: Wind Forecasting for the NEM'
+  what_happened: During periods of generation caps on South Australian wind farms,
+    self-forecasting created a risk of ever-declining forecast outputs due to small
+    errors in forecasts or plant control systems triggering a continuous exponential
+    decline in output. As a result, it was judged prudent to suppress self-forecasts
+    during generation cap intervals.
+  lesson_learnt: Self-forecasts should be suppressed during generation cap intervals
+    — small forecast or control system errors can initiate a continuous exponential
+    output decline under cap conditions, and methods to counteract this (such as slightly
+    overestimating production) can result in significant causer pays charges. Improved
+    information-sharing between generators and AEMO about dispatch cap intervals is
+    needed to resolve this limitation.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: Fulcrum3D concluded it is currently prudent to suppress self-forecasts
+    during generation cap periods to avoid the exponential output decline.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages:
+  - 4
+  - 9
+  - 10
+  evidence_excerpt: It is currently prudent to suppress self-forecasts during generation
+    caps because small errors in forecasts or the plant control system can start a
+    continuous exponential decline in output as shown above. This is driven by non-linear
+    behaviour in some plant controllers which is not captured in the current forecast
+    and dispatch system.
+  confidence_note: issue_severity rated major because this limitation materially constrains
+    the operational scope of self-forecasting — one of the project's primary objectives
+    — and affects all South Australian wind farms under cap conditions. Canonical
+    record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/wind-forecasting-nem/
+  kb_category: Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2019'
+  kb_associated_project: Wind Forecasting for the NEM
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $493k
+  total_project_value: $911k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/02/2019
+  location: New South Wales, South Australia, Victoria
+  project_partners: Pacific Hydro Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2.pdf
+  markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_2.md
+  source_page_pdf: 4
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-35458
+  - ARENA-DLV-61303
+  contributing_source_titles:
+  - Fulcrum3D Wind Forecasting For the NEM Final Report
+  - Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 2
+  contributing_sources:
+  - source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 2
+    pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2.pdf
+    source_pages:
+    - 4
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_2.md
+  - source_title: Fulcrum3D Wind Forecasting For the NEM Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/fulcrum3d-wind-forecasting-for-the-nem-project-results.pdf
+    source_pages:
+    - 9
+    - 10
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-final-report/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_final_report.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-35459
+  source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 2
+  publish_date: 2020-04
+  project_name: 'Fulcrum3D: Wind Forecasting for the NEM'
+  what_happened: Analysis found that the business case for using self-forecasts to
+    support FCAS participation or export control was not strong under prevailing market
+    conditions, as spot energy prices were generally significantly higher than FCAS
+    service prices. However, the South Australian islanding event demonstrated that
+    generators without FCAS capability collectively paid more for FCAS than the market
+    value of their energy during the event, while Hornsdale wind farms — the only
+    renewable FCAS providers in SA — captured significant windfall revenue.
+  lesson_learnt: The commercial case for FCAS participation capability is currently
+    marginal for most generators but is tail-risk significant — extreme events like
+    the SA islanding episode can result in generators paying more for FCAS than they
+    earn from energy. Wind and solar farms should assess their FCAS exposure and develop
+    at least partial mitigation strategies rather than leaving themselves exposed
+    to low-probability but high-cost events.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id009
+  - 4
+  - 5
+  evidence_excerpt: All other wind and solar farms collectively paid more for their
+    FCAS than the market value of the energy during that period... The business case
+    for FCAS participation is likely to strengthen if there are similar events in
+    the future.
+  confidence_note: failure_mode of commercial/demand failure reflects that the self-forecasting
+    product's FCAS value proposition did not materialise under normal market conditions;
+    the islanding event is framed as a future risk signal rather than a direct project
+    failure.
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/wind-forecasting-nem/
+  kb_category: Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2019'
+  kb_associated_project: Wind Forecasting for the NEM
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $493k
+  total_project_value: $911k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/02/2019
+  location: New South Wales, South Australia, Victoria
+  project_partners: Pacific Hydro Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2.pdf
+  markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_2.md
+  source_page_pdf: 5
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-35459
+  contributing_source_titles:
+  - Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 2
+  contributing_sources:
+  - source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 2
+    pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-2/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_2.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-46551
+  source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 3
+  publish_date: 2021-01
+  project_name: 'Fulcrum3D: Wind Forecasting for the NEM'
+  what_happened: The remote SCADA access system (GOS/Global Operating System) used
+    by Pacific Hydro at Taralga did not have sufficient availability for real-time
+    forecasting applications, and implementation of the Crowlands GOS was delayed,
+    forcing the team to re-explore onsite logger options.
+  lesson_learnt: Cloud-based SCADA monitoring systems not designed for real-time controls
+    should not be relied upon for real-time forecasting applications; onsite polling
+    of SCADA data via dedicated hardware is the more reliable option when remote SCADA
+    availability cannot be guaranteed.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated integration
+  intervention_note: An onsite logger was deployed at Crowlands as an alternative
+    to the unreliable GOS remote SCADA access; the Kidston site, which used onsite
+    hardware and a dedicated RTU, ran smoothly throughout.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages:
+  - 2
+  - 16
+  evidence_excerpt: On some sites the GOS availability has not been high enough for
+    this type of real time application and other solutions have been deployed including
+    and onsite logger at Crowlands. The lesson is that cloud-based systems like the
+    GOS that are not built for real time controls may not be suitable for use in these
+    types of forecasting applications.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-3/
+  project_page_url: https://arena.gov.au/projects/wind-forecasting-nem/
+  kb_category: Wind energy
+  kb_publish_date: 28/01/2021
+  kb_year: '2019'
+  kb_associated_project: Wind Forecasting for the NEM
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $493k
+  total_project_value: $911k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/02/2019
+  location: New South Wales, South Australia, Victoria
+  project_partners: Pacific Hydro Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2021/01/fulcrum3d-wind-forecasting-lessons-learnt-october-2020.pdf
+  markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_3.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-46551
+  - ARENA-DLV-61309
+  contributing_source_titles:
+  - Fulcrum3D Wind Forecasting For the NEM Final Report
+  - Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 3
+  contributing_sources:
+  - source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 3
+    pdf_url: https://arena.gov.au/assets/2021/01/fulcrum3d-wind-forecasting-lessons-learnt-october-2020.pdf
+    source_pages:
+    - 2
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-3/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_3.md
+  - source_title: Fulcrum3D Wind Forecasting For the NEM Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/fulcrum3d-wind-forecasting-for-the-nem-project-results.pdf
+    source_pages:
+    - 16
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-final-report/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_final_report.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-61308
+  source_title: Fulcrum3D Wind Forecasting For the NEM Final Report
+  publish_date: '2021-02-15'
+  project_name: Fulcrum3D Wind Forecasting for the NEM
+  what_happened: After integrating the self-forecasting system across more than twelve
+    NEM plants, SCADA integration emerged as the most variable and time-consuming
+    component of deployment, displacing API integration as the primary complexity
+    driver, because legacy and complex SCADA systems require site-specific interface
+    configuration and QA of all SCADA tags.
+  lesson_learnt: Project managers deploying self-forecasting systems should budget
+    significant time for site-specific SCADA integration; while technically achievable
+    for experienced personnel, configuring interfaces and QA-ing all SCADA tags is
+    highly variable and time-consuming across different plant types and ages.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: execution & logistics
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages:
+  - 2
+  - 15
+  evidence_excerpt: Site-specific SCADA integration is now the most variable component
+    in the establishment of a self-forecasting system. While this task is not necessarily
+    technically challenging for experienced personal, it can be highly time consuming
+    to configure interfaces and QA all SCADA tags.
+  confidence_note: issue_severity set to moderate based on the characterisation as
+    'most complex' and 'highly time consuming' across twelve-plus sites, implying
+    meaningful schedule friction even without a specific duration stated. Canonical
+    record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-final-report/
+  project_page_url: https://arena.gov.au/projects/wind-forecasting-nem/
+  kb_category: Wind energy
+  kb_publish_date: 15/02/2021
+  kb_year: '2019'
+  kb_associated_project: Wind Forecasting for the NEM
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $493k
+  total_project_value: $911k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/02/2019
+  location: New South Wales, South Australia, Victoria
+  project_partners: Pacific Hydro Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2021/06/fulcrum3d-wind-forecasting-for-the-nem-project-results.pdf
+  markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_final_report.md
+  source_page_pdf: 15
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-46552
+  - ARENA-DLV-61308
+  contributing_source_titles:
+  - Fulcrum3D Wind Forecasting For the NEM Final Report
+  - Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 3
+  contributing_sources:
+  - source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 3
+    pdf_url: https://arena.gov.au/assets/2021/01/fulcrum3d-wind-forecasting-lessons-learnt-october-2020.pdf
+    source_pages:
+    - 2
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-3/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_3.md
+  - source_title: Fulcrum3D Wind Forecasting For the NEM Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/fulcrum3d-wind-forecasting-for-the-nem-project-results.pdf
+    source_pages:
+    - 15
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-final-report/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_final_report.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-46553
+  source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 3
+  publish_date: 2021-01
+  project_name: 'Fulcrum3D: Wind Forecasting for the NEM'
+  what_happened: AEMO's MP5F assessment process can extend beyond 8 weeks to up to
+    16 weeks or more on a rolling basis if the forecast fails to pass initially, meaning
+    a single poor-performing week early in the assessment can delay passage by up
+    to 12 additional weeks.
+  lesson_learnt: Thoroughly test forecast performance and SCADA connections before
+    entering AEMO's MP5F assessment period — a significant error in any single week
+    can push the rolling assessment window out by up to 12 additional weeks (e.g.
+    an error in week 4 means the forecast cannot pass until week 20).
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: 3-12 months
+  technology_domain: wind
+  source_pages: &id010
+  - 2
+  - 3
+  evidence_excerpt: If the forecast still doesn't pass for weeks 1 to 16, then week
+    1 is removed and week 17 is included... this means that if the forecast has a
+    significant error in week 4... the forecast will not be able to pass assessment
+    until week 20.
+  confidence_note: lifecycle_phase assigned as approvals/contracting because the assessment
+    period is a regulatory/market approval gate before unsuppressed forecasts can
+    be submitted; delay_category data/validation/testing is the closest match.
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-3/
+  project_page_url: https://arena.gov.au/projects/wind-forecasting-nem/
+  kb_category: Wind energy
+  kb_publish_date: 28/01/2021
+  kb_year: '2019'
+  kb_associated_project: Wind Forecasting for the NEM
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $493k
+  total_project_value: $911k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/02/2019
+  location: New South Wales, South Australia, Victoria
+  project_partners: Pacific Hydro Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2021/01/fulcrum3d-wind-forecasting-lessons-learnt-october-2020.pdf
+  markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_3.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46553
+  contributing_source_titles:
+  - Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 3
+  contributing_sources:
+  - source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 3
+    pdf_url: https://arena.gov.au/assets/2021/01/fulcrum3d-wind-forecasting-lessons-learnt-october-2020.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-3/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_3.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-46554
+  source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 3
+  publish_date: 2021-01
+  project_name: 'Fulcrum3D: Wind Forecasting for the NEM'
+  what_happened: AEMO's MP5F API requires password resets every 90 days, creating
+    a recurring operational burden on market participants with no automated mechanism
+    for self-service password management.
+  lesson_learnt: When integrating with AEMO's MP5F API, build a managed process for
+    mandatory 90-day password resets — advocate to AEMO for a secure automated or
+    semi-automated reset system to reduce ongoing operational overhead for market
+    participants.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id011
+  - 3
+  evidence_excerpt: The consistent requirement for password resets every 90 days is
+    cumbersome and reliant on the participant. This process could be improved via
+    a secure automated (or semi-automated) system for resetting passwords.
+  confidence_note: failure_mode set to technical underperformance as the closest available
+    value for a process/system design limitation; issue is minor operational friction
+    rather than a true failure.
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-3/
+  project_page_url: https://arena.gov.au/projects/wind-forecasting-nem/
+  kb_category: Wind energy
+  kb_publish_date: 28/01/2021
+  kb_year: '2019'
+  kb_associated_project: Wind Forecasting for the NEM
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $493k
+  total_project_value: $911k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/02/2019
+  location: New South Wales, South Australia, Victoria
+  project_partners: Pacific Hydro Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2021/01/fulcrum3d-wind-forecasting-lessons-learnt-october-2020.pdf
+  markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_3.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46554
+  contributing_source_titles:
+  - Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 3
+  contributing_sources:
+  - source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 3
+    pdf_url: https://arena.gov.au/assets/2021/01/fulcrum3d-wind-forecasting-lessons-learnt-october-2020.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-3/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_3.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.72
+- record_id: ARENA-DLV-61305
+  source_title: Fulcrum3D Wind Forecasting For the NEM Final Report
+  publish_date: '2021-02-15'
+  project_name: Fulcrum3D Wind Forecasting for the NEM
+  what_happened: A rounding feature in AEMO's dispatch engine rounds the dispatch
+    target down to the nearest MW, making it impossible to forecast accurately when
+    a plant is operating at full capacity, and generating unexpected Causer Pays charges
+    in those intervals.
+  lesson_learnt: Account for AEMO's dispatch engine rounding behaviour (capacity rounded
+    down to nearest MW) when designing and evaluating forecast accuracy metrics —
+    full-capacity operating periods will produce systematic forecast errors that cannot
+    be resolved through model tuning alone; escalate to AEMO as a system design issue.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages:
+  - 3
+  - 12
+  evidence_excerpt: A setting in AEMO's system appears to round the dispatch target
+    down to the nearest MW in the dispatch engine. This means that it is impossible
+    to forecast accurately when the plant is permitted to produce at full capacity
+    and is doing so.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-final-report/
+  project_page_url: https://arena.gov.au/projects/wind-forecasting-nem/
+  kb_category: Wind energy
+  kb_publish_date: 15/02/2021
+  kb_year: '2019'
+  kb_associated_project: Wind Forecasting for the NEM
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $493k
+  total_project_value: $911k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/02/2019
+  location: New South Wales, South Australia, Victoria
+  project_partners: Pacific Hydro Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2021/06/fulcrum3d-wind-forecasting-for-the-nem-project-results.pdf
+  markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_final_report.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-46555
+  - ARENA-DLV-61305
+  contributing_source_titles:
+  - Fulcrum3D Wind Forecasting For the NEM Final Report
+  - Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 3
+  contributing_sources:
+  - source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 3
+    pdf_url: https://arena.gov.au/assets/2021/01/fulcrum3d-wind-forecasting-lessons-learnt-october-2020.pdf
+    source_pages:
+    - 3
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-3/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_3.md
+  - source_title: Fulcrum3D Wind Forecasting For the NEM Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/fulcrum3d-wind-forecasting-for-the-nem-project-results.pdf
+    source_pages:
+    - 12
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-final-report/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_final_report.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-46556
+  source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 3
+  publish_date: 2021-01
+  project_name: 'Fulcrum3D: Wind Forecasting for the NEM'
+  what_happened: Optimising MP5F forecast submissions for Causer Pays market outcomes
+    allowed the team to reduce Market Participant Factor (MPF) and resulting Causer
+    Pays charges to as low as zero in some months at wind farms operating under normal
+    conditions.
+  lesson_learnt: Wind and solar farm operators can eliminate Causer Pays charges in
+    some months by deploying MP5F self-forecasting solutions optimised for FCAS savings
+    — this commercial benefit case should be quantified early to support investment
+    decisions.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id012
+  - 3
+  evidence_excerpt: We modelled the Causer Pays market and optimised our submissions
+    for FCAS savings. We found that we could reduce the MPF (Market Participant Factor)
+    and resulting Causer Pays charges to as low as zero in some months.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-3/
+  project_page_url: https://arena.gov.au/projects/wind-forecasting-nem/
+  kb_category: Wind energy
+  kb_publish_date: 28/01/2021
+  kb_year: '2019'
+  kb_associated_project: Wind Forecasting for the NEM
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $493k
+  total_project_value: $911k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/02/2019
+  location: New South Wales, South Australia, Victoria
+  project_partners: Pacific Hydro Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2021/01/fulcrum3d-wind-forecasting-lessons-learnt-october-2020.pdf
+  markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_3.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46556
+  contributing_source_titles:
+  - Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 3
+  contributing_sources:
+  - source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 3
+    pdf_url: https://arena.gov.au/assets/2021/01/fulcrum3d-wind-forecasting-lessons-learnt-october-2020.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-3/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_3.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-46557
+  source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 3
+  publish_date: 2021-01
+  project_name: 'Fulcrum3D: Wind Forecasting for the NEM'
+  what_happened: Analysis showed that a power model using only low-latency persistence
+    data and real-time plant state SCADA information could deliver significant Causer
+    Pays savings, without requiring a full wind or cloud forecasting system.
+  lesson_learnt: A SCADA-only forecast model (using low-latency persistence and real-time
+    plant state data) can deliver material Causer Pays savings and represents a lower-cost
+    entry point for generators — full meteorological forecasting capability is not
+    required to capture initial commercial value, though it will be needed to maximise
+    FCAS savings as markets evolve.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id013
+  - 3
+  evidence_excerpt: Our analysis found that a robust power model utilising low latency
+    persistence data and real-time plant state SCADA information can deliver significant
+    Causer Pays savings without wind or cloud forecasting systems.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-3/
+  project_page_url: https://arena.gov.au/projects/wind-forecasting-nem/
+  kb_category: Wind energy
+  kb_publish_date: 28/01/2021
+  kb_year: '2019'
+  kb_associated_project: Wind Forecasting for the NEM
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $493k
+  total_project_value: $911k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/02/2019
+  location: New South Wales, South Australia, Victoria
+  project_partners: Pacific Hydro Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2021/01/fulcrum3d-wind-forecasting-lessons-learnt-october-2020.pdf
+  markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_3.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46557
+  contributing_source_titles:
+  - Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 3
+  contributing_sources:
+  - source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 3
+    pdf_url: https://arena.gov.au/assets/2021/01/fulcrum3d-wind-forecasting-lessons-learnt-october-2020.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-3/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_3.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-46558
+  source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 3
+  publish_date: 2021-01
+  project_name: 'Fulcrum3D: Wind Forecasting for the NEM'
+  what_happened: The project team identified that real-time forecasting systems deployed
+    in live power system operations require explicit operational safety checks, manual
+    override capability, and documented fallback processes — a gap not always addressed
+    in technology-focused forecast deployments.
+  lesson_learnt: Real-time forecasting systems operating in live power systems must
+    include operational safety checks and manual overrides before go-live — these
+    do not necessarily require a bespoke user interface and can be implemented as
+    a documented process using AEMO's existing access control system.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id014
+  - 3
+  evidence_excerpt: It is important to acknowledge that these forecasts are being
+    used in an operational power system and must have sufficient operational checks
+    and safety systems along with manual overrides.
+  confidence_note: issue_severity set to minor as this is a design/process gap identified
+    and acknowledged rather than a failure that caused harm; outcome_class knowledge
+    generated despite setback reflects the lesson being surfaced from live deployment
+    experience.
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-3/
+  project_page_url: https://arena.gov.au/projects/wind-forecasting-nem/
+  kb_category: Wind energy
+  kb_publish_date: 28/01/2021
+  kb_year: '2019'
+  kb_associated_project: Wind Forecasting for the NEM
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $493k
+  total_project_value: $911k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/02/2019
+  location: New South Wales, South Australia, Victoria
+  project_partners: Pacific Hydro Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2021/01/fulcrum3d-wind-forecasting-lessons-learnt-october-2020.pdf
+  markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_3.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46558
+  contributing_source_titles:
+  - Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 3
+  contributing_sources:
+  - source_title: Fulcrum3D Wind Forecasting for the NEM Lessons Learnt 3
+    pdf_url: https://arena.gov.au/assets/2021/01/fulcrum3d-wind-forecasting-lessons-learnt-october-2020.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-lessons-learnt-3/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_lessons_learnt_3.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-61301
+  source_title: Fulcrum3D Wind Forecasting For the NEM Final Report
+  publish_date: '2021-02-15'
+  project_name: Fulcrum3D Wind Forecasting for the NEM
+  what_happened: Fulcrum3D deployed sodar-based self-forecasting systems at three
+    Pacific Hydro wind farms (Clements Gap, Crowlands, Taralga) and demonstrated that
+    submitting self-forecasts via AEMO's MP5F API consistently outperformed AWEFS
+    and reduced Causer Pays charges, in some months to zero.
+  lesson_learnt: Most wind and solar farms self-forecasting through AEMO's MP5F facility
+    achieve Causer Pays savings; higher forecast accuracy alone is not sufficient
+    — modelling the FCAS Causer Pays system itself is required to maximise charge
+    reductions.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id015
+  - 6
+  - 7
+  evidence_excerpt: It is important to note that higher accuracy forecasts alone did
+    not necessarily reduce Causer Pays charges. Our modelling of the FCAS Causer Pays
+    system led to greater reductions than even perfect forecasts could achieve.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-final-report/
+  project_page_url: https://arena.gov.au/projects/wind-forecasting-nem/
+  kb_category: Wind energy
+  kb_publish_date: 15/02/2021
+  kb_year: '2019'
+  kb_associated_project: Wind Forecasting for the NEM
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $493k
+  total_project_value: $911k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/02/2019
+  location: New South Wales, South Australia, Victoria
+  project_partners: Pacific Hydro Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2021/06/fulcrum3d-wind-forecasting-for-the-nem-project-results.pdf
+  markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_final_report.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61301
+  contributing_source_titles:
+  - Fulcrum3D Wind Forecasting For the NEM Final Report
+  contributing_sources:
+  - source_title: Fulcrum3D Wind Forecasting For the NEM Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/fulcrum3d-wind-forecasting-for-the-nem-project-results.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-final-report/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_final_report.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-61302
+  source_title: Fulcrum3D Wind Forecasting For the NEM Final Report
+  publish_date: '2021-02-15'
+  project_name: Fulcrum3D Wind Forecasting for the NEM
+  what_happened: Self-forecasting via MP5F achieved zero Causer Pays charges in some
+    months at the three wind farm sites, demonstrating that AEMO's accuracy requirements
+    can be fully satisfied under normal operating conditions.
+  lesson_learnt: Wind and solar farm operators can achieve zero Causer Pays charges
+    through accurate self-forecasting via MP5F under normal operating conditions;
+    the financial benefit also improves grid stability by reducing forecast error.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id016
+  - 8
+  evidence_excerpt: It is possible to satisfy AEMO's accuracy requirements and achieve
+    zero Causer Pays charges at wind and solar farms via MP5F with generators operating
+    under normal conditions.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-final-report/
+  project_page_url: https://arena.gov.au/projects/wind-forecasting-nem/
+  kb_category: Wind energy
+  kb_publish_date: 15/02/2021
+  kb_year: '2019'
+  kb_associated_project: Wind Forecasting for the NEM
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $493k
+  total_project_value: $911k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/02/2019
+  location: New South Wales, South Australia, Victoria
+  project_partners: Pacific Hydro Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2021/06/fulcrum3d-wind-forecasting-for-the-nem-project-results.pdf
+  markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61302
+  contributing_source_titles:
+  - Fulcrum3D Wind Forecasting For the NEM Final Report
+  contributing_sources:
+  - source_title: Fulcrum3D Wind Forecasting For the NEM Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/fulcrum3d-wind-forecasting-for-the-nem-project-results.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-final-report/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_final_report.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-61306
+  source_title: Fulcrum3D Wind Forecasting For the NEM Final Report
+  publish_date: '2021-02-15'
+  project_name: Fulcrum3D Wind Forecasting for the NEM
+  what_happened: Unexpected Causer Pays charges were observed when generation caps
+    were lifted because some plant control systems could not ramp fast enough to meet
+    the new dispatch target within a single dispatch period, and the NEM Dispatch
+    Engine does not account for plant ramp rate limitations.
+  lesson_learnt: Generators should assess their plant's ramp rate capability against
+    the rate assumed by the dispatch engine before deploying self-forecasting; if
+    ramp rate is insufficient to meet a new dispatch target in one period after a
+    cap is lifted, Causer Pays charges will be incurred that cannot be avoided by
+    accurate forecasting alone.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated integration
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id017
+  - 13
+  evidence_excerpt: If a generation cap is lifted, some control systems may not be
+    able to ramp the plant fast enough to meet the dispatch target in one period.
+    The plant could then incur Causer Pays charges.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-final-report/
+  project_page_url: https://arena.gov.au/projects/wind-forecasting-nem/
+  kb_category: Wind energy
+  kb_publish_date: 15/02/2021
+  kb_year: '2019'
+  kb_associated_project: Wind Forecasting for the NEM
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $493k
+  total_project_value: $911k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/02/2019
+  location: New South Wales, South Australia, Victoria
+  project_partners: Pacific Hydro Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2021/06/fulcrum3d-wind-forecasting-for-the-nem-project-results.pdf
+  markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_final_report.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61306
+  contributing_source_titles:
+  - Fulcrum3D Wind Forecasting For the NEM Final Report
+  contributing_sources:
+  - source_title: Fulcrum3D Wind Forecasting For the NEM Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/fulcrum3d-wind-forecasting-for-the-nem-project-results.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-final-report/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_final_report.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-61307
+  source_title: Fulcrum3D Wind Forecasting For the NEM Final Report
+  publish_date: '2021-02-15'
+  project_name: Fulcrum3D Wind Forecasting for the NEM
+  what_happened: AEMO's MP5F API was found to be stable and materially streamlined
+    over the project period, including the addition of a password-change API, and
+    Fulcrum3D successfully integrated it across more than twelve NEM sites.
+  lesson_learnt: Future projects can proceed with confidence that the MP5F API is
+    robust and reliable; the API has matured significantly and is now a repeatable
+    integration point for self-forecasting deployments.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id018
+  - 14
+  evidence_excerpt: The MP5F API is stable and has been materially streamlined in
+    the last 12 months. This process was recently further improved with an API to
+    enable the password changes that are regularly required. This password change
+    API is also working well.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-final-report/
+  project_page_url: https://arena.gov.au/projects/wind-forecasting-nem/
+  kb_category: Wind energy
+  kb_publish_date: 15/02/2021
+  kb_year: '2019'
+  kb_associated_project: Wind Forecasting for the NEM
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $493k
+  total_project_value: $911k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/02/2019
+  location: New South Wales, South Australia, Victoria
+  project_partners: Pacific Hydro Pty Ltd
+  pdf_url: https://arena.gov.au/assets/2021/06/fulcrum3d-wind-forecasting-for-the-nem-project-results.pdf
+  markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_final_report.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-61307
+  contributing_source_titles:
+  - Fulcrum3D Wind Forecasting For the NEM Final Report
+  contributing_sources:
+  - source_title: Fulcrum3D Wind Forecasting For the NEM Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/fulcrum3d-wind-forecasting-for-the-nem-project-results.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-wind-forecasting-for-the-nem-final-report/
+    markdown_filename: fulcrum3d_wind_forecasting_for_the_nem_final_report.md
+  arena_category:
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false

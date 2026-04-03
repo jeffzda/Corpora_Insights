@@ -1,0 +1,211 @@
+- record_id: ARENA-DLV-9957
+  source_title: 'Empowered Consumers: Distributed Energy Resources Portfolio Update'
+  publish_date: '2018'
+  project_name: CSIRO Virtual Power Station 2
+  what_happened: The CSIRO VPS2 project used a single communication channel for receiving
+    demand response signals, which enabled simple group control of air-conditioners
+    but disabled the ability to control individual air-conditioning loads independently.
+  lesson_learnt: Design demand response communication architectures to support granular,
+    individual device control from the outset — a single-channel approach limits responsiveness
+    and precludes optimised dispatch; infrastructure capable of addressing individual
+    loads is necessary for full DER orchestration capability.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Continued development of communications infrastructure for the
+    core control technology was identified as required to provide more granular control
+    of all devices.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id001
+  - 4
+  evidence_excerpt: A single communication channel was used on hardware for receiving
+    the demand response signal from the network to enable remote control of air-conditioning
+    units. This provided simple control for a group of air-conditioners, but disabled
+    control of individual air-conditioning loads.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/empowered-consumers-distributed-energy-resources-portfolio-update/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 25/10/2018
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2018/10/AR_024_DER-Portfolio-Update.pdf
+  markdown_filename: empowered_consumers_distributed_energy_resources_portfolio_update.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-9957
+  contributing_source_titles:
+  - 'Empowered Consumers: Distributed Energy Resources Portfolio Update'
+  contributing_sources:
+  - source_title: 'Empowered Consumers: Distributed Energy Resources Portfolio Update'
+    pdf_url: https://arena.gov.au/assets/2018/10/AR_024_DER-Portfolio-Update.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/empowered-consumers-distributed-energy-resources-portfolio-update/
+    markdown_filename: empowered_consumers_distributed_energy_resources_portfolio_update.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-9958
+  source_title: 'Empowered Consumers: Distributed Energy Resources Portfolio Update'
+  publish_date: '2018'
+  project_name: CSIRO Virtual Power Station 2
+  what_happened: The CSIRO VPS2 project was limited to individual connection points
+    and modelled impacts on distribution operations, with no real-world demonstration
+    in distribution network operations completed. Further field demonstration was
+    identified as required.
+  lesson_learnt: Control technology for distributed virtual power stations requires
+    field demonstration within live distribution network operations before conclusions
+    about real-world performance can be drawn — modelled impacts and single connection-point
+    testing are insufficient to validate distribution-level operational performance.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id002
+  - 4
+  evidence_excerpt: Further demonstration of the VPS2 in distribution operations in
+    the field are required as to date, the project is limited to individual connection
+    points and modelled impacts on distribution operations.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/empowered-consumers-distributed-energy-resources-portfolio-update/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 25/10/2018
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2018/10/AR_024_DER-Portfolio-Update.pdf
+  markdown_filename: empowered_consumers_distributed_energy_resources_portfolio_update.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-9958
+  contributing_source_titles:
+  - 'Empowered Consumers: Distributed Energy Resources Portfolio Update'
+  contributing_sources:
+  - source_title: 'Empowered Consumers: Distributed Energy Resources Portfolio Update'
+    pdf_url: https://arena.gov.au/assets/2018/10/AR_024_DER-Portfolio-Update.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/empowered-consumers-distributed-energy-resources-portfolio-update/
+    markdown_filename: empowered_consumers_distributed_energy_resources_portfolio_update.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-9959
+  source_title: 'Empowered Consumers: Distributed Energy Resources Portfolio Update'
+  publish_date: '2018'
+  project_name: CSIRO Virtual Power Station 2
+  what_happened: The VPS2 project identified that incentive schemes and approaches
+    were required to ensure sufficient uptake of fully compliant inverters, storage,
+    and controls, implying that voluntary adoption of compliant devices was insufficient
+    without financial incentives.
+  lesson_learnt: Do not rely on voluntary adoption of compliant DER hardware — incentive
+    schemes are necessary to drive sufficient uptake of inverters, storage, and control
+    systems that meet the technical standards required for coordinated DER dispatch
+    programmes.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: stakeholder/land/community
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id003
+  - 4
+  evidence_excerpt: Incentive schemes and approaches are required to ensure sufficient
+    uptake of the fully compliant inverters, storage, and controls.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/empowered-consumers-distributed-energy-resources-portfolio-update/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 25/10/2018
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2018/10/AR_024_DER-Portfolio-Update.pdf
+  markdown_filename: empowered_consumers_distributed_energy_resources_portfolio_update.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-9959
+  contributing_source_titles:
+  - 'Empowered Consumers: Distributed Energy Resources Portfolio Update'
+  contributing_sources:
+  - source_title: 'Empowered Consumers: Distributed Energy Resources Portfolio Update'
+    pdf_url: https://arena.gov.au/assets/2018/10/AR_024_DER-Portfolio-Update.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/empowered-consumers-distributed-energy-resources-portfolio-update/
+    markdown_filename: empowered_consumers_distributed_energy_resources_portfolio_update.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82

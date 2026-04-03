@@ -1,0 +1,781 @@
+- record_id: ARENA-DLV-18101
+  source_title: Solcast Nowcasting Lessons Learnt Report 3
+  publish_date: 2020-09
+  project_name: Solcast Nowcasting for Solar Farms and the Australian Energy Sector
+  what_happened: The project found that forecast accuracy improvement relative to
+    ASEFS is not a reliable proxy for estimating FCAS cost savings, because a MW deviation
+    may not impact the power system negatively and can in fact be beneficial depending
+    on system frequency. Multiplying forecast accuracy improvement by regulation costs
+    does not produce accurate FCAS savings estimates.
+  lesson_learnt: Do not assume forecast accuracy gain relative to ASEFS is a suitable
+    proxy for FCAS savings — develop a dedicated FCAS simulation tool and engage closely
+    with AEMO to understand the causer pays calculation methodology before estimating
+    financial benefits of self-forecasting.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Developed an in-house FCAS simulation model that can reproduce
+    AEMO's published MPF data, reducing the forecast algorithm iteration cycle from
+    10+ weeks to minutes.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id001
+  - 3
+  - 4
+  evidence_excerpt: Approaches that use forecast accuracy as a proxy for reductions
+    in FCAS fees are therefore not robust and are not likely to produce accurate estimates
+    of FCAS savings.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solcast-nowcasting-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/solcast-nowcasting-solutions-for-solar-farms/
+  kb_category: Solar energy
+  kb_publish_date: 1/02/2021
+  kb_year: '2019'
+  kb_associated_project: Solar Farm Solutions & the Australian Energy Sector
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $781k
+  total_project_value: $2.57m
+  lead_organisation: Solar and Storage Modelling Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/01/2019
+  location: New South Wales, Queensland, South Australia, Victoria
+  project_partners: Wirsol, Oakey 1 Asset Company Pty Ltd, Neoen Australia, Foresight
+    Group, First Solar, EnergyAustralia, Edify Energy, FRV, Dispatch Solutions, CWP
+    Renewables
+  pdf_url: https://arena.gov.au/assets/2021/02/solcast-nowcasting-lessons-learnt-report-3.pdf
+  markdown_filename: solcast_nowcasting_lessons_learnt_report_3.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-18101
+  contributing_source_titles:
+  - Solcast Nowcasting Lessons Learnt Report 3
+  contributing_sources:
+  - source_title: Solcast Nowcasting Lessons Learnt Report 3
+    pdf_url: https://arena.gov.au/assets/2021/02/solcast-nowcasting-lessons-learnt-report-3.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/solcast-nowcasting-lessons-learnt-report-3/
+    markdown_filename: solcast_nowcasting_lessons_learnt_report_3.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-18102
+  source_title: Solcast Nowcasting Lessons Learnt Report 3
+  publish_date: 2020-09
+  project_name: Solcast Nowcasting for Solar Farms and the Australian Energy Sector
+  what_happened: The project found that AEMO's use of HTTP response codes is not always
+    consistent with industry convention, with insufficient delineation between client
+    errors (4xx) and server errors (5xx), and between successful (2xx) and late submissions
+    — causing downstream monitoring and reliability metric issues for participants.
+  lesson_learnt: Future projects submitting forecasts to the AEMO API should maintain
+    detailed audit logs of API response codes for each dispatch interval and DUID,
+    to accurately diagnose why forecasts are classified as 'DIS_EXCLUDED_MISSING_LATE_SF'
+    and to distinguish system faults from network interruptions or AEMO-side issues.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: Built an audit logging system to track system reliability and
+    monitor API response codes for each dispatch interval.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id002
+  - 4
+  evidence_excerpt: Future projects should keep audit logs of AEMO API response codes
+    for each dispatch interval of each DUID. This is important to understand the reason
+    why some forecasts are classified by AEMO as 'DIS_EXCLUDED_MISSING_LATE_SF'.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solcast-nowcasting-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/solcast-nowcasting-solutions-for-solar-farms/
+  kb_category: Solar energy
+  kb_publish_date: 1/02/2021
+  kb_year: '2019'
+  kb_associated_project: Solar Farm Solutions & the Australian Energy Sector
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $781k
+  total_project_value: $2.57m
+  lead_organisation: Solar and Storage Modelling Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/01/2019
+  location: New South Wales, Queensland, South Australia, Victoria
+  project_partners: Wirsol, Oakey 1 Asset Company Pty Ltd, Neoen Australia, Foresight
+    Group, First Solar, EnergyAustralia, Edify Energy, FRV, Dispatch Solutions, CWP
+    Renewables
+  pdf_url: https://arena.gov.au/assets/2021/02/solcast-nowcasting-lessons-learnt-report-3.pdf
+  markdown_filename: solcast_nowcasting_lessons_learnt_report_3.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-18102
+  contributing_source_titles:
+  - Solcast Nowcasting Lessons Learnt Report 3
+  contributing_sources:
+  - source_title: Solcast Nowcasting Lessons Learnt Report 3
+    pdf_url: https://arena.gov.au/assets/2021/02/solcast-nowcasting-lessons-learnt-report-3.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/solcast-nowcasting-lessons-learnt-report-3/
+    markdown_filename: solcast_nowcasting_lessons_learnt_report_3.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-18103
+  source_title: Solcast Nowcasting Lessons Learnt Report 3
+  publish_date: 2020-09
+  project_name: Solcast Nowcasting for Solar Farms and the Australian Energy Sector
+  what_happened: Operational experience across eight solar farms revealed that spurious
+    SCADA data (missing, stuck, old, or inconsistent measurements), sky-imager contamination
+    from dust, birds, and insects, and AEMO API authentication failures are the most
+    common real-time issues degrading forecast system performance and stability.
+  lesson_learnt: Future solar forecasting projects must build automated real-time
+    monitoring for at least three failure modes — spurious SCADA data, sky-imager
+    contamination, and API authentication failures — and must retain the ability to
+    quickly suppress forecasts when spurious input data requires external intervention.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated integration
+  intervention_note: Solcast implemented a multi-input ensemble forecasting approach
+    with real-time error checking and data validation to exclude spurious sky-imager
+    outputs from the forecast blend.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages:
+  - 3
+  - 4
+  - 5
+  evidence_excerpt: The most common issue is dirt residue on lens caused by rain or
+    wind, but Solcast has also encountered insects crawling over the lens, birds landing
+    on them, and residue from bird droppings. These issues are easily rectified by
+    periodically wiping the lens, but can cause well-designed algorithms to produce
+    significant forecasting errors even under completely clear skies by misidentifying
+    local foreign objects as cloud cover.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/solcast-nowcasting-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/solcast-nowcasting-solutions-for-solar-farms/
+  kb_category: Solar energy
+  kb_publish_date: 1/02/2021
+  kb_year: '2019'
+  kb_associated_project: Solar Farm Solutions & the Australian Energy Sector
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $781k
+  total_project_value: $2.57m
+  lead_organisation: Solar and Storage Modelling Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/01/2019
+  location: New South Wales, Queensland, South Australia, Victoria
+  project_partners: Wirsol, Oakey 1 Asset Company Pty Ltd, Neoen Australia, Foresight
+    Group, First Solar, EnergyAustralia, Edify Energy, FRV, Dispatch Solutions, CWP
+    Renewables
+  pdf_url: https://arena.gov.au/assets/2021/02/solcast-nowcasting-lessons-learnt-report-3.pdf
+  markdown_filename: solcast_nowcasting_lessons_learnt_report_3.md
+  source_page_pdf: 5
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-18103
+  - ARENA-DLV-58601
+  contributing_source_titles:
+  - Solcast Nowcasting Lessons Learnt Report 3
+  - Solcast Nowcasting Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: Solcast Nowcasting Lessons Learnt Report 3
+    pdf_url: https://arena.gov.au/assets/2021/02/solcast-nowcasting-lessons-learnt-report-3.pdf
+    source_pages:
+    - 5
+    source_url: https://arena.gov.au/knowledge-bank/solcast-nowcasting-lessons-learnt-report-3/
+    markdown_filename: solcast_nowcasting_lessons_learnt_report_3.md
+  - source_title: Solcast Nowcasting Lessons Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2020/07/solcast-nowcasting-lessons-learnt-report-2.pdf
+    source_pages:
+    - 3
+    - 4
+    source_url: https://arena.gov.au/knowledge-bank/solcast-nowcasting-lessons-learnt-report-2/
+    markdown_filename: solcast_nowcasting_lessons_learnt_report_2.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-58603
+  source_title: Solcast Nowcasting Lessons Learnt Report 2
+  publish_date: 2020-04
+  project_name: Solcast Nowcasting for Solar Farms and the Australian Energy Sector
+  what_happened: Solcast demonstrated that an ensemble forecasting approach combining
+    satellite cloud nowcasting, real-time SCADA data, and sky-imager inputs produced
+    lower forecasting errors than ASEFS (persistence-based forecasting) at all eight
+    solar farms in the project, achieving AEMO accreditation for dispatch at six of
+    the eight farms within the reporting period.
+  lesson_learnt: For 5-minute-ahead NEM self-forecasting, an ensemble approach blending
+    satellite nowcasting, SCADA reweighting, and sky-imager inputs outperforms persistence-based
+    systems — this architecture should be the default design choice for solar farms
+    seeking AEMO accreditation and reduced FCAS Causer Pays fees.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: design assumption failure
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Adopted a three-component ensemble forecasting architecture blending
+    satellite nowcasting, SCADA data reweighting, and sky-imager inputs, demonstrating
+    reduced errors compared with ASEFS at all eight solar farms.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages:
+  - 2
+  - 3
+  evidence_excerpt: The Project demonstrated sky-imager technology can improve forecast
+    accuracy over the short-term, but that an ensemble forecasting approach considering
+    multiple inputs other than solely a sky-imager is the preferred solution.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/solcast-nowcasting-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/solcast-nowcasting-solutions-for-solar-farms/
+  kb_category: Solar energy
+  kb_publish_date: 6/04/2020
+  kb_year: '2019'
+  kb_associated_project: Solar Farm Solutions & the Australian Energy Sector
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $781k
+  total_project_value: $2.57m
+  lead_organisation: Solar and Storage Modelling Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/01/2019
+  location: New South Wales, Queensland, South Australia, Victoria
+  project_partners: Wirsol, Oakey 1 Asset Company Pty Ltd, Neoen Australia, Foresight
+    Group, First Solar, EnergyAustralia, Edify Energy, FRV, Dispatch Solutions, CWP
+    Renewables
+  pdf_url: https://arena.gov.au/assets/2020/07/solcast-nowcasting-lessons-learnt-report-2.pdf
+  markdown_filename: solcast_nowcasting_lessons_learnt_report_2.md
+  source_page_pdf: 3
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-18104
+  - ARENA-DLV-58603
+  contributing_source_titles:
+  - Solcast Nowcasting Lessons Learnt Report 3
+  - Solcast Nowcasting Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: Solcast Nowcasting Lessons Learnt Report 3
+    pdf_url: https://arena.gov.au/assets/2021/02/solcast-nowcasting-lessons-learnt-report-3.pdf
+    source_pages:
+    - 2
+    - 3
+    source_url: https://arena.gov.au/knowledge-bank/solcast-nowcasting-lessons-learnt-report-3/
+    markdown_filename: solcast_nowcasting_lessons_learnt_report_3.md
+  - source_title: Solcast Nowcasting Lessons Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2020/07/solcast-nowcasting-lessons-learnt-report-2.pdf
+    source_pages:
+    - 3
+    source_url: https://arena.gov.au/knowledge-bank/solcast-nowcasting-lessons-learnt-report-2/
+    markdown_filename: solcast_nowcasting_lessons_learnt_report_2.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-44701
+  source_title: Solcast Nowcasting Lessons Learned Report 1
+  publish_date: 2019-10
+  project_name: Solcast nowcasting solutions for solar farms and the Australian energy
+    sector
+  what_happened: Four of the original solar farm project partners had to be replaced
+    due to personnel changes at partner companies, solar farm construction delays,
+    and AEMO farm restrictions.
+  lesson_learnt: Design early project phases to be farm-agnostic and maintain a detailed,
+    actively updated risk management plan — this ensures partner substitutions do
+    not result in unrecoverable sunk costs and allows the project to continue on schedule.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: stakeholder/land/community
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: Solcast leveraged existing industry relationships to find replacement
+    farm partners quickly and relied on the pre-existing risk management plan to guide
+    substitution actions without expending unrecoverable project funds.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id003
+  - 1
+  evidence_excerpt: Project partner company personnel changes, solar farm construction
+    delays, and AMEO farm restrictions, has meant the project has had to find replacements
+    for 4 of the original farms.
+  confidence_note: delay_category set to stakeholder/land/community as the partner
+    changes were driven by external partner circumstances rather than internal governance;
+    construction delays at partner farms also contributed.
+  source_url: https://arena.gov.au/knowledge-bank/solcast-nowcasting-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/solcast-nowcasting-solutions-for-solar-farms/
+  kb_category: Solar energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Solar Farm Solutions & the Australian Energy Sector
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $781k
+  total_project_value: $2.57m
+  lead_organisation: Solar and Storage Modelling Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/01/2019
+  location: New South Wales, Queensland, South Australia, Victoria
+  project_partners: Wirsol, Oakey 1 Asset Company Pty Ltd, Neoen Australia, Foresight
+    Group, First Solar, EnergyAustralia, Edify Energy, FRV, Dispatch Solutions, CWP
+    Renewables
+  pdf_url: https://arena.gov.au/assets/2019/03/solcast-lessons-learned-report.pdf
+  markdown_filename: solcast_nowcasting_lessons_learned_report_1.md
+  source_page_pdf: 1
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-44701
+  contributing_source_titles:
+  - Solcast Nowcasting Lessons Learned Report 1
+  contributing_sources:
+  - source_title: Solcast Nowcasting Lessons Learned Report 1
+    pdf_url: https://arena.gov.au/assets/2019/03/solcast-lessons-learned-report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/solcast-nowcasting-lessons-learnt-report/
+    markdown_filename: solcast_nowcasting_lessons_learned_report_1.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-44702
+  source_title: Solcast Nowcasting Lessons Learned Report 1
+  publish_date: 2019-10
+  project_name: Solcast nowcasting solutions for solar farms and the Australian energy
+    sector
+  what_happened: Integrating with SCADA systems across multiple solar farms proved
+    unexpectedly complex due to unique architectures, security configurations, multiple
+    contracted parties, time-zone differences, and language barriers at each site.
+  lesson_learnt: Assign a dedicated project manager to coordinate SCADA integration
+    across all parties, and codify each integration experience to build internal knowledge
+    — this progressively reduces integration difficulty and labour cost as the number
+    of farms increases.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Solcast assigned a dedicated project manager to facilitate communication
+    with all parties, developed API documentation for future integrators, and began
+    partnering with SCADA/engineering firms to build reusable integrations for common
+    farm architectures.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id004
+  - 1
+  - 2
+  evidence_excerpt: Key lesson is the necessity of a dedicated project manager to
+    facilitate communicate with all parties and ensure project progresses through
+    staging as initially planned, and to codify learnings to build Solcast internal
+    knowledge.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solcast-nowcasting-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/solcast-nowcasting-solutions-for-solar-farms/
+  kb_category: Solar energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Solar Farm Solutions & the Australian Energy Sector
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $781k
+  total_project_value: $2.57m
+  lead_organisation: Solar and Storage Modelling Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/01/2019
+  location: New South Wales, Queensland, South Australia, Victoria
+  project_partners: Wirsol, Oakey 1 Asset Company Pty Ltd, Neoen Australia, Foresight
+    Group, First Solar, EnergyAustralia, Edify Energy, FRV, Dispatch Solutions, CWP
+    Renewables
+  pdf_url: https://arena.gov.au/assets/2019/03/solcast-lessons-learned-report.pdf
+  markdown_filename: solcast_nowcasting_lessons_learned_report_1.md
+  source_page_pdf: 1
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-44702
+  contributing_source_titles:
+  - Solcast Nowcasting Lessons Learned Report 1
+  contributing_sources:
+  - source_title: Solcast Nowcasting Lessons Learned Report 1
+    pdf_url: https://arena.gov.au/assets/2019/03/solcast-lessons-learned-report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/solcast-nowcasting-lessons-learnt-report/
+    markdown_filename: solcast_nowcasting_lessons_learned_report_1.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-44703
+  source_title: Solcast Nowcasting Lessons Learned Report 1
+  publish_date: 2019-10
+  project_name: Solcast nowcasting solutions for solar farms and the Australian energy
+    sector
+  what_happened: Historical solar farm power output data (1-minute resolution) was
+    found on multiple occasions to contain large sections of unusable data caused
+    by commissioning artefacts and spurious measurement errors, resulting in lower-than-expected
+    model tuning effectiveness and forecast accuracy.
+  lesson_learnt: Do not rely solely on historical SCADA data for model tuning — develop
+    capability to tune using live SCADA measurements and build automated data quality
+    control to detect and process spurious artefacts, as historical data quality from
+    operational farms is frequently worse than anticipated.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Solcast internally developed automated data quality control capability
+    to detect and process spurious artefacts, added live SCADA measurement tuning
+    to reduce dependence on historical data, and developed additional forecasting
+    models to improve accuracy during morning and afternoon ramp periods.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id005
+  - 2
+  evidence_excerpt: Historical data (1 minute history of solar farm power output)
+    was found on several occasions to have large sections of unusable data, due to
+    commissioning phases, or spurious artefacts in the data... As the portion of bad
+    data received was greater than expected, the impact of model tuning on forecast
+    accuracy was lower than expected.
+  confidence_note: lifecycle_phase set to operations as the data quality issue arose
+    during live farm data collection after farm commissioning, not during the commissioning
+    of the Solcast system itself.
+  source_url: https://arena.gov.au/knowledge-bank/solcast-nowcasting-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/solcast-nowcasting-solutions-for-solar-farms/
+  kb_category: Solar energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Solar Farm Solutions & the Australian Energy Sector
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $781k
+  total_project_value: $2.57m
+  lead_organisation: Solar and Storage Modelling Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/01/2019
+  location: New South Wales, Queensland, South Australia, Victoria
+  project_partners: Wirsol, Oakey 1 Asset Company Pty Ltd, Neoen Australia, Foresight
+    Group, First Solar, EnergyAustralia, Edify Energy, FRV, Dispatch Solutions, CWP
+    Renewables
+  pdf_url: https://arena.gov.au/assets/2019/03/solcast-lessons-learned-report.pdf
+  markdown_filename: solcast_nowcasting_lessons_learned_report_1.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-44703
+  contributing_source_titles:
+  - Solcast Nowcasting Lessons Learned Report 1
+  contributing_sources:
+  - source_title: Solcast Nowcasting Lessons Learned Report 1
+    pdf_url: https://arena.gov.au/assets/2019/03/solcast-lessons-learned-report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/solcast-nowcasting-lessons-learnt-report/
+    markdown_filename: solcast_nowcasting_lessons_learned_report_1.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-58602
+  source_title: Solcast Nowcasting Lessons Learnt Report 2
+  publish_date: 2020-04
+  project_name: Solcast Nowcasting for Solar Farms and the Australian Energy Sector
+  what_happened: A one-size-fits-all approach to sky-imager hardware caused installation
+    delays and sub-optimum install locations at solar farms due to variability in
+    available communication links, power sources, and suitable mounting points across
+    sites.
+  lesson_learnt: Future projects deploying sky-imager hardware at solar farms should
+    invest in configurable hardware options covering multiple communication, power
+    supply, and mounting configurations — this reduces installation delays, avoids
+    costly site-specific customisation, and ensures optimum placement.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: technology vendor
+  delay_category: construction/installation
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Solcast reconfigured sky-imager hardware to offer multiple communication,
+    power supply, and mounting options, enabling flexible deployment across diverse
+    solar farm sites.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id006
+  - 4
+  evidence_excerpt: Solcast found that a one-size-fits-all approach to sky-imager
+    hardware can cause delays in installation, or sub-optimum install locations. To
+    address this, Solcast configured sky-imager hardware with multiple communication,
+    power supply, and mounting options to cater for a wide variety of install locations.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solcast-nowcasting-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/solcast-nowcasting-solutions-for-solar-farms/
+  kb_category: Solar energy
+  kb_publish_date: 6/04/2020
+  kb_year: '2019'
+  kb_associated_project: Solar Farm Solutions & the Australian Energy Sector
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $781k
+  total_project_value: $2.57m
+  lead_organisation: Solar and Storage Modelling Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/01/2019
+  location: New South Wales, Queensland, South Australia, Victoria
+  project_partners: Wirsol, Oakey 1 Asset Company Pty Ltd, Neoen Australia, Foresight
+    Group, First Solar, EnergyAustralia, Edify Energy, FRV, Dispatch Solutions, CWP
+    Renewables
+  pdf_url: https://arena.gov.au/assets/2020/07/solcast-nowcasting-lessons-learnt-report-2.pdf
+  markdown_filename: solcast_nowcasting_lessons_learnt_report_2.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-58602
+  contributing_source_titles:
+  - Solcast Nowcasting Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: Solcast Nowcasting Lessons Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2020/07/solcast-nowcasting-lessons-learnt-report-2.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/solcast-nowcasting-lessons-learnt-report-2/
+    markdown_filename: solcast_nowcasting_lessons_learnt_report_2.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-58604
+  source_title: Solcast Nowcasting Lessons Learnt Report 2
+  publish_date: 2020-04
+  project_name: Solcast Nowcasting for Solar Farms and the Australian Energy Sector
+  what_happened: Solcast found that sky-imager inputs add meaningful accuracy improvement
+    only within the 0–30 minute forecasting horizon; beyond 30 minutes, sky-imager
+    data added little value to the ensemble relative to satellite and SCADA inputs
+    alone.
+  lesson_learnt: When designing short-term solar forecasting systems, sky-imager investment
+    is only justified for sub-30-minute forecasting horizons — for longer horizons,
+    satellite nowcasting combined with SCADA reweighting is sufficient and avoids
+    the maintenance and reliability burden of on-site sky-imager hardware.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id007
+  - 3
+  evidence_excerpt: For 30+ minutes ahead forecasting, Solcast finds a high-quality
+    sky-imager forecast adds little value to the forecasting ensemble. Over the 0-30
+    minutes ahead forecasting period, Solcast was able to further reduce forecasting
+    errors relative to a satellite + SCADA forecast with the inclusion of a high-quality
+    sky-imager forecast.
+  confidence_note: outcome_class set to 'knowledge generated despite setback' rather
+    than 'successful demonstration' because the finding specifically narrows the value
+    proposition of sky-imagers — a constraint on prior assumptions.
+  source_url: https://arena.gov.au/knowledge-bank/solcast-nowcasting-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/solcast-nowcasting-solutions-for-solar-farms/
+  kb_category: Solar energy
+  kb_publish_date: 6/04/2020
+  kb_year: '2019'
+  kb_associated_project: Solar Farm Solutions & the Australian Energy Sector
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $781k
+  total_project_value: $2.57m
+  lead_organisation: Solar and Storage Modelling Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/01/2019
+  location: New South Wales, Queensland, South Australia, Victoria
+  project_partners: Wirsol, Oakey 1 Asset Company Pty Ltd, Neoen Australia, Foresight
+    Group, First Solar, EnergyAustralia, Edify Energy, FRV, Dispatch Solutions, CWP
+    Renewables
+  pdf_url: https://arena.gov.au/assets/2020/07/solcast-nowcasting-lessons-learnt-report-2.pdf
+  markdown_filename: solcast_nowcasting_lessons_learnt_report_2.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-58604
+  contributing_source_titles:
+  - Solcast Nowcasting Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: Solcast Nowcasting Lessons Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2020/07/solcast-nowcasting-lessons-learnt-report-2.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/solcast-nowcasting-lessons-learnt-report-2/
+    markdown_filename: solcast_nowcasting_lessons_learnt_report_2.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-58605
+  source_title: Solcast Nowcasting Lessons Learnt Report 2
+  publish_date: 2020-04
+  project_name: Solcast Nowcasting for Solar Farms and the Australian Energy Sector
+  what_happened: Solcast demonstrated that centralising complex forecasting computation
+    in cloud-hosted servers while deploying low-cost configurable on-site hardware
+    reduced forecast improvement iteration time and increased the speed of hardware
+    and algorithm upgrades across all eight deployed solar farms.
+  lesson_learnt: Solar forecasting deployments should centralise modelling infrastructure
+    in cloud-hosted systems and minimise on-site computational hardware — this architecture
+    enables rapid algorithm iteration, easier upgrades, and faster deployment across
+    multiple sites without site-by-site intervention.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id008
+  - 2
+  - 5
+  evidence_excerpt: a cloud-hosted centralised forecasting system reduces forecast
+    improvement iteration time and increases the speed of hardware and algorithm upgrades...
+    Configurable and low-cost hardware while centralising the complex and expensive
+    modelling hardware and software is the preferred commercial approach. This solution
+    design allows for rapid iteration and upgrades, flexible install and siting options,
+    quick deployment times.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solcast-nowcasting-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/solcast-nowcasting-solutions-for-solar-farms/
+  kb_category: Solar energy
+  kb_publish_date: 6/04/2020
+  kb_year: '2019'
+  kb_associated_project: Solar Farm Solutions & the Australian Energy Sector
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $781k
+  total_project_value: $2.57m
+  lead_organisation: Solar and Storage Modelling Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/01/2019
+  location: New South Wales, Queensland, South Australia, Victoria
+  project_partners: Wirsol, Oakey 1 Asset Company Pty Ltd, Neoen Australia, Foresight
+    Group, First Solar, EnergyAustralia, Edify Energy, FRV, Dispatch Solutions, CWP
+    Renewables
+  pdf_url: https://arena.gov.au/assets/2020/07/solcast-nowcasting-lessons-learnt-report-2.pdf
+  markdown_filename: solcast_nowcasting_lessons_learnt_report_2.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-58605
+  contributing_source_titles:
+  - Solcast Nowcasting Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: Solcast Nowcasting Lessons Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2020/07/solcast-nowcasting-lessons-learnt-report-2.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/solcast-nowcasting-lessons-learnt-report-2/
+    markdown_filename: solcast_nowcasting_lessons_learnt_report_2.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false

@@ -1,0 +1,908 @@
+- record_id: ARENA-DLV-57101
+  source_title: Low-cost integration of on-site PV for Large-scale Industrial Heat
+    Supply - Public Dissemination Report
+  publish_date: 2024-02
+  project_name: Low-Cost Integration of On-Site Solar PV for Large-Scale Industrial
+    Heat Supply
+  what_happened: During modelling of AC direct electrical heating, the project team
+    found that the high-frequency AC current (~10,000 Hz) required to produce a sufficient
+    skin effect for heating reduced the power factor to approximately 0.8 — an unacceptably
+    low value — causing the project to pivot from AC to DC heating as the primary
+    development pathway.
+  lesson_learnt: When designing direct electrical heating systems for industrial PV
+    applications, validate power factor implications of AC approaches through modelling
+    before committing to hardware development — high-frequency AC heating may produce
+    unacceptable power factors that make DC heating the more practical and efficient
+    pathway.
+  issue_severity: moderate
+  project_type: industrial decarbonisation
+  project_scale_band: pilot
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: The team conducted modelling of power factor at the required
+    AC frequencies and, upon finding values around 0.8, redirected development focus
+    to DC heating, which offers simpler electronics and more efficient electricity-to-heat
+    conversion.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: industrial renewables
+  source_pages:
+  - 3
+  - 4
+  evidence_excerpt: High frequency AC current (~10,000 Hz) is required for a sufficiently
+    strong skin effect to provide the heating effect necessary in the selected heating
+    material. However, we found that at the necessary frequencies, power factor dropped
+    to unacceptably low values (around 0.8), and thus we decided to focus primarily
+    on the DC heating method, which offers benefits in terms of less complexity, simpler
+    electronics and more efficient electricity-to-heat conversion.
+  confidence_note: issue_severity set to moderate as the pivot redirected a meaningful
+    portion of the project's technical scope, though it was identified and corrected
+    early via modelling before hardware commitment. Canonical record merged from 2
+    source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/low-cost-integration-of-on-site-pv-for-large-scale-industrial-heat-supply-public-dissemination-report/
+  project_page_url: https://arena.gov.au/projects/low-cost-integration-of-on-site-solar-photovoltaic-pv-for-large-scale-industrial-heat-supply/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 19/08/2024
+  kb_year: '2022'
+  kb_associated_project: Low-Cost Integration of On-Site Solar PV for Large-Scale
+    Industrial Heat Supply
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $2.35m
+  total_project_value: $7.01m
+  lead_organisation: 'The Australian National University (ANU) '
+  arena_program: Ultra Low Cost Solar PV Research and Development Round
+  project_status: Current
+  project_start_date: 02/12/2022
+  location: Australian Capital Territory, Canberra
+  project_partners: Royal Melbourne Institute of Technology (RMIT), FMG Procurement
+    Services, Visy Industries Australia,  Graphite Energy
+  pdf_url: https://arena.gov.au/assets/2024/08/ANU-PV-for-Large-Scale-Industrial-Heat-Public-Dissemination-Report.pdf
+  markdown_filename: low_cost_integration_of_on_site_pv_for_large_scale_industrial_heat_supply_public_dissemination_repor.md
+  source_page_pdf: 3
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-30951
+  - ARENA-DLV-57101
+  contributing_source_titles:
+  - ANU, Low-cost integration of on-site PV for large-scale industrial heat supply
+    - R&D Conclusion report
+  - Low-cost integration of on-site PV for Large-scale Industrial Heat Supply - Public
+    Dissemination Report
+  contributing_sources:
+  - source_title: ANU, Low-cost integration of on-site PV for large-scale industrial
+      heat supply - R&D Conclusion report
+    pdf_url: https://arena.gov.au/assets/2025/06/ANU-Low-cost-integration-of-on-site-PV-for-large-scale-industrial-heat-supply-RD-conclusion-report.pdf
+    source_pages:
+    - 4
+    source_url: https://arena.gov.au/knowledge-bank/anu-low-cost-integration-of-on-site-pv-for-large-scale-industrial-heat-supply-rd-conclusion-report/
+    markdown_filename: anu_low_cost_integration_of_on_site_pv_for_large_scale_industrial_heat_supply_rd_conclusion_report.md
+  - source_title: Low-cost integration of on-site PV for Large-scale Industrial Heat
+      Supply - Public Dissemination Report
+    pdf_url: https://arena.gov.au/assets/2024/08/ANU-PV-for-Large-Scale-Industrial-Heat-Public-Dissemination-Report.pdf
+    source_pages:
+    - 3
+    source_url: https://arena.gov.au/knowledge-bank/low-cost-integration-of-on-site-pv-for-large-scale-industrial-heat-supply-public-dissemination-report/
+    markdown_filename: low_cost_integration_of_on_site_pv_for_large_scale_industrial_heat_supply_public_dissemination_repor.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-30952
+  source_title: ANU, Low-cost integration of on-site PV for large-scale industrial
+    heat supply - R&D Conclusion report
+  publish_date: 2025-05
+  project_name: Low-Cost Integration of On-Site Solar PV for Large-Scale Industrial
+    Heat Supply
+  what_happened: Modelling of fixed-load maximum power point tracking (MPPT) showed
+    a capacity factor 0.0273 lower than ideal MPPT, with larger losses at lower-irradiance
+    locations (Melbourne vs Newman), meaning a fixed-resistance load results in meaningful
+    energy harvest losses under real operating conditions.
+  lesson_learnt: For inverter-free PV-DEH systems, a switchable modular resistor configuration
+    (3×3 grid minimum) is needed to achieve capacity factors close to ideal MPPT —
+    fixed-resistance designs lose disproportionately more energy at lower-irradiance
+    sites and should not be assumed adequate without location-specific modelling.
+  issue_severity: minor
+  project_type: industrial decarbonisation
+  project_scale_band: pilot
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Adopted a switchable parallel resistor configuration (N1×N2 grid);
+    simulations showed a 3×3 configuration is generally sufficient to achieve a good
+    capacity factor across both low- and high-irradiance locations.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id001
+  - 5
+  - 6
+  evidence_excerpt: Using a fixed load resistance, the capacity factor is 0.0273 lower
+    than the MPPT case... it is found that in the variable load scenarios, a 3 × 3
+    configuration is generally sufficient to achieve a good capacity factor.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/anu-low-cost-integration-of-on-site-pv-for-large-scale-industrial-heat-supply-rd-conclusion-report/
+  project_page_url: https://arena.gov.au/projects/low-cost-integration-of-on-site-solar-photovoltaic-pv-for-large-scale-industrial-heat-supply/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 10/06/2025
+  kb_year: '2022'
+  kb_associated_project: Low-Cost Integration of On-Site Solar PV for Large-Scale
+    Industrial Heat Supply
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $2.35m
+  total_project_value: $7.01m
+  lead_organisation: 'The Australian National University (ANU) '
+  arena_program: Ultra Low Cost Solar PV Research and Development Round
+  project_status: Current
+  project_start_date: 02/12/2022
+  location: Australian Capital Territory, Canberra
+  project_partners: Royal Melbourne Institute of Technology (RMIT), FMG Procurement
+    Services, Visy Industries Australia,  Graphite Energy
+  pdf_url: https://arena.gov.au/assets/2025/06/ANU-Low-cost-integration-of-on-site-PV-for-large-scale-industrial-heat-supply-RD-conclusion-report.pdf
+  markdown_filename: anu_low_cost_integration_of_on_site_pv_for_large_scale_industrial_heat_supply_rd_conclusion_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-30952
+  contributing_source_titles:
+  - ANU, Low-cost integration of on-site PV for large-scale industrial heat supply
+    - R&D Conclusion report
+  contributing_sources:
+  - source_title: ANU, Low-cost integration of on-site PV for large-scale industrial
+      heat supply - R&D Conclusion report
+    pdf_url: https://arena.gov.au/assets/2025/06/ANU-Low-cost-integration-of-on-site-PV-for-large-scale-industrial-heat-supply-RD-conclusion-report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/anu-low-cost-integration-of-on-site-pv-for-large-scale-industrial-heat-supply-rd-conclusion-report/
+    markdown_filename: anu_low_cost_integration_of_on_site_pv_for_large_scale_industrial_heat_supply_rd_conclusion_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-30953
+  source_title: ANU, Low-cost integration of on-site PV for large-scale industrial
+    heat supply - R&D Conclusion report
+  publish_date: 2025-05
+  project_name: Low-Cost Integration of On-Site Solar PV for Large-Scale Industrial
+    Heat Supply
+  what_happened: During packed-bed thermal energy storage cell design, initial modelling
+    showed that a single perforated plate was insufficient to achieve uniform flow
+    distribution at higher flow rates, with significant non-uniformities in velocity
+    profile that would compromise heat transfer measurement accuracy.
+  lesson_learnt: When designing packed-bed thermal storage test cells, use two consecutive
+    perforated plates rather than one — numerical simulations showed a single plate
+    produces significant velocity non-uniformity at higher flow rates, which adversely
+    impacts heat transfer measurement accuracy.
+  issue_severity: minor
+  project_type: industrial decarbonisation
+  project_scale_band: pilot
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Two consecutive perforated plates were adopted in the final cell
+    design, significantly improving flow uniformity and enabling accurate thermal
+    performance evaluation.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: industrial renewables
+  source_pages: &id002
+  - 8
+  evidence_excerpt: It became evident that a single perforated plate was insufficient
+    to achieve a uniform flow distribution, particularly at higher flow rates. The
+    simulations revealed significant non-uniformities in the velocity profile... two
+    consecutive perforated plates significantly improved flow uniformity.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/anu-low-cost-integration-of-on-site-pv-for-large-scale-industrial-heat-supply-rd-conclusion-report/
+  project_page_url: https://arena.gov.au/projects/low-cost-integration-of-on-site-solar-photovoltaic-pv-for-large-scale-industrial-heat-supply/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 10/06/2025
+  kb_year: '2022'
+  kb_associated_project: Low-Cost Integration of On-Site Solar PV for Large-Scale
+    Industrial Heat Supply
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $2.35m
+  total_project_value: $7.01m
+  lead_organisation: 'The Australian National University (ANU) '
+  arena_program: Ultra Low Cost Solar PV Research and Development Round
+  project_status: Current
+  project_start_date: 02/12/2022
+  location: Australian Capital Territory, Canberra
+  project_partners: Royal Melbourne Institute of Technology (RMIT), FMG Procurement
+    Services, Visy Industries Australia,  Graphite Energy
+  pdf_url: https://arena.gov.au/assets/2025/06/ANU-Low-cost-integration-of-on-site-PV-for-large-scale-industrial-heat-supply-RD-conclusion-report.pdf
+  markdown_filename: anu_low_cost_integration_of_on_site_pv_for_large_scale_industrial_heat_supply_rd_conclusion_report.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-30953
+  contributing_source_titles:
+  - ANU, Low-cost integration of on-site PV for large-scale industrial heat supply
+    - R&D Conclusion report
+  contributing_sources:
+  - source_title: ANU, Low-cost integration of on-site PV for large-scale industrial
+      heat supply - R&D Conclusion report
+    pdf_url: https://arena.gov.au/assets/2025/06/ANU-Low-cost-integration-of-on-site-PV-for-large-scale-industrial-heat-supply-RD-conclusion-report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/anu-low-cost-integration-of-on-site-pv-for-large-scale-industrial-heat-supply-rd-conclusion-report/
+    markdown_filename: anu_low_cost_integration_of_on_site_pv_for_large_scale_industrial_heat_supply_rd_conclusion_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-30954
+  source_title: ANU, Low-cost integration of on-site PV for large-scale industrial
+    heat supply - R&D Conclusion report
+  publish_date: 2025-05
+  project_name: Low-Cost Integration of On-Site Solar PV for Large-Scale Industrial
+    Heat Supply
+  what_happened: Experimental comparison of measured and simulated pressure drop and
+    heat transfer coefficients revealed discrepancies of up to 58.6% in pressure drop
+    at higher flow rates, attributed to steady-state simulation assumptions, measurement
+    uncertainty, and moisture in the air supply.
+  lesson_learnt: When validating packed-bed thermal storage designs through CFD, anticipate
+    significant divergence (potentially >50%) in pressure drop predictions at higher
+    flow rates due to steady-state assumptions and real-world air moisture — experimental
+    validation under representative conditions is essential before scaling up.
+  issue_severity: minor
+  project_type: industrial decarbonisation
+  project_scale_band: pilot
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: Discrepancies were attributed to specific identified causes (steady-state
+    assumptions, moisture, measurement uncertainty); further experimental and numerical
+    refinement is planned.
+  transferability: narrow
+  delay_magnitude: not quantified
+  technology_domain: industrial renewables
+  source_pages: &id003
+  - 10
+  evidence_excerpt: The comparison demonstrates a reasonable level of consistency
+    between the numerical and experimental data. The observed discrepancies can be
+    attributed to factors such as the assumption of steady-state conditions in the
+    simulation, measurement uncertainties in temperature and pressure readings, and
+    variations in experimental conditions, including the presence of moisture in the
+    air.
+  confidence_note: The 58.6% pressure drop error at 9.2 g/s is from Table 2 on page
+    11/13.
+  source_url: https://arena.gov.au/knowledge-bank/anu-low-cost-integration-of-on-site-pv-for-large-scale-industrial-heat-supply-rd-conclusion-report/
+  project_page_url: https://arena.gov.au/projects/low-cost-integration-of-on-site-solar-photovoltaic-pv-for-large-scale-industrial-heat-supply/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 10/06/2025
+  kb_year: '2022'
+  kb_associated_project: Low-Cost Integration of On-Site Solar PV for Large-Scale
+    Industrial Heat Supply
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $2.35m
+  total_project_value: $7.01m
+  lead_organisation: 'The Australian National University (ANU) '
+  arena_program: Ultra Low Cost Solar PV Research and Development Round
+  project_status: Current
+  project_start_date: 02/12/2022
+  location: Australian Capital Territory, Canberra
+  project_partners: Royal Melbourne Institute of Technology (RMIT), FMG Procurement
+    Services, Visy Industries Australia,  Graphite Energy
+  pdf_url: https://arena.gov.au/assets/2025/06/ANU-Low-cost-integration-of-on-site-PV-for-large-scale-industrial-heat-supply-RD-conclusion-report.pdf
+  markdown_filename: anu_low_cost_integration_of_on_site_pv_for_large_scale_industrial_heat_supply_rd_conclusion_report.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-30954
+  contributing_source_titles:
+  - ANU, Low-cost integration of on-site PV for large-scale industrial heat supply
+    - R&D Conclusion report
+  contributing_sources:
+  - source_title: ANU, Low-cost integration of on-site PV for large-scale industrial
+      heat supply - R&D Conclusion report
+    pdf_url: https://arena.gov.au/assets/2025/06/ANU-Low-cost-integration-of-on-site-PV-for-large-scale-industrial-heat-supply-RD-conclusion-report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/anu-low-cost-integration-of-on-site-pv-for-large-scale-industrial-heat-supply-rd-conclusion-report/
+    markdown_filename: anu_low_cost_integration_of_on_site_pv_for_large_scale_industrial_heat_supply_rd_conclusion_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-30955
+  source_title: ANU, Low-cost integration of on-site PV for large-scale industrial
+    heat supply - R&D Conclusion report
+  publish_date: 2025-05
+  project_name: Low-Cost Integration of On-Site Solar PV for Large-Scale Industrial
+    Heat Supply
+  what_happened: Publicly available Australian industrial energy data lacked sufficient
+    detail to identify what fraction of each site's energy consumption relates specifically
+    to process heat, forcing the project to rely on US EPA GHGRP benchmarks to estimate
+    heat-to-emissions ratios for Australian industrial sites.
+  lesson_learnt: Projects seeking to quantify Australian industrial process heat demand
+    should not rely solely on National Pollutant Inventory or Safeguard Mechanism
+    data — these sources lack end-use breakdowns, and researchers will need to use
+    US-derived benchmarks as a proxy or pursue direct engagement with industry to
+    obtain actual site data.
+  issue_severity: moderate
+  project_type: industrial decarbonisation
+  project_scale_band: pilot
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Used US EPA GHGRP facility-level data to derive heat-to-emissions
+    ratios as a proxy for Australian industrial process heat demand, while flagging
+    that these estimates will not accurately represent actual Australian heat use.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: industrial renewables
+  source_pages: &id004
+  - 17
+  evidence_excerpt: Unfortunately, neither of the two main Australian data sources
+    introduced earlier (the NPI and the Safeguard Mechanism) have publicly available
+    data with sufficient detail to identify what fraction of each site's energy consumption
+    or emission relate specifically to process heat... privacy constraints and commercial
+    confidentiality prevent these datasets from being released publicly.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/anu-low-cost-integration-of-on-site-pv-for-large-scale-industrial-heat-supply-rd-conclusion-report/
+  project_page_url: https://arena.gov.au/projects/low-cost-integration-of-on-site-solar-photovoltaic-pv-for-large-scale-industrial-heat-supply/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 10/06/2025
+  kb_year: '2022'
+  kb_associated_project: Low-Cost Integration of On-Site Solar PV for Large-Scale
+    Industrial Heat Supply
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $2.35m
+  total_project_value: $7.01m
+  lead_organisation: 'The Australian National University (ANU) '
+  arena_program: Ultra Low Cost Solar PV Research and Development Round
+  project_status: Current
+  project_start_date: 02/12/2022
+  location: Australian Capital Territory, Canberra
+  project_partners: Royal Melbourne Institute of Technology (RMIT), FMG Procurement
+    Services, Visy Industries Australia,  Graphite Energy
+  pdf_url: https://arena.gov.au/assets/2025/06/ANU-Low-cost-integration-of-on-site-PV-for-large-scale-industrial-heat-supply-RD-conclusion-report.pdf
+  markdown_filename: anu_low_cost_integration_of_on_site_pv_for_large_scale_industrial_heat_supply_rd_conclusion_report.md
+  source_page_pdf: 17
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-30955
+  contributing_source_titles:
+  - ANU, Low-cost integration of on-site PV for large-scale industrial heat supply
+    - R&D Conclusion report
+  contributing_sources:
+  - source_title: ANU, Low-cost integration of on-site PV for large-scale industrial
+      heat supply - R&D Conclusion report
+    pdf_url: https://arena.gov.au/assets/2025/06/ANU-Low-cost-integration-of-on-site-PV-for-large-scale-industrial-heat-supply-RD-conclusion-report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/anu-low-cost-integration-of-on-site-pv-for-large-scale-industrial-heat-supply-rd-conclusion-report/
+    markdown_filename: anu_low_cost_integration_of_on_site_pv_for_large_scale_industrial_heat_supply_rd_conclusion_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-30956
+  source_title: ANU, Low-cost integration of on-site PV for large-scale industrial
+    heat supply - R&D Conclusion report
+  publish_date: 2025-05
+  project_name: Low-Cost Integration of On-Site Solar PV for Large-Scale Industrial
+    Heat Supply
+  what_happened: The GIS-based Atlas relied on OpenStreetMap (OSM) for identifying
+    rooftop and carpark areas, but OSM was found to incompletely capture available
+    land, with the OSM-based lower-bound estimate yielding a median onsite PV supply-demand
+    ratio below 1% — substantially underestimating actual feasible potential compared
+    to manual satellite image assessment.
+  lesson_learnt: Industrial decarbonisation mapping tools that rely on Safeguard Mechanism
+    emissions data will systematically underrepresent the opportunity for small and
+    mid-sized businesses — project scoping should anticipate this data gap and include
+    direct industry engagement or alternative demand estimation methods to avoid skewing
+    conclusions toward large emitters.
+  issue_severity: moderate
+  project_type: industrial decarbonisation
+  project_scale_band: pilot
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Manual satellite imagery assessment was conducted for a subset
+    of 20 sites, yielding a practical midpoint of approximately 34% of the upper-bound
+    potential — substantially higher than the OSM lower bound.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages:
+  - 16
+  - 18
+  - 19
+  - 20
+  - 21
+  evidence_excerpt: The lower-bound scenario produces substantially lower results,
+    with a median ratio below 1 percent and almost no facilities reaching above 25
+    percent. This shows that relying solely on OSM-identified rooftops and parking
+    areas may greatly underestimate the real feasible footprint, especially when OSM
+    omits or misclassifies certain sections of industrial parcels.
+  confidence_note: Canonical record merged from 3 source records across 1 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/anu-low-cost-integration-of-on-site-pv-for-large-scale-industrial-heat-supply-rd-conclusion-report/
+  project_page_url: https://arena.gov.au/projects/low-cost-integration-of-on-site-solar-photovoltaic-pv-for-large-scale-industrial-heat-supply/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 10/06/2025
+  kb_year: '2022'
+  kb_associated_project: Low-Cost Integration of On-Site Solar PV for Large-Scale
+    Industrial Heat Supply
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $2.35m
+  total_project_value: $7.01m
+  lead_organisation: 'The Australian National University (ANU) '
+  arena_program: Ultra Low Cost Solar PV Research and Development Round
+  project_status: Current
+  project_start_date: 02/12/2022
+  location: Australian Capital Territory, Canberra
+  project_partners: Royal Melbourne Institute of Technology (RMIT), FMG Procurement
+    Services, Visy Industries Australia,  Graphite Energy
+  pdf_url: https://arena.gov.au/assets/2025/06/ANU-Low-cost-integration-of-on-site-PV-for-large-scale-industrial-heat-supply-RD-conclusion-report.pdf
+  markdown_filename: anu_low_cost_integration_of_on_site_pv_for_large_scale_industrial_heat_supply_rd_conclusion_report.md
+  source_page_pdf: 20
+  corroboration_count: 3
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-30956
+  - ARENA-DLV-30959
+  - ARENA-DLV-30961
+  contributing_source_titles:
+  - ANU, Low-cost integration of on-site PV for large-scale industrial heat supply
+    - R&D Conclusion report
+  contributing_sources:
+  - source_title: ANU, Low-cost integration of on-site PV for large-scale industrial
+      heat supply - R&D Conclusion report
+    pdf_url: https://arena.gov.au/assets/2025/06/ANU-Low-cost-integration-of-on-site-PV-for-large-scale-industrial-heat-supply-RD-conclusion-report.pdf
+    source_pages:
+    - 18
+    - 19
+    source_url: https://arena.gov.au/knowledge-bank/anu-low-cost-integration-of-on-site-pv-for-large-scale-industrial-heat-supply-rd-conclusion-report/
+    markdown_filename: anu_low_cost_integration_of_on_site_pv_for_large_scale_industrial_heat_supply_rd_conclusion_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-30957
+  source_title: ANU, Low-cost integration of on-site PV for large-scale industrial
+    heat supply - R&D Conclusion report
+  publish_date: 2025-05
+  project_name: Low-Cost Integration of On-Site Solar PV for Large-Scale Industrial
+    Heat Supply
+  what_happened: Technoeconomic analysis (TEA) case studies with Visy and Fortescue
+    were still in progress and results were confidential at the time of the conclusion
+    report, limiting the publicly available evidence base on levelised cost of heat
+    and system integration challenges for PV-DEH.
+  lesson_learnt: For R&D projects with commercial industry partners, plan for commercial
+    confidentiality constraints to delay or restrict public release of technoeconomic
+    findings — build separate public-release deliverable milestones into project agreements
+    to ensure findings reach the wider knowledge base.
+  issue_severity: minor
+  project_type: industrial decarbonisation
+  project_scale_band: pilot
+  lifecycle_phase: close-out/post-project review
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: coordination & stakeholders
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The project committed to a public release version of TEA case
+    studies to be made available at the end of Year 3 of the project.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: industrial renewables
+  source_pages: &id005
+  - 21
+  evidence_excerpt: Results from this modelling are confidential at this stage, however
+    during Year 3 these case studies will be further developed and a public release
+    version made available at the end of the project.
+  confidence_note: failure_mode classified as governance/coordination failure due
+    to the commercial confidentiality constraint preventing knowledge dissemination,
+    rather than a technical issue.
+  source_url: https://arena.gov.au/knowledge-bank/anu-low-cost-integration-of-on-site-pv-for-large-scale-industrial-heat-supply-rd-conclusion-report/
+  project_page_url: https://arena.gov.au/projects/low-cost-integration-of-on-site-solar-photovoltaic-pv-for-large-scale-industrial-heat-supply/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 10/06/2025
+  kb_year: '2022'
+  kb_associated_project: Low-Cost Integration of On-Site Solar PV for Large-Scale
+    Industrial Heat Supply
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $2.35m
+  total_project_value: $7.01m
+  lead_organisation: 'The Australian National University (ANU) '
+  arena_program: Ultra Low Cost Solar PV Research and Development Round
+  project_status: Current
+  project_start_date: 02/12/2022
+  location: Australian Capital Territory, Canberra
+  project_partners: Royal Melbourne Institute of Technology (RMIT), FMG Procurement
+    Services, Visy Industries Australia,  Graphite Energy
+  pdf_url: https://arena.gov.au/assets/2025/06/ANU-Low-cost-integration-of-on-site-PV-for-large-scale-industrial-heat-supply-RD-conclusion-report.pdf
+  markdown_filename: anu_low_cost_integration_of_on_site_pv_for_large_scale_industrial_heat_supply_rd_conclusion_report.md
+  source_page_pdf: 21
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-30957
+  contributing_source_titles:
+  - ANU, Low-cost integration of on-site PV for large-scale industrial heat supply
+    - R&D Conclusion report
+  contributing_sources:
+  - source_title: ANU, Low-cost integration of on-site PV for large-scale industrial
+      heat supply - R&D Conclusion report
+    pdf_url: https://arena.gov.au/assets/2025/06/ANU-Low-cost-integration-of-on-site-PV-for-large-scale-industrial-heat-supply-RD-conclusion-report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/anu-low-cost-integration-of-on-site-pv-for-large-scale-industrial-heat-supply-rd-conclusion-report/
+    markdown_filename: anu_low_cost_integration_of_on_site_pv_for_large_scale_industrial_heat_supply_rd_conclusion_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-30958
+  source_title: ANU, Low-cost integration of on-site PV for large-scale industrial
+    heat supply - R&D Conclusion report
+  publish_date: 2025-05
+  project_name: Low-Cost Integration of On-Site Solar PV for Large-Scale Industrial
+    Heat Supply
+  what_happened: Journal publications were delayed throughout the project due to disclosure
+    constraints, with key technical outputs not yet public and publications limited
+    to two conference presentations by the conclusion report date.
+  lesson_learnt: R&D projects involving novel technology with commercialisation potential
+    should establish a clear IP disclosure and publication release timeline at project
+    inception — disclosure constraints that emerge during the project can significantly
+    delay knowledge dissemination and limit the public value of ARENA-funded research
+    outputs.
+  issue_severity: minor
+  project_type: industrial decarbonisation
+  project_scale_band: pilot
+  lifecycle_phase: close-out/post-project review
+  proponent_type: research organisation/university
+  delay_category: internal governance/resourcing
+  failure_mode: coordination & stakeholders
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Several journal papers were drafted and ready for submission
+    pending lifting of disclosure constraints; conference presentations were used
+    as an interim dissemination pathway.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: industrial renewables
+  source_pages: &id006
+  - 21
+  evidence_excerpt: Key technical details of the outputs from the project are yet
+    to be made public, and thus journal publications and conference presentations
+    are so far limited... Several journal papers are drafted and ready for submission
+    once disclosure constraints are lifted.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/anu-low-cost-integration-of-on-site-pv-for-large-scale-industrial-heat-supply-rd-conclusion-report/
+  project_page_url: https://arena.gov.au/projects/low-cost-integration-of-on-site-solar-photovoltaic-pv-for-large-scale-industrial-heat-supply/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 10/06/2025
+  kb_year: '2022'
+  kb_associated_project: Low-Cost Integration of On-Site Solar PV for Large-Scale
+    Industrial Heat Supply
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $2.35m
+  total_project_value: $7.01m
+  lead_organisation: 'The Australian National University (ANU) '
+  arena_program: Ultra Low Cost Solar PV Research and Development Round
+  project_status: Current
+  project_start_date: 02/12/2022
+  location: Australian Capital Territory, Canberra
+  project_partners: Royal Melbourne Institute of Technology (RMIT), FMG Procurement
+    Services, Visy Industries Australia,  Graphite Energy
+  pdf_url: https://arena.gov.au/assets/2025/06/ANU-Low-cost-integration-of-on-site-PV-for-large-scale-industrial-heat-supply-RD-conclusion-report.pdf
+  markdown_filename: anu_low_cost_integration_of_on_site_pv_for_large_scale_industrial_heat_supply_rd_conclusion_report.md
+  source_page_pdf: 21
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-30958
+  contributing_source_titles:
+  - ANU, Low-cost integration of on-site PV for large-scale industrial heat supply
+    - R&D Conclusion report
+  contributing_sources:
+  - source_title: ANU, Low-cost integration of on-site PV for large-scale industrial
+      heat supply - R&D Conclusion report
+    pdf_url: https://arena.gov.au/assets/2025/06/ANU-Low-cost-integration-of-on-site-PV-for-large-scale-industrial-heat-supply-RD-conclusion-report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/anu-low-cost-integration-of-on-site-pv-for-large-scale-industrial-heat-supply-rd-conclusion-report/
+    markdown_filename: anu_low_cost_integration_of_on_site_pv_for_large_scale_industrial_heat_supply_rd_conclusion_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-30960
+  source_title: ANU, Low-cost integration of on-site PV for large-scale industrial
+    heat supply - R&D Conclusion report
+  publish_date: 2025-05
+  project_name: Low-Cost Integration of On-Site Solar PV for Large-Scale Industrial
+    Heat Supply
+  what_happened: The project developed a non-isolated multiphase interleaved synchronous
+    buck DC-DC converter that eliminates inverters, isolation transformers, and multi-stage
+    AC-DC conversion, demonstrating that conventional dual-stage PV power conversion
+    architecture is unnecessary for resistive industrial heating loads.
+  lesson_learnt: Industrial PV heating projects targeting resistive loads should evaluate
+    inverter-free DC-DC converter architectures before defaulting to conventional
+    AC inverter-based designs — eliminating the DC-AC conversion stage reduces system
+    cost, complexity, and losses while resistive heating elements are inherently compatible
+    with DC excitation.
+  issue_severity: none
+  project_type: industrial decarbonisation
+  project_scale_band: pilot
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: industrial renewables
+  source_pages: &id007
+  - 11
+  - 12
+  evidence_excerpt: The proposed system directly employs a non-isolated multiphase
+    interleaved synchronous buck DC-DC converter to interface with the direct heating
+    elements, which are inherently resistive loads and naturally suited for DC operation...
+    This not only lowers the initial cost of the system but also reduces maintenance
+    requirements.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/anu-low-cost-integration-of-on-site-pv-for-large-scale-industrial-heat-supply-rd-conclusion-report/
+  project_page_url: https://arena.gov.au/projects/low-cost-integration-of-on-site-solar-photovoltaic-pv-for-large-scale-industrial-heat-supply/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 10/06/2025
+  kb_year: '2022'
+  kb_associated_project: Low-Cost Integration of On-Site Solar PV for Large-Scale
+    Industrial Heat Supply
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $2.35m
+  total_project_value: $7.01m
+  lead_organisation: 'The Australian National University (ANU) '
+  arena_program: Ultra Low Cost Solar PV Research and Development Round
+  project_status: Current
+  project_start_date: 02/12/2022
+  location: Australian Capital Territory, Canberra
+  project_partners: Royal Melbourne Institute of Technology (RMIT), FMG Procurement
+    Services, Visy Industries Australia,  Graphite Energy
+  pdf_url: https://arena.gov.au/assets/2025/06/ANU-Low-cost-integration-of-on-site-PV-for-large-scale-industrial-heat-supply-RD-conclusion-report.pdf
+  markdown_filename: anu_low_cost_integration_of_on_site_pv_for_large_scale_industrial_heat_supply_rd_conclusion_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-30960
+  contributing_source_titles:
+  - ANU, Low-cost integration of on-site PV for large-scale industrial heat supply
+    - R&D Conclusion report
+  contributing_sources:
+  - source_title: ANU, Low-cost integration of on-site PV for large-scale industrial
+      heat supply - R&D Conclusion report
+    pdf_url: https://arena.gov.au/assets/2025/06/ANU-Low-cost-integration-of-on-site-PV-for-large-scale-industrial-heat-supply-RD-conclusion-report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/anu-low-cost-integration-of-on-site-pv-for-large-scale-industrial-heat-supply-rd-conclusion-report/
+    markdown_filename: anu_low_cost_integration_of_on_site_pv_for_large_scale_industrial_heat_supply_rd_conclusion_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-57102
+  source_title: Low-cost integration of on-site PV for Large-scale Industrial Heat
+    Supply - Public Dissemination Report
+  publish_date: 2024-02
+  project_name: Low-Cost Integration of On-Site Solar PV for Large-Scale Industrial
+    Heat Supply
+  what_happened: Technoeconomic analysis of a 100 MW PV-DEH plant demonstrated that
+    the modularised DC direct electrical heating approach can achieve balance-of-system
+    (BOS) cost savings of approximately 25% compared to conventional grid-connected
+    PV systems supplying industrial heat, by eliminating multi-stage converters, transformers,
+    and transmission lines.
+  lesson_learnt: For industrial heat applications above 150°C, behind-the-meter PV
+    with direct DC electrical heating can reduce balance-of-system costs by approximately
+    25% relative to conventional PV integration — project developers should consider
+    PV-DEH architecture as a cost-competitive pathway when evaluating industrial decarbonisation
+    options.
+  issue_severity: none
+  project_type: industrial decarbonisation
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: industrial renewables
+  source_pages: &id008
+  - 4
+  evidence_excerpt: Technoeconomic analysis has indicated BOS cost savings for this
+    PV-DEH heating system in the order of 25% are achievable relative to a reference
+    case.
+  confidence_note: outcome_class set to successful demonstration as this is a modelling/analysis
+    result at lab/bench scale, not a physical demonstration; transferability moderate
+    as the finding applies to industrial heat contexts but requires site-specific
+    validation.
+  source_url: https://arena.gov.au/knowledge-bank/low-cost-integration-of-on-site-pv-for-large-scale-industrial-heat-supply-public-dissemination-report/
+  project_page_url: https://arena.gov.au/projects/low-cost-integration-of-on-site-solar-photovoltaic-pv-for-large-scale-industrial-heat-supply/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 19/08/2024
+  kb_year: '2022'
+  kb_associated_project: Low-Cost Integration of On-Site Solar PV for Large-Scale
+    Industrial Heat Supply
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $2.35m
+  total_project_value: $7.01m
+  lead_organisation: 'The Australian National University (ANU) '
+  arena_program: Ultra Low Cost Solar PV Research and Development Round
+  project_status: Current
+  project_start_date: 02/12/2022
+  location: Australian Capital Territory, Canberra
+  project_partners: Royal Melbourne Institute of Technology (RMIT), FMG Procurement
+    Services, Visy Industries Australia,  Graphite Energy
+  pdf_url: https://arena.gov.au/assets/2024/08/ANU-PV-for-Large-Scale-Industrial-Heat-Public-Dissemination-Report.pdf
+  markdown_filename: low_cost_integration_of_on_site_pv_for_large_scale_industrial_heat_supply_public_dissemination_repor.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-57102
+  contributing_source_titles:
+  - Low-cost integration of on-site PV for Large-scale Industrial Heat Supply - Public
+    Dissemination Report
+  contributing_sources:
+  - source_title: Low-cost integration of on-site PV for Large-scale Industrial Heat
+      Supply - Public Dissemination Report
+    pdf_url: https://arena.gov.au/assets/2024/08/ANU-PV-for-Large-Scale-Industrial-Heat-Public-Dissemination-Report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/low-cost-integration-of-on-site-pv-for-large-scale-industrial-heat-supply-public-dissemination-report/
+    markdown_filename: low_cost_integration_of_on_site_pv_for_large_scale_industrial_heat_supply_public_dissemination_repor.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-57103
+  source_title: Low-cost integration of on-site PV for Large-scale Industrial Heat
+    Supply - Public Dissemination Report
+  publish_date: 2024-02
+  project_name: Low-Cost Integration of On-Site Solar PV for Large-Scale Industrial
+    Heat Supply
+  what_happened: GIS market opportunity analysis across 64 large Australian industrial
+    heat consumers found that, on average, 3.2 GW of PV generation capacity in the
+    lowest-cost category is available within a 5 km radius of each site, indicating
+    strong proximity between industrial heat demand and low-cost PV supply potential.
+  lesson_learnt: GIS-based market mapping that co-locates industrial heat demand with
+    nearby PV resource and land availability is a viable and scalable method for identifying
+    priority deployment sites for industrial PV heat supply; project developers and
+    policymakers should use such tools early in project development to identify the
+    most cost-effective locations for PV-DEH investment.
+  issue_severity: none
+  project_type: industrial decarbonisation
+  project_scale_band: lab/bench
+  lifecycle_phase: concept/feasibility
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: industrial renewables
+  source_pages: &id009
+  - 7
+  evidence_excerpt: Preliminary results from 64 large industrial users of heat across
+    Australia indicate that on average there is 3.2 GW PV generation capacity in the
+    lowest-cost category within a radius of 5km of the site, which is a positive finding
+    in terms of market opportunity for the PV-DEH technology.
+  confidence_note: 'outcome_class adjusted to knowledge generated despite setback
+    as the project is still in early research phase and findings are preliminary;
+    project_scale_band set to programmatic/portfolio-level because the GIS analysis
+    spans 64 sites nationally rather than a single project.; project_scale_band reconciled
+    to ''lab/bench'' from: lab/bench (2/3), programmatic/portfolio-level (1/3)'
+  source_url: https://arena.gov.au/knowledge-bank/low-cost-integration-of-on-site-pv-for-large-scale-industrial-heat-supply-public-dissemination-report/
+  project_page_url: https://arena.gov.au/projects/low-cost-integration-of-on-site-solar-photovoltaic-pv-for-large-scale-industrial-heat-supply/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 19/08/2024
+  kb_year: '2022'
+  kb_associated_project: Low-Cost Integration of On-Site Solar PV for Large-Scale
+    Industrial Heat Supply
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $2.35m
+  total_project_value: $7.01m
+  lead_organisation: 'The Australian National University (ANU) '
+  arena_program: Ultra Low Cost Solar PV Research and Development Round
+  project_status: Current
+  project_start_date: 02/12/2022
+  location: Australian Capital Territory, Canberra
+  project_partners: Royal Melbourne Institute of Technology (RMIT), FMG Procurement
+    Services, Visy Industries Australia,  Graphite Energy
+  pdf_url: https://arena.gov.au/assets/2024/08/ANU-PV-for-Large-Scale-Industrial-Heat-Public-Dissemination-Report.pdf
+  markdown_filename: low_cost_integration_of_on_site_pv_for_large_scale_industrial_heat_supply_public_dissemination_repor.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-57103
+  contributing_source_titles:
+  - Low-cost integration of on-site PV for Large-scale Industrial Heat Supply - Public
+    Dissemination Report
+  contributing_sources:
+  - source_title: Low-cost integration of on-site PV for Large-scale Industrial Heat
+      Supply - Public Dissemination Report
+    pdf_url: https://arena.gov.au/assets/2024/08/ANU-PV-for-Large-Scale-Industrial-Heat-Public-Dissemination-Report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/low-cost-integration-of-on-site-pv-for-large-scale-industrial-heat-supply-public-dissemination-report/
+    markdown_filename: low_cost_integration_of_on_site_pv_for_large_scale_industrial_heat_supply_public_dissemination_repor.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false

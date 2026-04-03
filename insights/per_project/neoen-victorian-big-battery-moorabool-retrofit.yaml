@@ -1,0 +1,1067 @@
+- record_id: ARENA-DLV-31051
+  source_title: Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt Report
+    1
+  publish_date: 2024-11
+  project_name: Victorian Big Battery (Moorabool) Retrofit
+  what_happened: When retrofitting Grid Forming Mode (GFM) capability to the VBB,
+    the protection and arc-flash settings required comprehensive revision because
+    GFM inverters continue contributing fault current after the network is disconnected
+    — unlike grid-following inverters — increasing incident energy from arc faults.
+    Hardware changes including a hard-wired inter-trip scheme were required, contrary
+    to the original project assumption that no new hardware or physical changes would
+    be needed.
+  lesson_learnt: Design BESS with GFM inverters from the outset rather than retrofitting;
+    when retrofitting is unavoidable, study the fault contribution and arc-flash implications
+    before finalising the protection scheme — GFM's sustained fault contribution will
+    require relay settings, time delays, over-current configuration, and potentially
+    new inter-trip hardware to be redesigned, especially at legacy sites with established
+    protection systems.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: construction/installation
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: A hard-wired inter-trip scheme was incorporated into the protection
+    circuit to cease inverter operation when a protection element operates in the
+    33kV relays; relay pickup values, time delays, and over-current settings were
+    all reviewed and optimised for GFM; arc flash protection upgrade design was approved
+    by AEMO and installation works commenced.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 6
+  - 7
+  - 11
+  - 13
+  - 14
+  evidence_excerpt: When the project was initially put forward, it was intended that
+    no new hardware or physical changes would be required, however in order to manage
+    faults and arc flash risks, this will not be achievable... the fault contribution
+    from these inverters does not necessarily stop when the network is disconnected
+    (as was the situation with grid following inverters).
+  confidence_note: Canonical record merged from 3 source records across 3 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-moorabool-retrofit-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/neoen-victorian-big-battery-moorabool/
+  kb_category: Battery storage
+  kb_publish_date: 14/01/2025
+  kb_year: '2023'
+  kb_associated_project: Neoen Victorian Big Battery (Moorabool) Retrofit
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.72m
+  total_project_value: $5.9m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2023
+  location: Moorabool, Victoria
+  project_partners: 'Tesla Motors Australia, Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/01/Neoen-–-Victorian-Big-Battery-Moorabool-Retrofit-–-Lessons-Learnt-Report-1.pdf
+  markdown_filename: neoen_victorian_big_battery_moorabool_retrofit_lessons_learnt_report_1.md
+  source_page_pdf: 7
+  corroboration_count: 3
+  source_doc_count: 3
+  contributing_record_ids:
+  - ARENA-DLV-31051
+  - ARENA-DLV-48706
+  - ARENA-DLV-67004
+  contributing_source_titles:
+  - Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt Report 1
+  - Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt Report 2
+  - Neoen - Victorian Big Battery - Lessons Learnt 3
+  contributing_sources:
+  - source_title: Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt
+      Report 1
+    pdf_url: https://arena.gov.au/assets/2025/01/Neoen-–-Victorian-Big-Battery-Moorabool-Retrofit-–-Lessons-Learnt-Report-1.pdf
+    source_pages:
+    - 6
+    - 7
+    source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-moorabool-retrofit-lessons-learnt-report-1/
+    markdown_filename: neoen_victorian_big_battery_moorabool_retrofit_lessons_learnt_report_1.md
+  - source_title: Neoen - Victorian Big Battery - Lessons Learnt 3
+    pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Victorian-Big-Battery-Lessons-Learnt-3.pdf
+    source_pages:
+    - 13
+    - 14
+    source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-lessons-learnt-3/
+    markdown_filename: neoen_victorian_big_battery_lessons_learnt_3.md
+  - source_title: Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/02/Neoen-–-Victorian-Big-Battery-Moorabool-Retrofit-–-Lessons-Learnt-Report-2.pdf
+    source_pages:
+    - 11
+    source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-moorabool-retrofit-lessons-learnt-report-2/
+    markdown_filename: neoen_victorian_big_battery_moorabool_retrofit_lessons_learnt_report_2.md
+  arena_category:
+  - Battery storage
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-67005
+  source_title: Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt Report
+    2
+  publish_date: 2024-12
+  project_name: Victorian Big Battery (VBB) GFM Retrofit
+  what_happened: During modelling studies for the 5.3.9 GFM transition, the NSP determined
+    that VBB's legacy controller firmware could not deliver the required reactive
+    current (Iq) injection at the connection point in GFM mode without causing a prohibited
+    drop in active power. This arose because NER performance is now measured at the
+    connection point (not inverter terminals) and the high impedance between VBB's
+    500V inverter terminals and the connection point required a higher k-factor than
+    the legacy platform could support. Tesla delivered a bespoke, once-off firmware
+    and controller model update — the only instance of this change across all Tesla
+    sites — causing unforeseen delays to the 5.3.9 process.
+  lesson_learnt: When planning a GFM retrofit on legacy BESS hardware, verify early
+    whether the existing controller firmware can meet current NER reactive current
+    injection requirements measured at the connection point — a gap here can force
+    bespoke, resource-intensive OEM firmware development on an end-of-life platform,
+    causing significant delays and cost. Do not assume that performance achieved at
+    the inverter terminals will translate to compliance at the connection point.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: grid connection/system studies
+  failure_mode: unvalidated technical assumptions
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated integration
+  intervention_note: Tesla delivered a once-off update to the in-situ VBB controller
+    model and is developing a corresponding one-off firmware update for the legacy
+    platform, while Neoen is also engaging with NSP and AEMO to seek leniency to avoid
+    requiring full legacy firmware upgrades.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 7
+  - 8
+  - 9
+  - 12
+  - 13
+  - 14
+  - 15
+  evidence_excerpt: To improve the performance, Tesla delivered a once-off update
+    to the in-situ VBB controller model (which will not be applied to any other sites),
+    and which has caused an unforeseen delay in completing the 5.3.9 process. However,
+    this bespoke model update needs to be reflected in the on-site controller by a
+    corresponding one-off update to the controller firmware. Developing updated firmware
+    on this legacy platform (no longer supported) will cause significant delays and
+    will require substantial resources (capital and personnel) of the Original Equipment
+    Manufacturer (OEM).
+  confidence_note: Delay magnitude not quantified in document; severity rated major
+    given bespoke OEM firmware development on an obsolete platform with ongoing AEMO
+    review. Canonical record merged from 3 source records across 3 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-moorabool-retrofit-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/neoen-victorian-big-battery-moorabool/
+  kb_category: Battery storage
+  kb_publish_date: 4/02/2025
+  kb_year: '2023'
+  kb_associated_project: Neoen Victorian Big Battery (Moorabool) Retrofit
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.72m
+  total_project_value: $5.9m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2023
+  location: Moorabool, Victoria
+  project_partners: 'Tesla Motors Australia, Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/02/Neoen-–-Victorian-Big-Battery-Moorabool-Retrofit-–-Lessons-Learnt-Report-2.pdf
+  markdown_filename: neoen_victorian_big_battery_moorabool_retrofit_lessons_learnt_report_2.md
+  source_page_pdf: 12
+  corroboration_count: 3
+  source_doc_count: 3
+  contributing_record_ids:
+  - ARENA-DLV-31052
+  - ARENA-DLV-48707
+  - ARENA-DLV-67005
+  contributing_source_titles:
+  - Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt Report 1
+  - Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt Report 2
+  - Neoen - Victorian Big Battery - Lessons Learnt 3
+  contributing_sources:
+  - source_title: Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt
+      Report 1
+    pdf_url: https://arena.gov.au/assets/2025/01/Neoen-–-Victorian-Big-Battery-Moorabool-Retrofit-–-Lessons-Learnt-Report-1.pdf
+    source_pages:
+    - 7
+    - 8
+    - 9
+    source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-moorabool-retrofit-lessons-learnt-report-1/
+    markdown_filename: neoen_victorian_big_battery_moorabool_retrofit_lessons_learnt_report_1.md
+  - source_title: Neoen - Victorian Big Battery - Lessons Learnt 3
+    pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Victorian-Big-Battery-Lessons-Learnt-3.pdf
+    source_pages:
+    - 14
+    - 15
+    source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-lessons-learnt-3/
+    markdown_filename: neoen_victorian_big_battery_lessons_learnt_3.md
+  - source_title: Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/02/Neoen-–-Victorian-Big-Battery-Moorabool-Retrofit-–-Lessons-Learnt-Report-2.pdf
+    source_pages:
+    - 12
+    - 13
+    source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-moorabool-retrofit-lessons-learnt-report-2/
+    markdown_filename: neoen_victorian_big_battery_moorabool_retrofit_lessons_learnt_report_2.md
+  arena_category:
+  - Battery storage
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-48708
+  source_title: Neoen - Victorian Big Battery - Lessons Learnt 3
+  publish_date: 2025-06
+  project_name: Victorian Big Battery
+  what_happened: During the first iterative review of VBB's 5.3.9 application package,
+    the NSP requested a new full grid study incorporating additional network scenarios
+    not agreed at the outset — specifically two additional committed generators and
+    additional charge/discharge scenarios. This rework caused delays to the 5.3.9
+    process, compounded by difficulties in obtaining the additional required data
+    (RUGs) and by the original modelling team having moved on to other projects.
+  lesson_learnt: When preparing a 5.3.9 grid connection application, build explicit
+    contingency for additional modelling scenarios being requested mid-process — the
+    rapid rollout of new generators during Australia's energy transition means the
+    network may have changed materially since the original application package was
+    assembled. Maintain dedicated modelling resource availability through to NSP/AEMO
+    final approval, not just initial submission.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: grid connection/system studies
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: The additional studies and modelling were completed and accepted
+    and approved by AEMO; Neoen identified the need for contingency resourcing in
+    future projects to avoid key personnel moving on before supplementary modelling
+    requests are resolved.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 9
+  - 10
+  - 13
+  - 15
+  evidence_excerpt: The NSP requested a new full grid study and modelling incorporating
+    additional network scenarios that were not part of the scope of work agreed upon
+    early in the engagement... These additional studies have resulted in re-work and
+    a delay in the 5.3.9 process. This delay has been exacerbated by the specified
+    process for requesting and obtaining data... and key resourcing constraints with
+    the team responsible for carrying out the additional modelling (as these resources
+    had moved onto other scheduled projects).
+  confidence_note: Canonical record merged from 3 source records across 3 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-lessons-learnt-3/
+  project_page_url: https://arena.gov.au/projects/neoen-victorian-big-battery-moorabool/
+  kb_category: Battery storage
+  kb_publish_date: 14/01/2026
+  kb_year: '2023'
+  kb_associated_project: Neoen Victorian Big Battery (Moorabool) Retrofit
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.72m
+  total_project_value: $5.9m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2023
+  location: Moorabool, Victoria
+  project_partners: 'Tesla Motors Australia, Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Victorian-Big-Battery-Lessons-Learnt-3.pdf
+  markdown_filename: neoen_victorian_big_battery_lessons_learnt_3.md
+  source_page_pdf: 15
+  corroboration_count: 3
+  source_doc_count: 3
+  contributing_record_ids:
+  - ARENA-DLV-31053
+  - ARENA-DLV-48708
+  - ARENA-DLV-67006
+  contributing_source_titles:
+  - Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt Report 1
+  - Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt Report 2
+  - Neoen - Victorian Big Battery - Lessons Learnt 3
+  contributing_sources:
+  - source_title: Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt
+      Report 1
+    pdf_url: https://arena.gov.au/assets/2025/01/Neoen-–-Victorian-Big-Battery-Moorabool-Retrofit-–-Lessons-Learnt-Report-1.pdf
+    source_pages:
+    - 9
+    - 10
+    source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-moorabool-retrofit-lessons-learnt-report-1/
+    markdown_filename: neoen_victorian_big_battery_moorabool_retrofit_lessons_learnt_report_1.md
+  - source_title: Neoen - Victorian Big Battery - Lessons Learnt 3
+    pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Victorian-Big-Battery-Lessons-Learnt-3.pdf
+    source_pages:
+    - 15
+    source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-lessons-learnt-3/
+    markdown_filename: neoen_victorian_big_battery_lessons_learnt_3.md
+  - source_title: Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/02/Neoen-–-Victorian-Big-Battery-Moorabool-Retrofit-–-Lessons-Learnt-Report-2.pdf
+    source_pages:
+    - 13
+    source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-moorabool-retrofit-lessons-learnt-report-2/
+    markdown_filename: neoen_victorian_big_battery_moorabool_retrofit_lessons_learnt_report_2.md
+  arena_category:
+  - Battery storage
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-67007
+  source_title: Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt Report
+    2
+  publish_date: 2024-12
+  project_name: Victorian Big Battery (VBB) GFM Retrofit
+  what_happened: Enabling GFM at VBB required frequency control to be moved from individual
+    inverters to the site Power Plant Controller (PPC), necessitating installation
+    of two new SEL735 meters inside AusNet's Moorabool Terminal Station. The original
+    project scope had assumed no new hardware would be required. Additionally, running
+    both old and new metering systems in parallel during hold-point testing created
+    competition for existing communication paths between the terminal station and
+    the VBB site, introducing further integration complexity.
+  lesson_learnt: When scoping a GFM retrofit on a legacy site, do not assume the control
+    system architecture can remain unchanged — the transition of frequency control
+    to a site controller typically requires new metering infrastructure in the NSP's
+    terminal station, and the communications and SCADA implications of running parallel
+    metering systems during phased commissioning must be engineered in advance rather
+    than discovered during installation.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: commissioning/integration
+  proponent_type: project developer
+  delay_category: commissioning/integration
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated integration
+  intervention_note: Neoen engaged AusNet to install temporary ethernet switches at
+    the terminal station to allow all four relays to operate simultaneously during
+    testing; Tesla investigated operating in grid-following mode via the new SEL735
+    meter to reduce changeover disruption. A work order for new meter installation
+    was received.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 10
+  - 11
+  - 13
+  - 14
+  - 16
+  evidence_excerpt: When the project was initially put forward, it was intended that
+    no new hardware or physical changes would be required, however this has not materialised
+    as planned... there is a need to move the frequency control away from the individual
+    inverters, and into the site controller... This requires the installation of two
+    new SEL735 meters inside Ausnet's Moorabool Terminal Station.
+  confidence_note: Canonical record merged from 3 source records across 3 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-moorabool-retrofit-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/neoen-victorian-big-battery-moorabool/
+  kb_category: Battery storage
+  kb_publish_date: 4/02/2025
+  kb_year: '2023'
+  kb_associated_project: Neoen Victorian Big Battery (Moorabool) Retrofit
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.72m
+  total_project_value: $5.9m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2023
+  location: Moorabool, Victoria
+  project_partners: 'Tesla Motors Australia, Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/02/Neoen-–-Victorian-Big-Battery-Moorabool-Retrofit-–-Lessons-Learnt-Report-2.pdf
+  markdown_filename: neoen_victorian_big_battery_moorabool_retrofit_lessons_learnt_report_2.md
+  source_page_pdf: 11
+  corroboration_count: 3
+  source_doc_count: 3
+  contributing_record_ids:
+  - ARENA-DLV-31054
+  - ARENA-DLV-48709
+  - ARENA-DLV-67007
+  contributing_source_titles:
+  - Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt Report 1
+  - Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt Report 2
+  - Neoen - Victorian Big Battery - Lessons Learnt 3
+  contributing_sources:
+  - source_title: Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt
+      Report 1
+    pdf_url: https://arena.gov.au/assets/2025/01/Neoen-–-Victorian-Big-Battery-Moorabool-Retrofit-–-Lessons-Learnt-Report-1.pdf
+    source_pages:
+    - 10
+    - 11
+    source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-moorabool-retrofit-lessons-learnt-report-1/
+    markdown_filename: neoen_victorian_big_battery_moorabool_retrofit_lessons_learnt_report_1.md
+  - source_title: Neoen - Victorian Big Battery - Lessons Learnt 3
+    pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Victorian-Big-Battery-Lessons-Learnt-3.pdf
+    source_pages:
+    - 16
+    source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-lessons-learnt-3/
+    markdown_filename: neoen_victorian_big_battery_lessons_learnt_3.md
+  - source_title: Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/02/Neoen-–-Victorian-Big-Battery-Moorabool-Retrofit-–-Lessons-Learnt-Report-2.pdf
+    source_pages:
+    - 13
+    - 14
+    source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-moorabool-retrofit-lessons-learnt-report-2/
+    markdown_filename: neoen_victorian_big_battery_moorabool_retrofit_lessons_learnt_report_2.md
+  arena_category:
+  - Battery storage
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-67008
+  source_title: Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt Report
+    2
+  publish_date: 2024-12
+  project_name: Victorian Big Battery (VBB) GFM Retrofit
+  what_happened: The VBB 5.3.9 GPS submission proposed removing the reactive current
+    settling time requirement on the basis that GFM inverter output behaves like a
+    synchronous machine. However, the NER currently classifies VBB as an asynchronous
+    generating system and specifies a reactive current settling time of no greater
+    than 70ms. In November 2024, AEMO notified that settling time requirements must
+    meet NER version 198 since the parameter is being altered from the original GPS,
+    creating unresolved compliance tension with Tesla's legacy GFM models.
+  lesson_learnt: When retrofitting GFM capability, proponents must account for the
+    regulatory gap where the NER has no GPS framework recognising the synchronous-machine-like
+    behaviour of GFM inverters — the 70ms reactive current settling time for asynchronous
+    systems will be imposed even though GFM inverters inherently cannot meet it at
+    the connection point. Engage AEMO early to seek a regulatory pathway that recognises
+    GFM-specific performance characteristics before finalising the 5.3.9 submission.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: As of December 2024 AEMO had issued an updated Issues Tracker
+    requiring NER v198 compliance; Neoen and Tesla were continuing to work through
+    the implication for legacy firmware, with resolution expected in the lead-up to
+    the 5.3.10 letter.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 11
+  - 12
+  - 14
+  - 15
+  - 17
+  evidence_excerpt: NER specifies a reactive current settling time 'of no greater
+    than 70 milliseconds' for asynchronous generating systems, which was applicable
+    for VBB inverters in grid-following mode. However, with the GFM added, the fault
+    response of the VBB should not be strictly classified under 'asynchronous' generating
+    unit, since the behaviour is similar to a synchronous machine although the hardware
+    is asynchronous. Presently, there is no such section in the NER or provisions
+    in the GPS to recognise this category.
+  confidence_note: Canonical record merged from 3 source records across 3 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-moorabool-retrofit-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/neoen-victorian-big-battery-moorabool/
+  kb_category: Battery storage
+  kb_publish_date: 4/02/2025
+  kb_year: '2023'
+  kb_associated_project: Neoen Victorian Big Battery (Moorabool) Retrofit
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.72m
+  total_project_value: $5.9m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2023
+  location: Moorabool, Victoria
+  project_partners: 'Tesla Motors Australia, Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/02/Neoen-–-Victorian-Big-Battery-Moorabool-Retrofit-–-Lessons-Learnt-Report-2.pdf
+  markdown_filename: neoen_victorian_big_battery_moorabool_retrofit_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 3
+  source_doc_count: 3
+  contributing_record_ids:
+  - ARENA-DLV-31055
+  - ARENA-DLV-48710
+  - ARENA-DLV-67008
+  contributing_source_titles:
+  - Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt Report 1
+  - Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt Report 2
+  - Neoen - Victorian Big Battery - Lessons Learnt 3
+  contributing_sources:
+  - source_title: Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt
+      Report 1
+    pdf_url: https://arena.gov.au/assets/2025/01/Neoen-–-Victorian-Big-Battery-Moorabool-Retrofit-–-Lessons-Learnt-Report-1.pdf
+    source_pages:
+    - 11
+    - 12
+    source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-moorabool-retrofit-lessons-learnt-report-1/
+    markdown_filename: neoen_victorian_big_battery_moorabool_retrofit_lessons_learnt_report_1.md
+  - source_title: Neoen - Victorian Big Battery - Lessons Learnt 3
+    pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Victorian-Big-Battery-Lessons-Learnt-3.pdf
+    source_pages:
+    - 17
+    source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-lessons-learnt-3/
+    markdown_filename: neoen_victorian_big_battery_lessons_learnt_3.md
+  - source_title: Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/02/Neoen-–-Victorian-Big-Battery-Moorabool-Retrofit-–-Lessons-Learnt-Report-2.pdf
+    source_pages:
+    - 14
+    - 15
+    source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-moorabool-retrofit-lessons-learnt-report-2/
+    markdown_filename: neoen_victorian_big_battery_moorabool_retrofit_lessons_learnt_report_2.md
+  arena_category:
+  - Battery storage
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: integration failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-48701
+  source_title: Neoen - Victorian Big Battery - Lessons Learnt 3
+  publish_date: 2025-06
+  project_name: Victorian Big Battery
+  what_happened: When retrofitting Grid Forming Mode (GFM) capabilities onto VBB's
+    legacy Tesla Megapack platform, Tesla's OEM resources were increasingly allocated
+    to newer products and larger projects, resulting in minor delays to the firmware
+    upgrade works for VBB's legacy product. Standard incentive structures for advancing
+    legacy products were insufficient to align OEM resourcing priorities with the
+    project's needs.
+  lesson_learnt: When planning upgrades to legacy battery storage sites, ensure sufficient
+    budget scope and incentive structures are in place to secure OEM resourcing —
+    account for competing demands on the OEM from newer products and larger projects,
+    and engage early to understand resourcing constraints before commencing the upgrade
+    program.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: commissioning/integration
+  proponent_type: project developer
+  delay_category: procurement/supply chain
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: execution & logistics
+  intervention_note: ARENA funding enabled Tesla to allocate internal resources towards
+    enhancing the legacy product; ongoing partnership and support from ARENA provided
+    the incentive structure needed to maintain OEM commitment.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id001
+  - 7
+  - 8
+  evidence_excerpt: Whilst this shift in prioritisation has introduced some minor
+    delays in the upgrade works for the VBB legacy product, it also reflects the dynamic
+    landscape in which adaptions and improvements are being actively pursued.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-lessons-learnt-3/
+  project_page_url: https://arena.gov.au/projects/neoen-victorian-big-battery-moorabool/
+  kb_category: Battery storage
+  kb_publish_date: 14/01/2026
+  kb_year: '2023'
+  kb_associated_project: Neoen Victorian Big Battery (Moorabool) Retrofit
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.72m
+  total_project_value: $5.9m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2023
+  location: Moorabool, Victoria
+  project_partners: 'Tesla Motors Australia, Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Victorian-Big-Battery-Lessons-Learnt-3.pdf
+  markdown_filename: neoen_victorian_big_battery_lessons_learnt_3.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48701
+  contributing_source_titles:
+  - Neoen - Victorian Big Battery - Lessons Learnt 3
+  contributing_sources:
+  - source_title: Neoen - Victorian Big Battery - Lessons Learnt 3
+    pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Victorian-Big-Battery-Lessons-Learnt-3.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-lessons-learnt-3/
+    markdown_filename: neoen_victorian_big_battery_lessons_learnt_3.md
+  arena_category:
+  - Battery storage
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-48702
+  source_title: Neoen - Victorian Big Battery - Lessons Learnt 3
+  publish_date: 2025-06
+  project_name: Victorian Big Battery
+  what_happened: AEMO required VBB to complete power system modelling in both PSSE
+    version 35 and the newly released version 37 during the GFM upgrade process. This
+    dual-version requirement was not anticipated in the initial project planning,
+    necessitating development of new models by Tesla and resulting in unanticipated
+    time, resource demand, delays to project milestones, and increased operational
+    costs.
+  lesson_learnt: During grid connection upgrade processes, proactively engage with
+    AEMO at the planning stage to identify any current or anticipated modelling software
+    version transition requirements — budget contingency for dual-framework modelling
+    obligations, which can arise unexpectedly during PSSE version transitions and
+    impose significant rework and schedule impact.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: grid connection/system studies
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: Tesla was required to build new models for VBB in PSSE v37; Neoen
+    committed to incorporating contingencies and robust risk management strategies
+    for regulatory compliance requirements in future projects.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id002
+  - 9
+  - 10
+  evidence_excerpt: The VBB project encountered significant challenges due to the
+    requirement from the Australian Energy Market Operator (AEMO) to complete modelling
+    in both PSSE version 35 and the newly released version 37. This stipulation necessitated
+    the development of new models by Tesla, resulting in unanticipated time and resource
+    allocation that had not been factored into the initial project planning.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-lessons-learnt-3/
+  project_page_url: https://arena.gov.au/projects/neoen-victorian-big-battery-moorabool/
+  kb_category: Battery storage
+  kb_publish_date: 14/01/2026
+  kb_year: '2023'
+  kb_associated_project: Neoen Victorian Big Battery (Moorabool) Retrofit
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.72m
+  total_project_value: $5.9m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2023
+  location: Moorabool, Victoria
+  project_partners: 'Tesla Motors Australia, Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Victorian-Big-Battery-Lessons-Learnt-3.pdf
+  markdown_filename: neoen_victorian_big_battery_lessons_learnt_3.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48702
+  contributing_source_titles:
+  - Neoen - Victorian Big Battery - Lessons Learnt 3
+  contributing_sources:
+  - source_title: Neoen - Victorian Big Battery - Lessons Learnt 3
+    pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Victorian-Big-Battery-Lessons-Learnt-3.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-lessons-learnt-3/
+    markdown_filename: neoen_victorian_big_battery_lessons_learnt_3.md
+  arena_category:
+  - Battery storage
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-48703
+  source_title: Neoen - Victorian Big Battery - Lessons Learnt 3
+  publish_date: 2025-06
+  project_name: Victorian Big Battery
+  what_happened: To minimise modelling variables and project timeline during the GFM
+    5.3.9 transition, VBB adopted inertia settings derived from Hornsdale Power Reserve
+    (HPR) rather than deriving site-specific optimal settings. These settings may
+    not be optimal for VBB's different grid connection point, as they were a compromise
+    between maximising inertia and minimising power recovery and reactive settling
+    times at HPR's connection point.
+  lesson_learnt: Do not transfer inertia settings from one GFM site to another without
+    undertaking site-specific wide area studies — settings optimised for one connection
+    point may not be optimal elsewhere. Future GFM projects should engage AEMO/NSP
+    and the inverter OEM to model a wide range of inertia parameters in a wide area
+    study to determine the most suitable site-specific settings.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: data & measurement
+  intervention_note: Adopted HPR settings as a pragmatic compromise given the strong
+    connection point at Moorabool Terminal Station; flagged the need for wide area
+    PSCAD analysis by AEMO/NSP for future projects.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 7
+  - 8
+  - 11
+  evidence_excerpt: It was decided prior to commencement of the project, that in the
+    interest of reducing the number of modelling variables required to review and
+    given the similarities between HPR and VBB, the initial studies on the plant would
+    simply use the final inertia settings for GFM deployed at HPR. The downside with
+    this approach is that the parameters may not be optimal for a different grid connection
+    point.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-lessons-learnt-3/
+  project_page_url: https://arena.gov.au/projects/neoen-victorian-big-battery-moorabool/
+  kb_category: Battery storage
+  kb_publish_date: 14/01/2026
+  kb_year: '2023'
+  kb_associated_project: Neoen Victorian Big Battery (Moorabool) Retrofit
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.72m
+  total_project_value: $5.9m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2023
+  location: Moorabool, Victoria
+  project_partners: 'Tesla Motors Australia, Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Victorian-Big-Battery-Lessons-Learnt-3.pdf
+  markdown_filename: neoen_victorian_big_battery_lessons_learnt_3.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-48703
+  - ARENA-DLV-67001
+  contributing_source_titles:
+  - Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt Report 2
+  - Neoen - Victorian Big Battery - Lessons Learnt 3
+  contributing_sources:
+  - source_title: Neoen - Victorian Big Battery - Lessons Learnt 3
+    pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Victorian-Big-Battery-Lessons-Learnt-3.pdf
+    source_pages:
+    - 11
+    source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-lessons-learnt-3/
+    markdown_filename: neoen_victorian_big_battery_lessons_learnt_3.md
+  - source_title: Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/02/Neoen-–-Victorian-Big-Battery-Moorabool-Retrofit-–-Lessons-Learnt-Report-2.pdf
+    source_pages:
+    - 7
+    - 8
+    source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-moorabool-retrofit-lessons-learnt-report-2/
+    markdown_filename: neoen_victorian_big_battery_moorabool_retrofit_lessons_learnt_report_2.md
+  arena_category:
+  - Battery storage
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-48704
+  source_title: Neoen - Victorian Big Battery - Lessons Learnt 3
+  publish_date: 2025-06
+  project_name: Victorian Big Battery
+  what_happened: VBB's Tesla inverters demonstrated stable GFM operation only down
+    to a Short Circuit Ratio (SCR) of 1.5, falling short of the theoretical expectation
+    that GFM inverters should operate at SCR of zero (fully islanded). AEMO's voluntary
+    GFM specification implies the inverter should maintain stable operation during
+    very weak grid conditions including after disconnection of the last synchronous
+    generator, which the current hardware cannot fully meet.
+  lesson_learnt: Before committing to GFM specifications and regulatory performance
+    standards, require the inverter OEM to provide tested documentation confirming
+    stable operation at very low SCR levels — ideally at SCR equal to zero — as this
+    is becoming an increasingly critical requirement for GFM inverters and the gap
+    between theoretical capability and demonstrated performance can create compliance
+    risk.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: commissioning/integration
+  proponent_type: project developer
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Inverter performance at SCR of 1.5 was verified through modelling
+    as part of the 5.3.9 process and was approved with receipt of the 5.3.10 letter;
+    GPS for VBB is likely to prohibit operation during islanding events.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 8
+  - 9
+  - 12
+  evidence_excerpt: The VBB OEM indicated that their inverters have demonstrated stable
+    operation down to an SCR of 1.5. While this is generally considered a weak SCR
+    level, it is not an SCR of zero and thus may be outside the anticipated performance
+    described in the voluntary specification.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-lessons-learnt-3/
+  project_page_url: https://arena.gov.au/projects/neoen-victorian-big-battery-moorabool/
+  kb_category: Battery storage
+  kb_publish_date: 14/01/2026
+  kb_year: '2023'
+  kb_associated_project: Neoen Victorian Big Battery (Moorabool) Retrofit
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.72m
+  total_project_value: $5.9m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2023
+  location: Moorabool, Victoria
+  project_partners: 'Tesla Motors Australia, Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Victorian-Big-Battery-Lessons-Learnt-3.pdf
+  markdown_filename: neoen_victorian_big_battery_lessons_learnt_3.md
+  source_page_pdf: 12
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-48704
+  - ARENA-DLV-67002
+  contributing_source_titles:
+  - Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt Report 2
+  - Neoen - Victorian Big Battery - Lessons Learnt 3
+  contributing_sources:
+  - source_title: Neoen - Victorian Big Battery - Lessons Learnt 3
+    pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Victorian-Big-Battery-Lessons-Learnt-3.pdf
+    source_pages:
+    - 12
+    source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-lessons-learnt-3/
+    markdown_filename: neoen_victorian_big_battery_lessons_learnt_3.md
+  - source_title: Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/02/Neoen-–-Victorian-Big-Battery-Moorabool-Retrofit-–-Lessons-Learnt-Report-2.pdf
+    source_pages:
+    - 8
+    - 9
+    source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-moorabool-retrofit-lessons-learnt-report-2/
+    markdown_filename: neoen_victorian_big_battery_moorabool_retrofit_lessons_learnt_report_2.md
+  arena_category:
+  - Battery storage
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-67003
+  source_title: Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt Report
+    2
+  publish_date: 2024-12
+  project_name: Victorian Big Battery (VBB) GFM Retrofit
+  what_happened: When VBB submitted its 5.3.9 application to upgrade to GFM, the plant's
+    capabilities were assessed against the current NER version (v.203) rather than
+    the version (v.155) under which VBB was originally commissioned in 2021. The updated
+    NER requires performance measurement at the connection point rather than inverter
+    terminals, creating new technical compliance obligations for metering and control
+    loops not anticipated during original design, with potential impacts on FCAS performance.
+  lesson_learnt: Before proceeding with a 5.3.9 GFM upgrade on a legacy BESS, conduct
+    a preliminary gap analysis comparing the current NER version against the version
+    under which the original GPS was certified — if significant gaps exist, fully
+    cost the remediation before committing to the upgrade, as unexpected compliance
+    obligations can drive substantial rework and cost.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: Neoen identified the gap and is now undertaking metering and
+    control loop changes to achieve compliance; full impact on FCAS performance still
+    under review as of December 2024.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 9
+  - 10
+  - 12
+  - 13
+  evidence_excerpt: The 5.3.9 process has resulted in certain capabilities of the
+    VBB plant being assessed against the latest updated version of the NER at the
+    time that the 5.3.9 application was made (v.203), rather than the version applied
+    to the original Generator Performance Standard (GPS) (v.155)... The evaluation
+    of the BESS against the new NER terms introduces risk for legacy facilities who
+    may seek to upgrade to GFM capabilities.
+  confidence_note: Issue severity rated major because the NER version mismatch triggered
+    hardware, metering and firmware changes not scoped at project outset. Canonical
+    record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-moorabool-retrofit-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/neoen-victorian-big-battery-moorabool/
+  kb_category: Battery storage
+  kb_publish_date: 4/02/2025
+  kb_year: '2023'
+  kb_associated_project: Neoen Victorian Big Battery (Moorabool) Retrofit
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.72m
+  total_project_value: $5.9m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2023
+  location: Moorabool, Victoria
+  project_partners: 'Tesla Motors Australia, Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/02/Neoen-–-Victorian-Big-Battery-Moorabool-Retrofit-–-Lessons-Learnt-Report-2.pdf
+  markdown_filename: neoen_victorian_big_battery_moorabool_retrofit_lessons_learnt_report_2.md
+  source_page_pdf: 9
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-48705
+  - ARENA-DLV-67003
+  contributing_source_titles:
+  - Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt Report 2
+  - Neoen - Victorian Big Battery - Lessons Learnt 3
+  contributing_sources:
+  - source_title: Neoen - Victorian Big Battery - Lessons Learnt 3
+    pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Victorian-Big-Battery-Lessons-Learnt-3.pdf
+    source_pages:
+    - 12
+    - 13
+    source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-lessons-learnt-3/
+    markdown_filename: neoen_victorian_big_battery_lessons_learnt_3.md
+  - source_title: Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/02/Neoen-–-Victorian-Big-Battery-Moorabool-Retrofit-–-Lessons-Learnt-Report-2.pdf
+    source_pages:
+    - 9
+    - 10
+    source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-moorabool-retrofit-lessons-learnt-report-2/
+    markdown_filename: neoen_victorian_big_battery_moorabool_retrofit_lessons_learnt_report_2.md
+  arena_category:
+  - Battery storage
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-67009
+  source_title: Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt Report
+    2
+  publish_date: 2024-12
+  project_name: Victorian Big Battery (VBB) GFM Retrofit
+  what_happened: The VBB GFM retrofit project, originally scoped with assumptions
+    of minimal hardware changes and straightforward regulatory transition, encountered
+    multiple compounding issues during the 5.3.9 approval process — including bespoke
+    firmware requirements, new metering hardware, arc flash protection upgrades, and
+    NER version mismatches — reflecting a systemic pattern in which legacy BESS sites
+    face disproportionate remediation burden when seeking to add GFM capabilities
+    under evolved regulatory frameworks.
+  lesson_learnt: Industry and regulators should recognise that legacy BESS assets
+    face a structural disadvantage when upgrading to GFM under evolved NER frameworks
+    — the cumulative risk of hardware shortcomings, firmware obsolescence, and NER
+    version gaps may deter owners from upgrading to provide grid-supporting services.
+    ARENA, AEMO and NSPs should consider developing dedicated GFM retrofit pathways
+    that reduce unnecessary compliance burden on legacy assets with otherwise sound
+    performance.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id003
+  - 16
+  evidence_excerpt: Legacy sites pose a problem in that as regulations and expectations
+    evolve with newer projects in the National Electricity Market (NEM), legacy hardware
+    and site design may struggle to comply. This can manifest itself as a hardware
+    shortcoming that are not unearthed until detailed investigation into product capabilities
+    are required from the OEM, for capability that was not considered in the initial
+    scoping phase of a project due to different design requirements for the product.
+  confidence_note: This record captures the cross-cutting systemic observation stated
+    in the Conclusion section. Severity rated major because the combination of issues
+    is explicitly characterised as a systemic deterrent to legacy upgrades.
+  source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-moorabool-retrofit-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/neoen-victorian-big-battery-moorabool/
+  kb_category: Battery storage
+  kb_publish_date: 4/02/2025
+  kb_year: '2023'
+  kb_associated_project: Neoen Victorian Big Battery (Moorabool) Retrofit
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.72m
+  total_project_value: $5.9m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2023
+  location: Moorabool, Victoria
+  project_partners: 'Tesla Motors Australia, Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/02/Neoen-–-Victorian-Big-Battery-Moorabool-Retrofit-–-Lessons-Learnt-Report-2.pdf
+  markdown_filename: neoen_victorian_big_battery_moorabool_retrofit_lessons_learnt_report_2.md
+  source_page_pdf: 16
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67009
+  contributing_source_titles:
+  - Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: Neoen Victorian Big Battery (Moorabool) Retrofit Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/02/Neoen-–-Victorian-Big-Battery-Moorabool-Retrofit-–-Lessons-Learnt-Report-2.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/neoen-victorian-big-battery-moorabool-retrofit-lessons-learnt-report-2/
+    markdown_filename: neoen_victorian_big_battery_moorabool_retrofit_lessons_learnt_report_2.md
+  arena_category:
+  - Battery storage
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.82

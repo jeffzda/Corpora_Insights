@@ -1,0 +1,1819 @@
+- record_id: ARENA-DLV-42351
+  source_title: Voltage Controlled Frequency Regulation System – Final Report
+  publish_date: '2020-11-24'
+  project_name: Voltage Controlled Frequency Regulation System (VCFRS)
+  what_happened: The initial SCADA–NAP interface used the OSI PI protocol, which introduced
+    a baseline lag of approximately 12 seconds between the SCADA and NAP applications,
+    rising to over 30 seconds during periods of high data traffic. This latency was
+    incompatible with the 5-minute response time required for delayed contingency
+    FCAS delivery.
+  lesson_learnt: When designing a distributed demand-response FCAS system, specify
+    the inter-application communications protocol (e.g. ICCP over OSI PI) at the outset
+    — OSI PI introduced lags of 12–30+ seconds that threatened the core 5-minute response
+    requirement and required a mid-project protocol replacement.
+  issue_severity: major
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Replaced the OSI PI interface with an ICCP two-way link between
+    SCADA and NAP, reducing round-trip latency and enabling the 5-minute FCAS response
+    time requirement to be met.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: demand response
+  source_pages:
+  - 8
+  - 40
+  - 41
+  - 42
+  evidence_excerpt: Initially control changes and network configurations were loaded
+    into the NAP application from the SCADA application via the OSI PI interface.
+    The lag between the SCADA and NAP applications was around 12 seconds. However,
+    at times of high data traffic this increased to in excess of 30 seconds. Therefore,
+    the decision was made to change from OSI PI to ICCP as the interface to receive
+    network updates from the SCADA application.
+  confidence_note: Canonical record merged from 2 source records across 1 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+  project_page_url: https://arena.gov.au/projects/united-energy-voltage-controlled-frequency-regulation-system/
+  kb_category: System security and reliability
+  kb_publish_date: 29/11/2020
+  kb_year: '2019'
+  kb_associated_project: United Energy Voltage Controlled Frequency Regulation System
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $900k
+  total_project_value: $1.4m
+  lead_organisation: United Energy Distribution Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 31/05/2019
+  location: Victoria
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+  markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  source_page_pdf: 8
+  corroboration_count: 2
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42351
+  - ARENA-DLV-42352
+  contributing_source_titles:
+  - Voltage Controlled Frequency Regulation System – Final Report
+  contributing_sources:
+  - source_title: Voltage Controlled Frequency Regulation System – Final Report
+    pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+    source_pages:
+    - 8
+    - 40
+    - 41
+    source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+    markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-42353
+  source_title: Voltage Controlled Frequency Regulation System – Final Report
+  publish_date: '2020-11-24'
+  project_name: Voltage Controlled Frequency Regulation System (VCFRS)
+  what_happened: When large quantities of data were transferred via ICCP after the
+    protocol cutover, the NAP application took longer than 3 minutes to process the
+    data, threatening the 5-minute FCAS dispatch window.
+  lesson_learnt: After migrating to a new inter-application protocol, validate bulk-data
+    processing performance under realistic load conditions — ICCP bulk transfers caused
+    NAP processing times exceeding 3 minutes, requiring a configuration change (transaction
+    limit reduced from 500 to 50) as an interim fix pending a permanent database performance
+    review.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: execution & logistics
+  intervention_note: Changed the DbActionTransactionLimit on the ICCP NAP client from
+    500 to 50 as an interim fix; a permanent resolution to review NAP database functions
+    and performance was also planned.
+  transferability: narrow
+  delay_magnitude: not quantified
+  technology_domain: demand response
+  source_pages: &id001
+  - 41
+  evidence_excerpt: It was identified that when large quantities of data were transferred
+    via ICCP, the NAP application was seen to take longer than 3 minutes to process
+    the data. As an interim solution, the 'DbActionTransactionLimit' on the ICCP NAP
+    client was changed from 500 to 50.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+  project_page_url: https://arena.gov.au/projects/united-energy-voltage-controlled-frequency-regulation-system/
+  kb_category: System security and reliability
+  kb_publish_date: 29/11/2020
+  kb_year: '2019'
+  kb_associated_project: United Energy Voltage Controlled Frequency Regulation System
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $900k
+  total_project_value: $1.4m
+  lead_organisation: United Energy Distribution Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 31/05/2019
+  location: Victoria
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+  markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  source_page_pdf: 41
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42353
+  contributing_source_titles:
+  - Voltage Controlled Frequency Regulation System – Final Report
+  contributing_sources:
+  - source_title: Voltage Controlled Frequency Regulation System – Final Report
+    pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+    markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-42354
+  source_title: Voltage Controlled Frequency Regulation System – Final Report
+  publish_date: '2020-11-24'
+  project_name: Voltage Controlled Frequency Regulation System (VCFRS)
+  what_happened: Up to 90-second delays were observed between the NAP application
+    generating voltage recommendations and those recommendations appearing on the
+    NAP server for the SCADA application to collect, jeopardising the 5-minute FCAS
+    response requirement.
+  lesson_learnt: In distributed control architectures, explicitly measure and test
+    the handoff latency at each step in the recommendation-to-action chain during
+    development — a 90-second server-publication delay was only discovered during
+    operational testing and required the protocol replacement to ICCP to resolve.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Implementing the ICCP interface resolved the 90-second server
+    publication delay.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: demand response
+  source_pages: &id002
+  - 42
+  evidence_excerpt: Up to 90-second delays were observed after the NAP application
+    generated the recommendations and before, they appeared on the NAP server for
+    the SCADA application to collect. Implementing ICCP is expected to resolve this
+    issue. Resolution implemented. Defect is rectified now.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+  project_page_url: https://arena.gov.au/projects/united-energy-voltage-controlled-frequency-regulation-system/
+  kb_category: System security and reliability
+  kb_publish_date: 29/11/2020
+  kb_year: '2019'
+  kb_associated_project: United Energy Voltage Controlled Frequency Regulation System
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $900k
+  total_project_value: $1.4m
+  lead_organisation: United Energy Distribution Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 31/05/2019
+  location: Victoria
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+  markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  source_page_pdf: 42
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42354
+  contributing_source_titles:
+  - Voltage Controlled Frequency Regulation System – Final Report
+  contributing_sources:
+  - source_title: Voltage Controlled Frequency Regulation System – Final Report
+    pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+    markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-42355
+  source_title: Voltage Controlled Frequency Regulation System – Final Report
+  publish_date: '2020-11-24'
+  project_name: Voltage Controlled Frequency Regulation System (VCFRS)
+  what_happened: The NAP application sent duplicate demand-reduction recommendations
+    for the same event because the legacy OSI PI interface pushed stale tags into
+    the NAP application after the FCAS dispatch had already completed in the SCADA
+    application.
+  lesson_learnt: When decommissioning a legacy interface in parallel with a new one,
+    ensure stale data cannot be re-injected into downstream applications — the OSI
+    PI interface pushed old tags into NAP, causing duplicate FCAS dispatch commands
+    that required investigation and explicit code rectification.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: execution & logistics
+  intervention_note: Root cause identified as OSI PI pushing old tags; the issue was
+    rectified by fixing the OSI PI interface data handling.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: demand response
+  source_pages: &id003
+  - 42
+  evidence_excerpt: NAP for some unknown reason was switched to the 'Demand Reduction'
+    mode for the 2nd time after the 'Demand Reduction' mode was completed in the SCADA
+    application... After investigating this issue, it was found that the OSI PI interface
+    pushed old tags into the NAP application. This issue was then rectified.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+  project_page_url: https://arena.gov.au/projects/united-energy-voltage-controlled-frequency-regulation-system/
+  kb_category: System security and reliability
+  kb_publish_date: 29/11/2020
+  kb_year: '2019'
+  kb_associated_project: United Energy Voltage Controlled Frequency Regulation System
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $900k
+  total_project_value: $1.4m
+  lead_organisation: United Energy Distribution Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 31/05/2019
+  location: Victoria
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+  markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42355
+  contributing_source_titles:
+  - Voltage Controlled Frequency Regulation System – Final Report
+  contributing_sources:
+  - source_title: Voltage Controlled Frequency Regulation System – Final Report
+    pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+    markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-42356
+  source_title: Voltage Controlled Frequency Regulation System – Final Report
+  publish_date: '2020-11-24'
+  project_name: Voltage Controlled Frequency Regulation System (VCFRS)
+  what_happened: A software defect caused the DVM application to revert all controlled
+    zone substations from 'Demand Reduction' mode back to V99% mode when an over-frequency
+    event was received during an active FCAS dispatch period, instead of holding the
+    demand-reduction state for the full 10-minute period.
+  lesson_learnt: For frequency-response control software, explicitly define and test
+    state-machine logic for all edge-case trigger sequences (e.g. over-frequency received
+    during an active under-frequency dispatch) — the unhandled condition caused premature
+    termination of FCAS dispatch and required a code fix to enforce mode persistence
+    for the full dispatch window.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: DVM application logic was updated so that once in Demand Reduction
+    mode due to an under-frequency trigger, all controlled stations remain in that
+    mode for the full 10-minute FCAS period regardless of subsequent over/under-frequency
+    relay signals.
+  transferability: narrow
+  delay_magnitude: not quantified
+  technology_domain: demand response
+  source_pages: &id004
+  - 36
+  evidence_excerpt: While the DVM application was running in the 'Demand Reduction'
+    mode, due to receiving an under-frequency event, when it received an over-frequency
+    event during the FCAS period, it reverted all of the controlled stations from
+    the 'Demand Reduction' to V99% mode... Resolution implemented. Defect is rectified
+    now.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+  project_page_url: https://arena.gov.au/projects/united-energy-voltage-controlled-frequency-regulation-system/
+  kb_category: System security and reliability
+  kb_publish_date: 29/11/2020
+  kb_year: '2019'
+  kb_associated_project: United Energy Voltage Controlled Frequency Regulation System
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $900k
+  total_project_value: $1.4m
+  lead_organisation: United Energy Distribution Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 31/05/2019
+  location: Victoria
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+  markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42356
+  contributing_source_titles:
+  - Voltage Controlled Frequency Regulation System – Final Report
+  contributing_sources:
+  - source_title: Voltage Controlled Frequency Regulation System – Final Report
+    pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+    markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-42357
+  source_title: Voltage Controlled Frequency Regulation System – Final Report
+  publish_date: '2020-11-24'
+  project_name: Voltage Controlled Frequency Regulation System (VCFRS)
+  what_happened: After an over-frequency event during FCAS dispatch cleared and the
+    relay threshold of 3 was no longer met, controlled zone substations failed to
+    revert to Demand Reduction mode as expected — they remained in Enabled state,
+    including the DVMApplication and Demand Reduction digital points.
+  lesson_learnt: Test post-event state reversion logic explicitly, including scenarios
+    where triggering relay counts drop below threshold mid-dispatch — failure of stations
+    to revert to the correct prior state after a transient event is a non-obvious
+    defect that only manifests under specific sequential trigger conditions.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Logic updated so that at end of FCAS operation, if over-frequency
+    events have dropped off, all stations revert to Demand Reduction state; defect
+    was closed.
+  transferability: narrow
+  delay_magnitude: not quantified
+  technology_domain: demand response
+  source_pages: &id005
+  - 36
+  - 37
+  evidence_excerpt: After the FCAS Holdoff timer was cleared, the DVM application
+    should have checked for 'Over-Frequency' event again and if the threshold of 3
+    was no longer valid, all of the controlled stations would have been switched back
+    to the 'Demand Reduction' mode. However, they stayed in Enabled state... Defect
+    has been closed.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+  project_page_url: https://arena.gov.au/projects/united-energy-voltage-controlled-frequency-regulation-system/
+  kb_category: System security and reliability
+  kb_publish_date: 29/11/2020
+  kb_year: '2019'
+  kb_associated_project: United Energy Voltage Controlled Frequency Regulation System
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $900k
+  total_project_value: $1.4m
+  lead_organisation: United Energy Distribution Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 31/05/2019
+  location: Victoria
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+  markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42357
+  contributing_source_titles:
+  - Voltage Controlled Frequency Regulation System – Final Report
+  contributing_sources:
+  - source_title: Voltage Controlled Frequency Regulation System – Final Report
+    pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+    markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-42358
+  source_title: Voltage Controlled Frequency Regulation System – Final Report
+  publish_date: '2020-11-24'
+  project_name: Voltage Controlled Frequency Regulation System (VCFRS)
+  what_happened: After restarting the DVM application driver during an active under-frequency
+    event, the application lost its count of frequency relay triggers and did not
+    re-evaluate the under-frequency condition until a new event arrived, leaving stations
+    in Enabled rather than Demand Reduction mode.
+  lesson_learnt: Design control application restart behaviour to re-evaluate all active
+    triggering conditions on startup rather than waiting for a new event — a driver
+    restart during an active FCAS dispatch caused the system to lose state, resulting
+    in incorrect station modes until a new frequency event was received.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: execution & logistics
+  intervention_note: DVM application updated so that after the restart hold-off timer
+    clears, it re-evaluates the under-frequency triggering condition and restores
+    Demand Reduction mode if the condition is still valid.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: demand response
+  source_pages: &id006
+  - 37
+  evidence_excerpt: It appeared that the DVM application lost counts of the number
+    of under-frequency events due to the driver restart and did not evaluate the frequency
+    triggers again until a new frequency event was received... Resolution implemented.
+    Defect is rectified closed.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+  project_page_url: https://arena.gov.au/projects/united-energy-voltage-controlled-frequency-regulation-system/
+  kb_category: System security and reliability
+  kb_publish_date: 29/11/2020
+  kb_year: '2019'
+  kb_associated_project: United Energy Voltage Controlled Frequency Regulation System
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $900k
+  total_project_value: $1.4m
+  lead_organisation: United Energy Distribution Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 31/05/2019
+  location: Victoria
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+  markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  source_page_pdf: 37
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42358
+  contributing_source_titles:
+  - Voltage Controlled Frequency Regulation System – Final Report
+  contributing_sources:
+  - source_title: Voltage Controlled Frequency Regulation System – Final Report
+    pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+    markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-42359
+  source_title: Voltage Controlled Frequency Regulation System – Final Report
+  publish_date: '2020-11-24'
+  project_name: Voltage Controlled Frequency Regulation System (VCFRS)
+  what_happened: When the FCAS Holdoff timer was set to zero and an under-frequency
+    condition persisted at the end of the 10-minute FCAS operation, some Station DVM
+    Status digital points switched back to Enabled while others remained in Demand
+    Reduction, producing an unpredictable and inconsistent system state.
+  lesson_learnt: Test boundary conditions of FCAS timers — specifically the zero-holdoff
+    case with a persistent trigger — as this edge case produced inconsistent station
+    states that required a dedicated code fix to ensure all stations remain in Demand
+    Reduction when the triggering condition is still valid at timer expiry.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: DVM application logic fixed so that at expiry of the 10-minute
+    period with holdoff timer at zero, it checks the under-frequency condition and
+    keeps all stations in Demand Reduction if the condition remains valid.
+  transferability: narrow
+  delay_magnitude: not quantified
+  technology_domain: demand response
+  source_pages: &id007
+  - 37
+  - 38
+  evidence_excerpt: When the FCAS Holdoff timer was set to 0, the DVM application
+    provided unpredicted result at the end of the FCAS operation (10 minutes) while
+    the under-frequency triggering condition remained unchanged... It was observed
+    that some 'Station DVM Status' digital points were switched to Enabled while some
+    others remained in the 'Demand Reduction' mode. Resolution implemented. Defect
+    is rectified now.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+  project_page_url: https://arena.gov.au/projects/united-energy-voltage-controlled-frequency-regulation-system/
+  kb_category: System security and reliability
+  kb_publish_date: 29/11/2020
+  kb_year: '2019'
+  kb_associated_project: United Energy Voltage Controlled Frequency Regulation System
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $900k
+  total_project_value: $1.4m
+  lead_organisation: United Energy Distribution Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 31/05/2019
+  location: Victoria
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+  markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  source_page_pdf: 37
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42359
+  contributing_source_titles:
+  - Voltage Controlled Frequency Regulation System – Final Report
+  contributing_sources:
+  - source_title: Voltage Controlled Frequency Regulation System – Final Report
+    pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+    markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-42360
+  source_title: Voltage Controlled Frequency Regulation System – Final Report
+  publish_date: '2020-11-24'
+  project_name: Voltage Controlled Frequency Regulation System (VCFRS)
+  what_happened: 'The manual Demand Reduction mode of the DVM application did not
+    function correctly: the revert threshold was not applied, and Station DVM Status
+    and Trans DVM Mode digital points did not propagate correctly, producing behaviour
+    opposite to design intent.'
+  lesson_learnt: Manual override modes in automated control systems must be explicitly
+    tested with the same rigour as automatic modes — the manual Demand Reduction mode's
+    revert threshold and digital-point propagation were both defective and only identified
+    through systematic defect testing.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: execution & logistics
+  intervention_note: Logic updated so that at end of the 10-minute maximum operation
+    time, all controlled station statuses revert to the previous state; defect rectified.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: demand response
+  source_pages: &id008
+  - 38
+  evidence_excerpt: 'The DVM application did not function correctly when the manual
+    ''Demand Reduction'' mode was used. This mode was expected to operate in the opposite
+    way as the ''FCAS/Under Frequency'' Mode, but it did not: a. The revert threshold
+    did not operate properly... b. All ''Station DVM Status'' and ''Trans DVM Mode''
+    digital points did not propagate correctly. Resolution implemented. Defect is
+    rectified now.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+  project_page_url: https://arena.gov.au/projects/united-energy-voltage-controlled-frequency-regulation-system/
+  kb_category: System security and reliability
+  kb_publish_date: 29/11/2020
+  kb_year: '2019'
+  kb_associated_project: United Energy Voltage Controlled Frequency Regulation System
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $900k
+  total_project_value: $1.4m
+  lead_organisation: United Energy Distribution Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 31/05/2019
+  location: Victoria
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+  markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42360
+  contributing_source_titles:
+  - Voltage Controlled Frequency Regulation System – Final Report
+  contributing_sources:
+  - source_title: Voltage Controlled Frequency Regulation System – Final Report
+    pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+    markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-42361
+  source_title: Voltage Controlled Frequency Regulation System – Final Report
+  publish_date: '2020-11-24'
+  project_name: Voltage Controlled Frequency Regulation System (VCFRS)
+  what_happened: During FCAS dispatch, manually changing the Demand Reduction digital
+    points from Disabled to Enabled immediately deactivated FCAS mode, changing all
+    station statuses from Demand Reduction to Enabled — unexpected behaviour that
+    contradicted the intended precedence logic.
+  lesson_learnt: Define and document explicit mode-precedence rules for all operator-accessible
+    digital points in a multi-mode FCAS control system, and test manual interventions
+    during active dispatch — the unintended interaction between the manual Demand
+    Reduction enable and the FCAS mode required a code clarification to establish
+    correct precedence.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Logic updated so that Demand Reduction mode takes precedence
+    over FCAS mode, keeping all station DVMS status points in Demand Reduction when
+    manually enabled during dispatch.
+  transferability: narrow
+  delay_magnitude: not quantified
+  technology_domain: demand response
+  source_pages: &id009
+  - 38
+  - 39
+  evidence_excerpt: Manually changing the status of the 'Demand Reduction' digital
+    points from Disabled to Enabled during the FCAS dispatch time deactivated the
+    FCAS mode immediately which consequently, all of the 'Station' and 'DVM Status'
+    points were changed from Demand Reduction to Enabled... This aligns with the expectations
+    as the 'Demand Reduction' mode should take precedence over the FCAS mode. Resolution
+    implemented. Defect is rectified now.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+  project_page_url: https://arena.gov.au/projects/united-energy-voltage-controlled-frequency-regulation-system/
+  kb_category: System security and reliability
+  kb_publish_date: 29/11/2020
+  kb_year: '2019'
+  kb_associated_project: United Energy Voltage Controlled Frequency Regulation System
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $900k
+  total_project_value: $1.4m
+  lead_organisation: United Energy Distribution Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 31/05/2019
+  location: Victoria
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+  markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42361
+  contributing_source_titles:
+  - Voltage Controlled Frequency Regulation System – Final Report
+  contributing_sources:
+  - source_title: Voltage Controlled Frequency Regulation System – Final Report
+    pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+    markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-42362
+  source_title: Voltage Controlled Frequency Regulation System – Final Report
+  publish_date: '2020-11-24'
+  project_name: Voltage Controlled Frequency Regulation System (VCFRS)
+  what_happened: A subset of zone substations failed to receive voltage recommendations
+    from the NAP application via SCADA during FCAS dispatch periods, identified as
+    master control failures that pre-existed but were magnified by the FCAS mode being
+    enabled.
+  lesson_learnt: Pre-existing master control failure modes in distribution SCADA systems
+    can be masked in normal operations but become operationally significant when a
+    time-critical automated response layer is added — audit and resolve underlying
+    communication reliability issues before deploying an FCAS control overlay; installing
+    transducers at zone substations is one identified mitigation.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: execution & logistics
+  intervention_note: Installing transducers at the zone substations was identified
+    as the planned resolution; the defect remained open with work in progress at time
+    of report.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: demand response
+  source_pages: &id010
+  - 42
+  evidence_excerpt: A few number of zone substations did not receive any recommendations
+    from the NAP application via the SCADA application during the FCAS dispatch period
+    (10 minutes). Master control failures are an existing issue that have magnified
+    over the process of the DVM application and the FCAS mode being enabled. It is
+    expected that installing transducers at the zone substations will resolve this
+    issue. Open, work is in progress.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+  project_page_url: https://arena.gov.au/projects/united-energy-voltage-controlled-frequency-regulation-system/
+  kb_category: System security and reliability
+  kb_publish_date: 29/11/2020
+  kb_year: '2019'
+  kb_associated_project: United Energy Voltage Controlled Frequency Regulation System
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $900k
+  total_project_value: $1.4m
+  lead_organisation: United Energy Distribution Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 31/05/2019
+  location: Victoria
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+  markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42362
+  contributing_source_titles:
+  - Voltage Controlled Frequency Regulation System – Final Report
+  contributing_sources:
+  - source_title: Voltage Controlled Frequency Regulation System – Final Report
+    pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+    markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-42363
+  source_title: Voltage Controlled Frequency Regulation System – Final Report
+  publish_date: '2020-11-24'
+  project_name: Voltage Controlled Frequency Regulation System (VCFRS)
+  what_happened: Some voltage recommendations generated by the NAP application took
+    longer than 2 minutes to be actioned by the DVM application (dvmproc), creating
+    a risk that the 5-minute FCAS response window could not be met consistently across
+    all zone substations.
+  lesson_learnt: Measure end-to-end recommendation-to-action latency at individual
+    RTU level, not just aggregate, and size application worker threads to handle worst-case
+    concurrency — slow back-indication from some RTUs caused dvmproc completion times
+    exceeding 2 minutes, resolved by increasing DVM worker threads from 3 to 10.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: execution & logistics
+  intervention_note: DVM worker threads increased from 3 to 10 as an interim solution;
+    permanent resolution planned to investigate RTUs sending back-indications late
+    to SCADA.
+  transferability: narrow
+  delay_magnitude: not quantified
+  technology_domain: demand response
+  source_pages: &id011
+  - 42
+  evidence_excerpt: Some of the voltage recommendations generated by the NAP application
+    took longer than 2 minutes to complete by the DVM application (dvmproc). As an
+    interim solution, the DVM worker threads was from 3 to 10. Permanent resolution
+    is to review and investigate why some RTUs sending the back indications late to
+    the SCADA application. Resolution implemented. Defect is rectified now.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+  project_page_url: https://arena.gov.au/projects/united-energy-voltage-controlled-frequency-regulation-system/
+  kb_category: System security and reliability
+  kb_publish_date: 29/11/2020
+  kb_year: '2019'
+  kb_associated_project: United Energy Voltage Controlled Frequency Regulation System
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $900k
+  total_project_value: $1.4m
+  lead_organisation: United Energy Distribution Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 31/05/2019
+  location: Victoria
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+  markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  source_page_pdf: 42
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42363
+  contributing_source_titles:
+  - Voltage Controlled Frequency Regulation System – Final Report
+  contributing_sources:
+  - source_title: Voltage Controlled Frequency Regulation System – Final Report
+    pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+    markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-42364
+  source_title: Voltage Controlled Frequency Regulation System – Final Report
+  publish_date: '2020-11-24'
+  project_name: Voltage Controlled Frequency Regulation System (VCFRS)
+  what_happened: AEMO classified UE's FCAS registration application as non-standard
+    due to the novel technology, the nature of UE as a distribution network service
+    provider participant, and the distributed nature of the response, triggering additional
+    technical and non-technical requirements before the application could be processed.
+  lesson_learnt: Distribution networks seeking to register novel aggregated demand-response
+    capabilities as FCAS market participants should engage AEMO early in the design
+    phase to identify non-standard classification requirements — AEMO flagged the
+    technology novelty, participant type, and distributed response architecture as
+    barriers requiring bespoke resolution before registration could proceed.
+  issue_severity: major
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: network business
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: UE developed a polynomial regression baseline calculation methodology
+    using actual under-frequency events (19 May, 22 June, 14 August 2020) to demonstrate
+    and verify 30MW demand reduction, providing the evidentiary base for AEMO review.
+  transferability: broad
+  delay_magnitude: 1-3 years
+  technology_domain: demand response
+  source_pages:
+  - 12
+  - 13
+  - 24
+  - 25
+  - 26
+  evidence_excerpt: 'After preliminary review of the UE''s draft application, AEMO
+    advised that this is a non-standard application due to the below reasons: The
+    novel nature of the technology; The nature of the intended participant; and The
+    distributed nature of the response. Therefore, there are a number of technical
+    and non-technical considerations which have been outlined by AEMO that need to
+    be taken into account prior to processing UE''s application.'
+  confidence_note: Delay magnitude inferred from registration timeline in Table 6,
+    which extends to Q4 2021 and beyond from a project reporting date of November
+    2020. Canonical record merged from 2 source records across 1 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+  project_page_url: https://arena.gov.au/projects/united-energy-voltage-controlled-frequency-regulation-system/
+  kb_category: System security and reliability
+  kb_publish_date: 29/11/2020
+  kb_year: '2019'
+  kb_associated_project: United Energy Voltage Controlled Frequency Regulation System
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $900k
+  total_project_value: $1.4m
+  lead_organisation: United Energy Distribution Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 31/05/2019
+  location: Victoria
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+  markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42364
+  - ARENA-DLV-42365
+  contributing_source_titles:
+  - Voltage Controlled Frequency Regulation System – Final Report
+  contributing_sources:
+  - source_title: Voltage Controlled Frequency Regulation System – Final Report
+    pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+    source_pages:
+    - 24
+    - 25
+    - 26
+    source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+    markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-42366
+  source_title: Voltage Controlled Frequency Regulation System – Final Report
+  publish_date: '2020-11-24'
+  project_name: Voltage Controlled Frequency Regulation System (VCFRS)
+  what_happened: 'Business case analysis showed that projected FCAS revenues for Q2
+    and Q3 2020 (R5M: $1,521 and $539 respectively) fell below the minimum $1,552
+    per quarter threshold needed to recoup on-load tap changer maintenance costs,
+    primarily due to a decline in R5M market prices driven by the absence of power
+    system separation events and lower energy prices.'
+  lesson_learnt: FCAS revenue for a voltage-reduction demand-response scheme is highly
+    sensitive to market price volatility driven by infrequent separation events —
+    the business case should be stress-tested against low-price quarters and should
+    not rely on sustained high FCAS prices, with operating strategy (e.g. targeting
+    peak-price half-hours only) calibrated against maintenance cost thresholds.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: UE identified a strategy of enabling FCAS dispatch only during
+    one daily 30-minute period of typically high FCAS pricing (e.g. 17:00, 19:00 or
+    19:30) to maximise revenue while limiting tap changer duty cycle.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: demand response
+  source_pages: &id012
+  - 31
+  - 32
+  - 34
+  evidence_excerpt: Analysis of the results in Table 8 demonstrates that for Q2 2020,
+    the R5M and L5M quarterly revenues were below the $1,552 threshold to recoup maintenance
+    costs from FCAS services... The total estimated revenue for July and August for
+    a 30MW dispatch capturing peak R5M prices is $539 which equates to approximately
+    $9/day. As discussed in Section 7.2, this would be below the $17/day threshold
+    to recoup maintenance costs.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+  project_page_url: https://arena.gov.au/projects/united-energy-voltage-controlled-frequency-regulation-system/
+  kb_category: System security and reliability
+  kb_publish_date: 29/11/2020
+  kb_year: '2019'
+  kb_associated_project: United Energy Voltage Controlled Frequency Regulation System
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $900k
+  total_project_value: $1.4m
+  lead_organisation: United Energy Distribution Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 31/05/2019
+  location: Victoria
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+  markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  source_page_pdf: 32
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42366
+  contributing_source_titles:
+  - Voltage Controlled Frequency Regulation System – Final Report
+  contributing_sources:
+  - source_title: Voltage Controlled Frequency Regulation System – Final Report
+    pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+    markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.95
+- record_id: ARENA-DLV-42367
+  source_title: Voltage Controlled Frequency Regulation System – Final Report
+  publish_date: '2020-11-24'
+  project_name: Voltage Controlled Frequency Regulation System (VCFRS)
+  what_happened: Eighty-three of 61 distribution transformers selected across 5 zone
+    substations for low-voltage tap adjustments were completed, but 8 tap adjustments
+    could not be completed due to transformers operating at the lowest taps, seized
+    tap screws, or existing LV paralleling constraints.
+  lesson_learnt: When planning LV remedial works to expand voltage headroom for demand-response
+    FCAS, conduct a field audit of transformer tap positions and mechanical condition
+    before committing to a target number — physical constraints (lowest tap position,
+    seized screws, LV paralleling) will prevent a subset of planned adjustments and
+    should be scoped out early to avoid budget and schedule surprises.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: network business
+  delay_category: construction/installation
+  failure_mode: poor scoping
+  outcome_class: partial success
+  secondary_failure_mode: null
+  intervention_note: 53 of 61 planned tap adjustments were completed; the 8 incomplete
+    sites were accepted as a constraint and the overall V1% level was still improved
+    by 7V on average across the scheme.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: demand response
+  source_pages: &id013
+  - 9
+  evidence_excerpt: As part of these remedial works, 61 distribution transformers
+    were selected across 5 zone substations for tap changes of which 53 tap adjustments
+    were successfully completed. The tap adjustments for the 8 remaining sites were
+    not completed due to operating the distribution transformer at the lowest taps,
+    having tap screws seized and the existing LV paralleling.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+  project_page_url: https://arena.gov.au/projects/united-energy-voltage-controlled-frequency-regulation-system/
+  kb_category: System security and reliability
+  kb_publish_date: 29/11/2020
+  kb_year: '2019'
+  kb_associated_project: United Energy Voltage Controlled Frequency Regulation System
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $900k
+  total_project_value: $1.4m
+  lead_organisation: United Energy Distribution Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 31/05/2019
+  location: Victoria
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+  markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42367
+  contributing_source_titles:
+  - Voltage Controlled Frequency Regulation System – Final Report
+  contributing_sources:
+  - source_title: Voltage Controlled Frequency Regulation System – Final Report
+    pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+    markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-42368
+  source_title: Voltage Controlled Frequency Regulation System – Final Report
+  publish_date: '2020-11-24'
+  project_name: Voltage Controlled Frequency Regulation System (VCFRS)
+  what_happened: UE successfully demonstrated that the VCFRS scheme delivered a minimum
+    of 30MW demand reduction across multiple real under-frequency events (19 May,
+    22 June, 14 August 2020), meeting the 5-minute response time and sustaining service
+    for the full 10-minute dispatch period — confirming technical feasibility of voltage-reduction
+    demand response as a delayed contingency FCAS delivery mechanism.
+  lesson_learnt: Voltage-reduction demand response using a smart-meter-informed DVMS
+    across a large distribution network (700,000+ customers, 47 zone substations)
+    can reliably deliver 30MW of delayed raise contingency FCAS within 5 minutes and
+    sustain it for 10 minutes — this diversified architecture provides resilience
+    because any single substation outage reduces total FCAS capacity by only 1/47.
+  issue_severity: none
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: demand response
+  source_pages: &id014
+  - 11
+  - 12
+  - 23
+  evidence_excerpt: UE has demonstrated the feasibility of achieving 30MW demand reduction
+    during the operation of the VCFR scheme... for the under-frequency events that
+    occurred on 19 May, 22 June and 14 August, Table 3, Table 4 and Table 5, respectively,
+    have demonstrated a minimum of 30MW demand reduction for each of the 5-minute
+    dispatch time the VCFRS scheme operated.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+  project_page_url: https://arena.gov.au/projects/united-energy-voltage-controlled-frequency-regulation-system/
+  kb_category: System security and reliability
+  kb_publish_date: 29/11/2020
+  kb_year: '2019'
+  kb_associated_project: United Energy Voltage Controlled Frequency Regulation System
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $900k
+  total_project_value: $1.4m
+  lead_organisation: United Energy Distribution Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 31/05/2019
+  location: Victoria
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+  markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42368
+  contributing_source_titles:
+  - Voltage Controlled Frequency Regulation System – Final Report
+  contributing_sources:
+  - source_title: Voltage Controlled Frequency Regulation System – Final Report
+    pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+    markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-42369
+  source_title: Voltage Controlled Frequency Regulation System – Final Report
+  publish_date: '2020-11-24'
+  project_name: Voltage Controlled Frequency Regulation System (VCFRS)
+  what_happened: UE's regulatory assessment confirmed that provision of FCAS by a
+    distribution network service provider under this project is not prohibited under
+    the current regulatory framework and is consistent with the AER Ring-Fencing Guideline,
+    based on UE's prior participation in the RERT market without regulatory challenge.
+  lesson_learnt: Distribution network businesses considering FCAS market participation
+    should conduct an early ring-fencing regulatory assessment and benchmark against
+    any prior ancillary service market participation — UE's prior unchallenged RERT
+    participation established a positive precedent that supported the ring-fencing
+    compliance position for FCAS.
+  issue_severity: none
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: demand response
+  source_pages: &id015
+  - 9
+  - 10
+  evidence_excerpt: UE undertook a regulatory assessment that concluded that the provision
+    of FCAS by UE for this Project is not prohibited under the current regulatory
+    framework and is entirely consistent with the Australian Energy Regulator's (AER)
+    Ring-Fencing Guideline. Previously UE has participated in the Reliability and
+    Emergency Reserve Trader (RERT) market and no issues were raised by AER or our
+    auditors.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+  project_page_url: https://arena.gov.au/projects/united-energy-voltage-controlled-frequency-regulation-system/
+  kb_category: System security and reliability
+  kb_publish_date: 29/11/2020
+  kb_year: '2019'
+  kb_associated_project: United Energy Voltage Controlled Frequency Regulation System
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $900k
+  total_project_value: $1.4m
+  lead_organisation: United Energy Distribution Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 31/05/2019
+  location: Victoria
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+  markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42369
+  contributing_source_titles:
+  - Voltage Controlled Frequency Regulation System – Final Report
+  contributing_sources:
+  - source_title: Voltage Controlled Frequency Regulation System – Final Report
+    pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+    markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-42370
+  source_title: Voltage Controlled Frequency Regulation System – Final Report
+  publish_date: '2020-11-24'
+  project_name: Voltage Controlled Frequency Regulation System (VCFRS)
+  what_happened: LV remedial works including distribution transformer tap adjustments,
+    phase load balancing, and loose-connection remediation across 5 zone substations
+    improved the V1% voltage level by an average of 7V, enabling at least 2 additional
+    tap steps of voltage reduction headroom for FCAS dispatch without compromising
+    voltage compliance.
+  lesson_learnt: Targeted LV opportunistic works — transformer tap adjustments, phase
+    balancing, and loose-connection rectification — can materially improve the voltage
+    headroom available for voltage-reduction FCAS schemes; using smart meter AMI data
+    to prioritise works by voltage spread is an effective targeting method that avoids
+    costly blanket network surveys.
+  issue_severity: none
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: demand response
+  source_pages: &id016
+  - 9
+  evidence_excerpt: In summary, the remedial works has increased the V1% level by
+    7V on average. Since the tap step for zone substation transformers is 1.25%, improving
+    V1% by 3% (7V) has provided the opportunity of reducing the voltage of the zone
+    substation by at least 2 taps when the DVMS is switched to the 'Demand Reduction'
+    mode.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+  project_page_url: https://arena.gov.au/projects/united-energy-voltage-controlled-frequency-regulation-system/
+  kb_category: System security and reliability
+  kb_publish_date: 29/11/2020
+  kb_year: '2019'
+  kb_associated_project: United Energy Voltage Controlled Frequency Regulation System
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $900k
+  total_project_value: $1.4m
+  lead_organisation: United Energy Distribution Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 31/05/2019
+  location: Victoria
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+  markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42370
+  contributing_source_titles:
+  - Voltage Controlled Frequency Regulation System – Final Report
+  contributing_sources:
+  - source_title: Voltage Controlled Frequency Regulation System – Final Report
+    pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+    markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-42371
+  source_title: Voltage Controlled Frequency Regulation System – Final Report
+  publish_date: '2020-11-24'
+  project_name: Voltage Controlled Frequency Regulation System (VCFRS)
+  what_happened: The VCFRS scheme's Delayed Lower (L5M) FCAS capability was only operable
+    in Demand Response mode as a proof of concept, and historical revenue analysis
+    showed minimal L5M revenue (e.g. $43 in Q2 2020 versus $1,521 for R5M) — making
+    the Delayed Lower business case commercially negligible.
+  lesson_learnt: When assessing the business case for a bidirectional voltage-based
+    FCAS scheme, do not rely on Delayed Lower revenue to support the commercial case
+    — historical L5M prices are very low relative to R5M and the operational constraints
+    of voltage-increase demand response limit its availability; focus the business
+    case on Delayed Raise participation during high-price events.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: demand response
+  source_pages: &id017
+  - 31
+  - 34
+  evidence_excerpt: 'As demonstrated in Table 8, there is minimal revenue in participating
+    in the L5M market... Q2 revenues... for FCAS services would have been equal to
+    the values given in Table 8: 2020 Q2: R5M Revenue $1,521, L5M Revenue $43.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+  project_page_url: https://arena.gov.au/projects/united-energy-voltage-controlled-frequency-regulation-system/
+  kb_category: System security and reliability
+  kb_publish_date: 29/11/2020
+  kb_year: '2019'
+  kb_associated_project: United Energy Voltage Controlled Frequency Regulation System
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $900k
+  total_project_value: $1.4m
+  lead_organisation: United Energy Distribution Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 31/05/2019
+  location: Victoria
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+  markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42371
+  contributing_source_titles:
+  - Voltage Controlled Frequency Regulation System – Final Report
+  contributing_sources:
+  - source_title: Voltage Controlled Frequency Regulation System – Final Report
+    pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+    markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-42372
+  source_title: Voltage Controlled Frequency Regulation System – Final Report
+  publish_date: '2020-11-24'
+  project_name: Voltage Controlled Frequency Regulation System (VCFRS)
+  what_happened: The VCFRS scheme's FCAS revenue potential is concentrated in infrequent
+    high-price events driven by power system separation (e.g. the 31 January 2020
+    SA separation event produced R5M prices of $11,150/MWh/h), while routine dispatch
+    at normal market prices generated revenue well below the maintenance cost threshold.
+  lesson_learnt: A voltage-based FCAS scheme's business case should be structured
+    around selective dispatch targeting high-price separation events with potential
+    revenues up to 10 times the base strategy, rather than daily dispatch at average
+    prices — perfect-foresight strategies during sustained high-price periods can
+    justify the maintenance cost uplift even if routine dispatch cannot.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: demand response
+  source_pages: &id018
+  - 32
+  - 34
+  - 35
+  evidence_excerpt: For periods of sustained high prices such as Friday, 31 January
+    2020 (refer to Table 7 and Milestone 2 Report), it would have been possible and
+    viable to perform many delayed raise operations and repeatedly dispatch into periods
+    of sustained high R5M prices generating revenues up to 10 times than the envisaged
+    strategy of one R5M dispatch per day.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+  project_page_url: https://arena.gov.au/projects/united-energy-voltage-controlled-frequency-regulation-system/
+  kb_category: System security and reliability
+  kb_publish_date: 29/11/2020
+  kb_year: '2019'
+  kb_associated_project: United Energy Voltage Controlled Frequency Regulation System
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $900k
+  total_project_value: $1.4m
+  lead_organisation: United Energy Distribution Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 31/05/2019
+  location: Victoria
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+  markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  source_page_pdf: 32
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42372
+  contributing_source_titles:
+  - Voltage Controlled Frequency Regulation System – Final Report
+  contributing_sources:
+  - source_title: Voltage Controlled Frequency Regulation System – Final Report
+    pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+    markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-42373
+  source_title: Voltage Controlled Frequency Regulation System – Final Report
+  publish_date: '2020-11-24'
+  project_name: Voltage Controlled Frequency Regulation System (VCFRS)
+  what_happened: 'The on-load tap changer (OLTC) maintenance cost structure imposes
+    a minimum daily revenue threshold of $17/day (quarterly: ~$1,552) for FCAS participation
+    to be cost-neutral, based on a cap of 25,000 tap operations over a 4-year maintenance
+    cycle and an assumed $1 per tap change maintenance cost.'
+  lesson_learnt: Quantify the incremental maintenance cost of OLTC duty cycle uplift
+    from FCAS participation before committing to a dispatch strategy — the $17/day
+    minimum revenue threshold derived from tap change limits and maintenance unit
+    costs provides a clear go/no-go criterion for dispatch decisions and should be
+    calculated and embedded in bidding logic.
+  issue_severity: none
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: demand response
+  source_pages: &id019
+  - 31
+  - 32
+  evidence_excerpt: Under this scenario where UE considers normal operation of the
+    on-load tap changer including the provision for FCAS services, it is estimated
+    that the tap changes will be limited to 17 per day. Assuming each tap change will
+    cost $1 in scheduled maintenance then, the daily revenue from participating in
+    the Delayed Raise (5-minute) contingency market will have to be a minimum of $17
+    a day or a quarterly revenue of $1,552.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+  project_page_url: https://arena.gov.au/projects/united-energy-voltage-controlled-frequency-regulation-system/
+  kb_category: System security and reliability
+  kb_publish_date: 29/11/2020
+  kb_year: '2019'
+  kb_associated_project: United Energy Voltage Controlled Frequency Regulation System
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $900k
+  total_project_value: $1.4m
+  lead_organisation: United Energy Distribution Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 31/05/2019
+  location: Victoria
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+  markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  source_page_pdf: 31
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42373
+  contributing_source_titles:
+  - Voltage Controlled Frequency Regulation System – Final Report
+  contributing_sources:
+  - source_title: Voltage Controlled Frequency Regulation System – Final Report
+    pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+    markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-42374
+  source_title: Voltage Controlled Frequency Regulation System – Final Report
+  publish_date: '2020-11-24'
+  project_name: Voltage Controlled Frequency Regulation System (VCFRS)
+  what_happened: The DVM application's state was not preserved correctly when the
+    DVM driver was restarted — all Station DVM Status and Trans DVM Mode digital points
+    were initially set to Disabled on restart, which could disrupt active FCAS or
+    demand-reduction operations.
+  lesson_learnt: Define explicit startup state behaviour for all control application
+    digital points before deployment in a live network environment — initially restarting
+    the DVM driver set all station status points to Disabled, potentially interrupting
+    active FCAS dispatch; the resolution (retaining previous state on restart) required
+    a specific code change and should be a standard design requirement.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Code updated so that restarting the DVM Driver does not change
+    Station DVM Status and Trans DVM Mode — stations retain their prior state on restart.
+  transferability: narrow
+  delay_magnitude: not quantified
+  technology_domain: demand response
+  source_pages: &id020
+  - 39
+  evidence_excerpt: Status of the 'Station DVM Status' and 'Trans DVM Mode' digital
+    points was not clear (could be either Disabled or Enabled) when the DVM driver
+    was restarted. It was observed that all of the 'Station DVM Status' and 'Trans
+    DVM Mode' digital points were updated as Disabled... This issue has been resolved.
+    Restarting the DVM Driver will not change 'Station DVM Status' and 'Trans DVM
+    Mode'.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+  project_page_url: https://arena.gov.au/projects/united-energy-voltage-controlled-frequency-regulation-system/
+  kb_category: System security and reliability
+  kb_publish_date: 29/11/2020
+  kb_year: '2019'
+  kb_associated_project: United Energy Voltage Controlled Frequency Regulation System
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $900k
+  total_project_value: $1.4m
+  lead_organisation: United Energy Distribution Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 31/05/2019
+  location: Victoria
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+  markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42374
+  contributing_source_titles:
+  - Voltage Controlled Frequency Regulation System – Final Report
+  contributing_sources:
+  - source_title: Voltage Controlled Frequency Regulation System – Final Report
+    pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+    source_pages: *id020
+    source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+    markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-42375
+  source_title: Voltage Controlled Frequency Regulation System – Final Report
+  publish_date: '2020-11-24'
+  project_name: Voltage Controlled Frequency Regulation System (VCFRS)
+  what_happened: The NAP application started sending voltage recommendations approximately
+    2 minutes late after receiving Demand Reduction statuses from the SCADA application,
+    further compressing the available time window for completing tap changes within
+    the 5-minute FCAS response requirement.
+  lesson_learnt: Measure and budget each latency component in the FCAS dispatch chain
+    (SCADA trigger → NAP processing → recommendation dispatch → tap change completion)
+    from the design phase — a 2-minute NAP recommendation delay was only discovered
+    through operational testing and required code enhancements to both NAP and SCADA
+    to resolve.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Enhancements to both NAP and SCADA applications were implemented
+    to shorten the time between status receipt and recommendation dispatch; defect
+    rectified.
+  transferability: narrow
+  delay_magnitude: not quantified
+  technology_domain: demand response
+  source_pages: &id021
+  - 41
+  evidence_excerpt: The NAP application started sending out the recommendations around
+    2 minutes late after receiving the station 'Demand Reduction' statuses from the
+    SCADA application. Enhancements in the NAP and SCADA applications are expected
+    to enable shorter times between recommendations. Resolution implemented. Defect
+    is rectified now.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+  project_page_url: https://arena.gov.au/projects/united-energy-voltage-controlled-frequency-regulation-system/
+  kb_category: System security and reliability
+  kb_publish_date: 29/11/2020
+  kb_year: '2019'
+  kb_associated_project: United Energy Voltage Controlled Frequency Regulation System
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $900k
+  total_project_value: $1.4m
+  lead_organisation: United Energy Distribution Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 31/05/2019
+  location: Victoria
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+  markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42375
+  contributing_source_titles:
+  - Voltage Controlled Frequency Regulation System – Final Report
+  contributing_sources:
+  - source_title: Voltage Controlled Frequency Regulation System – Final Report
+    pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+    source_pages: *id021
+    source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+    markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-42376
+  source_title: Voltage Controlled Frequency Regulation System – Final Report
+  publish_date: '2020-11-24'
+  project_name: Voltage Controlled Frequency Regulation System (VCFRS)
+  what_happened: UE's VCFRS registration process with AEMO at the time of reporting
+    had a tentative completion timeline extending to Q4 2021 and beyond, requiring
+    sequential resolution of technical requirements (baseline methodology endorsement,
+    test plan development and execution), non-technical requirements (load classification
+    approval), and market interface development before registration could be finalised.
+  lesson_learnt: 'Novel distribution-side FCAS registration should be scoped as a
+    multi-year process alongside — not after — the technology demonstration: AEMO''s
+    technical and non-technical requirements for a non-standard participant (baseline
+    methodology, metering specification, load classification, market interfaces and
+    telemetry) add at least 12–18 months beyond technology readiness before market
+    participation can commence.'
+  issue_severity: major
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: network business
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: UE and AEMO agreed a phased registration roadmap covering technical
+    endorsement (Q3 2020–Q1 2021), test plan execution (Q4 2020–Q1 2021), non-technical
+    load classification (Q1–Q2 2021), market interface development (Q2–Q3 2021), and
+    business case finalisation (Q4 2021 onwards).
+  transferability: broad
+  delay_magnitude: 1-3 years
+  technology_domain: demand response
+  source_pages: &id022
+  - 25
+  - 26
+  evidence_excerpt: Pending resolution of the technical and non-technical requirements,
+    UE to submit registration based on tested capability... The tentative timeline
+    for the proposed approach is given in Table 6... Finalise the business case assessment
+    to confirm the minimum pricing for participating in the ancillary service markets.
+    Q4 2021 – Onwards.
+  confidence_note: Delay magnitude inferred from the registration timeline table spanning
+    Q3 2020 to Q4 2021+, relative to the report date of November 2020.
+  source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+  project_page_url: https://arena.gov.au/projects/united-energy-voltage-controlled-frequency-regulation-system/
+  kb_category: System security and reliability
+  kb_publish_date: 29/11/2020
+  kb_year: '2019'
+  kb_associated_project: United Energy Voltage Controlled Frequency Regulation System
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $900k
+  total_project_value: $1.4m
+  lead_organisation: United Energy Distribution Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 31/05/2019
+  location: Victoria
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+  markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  source_page_pdf: 25
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42376
+  contributing_source_titles:
+  - Voltage Controlled Frequency Regulation System – Final Report
+  contributing_sources:
+  - source_title: Voltage Controlled Frequency Regulation System – Final Report
+    pdf_url: https://arena.gov.au/assets/2020/11/voltage-controlled-frequency-regulation-system-final-report.pdf
+    source_pages: *id022
+    source_url: https://arena.gov.au/knowledge-bank/voltage-controlled-frequency-regulation-system-final-report/
+    markdown_filename: voltage_controlled_frequency_regulation_system_final_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82

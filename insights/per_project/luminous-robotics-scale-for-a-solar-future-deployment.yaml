@@ -1,0 +1,1061 @@
+- record_id: ARENA-DLV-17501
+  source_title: Luminous - Knowledge Share Public Report
+  publish_date: 2025-11
+  project_name: Luminous LUMI Series 4 at Goorambat East Solar Farm
+  what_happened: The LUMI robot fleet's software required 21 upgrades (v0.1.27 to
+    v0.1.47) during the trial to address visual perception issues with a new racking
+    system (ARRAY racking with octagonal tubes) and to optimise process flow. This
+    was the first time LUMI had been configured for ARRAY racking geometry.
+  lesson_learnt: When deploying robotic installation systems on a racking type not
+    previously encountered, plan for significant in-field AI/software iteration cycles
+    — first-time racking geometry differences will require multiple software upgrades
+    before reliable autonomous performance is achieved.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: unvalidated technical assumptions
+  outcome_class: successful demonstration
+  secondary_failure_mode: unvalidated integration
+  intervention_note: The U.S. engineering team iterated on AI perception models overnight
+    (EST) using data collected during Australian shifts (AEST), enabling a fast 16×6
+    continuous improvement cycle that resolved perception issues shift-by-shift.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id001
+  - 12
+  evidence_excerpt: During the course of the trial, the LUMI fleet's software was
+    upgraded 21 times from v0.1.27 to v0.1.47. The technical challenges addressed
+    during these on the fly upgrades were two-fold, tackling visual nuances experienced
+    at Goorambat and process optimizations... This was the first time the LUMI system
+    was configured to install modules for ARRAY racking, which featured octagonal
+    tubes and slight geometry differences at the hat rail and pile interface level.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+  project_page_url: https://arena.gov.au/projects/luminous-robotics-scale-for-a-solar-future-deployment/
+  kb_category: Large-scale solar
+  kb_publish_date: 7/01/2026
+  kb_year: '2025'
+  kb_associated_project: Luminous Robotics - Scale for a Solar Future, Deployment
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $4.62m
+  total_project_value: $9.25m
+  lead_organisation: Luminous Robotics
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/05/2025
+  location: Culcairn, Goorambat, Sydney
+  project_partners: Equans Solar & Storage Australia Pty Ltd (Bouygues Group)  Neoen
+    Australia Pty Ltd Engie Renewables Australia Pty  Ltd
+  pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+  markdown_filename: luminous_knowledge_share_public_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-17501
+  contributing_source_titles:
+  - Luminous - Knowledge Share Public Report
+  contributing_sources:
+  - source_title: Luminous - Knowledge Share Public Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+    markdown_filename: luminous_knowledge_share_public_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-17502
+  source_title: Luminous - Knowledge Share Public Report
+  publish_date: 2025-11
+  project_name: Luminous LUMI Series 4 at Goorambat East Solar Farm
+  what_happened: Perception latency accounted for 22% of each LUMI cycle. Prior to
+    fine-tuning with real-world Goorambat data, the AI perception algorithms produced
+    faulty outputs when background objects (such as the skid steer) appeared in the
+    field of view, causing unreliable autonomous operation.
+  lesson_learnt: AI perception models for construction robots require fine-tuning
+    with real on-site data before reliable performance is achieved — pre-deployment
+    lab or simulation training is insufficient to handle the visual noise of an active
+    construction environment. Budget for a data-collection and fine-tuning phase at
+    each new site.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: successful demonstration
+  secondary_failure_mode: data & measurement
+  intervention_note: Fine-tuning the AI with Goorambat-specific data reduced total
+    perception time by 55.2% (from 14.4s to 6.3s per cycle), achieving a peak autonomy
+    ratio of 97.4%.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id002
+  - 14
+  evidence_excerpt: Prior to fine-tuning, the perception algorithms would oftentimes
+    be confused by unexpected geometries in view... Fine-tuning with onsite Goorambat
+    data enabled the software AI to become robust to such potential noise... our team
+    was able to improve reliability and reduce the total perception time by 55.2%
+    (from 14.4s to 6.3s).
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+  project_page_url: https://arena.gov.au/projects/luminous-robotics-scale-for-a-solar-future-deployment/
+  kb_category: Large-scale solar
+  kb_publish_date: 7/01/2026
+  kb_year: '2025'
+  kb_associated_project: Luminous Robotics - Scale for a Solar Future, Deployment
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $4.62m
+  total_project_value: $9.25m
+  lead_organisation: Luminous Robotics
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/05/2025
+  location: Culcairn, Goorambat, Sydney
+  project_partners: Equans Solar & Storage Australia Pty Ltd (Bouygues Group)  Neoen
+    Australia Pty Ltd Engie Renewables Australia Pty  Ltd
+  pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+  markdown_filename: luminous_knowledge_share_public_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-17502
+  contributing_source_titles:
+  - Luminous - Knowledge Share Public Report
+  contributing_sources:
+  - source_title: Luminous - Knowledge Share Public Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+    markdown_filename: luminous_knowledge_share_public_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-17503
+  source_title: Luminous - Knowledge Share Public Report
+  publish_date: 2025-11
+  project_name: Luminous LUMI Series 4 at Goorambat East Solar Farm
+  what_happened: The dual-timezone engineering model — with the Australian field team
+    operating during AEST and the US engineering team addressing issues overnight
+    during EST — enabled same-day issue resolution and continuous AI model improvement
+    between shifts throughout the pilot.
+  lesson_learnt: Distributed teams spanning complementary time zones can function
+    as a structural advantage for iterative field deployments — engineer the support
+    model to exploit this overlap so that field-identified issues are resolved before
+    the next production shift begins.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id003
+  - 15
+  evidence_excerpt: This project was the fortunate benefactor of execution across
+    two separately disjoint timezones, where issues that arose in production in Australia
+    (AEST) was immediately addressed post-shift by the U.S. engineering team (EST)
+    overnight. This allowed for a fast iteration cycle especially around fine-tuning
+    AI perception models, as data accumulated during the shift is used to further
+    improve performance the next shift.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+  project_page_url: https://arena.gov.au/projects/luminous-robotics-scale-for-a-solar-future-deployment/
+  kb_category: Large-scale solar
+  kb_publish_date: 7/01/2026
+  kb_year: '2025'
+  kb_associated_project: Luminous Robotics - Scale for a Solar Future, Deployment
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $4.62m
+  total_project_value: $9.25m
+  lead_organisation: Luminous Robotics
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/05/2025
+  location: Culcairn, Goorambat, Sydney
+  project_partners: Equans Solar & Storage Australia Pty Ltd (Bouygues Group)  Neoen
+    Australia Pty Ltd Engie Renewables Australia Pty  Ltd
+  pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+  markdown_filename: luminous_knowledge_share_public_report.md
+  source_page_pdf: 15
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-17503
+  contributing_source_titles:
+  - Luminous - Knowledge Share Public Report
+  contributing_sources:
+  - source_title: Luminous - Knowledge Share Public Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+    markdown_filename: luminous_knowledge_share_public_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-17504
+  source_title: Luminous - Knowledge Share Public Report
+  publish_date: 2025-11
+  project_name: Luminous LUMI Series 4 at Goorambat East Solar Farm
+  what_happened: The site's two skid steers were fully committed to shakeout operations
+    across the broader solar farm and could not be allocated to support the LUMI robots,
+    forcing Luminous to rent an additional skid steer and two operators at an unplanned
+    cost of approximately A$10,000.
+  lesson_learnt: Do not assume that shared site plant and equipment will be available
+    to support a robotic pilot — confirm allocation of skid steers and other logistics
+    equipment contractually before mobilisation, or budget explicitly for wet-rental
+    contingency.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: technology vendor
+  delay_category: procurement/supply chain
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Luminous rented an additional skid steer and two operators through
+    United Rentals, resolving the logistics bottleneck at an additional cost of approximately
+    A$10,000.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id004
+  - 16
+  evidence_excerpt: GESF had two skid steers on the entire site doing shakeout...
+    Therefore, it was difficult to allow both skid steers to support the ARENA project.
+    Instead, Luminous rented an additional skid steer and two skid steer operators
+    (Bryce and Luke) which attributed to about an additional A$10,000.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+  project_page_url: https://arena.gov.au/projects/luminous-robotics-scale-for-a-solar-future-deployment/
+  kb_category: Large-scale solar
+  kb_publish_date: 7/01/2026
+  kb_year: '2025'
+  kb_associated_project: Luminous Robotics - Scale for a Solar Future, Deployment
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $4.62m
+  total_project_value: $9.25m
+  lead_organisation: Luminous Robotics
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/05/2025
+  location: Culcairn, Goorambat, Sydney
+  project_partners: Equans Solar & Storage Australia Pty Ltd (Bouygues Group)  Neoen
+    Australia Pty Ltd Engie Renewables Australia Pty  Ltd
+  pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+  markdown_filename: luminous_knowledge_share_public_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-17504
+  contributing_source_titles:
+  - Luminous - Knowledge Share Public Report
+  contributing_sources:
+  - source_title: Luminous - Knowledge Share Public Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+    markdown_filename: luminous_knowledge_share_public_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: cost overrun
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-17505
+  source_title: Luminous - Knowledge Share Public Report
+  publish_date: 2025-11
+  project_name: Luminous LUMI Series 4 at Goorambat East Solar Farm
+  what_happened: Concerns were raised by the GESF team that LUMI robots might be causing
+    additional micro-cracks in solar modules during installation. Luminous was required
+    to commission third-party electroluminescence (EL) testing to compare robot-installed
+    modules against manually installed modules.
+  lesson_learnt: When introducing robotic module handling at a commercial solar site,
+    anticipate that the EPC or developer will require independent EL testing to verify
+    module integrity — budget and plan for this in advance rather than treating it
+    as an unplanned cost and schedule item.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: successful demonstration
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Luminous engaged third-party EL testing company PV Lab to compare
+    micro-crack rates between LUMI-installed and manually installed modules across
+    two workflow configurations.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id005
+  - 16
+  evidence_excerpt: The team at GESF had some concerns with the robots causing additional
+    micro-cracks on the solar modules during the installation process. Luminous outsourced
+    a third party EL testing company PV Lab to perform testing on a sample of the
+    modules installed by LUMI vs. the manual process.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+  project_page_url: https://arena.gov.au/projects/luminous-robotics-scale-for-a-solar-future-deployment/
+  kb_category: Large-scale solar
+  kb_publish_date: 7/01/2026
+  kb_year: '2025'
+  kb_associated_project: Luminous Robotics - Scale for a Solar Future, Deployment
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $4.62m
+  total_project_value: $9.25m
+  lead_organisation: Luminous Robotics
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/05/2025
+  location: Culcairn, Goorambat, Sydney
+  project_partners: Equans Solar & Storage Australia Pty Ltd (Bouygues Group)  Neoen
+    Australia Pty Ltd Engie Renewables Australia Pty  Ltd
+  pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+  markdown_filename: luminous_knowledge_share_public_report.md
+  source_page_pdf: 16
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-17505
+  contributing_source_titles:
+  - Luminous - Knowledge Share Public Report
+  contributing_sources:
+  - source_title: Luminous - Knowledge Share Public Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+    markdown_filename: luminous_knowledge_share_public_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-17506
+  source_title: Luminous - Knowledge Share Public Report
+  publish_date: 2025-11
+  project_name: Luminous LUMI Series 4 at Goorambat East Solar Farm
+  what_happened: Environmental and weather events — including thunderstorms (red alert
+    site shutdowns), persistent winds above 35 km/h, and muddy ground conditions —
+    caused repeated unplanned site stoppages that reduced realised module installation
+    counts during affected shifts.
+  lesson_learnt: Weather-related stoppages at Australian utility-scale solar construction
+    sites are frequent and material to daily production targets — robotic installation
+    rate projections must incorporate realistic weather downtime buffers, particularly
+    for wind, rain, and ground-condition events.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: technology vendor
+  delay_category: construction/installation
+  failure_mode: unvalidated technical assumptions
+  outcome_class: successful demonstration
+  secondary_failure_mode: poor scoping
+  intervention_note: Wind speeds were continuously monitored during shifts; production
+    was paused when persistent speeds exceeded 35 km/h to maintain worker safety.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id006
+  - 17
+  - 19
+  evidence_excerpt: These instances dramatically impact the operational times for
+    the robots and as a result, the realize number of modules installed within the
+    shift... Thunderstorms - Major safety issue. We witnessed 'red alert' meaning
+    a storm was in proximity and we had to immediately stop work... Wind - Persistent
+    high velocity winds of over 35 km/h will result in stoppage for module installation
+    as it becomes dangerous for workers.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+  project_page_url: https://arena.gov.au/projects/luminous-robotics-scale-for-a-solar-future-deployment/
+  kb_category: Large-scale solar
+  kb_publish_date: 7/01/2026
+  kb_year: '2025'
+  kb_associated_project: Luminous Robotics - Scale for a Solar Future, Deployment
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $4.62m
+  total_project_value: $9.25m
+  lead_organisation: Luminous Robotics
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/05/2025
+  location: Culcairn, Goorambat, Sydney
+  project_partners: Equans Solar & Storage Australia Pty Ltd (Bouygues Group)  Neoen
+    Australia Pty Ltd Engie Renewables Australia Pty  Ltd
+  pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+  markdown_filename: luminous_knowledge_share_public_report.md
+  source_page_pdf: 17
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-17506
+  contributing_source_titles:
+  - Luminous - Knowledge Share Public Report
+  contributing_sources:
+  - source_title: Luminous - Knowledge Share Public Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+    markdown_filename: luminous_knowledge_share_public_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-17507
+  source_title: Luminous - Knowledge Share Public Report
+  publish_date: 2025-11
+  project_name: Luminous LUMI Series 4 at Goorambat East Solar Farm
+  what_happened: All Luminous personnel deploying on a Victorian construction site
+    were required to complete in-person 'white card' (Construction Induction) training
+    for Victoria, plus a separate site induction managed by Equans, with all credentials
+    uploaded to the 3DSafety platform before they could access the site. Equipment
+    operators additionally required Certificates of Competency for each piece of plant.
+  lesson_learnt: When deploying US-based robotics personnel to Australian construction
+    sites for the first time, account for mandatory state-level construction induction
+    (white card), site-specific induction, work visa requirements, and equipment-specific
+    Certificates of Competency — these cannot be completed on the day of mobilisation
+    and must be planned weeks in advance.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: technology vendor
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: successful demonstration
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Luminous trained and certified its own engineers and technicians
+    to operate the LUMI robots, obtaining completed and approved Certificates of Competency
+    for each operator prior to site entry.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id007
+  - 18
+  evidence_excerpt: Every Luminous onsite technician (and Engineer) was required to
+    complete the in-person 'white card' training (Construction Induction) for the
+    state of Victoria... All materials (including white card, passports, and work
+    visas) had to be uploaded to 3DSafety... Certifications of Competency - All onsite
+    construction equipment operators must have a form of verification stating they
+    have been properly trained for the specific piece of equipment.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+  project_page_url: https://arena.gov.au/projects/luminous-robotics-scale-for-a-solar-future-deployment/
+  kb_category: Large-scale solar
+  kb_publish_date: 7/01/2026
+  kb_year: '2025'
+  kb_associated_project: Luminous Robotics - Scale for a Solar Future, Deployment
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $4.62m
+  total_project_value: $9.25m
+  lead_organisation: Luminous Robotics
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/05/2025
+  location: Culcairn, Goorambat, Sydney
+  project_partners: Equans Solar & Storage Australia Pty Ltd (Bouygues Group)  Neoen
+    Australia Pty Ltd Engie Renewables Australia Pty  Ltd
+  pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+  markdown_filename: luminous_knowledge_share_public_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-17507
+  contributing_source_titles:
+  - Luminous - Knowledge Share Public Report
+  contributing_sources:
+  - source_title: Luminous - Knowledge Share Public Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+    markdown_filename: luminous_knowledge_share_public_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-17508
+  source_title: Luminous - Knowledge Share Public Report
+  publish_date: 2025-11
+  project_name: Luminous LUMI Series 4 at Goorambat East Solar Farm
+  what_happened: Due to the compressed project timeline, 91% of the 11 freight shipments
+    (totalling 11,291 kg over 168,553 km) between the US and Australia were shipped
+    by air rather than sea, significantly increasing logistics costs.
+  lesson_learnt: Compressed deployment timelines force air freight for heavy robotics
+    equipment, which is approximately 5× more expensive than sea freight — realistic
+    manufacturing, assembly, and transport lead times must be built into project schedules
+    to enable sea freight and control logistics costs.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: procurement
+  proponent_type: technology vendor
+  delay_category: procurement/supply chain
+  failure_mode: execution & logistics
+  outcome_class: successful demonstration
+  secondary_failure_mode: poor scoping
+  intervention_note: Luminous partnered with Rohlig Logistics, utilising their 18,500
+    m² warehouse facility for assembly, testing, and staging of components before
+    air freight dispatch to Australia.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id008
+  - 20
+  evidence_excerpt: Of these freight shipments, 91% were by air due to the compressed
+    timeline for us to manufacture, assemble, transport, and deploy onsite at Goorambat...
+    Shipping by air is 5x more costly than by sea!
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+  project_page_url: https://arena.gov.au/projects/luminous-robotics-scale-for-a-solar-future-deployment/
+  kb_category: Large-scale solar
+  kb_publish_date: 7/01/2026
+  kb_year: '2025'
+  kb_associated_project: Luminous Robotics - Scale for a Solar Future, Deployment
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $4.62m
+  total_project_value: $9.25m
+  lead_organisation: Luminous Robotics
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/05/2025
+  location: Culcairn, Goorambat, Sydney
+  project_partners: Equans Solar & Storage Australia Pty Ltd (Bouygues Group)  Neoen
+    Australia Pty Ltd Engie Renewables Australia Pty  Ltd
+  pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+  markdown_filename: luminous_knowledge_share_public_report.md
+  source_page_pdf: 20
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-17508
+  contributing_source_titles:
+  - Luminous - Knowledge Share Public Report
+  contributing_sources:
+  - source_title: Luminous - Knowledge Share Public Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+    markdown_filename: luminous_knowledge_share_public_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: cost overrun
+  secondary_failure_mode_v2: schedule slippage
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-17509
+  source_title: Luminous - Knowledge Share Public Report
+  publish_date: 2025-11
+  project_name: Luminous LUMI Series 4 at Goorambat East Solar Farm
+  what_happened: The effective daily production window was only 7.5 hours out of a
+    nominally allocated 9-hour shift (7am–4pm) due to mandatory pre-start briefings,
+    a 15-minute Smoke-O break, a lunch break, and travel time between the crib area
+    and the increasingly distant work face — resulting in up to 26% loss of operational
+    duration.
+  lesson_learnt: Robotic installation rate forecasts for Australian construction sites
+    must be based on ~7.5 hours of productive time per 9-hour shift, not total allocated
+    hours — pre-start, breaks, and increasing travel time to the work face consistently
+    consume approximately 26% of scheduled shift time.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: unvalidated technical assumptions
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id009
+  - 9
+  evidence_excerpt: A key learning is while the allocated shift hours is from 7am-4pm,
+    the expected maximum production time is about 7.5 hours... We found this, along
+    with other miscellaneous latencies, can account for up to 26% of loss operational
+    duration—thus resulting in 74% operational duration for production.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+  project_page_url: https://arena.gov.au/projects/luminous-robotics-scale-for-a-solar-future-deployment/
+  kb_category: Large-scale solar
+  kb_publish_date: 7/01/2026
+  kb_year: '2025'
+  kb_associated_project: Luminous Robotics - Scale for a Solar Future, Deployment
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $4.62m
+  total_project_value: $9.25m
+  lead_organisation: Luminous Robotics
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/05/2025
+  location: Culcairn, Goorambat, Sydney
+  project_partners: Equans Solar & Storage Australia Pty Ltd (Bouygues Group)  Neoen
+    Australia Pty Ltd Engie Renewables Australia Pty  Ltd
+  pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+  markdown_filename: luminous_knowledge_share_public_report.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-17509
+  contributing_source_titles:
+  - Luminous - Knowledge Share Public Report
+  contributing_sources:
+  - source_title: Luminous - Knowledge Share Public Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+    markdown_filename: luminous_knowledge_share_public_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-17510
+  source_title: Luminous - Knowledge Share Public Report
+  publish_date: 2025-11
+  project_name: Luminous LUMI Series 4 at Goorambat East Solar Farm
+  what_happened: LUMI robots achieved installation rates that exceeded the pace at
+    which human catchers could complete their tasks (bolting, torquing, and torque
+    marking), making the labourers the rate-limiting factor rather than the robots.
+    In the final weeks, LUMI had to stop production one hour early each shift to allow
+    labourers to finish securing installed modules.
+  lesson_learnt: When deploying high-speed robotic module installers, model the entire
+    crew system — robot throughput will exceed labourer finishing capacity, making
+    human task completion the binding constraint. Plan crew ratios and task sequencing
+    to prevent end-of-shift incomplete work accumulation.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: technology vendor
+  delay_category: construction/installation
+  failure_mode: execution & logistics
+  outcome_class: successful demonstration
+  secondary_failure_mode: poor scoping
+  intervention_note: In the final weeks, LUMI robots were stopped one hour before
+    end of shift to give labourers sufficient time to complete bolting, torquing,
+    and torque marking of all installed modules.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id010
+  - 9
+  evidence_excerpt: LUMI achieved rates where it was no longer the limiting factor.
+    Module install is an interdependent process sensitive to the availability and
+    work ethic of the laborers... the last weeks saw the LUMIs stop production an
+    hour earlier to provide sufficient time for the laborers to finish their tasks
+    (full bolting, torquing and torque marking).
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+  project_page_url: https://arena.gov.au/projects/luminous-robotics-scale-for-a-solar-future-deployment/
+  kb_category: Large-scale solar
+  kb_publish_date: 7/01/2026
+  kb_year: '2025'
+  kb_associated_project: Luminous Robotics - Scale for a Solar Future, Deployment
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $4.62m
+  total_project_value: $9.25m
+  lead_organisation: Luminous Robotics
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/05/2025
+  location: Culcairn, Goorambat, Sydney
+  project_partners: Equans Solar & Storage Australia Pty Ltd (Bouygues Group)  Neoen
+    Australia Pty Ltd Engie Renewables Australia Pty  Ltd
+  pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+  markdown_filename: luminous_knowledge_share_public_report.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-17510
+  contributing_source_titles:
+  - Luminous - Knowledge Share Public Report
+  contributing_sources:
+  - source_title: Luminous - Knowledge Share Public Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+    markdown_filename: luminous_knowledge_share_public_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-17511
+  source_title: Luminous - Knowledge Share Public Report
+  publish_date: 2025-11
+  project_name: Luminous LUMI Series 4 at Goorambat East Solar Farm
+  what_happened: Initial module pallet staging required LUMI robots to pick a panel
+    and travel up to 20 metres to the placement location, adding significant latency
+    and vibration to each installation cycle. When the workflow was changed to skid-steer
+    following, pallets could be delivered to the robot at the point of installation,
+    eliminating travel distance.
+  lesson_learnt: At scale, robotic solar installation fleets require dedicated logistics
+    automation — manual skid-steer pallet replenishment consuming 26% of shift time
+    becomes the system-level bottleneck before robot count or speed. Future fleet
+    deployments should plan for autonomous logistics robots to maintain continuous
+    panel supply.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: technology vendor
+  delay_category: construction/installation
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: execution & logistics
+  intervention_note: Pallet staging was reorganised to cluster pallets near the ends
+    of rows, reducing skid steer retrieval travel to one row's distance and back,
+    cutting pallet retrieval time from 5–10 minutes to approximately 2 minutes per
+    box.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages:
+  - 21
+  - 22
+  - 23
+  evidence_excerpt: We eventually learned that this staging was sub-optimal, because
+    the skid steer would have to traverse the row and 'exit', then enter the row next
+    to it to retrieve new pallets. Doing so, added an additional 5-10 minutes per
+    box... Near the end of the project, we altered the staging to be clustered near
+    the end of the rows... This brought the pallet retrieval time to about 2 minutes
+    per box.
+  confidence_note: Canonical record merged from 3 source records across 1 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+  project_page_url: https://arena.gov.au/projects/luminous-robotics-scale-for-a-solar-future-deployment/
+  kb_category: Large-scale solar
+  kb_publish_date: 7/01/2026
+  kb_year: '2025'
+  kb_associated_project: Luminous Robotics - Scale for a Solar Future, Deployment
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $4.62m
+  total_project_value: $9.25m
+  lead_organisation: Luminous Robotics
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/05/2025
+  location: Culcairn, Goorambat, Sydney
+  project_partners: Equans Solar & Storage Australia Pty Ltd (Bouygues Group)  Neoen
+    Australia Pty Ltd Engie Renewables Australia Pty  Ltd
+  pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+  markdown_filename: luminous_knowledge_share_public_report.md
+  source_page_pdf: null
+  corroboration_count: 3
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-17511
+  - ARENA-DLV-17512
+  - ARENA-DLV-17513
+  contributing_source_titles:
+  - Luminous - Knowledge Share Public Report
+  contributing_sources:
+  - source_title: Luminous - Knowledge Share Public Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+    source_pages:
+    - 21
+    - 22
+    source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+    markdown_filename: luminous_knowledge_share_public_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-17514
+  source_title: Luminous - Knowledge Share Public Report
+  publish_date: 2025-11
+  project_name: Luminous LUMI Series 4 at Goorambat East Solar Farm
+  what_happened: Zero safety incidents were recorded during the entire module installation
+    phase at Goorambat East Solar Farm. The safety outcome was achieved through a
+    jointly developed and continuously updated Safe Work Method Statement (SWMS),
+    flagged work zones restricting access to trained personnel only, and real-time
+    wind speed monitoring.
+  lesson_farnt: A zero-incident outcome for a first-ever robotic module installation
+    deployment can be achieved by co-developing the SWMS with the site safety team
+    from day one, creating physically demarcated robot-only work zones, and implementing
+    real-time environmental monitoring with pre-defined stop thresholds.
+  lesson_learnt: A zero-incident outcome for a first-ever robotic module installation
+    deployment can be achieved by co-developing the SWMS with the site safety team
+    from day one, creating physically demarcated robot-only work zones, and implementing
+    real-time environmental monitoring with pre-defined stop thresholds.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id011
+  - 19
+  evidence_excerpt: Our team is proud to announce that during the entire course of
+    module installation production with the LUMI robot fleet at GESF, zero safety
+    incidents were reported. The safety team from Goorambat and Luminous meticulously
+    drafted and continuously updated the Safe Work Method Statement (SWMS) to ensure
+    that all workers were knowledgeable to safely conduct high-risk construction work.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+  project_page_url: https://arena.gov.au/projects/luminous-robotics-scale-for-a-solar-future-deployment/
+  kb_category: Large-scale solar
+  kb_publish_date: 7/01/2026
+  kb_year: '2025'
+  kb_associated_project: Luminous Robotics - Scale for a Solar Future, Deployment
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $4.62m
+  total_project_value: $9.25m
+  lead_organisation: Luminous Robotics
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/05/2025
+  location: Culcairn, Goorambat, Sydney
+  project_partners: Equans Solar & Storage Australia Pty Ltd (Bouygues Group)  Neoen
+    Australia Pty Ltd Engie Renewables Australia Pty  Ltd
+  pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+  markdown_filename: luminous_knowledge_share_public_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-17514
+  contributing_source_titles:
+  - Luminous - Knowledge Share Public Report
+  contributing_sources:
+  - source_title: Luminous - Knowledge Share Public Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+    markdown_filename: luminous_knowledge_share_public_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-17515
+  source_title: Luminous - Knowledge Share Public Report
+  publish_date: 2025-11
+  project_name: Luminous LUMI Series 4 at Goorambat East Solar Farm
+  what_happened: Robot BY-001 was configured to throw modules to the right and BY-002
+    to the left. Because the short rails at the beginning of each row were not pre-spaced
+    and were initially skipped, BY-001 had to revisit these sections later, resulting
+    in BY-002 installing 71.7% of all modules while BY-001 installed only 28.3%.
+  lesson_learnt: Uneven task allocation between paired robots in a two-robot fleet
+    configuration significantly reduces overall fleet efficiency — ensure row-start
+    geometry is pre-spaced and ready before beginning a new row to prevent one robot
+    carrying a disproportionate share of the workload.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: technology vendor
+  delay_category: construction/installation
+  failure_mode: execution & logistics
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: BY-001 revisited and installed the initially skipped short-rail
+    modules at the beginning of rows after the main installation pass.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id012
+  - 6
+  evidence_excerpt: For nominal flow, these were skipped (not initially pre-spaced
+    and more difficult manually) initially and were later revisited by BY-001. As
+    a result BY-002 installed 71.7% of all modules.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+  project_page_url: https://arena.gov.au/projects/luminous-robotics-scale-for-a-solar-future-deployment/
+  kb_category: Large-scale solar
+  kb_publish_date: 7/01/2026
+  kb_year: '2025'
+  kb_associated_project: Luminous Robotics - Scale for a Solar Future, Deployment
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $4.62m
+  total_project_value: $9.25m
+  lead_organisation: Luminous Robotics
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/05/2025
+  location: Culcairn, Goorambat, Sydney
+  project_partners: Equans Solar & Storage Australia Pty Ltd (Bouygues Group)  Neoen
+    Australia Pty Ltd Engie Renewables Australia Pty  Ltd
+  pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+  markdown_filename: luminous_knowledge_share_public_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-17515
+  contributing_source_titles:
+  - Luminous - Knowledge Share Public Report
+  contributing_sources:
+  - source_title: Luminous - Knowledge Share Public Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+    markdown_filename: luminous_knowledge_share_public_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-17516
+  source_title: Luminous - Knowledge Share Public Report
+  publish_date: 2025-11
+  project_name: Luminous LUMI Series 4 at Goorambat East Solar Farm
+  what_happened: The LUMI robots achieved a 3.3× efficiency gain over the status quo
+    manual installation baseline (0.125 loaded crew man-hours per module), though
+    the existing Goorambat manual crews were measured as slightly more efficient than
+    the baseline at 0.0942 hrs/module. The overall block (B27) was completed ahead
+    of schedule at 103% of target production rate.
+  lesson_learnt: Robotic solar module installation can deliver a measurable efficiency
+    gain (3.3×) over a standard manual baseline in a first commercial pilot — use
+    loaded crew man-hours per module (accounting for total crew size × shift hours
+    ÷ modules installed) as the primary comparative productivity metric to avoid misleading
+    comparisons that ignore crew size differences.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id013
+  - 8
+  evidence_excerpt: LUMI robots achieved a 3.3x efficiency gain over status quo...
+    While this project uses the baseline of 0.125 loaded crew man-hours per module
+    metric for comparisons, it was found that the existing Goorambat crews were slightly
+    more efficient, measuring at 0.0942 hrs / mod.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+  project_page_url: https://arena.gov.au/projects/luminous-robotics-scale-for-a-solar-future-deployment/
+  kb_category: Large-scale solar
+  kb_publish_date: 7/01/2026
+  kb_year: '2025'
+  kb_associated_project: Luminous Robotics - Scale for a Solar Future, Deployment
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $4.62m
+  total_project_value: $9.25m
+  lead_organisation: Luminous Robotics
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/05/2025
+  location: Culcairn, Goorambat, Sydney
+  project_partners: Equans Solar & Storage Australia Pty Ltd (Bouygues Group)  Neoen
+    Australia Pty Ltd Engie Renewables Australia Pty  Ltd
+  pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+  markdown_filename: luminous_knowledge_share_public_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-17516
+  contributing_source_titles:
+  - Luminous - Knowledge Share Public Report
+  contributing_sources:
+  - source_title: Luminous - Knowledge Share Public Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Luminous-Knowledge-Share-Public-Report.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/luminous-knowledge-share-public-report/
+    markdown_filename: luminous_knowledge_share_public_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false

@@ -1,0 +1,2553 @@
+- record_id: ARENA-DLV-56806
+  source_title: Solar Power Ensemble Forecaster Final Report
+  publish_date: 2021-03
+  project_name: Solar Power Ensemble Forecaster (SPEF)
+  what_happened: AEMO server slow response times caused forecast submissions to miss
+    gate closure times, and were recorded as reliability failures against the self-forecast
+    during the initial assessment period, even though the cause was AEMO infrastructure
+    rather than forecast quality. AEMO's policy only excluded intervals from assessment
+    when all self-forecast providers were affected simultaneously, but in practice
+    all providers were affected at different times.
+  lesson_learnt: Self-forecast providers entering the AEMO initial assessment process
+    should document and formally escalate AEMO server-side response failures to avoid
+    being penalised for reliability issues outside their control; the assessment framework's
+    requirement for simultaneous multi-provider outages before exclusion is impractical
+    and may unfairly extend assessment periods.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Issues were largely resolved by the conclusion of the project;
+    the project recommends AEMO review assessment exclusion criteria to address this
+    systemic fairness issue.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages:
+  - 2
+  - 11
+  evidence_excerpt: when submitting 7 seconds prior to the gate closure, the response
+    time from the AEMO server varied from near instantaneous to 12 seconds (where
+    any response time over 6-7 seconds would cause the gate closure to be missed),
+    but submitting 9 seconds prior to the gate closure, only 2 seconds earlier, the
+    response time is always near instantaneous, and at most less than 1 second.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 7/03/2021
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+  markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  source_page_pdf: 11
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-8501
+  - ARENA-DLV-56806
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Final Report
+  - Solar Power Ensemble Forecaster Lessons Learnt 2
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Lessons Learnt 2
+    pdf_url: https://arena.gov.au/assets/2020/04/solar-power-ensemble-forecaster-lessons-learnt-2.pdf
+    source_pages:
+    - 2
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-lessons-learnt-2/
+    markdown_filename: solar_power_ensemble_forecaster_lessons_learnt_2.md
+  - source_title: Solar Power Ensemble Forecaster Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+    source_pages:
+    - 11
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+    markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-56804
+  source_title: Solar Power Ensemble Forecaster Final Report
+  publish_date: 2021-03
+  project_name: Solar Power Ensemble Forecaster (SPEF)
+  what_happened: The AEMO Causer Pays procedure was found to be partially undocumented,
+    with key data (Frequency Indicator values) not publicly available, and required
+    data scattered across disparate, poorly documented locations, making it extremely
+    difficult to reimplement and validate.
+  lesson_learnt: Projects that need to reimplement or validate regulatory fee calculation
+    procedures should negotiate early access to worked examples and underlying data
+    from the regulator; the AEMO Causer Pays procedure was so opaque that AEMO staff
+    reportedly stated it had never been successfully reimplemented, making independent
+    validation nearly impossible without insider access.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: Frequency Indicator data was eventually supplied by one of the
+    market participants in the trial, enabling partial reconstruction of the Causer
+    Pays model.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages:
+  - 2
+  - 10
+  - 11
+  evidence_excerpt: Some important parts of the FCAS procedure are undocumented (e.g.
+    FI values are prematurely rounded to five decimal points in AEMO's calculations,
+    meaning that intervals where FI is approximately zero, are removed from five-minute
+    factor calculations), and data which is required for the calculation is in disparate,
+    impractical and poorly documented locations across both NEMWeb and the AEMO website.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 7/03/2021
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+  markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  source_page_pdf: 10
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-8502
+  - ARENA-DLV-56804
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Final Report
+  - Solar Power Ensemble Forecaster Lessons Learnt 2
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Lessons Learnt 2
+    pdf_url: https://arena.gov.au/assets/2020/04/solar-power-ensemble-forecaster-lessons-learnt-2.pdf
+    source_pages:
+    - 2
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-lessons-learnt-2/
+    markdown_filename: solar_power_ensemble_forecaster_lessons_learnt_2.md
+  - source_title: Solar Power Ensemble Forecaster Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+    source_pages:
+    - 10
+    - 11
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+    markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-8503
+  source_title: Solar Power Ensemble Forecaster Lessons Learnt 2
+  publish_date: null
+  project_name: Skycam and Multi-Model Solar Forecasting Project
+  what_happened: Large discrepancies were found between on-site SCADA-based export
+    power measurements and AEMO's published INITIALMW values across several sites.
+    On some sites the differences were almost as large as the forecast error itself,
+    significantly constraining the ability to demonstrate forecast accuracy improvements
+    over AWEFS/ASEFS benchmarks.
+  lesson_learnt: 'Evaluators of self-forecasting systems must account for AEMO''s
+    data substitution behaviour: when SCADA power quality is flagged, INITIALMW is
+    replaced with UIGF, inflating apparent ASEFS performance and making fair comparison
+    against self-forecasts impossible without separating affected intervals.'
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The project team was still working to resolve data discrepancies
+    across several sites at the time of reporting; no completed resolution was documented.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages:
+  - 2
+  - 3
+  - 62
+  evidence_excerpt: Poor SCADA data quality benefits the incumbent forecast. When
+    the SCADA power data sent from the farm to AEMO is flagged as poor quality, the
+    INITIALMW value is sometimes replaced with the UIGF. This quality data is difficult
+    to obtain, and if not considered when assessing forecasts makes the incumbent
+    forecast (e.g. ASEFS at SF4) appear to be much higher performing than it may be.
+  confidence_note: issue_severity set to major because the discrepancy was of sufficient
+    magnitude to fundamentally compromise the core project objective of demonstrating
+    forecast accuracy improvement. Canonical record merged from 2 source records across
+    2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 6/04/2020
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2020/04/solar-power-ensemble-forecaster-lessons-learnt-2.pdf
+  markdown_filename: solar_power_ensemble_forecaster_lessons_learnt_2.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-8503
+  - ARENA-DLV-56812
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Final Report
+  - Solar Power Ensemble Forecaster Lessons Learnt 2
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Lessons Learnt 2
+    pdf_url: https://arena.gov.au/assets/2020/04/solar-power-ensemble-forecaster-lessons-learnt-2.pdf
+    source_pages:
+    - 2
+    - 3
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-lessons-learnt-2/
+    markdown_filename: solar_power_ensemble_forecaster_lessons_learnt_2.md
+  - source_title: Solar Power Ensemble Forecaster Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+    source_pages:
+    - 62
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+    markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.95
+- record_id: ARENA-DLV-8504
+  source_title: Solar Power Ensemble Forecaster Lessons Learnt 2
+  publish_date: null
+  project_name: Skycam and Multi-Model Solar Forecasting Project
+  what_happened: Intermittent unknown errors on the AEMO server or within user account
+    permissions caused forecast submission failures on multiple occasions. In two
+    notable cases, the commencement of forecast submission was delayed significantly;
+    in another, many missed forecasts materially impacted the self-forecasting performance
+    assessment. The errors started and stopped without any intervention or changes
+    made by either the project team or market participants.
+  lesson_learnt: Self-forecast technology providers integrating with AEMO's EMMS system
+    should verify whether programmatic password management is available before project
+    start; the inability to automate password rotation across five farms with multiple
+    accounts each imposed a disproportionate administrative burden that diverted effort
+    from forecast improvement.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: In mid-October 2020 AEMO implemented an API endpoint enabling
+    self-forecast providers to change account passwords programmatically, resolving
+    the issue near the end of the project.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages:
+  - 3
+  - 11
+  evidence_excerpt: An inability for the self-forecast provider to change the passwords
+    for the EMMS user accounts used as the authentication method when submitting forecasts.
+    This was a challenge as the password must be changed every 90 days... Managing
+    this across five solar farms, with multiple accounts for each farm (pre-production,
+    production and backup accounts) required a significant amount of time and coordination,
+    which could have been better spent improving other aspects of our forecasting
+    system.
+  confidence_note: failure_mode set to integration failure as the root cause appears
+    to be at the interface between the project's submission system and AEMO's server/account
+    management infrastructure rather than within either system independently. Canonical
+    record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 6/04/2020
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2020/04/solar-power-ensemble-forecaster-lessons-learnt-2.pdf
+  markdown_filename: solar_power_ensemble_forecaster_lessons_learnt_2.md
+  source_page_pdf: 3
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-8504
+  - ARENA-DLV-56805
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Final Report
+  - Solar Power Ensemble Forecaster Lessons Learnt 2
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Lessons Learnt 2
+    pdf_url: https://arena.gov.au/assets/2020/04/solar-power-ensemble-forecaster-lessons-learnt-2.pdf
+    source_pages:
+    - 3
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-lessons-learnt-2/
+    markdown_filename: solar_power_ensemble_forecaster_lessons_learnt_2.md
+  - source_title: Solar Power Ensemble Forecaster Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+    source_pages:
+    - 11
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+    markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-8505
+  source_title: Solar Power Ensemble Forecaster Lessons Learnt 2
+  publish_date: null
+  project_name: Skycam and Multi-Model Solar Forecasting Project
+  what_happened: 'As a non-market participant forecast provider, the project team
+    faced operational complications including: manual password change processes requiring
+    coordination with market participants, blurred responsibility boundaries, and
+    an overly complex and expensive process to access MarketNet data. The lack of
+    MarketNet access risked reducing forecast accuracy while imposing cost barriers
+    on forecast providers.'
+  lesson_learnt: Forecast providers operating as non-market participants should establish
+    clear documented protocols with market participants for credential management
+    before going live, and advocate for automated password processes and streamlined
+    MarketNet access — the current manual, fragmented arrangement creates operational
+    risk and cost barriers that will inhibit uptake of self-forecasting solutions
+    at scale.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: coordination & stakeholders
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id001
+  - 3
+  evidence_excerpt: Passwords for submission must be changed regularly. This is a
+    manual process that needs to be carried out by the market participant and the
+    information relayed to the forecast provider. This provides some logistical challenges
+    and blurs the boundary lines for responsibility... Gaining access to MarketNet
+    data is an overly complex and expensive process for non-market participants.
+  confidence_note: transferability set to broad because these barriers apply to any
+    non-market-participant forecast provider across wind and solar, not just this
+    project configuration.
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 6/04/2020
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2020/04/solar-power-ensemble-forecaster-lessons-learnt-2.pdf
+  markdown_filename: solar_power_ensemble_forecaster_lessons_learnt_2.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-8505
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Lessons Learnt 2
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Lessons Learnt 2
+    pdf_url: https://arena.gov.au/assets/2020/04/solar-power-ensemble-forecaster-lessons-learnt-2.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-lessons-learnt-2/
+    markdown_filename: solar_power_ensemble_forecaster_lessons_learnt_2.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-56801
+  source_title: Solar Power Ensemble Forecaster Final Report
+  publish_date: 2021-03
+  project_name: Solar Power Ensemble Forecaster (SPEF)
+  what_happened: The project experienced significant delays during site integration
+    due to installation and integration problems across the five trial solar farms,
+    including high staff turnover at solar farms — one farm had its technical team
+    change four times during the project — which hampered the onboarding of the self-forecasting
+    system.
+  lesson_learnt: Forecast technology providers should identify and document a stable
+    technical point of contact at each solar farm before committing to integration
+    timelines; high staff turnover in the young solar generation industry means institutional
+    knowledge is frequently lost, directly delaying system commissioning and degrading
+    data quality.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: execution & logistics
+  intervention_note: Automated methods were developed to detect and remove periods
+    of poor data quality, including data dropouts and instrumentation output freezes,
+    improving model training reliability.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages:
+  - 9
+  - 10
+  evidence_excerpt: The greatest difficulty that arose during the commissioning and
+    integration of the self-forecasting system with the sites was the variability
+    of available data points and SCADA systems. For a solar forecasting technology
+    to be scalable whilst remaining financially viable with minimal technical debt,
+    it is imperative to attempt to standardise the data being gathered from the farms.
+  confidence_note: Canonical record merged from 2 source records across 1 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 7/03/2021
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+  markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  source_page_pdf: 9
+  corroboration_count: 2
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-56801
+  - ARENA-DLV-56802
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Final Report
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+    source_pages:
+    - 9
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+    markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-56803
+  source_title: Solar Power Ensemble Forecaster Final Report
+  publish_date: 2021-03
+  project_name: Solar Power Ensemble Forecaster (SPEF)
+  what_happened: AEMO did not respond to clarification requests regarding the Causer
+    Pays procedure for almost four months, severely hampering the project's ability
+    to produce the cost-benefit analysis and preventing the planned financial optimisation
+    of forecast models to further reduce causer-pays charges.
+  lesson_learnt: Projects that depend on regulatory body clarification for financial
+    modelling should build explicit buffer time and escalation protocols into their
+    schedules; a nearly four-month AEMO non-response caused the financial optimisation
+    workstream to be abandoned, reducing the demonstrable financial impact of the
+    project.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: The team eventually received worked examples from AEMO which
+    were described as very helpful, and used these to complete a partial financial
+    analysis, though insufficient time remained to complete planned model optimisation.
+  transferability: moderate
+  delay_magnitude: 3-12 months
+  technology_domain: solar PV
+  source_pages: &id002
+  - 10
+  - 11
+  evidence_excerpt: Further enquiries to AEMO seeking clarification on the exact causer-pays
+    procedure, seeking to correct discrepancies between our implementation based on
+    the documentation and AEMO's published results went without a response for almost
+    four months. This severely hampered our ability to produce the cost-benefit analysis
+    for this report and meant we were unable to investigate planned financial optimisation
+    of the models to further reduce causer-pays charges for the sites in this trial.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 7/03/2021
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+  markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-56803
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Final Report
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+    markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-56807
+  source_title: Solar Power Ensemble Forecaster Final Report
+  publish_date: 2021-03
+  project_name: Solar Power Ensemble Forecaster (SPEF)
+  what_happened: The initial AEMO self-forecasting assessment for SF2 extended to
+    17 weeks (more than double the standard 8-week window) primarily because of reliability
+    issues that arose in the first week only, after which fixes were applied; the
+    16-week rolling assessment window did not reset after early issues were corrected.
+  lesson_learnt: Teams entering AEMO's self-forecasting initial assessment should
+    ensure the forecasting system is fully debugged and stable before beginning the
+    assessment clock; a single problematic week at the outset extended the assessment
+    to 17 weeks due to the structure of the rolling assessment window, delaying live
+    dispatch use by months.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: technology vendor
+  delay_category: approvals/regulatory
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: Fixes were applied to the forecasting system after the first
+    week; three subsequent sites (SF1, SF4, SF5) completed assessment within the standard
+    8-week window.
+  transferability: moderate
+  delay_magnitude: 3-12 months
+  technology_domain: solar PV
+  source_pages: &id003
+  - 11
+  - 12
+  evidence_excerpt: SF2 was the first farm that began the AEMO assessment process,
+    and as such there were some initial teething issues that arose, resulting in a
+    greatly extended initial assessment. The assessment window is eight weeks, extending
+    up to sixteen weeks, where beyond this the assessment window stays at a rolling
+    sixteen weeks until the forecast passes. In this case, most of the poor reliability
+    that caused the extended assessment occurred in the first week, after which fixes
+    had been applied to the forecasting system.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 7/03/2021
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+  markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-56807
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Final Report
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+    markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.72
+- record_id: ARENA-DLV-56808
+  source_title: Solar Power Ensemble Forecaster Final Report
+  publish_date: 2021-03
+  project_name: Solar Power Ensemble Forecaster (SPEF)
+  what_happened: The Skycam-stereo pipeline, which used two cameras to estimate cloud
+    heights via stereography, showed no statistically significant improvement in forecast
+    performance during validation, and was excluded from live forecasts; commissioning
+    was found to be very sensitive to small tilt and rotation differences in camera
+    orientation.
+  lesson_learnt: Stereo sky camera systems for cloud height estimation require precise
+    physical alignment to produce useful results; the commissioning procedure is highly
+    sensitive to minor orientation errors, and deployment teams should validate stereographic
+    calibration at each site before relying on the additional data channel for forecast
+    improvement.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated integration
+  intervention_note: Stereo data was excluded from live forecasts due to insignificant
+    improvement and the bandwidth and compute overhead; further software development
+    was identified as needed to correct rotational errors.
+  transferability: narrow
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id004
+  - 13
+  evidence_excerpt: In forecast validation studies performed on the combined stereo
+    and single Skycam datasets, no statistically significant improvement in forecast
+    performance was observed. The stereo analysis functions have been validated at
+    only a single site, and the commissioning procedure for new sites seems to be
+    very sensitive to small tilt and rotation differences in the orientation of the
+    two stereo cameras; we believe this may be causing anomalous height results to
+    be generated.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 7/03/2021
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+  markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-56808
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Final Report
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+    markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-56809
+  source_title: Solar Power Ensemble Forecaster Final Report
+  publish_date: 2021-03
+  project_name: Solar Power Ensemble Forecaster (SPEF)
+  what_happened: At SF4, which experienced frequent semi-dispatch cap curtailments
+    and SCADA data quality issues, the incumbent ASEFS forecast outperformed all self-forecasting
+    models in MAE, and SF4 was omitted from FCAS fee modelling because the dispatch
+    forecast was AEMO-suppressed from September onwards.
+  lesson_learnt: Solar farms with frequent semi-dispatch cap periods are poor candidates
+    for self-forecasting trials using power autoregression models; the inability to
+    provide unconstrained power data during curtailed periods severely degrades self-forecast
+    performance relative to ASEFS, and sites with frequent suppression should be prioritised
+    for improvements in irradiance-only forecast models before inclusion in dispatch
+    trials.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: SF4 was excluded from FCAS financial modelling; the project identified
+    improvements to irradiance-only models as a priority for future work at frequently
+    capped sites.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id005
+  - 24
+  - 52
+  evidence_excerpt: ASEFS had the lowest MAE at SF4, mostly due to the issues with
+    SCADA data and frequent curtailments... SF4 and SF5 were omitted from FCAS fee
+    modelling due to a shortage of data from commissioning delays.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 7/03/2021
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+  markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-56809
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Final Report
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+    markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-56810
+  source_title: Solar Power Ensemble Forecaster Final Report
+  publish_date: 2021-03
+  project_name: Solar Power Ensemble Forecaster (SPEF)
+  what_happened: Forecasts optimised primarily to minimise RMSE or MAE did not directly
+    minimise FCAS Causer Pays fees because the relationship between forecast error
+    metrics and fees is non-trivial; the project found that RMSE was slightly more
+    important than MAE for fee estimation (contrary to the documented procedure),
+    and that fee reduction was not directly associated with improved forecast performance.
+  lesson_learnt: Solar forecast providers seeking to reduce Causer Pays fees should
+    optimise directly for fee reduction using RNEF/LNEF metrics rather than assuming
+    MAE or RMSE minimisation is sufficient; the Causer Pays procedure's reliance on
+    frequency coincidence and lagged contribution factors means raw forecast accuracy
+    does not translate linearly into fee savings.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The team developed a multi-input linear regression model using
+    RNEF/LNEF metrics to estimate relative Contribution Factors per model, enabling
+    after-the-fact fee comparison even without real-time FI data.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id006
+  - 9
+  - 61
+  evidence_excerpt: Fee reduction was found to not be directly associated with improved
+    forecast performance, due to several assumptions in how fees are calculated...
+    Forecasts should perform well in both RMSE and MAE metrics to minimise Causer
+    Pays costs... the best models to estimate these fees from forecast errors generally
+    relied equally on MAE and RMSE metrics, mostly with a slightly heavier weighting
+    toward RMSE. This is an important finding that is not obvious from the Causer
+    Pays procedure documentation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 7/03/2021
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+  markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-56810
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Final Report
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+    markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-56811
+  source_title: Solar Power Ensemble Forecaster Final Report
+  publish_date: 2021-03
+  project_name: Solar Power Ensemble Forecaster (SPEF)
+  what_happened: Power autoregression models performed poorly for a small number of
+    dispatch intervals immediately after a semi-dispatch cap was released, because
+    the historical power window still contained constrained power values, leading
+    to depressed forecasts and forecast errors.
+  lesson_learnt: Self-forecast models that use historical power data should implement
+    logic to switch to irradiance-only models during and immediately after semi-dispatch
+    cap periods; training data should also have pre- and post-cap ramp intervals removed,
+    as implementing this filtering produced 4–5% improvements in MAE skill vs ASEFS.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: unvalidated technical assumptions
+  outcome_class: successful demonstration
+  secondary_failure_mode: data & measurement
+  intervention_note: Ensemble models were updated to switch to irradiance-only models
+    during and immediately after constrained periods; training data filtering of pre-
+    and post-cap ramps was implemented, yielding 4–5% MAE skill improvements.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id007
+  - 61
+  - 62
+  evidence_excerpt: Export power ramps occurring before and after the semi-dispatch
+    cap flag is set need to be removed from training data... Significant forecast
+    improvements in validation (4-5% improvements in MAE skill vs ASEFS) were observed
+    after implementing this filtering in several models.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 7/03/2021
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+  markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-56811
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Final Report
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+    markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-56813
+  source_title: Solar Power Ensemble Forecaster Final Report
+  publish_date: 2021-03
+  project_name: Solar Power Ensemble Forecaster (SPEF)
+  what_happened: Forecast models exhibited statistically significant biases to underpredict
+    in the morning and overpredict in the afternoon, a pattern observed in late September
+    across most models with a persistence component; automatic bias correction was
+    added but not deployed early enough to materially improve results reported in
+    the project.
+  lesson_learnt: Solar forecast models with a persistence component should incorporate
+    automatic diurnal bias correction from initial deployment; the morning underprediction
+    and afternoon overprediction pattern is systematic and predictable, and failure
+    to correct for it early in the trial forfeited potential performance improvements
+    across the assessment period.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: execution & logistics
+  intervention_note: Automatic bias correction was added to most models in late September,
+    but was not put into production early enough to have a significant improvement
+    on the reported results.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id008
+  - 62
+  - 63
+  evidence_excerpt: We observed (in late September) that most models with a persistence
+    component exhibited statistically significant biases to underpredict in the morning
+    and overpredict in the afternoon... Automatic bias correction has now been added
+    to most models to address this issue but was not put into production early enough
+    to have a significant improvement in the results in this report.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 7/03/2021
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+  markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  source_page_pdf: 62
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-56813
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Final Report
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+    markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-56814
+  source_title: Solar Power Ensemble Forecaster Final Report
+  publish_date: 2021-03
+  project_name: Solar Power Ensemble Forecaster (SPEF)
+  what_happened: The ensemble forecasting approach consistently placed one of the
+    three ensemble models (Mean, Median, or ML) in the top two performers on every
+    site for both MAE and RMSE, and delivered an average 13% reduction in Causer Pays
+    fees across the three assessed sites compared to ASEFS.
+  lesson_learnt: Ensemble approaches that combine multiple individual solar forecast
+    models consistently outperform any single model including the incumbent ASEFS
+    system; deploying an ensemble as the dispatch forecast is a robust strategy for
+    solar farms seeking to reduce FCAS Causer Pays fees across diverse weather and
+    operational conditions.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id009
+  - 8
+  - 52
+  evidence_excerpt: One of the three ensemble models was in the top two overall on
+    every site for both MAE and RMSE, suggesting that ensembles are an excellent approach
+    to this type of forecasting... On average, the dispatch ensemble forecasts saved
+    13% in regulation FCAS costs when compared to the ASEFS forecast.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 7/03/2021
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+  markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  source_page_pdf: 20
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-56814
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Final Report
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+    markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+- record_id: ARENA-DLV-56815
+  source_title: Solar Power Ensemble Forecaster Final Report
+  publish_date: 2021-03
+  project_name: Solar Power Ensemble Forecaster (SPEF)
+  what_happened: The best financially performing individual model at each site (SmartPersistence
+    at SF1 and SF2, SkycamET at SF3) saved an average of 53% in Causer Pays fees versus
+    ASEFS over the August–November 2020 period — substantially more than the 13% achieved
+    by the dispatched ensemble — because models were not individually optimised for
+    fee reduction.
+  lesson_learnt: There is substantial unrealised financial value in optimising individual
+    forecast models directly for Causer Pays fee reduction rather than for MAE/RMSE
+    alone; future projects should implement fee-aware model selection and tuning once
+    the Causer Pays reimplementation is validated, as the gap between ensemble dispatch
+    savings (13%) and best-model savings (53%) quantifies the optimisation opportunity.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id010
+  - 9
+  - 53
+  evidence_excerpt: The increase in individual model savings (+34%) compared to the
+    dispatch ensemble model savings indicates the potential for additional savings
+    by using forecast optimisation based on per-model FCAS costs, or for direct optimisation
+    of the ensemble model for fee reduction and forecast accuracy.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 7/03/2021
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+  markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  source_page_pdf: 53
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-56815
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Final Report
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+    markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+- record_id: ARENA-DLV-56816
+  source_title: Solar Power Ensemble Forecaster Final Report
+  publish_date: 2021-03
+  project_name: Solar Power Ensemble Forecaster (SPEF)
+  what_happened: The Causer Pays procedure applies contribution factors from a previous
+    28-day period to fee calculations for the current period, implicitly assuming
+    constant generator forecast performance month-to-month; the project found this
+    assumption is invalid for solar generators due to seasonal variation in solar
+    intermittency.
+  lesson_learnt: Stakeholders advocating for solar generators should seek a review
+    of the AEMO Causer Pays procedure's lag structure, which allocates fees based
+    on prior-month performance factors that do not reflect actual forecast performance
+    for seasonally variable renewable generators, potentially resulting in systematically
+    unfair fee allocation.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: regulatory & approvals
+  outcome_class: policy/market influence only
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: The project formally recommended AEMO review the Causer Pays
+    procedure in light of these findings.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id011
+  - 49
+  - 65
+  evidence_excerpt: The lag between the sampling period and application period is
+    presumably on the assumption that their actual power generation performance relative
+    to their dispatch instructions... doesn't change between these periods. This is
+    probably a valid assumption for dispatched generation, however, the monthly results
+    in Section 1 show that performance for the generators in this trial is not at
+    all constant from month to month (mostly due to seasonal variation), invalidating
+    this assumption – probably allocating fees amongst individual generators unfairly.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 7/03/2021
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+  markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  source_page_pdf: 49
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-56816
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Final Report
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+    markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-56817
+  source_title: Solar Power Ensemble Forecaster Final Report
+  publish_date: 2021-03
+  project_name: Solar Power Ensemble Forecaster (SPEF)
+  what_happened: The SIFM satellite-based model underperformed significantly against
+    ASEFS at most sites (RMSE skill of −64% to −131% versus ASEFS), with errors in
+    the GHI-to-power conversion amplifying upstream irradiance estimation errors;
+    lack of direct DNI measurements at any site made it harder to diagnose and correct
+    conversion errors.
+  lesson_learnt: Satellite irradiance forecasting models that rely on GHI-to-power
+    conversion are limited by the absence of on-site DNI measurement; deploying pyranometers
+    capable of measuring DNI directly at trial sites is necessary to properly diagnose
+    and correct the compounded errors in satellite-derived power forecasts.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Improvements to SIFM fitting functions (cloud index to clear
+    sky index) and systematic bias corrections were implemented in late September,
+    yielding a large improvement at SF1, SF3, and SF4 in October.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id012
+  - 12
+  - 20
+  - 21
+  evidence_excerpt: Lack of DNI data for validation of power conversion using GHI.
+    Note, the power conversion model requires both GHI and DNI for calculation of
+    power generated. Currently, no sites measure DNI directly, so it was harder to
+    diagnose errors resulting from DNI estimates. Errors resulting from GHI estimates
+    were amplified after power conversion due to the interaction of errors resulting
+    from the two procedures.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 7/03/2021
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+  markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-56817
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Final Report
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+    markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-56818
+  source_title: Solar Power Ensemble Forecaster Final Report
+  publish_date: 2021-03
+  project_name: Solar Power Ensemble Forecaster (SPEF)
+  what_happened: An inadvertent code change to the RFAR model in September 2020 introduced
+    a five-minute forecast delay, causing performance to suffer until the bug was
+    identified and corrected in mid-October, illustrating the risk of regressions
+    in continuously updated live production forecasting systems.
+  lesson_learnt: Live solar forecasting systems that undergo continuous model updates
+    require rigorous regression testing before deploying changes to production; an
+    unintended five-minute delay introduced by a code update degraded RFAR performance
+    for approximately six weeks before it was detected and corrected.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: The bug was identified and corrected in mid-October 2020.
+  transferability: moderate
+  delay_magnitude: 1-3 months
+  technology_domain: solar PV
+  source_pages: &id013
+  - 38
+  evidence_excerpt: An update to RFAR in September that accidentally introduced a
+    five-minute forecast delay caused performance to suffer but was corrected in mid-October.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 7/03/2021
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+  markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  source_page_pdf: 38
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-56818
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Final Report
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+    markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-56819
+  source_title: Solar Power Ensemble Forecaster Final Report
+  publish_date: 2021-03
+  project_name: Solar Power Ensemble Forecaster (SPEF)
+  what_happened: Training data splitting by clear sky index (ranking each day by CSI
+    and placing an equal share in training and validation sets) was found to give
+    better estimates of live forecast performance than other methods tested, improving
+    model parameter tuning efficiency.
+  lesson_learnt: Solar forecast model training pipelines should split training and
+    validation data by clear sky index rather than by date or randomly; stratified
+    splitting by CSI ensures both training and validation sets represent the full
+    range of sky conditions, yielding more accurate estimates of live performance
+    and more efficient hyperparameter tuning.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id014
+  - 62
+  evidence_excerpt: Balancing training data by clear sky index is important. For a
+    given dataset, how it is split into training and validation sets is very important...
+    Of the various methods tested, ranking each day by clear-sky index (CSI) and putting
+    an equal share in both sets gave the best results.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 7/03/2021
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+  markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  source_page_pdf: 62
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-56819
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Final Report
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+    markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+- record_id: ARENA-DLV-56820
+  source_title: Solar Power Ensemble Forecaster Final Report
+  publish_date: 2021-03
+  project_name: Solar Power Ensemble Forecaster (SPEF)
+  what_happened: Solar farms generally did not provide information about maintenance
+    periods or network constraint curtailments (e.g. SF3), making it difficult to
+    flag and remove these periods from model training data; this likely explains some
+    of the performance differences observed between farms and introduced unintended
+    bias in trained models.
+  lesson_learnt: Solar forecasting project agreements should require participating
+    farms to provide real-time or near-real-time flags for all types of non-weather
+    curtailment (maintenance, network constraints, unplanned outages); absence of
+    this data introduces systematic bias in trained models and degrades forecast accuracy
+    in ways that cannot be quantified without the flags.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id015
+  - 62
+  evidence_excerpt: Data identifying curtailment from network constraints should be
+    considered... Data from other types of curtailment, such as maintenance and unplanned
+    outages, should be removed from data when training models... Data flagging these
+    periods was often difficult to obtain from the farms, and probably explains some
+    difference in forecast performance between farms, but this could not be quantified.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 7/03/2021
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+  markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-56820
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Final Report
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+    markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-56821
+  source_title: Solar Power Ensemble Forecaster Final Report
+  publish_date: 2021-03
+  project_name: Solar Power Ensemble Forecaster (SPEF)
+  what_happened: A possible trend was observed where solar farms at more southerly
+    latitudes exhibited higher normalised forecast error (NRMSE R² = 0.89 across four
+    sites), potentially reflecting higher solar intermittency in winter/spring at
+    those locations; the sample size of four sites was too small to draw definitive
+    conclusions.
+  lesson_learnt: Portfolio managers deploying solar self-forecasting systems should
+    anticipate higher forecast error at more southerly sites during winter/spring
+    and plan for longer model improvement cycles or greater ensemble diversity at
+    those sites; a larger multi-site, multi-season dataset is needed to confirm this
+    latitude-error relationship.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id016
+  - 45
+  evidence_excerpt: Plotting these normalised errors against site latitude (Figure
+    5) results in a possible trend where more southerly latitude sites exhibited higher
+    forecast error in both error metrics. The number of sites (n = 4) is too small
+    to draw solid conclusions, but this may indicate that solar intermittency at more
+    southerly locations is higher (at least over winter/spring), increasing the normalised
+    forecast error at those sites.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 7/03/2021
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+  markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  source_page_pdf: 45
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-56821
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Final Report
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+    markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+- record_id: ARENA-DLV-56822
+  source_title: Solar Power Ensemble Forecaster Final Report
+  publish_date: 2021-03
+  project_name: Solar Power Ensemble Forecaster (SPEF)
+  what_happened: Frequency Indicator (FI) data required for real-time Causer Pays
+    fee optimisation is not publicly published by AEMO and was not available frequently
+    enough for the project team to implement planned real-time model tuning to minimise
+    fees during the trial.
+  lesson_learnt: AEMO should publish Frequency Indicator data and a worked example
+    of the full Causer Pays calculation procedure; absence of public FI data prevents
+    self-forecast providers from optimising forecasts for fee minimisation in real-time,
+    limiting the full financial benefit achievable for generators and the grid.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: FI data was supplied by one of the market participants for the
+    purposes of the after-the-fact financial analysis; the project formally recommended
+    AEMO make FI data publicly available.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id017
+  - 49
+  - 50
+  - 65
+  evidence_excerpt: Unfortunately, because RNEF and LNEF require FI data to calculate,
+    and AEMO do not publish FI values publicly or frequently, this process can only
+    be used for after-the-fact fee comparison, and not for realtime model tuning to
+    efficiently minimise fees. Such fee optimisation is still possible but would be
+    much more effective were FI values published frequently.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 7/03/2021
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+  markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  source_page_pdf: 50
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-56822
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Final Report
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+    markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: schedule slippage
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-56823
+  source_title: Solar Power Ensemble Forecaster Final Report
+  publish_date: 2021-03
+  project_name: Solar Power Ensemble Forecaster (SPEF)
+  what_happened: The Skycam model (single on-site sky camera with machine learning)
+    consistently outperformed ASEFS in RMSE on intermittent days and was among the
+    top two models at four of five sites, demonstrating the value of on-site sky camera
+    data for capturing cloud-driven power ramps.
+  lesson_learnt: On-site sky cameras provide material forecast skill improvements
+    over NWP-based systems like ASEFS specifically during high-intermittency conditions;
+    deploying Skycam hardware at solar farms facing frequent cloudy or partly cloudy
+    conditions is likely to yield the greatest forecast performance and Causer Pays
+    fee reduction benefits.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id018
+  - 8
+  - 20
+  evidence_excerpt: Skycam is reasonably accurate on clear sky days but performs best
+    in highly intermittent (high CSI) conditions. It had the lowest RMSE in the top
+    CSI bin for all sites except SF4.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 7/03/2021
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+  markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  source_page_pdf: 31
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-56823
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Final Report
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+    markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+- record_id: ARENA-DLV-56824
+  source_title: Solar Power Ensemble Forecaster Final Report
+  publish_date: 2021-03
+  project_name: Solar Power Ensemble Forecaster (SPEF)
+  what_happened: The Statistics Model (Fourier series combined with an autoregressive
+    model) was simple to implement, required no additional installed hardware, and
+    performed comparably to or better than ASEFS at most sites, though it was occasionally
+    degraded by SCADA feed dropouts.
+  lesson_learnt: A statistics-based autoregressive model retrained every five minutes
+    on SCADA data is a low-cost, hardware-free baseline forecast option that can outperform
+    ASEFS; its main vulnerability is SCADA data dropouts, which should be monitored
+    and mitigated through redundant data feeds or fault detection logic.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id019
+  - 15
+  - 48
+  evidence_excerpt: This is a very simple model to implement and is versatile in that
+    the procedure can be applied to any solar, or wind, farm and only uses the real-time
+    output to retrain the model, on any required time scale. No extra equipment needs
+    to be installed... The second proviso is also due to this restriction in that
+    the SCADA feed occasionally drops out. This latter situation is the reason that
+    this model sometimes performs worse than ASEFS.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 7/03/2021
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+  markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  source_page_pdf: 48
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-56824
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Final Report
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+    markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+- record_id: ARENA-DLV-56825
+  source_title: Solar Power Ensemble Forecaster Final Report
+  publish_date: 2021-03
+  project_name: Solar Power Ensemble Forecaster (SPEF)
+  what_happened: The project successfully commercialised its solar forecasting technology
+    through the launch of WattCloud, with all consortium members committing to at
+    least six months of continued model development and IP licensing negotiations
+    to enable commercialisation.
+  lesson_learnt: Research and demonstration projects involving multiple institutional
+    partners (CSIRO, two universities, and an industry partner) can successfully transition
+    to commercial products when the consortium structures clear IP licensing commitments
+    from the outset; the SPEF project demonstrates a viable pathway from ARENA-funded
+    demonstration to commercial forecasting-as-a-service.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id020
+  - 61
+  evidence_excerpt: This project has resulted in the launch of WattCloud, which aims
+    to commercialise the solar forecasting technologies that have been developed.
+    All consortium members intend to continue development of the existing models and
+    additional models for a minimum of six months following the completion of this
+    trial. Each member has agreed to negotiate the licencing of relevant IP in good
+    faith to allow the effective commercialisation of the technology.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 7/03/2021
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+  markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  source_page_pdf: 61
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-56825
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Final Report
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Final Report
+    pdf_url: https://arena.gov.au/assets/2021/06/solar-power-ensemble-forecast-final-report.pdf
+    source_pages: *id020
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-final-report/
+    markdown_filename: solar_power_ensemble_forecaster_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+- record_id: ARENA-DLV-60051
+  source_title: Solar Power Ensemble Forecaster Lessons Learnt 1
+  publish_date: '2019-10-29'
+  project_name: Solar Power Ensemble Forecaster (2018/ARP161 - Industrial Monitoring
+    & Control - Skycam and Multi-Model Solar Forecasting Project)
+  what_happened: No standard exists for control system interfaces on solar farms —
+    data tagging conventions, capture/storage rates, and interface mechanisms differed
+    for every farm within the trial, complicating data integration across sites.
+  lesson_learnt: Projects integrating data from multiple solar farms must budget for
+    site-specific interface work at each farm; assume no common standard and scope
+    discovery and customisation effort for every site.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id021
+  - 2
+  evidence_excerpt: There is no 'standard' for control system interfaces on solar
+    farms. Data tagging conventions, capture/storage rates and interface mechanisms
+    are different for every farm within the trial.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2019/03/solar-power-ensemble-forecaster-lessons-learnt.pdf
+  markdown_filename: solar_power_ensemble_forecaster_lessons_learnt_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60051
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Lessons Learnt 1
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Lessons Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/03/solar-power-ensemble-forecaster-lessons-learnt.pdf
+    source_pages: *id021
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-lessons-learnt-1/
+    markdown_filename: solar_power_ensemble_forecaster_lessons_learnt_1.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-60052
+  source_title: Solar Power Ensemble Forecaster Lessons Learnt 1
+  publish_date: '2019-10-29'
+  project_name: Solar Power Ensemble Forecaster (2018/ARP161 - Industrial Monitoring
+    & Control - Skycam and Multi-Model Solar Forecasting Project)
+  what_happened: AEMO integration for MP5F (Market Participant 5-minute Forecasting)
+    was immature during the project period, causing teething issues when the team
+    attempted to submit forecasts.
+  lesson_learnt: When integrating with an emerging AEMO interface such as MP5F, allow
+    additional time and contingency for submission failures and early-stage protocol
+    issues — the interface may not be stable at project commencement.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id022
+  - 2
+  evidence_excerpt: AEMO integration for MP5F is still in its early days and there
+    were teething issues when attempting to submit forecasts.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2019/03/solar-power-ensemble-forecaster-lessons-learnt.pdf
+  markdown_filename: solar_power_ensemble_forecaster_lessons_learnt_1.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60052
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Lessons Learnt 1
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Lessons Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/03/solar-power-ensemble-forecaster-lessons-learnt.pdf
+    source_pages: *id022
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-lessons-learnt-1/
+    markdown_filename: solar_power_ensemble_forecaster_lessons_learnt_1.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-60053
+  source_title: Solar Power Ensemble Forecaster Lessons Learnt 1
+  publish_date: '2019-10-29'
+  project_name: Solar Power Ensemble Forecaster (2018/ARP161 - Industrial Monitoring
+    & Control - Skycam and Multi-Model Solar Forecasting Project)
+  what_happened: The project steering committee encountered misalignment between stakeholders
+    on what constituted a successful forecast — national grid/academic objectives
+    (maximum accuracy at multiple time horizons) diverged from market participant
+    objectives (e.g. minimising FCAS Causer Pays charges), and no agreed KPIs or metrics
+    existed at project outset.
+  lesson_learnt: Before commencing a solar forecasting project, define and agree KPIs,
+    reporting metrics, and success criteria for each stakeholder class — market participants,
+    system operators, and researchers have different commercial objectives, and misalignment
+    will consume significant steering committee time and may invalidate evaluation
+    frameworks.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: internal governance/resourcing
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: The steering committee agenda was restructured to focus on defining
+    terminology, identifying valuable metrics, and agreeing KPIs for each stakeholder
+    group.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id023
+  - 2
+  evidence_excerpt: 'This technology is new to all parties and a key part of the steering
+    committee agenda revolves around: Defining terminology and standard naming; Identifying
+    what metrics are of most value, how should they be defined, measured and reported
+    on; What are the KPIs and how is a successful forecast defined for each stakeholder.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2019/03/solar-power-ensemble-forecaster-lessons-learnt.pdf
+  markdown_filename: solar_power_ensemble_forecaster_lessons_learnt_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60053
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Lessons Learnt 1
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Lessons Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/03/solar-power-ensemble-forecaster-lessons-learnt.pdf
+    source_pages: *id023
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-lessons-learnt-1/
+    markdown_filename: solar_power_ensemble_forecaster_lessons_learnt_1.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-60054
+  source_title: Solar Power Ensemble Forecaster Lessons Learnt 1
+  publish_date: '2019-10-29'
+  project_name: Solar Power Ensemble Forecaster (2018/ARP161 - Industrial Monitoring
+    & Control - Skycam and Multi-Model Solar Forecasting Project)
+  what_happened: Short-term irradiance forecast errors using Cloud Motion Vector (CMV)
+    advection were found to depend more on the quality of derived Global Horizontal
+    Irradiance (GHI) than on the CMVs themselves, identifying GHI derivation as the
+    binding accuracy constraint.
+  lesson_learnt: Investment in improving GHI derivation accuracy (rather than CMV
+    methods) will yield the greatest forecast accuracy gains in CMV-based short-term
+    solar forecasting — scope and resource allocation should reflect this priority.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id024
+  - 2
+  evidence_excerpt: Errors in short-term irradiance forecasts using the advection
+    of derived Global Horizontal Irradiance (GHI) with Cloud Motion Vectors (CMVs)
+    depend more on the quality of derived GHI than the CMVs.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2019/03/solar-power-ensemble-forecaster-lessons-learnt.pdf
+  markdown_filename: solar_power_ensemble_forecaster_lessons_learnt_1.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60054
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Lessons Learnt 1
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Lessons Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/03/solar-power-ensemble-forecaster-lessons-learnt.pdf
+    source_pages: *id024
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-lessons-learnt-1/
+    markdown_filename: solar_power_ensemble_forecaster_lessons_learnt_1.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-60055
+  source_title: Solar Power Ensemble Forecaster Lessons Learnt 1
+  publish_date: '2019-10-29'
+  project_name: Solar Power Ensemble Forecaster (2018/ARP161 - Industrial Monitoring
+    & Control - Skycam and Multi-Model Solar Forecasting Project)
+  what_happened: 'A knowledge gap was identified: no economic model exists relating
+    FCAS Causer Pays penalties to solar forecast quality in the NEM, preventing market
+    participants from quantifying the commercial value of forecast improvements.'
+  lesson_learnt: Future solar forecasting projects targeting market participant adoption
+    should develop or commission an economic model linking forecast accuracy metrics
+    to FCAS Causer Pays exposure — without this, market participants cannot make evidence-based
+    investment decisions on forecasting technology.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id025
+  - 2
+  - 3
+  evidence_excerpt: An economic model relating the FCAS causer-pay penalty to the
+    quality of solar forecasts in the NEM does not exist.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2019/03/solar-power-ensemble-forecaster-lessons-learnt.pdf
+  markdown_filename: solar_power_ensemble_forecaster_lessons_learnt_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60055
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Lessons Learnt 1
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Lessons Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/03/solar-power-ensemble-forecaster-lessons-learnt.pdf
+    source_pages: *id025
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-lessons-learnt-1/
+    markdown_filename: solar_power_ensemble_forecaster_lessons_learnt_1.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-60056
+  source_title: Solar Power Ensemble Forecaster Lessons Learnt 1
+  publish_date: '2019-10-29'
+  project_name: Solar Power Ensemble Forecaster (2018/ARP161 - Industrial Monitoring
+    & Control - Skycam and Multi-Model Solar Forecasting Project)
+  what_happened: Using a single irradiance value as input for field performance modelling
+    was found to produce accurate results for only approximately 50% of field operating
+    conditions, limiting the reliability of forecast-to-power conversion.
+  lesson_learnt: Solar forecasting projects that convert irradiance forecasts to power
+    output should not rely on a single irradiance input — string or inverter level
+    data is likely required to accurately model field output across the full range
+    of operating conditions.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id026
+  - 3
+  evidence_excerpt: Single irradiance value inputs to for field performance are only
+    likely to produce accurate results for ~50% of field operation. String/Inverter
+    level data is likely required to modify expected field outputs.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2019/03/solar-power-ensemble-forecaster-lessons-learnt.pdf
+  markdown_filename: solar_power_ensemble_forecaster_lessons_learnt_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60056
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Lessons Learnt 1
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Lessons Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/03/solar-power-ensemble-forecaster-lessons-learnt.pdf
+    source_pages: *id026
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-lessons-learnt-1/
+    markdown_filename: solar_power_ensemble_forecaster_lessons_learnt_1.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-60057
+  source_title: Solar Power Ensemble Forecaster Lessons Learnt 1
+  publish_date: '2019-10-29'
+  project_name: Solar Power Ensemble Forecaster (2018/ARP161 - Industrial Monitoring
+    & Control - Skycam and Multi-Model Solar Forecasting Project)
+  what_happened: Machine-learning approaches for deriving GHI using multiple satellite
+    channels were identified as absent from the project's toolkit, representing a
+    gap that limits forecast accuracy improvement potential.
+  lesson_learnt: Future solar forecasting projects using satellite-derived GHI should
+    incorporate machine-learning multi-channel methods — existing approaches lack
+    this capability and it represents a material accuracy improvement pathway.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id027
+  - 2
+  - 3
+  evidence_excerpt: Machine-learning approaches to derive GHI using multiple satellite
+    channels is missing.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2019/03/solar-power-ensemble-forecaster-lessons-learnt.pdf
+  markdown_filename: solar_power_ensemble_forecaster_lessons_learnt_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60057
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Lessons Learnt 1
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Lessons Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/03/solar-power-ensemble-forecaster-lessons-learnt.pdf
+    source_pages: *id027
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-lessons-learnt-1/
+    markdown_filename: solar_power_ensemble_forecaster_lessons_learnt_1.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-60058
+  source_title: Solar Power Ensemble Forecaster Lessons Learnt 1
+  publish_date: '2019-10-29'
+  project_name: Solar Power Ensemble Forecaster (2018/ARP161 - Industrial Monitoring
+    & Control - Skycam and Multi-Model Solar Forecasting Project)
+  what_happened: Improving GHI accuracy through multiple satellite channels was identified
+    as potentially requiring fast radiative transfer models, which would increase
+    computational costs and extend processing times — creating a trade-off between
+    accuracy and operational timeliness for short time-scale forecasts.
+  lesson_learnt: Forecasting projects targeting short time-scale outputs must explicitly
+    evaluate the computational cost trade-off before pursuing higher-accuracy multi-channel
+    radiative transfer methods — improved accuracy may be incompatible with the processing
+    time requirements of real-time NEM dispatch.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id028
+  - 2
+  evidence_excerpt: Improvements in the accuracy of GHI derived using multiple satellite
+    channels may require fast radiative transfer models, but this may increase computational
+    costs and processing times for forecasts at short time scales.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/solar-power-ensemble-forecaster/
+  kb_category: Solar energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Solar Power Ensemble Forecaster
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.24m
+  total_project_value: $3.37m
+  lead_organisation: Industrial Monitoring & Control (IMC)
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/03/2019
+  location: New South Wales, Queensland, Victoria
+  project_partners: University of South Australia Centre for Industrial and Applied
+    Mathematics, University of New South Wales, CSIRO
+  pdf_url: https://arena.gov.au/assets/2019/03/solar-power-ensemble-forecaster-lessons-learnt.pdf
+  markdown_filename: solar_power_ensemble_forecaster_lessons_learnt_1.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60058
+  contributing_source_titles:
+  - Solar Power Ensemble Forecaster Lessons Learnt 1
+  contributing_sources:
+  - source_title: Solar Power Ensemble Forecaster Lessons Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/03/solar-power-ensemble-forecaster-lessons-learnt.pdf
+    source_pages: *id028
+    source_url: https://arena.gov.au/knowledge-bank/solar-power-ensemble-forecaster-lessons-learnt-1/
+    markdown_filename: solar_power_ensemble_forecaster_lessons_learnt_1.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false

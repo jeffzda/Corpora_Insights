@@ -1,0 +1,393 @@
+- record_id: ARENA-DLV-42451
+  source_title: Monash - Storage integration in the NEM - Milestone report 3
+  publish_date: 2023-11
+  project_name: Storage integration in the NEM
+  what_happened: The synthetic inertia workstream required high-resolution PMU frequency
+    data (20ms increments) held by TNSPs and shared with AEMO, but the data was not
+    routinely accessible to external researchers. AEMO retains only three months of
+    PMU measurement at a time, and even that constitutes multiple terabytes, requiring
+    a custom data query that had not yet been completed at the time of this report.
+  lesson_learnt: Research projects requiring high-resolution operational data from
+    TNSPs or AEMO should negotiate data access and custom query requirements early
+    in the project — ownership by TNSPs, AEMO retention limits (three months), and
+    data volume constraints can delay or block a workstream if not addressed at the
+    outset.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: The team pivoted to complementing the 4-second AEMO data with
+    bidding data to model storage behaviour in ancillary services such as Fast-Frequency
+    Response, advancing the workstream while the PMU data access issue remained unresolved.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id001
+  - 24
+  evidence_excerpt: That information is owned by the TNSPs and shared with AEMO, so
+    making it available to us is not immediate... AEMO only keeps three months of
+    PMU measurement, and even this makes for a very large dataset (multiple Tb). Because
+    this information is not routinely made available, a data query has to be custom-made.
+    We are working with AEMO to tailor our request to what is feasible.
+  confidence_note: lifecycle_phase classified as operations because the data access
+    issue arose during an ongoing research workstream, not during initial project
+    design.
+  source_url: https://arena.gov.au/knowledge-bank/monash-storage-integration-in-the-nem-milestone-report-3/
+  project_page_url: https://arena.gov.au/projects/monash-university-integrating-energy-storage-into-the-nem-study/
+  kb_category: Renewables for industry
+  kb_publish_date: 30/04/2024
+  kb_year: '2022'
+  kb_associated_project: Monash University Integrating Energy Storage into the NEM
+    Study
+  kb_document_type: Reports, Milestones
+  kb_document_folder: Reports_Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $495k
+  total_project_value: $1.18m
+  lead_organisation: Monash University
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 02/03/2022
+  location: Clayton, Victoria
+  project_partners: Australian Energy Market Commission (AEMC), Power Systems Consultants
+    Australia (PSC)
+  pdf_url: https://arena.gov.au/assets/2024/04/Monash-Storage-integration-in-the-NEM-Milestone-report-3.pdf
+  markdown_filename: monash_storage_integration_in_the_nem_milestone_report_3.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42451
+  contributing_source_titles:
+  - Monash - Storage integration in the NEM - Milestone report 3
+  contributing_sources:
+  - source_title: Monash - Storage integration in the NEM - Milestone report 3
+    pdf_url: https://arena.gov.au/assets/2024/04/Monash-Storage-integration-in-the-NEM-Milestone-report-3.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/monash-storage-integration-in-the-nem-milestone-report-3/
+    markdown_filename: monash_storage_integration_in_the_nem_milestone_report_3.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-42452
+  source_title: Monash - Storage integration in the NEM - Milestone report 3
+  publish_date: 2023-11
+  project_name: Storage integration in the NEM
+  what_happened: The 4-second AEMO frequency data originally used for the synthetic
+    inertia workstream proved too coarse to recover inertial response curves (which
+    are near-instantaneous) or the full frequency recovery path following generation
+    outage events, blocking the primary analytical approach for estimating inertia
+    demand.
+  lesson_learnt: Before committing a workstream to a specific data source, verify
+    that the temporal resolution of available data is sufficient for the intended
+    measurement — inertial response to frequency deviations requires sub-second data,
+    and 4-second intervals cannot capture these dynamics.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: The research team pivoted to combining 4-second data with bidding
+    data to model how storage could bid in ways that contribute to both energy balance
+    and FCAS services, generating useful outputs while pursuing higher-resolution
+    PMU data access in parallel.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id002
+  - 24
+  evidence_excerpt: The 4-second data does not provide the ideal level of detail to
+    fully recover the curve of frequency recovery. In addition, it is still too coarse
+    to really pickup the inertial response of any event, which is almost instantaneous.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/monash-storage-integration-in-the-nem-milestone-report-3/
+  project_page_url: https://arena.gov.au/projects/monash-university-integrating-energy-storage-into-the-nem-study/
+  kb_category: Renewables for industry
+  kb_publish_date: 30/04/2024
+  kb_year: '2022'
+  kb_associated_project: Monash University Integrating Energy Storage into the NEM
+    Study
+  kb_document_type: Reports, Milestones
+  kb_document_folder: Reports_Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $495k
+  total_project_value: $1.18m
+  lead_organisation: Monash University
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 02/03/2022
+  location: Clayton, Victoria
+  project_partners: Australian Energy Market Commission (AEMC), Power Systems Consultants
+    Australia (PSC)
+  pdf_url: https://arena.gov.au/assets/2024/04/Monash-Storage-integration-in-the-NEM-Milestone-report-3.pdf
+  markdown_filename: monash_storage_integration_in_the_nem_milestone_report_3.md
+  source_page_pdf: 24
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42452
+  contributing_source_titles:
+  - Monash - Storage integration in the NEM - Milestone report 3
+  contributing_sources:
+  - source_title: Monash - Storage integration in the NEM - Milestone report 3
+    pdf_url: https://arena.gov.au/assets/2024/04/Monash-Storage-integration-in-the-NEM-Milestone-report-3.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/monash-storage-integration-in-the-nem-milestone-report-3/
+    markdown_filename: monash_storage_integration_in_the_nem_milestone_report_3.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-42453
+  source_title: Monash - Storage integration in the NEM - Milestone report 3
+  publish_date: 2023-11
+  project_name: Storage integration in the NEM
+  what_happened: The block bidding workstream encountered serious technical difficulties
+    when the decision to bid across multiple block-duration markets gave rise to a
+    system of coupled Partial Differential Equations that is generally not solvable,
+    requiring the team to weaken the solution concept from ex post optimal in all
+    markets to ex post optimal only in the active market.
+  lesson_learnt: When designing combinatorial or multi-market bidding models, anticipate
+    that coupling decisions across markets can produce systems of PDEs that are analytically
+    intractable — building in a fallback solution concept (e.g. restricting optimality
+    to the active market) at the design stage avoids a more disruptive mid-project
+    pivot.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: The team weakened the solution concept to ex post optimality
+    in the active market only, converting N+1 coupled PDEs into N+1 independent Ordinary
+    Differential Equations that could be solved, allowing the workstream to proceed.
+  transferability: narrow
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id003
+  - 23
+  evidence_excerpt: In working on this problem we encountered some serious technical
+    difficulties. In a strict sense, because the decision to bid in any one block
+    is connected to the decisions to bid in the other markets, this problem gives
+    rise to a system of coupled Partial Differential Equations. This system is generally
+    not solvable.
+  confidence_note: transferability rated narrow — the specific mathematical challenge
+    is highly specific to combinatorial market design research; the general lesson
+    about solution concept fallbacks has broader applicability but the mechanism is
+    narrow.
+  source_url: https://arena.gov.au/knowledge-bank/monash-storage-integration-in-the-nem-milestone-report-3/
+  project_page_url: https://arena.gov.au/projects/monash-university-integrating-energy-storage-into-the-nem-study/
+  kb_category: Renewables for industry
+  kb_publish_date: 30/04/2024
+  kb_year: '2022'
+  kb_associated_project: Monash University Integrating Energy Storage into the NEM
+    Study
+  kb_document_type: Reports, Milestones
+  kb_document_folder: Reports_Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $495k
+  total_project_value: $1.18m
+  lead_organisation: Monash University
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 02/03/2022
+  location: Clayton, Victoria
+  project_partners: Australian Energy Market Commission (AEMC), Power Systems Consultants
+    Australia (PSC)
+  pdf_url: https://arena.gov.au/assets/2024/04/Monash-Storage-integration-in-the-NEM-Milestone-report-3.pdf
+  markdown_filename: monash_storage_integration_in_the_nem_milestone_report_3.md
+  source_page_pdf: 23
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42453
+  contributing_source_titles:
+  - Monash - Storage integration in the NEM - Milestone report 3
+  contributing_sources:
+  - source_title: Monash - Storage integration in the NEM - Milestone report 3
+    pdf_url: https://arena.gov.au/assets/2024/04/Monash-Storage-integration-in-the-NEM-Milestone-report-3.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/monash-storage-integration-in-the-nem-milestone-report-3/
+    markdown_filename: monash_storage_integration_in_the_nem_milestone_report_3.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-42454
+  source_title: Monash - Storage integration in the NEM - Milestone report 3
+  publish_date: 2023-11
+  project_name: Storage integration in the NEM
+  what_happened: The market competition workstream found that a general characterisation
+    of equilibria in the storage game remained elusive even in a simplified setting,
+    requiring the research approach to be narrowed from deriving general solutions
+    to constructing select equilibria supported by simple threats.
+  lesson_learnt: Storage market design research should anticipate that the intertemporal
+    dynamics of storage (buying and selling across periods) make even simplified game-theoretic
+    models analytically harder than conventional generation models — allocating contingency
+    time for approach pivots and partial solutions is advisable when scoping research
+    milestones.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: The team adopted a construction approach — identifying select
+    equilibria rather than a general solution — which is described as a standard approach
+    for this class of problems and allowed the workstream to produce publishable results.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id004
+  - 9
+  evidence_excerpt: Because a general characterisation of equilibria remains elusive,
+    even in this simplified setting, we resort to constructing equilibria; that is
+    to say, rather than a general solution, we can only provide some select solution(s).
+    This is a standard approach for this class of problems.
+  confidence_note: issue_severity minor — the pivot to constructing equilibria is
+    described as standard and did not appear to materially affect project delivery
+    timelines.
+  source_url: https://arena.gov.au/knowledge-bank/monash-storage-integration-in-the-nem-milestone-report-3/
+  project_page_url: https://arena.gov.au/projects/monash-university-integrating-energy-storage-into-the-nem-study/
+  kb_category: Renewables for industry
+  kb_publish_date: 30/04/2024
+  kb_year: '2022'
+  kb_associated_project: Monash University Integrating Energy Storage into the NEM
+    Study
+  kb_document_type: Reports, Milestones
+  kb_document_folder: Reports_Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $495k
+  total_project_value: $1.18m
+  lead_organisation: Monash University
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 02/03/2022
+  location: Clayton, Victoria
+  project_partners: Australian Energy Market Commission (AEMC), Power Systems Consultants
+    Australia (PSC)
+  pdf_url: https://arena.gov.au/assets/2024/04/Monash-Storage-integration-in-the-NEM-Milestone-report-3.pdf
+  markdown_filename: monash_storage_integration_in_the_nem_milestone_report_3.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42454
+  contributing_source_titles:
+  - Monash - Storage integration in the NEM - Milestone report 3
+  contributing_sources:
+  - source_title: Monash - Storage integration in the NEM - Milestone report 3
+    pdf_url: https://arena.gov.au/assets/2024/04/Monash-Storage-integration-in-the-NEM-Milestone-report-3.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/monash-storage-integration-in-the-nem-milestone-report-3/
+    markdown_filename: monash_storage_integration_in_the_nem_milestone_report_3.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-42455
+  source_title: Monash - Storage integration in the NEM - Milestone report 3
+  publish_date: 2023-11
+  project_name: Storage integration in the NEM
+  what_happened: The block bidding paper had not been completed by the time of the
+    Milestone 3 report (November 2023), with the team noting confidence it would be
+    finished by end of 2023. The paper completion was flagged as pending alongside
+    a list of further validation activities including lab testing, day-ahead market
+    reconciliation, and numerical scaling for the NEM.
+  lesson_learnt: Research projects with multiple interdependent publications should
+    build explicit buffer into milestone schedules for papers that are technically
+    complex — the block bidding paper required resolution of both a non-convexity
+    problem and a PDE system before it could be completed, making it difficult to
+    schedule completion accurately.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: narrow
+  delay_magnitude: <1 month
+  technology_domain: battery storage
+  source_pages: &id005
+  - 23
+  evidence_excerpt: While we have developed most of the results we are interested
+    in, the actual paper is not yet complete. We are confident it will be finished
+    by the end of 2023.
+  confidence_note: lifecycle_phase is close-out/post-project review in the sense that
+    this is a milestone report documenting deliverable status; the delay is minor
+    and the team expressed confidence in near-term completion.
+  source_url: https://arena.gov.au/knowledge-bank/monash-storage-integration-in-the-nem-milestone-report-3/
+  project_page_url: https://arena.gov.au/projects/monash-university-integrating-energy-storage-into-the-nem-study/
+  kb_category: Renewables for industry
+  kb_publish_date: 30/04/2024
+  kb_year: '2022'
+  kb_associated_project: Monash University Integrating Energy Storage into the NEM
+    Study
+  kb_document_type: Reports, Milestones
+  kb_document_folder: Reports_Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $495k
+  total_project_value: $1.18m
+  lead_organisation: Monash University
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 02/03/2022
+  location: Clayton, Victoria
+  project_partners: Australian Energy Market Commission (AEMC), Power Systems Consultants
+    Australia (PSC)
+  pdf_url: https://arena.gov.au/assets/2024/04/Monash-Storage-integration-in-the-NEM-Milestone-report-3.pdf
+  markdown_filename: monash_storage_integration_in_the_nem_milestone_report_3.md
+  source_page_pdf: 23
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42455
+  contributing_source_titles:
+  - Monash - Storage integration in the NEM - Milestone report 3
+  contributing_sources:
+  - source_title: Monash - Storage integration in the NEM - Milestone report 3
+    pdf_url: https://arena.gov.au/assets/2024/04/Monash-Storage-integration-in-the-NEM-Milestone-report-3.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/monash-storage-integration-in-the-nem-milestone-report-3/
+    markdown_filename: monash_storage_integration_in_the_nem_milestone_report_3.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  failure_mode_confidence: 0.72

@@ -1,0 +1,1739 @@
+- record_id: ARENA-DLV-15832
+  source_title: Evaluation of ARENA's Impact and Effectiveness
+  publish_date: 2019-11
+  project_name: Fulcrum3D CloudCAM Solar Forecasting
+  what_happened: ARENA's $490,000 initial investment in Fulcrum3D's $991,000 CloudCAM
+    short-term cloud forecasting project enabled commercial product development that
+    would not otherwise have proceeded. The technology reduced battery usage at Ti-Tree
+    and Kalkarindji power stations by approximately 30 per cent and increased average
+    solar yield by 4–5 per cent. However, commercial viability of the technology was
+    found to be dependent on market arrangements that penalise generators for rapid
+    output changes (causer pays FCAS).
+  lesson_learnt: Solar forecasting technology business models are critically dependent
+    on the regulatory value of forecast accuracy — projects should explicitly assess
+    whether current and forecast market rules create sufficient financial incentive
+    for accuracy before assuming commercial viability at scale.
+  issue_severity: none
+  project_type: multi-technology/hybrid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: project developer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id001
+  - 60
+  evidence_excerpt: The CloudCAM business model and commercial viability is heavily
+    dependent upon market arrangements... Representatives from Fulcrum3D communicated
+    that without ARENA's $490,000 initial support, the $991,000 project would not
+    have been undertaken.
+  confidence_note: 'project_type reconciled to ''multi-technology/hybrid'' from: multi-technology/hybrid
+    (13/35), generation (12/35), storage (3/35), DER/customer-side (3/35), industrial
+    decarbonisation (2/35), software/data/digital (2/35); project_scale_band reconciled
+    to ''programmatic/portfolio-level'' from: programmatic/portfolio-level (16/35),
+    demonstration (8/35), first commercial/FOAK (6/35), utility/large-scale (5/35);
+    proponent_type reconciled to ''project developer'' from: project developer (15/35),
+    research organisation/university (6/35), utility/energy retailer (4/35), government/public-sector
+    body (4/35), technology vendor (2/35), consortium/multi-party venture (2/35),
+    network business (1/35), industrial operator (1/35)'
+  source_url: https://arena.gov.au/knowledge-bank/evaluation-of-arenas-impact-and-effectiveness/
+  project_page_url: null
+  kb_category: Renewables for industry
+  kb_publish_date: 18/11/2019
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2019/11/evaluation-of-arenas-impact-and-effectiveness.pdf
+  markdown_filename: evaluation_of_arenarsquos_impact_and_effectiveness.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-15832
+  contributing_source_titles:
+  - Evaluation of ARENA's Impact and Effectiveness
+  contributing_sources:
+  - source_title: Evaluation of ARENA's Impact and Effectiveness
+    pdf_url: https://arena.gov.au/assets/2019/11/evaluation-of-arenas-impact-and-effectiveness.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/evaluation-of-arenas-impact-and-effectiveness/
+    markdown_filename: evaluation_of_arenarsquos_impact_and_effectiveness.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-30608
+  source_title: Fulcrum3D CloudCAM Solar Forecasting Final Report
+  publish_date: '2021-02-15'
+  project_name: Fulcrum3D CloudCAM Solar Forecasting for the NEM
+  what_happened: Across more than twelve NEM plant deployments, SCADA integration
+    emerged as the most variable and time-consuming component of deploying a self-forecasting
+    system, requiring site-specific interface configuration and QA of all SCADA tags
+    even where the core forecasting and API components were mature and repeatable.
+  lesson_learnt: Budget significant time for site-specific SCADA integration when
+    deploying self-forecasting systems — while not always technically difficult, configuring
+    interfaces and validating SCADA tags can be highly time-consuming and is now the
+    primary source of deployment variability across sites.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: execution & logistics
+  intervention_note: Fulcrum3D resolved SCADA integration challenges across all sites
+    through experienced personnel, but noted that the effort required varies significantly
+    with the age and complexity of the site SCADA system.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages:
+  - 2
+  - 13
+  evidence_excerpt: While the MP5F API and our self-forecasting system have matured
+    to the extent they are easily repeatable across sites, site-specific SCADA integration
+    is now the most variable component in the establishment of a self-forecasting
+    system. While this task is not necessarily technically challenging for experienced
+    personal, it can be highly time consuming to configure interfaces and QA all SCADA
+    tags.
+  confidence_note: issue_severity set to moderate rather than minor because the document
+    explicitly flags this as the dominant deployment risk across all sites, not a
+    one-off event. Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-final-report/
+  project_page_url: https://arena.gov.au/projects/fulcrum3d-cloudcam-solar-forecasting-for-the-nem/
+  kb_category: Solar energy
+  kb_publish_date: 15/02/2021
+  kb_year: '2018'
+  kb_associated_project: Fulcrum3D CloudCAM Solar Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $490k
+  total_project_value: $991k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2018
+  location: Einasleigh, Queensland
+  project_partners: Genex Power Ltd
+  pdf_url: https://arena.gov.au/assets/2021/07/fulcrum3d-cloudcam-solar-forecasting-final-report.pdf
+  markdown_filename: fulcrum3d_cloudcam_solar_forecasting_final_report.md
+  source_page_pdf: 13
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-25301
+  - ARENA-DLV-30608
+  contributing_source_titles:
+  - Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report 3
+  - Fulcrum3D CloudCAM Solar Forecasting Final Report
+  contributing_sources:
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt
+      Report 3
+    pdf_url: https://arena.gov.au/assets/2021/01/fulcrum3d-solar-forecasting-lessons-learnt-october-2020.pdf
+    source_pages:
+    - 2
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-3/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_3.md
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting Final Report
+    pdf_url: https://arena.gov.au/assets/2021/07/fulcrum3d-cloudcam-solar-forecasting-final-report.pdf
+    source_pages:
+    - 13
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-final-report/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-40751
+  source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report
+    2
+  publish_date: 2020-04
+  project_name: 'Fulcrum3D: Solar Forecasting for the NEM'
+  what_happened: The MP5F API registration and authentication process changed repeatedly
+    during the project, API passwords expired regularly with no automated reset mechanism,
+    and having two forecast providers on the same site submitting through separate
+    API connections created operational challenges.
+  lesson_learnt: A secure automated or semi-automated system for resetting API passwords
+    is critical to operational efficiency when integrating with AEMO's MP5F API —
+    regular manual password resets introduce unnecessary operational risk. Engage
+    directly with the asset owner and AEMO participant early to resolve conflicts
+    arising from multiple forecast providers on the same site.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: partial success
+  secondary_failure_mode: data & measurement
+  intervention_note: Conflicts between two forecast providers on the same site were
+    resolved through open communications with the asset owner and AEMO participant.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages:
+  - 2
+  evidence_excerpt: The regular expiration of API passwords is problematic. A secure
+    automated (or semi-automated) system for resetting passwords is critical to operational
+    efficiency. We understand AEMO is working on a better system for this.
+  confidence_note: issue_severity set to moderate — the API issues were described
+    as problematic and required resolution but did not halt the project. Canonical
+    record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/fulcrum3d-cloudcam-solar-forecasting-for-the-nem/
+  kb_category: Solar energy
+  kb_publish_date: 6/04/2020
+  kb_year: '2018'
+  kb_associated_project: Fulcrum3D CloudCAM Solar Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $490k
+  total_project_value: $991k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2018
+  location: Einasleigh, Queensland
+  project_partners: Genex Power Ltd
+  pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-cloud-forecasting-lessons-learnt-report-2.pdf
+  markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_2.md
+  source_page_pdf: 2
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-25302
+  - ARENA-DLV-40751
+  contributing_source_titles:
+  - Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report 3
+  - Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt
+      Report 3
+    pdf_url: https://arena.gov.au/assets/2021/01/fulcrum3d-solar-forecasting-lessons-learnt-october-2020.pdf
+    source_pages:
+    - 2
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-3/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_3.md
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-cloud-forecasting-lessons-learnt-report-2.pdf
+    source_pages:
+    - 2
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-2/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_2.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-30606
+  source_title: Fulcrum3D CloudCAM Solar Forecasting Final Report
+  publish_date: '2021-02-15'
+  project_name: Fulcrum3D CloudCAM Solar Forecasting for the NEM
+  what_happened: AEMO's dispatch engine was found to round dispatch targets down to
+    the nearest MW, making it impossible to forecast accurately when a plant is operating
+    at full unconstrained capacity and generating Causer Pays charges that could not
+    be explained by forecast error.
+  lesson_learnt: When designing self-forecasting submissions for AEMO's dispatch engine,
+    account for the MW-level rounding behaviour at full plant capacity — accurate
+    forecasting at that operating point is not achievable under current system settings
+    and forecast logic should handle this boundary condition explicitly.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: Fulcrum3D identified the rounding behaviour through analysis
+    of unexpected Causer Pays charges at unconstrained plants and recommended a future
+    project investigate whether the dispatch engine could be modified to remove the
+    rounding.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages:
+  - 2
+  - 11
+  evidence_excerpt: A setting in AEMO's system appears to round the dispatch target
+    down to the nearest MW in the dispatch engine. This means that it is impossible
+    to forecast accurately when the plant is permitted to produce at full capacity
+    and is doing so.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-final-report/
+  project_page_url: https://arena.gov.au/projects/fulcrum3d-cloudcam-solar-forecasting-for-the-nem/
+  kb_category: Solar energy
+  kb_publish_date: 15/02/2021
+  kb_year: '2018'
+  kb_associated_project: Fulcrum3D CloudCAM Solar Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $490k
+  total_project_value: $991k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2018
+  location: Einasleigh, Queensland
+  project_partners: Genex Power Ltd
+  pdf_url: https://arena.gov.au/assets/2021/07/fulcrum3d-cloudcam-solar-forecasting-final-report.pdf
+  markdown_filename: fulcrum3d_cloudcam_solar_forecasting_final_report.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-25303
+  - ARENA-DLV-30606
+  contributing_source_titles:
+  - Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report 3
+  - Fulcrum3D CloudCAM Solar Forecasting Final Report
+  contributing_sources:
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt
+      Report 3
+    pdf_url: https://arena.gov.au/assets/2021/01/fulcrum3d-solar-forecasting-lessons-learnt-october-2020.pdf
+    source_pages:
+    - 2
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-3/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_3.md
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting Final Report
+    pdf_url: https://arena.gov.au/assets/2021/07/fulcrum3d-cloudcam-solar-forecasting-final-report.pdf
+    source_pages:
+    - 11
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-final-report/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-62952
+  source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report
+    1
+  publish_date: 2019-10
+  project_name: Fulcrum3D CloudCAM Solar Forecasting for the NEM
+  what_happened: CloudCAM hardware (cameras, pyranometers, loggers, power supplies,
+    network hardware) performed reliably through harsh environmental conditions including
+    heavy flooding rains and summer temperatures consistently over 40°C, consistent
+    with prior deployments operating continuously for over three years.
+  lesson_learnt: CloudCAM hardware is sufficiently robust for deployment in harsh
+    tropical climates; being the designer, integrator and OEM enables rapid detection
+    and software-level correction of hardware anomalies without field intervention,
+    demonstrating the value of vertically integrated smart-sensor systems.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Water ingress was detected remotely and corrected in software;
+    the root cause was identified and the hardware design was updated in subsequent
+    builds to prevent recurrence.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages:
+  - 2
+  - 9
+  evidence_excerpt: The hardware on the CloudCAM systems (cameras, pyranometers, logger,
+    power supplies, network hardware etc.) is performing reliably... Other CloudCAM
+    systems have operated continuously in harsh environments for over three years
+    and this is another affirmation that the hardware is robust and well designed.
+    This is particularly encouraging given the heavy rains during the February floods
+    and summer temperatures consistently over 40°C.
+  confidence_note: Canonical record merged from 4 source records across 4 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/fulcrum3d-cloudcam-solar-forecasting-for-the-nem/
+  kb_category: Solar energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2018'
+  kb_associated_project: Fulcrum3D CloudCAM Solar Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $490k
+  total_project_value: $991k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2018
+  location: Einasleigh, Queensland
+  project_partners: Genex Power Ltd
+  pdf_url: https://arena.gov.au/assets/2019/03/fulcrum3d-cloudcam-solar-solar-forecasting-for-nem-lessons-learnt.pdf
+  markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_1.md
+  source_page_pdf: 2
+  corroboration_count: 4
+  source_doc_count: 4
+  contributing_record_ids:
+  - ARENA-DLV-25304
+  - ARENA-DLV-30604
+  - ARENA-DLV-40754
+  - ARENA-DLV-62952
+  contributing_source_titles:
+  - Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report 3
+  - Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report 2
+  - Fulcrum3D CloudCAM Solar Forecasting Final Report
+  - Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt
+      Report 3
+    pdf_url: https://arena.gov.au/assets/2021/01/fulcrum3d-solar-forecasting-lessons-learnt-october-2020.pdf
+    source_pages:
+    - 2
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-3/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_3.md
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting Final Report
+    pdf_url: https://arena.gov.au/assets/2021/07/fulcrum3d-cloudcam-solar-forecasting-final-report.pdf
+    source_pages:
+    - 9
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-final-report/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_final_report.md
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-cloud-forecasting-lessons-learnt-report-2.pdf
+    source_pages:
+    - 2
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-2/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_2.md
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt
+      Report 1
+    pdf_url: https://arena.gov.au/assets/2019/03/fulcrum3d-cloudcam-solar-solar-forecasting-for-nem-lessons-learnt.pdf
+    source_pages:
+    - 2
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-1/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_1.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-25305
+  source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report
+    3
+  publish_date: 2021-01
+  project_name: 'Fulcrum3D: Solar Forecasting for the NEM'
+  what_happened: The team demonstrated that it is possible to satisfy AEMO's MP5F
+    accuracy requirements and reduce Causer Pays charges to zero in some months by
+    modelling the Causer Pays market and optimising forecast submissions for FCAS
+    savings.
+  lesson_learnt: Solar and wind farms can achieve zero Causer Pays charges in some
+    months by optimising self-forecast submissions through MP5F — modelling the Causer
+    Pays market and targeting Market Participant Factor reduction should be a standard
+    part of the self-forecasting implementation strategy.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id002
+  - 3
+  evidence_excerpt: We modelled the Causer Pays market and optimised our submissions
+    for FCAS savings. We found that we could reduce the MPF (Market Participant Factor)
+    and resulting Causer Pays charges to as low as zero in some months.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/fulcrum3d-cloudcam-solar-forecasting-for-the-nem/
+  kb_category: Solar energy
+  kb_publish_date: 28/01/2021
+  kb_year: '2018'
+  kb_associated_project: Fulcrum3D CloudCAM Solar Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $490k
+  total_project_value: $991k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2018
+  location: Einasleigh, Queensland
+  project_partners: Genex Power Ltd
+  pdf_url: https://arena.gov.au/assets/2021/01/fulcrum3d-solar-forecasting-lessons-learnt-october-2020.pdf
+  markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_3.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-25305
+  contributing_source_titles:
+  - Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report 3
+  contributing_sources:
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt
+      Report 3
+    pdf_url: https://arena.gov.au/assets/2021/01/fulcrum3d-solar-forecasting-lessons-learnt-october-2020.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-3/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_3.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-25306
+  source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report
+    3
+  publish_date: 2021-01
+  project_name: 'Fulcrum3D: Solar Forecasting for the NEM'
+  what_happened: Analysis showed that a robust power model using low-latency persistence
+    data and real-time SCADA information alone could deliver significant Causer Pays
+    savings, without requiring wind or cloud forecasting systems.
+  lesson_learnt: A SCADA-only power model with low-latency persistence data can deliver
+    material Causer Pays savings and may be a cost-effective first step for generators
+    entering the self-forecasting market; advanced cloud or wind forecasting should
+    be added later to maximise FCAS savings as markets and requirements evolve.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id003
+  - 3
+  evidence_excerpt: Our analysis found that a robust power model utilising low latency
+    persistence data and real-time plant state SCADA information can deliver significant
+    Causer Pays savings without wind or cloud forecasting systems.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/fulcrum3d-cloudcam-solar-forecasting-for-the-nem/
+  kb_category: Solar energy
+  kb_publish_date: 28/01/2021
+  kb_year: '2018'
+  kb_associated_project: Fulcrum3D CloudCAM Solar Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $490k
+  total_project_value: $991k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2018
+  location: Einasleigh, Queensland
+  project_partners: Genex Power Ltd
+  pdf_url: https://arena.gov.au/assets/2021/01/fulcrum3d-solar-forecasting-lessons-learnt-october-2020.pdf
+  markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_3.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-25306
+  contributing_source_titles:
+  - Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report 3
+  contributing_sources:
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt
+      Report 3
+    pdf_url: https://arena.gov.au/assets/2021/01/fulcrum3d-solar-forecasting-lessons-learnt-october-2020.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-3/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_3.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-25307
+  source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report
+    3
+  publish_date: 2021-01
+  project_name: 'Fulcrum3D: Solar Forecasting for the NEM'
+  what_happened: The team identified that MP5F forecasts operating in a live power
+    system require documented operational checks, safety systems, and manual override
+    processes to manage the risk of erroneous submissions affecting grid operations.
+  lesson_learnt: Self-forecasting systems feeding live dispatch must include documented
+    operational safety checks and manual override capability — these do not need to
+    be a bespoke user interface and can leverage AEMO's existing access control systems,
+    but they must be explicitly designed and documented before go-live.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The team documented operational safety processes and noted that
+    AEMO's existing access control system could support manual override without requiring
+    a dedicated user interface.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id004
+  - 3
+  evidence_excerpt: It is important to acknowledge the MP5F forecasts are being used
+    in an operational power system and must have sufficient operational checks and
+    safety systems along with manual overrides (this could simply be a documented
+    process utilising AEMO's existing access control system and doesn't necessarily
+    need to be a user interface on the system itself).
+  confidence_note: issue_severity set to minor as the document frames this as a design
+    acknowledgement rather than a failure event; no operational incident is described.
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/fulcrum3d-cloudcam-solar-forecasting-for-the-nem/
+  kb_category: Solar energy
+  kb_publish_date: 28/01/2021
+  kb_year: '2018'
+  kb_associated_project: Fulcrum3D CloudCAM Solar Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $490k
+  total_project_value: $991k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2018
+  location: Einasleigh, Queensland
+  project_partners: Genex Power Ltd
+  pdf_url: https://arena.gov.au/assets/2021/01/fulcrum3d-solar-forecasting-lessons-learnt-october-2020.pdf
+  markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_3.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-25307
+  contributing_source_titles:
+  - Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report 3
+  contributing_sources:
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt
+      Report 3
+    pdf_url: https://arena.gov.au/assets/2021/01/fulcrum3d-solar-forecasting-lessons-learnt-october-2020.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-3/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_3.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-30601
+  source_title: Fulcrum3D CloudCAM Solar Forecasting Final Report
+  publish_date: '2021-02-15'
+  project_name: Fulcrum3D CloudCAM Solar Forecasting for the NEM
+  what_happened: Fulcrum3D deployed 9 CloudCAM all-sky cameras and a detailed power
+    model at Kidston Solar Farm, integrated with the site SCADA and AEMO's MP5F API,
+    and demonstrated that self-forecasting consistently outperformed ASEFS and reduced
+    Causer Pays charges — in some months to zero.
+  lesson_learnt: Solar farms on the NEM can use MP5F self-forecasting to reduce Causer
+    Pays charges to zero under normal operating conditions; the key enabler is accurate
+    modelling of the FCAS Causer Pays system, not just forecast accuracy alone.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id005
+  - 3
+  - 4
+  evidence_excerpt: The project's core achievement was demonstrating that it is possible
+    to satisfy AEMO's accuracy requirements and achieve zero Causer Pays charges at
+    solar farms via MP5F with generators operating under normal conditions.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-final-report/
+  project_page_url: https://arena.gov.au/projects/fulcrum3d-cloudcam-solar-forecasting-for-the-nem/
+  kb_category: Solar energy
+  kb_publish_date: 15/02/2021
+  kb_year: '2018'
+  kb_associated_project: Fulcrum3D CloudCAM Solar Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $490k
+  total_project_value: $991k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2018
+  location: Einasleigh, Queensland
+  project_partners: Genex Power Ltd
+  pdf_url: https://arena.gov.au/assets/2021/07/fulcrum3d-cloudcam-solar-forecasting-final-report.pdf
+  markdown_filename: fulcrum3d_cloudcam_solar_forecasting_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-30601
+  contributing_source_titles:
+  - Fulcrum3D CloudCAM Solar Forecasting Final Report
+  contributing_sources:
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting Final Report
+    pdf_url: https://arena.gov.au/assets/2021/07/fulcrum3d-cloudcam-solar-forecasting-final-report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-final-report/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-30602
+  source_title: Fulcrum3D CloudCAM Solar Forecasting Final Report
+  publish_date: '2021-02-15'
+  project_name: Fulcrum3D CloudCAM Solar Forecasting for the NEM
+  what_happened: Analysis of all NEM self-forecasting participants showed that most
+    wind and solar farms submitting forecasts through AEMO's MP5F facility were achieving
+    measurable Causer Pays savings relative to AWEFS/ASEFS forecasts.
+  lesson_learnt: Self-forecasting through AEMO's MP5F API is financially beneficial
+    for most NEM semi-scheduled generators; future projects should evaluate MP5F self-forecasting
+    as a cost-reduction lever, particularly as the market moves to five-minute settlement.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id006
+  - 6
+  - 7
+  evidence_excerpt: Our analysis has found that most wind and solar farms that are
+    self-forecasting through AEMO's MP5F self-forecasting facility are achieving Causer
+    Pays savings.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-final-report/
+  project_page_url: https://arena.gov.au/projects/fulcrum3d-cloudcam-solar-forecasting-for-the-nem/
+  kb_category: Solar energy
+  kb_publish_date: 15/02/2021
+  kb_year: '2018'
+  kb_associated_project: Fulcrum3D CloudCAM Solar Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $490k
+  total_project_value: $991k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2018
+  location: Einasleigh, Queensland
+  project_partners: Genex Power Ltd
+  pdf_url: https://arena.gov.au/assets/2021/07/fulcrum3d-cloudcam-solar-forecasting-final-report.pdf
+  markdown_filename: fulcrum3d_cloudcam_solar_forecasting_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-30602
+  contributing_source_titles:
+  - Fulcrum3D CloudCAM Solar Forecasting Final Report
+  contributing_sources:
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting Final Report
+    pdf_url: https://arena.gov.au/assets/2021/07/fulcrum3d-cloudcam-solar-forecasting-final-report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-final-report/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-30603
+  source_title: Fulcrum3D CloudCAM Solar Forecasting Final Report
+  publish_date: '2021-02-15'
+  project_name: Fulcrum3D CloudCAM Solar Forecasting for the NEM
+  what_happened: Higher forecast accuracy alone did not fully account for the Causer
+    Pays reductions achieved; Fulcrum3D's modelling of the FCAS Causer Pays system
+    delivered greater reductions than even perfect forecasts would have.
+  lesson_learnt: When deploying self-forecasting to reduce Causer Pays charges, invest
+    in detailed FCAS Causer Pays modelling — this can unlock savings beyond what forecast
+    accuracy improvements alone can achieve.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Fulcrum3D developed a proprietary Causer Pays model using publicly
+    available NEMWeb data to reconstruct FCAS regulation factors and identify optimal
+    forecast submission strategies.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id007
+  - 4
+  evidence_excerpt: It is important to note that higher accuracy forecasts alone did
+    not necessarily reduce Causer Pays charges. Our modelling of the FCAS Causer Pays
+    system led to greater reductions than even perfect forecasts could achieve.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-final-report/
+  project_page_url: https://arena.gov.au/projects/fulcrum3d-cloudcam-solar-forecasting-for-the-nem/
+  kb_category: Solar energy
+  kb_publish_date: 15/02/2021
+  kb_year: '2018'
+  kb_associated_project: Fulcrum3D CloudCAM Solar Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $490k
+  total_project_value: $991k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2018
+  location: Einasleigh, Queensland
+  project_partners: Genex Power Ltd
+  pdf_url: https://arena.gov.au/assets/2021/07/fulcrum3d-cloudcam-solar-forecasting-final-report.pdf
+  markdown_filename: fulcrum3d_cloudcam_solar_forecasting_final_report.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-30603
+  contributing_source_titles:
+  - Fulcrum3D CloudCAM Solar Forecasting Final Report
+  contributing_sources:
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting Final Report
+    pdf_url: https://arena.gov.au/assets/2021/07/fulcrum3d-cloudcam-solar-forecasting-final-report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-final-report/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.72
+- record_id: ARENA-DLV-30605
+  source_title: Fulcrum3D CloudCAM Solar Forecasting Final Report
+  publish_date: '2021-02-15'
+  project_name: Fulcrum3D CloudCAM Solar Forecasting for the NEM
+  what_happened: The NEM dispatch engine applies a zero floor to dispatch targets,
+    preventing negative self-forecasts from being submitted via MP5F. When solar or
+    wind plants are net consumers from the grid (negative generation), they incur
+    FCAS Causer Pays costs that self-forecasting cannot mitigate. AEMO validated that
+    this effect can contribute 10–20% to a generator's Market Participant Factor.
+  lesson_learnt: Self-forecasting via MP5F cannot reduce Causer Pays charges incurred
+    during periods of negative generation; project developers and operators should
+    account for this structural limitation in their Causer Pays reduction forecasts,
+    particularly for wind farms where negative generation is more prevalent.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Fulcrum3D raised the issue with AEMO, who validated the internal
+    analysis; a future project to explore modification of the NEM dispatch engine
+    to allow negative dispatch targets was recommended.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id008
+  - 10
+  evidence_excerpt: AEMO have been able to validate our internal analysis that this
+    effect can contribute 10-20% to a generator's MPF... Operational forecasting meeting
+    notes from 2018 said MP5F would allow negative submissions but this is not the
+    case.
+  confidence_note: failure_mode classified as regulatory misfit because the limitation
+    is embedded in AEMO's dispatch engine design rather than a forecasting or hardware
+    failure; secondary design assumption failure reflects that early MP5F documentation
+    indicated negative submissions would be permitted.
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-final-report/
+  project_page_url: https://arena.gov.au/projects/fulcrum3d-cloudcam-solar-forecasting-for-the-nem/
+  kb_category: Solar energy
+  kb_publish_date: 15/02/2021
+  kb_year: '2018'
+  kb_associated_project: Fulcrum3D CloudCAM Solar Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $490k
+  total_project_value: $991k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2018
+  location: Einasleigh, Queensland
+  project_partners: Genex Power Ltd
+  pdf_url: https://arena.gov.au/assets/2021/07/fulcrum3d-cloudcam-solar-forecasting-final-report.pdf
+  markdown_filename: fulcrum3d_cloudcam_solar_forecasting_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-30605
+  contributing_source_titles:
+  - Fulcrum3D CloudCAM Solar Forecasting Final Report
+  contributing_sources:
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting Final Report
+    pdf_url: https://arena.gov.au/assets/2021/07/fulcrum3d-cloudcam-solar-forecasting-final-report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-final-report/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-30607
+  source_title: Fulcrum3D CloudCAM Solar Forecasting Final Report
+  publish_date: '2021-02-15'
+  project_name: Fulcrum3D CloudCAM Solar Forecasting for the NEM
+  what_happened: The AEMO MP5F API matured significantly during the project period,
+    becoming stable and reliable, and was further improved with an automated password-change
+    API that reduced integration maintenance burden across twelve operational sites.
+  lesson_learnt: The AEMO MP5F API is now sufficiently stable and reliable for commercial
+    self-forecasting deployment; future projects can proceed with confidence in the
+    API infrastructure without needing to treat API reliability as a major technical
+    risk.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id009
+  - 12
+  evidence_excerpt: The MP5F API is stable and has been materially streamlined in
+    the last 12 months... Fulcrum3D has effectively integrated with the MP5F API and
+    is now using it on over twelve sites.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-final-report/
+  project_page_url: https://arena.gov.au/projects/fulcrum3d-cloudcam-solar-forecasting-for-the-nem/
+  kb_category: Solar energy
+  kb_publish_date: 15/02/2021
+  kb_year: '2018'
+  kb_associated_project: Fulcrum3D CloudCAM Solar Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $490k
+  total_project_value: $991k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2018
+  location: Einasleigh, Queensland
+  project_partners: Genex Power Ltd
+  pdf_url: https://arena.gov.au/assets/2021/07/fulcrum3d-cloudcam-solar-forecasting-final-report.pdf
+  markdown_filename: fulcrum3d_cloudcam_solar_forecasting_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-30607
+  contributing_source_titles:
+  - Fulcrum3D CloudCAM Solar Forecasting Final Report
+  contributing_sources:
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting Final Report
+    pdf_url: https://arena.gov.au/assets/2021/07/fulcrum3d-cloudcam-solar-forecasting-final-report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-final-report/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-40752
+  source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report
+    2
+  publish_date: 2020-04
+  project_name: 'Fulcrum3D: Solar Forecasting for the NEM'
+  what_happened: Fulcrum3D's self-forecasting models achieved greater accuracy than
+    AEMO's ASEFS benchmark, passing AEMO's accuracy requirements on RMSE and MAE for
+    5-minute power production.
+  lesson_learnt: Site-specific short-term self-forecasting solutions can outperform
+    centralised forecasting services such as ASEFS on RMSE and MAE metrics for 5-minute
+    power production, demonstrating a viable pathway for solar farms to improve their
+    forecast accuracy and reduce causer pays exposure.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id010
+  - 2
+  evidence_excerpt: Our forecasting models continue to be more accurate than ASEFS
+    such that they pass AEMO's accuracy requirements with respect to RMSE and MAE
+    on 5-minute power production.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/fulcrum3d-cloudcam-solar-forecasting-for-the-nem/
+  kb_category: Solar energy
+  kb_publish_date: 6/04/2020
+  kb_year: '2018'
+  kb_associated_project: Fulcrum3D CloudCAM Solar Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $490k
+  total_project_value: $991k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2018
+  location: Einasleigh, Queensland
+  project_partners: Genex Power Ltd
+  pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-cloud-forecasting-lessons-learnt-report-2.pdf
+  markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40752
+  contributing_source_titles:
+  - Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-cloud-forecasting-lessons-learnt-report-2.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-2/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_2.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-40753
+  source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report
+    2
+  publish_date: 2020-04
+  project_name: 'Fulcrum3D: Solar Forecasting for the NEM'
+  what_happened: Detailed physical-based power modelling — including inter-row shading
+    at low solar angles, spectral mismatch correction for CdTe thin-film panels, and
+    inverter set-point behaviour — materially improved 5-minute forecast accuracy
+    beyond what simpler models achieved.
+  lesson_learnt: Invest in detailed physical-based power modelling when deploying
+    solar self-forecasting systems — accounting for inter-row shading, spectral mismatch
+    of thin-film panels, inverter unconstrained generation variability, and DC sensor
+    offset errors is essential for achieving high forecast accuracy.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Physical-based modelling was refined to include inter-row shading,
+    spectral mismatch correction, and inverter behaviour tuning, which improved forecast
+    accuracy.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id011
+  - 2
+  evidence_excerpt: 'A detailed physical based model improves forecast accuracy. This
+    includes: Modelling inter-row shading at low solar angles. Better modelling of
+    spectral mismatch between CdTe (thin-film) solar panels and thermopile based pyranometers
+    due to total precipitable water.'
+  confidence_note: issue_severity minor — the modelling gaps were identified and corrected
+    within the project without material impact on outcomes; the record captures the
+    technical finding as a positive lesson.
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/fulcrum3d-cloudcam-solar-forecasting-for-the-nem/
+  kb_category: Solar energy
+  kb_publish_date: 6/04/2020
+  kb_year: '2018'
+  kb_associated_project: Fulcrum3D CloudCAM Solar Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $490k
+  total_project_value: $991k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2018
+  location: Einasleigh, Queensland
+  project_partners: Genex Power Ltd
+  pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-cloud-forecasting-lessons-learnt-report-2.pdf
+  markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40753
+  contributing_source_titles:
+  - Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-cloud-forecasting-lessons-learnt-report-2.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-2/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_2.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.72
+- record_id: ARENA-DLV-40755
+  source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report
+    2
+  publish_date: 2020-04
+  project_name: 'Fulcrum3D: Solar Forecasting for the NEM'
+  what_happened: Fulcrum3D developed a model replicating AEMO's causer pays calculation
+    using publicly available NEMWeb data, enabling quantification of the commercial
+    benefit of improved self-forecasting accuracy for solar farms.
+  lesson_learnt: Replicating AEMO's causer pays calculation using publicly available
+    NEMWeb data is achievable and provides a practical tool for solar farm operators
+    to quantify the financial benefit of investing in more accurate self-forecasting
+    solutions.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id012
+  - 3
+  evidence_excerpt: We have developed a model that replicates AEMO's calculation of
+    causer pays charges using publicly available NEMWeb data. This will allow the
+    commercial benefits of self-forecasting to be assessed.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/fulcrum3d-cloudcam-solar-forecasting-for-the-nem/
+  kb_category: Solar energy
+  kb_publish_date: 6/04/2020
+  kb_year: '2018'
+  kb_associated_project: Fulcrum3D CloudCAM Solar Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $490k
+  total_project_value: $991k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2018
+  location: Einasleigh, Queensland
+  project_partners: Genex Power Ltd
+  pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-cloud-forecasting-lessons-learnt-report-2.pdf
+  markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40755
+  contributing_source_titles:
+  - Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-cloud-forecasting-lessons-learnt-report-2.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-2/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_2.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-40756
+  source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report
+    2
+  publish_date: 2020-04
+  project_name: 'Fulcrum3D: Solar Forecasting for the NEM'
+  what_happened: Analysis of FCAS spot prices versus energy spot prices showed that
+    the business case for using self-forecasts to enable FCAS participation or export
+    control by solar farms is weak under current market conditions, because energy
+    spot prices are generally significantly higher than FCAS spot prices. However,
+    the South Australian islanding event demonstrated that generators without FCAS
+    participation capability faced very large unexpected FCAS costs while only Hornsdale
+    wind farms — the sole renewable FCAS providers in South Australia — were able
+    to capitalise on the FCAS windfall.
+  lesson_learnt: Solar and wind farm operators should assess their FCAS exposure and
+    consider developing FCAS participation capabilities — under normal conditions
+    the business case is weak, but low-probability high-impact islanding or separation
+    events can result in severe unexpected FCAS costs for generators that have not
+    developed mitigation strategies, as demonstrated by the South Australian islanding
+    event.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id013
+  - 3
+  evidence_excerpt: The spot price for energy is generally significantly higher than
+    the spot price for FCAS services so a generator is better off selling into the
+    energy market... All other wind and solar farms collectively paid more for their
+    FCAS than the market value of the energy during that period.
+  confidence_note: failure_mode set to commercial/demand failure as the finding centres
+    on a weaker-than-expected commercial case for FCAS self-forecasting under prevailing
+    market conditions; issue_severity moderate given the material financial exposure
+    demonstrated during the SA islanding event.
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/fulcrum3d-cloudcam-solar-forecasting-for-the-nem/
+  kb_category: Solar energy
+  kb_publish_date: 6/04/2020
+  kb_year: '2018'
+  kb_associated_project: Fulcrum3D CloudCAM Solar Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $490k
+  total_project_value: $991k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2018
+  location: Einasleigh, Queensland
+  project_partners: Genex Power Ltd
+  pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-cloud-forecasting-lessons-learnt-report-2.pdf
+  markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_2.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40756
+  contributing_source_titles:
+  - Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2020/07/fulcrum3d-cloud-forecasting-lessons-learnt-report-2.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-2/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_2.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.72
+- record_id: ARENA-DLV-62951
+  source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report
+    1
+  publish_date: 2019-10
+  project_name: Fulcrum3D CloudCAM Solar Forecasting for the NEM
+  what_happened: Connection to the AEMO MP5F API took longer than expected due to
+    complexity around multiple forecasters on the same site and the requirement that
+    formal communications with AEMO must go via the DUID participant rather than directly
+    with independent forecasters.
+  lesson_learnt: When connecting to AEMO's MP5F API as an independent forecaster,
+    engage the DUID participant early and allow additional time — formal communications
+    must go via the participant, who may not have followed MP5F development closely
+    and will need time to come up to speed.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated integration
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id014
+  - 2
+  evidence_excerpt: 'Connection to the AEMO MP5F API took longer than expected because:
+    There is complexity around the arrangement for when more than one forecaster is
+    on the same site. Formal communications with AEMO must be via the DUID participant
+    and not with independent forecasters. The participants have not necessarily followed
+    the MP5F development as closely as the forecasters and are still learning how
+    it works.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/fulcrum3d-cloudcam-solar-forecasting-for-the-nem/
+  kb_category: Solar energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2018'
+  kb_associated_project: Fulcrum3D CloudCAM Solar Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $490k
+  total_project_value: $991k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2018
+  location: Einasleigh, Queensland
+  project_partners: Genex Power Ltd
+  pdf_url: https://arena.gov.au/assets/2019/03/fulcrum3d-cloudcam-solar-solar-forecasting-for-nem-lessons-learnt.pdf
+  markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-62951
+  contributing_source_titles:
+  - Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt
+      Report 1
+    pdf_url: https://arena.gov.au/assets/2019/03/fulcrum3d-cloudcam-solar-solar-forecasting-for-nem-lessons-learnt.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-1/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_1.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-62953
+  source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report
+    1
+  publish_date: 2019-10
+  project_name: Fulcrum3D CloudCAM Solar Forecasting for the NEM
+  what_happened: Remote communications via a dedicated NBN connection (established
+    during the project) enabled remote system maintenance, avoiding the need for on-site
+    attendance.
+  lesson_learnt: Establishing a dedicated NBN or equivalent remote communications
+    link for CloudCAM installations enables remote maintenance and reduces operational
+    support costs; plan and provision this connectivity before deployment rather than
+    retrofitting it.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id015
+  - 2
+  evidence_excerpt: Our remote communications are working well (via our dedicated
+    NBN connection that we established last December). This enables us to perform
+    system maintenance remotely.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/fulcrum3d-cloudcam-solar-forecasting-for-the-nem/
+  kb_category: Solar energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2018'
+  kb_associated_project: Fulcrum3D CloudCAM Solar Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $490k
+  total_project_value: $991k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2018
+  location: Einasleigh, Queensland
+  project_partners: Genex Power Ltd
+  pdf_url: https://arena.gov.au/assets/2019/03/fulcrum3d-cloudcam-solar-solar-forecasting-for-nem-lessons-learnt.pdf
+  markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_1.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-62953
+  contributing_source_titles:
+  - Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt
+      Report 1
+    pdf_url: https://arena.gov.au/assets/2019/03/fulcrum3d-cloudcam-solar-solar-forecasting-for-nem-lessons-learnt.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-1/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_1.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-62954
+  source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report
+    1
+  publish_date: 2019-10
+  project_name: Fulcrum3D CloudCAM Solar Forecasting for the NEM
+  what_happened: Inter-row shading was found to be more complex than initially assumed
+    in the power model, requiring additional modelling effort, though the team was
+    ultimately able to model the complexity.
+  lesson_learnt: Do not underestimate inter-row shading complexity when building power
+    models for solar farm forecasting — plan for iterative modelling effort and validate
+    shading assumptions against measured data early in the deployment.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Team developed a more detailed shading model capable of capturing
+    the observed complexity.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id016
+  - 2
+  evidence_excerpt: Inter-row shading is more complex than initially thought – we
+    have been able to model that complexity.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/fulcrum3d-cloudcam-solar-forecasting-for-the-nem/
+  kb_category: Solar energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2018'
+  kb_associated_project: Fulcrum3D CloudCAM Solar Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $490k
+  total_project_value: $991k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2018
+  location: Einasleigh, Queensland
+  project_partners: Genex Power Ltd
+  pdf_url: https://arena.gov.au/assets/2019/03/fulcrum3d-cloudcam-solar-solar-forecasting-for-nem-lessons-learnt.pdf
+  markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_1.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-62954
+  contributing_source_titles:
+  - Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt
+      Report 1
+    pdf_url: https://arena.gov.au/assets/2019/03/fulcrum3d-cloudcam-solar-solar-forecasting-for-nem-lessons-learnt.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-1/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_1.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-62955
+  source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report
+    1
+  publish_date: 2019-10
+  project_name: Fulcrum3D CloudCAM Solar Forecasting for the NEM
+  what_happened: Inverter behaviour across the solar farm was not consistent when
+    inverters were not clamped by set point — this was unexpected and introduced additional
+    complexity into power modelling for forecasting.
+  lesson_learnt: Do not assume uniform inverter behaviour across a solar farm when
+    building power models; verify actual inverter response characteristics under unclamped
+    conditions early, as inconsistent behaviour across units will require bespoke
+    modelling treatment.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id017
+  - 2
+  evidence_excerpt: The behaviour of all inverters on the solar farms did not necessarily
+    match when they were not clamped by set point. This was not expected.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/fulcrum3d-cloudcam-solar-forecasting-for-the-nem/
+  kb_category: Solar energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2018'
+  kb_associated_project: Fulcrum3D CloudCAM Solar Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $490k
+  total_project_value: $991k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2018
+  location: Einasleigh, Queensland
+  project_partners: Genex Power Ltd
+  pdf_url: https://arena.gov.au/assets/2019/03/fulcrum3d-cloudcam-solar-solar-forecasting-for-nem-lessons-learnt.pdf
+  markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_1.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-62955
+  contributing_source_titles:
+  - Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt
+      Report 1
+    pdf_url: https://arena.gov.au/assets/2019/03/fulcrum3d-cloudcam-solar-solar-forecasting-for-nem-lessons-learnt.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-1/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_1.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-62956
+  source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report
+    1
+  publish_date: 2019-10
+  project_name: Fulcrum3D CloudCAM Solar Forecasting for the NEM
+  what_happened: DC current sensors on the solar farm were found to be inaccurate,
+    limiting the quality of input data available for power modelling and forecasting
+    accuracy.
+  lesson_learnt: Validate DC current sensor accuracy before relying on sensor data
+    for power modelling — inaccurate sensors constrain forecasting quality and future
+    projects should specify or verify sensor accuracy requirements upfront or budget
+    for sensor upgrades.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id018
+  - 2
+  - 3
+  evidence_excerpt: DC current sensors are not always accurate. Better DC current
+    sensor accuracy would assist better forecasting.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/fulcrum3d-cloudcam-solar-forecasting-for-the-nem/
+  kb_category: Solar energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2018'
+  kb_associated_project: Fulcrum3D CloudCAM Solar Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $490k
+  total_project_value: $991k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2018
+  location: Einasleigh, Queensland
+  project_partners: Genex Power Ltd
+  pdf_url: https://arena.gov.au/assets/2019/03/fulcrum3d-cloudcam-solar-solar-forecasting-for-nem-lessons-learnt.pdf
+  markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_1.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-62956
+  contributing_source_titles:
+  - Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt
+      Report 1
+    pdf_url: https://arena.gov.au/assets/2019/03/fulcrum3d-cloudcam-solar-solar-forecasting-for-nem-lessons-learnt.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-1/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_1.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-62957
+  source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report
+    1
+  publish_date: 2019-10
+  project_name: Fulcrum3D CloudCAM Solar Forecasting for the NEM
+  what_happened: Power point controller and inverter controller algorithms were poorly
+    documented by equipment suppliers, creating a knowledge gap that complicated power
+    modelling and required the team to develop workarounds.
+  lesson_learnt: Request detailed technical documentation for power point controller
+    and inverter controller algorithms from suppliers before finalising forecasting
+    system design — poor supplier documentation forces costly workarounds and should
+    be flagged as a procurement requirement or risk.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Team built workarounds to compensate for the lack of supplier
+    documentation on controller algorithms.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id019
+  - 2
+  - 3
+  evidence_excerpt: Power point controller and inverter controller algorithms are
+    obscure (they are not well documented by the suppliers). This is another challenge
+    for forecasting – we have built work arounds for this but better documentation
+    from suppliers would be helpful.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/fulcrum3d-cloudcam-solar-forecasting-for-the-nem/
+  kb_category: Solar energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2018'
+  kb_associated_project: Fulcrum3D CloudCAM Solar Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $490k
+  total_project_value: $991k
+  lead_organisation: Fulcrum3D Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2018
+  location: Einasleigh, Queensland
+  project_partners: Genex Power Ltd
+  pdf_url: https://arena.gov.au/assets/2019/03/fulcrum3d-cloudcam-solar-solar-forecasting-for-nem-lessons-learnt.pdf
+  markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_1.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-62957
+  contributing_source_titles:
+  - Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: Fulcrum3D CloudCAM Solar Forecasting for the NEM Lessons Learnt
+      Report 1
+    pdf_url: https://arena.gov.au/assets/2019/03/fulcrum3d-cloudcam-solar-solar-forecasting-for-nem-lessons-learnt.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum3d-cloudcam-solar-forecasting-for-the-nem-lessons-learnt-report-1/
+    markdown_filename: fulcrum3d_cloudcam_solar_forecasting_for_the_nem_lessons_learnt_report_1.md
+  arena_category:
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78

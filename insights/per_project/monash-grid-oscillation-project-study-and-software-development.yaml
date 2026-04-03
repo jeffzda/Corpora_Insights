@@ -1,0 +1,2155 @@
+- record_id: ARENA-DLV-64460
+  source_title: Grid Oscillation Project - Milestone 4 Report
+  publish_date: 2025-11
+  project_name: Grid Oscillation Project (Study and Software Development)
+  what_happened: The 2018–2020 West Murray Zone 7 Hz oscillations in Victoria's IBR-dominated
+    network were ultimately resolved by AEMO retuning the PLL control systems of identified
+    inverters, confirmed effective by post-retuning tests; a subsequent 19 Hz oscillation
+    in August 2020 arising from a transmission fault was separately investigated using
+    an impedance-based methodology and resolved through control update recommendations.
+  lesson_learnt: IBR-induced oscillations in weak-grid, high-IBR-penetration zones
+    can persist until specific inverter control parameters (particularly PLL tuning)
+    are identified and corrected through coordinated AEMO-led wide-area EMT modelling
+    and field testing — early use of impedance-based analysis to identify which plants
+    are participating in which oscillatory modes can accelerate root-cause identification
+    and reduce the duration of grid instability.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: utility/large-scale
+  lifecycle_phase: operations
+  proponent_type: project developer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: successful demonstration
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: AEMO in collaboration with others retuned the reactive power
+    controllers and PLLs of identified inverters in 2020; subsequent tests confirmed
+    the 7-Hz voltage oscillations were eliminated and have not recurred.
+  transferability: broad
+  delay_magnitude: 1-3 years
+  technology_domain: grid/system stability
+  source_pages:
+  - 11
+  - 14
+  evidence_excerpt: In 2020, AEMO, in collaboration with others, undertook a program
+    to retune the controls of identified inverters to resolve the observed 7 Hz voltage
+    oscillations. Tests conducted at the time showed the effectiveness of the adjusted
+    control settings in addressing the 7 Hz voltage oscillations, which have not been
+    reported since the retuning solution was implemented.
+  confidence_note: 'The 1–3 years delay band is estimated from the 2018–2019 onset
+    to the 2020 resolution; the document does not state exact resolution date within
+    2020.; project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (17/20), network/grid (2/20), generation (1/20); project_scale_band reconciled
+    to ''demonstration'' from: demonstration (17/20), utility/large-scale (3/20);
+    proponent_type reconciled to ''research organisation/university'' from: research
+    organisation/university (17/20), utility/energy retailer (1/20), project developer
+    (1/20), network business (1/20) Canonical record merged from 2 source records
+    across 2 document(s).'
+  source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+  project_page_url: https://arena.gov.au/projects/monash-grid-oscillation-project-study-and-software-development/
+  kb_category: System security and reliability
+  kb_publish_date: 2/12/2025
+  kb_year: '2023'
+  kb_associated_project: Monash Grid Oscillation Project (Study and Software Development)
+  kb_document_type: Milestones
+  kb_document_folder: Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.33m
+  lead_organisation: 'Monash University '
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/06/2023
+  location: Clayton, Victoria
+  project_partners: 'AEMO and Powerlink '
+  pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+  markdown_filename: grid_oscillation_project_milestone_4_report.md
+  source_page_pdf: 14
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-44301
+  - ARENA-DLV-64460
+  contributing_source_titles:
+  - Monash University - Management of Oscillations in Australia's National Grid -
+    Milestone 2 Interim Report
+  - Grid Oscillation Project - Milestone 4 Report
+  contributing_sources:
+  - source_title: Monash University - Management of Oscillations in Australia's National
+      Grid - Milestone 2 Interim Report
+    pdf_url: https://arena.gov.au/assets/2024/11/Monash-University-–-Management-of-Oscillations-in-Australias-National-Grid-–-Impedance-Measurement-Tool-Milestone-2-Interim-Report.pdf
+    source_pages:
+    - 11
+    source_url: https://arena.gov.au/knowledge-bank/monash-university-management-oscillations-australias-national-grid-milestone-2-interim-report/
+    markdown_filename: monash_university_management_of_oscillations_in_australiarsquos_national_grid_milestone_2_interim_re.md
+  - source_title: Grid Oscillation Project - Milestone 4 Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+    source_pages:
+    - 14
+    source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+    markdown_filename: grid_oscillation_project_milestone_4_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-44302
+  source_title: Monash University - Management of Oscillations in Australia's National
+    Grid - Milestone 2 Interim Report
+  publish_date: 2024-09
+  project_name: Grid Oscillation Project (Study and Software Development)
+  what_happened: On 20 August 2020, a transmission fault caused tripping of a 220-kV
+    line and several wind farms in northwest Victoria, after which 19-Hz voltage oscillations
+    emerged at a tripped solar farm location with peak-to-peak oscillations ranging
+    from 0.1% to 2%. Investigation found that three solar plants in the region exhibited
+    oscillatory resonant behaviour around 17 Hz when operating under low irradiance
+    and low short-circuit ratio (SCR) conditions.
+  lesson_learnt: Solar farms in weak grid regions can exhibit inherent resonant oscillatory
+    modes under low irradiance and low SCR conditions — grid connection studies and
+    operational procedures should explicitly assess impedance-based stability under
+    these combined conditions, particularly following network contingencies that reduce
+    system strength.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: utility/large-scale
+  lifecycle_phase: operations
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: data & measurement
+  intervention_note: An impedance-based methodology was used to identify the resonant
+    mode and determine each plant's contribution; recommendations to update IBR controls
+    to address the inherent resonant mode were made.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id001
+  - 11
+  - 12
+  evidence_excerpt: Subsequent investigation of this issue has revealed that three
+    solar plant in this region can exhibit oscillatory resonant behaviour around 17
+    Hz when operating under low irradiance and low SCR conditions on their own. Further
+    studies using a wide area model also confirmed the risk of this mode of oscillation
+    under low irradiance conditions for these solar farms and determined the level
+    of contribution from each one. Recommendations to address this inherent resonant
+    mode by updating the controls were made.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (4/9), generation (3/9), network/grid (2/9)'
+  source_url: https://arena.gov.au/knowledge-bank/monash-university-management-oscillations-australias-national-grid-milestone-2-interim-report/
+  project_page_url: https://arena.gov.au/projects/monash-grid-oscillation-project-study-and-software-development/
+  kb_category: System security and reliability
+  kb_publish_date: 19/11/2024
+  kb_year: '2023'
+  kb_associated_project: Monash Grid Oscillation Project (Study and Software Development)
+  kb_document_type: Reports, Milestones
+  kb_document_folder: Reports_Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.33m
+  lead_organisation: 'Monash University '
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/06/2023
+  location: Clayton, Victoria
+  project_partners: 'AEMO and Powerlink '
+  pdf_url: https://arena.gov.au/assets/2024/11/Monash-University-–-Management-of-Oscillations-in-Australias-National-Grid-–-Impedance-Measurement-Tool-Milestone-2-Interim-Report.pdf
+  markdown_filename: monash_university_management_of_oscillations_in_australiarsquos_national_grid_milestone_2_interim_re.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-44302
+  contributing_source_titles:
+  - Monash University - Management of Oscillations in Australia's National Grid -
+    Milestone 2 Interim Report
+  contributing_sources:
+  - source_title: Monash University - Management of Oscillations in Australia's National
+      Grid - Milestone 2 Interim Report
+    pdf_url: https://arena.gov.au/assets/2024/11/Monash-University-–-Management-of-Oscillations-in-Australias-National-Grid-–-Impedance-Measurement-Tool-Milestone-2-Interim-Report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/monash-university-management-oscillations-australias-national-grid-milestone-2-interim-report/
+    markdown_filename: monash_university_management_of_oscillations_in_australiarsquos_national_grid_milestone_2_interim_re.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-64461
+  source_title: Grid Oscillation Project - Milestone 4 Report
+  publish_date: 2025-11
+  project_name: Grid Oscillation Project (Study and Software Development)
+  what_happened: On 23 June 2022, voltage and reactive power oscillations emanating
+    from the Port Augusta Renewable Energy Park in South Australia commenced several
+    hours after communication fail-safe testing was completed, grew gradually, and
+    lasted approximately five hours until the plant was de-energised. The root cause
+    was determined to be human error in updates to the control code.
+  lesson_learnt: Control code updates to IBR plants must be subject to rigorous change
+    management and verification processes — the 2022 South Australian oscillation
+    event demonstrates that software bugs introduced during routine code updates can
+    trigger sustained grid oscillations that are not detectable through pre-event
+    modelling, and the risk is only apparent after commissioning the change in the
+    field.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: utility/large-scale
+  lifecycle_phase: operations
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: execution & logistics
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated integration
+  intervention_note: The Port Augusta Renewable Energy Park was de-energised to halt
+    the oscillations after approximately five hours of sustained disturbance.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages:
+  - 12
+  - 15
+  evidence_excerpt: On 23 June 2022, voltage and reactive power oscillations were
+    observed in South Australia determined to be emanating from the Port Augusta Renewable
+    Energy Park. These oscillations commenced and grew gradually several hours after
+    the completion of communications fail-safe testing. They lasted for approximately
+    five hours until the Port Augusta Renewable Energy Park was de-energised. The
+    root cause for this event has been determined to be human error in the updates
+    to the control code.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (17/20), network/grid (2/20), generation (1/20); project_scale_band reconciled
+    to ''demonstration'' from: demonstration (17/20), utility/large-scale (3/20);
+    proponent_type reconciled to ''research organisation/university'' from: research
+    organisation/university (17/20), utility/energy retailer (1/20), project developer
+    (1/20), network business (1/20) Canonical record merged from 2 source records
+    across 2 document(s).'
+  source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+  project_page_url: https://arena.gov.au/projects/monash-grid-oscillation-project-study-and-software-development/
+  kb_category: System security and reliability
+  kb_publish_date: 2/12/2025
+  kb_year: '2023'
+  kb_associated_project: Monash Grid Oscillation Project (Study and Software Development)
+  kb_document_type: Milestones
+  kb_document_folder: Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.33m
+  lead_organisation: 'Monash University '
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/06/2023
+  location: Clayton, Victoria
+  project_partners: 'AEMO and Powerlink '
+  pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+  markdown_filename: grid_oscillation_project_milestone_4_report.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-44303
+  - ARENA-DLV-64461
+  contributing_source_titles:
+  - Monash University - Management of Oscillations in Australia's National Grid -
+    Milestone 2 Interim Report
+  - Grid Oscillation Project - Milestone 4 Report
+  contributing_sources:
+  - source_title: Monash University - Management of Oscillations in Australia's National
+      Grid - Milestone 2 Interim Report
+    pdf_url: https://arena.gov.au/assets/2024/11/Monash-University-–-Management-of-Oscillations-in-Australias-National-Grid-–-Impedance-Measurement-Tool-Milestone-2-Interim-Report.pdf
+    source_pages:
+    - 12
+    source_url: https://arena.gov.au/knowledge-bank/monash-university-management-oscillations-australias-national-grid-milestone-2-interim-report/
+    markdown_filename: monash_university_management_of_oscillations_in_australiarsquos_national_grid_milestone_2_interim_re.md
+  - source_title: Grid Oscillation Project - Milestone 4 Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+    source_pages:
+    - 15
+    source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+    markdown_filename: grid_oscillation_project_milestone_4_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-44304
+  source_title: Monash University - Management of Oscillations in Australia's National
+    Grid - Milestone 2 Interim Report
+  publish_date: 2024-09
+  project_name: Grid Oscillation Project (Study and Software Development)
+  what_happened: IBR manufacturers routinely keep control structures and configurations
+    encrypted or confidential for intellectual property reasons, which impedes accurate
+    analytical derivation of impedance models needed for grid connection studies and
+    oscillation investigations. This confidentiality barrier is a systemic challenge
+    across the NEM.
+  lesson_learnt: Because IBR control parameters and structures are almost universally
+    withheld by OEMs for IP reasons, grid connection studies and oscillation investigations
+    cannot rely on white-box analytical methods — project proponents and network operators
+    should plan for black-box impedance measurement approaches (e.g. PRBS or multi-tone
+    scanning) as the primary methodology for stability analysis of IBR plant.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: approvals/regulatory
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: The ZAT application was developed as a black-box impedance analysis
+    tool specifically to overcome the barrier of OEM confidentiality, enabling impedance-based
+    stability analysis without requiring access to internal control designs.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id002
+  - 9
+  - 17
+  evidence_excerpt: These controls are also complex and nearly always encrypted due
+    to Intellectual Property concerns. This makes investigating oscillatory behaviour
+    of IBRs difficult... due to industrial confidentiality, the IBRs within the PSCAD/EMTDC
+    framework, which is one of the most widely used software in grid connection studies
+    across several countries worldwide, including Australia, are often treated as
+    'black boxes'.
+  confidence_note: 'lifecycle_phase set to approvals/contracting as the confidentiality
+    barrier is most acutely felt during grid connection studies; also relevant to
+    operations-phase investigations.; project_type reconciled to ''software/data/digital''
+    from: software/data/digital (4/9), generation (3/9), network/grid (2/9)'
+  source_url: https://arena.gov.au/knowledge-bank/monash-university-management-oscillations-australias-national-grid-milestone-2-interim-report/
+  project_page_url: https://arena.gov.au/projects/monash-grid-oscillation-project-study-and-software-development/
+  kb_category: System security and reliability
+  kb_publish_date: 19/11/2024
+  kb_year: '2023'
+  kb_associated_project: Monash Grid Oscillation Project (Study and Software Development)
+  kb_document_type: Reports, Milestones
+  kb_document_folder: Reports_Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.33m
+  lead_organisation: 'Monash University '
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/06/2023
+  location: Clayton, Victoria
+  project_partners: 'AEMO and Powerlink '
+  pdf_url: https://arena.gov.au/assets/2024/11/Monash-University-–-Management-of-Oscillations-in-Australias-National-Grid-–-Impedance-Measurement-Tool-Milestone-2-Interim-Report.pdf
+  markdown_filename: monash_university_management_of_oscillations_in_australiarsquos_national_grid_milestone_2_interim_re.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-44304
+  contributing_source_titles:
+  - Monash University - Management of Oscillations in Australia's National Grid -
+    Milestone 2 Interim Report
+  contributing_sources:
+  - source_title: Monash University - Management of Oscillations in Australia's National
+      Grid - Milestone 2 Interim Report
+    pdf_url: https://arena.gov.au/assets/2024/11/Monash-University-–-Management-of-Oscillations-in-Australias-National-Grid-–-Impedance-Measurement-Tool-Milestone-2-Interim-Report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/monash-university-management-oscillations-australias-national-grid-milestone-2-interim-report/
+    markdown_filename: monash_university_management_of_oscillations_in_australiarsquos_national_grid_milestone_2_interim_re.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-44305
+  source_title: Monash University - Management of Oscillations in Australia's National
+    Grid - Milestone 2 Interim Report
+  publish_date: 2024-09
+  project_name: Grid Oscillation Project (Study and Software Development)
+  what_happened: Time-domain simulations in PSCAD/EMTDC are too time-consuming to
+    exhaustively cover the potentially large number of operating points and grid conditions
+    required for comprehensive IBR stability analysis, creating a practical bottleneck
+    for grid connection studies and oscillation investigations.
+  lesson_learnt: Relying solely on time-domain PSCAD simulation for IBR stability
+    analysis is impractical for large operating point spaces — project proponents
+    and network operators should use frequency-domain impedance-based tools (such
+    as the ZAT application with impedance prediction) to efficiently characterise
+    stability across multiple operating conditions without repeated full EMT simulations.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: An impedance prediction algorithm was implemented in the ZAT
+    application to allow rapid estimation of impedance at new operating points from
+    a trained model, avoiding repeated time-consuming PSCAD simulations.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id003
+  - 17
+  - 31
+  evidence_excerpt: Nevertheless, time-domain simulations in PSCAD/EMTDC can pose
+    challenges due to their time-consuming nature. This is attributed to the potentially
+    countless operating points and grid conditions... An impedance prediction algorithm
+    based on [24] is implemented to avoid time-consuming impedance scanning.
+  confidence_note: 'project_scale_band set to demonstration as ZAT is a research tool
+    under development, not yet a commercial deployment.; project_scale_band reconciled
+    to ''utility/large-scale'' from: utility/large-scale (5/9), demonstration (4/9);
+    proponent_type reconciled to ''project developer'' from: project developer (4/9),
+    research organisation/university (4/9), government/public-sector body (1/9)'
+  source_url: https://arena.gov.au/knowledge-bank/monash-university-management-oscillations-australias-national-grid-milestone-2-interim-report/
+  project_page_url: https://arena.gov.au/projects/monash-grid-oscillation-project-study-and-software-development/
+  kb_category: System security and reliability
+  kb_publish_date: 19/11/2024
+  kb_year: '2023'
+  kb_associated_project: Monash Grid Oscillation Project (Study and Software Development)
+  kb_document_type: Reports, Milestones
+  kb_document_folder: Reports_Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.33m
+  lead_organisation: 'Monash University '
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/06/2023
+  location: Clayton, Victoria
+  project_partners: 'AEMO and Powerlink '
+  pdf_url: https://arena.gov.au/assets/2024/11/Monash-University-–-Management-of-Oscillations-in-Australias-National-Grid-–-Impedance-Measurement-Tool-Milestone-2-Interim-Report.pdf
+  markdown_filename: monash_university_management_of_oscillations_in_australiarsquos_national_grid_milestone_2_interim_re.md
+  source_page_pdf: 17
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-44305
+  contributing_source_titles:
+  - Monash University - Management of Oscillations in Australia's National Grid -
+    Milestone 2 Interim Report
+  contributing_sources:
+  - source_title: Monash University - Management of Oscillations in Australia's National
+      Grid - Milestone 2 Interim Report
+    pdf_url: https://arena.gov.au/assets/2024/11/Monash-University-–-Management-of-Oscillations-in-Australias-National-Grid-–-Impedance-Measurement-Tool-Milestone-2-Interim-Report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/monash-university-management-oscillations-australias-national-grid-milestone-2-interim-report/
+    markdown_filename: monash_university_management_of_oscillations_in_australiarsquos_national_grid_milestone_2_interim_re.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-44306
+  source_title: Monash University - Management of Oscillations in Australia's National
+    Grid - Milestone 2 Interim Report
+  publish_date: 2024-09
+  project_name: Grid Oscillation Project (Study and Software Development)
+  what_happened: The Monash University Grid Innovation Hub established a formal Software
+    Development Lifecycle (SDLC) process including continuous integration/continuous
+    deployment (CI/CD), automated cybersecurity scanning, peer review requirements,
+    and Extended Validation code signing for the ZAT application, integrating these
+    practices before distributing the tool to industry users.
+  lesson_learnt: Research-grade grid analysis tools intended for industry deployment
+    require professional software engineering practices — including formal SDLC, automated
+    CI/CD pipelines, cybersecurity scanning (SCA and SAST), and code signing — to
+    be fit for purpose; these should be established at the outset of tool development,
+    not retrofitted before release.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id004
+  - 22
+  - 23
+  evidence_excerpt: A professional grade application requires robust processes governing
+    its development to ensure a quality product devoid of security vulnerabilities
+    and bugs. A formal SDLC process was established for the development of the ZAT
+    application... The installer is stamped with an Extended Validation code signing
+    certification from DigiCert - which is standard practice for professional software.
+  confidence_note: 'project_scale_band reconciled to ''utility/large-scale'' from:
+    utility/large-scale (5/9), demonstration (4/9); proponent_type reconciled to ''project
+    developer'' from: project developer (4/9), research organisation/university (4/9),
+    government/public-sector body (1/9)'
+  source_url: https://arena.gov.au/knowledge-bank/monash-university-management-oscillations-australias-national-grid-milestone-2-interim-report/
+  project_page_url: https://arena.gov.au/projects/monash-grid-oscillation-project-study-and-software-development/
+  kb_category: System security and reliability
+  kb_publish_date: 19/11/2024
+  kb_year: '2023'
+  kb_associated_project: Monash Grid Oscillation Project (Study and Software Development)
+  kb_document_type: Reports, Milestones
+  kb_document_folder: Reports_Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.33m
+  lead_organisation: 'Monash University '
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/06/2023
+  location: Clayton, Victoria
+  project_partners: 'AEMO and Powerlink '
+  pdf_url: https://arena.gov.au/assets/2024/11/Monash-University-–-Management-of-Oscillations-in-Australias-National-Grid-–-Impedance-Measurement-Tool-Milestone-2-Interim-Report.pdf
+  markdown_filename: monash_university_management_of_oscillations_in_australiarsquos_national_grid_milestone_2_interim_re.md
+  source_page_pdf: 22
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-44306
+  contributing_source_titles:
+  - Monash University - Management of Oscillations in Australia's National Grid -
+    Milestone 2 Interim Report
+  contributing_sources:
+  - source_title: Monash University - Management of Oscillations in Australia's National
+      Grid - Milestone 2 Interim Report
+    pdf_url: https://arena.gov.au/assets/2024/11/Monash-University-–-Management-of-Oscillations-in-Australias-National-Grid-–-Impedance-Measurement-Tool-Milestone-2-Interim-Report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/monash-university-management-oscillations-australias-national-grid-milestone-2-interim-report/
+    markdown_filename: monash_university_management_of_oscillations_in_australiarsquos_national_grid_milestone_2_interim_re.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-44307
+  source_title: Monash University - Management of Oscillations in Australia's National
+    Grid - Milestone 2 Interim Report
+  publish_date: 2024-09
+  project_name: Grid Oscillation Project (Study and Software Development)
+  what_happened: The ZAT impedance prediction model trained on operating points that
+    only sampled moderate combinations of voltage and power (Training Set 1) showed
+    small but noticeable discrepancies in prediction accuracy, particularly for the
+    Ydq admittance component. When trained on a second set that included more extreme
+    boundary operating points (Training Set 2), prediction accuracy improved markedly
+    across all tested operating points.
+  lesson_learnt: When training impedance prediction models for IBR stability tools,
+    training data should span the extremes of the expected operating range — using
+    only moderate central operating points will result in degraded prediction accuracy
+    at the boundaries where stability margins are typically tightest.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: utility/large-scale
+  lifecycle_phase: commissioning/integration
+  proponent_type: project developer
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: successful demonstration
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: A second training set incorporating more extreme combinations
+    of voltage and power was used, which yielded extremely good alignment between
+    expected and predicted admittance values across all tested operating points.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id005
+  - 42
+  - 43
+  - 44
+  - 45
+  evidence_excerpt: Small discrepancies between the expected and predicted values
+    can be observed, particular in for Ydq (note the pink curve on the 'dq' plot)...
+    These new operating points involves combinations of more extreme points within
+    the possible range of voltage and power... The alignment between expected and
+    predicted values is now extremely good for all the tested operating points.
+  confidence_note: 'lifecycle_phase set to commissioning/integration as this is a
+    tool validation/testing activity prior to full deployment.; project_scale_band
+    reconciled to ''utility/large-scale'' from: utility/large-scale (5/9), demonstration
+    (4/9); proponent_type reconciled to ''project developer'' from: project developer
+    (4/9), research organisation/university (4/9), government/public-sector body (1/9)'
+  source_url: https://arena.gov.au/knowledge-bank/monash-university-management-oscillations-australias-national-grid-milestone-2-interim-report/
+  project_page_url: https://arena.gov.au/projects/monash-grid-oscillation-project-study-and-software-development/
+  kb_category: System security and reliability
+  kb_publish_date: 19/11/2024
+  kb_year: '2023'
+  kb_associated_project: Monash Grid Oscillation Project (Study and Software Development)
+  kb_document_type: Reports, Milestones
+  kb_document_folder: Reports_Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.33m
+  lead_organisation: 'Monash University '
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/06/2023
+  location: Clayton, Victoria
+  project_partners: 'AEMO and Powerlink '
+  pdf_url: https://arena.gov.au/assets/2024/11/Monash-University-–-Management-of-Oscillations-in-Australias-National-Grid-–-Impedance-Measurement-Tool-Milestone-2-Interim-Report.pdf
+  markdown_filename: monash_university_management_of_oscillations_in_australiarsquos_national_grid_milestone_2_interim_re.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-44307
+  contributing_source_titles:
+  - Monash University - Management of Oscillations in Australia's National Grid -
+    Milestone 2 Interim Report
+  contributing_sources:
+  - source_title: Monash University - Management of Oscillations in Australia's National
+      Grid - Milestone 2 Interim Report
+    pdf_url: https://arena.gov.au/assets/2024/11/Monash-University-–-Management-of-Oscillations-in-Australias-National-Grid-–-Impedance-Measurement-Tool-Milestone-2-Interim-Report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/monash-university-management-oscillations-australias-national-grid-milestone-2-interim-report/
+    markdown_filename: monash_university_management_of_oscillations_in_australiarsquos_national_grid_milestone_2_interim_re.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-44308
+  source_title: Monash University - Management of Oscillations in Australia's National
+    Grid - Milestone 2 Interim Report
+  publish_date: 2024-09
+  project_name: Grid Oscillation Project (Study and Software Development)
+  what_happened: Grid-following IBRs operating in weak grid conditions (low short-circuit
+    ratio) are susceptible to instability driven by PLL control loop interactions
+    and park-level control delays, and the stability boundary is highly sensitive
+    to SCR — the ZAT case study demonstrated that reducing SCR from 3.0 to 2.5 pushed
+    an otherwise stable IBR system into instability.
+  lesson_learnt: Project proponents and network operators should conduct impedance-based
+    stability analysis across a range of SCR scenarios — not just at the design SCR
+    — because small reductions in grid strength (e.g. following a network contingency)
+    can push grid-following IBRs across the stability boundary; the stability margin
+    to the SCR at which instability occurs should be a design criterion.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id006
+  - 38
+  - 39
+  - 40
+  evidence_excerpt: To observe the impact of varying Short Circuit Ratio (SCR) of
+    the grid on the IBR's stability, a set of Nyquist plots is generated for a range
+    of SCRs. These Nyquist plots are overlaid in Figure 25 and the analysis indicates
+    that the system is stable when the SCR is 3.0 but becomes unstable when it decreases
+    to 2.5.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (4/9), generation (3/9), network/grid (2/9)'
+  source_url: https://arena.gov.au/knowledge-bank/monash-university-management-oscillations-australias-national-grid-milestone-2-interim-report/
+  project_page_url: https://arena.gov.au/projects/monash-grid-oscillation-project-study-and-software-development/
+  kb_category: System security and reliability
+  kb_publish_date: 19/11/2024
+  kb_year: '2023'
+  kb_associated_project: Monash Grid Oscillation Project (Study and Software Development)
+  kb_document_type: Reports, Milestones
+  kb_document_folder: Reports_Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.33m
+  lead_organisation: 'Monash University '
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/06/2023
+  location: Clayton, Victoria
+  project_partners: 'AEMO and Powerlink '
+  pdf_url: https://arena.gov.au/assets/2024/11/Monash-University-–-Management-of-Oscillations-in-Australias-National-Grid-–-Impedance-Measurement-Tool-Milestone-2-Interim-Report.pdf
+  markdown_filename: monash_university_management_of_oscillations_in_australiarsquos_national_grid_milestone_2_interim_re.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-44308
+  contributing_source_titles:
+  - Monash University - Management of Oscillations in Australia's National Grid -
+    Milestone 2 Interim Report
+  contributing_sources:
+  - source_title: Monash University - Management of Oscillations in Australia's National
+      Grid - Milestone 2 Interim Report
+    pdf_url: https://arena.gov.au/assets/2024/11/Monash-University-–-Management-of-Oscillations-in-Australias-National-Grid-–-Impedance-Measurement-Tool-Milestone-2-Interim-Report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/monash-university-management-oscillations-australias-national-grid-milestone-2-interim-report/
+    markdown_filename: monash_university_management_of_oscillations_in_australiarsquos_national_grid_milestone_2_interim_re.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-44309
+  source_title: Monash University - Management of Oscillations in Australia's National
+    Grid - Milestone 2 Interim Report
+  publish_date: 2024-09
+  project_name: Grid Oscillation Project (Study and Software Development)
+  what_happened: The ZAT application was designed with a structured data management
+    workflow that requires users to explicitly commit scan results only after interrogating
+    data quality, rather than automatically accepting all simulation outputs. This
+    quality gate was built into the tool to prevent poor-quality impedance data from
+    entering the device library.
+  lesson_learnt: Software tools for grid stability analysis used in industry should
+    incorporate explicit data quality review gates — requiring users to interrogate
+    and approve results before they enter a shared library — to prevent flawed simulation
+    outputs from propagating into downstream stability assessments and potentially
+    misinforming grid connection decisions.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id007
+  - 27
+  evidence_excerpt: The ZAT application can display both the time-series and frequency
+    response data to the user so they can interrogate the quality of the scan. This
+    also empowers the user to investigate and resolve model issues which may be causing
+    poor data quality. To ensure only good quality data is added to the library of
+    device impedances, the ZAT application requires users commit their results once
+    they are satisfied with them.
+  confidence_note: 'project_scale_band reconciled to ''utility/large-scale'' from:
+    utility/large-scale (5/9), demonstration (4/9); proponent_type reconciled to ''project
+    developer'' from: project developer (4/9), research organisation/university (4/9),
+    government/public-sector body (1/9)'
+  source_url: https://arena.gov.au/knowledge-bank/monash-university-management-oscillations-australias-national-grid-milestone-2-interim-report/
+  project_page_url: https://arena.gov.au/projects/monash-grid-oscillation-project-study-and-software-development/
+  kb_category: System security and reliability
+  kb_publish_date: 19/11/2024
+  kb_year: '2023'
+  kb_associated_project: Monash Grid Oscillation Project (Study and Software Development)
+  kb_document_type: Reports, Milestones
+  kb_document_folder: Reports_Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.33m
+  lead_organisation: 'Monash University '
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/06/2023
+  location: Clayton, Victoria
+  project_partners: 'AEMO and Powerlink '
+  pdf_url: https://arena.gov.au/assets/2024/11/Monash-University-–-Management-of-Oscillations-in-Australias-National-Grid-–-Impedance-Measurement-Tool-Milestone-2-Interim-Report.pdf
+  markdown_filename: monash_university_management_of_oscillations_in_australiarsquos_national_grid_milestone_2_interim_re.md
+  source_page_pdf: 27
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-44309
+  contributing_source_titles:
+  - Monash University - Management of Oscillations in Australia's National Grid -
+    Milestone 2 Interim Report
+  contributing_sources:
+  - source_title: Monash University - Management of Oscillations in Australia's National
+      Grid - Milestone 2 Interim Report
+    pdf_url: https://arena.gov.au/assets/2024/11/Monash-University-–-Management-of-Oscillations-in-Australias-National-Grid-–-Impedance-Measurement-Tool-Milestone-2-Interim-Report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/monash-university-management-oscillations-australias-national-grid-milestone-2-interim-report/
+    markdown_filename: monash_university_management_of_oscillations_in_australiarsquos_national_grid_milestone_2_interim_re.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-64451
+  source_title: Grid Oscillation Project - Milestone 4 Report
+  publish_date: 2025-11
+  project_name: Grid Oscillation Project (Study and Software Development)
+  what_happened: Monash University successfully developed a professional-grade impedance-based
+    stability analysis software application (Rezonance) through a formal Software
+    Development Life Cycle (SDLC) process incorporating version control, continuous
+    integration, automated testing, cybersecurity scanning, and code signing, delivered
+    across four milestone stages over the project duration.
+  lesson_learnt: Research software intended for professional industry use requires
+    a formal SDLC process from the outset — including trunk-based version control
+    with peer review gates, automated cybersecurity scanning, and CI/CD pipelines
+    — to deliver a product free of security vulnerabilities and bugs that industry
+    practitioners will trust and adopt.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id008
+  - 27
+  - 28
+  evidence_excerpt: A formal SDLC process was established for the development of the
+    Rezonance application... The code must pass cybersecurity scanning using an automated
+    platform (including Software Composition Analysis and Static Application Security
+    Testing). The code must pass automated tests, ensuring that all software functionality
+    is intact.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+  project_page_url: https://arena.gov.au/projects/monash-grid-oscillation-project-study-and-software-development/
+  kb_category: System security and reliability
+  kb_publish_date: 2/12/2025
+  kb_year: '2023'
+  kb_associated_project: Monash Grid Oscillation Project (Study and Software Development)
+  kb_document_type: Milestones
+  kb_document_folder: Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.33m
+  lead_organisation: 'Monash University '
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/06/2023
+  location: Clayton, Victoria
+  project_partners: 'AEMO and Powerlink '
+  pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+  markdown_filename: grid_oscillation_project_milestone_4_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64451
+  contributing_source_titles:
+  - Grid Oscillation Project - Milestone 4 Report
+  contributing_sources:
+  - source_title: Grid Oscillation Project - Milestone 4 Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+    markdown_filename: grid_oscillation_project_milestone_4_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-64452
+  source_title: Grid Oscillation Project - Milestone 4 Report
+  publish_date: 2025-11
+  project_name: Grid Oscillation Project (Study and Software Development)
+  what_happened: Industry end-user testing by project partners (AEMO, Powerlink Queensland)
+    identified several missing or inadequate features in Rezonance that were not apparent
+    from internal testing alone, including the need for segmented multi-tone scanning
+    with automated result merging, impedance overlay capability, open-loop bode plots
+    with stability margins, improved modal identification controls, PSCAD snapshot
+    support, and an API for automated workflows.
+  lesson_learnt: Engage target industry end-users as active testers throughout software
+    development — not just at the end — since practitioners identify workflow gaps
+    and usability deficiencies that internal developers and white-box test cases cannot
+    reveal; building in structured feedback loops allows iterative refinement before
+    final delivery.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: All major feedback items were implemented including automated
+    segmented multi-tone scanning, impedance overlay, bode plots with stability margins,
+    a dedicated modal identification page, PSCAD snapshot support, and an API for
+    impedance scanning tasks.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id009
+  - 76
+  - 77
+  - 78
+  evidence_excerpt: 'Salient aspects of the feedback received during this engagement
+    included: Implementing a segmented multi-tone impedance scanning feature (rather
+    than a single-tone or multi-tone option) with an automated feature to merge the
+    results into a single frequency response... Implementation of the PSCAD snapshot
+    feature to reduce the time required for simulations. Implementing an Application
+    Programming Interface (API) to enable automated workflows.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+  project_page_url: https://arena.gov.au/projects/monash-grid-oscillation-project-study-and-software-development/
+  kb_category: System security and reliability
+  kb_publish_date: 2/12/2025
+  kb_year: '2023'
+  kb_associated_project: Monash Grid Oscillation Project (Study and Software Development)
+  kb_document_type: Milestones
+  kb_document_folder: Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.33m
+  lead_organisation: 'Monash University '
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/06/2023
+  location: Clayton, Victoria
+  project_partners: 'AEMO and Powerlink '
+  pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+  markdown_filename: grid_oscillation_project_milestone_4_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64452
+  contributing_source_titles:
+  - Grid Oscillation Project - Milestone 4 Report
+  contributing_sources:
+  - source_title: Grid Oscillation Project - Milestone 4 Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+    markdown_filename: grid_oscillation_project_milestone_4_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-64453
+  source_title: Grid Oscillation Project - Milestone 4 Report
+  publish_date: 2025-11
+  project_name: Grid Oscillation Project (Study and Software Development)
+  what_happened: When performing impedance scanning of vendor (black-box) PSCAD models,
+    errors were frequently introduced into scan results when the model was not in
+    a fully stable steady state during the scan — caused by slow model start-up, unintentionally
+    enabled time-triggered disturbances, discrete switching actions (thermal limiters,
+    reactive shunt switching, transformer tap changes), or model instability at low
+    SCR values.
+  lesson_learnt: Before running an impedance scan on a vendor PSCAD model, verify
+    that the model has reached a stable steady state and disable or configure around
+    time-triggered disturbances and discrete switching actions; for grid-following
+    inverter plants, use a high SCR in the SMIB configuration to ensure stable operation
+    during the scan.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Scanning was reconfigured to start after model start-up completion;
+    unintended disturbances were removed from models; certain discrete-action controls
+    were disabled or operating points adjusted to avoid time-based limiters; high-SCR
+    SMIB configurations were used for grid-following plants.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id010
+  - 70
+  - 71
+  evidence_excerpt: 'A common issue encountered when performing impedance scanning
+    of many vendor models was the errors introduced into the results if the model
+    was not in a steady state during impedance scanning. Common causes that were encountered
+    were: Impedance scanning being configured to start too early, before the model
+    has reached initial steady state conditions... There are unintentionally enabled
+    time triggered disturbances in the model... The model itself had control loops,
+    which imposed a discrete action during the scanning process.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+  project_page_url: https://arena.gov.au/projects/monash-grid-oscillation-project-study-and-software-development/
+  kb_category: System security and reliability
+  kb_publish_date: 2/12/2025
+  kb_year: '2023'
+  kb_associated_project: Monash Grid Oscillation Project (Study and Software Development)
+  kb_document_type: Milestones
+  kb_document_folder: Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.33m
+  lead_organisation: 'Monash University '
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/06/2023
+  location: Clayton, Victoria
+  project_partners: 'AEMO and Powerlink '
+  pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+  markdown_filename: grid_oscillation_project_milestone_4_report.md
+  source_page_pdf: 70
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64453
+  contributing_source_titles:
+  - Grid Oscillation Project - Milestone 4 Report
+  contributing_sources:
+  - source_title: Grid Oscillation Project - Milestone 4 Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+    markdown_filename: grid_oscillation_project_milestone_4_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-64454
+  source_title: Grid Oscillation Project - Milestone 4 Report
+  publish_date: 2025-11
+  project_name: Grid Oscillation Project (Study and Software Development)
+  what_happened: Impedance scan accuracy for vendor models was found to be sensitive
+    to the excitation waveform magnitude — if too high, model non-linearities were
+    excited causing inaccuracies; if too low, the excitation response was indistinguishable
+    from model noise. The optimal magnitude was model dependent but generally fell
+    in the range of 0.5% to 2.0% for most models tested.
+  lesson_learnt: When scanning vendor PSCAD models, begin with an excitation magnitude
+    in the 0.5%–2.0% range and iterate — too high an amplitude excites model non-linearities
+    while too low an amplitude is swamped by model noise; treat the optimal magnitude
+    as model-specific and verify through comparison of scan quality metrics.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Iterative tuning of excitation magnitude was adopted as standard
+    practice; generally a magnitude of around 0.5% to 2.0% produced the best results
+    for most models tested.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id011
+  - 71
+  - 72
+  evidence_excerpt: If the magnitude is too high, significant non-linearities are
+    excited in the model response, causing inaccuracies. If the magnitude is too low,
+    it is difficult to separate the model response due to the excitation from the
+    general noise that the model generates... generally, a magnitude of around 0.5%
+    to 2.0% produced the best results for most models tested.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+  project_page_url: https://arena.gov.au/projects/monash-grid-oscillation-project-study-and-software-development/
+  kb_category: System security and reliability
+  kb_publish_date: 2/12/2025
+  kb_year: '2023'
+  kb_associated_project: Monash Grid Oscillation Project (Study and Software Development)
+  kb_document_type: Milestones
+  kb_document_folder: Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.33m
+  lead_organisation: 'Monash University '
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/06/2023
+  location: Clayton, Victoria
+  project_partners: 'AEMO and Powerlink '
+  pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+  markdown_filename: grid_oscillation_project_milestone_4_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64454
+  contributing_source_titles:
+  - Grid Oscillation Project - Milestone 4 Report
+  contributing_sources:
+  - source_title: Grid Oscillation Project - Milestone 4 Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+    markdown_filename: grid_oscillation_project_milestone_4_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-64455
+  source_title: Grid Oscillation Project - Milestone 4 Report
+  publish_date: 2025-11
+  project_name: Grid Oscillation Project (Study and Software Development)
+  what_happened: Impedance scan results for vendor models were found to be sensitive
+    to the number of concurrent frequency components injected simultaneously — broadband
+    multi-tone injections frequently produced significant errors (particularly at
+    low frequencies) due to non-linear inter-frequency couplings, while single-tone
+    injections produced high-quality results but at the cost of much longer simulation
+    run times.
+  lesson_learnt: Use segmented multi-tone injections rather than a single broadband
+    multi-tone sweep when scanning vendor PSCAD models — splitting the frequency range
+    into segments mitigates non-linear coupling errors at low frequencies while remaining
+    significantly faster than single-tone scanning; treat the optimal segmentation
+    as model-dependent and verify against initial broad scans.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: The original single broad multi-tone scan was split into four
+    multi-tone segments run as separate scan simulations, which mitigated errors;
+    the Rezonance application was subsequently enhanced with flexible segmented multi-tone
+    scanning and automated result merging.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id012
+  - 72
+  - 73
+  evidence_excerpt: In general, the injection of more concurrent frequency components
+    was found to increase the likelihood of poor quality results... a single broadband
+    multi-tone scan simulation produced significant errors in the low frequency range
+    of the scanned impedance data. These errors were mitigated by splitting the original
+    single multi-tone scan simulation into four multi-tone segments.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+  project_page_url: https://arena.gov.au/projects/monash-grid-oscillation-project-study-and-software-development/
+  kb_category: System security and reliability
+  kb_publish_date: 2/12/2025
+  kb_year: '2023'
+  kb_associated_project: Monash Grid Oscillation Project (Study and Software Development)
+  kb_document_type: Milestones
+  kb_document_folder: Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.33m
+  lead_organisation: 'Monash University '
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/06/2023
+  location: Clayton, Victoria
+  project_partners: 'AEMO and Powerlink '
+  pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+  markdown_filename: grid_oscillation_project_milestone_4_report.md
+  source_page_pdf: 72
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64455
+  contributing_source_titles:
+  - Grid Oscillation Project - Milestone 4 Report
+  contributing_sources:
+  - source_title: Grid Oscillation Project - Milestone 4 Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+    markdown_filename: grid_oscillation_project_milestone_4_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-64456
+  source_title: Grid Oscillation Project - Milestone 4 Report
+  publish_date: 2025-11
+  project_name: Grid Oscillation Project (Study and Software Development)
+  what_happened: Testing of Rezonance against 20 vendor models from 7 different vendors
+    covering wind, solar, BESS, hybrid, FACTS, and synchronous machine technologies
+    revealed that impedance scanning of real-world vendor models was consistently
+    more challenging than white-box test models, requiring iterative parameter tuning
+    for each model to obtain high-quality results, with no single universal parameter
+    set applicable across all models.
+  lesson_learnt: 'Plan for significant iterative tuning effort when applying impedance
+    scanning to real-world vendor PSCAD models — adopt a structured broad-to-narrow
+    scanning process: start with a quick broad scan to identify frequency ranges of
+    interest and noise, then progressively focus subsequent scans on those ranges
+    for higher quality and resolution; this approach yields reliable results in the
+    least total time.'
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: 'An iterative scanning workflow was established: start with an
+    initial broad impedance scan, examine stability analysis results to identify noisy
+    or feature-rich frequency ranges, then progressively refine subsequent scans on
+    those ranges until satisfactory results are obtained.'
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id013
+  - 67
+  - 68
+  - 73
+  - 74
+  evidence_excerpt: Impedance scanning of vendor models was found to be more challenging
+    than the white-box models... The specific arrangement of scanning parameters yielding
+    the best results was found to be model dependent... Testing numerous vendor models
+    revealed that when performing impedance scanning on a model for the first time,
+    both the optimal scanning parameters and the frequency range and resolution of
+    interest are not known.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+  project_page_url: https://arena.gov.au/projects/monash-grid-oscillation-project-study-and-software-development/
+  kb_category: System security and reliability
+  kb_publish_date: 2/12/2025
+  kb_year: '2023'
+  kb_associated_project: Monash Grid Oscillation Project (Study and Software Development)
+  kb_document_type: Milestones
+  kb_document_folder: Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.33m
+  lead_organisation: 'Monash University '
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/06/2023
+  location: Clayton, Victoria
+  project_partners: 'AEMO and Powerlink '
+  pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+  markdown_filename: grid_oscillation_project_milestone_4_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64456
+  contributing_source_titles:
+  - Grid Oscillation Project - Milestone 4 Report
+  contributing_sources:
+  - source_title: Grid Oscillation Project - Milestone 4 Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+    markdown_filename: grid_oscillation_project_milestone_4_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-64457
+  source_title: Grid Oscillation Project - Milestone 4 Report
+  publish_date: 2025-11
+  project_name: Grid Oscillation Project (Study and Software Development)
+  what_happened: Wide-area NEM PSCAD model scan simulations were found to be extremely
+    slow due to the model's large and complex nature, making single-tone injection
+    approaches impractical; additionally, running wide-area models presented integration
+    difficulties due to the large number of individual PSCAD projects, and there was
+    no robust method to efficiently screen which plants should be prioritised for
+    impedance scanning.
+  lesson_learnt: 'Wide-area impedance scanning at NEM scale requires dedicated workflow
+    optimisation: single-tone injections are impractical due to simulation run times
+    and should be replaced with segmented multi-tone methods; pre-screen candidate
+    plants using individual SMIB impedance analysis before committing to full wide-area
+    scanning; consider simplified co-simulation representations for distant network
+    areas to reduce simulation complexity.'
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated integration
+  intervention_note: Individual plant SMIB impedance analysis was used to pre-screen
+    and identify the most critical IBRs for wide-area scanning; Rezonance scan modules
+    were then deployed at only three of the most critical IBR POCs within the wide-area
+    model.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id014
+  - 75
+  - 76
+  evidence_excerpt: Wide area PSCAD model scan simulations are extremely slow because
+    of the model's large and complex nature. This makes certain approaches to impedance
+    scanning, such as single-tone injections, impractical to apply... Difficulties
+    in running wide area PSCAD models were encountered due to the integration of a
+    large number of individual PSCAD projects.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+  project_page_url: https://arena.gov.au/projects/monash-grid-oscillation-project-study-and-software-development/
+  kb_category: System security and reliability
+  kb_publish_date: 2/12/2025
+  kb_year: '2023'
+  kb_associated_project: Monash Grid Oscillation Project (Study and Software Development)
+  kb_document_type: Milestones
+  kb_document_folder: Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.33m
+  lead_organisation: 'Monash University '
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/06/2023
+  location: Clayton, Victoria
+  project_partners: 'AEMO and Powerlink '
+  pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+  markdown_filename: grid_oscillation_project_milestone_4_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64457
+  contributing_source_titles:
+  - Grid Oscillation Project - Milestone 4 Report
+  contributing_sources:
+  - source_title: Grid Oscillation Project - Milestone 4 Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+    markdown_filename: grid_oscillation_project_milestone_4_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: integration failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-64458
+  source_title: Grid Oscillation Project - Milestone 4 Report
+  publish_date: 2025-11
+  project_name: Grid Oscillation Project (Study and Software Development)
+  what_happened: Power Plant Controller (PPC) models with sample-and-hold type characteristics
+    were identified as a specific challenge for impedance scanning, as the discrete
+    sampling behaviour introduces aliasing effects that generate errors in scan results
+    that are difficult to distinguish from genuine frequency response features.
+  lesson_learnt: When impedance scanning plants with sample-and-hold Power Plant Controllers,
+    be alert to aliasing artefacts in scan results that mimic genuine frequency response
+    features — validate results carefully against time-domain simulations and consider
+    whether disabling or modifying the discrete PPC sampling behaviour is appropriate
+    for the small-signal scanning context.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id015
+  - 74
+  evidence_excerpt: Sample and hold type characteristics, which are often encountered
+    in Power Plant Controller (PPC) controls, introduce aliasing effects, which can
+    generate errors in impedance scan results.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+  project_page_url: https://arena.gov.au/projects/monash-grid-oscillation-project-study-and-software-development/
+  kb_category: System security and reliability
+  kb_publish_date: 2/12/2025
+  kb_year: '2023'
+  kb_associated_project: Monash Grid Oscillation Project (Study and Software Development)
+  kb_document_type: Milestones
+  kb_document_folder: Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.33m
+  lead_organisation: 'Monash University '
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/06/2023
+  location: Clayton, Victoria
+  project_partners: 'AEMO and Powerlink '
+  pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+  markdown_filename: grid_oscillation_project_milestone_4_report.md
+  source_page_pdf: 74
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64458
+  contributing_source_titles:
+  - Grid Oscillation Project - Milestone 4 Report
+  contributing_sources:
+  - source_title: Grid Oscillation Project - Milestone 4 Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+    markdown_filename: grid_oscillation_project_milestone_4_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-64459
+  source_title: Grid Oscillation Project - Milestone 4 Report
+  publish_date: 2025-11
+  project_name: Grid Oscillation Project (Study and Software Development)
+  what_happened: The impedance prediction algorithm's accuracy was found to be highly
+    sensitive to the selection of training operating points. A first training set
+    using centrally clustered operating points produced a prediction model with a
+    visible mismatch for cross-coupling terms (Ydq); a second training set using extreme
+    corner points of the operating range produced substantially better prediction
+    accuracy across all admittance components.
+  lesson_learnt: When training an impedance prediction model for an IBR, use training
+    operating points that span the extremes of the expected operating range rather
+    than clustering around a central point — corner-point training sets capture the
+    full variation of the non-linear impedance response and yield significantly better
+    prediction accuracy, particularly for cross-coupling terms.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: A second set of operating points using extreme corner combinations
+    within the possible range of voltage and power was substituted for the original
+    training set, yielding prediction accuracy described as 'extremely good for all
+    the tested operating points'.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id016
+  - 40
+  - 41
+  - 42
+  - 48
+  - 49
+  evidence_excerpt: The first set of operating points tested... Small discrepancies
+    between the expected and predicted values can be observed, particularly for Ydq...
+    These new operating points involve combinations of more extreme points within
+    the possible range of voltage and power... The alignment between expected and
+    predicted values is now extremely good for all the tested operating points.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+  project_page_url: https://arena.gov.au/projects/monash-grid-oscillation-project-study-and-software-development/
+  kb_category: System security and reliability
+  kb_publish_date: 2/12/2025
+  kb_year: '2023'
+  kb_associated_project: Monash Grid Oscillation Project (Study and Software Development)
+  kb_document_type: Milestones
+  kb_document_folder: Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.33m
+  lead_organisation: 'Monash University '
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/06/2023
+  location: Clayton, Victoria
+  project_partners: 'AEMO and Powerlink '
+  pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+  markdown_filename: grid_oscillation_project_milestone_4_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64459
+  contributing_source_titles:
+  - Grid Oscillation Project - Milestone 4 Report
+  contributing_sources:
+  - source_title: Grid Oscillation Project - Milestone 4 Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+    markdown_filename: grid_oscillation_project_milestone_4_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-64462
+  source_title: Grid Oscillation Project - Milestone 4 Report
+  publish_date: 2025-11
+  project_name: Grid Oscillation Project (Study and Software Development)
+  what_happened: The Rezonance validation process confirmed that multi-bus injection
+    scanning performs better than single-bus injection under noisy conditions (representative
+    of background noise from operating IBR models), consistently producing lower error
+    magnitudes across all admittance matrix elements, while both methods perform equivalently
+    in noise-free conditions.
+  lesson_learnt: When performing impedance scanning in wide-area models with multiple
+    active IBRs generating background noise, use multi-bus injection rather than single-bus
+    injection — the multi-bus method is more robust to noise and produces consistently
+    lower impedance estimation errors, making it the preferred approach for operational
+    network conditions.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id017
+  - 57
+  evidence_excerpt: In this case, significant deviations between the expected and
+    scanned admittances are clearly visible due to the presence of noise. However,
+    the overlaid admittances show that the multiple-bus injection has less noise compared
+    to the single-bus injection... The conclusion is that the multi-bus injection
+    method performs better under noisy conditions.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+  project_page_url: https://arena.gov.au/projects/monash-grid-oscillation-project-study-and-software-development/
+  kb_category: System security and reliability
+  kb_publish_date: 2/12/2025
+  kb_year: '2023'
+  kb_associated_project: Monash Grid Oscillation Project (Study and Software Development)
+  kb_document_type: Milestones
+  kb_document_folder: Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.33m
+  lead_organisation: 'Monash University '
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/06/2023
+  location: Clayton, Victoria
+  project_partners: 'AEMO and Powerlink '
+  pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+  markdown_filename: grid_oscillation_project_milestone_4_report.md
+  source_page_pdf: 57
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64462
+  contributing_source_titles:
+  - Grid Oscillation Project - Milestone 4 Report
+  contributing_sources:
+  - source_title: Grid Oscillation Project - Milestone 4 Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+    markdown_filename: grid_oscillation_project_milestone_4_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-64463
+  source_title: Grid Oscillation Project - Milestone 4 Report
+  publish_date: 2025-11
+  project_name: Grid Oscillation Project (Study and Software Development)
+  what_happened: Rezonance was validated against a wide-area NEM PSCAD model configured
+    to produce a sustained 6 Hz oscillation; impedance-based stability analysis correctly
+    predicted the 6 Hz dominant mode and identified which specific IBR plants (IBR
+    1 and IBR 2) were the primary contributors, matching time-domain simulation results.
+  lesson_learnt: Impedance-based stability analysis using Rezonance can correctly
+    identify both the frequency of dominant oscillatory modes and the specific contributing
+    IBR plants in NEM-scale wide-area models — this capability supports more targeted
+    and efficient root-cause investigations than time-domain EMT simulation alone,
+    particularly when many IBRs are present.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id018
+  - 75
+  - 76
+  evidence_excerpt: The system level closed loop response plot predicts a dominant
+    mode of oscillation with a frequency of 6 Hz, matching the time-domain simulation
+    result. The plant level closed loop response plot shows that IBR 1 and IBR 2 are
+    the ones that participate the most in the oscillation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+  project_page_url: https://arena.gov.au/projects/monash-grid-oscillation-project-study-and-software-development/
+  kb_category: System security and reliability
+  kb_publish_date: 2/12/2025
+  kb_year: '2023'
+  kb_associated_project: Monash Grid Oscillation Project (Study and Software Development)
+  kb_document_type: Milestones
+  kb_document_folder: Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.33m
+  lead_organisation: 'Monash University '
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/06/2023
+  location: Clayton, Victoria
+  project_partners: 'AEMO and Powerlink '
+  pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+  markdown_filename: grid_oscillation_project_milestone_4_report.md
+  source_page_pdf: 75
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64463
+  contributing_source_titles:
+  - Grid Oscillation Project - Milestone 4 Report
+  contributing_sources:
+  - source_title: Grid Oscillation Project - Milestone 4 Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+    markdown_filename: grid_oscillation_project_milestone_4_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-64464
+  source_title: Grid Oscillation Project - Milestone 4 Report
+  publish_date: 2025-11
+  project_name: Grid Oscillation Project (Study and Software Development)
+  what_happened: The project established an industry knowledge-sharing programme comprising
+    two industry-wide two-hour seminars (October 2024 and October 2025), multiple
+    conference presentations, and journal publications, alongside direct knowledge-sharing
+    with project partners AEMO and Powerlink Queensland through regular project meetings,
+    to support adoption of impedance-based stability analysis by the broader power
+    industry.
+  lesson_learnt: For research software targeting a specialist engineering audience,
+    invest in a multi-channel knowledge-sharing programme (industry seminars, direct
+    partner engagement, peer-reviewed publications, and conference presentations)
+    running concurrently with software development — this builds practitioner awareness
+    and readiness to adopt the tool before the project concludes, reducing the gap
+    between delivery and uptake.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id019
+  - 9
+  - 10
+  evidence_excerpt: Knowledge sharing via two industry-wide seminars, which dedicate
+    two hours each to detailing impedance-based stability analysis concepts and key
+    features of the tool for industry end-users, held in October 2024 and October
+    2025. The dissemination of knowledge through the publication of research findings
+    in journals and conferences.
+  confidence_note: lifecycle_phase set to close-out/post-project review as this reflects
+    the overall knowledge-sharing programme framing in the outcomes section, though
+    seminars occurred during the project.
+  source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+  project_page_url: https://arena.gov.au/projects/monash-grid-oscillation-project-study-and-software-development/
+  kb_category: System security and reliability
+  kb_publish_date: 2/12/2025
+  kb_year: '2023'
+  kb_associated_project: Monash Grid Oscillation Project (Study and Software Development)
+  kb_document_type: Milestones
+  kb_document_folder: Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.33m
+  lead_organisation: 'Monash University '
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/06/2023
+  location: Clayton, Victoria
+  project_partners: 'AEMO and Powerlink '
+  pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+  markdown_filename: grid_oscillation_project_milestone_4_report.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64464
+  contributing_source_titles:
+  - Grid Oscillation Project - Milestone 4 Report
+  contributing_sources:
+  - source_title: Grid Oscillation Project - Milestone 4 Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+    markdown_filename: grid_oscillation_project_milestone_4_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-64465
+  source_title: Grid Oscillation Project - Milestone 4 Report
+  publish_date: 2025-11
+  project_name: Grid Oscillation Project (Study and Software Development)
+  what_happened: A Monash University spin-out company, GridZync, was established to
+    commercialise Rezonance, provide ongoing user support, and maintain and develop
+    the application beyond the conclusion of the ARENA-funded project, ensuring continuity
+    of access for industry practitioners.
+  lesson_learnt: Research software with genuine industry utility requires a credible
+    commercialisation and support pathway from the outset of the project — establishing
+    a dedicated spin-out entity (GridZync) to own, license, maintain, and support
+    Rezonance after ARENA funding ends is the model adopted here and avoids the common
+    failure mode of research tools becoming inaccessible or unsupported after project
+    close-out.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id020
+  - 82
+  evidence_excerpt: Members of the industry interested in gaining access to Rezonance
+    should reach out to GridZync, the Monash University spin-out responsible for commercialising
+    Rezonance, providing support to its end-users and developing and maintaining it
+    into the future.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+  project_page_url: https://arena.gov.au/projects/monash-grid-oscillation-project-study-and-software-development/
+  kb_category: System security and reliability
+  kb_publish_date: 2/12/2025
+  kb_year: '2023'
+  kb_associated_project: Monash Grid Oscillation Project (Study and Software Development)
+  kb_document_type: Milestones
+  kb_document_folder: Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.33m
+  lead_organisation: 'Monash University '
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/06/2023
+  location: Clayton, Victoria
+  project_partners: 'AEMO and Powerlink '
+  pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+  markdown_filename: grid_oscillation_project_milestone_4_report.md
+  source_page_pdf: 82
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64465
+  contributing_source_titles:
+  - Grid Oscillation Project - Milestone 4 Report
+  contributing_sources:
+  - source_title: Grid Oscillation Project - Milestone 4 Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+    source_pages: *id020
+    source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+    markdown_filename: grid_oscillation_project_milestone_4_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-64466
+  source_title: Grid Oscillation Project - Milestone 4 Report
+  publish_date: 2025-11
+  project_name: Grid Oscillation Project (Study and Software Development)
+  what_happened: The validation process confirmed that impedance-based stability analysis
+    is fundamentally a small-signal method and cannot be applied to large-signal instability
+    phenomena including transient instability during faults, protection operation,
+    mode-switching (e.g., Fault Ride Through activation), current limiter activation,
+    or voltage collapse — and is also impractical for low-frequency inter-area oscillations
+    (below 1 Hz) involving large numbers of synchronous machines due to the prohibitively
+    long EMT simulation durations required.
+  lesson_learnt: When planning to use impedance-based stability analysis tools such
+    as Rezonance, identify upfront whether the phenomena of concern are small-signal
+    in nature — the method is not applicable to large-signal events (faults, protection,
+    current limiting, voltage collapse) and is impractical for sub-1 Hz inter-area
+    modes; EMT time-domain simulation remains necessary for large-signal validation
+    and should always be performed as a complementary check even when impedance-based
+    analysis is used for small-signal screening.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id021
+  - 81
+  evidence_excerpt: Impedance-based stability analysis is fundamentally a small-signal
+    method, which means there are limitations on its application that must be borne
+    in mind by the user... it must be noted that at the end of the process, checking
+    studies using EMT time-domain models is necessary to ensure that any potential
+    large-signal instabilities are also detected.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+  project_page_url: https://arena.gov.au/projects/monash-grid-oscillation-project-study-and-software-development/
+  kb_category: System security and reliability
+  kb_publish_date: 2/12/2025
+  kb_year: '2023'
+  kb_associated_project: Monash Grid Oscillation Project (Study and Software Development)
+  kb_document_type: Milestones
+  kb_document_folder: Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.33m
+  lead_organisation: 'Monash University '
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/06/2023
+  location: Clayton, Victoria
+  project_partners: 'AEMO and Powerlink '
+  pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+  markdown_filename: grid_oscillation_project_milestone_4_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64466
+  contributing_source_titles:
+  - Grid Oscillation Project - Milestone 4 Report
+  contributing_sources:
+  - source_title: Grid Oscillation Project - Milestone 4 Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+    source_pages: *id021
+    source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+    markdown_filename: grid_oscillation_project_milestone_4_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-64467
+  source_title: Grid Oscillation Project - Milestone 4 Report
+  publish_date: 2025-11
+  project_name: Grid Oscillation Project (Study and Software Development)
+  what_happened: The project identified that obtaining high-quality impedance scan
+    results for industry vendor models whilst minimising engineering effort and scan
+    simulation time remains an unresolved bottleneck, and that validation of frequency
+    response data quality — though critical for user confidence — is itself time-consuming;
+    these challenges were not fully resolved within the project scope and were recommended
+    for future Rezonance development.
+  lesson_learnt: Plan for impedance scan quality assurance as a distinct and time-intensive
+    workstream when deploying impedance-based stability analysis in practice — the
+    current state of the art requires manual iterative tuning of scan parameters and
+    time-consuming result validation; future tool development should prioritise automation
+    of parameter optimisation and quality assessment workflows to reduce the engineering
+    burden on practitioners.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: execution & logistics
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id022
+  - 82
+  evidence_excerpt: The difficulty involved in obtaining highly accurate impedance
+    scan results for industry models whilst minimising the simulation scan time and
+    the engineering effort required. The complexities involved in validating impedance
+    scan results to increase the user's confidence in the results obtained.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+  project_page_url: https://arena.gov.au/projects/monash-grid-oscillation-project-study-and-software-development/
+  kb_category: System security and reliability
+  kb_publish_date: 2/12/2025
+  kb_year: '2023'
+  kb_associated_project: Monash Grid Oscillation Project (Study and Software Development)
+  kb_document_type: Milestones
+  kb_document_folder: Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.33m
+  lead_organisation: 'Monash University '
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/06/2023
+  location: Clayton, Victoria
+  project_partners: 'AEMO and Powerlink '
+  pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+  markdown_filename: grid_oscillation_project_milestone_4_report.md
+  source_page_pdf: 82
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64467
+  contributing_source_titles:
+  - Grid Oscillation Project - Milestone 4 Report
+  contributing_sources:
+  - source_title: Grid Oscillation Project - Milestone 4 Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+    source_pages: *id022
+    source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+    markdown_filename: grid_oscillation_project_milestone_4_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-64468
+  source_title: Grid Oscillation Project - Milestone 4 Report
+  publish_date: 2025-11
+  project_name: Grid Oscillation Project (Study and Software Development)
+  what_happened: Rezonance's impedance scanning features were validated against 20
+    vendor PSCAD models from 7 vendors spanning wind, solar, BESS, hybrid, FACTS,
+    and synchronous machine technologies, and confirmed compatible with all tested
+    model types; impedance-based stability analysis results were also validated against
+    time-domain PSCAD simulations for each model, confirming that the tool correctly
+    identifies stability boundaries and oscillation frequencies.
+  lesson_learnt: Validate research tools against a broad cross-section of real industry
+    models (not just internally developed white-box test cases) before claiming fitness
+    for industry use — compatibility and result fidelity with vendor black-box models
+    is not guaranteed by white-box test performance and must be independently confirmed;
+    validating against 20 models from 7 vendors across multiple technology types provides
+    the breadth of coverage necessary for broad industry adoption.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id023
+  - 67
+  - 68
+  evidence_excerpt: 'During this project, Rezonance was tested against a range of
+    vendor models that featured: A total of 20 different models from 7 different vendors.
+    Technologies covering wind, solar, BESS, hybrid systems, FACTS systems, and synchronous
+    machines. Grid-following and grid-forming IBRs.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+  project_page_url: https://arena.gov.au/projects/monash-grid-oscillation-project-study-and-software-development/
+  kb_category: System security and reliability
+  kb_publish_date: 2/12/2025
+  kb_year: '2023'
+  kb_associated_project: Monash Grid Oscillation Project (Study and Software Development)
+  kb_document_type: Milestones
+  kb_document_folder: Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.33m
+  lead_organisation: 'Monash University '
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/06/2023
+  location: Clayton, Victoria
+  project_partners: 'AEMO and Powerlink '
+  pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+  markdown_filename: grid_oscillation_project_milestone_4_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64468
+  contributing_source_titles:
+  - Grid Oscillation Project - Milestone 4 Report
+  contributing_sources:
+  - source_title: Grid Oscillation Project - Milestone 4 Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+    source_pages: *id023
+    source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+    markdown_filename: grid_oscillation_project_milestone_4_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-64469
+  source_title: Grid Oscillation Project - Milestone 4 Report
+  publish_date: 2025-11
+  project_name: Grid Oscillation Project (Study and Software Development)
+  what_happened: The project identified that IBR impedance frequency response data
+    can be used for connection studies as a shareable, non-confidential alternative
+    to proprietary PSCAD models — network operators can share grid impedance scans
+    with plant proponents without disclosing which specific plants are operating in
+    the network, and proponents can iteratively optimise plant design against this
+    data before submitting a formal connection application.
+  lesson_learnt: Network operators should establish an impedance frequency response
+    data-sharing workflow for IBR connection studies — sharing grid impedance scans
+    at the prospective connection point avoids the confidentiality barriers of model
+    sharing while providing proponents with EMT-fidelity dynamic information needed
+    to optimise controller tuning before formal connection assessment, reducing connection
+    study iteration cycles.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: policy/market influence only
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id024
+  - 79
+  - 80
+  evidence_excerpt: Impedance frequency response data does not contain confidential
+    information about a system (e.g., the specific plants that are operating within
+    the network) and, therefore, can be more easily shared between parties involved
+    in a connection project compared to PSCAD models... The proponent optimises their
+    plant design to avoid potential control interactions or oscillations with the
+    grid, taking into account the EMT fidelity modelling information included in the
+    grid impedance frequency response data.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (17/20), network/grid (2/20), generation (1/20); project_scale_band reconciled
+    to ''demonstration'' from: demonstration (17/20), utility/large-scale (3/20);
+    proponent_type reconciled to ''research organisation/university'' from: research
+    organisation/university (17/20), utility/energy retailer (1/20), project developer
+    (1/20), network business (1/20)'
+  source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+  project_page_url: https://arena.gov.au/projects/monash-grid-oscillation-project-study-and-software-development/
+  kb_category: System security and reliability
+  kb_publish_date: 2/12/2025
+  kb_year: '2023'
+  kb_associated_project: Monash Grid Oscillation Project (Study and Software Development)
+  kb_document_type: Milestones
+  kb_document_folder: Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.33m
+  lead_organisation: 'Monash University '
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/06/2023
+  location: Clayton, Victoria
+  project_partners: 'AEMO and Powerlink '
+  pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+  markdown_filename: grid_oscillation_project_milestone_4_report.md
+  source_page_pdf: 79
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64469
+  contributing_source_titles:
+  - Grid Oscillation Project - Milestone 4 Report
+  contributing_sources:
+  - source_title: Grid Oscillation Project - Milestone 4 Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+    source_pages: *id024
+    source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+    markdown_filename: grid_oscillation_project_milestone_4_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-64470
+  source_title: Grid Oscillation Project - Milestone 4 Report
+  publish_date: 2025-11
+  project_name: Grid Oscillation Project (Study and Software Development)
+  what_happened: The project identified that individual plant SMIB impedance analysis
+    of IBRs within a wide-area network may miss interaction phenomena between multiple
+    IBRs — a plant's dominant oscillatory mode can change in the presence of other
+    IBRs due to inter-plant interactions that are not captured when each plant is
+    analysed in isolation.
+  lesson_learnt: Do not rely solely on individual plant SMIB impedance analysis to
+    characterise oscillation risk in multi-IBR networks — interactions between plants
+    can shift dominant oscillatory modes in ways that only emerge in multi-bus analysis;
+    where wide-area multi-bus scanning is impractical, use SMIB results only as a
+    screening tool to shortlist candidate plants for more comprehensive multi-bus
+    analysis.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id025
+  - 76
+  evidence_excerpt: The dominant mode of oscillation of an IBR may change in the presence
+    of other IBRs due to interactions between them. Whilst individual plant SMIB analysis
+    can provide some insight, there could be interaction phenomena that it misses.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+  project_page_url: https://arena.gov.au/projects/monash-grid-oscillation-project-study-and-software-development/
+  kb_category: System security and reliability
+  kb_publish_date: 2/12/2025
+  kb_year: '2023'
+  kb_associated_project: Monash Grid Oscillation Project (Study and Software Development)
+  kb_document_type: Milestones
+  kb_document_folder: Milestones
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $500k
+  total_project_value: $1.33m
+  lead_organisation: 'Monash University '
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/06/2023
+  location: Clayton, Victoria
+  project_partners: 'AEMO and Powerlink '
+  pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+  markdown_filename: grid_oscillation_project_milestone_4_report.md
+  source_page_pdf: 76
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64470
+  contributing_source_titles:
+  - Grid Oscillation Project - Milestone 4 Report
+  contributing_sources:
+  - source_title: Grid Oscillation Project - Milestone 4 Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Monash-University-Management-of-oscillations-in-Australias-National-Grid-Public-Final-Report.pdf
+    source_pages: *id025
+    source_url: https://arena.gov.au/knowledge-bank/grid-oscillation-project-milestone-4-report/
+    markdown_filename: grid_oscillation_project_milestone_4_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92

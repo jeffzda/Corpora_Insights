@@ -1,0 +1,1478 @@
+- record_id: ARENA-DLV-45251
+  source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+    Report
+  publish_date: 2024-03
+  project_name: Platform for Solar Farm Pre-Commissioning (SFPP)
+  what_happened: Many solar PV farms in construction and commissioning experienced
+    delays because hardware test results did not match the submitted software models
+    (PSSE/PSCAD) within AEMO's required ±10% tolerance, triggering multiple iterations
+    of model revision, re-testing, and due diligence reviews by network service providers
+    before grid connection could proceed.
+  lesson_learnt: Solar farm developers should validate the Aggregated Generator Control
+    System (AGCS) hardware against software models in a Hardware-in-the-Loop (HIL)
+    pre-commissioning platform before on-site commissioning — hardware-software mismatches
+    discovered only during on-site R2 testing cause repeated model iterations and
+    significant commissioning delays.
+  issue_severity: major
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: UQ and EPEC developed a real-time HIL pre-commissioning platform
+    (SFPP) that allows AGCS validation against PSCAD/PSSE models before on-site commissioning,
+    enabling issues to be identified and resolved in a laboratory setting.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id001
+  - 8
+  evidence_excerpt: Recently, many solar PV farms in construction and commissioning
+    have experienced delays due to hardware-software mismatch.
+  confidence_note: 'project_scale_band reconciled to ''demonstration'' from: demonstration
+    (18/20), utility/large-scale (2/20); proponent_type reconciled to ''research organisation/university''
+    from: research organisation/university (18/20), project developer (2/20)'
+  source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/university-of-queensland-platform-for-solar-farm-pre-commissioning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 26/08/2024
+  kb_year: '2022'
+  kb_associated_project: University of Queensland Platform for Solar Farm Pre-Commissioning
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $498k
+  total_project_value: $1.46m
+  lead_organisation: The University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 10/01/2022
+  location: Queensland
+  project_partners: EPEC Group
+  pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+  markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45251
+  contributing_source_titles:
+  - Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+    markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: schedule slippage
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-45252
+  source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+    Report
+  publish_date: 2024-03
+  project_name: Platform for Solar Farm Pre-Commissioning (SFPP)
+  what_happened: The industry's current practice of assessing the AGCS only on-site
+    during the commissioning period means that integration problems between the AGCS,
+    PV panels, and inverters — supplied by different manufacturers — are not identified
+    until after construction, as no pre-commissioning hardware platforms or defined
+    testing standards existed in the market.
+  lesson_learnt: Because AGCS equipment, PV panels, and inverters are often supplied
+    by different manufacturers and are not integrated or tested by any single party
+    in a HIL setup prior to on-site commissioning, projects should insist on pre-commissioning
+    HIL validation of the full AGCS to detect integration failures before the costly
+    on-site phase.
+  issue_severity: major
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The SFPP HIL platform was established to fill this gap, enabling
+    AGCS integration testing before on-site commissioning.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id002
+  - 8
+  evidence_excerpt: Currently, there are neither hardware platforms nor defined testing
+    standards available in the market that can verify AGCS in advance of the grid
+    commissioning.
+  confidence_note: 'project_scale_band reconciled to ''demonstration'' from: demonstration
+    (18/20), utility/large-scale (2/20); proponent_type reconciled to ''research organisation/university''
+    from: research organisation/university (18/20), project developer (2/20)'
+  source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/university-of-queensland-platform-for-solar-farm-pre-commissioning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 26/08/2024
+  kb_year: '2022'
+  kb_associated_project: University of Queensland Platform for Solar Farm Pre-Commissioning
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $498k
+  total_project_value: $1.46m
+  lead_organisation: The University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 10/01/2022
+  location: Queensland
+  project_partners: EPEC Group
+  pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+  markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45252
+  contributing_source_titles:
+  - Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+    markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-45253
+  source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+    Report
+  publish_date: 2024-03
+  project_name: Platform for Solar Farm Pre-Commissioning (SFPP)
+  what_happened: During HIL testing, voltage disturbances were found to cause instances
+    of frequency overshoot following fault clearance, with an overall occurrence probability
+    of 54% — higher for three-phase voltage events (32%) than for L-L and single-phase
+    faults (22%) — including a 12% probability of overshoot in the 2.8–3 Hz range
+    lasting 100 milliseconds.
+  lesson_learnt: Pre-commissioning HIL testing should specifically test for frequency
+    overshoot following voltage fault clearance, as this failure mode occurs in over
+    half of voltage disturbance events and is difficult to predict from software models
+    alone; three-phase faults carry the highest risk.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The SFPP HIL platform enabled systematic characterisation of
+    frequency overshoot probability across fault types, providing quantified risk
+    data that can inform commissioning test design.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id003
+  - 15
+  evidence_excerpt: The occurrence of this frequency overshoot is hard to predict
+    accurately and it varies based on the fault type and duration. Regarding the HIL
+    experiments results, the overall occurrence probability of the frequency overshoot
+    is 54% and the occurrence probability of the frequency overshoot is higher for
+    three-phase voltage events (32%) compared with L-L fault and single-phase faults
+    (total 22%).
+  confidence_note: delay_category set to data/validation/testing because the issue
+    was discovered during HIL test development, not during a project commissioning
+    delay per se.
+  source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/university-of-queensland-platform-for-solar-farm-pre-commissioning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 26/08/2024
+  kb_year: '2022'
+  kb_associated_project: University of Queensland Platform for Solar Farm Pre-Commissioning
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $498k
+  total_project_value: $1.46m
+  lead_organisation: The University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 10/01/2022
+  location: Queensland
+  project_partners: EPEC Group
+  pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+  markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  source_page_pdf: 15
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45253
+  contributing_source_titles:
+  - Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+    markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-45255
+  source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+    Report
+  publish_date: 2024-03
+  project_name: Platform for Solar Farm Pre-Commissioning (SFPP)
+  what_happened: PQM voltage measurement delays averaging 130 ms mean that after a
+    real fault clears and the PPC regains control, the PPC continues to receive a
+    delayed low-voltage signal from the PQM, which can trigger excessive capacitive
+    reactive power injection and cause over-voltage at inverter terminals.
+  lesson_learnt: Solar farm commissioning engineers should be aware that PQM voltage
+    measurement latency can cause post-fault over-voltage at inverter terminals —
+    the PPC receives a falsely low voltage signal for ~130 ms after fault clearance,
+    triggering a reactive power response that overshoots. Pre-commissioning HIL testing
+    can identify this behaviour before on-site testing.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: HIL testing with the TSP1 setup enabled measurement and quantification
+    of PQM Modbus delays across multiple fault types, providing data to inform commissioning
+    tolerance assessments.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages:
+  - 15
+  - 20
+  - 21
+  evidence_excerpt: Such a voltage measurement delay may create over overvoltage issue
+    of PV inverters. This is because after the real fault is cleared and PPC regains
+    system control, PPC receives the significantly delayed POC fault voltage from
+    the PQM. Such a low voltage may trigger a higher capacitive reactive power which
+    causes an over-voltage at inverter terminals.
+  confidence_note: Canonical record merged from 2 source records across 1 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/university-of-queensland-platform-for-solar-farm-pre-commissioning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 26/08/2024
+  kb_year: '2022'
+  kb_associated_project: University of Queensland Platform for Solar Farm Pre-Commissioning
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $498k
+  total_project_value: $1.46m
+  lead_organisation: The University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 10/01/2022
+  location: Queensland
+  project_partners: EPEC Group
+  pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+  markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  source_page_pdf: 21
+  corroboration_count: 2
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45254
+  - ARENA-DLV-45255
+  contributing_source_titles:
+  - Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+    source_pages:
+    - 15
+    - 20
+    source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+    markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-45256
+  source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+    Report
+  publish_date: 2024-03
+  project_name: Platform for Solar Farm Pre-Commissioning (SFPP)
+  what_happened: Frequency data obtained via PQM-PLC-RTDS Modbus showed significant
+    discrepancies compared to PQM internal logging files, and the starting points
+    of frequency responses from the two sources were not synchronised via GPS, introducing
+    measurement inconsistencies that could affect commissioning test compliance assessment.
+  lesson_learnt: When using Modbus communication to relay frequency measurements from
+    a PQM during commissioning, teams should verify that the Modbus-relayed data is
+    consistent with PQM internal logs and that time synchronisation (e.g. via GPS)
+    is in place — Modbus-relayed frequency data can exhibit substantial discrepancies
+    that may compromise compliance assessments against AEMO's ±10% tolerance.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated integration
+  intervention_note: The project identified the GPS time-synchronisation gap and flagged
+    that frequency data from PQM internal logs (rather than Modbus relay) exhibits
+    the least error and should be used as the reference source.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id004
+  - 15
+  evidence_excerpt: Among these three sources of frequency data, the average frequency
+    extracted from the PQM's internal logging files exhibits the least amount of error.
+    Notably, the frequency data acquired through PQM-PLC-RTDS Modbus displays significant
+    discrepancies... the starting points of the frequency responses recorded by PQM-PLC-RTDS
+    Modbus and from the PQM's internal logging files are not synchronized in time
+    via the global positioning system.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/university-of-queensland-platform-for-solar-farm-pre-commissioning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 26/08/2024
+  kb_year: '2022'
+  kb_associated_project: University of Queensland Platform for Solar Farm Pre-Commissioning
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $498k
+  total_project_value: $1.46m
+  lead_organisation: The University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 10/01/2022
+  location: Queensland
+  project_partners: EPEC Group
+  pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+  markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45256
+  contributing_source_titles:
+  - Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+    markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-45257
+  source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+    Report
+  publish_date: 2024-03
+  project_name: Platform for Solar Farm Pre-Commissioning (SFPP)
+  what_happened: Different firmware versions of the real Power Plant Controller (PPC)
+    produced distinct dynamic frequency responses in pre-commissioning tests — an
+    older firmware version showed notably faster responses than the upgraded version
+    — creating potential mismatches with PSCAD/PSSE software models that do not require
+    firmware versioning.
+  lesson_learnt: Before on-site commissioning, confirm that the PPC firmware version
+    deployed in the field matches the version used in pre-commissioning HIL tests
+    and is consistent with the software model behaviour — firmware updates can materially
+    alter dynamic response characteristics, causing unexpected mismatches against
+    AEMO's R1 software model that will block commissioning progression.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: commissioning/integration
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The HIL pre-commissioning platform enabled firmware version differences
+    to be identified and characterised in a laboratory setting before on-site tests,
+    allowing teams to select or lock the appropriate firmware version.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id005
+  - 15
+  - 16
+  evidence_excerpt: Simulation outcomes based on software may not align with field
+    test data due to disparities in PPC firmware... various firmware versions displayed
+    distinct dynamic reactions. Specifically, the previous version showed notably
+    quicker responses compared to the upgraded version.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/university-of-queensland-platform-for-solar-farm-pre-commissioning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 26/08/2024
+  kb_year: '2022'
+  kb_associated_project: University of Queensland Platform for Solar Farm Pre-Commissioning
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $498k
+  total_project_value: $1.46m
+  lead_organisation: The University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 10/01/2022
+  location: Queensland
+  project_partners: EPEC Group
+  pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+  markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45257
+  contributing_source_titles:
+  - Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+    markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-45258
+  source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+    Report
+  publish_date: 2024-03
+  project_name: Platform for Solar Farm Pre-Commissioning (SFPP)
+  what_happened: Incorrect parameter mapping in the PPC — for example, a voltage droop
+    value assigned in the wrong register compared to the software model — produced
+    substantial steady-state discrepancies between pre-commissioning platform results
+    and field commissioning outcomes, with the potential to cause significant commissioning
+    delays.
+  lesson_learnt: Rigorously verify PPC parameter mapping against the software model
+    before commencing HIL or on-site commissioning tests — a single incorrectly positioned
+    parameter (e.g. voltage droop value) can produce large steady-state deviations
+    that will fail AEMO's ±10% acceptance criterion and trigger repeated commissioning
+    iterations.
+  issue_severity: major
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: Within the established SFPP platform, parameter mismatches can
+    be identified and rectified in a laboratory environment before on-site commissioning,
+    avoiding the delays that would arise if discovered during field testing.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id006
+  - 16
+  evidence_excerpt: If any parameter is incorrectly assigned, it can result in a substantial
+    discrepancy between the response obtained through software and the outcomes of
+    field commissioning... if the voltage droop value is erroneously positioned differently
+    from the software-based model, it can lead to a considerable disparity in steady-state
+    results. This misalignment has the potential to cause significant delays during
+    commissioning.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/university-of-queensland-platform-for-solar-farm-pre-commissioning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 26/08/2024
+  kb_year: '2022'
+  kb_associated_project: University of Queensland Platform for Solar Farm Pre-Commissioning
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $498k
+  total_project_value: $1.46m
+  lead_organisation: The University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 10/01/2022
+  location: Queensland
+  project_partners: EPEC Group
+  pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+  markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  source_page_pdf: 16
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45258
+  contributing_source_titles:
+  - Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+    markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: schedule slippage
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-45259
+  source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+    Report
+  publish_date: 2024-03
+  project_name: Platform for Solar Farm Pre-Commissioning (SFPP)
+  what_happened: Benchmarking between PSCAD and RSCAD models during platform development
+    revealed that the average voltage mismatch was 0.2–0.36%, active power mismatch
+    0.05–0.21%, and reactive power mismatch 0.07–0.22% across six operating conditions
+    — all within acceptable margins, validating the RSCAD model for subsequent HIL
+    tests.
+  lesson_learnt: Before using an RSCAD-based HIL platform for solar farm pre-commissioning,
+    conduct steady-state and dynamic benchmarking against PSCAD — errors below ~0.4%
+    for voltage and ~0.22% for power confirm the real-time model is sufficiently accurate
+    for AGCS validation, and this step should be treated as a mandatory quality gate
+    before commencing HIL experiments.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id007
+  - 17
+  - 18
+  evidence_excerpt: The average voltage errors among the PSCAD and RSCAD models for
+    six different active and reactive power commands are between 0.2 to 0.36%. The
+    average errors for the active and reactive power concerning the same scenarios
+    are between 0.05 to 0.21% and 0.07 to 0.22%, respectively.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/university-of-queensland-platform-for-solar-farm-pre-commissioning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 26/08/2024
+  kb_year: '2022'
+  kb_associated_project: University of Queensland Platform for Solar Farm Pre-Commissioning
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $498k
+  total_project_value: $1.46m
+  lead_organisation: The University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 10/01/2022
+  location: Queensland
+  project_partners: EPEC Group
+  pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+  markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  source_page_pdf: 18
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45259
+  contributing_source_titles:
+  - Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+    markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-45260
+  source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+    Report
+  publish_date: 2024-03
+  project_name: Platform for Solar Farm Pre-Commissioning (SFPP)
+  what_happened: Some PPC devices from certain OEMs cannot activate their reactive
+    power control loop in a HIL test environment unless specific real-time feedback
+    signals (read input registries) from the inverter are present, limiting the completeness
+    of HIL testing and creating a dependency on OEM cooperation and hardware configuration.
+  lesson_learnt: When planning HIL pre-commissioning tests, confirm with the PPC OEM
+    whether the reactive power control loop requires live inverter feedback signals
+    to activate — if so, the HIL test setup must replicate these signals or the reactive
+    power control validation will be incomplete, leaving a commissioning risk undetected.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The project documented this OEM-specific dependency as a known
+    limitation of HIL testing and noted it requires investigation of the specific
+    PPC brand under assessment.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id008
+  - 23
+  - 24
+  evidence_excerpt: The reactive power control loop of the PPC cannot be activated
+    in the established real-time platform without these specific feedback signals
+    from the inverter (for the read input registries). However, not all PPCs from
+    the Original Equipment Manufacturers (OEMs) have this activation issue. Therefore,
+    this is a potential issue when performing HIL tests, which depends on the brand
+    of the PPC under assessment.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/university-of-queensland-platform-for-solar-farm-pre-commissioning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 26/08/2024
+  kb_year: '2022'
+  kb_associated_project: University of Queensland Platform for Solar Farm Pre-Commissioning
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $498k
+  total_project_value: $1.46m
+  lead_organisation: The University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 10/01/2022
+  location: Queensland
+  project_partners: EPEC Group
+  pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+  markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  source_page_pdf: 24
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45260
+  contributing_source_titles:
+  - Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+    markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-45261
+  source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+    Report
+  publish_date: 2024-03
+  project_name: Platform for Solar Farm Pre-Commissioning (SFPP)
+  what_happened: Phase and amplitude mismatches in the power amplifier used at the
+    real-time interface caused discrepancies between PSCAD or holding-point results
+    and observed power/voltage responses on the HIL testing platform, reducing the
+    reliability of pre-commissioning test outcomes.
+  lesson_learnt: Before commencing HIL pre-commissioning experiments, verify and minimise
+    phase and amplitude differences in the power amplifier — even small coupling mismatches
+    at the interface can distort power and voltage response measurements, leading
+    to false compliance or non-compliance conclusions.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: The project recommended bringing the amplitude and phase difference
+    of the amplifier as small as possible before conducting any experiments.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id009
+  - 24
+  evidence_excerpt: It is essential to verify that the coupling exists between the
+    phase difference of the 3-phase current or voltage amplitude of the power amplifier...
+    Due to a mismatch with phase or amplitude, PSCAD or HP results may differ from
+    the observed power and voltage responses on the testing platform. Therefore, it
+    is highly recommended to bring the amplitude and phase difference of the amplifier
+    as small as possible before conducting any experiments.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/university-of-queensland-platform-for-solar-farm-pre-commissioning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 26/08/2024
+  kb_year: '2022'
+  kb_associated_project: University of Queensland Platform for Solar Farm Pre-Commissioning
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $498k
+  total_project_value: $1.46m
+  lead_organisation: The University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 10/01/2022
+  location: Queensland
+  project_partners: EPEC Group
+  pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+  markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  source_page_pdf: 24
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45261
+  contributing_source_titles:
+  - Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+    markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-45262
+  source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+    Report
+  publish_date: 2024-03
+  project_name: Platform for Solar Farm Pre-Commissioning (SFPP)
+  what_happened: The integral gain of the PPC controller is inversely related to the
+    number of inverters in the solar farm model; using an incorrect inverter count
+    in the HIL platform resulted in controller responses that were either too slow
+    (large integral time constant) or unstable (small integral time constant), degrading
+    the fidelity of pre-commissioning test results.
+  lesson_learnt: When setting up a HIL pre-commissioning platform for a solar farm,
+    confirm the exact total number of inverters from the farm design and configure
+    this in the real-time model before testing — inverter count directly affects PPC
+    controller gain and an incorrect value will produce unrepresentative dynamic responses.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: The project identified this dependency and recommended ascertaining
+    the total number of inverters as a prerequisite configuration step before HIL
+    experiments.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id010
+  - 24
+  evidence_excerpt: The action of the controller depends on the number of inverters,
+    which is reversely related to the integral gain of the controller (for particular
+    settings of PPC). For example, the controller responds slowly due to the large
+    integral time constant. On the other hand, it may lose the system stability for
+    a small integral time constant.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/university-of-queensland-platform-for-solar-farm-pre-commissioning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 26/08/2024
+  kb_year: '2022'
+  kb_associated_project: University of Queensland Platform for Solar Farm Pre-Commissioning
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $498k
+  total_project_value: $1.46m
+  lead_organisation: The University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 10/01/2022
+  location: Queensland
+  project_partners: EPEC Group
+  pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+  markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  source_page_pdf: 24
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45262
+  contributing_source_titles:
+  - Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+    markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-45263
+  source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+    Report
+  publish_date: 2024-03
+  project_name: Platform for Solar Farm Pre-Commissioning (SFPP)
+  what_happened: Discrepancies between the network configuration used in the HIL pre-commissioning
+    platform and actual field holding-point conditions — for example, different MVAr
+    ratings of connected capacitor banks or different active/reactive power control
+    modes — produced results that were difficult to compare, undermining the value
+    of the pre-commissioning exercise.
+  lesson_learnt: Ensure the HIL pre-commissioning test setup replicates the actual
+    field holding-point network conditions exactly, including capacitor bank ratings
+    and PPC control modes — mismatches in these configurations produce results that
+    cannot be directly compared with field data, defeating the purpose of pre-commissioning
+    validation.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: The project documented this as a technical issue and recommended
+    ensuring conditions and setup are matched between HIL platform and field HP conditions
+    before comparison.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id011
+  - 24
+  evidence_excerpt: The mismatch between network configurations corresponding to interconnect
+    devices or control modes provides different results, which creates difficulties
+    in explaining the unexpected behaviours of the test devices in a real-time platform.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/university-of-queensland-platform-for-solar-farm-pre-commissioning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 26/08/2024
+  kb_year: '2022'
+  kb_associated_project: University of Queensland Platform for Solar Farm Pre-Commissioning
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $498k
+  total_project_value: $1.46m
+  lead_organisation: The University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 10/01/2022
+  location: Queensland
+  project_partners: EPEC Group
+  pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+  markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  source_page_pdf: 24
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45263
+  contributing_source_titles:
+  - Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+    markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-45264
+  source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+    Report
+  publish_date: 2024-03
+  project_name: Platform for Solar Farm Pre-Commissioning (SFPP)
+  what_happened: The SFPP HIL platform successfully validated voltage, reactive power,
+    power factor, active power, and frequency control tests at three holding points
+    (HP1, HP2, HP3), with experimental results from the RTDS-HIL setup falling within
+    the required ±10% error band and closely matching both PSCAD simulations and real
+    solar farm field test data.
+  lesson_learnt: A real-time HIL pre-commissioning platform combining RTDS and actual
+    AGCS hardware can reliably replicate field commissioning outcomes within AEMO's
+    ±10% tolerance across multiple control modes and holding points — projects investing
+    in such pre-commissioning validation can identify compliance gaps before on-site
+    testing, reducing commissioning iterations.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id012
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
+  evidence_excerpt: The results from the RTDS-HIL experiments demonstrated close consistency
+    in steady-state magnitudes when compared to PSCAD simulations and real solar farm
+    field tests in HP1, HP2, and HP3. In these instances, the experimental outcomes
+    fell within a required ±10% error band concerning the reference changes.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/university-of-queensland-platform-for-solar-farm-pre-commissioning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 26/08/2024
+  kb_year: '2022'
+  kb_associated_project: University of Queensland Platform for Solar Farm Pre-Commissioning
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $498k
+  total_project_value: $1.46m
+  lead_organisation: The University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 10/01/2022
+  location: Queensland
+  project_partners: EPEC Group
+  pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+  markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45264
+  contributing_source_titles:
+  - Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+    markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-45265
+  source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+    Report
+  publish_date: 2024-03
+  project_name: Platform for Solar Farm Pre-Commissioning (SFPP)
+  what_happened: The reactive power reference step change test (TSP2) revealed minor
+    steady-state errors and a noticeable dynamic mismatch between the PSCAD simulation
+    and the RTDS HIL response under the Qref step from -0.3 to 0.3 pu, flagging a
+    residual area requiring further investigation depending on allowed error margins.
+  lesson_learnt: HIL pre-commissioning tests for reactive power reference step changes
+    should be interpreted carefully — minor steady-state errors and dynamic mismatches
+    between HIL and PSCAD can be within acceptable bounds for some projects but may
+    require further model refinement for others; teams should agree acceptable error
+    margins with AEMO before commissioning.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: The project flagged this as an area for further investigation
+    and noted it may require additional model refinement to achieve closer HIL-to-PSCAD
+    alignment.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id013
+  - 22
+  evidence_excerpt: There is difference between the PSCAD model response and the RTDS
+    HIL response, and there is minor steady-state errors between the two. However,
+    the overall mismatch is not significant. Depending on the allowed margins for
+    error, further investigation on Qref step changes may be required.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/university-of-queensland-platform-for-solar-farm-pre-commissioning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 26/08/2024
+  kb_year: '2022'
+  kb_associated_project: University of Queensland Platform for Solar Farm Pre-Commissioning
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $498k
+  total_project_value: $1.46m
+  lead_organisation: The University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 10/01/2022
+  location: Queensland
+  project_partners: EPEC Group
+  pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+  markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  source_page_pdf: 22
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45265
+  contributing_source_titles:
+  - Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+    markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-45266
+  source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+    Report
+  publish_date: 2024-03
+  project_name: Platform for Solar Farm Pre-Commissioning (SFPP)
+  what_happened: The Siemens S120 SINAMICS HIL setup for BESS successfully demonstrated
+    grid-forming (GFM) inverter control with virtual synchronous generator (VSG) approach,
+    showing instantaneous inertial response and accurate governor response (20% active
+    power change for 1% frequency deviation with 5% droop), with close agreement between
+    PSCAD simulations and HIL test results.
+  lesson_learnt: HIL testing of grid-forming BESS inverter controllers using a VSG
+    approach can reliably validate both inertial and governor responses before on-site
+    commissioning; however, such testing requires OEM-supplied inverter controllers
+    and technical support, which is not universally available — proponents should
+    secure OEM participation as a project prerequisite.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Siemens provided both the inverter controller hardware and technical
+    assistance, which was identified as a prerequisite for this level of HIL testing
+    capability.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id014
+  - 4
+  - 32
+  - 34
+  - 35
+  evidence_excerpt: This setup requires OEMs to provide inverter controllers and technical
+    support, which may not be given by all OEMs. In this ARENA project, Siemens had
+    helped with both the inverter controller and technical assistance... Its inertia
+    function responded instantaneously in the beginning of the event, and its governor
+    response acted accurately with a 20% active power change for 1% variation of frequency.
+  confidence_note: 'project_type reconciled to ''generation'' from: generation (19/20),
+    storage (1/20)'
+  source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/university-of-queensland-platform-for-solar-farm-pre-commissioning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 26/08/2024
+  kb_year: '2022'
+  kb_associated_project: University of Queensland Platform for Solar Farm Pre-Commissioning
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $498k
+  total_project_value: $1.46m
+  lead_organisation: The University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 10/01/2022
+  location: Queensland
+  project_partners: EPEC Group
+  pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+  markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  source_page_pdf: 32
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45266
+  contributing_source_titles:
+  - Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+    markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-45267
+  source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+    Report
+  publish_date: 2024-03
+  project_name: Platform for Solar Farm Pre-Commissioning (SFPP)
+  what_happened: The voltage reference step change test (TSP2) showed noticeable dynamic
+    response discrepancies between the RTDS HIL setup and the PSCAD simulation, even
+    though steady-state voltage magnitudes matched well, suggesting the dynamic mismatch
+    could provide insights for refining the R1 software model to improve R1-to-R2
+    alignment.
+  lesson_learnt: Dynamic mismatches between HIL and PSCAD simulation results — even
+    when steady-state values align — should be treated as diagnostic signals rather
+    than test failures; they indicate where the R1 software model may diverge from
+    hardware behaviour and should be used to refine the model before on-site R2 commissioning.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: The project recommended using observed dynamic mismatches to
+    refine the R1 model, contributing to smoother R1-to-R2 alignment in subsequent
+    commissioning.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id015
+  - 22
+  - 23
+  evidence_excerpt: Unlike the benchmarking stage, it is noteworthy that the dynamic
+    mismatch observed could potentially offer valuable insights for further refining
+    the R1 model. This refinement holds the potential to facilitate a more seamless
+    alignment between R1 and R2 results, thereby contributing to a smoother commissioning
+    process in the future.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/university-of-queensland-platform-for-solar-farm-pre-commissioning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 26/08/2024
+  kb_year: '2022'
+  kb_associated_project: University of Queensland Platform for Solar Farm Pre-Commissioning
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $498k
+  total_project_value: $1.46m
+  lead_organisation: The University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 10/01/2022
+  location: Queensland
+  project_partners: EPEC Group
+  pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+  markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  source_page_pdf: 23
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45267
+  contributing_source_titles:
+  - Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+    markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-45268
+  source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+    Report
+  publish_date: 2024-03
+  project_name: Platform for Solar Farm Pre-Commissioning (SFPP)
+  what_happened: The SFPP project successfully fostered engineering capability in
+    the HIL and renewable energy commissioning domain, supporting one full-time postdoctoral
+    researcher at UQ, one full-time engineer at EPEC, one part-time research fellow,
+    and one PhD student — addressing a recognised skills shortage in commissioning
+    engineering for large-scale renewables.
+  lesson_learnt: Research-industry collaboration projects that embed engineers in
+    both university and industry partner organisations simultaneously develop transferable
+    commissioning capability and build a talent pipeline in high-demand renewable
+    energy commissioning roles — ARENA projects should consider co-funding industry-embedded
+    roles, not just research positions, to maximise workforce development.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id016
+  - 4
+  evidence_excerpt: This project supported 1 full-time postdoctoral research fellow
+    in UQ, 1 full-time engineer in EPEC, 1 part-time research fellow in UQ, and 1
+    PhD student top-up scholarship in UQ. They are all working in the HIL and renewable
+    energy commissioning areas, which shows this project has fostered the talented
+    engineers who are in the high demand in the renewable energy sector.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/university-of-queensland-platform-for-solar-farm-pre-commissioning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 26/08/2024
+  kb_year: '2022'
+  kb_associated_project: University of Queensland Platform for Solar Farm Pre-Commissioning
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $498k
+  total_project_value: $1.46m
+  lead_organisation: The University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 10/01/2022
+  location: Queensland
+  project_partners: EPEC Group
+  pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+  markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45268
+  contributing_source_titles:
+  - Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+    markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-45269
+  source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+    Report
+  publish_date: 2024-03
+  project_name: Platform for Solar Farm Pre-Commissioning (SFPP)
+  what_happened: Following completion of the SFPP project and a final knowledge-sharing
+    workshop attended by over 80 participants from more than 30 organisations, UQ
+    and EPEC received multiple requests for commercial pre-commissioning services
+    and are actively exploring joint venture commercialisation of HIL testing services
+    through UniQuest.
+  lesson_learnt: ARENA-funded research-to-commercialisation pathways for enabling
+    tools (such as HIL pre-commissioning platforms) can generate direct industry uptake
+    when the tool solves a recognised industry pain point — hosting a broad public
+    knowledge-sharing demonstration event is an effective mechanism to convert project
+    outcomes into commercial service demand.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id017
+  - 38
+  evidence_excerpt: After the knowledge sharing workshop, UQ and EPEC have received
+    several requests on provision of commercial services of the pre-commissioning
+    platform on the committed renewable energy projects. Leveraging the successful
+    results of the ARENA-supported collaboration... UniQuest is actively exploring
+    multiple commercialisation strategies with EPEC Group. These strategies include
+    the possibility of establishing a joint venture to offer Hardware-in-the-Loop
+    (HIL) testing services.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/university-of-queensland-platform-for-solar-farm-pre-commissioning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 26/08/2024
+  kb_year: '2022'
+  kb_associated_project: University of Queensland Platform for Solar Farm Pre-Commissioning
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $498k
+  total_project_value: $1.46m
+  lead_organisation: The University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 10/01/2022
+  location: Queensland
+  project_partners: EPEC Group
+  pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+  markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  source_page_pdf: 38
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45269
+  contributing_source_titles:
+  - Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+    markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-45270
+  source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+    Report
+  publish_date: 2024-03
+  project_name: Platform for Solar Farm Pre-Commissioning (SFPP)
+  what_happened: The established SFPP platform does not yet incorporate SCADA systems
+    used in renewable energy farms, fault testing procedures, DC-side dynamics, or
+    battery management systems — identified as gaps in the current platform's coverage
+    that limit its applicability to the full commissioning test suite.
+  lesson_learnt: Future iterations of solar farm and hybrid storage pre-commissioning
+    platforms should incorporate SCADA integration, DC-side dynamics, battery management
+    systems, and full fault testing procedures — the absence of these elements in
+    the current SFPP limits pre-commissioning coverage and leaves residual commissioning
+    risks unaddressed.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: UQ and EPEC committed to continued collaboration to address these
+    gaps after the ARENA project concluded.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id018
+  - 38
+  evidence_excerpt: There are opportunities for further refinement of the established
+    pre-commissioning platform, such as including SCADA used in renewable energy farms,
+    fault testing procedures, DC side dynamics, and battery management systems. UQ
+    and EPEC Group will continue to collaborate on these aspects of opportunities
+    after this ARENA project.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+  project_page_url: https://arena.gov.au/projects/university-of-queensland-platform-for-solar-farm-pre-commissioning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 26/08/2024
+  kb_year: '2022'
+  kb_associated_project: University of Queensland Platform for Solar Farm Pre-Commissioning
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $498k
+  total_project_value: $1.46m
+  lead_organisation: The University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 10/01/2022
+  location: Queensland
+  project_partners: EPEC Group
+  pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+  markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  source_page_pdf: 38
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45270
+  contributing_source_titles:
+  - Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Platform for Solar Farm Pre-Commissioning - Final Knowledge Sharing
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/08/University-of-Queensland-Platform-for-Solar-Farm-Pre-Commissioning-Final-KS-report.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/platform-for-solar-farm-pre-commissioning-final-knowledge-sharing-report/
+    markdown_filename: platform_for_solar_farm_pre_commissioning_final_knowledge_sharing_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false

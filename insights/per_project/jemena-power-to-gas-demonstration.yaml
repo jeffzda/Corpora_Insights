@@ -1,0 +1,2624 @@
+- record_id: ARENA-DLV-14507
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: During early operations, one of the three thyristor diodes in the
+    electrolyser package overheated during a full-load test on a warm night, causing
+    the electrolyser to trip and fail to restart. A replacement diode was installed,
+    but overheating issues persisted and were still under investigation at the time
+    of reporting.
+  lesson_learnt: Test electrolyser thermal management systems under realistic worst-case
+    ambient conditions (high ambient temperature at full load) before commercial hand-over
+    — diode overheating linked to the downrated platform caused unplanned outages
+    during early operations and required ongoing OEM investigation; thermal de-rating
+    curves and ambient temperature limits should be confirmed with the OEM during
+    design.
+  issue_severity: major
+  project_type: null
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: A new thyristor diode was installed with support from OEM Cummins/Hydrogenics
+    and local supplier Energys; an ongoing investigation by Cummins and Zinfra was
+    underway at time of reporting.
+  transferability: moderate
+  delay_magnitude: 1-3 months
+  technology_domain: hydrogen
+  source_pages:
+  - 4
+  - 10
+  - 16
+  - 18
+  - 20
+  evidence_excerpt: The most impactful issue that arose from the tests conducted as
+    part of this work was the overheating of the diode sets in the electrolyser package...
+    The diode sets were ultimately replaced, however, this proved to impede the testing
+    program significantly due to their long lead times... the long lead time for their
+    procurement prevented the operation of the facility for two months.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-13201
+  - ARENA-DLV-14507
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Project technical report
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Project technical report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Project-technical-report.pdf
+    source_pages:
+    - 4
+    - 10
+    - 16
+    - 18
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-project-technical-report/
+    markdown_filename: jemena_power_to_gas_demonstration_project_technical_report.md
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages:
+    - 20
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-13202
+  source_title: Jemena - Power to Gas Demonstration - Project technical report
+  publish_date: 2023-10
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: Cross-contamination sensors monitoring hydrogen and oxygen in the
+    electrolyser output streams triggered repeated shutdowns during testing because
+    they required monthly calibration that was not initially identified as a maintenance
+    requirement.
+  lesson_learnt: Hydrogen/oxygen cross-contamination sensors in PEM electrolyser packages
+    require monthly calibration; failing to schedule this maintenance causes repeated
+    nuisance shutdowns — specify calibration frequency in the O&M plan before commissioning
+    and consider alternative sensor suppliers if the issue persists.
+  issue_severity: moderate
+  project_type: null
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Consulted the sensor manufacturer and established that monthly
+    calibration is required; ongoing investigation may lead to replacement with sensors
+    from a different manufacturer.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages: &id001
+  - 4
+  - 16
+  - 18
+  evidence_excerpt: The hydrogen and oxygen cross contamination sensors in the output
+    tanks of the electrolyser package were also found to be faulty, requiring monthly
+    calibration or replacement. This issue, as well as the overheating of the diode,
+    are still under investigation and may require alterations to the electrolyser
+    package to continue operations in the future.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-project-technical-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Project-technical-report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_project_technical_report.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-13202
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Project technical report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Project technical report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Project-technical-report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-project-technical-report/
+    markdown_filename: jemena_power_to_gas_demonstration_project_technical_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-14510
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: During commissioning, pipeline cleaning debris was blown through
+    an isolation valve during purging operations, scoring the soft seat and creating
+    a small but unresolvable hydrogen leak. The primary isolation valve was fully
+    welded into the pipeline, making repair impossible without full pipeline depressurisation
+    and purging. The leak was accepted until the next planned depressurisation event.
+  lesson_learnt: Install a sacrificial throttling valve downstream of primary isolation
+    valves on hydrogen pipelines to control gas flow during cleaning and purging —
+    using the primary isolation valve itself to control flow during pigging allows
+    debris to score the seat, and if the valve body is fully welded, repair requires
+    full pipeline depressurisation, causing significant operational disruption.
+  issue_severity: moderate
+  project_type: null
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: The leak was accepted as manageable with no identified hazard
+    until the pipeline was next depressurised; the document notes a sacrificial throttling
+    valve should have been installed downstream.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages:
+  - 13
+  - 14
+  - 18
+  - 19
+  evidence_excerpt: This issue could have been prevented with a sacrificial throttling
+    valve installed downstream to the isolation valve, which was used throughout the
+    cleaning and purging processes to control the gas flow out of the pipe and is
+    the suspected cause of the damage.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: 19
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-13203
+  - ARENA-DLV-14510
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Project technical report
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Project technical report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Project-technical-report.pdf
+    source_pages:
+    - 13
+    - 14
+    - 18
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-project-technical-report/
+    markdown_filename: jemena_power_to_gas_demonstration_project_technical_report.md
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages:
+    - 19
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-13204
+  source_title: Jemena - Power to Gas Demonstration - Project technical report
+  publish_date: 2023-10
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: The combined effect of the electrolyser diode fault, the cross-contamination
+    sensor faults, and hydrogen buffer store leaks caused the WSGHH facility to be
+    out of operation for a total of four months during 2022, substantially disrupting
+    the testing program.
+  lesson_learnt: For first-of-kind hydrogen demonstration facilities, build substantial
+    contingency into the testing schedule — multiple concurrent equipment faults (power
+    electronics, sensors, pipework seals) can cumulatively cause multi-month outages
+    even when each fault appears individually manageable.
+  issue_severity: major
+  project_type: null
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: execution & logistics
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated integration
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: 3-12 months
+  technology_domain: hydrogen
+  source_pages: &id002
+  - 4
+  - 16
+  - 18
+  evidence_excerpt: These issues were primarily the result of equipment faults and
+    ultimately led to the facility being out of operation for four months in total
+    in 2022.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-project-technical-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Project-technical-report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_project_technical_report.md
+  source_page_pdf: 16
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-13204
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Project technical report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Project technical report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Project-technical-report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-project-technical-report/
+    markdown_filename: jemena_power_to_gas_demonstration_project_technical_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.72
+- record_id: ARENA-DLV-13205
+  source_title: Jemena - Power to Gas Demonstration - Project technical report
+  publish_date: 2023-10
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: The hydrogen panel package and associated power generation equipment
+    (fuel cell and micro-turbine) were not operational at the time of testing because
+    the required regulatory approvals to operate them had not yet been obtained.
+  lesson_learnt: Identify and initiate regulatory approval pathways for novel hydrogen
+    power generation equipment (fuel cells, micro-turbines) early in the project —
+    at WSGHH, delayed approvals meant this equipment could not be tested within the
+    2022 testing program despite being physically installed on site.
+  issue_severity: moderate
+  project_type: null
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: network business
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages: &id003
+  - 15
+  evidence_excerpt: The hydrogen panel package was not operational at the time of
+    testing and will not be tested until the required regulatory approvals are obtained
+    to operate the hydrogen fuel cell and the micro-turbine.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-project-technical-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Project-technical-report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_project_technical_report.md
+  source_page_pdf: 15
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-13205
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Project technical report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Project technical report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Project-technical-report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-project-technical-report/
+    markdown_filename: jemena_power_to_gas_demonstration_project_technical_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.95
+- record_id: ARENA-DLV-13206
+  source_title: Jemena - Power to Gas Demonstration - Project technical report
+  publish_date: 2023-10
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: The hydrogen injection panel flow control valve had a minimum operational
+    blending ratio of ≥0.4%, making it impossible to test the planned 0.2% blend ratio,
+    and one planned test (Test 4 at 0.8%) was also not conducted, meaning the full
+    test matrix was not completed as originally planned.
+  lesson_learnt: Verify the minimum controllable flow range of injection panel flow
+    control valves against the full test matrix before commissioning — at WSGHH, the
+    valve's minimum operational limit of 0.4% prevented the lowest planned blend ratio
+    test from being conducted.
+  issue_severity: minor
+  project_type: null
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: partial success
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: hydrogen
+  source_pages: &id004
+  - 11
+  evidence_excerpt: For Test 1, the panel flow control valve was found to have a minimum
+    operational blending ratio of greater than or equal to 0.4 %, meaning the test
+    could not be conducted.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-project-technical-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Project-technical-report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_project_technical_report.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-13206
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Project technical report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Project technical report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Project-technical-report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-project-technical-report/
+    markdown_filename: jemena_power_to_gas_demonstration_project_technical_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-14526
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: The WSGHH project demonstrated that a 500 kW PEM electrolyser could
+    achieve an average system efficiency of approximately 60% (55.5 kWh/kg), with
+    peak efficiency of 61.6% at 60% load. The electrolyser also demonstrated rapid
+    ramping capability of 4.5% per minute when loading and 25% per minute when de-loading,
+    supporting demand response and grid-firming applications.
+  lesson_learnt: PEM electrolysers do not achieve maximum efficiency at full load
+    — peak efficiency occurs at partial load (60% at the WSGHH), and their rapid ramping
+    capability (4.5% per minute up, 25% per minute down) makes them well-suited for
+    demand response and variable renewable integration; project teams should size
+    and dispatch electrolysers to operate at the efficiency sweet spot rather than
+    at rated capacity.
+  issue_severity: none
+  project_type: null
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: hydrogen
+  source_pages:
+  - 8
+  - 9
+  - 22
+  - 23
+  evidence_excerpt: The efficiency during the test was observed to fluctuate around
+    an average of 55.5 kWh/kg of hydrogen, or 60.2 %. It was also observed that the
+    average efficiency of the electrolyser rose to a maximum of 54.2 kWh/kg or 61.6
+    % at a load level of 60 %... the rapid ramping capabilities of the PEM electrolyser
+    were also observed... at a rate of approximately 4.5 % per minute... the most
+    rapid change of the entire test was observed of approximately 25 % per minute.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: 23
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-13207
+  - ARENA-DLV-14526
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Project technical report
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Project technical report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Project-technical-report.pdf
+    source_pages:
+    - 8
+    - 9
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-project-technical-report/
+    markdown_filename: jemena_power_to_gas_demonstration_project_technical_report.md
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages:
+    - 22
+    - 23
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-13208
+  source_title: Jemena - Power to Gas Demonstration - Project technical report
+  publish_date: 2023-10
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: Hydrogen injection blend accuracy testing demonstrated downstream
+    blend deviations of between -4.8% and +9% from the set point, which remained within
+    the acceptable ±10% tolerance, and Wobbe Index calculations confirmed compliance
+    with AS 4564:2020 for blends up to 10%.
+  lesson_learnt: Hydrogen blending into a live gas distribution network at ratios
+    of 0.4–1.0% is achievable within regulatory accuracy tolerances (±10%) using a
+    Coriolis flow meter injection panel — confirm Wobbe Index compliance against AS
+    4564 for the specific network gas composition before commissioning blending operations.
+  issue_severity: none
+  project_type: null
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: hydrogen
+  source_pages: &id005
+  - 11
+  - 12
+  evidence_excerpt: Overall, the deviation between the blend set point and the tested
+    ratio of the samples ranged between -4.8 % to +9 %, which is within the acceptable
+    range of 10 % from the known injected amount.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-project-technical-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Project-technical-report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_project_technical_report.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-13208
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Project technical report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Project technical report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Project-technical-report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-project-technical-report/
+    markdown_filename: jemena_power_to_gas_demonstration_project_technical_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-13209
+  source_title: Jemena - Power to Gas Demonstration - Project technical report
+  publish_date: 2023-10
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: Several planned tests in the WSGHH Testing Program Plan — including
+    network ancillary equipment assessments, end-user appliance testing, electrolyser
+    response tests, and regulatory/standards development work — were not completed
+    during 2022, leaving a substantial portion of the planned program outstanding.
+  lesson_learnt: For hydrogen demonstration projects with complex multi-component
+    test programs, plan for multi-year testing horizons — equipment faults and regulatory
+    delays will compress the available testing window, and a single year is unlikely
+    to be sufficient to complete a comprehensive testing program for a first-of-kind
+    facility.
+  issue_severity: moderate
+  project_type: null
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: data/validation/testing
+  failure_mode: poor scoping
+  outcome_class: partial success
+  secondary_failure_mode: data & measurement
+  intervention_note: Future tests are planned including fuel cell and micro-turbine
+    operation, hydrogen cylinder filling for vehicle refuelling, and regulatory and
+    standards development work.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages: &id006
+  - 4
+  - 18
+  evidence_excerpt: The Testing Program Plan developed for the WSGHH outlined more
+    tests to be conducted at the facility than what was performed in 2022. These tests
+    involve assessments to network ancillary equipment, end user appliances, electrolyser
+    response tests, and development of regulations and standards regarding hydrogen
+    blending with natural gas.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-project-technical-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Project-technical-report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_project_technical_report.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-13209
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Project technical report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Project technical report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Project-technical-report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-project-technical-report/
+    markdown_filename: jemena_power_to_gas_demonstration_project_technical_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-14501
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: The existing regulatory framework did not include hydrogen as a defined
+    gas under the NSW Gas Supply Act 1996, requiring Jemena to work with NSW DPIE
+    to amend the Gas Supply (Safety and Network Management) Regulation before the
+    facility could legally inject hydrogen into the gas distribution network. The
+    regulatory amendment was not achieved until December 2020, and the first distributor's
+    licence for hydrogen was not granted until June 2021.
+  lesson_learnt: Future hydrogen injection projects should anticipate that national
+    regulatory frameworks (NGL, National Gas Rules, gas quality standards) still do
+    not fully accommodate hydrogen and build regulatory change management as a formal
+    workstream — national-level gaps in the definition of 'gas' and hydrogen impurity
+    limits mean project-specific regulatory solutions may be required in each jurisdiction.
+  issue_severity: major
+  project_type: enabling infrastructure
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: network business
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: Jemena worked directly with NSW DPIE and the gas technical regulator
+    to amend the Gas Supply (Safety and Network Management) Regulation 2013, enabling
+    hydrogen to be defined as 'gas' under the Act, and then applied to IPART for the
+    first hydrogen distributor's licence, which was granted in June 2021.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages:
+  - 16
+  - 25
+  - 30
+  evidence_excerpt: A significant project challenge was the lack of existing legislation
+    and regulations to enable the injection, blending and distribution of hydrogen
+    into gas distributions networks... The current technical and economic regulatory
+    frameworks do not contemplate the injection and distribution of hydrogen through
+    a network, requiring an extensive stakeholder engagement program to obtain the
+    appropriate approvals and social licence.
+  confidence_note: Canonical record merged from 2 source records across 1 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: 25
+  corroboration_count: 2
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14501
+  - ARENA-DLV-14527
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages:
+    - 16
+    - 25
+    - 30
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.95
+- record_id: ARENA-DLV-14502
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: Planning approvals for the WSGHH were evaluated late in the project
+    development cycle — the project team identified that planning requirements should
+    have been assessed earlier, prior to detailed design. The development consent
+    was lodged with NSW state planning authorities rather than proceeding under the
+    existing Gas Supply Act exemption, adding complexity and time to the approvals
+    process.
+  lesson_learnt: Evaluate planning and development consent requirements before commencing
+    detailed design on novel infrastructure projects — late identification of approval
+    pathways can force redesign, add cost, and delay the schedule; include realistic
+    cost and time estimates for complex approval processes in early project phase
+    planning.
+  issue_severity: moderate
+  project_type: enabling infrastructure
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: network business
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: Increased communication with NSW DPIE enabled a better understanding
+    of approval expectations, minimising rework of documentation and improving outcomes
+    within a manageable timeframe.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages: &id007
+  - 27
+  evidence_excerpt: Earlier evaluation of planning requirements prior to detailed
+    design. ▪ Inclusion of cost and time impacts in development approval pathways.
+    ▪ Recognition and planning for the impacts of the complex approval processes in
+    early project phases.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: 27
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14502
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-14503
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: The project scope underwent several design changes including site
+    location, size, and configuration, driven by changing responses from external
+    stakeholders and internal refinement. During this period — which included the
+    Final Investment Decision — the project budget was not always aligned with the
+    evolving scope, leading to budget misalignments in later project stages.
+  lesson_learnt: Begin all projects with the end in mind — allocate the full budget
+    required to deliver the desired outcomes at the outset and clearly define scope
+    before FID, so that design changes driven by external stakeholders do not create
+    unresolved budget misalignments that propagate through subsequent project phases.
+  issue_severity: moderate
+  project_type: enabling infrastructure
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: internal governance/resourcing
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: The project team demonstrated agility during detailed design
+    and site works to manage late scope changes whilst maintaining a successful project
+    budget and outcome.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages: &id008
+  - 29
+  evidence_excerpt: The project scope underwent several design changes, including
+    site location, size, and configuration. These were driven by changing responses
+    from external stakeholders and an internal refinement of the scope. During this
+    period, which included the FID, the project budget was not always aligned with
+    the scope, leading to misalignments of the budget in further project stages.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: 29
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14503
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: cost overrun
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-14504
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: Jemena procured a 500 kW electrolyser that was downrated from a standard
+    1 MW platform by fitting a smaller stack. During procurement, it was identified
+    that a 500 kW system would cost almost the same as the standard 1 MW platform.
+    The downrated configuration was associated with subsequent system reliability
+    issues believed to be linked to the reduced energy consumption of the package.
+  lesson_learnt: Avoid downrating standard equipment platforms to reach a target capacity
+    — procuring a downrated electrolyser at near-equivalent cost to the standard platform
+    introduced reliability issues; assess whether purchasing the standard platform
+    is preferable to a non-standard downrated variant, particularly where off-take
+    demand may materialise during the project.
+  issue_severity: moderate
+  project_type: enabling infrastructure
+  project_scale_band: demonstration
+  lifecycle_phase: procurement
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: execution & logistics
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: hydrogen
+  source_pages: &id009
+  - 13
+  evidence_excerpt: It was learned that such a system would cost almost the same as
+    a 1 MW system, which is the basic platform that most vendors offered... Consequently,
+    the 500 kW electrolyser was ordered, which was fitted with a smaller stack (downrated).
+    As a result, some system issues arose that were believed to be linked to the reduced
+    energy consumption of the package.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14504
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-14505
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: The electrolyser's human-machine interface was configured so that
+    only key alarms and conditions were communicated to the remote central PLC/SCADA
+    system. In the event of an operational error, the remote system could not receive
+    full error detail, requiring an operator to travel to site to resolve the issue
+    — a design limitation that impacted operational efficiency.
+  lesson_learnt: Design SCADA and remote monitoring systems for hydrogen electrolysers
+    to provide full diagnostic visibility at the central control room, not just key
+    alarms — limiting remote error detail to key alarms forces on-site attendance
+    for every fault event and materially reduces the operational efficiency of remotely
+    managed facilities.
+  issue_severity: minor
+  project_type: enabling infrastructure
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: hydrogen
+  source_pages: &id010
+  - 13
+  evidence_excerpt: The local PLC issues commands to the electrolyser to set operating
+    conditions, however, the system was set up in a way that only key alarms and conditions
+    are communicated back to the remote (central) PLC. In the event of an operational
+    error, the remote (central) PLC is unable to receive the full detail of the error
+    therefore an operator must be on site to resolve the issue. This is a result of
+    design limitation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14505
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-14506
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: Procurement of hydrogen-specific services and equipment was challenging
+    due to the lack of established suppliers and specialists in Australia. None of
+    the five vendors that submitted compliant tenders for the electrolyser had previously
+    installed an electrolyser in Australia at the time of procurement. COVID-19 further
+    disrupted supply chains, prevented factory acceptance tests, and restricted site
+    access.
+  lesson_learnt: For first-of-kind hydrogen projects in Australia, allow substantially
+    extended procurement timelines and budget contingency due to the immature local
+    supplier base — no electrolyser vendor had an Australian installation record at
+    the time of procurement; factory acceptance tests should be contractually protected
+    against pandemic or travel disruption scenarios.
+  issue_severity: moderate
+  project_type: enabling infrastructure
+  project_scale_band: demonstration
+  lifecycle_phase: procurement
+  proponent_type: network business
+  delay_category: procurement/supply chain
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Construction of the WSGHH was scheduled between the two major
+    NSW lockdown periods; representatives from the Belgian electrolyser OEM were able
+    to attend site for commissioning, and the electrolyser package was installed and
+    operational within weeks of delivery.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages: &id011
+  - 14
+  - 15
+  evidence_excerpt: Procurement of services and equipment for hydrogen was a challenge,
+    due to the lack of established suppliers and specialists offering services to
+    a mature level. The electrolyser market was also not well established in terms
+    of vendors, products, and competition, with none of the five vendors that submitted
+    compliant tenders having installed an electrolyser in Australia at the time.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14506
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.72
+- record_id: ARENA-DLV-14508
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: During a planned full-load emergency stop from the control room,
+    the electrolyser's air compressor fitting sheared off on restart because all air-operated
+    valves closed simultaneously during the e-stop, creating a pressure spike. The
+    failure was attributed to poor workmanship on the fitting and highlighted that
+    sub-system interactions during emergency procedures had not been fully considered.
+  lesson_learnt: Model the pressure transients and mechanical loads imposed on all
+    sub-systems — including air compressors and fittings — during emergency stop sequences;
+    do not assume that only primary plant components need to be stress-tested for
+    e-stop scenarios, as simultaneous valve closure can create destructive pressure
+    spikes in auxiliary systems.
+  issue_severity: minor
+  project_type: enabling infrastructure
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: An immediate repair was made to the compressor fitting with no
+    further issues reported.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: hydrogen
+  source_pages: &id012
+  - 21
+  evidence_excerpt: It is believed the air compressor was operating at load when all
+    air operated valves closed simultaneously due to the e-stop, which resulted in
+    a spike in pressure... This highlighted the need to consider all sub-systems and
+    not just the primary plant.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: 21
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14508
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-14509
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: Electrical technicians were not confident of the compliance status
+    of the electrolyser's ATEX-rated equipment against Australian Standards (IECEx/AS
+    3000) once the facility was operational, due to lack of documentation access and
+    unfamiliarity with European certification processes. An internal review of both
+    documented processes and installed plant was required. Similar compliance uncertainty
+    was understood to have occurred at other electrolyser facilities in Australia.
+  lesson_learnt: Require all international equipment vendors to demonstrate explicit
+    compliance with Australian Standards (including AS 3000) at procurement — do not
+    assume ATEX or IECEx certification is equivalent or sufficient; request full hazardous
+    area compliance documentation before equipment is accepted, and ensure local electrical
+    technicians can verify compliance status without relying on overseas vendor input.
+  issue_severity: moderate
+  project_type: enabling infrastructure
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated integration
+  intervention_note: An internal review of both the documented process and installed
+    plant was conducted to validate compliance with Australian Standards including
+    AS 3000:2018.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages: &id013
+  - 21
+  evidence_excerpt: Lack of access to documentation and approval processes, coupled
+    with the lack of familiarity with compliance processes led to an internal review
+    of both the documented process and a review of the installed plant. It is understood
+    that similar issues have occurred at other electrolyser facilities in Australia,
+    with a lack of certainty on the compliance status of electrolyser installations,
+    potentially with different views in different jurisdictions.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: 21
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14509
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: integration failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-14511
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: A check valve in the pipework between the electrolyser and main gas
+    panel exhibited persistent chattering during electrolyser operation. The root
+    cause was not determined — possible causes included pulsing flows from the electrolyser
+    or incorrect sizing and harmonics. The issue remained unresolved at the time of
+    reporting.
+  lesson_learnt: Size check valves in hydrogen electrolyser pipework by modelling
+    expected pulsing flow characteristics from the electrolyser under all load conditions,
+    rather than relying on standard gas industry sizing rules — PEM electrolysers
+    may produce flow pulsations that cause check valve chatter and acoustic issues
+    not anticipated in conventional gas designs.
+  issue_severity: minor
+  project_type: enabling infrastructure
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: hydrogen
+  source_pages: &id014
+  - 19
+  evidence_excerpt: The noise was identified as a check valve that appeared to be
+    chattering and occurred when the electrolyser was operational. The exact reason
+    for the chatter is unknown, with possibilities including pulsing flows from the
+    electrolyser or incorrect sizing and harmonics. The issue has not been resolved
+    and remains under investigation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: 19
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14511
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-14512
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: The project incorporated an extensive and novel pipeline cleaning
+    regime — running 67 foam pigs through the 20" steel buffer store pipeline before
+    achieving clean conditions — to reach a hydrogen purity of 99.97% required for
+    fuel cell applications. This was the first such cleaning methodology developed
+    for carbon steel pipelines in Australia at this purity specification.
+  lesson_learnt: Plan for extensive pipeline cleaning campaigns when targeting fuel
+    cell-grade hydrogen purity (≥99.97%) from carbon steel pipelines — the WSGHH required
+    67 foam pig passes plus nitrogen purging and near-vacuum preparation; this methodology
+    should be adopted as standard practice and referenced in future pipeline specifications
+    for high-purity hydrogen projects.
+  issue_severity: minor
+  project_type: enabling infrastructure
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: A total of 67 foam pigs were pushed through the pipe until no
+    solid material could be removed; subsequent nitrogen purging and near-vacuum preparation
+    achieved 99.97% hydrogen purity on the first sample.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages: &id015
+  - 18
+  - 24
+  evidence_excerpt: A total of 67 foam pigs were pushed through the pipe until no
+    more solid material (dust) could be removed, and the condition of the foam pigs
+    leaving the pipe were completely clean... led to a hydrogen purity of 99.97 %
+    from the first sample at the outlet.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: 18
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14512
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-14513
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: Jemena integrated the WSGHH facility fully within its existing gas
+    distribution network licence and operational control framework (including Zinfra
+    operations), rather than outsourcing operations to a third-party OEM or specialist
+    operator as many comparable demonstration projects had done. This required all
+    existing safety procedures, training, permitting and work instructions to be reviewed
+    and updated for hydrogen-specific risks before operations could commence.
+  lesson_learnt: Deciding to operate a hydrogen facility within an existing regulated
+    gas network licence framework — rather than outsourcing to an OEM — requires substantial
+    pre-operational effort to amend safety cases, develop hydrogen-specific training,
+    permitting and work instructions; however, this investment significantly simplifies
+    the integration of future hydrogen assets into the business.
+  issue_severity: moderate
+  project_type: enabling infrastructure
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: internal governance/resourcing
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Jemena and Zinfra held weekly operational readiness meetings
+    through the design-to-construction transition; developed new hydrogen authority
+    permits, competency assessments, work instructions, response codes, and training
+    packages before operations commenced.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages: &id016
+  - 16
+  - 20
+  evidence_excerpt: This decision had significant ramifications for the subsequent
+    design, build and operation, as it required the same process and expectations
+    to be followed for the development of the facility... Whilst this process required
+    significant effort across Jemena and Zinfra (responsible for physical operations),
+    the updated process is now embedded in the business, establishing a much-simplified
+    route for incorporating further hydrogen assets in the future.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: 16
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14513
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-14514
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: During the commissioning phase, a misalignment of responsibilities
+    between the construction contractor and the project team arose, requiring rapid
+    mobilisation of the project team to manage the commissioning process effectively.
+    Better delineation of commissioning responsibilities in the construction contract
+    documents was identified as an improvement opportunity.
+  lesson_learnt: Explicitly define commissioning responsibilities and handover boundaries
+    in construction contractor documents — ambiguity about who is responsible for
+    commissioning activities created delays and required rapid remedial mobilisation
+    of the project team; this delineation should be resolved at contract award, not
+    during execution.
+  issue_severity: minor
+  project_type: enabling infrastructure
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: The rapid mobilisation of the project team allowed for effective
+    management of the commissioning process following the misalignment of responsibilities
+    with the construction contractor.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages: &id017
+  - 28
+  evidence_excerpt: The rapid mobilisation of the project team, allowing for the effective
+    management of the commissioning process following a misalignment of responsibilities
+    with the construction contractor. ▪ Delineation of commissioning should be better
+    defined in the construction contractor documents to mitigate potential issues.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: 28
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14514
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-14515
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: The project team identified that SCADA and control systems for the
+    WSGHH required a significant amount of hardware, licences, and programming software
+    that had not been fully provisioned in the original project scope, creating a
+    gap during commissioning.
+  lesson_learnt: Explicitly provision all required SCADA and control system hardware,
+    software licences, and programming tools as named deliverables in the project
+    scope and procurement plan — gaps in SCADA provisioning discovered during commissioning
+    of novel facilities create delays and unexpected cost.
+  issue_severity: minor
+  project_type: enabling infrastructure
+  project_scale_band: demonstration
+  lifecycle_phase: procurement
+  proponent_type: network business
+  delay_category: procurement/supply chain
+  failure_mode: poor scoping
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages: &id018
+  - 28
+  evidence_excerpt: Ensuring future project include the provision of a significant
+    amount of hardware, licences, and programming software for SCADA and control systems.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: 28
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14515
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-14516
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: Stakeholders including local councils were not sufficiently informed
+    during initial project phases about hydrogen production and gas infrastructure,
+    leading to a need for increased communication to address community concerns and
+    knowledge gaps. The project team identified this as an opportunity for improvement
+    in future projects.
+  lesson_learnt: Begin community and local council engagement early and provide fundamental
+    education about hydrogen production technology — communities unfamiliar with hydrogen
+    have heightened concerns that require proactive information-sharing before and
+    during construction, not just at consultation milestones.
+  issue_severity: minor
+  project_type: enabling infrastructure
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: network business
+  delay_category: stakeholder/land/community
+  failure_mode: coordination & stakeholders
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Over 100 commercial and 7 industrial stakeholders were engaged
+    during the project to evaluate hydrogen blending impacts; continuous community
+    engagement was maintained throughout the project.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages: &id019
+  - 27
+  evidence_excerpt: Increased communication with local stakeholders, such as councils,
+    to better understand and address concerns of a lack of knowledge about hydrogen
+    production and gas infrastructure.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: 27
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14516
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-14517
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: Procurement of the electrolyser identified that specifications, performance
+    characteristics, and system definitions varied significantly between vendors,
+    making direct cost and performance comparisons difficult. Inconsistencies included
+    units of measurement, nominal ratings (stack vs system level), and performance
+    definitions (energy in vs hydrogen out).
+  lesson_learnt: Develop or adopt a standardised electrolyser product specification
+    template for Australian procurements that requires vendors to express performance
+    in consistent metrics (system-level, standardised units, energy-in vs hydrogen-out)
+    — without this, comparative evaluation of bids is unreliable and tender assessment
+    requires significant additional analytical effort.
+  issue_severity: minor
+  project_type: enabling infrastructure
+  project_scale_band: demonstration
+  lifecycle_phase: procurement
+  proponent_type: network business
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: hydrogen
+  source_pages: &id020
+  - 30
+  - 31
+  evidence_excerpt: The specification and performance characteristics of different
+    electrolyser vendor equipment, as well as system definitions often vary between
+    vendors, making direct comparison of cost and performance difficult. This includes
+    inconsistency in units of measurement, nominal ratings (i.e., stack versus system)
+    and performance definitions (energy in versus hydrogen out).
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: 31
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14517
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages: *id020
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-14518
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: The electrolyser market accessible to Australian hydrogen project
+    developers in 2017 consisted of 10–15 vendors; by 2022 this had grown to over
+    30, but vendors were increasingly focusing on large-scale orders. This trend means
+    that buyers seeking small-scale electrolyser solutions face a progressively reduced
+    vendor base, even as total market participants grow.
+  lesson_learnt: Account for electrolyser vendor market dynamics during project planning
+    — as vendors shift focus to large-scale orders, small-scale project developers
+    may face a shrinking effective market; engage vendors early, and consider whether
+    a slightly larger electrolyser order is feasible to remain attractive to vendors
+    with minimum order thresholds.
+  issue_severity: minor
+  project_type: enabling infrastructure
+  project_scale_band: demonstration
+  lifecycle_phase: procurement
+  proponent_type: network business
+  delay_category: procurement/supply chain
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: execution & logistics
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: hydrogen
+  source_pages: &id021
+  - 15
+  evidence_excerpt: One aspect of procurement expected to continue to challenge future
+    project proponents is access to key equipment, such as electrolysers and compressors.
+    The electrolyser industry is still developing, with vendors increasingly focusing
+    on larger orders... The number of electrolyser vendors available in 2017 in Australia
+    was 10 to 15, which by 2022 had increased to over 30. However, the number of vendors
+    able to meet the exact requirements for a specific project may still be limited.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: 15
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14518
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages: *id021
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-14519
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: The WSGHH project was constructed in approximately three months with
+    minimal disruptions despite major rain events. This was attributed to the significant
+    pre-mobilisation planning between Jemena, WASCO, and GPA, and the ability to coordinate
+    sub-contractors effectively. The project team also identified that switching from
+    concrete to steel piles saved approximately three weeks in the schedule and significant
+    budget.
+  lesson_learnt: Invest in detailed pre-mobilisation planning and coordination between
+    the project manager, principal contractor, and design consultant — at the WSGHH
+    this enabled three-month construction completion despite adverse weather; additionally,
+    evaluate alternative foundation systems (e.g., steel vs concrete piles) during
+    design as they can yield significant schedule and cost savings.
+  issue_severity: none
+  project_type: enabling infrastructure
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: hydrogen
+  source_pages: &id022
+  - 17
+  - 28
+  evidence_excerpt: The total time for construction of the WSGHH was approximately
+    three months. Despite some major rain events, disruptions to construction were
+    minimal, and this phase of the project was executed quickly with few issues. This
+    can largely be attributed to the significant planning period prior to mobilisation
+    between Jemena, WASCO, and GPA.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: 17
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14519
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages: *id022
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-14520
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: The WSGHH facility incorporated safety into the project governance
+    from the outset, with the project manager and project engineer personally stewarding
+    safety supported by a dedicated HSE advisor. Regular drug and alcohol testing
+    was conducted throughout the project with no positive results; weekly site inspections
+    and audits were maintained; and early engagement with sub-contractors aligned
+    safety protocols before construction commenced.
+  lesson_learnt: Assign safety stewardship ownership to senior project roles (PM and
+    PE) rather than delegating it solely to an HSE advisor — direct senior presence
+    on site builds mutual respect and enables peer-reinforced safety culture with
+    contractors and subcontractors; formalise this expectation in the statement of
+    work before contract award.
+  issue_severity: none
+  project_type: enabling infrastructure
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: hydrogen
+  source_pages: &id023
+  - 27
+  - 29
+  evidence_excerpt: The PM and Project Engineer (PE) took ownership of the stewarding
+    safety, supported by HSE resources. Jemena's PM, PE & HSE Advisor are regularly
+    present on site and built a reputation on mutual respect. Jemena's team were able
+    to build rapport with the contractor and their subcontractors, enabling a change
+    in culture towards safety and good practices.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14520
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages: *id023
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-14521
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: A dedicated integration and commissioning lead was appointed for
+    the WSGHH project, which was identified as paramount for the successful integration
+    of the facility. Hydrogen-specific awareness and facility operation training programs
+    were developed and delivered to operations personnel, enabling demonstration of
+    competency before operators could interact with the plant.
+  lesson_learnt: Appoint a dedicated integration and commissioning lead with knowledge
+    of internal operational requirements for novel first-of-kind facilities — at the
+    WSGHH this role was critical for successful integration; pair this with structured
+    hydrogen-specific training programs that include competency assessments before
+    operators can access the plant.
+  issue_severity: none
+  project_type: enabling infrastructure
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: hydrogen
+  source_pages: &id024
+  - 29
+  evidence_excerpt: A dedicated integration and commissioning lead for the project
+    was paramount for the integration of the facility. The development and delivery
+    of the detailed hydrogen awareness and facility operation training programs for
+    the operation team, enabled a process for the demonstration of competency.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: 29
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14521
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages: *id024
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-14522
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: The WSGHH required greater-than-anticipated resourcing for integration
+    activities across multiple business areas (Jemena, Zinfra, and external parties).
+    The lessons learned workshop identified that adequate allowances for integration
+    resourcing time and specialised maintenance equipment had not been fully provisioned,
+    and that resource funding should correspond to the nature and complexity of novel
+    projects.
+  lesson_learnt: Provision adequate resource budgets and resourcing time — scaled
+    to the complexity of novel technology integration — at the outset of first-of-kind
+    hydrogen projects; underestimating integration resource requirements results in
+    compressed timelines for handover activities and gaps in specialised maintenance
+    equipment in the maintenance program.
+  issue_severity: minor
+  project_type: enabling infrastructure
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: internal governance/resourcing
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Internal resources across multiple business areas were successfully
+    allocated to facilitate complex integration requirements, though this required
+    significant effort.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages: &id025
+  - 28
+  - 29
+  evidence_excerpt: Adequately provisioning resource funding corresponding to the
+    nature and level of complexity of the project. ▪ The provision for adequate allowances
+    to allow the appropriate integration resourcing time for all stakeholders involved.
+    ▪ The provision of all required specialised maintenance equipment in the maintenance
+    program.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14522
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages: *id025
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-14523
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: Stakeholder expectations regarding lead times for long lead items
+    (such as the electrolyser) and the complexity of integrating unprecedented technologies
+    were not adequately set during initial project phases, creating challenges for
+    cost and schedule management later in the project.
+  lesson_learnt: Communicate realistic delivery timeframes for long lead items and
+    the integration complexity of unprecedented technologies to all project stakeholders
+    during initial project phases — misaligned expectations on lead times and integration
+    effort become schedule and cost management problems during procurement and commissioning.
+  issue_severity: minor
+  project_type: enabling infrastructure
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: network business
+  delay_category: procurement/supply chain
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages: &id026
+  - 28
+  evidence_excerpt: Informing of stakeholders during initial project phases to understand
+    realistic delivery timeframes of long lead items. ▪ Aligning expectations on the
+    integration of unprecedented technologies.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: 28
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14523
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages: *id026
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-14524
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: The WSGHH was the first project to inject hydrogen directly into
+    Australia's main gas network, using a low-cost 'hot tap' branch connection with
+    regulated hydrogen flowrate rather than withdrawing the full gas stream into an
+    above-ground blending skid. The methodology was validated through testing and
+    consolidated into Standards Australia guideline HB 225.
+  lesson_learnt: Use direct in-line hot tap injection with a regulated hydrogen flowrate
+    as the preferred low-cost blending method for hydrogen injection into existing
+    natural gas steel pipelines — this approach avoids expensive above-ground blending
+    skids and has been validated at the WSGHH and codified in Standards Australia
+    HB 225.
+  issue_severity: none
+  project_type: enabling infrastructure
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: hydrogen
+  source_pages: &id027
+  - 31
+  evidence_excerpt: Jemena developed a low-cost method for blending that avoided withdrawing
+    the entire gas stream above the ground into a blending skid. The method involves
+    a traditional 'hot tap' connection of a branch onto an existing pipeline with
+    a regulated hydrogen flowrate to provide a consistent blend rate from an above
+    ground injection skid. This approach was validated through testing, and the methodology
+    has been consolidated into a guideline document that will be released by Standards
+    Australia, known as, 'HB 225 Guideline for blending hydrogen into pipelines and
+    gas distribution networks'.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: 31
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14524
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages: *id027
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-14525
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: Local support from the electrolyser OEM's new owners (Cummins) was
+    available for the WSGHH project via local supplier Energys, which proved critical
+    for resolving early operational issues including diode failure and other electrolyser
+    faults. The document identifies local OEM support as essential for smooth post-commissioning
+    operations.
+  lesson_learnt: Make contractually binding local OEM support — including local service
+    resources and escalation to overseas offices — a mandatory procurement requirement
+    for electrolyser projects; reliance on overseas-only support for novel equipment
+    in early operations creates unacceptable response time risk for fault resolution.
+  issue_severity: moderate
+  project_type: enabling infrastructure
+  project_scale_band: demonstration
+  lifecycle_phase: procurement
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Cummins responded to issues with the electrolyser using local
+    Energys resources with input and support from overseas OEM offices, enabling timely
+    fault resolution.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: hydrogen
+  source_pages: &id028
+  - 20
+  - 30
+  evidence_excerpt: Local support from suppliers is essential for smooth post-commissioning
+    operations... Jemena has benefited from having close support from the new owners
+    of Hydrogenics, Cummins, who have responded to issues with the electrolyser, with
+    the support of Energys and using local resources with input and support from overseas
+    OEM offices.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14525
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages: *id028
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-14528
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: The WSGHH chose a grid-connected 100% renewable PPA power supply
+    model rather than behind-the-meter (BtM) solar, primarily due to the five-year
+    demonstration period limiting capital cost recovery and the desire for higher
+    electrolyser utilisation. Analysis showed BtM solar would have offered up to 10%
+    efficiency improvement via DC-to-DC connection but would have limited electrolyser
+    utilisation to approximately 17% of capacity aligned to solar production.
+  lesson_learnt: Assess both grid-connected PPA and behind-the-meter solar supply
+    options for electrolyser projects, accounting for utilisation rate trade-offs
+    — BtM solar offers up to 10% efficiency gain via DC-to-DC coupling but constrains
+    utilisation to ~17% (solar hours only); grid connection with a renewable PPA enables
+    higher utilisation and access to demand response revenues, which may outweigh
+    efficiency gains at small project scales.
+  issue_severity: none
+  project_type: enabling infrastructure
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: hydrogen
+  source_pages: &id029
+  - 31
+  - 32
+  evidence_excerpt: 'The assessed benefits of a behind-the-meter solar PV connection
+    as opposed to a direct grid connection (with a 100% renewable PPA) include: a
+    reduction in line losses... an improved overall efficiency of up to 10 %... the
+    five-year demonstration period limiting the capital cost recovery period of the
+    onsite solar and thereby limiting the utilisation of the electrolyser to align
+    with solar production only (approximately 17 %).'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: 31
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14528
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages: *id029
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-14529
+  source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  publish_date: '2023-10-27'
+  project_name: Western Sydney Green Hydrogen Hub (WSGHH)
+  what_happened: Large-scale renewable hydrogen from electrolysis was not commercially
+    viable at the time of the project due to high electrolyser costs and the absence
+    of established hydrogen demand. The project identified that policy mechanisms
+    — including time-of-use emission reporting, renewable gas certification and renewable
+    gas targets, and load-matched renewable PPAs — would be necessary to commercialise
+    future hydrogen projects.
+  lesson_learnt: Design hydrogen demonstration projects to explicitly evaluate and
+    document the policy mechanisms needed for commercial scale-up — without supportive
+    policies such as renewable gas certification, green targets, and load-matched
+    PPAs, the commercial case for scaling hydrogen projects cannot be established
+    from demonstration results alone.
+  issue_severity: moderate
+  project_type: enabling infrastructure
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: Jemena worked with GreenPower to trial a Renewable Gas Guarantee
+    of Origin (RGGO) scheme as an additional revenue stream not initially identified
+    in the business case.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: hydrogen
+  source_pages: &id030
+  - 33
+  - 34
+  evidence_excerpt: Large scale renewable hydrogen from electrolysis is not yet commercially
+    viable due to the relatively high cost of the electrolyser at the early stages
+    of market development... it is currently difficult to commercialise hydrogen projects
+    due to unreliability and a lack of hydrogen demand. Hence, a recommendation is
+    to consider supportive policies to commercialise such projects.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+  project_page_url: https://arena.gov.au/projects/jemena-power-to-gas-demonstration/
+  kb_category: Hydrogen energy
+  kb_publish_date: 16/01/2024
+  kb_year: '2018'
+  kb_associated_project: Jemena Power to Gas Demonstration
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $7.5m
+  total_project_value: $13.21m
+  lead_organisation: Jemena
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 09/08/2018
+  location: New South Wales, Sydney
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+  markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  source_page_pdf: 31
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14529
+  contributing_source_titles:
+  - Jemena - Power to Gas Demonstration - Lessons Learned and Final Report
+  contributing_sources:
+  - source_title: Jemena - Power to Gas Demonstration - Lessons Learned and Final
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/01/Jemena-Power-to-Gas-Demonstration-Lessons-Learned-and-Final-Report.pdf
+    source_pages: *id030
+    source_url: https://arena.gov.au/knowledge-bank/jemena-power-to-gas-demonstration-lessons-learned-and-final-report/
+    markdown_filename: jemena_power_to_gas_demonstration_lessons_learned_and_final_report.md
+  arena_category:
+  - Hydrogen
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82

@@ -1,0 +1,3613 @@
+- record_id: ARENA-DLV-40403
+  source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+  publish_date: 2023-12
+  project_name: Project MATCH
+  what_happened: Project MATCH could not assess voltage ride-through (including multiple
+    voltage dips) or phase angle jump ride-through compliance using available DER
+    operational datasets because voltage disturbance events occur over ~200ms while
+    most voltage datasets are captured at 5-10s resolution, and waveform data required
+    for phase angle jump analysis is absent.
+  lesson_learnt: Future projects aiming to assess inverter behaviour during disturbances
+    should formally scope very high resolution (waveform) monitoring in the distribution
+    network from the outset — the absence of this data creates a critical gap in understanding
+    how disturbances manifest and whether inverters are behaving to standard.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: UNSW engaged with a DNSP to investigate whether existing Power
+    Quality monitoring could fill the gap and to explore opportunities for deployment
+    of appropriate waveform monitoring.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages:
+  - 2
+  - 3
+  - 18
+  evidence_excerpt: 'It has been determined that it is not possible to analyse the
+    following aspects of DER disturbance response using the DER operational datasets
+    currently available under Project MATCH: Voltage ride-through including multiple
+    voltage dips, and Phase angle jump ride-through. This is due to (1) voltage disturbance
+    events typically occurring over a very short timeframe of around 200ms whereas
+    most voltage datasets are captured on a 5-10s basis, and (2) DER operational datasets
+    do not currently include waveform data necessary for calculating phase angle jump.'
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 8/02/2024
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+  markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  source_page_pdf: 18
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-11851
+  - ARENA-DLV-40403
+  contributing_source_titles:
+  - UNSW - Project MATCH - Knowledge Sharing Report 2
+  - 'UNSW Sydney: Project MATCH Lessons Learnt Report 1'
+  contributing_sources:
+  - source_title: 'UNSW Sydney: Project MATCH Lessons Learnt Report 1'
+    pdf_url: https://arena.gov.au/assets/2021/09/project-match-lessons-learnt-report-1.pdf
+    source_pages:
+    - 2
+    - 3
+    source_url: https://arena.gov.au/knowledge-bank/project-match-lessons-learnt-report-1/
+    markdown_filename: project_match_lessons_learnt_report_1.md
+  - source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+    pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+    source_pages:
+    - 18
+    source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+    markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.95
+- record_id: ARENA-DLV-48024
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: Collecting valuable DER datasets from industry stakeholders required
+    extremely active and ongoing engagement; many organisations expressed willingness
+    to support the project but could not justify resources to improve monitoring capabilities
+    (e.g. sub-60-second data granularity) because there was no clear business case
+    or regulatory driver compelling expenditure.
+  lesson_learnt: Research projects requiring industry-provided DER datasets should
+    identify and advocate for regulatory data requirements early — voluntary data
+    provision without a business case is unreliable and resource-intensive to sustain;
+    regulatory mandates for minimum data granularity and sharing are necessary to
+    support ongoing system security analysis.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: stakeholder/land/community
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: Confidentiality Agreements were tailored for each data sharing
+    relationship, and ongoing engagement was maintained; the Stakeholder Reference
+    Group grew by several members and additional offers of expertise were received.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages:
+  - 3
+  - 4
+  - 73
+  - 74
+  evidence_excerpt: collecting and establishing datasets from stakeholders has been
+    somewhat challenging... Many organisations have expressed a desire to support,
+    and willingness to provide technical guidance, however, have indicated a difficulty
+    in justifying resources to improve monitoring capabilities... Much of this reluctance
+    appears be due to a lack of a clear business case and/ or regulatory driver to
+    enforce these needs.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-11852
+  - ARENA-DLV-48024
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  - 'UNSW Sydney: Project MATCH Lessons Learnt Report 1'
+  contributing_sources:
+  - source_title: 'UNSW Sydney: Project MATCH Lessons Learnt Report 1'
+    pdf_url: https://arena.gov.au/assets/2021/09/project-match-lessons-learnt-report-1.pdf
+    source_pages:
+    - 3
+    - 4
+    source_url: https://arena.gov.au/knowledge-bank/project-match-lessons-learnt-report-1/
+    markdown_filename: project_match_lessons_learnt_report_1.md
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages:
+    - 73
+    - 74
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-48030
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: Balancing the need for transparency about project findings with protection
+    of the competitive interests of data providers who share proprietary fleet data
+    was an ongoing challenge throughout the project, requiring careful management
+    of how results were reported in aggregate and how individual organisations were
+    identified.
+  lesson_learnt: Research projects relying on commercially sensitive industry data
+    should establish explicit data confidentiality protocols with providers at the
+    outset — de-identification of findings and aggregate-only reporting must be agreed
+    before data is received to maintain long-term data sharing relationships and avoid
+    constraining publication of results.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: stakeholder/land/community
+  failure_mode: coordination & stakeholders
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: UNSW presented through ARENA DEIP and the AEMO Consumer Forum
+    in early 2021, and explored targeted engagement through the Stakeholder Reference
+    Group ahead of public reporting.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages:
+  - 4
+  - 74
+  evidence_excerpt: Throughout the project it has also been challenging to provide
+    a level of transparency of the work while protecting the competitive interests
+    of the data providers. This is an ongoing challenge, which Project MATCH has sought
+    to manage through providing findings in aggregate and de-identifying proponents.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: 74
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-11853
+  - ARENA-DLV-48030
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  - 'UNSW Sydney: Project MATCH Lessons Learnt Report 1'
+  contributing_sources:
+  - source_title: 'UNSW Sydney: Project MATCH Lessons Learnt Report 1'
+    pdf_url: https://arena.gov.au/assets/2021/09/project-match-lessons-learnt-report-1.pdf
+    source_pages:
+    - 4
+    source_url: https://arena.gov.au/knowledge-bank/project-match-lessons-learnt-report-1/
+    markdown_filename: project_match_lessons_learnt_report_1.md
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages:
+    - 74
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-11854
+  source_title: 'UNSW Sydney: Project MATCH Lessons Learnt Report 1'
+  publish_date: '2021-09-24'
+  project_name: Project MATCH (Monitoring and Analysis Toolbox for Compliance in a
+    High DER future)
+  what_happened: Analysis of multiple data sources including Solar Analytics data
+    and NSP voltage condition datasets enabled cross-validation of observed DER behaviours
+    during disturbance events in 2021, supporting more robust conclusions about the
+    causes of DER disconnections than any single dataset could provide.
+  lesson_learnt: Data-driven DER analysis projects should plan to integrate multiple
+    complementary data sources from the outset — cross-referencing datasets from different
+    sources (e.g. aggregator platforms, NSP voltage data, operational datasets) improves
+    confidence in findings and helps distinguish genuine DER non-compliance from local
+    network conditions.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id001
+  - 5
+  evidence_excerpt: Being able to compare data sources has been a valuable tool for
+    assessing potential causes of DER disconnections as well as confirming observed
+    DER behaviours. For example, the project partners have been working with NSPs
+    to understand voltage conditions across the network during disturbance events,
+    as well as analysing DER operational datasets kindly provided by four stakeholders.
+  confidence_note: lifecycle_phase set to operations as the insight arose during active
+    analysis of live disturbance events, not during project setup.
+  source_url: https://arena.gov.au/knowledge-bank/project-match-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 24/09/2021
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2021/09/project-match-lessons-learnt-report-1.pdf
+  markdown_filename: project_match_lessons_learnt_report_1.md
+  source_page_pdf: 5
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-11854
+  contributing_source_titles:
+  - 'UNSW Sydney: Project MATCH Lessons Learnt Report 1'
+  contributing_sources:
+  - source_title: 'UNSW Sydney: Project MATCH Lessons Learnt Report 1'
+    pdf_url: https://arena.gov.au/assets/2021/09/project-match-lessons-learnt-report-1.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/project-match-lessons-learnt-report-1/
+    markdown_filename: project_match_lessons_learnt_report_1.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-48014
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: Following the introduction of AS/NZS4777.2:2020 on 18 December 2021,
+    only 37% of inverters installed in Q1 2022 were configured with the correct 2020
+    grid code at the time of installation; the majority were being configured with
+    the legacy 2015 standard settings because manufacturers retained legacy options
+    in their menus and installers defaulted to them.
+  lesson_learnt: New mandatory performance standards for inverters will not achieve
+    intended compliance rates if legacy grid code options remain available in installer
+    menus — regulatory frameworks should require removal of superseded settings from
+    product menus at the time a new standard becomes mandatory, not years later.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: execution & logistics
+  intervention_note: AEMO initiated a proposal to review AS/NZS4777.2:2020 to remove
+    legacy grid codes; four manufacturers also undertook remote updates to correct
+    non-compliant inverters, raising the estimated correct grid-code rate from 37%
+    to approximately 45% of Q1 2022 installations.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages:
+  - 6
+  - 18
+  - 46
+  - 47
+  evidence_excerpt: Combining the information supplied by the manufacturers the remote
+    inverter surveying, with market share data from the Clean Energy Regulator (CER),
+    it is estimated that 37% of the fleet in the NEM is configured with the correct
+    AS/NZS4777.2:2020 grid code at the time of installation. With the majority selecting
+    the 2015 standard options... This highlights that most manufacturers have retained
+    the old standards in their menu options, and installers are preferencing selection
+    of these older standards during the installation process, leading to poor compliance
+    to the 2020 Standard grid code.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (25/30), DER/customer-side (5/30); project_scale_band reconciled to ''demonstration''
+    from: demonstration (24/30), programmatic/portfolio-level (6/30) Canonical record
+    merged from 2 source records across 2 document(s).'
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: 47
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-40401
+  - ARENA-DLV-48014
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  - UNSW - Project MATCH - Knowledge Sharing Report 2
+  contributing_sources:
+  - source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+    pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+    source_pages:
+    - 6
+    - 18
+    source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+    markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages:
+    - 46
+    - 47
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-40409
+  source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+  publish_date: 2023-12
+  project_name: Project MATCH
+  what_happened: Inverter OEMs took resource-intensive voluntary actions to improve
+    2020 Standard compliance rates following engagement by the Project MATCH team,
+    despite having no clear regulatory obligation or direct commercial incentive to
+    do so in a competitive market.
+  lesson_learnt: OEMs will act voluntarily on compliance when presented with credible,
+    data-backed evidence of systemic risk — but sustainable compliance improvement
+    requires a regulatory framework that makes responsibilities and incentives explicit,
+    rather than depending on repeated goodwill-based engagement.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: successful demonstration
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: UNSW and AEMO reached out to inverter OEMs in May 2023 with updated
+    compliance data; OEM voluntary actions were identified as the primary driver of
+    the compliance uplift to ~75-80%.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages:
+  - 18
+  - 23
+  evidence_excerpt: A number of inverter OEMs have gone to great lengths to improve
+    compliance rates. These efforts have been largely voluntary and have sometimes
+    been resource intensive. The actions follow engagement by the Project MATCH team
+    to analyse compliance rates using OEM data in early 2022.
+  confidence_note: Canonical record merged from 2 source records across 1 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 8/02/2024
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+  markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  source_page_pdf: 23
+  corroboration_count: 2
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40402
+  - ARENA-DLV-40409
+  contributing_source_titles:
+  - UNSW - Project MATCH - Knowledge Sharing Report 2
+  contributing_sources:
+  - source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+    pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+    source_pages:
+    - 18
+    source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+    markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-40404
+  source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+  publish_date: 2023-12
+  project_name: Project MATCH
+  what_happened: The Solar Analytics 5s and 60s datasets — the primary high-resolution
+    data source for DER disturbance analysis — declined in site coverage over the
+    project period due to a technology platform change at Solar Analytics and the
+    retirement of 3G internet connectivity.
+  lesson_learnt: Research programs relying on commercial third-party data streams
+    for longitudinal analysis should establish formal data continuity arrangements
+    early — technology transitions and infrastructure retirements (e.g. 3G sunset)
+    can silently erode dataset coverage and compromise analytical capability.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Solar Analytics refined its data collection triggers ('Leadbeater
+    triggers') to collect high-resolution 5s data during disturbance events while
+    minimising data costs, partially mitigating coverage loss.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id002
+  - 22
+  evidence_excerpt: 'Ongoing availability: the Solar Analytics 5s and 60s datasets
+    (suitable for analysing DER behaviour during disturbance events) is reducing in
+    the number of sites over time due to a change in technology at Solar Analytics
+    and the retirement of 3G internet.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 8/02/2024
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+  markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  source_page_pdf: 22
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40404
+  contributing_source_titles:
+  - UNSW - Project MATCH - Knowledge Sharing Report 2
+  contributing_sources:
+  - source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+    pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+    markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.95
+- record_id: ARENA-DLV-40405
+  source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+  publish_date: 2023-12
+  project_name: Project MATCH
+  what_happened: All datasets analysed through Project MATCH were provided voluntarily
+    by industry stakeholders, creating no guarantee of future availability and no
+    recognition of costs incurred by data providers for capturing, storing and sharing
+    data.
+  lesson_learnt: Voluntary data-sharing arrangements are insufficient for sustaining
+    long-term DER monitoring programs — future programs should establish funded, formalised
+    data access agreements that acknowledge and compensate data providers' costs,
+    or pursue regulatory mandates for data provision.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id003
+  - 22
+  evidence_excerpt: 'Voluntary provision: datasets are largely provided voluntarily,
+    for which the Project MATCH team is very appreciative. However as a result, there
+    is no guarantee data will be available into the future, and indeed, does not recognise
+    the costs incurred by data providers in capturing, storing and sharing data.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 8/02/2024
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+  markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  source_page_pdf: 22
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40405
+  contributing_source_titles:
+  - UNSW - Project MATCH - Knowledge Sharing Report 2
+  contributing_sources:
+  - source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+    pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+    markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-48019
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: All three DER monitoring datasets (Solar Analytics, Tesla, EQL-Luceo)
+    contained inherent sample biases in location, installation standard, site capacity,
+    and manufacturer representation relative to the true NEM fleet distribution from
+    the CER dataset; these biases distort raw disconnection estimates and must be
+    corrected through statistical upscaling before fleet-level inferences can be made.
+  lesson_learnt: Where universal DER visibility is unavailable, invest in robust statistical
+    upscaling methods (e.g. generalised linear models with bootstrapped confidence
+    intervals) and make sampling biases and error bounds explicit in all outputs —
+    raw sample percentages without upscaling can materially misrepresent fleet-level
+    behaviour.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Upscaling weights based on standard and manufacturer composition
+    relative to the CER population were applied within DERDAT; a generalised linear
+    model approach is under development to better handle multi-dimensional biases.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages:
+  - 22
+  - 26
+  - 27
+  - 56
+  - 57
+  - 58
+  - 59
+  - 60
+  evidence_excerpt: The three datasets combined represent a small sample of the entire
+    NEM fleet (~2.3%) and are inherently prone to sample biases. Given each dataset
+    typically has a small sample size, disproportionate representation of certain
+    types of sites may affect the accuracy of the inferences drawn, and all-DPV behaviour
+    in the NEM. Identifying these sources of sample biases within each dataset is
+    therefore vital to accurate disturbance analysis.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: 56
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-40406
+  - ARENA-DLV-48019
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  - UNSW - Project MATCH - Knowledge Sharing Report 2
+  contributing_sources:
+  - source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+    pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+    source_pages:
+    - 22
+    - 26
+    - 27
+    source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+    markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages:
+    - 56
+    - 57
+    - 58
+    - 59
+    - 60
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-40407
+  source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+  publish_date: 2023-12
+  project_name: Project MATCH
+  what_happened: 'The Clean Energy Regulator (CER) register — used as the ''source
+    of truth'' for the installed DPV population — has several known limitations: replacement
+    rates may not be fully captured, there can be up to a one-year delay between installation
+    and registration, and coverage is expected to decline as the SRES subsidy approaches
+    its 2030 end date.'
+  lesson_learnt: Do not rely solely on the CER register as the DPV population denominator
+    for compliance or security studies — validate against AEMO's DER register and
+    account for known lags and gaps, particularly for replacement systems and post-2030
+    installations.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id004
+  - 22
+  evidence_excerpt: 'No ''source of truth'' for DER population data: currently we
+    rely upon the CER register as the ''source of truth'' for the installed DPV population.
+    However it has several limitations, including that replacement rates may not be
+    fully captured... there can be up to a one year delay between install and a site
+    appearing in the register, and the proportion of sites captured is expected to
+    decrease as we approach the end of the SRES subsidy in 2030.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 8/02/2024
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+  markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40407
+  contributing_source_titles:
+  - UNSW - Project MATCH - Knowledge Sharing Report 2
+  contributing_sources:
+  - source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+    pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+    markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-40408
+  source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+  publish_date: 2023-12
+  project_name: Project MATCH
+  what_happened: Progress on DER integration improvements — including improving compliance
+    rates with the 2020 Standard — relied heavily on goodwill, cooperation and voluntary
+    actions by industry stakeholders due to the absence of clear governance arrangements
+    for DER technical standards and compliance monitoring.
+  lesson_learnt: Without clear regulatory assignment of responsibility for DER compliance
+    monitoring and enforcement, industry progress depends on goodwill and is fragile
+    — advocate for and participate in the development of formal DER governance frameworks
+    that assign roles, fund compliance monitoring, and create enforceable pathways
+    for engaging OEMs.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: The AEMC undertook a review of CER governance arrangements in
+    2022-23 and recommended actions to improve compliance; the Energy and Climate
+    Change Ministerial Council agreed in November 2023 to consider a national regulatory
+    framework for CER technical standards in 2024.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id005
+  - 23
+  evidence_excerpt: The current lack of governance arrangements regarding DER means
+    that progress on DER integration (for instance, improving compliance rates) relies
+    heavily on good will, cooperation and voluntary actions by different stakeholders...
+    It is not clear who is responsible for monitoring (or enforcing) compliance with
+    the 2020 Standard... OEMs are critical stakeholders for improving compliance rates,
+    however to the authors' knowledge, there is no existing regulatory/legal pathway
+    to engage OEMs.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 8/02/2024
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+  markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  source_page_pdf: 23
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40408
+  contributing_source_titles:
+  - UNSW - Project MATCH - Knowledge Sharing Report 2
+  contributing_sources:
+  - source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+    pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+    markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-40410
+  source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+  publish_date: 2023-12
+  project_name: Project MATCH
+  what_happened: During the 12 November 2022 separation of South Australia and subsequent
+    week of island operation, DPV was curtailed on multiple occasions to maintain
+    power system security, and the impacts of the Emergency Voltage Management (EVM)
+    measure on Virtual Power Plants remained under analysis at the time of reporting.
+  lesson_learnt: Emergency backstop measures such as Enhanced Voltage Management can
+    have material and poorly-understood impacts on VPP operations — develop analytical
+    tools and data streams capable of assessing these interactions before such measures
+    are routinely deployed.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: Analysis of 12-19 November 2022 VPP impacts was ongoing at time
+    of reporting; development of robust datasets and analysis tools for Emergency
+    Backstop Measures was identified as future work.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id006
+  - 6
+  - 15
+  evidence_excerpt: 12 November 2022 separation of South Australia and subsequent
+    week of island operation of SA during minimum demand conditions. During this period
+    DPV was curtailed on multiple occasions to support power system security... Analysis
+    on implications for VPPs during the 12-19 November 2022 week of SA island operation
+    is ongoing.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 8/02/2024
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+  markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40410
+  contributing_source_titles:
+  - UNSW - Project MATCH - Knowledge Sharing Report 2
+  contributing_sources:
+  - source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+    pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+    markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-40411
+  source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+  publish_date: 2023-12
+  project_name: Project MATCH
+  what_happened: During the 23 June 2022 South Australia power system oscillations
+    event, one battery manufacturer observed that 95% of their fleet disconnected
+    — caused by an external device that is a typical part of their installation configuration,
+    not by the disturbance itself.
+  lesson_learnt: Standard installation accessories and external devices (not the inverter
+    or battery itself) can cause mass fleet disconnections during disturbance events
+    — compliance testing and disturbance analysis must account for the full installation
+    configuration, not only the primary DER equipment.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id007
+  - 15
+  evidence_excerpt: Minimal DPV response, however one battery manufacturer observed
+    95% of their fleet to disconnect, caused by an external device that is a typical
+    part of their installation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 8/02/2024
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+  markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  source_page_pdf: 15
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40411
+  contributing_source_titles:
+  - UNSW - Project MATCH - Knowledge Sharing Report 2
+  contributing_sources:
+  - source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+    pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+    markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-40412
+  source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+  publish_date: 2023-12
+  project_name: Project MATCH
+  what_happened: Voltage measurements at specific points in the transmission system
+    were found not to be necessarily indicative of downstream distribution network
+    voltages during disturbance events, due to complexities in network topology and
+    local load/generation response.
+  lesson_learnt: Transmission-level voltage measurements should not be assumed to
+    represent distribution-level conditions at DER connection points — for compliance
+    assessment purposes, use the most conservative assumption that the most extreme
+    transmission dip could plausibly occur in the distribution network, pending further
+    investigation of disturbance permeation.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: SA Power Networks deployed power quality monitors at specific
+    distribution network locations to support disturbance permeation analysis in collaboration
+    with UNSW and AEMO.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id008
+  - 19
+  evidence_excerpt: Voltage measurements at specific points in the transmission system
+    are not necessarily indicative of downstream voltage. This may be due to complexities
+    in the network topology and local load/generation response. For the purpose of
+    assessing compliance, the most conservative assumption is that the most extreme
+    voltage dip observed at the transmission level could also plausibly occur in the
+    distribution network.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 8/02/2024
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+  markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  source_page_pdf: 19
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40412
+  contributing_source_titles:
+  - UNSW - Project MATCH - Knowledge Sharing Report 2
+  contributing_sources:
+  - source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+    pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+    markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-40413
+  source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+  publish_date: 2023-12
+  project_name: Project MATCH
+  what_happened: The phase(s) experiencing voltage dips at high-voltage transmission
+    level directly determine which phases experience dips in the distribution network,
+    meaning that similar transmission-level disturbances can impact materially different
+    populations of single-phase DER depending on which phase is affected.
+  lesson_learnt: Fleet-level DER disturbance response estimates must account for phase-specific
+    impacts — a single transmission-level event affecting different phases can produce
+    very different aggregate DER disconnection outcomes depending on the phase distribution
+    of the installed fleet.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id009
+  - 19
+  evidence_excerpt: The specific phase(s) at high voltages that experience a voltage
+    dip impact the specific phase(s) that experience a voltage dip in the distribution
+    network. The majority of DER remain single phase systems, and therefore different
+    DER populations would be impacted by similar voltage disturbances (i.e. same transmission
+    location/depth of dip) impacting different phases.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 8/02/2024
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+  markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  source_page_pdf: 19
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40413
+  contributing_source_titles:
+  - UNSW - Project MATCH - Knowledge Sharing Report 2
+  contributing_sources:
+  - source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+    pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+    markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-40414
+  source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+  publish_date: 2023-12
+  project_name: Project MATCH
+  what_happened: Project MATCH found that different 'types' of compliance with the
+    2020 Standard (pre-install, grid code selection at install, and ongoing in-field
+    compliance) require different datasets and assessment methods, and that non-compliance
+    with one type (e.g. Volt-VAr settings) does not necessarily indicate non-compliance
+    with another (e.g. disturbance ride-through).
+  lesson_learnt: When using compliance data to inform policy or regulatory decisions,
+    clearly specify which 'type' of compliance is being measured — conflating Volt-VAr
+    compliance (relevant to DNSPs) with ride-through compliance (relevant to AEMO/system
+    security) can lead to misallocation of regulatory effort and incorrect risk assessments.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id010
+  - 21
+  evidence_excerpt: Compliance with Volt-VAr settings is of high importance to DNSPs
+    given the implications for voltage management. However non-compliance with the
+    2020 Standard Volt-VAr settings does not necessarily indicate non-compliance with
+    the 2020 Standard disturbance ride-through requirements... Consideration of compliance
+    rates for the purpose of policy/regulatory development should carefully consider
+    the 'type' of compliance under consideration.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 8/02/2024
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+  markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  source_page_pdf: 21
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40414
+  contributing_source_titles:
+  - UNSW - Project MATCH - Knowledge Sharing Report 2
+  contributing_sources:
+  - source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+    pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+    markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-48021
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: The Clopper-Pearson method used to quantify uncertainty in upscaled
+    DPV disconnection estimates produced very wide confidence intervals — in some
+    cases a range of up to 40% between upper and lower bounds — because the asymmetric
+    interval widths for each manufacturer/standard category are summed, and uncertainty
+    grows rapidly as additional predictor variables are added.
+  lesson_learnt: When quantifying uncertainty in upscaled DER fleet estimates with
+    multiple predictor categories, the Clopper-Pearson interval method produces unacceptably
+    wide bounds due to additive asymmetry — bootstrapping or other resampling methods
+    should be used instead to generate tighter, empirically-derived confidence intervals.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: A bootstrapping method was developed and integrated into DERDAT,
+    replacing the Clopper-Pearson interval summation approach and producing substantially
+    tighter confidence bounds.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages:
+  - 27
+  - 32
+  - 65
+  - 66
+  evidence_excerpt: The current method of quantifying uncertainty for upscaled estimates
+    leads to wide error bounds, that will only grow as more factors are considered...
+    the 95% Clopper-Pearson confidence interval for the population disconnection rate
+    of all OEM-A, 2015-standard inverters is [0.0376, 0.3072] for this disturbance...
+    attempting to correct for inverter capacity in addition to manufacturer and standard
+    adds another aggregation stage and greatly increases the number of confidence
+    intervals produced.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: 66
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-40415
+  - ARENA-DLV-48021
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  - UNSW - Project MATCH - Knowledge Sharing Report 2
+  contributing_sources:
+  - source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+    pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+    source_pages:
+    - 27
+    - 32
+    source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+    markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages:
+    - 65
+    - 66
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-40416
+  source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+  publish_date: 2023-12
+  project_name: Project MATCH
+  what_happened: The original DERDAT upscaling method could only accommodate a limited
+    number of predictor variables because each additional predictor subdivided the
+    dataset into smaller buckets, many of which fell below the minimum sample size
+    threshold required for valid upscaling.
+  lesson_learnt: Use a Generalised Linear Model (GLM) rather than a bucket-based upscaling
+    method when predictor combinations are sparse — GLMs apply minimum sample thresholds
+    per predictor rather than per combination, allowing more variables (e.g. system
+    capacity, geographic zone) to be included without fragmenting the sample below
+    validity thresholds.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: A GLM upscaling method was developed and integrated into DERDAT,
+    with system capacity and geographic location added as new predictor options; cross-validation
+    confirmed the four-predictor GLM had lower RMSE than the original bucket method.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id011
+  - 27
+  - 33
+  evidence_excerpt: 'There is a limit to the number of predictors that can be used:
+    With more predictors there is a smaller sample of sites with that specific set/combination
+    of categories... A minimum number of sites is still applied per predictor but
+    not per unique combination of predictors. Effectively the data does not need to
+    be divided into as many buckets, so more predictors can be used, likely improving
+    accuracy.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 8/02/2024
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+  markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  source_page_pdf: 27
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40416
+  contributing_source_titles:
+  - UNSW - Project MATCH - Knowledge Sharing Report 2
+  contributing_sources:
+  - source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+    pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+    markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-40417
+  source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+  publish_date: 2023-12
+  project_name: Project MATCH
+  what_happened: Open-source publication of the DERDAT analysis tool (via GitHub)
+    enabled AEMO to adopt it as part of its business-as-usual post-event analysis
+    operations, transitioning a research output into an operational industry tool.
+  lesson_learnt: Publishing analytical tools as open source accelerates industry adoption
+    and maintains a collaborative environment — ARENA-funded research tools with clear
+    operational relevance should be structured for open-source release from the outset
+    to maximise transfer into industry practice.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: close-out/post-project review
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id012
+  - 7
+  - 16
+  evidence_excerpt: DERDAT is currently being used by AEMO as part of its post-event
+    analysis into DER behaviours... open-source tools provide important transparency,
+    which is likely to be valuable for maintaining a collaborative industry environment.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 8/02/2024
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+  markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40417
+  contributing_source_titles:
+  - UNSW - Project MATCH - Knowledge Sharing Report 2
+  contributing_sources:
+  - source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+    pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+    markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-40418
+  source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+  publish_date: 2023-12
+  project_name: Project MATCH
+  what_happened: A Stakeholder Reference Group (SRG) of 42 organisations was assembled
+    and maintained throughout Project MATCH, growing from 23 participants at inception;
+    25 organisations provided real-world datasets and engagement increased at each
+    successive SRG session.
+  lesson_learnt: Establishing a formal, inclusive stakeholder reference group early
+    in a DER research program — spanning OEMs, DNSPs, VPPs, regulators, and consumer
+    bodies — is essential for accessing real-world data, maintaining goodwill, and
+    ensuring findings are grounded in operational reality and accepted by the industry.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id013
+  - 5
+  - 12
+  - 22
+  evidence_excerpt: The SRG has grown from 23 to 42 participants over the course of
+    the project... engagement during the stakeholder reference group sessions increasing
+    each session, and over 40 organisations engaged.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 8/02/2024
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+  markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40418
+  contributing_source_titles:
+  - UNSW - Project MATCH - Knowledge Sharing Report 2
+  contributing_sources:
+  - source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+    pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+    markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-40419
+  source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+  publish_date: 2023-12
+  project_name: Project MATCH
+  what_happened: BESS and hybrid systems could not be analysed using DERDAT because
+    bidirectional power flow and additional technical requirements make them incompatible
+    with the tool's PV-focused analysis logic, despite their growing prevalence in
+    the installed fleet.
+  lesson_learnt: DER analysis tools designed for PV systems require specific extension
+    work before they can assess BESS and hybrid systems — plan for this explicitly
+    in tool development roadmaps given the rapid growth of co-located battery installations.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: BESS and hybrid system analysis was identified as a future work
+    priority in the DERDAT development roadmap.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id014
+  - 17
+  evidence_excerpt: 'BESS analysis: Currently analysis is only performed on PV outputs.
+    Battery/hybrid systems have bidirectional flow and extra requirements which make
+    them a challenge to assess, however their growing prevalence warrants attention
+    as soon as possible.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 8/02/2024
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+  markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40419
+  contributing_source_titles:
+  - UNSW - Project MATCH - Knowledge Sharing Report 2
+  contributing_sources:
+  - source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+    pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+    markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-40420
+  source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+  publish_date: 2023-12
+  project_name: Project MATCH
+  what_happened: Analysing DER compliance required 60-second or finer time-resolution
+    operational data because the 2015 and 2020 Standards require DER to remain disconnected
+    for 60 seconds following a disturbance excursion — disconnections are invisible
+    in coarser datasets such as standard 5-minute AMI data.
+  lesson_learnt: Specify minimum data resolution requirements for DER operational
+    data at the outset of compliance analysis programs — 5-minute AMI data is insufficient
+    for disturbance compliance assessment and 60-second or finer data must be mandated
+    or procured from alternative sources.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Project MATCH leveraged Solar Analytics, Tesla and Energy Queensland
+    (Luceo platform) datasets at 1s-60s resolution as alternatives to AMI data; development
+    of a minimum data specification for DER operational data was identified as ongoing
+    work.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id015
+  - 16
+  evidence_excerpt: Analysis requires 60s (or smaller time increment) data on DER
+    operation. This is because the 2015 and 2020 Standards require DER to remain disconnected
+    for 60s following an excursion and so disconnections are not necessarily 'visible'
+    in less granular datasets such as 5min AMI data.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 8/02/2024
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+  markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  source_page_pdf: 16
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40420
+  contributing_source_titles:
+  - UNSW - Project MATCH - Knowledge Sharing Report 2
+  contributing_sources:
+  - source_title: UNSW - Project MATCH - Knowledge Sharing Report 2
+    pdf_url: https://arena.gov.au/assets/2024/02/UNSW-Project-MATCH-Knowledge-Sharing-Report-2.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/unsw-project-match-knowledge-sharing-report-2/
+    markdown_filename: unsw_project_match_knowledge_sharing_report_2.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-48001
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: The DERDAT tool codebase grew organically with new features continually
+    added to an increasingly complicated structure where UI code was interlinked with
+    analysis logic, making it progressively difficult to add new features as the project
+    scope expanded.
+  lesson_learnt: Separate user interface code from analysis logic from the outset
+    of tool development — interlinked codebases become unmaintainable as scope grows
+    and slow down validation, testing, and collaborative development.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: internal governance/resourcing
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: execution & logistics
+  intervention_note: A refactor was undertaken to separate the UI code from the analysis
+    logic, enabling automated testing, peer-reviewed pull requests, and modular incremental
+    improvements.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id016
+  - 17
+  evidence_excerpt: Until late 2021, DERDAT had grown organically with new features
+    continually added on to an increasingly complicated codebase, where the features
+    of the graphical interface were interlinked with the functionality of the tool
+    in the coding. This meant that it was becoming increasingly difficult to continue
+    to add new features as the project grew in scope.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: 17
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48001
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  contributing_sources:
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-48002
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: DERDAT was initially developed exclusively for Solar Analytics data
+    format; when Tesla and EQL-Luceo datasets became available, significant adaptation
+    work was required because the tool could not ingest alternative data formats,
+    and the two datasets had previously required separate processing workflows.
+  lesson_learnt: Design analytical tools for data-source agnosticism from the start
+    — building a tool around a single provider's format creates substantial rework
+    and methodology inconsistencies when additional datasets are incorporated later.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: The pre-processing scripts were adapted to convert each new data
+    source into the existing database format, avoiding major changes to core processing
+    logic while enabling multi-source ingestion.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id017
+  - 17
+  - 18
+  evidence_excerpt: DERDAT was initially developed for analysis of data from Solar
+    Analytics. Under Project MATCH, data was also made available by Tesla, Energy
+    Queensland data hosted on the Luceo platform (referred to as 'EQL-Luceo'), and
+    SwitchDin which contained much of the same information. However, as the tool was
+    developed specifically for the Solar Analytics 5/60 second data format the tool
+    needed adaptations to integrate these data sources.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: 17
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48002
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  contributing_sources:
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-48003
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: When up to four team members worked simultaneously on the DERDAT
+    codebase without established software development processes, code conflicts and
+    integration difficulties arose that impeded progress.
+  lesson_learnt: Implement branching source control with compulsory pull requests
+    and automated testing before multi-person collaborative software development begins
+    — the absence of these practices creates conflicts and slows delivery when team
+    size grows.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: internal governance/resourcing
+  failure_mode: execution & logistics
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: A branching source control model with compulsory pull requests
+    and automated testing was adopted, enforcing peer review and preventing conflicts
+    between simultaneously developed branches.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id018
+  - 19
+  evidence_excerpt: The use of established software development processes in source
+    control has been invaluable to the project, as there have been instances of up
+    to four people working on different parts of the tool at a time. Using tools and
+    processes such as branching, pull requests and automated testing has made dealing
+    with the conflicts caused by this team approach cleaner and easier.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: 19
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48003
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  contributing_sources:
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-48004
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: Methods for regularising irregularly timestamped DER data produced
+    incorrect results until the project clarified the exact meaning of timestamps
+    and measurement protocols with each data provider, representing a significant
+    portion of DERDAT upgrade work.
+  lesson_learnt: When using timestamps as event reference points in disturbance analysis
+    algorithms, explicitly confirm whether timestamps represent time of measurement
+    or time of receipt — receipt-latency timestamps can shift the apparent pre-event
+    interval by several seconds, directly corrupting disconnection classification.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Clear communication protocols with each data provider were established
+    to confirm timestamp definitions and measurement methods before processing, ensuring
+    regularisation algorithms were correctly configured.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages:
+  - 19
+  - 60
+  evidence_excerpt: Clarifying the caveats with data sources has been a significant
+    part of the work conducted in upgrading DERDAT. Methods of regularisation (conversion
+    of irregularly timestamped data to regular timestamps) are dependent on how the
+    data is measured and what exactly timestamps mean, so clear communication with
+    the data provider is a necessity for ensuring that results are meaningful.
+  confidence_note: Canonical record merged from 2 source records across 1 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: 19
+  corroboration_count: 2
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48004
+  - ARENA-DLV-48027
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  contributing_sources:
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages:
+    - 19
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-48005
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: VPP participants each submitted FCAS response data in different formats,
+    requiring bespoke parsing code for each provider and creating ongoing development
+    overhead whenever a new VPP entered the market or changed its data format.
+  lesson_learnt: Establish a single standardised data template for VPP participants
+    before tools are built around participant data — accepting multiple proprietary
+    formats creates permanent maintenance burden and inhibits scalability as market
+    participation grows.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: AEMO's Systems Performance team adopted a single consistent VPP
+    data template from the VPP demonstration trial, enabling deprecation of participant-specific
+    parsing and removing the need for future development effort when new VPPs enter
+    the market.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id019
+  - 24
+  evidence_excerpt: Through the demonstration, it was identified that with the continuation
+    of this work that there would be value in developing a single consistent data
+    template that could be used by VPP participants. This offers considerable ongoing
+    advantages to the study of VPP response data during disturbances and reduces the
+    development efforts required to accept data from new VPPs entering operation or
+    a change in datasets provided between events.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: 24
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48005
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  contributing_sources:
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-48006
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: Site-to-site clock drift across VPP participants caused the reported
+    time of the frequency nadir during the 25 May 2021 Callide disturbance to vary
+    by 3–4 seconds between sites, corrupting VPP FCAS response aggregations because
+    no minimum clock accuracy requirement exists for VPP sites.
+  lesson_learnt: VPP operators and AEMO should require minimum clock accuracy standards
+    (or GPS synchronisation) for individual VPP sites providing FCAS — in the absence
+    of such requirements, clock drift can corrupt aggregated response profiles by
+    several seconds, undermining FCAS delivery assessment.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: A clock drift correction algorithm using local frequency observations
+    at each site was implemented in the VPP tool, aligning frequency nadir timestamps
+    across sites before aggregation.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id020
+  - 24
+  - 25
+  - 26
+  evidence_excerpt: Clock drift has been identified in multiple VPP aggregations;
+    this was evident during the Callide power system disturbance on the 25 May 2021...
+    the time of the frequency nadir varies by several seconds between different sites...
+    the raw VPP observations differ by 3-4 seconds as to the time this nadir occurred...
+    Broadly, there is currently no minimum technical requirement for clock accuracy
+    within the individual sites of a VPP.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: 24
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48006
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  contributing_sources:
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages: *id020
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-48007
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: VPP operators were not given explicit guidance on how to align mismatched
+    site-level timestamps before aggregating FCAS responses; analysis found at least
+    four and likely seven or more VPPs were using truncation or rounding, which produces
+    duplicate or missing observations and materially affects aggregate response profiles.
+  lesson_learnt: Provide explicit instructions to VPP operators on timestamp alignment
+    methodology for FCAS aggregation — truncation and rounding introduce systematic
+    errors, while linear interpolation produces significantly more accurate aggregate
+    profiles and should be the mandated standard.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: The VPP FCAS tool was developed to support linear interpolation
+    as the preferred timestamp alignment method, and numerical experiments confirmed
+    it produced significantly lower error than truncation or rounding.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id021
+  - 27
+  - 28
+  - 29
+  evidence_excerpt: To date, no explicit instruction for timestamp alignment has been
+    communicated to VPP operators. Exploratory analysis within the VPP tool confirms
+    that aggregate VPP responses are affected significantly by the choice of alignment
+    technique.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: 28
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48007
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  contributing_sources:
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages: *id021
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-48008
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: During validation of the Solar Analytics frequency trigger, a bottlenecking
+    issue was identified when frequency events triggered data collection across multiple
+    NEM regions simultaneously — the volume of records per second exceeded the throughput
+    limit of the Solar Analytics cloud infrastructure, causing incomplete data capture.
+  lesson_learnt: When designing distributed IoT data collection systems that must
+    respond to simultaneous multi-region events, validate back-end infrastructure
+    throughput under worst-case load conditions before deployment — capacity bottlenecks
+    during multi-region events can result in data gaps exactly when high-quality event
+    data is most critical.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: data & measurement
+  intervention_note: Solar Analytics restructured the service architecture to pass
+    data by device rather than by circuit (reducing records per second), improved
+    infrastructure responsiveness reducing processing response time from minutes to
+    seconds, and validated the fix via four mock events simulating multi-region triggers
+    across 15,000+ devices.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id022
+  - 39
+  - 40
+  - 41
+  evidence_excerpt: As identified in the frequency validation stage there were a number
+    of bottleneck issues with data capture from the various devices to Solar Analytics,
+    particularly when a trigger occurs across multiple regions simultaneously... It
+    was identified that there was a throttling issue when data was collected from
+    all devices in a state, due to the number of records per second exceeding the
+    throughput limit of the Solar Analytics cloud infrastructure.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: 40
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48008
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  contributing_sources:
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages: *id022
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-48009
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: The Wattwatchers Leadbeater firmware, which enables 5-second data
+    buffering and retrieval, was turned off by default on devices, limiting the reach
+    of the high-resolution data collection trigger until this default setting was
+    identified and changed.
+  lesson_learnt: When deploying firmware-dependent data collection capabilities across
+    a monitoring fleet, verify default firmware settings on all current and future
+    devices — capability turned off by default will not be available during events
+    unless explicitly enabled.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: execution & logistics
+  intervention_note: The Leadbeater firmware was enabled on all current and future
+    Wattwatchers devices as a corrective action identified through the trigger validation
+    process.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id023
+  - 41
+  evidence_excerpt: Ensure the Leadbeater firmware is enabled on all current and future
+    WW devices. Previously the Leadbeater firmware was turned off by default.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: 41
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48009
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  contributing_sources:
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages: *id023
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-48010
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: The original frequency trigger had a 20-minute re-trigger delay to
+    prevent duplicate data capture; because the data buffer is 10 minutes and burst
+    mode lasts only 7 minutes, this created a potential 3-minute gap during long or
+    sequential disturbances where event data could be missed entirely.
+  lesson_learnt: When configuring event-triggered data collection, ensure the re-trigger
+    delay is shorter than the buffer plus burst window — a delay longer than the recording
+    window creates gaps in coverage during prolonged or sequential grid disturbances.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: The short energy trigger delay was reduced from 20 minutes to
+    7 minutes to close the potential data gap.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id024
+  - 41
+  evidence_excerpt: There was a delay in the short energy trigger to stop it from
+    capturing the same data multiple times. That delay was set to 20 minutes. Because
+    the buffer duration is 10 minutes and burst mode only lasts for 7 minutes, this
+    means that there could be a 3-minute gap if there is a long-lasting grid disturbance
+    or indeed data capture may miss a disturbance event if the disturbance occurs
+    during this 3-minute period.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: 41
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48010
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  contributing_sources:
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages: *id024
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-48011
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: The original frequency trigger threshold was set at ±0.15 Hz but
+    comparison with AEMO's high-speed frequency monitoring revealed the Wattwatchers
+    devices produce noisier, lower-precision frequency measurements, causing false
+    negatives under the original threshold; the correct threshold was found through
+    trial and error to be +0.13/−0.14 Hz.
+  lesson_learnt: Calibrate event trigger thresholds using a direct comparison between
+    the monitoring device's measurements and a high-precision reference source — consumer-grade
+    monitoring hardware typically has lower precision than utility-grade instruments,
+    so thresholds derived from standards or reference systems may not translate directly.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: data & measurement
+  intervention_note: The frequency threshold was adjusted from ±0.15 Hz to +0.13/−0.14
+    Hz after comparative analysis of Solar Analytics and AEMO frequency data, successfully
+    reducing false negatives while retaining relevant event capture.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id025
+  - 41
+  evidence_excerpt: The frequency data collected by WW devices has a lower precision
+    and tends to be noisy compared to AEMO's high-speed frequency monitoring. The
+    analysis showed that the original thresholds selected +/- 0.15Hz, a number of
+    false negatives were detected. Through trial and error, it was identified that
+    by changing the frequency threshold to +0.13/-0.14Hz, it successfully prevented
+    most of the potential false negatives while sufficiently capturing the relevant
+    frequency events.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48011
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  contributing_sources:
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages: *id025
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-48012
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: Voltage triggers were initially configured to capture data only at
+    devices that individually detected a voltage event; analysis found this made fleet-wide
+    event assessment impractical because sites that did not see the disturbance were
+    excluded, yet their data was needed to contextualise the response of affected
+    sites.
+  lesson_learnt: Configure voltage event triggers to capture data from all devices
+    in a region when a threshold proportion of devices detect an event — understanding
+    the spatial distribution of a disturbance requires data from both affected and
+    unaffected sites, not just those that individually triggered.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: The trigger was updated so that when 5% or 20 devices (whichever
+    is higher) in a region detect the voltage threshold, data is captured across all
+    devices in that region.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id026
+  - 41
+  evidence_excerpt: Feedback during the process from AEMO identified that this data
+    capture was difficult to undertake analysis and make assessments of the fleet.
+    It was requested that when there is a significant event to capture the data from
+    all devices, as it is important to also understand what happened at sites that
+    did not see the voltage disturbance, as well as those that did.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: 41
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48012
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  contributing_sources:
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages: *id026
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-48013
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: Despite the South Australian Voltage Disturbance Ride-Through (VDRT)
+    requirement being introduced to reduce sympathetic DPV disconnections, inverters
+    compliant with the VDRT standard disconnected at rates equal to or higher than
+    2015-standard inverters during the 24 January 2021 (24% vs 20%) and 12 March 2021
+    (20% vs 19%) events in South Australia.
+  lesson_learnt: Performance standard testing regimes must account for the full range
+    of disturbance phenomena that occur during real events — the VDRT tested for undervoltage
+    sag ride-through but phase angle jumps (30–60°) present in both events appear
+    to have caused disconnections that the standard did not address, rendering the
+    VDRT ineffective under real-world conditions.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id027
+  - 44
+  - 45
+  evidence_excerpt: During both of the analysed events (24 January 2021 and 12 March
+    2021) an undervoltage dip occurred, however in both events, VDRT systems observed
+    in the datasets had no impact in reducing inverter disconnections in comparison
+    to 2015 systems... Through further assessment of these events, it was identified
+    that distortive phase angle jumps of between 30-60 degrees were observed during
+    both events.
+  confidence_note: 'The VDRT VDRT disconnection rate (24%) exceeded the 2015 standard
+    rate (20%) for the January event, which may reflect the small sample size (114
+    VDRT systems vs 4,091 2015 systems).; project_scale_band reconciled to ''demonstration''
+    from: demonstration (24/30), programmatic/portfolio-level (6/30)'
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: 44
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48013
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  contributing_sources:
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages: *id027
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-48015
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: Several large international inverter manufacturers could not track
+    their Australian fleet by country of installation and required manual serial number
+    lookups; when serial numbers from the DER Register were provided, only 52.8% were
+    valid (e.g. 4,871 valid matches from 9,227 supplied serial numbers for one manufacturer),
+    severely limiting the ability to assess or correct non-compliant inverters remotely.
+  lesson_learnt: Accurate serial number recording at installation is essential for
+    remote fleet management and compliance enforcement — the DER Register must enforce
+    valid serial number entry, and manufacturers need country-level fleet visibility;
+    without both, a large proportion of installed DER is invisible to compliance remediation
+    programs.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: execution & logistics
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id028
+  - 49
+  - 50
+  evidence_excerpt: 'The DER register includes serial numbers from inverters, however
+    when these values were supplied to manufacturers many of these were deemed invalid.
+    For example, a list of 9,227 serial numbers given to a single manufacturer resulted
+    in only 4,871 product matches: only 52.8% constituted valid serial numbers. This
+    means that installations completed with an invalid serial number entry is invisible,
+    and not available for view and/or correction by the manufacturer.'
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (25/30), DER/customer-side (5/30); project_scale_band reconciled to ''demonstration''
+    from: demonstration (24/30), programmatic/portfolio-level (6/30)'
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: 49
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48015
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  contributing_sources:
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages: *id028
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-48016
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: Some inverter manufacturers could only communicate with approximately
+    15% of their Australian fleet due to limited internet connectivity of installed
+    devices, and others could not estimate what proportion of their fleet was internet-connected;
+    this severely constrained the ability to remotely correct non-compliant grid code
+    settings across the fleet.
+  lesson_learnt: Internet connectivity should be treated as a prerequisite for remote
+    compliance management of DER — where manufacturers cannot reach the majority of
+    their fleet, remote correction of non-compliant settings is not viable at scale;
+    connectivity requirements should be embedded in connection standards.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id029
+  - 47
+  - 49
+  evidence_excerpt: Only a proportion of their fleets have internet connectivity (one
+    manufacturer suggesting only 15% of their fleet). Secondly, some manufacturers
+    require a list of serial numbers which relies on imprecise data sources... some
+    manufacturers even with this process indicated only 60% of their fleet is currently
+    able to be communicated to, with other manufacturers unable to even provide an
+    estimate.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (25/30), DER/customer-side (5/30); project_scale_band reconciled to ''demonstration''
+    from: demonstration (24/30), programmatic/portfolio-level (6/30)'
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: 47
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48016
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  contributing_sources:
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages: *id029
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-48017
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: 72% of DPV sites installed after the introduction of AS/NZS4777.2:2020
+    did not exhibit a significant Volt-VAr response under the local voltage conditions
+    experienced, indicating widespread non-compliance with the mandatory Volt-VAr
+    requirements of the 2020 Standard despite the standard being in force.
+  lesson_learnt: Volt-VAr response analysis of in-field data provides a cost-effective,
+    scalable method for DNSPs to independently detect non-compliant DPV installations
+    post-connection — this should be incorporated into ongoing compliance monitoring
+    frameworks as a first-pass screening tool.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: Project MATCH and DNSPs are collaborating to refine the Volt-VAr
+    assessment methodology and explore additional detection methods, including raising
+    local voltages to elicit measurable responses.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id030
+  - 52
+  evidence_excerpt: From 247 sites, that capture 18 unique inverter manufacturers,
+    it was identified that 72% of sites did not exhibit a significant Volt-VAr response
+    based on the local voltage conditions experienced.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (25/30), DER/customer-side (5/30); project_scale_band reconciled to ''demonstration''
+    from: demonstration (24/30), programmatic/portfolio-level (6/30)'
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: 52
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48017
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  contributing_sources:
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages: *id030
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-48018
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: A 'picomu' high-speed household-level data logger device intended
+    to provide distribution-network monitoring for disturbance permeation analysis
+    in partnership with ANU could not be manufactured due to the global chip and processor
+    shortage.
+  lesson_learnt: Research projects relying on purpose-built hardware should include
+    contingency plans for component supply disruption — the global chip shortage demonstrated
+    that hardware-dependent milestones are vulnerable to geopolitical supply chain
+    events that cannot be anticipated or mitigated at project level.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: procurement
+  proponent_type: research organisation/university
+  delay_category: procurement/supply chain
+  failure_mode: execution & logistics
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Work is ongoing to define next steps in the shared work with
+    ANU; alternative monitoring approaches using existing SAPN PQ monitors are being
+    pursued.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id031
+  - 55
+  evidence_excerpt: In partnership with ANU, additional monitoring was intended to
+    be installed across the SAPN network that would have provided high-speed monitoring
+    at a household level in the distribution network. The monitoring was underpinned
+    by the development of a 'picomu' high-speed data logger device, which unfortunately
+    could not be manufactured due to the global chip/processor shortage, preventing
+    manufacture of any further hardware.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: 55
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48018
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  contributing_sources:
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages: *id031
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-48020
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: A manufacturer identified that DPV sites with third-party monitoring
+    are less likely to be internet-connected to the manufacturer's own monitoring
+    system, meaning they typically do not receive firmware updates; this was confirmed
+    when inverters from OEM P in third-party monitored datasets did not show improved
+    behaviour after a remote ride-through firmware update that reached 95% of the
+    total fleet.
+  lesson_learnt: Third-party monitored DER datasets systematically under-represent
+    internet-connected inverters that have received manufacturer firmware updates,
+    making them non-representative of the broader fleet's current behaviour — this
+    bias must be explicitly acknowledged when interpreting compliance and disturbance
+    response analysis.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id032
+  - 59
+  evidence_excerpt: It was proposed that sites with third party monitoring are less
+    likely to be connected to the internet and thus not in communication with the
+    manufacturer's own monitoring system... OEM P disseminated a remote firmware update
+    to all internet-connected inverters that corrects for a measurement issue and
+    improves its disturbance ride-through capability. For OEM P, the third-party monitored
+    datasets, represent 5% of their total fleet... the inverters used in this assessment
+    were not being monitored directly by OEM P and therefore did not receive the update.
+    They therefore continued to display the pre-update ride-through behaviour and
+    are not representative of the remaining 95% of OEM P inverters that received the
+    update.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: 59
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48020
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  contributing_sources:
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages: *id032
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-48022
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: Error codes obtained from one inverter manufacturer during the 25
+    May 2021 event showed a clear spike at the time of the event but could not be
+    used to determine the specific trigger, type of response, or whether the event
+    was transmission- or locally-caused; the same generic codes (e.g. 'grid failure')
+    also appeared frequently throughout the day, making them unreliable as event validators.
+  lesson_learnt: Inverter error codes in their current form are insufficient for DER
+    disturbance analysis — codes need to be standardised across manufacturers, made
+    specific enough to identify the triggering parameter (voltage, frequency, RoCoF,
+    phase angle), and must be accompanied by time-series energy data to be analytically
+    useful.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id033
+  - 69
+  - 70
+  evidence_excerpt: the terminology 'grid failure' was provided as the error code
+    on a number of inverters, however this did not identify what the response was,
+    whether this response was due to a voltage or frequency trigger, or if this was
+    a local or transmission-level event. Further, these same error codes types appeared
+    to be present at various other times of the day and even during the week... suggesting
+    that this same error code can appear when there is not a major system event as
+    well.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48022
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  contributing_sources:
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages: *id033
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-48023
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: The reactive, event-driven nature of Project MATCH's workplan — adapting
+    to system events and emerging compliance data as they occurred — made scheduling
+    and progress planning within the project difficult to manage and led to competing
+    priorities between pre-planned and emerging activities.
+  lesson_learnt: Research projects operating in a reactive mode (responding to unscheduled
+    events) should establish a formal stocktake and prioritisation process at the
+    commencement of each new activity — without this, emerging activities can displace
+    planned work without explicit assessment of their value relative to project objectives.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: internal governance/resourcing
+  failure_mode: coordination & stakeholders
+  outcome_class: partial success
+  secondary_failure_mode: null
+  intervention_note: The project committed to undertaking a stocktake of activities
+    and priorities when establishing new work streams, to assess value, relevance,
+    and develop updated scheduling plans.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id034
+  - 73
+  evidence_excerpt: The project has been flexible in adapting to recent industry activities
+    to provide timely learnings, however this reactivity in tasks has made scheduling
+    and planning of progress within the project more difficult to manage. In future,
+    as part of the establishment of new activities... a stocktake of activities and
+    priorities will be undertaken.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: 73
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48023
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  contributing_sources:
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages: *id034
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-48025
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: Each DER dataset provided to the project arrived in a unique, bespoke
+    format requiring custom pre-processing steps and methodology adaptations before
+    it could be used for analysis; this created significant development overhead and
+    delayed the integration of new data sources.
+  lesson_learnt: Standardised data format requirements should be established as a
+    condition of data sharing agreements with DER stakeholders before datasets are
+    procured — without standardisation, each new data provider creates a unique integration
+    burden that scales poorly as the number of data sources grows.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: partial success
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Project MATCH developed and promoted a standardised data template
+    through the VPP tool development and committed to contributing to broader industry
+    data standardisation activities.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id035
+  - 73
+  evidence_excerpt: DER is complex and bespoke by manufacturer and matching datasets
+    is onerous. Many of the datasets provided are in their own unique formats making
+    it challenging to develop tools as pre-processing steps may need to be established,
+    or different methodologies developed.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: 73
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48025
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  contributing_sources:
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages: *id035
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-48026
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: Data storage for the project's large granular time-series datasets
+    (typically 5–10 GB per dataset covering tens of thousands of sites) was identified
+    as a significant financial barrier; staff downloaded raw data individually from
+    CloudStor and performed analysis independently rather than from a central database,
+    limiting efficiency and collaboration.
+  lesson_learnt: Research projects handling large-scale DER time-series datasets should
+    budget explicitly for centralised data warehousing infrastructure from project
+    inception — distributed ad hoc storage and analysis workflows are inefficient
+    at scale and create data management risks that compound as dataset volumes grow.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: internal governance/resourcing
+  failure_mode: data & measurement
+  outcome_class: partial success
+  secondary_failure_mode: execution & logistics
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id036
+  - 74
+  evidence_excerpt: Data storage has been identified as another major financial barrier
+    from the work undertaken to-date. The datasets obtained for this analysis are
+    often quite large (5-10 GBs) as they include granular time series data for tens
+    of thousands of sites... This highlights that improvements to data warehousing
+    and storage are important, however are costly and beyond the limits of project
+    resources.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: 74
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48026
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  contributing_sources:
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages: *id036
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-48028
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: The current upscaling method for DPV disconnection requires a minimum
+    sample size per manufacturer/standard category and assigns all sites that do not
+    fit defined categories to an 'other' group; when the 'other' category comprised
+    approximately 30% of the raw dataset for some events, the reliability of upscaled
+    estimates was materially compromised.
+  lesson_learnt: DPV disconnection upscaling methods that rely on fixed predictor
+    categories become unreliable when a large fraction of the sample falls in the
+    'other' category — regression-based approaches such as generalised linear models
+    that can handle unseen predictor combinations provide greater robustness and should
+    replace bucket-based methods.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: A generalised linear model (GLM) approach is being developed
+    to replace the bucket-based method, enabling estimates for unseen predictor combinations
+    and addressing sample biases more flexibly.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id037
+  - 62
+  - 63
+  evidence_excerpt: 'Categories must have a minimum number of sites: The current upscaling
+    method is only effective for well-defined categories and may have a large number
+    of sites in the ''other'' category. There are often cases where there are insufficient
+    samples for each of the categories to undertake meaningful upscaling. For example
+    in the 5 March 2022 event, the ''other'' category was approximately 30% of the
+    raw data set.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: 63
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48028
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  contributing_sources:
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages: *id037
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-48029
+  source_title: Project Match Knowledge Sharing Report 2021-2022
+  publish_date: 2022-09
+  project_name: Project MATCH
+  what_happened: Analysis of over-frequency events found that only approximately 50%
+    of post-2015 standard inverters demonstrated frequency-watt curtailment as required,
+    and of those that did, a further subset curtailed insufficiently to be compliant;
+    compliance rates also differed significantly between manufacturers.
+  lesson_learnt: In-field compliance with the frequency-watt response requirements
+    of AS/NZS4777.2:2015 is substantially lower than assumed — AEMO and regulators
+    should not assume that installation to a particular standard guarantees the associated
+    response behaviour, as manufacturer-specific implementation differences result
+    in compliance rates that can vary dramatically by OEM.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated integration
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id038
+  - 63
+  - 64
+  evidence_excerpt: Of the 8,100 post-2015 inverters analysed across all over-frequency
+    events, approximately only 50% demonstrated F-W curtailment. Of the curtailing
+    inverters, only a subset curtailed sufficiently to be considered compliant to
+    the 2015 standard... The proportion of inverters which demonstrated F-W curtailment
+    differed significantly by OEM.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (25/30), DER/customer-side (5/30); project_scale_band reconciled to ''demonstration''
+    from: demonstration (24/30), programmatic/portfolio-level (6/30)'
+  source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+  project_page_url: https://arena.gov.au/projects/project-match/
+  kb_category: Distributed energy resources, Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/11/2022
+  kb_year: '2021'
+  kb_associated_project: Project MATCH
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $981k
+  total_project_value: $2.19m
+  lead_organisation: University of New South Wales
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/01/2021
+  location: Kensington, New South Wales
+  project_partners: AEMO, Solar Analytics
+  pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+  markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  source_page_pdf: 63
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48029
+  contributing_source_titles:
+  - Project Match Knowledge Sharing Report 2021-2022
+  contributing_sources:
+  - source_title: Project Match Knowledge Sharing Report 2021-2022
+    pdf_url: https://arena.gov.au/assets/2022/12/project-match-knowledge-sharing-report-2021-2022.pdf
+    source_pages: *id038
+    source_url: https://arena.gov.au/knowledge-bank/project-match-knowledge-sharing-report-2021-2022/
+    markdown_filename: project_match_knowledge_sharing_report_2021_2022.md
+  arena_category:
+  - Distributed energy resources
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.88

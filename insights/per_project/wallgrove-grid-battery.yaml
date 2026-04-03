@@ -1,0 +1,1328 @@
+- record_id: ARENA-DLV-60701
+  source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  publish_date: 2022-12
+  project_name: Wallgrove Grid Battery
+  what_happened: Virtual Machine Mode (VMM) for synthetic inertia had not been enabled
+    during the first six months of commercial operations (December 2021 – June 2022),
+    pending final technical assessments with AEMO, meaning the project's primary innovation
+    objective was not yet demonstrable in the reporting period.
+  lesson_learnt: Plan for AEMO technical assessment timelines for novel grid services
+    (such as synthetic inertia via VMM) to extend well beyond commercial operations
+    commencement — regulatory and technical sign-off processes can delay delivery
+    of the project's core innovation objective by at least six months after go-live.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: Transgrid and AEMO continued final technical assessments; VMM
+    observations were deferred to subsequent operations reports.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id001
+  - 9
+  - 12
+  evidence_excerpt: 'As Virtual Machine Mode (VMM) has not been enabled at this point,
+    this report does not cover the following areas: Commentary and assessment of the
+    project''s ongoing performance with respect to the testing plan (for synthetic
+    inertia)... the WGB is currently undergoing final technical assessments in conjunction
+    with AEMO prior to enabling VMM.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 23/10/2023
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+  markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60701
+  contributing_source_titles:
+  - 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  contributing_sources:
+  - source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+    pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+    markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-60702
+  source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  publish_date: 2022-12
+  project_name: Wallgrove Grid Battery
+  what_happened: During the NEM market suspension of June 2022, the WGB was discharged
+    to a very low state of charge and the site controller automatically disabled AGC
+    mode as a protective measure. The over-constrained dispatch price settling above
+    $15,100/MWh prevented Iberdrola Australia from recharging the battery via normal
+    dispatch, and manual dispatch capability was also ineffective under these conditions.
+  lesson_learnt: BESS operational procedures should explicitly address market suspension
+    and administered pricing scenarios — control systems and bidding strategies that
+    assume normal price-discovery conditions can leave the battery unable to recharge
+    during exactly the high-value periods when storage capability is most needed.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: execution & logistics
+  intervention_note: The WGB eventually recharged itself through contingency FCAS
+    enablement (which operates independently of AGC), raising SoC to a level at which
+    the site controller automatically re-enabled AGC mode.
+  transferability: broad
+  delay_magnitude: <1 month
+  technology_domain: battery storage
+  source_pages:
+  - 23
+  - 27
+  evidence_excerpt: Energy constrained generators such as the WGB took drastic measures
+    to ensure they were not continuously dispatched and bid their availability out
+    of the market... the BESS was unable to charge to increase its storage levels
+    to the required amounts for market participation due to the over-constrained dispatch
+    price settling above the highest energy load bid that the BESS could provide ($15,100/MWh).
+  confidence_note: delay_category set to commissioning/integration as this reflects
+    the control-system integration failure mode; the event occurred during operations
+    but the root cause is a control logic design issue. Canonical record merged from
+    2 source records across 1 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 23/10/2023
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+  markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  source_page_pdf: 23
+  corroboration_count: 2
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60702
+  - ARENA-DLV-60712
+  contributing_source_titles:
+  - 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  contributing_sources:
+  - source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+    pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+    source_pages:
+    - 23
+    source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+    markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-60703
+  source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  publish_date: 2022-12
+  project_name: Wallgrove Grid Battery
+  what_happened: An arc flash risk was identified around the low-voltage circuit breaker
+    panels during the design of the WGB. The risk was initially managed by implementing
+    an exclusion zone while the WGB was energised, which constrained safe access to
+    parts of the site. Protection settings were changed in May 2022 to reduce arcing
+    fault clearance time, eliminating the need for the exclusion zone.
+  lesson_farnt: Arc flash risk at low-voltage circuit breaker panels should be assessed
+    and mitigated during design — not managed post-commissioning via exclusion zones.
+    Designing appropriate protection settings upfront avoids operational access constraints
+    and reduces safety risk from first energisation.
+  lesson_learnt: Arc flash risk at low-voltage circuit breaker panels should be assessed
+    and mitigated during design for all battery and grid-connected electrical installations
+    — relying on post-commissioning exclusion zones creates ongoing safety and operational
+    access constraints that require remediation works during operations.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Protection relay settings were changed in May 2022 to reduce
+    arcing fault clearance time, reducing the arc flash risk sufficiently that the
+    exclusion zone was removed.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id002
+  - 24
+  evidence_excerpt: During the design of the WGB an arc flash risk was identified
+    around the low-voltage circuit breaker panels... The risk was initially managed
+    by implementing an exclusion zone whilst the WGB was energised. In May 2022, protection
+    settings were changed to reduce the clearance time for arcing faults, which reduced
+    the arc flash risk sufficiently that the exclusion zone was no longer required.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 23/10/2023
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+  markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60703
+  contributing_source_titles:
+  - 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  contributing_sources:
+  - source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+    pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+    markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-60704
+  source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  publish_date: 2022-12
+  project_name: Wallgrove Grid Battery
+  what_happened: A software rounding error caused the WGB to report only 46MW of its
+    47MW nameplate charge capacity as available to bid into the regulation FCAS lower
+    market. This persisted from commissioning until a software update in May 2022
+    — approximately five months — resulting in systematic under-bidding of lower regulation
+    FCAS capacity (56.73% of intervals saw enablement at 46MW rather than the correct
+    47MW).
+  lesson_learnt: Battery management system software should be validated against nameplate
+    capacity parameters before commercial operations commence — rounding errors in
+    reported available capacity can cause systematic revenue leakage across FCAS markets
+    for extended periods without triggering an obvious alarm.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: execution & logistics
+  intervention_note: A software update was undertaken in May 2022 that corrected the
+    reported charge capacity to 47MW; subsequent lower regulation FCAS enablement
+    at the full 47MW level increased to 29.5% of intervals in June 2022.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id003
+  - 19
+  evidence_excerpt: The cause of this differential was a rounding issue resulting
+    in only 46MW of the 47MW in nameplate charge capacity being indicated as available
+    to bid into the markets. This led to frequent enablement of lower regulation FCAS
+    at 46MW prior to a software update undertaken in May 2022 (56.73 per cent of all
+    intervals prior to May 2022 saw lower regulation FCAS enablement at 46MW – consistent
+    with expectations for enablement levels in the NP Cap category).
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 23/10/2023
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+  markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  source_page_pdf: 19
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60704
+  contributing_source_titles:
+  - 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  contributing_sources:
+  - source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+    pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+    markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-60705
+  source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  publish_date: 2022-12
+  project_name: Wallgrove Grid Battery
+  what_happened: SCADA system changes were required after commercial operations commenced,
+    necessitating a planned outage of the battery from 16–20 May 2022. To minimise
+    customer impact, the SCADA works were bundled with protection relay setting changes
+    into a single continuous outage, which accounted for a significant portion of
+    the 2.8% planned outage unavailability in the reporting period.
+  lesson_learnt: SCADA design and configuration for grid-connected battery projects
+    should be finalised before commercial operations — post-commissioning SCADA changes
+    require planned outages that reduce availability and incur additional labour costs.
+    Where outages are unavoidable, bundling multiple works into a single outage window
+    minimises revenue and availability impact.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: SCADA changes were conducted concurrently with protection relay
+    changes under a single continuous outage from 16–20 May 2022 to minimise availability
+    impact.
+  transferability: moderate
+  delay_magnitude: <1 month
+  technology_domain: battery storage
+  source_pages: &id004
+  - 24
+  - 28
+  evidence_excerpt: Transgrid has initiated changes relating to the SCADA system since
+    commencing commercial operations. To perform the necessary works the battery had
+    to be taken out of service... Additional labour for SCADA changes for design and
+    implementation.
+  confidence_note: secondary_failure_mode of cost overrun inferred from 'Additional
+    labour for SCADA changes' listed under Unexpected Costs in Section 7.4.
+  source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 23/10/2023
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+  markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  source_page_pdf: 24
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60705
+  contributing_source_titles:
+  - 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  contributing_sources:
+  - source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+    pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+    markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: cost overrun
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-60706
+  source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  publish_date: 2022-12
+  project_name: Wallgrove Grid Battery
+  what_happened: Transgrid incurred a range of unexpected costs during the first six
+    months of operations, including additional labour for SCADA changes, additional
+    labour for protection change outages, increased insurance costs due to delayed
+    practical completion, unexpected costs from the complexity of remote maintenance
+    connection and cyber security integration, and additional PPE costs from higher-than-anticipated
+    site visits.
+  lesson_learnt: Budget contingency for grid-connected battery projects in early commercial
+    operation should explicitly provision for post-commissioning SCADA and protection
+    works, cyber security integration complexity, and higher-than-expected stakeholder
+    site visit management — these costs are consistently underestimated at first-of-kind
+    deployments.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id005
+  - 28
+  evidence_excerpt: 'Transgrid has incurred additional unexpected costs in the current
+    reporting period due to the following items: Additional labour for SCADA changes
+    for design and implementation; Additional labour for to facilitate the required
+    outages for protection changes; Increased insurances cost due to the delay of
+    issuing practical completion; Unexpected costs increase due to complexity of remote
+    maintenance connection and Transgrid cyber security integration requirements;
+    Additional personal protective equipment expenses due to the number of unexpected
+    site visits from internal and external stakeholders.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 23/10/2023
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+  markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60706
+  contributing_source_titles:
+  - 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  contributing_sources:
+  - source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+    pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+    markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+  failure_mode_v2: cost overrun
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-60707
+  source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  publish_date: 2022-12
+  project_name: Wallgrove Grid Battery
+  what_happened: A 132kV cable defect was identified and required rectification via
+    a planned outage on 19 January 2022, only weeks after commercial operations commenced
+    in December 2021. A separate unplanned outage on 11–12 January 2022 was triggered
+    by a network disturbance that isolated the WGB, requiring a technician to attend
+    site to reclose circuit breakers.
+  lesson_learnt: Early-operational defect rectification and network disturbance response
+    should be anticipated in availability and maintenance planning for new grid-scale
+    battery installations — cable and circuit breaker issues in the first weeks of
+    operation are a recurring pattern at first-of-kind deployments and remote-access
+    capabilities should be confirmed before go-live.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: execution & logistics
+  intervention_note: A technician attended site to reclose circuit breakers following
+    the network disturbance; the 132kV cable defect was rectified under a planned
+    outage on 19 January 2022.
+  transferability: moderate
+  delay_magnitude: <1 month
+  technology_domain: battery storage
+  source_pages: &id006
+  - 23
+  evidence_excerpt: 'Planned outage date: 19 January 2022 — Works occurred: 132kV
+    cable defect rectification. Unplanned outage date: 11–12 January 2022 — outage:
+    Network disturbance and isolation of the WGB. Technician attended site to reclose
+    circuit breakers.'
+  confidence_note: The report notes remote access was not available during the unplanned
+    outage period, which compounded the impact.
+  source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 23/10/2023
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+  markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60707
+  contributing_source_titles:
+  - 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  contributing_sources:
+  - source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+    pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+    markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-60708
+  source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  publish_date: 2022-12
+  project_name: Wallgrove Grid Battery
+  what_happened: On-site work hours in the first six months of operations (1,040 hours)
+    were higher than expected, driven by project defects being rectified and changes
+    being implemented on site after commercial operations commenced.
+  lesson_learnt: Post-commissioning defect rectification and design changes at first-of-kind
+    grid battery projects typically require substantially more on-site labour than
+    planned — project budgets and maintenance schedules should include explicit contingency
+    for this, particularly where remote access capability is limited.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: execution & logistics
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id007
+  - 29
+  evidence_excerpt: The hours observed are higher than expected due to project defects
+    being rectified and changes being implemented on site.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 23/10/2023
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+  markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  source_page_pdf: 29
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60708
+  contributing_source_titles:
+  - 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  contributing_sources:
+  - source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+    pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+    markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+  failure_mode_v2: cost overrun
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-60709
+  source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  publish_date: 2022-12
+  project_name: Wallgrove Grid Battery
+  what_happened: The WGB achieved 96.1% availability in its first six months of commercial
+    operations, with 2.8% planned outage unavailability and 1.1% unplanned outage
+    unavailability. The overall availability result was achieved despite multiple
+    post-commissioning defect and design-change outages.
+  lesson_learnt: A well-located grid battery with robust balance of plant can achieve
+    high availability (>96%) in its first six months of operation even while absorbing
+    post-commissioning defect rectification outages — this is a useful benchmark for
+    operational availability planning at similar utility-scale battery projects.
+  issue_severity: none
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id008
+  - 23
+  evidence_excerpt: Available 96.1% / Unavailable due to planned outages 2.8% (inclusive
+    of one-off 132kV defect rectification and SCADA and protection relay setting changes)
+    / Unavailable due to unplanned outages 1.1%
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 23/10/2023
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+  markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60709
+  contributing_source_titles:
+  - 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  contributing_sources:
+  - source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+    pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+    markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+- record_id: ARENA-DLV-60710
+  source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  publish_date: 2022-12
+  project_name: Wallgrove Grid Battery
+  what_happened: The operational round-trip efficiency (RTE) of the WGB measured at
+    the 132kV transmission network connection point (inclusive of transformer losses)
+    was 83.2% over the first six months of operation. This was lower than the RTE
+    test result obtained under controlled test conditions, with the difference attributed
+    to auxiliary and standby losses being amplified by ambient operating conditions
+    outside standard test ranges.
+  lesson_learnt: Operational RTE at the grid connection point for transmission-connected
+    batteries will be materially lower than vendor test results due to transformer
+    losses and auxiliary/standby losses under real operating conditions — project
+    financial models should use operational RTE estimates rather than test-condition
+    figures when forecasting energy market revenues.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id009
+  - 22
+  evidence_excerpt: RTE = (12,562 – 48 + 25) / 15,074 = 83.2 per cent... the difference
+    between the RTE test result vs operational RTE performance estimate reflects the
+    difference between test conditions vs operational conditions, rather than any
+    material deterioration in RTE performance since commissioning. For example, auxiliary
+    and standby losses have a much bigger impact on RTE when ambient conditions during
+    operation are outside the range of standard test conditions.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 23/10/2023
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+  markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60710
+  contributing_source_titles:
+  - 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  contributing_sources:
+  - source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+    pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+    markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-60711
+  source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  publish_date: 2022-12
+  project_name: Wallgrove Grid Battery
+  what_happened: 'Revenue earned by the WGB was highly seasonal and volatile: January–March
+    2022 revenues were low due to mild summer temperatures, high generator availability,
+    and low peak demand suppressing price volatility and arbitrage opportunities.
+    April–June 2022 revenues were materially higher, driven by sustained energy market
+    volatility culminating in the NEM suspension of 15 June 2022.'
+  lesson_learnt: Battery revenue projections should model seasonal and weather-driven
+    demand variability explicitly — mild summer conditions can suppress arbitrage
+    revenue significantly below long-run average expectations, while sustained market
+    stress events can produce outsized revenue in a single quarter. Single-year revenue
+    forecasts based on average conditions will misrepresent the range of outcomes.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: commercial & market
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id010
+  - 26
+  evidence_excerpt: The revenue results achieved in January to March 2022 are similar
+    to market conditions previously seen during summer quarters when milder temperature
+    conditions were experienced. This led to reduced peak load demands in the system,
+    as well as high generator availability during these peak periods. Lower demand
+    and increased generator availability both suppress price volatility in the energy
+    markets, reducing arbitrage opportunities for the battery.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 23/10/2023
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+  markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  source_page_pdf: 26
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60711
+  contributing_source_titles:
+  - 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  contributing_sources:
+  - source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+    pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+    markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-60713
+  source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  publish_date: 2022-12
+  project_name: Wallgrove Grid Battery
+  what_happened: The WGB's FCAS revenue distribution during the reporting period differed
+    from historical experience at Iberdrola Australia's Lake Bonney BESS, with a higher
+    proportion of revenue from energy markets (39%) compared to the Lake Bonney historical
+    split of approximately 25% energy / 45% regulation FCAS / 30% contingency FCAS.
+    This divergence was primarily attributable to the extreme and sustained energy
+    market volatility of the reporting period rather than structural differences between
+    the assets.
+  lesson_learnt: Revenue stack projections for new grid batteries based on historical
+    FCAS/energy splits from comparable operating assets should be treated as indicative
+    only — periods of sustained energy market volatility can materially shift the
+    revenue mix toward energy arbitrage. Financial models should stress-test revenue
+    assumptions across a range of market conditions.
+  issue_severity: none
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id011
+  - 26
+  evidence_excerpt: For comparison, typical revenue distribution for Iberdrola Australia's
+    Lake Bonney BESS during its two years of operation were about 25 per cent of revenue
+    from the energy market, 45 per cent from the regulation FCAS market, and 30 per
+    cent from the contingency FCAS market. The proportion of revenues earned by the
+    WGB in the energy market for the reporting period is therefore higher than historical
+    expectations. However, it is indicative of the extreme, sustained volatility seen
+    in the energy market over that time.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 23/10/2023
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+  markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60713
+  contributing_source_titles:
+  - 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  contributing_sources:
+  - source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+    pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+    markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+- record_id: ARENA-DLV-60714
+  source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  publish_date: 2022-12
+  project_name: Wallgrove Grid Battery
+  what_happened: The WGB's strong point of connection adjacent to the NSW regional
+    reference node resulted in negligible marginal loss factor (MLF) impacts on revenue
+    (FY2022 MLFs of 1.0011 for generation and 1.0010 for load) and no material curtailment
+    risk during the reporting period.
+  lesson_learnt: Siting a grid battery at or near the regional reference node minimises
+    MLF revenue erosion and curtailment risk — this should be a key siting criterion
+    where network planning permits, as MLF and curtailment impacts can be material
+    for batteries at weaker connection points.
+  issue_severity: none
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id012
+  - 27
+  evidence_excerpt: Given that the WGB is adjacent to the regional reference node
+    of the NSW region, long-term stability of the generator and load MLFs were expected
+    to have negligible impact on the revenues generated by the battery in the energy
+    market... the strong point of connection has limited any curtailment risks for
+    the operations of the battery to date.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 23/10/2023
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+  markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  source_page_pdf: 27
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60714
+  contributing_source_titles:
+  - 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  contributing_sources:
+  - source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+    pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+    markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+- record_id: ARENA-DLV-60715
+  source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  publish_date: 2022-12
+  project_name: Wallgrove Grid Battery
+  what_happened: The hybrid commercial model combining regulated network funding (for
+    inertia and fast frequency response services) with unregulated commercial dispatch
+    (FCAS and energy markets) enabled the WGB to maximise battery utilisation, with
+    less than 5% of storage capacity reserved for network services. The model allowed
+    Transgrid to explore a credible regulatory pathway for large-scale battery storage
+    in its AER revenue submission.
+  lesson_learnt: A hybrid regulated/commercial revenue model — where network service
+    obligations consume a small share of battery capacity and the remainder is commercially
+    dispatched — is a viable structure for TNSPs to justify large-scale battery investment
+    through regulatory processes while maintaining high market utilisation. This model
+    can be replicated by other TNSPs facing similar inertia gaps.
+  issue_severity: none
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id013
+  - 12
+  evidence_excerpt: The model combines funding to maximise battery utilisation for
+    network and commercial purposes... Less than 5 per cent of energy storage capacity
+    is reserved for the provision of network services... The project enables the TNSP,
+    Transgrid, to explore this approach as a credible option to address the forecast
+    inertia shortfall in NSW/ACT.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 23/10/2023
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+  markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60715
+  contributing_source_titles:
+  - 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  contributing_sources:
+  - source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+    pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+    markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+- record_id: ARENA-DLV-60716
+  source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  publish_date: 2022-12
+  project_name: Wallgrove Grid Battery
+  what_happened: Negative price intervals in the NSW region of the NEM were increasing
+    in frequency during the reporting period (236 intervals, 0.43% of all intervals)
+    but remained too shallow to represent a material charging revenue opportunity
+    for the WGB, with only 8 intervals settling below -$50/MWh.
+  lesson_learnt: Negative price charging revenue should not be a significant component
+    of near-term battery revenue models in NSW — while frequency of negative price
+    events is increasing, depth is insufficient to drive material revenue from paid
+    charging. Revenue models should revisit this assumption as renewable penetration
+    increases and negative price depth grows.
+  issue_severity: none
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id014
+  - 16
+  evidence_excerpt: Negative price intervals are starting to become more regular in
+    the energy market for the NSW region of the NEM, but these intervals are yet to
+    represent a notable revenue opportunity for a battery to be paid to charge. Of
+    the 236 negative intervals observed in the reporting period (0.43 per cent of
+    all intervals), only eight of these intervals settled at a price below -$50/MWh.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 23/10/2023
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+  markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  source_page_pdf: 16
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60716
+  contributing_source_titles:
+  - 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  contributing_sources:
+  - source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+    pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+    markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-60717
+  source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  publish_date: 2022-12
+  project_name: Wallgrove Grid Battery
+  what_happened: The co-optimisation constraint between energy, regulation FCAS, and
+    contingency FCAS markets meant that providing maximum contingency FCAS (26MW)
+    reserved that capacity and limited simultaneous raise regulation FCAS to 24MW
+    and lower regulation FCAS to 21MW. This structural constraint reduced the WGB's
+    ability to maximise revenue across all services simultaneously.
+  lesson_learnt: Battery dispatch optimisation strategies must fully account for co-optimisation
+    constraints across energy, regulation FCAS, and contingency FCAS — capacity reserved
+    for one service cannot be used for others, and the revenue trade-offs between
+    services are dynamic. Dispatch algorithms and operator training should explicitly
+    model these interactions to maximise total revenue stack.
+  issue_severity: none
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id015
+  - 18
+  evidence_excerpt: 'The WGB can provide three different services: energy, regulation
+    FCAS, and contingency FCAS. These services are co-optimised, which means that
+    they can be provided simultaneously, but they have to share the WGB''s nameplate
+    capacity... whenever the WGB is fully enabled for contingency raise, 26MW of this
+    nameplate discharge capacity must be reserved as headroom.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 23/10/2023
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+  markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  source_page_pdf: 18
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60717
+  contributing_source_titles:
+  - 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  contributing_sources:
+  - source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+    pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+    markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+- record_id: ARENA-DLV-60718
+  source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  publish_date: 2022-12
+  project_name: Wallgrove Grid Battery
+  what_happened: Operational characteristics of the WGB in regulation FCAS and contingency
+    FCAS markets closely aligned with Iberdrola Australia's prior experience operating
+    the Lake Bonney BESS in South Australia, including the pattern of lower regulation
+    FCAS being enabled more frequently than raise, and the distribution of contingency
+    FCAS enablement levels.
+  lesson_learnt: FCAS dispatch behaviour observed at an established comparable battery
+    (Lake Bonney BESS) provides a reliable operational benchmark for a new battery
+    operated by the same market participant — commissioning operational assumptions
+    can be grounded in prior asset experience where the operator and technology type
+    are consistent, reducing forecast risk.
+  issue_severity: none
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id016
+  - 19
+  - 20
+  evidence_excerpt: 'The findings align with Iberdrola Australia''s expectation from
+    the enablement distribution seen with Lake Bonney BESS (owned and operated by
+    Iberdrola Australia). Similar characteristics include: Lower regulation FCAS is
+    enabled far more frequently than the raise service...'
+  confidence_note: transferability set to narrow as the finding applies specifically
+    to multi-service BESS operated by the same market participant with comparable
+    bidding strategies.
+  source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 23/10/2023
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+  markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60718
+  contributing_source_titles:
+  - 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  contributing_sources:
+  - source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+    pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+    markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+- record_id: ARENA-DLV-60719
+  source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  publish_date: 2022-12
+  project_name: Wallgrove Grid Battery
+  what_happened: Practical completion of the WGB was delayed beyond the expected date,
+    resulting in an increased insurance cost during the operational period as the
+    project remained in a pre-practical-completion insurance category for longer than
+    planned.
+  lesson_learnt: Delays to practical completion certification for grid-scale battery
+    projects carry a direct cost in elevated insurance premiums — project teams should
+    factor this into delay cost estimates and prioritise achieving practical completion
+    milestones to transition to lower-cost operational insurance.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id017
+  - 28
+  evidence_excerpt: Increased insurances cost due to the delay of issuing practical
+    completion.
+  confidence_note: lifecycle_phase assigned to approvals/contracting as the insurance
+    cost arises from the contractual practical completion milestone; the underlying
+    delay is in commissioning/integration.
+  source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 23/10/2023
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+  markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60719
+  contributing_source_titles:
+  - 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+  contributing_sources:
+  - source_title: 'Transgrid ''Wallgrove Grid Battery'' Operations Report #1'
+    pdf_url: https://arena.gov.au/assets/2023/10/Transgrid-–-Wallgrid-grid-battery-–-Operations-report-1.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/transgrid-wallgrove-grid-battery-operations-report-1/
+    markdown_filename: transgrid_wallgrove_grid_battery_operations_report_1.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+  failure_mode_v2: cost overrun
+  failure_mode_confidence: 0.78

@@ -1,0 +1,692 @@
+- record_id: ARENA-DLV-68326
+  source_title: DEIP Market Integration Trials Summary Report 3.0
+  publish_date: '2026-01-27'
+  project_name: DEIP Market Integration Trials (cross-trial finding)
+  what_happened: Across all four market integration trials, co-optimisation of energy
+    market bids and dynamic operating envelopes outside the trader was explored but
+    found to be infeasible — it would require traders to bid on a per-household scale,
+    which they do not do; instead traders manage bids at the portfolio level.
+  lesson_learnt: Policy and trial designs that assume per-household bid granularity
+    for co-optimisation of market and network dispatch are not feasible with current
+    trader operations — near-term DER integration programs should delegate co-optimisation
+    complexity to traders at the portfolio level and design incentives accordingly.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: All trials converged on placing co-optimisation responsibility
+    with traders at portfolio level, with DSOs and market operators providing enabling
+    constraints and signals.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id001
+  - 12
+  evidence_excerpt: Both Project EDGE and Converge explored co-optimising energy market
+    bids and dynamic operating envelopes. This was found to be infeasible as it would
+    require traders to bid on a per-household scale, which they currently don't do.
+  confidence_note: 'project_scale_band reconciled to ''demonstration'' from: demonstration
+    (21/40), pilot (10/40), programmatic/portfolio-level (9/40); proponent_type reconciled
+    to ''network business'' from: network business (20/40), government/public-sector
+    body (11/40), consortium/multi-party venture (9/40)'
+  source_url: https://arena.gov.au/knowledge-bank/deip-market-integration-trials-summary-report-3-0/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/02/2026
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/02/DEIP-Market-Integration-Trials-Summary30.pdf
+  markdown_filename: deip_market_integration_trials_summary_report_30.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-68326
+  contributing_source_titles:
+  - DEIP Market Integration Trials Summary Report 3.0
+  contributing_sources:
+  - source_title: DEIP Market Integration Trials Summary Report 3.0
+    pdf_url: https://arena.gov.au/assets/2026/02/DEIP-Market-Integration-Trials-Summary30.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/deip-market-integration-trials-summary-report-3-0/
+    markdown_filename: deip_market_integration_trials_summary_report_30.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-68327
+  source_title: DEIP Market Integration Trials Summary Report 3.0
+  publish_date: '2026-01-27'
+  project_name: DEIP Market Integration Trials (cross-trial finding)
+  what_happened: All market integration trials found that complex or highly sophisticated
+    DOE allocation methodologies, while theoretically more efficient, showed material
+    benefits only at higher levels of DER uptake; simpler DOE methodologies were assessed
+    as effective at current and near-term DER penetration levels.
+  lesson_learnt: Networks should start DOE implementations with simple allocation
+    methodologies to reduce cost and accelerate adoption — sophisticated power-flow-based
+    DOE calculations are unnecessary at current DER penetration levels and add implementation
+    complexity that slows adoption without proportionate benefit.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id002
+  - 12
+  - 25
+  evidence_excerpt: Some implementations that were tested or modelled in the trials,
+    such as sophisticated DOE allocation methodologies using complex power flow calculations
+    to maximise local solar generation, showed material benefits only at higher levels
+    of DER uptake... Project EDGE noted 'DOEs should start simply and progress in
+    sophistication over time aligned to network needs', which was a common sentiment
+    across trials.
+  confidence_note: 'project_scale_band reconciled to ''demonstration'' from: demonstration
+    (21/40), pilot (10/40), programmatic/portfolio-level (9/40); proponent_type reconciled
+    to ''network business'' from: network business (20/40), government/public-sector
+    body (11/40), consortium/multi-party venture (9/40)'
+  source_url: https://arena.gov.au/knowledge-bank/deip-market-integration-trials-summary-report-3-0/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/02/2026
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/02/DEIP-Market-Integration-Trials-Summary30.pdf
+  markdown_filename: deip_market_integration_trials_summary_report_30.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-68327
+  contributing_source_titles:
+  - DEIP Market Integration Trials Summary Report 3.0
+  contributing_sources:
+  - source_title: DEIP Market Integration Trials Summary Report 3.0
+    pdf_url: https://arena.gov.au/assets/2026/02/DEIP-Market-Integration-Trials-Summary30.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/deip-market-integration-trials-summary-report-3-0/
+    markdown_filename: deip_market_integration_trials_summary_report_30.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+- record_id: ARENA-DLV-68328
+  source_title: DEIP Market Integration Trials Summary Report 3.0
+  publish_date: '2026-01-27'
+  project_name: DEIP Market Integration Trials (cross-trial finding)
+  what_happened: All trials found that traders struggled with consistent operational
+    compliance when technical and operational requirements (such as DOE conformance
+    standards and market dispatch rules) lacked clear, consistent guidance and enforcement
+    mechanisms across jurisdictions.
+  lesson_learnt: Regulatory and network bodies must provide clear, consistent compliance
+    frameworks and enforcement mechanisms for DOE conformance and market dispatch
+    obligations across jurisdictions — ambiguous or unharmonised requirements directly
+    reduce trader operational performance regardless of technical capability.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Trials recommended aligning requirements across jurisdictions,
+    establishing clear compliance monitoring roles for DSOs, and providing standardised
+    feedback mechanisms to improve trader performance.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id003
+  - 23
+  evidence_excerpt: Traders struggled when operational and technical requirements
+    (e.g. DOE conformance and market dispatch instructions) did not have clear, consistent
+    guidance, rules, or enforcement mechanisms. Aligning these requirements across
+    jurisdictions and providing clearer compliance frameworks will help traders improve
+    their operational performance.
+  confidence_note: 'project_scale_band reconciled to ''demonstration'' from: demonstration
+    (21/40), pilot (10/40), programmatic/portfolio-level (9/40); proponent_type reconciled
+    to ''network business'' from: network business (20/40), government/public-sector
+    body (11/40), consortium/multi-party venture (9/40)'
+  source_url: https://arena.gov.au/knowledge-bank/deip-market-integration-trials-summary-report-3-0/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/02/2026
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/02/DEIP-Market-Integration-Trials-Summary30.pdf
+  markdown_filename: deip_market_integration_trials_summary_report_30.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-68328
+  contributing_source_titles:
+  - DEIP Market Integration Trials Summary Report 3.0
+  contributing_sources:
+  - source_title: DEIP Market Integration Trials Summary Report 3.0
+    pdf_url: https://arena.gov.au/assets/2026/02/DEIP-Market-Integration-Trials-Summary30.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/deip-market-integration-trials-summary-report-3-0/
+    markdown_filename: deip_market_integration_trials_summary_report_30.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-68329
+  source_title: DEIP Market Integration Trials Summary Report 3.0
+  publish_date: '2026-01-27'
+  project_name: DEIP Market Integration Trials (cross-trial finding)
+  what_happened: Across all trials, current network regulations were found not to
+    provide appropriate incentives for DSOs to prefer DER over traditional network
+    augmentation, even where DER was demonstrably the more cost-effective solution;
+    existing AER performance metrics were shown to penalise networks that successfully
+    flatten peak demand using DER.
+  lesson_learnt: Regulations governing network performance measurement and investment
+    must be reformed before DSOs will voluntarily prefer DER network services over
+    traditional augmentation — existing AER metrics that assess utilisation against
+    peak demand can perversely penalise effective DER integration and must be updated
+    to reflect DSO objectives.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: policy/market influence only
+  secondary_failure_mode: null
+  intervention_note: Trials recommended regulatory reform including changes to how
+    network performance is measured and how networks can procure DER services in low-cost
+    and standardised ways; these findings have been incorporated into the National
+    CER Roadmap.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id004
+  - 28
+  evidence_excerpt: Project Converge calls for policymakers to develop/change regulation
+    to incentivise DSOs to use DERs instead of network augment solutions when DERs
+    are the most cost-effective solutions. The current regulation does not provide
+    the right incentives for DSOs prioritising the use of DERs or even for traders
+    developing business models to provide these network support services. – Project
+    Converge Final Technical KS Report
+  confidence_note: 'project_scale_band reconciled to ''demonstration'' from: demonstration
+    (21/40), pilot (10/40), programmatic/portfolio-level (9/40); proponent_type reconciled
+    to ''network business'' from: network business (20/40), government/public-sector
+    body (11/40), consortium/multi-party venture (9/40)'
+  source_url: https://arena.gov.au/knowledge-bank/deip-market-integration-trials-summary-report-3-0/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/02/2026
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/02/DEIP-Market-Integration-Trials-Summary30.pdf
+  markdown_filename: deip_market_integration_trials_summary_report_30.md
+  source_page_pdf: 28
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-68329
+  contributing_source_titles:
+  - DEIP Market Integration Trials Summary Report 3.0
+  contributing_sources:
+  - source_title: DEIP Market Integration Trials Summary Report 3.0
+    pdf_url: https://arena.gov.au/assets/2026/02/DEIP-Market-Integration-Trials-Summary30.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/deip-market-integration-trials-summary-report-3-0/
+    markdown_filename: deip_market_integration_trials_summary_report_30.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-68331
+  source_title: DEIP Market Integration Trials Summary Report 3.0
+  publish_date: '2026-01-27'
+  project_name: DEIP Market Integration Trials (cross-trial finding)
+  what_happened: All trials identified that heterogeneous, point-to-point data integration
+    between traders, DSOs, and market operators was costly and complex; a consistent
+    finding was that a centralised data hub with standardised, authenticated data
+    sharing would significantly reduce integration costs and improve data accessibility
+    across the ecosystem.
+  lesson_learnt: DER market integration programs should design for a centralised data
+    hub from the outset rather than building point-to-point integrations that are
+    expensive to maintain and scale — governance arrangements for such hubs must be
+    agreed before implementation to avoid delays in progress.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: policy/market influence only
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: AEMO and stakeholders are progressing a CER Data Exchange Co-Design
+    with AEMO as owner/operator, targeting implementation of first use cases by May
+    2027; Western Australia is pursuing equivalent capability through Project Jupiter.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id005
+  - 35
+  evidence_excerpt: A common finding of the trials and pilot is the cost efficiencies
+    of implementing a Data Hub. This would be a single source of information used
+    by traders, DSOs, and the Market Operator to access or log both operational data
+    and standing data about DER... Project Symphony recommended to 'Develop the business
+    case for a DER Data Hub to facilitate effective and efficient DER data exchange
+    between the DMO, DSO and Aggregators.'
+  confidence_note: 'project_scale_band reconciled to ''demonstration'' from: demonstration
+    (21/40), pilot (10/40), programmatic/portfolio-level (9/40); proponent_type reconciled
+    to ''network business'' from: network business (20/40), government/public-sector
+    body (11/40), consortium/multi-party venture (9/40)'
+  source_url: https://arena.gov.au/knowledge-bank/deip-market-integration-trials-summary-report-3-0/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/02/2026
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/02/DEIP-Market-Integration-Trials-Summary30.pdf
+  markdown_filename: deip_market_integration_trials_summary_report_30.md
+  source_page_pdf: 35
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-68331
+  contributing_source_titles:
+  - DEIP Market Integration Trials Summary Report 3.0
+  contributing_sources:
+  - source_title: DEIP Market Integration Trials Summary Report 3.0
+    pdf_url: https://arena.gov.au/assets/2026/02/DEIP-Market-Integration-Trials-Summary30.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/deip-market-integration-trials-summary-report-3-0/
+    markdown_filename: deip_market_integration_trials_summary_report_30.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-68332
+  source_title: DEIP Market Integration Trials Summary Report 3.0
+  publish_date: '2026-01-27'
+  project_name: DEIP Market Integration Trials (cross-trial finding)
+  what_happened: Consumer research across Project EDGE, Project Symphony, and Project
+    Converge consistently found that financial benefit was the primary driver of VPP
+    participation decisions, but existing VPP products often could not offer sufficiently
+    compelling incentives because trader costs were too high relative to available
+    revenue from single market streams.
+  lesson_learnt: Increasing VPP consumer uptake requires both enabling value stacking
+    across multiple revenue streams and reducing trader integration costs through
+    standardisation — these are complementary levers that together determine the financial
+    incentive a trader can credibly offer consumers.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Trials recommended designing markets to allow multi-value-stream
+    access with low implementation costs, via streamlined, standardised, and interoperable
+    systems.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id006
+  - 17
+  - 22
+  evidence_excerpt: While customer decisions to join a VPP are multi-faceted and cannot
+    be attributed to a single factor, a key driver is financial benefit. As such,
+    [traders] that provide offers with easy-to-understand financial benefits, alongside
+    other tangible or compelling benefits (e.g. environmental) should have stronger
+    success in acquiring customers to participate. – Project EDGE Final Report
+  confidence_note: 'project_scale_band reconciled to ''demonstration'' from: demonstration
+    (21/40), pilot (10/40), programmatic/portfolio-level (9/40); proponent_type reconciled
+    to ''network business'' from: network business (20/40), government/public-sector
+    body (11/40), consortium/multi-party venture (9/40)'
+  source_url: https://arena.gov.au/knowledge-bank/deip-market-integration-trials-summary-report-3-0/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/02/2026
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/02/DEIP-Market-Integration-Trials-Summary30.pdf
+  markdown_filename: deip_market_integration_trials_summary_report_30.md
+  source_page_pdf: 17
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-68332
+  contributing_source_titles:
+  - DEIP Market Integration Trials Summary Report 3.0
+  contributing_sources:
+  - source_title: DEIP Market Integration Trials Summary Report 3.0
+    pdf_url: https://arena.gov.au/assets/2026/02/DEIP-Market-Integration-Trials-Summary30.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/deip-market-integration-trials-summary-report-3-0/
+    markdown_filename: deip_market_integration_trials_summary_report_30.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-68333
+  source_title: DEIP Market Integration Trials Summary Report 3.0
+  publish_date: '2026-01-27'
+  project_name: DEIP Market Integration Trials (cross-trial finding)
+  what_happened: All market integration trials found that the absence of consistent
+    DOE implementation standards across distribution networks required traders to
+    develop bespoke technical solutions for each network, increasing costs and slowing
+    scalable DER product deployment.
+  lesson_learnt: Harmonising DOE operational requirements, data sharing standards,
+    and technical specifications across distribution networks is essential for traders
+    to scale VPP solutions cost-effectively — inconsistent implementations force duplicated
+    development effort and inhibit competition across network boundaries.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: policy/market influence only
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Trials recommended accelerating rollout of simple, consistent
+    DOE implementations between networks; this finding has influenced the National
+    CER Roadmap and WA DER Roadmap.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id007
+  - 4
+  - 37
+  evidence_excerpt: Harmonisation between DSO implementations. Traders need consistent
+    approaches to DOE implementation, data sharing requirements, and operational rules
+    across networks. A balance must be struck between standardisation between networks
+    and flexibility for networks to trial and develop solutions to meet their needs.
+  confidence_note: 'project_scale_band reconciled to ''demonstration'' from: demonstration
+    (21/40), pilot (10/40), programmatic/portfolio-level (9/40); proponent_type reconciled
+    to ''network business'' from: network business (20/40), government/public-sector
+    body (11/40), consortium/multi-party venture (9/40)'
+  source_url: https://arena.gov.au/knowledge-bank/deip-market-integration-trials-summary-report-3-0/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/02/2026
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/02/DEIP-Market-Integration-Trials-Summary30.pdf
+  markdown_filename: deip_market_integration_trials_summary_report_30.md
+  source_page_pdf: 5
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-68333
+  contributing_source_titles:
+  - DEIP Market Integration Trials Summary Report 3.0
+  contributing_sources:
+  - source_title: DEIP Market Integration Trials Summary Report 3.0
+    pdf_url: https://arena.gov.au/assets/2026/02/DEIP-Market-Integration-Trials-Summary30.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/deip-market-integration-trials-summary-report-3-0/
+    markdown_filename: deip_market_integration_trials_summary_report_30.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-68338
+  source_title: DEIP Market Integration Trials Summary Report 3.0
+  publish_date: '2026-01-27'
+  project_name: DEIP Market Integration Trials (cross-trial finding)
+  what_happened: All trials identified that the current manual and costly VPP registration
+    and update processes with AEMO reflect requirements designed for large-scale generation
+    with infrequent registration events, making them unsuitable and disproportionately
+    burdensome for the frequent updates required by aggregators of residential DER.
+  lesson_learnt: Market operator registration and update processes must be redesigned
+    specifically for DER aggregations — applying large-asset registration frameworks
+    to VPPs creates unjustifiable administrative burdens and costs that reduce the
+    commercial viability of DER participation.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: network business
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: policy/market influence only
+  secondary_failure_mode: null
+  intervention_note: The 'Integrating price-responsive resources into the NEM' rule
+    change provides a first step; the SCADA lite initiative aims to allow DER and
+    traders to provide real-time visibility to AEMO in a simpler manner than traditional
+    SCADA.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id008
+  - 31
+  evidence_excerpt: Registration – Streamlined and simple processes for traders to
+    register and update VPPs. Current processes are often manual and costly, reflecting
+    the slow and infrequent nature of registration requirements for large-scale generation.
+  confidence_note: 'project_scale_band reconciled to ''demonstration'' from: demonstration
+    (21/40), pilot (10/40), programmatic/portfolio-level (9/40); proponent_type reconciled
+    to ''network business'' from: network business (20/40), government/public-sector
+    body (11/40), consortium/multi-party venture (9/40)'
+  source_url: https://arena.gov.au/knowledge-bank/deip-market-integration-trials-summary-report-3-0/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/02/2026
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/02/DEIP-Market-Integration-Trials-Summary30.pdf
+  markdown_filename: deip_market_integration_trials_summary_report_30.md
+  source_page_pdf: 31
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-68338
+  contributing_source_titles:
+  - DEIP Market Integration Trials Summary Report 3.0
+  contributing_sources:
+  - source_title: DEIP Market Integration Trials Summary Report 3.0
+    pdf_url: https://arena.gov.au/assets/2026/02/DEIP-Market-Integration-Trials-Summary30.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/deip-market-integration-trials-summary-report-3-0/
+    markdown_filename: deip_market_integration_trials_summary_report_30.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-68340
+  source_title: DEIP Market Integration Trials Summary Report 3.0
+  publish_date: '2026-01-27'
+  project_name: DEIP Market Integration Trials (cross-trial finding)
+  what_happened: All market integration trials found that governance arrangements
+    for shared services such as data exchanges and common standards had not been established
+    before trials commenced, creating uncertainty that slowed progress on implementing
+    shared infrastructure and standards.
+  lesson_learnt: Governance bodies and processes for ongoing development and operation
+    of shared DER services — including data exchanges and communication standards
+    — must be formalised before these services are built, not after; absence of agreed
+    governance is a primary barrier to industry confidence and investment in shared
+    infrastructure.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: internal governance/resourcing
+  failure_mode: coordination & stakeholders
+  outcome_class: policy/market influence only
+  secondary_failure_mode: null
+  intervention_note: The CER Data Exchange Co-Design process has progressed governance
+    decisions including AEMO as owner/operator; the WA Roadmap has tasked EPWA with
+    scoping a DER Data Coordinator role.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id009
+  - 5
+  - 37
+  evidence_excerpt: Governance arrangements for shared services such as data exchanges
+    and standards development must be formalised. Agreeing on bodies and processes
+    for ongoing development and operation of these services provides the industry
+    certainty needed to progress.
+  confidence_note: 'project_scale_band reconciled to ''demonstration'' from: demonstration
+    (21/40), pilot (10/40), programmatic/portfolio-level (9/40); proponent_type reconciled
+    to ''network business'' from: network business (20/40), government/public-sector
+    body (11/40), consortium/multi-party venture (9/40)'
+  source_url: https://arena.gov.au/knowledge-bank/deip-market-integration-trials-summary-report-3-0/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/02/2026
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/02/DEIP-Market-Integration-Trials-Summary30.pdf
+  markdown_filename: deip_market_integration_trials_summary_report_30.md
+  source_page_pdf: 37
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-68340
+  contributing_source_titles:
+  - DEIP Market Integration Trials Summary Report 3.0
+  contributing_sources:
+  - source_title: DEIP Market Integration Trials Summary Report 3.0
+    pdf_url: https://arena.gov.au/assets/2026/02/DEIP-Market-Integration-Trials-Summary30.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/deip-market-integration-trials-summary-report-3-0/
+    markdown_filename: deip_market_integration_trials_summary_report_30.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.92

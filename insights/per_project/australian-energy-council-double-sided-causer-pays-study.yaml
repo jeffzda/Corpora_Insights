@@ -1,0 +1,609 @@
+- record_id: ARENA-DLV-18751
+  source_title: A Double-Sided Causer Pays Implementation of Frequency Deviation Pricing
+    – Analysis Report
+  publish_date: 2022-02
+  project_name: Double-Sided Causer Pays Implementation of Frequency Deviation Pricing
+  what_happened: The mandatory Primary Frequency Response (PFR) rule (AEMC Rule 2020
+    No. 5, effective 4 June 2020) significantly improved NEM frequency performance,
+    but as of mid-2021 only approximately 66% of in-scope generation capacity (38.4
+    GW of 58.1 GW) had implemented the required settings. Tranche 2 and Tranche 3
+    compliance rates were only 37% and 36% respectively against their scheduled targets.
+  lesson_learnt: Mandatory rule changes requiring firmware or inverter control updates
+    from OEMs should include lead-time assessments and OEM readiness checks before
+    setting compliance deadlines — delayed OEM firmware delivery was the primary cause
+    of the implementation shortfall across approximately 20 GW of inverter-based generation.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: commissioning/integration
+  failure_mode: regulatory & approvals
+  outcome_class: partial success
+  secondary_failure_mode: execution & logistics
+  intervention_note: AEMO continued phased implementation with updated deadlines;
+    the analysis was used to assess residual performance gaps and inform the subsequent
+    market-based replacement mechanism design.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id001
+  - 15
+  - 17
+  - 18
+  - 21
+  evidence_excerpt: Not all units have been updated with the new dead band settings.
+    AEMO has reported that many inverter-based generators require updated firmware
+    from the OEM which has delayed implementation. According to AEMO's latest update,
+    this would only include approximately 13GW of generation though.
+  confidence_note: 'The ''programmatic/portfolio-level'' scale band reflects that
+    this is a fleet-wide rule implementation, not a single project. issue_severity
+    rated major given 34% of Tranche 2 and 64% of Tranche 3 capacity remained non-compliant
+    past deadline.; project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (5/8), network/grid (3/8); project_scale_band reconciled to ''demonstration''
+    from: demonstration (5/8), programmatic/portfolio-level (3/8); proponent_type
+    reconciled to ''research organisation/university'' from: research organisation/university
+    (5/8), government/public-sector body (3/8)'
+  source_url: https://arena.gov.au/knowledge-bank/a-double-sided-causer-pays-implementation-of-frequency-deviation-pricing-analysis-report/
+  project_page_url: https://arena.gov.au/projects/australian-energy-council-double-sided-causer-pays-study/
+  kb_category: System security and reliability
+  kb_publish_date: 4/02/2022
+  kb_year: '2021'
+  kb_associated_project: Australian Energy Council Double-Sided Causer Pays Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $164k
+  total_project_value: $414k
+  lead_organisation: ' Australian Energy Council'
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 23/03/2021
+  location: Victoria
+  project_partners: Infigen Energy, CS Energy
+  pdf_url: https://arena.gov.au/assets/2022/02/dscp-implementation-of-frequency-deviation-pricing-analysis-report.pdf
+  markdown_filename: a_double_sided_causer_pays_implementation_of_frequency_deviation_pricing_analysis_report.md
+  source_page_pdf: 17
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-18751
+  contributing_source_titles:
+  - A Double-Sided Causer Pays Implementation of Frequency Deviation Pricing – Analysis
+    Report
+  contributing_sources:
+  - source_title: A Double-Sided Causer Pays Implementation of Frequency Deviation
+      Pricing – Analysis Report
+    pdf_url: https://arena.gov.au/assets/2022/02/dscp-implementation-of-frequency-deviation-pricing-analysis-report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/a-double-sided-causer-pays-implementation-of-frequency-deviation-pricing-analysis-report/
+    markdown_filename: a_double_sided_causer_pays_implementation_of_frequency_deviation_pricing_analysis_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-18752
+  source_title: A Double-Sided Causer Pays Implementation of Frequency Deviation Pricing
+    – Analysis Report
+  publish_date: 2022-02
+  project_name: Double-Sided Causer Pays Implementation of Frequency Deviation Pricing
+  what_happened: Approximately 20 GW of non-AGC-regulated generation showed no measurable
+    improvement in Primary Frequency Response performance following the mandatory
+    PFR rule change, exceeding the combined Tranche 2 and Tranche 3 capacity totals.
+    This cohort lacked either the firmware updates or the spare capacity headroom
+    needed to modulate output for PFR.
+  lesson_learnt: When designing mandatory frequency response obligations for inverter-based
+    and variable renewable generators, verify that participating plant has both the
+    control system capability (updated firmware) and sufficient operational headroom
+    to deliver the required response — capability without headroom, or headroom without
+    capability, yields no frequency control benefit.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: unvalidated technical assumptions
+  outcome_class: partial success
+  secondary_failure_mode: poor scoping
+  intervention_note: The analysis informed the design of a market-based replacement
+    mechanism (DSCP/FDP) intended to provide ongoing economic incentives for PFR performance
+    rather than relying solely on mandated capability.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id002
+  - 17
+  - 18
+  - 21
+  - 22
+  - 23
+  evidence_excerpt: Notwithstanding these exceptions, around 20 GW of plant in this
+    category have made no improvement in their performance. This exceeds the Tranche
+    2 and Tranche 3 combined capacities in AEMO's MPFR implementation schedule shown
+    in Table 1.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (5/8), network/grid (3/8); project_scale_band reconciled to ''demonstration''
+    from: demonstration (5/8), programmatic/portfolio-level (3/8); proponent_type
+    reconciled to ''research organisation/university'' from: research organisation/university
+    (5/8), government/public-sector body (3/8)'
+  source_url: https://arena.gov.au/knowledge-bank/a-double-sided-causer-pays-implementation-of-frequency-deviation-pricing-analysis-report/
+  project_page_url: https://arena.gov.au/projects/australian-energy-council-double-sided-causer-pays-study/
+  kb_category: System security and reliability
+  kb_publish_date: 4/02/2022
+  kb_year: '2021'
+  kb_associated_project: Australian Energy Council Double-Sided Causer Pays Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $164k
+  total_project_value: $414k
+  lead_organisation: ' Australian Energy Council'
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 23/03/2021
+  location: Victoria
+  project_partners: Infigen Energy, CS Energy
+  pdf_url: https://arena.gov.au/assets/2022/02/dscp-implementation-of-frequency-deviation-pricing-analysis-report.pdf
+  markdown_filename: a_double_sided_causer_pays_implementation_of_frequency_deviation_pricing_analysis_report.md
+  source_page_pdf: 21
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-18752
+  contributing_source_titles:
+  - A Double-Sided Causer Pays Implementation of Frequency Deviation Pricing – Analysis
+    Report
+  contributing_sources:
+  - source_title: A Double-Sided Causer Pays Implementation of Frequency Deviation
+      Pricing – Analysis Report
+    pdf_url: https://arena.gov.au/assets/2022/02/dscp-implementation-of-frequency-deviation-pricing-analysis-report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/a-double-sided-causer-pays-implementation-of-frequency-deviation-pricing-analysis-report/
+    markdown_filename: a_double_sided_causer_pays_implementation_of_frequency_deviation_pricing_analysis_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-18753
+  source_title: A Double-Sided Causer Pays Implementation of Frequency Deviation Pricing
+    – Analysis Report
+  publish_date: 2022-02
+  project_name: Double-Sided Causer Pays Implementation of Frequency Deviation Pricing
+  what_happened: Analysis of SCADA metering for use in DSCP settlement found that
+    transmission delays of up to 6 seconds permitted under AEMO's SCADA standard introduce
+    underestimation errors of up to approximately 5% in PFR performance factors, with
+    the raw 4-second frequency metric significantly more sensitive to these delays
+    than the lagged 35-second or FI metrics used for existing Causer Pays.
+  lesson_learnt: Any new market settlement mechanism built on SCADA data should be
+    designed and stress-tested against the full permissible delay range in AEMO's
+    data communication standard before deployment — PFR-specific settlement logic
+    is materially more sensitive to SCADA transmission delays than the existing regulation
+    Causer Pays procedure, requiring either tighter delay standards or smoothed metrics
+    at the design stage.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: The report identified that DSCP inherently incentivises generators
+    to reduce transmission delays to improve their own factors, and recommended that
+    the need to upgrade communication facilities and associated costs be assessed
+    at the design stage.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages:
+  - 24
+  - 25
+  - 34
+  - 35
+  - 37
+  - 38
+  evidence_excerpt: We understand that some units still suffer from extended data
+    transmission delays. In these cases, the factors used to assess the amounts paid
+    to generators receiving payments can be improved by reducing those delays, an
+    appropriate incentive. The possible need for upgrade of some communication facilities
+    and the associated cost needs consideration at the design stage.
+  confidence_note: project_scale_band set to 'demonstration' as this is a modelling/analytical
+    project assessing feasibility of a future mechanism, not a commercial deployment.
+    Canonical record merged from 2 source records across 1 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/a-double-sided-causer-pays-implementation-of-frequency-deviation-pricing-analysis-report/
+  project_page_url: https://arena.gov.au/projects/australian-energy-council-double-sided-causer-pays-study/
+  kb_category: System security and reliability
+  kb_publish_date: 4/02/2022
+  kb_year: '2021'
+  kb_associated_project: Australian Energy Council Double-Sided Causer Pays Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $164k
+  total_project_value: $414k
+  lead_organisation: ' Australian Energy Council'
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 23/03/2021
+  location: Victoria
+  project_partners: Infigen Energy, CS Energy
+  pdf_url: https://arena.gov.au/assets/2022/02/dscp-implementation-of-frequency-deviation-pricing-analysis-report.pdf
+  markdown_filename: a_double_sided_causer_pays_implementation_of_frequency_deviation_pricing_analysis_report.md
+  source_page_pdf: 34
+  corroboration_count: 2
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-18753
+  - ARENA-DLV-18754
+  contributing_source_titles:
+  - A Double-Sided Causer Pays Implementation of Frequency Deviation Pricing – Analysis
+    Report
+  contributing_sources:
+  - source_title: A Double-Sided Causer Pays Implementation of Frequency Deviation
+      Pricing – Analysis Report
+    pdf_url: https://arena.gov.au/assets/2022/02/dscp-implementation-of-frequency-deviation-pricing-analysis-report.pdf
+    source_pages:
+    - 24
+    - 25
+    - 34
+    - 35
+    source_url: https://arena.gov.au/knowledge-bank/a-double-sided-causer-pays-implementation-of-frequency-deviation-pricing-analysis-report/
+    markdown_filename: a_double_sided_causer_pays_implementation_of_frequency_deviation_pricing_analysis_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-18755
+  source_title: A Double-Sided Causer Pays Implementation of Frequency Deviation Pricing
+    – Analysis Report
+  publish_date: 2022-02
+  project_name: Double-Sided Causer Pays Implementation of Frequency Deviation Pricing
+  what_happened: 'Communication outages within DSCP settlement create an incentive
+    problem: a unit with missing data during a high-price frequency event avoids its
+    share of costs, which would otherwise be correctly allocated to it. The existing
+    SCADA reliability standard allows up to 6 hours of outage per 12-month rolling
+    period, creating windows where cost allocation can be gamed or distorted.'
+  lesson_learnt: Market settlement mechanisms dependent on real-time telemetry must
+    include an explicit default treatment for units with missing data — treating non-reporting
+    units as part of the residual (a net cost position) creates a self-correcting
+    incentive to maintain reliable communications and avoids cost-shifting to compliant
+    participants during high-price events.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated integration
+  intervention_note: The report recommended treating units with missing or poor-quality
+    data as part of the residual for affected dispatch intervals, allocating costs
+    pro-rata by metered energy, which creates a direct financial incentive to invest
+    in redundant communication infrastructure.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id003
+  - 30
+  - 31
+  - 37
+  - 38
+  evidence_excerpt: If during a high frequency event, a unit with large excess MW
+    deviations (which is making the supply-demand balance worse) would be liable for
+    higher share of the costs. If there was an outage the unit would benefit in the
+    absence of an alternative mechanism to allocate costs... As the residual is defined
+    as load or generation without metering, including a unit with missing data in
+    the residual seems to be the logical approach.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/a-double-sided-causer-pays-implementation-of-frequency-deviation-pricing-analysis-report/
+  project_page_url: https://arena.gov.au/projects/australian-energy-council-double-sided-causer-pays-study/
+  kb_category: System security and reliability
+  kb_publish_date: 4/02/2022
+  kb_year: '2021'
+  kb_associated_project: Australian Energy Council Double-Sided Causer Pays Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $164k
+  total_project_value: $414k
+  lead_organisation: ' Australian Energy Council'
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 23/03/2021
+  location: Victoria
+  project_partners: Infigen Energy, CS Energy
+  pdf_url: https://arena.gov.au/assets/2022/02/dscp-implementation-of-frequency-deviation-pricing-analysis-report.pdf
+  markdown_filename: a_double_sided_causer_pays_implementation_of_frequency_deviation_pricing_analysis_report.md
+  source_page_pdf: 31
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-18755
+  contributing_source_titles:
+  - A Double-Sided Causer Pays Implementation of Frequency Deviation Pricing – Analysis
+    Report
+  contributing_sources:
+  - source_title: A Double-Sided Causer Pays Implementation of Frequency Deviation
+      Pricing – Analysis Report
+    pdf_url: https://arena.gov.au/assets/2022/02/dscp-implementation-of-frequency-deviation-pricing-analysis-report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/a-double-sided-causer-pays-implementation-of-frequency-deviation-pricing-analysis-report/
+    markdown_filename: a_double_sided_causer_pays_implementation_of_frequency_deviation_pricing_analysis_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-18756
+  source_title: A Double-Sided Causer Pays Implementation of Frequency Deviation Pricing
+    – Analysis Report
+  publish_date: 2022-02
+  project_name: Double-Sided Causer Pays Implementation of Frequency Deviation Pricing
+  what_happened: At the time the Analysis Report was finalised, the operational model
+    of DSCP applied to a representative electricity system was still under development
+    and not ready to perform the scenario studies foreshadowed in the Inception Report
+    (e.g. high-renewable penetration, battery proliferation). These studies were deferred
+    to the Final Report.
+  lesson_learnt: Multi-stage analytical projects should build in explicit model-readiness
+    milestones aligned with reporting stages — model development that is still incomplete
+    at the Analysis Report stage forces deferral of key quantitative design justifications
+    to the Final Report, reducing the ability to consult on preliminary findings at
+    the intended stage.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: poor scoping
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: execution & logistics
+  intervention_note: The team pivoted to focus on historical back-casting tools in
+    the Analysis Report and committed to completing forward-looking model studies
+    for the Final Report.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id004
+  - 3
+  - 12
+  - 13
+  - 27
+  evidence_excerpt: An operational model of DSCP applied to a representative electricity
+    system is still under development but is not yet adequate to undertake some of
+    the specific studies we foreshadowed in the Inception Report, such as likely behaviour
+    as batteries penetrate further into the market and coal plant retires. This work
+    will be reported on separately later in the project.
+  confidence_note: issue_severity rated moderate rather than minor because the missing
+    model was central to the quantitative design justification that the Analysis Report
+    was intended to deliver.
+  source_url: https://arena.gov.au/knowledge-bank/a-double-sided-causer-pays-implementation-of-frequency-deviation-pricing-analysis-report/
+  project_page_url: https://arena.gov.au/projects/australian-energy-council-double-sided-causer-pays-study/
+  kb_category: System security and reliability
+  kb_publish_date: 4/02/2022
+  kb_year: '2021'
+  kb_associated_project: Australian Energy Council Double-Sided Causer Pays Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $164k
+  total_project_value: $414k
+  lead_organisation: ' Australian Energy Council'
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 23/03/2021
+  location: Victoria
+  project_partners: Infigen Energy, CS Energy
+  pdf_url: https://arena.gov.au/assets/2022/02/dscp-implementation-of-frequency-deviation-pricing-analysis-report.pdf
+  markdown_filename: a_double_sided_causer_pays_implementation_of_frequency_deviation_pricing_analysis_report.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-18756
+  contributing_source_titles:
+  - A Double-Sided Causer Pays Implementation of Frequency Deviation Pricing – Analysis
+    Report
+  contributing_sources:
+  - source_title: A Double-Sided Causer Pays Implementation of Frequency Deviation
+      Pricing – Analysis Report
+    pdf_url: https://arena.gov.au/assets/2022/02/dscp-implementation-of-frequency-deviation-pricing-analysis-report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/a-double-sided-causer-pays-implementation-of-frequency-deviation-pricing-analysis-report/
+    markdown_filename: a_double_sided_causer_pays_implementation_of_frequency_deviation_pricing_analysis_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-18757
+  source_title: A Double-Sided Causer Pays Implementation of Frequency Deviation Pricing
+    – Analysis Report
+  publish_date: 2022-02
+  project_name: Double-Sided Causer Pays Implementation of Frequency Deviation Pricing
+  what_happened: The mandatory PFR rule achieved frequency performance improvements
+    primarily through large thermal plant (Tranche 1, DUIDs > 200 MW), which accounts
+    for approximately 35.6 GW. As thermal generation is expected to exit the market
+    over the next decade or two, the frequency control capability underpinning current
+    NEM performance will progressively erode unless replaced by alternative resources.
+  lesson_learnt: Market design for ancillary services must account for the retirement
+    trajectory of incumbent technology — a mandatory rule that achieves compliance
+    primarily through assets being phased out does not provide durable frequency security,
+    and transitional market mechanisms should be developed and tested well before
+    thermal retirement occurs at scale.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: commercial & market
+  outcome_class: policy/market influence only
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: This analysis motivated the AEC/ARENA-sponsored DSCP project
+    to develop and assess a market-based PFR mechanism capable of engaging batteries
+    and renewables before mandatory thermal-based compliance becomes inadequate.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id005
+  - 5
+  - 22
+  - 27
+  evidence_excerpt: The Mandatory Primary Frequency Response (PFR) rule introduced
+    by the AEMC... has been successful in improving system frequency performance.
+    However, this has been achieved substantially from plant that is expected to be
+    phased out over the next decade or two. There remains the challenge of how to
+    muster resources efficiently to achieve adequate frequency performance.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (5/8), network/grid (3/8); project_scale_band reconciled to ''demonstration''
+    from: demonstration (5/8), programmatic/portfolio-level (3/8); proponent_type
+    reconciled to ''research organisation/university'' from: research organisation/university
+    (5/8), government/public-sector body (3/8)'
+  source_url: https://arena.gov.au/knowledge-bank/a-double-sided-causer-pays-implementation-of-frequency-deviation-pricing-analysis-report/
+  project_page_url: https://arena.gov.au/projects/australian-energy-council-double-sided-causer-pays-study/
+  kb_category: System security and reliability
+  kb_publish_date: 4/02/2022
+  kb_year: '2021'
+  kb_associated_project: Australian Energy Council Double-Sided Causer Pays Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $164k
+  total_project_value: $414k
+  lead_organisation: ' Australian Energy Council'
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 23/03/2021
+  location: Victoria
+  project_partners: Infigen Energy, CS Energy
+  pdf_url: https://arena.gov.au/assets/2022/02/dscp-implementation-of-frequency-deviation-pricing-analysis-report.pdf
+  markdown_filename: a_double_sided_causer_pays_implementation_of_frequency_deviation_pricing_analysis_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-18757
+  contributing_source_titles:
+  - A Double-Sided Causer Pays Implementation of Frequency Deviation Pricing – Analysis
+    Report
+  contributing_sources:
+  - source_title: A Double-Sided Causer Pays Implementation of Frequency Deviation
+      Pricing – Analysis Report
+    pdf_url: https://arena.gov.au/assets/2022/02/dscp-implementation-of-frequency-deviation-pricing-analysis-report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/a-double-sided-causer-pays-implementation-of-frequency-deviation-pricing-analysis-report/
+    markdown_filename: a_double_sided_causer_pays_implementation_of_frequency_deviation_pricing_analysis_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-18758
+  source_title: A Double-Sided Causer Pays Implementation of Frequency Deviation Pricing
+    – Analysis Report
+  publish_date: 2022-02
+  project_name: Double-Sided Causer Pays Implementation of Frequency Deviation Pricing
+  what_happened: General-purpose high-resolution power quality meters available on
+    the market cannot be used directly for DSCP settlement because they are not designed
+    to calculate and accumulate the required frequency-deviation factors internally,
+    and uploading raw high-resolution data (e.g. 50 ms intervals) to AEMO for central
+    processing would be impractical due to data volume and storage requirements.
+  lesson_learnt: When designing settlements that require high-frequency metering data,
+    specify in-meter calculation and accumulation of settlement-ready values (e.g.
+    5-minute aggregates) rather than central processing of raw high-resolution data
+    — this keeps data transmission volumes manageable and allows the meter to operate
+    with the same robustness as a standard revenue meter.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The report proposed a dedicated DSCP meter design with enhanced
+    firmware that performs in-meter calculation of pricing components and uploads
+    only 5-minute aggregated settlement values to AEMO, avoiding the data burden of
+    raw high-resolution transmission.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id006
+  - 32
+  - 33
+  - 34
+  - 35
+  evidence_excerpt: Such unmodified meters, while they may accurately record real
+    and reactive power, frequency and power quality, will not be suitable for supporting
+    DSCP as they are not designed to capture, calculate and accumulate factors suitable
+    for DSCP settlement within the meter. Further, it would be impractical to record
+    locally and then, upload, store and process at AEMO data generated at intervals
+    of, say 50ms.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/a-double-sided-causer-pays-implementation-of-frequency-deviation-pricing-analysis-report/
+  project_page_url: https://arena.gov.au/projects/australian-energy-council-double-sided-causer-pays-study/
+  kb_category: System security and reliability
+  kb_publish_date: 4/02/2022
+  kb_year: '2021'
+  kb_associated_project: Australian Energy Council Double-Sided Causer Pays Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $164k
+  total_project_value: $414k
+  lead_organisation: ' Australian Energy Council'
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 23/03/2021
+  location: Victoria
+  project_partners: Infigen Energy, CS Energy
+  pdf_url: https://arena.gov.au/assets/2022/02/dscp-implementation-of-frequency-deviation-pricing-analysis-report.pdf
+  markdown_filename: a_double_sided_causer_pays_implementation_of_frequency_deviation_pricing_analysis_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-18758
+  contributing_source_titles:
+  - A Double-Sided Causer Pays Implementation of Frequency Deviation Pricing – Analysis
+    Report
+  contributing_sources:
+  - source_title: A Double-Sided Causer Pays Implementation of Frequency Deviation
+      Pricing – Analysis Report
+    pdf_url: https://arena.gov.au/assets/2022/02/dscp-implementation-of-frequency-deviation-pricing-analysis-report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/a-double-sided-causer-pays-implementation-of-frequency-deviation-pricing-analysis-report/
+    markdown_filename: a_double_sided_causer_pays_implementation_of_frequency_deviation_pricing_analysis_report.md
+  arena_category:
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92

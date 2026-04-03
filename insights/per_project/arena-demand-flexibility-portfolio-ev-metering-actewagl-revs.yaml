@@ -1,0 +1,68 @@
+- record_id: ARENA-DLV-53889
+  source_title: Demand Flexibility Portfolio Retrospective Analysis Report
+  publish_date: 2023-07
+  project_name: ARENA Demand Flexibility Portfolio — EV Metering (ActewAGL REVS)
+  what_happened: FCAS participation requires metering capable of recording frequency
+    response at 50 millisecond intervals; across the EV trials, only one commercially
+    available 3-phase power meter was found capable of this response speed, with most
+    commercial meters only supporting 1-second interval data. This prevented FCAS
+    participation from EV chargers.
+  lesson_learnt: Projects targeting EV-based FCAS must verify that available metering
+    equipment can meet the 50ms MASS specification before designing FCAS into the
+    business case; the current metering market does not provide fit-for-purpose products
+    for this application at commercial scale, and this constraint should be escalated
+    to standards bodies.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: procurement
+  proponent_type: utility/energy retailer
+  delay_category: procurement/supply chain
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages:
+  - 40
+  evidence_excerpt: Satisfying FCAS requires recording frequency response at 50 milliseconds.
+    For an EV trial, only one commercially available 3-phase power meter for metering
+    at the main switchboard was found that could respond that fast, with most only
+    catering for 1-second interval data.
+  confidence_note: 'project_type reconciled to ''DER/customer-side'' from: DER/customer-side
+    (36/49), transport electrification (12/49), industrial decarbonisation (1/49)'
+  source_url: https://arena.gov.au/knowledge-bank/demand-flexibility-portfolio-retrospective-analysis-report/
+  project_page_url: null
+  kb_category: Demand response
+  kb_publish_date: 25/07/2023
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2023/07/demand-flexibility-portfolio-retrospective-analysis-report.pdf
+  markdown_filename: demand_flexibility_portfolio_retrospective_analysis_report.md
+  source_page_pdf: 40
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53889
+  contributing_source_titles:
+  - Demand Flexibility Portfolio Retrospective Analysis Report
+  arena_category:
+  - Demand response
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.92

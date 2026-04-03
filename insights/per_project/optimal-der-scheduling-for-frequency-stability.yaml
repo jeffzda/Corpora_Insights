@@ -1,0 +1,1947 @@
+- record_id: ARENA-DLV-38901
+  source_title: Optimal DER Scheduling for Frequency Stability Study Report
+  publish_date: 2022-02
+  project_name: Optimal DER Scheduling for Frequency Stability
+  what_happened: Simulations demonstrated that as renewable penetration increases
+    beyond 40% in the Queensland system (with PFC provided only by synchronous generators),
+    frequency response degrades severely — higher RoCoF, larger frequency excursions,
+    increased oscillation, and longer settling times — with over-frequency generator
+    shedding triggered above 40% penetration.
+  lesson_learnt: As synchronous generation is displaced by renewables, frequency response
+    from synchronous generators alone becomes inadequate well before 100% renewable
+    penetration; system planners should model frequency response degradation at each
+    incremental penetration step and identify the threshold at which additional fast-response
+    resources (e.g. BESS/DER) become essential.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id001
+  - 22
+  evidence_excerpt: We can see a worsening response, in terms of rate of change of
+    frequency, frequency zenith (overshoot), frequency oscillation and settling time.
+    For anything above 40% renewables we would see OFGS triggered.
+  confidence_note: No physical project delivery failure; the 'event' is a simulation
+    finding with direct policy/planning implications for NEM future planning.
+  source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+  project_page_url: https://arena.gov.au/projects/optimal-der-scheduling-for-frequency-stability-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/02/2022
+  kb_year: '2019'
+  kb_associated_project: Optimal DER Scheduling for Frequency Stability
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $527k
+  total_project_value: $1.71m
+  lead_organisation: The University of Tasmania
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/01/2019
+  location: Tasmania
+  project_partners: The ANU, TasNetworks, Powerlink Queensland, Technische Universitat
+    Berlin
+  pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+  markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  source_page_pdf: 22
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-38901
+  contributing_source_titles:
+  - Optimal DER Scheduling for Frequency Stability Study Report
+  contributing_sources:
+  - source_title: Optimal DER Scheduling for Frequency Stability Study Report
+    pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+    markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-38902
+  source_title: Optimal DER Scheduling for Frequency Stability Study Report
+  publish_date: 2022-02
+  project_name: Optimal DER Scheduling for Frequency Stability
+  what_happened: Simulations showed that with current AEMO droop (0.7%) and dead-band
+    (0.15 Hz) settings and default inverter response time of 0.5 s, the required BESS
+    capacity to maintain NEM Frequency Operating Standard limits after a 750 MW contingency
+    event in a 97% renewable scenario exceeds 40 GW — more than the total NEM system
+    load of 34 GW — making the current parameter settings unworkable for future low-inertia
+    systems.
+  lesson_learnt: 'Current NEM BESS droop, dead-band, and inverter response time settings
+    are incompatible with future high-renewable, low-inertia operation; regulators
+    and asset owners should review and tighten these parameters (target: response
+    time <0.2 s, dead-band <0.07 Hz, droop 0.3–0.7%) before aggregate BESS capacity
+    reaches system-significant levels.'
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id002
+  - 30
+  - 31
+  evidence_excerpt: while utilising NEM current droop (0.7%) and DB (0.15 Hz) practices,
+    default inverter response time 0.5 s results in 20% (nearly 42 GW) higher BESS
+    capacity than the total load of the system (34 GW) to maintain the FOS limit.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+  project_page_url: https://arena.gov.au/projects/optimal-der-scheduling-for-frequency-stability-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/02/2022
+  kb_year: '2019'
+  kb_associated_project: Optimal DER Scheduling for Frequency Stability
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $527k
+  total_project_value: $1.71m
+  lead_organisation: The University of Tasmania
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/01/2019
+  location: Tasmania
+  project_partners: The ANU, TasNetworks, Powerlink Queensland, Technische Universitat
+    Berlin
+  pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+  markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  source_page_pdf: 30
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-38902
+  contributing_source_titles:
+  - Optimal DER Scheduling for Frequency Stability Study Report
+  contributing_sources:
+  - source_title: Optimal DER Scheduling for Frequency Stability Study Report
+    pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+    markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-38903
+  source_title: Optimal DER Scheduling for Frequency Stability Study Report
+  publish_date: 2022-02
+  project_name: Optimal DER Scheduling for Frequency Stability
+  what_happened: Simulations showed that reducing BESS inverter response time from
+    0.5 s to 0.1 s (while retaining current droop of 0.7%) reduces the required BESS
+    capacity to meet FOS limits by approximately 90%, from ~42 GW to ~4.4 GW; further
+    reducing the dead-band to 0.015 Hz reduces required capacity to approximately
+    8% of total system load (~2.7 GW).
+  lesson_learnt: Optimising BESS inverter response time and dead-band settings can
+    reduce the aggregate BESS capacity needed to maintain frequency stability by up
+    to 90%; specifying these parameters in procurement and connection standards for
+    new BESS assets will dramatically reduce the total installed capacity required
+    for system frequency support.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id003
+  - 30
+  - 31
+  evidence_excerpt: the required BESS capacity is reduced by 90% (nearly 4.4 GW),
+    approximately 13% of the total system, due to reduced response time from 0.5s
+    to 0.1s using current droop practice (0.7%). Due to further reduction of DB to
+    0.015 Hz, currently, AEMO is anticipating [17], 0.1 s response time requires 8%
+    BESS capacity of the system.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+  project_page_url: https://arena.gov.au/projects/optimal-der-scheduling-for-frequency-stability-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/02/2022
+  kb_year: '2019'
+  kb_associated_project: Optimal DER Scheduling for Frequency Stability
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $527k
+  total_project_value: $1.71m
+  lead_organisation: The University of Tasmania
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/01/2019
+  location: Tasmania
+  project_partners: The ANU, TasNetworks, Powerlink Queensland, Technische Universitat
+    Berlin
+  pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+  markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  source_page_pdf: 30
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-38903
+  contributing_source_titles:
+  - Optimal DER Scheduling for Frequency Stability Study Report
+  contributing_sources:
+  - source_title: Optimal DER Scheduling for Frequency Stability Study Report
+    pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+    markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-38904
+  source_title: Optimal DER Scheduling for Frequency Stability Study Report
+  publish_date: 2022-02
+  project_name: Optimal DER Scheduling for Frequency Stability
+  what_happened: Simulations demonstrated that aggressive BESS droop settings (low
+    droop %) paired with slow response times and large dead-bands cause higher frequency
+    oscillations and output power saturation at low BESS capacity, potentially introducing
+    instability rather than improving frequency response.
+  lesson_learnt: When deploying BESS with aggressive droop settings, the power response
+    time constant and dead-band must first be reduced to avoid oscillatory instability;
+    aggressive droop alone without matching fast response time and small dead-band
+    can worsen frequency outcomes compared to default settings.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id004
+  - 29
+  - 31
+  evidence_excerpt: Aggressive droop can cause higher oscillations and frequency nadir
+    with increased BESS response time and DB, leading to a low-capacity BESS output
+    power to reach saturation at its maximum capacity... before updating the droop
+    values, the power response time constant and frequency DB requirement (less than
+    0.1s and 0.07 Hz respectively) must be satisfied to avoid unwanted oscillations.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+  project_page_url: https://arena.gov.au/projects/optimal-der-scheduling-for-frequency-stability-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/02/2022
+  kb_year: '2019'
+  kb_associated_project: Optimal DER Scheduling for Frequency Stability
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $527k
+  total_project_value: $1.71m
+  lead_organisation: The University of Tasmania
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/01/2019
+  location: Tasmania
+  project_partners: The ANU, TasNetworks, Powerlink Queensland, Technische Universitat
+    Berlin
+  pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+  markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  source_page_pdf: 31
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-38904
+  contributing_source_titles:
+  - Optimal DER Scheduling for Frequency Stability Study Report
+  contributing_sources:
+  - source_title: Optimal DER Scheduling for Frequency Stability Study Report
+    pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+    markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-38905
+  source_title: Optimal DER Scheduling for Frequency Stability Study Report
+  publish_date: 2022-02
+  project_name: Optimal DER Scheduling for Frequency Stability
+  what_happened: Simulations showed that combining and optimising both response time
+    and dead-band simultaneously (reducing from 0.5 s/0.15 Hz to 0.1 s/0.015 Hz) reduces
+    optimal BESS capacity for FOS compliance by approximately 93%, to approximately
+    3% of total system load, whereas reducing only a single parameter is insufficient
+    to meet FOS limits at low BESS capacity with current droop settings.
+  lesson_learnt: BESS frequency control parameters (response time, dead-band, and
+    droop) must be co-optimised together rather than adjusted in isolation; procurement
+    specifications and grid codes should set minimum requirements for all three parameters
+    simultaneously rather than addressing each independently.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id005
+  - 31
+  evidence_excerpt: Reducing only a single parameter, either response time or DB,
+    may not be sufficient to maintain the NEM FOS limits while utilising current droop
+    practice with a low-capacity BESS... The required BESS capacity can be reduced
+    by nearly 93%, 3% of the total system, with reduced response parameters (0.1 s,
+    0.015 Hz) and droop (0.1%).
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+  project_page_url: https://arena.gov.au/projects/optimal-der-scheduling-for-frequency-stability-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/02/2022
+  kb_year: '2019'
+  kb_associated_project: Optimal DER Scheduling for Frequency Stability
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $527k
+  total_project_value: $1.71m
+  lead_organisation: The University of Tasmania
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/01/2019
+  location: Tasmania
+  project_partners: The ANU, TasNetworks, Powerlink Queensland, Technische Universitat
+    Berlin
+  pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+  markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  source_page_pdf: 31
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-38905
+  contributing_source_titles:
+  - Optimal DER Scheduling for Frequency Stability Study Report
+  contributing_sources:
+  - source_title: Optimal DER Scheduling for Frequency Stability Study Report
+    pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+    markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-38906
+  source_title: Optimal DER Scheduling for Frequency Stability Study Report
+  publish_date: 2022-02
+  project_name: Optimal DER Scheduling for Frequency Stability
+  what_happened: Simulations showed that there is currently no mandated open-loop
+    response time specification for the frequency-watt function of BESS inverters
+    in Australia, with manufacturers selecting response times anywhere between 50
+    ms and 3 s, creating significant variability in the frequency support capability
+    of installed BESS.
+  lesson_learnt: Regulators and standards bodies should mandate a maximum response
+    time (≤0.2 s) for the frequency-watt function of BESS inverters; the absence of
+    this specification allows manufacturers to install slow-responding units that
+    are ineffective for primary frequency control in low-inertia systems.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id006
+  - 31
+  - 32
+  evidence_excerpt: At present, there is no desired open-loop response time of the
+    frequency-watt function for BESS... It is recommended that the response time of
+    the frequency-watt function, defined as the time required for an inverter to execute
+    90% of the power change resulting from a frequency event, should be less than
+    0.2s.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+  project_page_url: https://arena.gov.au/projects/optimal-der-scheduling-for-frequency-stability-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/02/2022
+  kb_year: '2019'
+  kb_associated_project: Optimal DER Scheduling for Frequency Stability
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $527k
+  total_project_value: $1.71m
+  lead_organisation: The University of Tasmania
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/01/2019
+  location: Tasmania
+  project_partners: The ANU, TasNetworks, Powerlink Queensland, Technische Universitat
+    Berlin
+  pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+  markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-38906
+  contributing_source_titles:
+  - Optimal DER Scheduling for Frequency Stability Study Report
+  contributing_sources:
+  - source_title: Optimal DER Scheduling for Frequency Stability Study Report
+    pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+    markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-38907
+  source_title: Optimal DER Scheduling for Frequency Stability Study Report
+  publish_date: 2022-02
+  project_name: Optimal DER Scheduling for Frequency Stability
+  what_happened: Simulations showed that the benefit of adding synthetic inertia (SI)
+    control to BESS is strongly dependent on the underlying BESS operational parameters;
+    for a slow-responding BESS (0.5 s, 0.15 Hz dead-band), adding SI with coefficient
+    6 reduces required BESS capacity by 80%, while for a fast-responding BESS (0.1
+    s, 0.015 Hz), the same SI addition reduces required capacity by only about 35%.
+  lesson_learnt: Synthetic inertia in BESS control provides the greatest benefit when
+    paired with slower-responding BESS configurations and at very high renewable penetration
+    (>94%); for fast-responding BESS with optimised parameters, the incremental value
+    of synthetic inertia is limited — investment in SI control should be prioritised
+    where BESS response parameters cannot otherwise be improved.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id007
+  - 37
+  - 38
+  evidence_excerpt: using a SI with a coefficient of 6 can reduce the BESS capacity
+    by 80% with (0.5 s, 0.15 Hz), which is still 17% of the total system... For faster
+    responding BESS such as (0.1 s, 0.015 Hz), the impact of SI is in reducing optimal
+    BESS capacity is insignificant.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+  project_page_url: https://arena.gov.au/projects/optimal-der-scheduling-for-frequency-stability-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/02/2022
+  kb_year: '2019'
+  kb_associated_project: Optimal DER Scheduling for Frequency Stability
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $527k
+  total_project_value: $1.71m
+  lead_organisation: The University of Tasmania
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/01/2019
+  location: Tasmania
+  project_partners: The ANU, TasNetworks, Powerlink Queensland, Technische Universitat
+    Berlin
+  pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+  markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  source_page_pdf: 38
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-38907
+  contributing_source_titles:
+  - Optimal DER Scheduling for Frequency Stability Study Report
+  contributing_sources:
+  - source_title: Optimal DER Scheduling for Frequency Stability Study Report
+    pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+    markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-38908
+  source_title: Optimal DER Scheduling for Frequency Stability Study Report
+  publish_date: 2022-02
+  project_name: Optimal DER Scheduling for Frequency Stability
+  what_happened: Simulations showed that synthetic inertia (SI) becomes essential
+    for frequency stability at renewable penetration levels above approximately 95–96%,
+    where even fast-responding BESS without SI yields RoCoF of ~1.5 Hz/s (above safe
+    threshold); SI with coefficient H=3 reduces RoCoF by approximately 30% and improves
+    frequency nadir at these penetration levels.
+  lesson_learnt: System planners and BESS aggregators should incorporate synthetic
+    inertia control in BESS dispatch strategies as a requirement specifically for
+    very high renewable penetration scenarios (>94–95% instantaneous non-synchronous
+    generation); below this threshold, optimising BESS response parameters provides
+    comparable benefit at lower control complexity.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id008
+  - 33
+  - 38
+  evidence_excerpt: For 96% penetration, without SI, RoCoF is nearly 1.5 Hz/s, which
+    can be vulnerable to the system [14]. While the introduction SI (inertia constant
+    H = 3) can reduce the RoCoF by approximately 30% and improve nadir by 0.1%...
+    For future power systems with extremely high penetration level, SI will play an
+    important role.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+  project_page_url: https://arena.gov.au/projects/optimal-der-scheduling-for-frequency-stability-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/02/2022
+  kb_year: '2019'
+  kb_associated_project: Optimal DER Scheduling for Frequency Stability
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $527k
+  total_project_value: $1.71m
+  lead_organisation: The University of Tasmania
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/01/2019
+  location: Tasmania
+  project_partners: The ANU, TasNetworks, Powerlink Queensland, Technische Universitat
+    Berlin
+  pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+  markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  source_page_pdf: 33
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-38908
+  contributing_source_titles:
+  - Optimal DER Scheduling for Frequency Stability Study Report
+  contributing_sources:
+  - source_title: Optimal DER Scheduling for Frequency Stability Study Report
+    pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+    markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-38909
+  source_title: Optimal DER Scheduling for Frequency Stability Study Report
+  publish_date: 2022-02
+  project_name: Optimal DER Scheduling for Frequency Stability
+  what_happened: Simulations comparing grid-forming (GFM) and grid-following (GFL)
+    BESS inverter control showed that GFM provides significantly better frequency
+    nadir and damping performance at high renewable penetration (>86%), but below
+    ~86% instantaneous RE penetration the performance difference between GFM and optimised
+    GFL (response time <0.1 s) is negligible.
+  lesson_learnt: Grid-forming inverter control should be prioritised for BESS deployed
+    in systems where instantaneous renewable penetration regularly exceeds 86%; for
+    lower penetration scenarios, optimising GFL parameters (response time <0.1 s,
+    dead-band <0.07 Hz) achieves near-equivalent frequency performance at lower technology
+    cost and complexity.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id009
+  - 46
+  - 47
+  - 48
+  evidence_excerpt: at 98% RE penetration level, the damping ratio offered by GFM
+    is approximately 1 while GFL (0.1 s) only provides a damping ratio of nearly 0.38...
+    for RE penetration level below 86%, selecting GFL operational parameter is a feasible
+    option to enhance BESS participation in providing frequency response, and for
+    RE penetration level higher than 86%, using GFM is more beneficial compared to
+    GFL BESS.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+  project_page_url: https://arena.gov.au/projects/optimal-der-scheduling-for-frequency-stability-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/02/2022
+  kb_year: '2019'
+  kb_associated_project: Optimal DER Scheduling for Frequency Stability
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $527k
+  total_project_value: $1.71m
+  lead_organisation: The University of Tasmania
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/01/2019
+  location: Tasmania
+  project_partners: The ANU, TasNetworks, Powerlink Queensland, Technische Universitat
+    Berlin
+  pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+  markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  source_page_pdf: 46
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-38909
+  contributing_source_titles:
+  - Optimal DER Scheduling for Frequency Stability Study Report
+  contributing_sources:
+  - source_title: Optimal DER Scheduling for Frequency Stability Study Report
+    pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+    markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-38910
+  source_title: Optimal DER Scheduling for Frequency Stability Study Report
+  publish_date: 2022-02
+  project_name: Optimal DER Scheduling for Frequency Stability
+  what_happened: Simulations demonstrated that GFM BESS requires roughly constant
+    installed capacity to maintain FOS limits across a wide range of RE penetration
+    levels (86–96%), whereas GFL BESS capacity requirements grow sharply with increasing
+    penetration, because GFM's damping capability is insensitive to penetration level
+    while GFL's is not.
+  lesson_learnt: GFM-based BESS provides a more future-proof investment for frequency
+    support in systems transitioning to high renewables, as its capacity requirement
+    does not scale dramatically with increasing penetration; system planners sizing
+    BESS for long-lived assets should account for the growing capacity penalty of
+    GFL at penetration levels above 86%.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id010
+  - 47
+  evidence_excerpt: In the case of GFM, with the change in penetration, the required
+    capacity to maintain FOS limits does not change significantly. This is primarily
+    due to the fast response capability of GFM, which contributes to the damping.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+  project_page_url: https://arena.gov.au/projects/optimal-der-scheduling-for-frequency-stability-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/02/2022
+  kb_year: '2019'
+  kb_associated_project: Optimal DER Scheduling for Frequency Stability
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $527k
+  total_project_value: $1.71m
+  lead_organisation: The University of Tasmania
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/01/2019
+  location: Tasmania
+  project_partners: The ANU, TasNetworks, Powerlink Queensland, Technische Universitat
+    Berlin
+  pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+  markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  source_page_pdf: 47
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-38910
+  contributing_source_titles:
+  - Optimal DER Scheduling for Frequency Stability Study Report
+  contributing_sources:
+  - source_title: Optimal DER Scheduling for Frequency Stability Study Report
+    pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+    markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-38911
+  source_title: Optimal DER Scheduling for Frequency Stability Study Report
+  publish_date: 2022-02
+  project_name: Optimal DER Scheduling for Frequency Stability
+  what_happened: There is no current dead-band standard for GFM inverters in the NEM;
+    simulations showed that dead-band selection significantly affects GFM BESS capacity
+    requirements, with a 50% reduction in dead-band reducing required GFM BESS capacity
+    by approximately 130% at 96% RE penetration.
+  lesson_learnt: Standards bodies should urgently establish a dead-band specification
+    for GFM inverters before large-scale deployment; without a standard, capacity
+    sizing calculations for GFM BESS will be unreliable and actual installed capacity
+    may be insufficient to maintain frequency stability.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id011
+  - 47
+  evidence_excerpt: It is worthy of mentioning that there is no current DB standard
+    for GFM, and thus careful consideration must be given in selecting the DB standard
+    for GFM to select the required BESS size to maintain frequency stability in future
+    power system scenario.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+  project_page_url: https://arena.gov.au/projects/optimal-der-scheduling-for-frequency-stability-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/02/2022
+  kb_year: '2019'
+  kb_associated_project: Optimal DER Scheduling for Frequency Stability
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $527k
+  total_project_value: $1.71m
+  lead_organisation: The University of Tasmania
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/01/2019
+  location: Tasmania
+  project_partners: The ANU, TasNetworks, Powerlink Queensland, Technische Universitat
+    Berlin
+  pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+  markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  source_page_pdf: 47
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-38911
+  contributing_source_titles:
+  - Optimal DER Scheduling for Frequency Stability Study Report
+  contributing_sources:
+  - source_title: Optimal DER Scheduling for Frequency Stability Study Report
+    pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+    markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-38912
+  source_title: Optimal DER Scheduling for Frequency Stability Study Report
+  publish_date: 2022-02
+  project_name: Optimal DER Scheduling for Frequency Stability
+  what_happened: The study identified that even moderate levels of DER market participation
+    (40% of customers with PV, 10% with batteries) produce distribution network constraint
+    violations if aggregator bids are not coordinated with the DSO, because wholesale
+    market price signals cause synchronised all-or-nothing aggregator bids that push
+    network voltages and transformer ratings to their limits.
+  lesson_learnt: DER aggregators must coordinate bids with a distribution system operator
+    before submitting to wholesale markets even at moderate DER penetrations; absent
+    coordination, synchronised market responses will cause LV voltage violations and
+    transformer overloads that would result in the aggregator failing to deliver contracted
+    FCAS, risking NEM expulsion.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id012
+  - 76
+  evidence_excerpt: We confirmed that the market participation of moderate levels
+    of DER (e.g., in our test networks as low as 40% of customers with PV, 10% with
+    batteries) would lead to distribution network constraint violations if left unmanaged.
+    In particular, favourable wholesale market prices tend to elicit synchronised,
+    all-or-nothing bids from aggregators, and subsequent synchronised responses to
+    frequency deviations when enabled for FCAS.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (14/26), DER/customer-side (11/26), network/grid (1/26)'
+  source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+  project_page_url: https://arena.gov.au/projects/optimal-der-scheduling-for-frequency-stability-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/02/2022
+  kb_year: '2019'
+  kb_associated_project: Optimal DER Scheduling for Frequency Stability
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $527k
+  total_project_value: $1.71m
+  lead_organisation: The University of Tasmania
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/01/2019
+  location: Tasmania
+  project_partners: The ANU, TasNetworks, Powerlink Queensland, Technische Universitat
+    Berlin
+  pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+  markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  source_page_pdf: 76
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-38912
+  contributing_source_titles:
+  - Optimal DER Scheduling for Frequency Stability Study Report
+  contributing_sources:
+  - source_title: Optimal DER Scheduling for Frequency Stability Study Report
+    pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+    markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-38913
+  source_title: Optimal DER Scheduling for Frequency Stability Study Report
+  publish_date: 2022-02
+  project_name: Optimal DER Scheduling for Frequency Stability
+  what_happened: The network-free DSO model (no network constraints accounted for)
+    produced 15,151 undervoltage and 15,356 overvoltage violations in the LV network
+    across five feeders in a single case study day, and 309 MV/LV transformer congestion
+    violations, all of which would have caused DER to trip and the aggregator to fail
+    its FCAS obligations.
+  lesson_learnt: Aggregators bidding into FCAS markets without a distribution-network-aware
+    DSO coordination layer face systematic and large-scale network violations at moderate
+    DER penetration; LV voltage and transformer thermal limits — not MV limits — are
+    the binding constraints, requiring MV-LV (not MV-only) network modelling for effective
+    coordination.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: The MV-LV network-secure consensus framework eliminated all voltage
+    and congestion violations while reducing aggregator profit by only 2.8% compared
+    to the unconstrained case.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id013
+  - 65
+  - 66
+  - 67
+  evidence_excerpt: Under this strategy, we identify 15,151 undervoltage and 15,356
+    overvoltage violations distributed over 5 different LV feeders... The LV violations
+    would lead to some DER tripping from the network, which means that the aggregator
+    would not be able to fully deliver on the services it traded in the NEM. The aggregator
+    could end up being expelled from the NEM due to consecutive underperformance.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (14/26), DER/customer-side (11/26), network/grid (1/26)'
+  source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+  project_page_url: https://arena.gov.au/projects/optimal-der-scheduling-for-frequency-stability-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/02/2022
+  kb_year: '2019'
+  kb_associated_project: Optimal DER Scheduling for Frequency Stability
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $527k
+  total_project_value: $1.71m
+  lead_organisation: The University of Tasmania
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/01/2019
+  location: Tasmania
+  project_partners: The ANU, TasNetworks, Powerlink Queensland, Technische Universitat
+    Berlin
+  pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+  markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  source_page_pdf: 66
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-38913
+  contributing_source_titles:
+  - Optimal DER Scheduling for Frequency Stability Study Report
+  contributing_sources:
+  - source_title: Optimal DER Scheduling for Frequency Stability Study Report
+    pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+    markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-38914
+  source_title: Optimal DER Scheduling for Frequency Stability Study Report
+  publish_date: 2022-02
+  project_name: Optimal DER Scheduling for Frequency Stability
+  what_happened: The study found that nearly all network constraint violations occurred
+    in LV areas (voltage limits and distribution transformer ratings), not in MV areas,
+    indicating that MV-only network models used by some DNSPs are insufficient for
+    managing DER coordination in markets.
+  lesson_learnt: DNSPs that lack LV network data should prioritise collection and
+    validation of LV network models as an urgent infrastructure investment; MV-only
+    models will systematically miss the binding constraints that emerge with DER market
+    participation, making it impossible to safely enable DER FCAS participation without
+    LV data.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id014
+  - 73
+  evidence_excerpt: All voltage problems were observed in LV areas of the network.
+    This finding suggests that most of the voltage problems will first arise in LV
+    areas before reaching MV areas. This highlights the importance of accounting for
+    the LV network in the DSO power flow model. Many Australian DNSPs currently have
+    no or unreliable LV network data, and limited network sensing. In the coming years
+    it will be important to collect this data to enable the safe and efficient coordination
+    of DER.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (14/26), DER/customer-side (11/26), network/grid (1/26)'
+  source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+  project_page_url: https://arena.gov.au/projects/optimal-der-scheduling-for-frequency-stability-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/02/2022
+  kb_year: '2019'
+  kb_associated_project: Optimal DER Scheduling for Frequency Stability
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $527k
+  total_project_value: $1.71m
+  lead_organisation: The University of Tasmania
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/01/2019
+  location: Tasmania
+  project_partners: The ANU, TasNetworks, Powerlink Queensland, Technische Universitat
+    Berlin
+  pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+  markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  source_page_pdf: 73
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-38914
+  contributing_source_titles:
+  - Optimal DER Scheduling for Frequency Stability Study Report
+  contributing_sources:
+  - source_title: Optimal DER Scheduling for Frequency Stability Study Report
+    pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+    markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-38915
+  source_title: Optimal DER Scheduling for Frequency Stability Study Report
+  publish_date: 2022-02
+  project_name: Optimal DER Scheduling for Frequency Stability
+  what_happened: The study demonstrated that an MV-LV network-secure aggregator coordination
+    framework enables almost full DER market value to be realised even at very high
+    DER penetration (100% of customers with PV, 40% with BESS), with aggregators still
+    achieving 87% of the profit achievable in an unconstrained network scenario.
+  lesson_learnt: Network-aware DER coordination frameworks can preserve the majority
+    of DER market value while maintaining network security even at very high penetration
+    levels; deployment of such frameworks can enable DNSPs to avoid or significantly
+    defer costly network infrastructure upgrades while still enabling FCAS market
+    participation.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id015
+  - 8
+  - 76
+  evidence_excerpt: Even for large numbers of DER leading to a highly contested network,
+    for example 100% of customers with PV and 40% of customers with batteries, aggregators
+    were still able to achieve a profit that was 87% of the hypothetical case where
+    the network had no restrictions.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (14/26), DER/customer-side (11/26), network/grid (1/26)'
+  source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+  project_page_url: https://arena.gov.au/projects/optimal-der-scheduling-for-frequency-stability-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/02/2022
+  kb_year: '2019'
+  kb_associated_project: Optimal DER Scheduling for Frequency Stability
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $527k
+  total_project_value: $1.71m
+  lead_organisation: The University of Tasmania
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/01/2019
+  location: Tasmania
+  project_partners: The ANU, TasNetworks, Powerlink Queensland, Technische Universitat
+    Berlin
+  pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+  markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-38915
+  contributing_source_titles:
+  - Optimal DER Scheduling for Frequency Stability Study Report
+  contributing_sources:
+  - source_title: Optimal DER Scheduling for Frequency Stability Study Report
+    pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+    markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-38916
+  source_title: Optimal DER Scheduling for Frequency Stability Study Report
+  publish_date: 2022-02
+  project_name: Optimal DER Scheduling for Frequency Stability
+  what_happened: The study found that aggregators forgo approximately 30% of potential
+    profit by ignoring the regulation FCAS markets and participating only in contingency
+    FCAS markets; the sequential framework as implemented did not include regulation
+    FCAS bids and consequently achieved significantly lower total revenue than the
+    consensus framework.
+  lesson_learnt: DER aggregators developing market participation strategies should
+    prioritise access to regulation FCAS markets alongside contingency FCAS; excluding
+    regulation markets from bidding strategies leaves approximately 30% of achievable
+    revenue on the table and undermines the business case for aggregation platforms.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id016
+  - 76
+  evidence_excerpt: Stacking market services is key to enabling aggregators, and the
+    customers they represent, to extract the most value from their DER assets. For
+    example, in our experiments, aggregators would forgo around 30% of their profits
+    if they ignore the regulation FCAS markets.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (14/26), DER/customer-side (11/26), network/grid (1/26)'
+  source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+  project_page_url: https://arena.gov.au/projects/optimal-der-scheduling-for-frequency-stability-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/02/2022
+  kb_year: '2019'
+  kb_associated_project: Optimal DER Scheduling for Frequency Stability
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $527k
+  total_project_value: $1.71m
+  lead_organisation: The University of Tasmania
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/01/2019
+  location: Tasmania
+  project_partners: The ANU, TasNetworks, Powerlink Queensland, Technische Universitat
+    Berlin
+  pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+  markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  source_page_pdf: 76
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-38916
+  contributing_source_titles:
+  - Optimal DER Scheduling for Frequency Stability Study Report
+  contributing_sources:
+  - source_title: Optimal DER Scheduling for Frequency Stability Study Report
+    pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+    markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-38917
+  source_title: Optimal DER Scheduling for Frequency Stability Study Report
+  publish_date: 2022-02
+  project_name: Optimal DER Scheduling for Frequency Stability
+  what_happened: The simpler sequential (one-shot) coordination framework achieved
+    near-identical economic performance to the more complex iterative consensus framework
+    (within 0.7%) for homogeneous customer populations, while being 8 times faster
+    computationally and requiring far less inter-party communication (2 messages vs
+    ~12).
+  lesson_learnt: For initial deployment of DER aggregator-DSO coordination frameworks
+    with relatively homogeneous customer populations, the simpler sequential (one-shot)
+    framework provides near-equivalent financial outcomes to the more complex consensus
+    framework at substantially lower computational and communication overhead; the
+    iterative consensus framework's advantage is expected to emerge with more diverse
+    DER portfolios.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id017
+  - 70
+  - 71
+  evidence_excerpt: The sequential framework achieves a 0.7% ($14) higher revenue...
+    The sequential framework (1.19 s) is 8 times faster than the consensus framework
+    (9.96 s). However, both coordination frameworks are able to execute within a timeframe
+    that is appropriate for use with the 5-minute dispatch intervals of the NEM.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (14/26), DER/customer-side (11/26), network/grid (1/26)'
+  source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+  project_page_url: https://arena.gov.au/projects/optimal-der-scheduling-for-frequency-stability-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/02/2022
+  kb_year: '2019'
+  kb_associated_project: Optimal DER Scheduling for Frequency Stability
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $527k
+  total_project_value: $1.71m
+  lead_organisation: The University of Tasmania
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/01/2019
+  location: Tasmania
+  project_partners: The ANU, TasNetworks, Powerlink Queensland, Technische Universitat
+    Berlin
+  pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+  markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-38917
+  contributing_source_titles:
+  - Optimal DER Scheduling for Frequency Stability Study Report
+  contributing_sources:
+  - source_title: Optimal DER Scheduling for Frequency Stability Study Report
+    pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+    markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-38918
+  source_title: Optimal DER Scheduling for Frequency Stability Study Report
+  publish_date: 2022-02
+  project_name: Optimal DER Scheduling for Frequency Stability
+  what_happened: Both the consensus and sequential coordination frameworks were demonstrated
+    to execute within the 5-minute NEM dispatch interval even for the largest test
+    network (Burnie, 2813 buses, 2541 loads with 100% PV and 40% BESS penetration),
+    with the MV-LV network-secure consensus framework averaging 7.9 s and the sequential
+    framework completing in under 1.19 s (not including communication overhead).
+  lesson_learnt: Network-secure DER coordination algorithms are computationally feasible
+    within NEM 5-minute dispatch timescales even at very large network scale and high
+    DER penetration; communication latency between aggregators and DSO — not computation
+    — is likely to be the binding constraint on real-time deployment and should be
+    addressed in system architecture design.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id018
+  - 68
+  - 70
+  - 75
+  - 76
+  evidence_excerpt: the full MV-LV DSO model is still fast enough to keep up with
+    the 5-minute resolution of the NEM... An important observation is that the framework
+    scales well for scenarios with very high DER participation, such as P10040 with
+    1574 DER, presenting suitable execution times for participation in the NEM.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (14/26), DER/customer-side (11/26), network/grid (1/26)'
+  source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+  project_page_url: https://arena.gov.au/projects/optimal-der-scheduling-for-frequency-stability-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/02/2022
+  kb_year: '2019'
+  kb_associated_project: Optimal DER Scheduling for Frequency Stability
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $527k
+  total_project_value: $1.71m
+  lead_organisation: The University of Tasmania
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/01/2019
+  location: Tasmania
+  project_partners: The ANU, TasNetworks, Powerlink Queensland, Technische Universitat
+    Berlin
+  pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+  markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-38918
+  contributing_source_titles:
+  - Optimal DER Scheduling for Frequency Stability Study Report
+  contributing_sources:
+  - source_title: Optimal DER Scheduling for Frequency Stability Study Report
+    pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+    markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-38919
+  source_title: Optimal DER Scheduling for Frequency Stability Study Report
+  publish_date: 2022-02
+  project_name: Optimal DER Scheduling for Frequency Stability
+  what_happened: The study found that elastic bidding (where aggregators submit bid
+    stacks across multiple price bands rather than a single price-taking inelastic
+    bid) reduces the profit gap from a perfect-information baseline from 12% (inelastic)
+    to 10% (elastic), and that this gap is expected to increase as DER market share
+    grows and prices become more volatile and difficult to forecast.
+  lesson_learnt: DER aggregators should develop elastic (multi-price-band) bidding
+    capability for FCAS and energy markets, particularly as DER penetration increases
+    and price forecasting becomes harder; inelastic price-taking bidding strategies
+    will increasingly underperform as market price volatility grows with renewables
+    penetration.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id019
+  - 71
+  - 72
+  evidence_excerpt: The inelastic and elastic approaches respectively lost 12% and
+    10% of the profit of the ideal perfect case. We expect the gap between elastic
+    and inelastic approaches to increase as DER market share increases and prices
+    become more difficult to predict.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (14/26), DER/customer-side (11/26), network/grid (1/26)'
+  source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+  project_page_url: https://arena.gov.au/projects/optimal-der-scheduling-for-frequency-stability-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/02/2022
+  kb_year: '2019'
+  kb_associated_project: Optimal DER Scheduling for Frequency Stability
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $527k
+  total_project_value: $1.71m
+  lead_organisation: The University of Tasmania
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/01/2019
+  location: Tasmania
+  project_partners: The ANU, TasNetworks, Powerlink Queensland, Technische Universitat
+    Berlin
+  pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+  markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  source_page_pdf: 71
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-38919
+  contributing_source_titles:
+  - Optimal DER Scheduling for Frequency Stability Study Report
+  contributing_sources:
+  - source_title: Optimal DER Scheduling for Frequency Stability Study Report
+    pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+    markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-38920
+  source_title: Optimal DER Scheduling for Frequency Stability Study Report
+  publish_date: 2022-02
+  project_name: Optimal DER Scheduling for Frequency Stability
+  what_happened: The study found that the profit reduction from imposing MV-LV network
+    security constraints (versus unconstrained bidding) grows with DER penetration,
+    reaching a maximum of 13% profit loss at 100% PV / 40% BESS penetration in Sandy
+    Bay, and 10.2% in Burnie, with Sandy Bay exhibiting more binding constraints due
+    to a higher number of network violations under unconstrained conditions.
+  lesson_learnt: The cost of network security constraints on aggregator profitability
+    can be quantified and used directly in business case analysis for distribution
+    network upgrades; where the profit lost to network constraints exceeds the annualised
+    cost of targeted network reinforcement, upgrade projects can be justified on DER
+    enablement grounds alone.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id020
+  - 72
+  - 75
+  evidence_excerpt: The gap between the network-free and network-secure cases increases
+    as the amount of DER increases... in the most extreme scenario, P100B40, the aggregator
+    stands to lose up to 13% of the profit it could achieve if there were no network
+    binding constraints. This loss of profit could be put into a business case calculation
+    for whether or not the network should be upgraded to enable more DER capacity
+    to reach the market.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (14/26), DER/customer-side (11/26), network/grid (1/26)'
+  source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+  project_page_url: https://arena.gov.au/projects/optimal-der-scheduling-for-frequency-stability-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/02/2022
+  kb_year: '2019'
+  kb_associated_project: Optimal DER Scheduling for Frequency Stability
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $527k
+  total_project_value: $1.71m
+  lead_organisation: The University of Tasmania
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/01/2019
+  location: Tasmania
+  project_partners: The ANU, TasNetworks, Powerlink Queensland, Technische Universitat
+    Berlin
+  pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+  markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-38920
+  contributing_source_titles:
+  - Optimal DER Scheduling for Frequency Stability Study Report
+  contributing_sources:
+  - source_title: Optimal DER Scheduling for Frequency Stability Study Report
+    pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+    source_pages: *id020
+    source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+    markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-38921
+  source_title: Optimal DER Scheduling for Frequency Stability Study Report
+  publish_date: 2022-02
+  project_name: Optimal DER Scheduling for Frequency Stability
+  what_happened: The study identified that existing dynamic operating envelope approaches
+    (equal allocation and voltage-sensitivity-based allocation) ignore customer and
+    aggregator preferences when allocating network capacity, leading to inefficient
+    outcomes — particularly when customers are heterogeneous in DER ownership, tariffs,
+    and habits — whereas the consensus and sequential frameworks allocate capacity
+    based on market value, improving efficiency.
+  lesson_learnt: Dynamic operating envelope approaches that allocate network capacity
+    without considering customer/aggregator preferences and intentions systematically
+    waste network capacity and reduce DER market value; frameworks that factor in
+    the economic preferences of participants when allocating operating envelopes will
+    be materially superior as customer heterogeneity increases.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id021
+  - 55
+  - 56
+  evidence_excerpt: The existing operating envelope approaches investigated to date
+    have focused on the first two categories, which ignore the preferences of customers
+    / aggregators... Because these simple approaches do not factor in local customer
+    preferences, constraints or state, they can lead to an inefficient allocation
+    of network capacity.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (14/26), DER/customer-side (11/26), network/grid (1/26)'
+  source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+  project_page_url: https://arena.gov.au/projects/optimal-der-scheduling-for-frequency-stability-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/02/2022
+  kb_year: '2019'
+  kb_associated_project: Optimal DER Scheduling for Frequency Stability
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $527k
+  total_project_value: $1.71m
+  lead_organisation: The University of Tasmania
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/01/2019
+  location: Tasmania
+  project_partners: The ANU, TasNetworks, Powerlink Queensland, Technische Universitat
+    Berlin
+  pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+  markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  source_page_pdf: 56
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-38921
+  contributing_source_titles:
+  - Optimal DER Scheduling for Frequency Stability Study Report
+  contributing_sources:
+  - source_title: Optimal DER Scheduling for Frequency Stability Study Report
+    pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+    source_pages: *id021
+    source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+    markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-38922
+  source_title: Optimal DER Scheduling for Frequency Stability Study Report
+  publish_date: 2022-02
+  project_name: Optimal DER Scheduling for Frequency Stability
+  what_happened: The study modelled the 2018 Queensland separation event using a lumped,
+    network-free approach and demonstrated that the simplified model could reproduce
+    the observed system frequency response with reasonable accuracy, validating the
+    lumped approach for assessing DER frequency control capability in future scenarios.
+  lesson_learnt: Lumped network-free power system models validated against real contingency
+    event data provide a sound and computationally tractable basis for assessing DER
+    frequency control capability in future high-renewable scenarios; researchers and
+    planners should use historical contingency events as validation benchmarks before
+    applying such models to prospective scenarios.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id022
+  - 19
+  evidence_excerpt: The simulated response generally matches well the observed response,
+    with the only major difference being in how quickly frequency returns from its
+    peak value back to steady-state... the comparison is useful in demonstrating the
+    validity of the modelling approach being used in this study.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+  project_page_url: https://arena.gov.au/projects/optimal-der-scheduling-for-frequency-stability-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/02/2022
+  kb_year: '2019'
+  kb_associated_project: Optimal DER Scheduling for Frequency Stability
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $527k
+  total_project_value: $1.71m
+  lead_organisation: The University of Tasmania
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/01/2019
+  location: Tasmania
+  project_partners: The ANU, TasNetworks, Powerlink Queensland, Technische Universitat
+    Berlin
+  pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+  markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  source_page_pdf: 19
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-38922
+  contributing_source_titles:
+  - Optimal DER Scheduling for Frequency Stability Study Report
+  contributing_sources:
+  - source_title: Optimal DER Scheduling for Frequency Stability Study Report
+    pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+    source_pages: *id022
+    source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+    markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-38923
+  source_title: Optimal DER Scheduling for Frequency Stability Study Report
+  publish_date: 2022-02
+  project_name: Optimal DER Scheduling for Frequency Stability
+  what_happened: The study identified that BESS providing PFC with aggressive droop
+    has limited additional benefit in today's high-inertia Australian power system
+    because the battery must 'wait' for frequency to deviate sufficiently to elicit
+    a response, meaning fast response capability is wasted; the same aggressive droop
+    and fast response becomes highly valuable in future low-inertia systems.
+  lesson_learnt: Specifying aggressive droop and fast response time for BESS contracted
+    for PFC today imposes no operational disadvantage and positions these assets to
+    provide disproportionate frequency support value as system inertia declines; system
+    procurers should therefore include these parameters in current BESS contracts
+    and connection standards as a forward-compatible requirement.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id023
+  - 23
+  evidence_excerpt: A high droop constant for a fast-responding inverter-backed resource
+    has little extra value today, but can provide a considerable advantage in a system
+    with low inertia.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+  project_page_url: https://arena.gov.au/projects/optimal-der-scheduling-for-frequency-stability-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/02/2022
+  kb_year: '2019'
+  kb_associated_project: Optimal DER Scheduling for Frequency Stability
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $527k
+  total_project_value: $1.71m
+  lead_organisation: The University of Tasmania
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/01/2019
+  location: Tasmania
+  project_partners: The ANU, TasNetworks, Powerlink Queensland, Technische Universitat
+    Berlin
+  pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+  markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  source_page_pdf: 23
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-38923
+  contributing_source_titles:
+  - Optimal DER Scheduling for Frequency Stability Study Report
+  contributing_sources:
+  - source_title: Optimal DER Scheduling for Frequency Stability Study Report
+    pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+    source_pages: *id023
+    source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+    markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-38924
+  source_title: Optimal DER Scheduling for Frequency Stability Study Report
+  publish_date: 2022-02
+  project_name: Optimal DER Scheduling for Frequency Stability
+  what_happened: The study identified that currently available frequency-watt control
+    in BESS inverters will likely take several years to aggregate enough enabled capacity
+    to have a significant system-level benefit, because deployed BESS units were not
+    installed with these operational parameters enabled or specified.
+  lesson_learnt: Retrofitting or reprogramming existing BESS fleet units to enable
+    frequency-watt control should be prioritised by aggregators and system operators;
+    without a deliberate programme to activate frequency-watt capability on already-installed
+    units, the benefit of installed BESS capacity for frequency support will not materialise
+    for years, creating a gap in system frequency capability during the inertia transition.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id024
+  - 31
+  evidence_excerpt: The currently available frequency-watt control function of BESS
+    inverters will help mitigate frequency transient events in future power systems
+    with high non-synchronous REs. Assuming operational parameters of BESS are not
+    retrofitted, it will likely take several years to build up enough aggregate capacity
+    of frequency-watt enabled BESSs to have a significant benefit.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (14/26), DER/customer-side (11/26), network/grid (1/26); project_scale_band reconciled
+    to ''demonstration'' from: demonstration (25/26), programmatic/portfolio-level
+    (1/26)'
+  source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+  project_page_url: https://arena.gov.au/projects/optimal-der-scheduling-for-frequency-stability-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/02/2022
+  kb_year: '2019'
+  kb_associated_project: Optimal DER Scheduling for Frequency Stability
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $527k
+  total_project_value: $1.71m
+  lead_organisation: The University of Tasmania
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/01/2019
+  location: Tasmania
+  project_partners: The ANU, TasNetworks, Powerlink Queensland, Technische Universitat
+    Berlin
+  pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+  markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  source_page_pdf: 31
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-38924
+  contributing_source_titles:
+  - Optimal DER Scheduling for Frequency Stability Study Report
+  contributing_sources:
+  - source_title: Optimal DER Scheduling for Frequency Stability Study Report
+    pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+    source_pages: *id024
+    source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+    markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-38925
+  source_title: Optimal DER Scheduling for Frequency Stability Study Report
+  publish_date: 2022-02
+  project_name: Optimal DER Scheduling for Frequency Stability
+  what_happened: The study found that the current NEM market structure requires batteries
+    to submit separate bids under different identifiers for import and export, adding
+    complexity to DER aggregator participation; the sequential framework assumed a
+    simplified unified import/export bid — a change AEMO was already considering —
+    demonstrating the potential for simplified market participation.
+  lesson_learnt: Market rule reforms allowing DER and batteries to submit a single
+    unified import/export bid (rather than separate identifiers) would materially
+    reduce complexity for aggregators and improve bidding efficiency; ARENA-funded
+    projects and market bodies should advocate for this change as a prerequisite for
+    effective DER FCAS participation at scale.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id025
+  - 54
+  evidence_excerpt: In the existing market, load and generation are treated asymmetrically,
+    in the sense that a battery has to submit separate bids for import and export...
+    it would be simpler for DER to provide a single bid that can cover both imports
+    and exports at the same time.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (14/26), DER/customer-side (11/26), network/grid (1/26)'
+  source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+  project_page_url: https://arena.gov.au/projects/optimal-der-scheduling-for-frequency-stability-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/02/2022
+  kb_year: '2019'
+  kb_associated_project: Optimal DER Scheduling for Frequency Stability
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $527k
+  total_project_value: $1.71m
+  lead_organisation: The University of Tasmania
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/01/2019
+  location: Tasmania
+  project_partners: The ANU, TasNetworks, Powerlink Queensland, Technische Universitat
+    Berlin
+  pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+  markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  source_page_pdf: 54
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-38925
+  contributing_source_titles:
+  - Optimal DER Scheduling for Frequency Stability Study Report
+  contributing_sources:
+  - source_title: Optimal DER Scheduling for Frequency Stability Study Report
+    pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+    source_pages: *id025
+    source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+    markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-38926
+  source_title: Optimal DER Scheduling for Frequency Stability Study Report
+  publish_date: 2022-02
+  project_name: Optimal DER Scheduling for Frequency Stability
+  what_happened: 'The study was constrained to a lumped, network-free approach for
+    frequency response simulations and a limited number of distribution network case
+    studies, leaving key questions unresolved: impact of transmission network topology,
+    inter-area oscillations, diverse DER mixes, unbalanced networks, forecast uncertainty,
+    and real pricing mechanisms for aggregators.'
+  lesson_learnt: 'Future studies on DER frequency control should extend to include:
+    full transmission network models with multiple DER locations; diverse distribution
+    network topologies including unbalanced LV networks; robust scheduling optimisation
+    under forecast uncertainty (price, demand, generation); and real pricing mechanisms
+    for operating envelopes — each of these gaps limits direct applicability of current
+    findings to actual network planning.'
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id026
+  - 9
+  evidence_excerpt: The focus of this study was contained to investigation of system
+    response using a lumped model approach and from aggregated DER, and optimal scheduling
+    was applied to a limited number of distribution network and market case studies.
+    There are numerous logical extensions of this work.
+  confidence_note: lifecycle_phase assigned as close-out/post-project review because
+    this is a recommendations-for-future-work section at the end of the final report,
+    reflecting on scope limitations.
+  source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+  project_page_url: https://arena.gov.au/projects/optimal-der-scheduling-for-frequency-stability-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 27/02/2022
+  kb_year: '2019'
+  kb_associated_project: Optimal DER Scheduling for Frequency Stability
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $527k
+  total_project_value: $1.71m
+  lead_organisation: The University of Tasmania
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 07/01/2019
+  location: Tasmania
+  project_partners: The ANU, TasNetworks, Powerlink Queensland, Technische Universitat
+    Berlin
+  pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+  markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-38926
+  contributing_source_titles:
+  - Optimal DER Scheduling for Frequency Stability Study Report
+  contributing_sources:
+  - source_title: Optimal DER Scheduling for Frequency Stability Study Report
+    pdf_url: https://arena.gov.au/assets/2022/03/optimal-der-scheduling-for-frequency-stability-study-report.pdf
+    source_pages: *id026
+    source_url: https://arena.gov.au/knowledge-bank/optimal-der-scheduling-for-frequency-stability-study-report/
+    markdown_filename: optimal_der_scheduling_for_frequency_stability_study_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false

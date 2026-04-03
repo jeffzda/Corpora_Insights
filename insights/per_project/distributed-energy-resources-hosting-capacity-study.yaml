@@ -1,0 +1,1210 @@
+- record_id: ARENA-DLV-60101
+  source_title: Future Grid for Distributed Energy
+  publish_date: 2020-06
+  project_name: Future Grid for Distributed Energy — DER Hosting Capacity Study
+  what_happened: Power quality issues (voltage breaches above the +10% nominal limit)
+    occurred at low PV penetration levels (below 25%) on seven of the 10 example LV
+    networks modelled, with five networks already experiencing breaches at their current
+    PV penetration level before any additional installations were simulated.
+  lesson_learnt: DNSPs should not assume LV networks have significant headroom for
+    additional PV connections — a majority of network types will experience voltage
+    breaches at relatively low penetration levels, and proactive hosting capacity
+    assessment is required before connection approvals are granted.
+  issue_severity: major
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id001
+  - 8
+  - 33
+  evidence_excerpt: Power quality issues occurred at low PV penetration levels (below
+    25%) for seven of the 10 example LV networks. Two of the 10 LV networks never
+    experienced a breach and were able to reach maximum penetration.
+  confidence_note: issue_severity rated major because voltage breaches at current
+    penetration levels imply existing customers are affected and future connections
+    may be refused.
+  source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+  project_page_url: https://arena.gov.au/projects/distributed-energy-resources-hosting-capacity-study/
+  kb_category: Distributed energy resources, System security and reliability
+  kb_publish_date: 4/06/2020
+  kb_year: '2018'
+  kb_associated_project: Distributed Energy Resources Hosting Capacity Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $164k
+  total_project_value: $353k
+  lead_organisation: Powercor Australia Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 20/12/2018
+  location: Melbourne, Victoria
+  project_partners: ENEA Australia
+  pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+  markdown_filename: future_grid_for_distributed_energy.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60101
+  contributing_source_titles:
+  - Future Grid for Distributed Energy
+  contributing_sources:
+  - source_title: Future Grid for Distributed Energy
+    pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+    markdown_filename: future_grid_for_distributed_energy.md
+  arena_category:
+  - Distributed energy resources
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-60102
+  source_title: Future Grid for Distributed Energy
+  publish_date: 2020-06
+  project_name: Future Grid for Distributed Energy — DER Hosting Capacity Study
+  what_happened: Behind-the-meter batteries operated to maximise customer self-consumption
+    provided no improvement to LV network hosting capacity across all 10 example networks.
+    Batteries typically reached full charge around midday — before peak PV export
+    voltage stress — and were therefore unable to absorb excess generation when most
+    needed.
+  lesson_learnt: Batteries operating in default self-consumption mode deliver no grid
+    voltage management benefit; any policy or program that incentivises behind-the-meter
+    batteries without specifying coordinated grid-service operating modes should not
+    expect hosting capacity improvements.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Study recommended exploring alternative battery operating modes
+    targeting peak-shaving of PV export rather than self-consumption maximisation.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id002
+  - 10
+  - 57
+  - 66
+  evidence_excerpt: Across the three metrics for assessing technical performance,
+    behind-the-meter batteries did not improve the ability for LV networks to accommodate
+    increasing PV penetration levels. This was due to the way they were operated in
+    this study, which was to maximise self-consumption.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+  project_page_url: https://arena.gov.au/projects/distributed-energy-resources-hosting-capacity-study/
+  kb_category: Distributed energy resources, System security and reliability
+  kb_publish_date: 4/06/2020
+  kb_year: '2018'
+  kb_associated_project: Distributed Energy Resources Hosting Capacity Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $164k
+  total_project_value: $353k
+  lead_organisation: Powercor Australia Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 20/12/2018
+  location: Melbourne, Victoria
+  project_partners: ENEA Australia
+  pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+  markdown_filename: future_grid_for_distributed_energy.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60102
+  contributing_source_titles:
+  - Future Grid for Distributed Energy
+  contributing_sources:
+  - source_title: Future Grid for Distributed Energy
+    pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+    markdown_filename: future_grid_for_distributed_energy.md
+  arena_category:
+  - Distributed energy resources
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-60103
+  source_title: Future Grid for Distributed Energy
+  publish_date: 2020-06
+  project_name: Future Grid for Distributed Energy — DER Hosting Capacity Study
+  what_happened: Smart inverters with Volt-Watt and Volt-VAR control achieved the
+    highest net-benefit of all mitigation measures at low PV penetration levels due
+    to near-zero marginal cost (mandated in Victoria), but their benefit declined
+    sharply at higher penetration levels because they achieved voltage regulation
+    primarily through curtailing PV exports rather than enabling generation.
+  lesson_learnt: Smart inverters should be mandated as a baseline measure alongside
+    all new PV installations but must not be treated as a complete solution — at high
+    PV penetration levels their reliance on curtailment makes them insufficient alone,
+    and targeted network augmentation will still be required.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Victoria mandated smart inverters with Volt-Watt/Volt-VAR modes
+    under the Solar Homes Program; the study recommended other jurisdictions follow
+    this as a minimum baseline.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id003
+  - 10
+  - 11
+  - 65
+  evidence_excerpt: Smart inverters had the highest net-benefit at low PV penetration
+    levels due to their comparatively lower cost. However, as PV penetration increased,
+    transformer upgrade/reconductoring had the highest net-benefit for most of the
+    LV networks. This was because as PV penetration increased, smart inverters began
+    to curtail PV generation, whereas network upgrade/reconductoring enabled more
+    PV generation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+  project_page_url: https://arena.gov.au/projects/distributed-energy-resources-hosting-capacity-study/
+  kb_category: Distributed energy resources, System security and reliability
+  kb_publish_date: 4/06/2020
+  kb_year: '2018'
+  kb_associated_project: Distributed Energy Resources Hosting Capacity Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $164k
+  total_project_value: $353k
+  lead_organisation: Powercor Australia Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 20/12/2018
+  location: Melbourne, Victoria
+  project_partners: ENEA Australia
+  pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+  markdown_filename: future_grid_for_distributed_energy.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60103
+  contributing_source_titles:
+  - Future Grid for Distributed Energy
+  contributing_sources:
+  - source_title: Future Grid for Distributed Energy
+    pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+    markdown_filename: future_grid_for_distributed_energy.md
+  arena_category:
+  - Distributed energy resources
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-60104
+  source_title: Future Grid for Distributed Energy
+  publish_date: 2020-06
+  project_name: Future Grid for Distributed Energy — DER Hosting Capacity Study
+  what_happened: Transformer upgrade/reconductoring (replacing the distribution transformer
+    to include an off-load tap changer with additional buck taps, and upgrading LV
+    conductors) was the highest net-benefit mitigation measure for the majority of
+    LV networks at higher PV penetration levels, outperforming OLTC and LVR on cost-benefit
+    grounds for networks with moderate voltage rise.
+  lesson_learnt: During routine transformer replacement cycles, DNSPs should install
+    transformers with additional buck taps targeting the current 230 V nominal standard
+    — this low-cost intervention defers or eliminates the need for more expensive
+    augmentation as PV penetration grows.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id004
+  - 11
+  - 66
+  evidence_excerpt: This study showed that an increased 'buck' tap range of an off-load
+    tap changer had a much more beneficial impact on voltage than an increase of the
+    transformer's rating and/or reconductoring of the LV network. So does the installation
+    of a transformer targeting the updated regulated voltage range.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+  project_page_url: https://arena.gov.au/projects/distributed-energy-resources-hosting-capacity-study/
+  kb_category: Distributed energy resources, System security and reliability
+  kb_publish_date: 4/06/2020
+  kb_year: '2018'
+  kb_associated_project: Distributed Energy Resources Hosting Capacity Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $164k
+  total_project_value: $353k
+  lead_organisation: Powercor Australia Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 20/12/2018
+  location: Melbourne, Victoria
+  project_partners: ENEA Australia
+  pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+  markdown_filename: future_grid_for_distributed_energy.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60104
+  contributing_source_titles:
+  - Future Grid for Distributed Energy
+  contributing_sources:
+  - source_title: Future Grid for Distributed Energy
+    pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+    markdown_filename: future_grid_for_distributed_energy.md
+  arena_category:
+  - Distributed energy resources
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-60105
+  source_title: Future Grid for Distributed Energy
+  publish_date: 2020-06
+  project_name: Future Grid for Distributed Energy — DER Hosting Capacity Study
+  what_happened: Eight of the 10 example LV networks were equipped with older distribution
+    transformers still targeting the obsolete 240 V nominal standard rather than the
+    current 230 V standard, resulting in LV bus voltages 3–4% above nominal before
+    any PV is added — consuming a material portion of the available +10% voltage headroom.
+  lesson_learnt: The legacy 240 V transformer issue is widespread across CPPAL's network
+    and likely across other DNSPs; identifying and prioritising replacement of these
+    transformers should be incorporated into asset management programs as a cost-effective
+    pre-condition for enabling further PV connections.
+  issue_severity: major
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Study recommended that during normal transformer replacement
+    activities, transformers targeting the current 230 V nominal standard with additional
+    buck taps be installed in all cases.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id005
+  - 41
+  - 66
+  evidence_excerpt: The upshot of this is that many DSS transformers' LV bus voltage
+    is 3%–4% above their HV bus voltage (in percentage of nominal terms), an increase
+    that compounds any voltage rise caused by an increasing PV penetration. Of the
+    10 example LV networks, eight were equipped with transformers exhibiting this
+    issue.
+  confidence_note: 'project_scale_band reconciled to ''demonstration'' from: demonstration
+    (12/16), utility/large-scale (3/16), programmatic/portfolio-level (1/16)'
+  source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+  project_page_url: https://arena.gov.au/projects/distributed-energy-resources-hosting-capacity-study/
+  kb_category: Distributed energy resources, System security and reliability
+  kb_publish_date: 4/06/2020
+  kb_year: '2018'
+  kb_associated_project: Distributed Energy Resources Hosting Capacity Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $164k
+  total_project_value: $353k
+  lead_organisation: Powercor Australia Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 20/12/2018
+  location: Melbourne, Victoria
+  project_partners: ENEA Australia
+  pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+  markdown_filename: future_grid_for_distributed_energy.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60105
+  contributing_source_titles:
+  - Future Grid for Distributed Energy
+  contributing_sources:
+  - source_title: Future Grid for Distributed Energy
+    pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+    markdown_filename: future_grid_for_distributed_energy.md
+  arena_category:
+  - Distributed energy resources
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-60106
+  source_title: Future Grid for Distributed Energy
+  publish_date: 2020-06
+  project_name: Future Grid for Distributed Energy — DER Hosting Capacity Study
+  what_happened: On the one long rural HV feeder modelled, simulated PV penetration
+    caused HV bus voltage to breach the +10% nominal limit before the voltage was
+    even stepped down to the LV level, meaning LV voltage rise compounded with HV
+    voltage rise and could theoretically reach extremely high levels without coordinated
+    management of both network portions.
+  lesson_learnt: For long rural HV feeders, voltage management strategies must address
+    both HV and LV portions simultaneously — LV-only mitigation measures are insufficient
+    because HV voltage rise independently breaches limits and compounds LV effects.
+  issue_severity: major
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Study recommended further analysis combining HV and LV mitigation
+    measures for long feeders, including HV regulators and OLTC functionality at zone
+    substations.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id006
+  - 8
+  - 39
+  - 68
+  evidence_excerpt: It is notable that with moderate PV uptake, an unmanaged HV feeder
+    can reach +10% nominal voltage before stepping down to the LV level. In these
+    cases, voltage rise within an LV network compounds with the rise seen at HV level
+    and could (without intervention) reach extremely high levels. To address this
+    voltage rise, management is required both within the HV and LV network portions.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+  project_page_url: https://arena.gov.au/projects/distributed-energy-resources-hosting-capacity-study/
+  kb_category: Distributed energy resources, System security and reliability
+  kb_publish_date: 4/06/2020
+  kb_year: '2018'
+  kb_associated_project: Distributed Energy Resources Hosting Capacity Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $164k
+  total_project_value: $353k
+  lead_organisation: Powercor Australia Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 20/12/2018
+  location: Melbourne, Victoria
+  project_partners: ENEA Australia
+  pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+  markdown_filename: future_grid_for_distributed_energy.md
+  source_page_pdf: 39
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60106
+  contributing_source_titles:
+  - Future Grid for Distributed Energy
+  contributing_sources:
+  - source_title: Future Grid for Distributed Energy
+    pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+    markdown_filename: future_grid_for_distributed_energy.md
+  arena_category:
+  - Distributed energy resources
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-60107
+  source_title: Future Grid for Distributed Energy
+  publish_date: 2020-06
+  project_name: Future Grid for Distributed Energy — DER Hosting Capacity Study
+  what_happened: The study's initial plan to extrapolate results from 10 example LV
+    networks to CPPAL's full 80,000-network portfolio was abandoned mid-project because
+    within-category variability was too high to support reliable network-wide inferences
+    from a single example per category.
+  lesson_learnt: A sample of 10 LV networks across 10 categories is insufficient for
+    network-wide extrapolation — DNSPs undertaking hosting capacity studies should
+    invest in building power flow models for substantially more networks (one to two
+    orders of magnitude more) to achieve statistically reliable inference.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: The study shifted its focus from network-wide extrapolation to
+    deep examination of the 10 example networks through techno-economic analysis;
+    network-wide maps were retained as indicative only.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id007
+  - 24
+  - 34
+  - 66
+  evidence_excerpt: The study initially intended to extrapolate the example results
+    across CPPAL's distribution network, but due to variability of LV network characteristics
+    even within each category, this extrapolation would have been potentially misleading
+    without significant further work. For that reason, network-wide extrapolation
+    was largely removed from the study.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+  project_page_url: https://arena.gov.au/projects/distributed-energy-resources-hosting-capacity-study/
+  kb_category: Distributed energy resources, System security and reliability
+  kb_publish_date: 4/06/2020
+  kb_year: '2018'
+  kb_associated_project: Distributed Energy Resources Hosting Capacity Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $164k
+  total_project_value: $353k
+  lead_organisation: Powercor Australia Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 20/12/2018
+  location: Melbourne, Victoria
+  project_partners: ENEA Australia
+  pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+  markdown_filename: future_grid_for_distributed_energy.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60107
+  contributing_source_titles:
+  - Future Grid for Distributed Energy
+  contributing_sources:
+  - source_title: Future Grid for Distributed Energy
+    pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+    markdown_filename: future_grid_for_distributed_energy.md
+  arena_category:
+  - Distributed energy resources
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-60108
+  source_title: Future Grid for Distributed Energy
+  publish_date: 2020-06
+  project_name: Future Grid for Distributed Energy — DER Hosting Capacity Study
+  what_happened: Advanced metering infrastructure (AMI) data enabled power flow models
+    to be validated against historical voltage readings through a 'digital twin test',
+    which revealed that initial simulated voltages were systematically lower and less
+    variable than historical readings — discrepancies larger than anticipated, attributable
+    to unrepresented zone substation tap behaviour and unknown distribution substation
+    tap settings.
+  lesson_learnt: LV network power flow models built without accounting for ZSS tap
+    behaviour and DSS tap settings will systematically underestimate voltage levels;
+    iterative digital twin validation against AMI historical data is essential before
+    using models for hosting capacity or investment decisions.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: data & measurement
+  intervention_note: Historical ZSS voltages were substituted into the model at each
+    simulation timestamp, and a correction was derived for each DSS transformer's
+    tap position inferred from historical AMI voltage readings; after correction,
+    simulated and historical voltages aligned closely.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id008
+  - 29
+  - 30
+  evidence_excerpt: The digital twin test highlighted that the magnitude of these
+    two effects was larger than expected. A comparison of the baseline simulated voltages
+    and historical voltages showed that the power flow modelling produced voltages
+    that were lower and less varied than what occurred historically.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+  project_page_url: https://arena.gov.au/projects/distributed-energy-resources-hosting-capacity-study/
+  kb_category: Distributed energy resources, System security and reliability
+  kb_publish_date: 4/06/2020
+  kb_year: '2018'
+  kb_associated_project: Distributed Energy Resources Hosting Capacity Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $164k
+  total_project_value: $353k
+  lead_organisation: Powercor Australia Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 20/12/2018
+  location: Melbourne, Victoria
+  project_partners: ENEA Australia
+  pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+  markdown_filename: future_grid_for_distributed_energy.md
+  source_page_pdf: 29
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60108
+  contributing_source_titles:
+  - Future Grid for Distributed Energy
+  contributing_sources:
+  - source_title: Future Grid for Distributed Energy
+    pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+    markdown_filename: future_grid_for_distributed_energy.md
+  arena_category:
+  - Distributed energy resources
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-60109
+  source_title: Future Grid for Distributed Energy
+  publish_date: 2020-06
+  project_name: Future Grid for Distributed Energy — DER Hosting Capacity Study
+  what_happened: Phase imbalance — uneven distribution of customer load across three
+    phases — could not be modelled directly because individual customer phase allocations
+    were unknown on CPPAL's network, requiring a post-processing correction approach
+    that carries increasing uncertainty as PV penetration grows.
+  lesson_learnt: DNSPs should invest in building phase allocation data for their LV
+    customer base; without it, power flow models must treat each customer as a balanced
+    three-phase load, producing an optimistic view of voltage regulation that could
+    lead to underestimating the scale of hosting capacity interventions needed.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: A linear correction factor was fitted per customer from historical
+    AMI voltage swing data as a post-processing step to partially compensate for phase
+    imbalance effects.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id009
+  - 24
+  - 30
+  evidence_excerpt: Currently, individual CPPAL customer's phase allocation is not
+    known, despite ongoing efforts to build an inference algorithm using AMI data
+    sources. Because of this, a balanced modelling approach has been used, which treats
+    each customer as a balanced three-phase load. This is a highly optimistic view
+    of the LV network's ability to regulate voltages.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+  project_page_url: https://arena.gov.au/projects/distributed-energy-resources-hosting-capacity-study/
+  kb_category: Distributed energy resources, System security and reliability
+  kb_publish_date: 4/06/2020
+  kb_year: '2018'
+  kb_associated_project: Distributed Energy Resources Hosting Capacity Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $164k
+  total_project_value: $353k
+  lead_organisation: Powercor Australia Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 20/12/2018
+  location: Melbourne, Victoria
+  project_partners: ENEA Australia
+  pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+  markdown_filename: future_grid_for_distributed_energy.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60109
+  contributing_source_titles:
+  - Future Grid for Distributed Energy
+  contributing_sources:
+  - source_title: Future Grid for Distributed Energy
+    pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+    markdown_filename: future_grid_for_distributed_energy.md
+  arena_category:
+  - Distributed energy resources
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-60110
+  source_title: Future Grid for Distributed Energy
+  publish_date: 2020-06
+  project_name: Future Grid for Distributed Energy — DER Hosting Capacity Study
+  what_happened: Increasing the hosting capacity of LV networks with very few customers
+    (Low-density rural single-phase and Remote rural SWER categories) was found to
+    be not cost-efficient under any mitigation measure assessed — the value of additional
+    PV generation enabled was too small to offset even the least expensive interventions.
+  lesson_learnt: Investment appraisal for DER hosting capacity upgrades on sparse
+    rural networks should account for the low customer count; dynamic or flexible
+    export limits may be a more cost-effective policy instrument than network augmentation
+    for these network types.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id010
+  - 10
+  - 63
+  evidence_excerpt: Increasing the hosting capacity of LV networks with few customers
+    is not cost-efficient because the benefit of additional PV generation is unlikely
+    to outweigh the cost. This is evidenced by the example LV networks from the Low-density
+    rural single-phase and Remote rural single-wire earth return (SWER) categories.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+  project_page_url: https://arena.gov.au/projects/distributed-energy-resources-hosting-capacity-study/
+  kb_category: Distributed energy resources, System security and reliability
+  kb_publish_date: 4/06/2020
+  kb_year: '2018'
+  kb_associated_project: Distributed Energy Resources Hosting Capacity Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $164k
+  total_project_value: $353k
+  lead_organisation: Powercor Australia Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 20/12/2018
+  location: Melbourne, Victoria
+  project_partners: ENEA Australia
+  pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+  markdown_filename: future_grid_for_distributed_energy.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60110
+  contributing_source_titles:
+  - Future Grid for Distributed Energy
+  contributing_sources:
+  - source_title: Future Grid for Distributed Energy
+    pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+    markdown_filename: future_grid_for_distributed_energy.md
+  arena_category:
+  - Distributed energy resources
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-60111
+  source_title: Future Grid for Distributed Energy
+  publish_date: 2020-06
+  project_name: Future Grid for Distributed Energy — DER Hosting Capacity Study
+  what_happened: Fixed (static) export limits applied by DNSPs resulted in some customers
+    having PV generation curtailed when network conditions did not require it, while
+    unlocking 100% of exports across all networks was found to be economically inefficient
+    and would create unnecessary upward pressure on electricity prices.
+  lesson_learnt: Governments and regulators should enable dynamic (flexible) export
+    limits rather than maintaining static caps — dynamic curtailment through smart
+    inverter Volt-Watt control allows curtailment only when the network requires it,
+    improving customer outcomes and enabling more PV capacity without network investment.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: policy/market influence only
+  secondary_failure_mode: null
+  intervention_note: Study recommended governments allow flexible export limits, consistent
+    with AEMC's own recommendations on dynamic export as a DER integration enabler.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id011
+  - 11
+  - 65
+  evidence_excerpt: Historically, DNSPs have applied a fixed (or static) export limit
+    that caps PV exports to the grid. This blanket rule means that some customers
+    are having their PV generation curtailed when it is not required. Allowing customers
+    to only be curtailed on the occasions when the grid requires it via flexible export
+    limits is a more efficient alternative.
+  confidence_note: 'project_scale_band reconciled to ''demonstration'' from: demonstration
+    (12/16), utility/large-scale (3/16), programmatic/portfolio-level (1/16)'
+  source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+  project_page_url: https://arena.gov.au/projects/distributed-energy-resources-hosting-capacity-study/
+  kb_category: Distributed energy resources, System security and reliability
+  kb_publish_date: 4/06/2020
+  kb_year: '2018'
+  kb_associated_project: Distributed Energy Resources Hosting Capacity Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $164k
+  total_project_value: $353k
+  lead_organisation: Powercor Australia Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 20/12/2018
+  location: Melbourne, Victoria
+  project_partners: ENEA Australia
+  pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+  markdown_filename: future_grid_for_distributed_energy.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60111
+  contributing_source_titles:
+  - Future Grid for Distributed Energy
+  contributing_sources:
+  - source_title: Future Grid for Distributed Energy
+    pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+    markdown_filename: future_grid_for_distributed_energy.md
+  arena_category:
+  - Distributed energy resources
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-60112
+  source_title: Future Grid for Distributed Energy
+  publish_date: 2020-06
+  project_name: Future Grid for Distributed Energy — DER Hosting Capacity Study
+  what_happened: The study found there is no single mitigation measure that optimally
+    addresses hosting capacity challenges across all LV network types — the preferred
+    measure is highly sensitive to local network characteristics including transformer
+    rating, number of customers, feeder type, and magnitude of voltage rise.
+  lesson_learnt: DNSPs should not adopt a single network-wide DER mitigation strategy;
+    investment planning must be informed by LV network-specific power flow modelling
+    to identify the cost-optimal solution for each network's characteristics and PV
+    penetration trajectory.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id012
+  - 8
+  - 56
+  evidence_excerpt: The range of outcomes in the following table shows that there
+    is no single solution to improving hosting capacity that can be applied across
+    all the LV networks. This reflects the variability across CPPAL's distribution
+    network, where the preferred mitigation measure is highly sensitive to local network
+    characteristics.
+  confidence_note: 'project_scale_band reconciled to ''demonstration'' from: demonstration
+    (12/16), utility/large-scale (3/16), programmatic/portfolio-level (1/16)'
+  source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+  project_page_url: https://arena.gov.au/projects/distributed-energy-resources-hosting-capacity-study/
+  kb_category: Distributed energy resources, System security and reliability
+  kb_publish_date: 4/06/2020
+  kb_year: '2018'
+  kb_associated_project: Distributed Energy Resources Hosting Capacity Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $164k
+  total_project_value: $353k
+  lead_organisation: Powercor Australia Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 20/12/2018
+  location: Melbourne, Victoria
+  project_partners: ENEA Australia
+  pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+  markdown_filename: future_grid_for_distributed_energy.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60112
+  contributing_source_titles:
+  - Future Grid for Distributed Energy
+  contributing_sources:
+  - source_title: Future Grid for Distributed Energy
+    pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+    markdown_filename: future_grid_for_distributed_energy.md
+  arena_category:
+  - Distributed energy resources
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-60113
+  source_title: Future Grid for Distributed Energy
+  publish_date: 2020-06
+  project_name: Future Grid for Distributed Energy — DER Hosting Capacity Study
+  what_happened: OLTC technology (on-load tap changers at distribution substation
+    level) had never been installed on CPPAL's distribution network at the time of
+    the study and was only in the planning/pilot phase, despite being assessed as
+    the highest net-benefit option for one LV network type experiencing extreme voltage
+    rise.
+  lesson_learnt: DNSPs should progress OLTC trials at distribution substations as
+    a priority for networks with extreme voltage rise — the technology's higher capital
+    cost per unit is offset by requiring only one unit per network, and its auto-tapping
+    range (±10%) significantly outperforms manual off-load tap changers (±5%) for
+    severe voltage management cases.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id013
+  - 45
+  - 46
+  evidence_excerpt: OLTCs have never been installed at distribution substations on
+    CPPAL's networks, although trials and pilots are being planned.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+  project_page_url: https://arena.gov.au/projects/distributed-energy-resources-hosting-capacity-study/
+  kb_category: Distributed energy resources, System security and reliability
+  kb_publish_date: 4/06/2020
+  kb_year: '2018'
+  kb_associated_project: Distributed Energy Resources Hosting Capacity Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $164k
+  total_project_value: $353k
+  lead_organisation: Powercor Australia Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 20/12/2018
+  location: Melbourne, Victoria
+  project_partners: ENEA Australia
+  pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+  markdown_filename: future_grid_for_distributed_energy.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60113
+  contributing_source_titles:
+  - Future Grid for Distributed Energy
+  contributing_sources:
+  - source_title: Future Grid for Distributed Energy
+    pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+    markdown_filename: future_grid_for_distributed_energy.md
+  arena_category:
+  - Distributed energy resources
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-60114
+  source_title: Future Grid for Distributed Energy
+  publish_date: 2020-06
+  project_name: Future Grid for Distributed Energy — DER Hosting Capacity Study
+  what_happened: Victoria's Solar Battery Rebate scheme provided no guidelines on
+    how customers should operate their battery systems, meaning batteries were by
+    default operated in self-consumption mode — a mode confirmed by this study to
+    provide no hosting capacity or grid voltage management benefit.
+  lesson_learnt: Battery incentive programs and rebate schemes should include operating
+    guidelines or interoperability requirements that enable grid-service modes; without
+    these conditions, subsidy spending on behind-the-meter batteries will not deliver
+    network voltage management benefits and may represent misallocated public investment.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: policy/market influence only
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: Study recommended that battery programs require some level of
+    interoperability so batteries can be controlled when needed for grid services,
+    consistent with AEMO's Draft 2020 ISP recommendation.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id014
+  - 12
+  - 66
+  - 67
+  evidence_excerpt: Although eligible customers must agree to receive information
+    from DNSPs about taking part in battery trials, there are no guidelines around
+    how customers should operate their battery. This finding also aligns with AEMO's
+    recommendation in its Draft 2020 Integrated System Plan that new DER installations
+    will increasingly require some level of interoperability so that they can be controlled
+    when required.
+  confidence_note: 'project_type reconciled to ''network/grid'' from: network/grid
+    (15/16), DER/customer-side (1/16); project_scale_band reconciled to ''demonstration''
+    from: demonstration (12/16), utility/large-scale (3/16), programmatic/portfolio-level
+    (1/16); proponent_type reconciled to ''network business'' from: network business
+    (15/16), government/public-sector body (1/16)'
+  source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+  project_page_url: https://arena.gov.au/projects/distributed-energy-resources-hosting-capacity-study/
+  kb_category: Distributed energy resources, System security and reliability
+  kb_publish_date: 4/06/2020
+  kb_year: '2018'
+  kb_associated_project: Distributed Energy Resources Hosting Capacity Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $164k
+  total_project_value: $353k
+  lead_organisation: Powercor Australia Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 20/12/2018
+  location: Melbourne, Victoria
+  project_partners: ENEA Australia
+  pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+  markdown_filename: future_grid_for_distributed_energy.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60114
+  contributing_source_titles:
+  - Future Grid for Distributed Energy
+  contributing_sources:
+  - source_title: Future Grid for Distributed Energy
+    pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+    markdown_filename: future_grid_for_distributed_energy.md
+  arena_category:
+  - Distributed energy resources
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-60115
+  source_title: Future Grid for Distributed Energy
+  publish_date: 2020-06
+  project_name: Future Grid for Distributed Energy — DER Hosting Capacity Study
+  what_happened: The use of open-source power flow modelling software (Pandapower)
+    and open-source PV generation libraries (pvlib) enabled thousands of 30-minute
+    simulations to be run in parallel over a 12-month period and allowed the methodology
+    to be replicated by other DNSPs without proprietary software licences.
+  lesson_learnt: DNSPs and consultants undertaking LV hosting capacity studies should
+    build their modelling pipelines on open-source tools — this reduces cost, enables
+    parallel computation at scale, and allows other industry stakeholders to reproduce
+    and validate the methodology without barriers.
+  issue_severity: none
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id015
+  - 27
+  evidence_excerpt: Power flow modelling was performed with Pandapower, an open-source
+    Python library developed by The Fraunhofer Institute. Pandapower's open-source
+    nature allows thousands of simulations to be run in parallel and for the methodology
+    to be reproduced by stakeholders across the industry.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+  project_page_url: https://arena.gov.au/projects/distributed-energy-resources-hosting-capacity-study/
+  kb_category: Distributed energy resources, System security and reliability
+  kb_publish_date: 4/06/2020
+  kb_year: '2018'
+  kb_associated_project: Distributed Energy Resources Hosting Capacity Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $164k
+  total_project_value: $353k
+  lead_organisation: Powercor Australia Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 20/12/2018
+  location: Melbourne, Victoria
+  project_partners: ENEA Australia
+  pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+  markdown_filename: future_grid_for_distributed_energy.md
+  source_page_pdf: 27
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60115
+  contributing_source_titles:
+  - Future Grid for Distributed Energy
+  contributing_sources:
+  - source_title: Future Grid for Distributed Energy
+    pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+    markdown_filename: future_grid_for_distributed_energy.md
+  arena_category:
+  - Distributed energy resources
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-60116
+  source_title: Future Grid for Distributed Energy
+  publish_date: 2020-06
+  project_name: Future Grid for Distributed Energy — DER Hosting Capacity Study
+  what_happened: Geospatial and topological data used to build LV network power flow
+    models was found to contain potential inaccuracies and to be in some cases out
+    of date, because LV network management had historically been low priority for
+    DNSPs and systematic data capture had not been maintained.
+  lesson_learnt: DNSPs embarking on LV hosting capacity modelling should first audit
+    and remediate their geospatial and topological LV data quality — inaccurate or
+    outdated GIS data directly degrades the accuracy of power flow outputs and could
+    result in incorrect hosting capacity assessments and poor investment decisions.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id016
+  - 24
+  evidence_excerpt: LV network management has historically been of low priority for
+    DNSPs, because it is only since DER began to be widely used that LV networks have
+    begun presenting issues. For this reason, geospatial and topological information
+    has not always been readily available or of the highest quality, meaning the geospatial
+    data used to build the power flow models for this study could include inaccuracies
+    or be out of date.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+  project_page_url: https://arena.gov.au/projects/distributed-energy-resources-hosting-capacity-study/
+  kb_category: Distributed energy resources, System security and reliability
+  kb_publish_date: 4/06/2020
+  kb_year: '2018'
+  kb_associated_project: Distributed Energy Resources Hosting Capacity Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $164k
+  total_project_value: $353k
+  lead_organisation: Powercor Australia Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 20/12/2018
+  location: Melbourne, Victoria
+  project_partners: ENEA Australia
+  pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+  markdown_filename: future_grid_for_distributed_energy.md
+  source_page_pdf: 24
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60116
+  contributing_source_titles:
+  - Future Grid for Distributed Energy
+  contributing_sources:
+  - source_title: Future Grid for Distributed Energy
+    pdf_url: https://arena.gov.au/assets/2020/06/future-grid-for-distributed-energy.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/future-grid-for-distributed-energy/
+    markdown_filename: future_grid_for_distributed_energy.md
+  arena_category:
+  - Distributed energy resources
+  - Grid stability
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.95

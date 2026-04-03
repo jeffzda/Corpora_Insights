@@ -1,0 +1,1290 @@
+- record_id: ARENA-DLV-8351
+  source_title: Solar Analytics 'Smart CER Consumer Uptake Tool' 2023 Technical Report
+  publish_date: '2023-09-20'
+  project_name: Smart CER Consumer Uptake Tool Project
+  what_happened: Maintaining accurate CER financial recommendations proved difficult
+    because rebate information, DNSP inverter size limits, and export limits are fragmented
+    across government, local council, and DNSP sources, frequently conflicting and
+    constantly changing (e.g., gas connection fees, new-financial-year rebates).
+  lesson_learnt: A centralised database of rebates and DNSP constraints on new and
+    existing CER installations would dramatically improve the ability to accurately
+    estimate CER costs, financial returns, and uptake; without it, teams building
+    consumer advisory tools must continuously scrape and reconcile conflicting sources,
+    creating ongoing maintenance burden.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Solar Analytics scraped data from multiple government, council,
+    and DNSP sources and incorporated state/federal rebate information and DNSP-specific
+    limits directly into the Tool's recommendation breakdown.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages:
+  - 17
+  - 18
+  - 27
+  - 28
+  evidence_excerpt: Data to power this information was scraped from a multitude of
+    government, local council, and DNSP sources. During this process, conflicting
+    information on things such as rebate amounts or availability was common... A centralised
+    database of rebates and DNSP constraints on new and existing CER installs would
+    dramatically improve the ability to accurately estimate CER costs, financial returns,
+    and uptake.
+  confidence_note: issue_severity rated moderate rather than minor because the problem
+    is structural and ongoing, not a one-off incident, though no schedule or cost
+    impact is quantified. Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2023-technical-report/
+  project_page_url: https://arena.gov.au/projects/smart-cer-consumer-uptake-tool/
+  kb_category: Distributed energy resources
+  kb_publish_date: 5/09/2024
+  kb_year: '2023'
+  kb_associated_project: Smart CER Consumer Uptake Tool
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $922k
+  total_project_value: $2.73m
+  lead_organisation: Solar Analytics
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/04/2023
+  location: New South Wales, Redfern
+  project_partners: 'Solar Thermal Australia, The University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/09/Solar-Analytics-Smart-CER-Uptake-Tool-Technical-Report-2023.pdf
+  markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2023_technical_report.md
+  source_page_pdf: 18
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-8351
+  - ARENA-DLV-19301
+  contributing_source_titles:
+  - Solar Analytics 'Smart CER Consumer Uptake Tool' 2023 Technical Report
+  - Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical Report
+  contributing_sources:
+  - source_title: Solar Analytics 'Smart CER Consumer Uptake Tool' 2023 Technical
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/09/Solar-Analytics-Smart-CER-Uptake-Tool-Technical-Report-2023.pdf
+    source_pages:
+    - 17
+    - 18
+    source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2023-technical-report/
+    markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2023_technical_report.md
+  - source_title: Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/05/Solar-Analytics-Smart-CER-Consumer-Uptake-Tool-2024-Technical-Report.pdf
+    source_pages:
+    - 27
+    - 28
+    source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2024-technical-report/
+    markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2024_technical_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-8352
+  source_title: Solar Analytics 'Smart CER Consumer Uptake Tool' 2023 Technical Report
+  publish_date: '2023-09-20'
+  project_name: Smart CER Consumer Uptake Tool Project
+  what_happened: Testing of a sophisticated optimisation control algorithm for heat
+    pump operation — which schedules operation based on household load, PV generation,
+    and energy plan — showed it saved on average only $61/year (~5–10% of energy bill)
+    and delivered only marginally more value than a simple seasonal timer ($51/year,
+    ~85% of the savings), while being significantly more complex and expensive to
+    implement.
+  lesson_learnt: 'For residential heat pump scheduling, a simple seasonal timer (summer:
+    11am–3pm; winter: 9am–4pm) captures ~85% of the financial benefit of a full optimisation
+    algorithm at a fraction of the software, hardware, and operational complexity;
+    teams should default to the simpler approach unless the marginal benefit of full
+    optimisation can be justified.'
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Solar Analytics ran parallel simulations with a simple timer
+    on 100 real systems to quantify the performance gap, then concluded that the timer
+    approach is the preferred strategy for future deployments.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages:
+  - 17
+  - 18
+  - 19
+  - 27
+  - 28
+  - 29
+  evidence_excerpt: On Solar Analytics' existing fleet of 100 customers with heat
+    pumps, the control algorithm could save on average $61 per year... additional
+    experiments were run to simulate running heat pumps on a simple timer (e.g., between
+    11am - 3pm) and these simulations could produce up to 85% of the savings from
+    the control algorithm ($51 on average), but without the overhead of complex control
+    algorithms, the need to forecast load and PV data, or the need to purchase expensive
+    hardware.
+  confidence_note: 'secondary_failure_mode: design assumption failure is primary because
+    the algorithm design assumed optimisation would deliver meaningful incremental
+    value over a timer; technical underperformance captures the outcome of the algorithm
+    itself. Canonical record merged from 2 source records across 2 document(s).'
+  source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2023-technical-report/
+  project_page_url: https://arena.gov.au/projects/smart-cer-consumer-uptake-tool/
+  kb_category: Distributed energy resources
+  kb_publish_date: 5/09/2024
+  kb_year: '2023'
+  kb_associated_project: Smart CER Consumer Uptake Tool
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $922k
+  total_project_value: $2.73m
+  lead_organisation: Solar Analytics
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/04/2023
+  location: New South Wales, Redfern
+  project_partners: 'Solar Thermal Australia, The University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/09/Solar-Analytics-Smart-CER-Uptake-Tool-Technical-Report-2023.pdf
+  markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2023_technical_report.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-8352
+  - ARENA-DLV-19302
+  contributing_source_titles:
+  - Solar Analytics 'Smart CER Consumer Uptake Tool' 2023 Technical Report
+  - Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical Report
+  contributing_sources:
+  - source_title: Solar Analytics 'Smart CER Consumer Uptake Tool' 2023 Technical
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/09/Solar-Analytics-Smart-CER-Uptake-Tool-Technical-Report-2023.pdf
+    source_pages:
+    - 17
+    - 18
+    - 19
+    source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2023-technical-report/
+    markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2023_technical_report.md
+  - source_title: Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/05/Solar-Analytics-Smart-CER-Consumer-Uptake-Tool-2024-Technical-Report.pdf
+    source_pages:
+    - 27
+    - 28
+    - 29
+    source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2024-technical-report/
+    markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2024_technical_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-19304
+  source_title: Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical
+    Report
+  publish_date: 2024-05
+  project_name: Smart CER Consumer Uptake Tool Project
+  what_happened: When integrating with Reclaim Energy heat pumps, Solar Analytics
+    found that the OEM did not store customer contact information, making it unexpectedly
+    difficult to reach customers and obtain consent for data access and control despite
+    the technical integration itself being straightforward.
+  lesson_learnt: When integrating with CER OEM hardware for remote control or data
+    access, proponents should confirm upfront whether the OEM retains customer contact
+    and consent records; if not, an independent consent-acquisition workflow must
+    be designed before any meaningful scale of customer recruitment is possible.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: coordination & stakeholders
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages:
+  - 18
+  - 19
+  - 29
+  evidence_excerpt: The integration process was straight-forward and reliable with
+    STA's modern heat pumps being connected to the internet via WiFi. However, an
+    unforeseen issue in controlling heat pumps was contacting customers and acquiring
+    consent for data access and control - as STA do not store customer information.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2024-technical-report/
+  project_page_url: https://arena.gov.au/projects/smart-cer-consumer-uptake-tool/
+  kb_category: Distributed energy resources
+  kb_publish_date: 22/05/2024
+  kb_year: '2023'
+  kb_associated_project: Smart CER Consumer Uptake Tool
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $922k
+  total_project_value: $2.73m
+  lead_organisation: Solar Analytics
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/04/2023
+  location: New South Wales, Redfern
+  project_partners: 'Solar Thermal Australia, The University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/05/Solar-Analytics-Smart-CER-Consumer-Uptake-Tool-2024-Technical-Report.pdf
+  markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2024_technical_report.md
+  source_page_pdf: 29
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-8353
+  - ARENA-DLV-19304
+  contributing_source_titles:
+  - Solar Analytics 'Smart CER Consumer Uptake Tool' 2023 Technical Report
+  - Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical Report
+  contributing_sources:
+  - source_title: Solar Analytics 'Smart CER Consumer Uptake Tool' 2023 Technical
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/09/Solar-Analytics-Smart-CER-Uptake-Tool-Technical-Report-2023.pdf
+    source_pages:
+    - 18
+    - 19
+    source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2023-technical-report/
+    markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2023_technical_report.md
+  - source_title: Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/05/Solar-Analytics-Smart-CER-Consumer-Uptake-Tool-2024-Technical-Report.pdf
+    source_pages:
+    - 29
+    source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2024-technical-report/
+    markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2024_technical_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-19308
+  source_title: Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical
+    Report
+  publish_date: 2024-05
+  project_name: Smart CER Consumer Uptake Tool Project
+  what_happened: Only approximately 10% of the Tool's 100,000+ users fully completed
+    all steps and chose an action, despite there being no significant difference in
+    predicted savings between completers and non-completers, indicating user drop-off
+    was driven by UX and incomplete CER options rather than financial relevance.
+  lesson_learnt: Consumer-facing digital CER tools should instrument and monitor user
+    flow at each step from launch; a 90% drop-off before completion signals that friction
+    in the user journey (length, complexity, or decision points) is the primary barrier
+    to converting interest into action, and should be treated as a priority design
+    problem.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: execution & logistics
+  intervention_note: Solar Analytics continuously improved the UX based on user feedback
+    and added missing CER options (e.g., timer-based heat pump, controlled load tariff
+    support, renter pathways) throughout the project.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages:
+  - 21
+  - 22
+  - 40
+  - 41
+  evidence_excerpt: 'Rather than financial incentive, Solar Analytics believes there
+    are two key reasons for user drop-off when using the Tool: 1. The UX needs to
+    be improved to keep customers engaged and flowing through the Tool... 2. The Tool
+    does not yet offer all the CER options users want to see.'
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2024-technical-report/
+  project_page_url: https://arena.gov.au/projects/smart-cer-consumer-uptake-tool/
+  kb_category: Distributed energy resources
+  kb_publish_date: 22/05/2024
+  kb_year: '2023'
+  kb_associated_project: Smart CER Consumer Uptake Tool
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $922k
+  total_project_value: $2.73m
+  lead_organisation: Solar Analytics
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/04/2023
+  location: New South Wales, Redfern
+  project_partners: 'Solar Thermal Australia, The University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/05/Solar-Analytics-Smart-CER-Consumer-Uptake-Tool-2024-Technical-Report.pdf
+  markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2024_technical_report.md
+  source_page_pdf: 41
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-8354
+  - ARENA-DLV-19308
+  contributing_source_titles:
+  - Solar Analytics 'Smart CER Consumer Uptake Tool' 2023 Technical Report
+  - Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical Report
+  contributing_sources:
+  - source_title: Solar Analytics 'Smart CER Consumer Uptake Tool' 2023 Technical
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/09/Solar-Analytics-Smart-CER-Uptake-Tool-Technical-Report-2023.pdf
+    source_pages:
+    - 21
+    - 22
+    source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2023-technical-report/
+    markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2023_technical_report.md
+  - source_title: Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/05/Solar-Analytics-Smart-CER-Consumer-Uptake-Tool-2024-Technical-Report.pdf
+    source_pages:
+    - 40
+    - 41
+    source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2024-technical-report/
+    markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2024_technical_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-8355
+  source_title: Solar Analytics 'Smart CER Consumer Uptake Tool' 2023 Technical Report
+  publish_date: '2023-09-20'
+  project_name: Smart CER Consumer Uptake Tool Project
+  what_happened: DNSP inverter size and export limits relevant to new CER installations
+    were found to be routinely ignored or not considered during actual system installation
+    by retailers, with no reported issues — suggesting a gap between regulatory/network
+    constraints as documented and as enforced in practice.
+  lesson_learnt: Consumer advisory tools that incorporate DNSP technical constraints
+    (inverter size limits, export limits) should note that these constraints may not
+    be enforced in practice; tool designers should validate whether incorporating
+    strict DNSP limits will make recommendations overly conservative relative to what
+    installers and network operators actually implement on the ground.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages:
+  - 17
+  - 18
+  - 27
+  evidence_excerpt: discussions with Solar Analytics existing retailer customers often
+    revealed that things like inverter size limits or export limits defined by DNSPs
+    across Australia were routinely ignored or not considered during system installation,
+    without repercussion.
+  confidence_note: issue_severity minor as this is an observation about regulatory
+    fit rather than a project delivery failure; it has implications for tool accuracy
+    rather than causing direct project harm. Canonical record merged from 2 source
+    records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2023-technical-report/
+  project_page_url: https://arena.gov.au/projects/smart-cer-consumer-uptake-tool/
+  kb_category: Distributed energy resources
+  kb_publish_date: 5/09/2024
+  kb_year: '2023'
+  kb_associated_project: Smart CER Consumer Uptake Tool
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $922k
+  total_project_value: $2.73m
+  lead_organisation: Solar Analytics
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/04/2023
+  location: New South Wales, Redfern
+  project_partners: 'Solar Thermal Australia, The University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/09/Solar-Analytics-Smart-CER-Uptake-Tool-Technical-Report-2023.pdf
+  markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2023_technical_report.md
+  source_page_pdf: 18
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-8355
+  - ARENA-DLV-19313
+  contributing_source_titles:
+  - Solar Analytics 'Smart CER Consumer Uptake Tool' 2023 Technical Report
+  - Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical Report
+  contributing_sources:
+  - source_title: Solar Analytics 'Smart CER Consumer Uptake Tool' 2023 Technical
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/09/Solar-Analytics-Smart-CER-Uptake-Tool-Technical-Report-2023.pdf
+    source_pages:
+    - 17
+    - 18
+    source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2023-technical-report/
+    markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2023_technical_report.md
+  - source_title: Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/05/Solar-Analytics-Smart-CER-Consumer-Uptake-Tool-2024-Technical-Report.pdf
+    source_pages:
+    - 27
+    source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2024-technical-report/
+    markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2024_technical_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-8356
+  source_title: Solar Analytics 'Smart CER Consumer Uptake Tool' 2023 Technical Report
+  publish_date: '2023-09-20'
+  project_name: Smart CER Consumer Uptake Tool Project
+  what_happened: The Tool was successfully released nationally to all Australian postcodes
+    and DNSPs within the Milestone 2 timeframe, attracting over 50,000 users in approximately
+    four months, driven by a multi-channel marketing approach including Google search,
+    Facebook advertising, media coverage, and partner campaigns.
+  lesson_learnt: A multi-channel promotional strategy combining organic search, paid
+    social advertising, media coverage, and partnership campaigns can rapidly build
+    a large user base for a free digital CER advisory tool; proponents should plan
+    for this mix from launch rather than relying on a single channel.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id001
+  - 13
+  - 14
+  evidence_excerpt: Since the national release of the Tool to all Australia postcodes,
+    there has been clear demand for information regarding CER. In the roughly four
+    months since national release (June, 2023), the Tool has had over 50,000 users.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2023-technical-report/
+  project_page_url: https://arena.gov.au/projects/smart-cer-consumer-uptake-tool/
+  kb_category: Distributed energy resources
+  kb_publish_date: 5/09/2024
+  kb_year: '2023'
+  kb_associated_project: Smart CER Consumer Uptake Tool
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $922k
+  total_project_value: $2.73m
+  lead_organisation: Solar Analytics
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/04/2023
+  location: New South Wales, Redfern
+  project_partners: 'Solar Thermal Australia, The University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/09/Solar-Analytics-Smart-CER-Uptake-Tool-Technical-Report-2023.pdf
+  markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2023_technical_report.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-8356
+  contributing_source_titles:
+  - Solar Analytics 'Smart CER Consumer Uptake Tool' 2023 Technical Report
+  contributing_sources:
+  - source_title: Solar Analytics 'Smart CER Consumer Uptake Tool' 2023 Technical
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/09/Solar-Analytics-Smart-CER-Uptake-Tool-Technical-Report-2023.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2023-technical-report/
+    markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2023_technical_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-8357
+  source_title: Solar Analytics 'Smart CER Consumer Uptake Tool' 2023 Technical Report
+  publish_date: '2023-09-20'
+  project_name: Smart CER Consumer Uptake Tool Project
+  what_happened: The optimisation algorithm for heat pump control was found to intermittently
+    turn heat pumps on and off mid-cycle, which the OEM partner (STA) engineers flagged
+    as impractical, inefficient, and potentially damaging to the hardware.
+  lesson_learnt: Before deploying remote control algorithms for CER hardware, developers
+    should consult OEM engineers on device-level operating constraints (such as minimum
+    run cycles for heat pumps) to avoid algorithm behaviours that could reduce hardware
+    longevity or violate manufacturer guidelines.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: STA engineers flagged the mid-cycle switching issue, which contributed
+    to the decision to favour the simpler timer-based approach over the optimisation
+    algorithm.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id002
+  - 18
+  evidence_excerpt: discussion with STA's (the project's heat pump OEM partner) engineers
+    suggested that it is impractical, inefficient and not advisable to turn heat pumps
+    on and off mid-cycle (something the optimisation algorithm was prone to do).
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2023-technical-report/
+  project_page_url: https://arena.gov.au/projects/smart-cer-consumer-uptake-tool/
+  kb_category: Distributed energy resources
+  kb_publish_date: 5/09/2024
+  kb_year: '2023'
+  kb_associated_project: Smart CER Consumer Uptake Tool
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $922k
+  total_project_value: $2.73m
+  lead_organisation: Solar Analytics
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/04/2023
+  location: New South Wales, Redfern
+  project_partners: 'Solar Thermal Australia, The University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/09/Solar-Analytics-Smart-CER-Uptake-Tool-Technical-Report-2023.pdf
+  markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2023_technical_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-8357
+  contributing_source_titles:
+  - Solar Analytics 'Smart CER Consumer Uptake Tool' 2023 Technical Report
+  contributing_sources:
+  - source_title: Solar Analytics 'Smart CER Consumer Uptake Tool' 2023 Technical
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/09/Solar-Analytics-Smart-CER-Uptake-Tool-Technical-Report-2023.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2023-technical-report/
+    markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2023_technical_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-19303
+  source_title: Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical
+    Report
+  publish_date: 2024-05
+  project_name: Smart CER Consumer Uptake Tool Project
+  what_happened: 'Heat pumps were found to be a poor candidate for demand response
+    programs: they draw low power (making flexible control financially marginal),
+    are not conducive to mid-cycle stop-starts, and most solar-owning consumers already
+    run them during the day using free solar generation.'
+  lesson_learnt: Projects targeting residential demand response should prioritise
+    higher-load, more flexible assets (e.g., resistive hot water, EV charging) over
+    heat pumps — heat pumps offer minimal incremental financial benefit from active
+    control and their operational constraints make them poorly suited to grid flexibility
+    services.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id003
+  - 30
+  - 31
+  evidence_excerpt: heat pumps are a less than ideal CER for supporting demand response
+    (with little financial gain to be made with flexible or optimised control)...
+    Heat pumps are also less flexible - most heat pump technology is not currently
+    conducive to multiple stop-starts, or stops mid-cycle, and heat pumps prefer to
+    run during the warmest daylight hours for optimum efficiency.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (12/14), DER/customer-side (2/14)'
+  source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2024-technical-report/
+  project_page_url: https://arena.gov.au/projects/smart-cer-consumer-uptake-tool/
+  kb_category: Distributed energy resources
+  kb_publish_date: 22/05/2024
+  kb_year: '2023'
+  kb_associated_project: Smart CER Consumer Uptake Tool
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $922k
+  total_project_value: $2.73m
+  lead_organisation: Solar Analytics
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/04/2023
+  location: New South Wales, Redfern
+  project_partners: 'Solar Thermal Australia, The University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/05/Solar-Analytics-Smart-CER-Consumer-Uptake-Tool-2024-Technical-Report.pdf
+  markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2024_technical_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-19303
+  contributing_source_titles:
+  - Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical Report
+  contributing_sources:
+  - source_title: Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/05/Solar-Analytics-Smart-CER-Consumer-Uptake-Tool-2024-Technical-Report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2024-technical-report/
+    markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2024_technical_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-19305
+  source_title: Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical
+    Report
+  publish_date: 2024-05
+  project_name: Smart CER Consumer Uptake Tool Project
+  what_happened: Regulatory and market structure barriers prevented Solar Analytics
+    and consumers from directly controlling Controlled Load meters to shift hot water
+    loads to daytime solar periods — the Meter Data Agent only responds to the incumbent
+    energy retailer, and no retailer offered a matching tariff product despite a DNSP
+    (Endeavour Energy) creating an enabling 'Off Peak Plus' tariff in mid-2023.
+  lesson_learnt: Third-party CER aggregators and demand response programs should not
+    rely on controlled load meter control as a near-term pathway — market rules assign
+    exclusive control to the incumbent energy retailer, and regulatory reform to change
+    this is uncertain and likely years away; plan product designs around alternatives
+    such as direct device API control.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: commercial & market
+  intervention_note: Solar Analytics pursued direct API control of heat pump hardware
+    as an alternative pathway, bypassing the controlled load meter regulatory barrier.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id004
+  - 32
+  - 33
+  evidence_excerpt: our current understanding is that due to the market structure
+    Solar Analytics and the consumer are prevented from shifting their controlled
+    hot water load (or any other controlled appliance load) into the daytime, or otherwise,
+    to maximise financial gain, as this can only be authorised by the energy retailer...
+    despite liaising with many energy retailers they have been unable to get a single
+    energy retailer to pass on this tariff to consumers through a new energy plan
+    offer.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2024-technical-report/
+  project_page_url: https://arena.gov.au/projects/smart-cer-consumer-uptake-tool/
+  kb_category: Distributed energy resources
+  kb_publish_date: 22/05/2024
+  kb_year: '2023'
+  kb_associated_project: Smart CER Consumer Uptake Tool
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $922k
+  total_project_value: $2.73m
+  lead_organisation: Solar Analytics
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/04/2023
+  location: New South Wales, Redfern
+  project_partners: 'Solar Thermal Australia, The University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/05/Solar-Analytics-Smart-CER-Consumer-Uptake-Tool-2024-Technical-Report.pdf
+  markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2024_technical_report.md
+  source_page_pdf: 33
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-19305
+  contributing_source_titles:
+  - Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical Report
+  contributing_sources:
+  - source_title: Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/05/Solar-Analytics-Smart-CER-Consumer-Uptake-Tool-2024-Technical-Report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2024-technical-report/
+    markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2024_technical_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-19306
+  source_title: Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical
+    Report
+  publish_date: 2024-05
+  project_name: Smart CER Consumer Uptake Tool Project
+  what_happened: Approximately 20% of customers shifted their electric storage hot
+    water from a controlled load circuit to the main meter to enable solar self-consumption,
+    and Solar Analytics found 35% of controlled load circuits were not in active use
+    — meaning networks are progressively losing visibility and control of these flexible
+    assets.
+  lesson_learnt: The inability to net rooftop solar against controlled load consumption
+    is driving customers to abandon controlled load circuits, eroding the network's
+    demand flexibility asset base — policy and tariff design should address this structural
+    disincentive before the controlled load resource disappears.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: commercial & market
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id005
+  - 33
+  evidence_excerpt: Solar Analytics recent capability to pull controlled load data
+    via CDR, we are seeing 35% of controlled load circuits not in use. The issue for
+    the networks is that they now lose both visibility and control of this CER, which
+    reduces their ability to increase solar hosting capacity and effectively manage
+    their network.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (12/14), DER/customer-side (2/14); project_scale_band reconciled to ''demonstration''
+    from: demonstration (13/14), programmatic/portfolio-level (1/14)'
+  source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2024-technical-report/
+  project_page_url: https://arena.gov.au/projects/smart-cer-consumer-uptake-tool/
+  kb_category: Distributed energy resources
+  kb_publish_date: 22/05/2024
+  kb_year: '2023'
+  kb_associated_project: Smart CER Consumer Uptake Tool
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $922k
+  total_project_value: $2.73m
+  lead_organisation: Solar Analytics
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/04/2023
+  location: New South Wales, Redfern
+  project_partners: 'Solar Thermal Australia, The University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/05/Solar-Analytics-Smart-CER-Consumer-Uptake-Tool-2024-Technical-Report.pdf
+  markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2024_technical_report.md
+  source_page_pdf: 34
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-19306
+  contributing_source_titles:
+  - Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical Report
+  contributing_sources:
+  - source_title: Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/05/Solar-Analytics-Smart-CER-Consumer-Uptake-Tool-2024-Technical-Report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2024-technical-report/
+    markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2024_technical_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-19307
+  source_title: Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical
+    Report
+  publish_date: 2024-05
+  project_name: Smart CER Consumer Uptake Tool Project
+  what_happened: CDR smart meter data is only available a day behind (24-hour lag),
+    preventing its use for real-time flexible control of CER loads despite providing
+    useful tariff and consumption data for recommendations.
+  lesson_learnt: Projects designing real-time demand response or load optimisation
+    services should not rely on CDR smart meter data as the control signal — the 24-hour
+    data lag makes it unsuitable for real-time dispatch; direct device API integration
+    is currently the only viable path for real-time control.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Solar Analytics used CDR data for recommendations and passive
+    optimisation only, and pursued direct API control of Reclaim heat pumps for any
+    real-time control requirements.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id006
+  - 31
+  - 32
+  evidence_excerpt: One limitation of the smart retail meter is that the energy data
+    is only provided a day behind, ie 24 hours after. This means that this data that
+    is obtained through CDR cannot be used for the more innovative flexible control
+    solutions that require real time control of the CER to match loads and generation
+    with actual energy costs throughout the day.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2024-technical-report/
+  project_page_url: https://arena.gov.au/projects/smart-cer-consumer-uptake-tool/
+  kb_category: Distributed energy resources
+  kb_publish_date: 22/05/2024
+  kb_year: '2023'
+  kb_associated_project: Smart CER Consumer Uptake Tool
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $922k
+  total_project_value: $2.73m
+  lead_organisation: Solar Analytics
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/04/2023
+  location: New South Wales, Redfern
+  project_partners: 'Solar Thermal Australia, The University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/05/Solar-Analytics-Smart-CER-Consumer-Uptake-Tool-2024-Technical-Report.pdf
+  markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2024_technical_report.md
+  source_page_pdf: 32
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-19307
+  contributing_source_titles:
+  - Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical Report
+  contributing_sources:
+  - source_title: Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/05/Solar-Analytics-Smart-CER-Consumer-Uptake-Tool-2024-Technical-Report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2024-technical-report/
+    markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2024_technical_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-19309
+  source_title: Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical
+    Report
+  publish_date: 2024-05
+  project_name: Smart CER Consumer Uptake Tool Project
+  what_happened: Solar Analytics successfully achieved accreditation as a Consumer
+    Data Recipient (CDR) and integrated CDR smart meter data into its platform, enabling
+    access to controlled load circuit data and more accurate tariff-aware energy plan
+    recommendations for customers.
+  lesson_learnt: CDR accreditation is a viable pathway for energy technology companies
+    to access household smart meter data for improved CER recommendations and transparency
+    — projects planning personalised CER advisory services should pursue CDR accreditation
+    early as a foundational data access mechanism.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id007
+  - 13
+  - 21
+  evidence_excerpt: Solar Analytics has also become an accredited Consumer Data Recipient
+    (CDR) and is able to obtain data from household utility smart meters (with the
+    owner's consent). This online customer authorisation provides Solar Analytics
+    with energy and tariff data from the utility smart meter.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2024-technical-report/
+  project_page_url: https://arena.gov.au/projects/smart-cer-consumer-uptake-tool/
+  kb_category: Distributed energy resources
+  kb_publish_date: 22/05/2024
+  kb_year: '2023'
+  kb_associated_project: Smart CER Consumer Uptake Tool
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $922k
+  total_project_value: $2.73m
+  lead_organisation: Solar Analytics
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/04/2023
+  location: New South Wales, Redfern
+  project_partners: 'Solar Thermal Australia, The University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/05/Solar-Analytics-Smart-CER-Consumer-Uptake-Tool-2024-Technical-Report.pdf
+  markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2024_technical_report.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-19309
+  contributing_source_titles:
+  - Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical Report
+  contributing_sources:
+  - source_title: Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/05/Solar-Analytics-Smart-CER-Consumer-Uptake-Tool-2024-Technical-Report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2024-technical-report/
+    markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2024_technical_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-19310
+  source_title: Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical
+    Report
+  publish_date: 2024-05
+  project_name: Smart CER Consumer Uptake Tool Project
+  what_happened: An embeddable 'retailer version' of the Tool was developed and deployed
+    by multiple third-party organisations including solar retailers, advocacy groups,
+    and media outlets, demonstrating a scalable channel for disseminating CER uptake
+    tools beyond the original proponent's own user base.
+  lesson_learnt: Building an embeddable, white-label version of a consumer CER tool
+    from the outset significantly expands reach through third-party partners — future
+    digital tools targeting CER uptake should design for embedding and customisation
+    as a primary distribution channel rather than an afterthought.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id008
+  - 11
+  - 12
+  evidence_excerpt: A 'retailer version' of the Tool has been created that can be
+    customised with different links and information that suit the company wanting
+    to host the tool. Improvements have been made since Aug 2023 to improve uptake
+    and ease of embedding.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2024-technical-report/
+  project_page_url: https://arena.gov.au/projects/smart-cer-consumer-uptake-tool/
+  kb_category: Distributed energy resources
+  kb_publish_date: 22/05/2024
+  kb_year: '2023'
+  kb_associated_project: Smart CER Consumer Uptake Tool
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $922k
+  total_project_value: $2.73m
+  lead_organisation: Solar Analytics
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/04/2023
+  location: New South Wales, Redfern
+  project_partners: 'Solar Thermal Australia, The University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/05/Solar-Analytics-Smart-CER-Consumer-Uptake-Tool-2024-Technical-Report.pdf
+  markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2024_technical_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-19310
+  contributing_source_titles:
+  - Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical Report
+  contributing_sources:
+  - source_title: Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/05/Solar-Analytics-Smart-CER-Consumer-Uptake-Tool-2024-Technical-Report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2024-technical-report/
+    markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2024_technical_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-19311
+  source_title: Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical
+    Report
+  publish_date: 2024-05
+  project_name: Smart CER Consumer Uptake Tool Project
+  what_happened: A spike in battery storage interest among existing solar owners was
+    observed in February/March 2024, coinciding with the announcement of the Queensland
+    battery rebate program, illustrating how state-level financial incentives can
+    rapidly shift consumer CER preferences.
+  lesson_learnt: CER uptake tool operators should monitor and rapidly incorporate
+    state and federal rebate changes into tool recommendations — policy incentives
+    such as battery rebates demonstrably shift consumer intent within weeks and tools
+    that lag these changes risk providing inaccurate financial guidance at peak demand
+    moments.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Solar Analytics incorporated updated rebate information as an
+    explicit Tool improvement during the project period.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id009
+  - 17
+  evidence_excerpt: it's also worth noting the spike in battery interest for those
+    who already own solar in February/March 2024 - likely due to the new Queensland
+    battery rebate.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2024-technical-report/
+  project_page_url: https://arena.gov.au/projects/smart-cer-consumer-uptake-tool/
+  kb_category: Distributed energy resources
+  kb_publish_date: 22/05/2024
+  kb_year: '2023'
+  kb_associated_project: Smart CER Consumer Uptake Tool
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $922k
+  total_project_value: $2.73m
+  lead_organisation: Solar Analytics
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/04/2023
+  location: New South Wales, Redfern
+  project_partners: 'Solar Thermal Australia, The University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/05/Solar-Analytics-Smart-CER-Consumer-Uptake-Tool-2024-Technical-Report.pdf
+  markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2024_technical_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-19311
+  contributing_source_titles:
+  - Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical Report
+  contributing_sources:
+  - source_title: Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/05/Solar-Analytics-Smart-CER-Consumer-Uptake-Tool-2024-Technical-Report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2024-technical-report/
+    markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2024_technical_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-19312
+  source_title: Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical
+    Report
+  publish_date: 2024-05
+  project_name: Smart CER Consumer Uptake Tool Project
+  what_happened: The Tool's economic recommendation algorithm, calibrated against
+    tens of thousands of real customers, achieved a median discrepancy of only -0.92%
+    between Tool-predicted and actual annual savings, demonstrating that high-level
+    household inputs (e.g., daily energy usage) can produce accurate CER economic
+    assessments without 5-minute resolution data.
+  lesson_learnt: Accurate CER economic assessments for consumer decision-making do
+    not require high-resolution metering data at the recommendation stage — well-calibrated
+    algorithms using basic household inputs can achieve sub-1% median error against
+    actuals, enabling lightweight tools to reach a broad audience without mandating
+    smart meter access.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id010
+  - 25
+  - 26
+  evidence_excerpt: Benchmarking experiments showed that the annual savings predicted
+    by the Tool for different CER options accurately matched the true savings currently
+    achieved for thousands of Solar Analytics' customers; with a median discrepancy
+    in Tool-predicted vs actual annual savings of -0.92%.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2024-technical-report/
+  project_page_url: https://arena.gov.au/projects/smart-cer-consumer-uptake-tool/
+  kb_category: Distributed energy resources
+  kb_publish_date: 22/05/2024
+  kb_year: '2023'
+  kb_associated_project: Smart CER Consumer Uptake Tool
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $922k
+  total_project_value: $2.73m
+  lead_organisation: Solar Analytics
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/04/2023
+  location: New South Wales, Redfern
+  project_partners: 'Solar Thermal Australia, The University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/05/Solar-Analytics-Smart-CER-Consumer-Uptake-Tool-2024-Technical-Report.pdf
+  markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2024_technical_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-19312
+  contributing_source_titles:
+  - Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical Report
+  contributing_sources:
+  - source_title: Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/05/Solar-Analytics-Smart-CER-Consumer-Uptake-Tool-2024-Technical-Report.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2024-technical-report/
+    markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2024_technical_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-19314
+  source_title: Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical
+    Report
+  publish_date: 2024-05
+  project_name: Smart CER Consumer Uptake Tool Project
+  what_happened: Pursuing smart meter control via Meter Data Agents (e.g., Intellihub)
+    required integration and approval from both the MDA and the energy retailer, and
+    involved significant bureaucracy around permissions, customer detail sharing,
+    and inter-party consent — with the added constraint that any agreement only covers
+    customers served by the specific consenting parties.
+  lesson_learnt: Projects seeking to control residential loads via smart meter infrastructure
+    should anticipate a lengthy multi-party approval process involving MDAs, energy
+    retailers, and potentially DNSPs — scope and timeline estimates should treat this
+    pathway as high-risk and include a fallback strategy based on direct device API
+    control.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: technology vendor
+  delay_category: approvals/regulatory
+  failure_mode: coordination & stakeholders
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: Solar Analytics continued to pursue direct API control of manufacturer-connected
+    devices as the primary operational pathway while exploring the MDA route in parallel.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id011
+  - 29
+  - 30
+  evidence_excerpt: it requires integration and approval from the Meter Data Agent
+    and the Energy Retailer. Solar Analytics has been exploring this path recently
+    and there is also a lot of bureaucracy around permissions, sharing customer details,
+    and keeping all the various parties happy. And it will only apply to customers
+    served by the agreeing parties.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2024-technical-report/
+  project_page_url: https://arena.gov.au/projects/smart-cer-consumer-uptake-tool/
+  kb_category: Distributed energy resources
+  kb_publish_date: 22/05/2024
+  kb_year: '2023'
+  kb_associated_project: Smart CER Consumer Uptake Tool
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $922k
+  total_project_value: $2.73m
+  lead_organisation: Solar Analytics
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 04/04/2023
+  location: New South Wales, Redfern
+  project_partners: 'Solar Thermal Australia, The University of New South Wales '
+  pdf_url: https://arena.gov.au/assets/2024/05/Solar-Analytics-Smart-CER-Consumer-Uptake-Tool-2024-Technical-Report.pdf
+  markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2024_technical_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-19314
+  contributing_source_titles:
+  - Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical Report
+  contributing_sources:
+  - source_title: Solar Analytics - Smart CER Consumer Uptake Tool - 2024 Technical
+      Report
+    pdf_url: https://arena.gov.au/assets/2024/05/Solar-Analytics-Smart-CER-Consumer-Uptake-Tool-2024-Technical-Report.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/solar-analytics-smart-cer-consumer-uptake-tool-2024-technical-report/
+    markdown_filename: solar_analytics_smart_cer_consumer_uptake_tool_2024_technical_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.82

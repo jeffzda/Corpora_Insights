@@ -1,0 +1,145 @@
+- record_id: ARENA-DLV-45012
+  source_title: Network Hosting Capacity Projects Progress Report (Year One)
+  publish_date: 2020-03
+  project_name: 'Zeppelin Bend: evolve DER Project'
+  what_happened: Integration agents developed to connect Zepben's platform with DNSP
+    partner systems were completed but were pending deployment within the DNSP's IT
+    infrastructure at the end of year one, indicating that deployment within regulated
+    network business IT environments creates a bottleneck independent of software
+    readiness.
+  lesson_learnt: When developing software platforms that must integrate with DNSP
+    IT infrastructure, treat DNSP IT deployment as a critical-path activity with its
+    own lead time, governance, and security approval requirements — software readiness
+    does not translate directly to deployment readiness within a regulated network
+    business environment.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id001
+  - 8
+  evidence_excerpt: The initial versions of agents that will integrate with DNSP systems
+    have been completed and are pending deployment within a DNSP partner's IT infrastructure.
+  confidence_note: 'proponent_type reconciled to ''network business'' from: network
+    business (6/15), technology vendor (5/15), research organisation/university (3/15),
+    project developer (1/15)'
+  source_url: https://arena.gov.au/knowledge-bank/network-hosting-capacity-projects-progress-report-year-one/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 26/03/2020
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2020/03/network-hosting-capacity-projects-progress-report-year-one.pdf
+  markdown_filename: network_hosting_capacity_projects_progress_report_year_one.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45012
+  contributing_source_titles:
+  - Network Hosting Capacity Projects Progress Report (Year One)
+  contributing_sources:
+  - source_title: Network Hosting Capacity Projects Progress Report (Year One)
+    pdf_url: https://arena.gov.au/assets/2020/03/network-hosting-capacity-projects-progress-report-year-one.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/network-hosting-capacity-projects-progress-report-year-one/
+    markdown_filename: network_hosting_capacity_projects_progress_report_year_one.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: integration failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-45013
+  source_title: Network Hosting Capacity Projects Progress Report (Year One)
+  publish_date: 2020-03
+  project_name: 'Zeppelin Bend: evolve DER Project'
+  what_happened: Before deploying the Azure-hosted evolve data platform, Zepben was
+    required to conduct penetration testing for cyber security assurance, which had
+    not yet been completed at the time of the year one report, creating a gating dependency
+    on cyber security sign-off before the platform could go live.
+  lesson_learnt: Cyber security penetration testing is a non-trivial gating milestone
+    for cloud-hosted platforms that handle network asset data — project schedules
+    for DER integration platforms should explicitly allocate time for penetration
+    testing and any remediation before deployment, rather than treating security assurance
+    as a parallel activity.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id002
+  - 8
+  evidence_excerpt: An AZURE-hosted instance of the evolve data platform, including
+    associated authentication and security mechanisms, has been created and penetration
+    testing for cyber security assurance is about to be performed.
+  confidence_note: 'proponent_type reconciled to ''network business'' from: network
+    business (6/15), technology vendor (5/15), research organisation/university (3/15),
+    project developer (1/15)'
+  source_url: https://arena.gov.au/knowledge-bank/network-hosting-capacity-projects-progress-report-year-one/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 26/03/2020
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2020/03/network-hosting-capacity-projects-progress-report-year-one.pdf
+  markdown_filename: network_hosting_capacity_projects_progress_report_year_one.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45013
+  contributing_source_titles:
+  - Network Hosting Capacity Projects Progress Report (Year One)
+  contributing_sources:
+  - source_title: Network Hosting Capacity Projects Progress Report (Year One)
+    pdf_url: https://arena.gov.au/assets/2020/03/network-hosting-capacity-projects-progress-report-year-one.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/network-hosting-capacity-projects-progress-report-year-one/
+    markdown_filename: network_hosting_capacity_projects_progress_report_year_one.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78

@@ -1,0 +1,1597 @@
+- record_id: ARENA-DLV-41801
+  source_title: Role of Decentralised Control for Managing Network Constraints for
+    DER
+  publish_date: 2020-08
+  project_name: Dynamic Limits DDL Control Scheme Feasibility Study
+  what_happened: Stakeholder consultation with DNSPs revealed that only a fraction
+    of new DER installations are audited for compliance with AS4777.2 Power Quality
+    Response Modes, and of those audited, only a fraction were found to be compliant
+    with DNSP configuration requirements.
+  lesson_learnt: Do not rely on AS4777.2 PQ Response Modes as a mechanism for managing
+    network constraints or unlocking DER hosting capacity — recruitment is optional,
+    compliance is poorly enforced, and default activation thresholds are too high
+    to provide meaningful relief under typical Australian supply voltages. Any DER
+    management scheme must include enforceable compliance mechanisms from the outset.
+  issue_severity: major
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id001
+  - 28
+  evidence_excerpt: Stakeholder consultation revealed that only a fraction of new
+    installations is audited and that, of those audited, only a fraction is found
+    to be compliant.
+  confidence_note: 'project_type reconciled to ''network/grid'' from: network/grid
+    (12/20), DER/customer-side (8/20)'
+  source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+  project_page_url: https://arena.gov.au/projects/dynamic-limits-der-feasibility-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 23/08/2020
+  kb_year: '2018'
+  kb_associated_project: Dynamic Limits DER Feasibility Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $292k
+  total_project_value: $798k
+  lead_organisation: Dynamic Limits Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/12/2018
+  location: New South Wales, South Australia
+  project_partners: UniSA, SAGE Automation, Opto22
+  pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+  markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  source_page_pdf: 28
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-41801
+  contributing_source_titles:
+  - Role of Decentralised Control for Managing Network Constraints for DER
+  contributing_sources:
+  - source_title: Role of Decentralised Control for Managing Network Constraints for
+      DER
+    pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+    markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-41802
+  source_title: Role of Decentralised Control for Managing Network Constraints for
+    DER
+  publish_date: 2020-08
+  project_name: Dynamic Limits DDL Control Scheme Feasibility Study
+  what_happened: Analysis of AS4777.2 default Volt-Watt and Volt-Var response voltage
+    thresholds (V3 = 250V, V4 = 265V) found that these default set points are far
+    above the voltages at which DER hosting capacity constraints actually occur on
+    Australian networks, where average supply voltages already sit in the upper allowable
+    range (240–250V).
+  lesson_learnt: The default AS4777.2 PQ Response Mode set points must be actively
+    reconfigured by DNSPs to lower activation voltages — leaving default settings
+    means the modes activate only after allowable voltage ranges are already significantly
+    exceeded, providing negligible constraint relief. For PQ Response Modes to be
+    useful, average supply voltages must also be reduced closer to 230V nominal.
+  issue_severity: major
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id002
+  - 28
+  - 29
+  evidence_excerpt: As it currently stands, with typically high average supply voltage
+    and the default Response Mode points set at 250V, the degree of constraint relief
+    achieved above 250V will be minimal. Until this is rectified, the PQ Response
+    Modes are relegated to the role of a backstop rather than a tool that can be used
+    either to manage network constraints or unlock further DER hosting capacity.
+  confidence_note: 'project_type reconciled to ''network/grid'' from: network/grid
+    (12/20), DER/customer-side (8/20)'
+  source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+  project_page_url: https://arena.gov.au/projects/dynamic-limits-der-feasibility-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 23/08/2020
+  kb_year: '2018'
+  kb_associated_project: Dynamic Limits DER Feasibility Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $292k
+  total_project_value: $798k
+  lead_organisation: Dynamic Limits Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/12/2018
+  location: New South Wales, South Australia
+  project_partners: UniSA, SAGE Automation, Opto22
+  pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+  markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  source_page_pdf: 29
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-41802
+  contributing_source_titles:
+  - Role of Decentralised Control for Managing Network Constraints for DER
+  contributing_sources:
+  - source_title: Role of Decentralised Control for Managing Network Constraints for
+      DER
+    pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+    markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-41803
+  source_title: Role of Decentralised Control for Managing Network Constraints for
+    DER
+  publish_date: 2020-08
+  project_name: Dynamic Limits DDL Control Scheme Feasibility Study
+  what_happened: Network analysis found that many Australian customers are supplied
+    at average voltages of 240–250V — well above the 230V nominal — reducing available
+    voltage headroom for DER exports to as little as 3V before the upper 253V limit
+    is reached. DNSPs are not obliged to intervene unless voltages exceed 253V, meaning
+    the problem is systemic and unaddressed.
+  lesson_learnt: Before deploying dynamic DER control schemes, DNSPs should reduce
+    average supply voltages to closer to 230V nominal through transformer tap setting
+    adjustments and voltage regulator reprogramming. High average supply voltages
+    are the primary limiting factor on DER hosting capacity on LV networks and reduce
+    or eliminate the benefit of any dynamic limits platform.
+  issue_severity: major
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Report recommends DNSPs adopt +6% (244V) rather than +10% (253V)
+    as the network investment trigger for reducing average supply voltages, and implement
+    or revise tapping zone schemes targeting 230V nominal for the majority of customers.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id003
+  - 23
+  - 24
+  - 94
+  evidence_excerpt: A customer who receives an average supply voltage around 250V
+    would have only 3V of headroom in export before their DER installation becomes
+    voltage constrained, but the DNSP would not be obliged to change anything to improve
+    that. A site like this would have minimal opportunity to export.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+  project_page_url: https://arena.gov.au/projects/dynamic-limits-der-feasibility-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 23/08/2020
+  kb_year: '2018'
+  kb_associated_project: Dynamic Limits DER Feasibility Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $292k
+  total_project_value: $798k
+  lead_organisation: Dynamic Limits Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/12/2018
+  location: New South Wales, South Australia
+  project_partners: UniSA, SAGE Automation, Opto22
+  pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+  markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  source_page_pdf: 24
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-41803
+  contributing_source_titles:
+  - Role of Decentralised Control for Managing Network Constraints for DER
+  contributing_sources:
+  - source_title: Role of Decentralised Control for Managing Network Constraints for
+      DER
+    pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+    markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-41804
+  source_title: Role of Decentralised Control for Managing Network Constraints for
+    DER
+  publish_date: 2020-08
+  project_name: Dynamic Limits DDL Control Scheme Feasibility Study
+  what_happened: Site-specific modelling of four rural houses on a shared 25kVA transformer
+    at Brimbin on the Kundle Kundle feeder found that the existing 3kW rural static
+    DER export limit restricts total installed capacity to 12kW — approximately half
+    the transformer's available thermal capacity — with no dynamic management of actual
+    operating conditions.
+  lesson_learnt: Static DER export limits on rural networks are inherently conservative
+    and significantly under-utilise available network capacity for most of the year.
+    Applying dynamic curtailment in place of static limits can increase allowable
+    DER installation sizes to 8kW per house (266% of the 3kW static limit) for two
+    houses and 4kW (133%) for two sharing a transformer winding, without any dynamic
+    curtailment platform being required — simply by correcting transformer tap settings.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Modelling shows a 2.5% reduction in transformer tap settings
+    (6V on 240V base) relieves the voltage constraint for the most constrained house,
+    and substituting a single-phase 25kVA transformer for the three-phase unit eliminates
+    per-winding capacity sharing constraints entirely.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id004
+  - 83
+  evidence_excerpt: The existing 3kW static limit applied to DER on rural houses could
+    be increased to 8kW for two of the houses (an increase to 266% of the static limit)
+    and 4kW for two that share a common transformer winding (an increase to 133% of
+    the static limit), without any dynamic curtailment scheme being needed.
+  confidence_note: 'project_scale_band reconciled to ''programmatic/portfolio-level''
+    from: programmatic/portfolio-level (15/20), demonstration (5/20)'
+  source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+  project_page_url: https://arena.gov.au/projects/dynamic-limits-der-feasibility-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 23/08/2020
+  kb_year: '2018'
+  kb_associated_project: Dynamic Limits DER Feasibility Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $292k
+  total_project_value: $798k
+  lead_organisation: Dynamic Limits Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/12/2018
+  location: New South Wales, South Australia
+  project_partners: UniSA, SAGE Automation, Opto22
+  pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+  markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  source_page_pdf: 83
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-41804
+  contributing_source_titles:
+  - Role of Decentralised Control for Managing Network Constraints for DER
+  contributing_sources:
+  - source_title: Role of Decentralised Control for Managing Network Constraints for
+      DER
+    pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+    markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-41805
+  source_title: Role of Decentralised Control for Managing Network Constraints for
+    DER
+  publish_date: 2020-08
+  project_name: Dynamic Limits DDL Control Scheme Feasibility Study
+  what_happened: Site-specific modelling of the Brimbin village scenario found that
+    replacing the existing three-phase 25kVA transformer with a single-phase 25kVA
+    unit, combined with dynamic curtailment, would allow each house to install 15kW
+    solar (500% of the 3kW static limit) with only 12% annual energy curtailment.
+  lesson_learnt: Three-phase distribution transformers supplying small numbers of
+    single-phase customers impose per-winding thermal limits that are one-third of
+    the total transformer rating, severely restricting DER hosting capacity per customer.
+    Replacing three-phase transformers with single-phase units at locations with small
+    customer groups and high DER potential is a cost-effective lever for dramatically
+    increasing hosting capacity before deploying dynamic control schemes.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id005
+  - 83
+  - 91
+  evidence_excerpt: If the transformer was changed to a single-phase 25kVA unit and
+    dynamic curtailment of DER were applied, then modelling of loads and generation
+    in hourly intervals for an entire year showed that zero curtailment would occur
+    if each house had 10kW installed. Only 12% curtailment would occur if 15kW were
+    installed per house (an increase of 500% compared to the static limit).
+  confidence_note: 'project_scale_band reconciled to ''programmatic/portfolio-level''
+    from: programmatic/portfolio-level (15/20), demonstration (5/20)'
+  source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+  project_page_url: https://arena.gov.au/projects/dynamic-limits-der-feasibility-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 23/08/2020
+  kb_year: '2018'
+  kb_associated_project: Dynamic Limits DER Feasibility Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $292k
+  total_project_value: $798k
+  lead_organisation: Dynamic Limits Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/12/2018
+  location: New South Wales, South Australia
+  project_partners: UniSA, SAGE Automation, Opto22
+  pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+  markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  source_page_pdf: 83
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-41805
+  contributing_source_titles:
+  - Role of Decentralised Control for Managing Network Constraints for DER
+  contributing_sources:
+  - source_title: Role of Decentralised Control for Managing Network Constraints for
+      DER
+    pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+    markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-41806
+  source_title: Role of Decentralised Control for Managing Network Constraints for
+    DER
+  publish_date: 2020-08
+  project_name: Dynamic Limits DDL Control Scheme Feasibility Study
+  what_happened: Site-specific modelling of the Walgett Pilliga 22kV feeder found
+    that a DNSP-imposed 3% Voltage Change Limit rule for DER installations restricted
+    a hypothetical large DER site to 1.01MW, despite the feeder being able to accommodate
+    between 1.2MW and 2.25MW under dynamic curtailment control — a 123% capacity increase
+    over the rule-based limit.
+  lesson_learnt: The 3% voltage change rule, while addressing a legitimate power quality
+    concern, can limit DER capacity to sizes that do not require curtailment at all
+    under a dynamic limits regime, removing all value from dynamic control schemes
+    at affected sites. The rule should be reassessed for low-penetration networks
+    and sites where fast local DER controllers can maintain exports within the 3%
+    limit through combined load control and generator curtailment.
+  issue_severity: major
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: approvals/contracting
+  proponent_type: network business
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id006
+  - 84
+  - 88
+  - 94
+  evidence_excerpt: The DDL Control Scheme could satisfactorily control a 2.25MW DER
+    site at this location without the voltage constraints of this feeder being exceeded.
+    This is a 123% capacity increase over the 1.01MW limit arising from the existing
+    3% rule applied by the DNSP.
+  confidence_note: 'project_scale_band reconciled to ''programmatic/portfolio-level''
+    from: programmatic/portfolio-level (15/20), demonstration (5/20)'
+  source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+  project_page_url: https://arena.gov.au/projects/dynamic-limits-der-feasibility-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 23/08/2020
+  kb_year: '2018'
+  kb_associated_project: Dynamic Limits DER Feasibility Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $292k
+  total_project_value: $798k
+  lead_organisation: Dynamic Limits Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/12/2018
+  location: New South Wales, South Australia
+  project_partners: UniSA, SAGE Automation, Opto22
+  pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+  markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  source_page_pdf: 88
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-41806
+  contributing_source_titles:
+  - Role of Decentralised Control for Managing Network Constraints for DER
+  contributing_sources:
+  - source_title: Role of Decentralised Control for Managing Network Constraints for
+      DER
+    pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+    markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-41807
+  source_title: Role of Decentralised Control for Managing Network Constraints for
+    DER
+  publish_date: 2020-08
+  project_name: Dynamic Limits DDL Control Scheme Feasibility Study
+  what_happened: Modelling of a single rural house on a long LV supply demonstrated
+    that the existing 3kW rural static limit could be replaced with a 10kW system
+    with negligible curtailment (<1%), and a 15kW system with only 8.1% annual energy
+    curtailment — delivering 25,404kWh annually versus 5,526kWh under the static limit.
+  lesson_learnt: For single rural customers on long LV supplies, dynamic DER limit
+    control can increase annual solar energy delivery by up to 360% compared to the
+    standard 3kW static rural limit, with only 8.1% curtailment at 15kW installed
+    capacity. This gain is contingent on the average supply voltage being correctly
+    set at or near 230V nominal — without that, available hosting headroom is reduced.
+  issue_severity: none
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id007
+  - 89
+  evidence_excerpt: The modelling showed that the existing 3kW static limit could
+    be increased to 5kW without any curtailment required and a 10kW array could be
+    installed with only negligible levels of curtailment (<1%) required to stay under
+    the upper voltage constraint. However, once a 15kW array was installed, 8.1% of
+    the total potential annual PV energy yield was lost to curtailment... This represents
+    a 360% increase in the PV energy that could be utilised.
+  confidence_note: 'project_scale_band reconciled to ''programmatic/portfolio-level''
+    from: programmatic/portfolio-level (15/20), demonstration (5/20)'
+  source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+  project_page_url: https://arena.gov.au/projects/dynamic-limits-der-feasibility-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 23/08/2020
+  kb_year: '2018'
+  kb_associated_project: Dynamic Limits DER Feasibility Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $292k
+  total_project_value: $798k
+  lead_organisation: Dynamic Limits Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/12/2018
+  location: New South Wales, South Australia
+  project_partners: UniSA, SAGE Automation, Opto22
+  pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+  markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  source_page_pdf: 89
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-41807
+  contributing_source_titles:
+  - Role of Decentralised Control for Managing Network Constraints for DER
+  contributing_sources:
+  - source_title: Role of Decentralised Control for Managing Network Constraints for
+      DER
+    pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+    markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-41808
+  source_title: Role of Decentralised Control for Managing Network Constraints for
+    DER
+  publish_date: 2020-08
+  project_name: Dynamic Limits DDL Control Scheme Feasibility Study
+  what_happened: Essential Energy's network includes approximately 140,000 distribution
+    substations, none of which have LV network models available. Any centralised DER
+    control platform relying on state estimation or constraint engines to manage DER
+    on LV networks would require models for all of these substations — a requirement
+    that is economically unviable for rural and remote networks with low revenue per
+    km.
+  lesson_learnt: For rural and remote DNSPs, centralised DER control approaches requiring
+    network models are not economically viable — the cost of building and maintaining
+    models for tens of thousands of LV substations is prohibitive relative to available
+    revenue. Design DER control schemes for rural networks around direct measurement
+    of constraint locations rather than model-based state estimation.
+  issue_severity: major
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: The DDL Control Scheme sidesteps this by using network sensors
+    at constraint locations for direct measurement, eliminating the need for LV network
+    models entirely.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id008
+  - 60
+  evidence_excerpt: Essential Energy, for example, currently has hundreds of sub-transmission
+    feeders and more than 1,500 Medium Voltage (MV) distribution feeders, each of
+    which would require an up-to-date network model. In addition to these... all of
+    the LV networks supplied from the approximately 140,000 distribution substations
+    would also need a model to describe them (and these are not currently available).
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+  project_page_url: https://arena.gov.au/projects/dynamic-limits-der-feasibility-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 23/08/2020
+  kb_year: '2018'
+  kb_associated_project: Dynamic Limits DER Feasibility Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $292k
+  total_project_value: $798k
+  lead_organisation: Dynamic Limits Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/12/2018
+  location: New South Wales, South Australia
+  project_partners: UniSA, SAGE Automation, Opto22
+  pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+  markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-41808
+  contributing_source_titles:
+  - Role of Decentralised Control for Managing Network Constraints for DER
+  contributing_sources:
+  - source_title: Role of Decentralised Control for Managing Network Constraints for
+      DER
+    pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+    markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-41809
+  source_title: Role of Decentralised Control for Managing Network Constraints for
+    DER
+  publish_date: 2020-08
+  project_name: Dynamic Limits DDL Control Scheme Feasibility Study
+  what_happened: Stakeholder consultation identified that rural and remote network
+    customers in areas without 3G/4G coverage would be excluded from DER control schemes
+    requiring continuous communications. The DDL Control Scheme specifically encountered
+    this 'last mile' problem when assessing deployment to Essential Energy's rural
+    and remote network footprint.
+  lesson_learnt: DER control schemes targeting rural and remote networks must be designed
+    to operate autonomously when communications are unavailable or intermittent —
+    schemes requiring continuous connectivity to a central platform will fail to serve
+    the customers in the most constrained parts of rural networks. Evaluate 'last
+    mile' communications options (e.g. LoRa) early and ensure the chosen solution
+    also serves other DNSP data needs to justify the investment.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: The DDL Control Scheme incorporates a 'fingerprinting' algorithm
+    in the DER Controller that maintains dynamic curtailment using historic operating
+    profiles when communications are lost, reverting to static limits only after extended
+    outage.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id009
+  - 49
+  - 74
+  evidence_excerpt: The use of the DDL Control Scheme for rural and remote properties
+    necessarily encounters a 'last mile' problem — often the 3G/4G communication networks
+    do not reach all customer sites... an objective of the DDL Control Scheme was
+    to develop the ability of the DER controls to continue working intelligently —
+    and preferably with some dynamic capability — even when communication channels
+    became compromised or unavailable for periods of time.
+  confidence_note: 'project_type reconciled to ''network/grid'' from: network/grid
+    (12/20), DER/customer-side (8/20)'
+  source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+  project_page_url: https://arena.gov.au/projects/dynamic-limits-der-feasibility-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 23/08/2020
+  kb_year: '2018'
+  kb_associated_project: Dynamic Limits DER Feasibility Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $292k
+  total_project_value: $798k
+  lead_organisation: Dynamic Limits Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/12/2018
+  location: New South Wales, South Australia
+  project_partners: UniSA, SAGE Automation, Opto22
+  pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+  markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-41809
+  contributing_source_titles:
+  - Role of Decentralised Control for Managing Network Constraints for DER
+  contributing_sources:
+  - source_title: Role of Decentralised Control for Managing Network Constraints for
+      DER
+    pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+    markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-41810
+  source_title: Role of Decentralised Control for Managing Network Constraints for
+    DER
+  publish_date: 2020-08
+  project_name: Dynamic Limits DDL Control Scheme Feasibility Study
+  what_happened: Stakeholder consultation revealed that DNSPs have limited resources
+    for monitoring and inspecting physical DER installations for compliance, with
+    the high volume of smaller installations typically audited only across a small
+    sample. Accessing inverter configuration settings requires the original installing
+    electrician to be present, making systematic compliance checking impractical.
+  lesson_learnt: Any scheme implementing dynamic operating envelopes for DER must
+    include automated, remote compliance monitoring from the outset — resource-constrained
+    DNSPs cannot rely on physical audits to enforce configuration requirements at
+    scale. Build compliance verification into the scheme architecture (e.g. via intelligent
+    edge controllers that continuously report operating behaviour) rather than treating
+    it as an add-on.
+  issue_severity: major
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated integration
+  intervention_note: The DDL Control Scheme addresses this through intelligent DER
+    Controllers that continuously report operating states to the ONDP, enabling automated
+    compliance monitoring and anomaly detection without physical site visits.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id010
+  - 75
+  evidence_excerpt: Currently, there are limited resources available for monitoring
+    and inspecting physical solar installations for compliance with DNSP requirements.
+    For this reason, the high number of smaller, common installations is usually undertaken
+    as an audit across a smaller sample of all installations. Further, access to passcodes,
+    software interfaces, or hardware dongles for checking configuration settings in
+    PV (and battery) inverters is not practical or efficient without the installing
+    electrician in attendance.
+  confidence_note: 'project_type reconciled to ''network/grid'' from: network/grid
+    (12/20), DER/customer-side (8/20)'
+  source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+  project_page_url: https://arena.gov.au/projects/dynamic-limits-der-feasibility-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 23/08/2020
+  kb_year: '2018'
+  kb_associated_project: Dynamic Limits DER Feasibility Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $292k
+  total_project_value: $798k
+  lead_organisation: Dynamic Limits Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/12/2018
+  location: New South Wales, South Australia
+  project_partners: UniSA, SAGE Automation, Opto22
+  pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+  markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  source_page_pdf: 75
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-41810
+  contributing_source_titles:
+  - Role of Decentralised Control for Managing Network Constraints for DER
+  contributing_sources:
+  - source_title: Role of Decentralised Control for Managing Network Constraints for
+      DER
+    pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+    markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-41811
+  source_title: Role of Decentralised Control for Managing Network Constraints for
+    DER
+  publish_date: 2020-08
+  project_name: Dynamic Limits DDL Control Scheme Feasibility Study
+  what_happened: Stakeholder consultation identified that current DNSP revenue models
+    provide only very limited financial incentives (e.g. the Demand Management Incentive
+    Scheme) for improving DER hosting capacity and deferring network augmentation.
+    Deferring network upgrades through dynamic DER management reduces revenues linked
+    to asset values under current regulatory arrangements.
+  lesson_learnt: DNSP regulatory revenue models that link revenue to asset value actively
+    disincentivise dynamic DER management schemes that defer network augmentation.
+    Policy makers and project developers proposing DER hosting capacity solutions
+    should engage with regulatory reform of DNSP revenue models alongside technical
+    implementation — without revenue model reform, financial incentives for DNSPs
+    to deploy dynamic management schemes remain weak.
+  issue_severity: major
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: concept/feasibility
+  proponent_type: network business
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id011
+  - 94
+  evidence_excerpt: The benefits of dynamic DER management (hosting capacity increases,
+    improved network utilisation, and reduced network charges for consumers) also
+    need to be reflected in the revenue model of DNSPs. With the current revenue models,
+    there are only very limited financial incentives (e.g. the Demand Management Incentive
+    Scheme) to improve these. Deferring network upgrades beyond this will reduce revenues
+    linked to asset values.
+  confidence_note: 'project_type reconciled to ''network/grid'' from: network/grid
+    (12/20), DER/customer-side (8/20)'
+  source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+  project_page_url: https://arena.gov.au/projects/dynamic-limits-der-feasibility-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 23/08/2020
+  kb_year: '2018'
+  kb_associated_project: Dynamic Limits DER Feasibility Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $292k
+  total_project_value: $798k
+  lead_organisation: Dynamic Limits Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/12/2018
+  location: New South Wales, South Australia
+  project_partners: UniSA, SAGE Automation, Opto22
+  pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+  markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-41811
+  contributing_source_titles:
+  - Role of Decentralised Control for Managing Network Constraints for DER
+  contributing_sources:
+  - source_title: Role of Decentralised Control for Managing Network Constraints for
+      DER
+    pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+    markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-41812
+  source_title: Role of Decentralised Control for Managing Network Constraints for
+    DER
+  publish_date: 2020-08
+  project_name: Dynamic Limits DDL Control Scheme Feasibility Study
+  what_happened: Stakeholder consultation identified significant cybersecurity concerns
+    about deploying IoT-based DER control schemes on electricity distribution networks,
+    including risks from DDoS attacks, interception of over-the-air updates, and unauthorised
+    device access. Consumer-grade IoT implementations were noted as having a poor
+    cybersecurity reputation.
+  lesson_learnt: DER control schemes using networked edge controllers must be implemented
+    on industrial-grade IIoT platforms, not consumer-grade IoT infrastructure — the
+    cybersecurity requirements of grid-connected control systems are fundamentally
+    different. Conduct a critical assessment of IIoT platform cybersecurity provisions
+    before selecting a platform, and require that cyber security measures are fully
+    specified and reviewed prior to implementation, not retrofitted.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Report recommends a robust review against existing energy network
+    cyber security frameworks (e.g. AEMO's Australian Energy Sector Cyber Security
+    Framework) prior to implementation of the DDL Control Scheme.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id012
+  - 73
+  evidence_excerpt: Consumer grade IoT implementations have deservedly earned a poor
+    reputation for cyber security due to cheap, unprotected sensors and actuators
+    with direct connection to the public internet being subsequently infiltrated easily
+    by hackers... a critical assessment of the cyber security provisions would be
+    required before any specific IIoT platform was chosen to carry the DDL Control
+    Scheme.
+  confidence_note: 'project_type reconciled to ''network/grid'' from: network/grid
+    (12/20), DER/customer-side (8/20)'
+  source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+  project_page_url: https://arena.gov.au/projects/dynamic-limits-der-feasibility-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 23/08/2020
+  kb_year: '2018'
+  kb_associated_project: Dynamic Limits DER Feasibility Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $292k
+  total_project_value: $798k
+  lead_organisation: Dynamic Limits Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/12/2018
+  location: New South Wales, South Australia
+  project_partners: UniSA, SAGE Automation, Opto22
+  pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+  markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  source_page_pdf: 73
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-41812
+  contributing_source_titles:
+  - Role of Decentralised Control for Managing Network Constraints for DER
+  contributing_sources:
+  - source_title: Role of Decentralised Control for Managing Network Constraints for
+      DER
+    pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+    markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-41813
+  source_title: Role of Decentralised Control for Managing Network Constraints for
+    DER
+  publish_date: 2020-08
+  project_name: Dynamic Limits DDL Control Scheme Feasibility Study
+  what_happened: Feasibility analysis found that integration of the DDL Control Scheme
+    with existing DNSP SCADA and Distribution Management Systems presents a significant
+    implementation challenge, with LV network visibility remaining almost entirely
+    absent from existing DNSP systems — rural DNSPs typically have no remote visibility
+    of distribution substation conditions beyond MDI recorders requiring physical
+    site visits.
+  lesson_learnt: Any DER control scheme requiring integration with existing DNSP SCADA
+    and DMS must develop a data integration plan as an early project step — the gap
+    between existing system capabilities and the data requirements of dynamic DER
+    management is large, particularly for rural DNSPs. Integration should proceed
+    in a step-wise manner beginning with small-scope trials to test integration pathways
+    before broader rollout.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Report recommends beginning integration with DNSP GIS and network
+    asset databases as a first step, followed by incremental extension to MV feeder
+    monitoring systems, with IIoT approaches providing a parallel pathway that may
+    also modernise broader SCADA capabilities.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id013
+  - 72
+  - 76
+  evidence_excerpt: The visibility of low voltage networks remains a challenge. Rural
+    DNSPs are trialling or beginning to install some limited facilities for remotely
+    monitoring larger distribution substations in urban areas, but beyond that, the
+    only knowledge of conditions at low voltage networks is from MDIs (usually only
+    installed on substations greater than 100kVA and not visible remotely) or by manual
+    site visits and temporary PQ logging audits by field technicians.
+  confidence_note: 'project_type reconciled to ''network/grid'' from: network/grid
+    (12/20), DER/customer-side (8/20)'
+  source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+  project_page_url: https://arena.gov.au/projects/dynamic-limits-der-feasibility-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 23/08/2020
+  kb_year: '2018'
+  kb_associated_project: Dynamic Limits DER Feasibility Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $292k
+  total_project_value: $798k
+  lead_organisation: Dynamic Limits Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/12/2018
+  location: New South Wales, South Australia
+  project_partners: UniSA, SAGE Automation, Opto22
+  pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+  markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  source_page_pdf: 72
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-41813
+  contributing_source_titles:
+  - Role of Decentralised Control for Managing Network Constraints for DER
+  contributing_sources:
+  - source_title: Role of Decentralised Control for Managing Network Constraints for
+      DER
+    pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+    markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-41814
+  source_title: Role of Decentralised Control for Managing Network Constraints for
+    DER
+  publish_date: 2020-08
+  project_name: Dynamic Limits DDL Control Scheme Feasibility Study
+  what_happened: General feasibility modelling for a typical rural supply scenario
+    (group of four cottages on a shared 25kVA transformer) showed that applying dynamic
+    DER export limit control allows DER installation size to be tripled while requiring
+    curtailment of only approximately 12% of potential annual energy output, compared
+    to zero curtailment under the static limit at one-third the size.
+  lesson_learnt: Dynamic DER export limit control can increase network-hosting DER
+    capacity by at least 120% to over 400% above static limit outcomes for typical
+    rural supply scenarios, with minimal energy curtailment (circa 12%). This makes
+    dynamic limits schemes economically attractive alternatives to network augmentation
+    capex in areas approaching DER saturation under static limit regimes.
+  issue_severity: none
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id014
+  - 35
+  - 36
+  - 92
+  evidence_excerpt: This model shows that the use of dynamic control over DER to ensure
+    local network voltage constraint is not exceeded can accommodate DER installations
+    three times larger while only reducing output approximately 12% from a theoretical
+    maximum and keeping within the local network voltage constraint at all times.
+    This leads to a 160% increase above the energy yield achieved from the 5kW baseline
+    scenario.
+  confidence_note: 'project_scale_band reconciled to ''programmatic/portfolio-level''
+    from: programmatic/portfolio-level (15/20), demonstration (5/20)'
+  source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+  project_page_url: https://arena.gov.au/projects/dynamic-limits-der-feasibility-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 23/08/2020
+  kb_year: '2018'
+  kb_associated_project: Dynamic Limits DER Feasibility Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $292k
+  total_project_value: $798k
+  lead_organisation: Dynamic Limits Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/12/2018
+  location: New South Wales, South Australia
+  project_partners: UniSA, SAGE Automation, Opto22
+  pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+  markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  source_page_pdf: 36
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-41814
+  contributing_source_titles:
+  - Role of Decentralised Control for Managing Network Constraints for DER
+  contributing_sources:
+  - source_title: Role of Decentralised Control for Managing Network Constraints for
+      DER
+    pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+    markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-41815
+  source_title: Role of Decentralised Control for Managing Network Constraints for
+    DER
+  publish_date: 2020-08
+  project_name: Dynamic Limits DDL Control Scheme Feasibility Study
+  what_happened: Analysis of the OpEN Initiative's position paper found that all four
+    proposed DSO framework models have lower benefits than costs until very high DER
+    uptake scenarios are reached across the entire network — meaning large upfront
+    investment in whole-network DER management platforms is not yet economically justified.
+  lesson_learnt: DER management platforms for distribution networks should be designed
+    for step-wise, targeted rollout beginning only in areas already experiencing or
+    imminently approaching DER saturation — whole-of-network upfront investment is
+    not economically justified at current DER penetration levels. Prioritise deployment
+    where network augmentation capex would otherwise be required, delivering immediate
+    cost avoidance to justify the scheme.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: concept/feasibility
+  proponent_type: network business
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id015
+  - 60
+  - 94
+  evidence_excerpt: The Position Paper on the OpEN project released on 13 May 2020
+    notes (on Page 42, 'No rush on distribution markets') that all four of the OpEN
+    framework models have less benefits than costs until very high DER uptake scenarios
+    are reached... the DDL Scheme can be rolled out in a step-wise manner. Implementation
+    can first focus on those network areas that already have (or are about to have)
+    very high DER uptake and require network augmentation capital expenditure.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+  project_page_url: https://arena.gov.au/projects/dynamic-limits-der-feasibility-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 23/08/2020
+  kb_year: '2018'
+  kb_associated_project: Dynamic Limits DER Feasibility Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $292k
+  total_project_value: $798k
+  lead_organisation: Dynamic Limits Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/12/2018
+  location: New South Wales, South Australia
+  project_partners: UniSA, SAGE Automation, Opto22
+  pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+  markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-41815
+  contributing_source_titles:
+  - Role of Decentralised Control for Managing Network Constraints for DER
+  contributing_sources:
+  - source_title: Role of Decentralised Control for Managing Network Constraints for
+      DER
+    pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+    markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-41816
+  source_title: Role of Decentralised Control for Managing Network Constraints for
+    DER
+  publish_date: 2020-08
+  project_name: Dynamic Limits DDL Control Scheme Feasibility Study
+  what_happened: Feasibility analysis and stakeholder consultation found that the
+    use of state estimation and constraint engine approaches to determine network
+    operating envelopes creates vendor lock-in because only the vendor understands
+    the estimation methodology, and the technique cannot be independently verified
+    without direct measurement — which if available would make the estimation redundant.
+  lesson_learnt: When procuring DER management platforms for rural and remote networks,
+    prefer approaches based on direct measurement of constraint locations over state
+    estimation or model-based constraint engines — estimation techniques are not transparent,
+    create vendor dependency, and cannot be verified without the measurement infrastructure
+    that would make them unnecessary. Prioritise verifiable, open-specification control
+    architectures.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: procurement
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id016
+  - 62
+  evidence_excerpt: State estimation techniques and constraint engines are not transparent.
+    The use of such techniques creates a reliance on the vendor because the only person
+    who understands how the estimation technique functions is that vendor. The vendor
+    not only controls information flows but also, essentially, creates them... The
+    only way to ensure that the technique is operating effectively is to measure the
+    constraint location and verify the estimation technique against this. Otherwise,
+    the only verification that a simulation is correct is further simulation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+  project_page_url: https://arena.gov.au/projects/dynamic-limits-der-feasibility-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 23/08/2020
+  kb_year: '2018'
+  kb_associated_project: Dynamic Limits DER Feasibility Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $292k
+  total_project_value: $798k
+  lead_organisation: Dynamic Limits Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/12/2018
+  location: New South Wales, South Australia
+  project_partners: UniSA, SAGE Automation, Opto22
+  pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+  markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  source_page_pdf: 62
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-41816
+  contributing_source_titles:
+  - Role of Decentralised Control for Managing Network Constraints for DER
+  contributing_sources:
+  - source_title: Role of Decentralised Control for Managing Network Constraints for
+      DER
+    pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+    markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-41817
+  source_title: Role of Decentralised Control for Managing Network Constraints for
+    DER
+  publish_date: 2020-08
+  project_name: Dynamic Limits DDL Control Scheme Feasibility Study
+  what_happened: The Newport Review (commissioned as part of the OpEN Initiative)
+    identified that centralised DER control platforms directing serial information
+    flows through multiple organisations and systems create Latency Cascading — excessive
+    cumulative delays that prevent fast real-time control responses. This was confirmed
+    as a structural barrier to using centralised control for local network constraint
+    management.
+  lesson_learnt: Avoid architectures that route real-time network constraint data
+    serially through multiple organisations or systems — each hop adds latency that
+    prevents the fast control loop responses needed for local constraint management.
+    Use point-to-multipoint data broadcasting to all authorised subscribers simultaneously,
+    and place enforcement of local network constraints in edge controllers at the
+    DER installation rather than in centralised platforms.
+  issue_severity: major
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: The DDL Control Scheme uses a point-to-multipoint ONDP data broker
+    that broadcasts network state data to all authorised subscribers simultaneously,
+    and places the enforcement logic in the edge DER Controller, eliminating serial
+    communication chains.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id017
+  - 39
+  - 58
+  evidence_excerpt: Latency Cascading is another problem the report recognises. The
+    term describes the creation of excessive latencies that will arise if information
+    flows are directed serially through cascades of different organisations and their
+    systems, with each step adding to the total delay time.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+  project_page_url: https://arena.gov.au/projects/dynamic-limits-der-feasibility-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 23/08/2020
+  kb_year: '2018'
+  kb_associated_project: Dynamic Limits DER Feasibility Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $292k
+  total_project_value: $798k
+  lead_organisation: Dynamic Limits Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/12/2018
+  location: New South Wales, South Australia
+  project_partners: UniSA, SAGE Automation, Opto22
+  pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+  markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-41817
+  contributing_source_titles:
+  - Role of Decentralised Control for Managing Network Constraints for DER
+  contributing_sources:
+  - source_title: Role of Decentralised Control for Managing Network Constraints for
+      DER
+    pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+    markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-41818
+  source_title: Role of Decentralised Control for Managing Network Constraints for
+    DER
+  publish_date: 2020-08
+  project_name: Dynamic Limits DDL Control Scheme Feasibility Study
+  what_happened: Feasibility analysis found that existing network modelling tools
+    (PSS SINCAL, PowerFactory) are not capable of adequately modelling the impact
+    of dynamic DER limits on network operating states, limiting the ability of DNSPs
+    and DSOs to anticipate how dynamic DER control schemes will affect extreme network
+    operating conditions.
+  lesson_learnt: Project developers and DNSPs planning dynamic DER control scheme
+    trials or deployments should not assume that standard network modelling tools
+    (PSS SINCAL, PowerFactory) can adequately represent dynamic DER limit effects
+    — additional modelling tool development or bespoke Python-based load flow tools
+    may be required for site-specific feasibility assessments.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The project developed a bespoke Python load flow tool to model
+    LV network voltage levels across all hourly periods in annual load and generation
+    profiles for site-specific assessments.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id018
+  - 80
+  - 94
+  evidence_excerpt: The capabilities of existing network modelling tools (such as
+    PSS SINCAL, PowerFactory) need to be further developed to better deal with modelling
+    the impact of dynamic DER limits on networks. The DDL Control Scheme does not
+    require modelling to operate, but if a DNSP or DSO wishes to anticipate how a
+    dynamic DER control scheme will impact their extreme network operating states
+    and capacities, then the further development of those modelling tools will be
+    necessary.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+  project_page_url: https://arena.gov.au/projects/dynamic-limits-der-feasibility-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 23/08/2020
+  kb_year: '2018'
+  kb_associated_project: Dynamic Limits DER Feasibility Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $292k
+  total_project_value: $798k
+  lead_organisation: Dynamic Limits Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/12/2018
+  location: New South Wales, South Australia
+  project_partners: UniSA, SAGE Automation, Opto22
+  pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+  markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-41818
+  contributing_source_titles:
+  - Role of Decentralised Control for Managing Network Constraints for DER
+  contributing_sources:
+  - source_title: Role of Decentralised Control for Managing Network Constraints for
+      DER
+    pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+    markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-41819
+  source_title: Role of Decentralised Control for Managing Network Constraints for
+    DER
+  publish_date: 2020-08
+  project_name: Dynamic Limits DDL Control Scheme Feasibility Study
+  what_happened: Stakeholder consultation identified that integrating smart meter
+    data as a third-party data source for DER control purposes is not straightforward
+    — smart meters typically only consider loads at their specific installation, take
+    averages over variable time periods, are not necessarily time-synchronised with
+    each other, and have sampling frequencies too low for near-real-time DER constraint
+    management.
+  lesson_learnt: Do not assume smart meter data can substitute for dedicated network
+    sensors in DER management schemes — smart meter data limitations (installation-level
+    view only, variable averaging periods, lack of time synchronisation, insufficient
+    sampling frequency) make it unsuitable for near-real-time network constraint management
+    without significant additional investment to address these issues.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id019
+  - 74
+  evidence_excerpt: Issues identified include the limited view of shared network loads
+    (because installation metering only considers loads in the specific installations),
+    computation (often smart meters only take averages over specific time periods,
+    which varies with configuration), alignment (smart meters are not necessarily
+    all coordinated so that the sampling intervals equally align), and sampling frequency
+    (meters only need to be read periodically, but the DDL Control Scheme requires
+    near constant communication).
+  confidence_note: 'project_type reconciled to ''network/grid'' from: network/grid
+    (12/20), DER/customer-side (8/20)'
+  source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+  project_page_url: https://arena.gov.au/projects/dynamic-limits-der-feasibility-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 23/08/2020
+  kb_year: '2018'
+  kb_associated_project: Dynamic Limits DER Feasibility Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $292k
+  total_project_value: $798k
+  lead_organisation: Dynamic Limits Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/12/2018
+  location: New South Wales, South Australia
+  project_partners: UniSA, SAGE Automation, Opto22
+  pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+  markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  source_page_pdf: 74
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-41819
+  contributing_source_titles:
+  - Role of Decentralised Control for Managing Network Constraints for DER
+  contributing_sources:
+  - source_title: Role of Decentralised Control for Managing Network Constraints for
+      DER
+    pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+    markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-41820
+  source_title: Role of Decentralised Control for Managing Network Constraints for
+    DER
+  publish_date: 2020-08
+  project_name: Dynamic Limits DDL Control Scheme Feasibility Study
+  what_happened: Feasibility analysis found that increasing DER hosting capacity on
+    LV networks through dynamic control schemes also increases Triplen Harmonic currents
+    (third and odd multiples) from DER inverters, which are additive in neutral conductors
+    and can drive neutral voltage rise — exacerbating 'shocks and tingles' hazards
+    from existing broken neutral or faulty neutral connection issues on rural networks.
+  lesson_learnt: Projects increasing DER hosting capacity on LV distribution networks
+    should assess the potential for increased Triplen Harmonic currents to worsen
+    neutral voltage rise and associated electrical safety hazards — this safety risk
+    is not addressed by dynamic limit control schemes and requires separate investigation,
+    potentially including upgrades to neutral conductor capacity at affected sites.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id020
+  - 71
+  evidence_excerpt: Third harmonics (and all Triplen Harmonics) arising from the use
+    of DER inverters will increase if larger DER capacities are facilitated by dynamic
+    control schemes. These Triplen Harmonics are additive in the neutral conductor
+    and will drive higher neutral voltage rise issues associated with 'shocks and
+    tingles'. The DDL Control Scheme does not currently include special provisions
+    for detecting and alerting for increases in neutral rise voltages arising from
+    increased DER capacities.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+  project_page_url: https://arena.gov.au/projects/dynamic-limits-der-feasibility-study/
+  kb_category: Distributed energy resources
+  kb_publish_date: 23/08/2020
+  kb_year: '2018'
+  kb_associated_project: Dynamic Limits DER Feasibility Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $292k
+  total_project_value: $798k
+  lead_organisation: Dynamic Limits Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 12/12/2018
+  location: New South Wales, South Australia
+  project_partners: UniSA, SAGE Automation, Opto22
+  pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+  markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-41820
+  contributing_source_titles:
+  - Role of Decentralised Control for Managing Network Constraints for DER
+  contributing_sources:
+  - source_title: Role of Decentralised Control for Managing Network Constraints for
+      DER
+    pdf_url: https://arena.gov.au/assets/2020/09/dynamic-limits-der-report.pdf
+    source_pages: *id020
+    source_url: https://arena.gov.au/knowledge-bank/role-of-decentralised-control-for-managing-network-constraints-for-der/
+    markdown_filename: role_of_decentralised_control_for_managing_network_constraints_for_der.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92

@@ -1,0 +1,1897 @@
+- record_id: ARENA-DLV-41151
+  source_title: Neoen - Western Downs BESS - Lessons Learnt Report 3
+  publish_date: 2024-06
+  project_name: Western Downs Battery Energy Storage System (WDBESS)
+  what_happened: Following the GFM transition (5.3.9 process), AEMO informed WDBESS
+    it could not register the full Very Fast Raise and Lower FCAS capacity (+55MW)
+    as expected, because AEMO's updated interpretation of the Market Ancillary Services
+    Specification treated the plant's synthetic inertia response as offsetting its
+    FCAS enablement. An interim agreement was reached registering 5MW less than the
+    calculated response. The issue was compounded in December 2024 when NER v218 updated
+    the definition of inertia to explicitly include battery-provided inertia, formalising
+    the reduction in FCAS enablement for GFM BESS projects.
+  lesson_learnt: Future GFM BESS projects, including those transitioning from GFL
+    to GFM, must account for a reduction in FCAS enablement and associated revenue
+    loss caused by the synthetic inertia the plant provides — the NER v218 inertia
+    definition change makes this reduction a regulatory reality that must be incorporated
+    into pre-investment financial modelling and business case assumptions.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: commissioning/integration
+  proponent_type: project developer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: An interim agreement was reached with AEMO to register a FCAS
+    value 5MW lower than the calculated response while AEMO continues its internal
+    policy review on the treatment of synthetic inertia.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id001
+  - 7
+  - 8
+  - 9
+  evidence_excerpt: AEMO informed the project that it was unable to increase the registration
+    for the Very Fast Raise and Lower Service (1 second raise and lower), as much
+    as initially expected, due to the inertial response of the plant... an interim
+    agreement was reached to register a value that is 5 MW lower than the calculated
+    response based on the plant's size and selected droop settings.
+  confidence_note: issue_severity rated moderate rather than major as total financial
+    impact is expected to be small given suppressed FCAS prices; exact revenue loss
+    not quantified in document.
+  source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-western-downs-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 14/01/2026
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Western Downs) Deployment Project
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $21m
+  total_project_value: $243.88m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Queensland, Western Downs
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Western-Downs-BESS-Lessons-Learnt-Report-3.pdf
+  markdown_filename: neoen_western_downs_bess_lessons_learnt_report_3.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-41151
+  contributing_source_titles:
+  - Neoen - Western Downs BESS - Lessons Learnt Report 3
+  contributing_sources:
+  - source_title: Neoen - Western Downs BESS - Lessons Learnt Report 3
+    pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Western-Downs-BESS-Lessons-Learnt-Report-3.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-lessons-learnt-report-3/
+    markdown_filename: neoen_western_downs_bess_lessons_learnt_report_3.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-50851
+  source_title: Neoen - Big Battery (Western Downs) Deployment Project - Lessons Learnt
+    Report 2
+  publish_date: 2024-12
+  project_name: Western Downs Battery Energy Storage System (WDBESS)
+  what_happened: During the NER 5.3.9 transition process from grid-following (GFL)
+    to grid-forming (GFM) mode, power quality studies revealed that inverter harmonic
+    emissions changed significantly between the two operating modes. Concurrently,
+    Powerlink released a new power quality assessment methodology for IBR in January
+    2024 and provided revised harmonic emission allocations and polygon data in August
+    2024 — approximately three months after the 5.3.9 studies commenced — resulting
+    in timeline extensions and a finding that the 14th harmonic order potentially
+    exceeds its allocation under some contingency scenarios.
+  lesson_learnt: Future projects planning a GFL-to-GFM transition should build allowances
+    into project budget, schedule, and physical site design for harmonic filters at
+    33kV from the outset — including space in the HV switchyard, electrical coupling,
+    SCADA integration, and procurement lead time — because NSP harmonic allocations
+    and assessment methodologies can change mid-process and are not shared in advance,
+    making retrofitting costly and disruptive.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: commissioning/integration
+  proponent_type: project developer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: 'Neoen is pursuing parallel mitigation paths: negotiating an
+    increased harmonic allocation with Powerlink (conditional on future remediation
+    obligations) and investigating tuning of Tesla''s active filtering parameters
+    to reduce the exceeding harmonic emissions, while monitoring harmonics before
+    and after GFM commissioning to determine whether a physical filter is ultimately
+    required.'
+  transferability: broad
+  delay_magnitude: 3-12 months
+  technology_domain: battery storage
+  source_pages:
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  evidence_excerpt: The power quality studies required as part of the 5.3.9 process
+    identified that the harmonic emissions profile from the inverters changed when
+    operating in grid forming compared with grid following mode, resulting in a different
+    harmonic profile. This coupled with a recent change in assessment methodology,
+    harmonic emission allocations and harmonic polygon data from Powerlink has resulted
+    in a potential exceedance of allocation for a single harmonic order.
+  confidence_note: delay_magnitude assessed as 3–12 months based on the stated ~3-month
+    extension after Powerlink's revised data was provided in August 2024; final delay
+    not yet resolved at time of report. Canonical record merged from 3 source records
+    across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/neoen-big-battery-western-downs-deployment-project-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-western-downs-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 4/02/2025
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Western Downs) Deployment Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $21m
+  total_project_value: $243.88m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Queensland, Western Downs
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/02/Neoen-Western-Downs-Battery-Deployment-Project-Lessons-Learnt-Report-2.pdf
+  markdown_filename: neoen_big_battery_western_downs_deployment_project_lessons_learnt_report_2.md
+  source_page_pdf: 8
+  corroboration_count: 3
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-41152
+  - ARENA-DLV-50851
+  - ARENA-DLV-50855
+  contributing_source_titles:
+  - Neoen - Western Downs BESS - Lessons Learnt Report 3
+  - Neoen - Big Battery (Western Downs) Deployment Project - Lessons Learnt Report
+    2
+  contributing_sources:
+  - source_title: Neoen - Western Downs BESS - Lessons Learnt Report 3
+    pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Western-Downs-BESS-Lessons-Learnt-Report-3.pdf
+    source_pages:
+    - 9
+    - 10
+    - 11
+    source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-lessons-learnt-report-3/
+    markdown_filename: neoen_western_downs_bess_lessons_learnt_report_3.md
+  - source_title: Neoen - Big Battery (Western Downs) Deployment Project - Lessons
+      Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2025/02/Neoen-Western-Downs-Battery-Deployment-Project-Lessons-Learnt-Report-2.pdf
+    source_pages:
+    - 7
+    - 8
+    - 9
+    source_url: https://arena.gov.au/knowledge-bank/neoen-big-battery-western-downs-deployment-project-lessons-learnt-report-2/
+    markdown_filename: neoen_big_battery_western_downs_deployment_project_lessons_learnt_report_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: schedule slippage
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-41153
+  source_title: Neoen - Western Downs BESS - Lessons Learnt Report 3
+  publish_date: 2024-06
+  project_name: Western Downs Battery Energy Storage System (WDBESS)
+  what_happened: WDBESS was initially designed and registered with inverters operating
+    in grid following mode (GFL) before transitioning to GFM, a deliberate staging
+    decision taken to accelerate the grid connection process given that GFM technology
+    was relatively new and perceived to carry higher connection approval risk. The
+    first stage achieved registration ahead of schedule and was energised in May 2024;
+    the GFM transition and capacity expansion to 255MW/510MWh completed in May 2025.
+  lesson_learnt: Staging a large-scale BESS project by registering first in GFL mode
+    and transitioning to GFM later can materially accelerate initial energisation
+    where GFM connection approval risk is high — but project teams must explicitly
+    plan and budget for the 5.3.9 transition process, including its regulatory, harmonic,
+    and FCAS implications, before committing to this approach.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages:
+  - 3
+  - 4
+  evidence_excerpt: This approach was taken to increase the speed of the connection
+    process as many other similar projects were going through the same process at
+    the time. Conversely due to the relatively new grid forming technology there was
+    a perceived risk of project delays should the grid forming control logic that
+    was assumed at the start cause complications during the connections process. As
+    a result, BESS achieved registration ahead of schedule and has been energised
+    at the end of May 2024.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-western-downs-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 14/01/2026
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Western Downs) Deployment Project
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $21m
+  total_project_value: $243.88m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Queensland, Western Downs
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Western-Downs-BESS-Lessons-Learnt-Report-3.pdf
+  markdown_filename: neoen_western_downs_bess_lessons_learnt_report_3.md
+  source_page_pdf: 4
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-41153
+  - ARENA-DLV-50854
+  contributing_source_titles:
+  - Neoen - Western Downs BESS - Lessons Learnt Report 3
+  - Neoen - Big Battery (Western Downs) Deployment Project - Lessons Learnt Report
+    2
+  contributing_sources:
+  - source_title: Neoen - Western Downs BESS - Lessons Learnt Report 3
+    pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Western-Downs-BESS-Lessons-Learnt-Report-3.pdf
+    source_pages:
+    - 3
+    - 4
+    source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-lessons-learnt-report-3/
+    markdown_filename: neoen_western_downs_bess_lessons_learnt_report_3.md
+  - source_title: Neoen - Big Battery (Western Downs) Deployment Project - Lessons
+      Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2025/02/Neoen-Western-Downs-Battery-Deployment-Project-Lessons-Learnt-Report-2.pdf
+    source_pages:
+    - 4
+    source_url: https://arena.gov.au/knowledge-bank/neoen-big-battery-western-downs-deployment-project-lessons-learnt-report-2/
+    markdown_filename: neoen_big_battery_western_downs_deployment_project_lessons_learnt_report_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-41154
+  source_title: Neoen - Western Downs BESS - Lessons Learnt Report 3
+  publish_date: 2024-06
+  project_name: Western Downs Battery Energy Storage System (WDBESS)
+  what_happened: The NER inertia definition was changed mid-project (December 2024,
+    NER v218) during the 5.3.9 transition process, after financial commitments had
+    already been made. The original definition excluded electromagnetically non-coupled
+    devices (i.e. batteries) from inertia provisions, meaning GFM BESS could provide
+    synthetic inertia without a corresponding reduction in FCAS eligibility. The updated
+    definition removes this exclusion, reducing FCAS revenue below what was forecast
+    at project commencement.
+  lesson_learnt: The absence of a NER category for GFM inverters operating in synchronous
+    machine mode is a systemic barrier affecting all future GFM BESS projects — proponents,
+    industry bodies and regulators should advocate for NER updates to define appropriate
+    performance standards and GPS criteria for GFM inverters to reduce connection
+    approval delays across the sector.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: commercial & market
+  intervention_note: Project is awaiting AEMO's final position on synthetic inertia
+    treatment in FCAS registration; Neoen has flagged that future GFM projects will
+    explicitly model anticipated FCAS enablement loss before proceeding.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 7
+  - 8
+  - 11
+  - 25
+  evidence_excerpt: Based on experiences with other GFM BESS projects, NER clause
+    S5.2.5.5 will likely be a point of contention for the WDBESS 5.3.9 process and
+    due diligence review. NER clause S5.2.5.5 (response to disturbances following
+    contingency events) specifies a reactive current settling time 'of no greater
+    than 70 milliseconds' for asynchronous generating systems, which is set for inverter
+    (as asynchronous generating systems) in GFL mode.
+  confidence_note: This record captures the regulatory change risk dimension of the
+    FCAS issue as a distinct lesson from ARENA-DLV-41151, which covers the AEMO registration
+    negotiation. Both are grounded in the same NER v218 event but have different actionable
+    implications. Canonical record merged from 3 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-western-downs-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 14/01/2026
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Western Downs) Deployment Project
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $21m
+  total_project_value: $243.88m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Queensland, Western Downs
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Western-Downs-BESS-Lessons-Learnt-Report-3.pdf
+  markdown_filename: neoen_western_downs_bess_lessons_learnt_report_3.md
+  source_page_pdf: 8
+  corroboration_count: 3
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-41154
+  - ARENA-DLV-63102
+  - ARENA-DLV-63103
+  contributing_source_titles:
+  - Neoen - Western Downs BESS - Lessons Learnt Report 3
+  - Neoen - Western Downs BESS Deployment - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Western Downs BESS - Lessons Learnt Report 3
+    pdf_url: https://arena.gov.au/assets/2026/01/Neoen-Western-Downs-BESS-Lessons-Learnt-Report-3.pdf
+    source_pages:
+    - 7
+    - 8
+    - 11
+    source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-lessons-learnt-report-3/
+    markdown_filename: neoen_western_downs_bess_lessons_learnt_report_3.md
+  - source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+      2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+    source_pages:
+    - 25
+    source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+    markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-50852
+  source_title: Neoen - Big Battery (Western Downs) Deployment Project - Lessons Learnt
+    Report 2
+  publish_date: 2024-12
+  project_name: Western Downs Battery Energy Storage System (WDBESS)
+  what_happened: NSP harmonic emission allocations and polygon data are not made public
+    and are not shared with applicants until partway through the connection studies
+    process; Powerlink provided updated allocations and polygon data approximately
+    three months after the 5.3.9 grid connection studies began, making early power
+    quality assessment with meaningful certainty impossible.
+  lesson_learnt: Project teams should not assume that harmonic allocations received
+    at initial connection will remain valid through a GFM transition — NSP methodology
+    and allocation data can change without notice, and projects should build schedule
+    and budget contingency for late-stage revisions to harmonic data from the NSP.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: grid connection/system studies
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: data & measurement
+  intervention_note: Neoen flagged to ARENA that the process of establishing harmonic
+    allocations is opaque and not shared with applicants, and has flagged this as
+    an industry-wide issue warranting regulatory attention.
+  transferability: broad
+  delay_magnitude: 3-12 months
+  technology_domain: battery storage
+  source_pages: &id002
+  - 7
+  - 8
+  evidence_excerpt: It should be noted that it is very difficult to predict how the
+    harmonic allocations and polygon data from the Network Service Providers (NSPs)
+    may change. The process of establishing harmonic emissions allocations is not
+    public and not shared with the applicants. Until data is provided by the NPS it
+    is impossible to undertake early power quality assessment with a good degree of
+    certainty.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-big-battery-western-downs-deployment-project-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-western-downs-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 4/02/2025
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Western Downs) Deployment Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $21m
+  total_project_value: $243.88m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Queensland, Western Downs
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/02/Neoen-Western-Downs-Battery-Deployment-Project-Lessons-Learnt-Report-2.pdf
+  markdown_filename: neoen_big_battery_western_downs_deployment_project_lessons_learnt_report_2.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-50852
+  contributing_source_titles:
+  - Neoen - Big Battery (Western Downs) Deployment Project - Lessons Learnt Report
+    2
+  contributing_sources:
+  - source_title: Neoen - Big Battery (Western Downs) Deployment Project - Lessons
+      Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2025/02/Neoen-Western-Downs-Battery-Deployment-Project-Lessons-Learnt-Report-2.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/neoen-big-battery-western-downs-deployment-project-lessons-learnt-report-2/
+    markdown_filename: neoen_big_battery_western_downs_deployment_project_lessons_learnt_report_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-63118
+  source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+    2
+  publish_date: 2024-10
+  project_name: Western Downs Battery Energy Storage System (WDBESS)
+  what_happened: GFM inverters operating in GFM mode after transition from GFL may
+    alter the generating system's harmonic emission and immunity profile, potentially
+    triggering the need for harmonic filters. Some GFM inverters have internal active
+    filtering functionality which may obviate the need for external filters, making
+    this a relevant differentiator during inverter OEM selection.
+  lesson_learnt: When transitioning a BESS from GFL to GFM, assess the impact on harmonic
+    emission and immunity profiles before finalising the GFM design — if the change
+    materially alters harmonic performance, harmonic filters may be required, adding
+    cost and schedule; specify whether the candidate inverter OEM provides internal
+    active filtering capability as part of the technical evaluation.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Neoen is investigating whether software tuning of Tesla's active
+    filtering parameters can eliminate the need for a physical filter; if not, a retrofitted
+    harmonic filter will be required despite the site layout and procurement challenges.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 8
+  - 9
+  - 17
+  evidence_excerpt: Especially where a BESS is existing as a GFL BESS, it is important
+    that the change from GLF to GFM does not significantly alter the generating system's
+    harmonic emission and immunity which could potentially trigger the need for harmonic
+    filters. Some advanced inverters may have internal active filtering functionality
+    which may be a technical consideration when selecting an advanced inverter.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-western-downs-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Western Downs) Deployment Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $21m
+  total_project_value: $243.88m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Queensland, Western Downs
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+  markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  source_page_pdf: 18
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-50853
+  - ARENA-DLV-63118
+  contributing_source_titles:
+  - Neoen - Western Downs BESS Deployment - Development Report Milestone 2
+  - Neoen - Big Battery (Western Downs) Deployment Project - Lessons Learnt Report
+    2
+  contributing_sources:
+  - source_title: Neoen - Big Battery (Western Downs) Deployment Project - Lessons
+      Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2025/02/Neoen-Western-Downs-Battery-Deployment-Project-Lessons-Learnt-Report-2.pdf
+    source_pages:
+    - 8
+    - 9
+    source_url: https://arena.gov.au/knowledge-bank/neoen-big-battery-western-downs-deployment-project-lessons-learnt-report-2/
+    markdown_filename: neoen_big_battery_western_downs_deployment_project_lessons_learnt_report_2.md
+  - source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+      2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+    source_pages:
+    - 17
+    source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+    markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: cost overrun
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-63101
+  source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+    2
+  publish_date: 2024-10
+  project_name: Western Downs Battery Energy Storage System (WDBESS)
+  what_happened: The WDBESS obtained grid connection approval and commenced commercial
+    operations in grid-following (GFL) mode first, deferring the transition to grid-forming
+    (GFM) mode via a subsequent NER clause 5.3.9 process, rather than pursuing GFM
+    from the outset. This was a deliberate risk mitigation strategy because GFM approval
+    processes are new to AEMO and NSPs and carry significant schedule risk.
+  lesson_learnt: For GFM BESS projects where schedule certainty is critical, obtain
+    grid connection approval and registration in GFL mode first to secure COD and
+    begin revenue generation, then pursue GFM conversion via the 5.3.9 process — this
+    separates the novel GFM approval risk from the critical path to commercial operations.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: grid connection/system studies
+  failure_mode: regulatory & approvals
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Neoen obtained GFL grid connection approval first (Offer to Connect
+    received 9 October 2023, market registration effective 28 May 2024), then initiated
+    the 5.3.9 process to transition to GFM separately, with GFM COD expected before
+    end of 2025.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id003
+  - 20
+  - 21
+  evidence_excerpt: To mitigate against this risk, the WDBESS has obtained grid connection
+    approval and registration in GFL mode first. This reduces the grid connection
+    schedule risk to ensure COD is reached and revenues begin generating according
+    to plan, albeit in GFL mode.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-western-downs-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Western Downs) Deployment Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $21m
+  total_project_value: $243.88m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Queensland, Western Downs
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+  markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  source_page_pdf: 21
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-63101
+  contributing_source_titles:
+  - Neoen - Western Downs BESS Deployment - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+      2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+    markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-63104
+  source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+    2
+  publish_date: 2024-10
+  project_name: Western Downs Battery Energy Storage System (WDBESS)
+  what_happened: At the time of inverter selection for WDBESS, there was no market
+    mechanism in the NEM to value GFM services, meaning there was no financial incentive
+    for project proponents to deploy GFM inverters. Grant funding from ARENA was required
+    to make the business case viable and to incentivise deployment of advanced inverter
+    technology.
+  lesson_learnt: Until NEM market mechanisms are developed to monetise GFM services
+    (such as an inertia ancillary services market or system strength charges), grant
+    funding or other incentives will remain essential to enable GFM BESS deployment
+    — project proponents should factor the absence of a GFM revenue stream into their
+    business case and actively seek grant support.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: financing/commercial close
+  failure_mode: commercial & market
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: ARENA provided $21 million in grant funding under the Large-Scale
+    Battery Storage Funding Round and Advancing Renewables Program to bridge the commercial
+    gap and enable GFM deployment.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id004
+  - 18
+  - 19
+  evidence_excerpt: Since at the time of securing ARENA funding, there was no market
+    mechanism in the NEM to value the GFM services offered by advanced inverters,
+    meaning there was generally no incentive to implement inverters with GFM capability.
+    Grant funding or other incentives have been required to provide this incentive
+    to enable project proponents to deploy advanced inverter technologies, while minimising
+    financial risk.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-western-downs-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Western Downs) Deployment Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $21m
+  total_project_value: $243.88m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Queensland, Western Downs
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+  markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  source_page_pdf: 19
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-63104
+  contributing_source_titles:
+  - Neoen - Western Downs BESS Deployment - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+      2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+    markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-63105
+  source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+    2
+  publish_date: 2024-10
+  project_name: Western Downs Battery Energy Storage System (WDBESS)
+  what_happened: AEMO and Powerlink requested that all network studies be re-run considering
+    newly committed generators during the 5.3.9 GFM approval process, and indicated
+    that additional studies may be required to accommodate other NEM changes such
+    as network augmentations and new dispatch scenarios. This creates an open-ended
+    study obligation that extends the approval timeline.
+  lesson_learnt: GFM BESS projects should build substantial contingency into their
+    5.3.9 approval schedule to account for AEMO and NSP requests to re-run all network
+    studies for newly committed generators and other NEM changes — the study scope
+    can expand significantly after initial submission and is largely outside the proponent's
+    control.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: grid connection/system studies
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: Neoen engaged a consultant to develop site-specific models based
+    on Tesla's generic inverter and controller models to facilitate the 5.3.9 process
+    and is working towards receiving the 5.3.10 approval letter by mid-2025.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id005
+  - 25
+  evidence_excerpt: AEMO and the NSP, Powerlink, will conduct a due diligence review
+    on the updated GPS with provision of project data and model package. Any changes
+    to GPS will be negotiated with AEMO and Powerlink to reach final agreements on
+    the technical performance of the WDBESS. AEMO and Powerlink requested to re-run
+    all network studies considering newly committed generators. Additional studies
+    may be requested to accommodate other NEM changes (i.e. network augmentations
+    and new dispatch scenarios).
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-western-downs-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Western Downs) Deployment Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $21m
+  total_project_value: $243.88m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Queensland, Western Downs
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+  markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  source_page_pdf: 25
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-63105
+  contributing_source_titles:
+  - Neoen - Western Downs BESS Deployment - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+      2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+    markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-63106
+  source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+    2
+  publish_date: 2024-10
+  project_name: Western Downs Battery Energy Storage System (WDBESS)
+  what_happened: Prior learnings from Neoen's Victorian Big Battery (VBB) and Hornsdale
+    Power Reserve Expansion (HPRX), as well as other third-party GFM projects, were
+    directly applied to the WDBESS 5.3.9 submission from the outset, avoiding time-consuming
+    problems with PSS/E and PSCAD model capability and general functionality challenges
+    common when such models are first used for NER approval processes.
+  lesson_learnt: GFM BESS projects should actively source and apply lessons from previously
+    completed or in-progress GFM connection approval processes — documented learnings
+    around power system model capability (PSS/E, PSCAD) and general functionality
+    challenges can materially reduce the time and rework required during grid studies.
+  issue_severity: none
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id006
+  - 26
+  evidence_excerpt: 'The WDBESS 5.3.9 submission to enable GFM has used learnings
+    from previous projects from the start. As such, grid studies have benefitted from
+    avoiding time-consuming lessons already learned. These lessons include: Problems
+    such as PSS/E or PSCAD model capability and their relative ability to comply with
+    the power system model guidelines. General functionality challenges which have
+    been common when such models are first used to undertake power systems studies
+    necessary for the approval process under 5.3.4 or 5.3.9 of the NER.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-western-downs-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Western Downs) Deployment Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $21m
+  total_project_value: $243.88m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Queensland, Western Downs
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+  markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  source_page_pdf: 27
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-63106
+  contributing_source_titles:
+  - Neoen - Western Downs BESS Deployment - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+      2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+    markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-63107
+  source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+    2
+  publish_date: 2024-10
+  project_name: Western Downs Battery Energy Storage System (WDBESS)
+  what_happened: 'The EPC tender and connection application process for BESS projects
+    are coupled in an inefficient way: because the connection application package
+    is specific to the combination of Power Plant Controller (PPC) and inverter, and
+    EPC contractors commonly mandate their own PPC solutions, the connection application
+    cannot be finalised until the successful EPC tenderer has been selected. This
+    serialises two processes that could otherwise proceed in parallel.'
+  lesson_learnt: To enable parallel progress on EPC tender and grid connection application,
+    project proponents should explore whether EPC contractors can accept the inverter
+    OEM's native PPC — if EPCs were comfortable with this approach, the connection
+    application could proceed concurrently with the tender process, reducing overall
+    schedule; currently this is not common practice due to limited EPC contractor
+    options.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: procurement
+  proponent_type: project developer
+  delay_category: procurement/supply chain
+  failure_mode: coordination & stakeholders
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated integration
+  intervention_note: In the case of WDBESS, the PPC and inverters are from the same
+    OEM (Tesla), which resolved the integration complexity for this project.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id007
+  - 19
+  - 20
+  evidence_excerpt: This means that a package cannot be finalised for a project until
+    the combination of PPC and inverter has been determined. If EPC contractors mandate
+    the use of different PPCs during a tender process, then the connection application
+    cannot be finalised until the successful tenderer has been selected. If EPCs were
+    able to get comfortable with inverter OEMs native PPCs, this would lead to a more
+    comparable EPC tender process and one in which the connection application process
+    could proceed in parallel to the tender.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-western-downs-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Western Downs) Deployment Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $21m
+  total_project_value: $243.88m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Queensland, Western Downs
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+  markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  source_page_pdf: 20
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-63107
+  contributing_source_titles:
+  - Neoen - Western Downs BESS Deployment - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+      2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+    markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-63108
+  source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+    2
+  publish_date: 2024-10
+  project_name: Western Downs Battery Energy Storage System (WDBESS)
+  what_happened: GFM inverters operating in a faster control loop than GFL inverters
+    supply different fault currents under fault conditions, necessitating redesign
+    of protection settings within the generating system's electrical Balance of Plant.
+    This protection redesign obligation must be addressed as part of the GFL-to-GFM
+    transition and can be partially mitigated by tuning the GFM inverter's characteristic
+    operation.
+  lesson_learnt: When transitioning a BESS from GFL to GFM, proponents must review
+    and likely redesign protection and arc-flash settings in the electrical BoP —
+    the faster GFM control loop changes fault current characteristics significantly,
+    and this should be scoped and budgeted early in the 5.3.9 process.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: The WDBESS design considers tuning the GFM inverter's characteristic
+    operation to somewhat mitigate the impact on protection settings.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id008
+  - 17
+  - 18
+  evidence_excerpt: Since the GFM inverter is typically operating on a much faster
+    control loop than a GFL inverter, current supplied under fault conditions can
+    vary significantly and necessitate re-design of protection settings within the
+    generating system's electrical BoP. The impact of such change may be possible
+    to somewhat mitigate where the characteristic operation of the GFM inverter can
+    be tuned.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-western-downs-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Western Downs) Deployment Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $21m
+  total_project_value: $243.88m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Queensland, Western Downs
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+  markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  source_page_pdf: 18
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-63108
+  contributing_source_titles:
+  - Neoen - Western Downs BESS Deployment - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+      2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+    markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-63109
+  source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+    2
+  publish_date: 2024-10
+  project_name: Western Downs Battery Energy Storage System (WDBESS)
+  what_happened: Control system changes required to accommodate GFM mode can impact
+    the delivery of FCAS services and may require re-registration with AEMO, creating
+    a risk that the transition to GFM disrupts existing core revenue-generating services.
+    The WDBESS project identified this as a key risk requiring specific mitigation.
+  lesson_learnt: Before transitioning a BESS to GFM, include FCAS validation in the
+    test plan and initiate early discussions with the AEMO FCAS team and the inverter
+    OEM to understand the impact of GFM control system changes on FCAS delivery —
+    failure to do so risks disrupting core revenue streams and triggering re-registration
+    obligations.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: commissioning/integration
+  proponent_type: project developer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: WDBESS plans to include FCAS validation in the test plan and
+    engage early with the AEMO FCAS team and OEM to understand impacts prior to GFM
+    conversion.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id009
+  - 19
+  evidence_excerpt: In addition, control system changes required to accommodate GFM
+    could impact the delivery of FCAS and require re-registration. To mitigate this
+    risk, FCAS validation should be included in the test plan along with early discussions
+    with the AEMO FCAS team and OEM to understand impact.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-western-downs-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Western Downs) Deployment Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $21m
+  total_project_value: $243.88m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Queensland, Western Downs
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+  markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  source_page_pdf: 20
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-63109
+  contributing_source_titles:
+  - Neoen - Western Downs BESS Deployment - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+      2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+    markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-63110
+  source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+    2
+  publish_date: 2024-10
+  project_name: Western Downs Battery Energy Storage System (WDBESS)
+  what_happened: The TNSP (Powerlink) indicated that a Stage 2 expansion of the WDBESS
+    would not have been possible in GFL mode, and the combined timeline impact of
+    both stages undergoing a 5.3.9 process from the start in parallel would have been
+    severe. The ARENA funding and the GFM capability together enabled the expansion
+    from the initially planned 200MW to 255MW.
+  lesson_learnt: GFM capability, supported by grant funding, can unlock BESS capacity
+    expansions that would not be feasible in GFL mode at the same connection point
+    — proponents in REZ locations with system strength constraints should assess GFM
+    as an enabler of larger project scale, not just an add-on service.
+  issue_severity: none
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: ARENA funding was instrumental in supporting the decision to
+    progress Stage 2; learnings from Stage 1's 5.3.9 process will be directly applied
+    to achieve GFM COD for Stage 2 in a single step.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id010
+  - 21
+  evidence_excerpt: The ARENA funding has been instrumental in supporting the decision
+    to progress with a second stage. The TNSP had previously indicated that an expansion
+    would not have been possible in GFL mode. The impact on the overall timeline was
+    anticipated to be severely impacted for the combined stages, if both projects
+    were required to undergo a 5.3.9 process from the start, in parallel. The capacity
+    of the overall BESS at this location has therefore increased from 200MW initially
+    planned, to a current planned capacity of 255MW.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-western-downs-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Western Downs) Deployment Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $21m
+  total_project_value: $243.88m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Queensland, Western Downs
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+  markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  source_page_pdf: 21
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-63110
+  contributing_source_titles:
+  - Neoen - Western Downs BESS Deployment - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+      2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+    markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-63111
+  source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+    2
+  publish_date: 2024-10
+  project_name: Western Downs Battery Energy Storage System (WDBESS)
+  what_happened: GFM inverter projects carry considerable additional costs compared
+    to GFL BESS, including higher inverter costs for advanced features such as overload
+    capability, added costs for grid connection approval, installation and commissioning
+    complexity, and costs associated with the 5.3.9 transition process — while revenue
+    benefits remain largely theoretical or non-existent in the current NEM.
+  lesson_learnt: Project proponents planning GFM BESS projects should explicitly budget
+    for the additional costs of GFM above a GFL baseline — including inverter premium,
+    grid connection approval complexity, and 5.3.9 transition costs — and should not
+    assume these will be offset by GFM-specific revenue streams in the near term without
+    grant support or a clear pathway to market mechanisms.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: ARENA grant funding of $21 million was used to bridge the financial
+    gap between GFM costs and available revenues.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id011
+  - 18
+  - 23
+  evidence_excerpt: There are considerable additional costs for GFM projects, especially
+    for projects undergoing a transition from GFL via the 5.3.9 process that need
+    to be accounted for whilst surveying the currently limited additional revenue
+    opportunities that performance upgrade may provide. Whilst the services that GFM
+    inverters provide are significant and increasingly important to the network during
+    the transition to a grid dominated by IBRs, the costs to do so are significant,
+    whilst benefits to developers remain theoretical.
+  confidence_note: Cost overrun coding applied because document describes costs as
+    'considerable' and 'significant' relative to available revenue — no explicit percentage
+    variance provided but the implication is substantive cost burden unrecovered from
+    market revenue.
+  source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-western-downs-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Western Downs) Deployment Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $21m
+  total_project_value: $243.88m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Queensland, Western Downs
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+  markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  source_page_pdf: 24
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-63111
+  contributing_source_titles:
+  - Neoen - Western Downs BESS Deployment - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+      2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+    markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: cost overrun
+  secondary_failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-63112
+  source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+    2
+  publish_date: 2024-10
+  project_name: Western Downs Battery Energy Storage System (WDBESS)
+  what_happened: When selecting an inverter OEM for a GFM BESS project, the ideal
+    approach is to choose an OEM with an established local NEM market presence and
+    a strong track record registering and commissioning their inverter models in the
+    NEM. However, because GFM technology is evolving rapidly, it is not always practical
+    to find an OEM meeting this standard — creating a tension between technological
+    capability and market experience.
+  lesson_learnt: For GFM BESS projects, prioritise inverter OEMs with demonstrated
+    NEM registration and commissioning track record and the capability to support
+    GPS negotiation, model development, hold point testing and commissioning — an
+    OEM that can operate in microgrid or off-grid scenarios, or in international jurisdictions
+    with FFR requirements, is likely to have the expertise needed for Australian GFM
+    implementation.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: procurement
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id012
+  - 19
+  evidence_excerpt: The ideal approach to de-risk the GPS process is to select an
+    inverter OEM that has an established local market presence and a strong track
+    record in registering and commissioning their inverter models in the NEM... Generally,
+    an OEM who can operate their inverters in either a microgrid or other similar
+    off-grid scenario is likely to have the necessary capabilities to support such
+    implementations. An OEM which operates in other international grid jurisdictions
+    which have requirements similar to FFR will also likely already have the expertise
+    to support the implementation of GFM in the Australian market.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-western-downs-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Western Downs) Deployment Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $21m
+  total_project_value: $243.88m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Queensland, Western Downs
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+  markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  source_page_pdf: 19
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-63112
+  contributing_source_titles:
+  - Neoen - Western Downs BESS Deployment - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+      2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+    markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-63113
+  source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+    2
+  publish_date: 2024-10
+  project_name: Western Downs Battery Energy Storage System (WDBESS)
+  what_happened: CHIL (Control Hardware in Loop) testing and benchmarking against
+    PSCAD was identified as essential prior to making a decision about deploying GFM
+    capabilities, to ensure the performance of the model is robust and ready for deployment.
+    This was called out as a key step in Power Plant Controller selection for GFM
+    projects.
+  lesson_learnt: Conduct CHIL testing and PSCAD benchmarking before committing to
+    GFM deployment — this validation step is essential to confirm the PPC and inverter
+    model performance is robust, reduces the risk of costly rework during the grid
+    connection approval process, and should be treated as a mandatory gate in the
+    GFM project development process.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id013
+  - 20
+  evidence_excerpt: CHIL testing and benchmarking against PSCAD is essential to undertake
+    prior to making a decision about deploying GFM capabilities. This also helps to
+    better ensure the performance of the model is robust and ready for deployment.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-western-downs-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Western Downs) Deployment Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $21m
+  total_project_value: $243.88m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Queensland, Western Downs
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+  markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  source_page_pdf: 21
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-63113
+  contributing_source_titles:
+  - Neoen - Western Downs BESS Deployment - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+      2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+    markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-63114
+  source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+    2
+  publish_date: 2024-10
+  project_name: Western Downs Battery Energy Storage System (WDBESS)
+  what_happened: The GFM inverter firmware for WDBESS can be reverted back to GFL
+    settings between each hold point test during the 5.3.9 process, minimising impacts
+    to commercial operations and revenue generation during the transition. However,
+    this approach was acknowledged as not practical going forward and was expected
+    to become unnecessary as AEMO and NSPs gain familiarity with GFM models and performance.
+  lesson_learnt: For BESS projects transitioning from GFL to GFM via the 5.3.9 process,
+    confirm with the inverter OEM before contract execution that firmware can be toggled
+    between GFL and GFM settings between hold point tests — this capability protects
+    commercial operations revenue during the approval process and should be treated
+    as a contractual requirement where possible.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: commissioning/integration
+  proponent_type: project developer
+  delay_category: commissioning/integration
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: WDBESS uses the ability to revert GFM firmware to GFL settings
+    between hold point tests to maintain commercial operations revenue throughout
+    the 5.3.9 approval process.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id014
+  - 20
+  evidence_excerpt: Since implementing GFM only requires a change to the inverter
+    (and potentially controller) firmware, the firmware can be reverted back to its
+    original GFL settings between each hold point test to minimise any impacts to
+    commercial operations and revenue generation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-western-downs-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Western Downs) Deployment Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $21m
+  total_project_value: $243.88m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Queensland, Western Downs
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+  markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  source_page_pdf: 21
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-63114
+  contributing_source_titles:
+  - Neoen - Western Downs BESS Deployment - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+      2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+    markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-63115
+  source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+    2
+  publish_date: 2024-10
+  project_name: Western Downs Battery Energy Storage System (WDBESS)
+  what_happened: The Western Downs REZ, where WDBESS is located, is projected by AEMO
+    to have the largest increase in VRE capacity in the region — up to 5,950MW of
+    new VRE by 2034-35 and nearly 10,000MW by 2041-42 — while the Available Fault
+    Level at the Western Downs node is anticipated to reduce to zero in the short
+    term due to planned VRE growth, creating a looming system strength concern even
+    though no current shortfall is identified.
+  lesson_learnt: BESS projects in high-growth REZ locations should assess forward-looking
+    system strength and inertia trajectories, not just current conditions — the Available
+    Fault Level at Western Downs is projected to reach zero despite no current system
+    strength shortfall, indicating that GFM capability will become critical and proponents
+    who build it in early will be better positioned for future network requirements.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: concept/feasibility
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id015
+  - 16
+  evidence_excerpt: the Available Fault Level (AFL), an indication of available system
+    strength, at the Western Downs node is anticipated to reduce to zero in short
+    term due to the highest amount of planned VRE in the Western Downs region... An
+    expected inertia deficit of between 1660MWs and 1390MWs in 2027-28 and 2028-29
+    has been identified based on AEMO's 2023 inertia assessment results for QLD.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-western-downs-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Western Downs) Deployment Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $21m
+  total_project_value: $243.88m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Queensland, Western Downs
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+  markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  source_page_pdf: 16
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-63115
+  contributing_source_titles:
+  - Neoen - Western Downs BESS Deployment - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+      2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+    markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-63116
+  source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+    2
+  publish_date: 2024-10
+  project_name: Western Downs Battery Energy Storage System (WDBESS)
+  what_happened: The split-scope EPC delivery model for WDBESS assigned Tesla as EPC
+    for batteries and inverters (including 20-year O&M and NEM bidding responsibilities
+    under an LTSA and Market Participation Deed) and UGL as EPC for Balance of Plant
+    and HV substation works. This arrangement was adopted to manage the distinct technical
+    specialisms of inverter and civil/electrical BoP delivery.
+  lesson_learnt: For utility-scale BESS projects, a split-scope EPC model separating
+    battery/inverter delivery (with long-term LTSA and market participation obligations
+    held by the OEM) from BoP and HV substation delivery can reduce integration risk
+    by aligning contractual accountability with technical specialism — however, this
+    requires careful coordination at the interface between the two EPC packages.
+  issue_severity: none
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: procurement
+  proponent_type: project developer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: An Owner's Engineer (Aurecon) was engaged to oversee EPC activities
+    across both split-scope contractors.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id016
+  - 13
+  - 14
+  evidence_excerpt: Neoen have partnered with Tesla Motors Australia, Pty Ltd and
+    UGL Engineering Pty Limited under a split scope agreement for Engineering, Procurement
+    and Construction (EPC) to deliver the WDBESS... Tesla is also responsible for
+    maintenance of the WDBESS and supporting bidding into the National Electricity
+    Market (NEM) over the life of the project.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-western-downs-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Western Downs) Deployment Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $21m
+  total_project_value: $243.88m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Queensland, Western Downs
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+  markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-63116
+  contributing_source_titles:
+  - Neoen - Western Downs BESS Deployment - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+      2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+    markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-63117
+  source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+    2
+  publish_date: 2024-10
+  project_name: Western Downs Battery Energy Storage System (WDBESS)
+  what_happened: For WDBESS Stage 2, Neoen plans to commence GFM from the beginning
+    of grid connection modelling activities rather than repeating the GFL-first approach
+    used in Stage 1, with GFM COD expected in 2026. The learnings from Stage 1's 5.3.9
+    process — including replicating settings and applying knowledge gained — are expected
+    to enable GFM COD to be achieved in a single step.
+  lesson_learnt: Organisations developing multiple GFM BESS projects at the same or
+    electrically similar connection points can expect the second project's GFM approval
+    process to be materially faster by replicating Stage 1 settings and model configurations
+    — document GFM settings, model outputs and approval negotiation outcomes thoroughly
+    during Stage 1 to accelerate Stage 2.
+  issue_severity: none
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id017
+  - 21
+  evidence_excerpt: For WDBESS Stage 2, the BESS will be GFM from the commencement
+    of grid connection modelling activities with operations expected to begin in 2026.
+    The learnings from Stage 1 will be directly fed into this process to achieve GFM
+    COD in a single step. This will be achieved by largely replicating settings from
+    Stage 1, and applying the learnings and knowledge gained during the initial 5.3.9
+    process.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-western-downs-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Western Downs) Deployment Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $21m
+  total_project_value: $243.88m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Queensland, Western Downs
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+  markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  source_page_pdf: 21
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-63117
+  contributing_source_titles:
+  - Neoen - Western Downs BESS Deployment - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+      2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+    markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-63119
+  source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+    2
+  publish_date: 2024-10
+  project_name: Western Downs Battery Energy Storage System (WDBESS)
+  what_happened: NER requirements for frequency control must be delivered via the
+    Power Plant Controller (PPC) rather than natively via the inverter terminals,
+    which imposes communication delay constraints. Real-world communication delays
+    between the PPC and inverter at both software and hardware levels must be understood
+    from project outset, as the PPC-based control path is inherently slower than native
+    inverter terminal control.
+  lesson_learnt: GFM BESS project designs must account for NER frequency control requirements
+    being delivered through the PPC rather than via native inverter terminal control
+    — controller communication and full cycle response times must be characterised
+    and validated from the outset, as the regulatory requirement imposes a slower
+    control path that may constrain performance in frequency response markets.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id018
+  - 17
+  evidence_excerpt: Specifically, the NER requirement for frequency control of a plant
+    being delivered by the generating system Power Plant Controller (PPC) need to
+    be considered, rather than allowing the control to instead be provided natively
+    via the inverter terminals which allows for a much faster response.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-western-downs-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Western Downs) Deployment Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $21m
+  total_project_value: $243.88m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Queensland, Western Downs
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+  markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  source_page_pdf: 18
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-63119
+  contributing_source_titles:
+  - Neoen - Western Downs BESS Deployment - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+      2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+    markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-63120
+  source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+    2
+  publish_date: 2024-10
+  project_name: Western Downs Battery Energy Storage System (WDBESS)
+  what_happened: System Strength Charges (SSC) were not a consideration for WDBESS
+    because the relevant rule change had not been finalised at the time of inverter
+    selection or GPS application. However, future BESS projects will face a regulatory
+    environment where GFM capability can be used to self-remediate system strength
+    impacts and avoid or significantly reduce SSC — a financial incentive that did
+    not exist for WDBESS.
+  lesson_learnt: Future BESS projects in system strength constrained areas should
+    evaluate GFM as a mechanism for self-remediating system strength impacts under
+    the NER's Efficient Management of System Strength rules — the ability to avoid
+    or reduce System Strength Charges may justify the additional cost of GFM implementation
+    without relying on grant funding.
+  issue_severity: none
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: concept/feasibility
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: policy/market influence only
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id019
+  - 18
+  evidence_excerpt: Inverters with GFM capability can allow the system strength to
+    be completely self-remediated, or where not possible, significantly reduce the
+    SSC which would be payable for a GFL BESS. This provides a potential option to
+    developers as future BESS projects could employ GFM to avoid (or minimise) paying
+    SSC and may also incentivise prospective solar or wind generators to include GFM
+    BESS in their developments.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+  project_page_url: https://arena.gov.au/projects/neoen-big-battery-western-downs-deployment-project/
+  kb_category: Battery storage, System security and reliability
+  kb_publish_date: 23/12/2024
+  kb_year: '2023'
+  kb_associated_project: Neoen Big Battery (Western Downs) Deployment Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $21m
+  total_project_value: $243.88m
+  lead_organisation: Victorian Big Battery HoldCo Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/12/2023
+  location: Queensland, Western Downs
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+  markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-63120
+  contributing_source_titles:
+  - Neoen - Western Downs BESS Deployment - Development Report Milestone 2
+  contributing_sources:
+  - source_title: Neoen - Western Downs BESS Deployment - Development Report Milestone
+      2
+    pdf_url: https://arena.gov.au/assets/2024/12/Neoen-Western-Downs-BESS-Deployment-Development-Report.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/neoen-western-downs-bess-deployment-development-report-milestone-2/
+    markdown_filename: neoen_western_downs_bess_deployment_development_report_milestone_2.md
+  arena_category:
+  - Battery storage
+  - Grid stability
+  activity_type: Deployment
+  is_consortium: false

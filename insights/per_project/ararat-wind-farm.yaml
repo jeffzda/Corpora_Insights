@@ -1,0 +1,982 @@
+- record_id: ARENA-DLV-4801
+  source_title: DNV GL Multi-Model and Machine Learning Wind Forecast Project Lessons
+    Learnt 2
+  publish_date: 2020-04
+  project_name: DNV GL Multi-Model and Machine Learning Wind Forecast Project
+  what_happened: Recovery of real-time site data from the Ararat Wind Farm proved
+    persistently unreliable. The secure connection to the third-party dispatch solution
+    provider was insufficiently robust, and direct access to the wind farm SCADA system
+    was blocked by security restrictions and knowledge gaps, preventing alternative
+    data retrieval pathways.
+  lesson_learnt: Allocate dedicated resources to real-time data retrieval planning
+    at the outset of any site-level forecasting project — the data acquisition environment
+    is unique to each site, and extensive early engagement with all parties involved
+    in data management is necessary to understand the environment and select the most
+    appropriate retrieval method before deployment.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated integration
+  intervention_note: Data was obtained via a third-party dispatch solution provider
+    and AEMO dispatch data as interim workarounds while direct site access remained
+    unavailable.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages:
+  - 2
+  - 3
+  evidence_excerpt: The process of recovering real-time data from the site has been
+    challenging. Currently DNV GL has been able to recover real-time site data through
+    the third-party dispatch solution provider, and also directly from AEMO dispatch
+    data. It has not been possible to obtain access to real-time site data through
+    other mechanisms at this stage.
+  confidence_note: lifecycle_phase assigned as commissioning/integration as the issue
+    arose during live deployment and integration of the forecasting system, not stable
+    operations. Canonical record merged from 3 source records across 3 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/dnv-gl-multi-model-and-machine-learning-wind-forecast-project-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/ararat-wind-farm/
+  kb_category: Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2019'
+  kb_associated_project: Ararat Wind Farm
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $270k
+  total_project_value: $541k
+  lead_organisation: DNV GL Australia Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/03/2019
+  location: Victoria, Warrak
+  project_partners: Ararat Wind Farm, RES Australia
+  pdf_url: https://arena.gov.au/assets/2020/07/dnv-gl-multi-model-machine-learning-wind-forecasting-project-lessons-learnt-2.pdf
+  markdown_filename: dnv_gl_multi_model_and_machine_learning_wind_forecast_project_lessons_learnt_2.md
+  source_page_pdf: null
+  corroboration_count: 3
+  source_doc_count: 3
+  contributing_record_ids:
+  - ARENA-DLV-4801
+  - ARENA-DLV-39801
+  - ARENA-DLV-54201
+  contributing_source_titles:
+  - DNV GL Multi-Model and Machine Learning Wind Forecast Project Lessons Learnt 2
+  - DNV GL Multi-Model and Machine Learning Wind Forecast Project Lessons Learnt 3
+  - DNV GL – Multi-Model and Machine Learning Wind Forecast Project Lessons Learnt
+    1
+  contributing_sources:
+  - source_title: DNV GL Multi-Model and Machine Learning Wind Forecast Project Lessons
+      Learnt 2
+    pdf_url: https://arena.gov.au/assets/2020/07/dnv-gl-multi-model-machine-learning-wind-forecasting-project-lessons-learnt-2.pdf
+    source_pages:
+    - 2
+    - 3
+    source_url: https://arena.gov.au/knowledge-bank/dnv-gl-multi-model-and-machine-learning-wind-forecast-project-lessons-learnt-2/
+    markdown_filename: dnv_gl_multi_model_and_machine_learning_wind_forecast_project_lessons_learnt_2.md
+  - source_title: DNV GL – Multi-Model and Machine Learning Wind Forecast Project
+      Lessons Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/12/dnv-gl-multi-model-machine-learning-wind-forecasting-project-lessons-learnt.pdf
+    source_pages:
+    - 2
+    source_url: https://arena.gov.au/knowledge-bank/dnv-gl-multi-model-and-machine-learning-wind-forecast-project-lessons-learnt-1/
+    markdown_filename: dnv_gl_multi_model_and_machine_learning_wind_forecast_project_lessons_learnt_1.md
+  - source_title: DNV GL Multi-Model and Machine Learning Wind Forecast Project Lessons
+      Learnt 3
+    pdf_url: https://arena.gov.au/assets/2021/01/dnv-gl-multi-model-machine-learning-wind-forecasting-project-lessons-learnt-3.pdf
+    source_pages:
+    - 3
+    source_url: https://arena.gov.au/knowledge-bank/dnv-gl-multi-model-and-machine-learning-wind-forecast-project-lessons-learnt-3/
+    markdown_filename: dnv_gl_multi_model_and_machine_learning_wind_forecast_project_lessons_learnt_3.md
+  arena_category:
+  - Wind
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: integration failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-4802
+  source_title: DNV GL Multi-Model and Machine Learning Wind Forecast Project Lessons
+    Learnt 2
+  publish_date: 2020-04
+  project_name: DNV GL Multi-Model and Machine Learning Wind Forecast Project
+  what_happened: Connection to the AEMO MP5F API experienced ongoing failures due
+    to credential expiry and AEMO-side outages, resulting in unsuccessful forecast
+    delivery during affected periods. The problem was compounded by insufficient documentation
+    and complexity introduced by multiple forecast providers operating simultaneously.
+  lesson_learnt: Implement proactive monitoring and automated renewal processes for
+    API credentials before deploying any AEMO-integrated forecasting service — credential
+    expiry and third-party outages will cause forecast delivery failures unless resilience
+    processes are built in from the start. Also advocate for clearer AEMO API documentation
+    and dedicated troubleshooting support, particularly in multi-provider configurations.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: DNV GL's Forecaster service provided built-in mitigation processes
+    for credential expiry and similar issues; AEMO-caused outages remained outside
+    DNV GL's control to resolve independently.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages:
+  - 2
+  - 3
+  - 4
+  evidence_excerpt: The process of connecting with the AEMO MP5F API has been challenging,
+    and is still ongoing. This process could potentially be improved though clearer
+    documentation of the steps necessary to connect to the AEMO API, specifically
+    intended for third-party forecast providers, and resources to assist with troubleshooting
+    when problems occur. Further, the process of connecting to the API has been complicated
+    by having multiple forecast providers attempting to gain access to the API and
+    submit forecasts for this wind farm at the same time.
+  confidence_note: lifecycle_phase set to operations as this occurred during live
+    forecast delivery after initial integration; not a first-activation issue. Canonical
+    record merged from 3 source records across 3 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/dnv-gl-multi-model-and-machine-learning-wind-forecast-project-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/ararat-wind-farm/
+  kb_category: Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2019'
+  kb_associated_project: Ararat Wind Farm
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $270k
+  total_project_value: $541k
+  lead_organisation: DNV GL Australia Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/03/2019
+  location: Victoria, Warrak
+  project_partners: Ararat Wind Farm, RES Australia
+  pdf_url: https://arena.gov.au/assets/2020/07/dnv-gl-multi-model-machine-learning-wind-forecasting-project-lessons-learnt-2.pdf
+  markdown_filename: dnv_gl_multi_model_and_machine_learning_wind_forecast_project_lessons_learnt_2.md
+  source_page_pdf: 3
+  corroboration_count: 3
+  source_doc_count: 3
+  contributing_record_ids:
+  - ARENA-DLV-4802
+  - ARENA-DLV-39802
+  - ARENA-DLV-54202
+  contributing_source_titles:
+  - DNV GL Multi-Model and Machine Learning Wind Forecast Project Lessons Learnt 2
+  - DNV GL Multi-Model and Machine Learning Wind Forecast Project Lessons Learnt 3
+  - DNV GL – Multi-Model and Machine Learning Wind Forecast Project Lessons Learnt
+    1
+  contributing_sources:
+  - source_title: DNV GL Multi-Model and Machine Learning Wind Forecast Project Lessons
+      Learnt 2
+    pdf_url: https://arena.gov.au/assets/2020/07/dnv-gl-multi-model-machine-learning-wind-forecasting-project-lessons-learnt-2.pdf
+    source_pages:
+    - 3
+    source_url: https://arena.gov.au/knowledge-bank/dnv-gl-multi-model-and-machine-learning-wind-forecast-project-lessons-learnt-2/
+    markdown_filename: dnv_gl_multi_model_and_machine_learning_wind_forecast_project_lessons_learnt_2.md
+  - source_title: DNV GL – Multi-Model and Machine Learning Wind Forecast Project
+      Lessons Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/12/dnv-gl-multi-model-machine-learning-wind-forecasting-project-lessons-learnt.pdf
+    source_pages:
+    - 2
+    source_url: https://arena.gov.au/knowledge-bank/dnv-gl-multi-model-and-machine-learning-wind-forecast-project-lessons-learnt-1/
+    markdown_filename: dnv_gl_multi_model_and_machine_learning_wind_forecast_project_lessons_learnt_1.md
+  - source_title: DNV GL Multi-Model and Machine Learning Wind Forecast Project Lessons
+      Learnt 3
+    pdf_url: https://arena.gov.au/assets/2021/01/dnv-gl-multi-model-machine-learning-wind-forecasting-project-lessons-learnt-3.pdf
+    source_pages:
+    - 4
+    source_url: https://arena.gov.au/knowledge-bank/dnv-gl-multi-model-and-machine-learning-wind-forecast-project-lessons-learnt-3/
+    markdown_filename: dnv_gl_multi_model_and_machine_learning_wind_forecast_project_lessons_learnt_3.md
+  arena_category:
+  - Wind
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-4803
+  source_title: DNV GL Multi-Model and Machine Learning Wind Forecast Project Lessons
+    Learnt 2
+  publish_date: 2020-04
+  project_name: DNV GL Multi-Model and Machine Learning Wind Forecast Project
+  what_happened: Developing an accurate machine learning model for short-horizon wind
+    power forecasting required extensive feature engineering, parameter tuning across
+    multiple model configurations, and testing of different input data streams ranging
+    from low-frequency AEMO dispatch data to high-frequency SCADA data. Sudden wind
+    climate change points in production time series proved particularly difficult
+    for the models to predict.
+  lesson_learnt: When deploying machine learning-based wind forecasting at a new site,
+    plan for multiple months of site-specific training data (ideally one year to capture
+    seasonal variation), and budget for bespoke feature engineering and parameter
+    tuning — generalised model frameworks from prior projects provide a useful starting
+    point but cannot substitute for site-specific training and sensitivity testing.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: DNV GL iteratively tested multiple feature-engineered input streams
+    and ensemble gradient boosting configurations to arrive at a deployable model,
+    with further work planned to address change-point prediction.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages:
+  - 3
+  - 4
+  - 5
+  evidence_excerpt: Each new site will present unique challenges and require unique
+    training of the machine learning model with bespoke settings to provide the most
+    accurate result... it is envisaged that multiple months of input data are likely
+    to be required, and one year of data is likely to be desirable to capture variations
+    in production due to seasonality.
+  confidence_note: issue_severity set to minor as the challenge was technical complexity
+    rather than a failure — the model development proceeded and produced deployable
+    outputs. Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/dnv-gl-multi-model-and-machine-learning-wind-forecast-project-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/ararat-wind-farm/
+  kb_category: Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2019'
+  kb_associated_project: Ararat Wind Farm
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $270k
+  total_project_value: $541k
+  lead_organisation: DNV GL Australia Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/03/2019
+  location: Victoria, Warrak
+  project_partners: Ararat Wind Farm, RES Australia
+  pdf_url: https://arena.gov.au/assets/2020/07/dnv-gl-multi-model-machine-learning-wind-forecasting-project-lessons-learnt-2.pdf
+  markdown_filename: dnv_gl_multi_model_and_machine_learning_wind_forecast_project_lessons_learnt_2.md
+  source_page_pdf: 4
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-4803
+  - ARENA-DLV-54203
+  contributing_source_titles:
+  - DNV GL Multi-Model and Machine Learning Wind Forecast Project Lessons Learnt 2
+  - DNV GL Multi-Model and Machine Learning Wind Forecast Project Lessons Learnt 3
+  contributing_sources:
+  - source_title: DNV GL Multi-Model and Machine Learning Wind Forecast Project Lessons
+      Learnt 2
+    pdf_url: https://arena.gov.au/assets/2020/07/dnv-gl-multi-model-machine-learning-wind-forecasting-project-lessons-learnt-2.pdf
+    source_pages:
+    - 3
+    - 4
+    source_url: https://arena.gov.au/knowledge-bank/dnv-gl-multi-model-and-machine-learning-wind-forecast-project-lessons-learnt-2/
+    markdown_filename: dnv_gl_multi_model_and_machine_learning_wind_forecast_project_lessons_learnt_2.md
+  - source_title: DNV GL Multi-Model and Machine Learning Wind Forecast Project Lessons
+      Learnt 3
+    pdf_url: https://arena.gov.au/assets/2021/01/dnv-gl-multi-model-machine-learning-wind-forecasting-project-lessons-learnt-3.pdf
+    source_pages:
+    - 5
+    source_url: https://arena.gov.au/knowledge-bank/dnv-gl-multi-model-and-machine-learning-wind-forecast-project-lessons-learnt-3/
+    markdown_filename: dnv_gl_multi_model_and_machine_learning_wind_forecast_project_lessons_learnt_3.md
+  arena_category:
+  - Wind
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-16051
+  source_title: Multi-Model and Machine Learning Wind Forecast Final Report
+  publish_date: '2022-02-02'
+  project_name: Multi-Model and Machine Learning Wind Forecast Project (2018ARP166)
+  what_happened: The project found that improved forecast accuracy (lower MAE/RMSE)
+    does not necessarily translate to reduced FCAS Causer Pays charges. Even when
+    the Refined Model outperformed AWEFS on standard error metrics, it produced worse
+    financial outcomes than AWEFS for certain periods because forecast errors can
+    represent 'helpful deviations' that inadvertently balance grid frequency.
+  lesson_learnt: Do not assume that improved statistical forecast accuracy automatically
+    delivers financial benefits — future forecast model development should consider
+    optimising directly for financial outcomes such as FCAS charge minimisation, not
+    solely for error metrics like MAE or RMSE.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: DNV GL developed a supplementary CP Optimised Model specifically
+    targeting Causer Pays cost reduction rather than forecast error minimisation,
+    which consistently outperformed AWEFS across the entire analysis period with estimated
+    financial savings of 7–79% per 28-day period.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages:
+  - 6
+  - 7
+  - 13
+  evidence_excerpt: Results from preliminary investigations into the impact of forecast
+    accuracy on FCAS charges have indicated that while improved forecast accuracy
+    can lead to improved outcomes, this is not always the case. As such, improved
+    self-forecasts relative to AWEFS may not necessarily always translate to lower
+    FCAS charges.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/multi-model-and-machine-learning-wind-forecast-final-report/
+  project_page_url: https://arena.gov.au/projects/ararat-wind-farm/
+  kb_category: Wind energy
+  kb_publish_date: 2/02/2022
+  kb_year: '2019'
+  kb_associated_project: Ararat Wind Farm
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $270k
+  total_project_value: $541k
+  lead_organisation: DNV GL Australia Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/03/2019
+  location: Victoria, Warrak
+  project_partners: Ararat Wind Farm, RES Australia
+  pdf_url: https://arena.gov.au/assets/2022/02/multi-model-and-machine-learning-wind-forecast-final-report.pdf
+  markdown_filename: multi_model_and_machine_learning_wind_forecast_final_report.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-16051
+  - ARENA-DLV-54204
+  contributing_source_titles:
+  - Multi-Model and Machine Learning Wind Forecast Final Report
+  - DNV GL Multi-Model and Machine Learning Wind Forecast Project Lessons Learnt 3
+  contributing_sources:
+  - source_title: Multi-Model and Machine Learning Wind Forecast Final Report
+    pdf_url: https://arena.gov.au/assets/2022/02/multi-model-and-machine-learning-wind-forecast-final-report.pdf
+    source_pages:
+    - 7
+    - 13
+    source_url: https://arena.gov.au/knowledge-bank/multi-model-and-machine-learning-wind-forecast-final-report/
+    markdown_filename: multi_model_and_machine_learning_wind_forecast_final_report.md
+  - source_title: DNV GL Multi-Model and Machine Learning Wind Forecast Project Lessons
+      Learnt 3
+    pdf_url: https://arena.gov.au/assets/2021/01/dnv-gl-multi-model-machine-learning-wind-forecasting-project-lessons-learnt-3.pdf
+    source_pages:
+    - 6
+    source_url: https://arena.gov.au/knowledge-bank/dnv-gl-multi-model-and-machine-learning-wind-forecast-project-lessons-learnt-3/
+    markdown_filename: dnv_gl_multi_model_and_machine_learning_wind_forecast_project_lessons_learnt_3.md
+  arena_category:
+  - Wind
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-16052
+  source_title: Multi-Model and Machine Learning Wind Forecast Final Report
+  publish_date: '2022-02-02'
+  project_name: Multi-Model and Machine Learning Wind Forecast Project (2018ARP166)
+  what_happened: DNV GL submitted forecasts with the suppressed flag set throughout
+    the entire project, meaning the improved forecasts were never actively used by
+    AEMO for dispatch. This precautionary decision was made because the lag in FCAS
+    contribution factor and CP charge calculation meant financial performance could
+    not be confirmed in real time.
+  lesson_learnt: Before going live with self-forecasts through AEMO's MP5F API, validate
+    financial outcomes offline using historical CP charge calculations — the lag between
+    forecast submission and CP charge determination means live deployment can cause
+    financial harm before the problem is detected.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: DNV GL kept forecasts suppressed throughout the live submission
+    period and limited the CP Optimised Model to generating offline historical forecasts,
+    avoiding live deployment of a model that would have worsened financial outcomes.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id001
+  - 7
+  - 13
+  evidence_excerpt: DNV GL submitted forecasts with the supressed flag set throughout
+    the entirety of the Project (meaning they were not actively used by AEMO). This
+    decision was vindicated when financial evaluations of the various forecast models
+    were performed during Phase C, as it was realised that the Refined Model would
+    have delivered worse financial outcomes than AWEFS for certain periods.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/multi-model-and-machine-learning-wind-forecast-final-report/
+  project_page_url: https://arena.gov.au/projects/ararat-wind-farm/
+  kb_category: Wind energy
+  kb_publish_date: 2/02/2022
+  kb_year: '2019'
+  kb_associated_project: Ararat Wind Farm
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $270k
+  total_project_value: $541k
+  lead_organisation: DNV GL Australia Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/03/2019
+  location: Victoria, Warrak
+  project_partners: Ararat Wind Farm, RES Australia
+  pdf_url: https://arena.gov.au/assets/2022/02/multi-model-and-machine-learning-wind-forecast-final-report.pdf
+  markdown_filename: multi_model_and_machine_learning_wind_forecast_final_report.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16052
+  contributing_source_titles:
+  - Multi-Model and Machine Learning Wind Forecast Final Report
+  contributing_sources:
+  - source_title: Multi-Model and Machine Learning Wind Forecast Final Report
+    pdf_url: https://arena.gov.au/assets/2022/02/multi-model-and-machine-learning-wind-forecast-final-report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/multi-model-and-machine-learning-wind-forecast-final-report/
+    markdown_filename: multi_model_and_machine_learning_wind_forecast_final_report.md
+  arena_category:
+  - Wind
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-16053
+  source_title: Multi-Model and Machine Learning Wind Forecast Final Report
+  publish_date: '2022-02-02'
+  project_name: Multi-Model and Machine Learning Wind Forecast Project (2018ARP166)
+  what_happened: AEMO made material improvements to its AWEFS forecasting model between
+    November and December 2019, causing a step-change in the baseline forecast performance.
+    This shifted the Refined Model from delivering a ~38% financial saving to delivering
+    a -6% financial outcome (i.e. worse than AWEFS), without any change to DNV GL's
+    own model.
+  lesson_learnt: Forecast providers should continuously monitor the AWEFS baseline
+    and treat it as a moving target — AEMO periodically improves AWEFS, meaning a
+    self-forecast model that outperforms AWEFS today may underperform it after an
+    AWEFS update, requiring ongoing model recalibration.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: commercial & market
+  intervention_note: DNV GL identified the AWEFS improvement as the cause of the step
+    change and split the financial analysis into pre- and post-AWEFS improvement periods
+    to correctly attribute model performance.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id002
+  - 11
+  - 12
+  evidence_excerpt: It should however be noted that AEMO appear to have made improvements
+    to their internal forecasting models sometime between November 2019 and December
+    2019, which may have contributed to the step change observed in Figure 3-2 in
+    financial savings derived from the Refined model.
+  confidence_note: issue_severity set to major because the AWEFS update reversed the
+    financial case for the Refined Model entirely (from +38% savings to -6%), fundamentally
+    changing the project's delivery outcome.
+  source_url: https://arena.gov.au/knowledge-bank/multi-model-and-machine-learning-wind-forecast-final-report/
+  project_page_url: https://arena.gov.au/projects/ararat-wind-farm/
+  kb_category: Wind energy
+  kb_publish_date: 2/02/2022
+  kb_year: '2019'
+  kb_associated_project: Ararat Wind Farm
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $270k
+  total_project_value: $541k
+  lead_organisation: DNV GL Australia Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/03/2019
+  location: Victoria, Warrak
+  project_partners: Ararat Wind Farm, RES Australia
+  pdf_url: https://arena.gov.au/assets/2022/02/multi-model-and-machine-learning-wind-forecast-final-report.pdf
+  markdown_filename: multi_model_and_machine_learning_wind_forecast_final_report.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16053
+  contributing_source_titles:
+  - Multi-Model and Machine Learning Wind Forecast Final Report
+  contributing_sources:
+  - source_title: Multi-Model and Machine Learning Wind Forecast Final Report
+    pdf_url: https://arena.gov.au/assets/2022/02/multi-model-and-machine-learning-wind-forecast-final-report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/multi-model-and-machine-learning-wind-forecast-final-report/
+    markdown_filename: multi_model_and_machine_learning_wind_forecast_final_report.md
+  arena_category:
+  - Wind
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-16054
+  source_title: Multi-Model and Machine Learning Wind Forecast Final Report
+  publish_date: '2022-02-02'
+  project_name: Multi-Model and Machine Learning Wind Forecast Project (2018ARP166)
+  what_happened: The CP Optimised Model, developed to target Causer Pays cost reduction
+    directly rather than minimising MAE/RMSE, consistently outperformed AWEFS across
+    the entire analysis period (April 2019 to October 2020), achieving estimated financial
+    savings of 50% pre-AWEFS improvement and 55% post-AWEFS improvement, and remained
+    robust to the AWEFS model update that undermined the Refined Model.
+  lesson_learnt: When developing self-forecast models for financial benefit under
+    the NEM's Causer Pays framework, optimise directly for Causer Pays portfolio factors
+    rather than standard accuracy metrics — a CP-optimised model can deliver 50%+
+    cost savings and remain resilient to changes in the AWEFS baseline that undermine
+    accuracy-optimised models.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id003
+  - 11
+  - 12
+  evidence_excerpt: Assuming the CP Optimised Model were to be used in dispatch throughout
+    the entire analysis period, the lowest and highest cost savings over each 28-day
+    period are estimated to be 7% and 79% respectively.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/multi-model-and-machine-learning-wind-forecast-final-report/
+  project_page_url: https://arena.gov.au/projects/ararat-wind-farm/
+  kb_category: Wind energy
+  kb_publish_date: 2/02/2022
+  kb_year: '2019'
+  kb_associated_project: Ararat Wind Farm
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $270k
+  total_project_value: $541k
+  lead_organisation: DNV GL Australia Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/03/2019
+  location: Victoria, Warrak
+  project_partners: Ararat Wind Farm, RES Australia
+  pdf_url: https://arena.gov.au/assets/2022/02/multi-model-and-machine-learning-wind-forecast-final-report.pdf
+  markdown_filename: multi_model_and_machine_learning_wind_forecast_final_report.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16054
+  contributing_source_titles:
+  - Multi-Model and Machine Learning Wind Forecast Final Report
+  contributing_sources:
+  - source_title: Multi-Model and Machine Learning Wind Forecast Final Report
+    pdf_url: https://arena.gov.au/assets/2022/02/multi-model-and-machine-learning-wind-forecast-final-report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/multi-model-and-machine-learning-wind-forecast-final-report/
+    markdown_filename: multi_model_and_machine_learning_wind_forecast_final_report.md
+  arena_category:
+  - Wind
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-16055
+  source_title: Multi-Model and Machine Learning Wind Forecast Final Report
+  publish_date: '2022-02-02'
+  project_name: Multi-Model and Machine Learning Wind Forecast Project (2018ARP166)
+  what_happened: The financial performance of self-forecasts in the NEM's FCAS Causer
+    Pays market is dynamic and influenced by market volatility, grid health, regulatory
+    changes, and the addition or removal of generators — factors entirely outside
+    the control of the forecast model. Even models with stable and improving accuracy
+    metrics can experience rapidly deteriorating financial outcomes due to market
+    changes.
+  lesson_learnt: Operators deploying self-forecasts under the NEM Causer Pays framework
+    must implement ongoing monitoring of both forecast accuracy and financial performance
+    — a model performing well at one point in time may rapidly cease to offer financial
+    benefits due to market structure changes, requiring continuous recalibration rather
+    than a set-and-forget approach.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id004
+  - 13
+  evidence_excerpt: The risk exists that variations in the nature of the electricity
+    market (such as the addition, removal or temporary failure of generators, or changes
+    in the AWEFS forecasting model) can mean that a forecast model that is performing
+    well at a given time (both in terms of error metrics and financial performance)
+    may rapidly cease to offer financial benefits.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/multi-model-and-machine-learning-wind-forecast-final-report/
+  project_page_url: https://arena.gov.au/projects/ararat-wind-farm/
+  kb_category: Wind energy
+  kb_publish_date: 2/02/2022
+  kb_year: '2019'
+  kb_associated_project: Ararat Wind Farm
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $270k
+  total_project_value: $541k
+  lead_organisation: DNV GL Australia Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/03/2019
+  location: Victoria, Warrak
+  project_partners: Ararat Wind Farm, RES Australia
+  pdf_url: https://arena.gov.au/assets/2022/02/multi-model-and-machine-learning-wind-forecast-final-report.pdf
+  markdown_filename: multi_model_and_machine_learning_wind_forecast_final_report.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16055
+  contributing_source_titles:
+  - Multi-Model and Machine Learning Wind Forecast Final Report
+  contributing_sources:
+  - source_title: Multi-Model and Machine Learning Wind Forecast Final Report
+    pdf_url: https://arena.gov.au/assets/2022/02/multi-model-and-machine-learning-wind-forecast-final-report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/multi-model-and-machine-learning-wind-forecast-final-report/
+    markdown_filename: multi_model_and_machine_learning_wind_forecast_final_report.md
+  arena_category:
+  - Wind
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-16056
+  source_title: Multi-Model and Machine Learning Wind Forecast Final Report
+  publish_date: '2022-02-02'
+  project_name: Multi-Model and Machine Learning Wind Forecast Project (2018ARP166)
+  what_happened: The Refined Model, built using machine learning fed with live high-frequency
+    SCADA data and multi-model NWP ensemble inputs, achieved MAE and RMSE approximately
+    11.7% and 11.5% lower than AWEFS respectively across a six-month live submission
+    period (May–December 2020), demonstrating that site-specific machine learning
+    self-forecasts can consistently outperform the centralised AEMO forecasting system.
+  lesson_learnt: Machine learning self-forecast models fed with real-time high-frequency
+    site data can meaningfully outperform AEMO's centralised AWEFS on standard accuracy
+    metrics — wind farm operators and forecast providers should consider site-specific
+    ML models as viable inputs into the MP5F API, provided financial performance is
+    validated separately.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id005
+  - 7
+  - 8
+  evidence_excerpt: Over a little more than a six-month period covering approximately
+    21 May 2020 to 31 December 2020, the Refined Model submitted self-forecasts with
+    MAE and RMSE values approximately 11.7% and 11.5% lower (respectively) than AWEFS.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/multi-model-and-machine-learning-wind-forecast-final-report/
+  project_page_url: https://arena.gov.au/projects/ararat-wind-farm/
+  kb_category: Wind energy
+  kb_publish_date: 2/02/2022
+  kb_year: '2019'
+  kb_associated_project: Ararat Wind Farm
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $270k
+  total_project_value: $541k
+  lead_organisation: DNV GL Australia Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/03/2019
+  location: Victoria, Warrak
+  project_partners: Ararat Wind Farm, RES Australia
+  pdf_url: https://arena.gov.au/assets/2022/02/multi-model-and-machine-learning-wind-forecast-final-report.pdf
+  markdown_filename: multi_model_and_machine_learning_wind_forecast_final_report.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16056
+  contributing_source_titles:
+  - Multi-Model and Machine Learning Wind Forecast Final Report
+  contributing_sources:
+  - source_title: Multi-Model and Machine Learning Wind Forecast Final Report
+    pdf_url: https://arena.gov.au/assets/2022/02/multi-model-and-machine-learning-wind-forecast-final-report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/multi-model-and-machine-learning-wind-forecast-final-report/
+    markdown_filename: multi_model_and_machine_learning_wind_forecast_final_report.md
+  arena_category:
+  - Wind
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-16057
+  source_title: Multi-Model and Machine Learning Wind Forecast Final Report
+  publish_date: '2022-02-02'
+  project_name: Multi-Model and Machine Learning Wind Forecast Project (2018ARP166)
+  what_happened: 'Optimising self-forecasts to reduce Causer Pays charges creates
+    a potential perverse incentive: forecast providers may be motivated to submit
+    strategically inaccurate forecasts that reduce their own CP liability at the expense
+    of overall NEM frequency stability, which may not be in the best interests of
+    the market.'
+  lesson_learnt: Policymakers and AEMO should be aware that Causer Pays optimisation
+    creates incentives to submit deliberately inaccurate but strategically advantageous
+    forecasts — market design should consider whether the CP framework adequately
+    aligns self-forecast accuracy incentives with NEM-wide frequency stability outcomes.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: policy/market influence only
+  secondary_failure_mode: commercial & market
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id006
+  - 13
+  evidence_excerpt: This situation also has the potential to incentivise generators
+    and/or forecast providers to produce forecasts that do not represent the most
+    accurate forecasts, but are intended to reduce FCAS charges, which may or may
+    not be in the best interest of the NEM overall.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/multi-model-and-machine-learning-wind-forecast-final-report/
+  project_page_url: https://arena.gov.au/projects/ararat-wind-farm/
+  kb_category: Wind energy
+  kb_publish_date: 2/02/2022
+  kb_year: '2019'
+  kb_associated_project: Ararat Wind Farm
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $270k
+  total_project_value: $541k
+  lead_organisation: DNV GL Australia Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/03/2019
+  location: Victoria, Warrak
+  project_partners: Ararat Wind Farm, RES Australia
+  pdf_url: https://arena.gov.au/assets/2022/02/multi-model-and-machine-learning-wind-forecast-final-report.pdf
+  markdown_filename: multi_model_and_machine_learning_wind_forecast_final_report.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16057
+  contributing_source_titles:
+  - Multi-Model and Machine Learning Wind Forecast Final Report
+  contributing_sources:
+  - source_title: Multi-Model and Machine Learning Wind Forecast Final Report
+    pdf_url: https://arena.gov.au/assets/2022/02/multi-model-and-machine-learning-wind-forecast-final-report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/multi-model-and-machine-learning-wind-forecast-final-report/
+    markdown_filename: multi_model_and_machine_learning_wind_forecast_final_report.md
+  arena_category:
+  - Wind
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-16058
+  source_title: Multi-Model and Machine Learning Wind Forecast Final Report
+  publish_date: '2022-02-02'
+  project_name: Multi-Model and Machine Learning Wind Forecast Project (2018ARP166)
+  what_happened: All forecast models — including the Refined and CP Optimised Models
+    which outperformed AWEFS on average — performed poorly during periods of high
+    wind speed volatility. High CP charges during these periods could significantly
+    influence overall cost outcomes, and generators could not adequately optimise
+    self-forecasts to account for these events.
+  lesson_learnt: Self-forecast models for wind farms should be specifically stress-tested
+    and calibrated for high wind speed volatility periods — these events disproportionately
+    drive CP charges and represent a known limitation of current ML-based approaches
+    that cannot yet be adequately compensated for through optimisation.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id007
+  - 12
+  evidence_excerpt: High CP charges across periods characterised by high wind speed
+    volatility may negatively influence the charges incurred, especially when generators
+    are unable to optimise their self-forecasts to account for these periods.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/multi-model-and-machine-learning-wind-forecast-final-report/
+  project_page_url: https://arena.gov.au/projects/ararat-wind-farm/
+  kb_category: Wind energy
+  kb_publish_date: 2/02/2022
+  kb_year: '2019'
+  kb_associated_project: Ararat Wind Farm
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $270k
+  total_project_value: $541k
+  lead_organisation: DNV GL Australia Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/03/2019
+  location: Victoria, Warrak
+  project_partners: Ararat Wind Farm, RES Australia
+  pdf_url: https://arena.gov.au/assets/2022/02/multi-model-and-machine-learning-wind-forecast-final-report.pdf
+  markdown_filename: multi_model_and_machine_learning_wind_forecast_final_report.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16058
+  contributing_source_titles:
+  - Multi-Model and Machine Learning Wind Forecast Final Report
+  contributing_sources:
+  - source_title: Multi-Model and Machine Learning Wind Forecast Final Report
+    pdf_url: https://arena.gov.au/assets/2022/02/multi-model-and-machine-learning-wind-forecast-final-report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/multi-model-and-machine-learning-wind-forecast-final-report/
+    markdown_filename: multi_model_and_machine_learning_wind_forecast_final_report.md
+  arena_category:
+  - Wind
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-39803
+  source_title: DNV GL – Multi-Model and Machine Learning Wind Forecast Project Lessons
+    Learnt 1
+  publish_date: 2019-10
+  project_name: DNV GL Multi-Model and Machine Learning Wind Forecast Project
+  what_happened: Across both the data recovery and API connection challenges, insufficient
+    resources had been allocated in the first project phase — the underestimation
+    of effort affected all stakeholders including DNV GL, Ararat Wind Farm, and RES
+    Australia.
+  lesson_learnt: For wind forecasting projects that require real-time data integration
+    and AEMO API connectivity, budget and staff resources for the setup phase should
+    be explicitly sized up across all partner organisations — these activities consistently
+    take more effort than anticipated and should not be treated as incidental project
+    tasks.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: internal governance/resourcing
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id008
+  - 2
+  evidence_excerpt: The primary lessons learnt to date are that it would have been
+    beneficial to allocate additional resources to each of these activities in the
+    first phase of the project, across all of the stakeholders involved.
+  confidence_note: lifecycle_phase set to development/design as the resource shortfall
+    was rooted in scoping decisions made before execution; the effect was felt during
+    commissioning/integration.
+  source_url: https://arena.gov.au/knowledge-bank/dnv-gl-multi-model-and-machine-learning-wind-forecast-project-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/ararat-wind-farm/
+  kb_category: Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2019'
+  kb_associated_project: Ararat Wind Farm
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $270k
+  total_project_value: $541k
+  lead_organisation: DNV GL Australia Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/03/2019
+  location: Victoria, Warrak
+  project_partners: Ararat Wind Farm, RES Australia
+  pdf_url: https://arena.gov.au/assets/2019/12/dnv-gl-multi-model-machine-learning-wind-forecasting-project-lessons-learnt.pdf
+  markdown_filename: dnv_gl_multi_model_and_machine_learning_wind_forecast_project_lessons_learnt_1.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39803
+  contributing_source_titles:
+  - DNV GL – Multi-Model and Machine Learning Wind Forecast Project Lessons Learnt
+    1
+  contributing_sources:
+  - source_title: DNV GL – Multi-Model and Machine Learning Wind Forecast Project
+      Lessons Learnt 1
+    pdf_url: https://arena.gov.au/assets/2019/12/dnv-gl-multi-model-machine-learning-wind-forecasting-project-lessons-learnt.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/dnv-gl-multi-model-and-machine-learning-wind-forecast-project-lessons-learnt-1/
+    markdown_filename: dnv_gl_multi_model_and_machine_learning_wind_forecast_project_lessons_learnt_1.md
+  arena_category:
+  - Wind
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.82

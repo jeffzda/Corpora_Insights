@@ -1,0 +1,997 @@
+- record_id: ARENA-DLV-6651
+  source_title: Diffuse Energy Lessons Learnt Report 3
+  publish_date: 2021-09
+  project_name: 'Diffuse Energy: Reliable and resilient wind energy for off-grid telecommunication
+    towers'
+  what_happened: During field operation of the test microgrid at Stanhope NSW, the
+    wind turbine controller caused system voltage to oscillate between 56 V and 58
+    V in strong winds when the battery was near full capacity. The controller repeatedly
+    shorted the generator, increasing mechanical and electrical fatigue and reducing
+    useful energy stored.
+  lesson_learnt: Configure wind turbine controllers to ramp up dump-resistor braking
+    (trickle-charge mode) before reaching the maximum voltage threshold — relying
+    solely on generator shorting to limit voltage in small battery systems causes
+    destructive cycling that increases fatigue and wastes harvestable energy.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Updated the Mk II controller firmware to apply the brake earlier
+    and ramp dump-resistor current to a maximum of 15 A, enabling trickle charging
+    and extending the turbine shutdown period to 15 minutes; updated firmware distributed
+    to project partners.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id001
+  - 4
+  - 5
+  - 6
+  evidence_excerpt: What we have seen during field operation of our microgrid test
+    system at Stanhope NSW (which has a small AGM battery system with 8 kWh storage),
+    is that in strong winds when the battery is approaching full capacity the turbine
+    can drive up the system voltage to 58 V, causing the controller to think that
+    the battery is full and shut down the wind turbine system through shorting the
+    generator.
+  confidence_note: lifecycle_phase assigned as commissioning/integration because the
+    issue was observed during test/field-trial operation of the prototype microgrid,
+    not yet stable commercial operation.
+  source_url: https://arena.gov.au/knowledge-bank/diffuse-energy-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/resilient-wind-energy-for-telecommunication-sites/
+  kb_category: Wind energy
+  kb_publish_date: 23/09/2021
+  kb_year: '2020'
+  kb_associated_project: Resilient Wind Energy for Telecommunication Sites
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $341k
+  total_project_value: $971k
+  lead_organisation: Diffuse Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2020
+  location: New South Wales, Williamtown
+  project_partners: Positive Off-Grid Solutions, Vertical Telecoms, The University
+    of Newcastle
+  pdf_url: https://arena.gov.au/assets/2021/09/diffuse-energy-lessons-learnt-report-3.pdf
+  markdown_filename: diffuse_energy_lessons_learnt_report_3.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6651
+  contributing_source_titles:
+  - Diffuse Energy Lessons Learnt Report 3
+  contributing_sources:
+  - source_title: Diffuse Energy Lessons Learnt Report 3
+    pdf_url: https://arena.gov.au/assets/2021/09/diffuse-energy-lessons-learnt-report-3.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/diffuse-energy-lessons-learnt-report-3/
+    markdown_filename: diffuse_energy_lessons_learnt_report_3.md
+  arena_category:
+  - Wind
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-6652
+  source_title: Diffuse Energy Lessons Learnt Report 3
+  publish_date: 2021-09
+  project_name: 'Diffuse Energy: Reliable and resilient wind energy for off-grid telecommunication
+    towers'
+  what_happened: COVID-19 lockdowns and associated freight disruptions caused significant
+    delivery delays for turbine components and completed systems, with a Newcastle-to-Sydney
+    shipment taking 12 days instead of overnight and Brisbane deliveries taking 14
+    days instead of 3. Average delivery times increased by approximately two weeks,
+    threatening customer project timeframes.
+  lesson_learnt: During periods of pandemic or similar systemic disruption, proactively
+    build extended freight lead times into project schedules and maintain frequent
+    direct communication with time-sensitive customers about expected delivery windows
+    to manage expectations and avoid milestone breaches.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: procurement
+  proponent_type: technology vendor
+  delay_category: procurement/supply chain
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: Actively communicated with customers on time-sensitive projects
+    to keep them informed of expected delivery times and manage project timeframe
+    expectations.
+  transferability: broad
+  delay_magnitude: 1-3 months
+  technology_domain: wind
+  source_pages:
+  - 2
+  - 6
+  evidence_excerpt: The most egregious delay has been for a turbine delivery to Sydney
+    from our workshop in Newcastle, which would normally be an overnight delivery
+    (Newcastle is a 1.5 hr drive from Sydney) but instead took 12 days… on average
+    has increased delivery time by two weeks, which has the potential to affect our
+    ability to meet our customer's project timeframes.
+  confidence_note: delay_magnitude assigned as 1–3 months based on the reporting period
+    of three months during which multiple cumulative delays occurred, though individual
+    shipment delays were shorter. Canonical record merged from 2 source records across
+    2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/diffuse-energy-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/resilient-wind-energy-for-telecommunication-sites/
+  kb_category: Wind energy
+  kb_publish_date: 23/09/2021
+  kb_year: '2020'
+  kb_associated_project: Resilient Wind Energy for Telecommunication Sites
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $341k
+  total_project_value: $971k
+  lead_organisation: Diffuse Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2020
+  location: New South Wales, Williamtown
+  project_partners: Positive Off-Grid Solutions, Vertical Telecoms, The University
+    of Newcastle
+  pdf_url: https://arena.gov.au/assets/2021/09/diffuse-energy-lessons-learnt-report-3.pdf
+  markdown_filename: diffuse_energy_lessons_learnt_report_3.md
+  source_page_pdf: 6
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-6652
+  - ARENA-DLV-67604
+  contributing_source_titles:
+  - Diffuse Energy Lessons Learnt Report 4
+  - Diffuse Energy Lessons Learnt Report 3
+  contributing_sources:
+  - source_title: Diffuse Energy Lessons Learnt Report 3
+    pdf_url: https://arena.gov.au/assets/2021/09/diffuse-energy-lessons-learnt-report-3.pdf
+    source_pages:
+    - 6
+    source_url: https://arena.gov.au/knowledge-bank/diffuse-energy-lessons-learnt-report-3/
+    markdown_filename: diffuse_energy_lessons_learnt_report_3.md
+  - source_title: Diffuse Energy Lessons Learnt Report 4
+    pdf_url: https://arena.gov.au/assets/2022/02/diffuse-energy-lessons-learnt-report-4.pdf
+    source_pages:
+    - 2
+    source_url: https://arena.gov.au/knowledge-bank/diffuse-energy-lessons-learnt-report-4/
+    markdown_filename: diffuse_energy_lessons_learnt_report_4.md
+  arena_category:
+  - Wind
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-67602
+  source_title: Diffuse Energy Lessons Learnt Report 4
+  publish_date: 2021-12
+  project_name: 'Diffuse Energy: Reliable and resilient wind energy for off-grid telecommunication
+    towers'
+  what_happened: The global semiconductor shortage severely impacted production of
+    the Hyland 920 controller, with component prices increasing by up to 45x, manufacturing
+    costs doubling in six months, and lead times extending to 18 months. This delayed
+    the current production run to January 2022 and created significant uncertainty
+    for future production runs.
+  lesson_learnt: Small-scale hardware manufacturers are highly vulnerable to global
+    semiconductor supply chain disruptions — forward order critical electronic components
+    well in advance and build buffer stock, as large manufacturers stockpile components
+    and further exacerbate shortages for smaller buyers. Treat semiconductor availability
+    as a material project risk requiring active mitigation.
+  issue_severity: major
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: procurement
+  proponent_type: technology vendor
+  delay_category: procurement/supply chain
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: Worked with contract manufacturer to source components, pre-purchased
+    critical components as they became available, and collaborated with customers
+    to identify mitigation measures for their affected projects.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages:
+  - 5
+  - 6
+  - 7
+  - 8
+  evidence_excerpt: The resulting shortage has caused delays in producing the latest
+    version of our control system and is also delaying the build of our remote monitoring
+    systems, as sourcing the components has been very difficult… This shortage, combined
+    with freight delays as detailed in Lesson Learnt No.2, is resulting in uncertainty
+    around delivery timeframes for our customers and there is the potential for this
+    to impact our ARENA project.
+  confidence_note: delay_magnitude estimated as 3–12 months based on current run delayed
+    to January 2022; future production uncertainty not quantified. Canonical record
+    merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/diffuse-energy-lessons-learnt-report-4/
+  project_page_url: https://arena.gov.au/projects/resilient-wind-energy-for-telecommunication-sites/
+  kb_category: Wind energy
+  kb_publish_date: 2/02/2022
+  kb_year: '2020'
+  kb_associated_project: Resilient Wind Energy for Telecommunication Sites
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $341k
+  total_project_value: $971k
+  lead_organisation: Diffuse Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2020
+  location: New South Wales, Williamtown
+  project_partners: Positive Off-Grid Solutions, Vertical Telecoms, The University
+    of Newcastle
+  pdf_url: https://arena.gov.au/assets/2022/02/diffuse-energy-lessons-learnt-report-4.pdf
+  markdown_filename: diffuse_energy_lessons_learnt_report_4.md
+  source_page_pdf: 6
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-6653
+  - ARENA-DLV-67602
+  contributing_source_titles:
+  - Diffuse Energy Lessons Learnt Report 4
+  - Diffuse Energy Lessons Learnt Report 3
+  contributing_sources:
+  - source_title: Diffuse Energy Lessons Learnt Report 3
+    pdf_url: https://arena.gov.au/assets/2021/09/diffuse-energy-lessons-learnt-report-3.pdf
+    source_pages:
+    - 7
+    - 8
+    source_url: https://arena.gov.au/knowledge-bank/diffuse-energy-lessons-learnt-report-3/
+    markdown_filename: diffuse_energy_lessons_learnt_report_3.md
+  - source_title: Diffuse Energy Lessons Learnt Report 4
+    pdf_url: https://arena.gov.au/assets/2022/02/diffuse-energy-lessons-learnt-report-4.pdf
+    source_pages:
+    - 5
+    - 6
+    source_url: https://arena.gov.au/knowledge-bank/diffuse-energy-lessons-learnt-report-4/
+    markdown_filename: diffuse_energy_lessons_learnt_report_4.md
+  arena_category:
+  - Wind
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: cost overrun, resource/capability shortfall
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-63751
+  source_title: Diffuse Energy Lessons Learnt Report 2
+  publish_date: 2021-06
+  project_name: 'Diffuse Energy: Reliable and resilient wind energy for off-grid telecommunication
+    towers'
+  what_happened: During installation of wind energy systems at two Vertel sites (Mt
+    Hyland and Mt Wondurrigah), a field splice of weather station cabling was made
+    without proper shielding because the required materials were not on site. The
+    unshielded join caused electromagnetic interference that locked up the weather
+    station and cascaded to lock up the remote monitoring system, preventing performance
+    data from being transmitted to the cloud database.
+  lesson_learnt: Ensure all cabling materials — including sufficient lengths and proper
+    shielding materials — are available on site before commencing installation. Implement
+    a mandatory checklist to fully test the remote monitoring system before leaving
+    site, so interference or connectivity faults are identified and corrected without
+    requiring a costly return visit to a remote location.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: data & measurement
+  intervention_note: Sapphi remotely investigated and implemented an automatic reset
+    function in the monitoring software, pushed over 3G/4G to all units; a site visit
+    was planned for late June to replace cabling with correctly shielded cables.
+  transferability: moderate
+  delay_magnitude: 1-3 months
+  technology_domain: wind
+  source_pages: &id002
+  - 3
+  - 4
+  - 5
+  evidence_excerpt: A field splice of the weather station cabling was undertaken to
+    extend the cables to the necessary length but could not be shielded fully as the
+    necessary materials were not available on site. It was not anticipated that this
+    would be a problem, but it resulted in interference between the weather sensor
+    and remote monitoring system.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/diffuse-energy-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/resilient-wind-energy-for-telecommunication-sites/
+  kb_category: Wind energy
+  kb_publish_date: 10/06/2021
+  kb_year: '2020'
+  kb_associated_project: Resilient Wind Energy for Telecommunication Sites
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $341k
+  total_project_value: $971k
+  lead_organisation: Diffuse Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2020
+  location: New South Wales, Williamtown
+  project_partners: Positive Off-Grid Solutions, Vertical Telecoms, The University
+    of Newcastle
+  pdf_url: https://arena.gov.au/assets/2021/07/diffuse-energy-lessons-learnt-report-2.pdf
+  markdown_filename: diffuse_energy_lessons_learnt_report_2.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-63751
+  contributing_source_titles:
+  - Diffuse Energy Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: Diffuse Energy Lessons Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2021/07/diffuse-energy-lessons-learnt-report-2.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/diffuse-energy-lessons-learnt-report-2/
+    markdown_filename: diffuse_energy_lessons_learnt_report_2.md
+  arena_category:
+  - Wind
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-63752
+  source_title: Diffuse Energy Lessons Learnt Report 2
+  publish_date: 2021-06
+  project_name: 'Diffuse Energy: Reliable and resilient wind energy for off-grid telecommunication
+    towers'
+  what_happened: Eight greenfield customer sites with Positive Off Grid Solutions,
+    which were to host Diffuse Energy wind turbine installations as part of the ARENA
+    project, were dependent on a federal government grant application that was unsuccessful.
+    This created uncertainty around whether and when the towers would be built, putting
+    at risk the installation of eight of the ten planned turbine deployments and introducing
+    potential cost exposure for equipment already purchased.
+  lesson_learnt: Before signing up greenfield sites for wind energy system deployment,
+    thoroughly understand the funding arrangements and planning maturity of the customer's
+    broader infrastructure project. Engage early enough to be included in tender and
+    grant applications, and provide value-add support to customers who are inexperienced
+    with the planning and funding cycle, reducing the risk that an unsuccessful third-party
+    funding application stalls or cancels your own project milestones.
+  issue_severity: major
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: technology vendor
+  delay_category: financing/commercial close
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: commercial & market
+  intervention_note: Diffuse Energy organised meetings with Positive Off Grid Solutions
+    and stakeholders to assess project timelines, and began engaging alternative commercial
+    partners with suitable sites as a contingency.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id003
+  - 3
+  - 6
+  evidence_excerpt: The 8 greenfield sites were part of a federal government grant
+    application, which Positive Off Grid Solutions has recently been notified was
+    unsuccessful… there is uncertainty around the timing of the project. This could
+    potentially cause delays in erecting the towers which could in turn cause delays
+    in installing our systems.
+  confidence_note: issue_severity assessed as major given that 8 of 10 planned project
+    sites are at risk and equipment costs have already been incurred, even though
+    final impact was not yet determined at time of report.
+  source_url: https://arena.gov.au/knowledge-bank/diffuse-energy-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/resilient-wind-energy-for-telecommunication-sites/
+  kb_category: Wind energy
+  kb_publish_date: 10/06/2021
+  kb_year: '2020'
+  kb_associated_project: Resilient Wind Energy for Telecommunication Sites
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $341k
+  total_project_value: $971k
+  lead_organisation: Diffuse Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2020
+  location: New South Wales, Williamtown
+  project_partners: Positive Off-Grid Solutions, Vertical Telecoms, The University
+    of Newcastle
+  pdf_url: https://arena.gov.au/assets/2021/07/diffuse-energy-lessons-learnt-report-2.pdf
+  markdown_filename: diffuse_energy_lessons_learnt_report_2.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-63752
+  contributing_source_titles:
+  - Diffuse Energy Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: Diffuse Energy Lessons Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2021/07/diffuse-energy-lessons-learnt-report-2.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/diffuse-energy-lessons-learnt-report-2/
+    markdown_filename: diffuse_energy_lessons_learnt_report_2.md
+  arena_category:
+  - Wind
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-63753
+  source_title: Diffuse Energy Lessons Learnt Report 2
+  publish_date: 2021-06
+  project_name: 'Diffuse Energy: Reliable and resilient wind energy for off-grid telecommunication
+    towers'
+  what_happened: At a residential site external to the ARENA project, a wind turbine
+    was installed incorrectly with only two of three phases connected. The fault was
+    not detected at installation because there was no wind to run the turbine, and
+    diagnosing the problem consumed considerable time via phone support with the installer
+    before the cause was identified.
+  lesson_learnt: Develop and mandate an electrical test methodology — using standard
+    tools available to telecommunications technicians — that allows installers to
+    verify correct wiring of the turbine, controller, and monitoring system before
+    leaving site regardless of wind conditions. This avoids costly return visits to
+    remote sites to rectify installation faults that could have been caught on the
+    day.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: execution & logistics
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: Diffuse Energy identified the root cause through remote phone
+    diagnosis and resolved the specific fault; they committed to developing a simple
+    electrical test methodology using readily available standard tools to prevent
+    recurrence on future installations.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id004
+  - 3
+  - 7
+  evidence_excerpt: A considerable amount of time was spent trying to identify the
+    cause of the fault over the phone with the installer, and eventually it was discovered
+    that the turbine had not been connected into the turbine correctly, with only
+    2 of the 3 phases properly connected… a system of electrically testing the setup
+    as a last step if it is not windy would be beneficial to avoid the issue, or one
+    like it, occurring on remote sites where a return visit to rectify a fault could
+    be very time-consuming and costly.
+  confidence_note: failure_mode classified as design assumption failure because the
+    installation procedure did not account for zero-wind test conditions; resource/capability
+    shortfall also evidenced by installer error and absence of a validation tool.
+  source_url: https://arena.gov.au/knowledge-bank/diffuse-energy-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/resilient-wind-energy-for-telecommunication-sites/
+  kb_category: Wind energy
+  kb_publish_date: 10/06/2021
+  kb_year: '2020'
+  kb_associated_project: Resilient Wind Energy for Telecommunication Sites
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $341k
+  total_project_value: $971k
+  lead_organisation: Diffuse Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2020
+  location: New South Wales, Williamtown
+  project_partners: Positive Off-Grid Solutions, Vertical Telecoms, The University
+    of Newcastle
+  pdf_url: https://arena.gov.au/assets/2021/07/diffuse-energy-lessons-learnt-report-2.pdf
+  markdown_filename: diffuse_energy_lessons_learnt_report_2.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-63753
+  contributing_source_titles:
+  - Diffuse Energy Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: Diffuse Energy Lessons Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2021/07/diffuse-energy-lessons-learnt-report-2.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/diffuse-energy-lessons-learnt-report-2/
+    markdown_filename: diffuse_energy_lessons_learnt_report_2.md
+  arena_category:
+  - Wind
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-67601
+  source_title: Diffuse Energy Lessons Learnt Report 4
+  publish_date: 2021-12
+  project_name: 'Diffuse Energy: Reliable and resilient wind energy for off-grid telecommunication
+    towers'
+  what_happened: The Hyland 920 controller's MPPT algorithm used a power curve based
+    on design calculations and wind tunnel testing, but field data showed the turbine
+    was spinning slower than expected at each wind speed, causing lower voltage output
+    and near-stall conditions at low to mid wind speeds. This resulted in the turbine
+    producing less power than expected across all wind speeds.
+  lesson_learnt: Validate controller power curves against real-world field data before
+    wide deployment — design and wind tunnel derived curves may not account for in-situ
+    system losses, and at low-to-mid wind speeds the turbine can enter a semi-stalled
+    state with significant power loss. A revised power curve incorporating measured
+    system losses is expected to improve yield by approximately 20%.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Built and commissioned a test rig to refine the controller, developed
+    a new power curve accounting for system losses, and planned validation at the
+    Stanhope microgrid test site before wide-scale deployment.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id005
+  - 4
+  - 5
+  evidence_excerpt: Although the controller is tracking the current power curve exceptionally
+    well, the turbine is spinning slower than expected at each wind speed, which means
+    it has a lower output Voltage as the two are directly coupled... From our modelling
+    and observations this change is expected to improve the turbine yield by approximately
+    20%, depending on the site conditions.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/diffuse-energy-lessons-learnt-report-4/
+  project_page_url: https://arena.gov.au/projects/resilient-wind-energy-for-telecommunication-sites/
+  kb_category: Wind energy
+  kb_publish_date: 2/02/2022
+  kb_year: '2020'
+  kb_associated_project: Resilient Wind Energy for Telecommunication Sites
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $341k
+  total_project_value: $971k
+  lead_organisation: Diffuse Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2020
+  location: New South Wales, Williamtown
+  project_partners: Positive Off-Grid Solutions, Vertical Telecoms, The University
+    of Newcastle
+  pdf_url: https://arena.gov.au/assets/2022/02/diffuse-energy-lessons-learnt-report-4.pdf
+  markdown_filename: diffuse_energy_lessons_learnt_report_4.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67601
+  contributing_source_titles:
+  - Diffuse Energy Lessons Learnt Report 4
+  contributing_sources:
+  - source_title: Diffuse Energy Lessons Learnt Report 4
+    pdf_url: https://arena.gov.au/assets/2022/02/diffuse-energy-lessons-learnt-report-4.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/diffuse-energy-lessons-learnt-report-4/
+    markdown_filename: diffuse_energy_lessons_learnt_report_4.md
+  arena_category:
+  - Wind
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-67603
+  source_title: Diffuse Energy Lessons Learnt Report 4
+  publish_date: 2021-12
+  project_name: 'Diffuse Energy: Reliable and resilient wind energy for off-grid telecommunication
+    towers'
+  what_happened: Wind speed forecasts for sites surrounded by dense Australian bushland
+    (Mt Wondurrigah and Mt Hyland) overestimated average wind speeds by approximately
+    2 m/s compared to measured values. The forecasting methodology used a terrain
+    roughness length (z0) of 0.25 for bushland, whereas measured data aligned with
+    a value of 0.4 as published by the Danish Wind Energy Association.
+  lesson_learnt: When forecasting wind resources for turbine sites in dense Australian
+    bushland, use a terrain roughness length (z0) of 0.4 rather than the commonly
+    cited 0.25 — using 0.25 overestimates average wind speed by approximately 2 m/s
+    and will inflate predicted energy yield. Open farmland sites are not affected
+    by this correction.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Adopted a roughness length value of z0 = 0.4 for dense bushland
+    sites, consistent with Danish Wind Energy Association published values, for all
+    future site assessments.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id006
+  - 6
+  - 7
+  evidence_excerpt: For sites with dense surrounding bushland, our forecasts have
+    been higher than measured, with both Mt Wondurrigah and Mt Hyland being approximately
+    2m/s lower than expected... However, if we modify this to 0.4 we get predictions
+    that are in line with measured data.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/diffuse-energy-lessons-learnt-report-4/
+  project_page_url: https://arena.gov.au/projects/resilient-wind-energy-for-telecommunication-sites/
+  kb_category: Wind energy
+  kb_publish_date: 2/02/2022
+  kb_year: '2020'
+  kb_associated_project: Resilient Wind Energy for Telecommunication Sites
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $341k
+  total_project_value: $971k
+  lead_organisation: Diffuse Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2020
+  location: New South Wales, Williamtown
+  project_partners: Positive Off-Grid Solutions, Vertical Telecoms, The University
+    of Newcastle
+  pdf_url: https://arena.gov.au/assets/2022/02/diffuse-energy-lessons-learnt-report-4.pdf
+  markdown_filename: diffuse_energy_lessons_learnt_report_4.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67603
+  contributing_source_titles:
+  - Diffuse Energy Lessons Learnt Report 4
+  contributing_sources:
+  - source_title: Diffuse Energy Lessons Learnt Report 4
+    pdf_url: https://arena.gov.au/assets/2022/02/diffuse-energy-lessons-learnt-report-4.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/diffuse-energy-lessons-learnt-report-4/
+    markdown_filename: diffuse_energy_lessons_learnt_report_4.md
+  arena_category:
+  - Wind
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-68601
+  source_title: Diffuse Energy Lessons Learnt Report 1
+  publish_date: null
+  project_name: 'Diffuse Energy: Reliable and resilient wind energy for off-grid telecommunication
+    towers'
+  what_happened: Integration of the Hyland 920 wind turbine with the Eaton SC200 system
+    controller was initially uncertain due to vendor concerns, but proved straightforward
+    once Eaton technical support clarified how to use the secondary RS485 connector
+    on the shunt monitor board to read an additional shunt resistor.
+  lesson_learnt: Do not assume vendor compatibility warnings are definitive — engage
+    the manufacturer's technical support early, as the Eaton SC200 integration with
+    a small wind turbine proved simple once the secondary shunt monitoring pathway
+    was identified, and the Eaton system is widely used in the telecommunications
+    sector.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: pilot
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Contacted Eaton's technical support, which identified a secondary
+    RS485 connector allowing a second shunt to be read directly from the shunt monitor
+    board, enabling individual monitoring of wind, solar and battery current.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id007
+  - 4
+  evidence_excerpt: After some help from Eaton's technical support this process proved
+    to be rather simple... Installation of the Diffuse Energy wind turbine with the
+    Eaton system is straightforward from both a hardware and software configuration
+    perspective. The Eaton System is used quite broadly in the telecommunications
+    space.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/diffuse-energy-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/resilient-wind-energy-for-telecommunication-sites/
+  kb_category: Wind energy
+  kb_publish_date: 30/11/2020
+  kb_year: '2020'
+  kb_associated_project: Resilient Wind Energy for Telecommunication Sites
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $341k
+  total_project_value: $971k
+  lead_organisation: Diffuse Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2020
+  location: New South Wales, Williamtown
+  project_partners: Positive Off-Grid Solutions, Vertical Telecoms, The University
+    of Newcastle
+  pdf_url: https://arena.gov.au/assets/2021/07/diffuse-energy-lessons-learnt-report-1.pdf
+  markdown_filename: diffuse_energy_lessons_learnt_report_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-68601
+  contributing_source_titles:
+  - Diffuse Energy Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: Diffuse Energy Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2021/07/diffuse-energy-lessons-learnt-report-1.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/diffuse-energy-lessons-learnt-report-1/
+    markdown_filename: diffuse_energy_lessons_learnt_report_1.md
+  arena_category:
+  - Wind
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-68602
+  source_title: Diffuse Energy Lessons Learnt Report 1
+  publish_date: null
+  project_name: 'Diffuse Energy: Reliable and resilient wind energy for off-grid telecommunication
+    towers'
+  what_happened: Attempting to power the same 240 V output from two different battery
+    inverters (the new Eaton system and an existing Studer system) caused integration
+    faults — the Eaton inverter faulted on detecting an existing supply on its 240
+    V output, and frequency-shifting conflicts between inverters caused apparent-power
+    faults. Multiple equipment suppliers confirmed there was no simple off-the-shelf
+    solution.
+  lesson_learnt: Avoid parallel battery inverter configurations on the same AC bus
+    in off-grid micro-grid extensions — instead, connect new generation assets directly
+    to the DC bus of the existing micro-grid, which eliminates frequency-shifting
+    conflicts and fault conditions between battery inverters.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: pilot
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: Configured the new Eaton system as a 'grid input' to the existing
+    Studer inverter, limited to 480 W, and enabled the Studer's active AC filtering
+    setting to resolve the frequency mismatch between the two inverters.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id008
+  - 4
+  - 5
+  evidence_excerpt: The Eaton inverter did not like there being any existing supply
+    on its 240 V output and went into Fault... several equipment suppliers told us
+    that what we were trying to do would not work and an alternative solution was
+    required.
+  confidence_note: issue_severity set to moderate as the integration failure required
+    investigation and a non-trivial workaround, though the document does not quantify
+    the delay.
+  source_url: https://arena.gov.au/knowledge-bank/diffuse-energy-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/resilient-wind-energy-for-telecommunication-sites/
+  kb_category: Wind energy
+  kb_publish_date: 30/11/2020
+  kb_year: '2020'
+  kb_associated_project: Resilient Wind Energy for Telecommunication Sites
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $341k
+  total_project_value: $971k
+  lead_organisation: Diffuse Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2020
+  location: New South Wales, Williamtown
+  project_partners: Positive Off-Grid Solutions, Vertical Telecoms, The University
+    of Newcastle
+  pdf_url: https://arena.gov.au/assets/2021/07/diffuse-energy-lessons-learnt-report-1.pdf
+  markdown_filename: diffuse_energy_lessons_learnt_report_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-68602
+  contributing_source_titles:
+  - Diffuse Energy Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: Diffuse Energy Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2021/07/diffuse-energy-lessons-learnt-report-1.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/diffuse-energy-lessons-learnt-report-1/
+    markdown_filename: diffuse_energy_lessons_learnt_report_1.md
+  arena_category:
+  - Wind
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-68603
+  source_title: Diffuse Energy Lessons Learnt Report 1
+  publish_date: null
+  project_name: 'Diffuse Energy: Reliable and resilient wind energy for off-grid telecommunication
+    towers'
+  what_happened: Non-standardisation of turbine mounting systems across different
+    tower designs required bespoke structural analysis and third-party certification
+    for each installation, causing delays of several months to project commencement
+    on installations outside the ARENA project and raising a risk of similar delays
+    for planned WA installations.
+  lesson_learnt: Standardise turbine mounting systems across tower types before scaling
+    installation programmes — bespoke mounting designs for each tower configuration
+    require repeated third-party structural certification, adding several months of
+    delay per installation; engaging certifiers early to develop a standardised mounting
+    approach can streamline this across the portfolio.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: pilot
+  lifecycle_phase: approvals/contracting
+  proponent_type: technology vendor
+  delay_category: approvals/regulatory
+  failure_mode: poor scoping
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated integration
+  intervention_note: Diffuse Energy raised standardisation of mounting equipment as
+    a priority in a knowledge-sharing meeting on 17/03/21 and engaged vendors and
+    third-party certifiers to investigate a standardised mounting solution; site visits
+    were planned to bring forward planning approvals for the WA installations.
+  transferability: moderate
+  delay_magnitude: 3-12 months
+  technology_domain: wind
+  source_pages: &id009
+  - 6
+  evidence_excerpt: Delays of install due to engineering sign-off have occurred in
+    other projects (outside of ARENA) recently where sign-off of structural designs
+    and tower loadings has delayed the commencement of works for the project by several
+    months. This is largely caused by each installation having a bespoke mounting
+    system for the tower, as there is a large number of tower designs.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/diffuse-energy-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/resilient-wind-energy-for-telecommunication-sites/
+  kb_category: Wind energy
+  kb_publish_date: 30/11/2020
+  kb_year: '2020'
+  kb_associated_project: Resilient Wind Energy for Telecommunication Sites
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $341k
+  total_project_value: $971k
+  lead_organisation: Diffuse Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2020
+  location: New South Wales, Williamtown
+  project_partners: Positive Off-Grid Solutions, Vertical Telecoms, The University
+    of Newcastle
+  pdf_url: https://arena.gov.au/assets/2021/07/diffuse-energy-lessons-learnt-report-1.pdf
+  markdown_filename: diffuse_energy_lessons_learnt_report_1.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-68603
+  contributing_source_titles:
+  - Diffuse Energy Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: Diffuse Energy Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2021/07/diffuse-energy-lessons-learnt-report-1.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/diffuse-energy-lessons-learnt-report-1/
+    markdown_filename: diffuse_energy_lessons_learnt_report_1.md
+  arena_category:
+  - Wind
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-68604
+  source_title: Diffuse Energy Lessons Learnt Report 1
+  publish_date: null
+  project_name: 'Diffuse Energy: Reliable and resilient wind energy for off-grid telecommunication
+    towers'
+  what_happened: COVID-19 travel restrictions prevented Diffuse Energy from visiting
+    interstate and WA clients in person, limiting the company's ability to coordinate
+    hardware installations and problem-solve on site, and causing a minor approximately
+    two-week delay to solar panel installation at the test micro-grid site due to
+    a contractor backlog.
+  lesson_learnt: For hardware-centric remote deployment projects, plan for contingency
+    time when interstate or international site visits are constrained — COVID-related
+    travel restrictions caused a contractor backlog that delayed solar panel installation
+    by approximately two weeks and prevented in-person client coordination; ensure
+    contracts and schedules allow for remote coordination or deferred site visits.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: pilot
+  lifecycle_phase: construction/installation
+  proponent_type: technology vendor
+  delay_category: construction/installation
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: Diffuse Energy monitored the lifting of WA travel restrictions
+    and planned an in-person visit to POGS once restrictions were lifted; the two-week
+    solar installation delay was absorbed without material impact on the project.
+  transferability: narrow
+  delay_magnitude: <1 month
+  technology_domain: wind
+  source_pages: &id010
+  - 7
+  evidence_excerpt: The movement restrictions due to COVID have also caused a minor
+    delay in the installation of the solar panels at the test microgrid site, due
+    to a backlog of installations for the contractor engaged to install the system.
+    The delay was in the order of two weeks and has not had a material impact on the
+    project.
+  confidence_note: transferability set to narrow as COVID-specific travel restriction
+    impacts are context-specific and time-limited; however the broader lesson about
+    in-person coordination for hardware deployment has moderate transferability.
+  source_url: https://arena.gov.au/knowledge-bank/diffuse-energy-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/resilient-wind-energy-for-telecommunication-sites/
+  kb_category: Wind energy
+  kb_publish_date: 30/11/2020
+  kb_year: '2020'
+  kb_associated_project: Resilient Wind Energy for Telecommunication Sites
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $341k
+  total_project_value: $971k
+  lead_organisation: Diffuse Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2020
+  location: New South Wales, Williamtown
+  project_partners: Positive Off-Grid Solutions, Vertical Telecoms, The University
+    of Newcastle
+  pdf_url: https://arena.gov.au/assets/2021/07/diffuse-energy-lessons-learnt-report-1.pdf
+  markdown_filename: diffuse_energy_lessons_learnt_report_1.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-68604
+  contributing_source_titles:
+  - Diffuse Energy Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: Diffuse Energy Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2021/07/diffuse-energy-lessons-learnt-report-1.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/diffuse-energy-lessons-learnt-report-1/
+    markdown_filename: diffuse_energy_lessons_learnt_report_1.md
+  arena_category:
+  - Wind
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  failure_mode_confidence: 0.9

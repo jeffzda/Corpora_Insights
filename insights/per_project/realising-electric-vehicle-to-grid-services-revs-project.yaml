@@ -1,0 +1,1078 @@
+- record_id: ARENA-DLV-51551
+  source_title: ARENA - Vehicle to Grid - Insights Final Report
+  publish_date: 2024-02
+  project_name: Realising Electric Vehicle-to-Grid Services (REVS) Project
+  what_happened: Of 51 chargers deployed across 11 sites, data was available for only
+    38 chargers and discharge data for only 29, due to installation delays and progressive
+    commissioning throughout 2022 that left many chargers recording data for only
+    a few months.
+  lesson_learnt: Plan charger installation timelines to allow a full data-collection
+    period before trial end — staggered commissioning across a year-long trial substantially
+    reduced the dataset and reliability of discharge behaviour insights.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: research organisation/university
+  delay_category: construction/installation
+  failure_mode: data & measurement
+  outcome_class: partial success
+  secondary_failure_mode: execution & logistics
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages: &id001
+  - 13
+  - 14
+  evidence_excerpt: The lengthy charger installation period at each location created
+    unforeseen delays in beginning the REVS trial. Some sites had multiple chargers,
+    which resulted in longer installation times and subsequently reduced the number
+    of data points that were collected from these locations.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+  markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-51551
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Insights Final Report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Insights Final Report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+    markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: schedule slippage
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-51552
+  source_title: ARENA - Vehicle to Grid - Insights Final Report
+  publish_date: 2024-02
+  project_name: Realising Electric Vehicle-to-Grid Services (REVS) Project
+  what_happened: Low-voltage (LV) embedded generator sites required additional grid
+    protection and load balancing measures compared to micro-generator sites, creating
+    further delays to data collection and complicating charger installation at those
+    buildings.
+  lesson_learnt: Identify LV embedded generator sites early in design — the additional
+    grid protection and load balancing requirements are non-trivial and will extend
+    installation timelines relative to simpler micro-generator configurations.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: research organisation/university
+  delay_category: construction/installation
+  failure_mode: poor scoping
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages: &id002
+  - 13
+  evidence_excerpt: Low voltage (LV) embedded generator sites are more complex than
+    micro-generator sites, due to greater export limits needed for an LV site. LV
+    sites consequently required grid protection and load balancing to respond to the
+    greater export limits.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+  markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-51552
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Insights Final Report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Insights Final Report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+    markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-51553
+  source_title: ARENA - Vehicle to Grid - Insights Final Report
+  publish_date: 2024-02
+  project_name: Realising Electric Vehicle-to-Grid Services (REVS) Project
+  what_happened: Only 22 of 51 trial vehicles participated in the booking system,
+    and average vehicle usage among those was only 12%, requiring a significant amount
+    of estimation of vehicle availability for FCAS capacity modelling.
+  lesson_learnt: Design V2G trials with mandatory or incentivised participation in
+    booking/availability systems — low voluntary compliance forces heavy reliance
+    on assumptions about vehicle availability, undermining the reliability of capacity
+    and revenue estimates.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: partial success
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Non-participating vehicles were assumed to be in use from 8am
+    to 5pm as a proxy for availability estimation.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id003
+  - 14
+  - 15
+  evidence_excerpt: Average usage throughout the trial was 12% among the 22 vehicles
+    for which booking data was available. Non-participating vehicles were assumed
+    to be in use from 8am to 5pm. This low booking rate among participants in the
+    trial required a significant amount of estimation of vehicle availability.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+  markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-51553
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Insights Final Report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Insights Final Report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+    markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-51554
+  source_title: ARENA - Vehicle to Grid - Insights Final Report
+  publish_date: 2024-02
+  project_name: Realising Electric Vehicle-to-Grid Services (REVS) Project
+  what_happened: Trial data was recorded only when vehicles were actively charging
+    or discharging, meaning the system could not distinguish between vehicles that
+    were unplugged and those that were connected but idle, creating a gap in availability
+    data.
+  lesson_learnt: Instrument V2G trials to capture plug-in state continuously, not
+    only during active charge or discharge events — the inability to distinguish idle-connected
+    from unplugged vehicles creates a material gap in availability data needed for
+    FCAS capacity modelling.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Booking system data was used as a substitute to estimate the
+    number of cars plugged in where charger data was absent.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id004
+  - 13
+  - 14
+  evidence_excerpt: During the trial, data was recorded only when vehicles were actively
+    charging or discharging, which precluded distinguishing whether individual vehicles
+    were unplugged, or connected but idle.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+  markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-51554
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Insights Final Report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Insights Final Report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+    markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-51555
+  source_title: ARENA - Vehicle to Grid - Insights Final Report
+  publish_date: 2024-02
+  project_name: Realising Electric Vehicle-to-Grid Services (REVS) Project
+  what_happened: More than half of discharging sessions commenced when vehicle state
+    of charge was above 90%, meaning vehicles were often fully charged when FCAS raise
+    services were needed, with limited headroom to absorb energy for FCAS lower participation.
+  lesson_learnt: Implement active SOC management to cap charging below 96% for FCAS
+    lower market participation — vehicles arriving fully charged have no spare capacity
+    to absorb, eliminating revenue potential from the lower frequency market unless
+    charging behaviour is actively managed.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: execution & logistics
+  intervention_note: The REVS trial capped vehicle SOC at 96% to retain 1.6 kWh of
+    spare capacity per vehicle for FCAS lower market participation.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id005
+  - 4
+  - 5
+  - 17
+  - 18
+  evidence_excerpt: More than half of the discharging sessions started when the vehicle
+    had an SOC of more than 90%, meaning that when FCAS were required, the vehicles
+    were often fully charged... Vehicles were often fully charged when FCAS were required,
+    so charging behaviours need to be managed to ensure enough headroom to participate
+    in the FCAS lower markets.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+  markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  source_page_pdf: 5
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-51555
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Insights Final Report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Insights Final Report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+    markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-51556
+  source_title: ARENA - Vehicle to Grid - Insights Final Report
+  publish_date: 2024-02
+  project_name: Realising Electric Vehicle-to-Grid Services (REVS) Project
+  what_happened: The REVS project was the first instance of a vehicle fleet supplying
+    FCAS to the NEM. Trial analysis showed that a vehicle participating in the NSW
+    FCAS raise regulation market could have earned approximately $12,000 in 2022,
+    and approximately $2,600 in the 60-second contingency raise market.
+  lesson_learnt: V2G-enabled fleet EVs represent a credible FCAS revenue opportunity
+    — modelled revenues of up to $12,000 per vehicle per year (raise regulation) justify
+    investment in bidirectional charging infrastructure for commercial fleet operators,
+    particularly where vehicles are idle during business hours.
+  issue_severity: none
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id006
+  - 3
+  - 4
+  - 25
+  evidence_excerpt: The average electric vehicle could have earned ~$12,000 participating
+    in the NSW FCAS raise regulation market or ~$2,600 in the NSW FCAS raise 60-second
+    contingency market, based on 2022 data.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+  markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-51556
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Insights Final Report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Insights Final Report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+    markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+- record_id: ARENA-DLV-51557
+  source_title: ARENA - Vehicle to Grid - Insights Final Report
+  publish_date: 2024-02
+  project_name: Realising Electric Vehicle-to-Grid Services (REVS) Project
+  what_happened: Total energy discharged from trial vehicles over the full year was
+    only 0.146 MWh, representing approximately 0.79% of the 18.4 MWh imported for
+    charging, confirming that contingency FCAS events drew minimally on vehicle batteries.
+  lesson_learnt: Contingency FCAS participation poses negligible risk of battery degradation
+    or range anxiety for commercial fleet EV owners — the share of energy drawn for
+    grid services is less than 1% of total charging energy, a finding that should
+    be communicated proactively to fleet operators to overcome adoption barriers.
+  issue_severity: none
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id007
+  - 5
+  - 20
+  evidence_excerpt: During the REVS trial, the recorded total annual discharge from
+    all the vehicles was 0.146MWh, or 0.79% of the total amount of energy used for
+    charging the vehicles. This verifies that the number of FCAS events requiring
+    energy to be drawn from EV batteries was minimal, suggesting low risk of premature
+    battery degradation for EV owners participating in FCAS services.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+  markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  source_page_pdf: 20
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-51557
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Insights Final Report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Insights Final Report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+    markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+- record_id: ARENA-DLV-51558
+  source_title: ARENA - Vehicle to Grid - Insights Final Report
+  publish_date: 2024-02
+  project_name: Realising Electric Vehicle-to-Grid Services (REVS) Project
+  what_happened: Behind-the-meter V2G technology was legally prohibited from participating
+    in the 6-second contingency FCAS market during the trial period due to ramping
+    constraints in AS/NZS 4777.2:2020, despite EVs being technically capable of the
+    required response times.
+  lesson_learnt: Regulatory standards constraining behind-the-meter inverter ramping
+    rates represent a binding ceiling on V2G revenue potential — proponents should
+    engage with standards bodies early to flag V2G-specific constraints in AS/NZS
+    4777.2 and advocate for targeted amendments before project design is finalised.
+  issue_severity: major
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: research organisation/university
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: partial success
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id008
+  - 25
+  evidence_excerpt: While EV batteries are technically capable of dispatching at the
+    response times required for 6-second contingency FCAS market participation, behind-the-meter
+    technology is not yet legally allowed to participate in this market due to ramping
+    constraints in the AS/NZS 4777.2:2020.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+  markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  source_page_pdf: 25
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-51558
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Insights Final Report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Insights Final Report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+    markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.95
+- record_id: ARENA-DLV-51559
+  source_title: ARENA - Vehicle to Grid - Insights Final Report
+  publish_date: 2024-02
+  project_name: Realising Electric Vehicle-to-Grid Services (REVS) Project
+  what_happened: FCAS grid events were most frequent between 2pm and 5pm on weekdays,
+    but trial commercial vehicles were in heaviest use during standard business hours
+    (8am–5pm), creating a misalignment between peak grid service demand and peak vehicle
+    availability for FCAS raise services.
+  lesson_learnt: Commercial fleet V2G projects targeting FCAS raise services face
+    a structural availability conflict during business hours — project design should
+    target fleet segments with after-hours or non-standard operating patterns, or
+    implement incentive structures that align vehicle return times with peak FCAS
+    price windows.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id009
+  - 21
+  - 23
+  evidence_excerpt: Grid events commonly occurred during the afternoon hours, corresponding
+    to most discharge events, a time of day when vehicle availability to provide grid
+    services may be limited. Few FCAS raise grid events occurred at night when most
+    of these vehicles would be available to discharge, after their usual operating
+    hours.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+  markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  source_page_pdf: 21
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-51559
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Insights Final Report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Insights Final Report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+    markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-51560
+  source_title: ARENA - Vehicle to Grid - Insights Final Report
+  publish_date: 2024-02
+  project_name: Realising Electric Vehicle-to-Grid Services (REVS) Project
+  what_happened: All charging and discharging occurred on weekdays only, with approximately
+    99% of charging sessions and 100% of discharging sessions on weekdays, because
+    the trial sites were government offices operating 9am–5pm. This meant vehicles
+    did not participate in FCAS on weekends.
+  lesson_learnt: The REVS trial findings are not directly transferable to fleet operators
+    with non-standard hours (e.g. supermarkets, manufacturing, recreation facilities)
+    — future V2G trials should include a broader mix of operating profiles to generate
+    more generalisable insights about FCAS participation potential.
+  issue_severity: minor
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id010
+  - 4
+  - 22
+  evidence_excerpt: About 99% of charging sessions and 100% of discharging sessions
+    occurred on weekdays... The results of this trial therefore may not be applicable
+    to businesses that operate outside of these hours, such as recreation facilities,
+    supermarkets, and manufacturing plants.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+  markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-51560
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Insights Final Report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Insights Final Report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+    markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-51561
+  source_title: ARENA - Vehicle to Grid - Insights Final Report
+  publish_date: 2024-02
+  project_name: Realising Electric Vehicle-to-Grid Services (REVS) Project
+  what_happened: During peak charging periods, average charger power was approximately
+    5.5 kW rather than the 7 kW maximum, because vehicle battery management systems
+    reduced charging rates when SOC fell outside the 20–80% range, and many vehicles
+    arrived with high SOC due to limited daily driving.
+  lesson_learnt: V2G capacity modelling should not assume chargers operate at rated
+    power — EV battery management systems constrain charge rates at high and low SOC,
+    and fleets with limited daily mileage will systematically under-utilise charger
+    capacity, reducing effective FCAS bid capacity.
+  issue_severity: minor
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id011
+  - 19
+  evidence_excerpt: While the vehicle has a maximum AC charging power limit of 7 kW,
+    during peak periods the average power hovered around just 5.5 kW. This could potentially
+    be due to the internal technology of some EVs, which restrains the charging of
+    their batteries to protect their longevity when their SOC falls outside the lower
+    and upper limits of 20% and 80%, respectively.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+  markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  source_page_pdf: 19
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-51561
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Insights Final Report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Insights Final Report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+    markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-51562
+  source_title: ARENA - Vehicle to Grid - Insights Final Report
+  publish_date: 2024-02
+  project_name: Realising Electric Vehicle-to-Grid Services (REVS) Project
+  what_happened: The regulation FCAS market offered the highest potential revenue
+    per vehicle (up to ~$12,000 raise, ~$9,000 lower) but was excluded from the trial
+    due to concerns that frequent charge/discharge cycling would accelerate battery
+    degradation and reduce the viability of the use case.
+  lesson_learnt: Regulation FCAS participation by EVs should be approached with caution
+    and supported by battery degradation modelling before inclusion in a V2G business
+    case — the revenue ceiling is attractive but the cycling impact is a material
+    risk that could erode net returns, particularly as V2G market saturation increases.
+  issue_severity: minor
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id012
+  - 4
+  - 25
+  evidence_excerpt: Due to the nature of the FCAS regulation market, which reacts
+    to lots of small changes in grid frequency, participating in this market could
+    result in batteries sustaining increased charge/discharge cycles... regulation
+    FCAS had the greatest potential for profit, it was not considered for this trial
+    because the wear and tear of the frequent battery charging/discharging that participating
+    in this market requires makes the use case much less feasible than bidding into
+    contingency markets.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+  markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-51562
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Insights Final Report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Insights Final Report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+    markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+- record_id: ARENA-DLV-51563
+  source_title: ARENA - Vehicle to Grid - Insights Final Report
+  publish_date: 2024-02
+  project_name: Realising Electric Vehicle-to-Grid Services (REVS) Project
+  what_happened: Increasing charger capacity from 7 kW to 15 kW in modelling raised
+    the estimated 60-second raise FCAS revenue per vehicle from approximately $2,600
+    to $5,604, demonstrating a strong relationship between charger power rating and
+    FCAS revenue potential.
+  lesson_learnt: Charger power rating is a key design lever for V2G FCAS business
+    cases — upgrading from 7 kW to 15 kW AC chargers more than doubles modelled 60-second
+    contingency raise revenue per vehicle and should be evaluated as a cost-effective
+    investment for fleet operators targeting FCAS markets.
+  issue_severity: none
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id013
+  - 4
+  - 25
+  evidence_excerpt: The revenue that can be earned is further limited by the capacity
+    of the charger. For example, if the charger capacity were raised to 15kW, the
+    60-second raise revenue per vehicle would increase to $5,604.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+  markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-51563
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Insights Final Report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Insights Final Report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+    markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+- record_id: ARENA-DLV-51564
+  source_title: ARENA - Vehicle to Grid - Insights Final Report
+  publish_date: 2024-02
+  project_name: Realising Electric Vehicle-to-Grid Services (REVS) Project
+  what_happened: FCAS prices in 2022 typically peaked in the late afternoon, which
+    aligned with the return of commercial fleet vehicles before end of business day,
+    indicating a favourable timing coincidence for commercial fleet V2G participation
+    in FCAS raise markets.
+  lesson_learnt: Commercial fleet V2G projects targeting FCAS raise markets benefit
+    from a natural alignment between peak FCAS price windows (late afternoon) and
+    vehicle return times for 9am–5pm operations — this should be quantified and highlighted
+    in business case development for fleet electrification programs.
+  issue_severity: none
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id014
+  - 4
+  - 24
+  evidence_excerpt: FCAS prices in 2022 typically peaked in late afternoon, which
+    aligned well with vehicle availability, because most vehicles were returned by
+    this time to charge overnight. This analysis indicates high revenue potential
+    from using idle capacity of plugged-in EVs for FCAS raise services.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+  markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  source_page_pdf: 24
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-51564
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Insights Final Report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Insights Final Report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+    markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+- record_id: ARENA-DLV-51565
+  source_title: ARENA - Vehicle to Grid - Insights Final Report
+  publish_date: 2024-02
+  project_name: Realising Electric Vehicle-to-Grid Services (REVS) Project
+  what_happened: Future growth in V2G adoption could saturate the FCAS market with
+    available capacity from EV batteries and other consumer energy resources, potentially
+    depressing FCAS prices and reducing the revenue case for EV owners, particularly
+    in the context of increased battery wear.
+  lesson_learnt: V2G FCAS business cases should be stress-tested against market saturation
+    scenarios — as V2G scales, FCAS prices may fall materially, and fleet operators
+    who adopted V2G on the basis of 2022 revenue levels may face eroded returns, particularly
+    in the regulation market where battery wear is also a concern.
+  issue_severity: minor
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id015
+  - 4
+  - 28
+  evidence_excerpt: Should V2G grow in popularity, FCAS prices and revenues might
+    fall due to an increased supply of energy resources capable of frequency control.
+    That scenario could make the business case less appealing because EV owners may
+    not want to risk increased battery wear and tear amid a market with diminishing
+    monetary returns.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+  markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-51565
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Insights Final Report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Insights Final Report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Insights-Final-Report.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-insights-final-report/
+    markdown_filename: arena_vehicle_to_grid_insights_final_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.92

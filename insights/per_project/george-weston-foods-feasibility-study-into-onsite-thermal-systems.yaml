@@ -1,0 +1,1932 @@
+- record_id: ARENA-DLV-18553
+  source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+    - Lessons Learnt Report 1
+  publish_date: 2024-08
+  project_name: DON Smallgoods – Feasibility Study into Onsite Thermal Systems
+  what_happened: Metering and data integration at the Don Castlemaine site was significantly
+    more complex, time-consuming, and costly than originally anticipated. The study
+    aimed to install 14 new flow meters, 44 electrical metering points, and integrate
+    approximately 500 additional SCADA data points, but execution encountered multiple
+    compounding obstacles including access constraints, incomplete documentation,
+    incorrectly installed existing meters, and a concurrent SCADA migration.
+  lesson_learnt: Feasibility studies at large, complex industrial facilities should
+    substantially increase the time, budget, and resource estimates for metering and
+    data integration work — the combination of production access restrictions, outdated
+    plant documentation, non-standardised legacy instrumentation, and concurrent IT/OT
+    migrations can multiply the effort required far beyond initial estimates.
+  issue_severity: major
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: industrial operator
+  delay_category: data/validation/testing
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: Funding was allocated mid-project to install 13 steam/hot water
+    flow meters and 10 electrical submeters, integrated into the CoolPlanetOS energy
+    monitoring platform, enabling sufficient data collection for feasibility conclusions
+    despite the short measurement window.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: industrial renewables
+  source_pages:
+  - 7
+  - 8
+  - 41
+  - 59
+  evidence_excerpt: Establishing a comprehensive, high quality energy system metering
+    capability was more complex, time consuming and costly than initially estimated.
+    The analysis of steam use at a process level is based on data from a short measurement
+    period due to delays caused by the complexity of the metering installation program.
+  confidence_note: delay_magnitude set to not quantified as no specific duration of
+    delay is stated; issue_severity set to major based on executive summary statement
+    that execution 'taken longer, been more resource intensive and more costly than
+    originally anticipated'. Canonical record merged from 2 source records across
+    2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/george-weston-foods-feasibility-study-into-onsite-thermal-systems/
+  kb_category: Renewables for industry
+  kb_publish_date: 21/01/2025
+  kb_year: '2024'
+  kb_associated_project: George Weston Foods - Feasibility Study into Onsite Thermal
+    Systems
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $243k
+  total_project_value: $534k
+  lead_organisation: 'George Weston Foods Limited '
+  arena_program: Industrial Energy Transformation Studies (IETS) Program
+  project_status: Past
+  project_start_date: 26/02/2024
+  location: Castlemaine, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/01/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Lessons-Learnt-Report-1.pdf
+  markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_lessons_learnt_report_1.md
+  source_page_pdf: 7
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-16801
+  - ARENA-DLV-18553
+  contributing_source_titles:
+  - George Weston Foods' Feasibility Study into Onsite Thermal Systems - Study Report
+  - George Weston Foods' Feasibility Study into Onsite Thermal Systems - Lessons Learnt
+    Report 1
+  contributing_sources:
+  - source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+      - Study Report
+    pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+    source_pages:
+    - 41
+    - 59
+    source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+    markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  - source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+      - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2025/01/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Lessons-Learnt-Report-1.pdf
+    source_pages:
+    - 7
+    - 8
+    source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-lessons-learnt-report-1/
+    markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_lessons_learnt_report_1.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: cost overrun
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-16802
+  source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+    - Study Report
+  publish_date: 2025-08
+  project_name: George Weston Foods DON KRC Castlemaine Thermal Systems Feasibility
+    Study
+  what_happened: The P2 plant's refrigeration system evolved organically over 40 years
+    into a patchwork of two separate ammonia plants of approximately equal capacity,
+    with no accurate metering of compressor power or energy flows at the time of the
+    study. Refrigeration power had to be estimated using short-term current logging
+    and assumed COP values, reducing the reliability of load sizing for the new design.
+  lesson_learnt: Install permanent electrical power metering on refrigeration compressors
+    as a priority — without it, load sizing for any upgrade or replacement plant must
+    rely on approximations that introduce significant design risk and will need to
+    be revisited during detailed engineering.
+  issue_severity: moderate
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: industrial operator
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Sub-metering of compressor power was initiated as a result of
+    the study to enable more accurate load sizing in future detailed design.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: industrial renewables
+  source_pages: &id001
+  - 40
+  - 45
+  evidence_excerpt: Currently, there is no permanent direct measurement of compressor
+    power. Instead, power values have been calculated using short term logging of
+    energy use to develop a current to power model... To improve the accuracy of power
+    use measurement, it is recommended to install electrical power metering on compressors,
+    as refrigeration is the largest electrical load on site.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+  project_page_url: https://arena.gov.au/projects/george-weston-foods-feasibility-study-into-onsite-thermal-systems/
+  kb_category: Renewables for industry
+  kb_publish_date: 1/09/2025
+  kb_year: '2024'
+  kb_associated_project: George Weston Foods - Feasibility Study into Onsite Thermal
+    Systems
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $243k
+  total_project_value: $534k
+  lead_organisation: 'George Weston Foods Limited '
+  arena_program: Industrial Energy Transformation Studies (IETS) Program
+  project_status: Past
+  project_start_date: 26/02/2024
+  location: Castlemaine, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+  markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  source_page_pdf: 40
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16802
+  contributing_source_titles:
+  - George Weston Foods' Feasibility Study into Onsite Thermal Systems - Study Report
+  contributing_sources:
+  - source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+      - Study Report
+    pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+    markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-18551
+  source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+    - Lessons Learnt Report 1
+  publish_date: 2024-08
+  project_name: DON Smallgoods – Feasibility Study into Onsite Thermal Systems
+  what_happened: Analysis of the Don Castlemaine refrigeration plants revealed that
+    the total heat rejected by ammonia refrigeration systems is directly comparable
+    in quantity to the thermal energy generated by the site's steam boilers, representing
+    a large waste heat resource currently rejected to atmosphere via air-cooled condensers.
+  lesson_learnt: For food manufacturing sites with concurrent refrigeration and process
+    heating loads, always compare total refrigeration heat rejection against steam/hot
+    water demand before designing any new thermal system — where these are comparable
+    in scale, heat pump-based waste heat recovery is likely to be economically viable
+    and should be investigated as the primary decarbonisation pathway.
+  issue_severity: none
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: industrial operator
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: industrial renewables
+  source_pages:
+  - 5
+  - 19
+  - 43
+  - 58
+  evidence_excerpt: The quantity of thermal heat rejected by the refrigeration systems
+    at Don Smallgoods Castlemaine is directly comparable to the amount of thermal
+    heat generation by the site steam systems. These large volumes of heat available
+    from the ammonia refrigeration plants are currently being rejected to atmosphere
+    by air cooled condensers.
+  confidence_note: outcome_class set to knowledge generated despite setback as this
+    is a feasibility study generating findings, not a completed project. Canonical
+    record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/george-weston-foods-feasibility-study-into-onsite-thermal-systems/
+  kb_category: Renewables for industry
+  kb_publish_date: 21/01/2025
+  kb_year: '2024'
+  kb_associated_project: George Weston Foods - Feasibility Study into Onsite Thermal
+    Systems
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $243k
+  total_project_value: $534k
+  lead_organisation: 'George Weston Foods Limited '
+  arena_program: Industrial Energy Transformation Studies (IETS) Program
+  project_status: Past
+  project_start_date: 26/02/2024
+  location: Castlemaine, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/01/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Lessons-Learnt-Report-1.pdf
+  markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_lessons_learnt_report_1.md
+  source_page_pdf: 5
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-16803
+  - ARENA-DLV-18551
+  contributing_source_titles:
+  - George Weston Foods' Feasibility Study into Onsite Thermal Systems - Study Report
+  - George Weston Foods' Feasibility Study into Onsite Thermal Systems - Lessons Learnt
+    Report 1
+  contributing_sources:
+  - source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+      - Study Report
+    pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+    source_pages:
+    - 19
+    - 43
+    - 58
+    source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+    markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  - source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+      - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2025/01/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Lessons-Learnt-Report-1.pdf
+    source_pages:
+    - 5
+    source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-lessons-learnt-report-1/
+    markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_lessons_learnt_report_1.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-16804
+  source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+    - Study Report
+  publish_date: 2025-08
+  project_name: George Weston Foods DON KRC Castlemaine Thermal Systems Feasibility
+    Study
+  what_happened: Steam was being used in the P2 plant to heat fermentation and maturation
+    rooms and smokehouses to process temperatures of 40°C–70°C. The feasibility study
+    found that hot water at 80°C could directly replace steam in these applications
+    without affecting process performance, as confirmed in consultation with the equipment
+    manufacturer.
+  lesson_learnt: When evaluating heat recovery options for industrial decarbonisation,
+    assess the temperature requirements of each process stream separately — if reclaimed
+    heat can substitute steam directly (minimal disruption) versus requiring process
+    redesign (costly but more efficient), the two pathways have very different business
+    cases and should be evaluated distinctly.
+  issue_severity: none
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: industrial operator
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: industrial renewables
+  source_pages:
+  - 6
+  - 43
+  - 45
+  - 50
+  evidence_excerpt: The form of reclaimed heat matters. If reclaimed waste heat can
+    be converted to saturated steam and replace existing steam, existing production
+    processes can be continued with minimal change and cost. Most production processes
+    require heat of only 85°C however, so opportunity exists to reconsider how DON
+    manufacture. This option will be more disruptive and costly but the longer-term
+    gains in energy and process efficiency may provide attractive business cases.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+  project_page_url: https://arena.gov.au/projects/george-weston-foods-feasibility-study-into-onsite-thermal-systems/
+  kb_category: Renewables for industry
+  kb_publish_date: 1/09/2025
+  kb_year: '2024'
+  kb_associated_project: George Weston Foods - Feasibility Study into Onsite Thermal
+    Systems
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $243k
+  total_project_value: $534k
+  lead_organisation: 'George Weston Foods Limited '
+  arena_program: Industrial Energy Transformation Studies (IETS) Program
+  project_status: Past
+  project_start_date: 26/02/2024
+  location: Castlemaine, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+  markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  source_page_pdf: 12
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-16804
+  - ARENA-DLV-18552
+  contributing_source_titles:
+  - George Weston Foods' Feasibility Study into Onsite Thermal Systems - Study Report
+  - George Weston Foods' Feasibility Study into Onsite Thermal Systems - Lessons Learnt
+    Report 1
+  contributing_sources:
+  - source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+      - Study Report
+    pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+    source_pages:
+    - 43
+    - 45
+    - 50
+    source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+    markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  - source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+      - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2025/01/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Lessons-Learnt-Report-1.pdf
+    source_pages:
+    - 6
+    source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-lessons-learnt-report-1/
+    markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_lessons_learnt_report_1.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-16805
+  source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+    - Study Report
+  publish_date: 2025-08
+  project_name: George Weston Foods DON KRC Castlemaine Thermal Systems Feasibility
+    Study
+  what_happened: The proposed electrification of P2 thermal systems (replacing steam
+    with heat-pump-derived hot water) would increase site electricity demand by 15%,
+    straining an already constrained electrical supply. The study found that a site
+    electrical supply upgrade would likely be required, though a planned 3.5 MW solar
+    installation would partially offset the additional load.
+  lesson_learnt: When planning industrial heat pump projects to replace gas/steam,
+    assess electrical supply capacity early — the step-change increase in site electrical
+    demand from heat pump operation frequently requires DNSP engagement and supply
+    upgrade works that must be sequenced with the thermal upgrade to avoid project
+    delays.
+  issue_severity: moderate
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: industrial operator
+  delay_category: grid connection/system studies
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: A feasibility study for increasing electrical supply to the site
+    was completed with the DNSP in parallel with the thermal systems study.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: industrial renewables
+  source_pages: &id002
+  - 16
+  - 56
+  evidence_excerpt: There would be a subsequent net increase of 15% in site electricity
+    use to operate the heat pumps. This is a significant amount in terms of the electricity
+    constraints on the site. Some of this could be mitigated by the planned installation
+    of a 3.5 MW solar array, however it is likely that there will need to be an upgrade
+    to the site electrical supply to meet the full demand of the heat pumps.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+  project_page_url: https://arena.gov.au/projects/george-weston-foods-feasibility-study-into-onsite-thermal-systems/
+  kb_category: Renewables for industry
+  kb_publish_date: 1/09/2025
+  kb_year: '2024'
+  kb_associated_project: George Weston Foods - Feasibility Study into Onsite Thermal
+    Systems
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $243k
+  total_project_value: $534k
+  lead_organisation: 'George Weston Foods Limited '
+  arena_program: Industrial Energy Transformation Studies (IETS) Program
+  project_status: Past
+  project_start_date: 26/02/2024
+  location: Castlemaine, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+  markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  source_page_pdf: 16
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16805
+  contributing_source_titles:
+  - George Weston Foods' Feasibility Study into Onsite Thermal Systems - Study Report
+  contributing_sources:
+  - source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+      - Study Report
+    pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+    markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-16806
+  source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+    - Study Report
+  publish_date: 2025-08
+  project_name: George Weston Foods DON KRC Castlemaine Thermal Systems Feasibility
+    Study
+  what_happened: The P2 facility stores approximately 15 tonnes of ammonia across
+    its refrigeration plants, with pumped liquid ammonia distributed throughout the
+    production facility. This posed a significant health and safety risk given the
+    facility's 1,200+ employees and proximity to a hospital. The existing design had
+    ammonia distributed in evaporators, pipes, receivers, and surge drums throughout
+    the plant rather than contained within a plant room.
+  lesson_learnt: When designing or upgrading refrigeration systems at large food manufacturing
+    sites, prioritise containment of ammonia refrigerant within the plant room by
+    using secondary refrigerants (glycol, CO2) for distribution — this can reduce
+    ammonia charge in occupied plant areas by up to 80% while maintaining system efficiency.
+  issue_severity: major
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: industrial operator
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: The proposed design uses glycol as the secondary refrigerant
+    for all medium temperature applications, containing ammonia within packaged plant
+    room units and reducing the P2 ammonia charge by an estimated 80%.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: industrial renewables
+  source_pages: &id003
+  - 42
+  - 59
+  - 60
+  evidence_excerpt: Currently, around 15 tonnes of ammonia is used across the three
+    main refrigeration plants on site. This has raised concern from the DON Smallgoods
+    group as the Castlemaine plant has a large number of employees on site and is
+    situated in close proximity to a hospital.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+  project_page_url: https://arena.gov.au/projects/george-weston-foods-feasibility-study-into-onsite-thermal-systems/
+  kb_category: Renewables for industry
+  kb_publish_date: 1/09/2025
+  kb_year: '2024'
+  kb_associated_project: George Weston Foods - Feasibility Study into Onsite Thermal
+    Systems
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $243k
+  total_project_value: $534k
+  lead_organisation: 'George Weston Foods Limited '
+  arena_program: Industrial Energy Transformation Studies (IETS) Program
+  project_status: Past
+  project_start_date: 26/02/2024
+  location: Castlemaine, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+  markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  source_page_pdf: 42
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16806
+  contributing_source_titles:
+  - George Weston Foods' Feasibility Study into Onsite Thermal Systems - Study Report
+  contributing_sources:
+  - source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+      - Study Report
+    pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+    markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-16807
+  source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+    - Study Report
+  publish_date: 2025-08
+  project_name: George Weston Foods DON KRC Castlemaine Thermal Systems Feasibility
+    Study
+  what_happened: The feasibility study found that switching from pumped ammonia to
+    glycol cooling coils in fermentation and maturation rooms may reduce cooling capacity
+    in those rooms due to the latent heat advantage of ammonia evaporator coils compared
+    to glycol coils of the same physical size. This risk to production capacity was
+    not fully quantified during the feasibility phase.
+  lesson_learnt: When converting ammonia evaporator coils to glycol coils in production
+    rooms with critical process requirements (e.g. fermentation), account for the
+    reduction in latent cooling capacity and engage the equipment supplier early to
+    quantify production impact — this should be resolved at feasibility stage, not
+    deferred to detailed design.
+  issue_severity: moderate
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: industrial operator
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: The issue was flagged for resolution during the detailed design
+    phase, with further investigation by the equipment supplier identified as a required
+    next step.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: industrial renewables
+  source_pages: &id004
+  - 47
+  - 60
+  evidence_excerpt: Due to the latent cooling in the ammonia evaporator coils, the
+    size of the coils is smaller than a glycol coil of the same capacity. Subsequently,
+    reduction of process cooling capacity may adversely impact production capacity
+    in some rooms. This issue requires further investigation to quantify and will
+    be addressed during the detailed design phase.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+  project_page_url: https://arena.gov.au/projects/george-weston-foods-feasibility-study-into-onsite-thermal-systems/
+  kb_category: Renewables for industry
+  kb_publish_date: 1/09/2025
+  kb_year: '2024'
+  kb_associated_project: George Weston Foods - Feasibility Study into Onsite Thermal
+    Systems
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $243k
+  total_project_value: $534k
+  lead_organisation: 'George Weston Foods Limited '
+  arena_program: Industrial Energy Transformation Studies (IETS) Program
+  project_status: Past
+  project_start_date: 26/02/2024
+  location: Castlemaine, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+  markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  source_page_pdf: 47
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16807
+  contributing_source_titles:
+  - George Weston Foods' Feasibility Study into Onsite Thermal Systems - Study Report
+  contributing_sources:
+  - source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+      - Study Report
+    pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+    markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-16808
+  source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+    - Study Report
+  publish_date: 2025-08
+  project_name: George Weston Foods DON KRC Castlemaine Thermal Systems Feasibility
+    Study
+  what_happened: The space-constrained site required a multi-level steel structure
+    to accommodate the new centralised refrigeration plant within the available footprint
+    on the eastern side of P2, stacking six packaged plant units two high with condensers
+    on the upper level. This was identified as a key challenge to consolidation, with
+    crane access and construction sequencing adding complexity to the installation
+    plan.
+  lesson_learnt: On space-constrained industrial sites, consolidation of refrigeration
+    to a centralised plant requires detailed site layout and crane access planning
+    at feasibility stage — if vertical stacking structures are required, these add
+    cost and construction complexity that should be captured in the capital estimate
+    and construction staging plan.
+  issue_severity: moderate
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: industrial operator
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: A multi-level steel structure was incorporated into the concept
+    design to stack plant units within the constrained footprint, with a phased construction
+    sequence developed to maintain production continuity during works.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: industrial renewables
+  source_pages: &id005
+  - 53
+  - 60
+  evidence_excerpt: A key challenge then becomes finding a suitable location for a
+    large consolidated refrigeration plant in addition to the two existing refrigeration
+    plants in a space constrained site. The feasibility design relies on a multi level
+    plant design with a minimum footprint to located outside the existing building.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+  project_page_url: https://arena.gov.au/projects/george-weston-foods-feasibility-study-into-onsite-thermal-systems/
+  kb_category: Renewables for industry
+  kb_publish_date: 1/09/2025
+  kb_year: '2024'
+  kb_associated_project: George Weston Foods - Feasibility Study into Onsite Thermal
+    Systems
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $243k
+  total_project_value: $534k
+  lead_organisation: 'George Weston Foods Limited '
+  arena_program: Industrial Energy Transformation Studies (IETS) Program
+  project_status: Past
+  project_start_date: 26/02/2024
+  location: Castlemaine, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+  markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  source_page_pdf: 60
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16808
+  contributing_source_titles:
+  - George Weston Foods' Feasibility Study into Onsite Thermal Systems - Study Report
+  contributing_sources:
+  - source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+      - Study Report
+    pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+    markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-16809
+  source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+    - Study Report
+  publish_date: 2025-08
+  project_name: George Weston Foods DON KRC Castlemaine Thermal Systems Feasibility
+    Study
+  what_happened: The installation of the new hot water distribution network to replace
+    distributed steam users across the P2 plant was identified as a significant proportion
+    of total project cost (~20% of the $27.6m capital estimate for ammonia reduction
+    and distribution changes alone), driven by the dispersed layout of steam users
+    across the facility and the high-precision requirements of salami process rooms
+    requiring coil replacement.
+  lesson_learnt: For industrial sites with widely distributed steam users, the cost
+    of new hot water distribution pipework and coil replacement is a major capital
+    item that can dominate the project economics — sites with more concentrated steam
+    loads will achieve better returns on heat pump investment, and this factor should
+    be assessed early in feasibility to prioritise which plants to target.
+  issue_severity: moderate
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: industrial operator
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: industrial renewables
+  source_pages: &id006
+  - 60
+  - 61
+  evidence_excerpt: One of the challenges with replacing steam use on a large complex
+    industrial site such as this is that the steam users are distributed across the
+    site and the installation of the new hot water distribution network is a significant
+    proportion of the project cost. Sites with more concentrated steam use could have
+    lower implementation costs. Additionally, the Salami processes require high precision
+    in airflows making heating coil replacement costs high.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+  project_page_url: https://arena.gov.au/projects/george-weston-foods-feasibility-study-into-onsite-thermal-systems/
+  kb_category: Renewables for industry
+  kb_publish_date: 1/09/2025
+  kb_year: '2024'
+  kb_associated_project: George Weston Foods - Feasibility Study into Onsite Thermal
+    Systems
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $243k
+  total_project_value: $534k
+  lead_organisation: 'George Weston Foods Limited '
+  arena_program: Industrial Energy Transformation Studies (IETS) Program
+  project_status: Past
+  project_start_date: 26/02/2024
+  location: Castlemaine, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+  markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  source_page_pdf: 61
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16809
+  contributing_source_titles:
+  - George Weston Foods' Feasibility Study into Onsite Thermal Systems - Study Report
+  contributing_sources:
+  - source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+      - Study Report
+    pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+    markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-16810
+  source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+    - Study Report
+  publish_date: 2025-08
+  project_name: George Weston Foods DON KRC Castlemaine Thermal Systems Feasibility
+    Study
+  what_happened: The study found that Phase Change Material (PCM) thermal storage,
+    investigated as a means to dispatch megawatt-scale demand reductions for grid
+    services, was uneconomic at over $1,200,000 per MWh of electrical demand shifted,
+    yielding a payback period of more than 25 years. The fundamental barrier was the
+    small temperature differentials (~5°C) in the glycol system, which would require
+    megalitres of sensible heat storage to achieve comparable energy storage without
+    PCM.
+  lesson_learnt: PCM thermal storage is not economically viable for industrial refrigeration
+    demand response applications at current market prices — do not include it in the
+    business case for industrial heat pump or refrigeration projects; instead, focus
+    on lower-cost demand flexibility strategies such as thermal mass pre-cooling and
+    hot water pre-heating during solar generation periods.
+  issue_severity: none
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: industrial operator
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: industrial renewables
+  source_pages: &id007
+  - 14
+  - 52
+  evidence_excerpt: These systems are costly at over $1,200,000 per MWh electrical
+    demand. This means a payback more than 25 years and is not recommended.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+  project_page_url: https://arena.gov.au/projects/george-weston-foods-feasibility-study-into-onsite-thermal-systems/
+  kb_category: Renewables for industry
+  kb_publish_date: 1/09/2025
+  kb_year: '2024'
+  kb_associated_project: George Weston Foods - Feasibility Study into Onsite Thermal
+    Systems
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $243k
+  total_project_value: $534k
+  lead_organisation: 'George Weston Foods Limited '
+  arena_program: Industrial Energy Transformation Studies (IETS) Program
+  project_status: Past
+  project_start_date: 26/02/2024
+  location: Castlemaine, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+  markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16810
+  contributing_source_titles:
+  - George Weston Foods' Feasibility Study into Onsite Thermal Systems - Study Report
+  contributing_sources:
+  - source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+      - Study Report
+    pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+    markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-16811
+  source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+    - Study Report
+  publish_date: 2025-08
+  project_name: George Weston Foods DON KRC Castlemaine Thermal Systems Feasibility
+    Study
+  what_happened: The cogeneration plant on site, originally designed to produce both
+    steam and hot water from exhaust heat, no longer produces steam — only hot water
+    recovery is operational. The cogeneration units consumed 62% of site natural gas,
+    and their partial decommissioning from baseload to backup/demand-response mode
+    was already underway during the study period.
+  lesson_learnt: When assessing a site's decarbonisation pathway, account for the
+    planned transition of cogeneration assets — retiring baseload cogeneration releases
+    thermal energy supply that must be replaced, and this transition must be sequenced
+    carefully with electrification projects to avoid creating an energy supply gap.
+  issue_severity: moderate
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: industrial operator
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Transition of the cogeneration plant from baseload to island
+    backup/demand response was underway as part of a broader site decarbonisation
+    roadmap, coordinated with heat pump and electrical supply upgrade projects.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: industrial renewables
+  source_pages: &id008
+  - 28
+  - 56
+  evidence_excerpt: While the steam system is no longer functional, the hot water
+    system heat recovery system is used to preheat the P5 sanitary hot water generation
+    plant... Transition of cogeneration plant from baseload power to island backup
+    function/demand response – Underway.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+  project_page_url: https://arena.gov.au/projects/george-weston-foods-feasibility-study-into-onsite-thermal-systems/
+  kb_category: Renewables for industry
+  kb_publish_date: 1/09/2025
+  kb_year: '2024'
+  kb_associated_project: George Weston Foods - Feasibility Study into Onsite Thermal
+    Systems
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $243k
+  total_project_value: $534k
+  lead_organisation: 'George Weston Foods Limited '
+  arena_program: Industrial Energy Transformation Studies (IETS) Program
+  project_status: Past
+  project_start_date: 26/02/2024
+  location: Castlemaine, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+  markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  source_page_pdf: 28
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16811
+  contributing_source_titles:
+  - George Weston Foods' Feasibility Study into Onsite Thermal Systems - Study Report
+  contributing_sources:
+  - source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+      - Study Report
+    pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+    markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-16812
+  source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+    - Study Report
+  publish_date: 2025-08
+  project_name: George Weston Foods DON KRC Castlemaine Thermal Systems Feasibility
+    Study
+  what_happened: The steam measurement data for the P2 plant process areas was derived
+    from only two weeks of sub-meter data collected after new meters were installed
+    during the study, due to delays in the metering installation program. The study
+    acknowledged this was a limitation and that longer measurement periods are recommended
+    before finalising system design.
+  lesson_learnt: Do not finalise heat pump or waste-heat-recovery system sizing based
+    on short measurement periods — a minimum of several months of sub-metered data
+    across seasonal and production variation is needed; if this cannot be achieved
+    within the feasibility study timeline, flag it explicitly and defer final equipment
+    sizing to the detailed design phase.
+  issue_severity: moderate
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: industrial operator
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The study explicitly flagged that analysis from a longer measurement
+    period is recommended before finalising system design, and noted that ongoing
+    data collection via CoolPlanetOS would support the future detailed design phase.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: industrial renewables
+  source_pages: &id009
+  - 30
+  - 59
+  evidence_excerpt: The analysis of steam use at a process level is based on data
+    from a short measurement period due to delays caused by the complexity of the
+    metering installation program. There is no reason to believe that the conclusions
+    drawn from the data are not valid, however analysis from a longer measurement
+    period is recommended before finalising system design.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+  project_page_url: https://arena.gov.au/projects/george-weston-foods-feasibility-study-into-onsite-thermal-systems/
+  kb_category: Renewables for industry
+  kb_publish_date: 1/09/2025
+  kb_year: '2024'
+  kb_associated_project: George Weston Foods - Feasibility Study into Onsite Thermal
+    Systems
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $243k
+  total_project_value: $534k
+  lead_organisation: 'George Weston Foods Limited '
+  arena_program: Industrial Energy Transformation Studies (IETS) Program
+  project_status: Past
+  project_start_date: 26/02/2024
+  location: Castlemaine, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+  markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  source_page_pdf: 30
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16812
+  contributing_source_titles:
+  - George Weston Foods' Feasibility Study into Onsite Thermal Systems - Study Report
+  contributing_sources:
+  - source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+      - Study Report
+    pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+    markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-16813
+  source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+    - Study Report
+  publish_date: 2025-08
+  project_name: George Weston Foods DON KRC Castlemaine Thermal Systems Feasibility
+    Study
+  what_happened: The feasibility study demonstrated that integrating new sub-metering
+    data with over 500 existing SCADA/BMS data points into a purpose-built energy
+    monitoring platform (CoolPlanetOS) enabled comprehensive energy mapping, opportunity
+    identification, and ongoing tracking — providing a data foundation that would
+    not have been possible from billing data or sparse site meters alone.
+  lesson_learnt: Invest in integrating existing SCADA/BMS data points into a unified
+    energy analytics platform alongside new sub-meters at the start of a feasibility
+    study — the marginal cost of integrating already-captured data tags is low and
+    the analytical benefit is high, enabling characterisation of energy systems that
+    would otherwise require costly new instrumentation.
+  issue_severity: none
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: industrial operator
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: industrial renewables
+  source_pages: &id010
+  - 41
+  - 59
+  evidence_excerpt: Large benefits can be obtained at minor cost using the resources
+    involved in metering and integration of data tags to integrate additional existing
+    tags already in the SCADA / BMS etc. Significant effort has been made to collect
+    over 500 relevant data points into Ignition and subsequently into the CPOS platform.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+  project_page_url: https://arena.gov.au/projects/george-weston-foods-feasibility-study-into-onsite-thermal-systems/
+  kb_category: Renewables for industry
+  kb_publish_date: 1/09/2025
+  kb_year: '2024'
+  kb_associated_project: George Weston Foods - Feasibility Study into Onsite Thermal
+    Systems
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $243k
+  total_project_value: $534k
+  lead_organisation: 'George Weston Foods Limited '
+  arena_program: Industrial Energy Transformation Studies (IETS) Program
+  project_status: Past
+  project_start_date: 26/02/2024
+  location: Castlemaine, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+  markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  source_page_pdf: 59
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16813
+  contributing_source_titles:
+  - George Weston Foods' Feasibility Study into Onsite Thermal Systems - Study Report
+  contributing_sources:
+  - source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+      - Study Report
+    pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+    markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-16814
+  source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+    - Study Report
+  publish_date: 2025-08
+  project_name: George Weston Foods DON KRC Castlemaine Thermal Systems Feasibility
+    Study
+  what_happened: The feasibility study found that load-shifting refrigeration demand
+    using the thermal mass of the refrigerated spaces — by pre-cooling rooms during
+    solar generation periods and allowing temperatures to rise within acceptable bands
+    during peak grid periods — could save approximately $12,000 per annum and 30 tonnes
+    of GHG without any capital investment beyond the new glycol control system.
+  lesson_learnt: Centralised glycol cooling distribution with improved coil control
+    enables demand flexibility at low incremental cost — building this capability
+    into the refrigeration upgrade design from the outset allows industrial operators
+    to shift refrigeration load to coincide with on-site solar generation and capture
+    immediate operating cost savings.
+  issue_severity: none
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: industrial operator
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: industrial renewables
+  source_pages: &id011
+  - 13
+  - 51
+  evidence_excerpt: Shifting of 10% of average cooling demand for 4 hours per day
+    from being supplied by internally generated solar to afternoon shift with grid
+    electricity would save in the order of $12,000 per annum and over 30 Tonnes of
+    GHG.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+  project_page_url: https://arena.gov.au/projects/george-weston-foods-feasibility-study-into-onsite-thermal-systems/
+  kb_category: Renewables for industry
+  kb_publish_date: 1/09/2025
+  kb_year: '2024'
+  kb_associated_project: George Weston Foods - Feasibility Study into Onsite Thermal
+    Systems
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $243k
+  total_project_value: $534k
+  lead_organisation: 'George Weston Foods Limited '
+  arena_program: Industrial Energy Transformation Studies (IETS) Program
+  project_status: Past
+  project_start_date: 26/02/2024
+  location: Castlemaine, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+  markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16814
+  contributing_source_titles:
+  - George Weston Foods' Feasibility Study into Onsite Thermal Systems - Study Report
+  contributing_sources:
+  - source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+      - Study Report
+    pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+    markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-16815
+  source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+    - Study Report
+  publish_date: 2025-08
+  project_name: George Weston Foods DON KRC Castlemaine Thermal Systems Feasibility
+    Study
+  what_happened: The total budgetary capital cost for the P2 refrigeration and heat
+    recovery upgrade was estimated at $27.6m, compared to a previous estimate of $11m
+    for refrigeration consolidation and modernisation alone. The additional $16.6m
+    represents the cost of heat pump integration, glycol distribution, hot water systems,
+    and electrical upgrades required to capture the waste heat opportunity.
+  lesson_learnt: When appraising industrial refrigeration replacement alongside heat
+    recovery integration, plan for capital costs significantly higher than a like-for-like
+    replacement — in this case, adding heat recovery, glycol distribution, and electrical
+    upgrades more than doubled the estimate; however, the operating cost savings ($609k/year)
+    and emissions reductions justify the additional scope when evaluated on a whole-of-life
+    basis.
+  issue_severity: none
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: industrial operator
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: industrial renewables
+  source_pages: &id012
+  - 8
+  - 17
+  - 57
+  evidence_excerpt: The expected budgetary capital cost of the refrigeration and heating
+    systems upgrade in P2 is $27.6m. The cost of consolidation and modernisation of
+    the refrigeration plant alone has been previously estimated at $11m. The project
+    will save over $600k per annum in operating cost and reduce site natural gas use
+    by 24%.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+  project_page_url: https://arena.gov.au/projects/george-weston-foods-feasibility-study-into-onsite-thermal-systems/
+  kb_category: Renewables for industry
+  kb_publish_date: 1/09/2025
+  kb_year: '2024'
+  kb_associated_project: George Weston Foods - Feasibility Study into Onsite Thermal
+    Systems
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $243k
+  total_project_value: $534k
+  lead_organisation: 'George Weston Foods Limited '
+  arena_program: Industrial Energy Transformation Studies (IETS) Program
+  project_status: Past
+  project_start_date: 26/02/2024
+  location: Castlemaine, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+  markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16815
+  contributing_source_titles:
+  - George Weston Foods' Feasibility Study into Onsite Thermal Systems - Study Report
+  contributing_sources:
+  - source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+      - Study Report
+    pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+    markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-16816
+  source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+    - Study Report
+  publish_date: 2025-08
+  project_name: George Weston Foods DON KRC Castlemaine Thermal Systems Feasibility
+    Study
+  what_happened: The study identified that the heat pump and waste-heat-recovery solution
+    for the P2 plant is directly replicable across the meat processing and dairy industries,
+    where simultaneous refrigeration and medium-temperature process heating demands
+    (fermentation, washdown, pasteurisation) create comparable energy profiles. The
+    relevant industrial sub-segment was estimated at ~30.7 PJ of annual energy use,
+    with potential to abate 400,000 to 1 million tonnes of Scope 1 and 2 CO2e by 2030.
+  lesson_learnt: Feasibility findings from a refrigeration heat recovery project at
+    one food manufacturing site can be directly transferred to other sites in the
+    meat processing and dairy sectors — prioritise replication across the portfolio
+    by identifying sites with similar simultaneous heating and cooling profiles before
+    committing to site-specific detailed engineering.
+  issue_severity: none
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: industrial operator
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: industrial renewables
+  source_pages: &id013
+  - 9
+  - 62
+  evidence_excerpt: Replicable across meat processing and dairy industries with similar
+    refrigeration-heat profiles, this strategy could abate millions of tonnes CO2e
+    industry-wide... Climatech Zero has identified that within food and beverage manufacturers
+    identified (158 PJ) there exists a subset of manufacturers such as beverages,
+    dairy meat, poultry and frozen vegetables, that require both heating and cooling
+    demand for which this feasibility study is directly applicable (~30.7 PJ).
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+  project_page_url: https://arena.gov.au/projects/george-weston-foods-feasibility-study-into-onsite-thermal-systems/
+  kb_category: Renewables for industry
+  kb_publish_date: 1/09/2025
+  kb_year: '2024'
+  kb_associated_project: George Weston Foods - Feasibility Study into Onsite Thermal
+    Systems
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $243k
+  total_project_value: $534k
+  lead_organisation: 'George Weston Foods Limited '
+  arena_program: Industrial Energy Transformation Studies (IETS) Program
+  project_status: Past
+  project_start_date: 26/02/2024
+  location: Castlemaine, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+  markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16816
+  contributing_source_titles:
+  - George Weston Foods' Feasibility Study into Onsite Thermal Systems - Study Report
+  contributing_sources:
+  - source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+      - Study Report
+    pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+    markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-16817
+  source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+    - Study Report
+  publish_date: 2025-08
+  project_name: George Weston Foods DON KRC Castlemaine Thermal Systems Feasibility
+    Study
+  what_happened: The proposed construction and cutover sequence was specifically designed
+    to maintain production continuity throughout the installation of the new centralised
+    refrigeration plant — new plant would be constructed on the eastern side of P2
+    while existing plants remained operational, with individual rooms cut over from
+    ammonia to glycol sequentially before decommissioning the legacy systems.
+  lesson_learnt: For refrigeration upgrades at 24/7 food manufacturing facilities,
+    design the construction staging sequence as a primary constraint — building the
+    new plant in parallel with the existing system and sequencing individual room
+    cutovers minimises production downtime risk and is essential for operator and
+    management approval of the project.
+  issue_severity: none
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: industrial operator
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: industrial renewables
+  source_pages: &id014
+  - 15
+  - 54
+  - 60
+  evidence_excerpt: For production operations to be maintained during construction
+    and commissioning of the new plant it is required that the plant be constructed
+    in a location that allows the existing plant to remain in operation... Another
+    key advantage of a centralised plant is the ability to minimise interruptions
+    to operations during construction. The centralised plant can be constructed in
+    parallel with the existing plants and loads can be cut over in a stage fashion
+    with minimum production down time.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+  project_page_url: https://arena.gov.au/projects/george-weston-foods-feasibility-study-into-onsite-thermal-systems/
+  kb_category: Renewables for industry
+  kb_publish_date: 1/09/2025
+  kb_year: '2024'
+  kb_associated_project: George Weston Foods - Feasibility Study into Onsite Thermal
+    Systems
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $243k
+  total_project_value: $534k
+  lead_organisation: 'George Weston Foods Limited '
+  arena_program: Industrial Energy Transformation Studies (IETS) Program
+  project_status: Past
+  project_start_date: 26/02/2024
+  location: Castlemaine, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+  markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  source_page_pdf: 15
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16817
+  contributing_source_titles:
+  - George Weston Foods' Feasibility Study into Onsite Thermal Systems - Study Report
+  contributing_sources:
+  - source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+      - Study Report
+    pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+    markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-16818
+  source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+    - Study Report
+  publish_date: 2025-08
+  project_name: George Weston Foods DON KRC Castlemaine Thermal Systems Feasibility
+    Study
+  what_happened: 'The steam heat exchanger backup included in the new heat pump system
+    design serves a dual purpose: it provides redundancy when heat pumps cannot meet
+    hot water demand, and it enables fuel switching to manage electrical demand peaks
+    — allowing up to 3 MW of electrical demand to be dispatched to gas at times when
+    demand reduction has commercial value.'
+  lesson_learnt: When designing heat pump systems to replace steam, retain a steam
+    backup heat exchanger in the design — it provides both operational resilience
+    and a fuel-switching asset that can dispatch significant electrical demand reductions,
+    improving the commercial case for the project through demand market participation.
+  issue_severity: none
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: industrial operator
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: industrial renewables
+  source_pages: &id015
+  - 14
+  - 46
+  - 52
+  evidence_excerpt: An alternative use for this heat exchanger could be to prove a
+    fuel shifting alternative to demand constraints. This would allow despatch of
+    up to 3MW of electrical demand. This would come at a cost of increased energy
+    cost and gas use.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+  project_page_url: https://arena.gov.au/projects/george-weston-foods-feasibility-study-into-onsite-thermal-systems/
+  kb_category: Renewables for industry
+  kb_publish_date: 1/09/2025
+  kb_year: '2024'
+  kb_associated_project: George Weston Foods - Feasibility Study into Onsite Thermal
+    Systems
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $243k
+  total_project_value: $534k
+  lead_organisation: 'George Weston Foods Limited '
+  arena_program: Industrial Energy Transformation Studies (IETS) Program
+  project_status: Past
+  project_start_date: 26/02/2024
+  location: Castlemaine, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+  markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16818
+  contributing_source_titles:
+  - George Weston Foods' Feasibility Study into Onsite Thermal Systems - Study Report
+  contributing_sources:
+  - source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+      - Study Report
+    pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+    markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-16819
+  source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+    - Study Report
+  publish_date: 2025-08
+  project_name: George Weston Foods DON KRC Castlemaine Thermal Systems Feasibility
+    Study
+  what_happened: The P2 refrigeration system had no sub-metering of steam use at the
+    process level prior to the study. The P3 plant (newer, built 2011) had 5 steam
+    sub-meters across its processes, while P2 had none despite being the larger steam
+    consumer. This meant that the baseline for heat recovery design had to be established
+    from scratch as part of the feasibility study, consuming study budget and time.
+  lesson_learnt: Ensure process-level steam sub-metering is in place at any industrial
+    facility considering heat recovery — without it, baseline characterisation becomes
+    a major cost item in the feasibility study itself; facilities planning decarbonisation
+    should install steam sub-metering as a precursor investment rather than embedding
+    it in the feasibility scope.
+  issue_severity: moderate
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: industrial operator
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Twelve new steam and hot water flow meters were installed across
+    P2 process areas as part of the study, covering all major steam users including
+    salami fermentation, maturation, and smallgoods smokehouses.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: industrial renewables
+  source_pages: &id016
+  - 28
+  - 29
+  evidence_excerpt: The P3 plant has more comprehensive steam submetering than other
+    areas with 5 submeters covering the processes. The P2 plant had no submetering.
+    As part of the Study the following steam sub meters were installed...
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+  project_page_url: https://arena.gov.au/projects/george-weston-foods-feasibility-study-into-onsite-thermal-systems/
+  kb_category: Renewables for industry
+  kb_publish_date: 1/09/2025
+  kb_year: '2024'
+  kb_associated_project: George Weston Foods - Feasibility Study into Onsite Thermal
+    Systems
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $243k
+  total_project_value: $534k
+  lead_organisation: 'George Weston Foods Limited '
+  arena_program: Industrial Energy Transformation Studies (IETS) Program
+  project_status: Past
+  project_start_date: 26/02/2024
+  location: Castlemaine, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+  markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  source_page_pdf: 28
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16819
+  contributing_source_titles:
+  - George Weston Foods' Feasibility Study into Onsite Thermal Systems - Study Report
+  contributing_sources:
+  - source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+      - Study Report
+    pdf_url: https://arena.gov.au/assets/2025/09/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Study-Report.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-study-report/
+    markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_study_report.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-18554
+  source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+    - Lessons Learnt Report 1
+  publish_date: 2024-08
+  project_name: DON Smallgoods – Feasibility Study into Onsite Thermal Systems
+  what_happened: The Don Castlemaine site lacked personnel with end-to-end metering
+    installation and commissioning competence, and budget constraints prevented full
+    third-party contracting, creating a capability gap that contributed to delays
+    and quality issues in the metering program.
+  lesson_learnt: Industrial sites undertaking energy feasibility studies should assess
+    internal metering and instrumentation capability before committing to an ambitious
+    metering scope — where internal competency is low and third-party contracting
+    is budget-constrained, developing an internal skills program ahead of the project
+    will reduce execution risk and deliver lasting energy management capability.
+  issue_severity: moderate
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: industrial operator
+  delay_category: internal governance/resourcing
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: A professional development learning plan covering SCADA, metering,
+    data acquisition, and energy analysis was developed to build internal capability
+    and shift energy management from a projects-based to a business-as-usual activity.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: industrial renewables
+  source_pages: &id017
+  - 7
+  - 8
+  evidence_excerpt: Limited site-based personnel with end-to-end metering installation
+    and commissioning competence. Budget constraints that do not allow full 3rd party
+    contracting... An alternative approach is to develop skilled resources internally,
+    building competency and capability within the organisation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/george-weston-foods-feasibility-study-into-onsite-thermal-systems/
+  kb_category: Renewables for industry
+  kb_publish_date: 21/01/2025
+  kb_year: '2024'
+  kb_associated_project: George Weston Foods - Feasibility Study into Onsite Thermal
+    Systems
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $243k
+  total_project_value: $534k
+  lead_organisation: 'George Weston Foods Limited '
+  arena_program: Industrial Energy Transformation Studies (IETS) Program
+  project_status: Past
+  project_start_date: 26/02/2024
+  location: Castlemaine, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/01/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Lessons-Learnt-Report-1.pdf
+  markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_lessons_learnt_report_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-18554
+  contributing_source_titles:
+  - George Weston Foods' Feasibility Study into Onsite Thermal Systems - Lessons Learnt
+    Report 1
+  contributing_sources:
+  - source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+      - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2025/01/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Lessons-Learnt-Report-1.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-lessons-learnt-report-1/
+    markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_lessons_learnt_report_1.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-18555
+  source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+    - Lessons Learnt Report 1
+  publish_date: 2024-08
+  project_name: DON Smallgoods – Feasibility Study into Onsite Thermal Systems
+  what_happened: Outdated and incomplete plant documentation at the Don Castlemaine
+    site required additional investigation time during the metering program, and some
+    existing meters were found to be incorrectly installed and unvalidated, adding
+    rework to the scope.
+  lesson_learnt: Industrial energy feasibility studies should include an explicit
+    allowance for plant documentation review and rectification — at sites where drawings
+    and process documentation are not kept current, time and budget must be reserved
+    for investigation and documentation before metering installation can proceed reliably.
+  issue_severity: moderate
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: industrial operator
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: industrial renewables
+  source_pages: &id018
+  - 7
+  evidence_excerpt: Documentation of production plant and processes are not always
+    up to date and allowance needs to be made in projects for investigation and documentation.
+    Existing metering installed incorrectly, not validated.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/george-weston-foods-feasibility-study-into-onsite-thermal-systems/
+  kb_category: Renewables for industry
+  kb_publish_date: 21/01/2025
+  kb_year: '2024'
+  kb_associated_project: George Weston Foods - Feasibility Study into Onsite Thermal
+    Systems
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $243k
+  total_project_value: $534k
+  lead_organisation: 'George Weston Foods Limited '
+  arena_program: Industrial Energy Transformation Studies (IETS) Program
+  project_status: Past
+  project_start_date: 26/02/2024
+  location: Castlemaine, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/01/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Lessons-Learnt-Report-1.pdf
+  markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_lessons_learnt_report_1.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-18555
+  contributing_source_titles:
+  - George Weston Foods' Feasibility Study into Onsite Thermal Systems - Lessons Learnt
+    Report 1
+  contributing_sources:
+  - source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+      - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2025/01/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Lessons-Learnt-Report-1.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-lessons-learnt-report-1/
+    markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_lessons_learnt_report_1.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-18556
+  source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+    - Lessons Learnt Report 1
+  publish_date: 2024-08
+  project_name: DON Smallgoods – Feasibility Study into Onsite Thermal Systems
+  what_happened: A concurrent SCADA migration from legacy systems (Citect, Factory
+    Talk) to a new platform (Ignition) was underway during the study, compounding
+    the complexity of integrating new metering data points and managing tag naming
+    conventions across a large volume of data points.
+  lesson_learnt: When planning energy feasibility studies at industrial facilities,
+    check whether major IT/OT system migrations are in progress — concurrent SCADA
+    or BMS transitions significantly increase the complexity and cost of metering
+    integration and data tag management, and may require the study timeline to be
+    aligned with or staged around the migration.
+  issue_severity: moderate
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: industrial operator
+  delay_category: data/validation/testing
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: data & measurement
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: industrial renewables
+  source_pages: &id019
+  - 7
+  evidence_excerpt: Site SCADA transition underway – multiple old systems (Citect,
+    Factory Talk) being migrated to new (Ignition). Tag management – naming convention
+    / integration into Ignition / volume of data points required and resourcing required
+    to complete.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/george-weston-foods-feasibility-study-into-onsite-thermal-systems/
+  kb_category: Renewables for industry
+  kb_publish_date: 21/01/2025
+  kb_year: '2024'
+  kb_associated_project: George Weston Foods - Feasibility Study into Onsite Thermal
+    Systems
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $243k
+  total_project_value: $534k
+  lead_organisation: 'George Weston Foods Limited '
+  arena_program: Industrial Energy Transformation Studies (IETS) Program
+  project_status: Past
+  project_start_date: 26/02/2024
+  location: Castlemaine, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/01/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Lessons-Learnt-Report-1.pdf
+  markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_lessons_learnt_report_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-18556
+  contributing_source_titles:
+  - George Weston Foods' Feasibility Study into Onsite Thermal Systems - Lessons Learnt
+    Report 1
+  contributing_sources:
+  - source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+      - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2025/01/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Lessons-Learnt-Report-1.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-lessons-learnt-report-1/
+    markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_lessons_learnt_report_1.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-18557
+  source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+    - Lessons Learnt Report 1
+  publish_date: 2024-08
+  project_name: DON Smallgoods – Feasibility Study into Onsite Thermal Systems
+  what_happened: The metering infrastructure established for the feasibility study
+    — including 380 existing data points in CoolPlanetOS and the planned integration
+    of ~500 additional SCADA tags — was recognised as having enduring value beyond
+    the study itself, providing ongoing energy management data rather than being a
+    one-off study investment.
+  lesson_learnt: Design metering plans for industrial feasibility studies to deliver
+    enduring operational value — instrumentation and data integration established
+    during a study can directly support continuous improvement programs and future
+    energy project business cases, justifying higher upfront investment and shifting
+    energy management from a project activity to business-as-usual.
+  issue_severity: none
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: industrial operator
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: industrial renewables
+  source_pages: &id020
+  - 8
+  evidence_excerpt: Metering plans designed to support a feasibility study can provide
+    enduring value by providing data that informs ongoing energy management practices.
+    This supports continuous improvement initiatives as well as providing data required
+    to support design and development of larger energy project business cases.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/george-weston-foods-feasibility-study-into-onsite-thermal-systems/
+  kb_category: Renewables for industry
+  kb_publish_date: 21/01/2025
+  kb_year: '2024'
+  kb_associated_project: George Weston Foods - Feasibility Study into Onsite Thermal
+    Systems
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $243k
+  total_project_value: $534k
+  lead_organisation: 'George Weston Foods Limited '
+  arena_program: Industrial Energy Transformation Studies (IETS) Program
+  project_status: Past
+  project_start_date: 26/02/2024
+  location: Castlemaine, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/01/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Lessons-Learnt-Report-1.pdf
+  markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_lessons_learnt_report_1.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-18557
+  contributing_source_titles:
+  - George Weston Foods' Feasibility Study into Onsite Thermal Systems - Lessons Learnt
+    Report 1
+  contributing_sources:
+  - source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+      - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2025/01/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Lessons-Learnt-Report-1.pdf
+    source_pages: *id020
+    source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-lessons-learnt-report-1/
+    markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_lessons_learnt_report_1.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-18558
+  source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+    - Lessons Learnt Report 1
+  publish_date: 2024-08
+  project_name: DON Smallgoods – Feasibility Study into Onsite Thermal Systems
+  what_happened: During the metering and SCADA integration work, the team identified
+    that a large number of additional existing data tags already present in the site
+    SCADA/BMS systems could be integrated into the energy analytics platform at marginal
+    incremental cost while the integration work was already underway.
+  lesson_learnt: When mobilising metering or SCADA integration resources at an industrial
+    site, include a scoping step to identify all existing data tags that can be incorporated
+    at minimal additional cost — the marginal effort to integrate additional existing
+    tags during an active integration project is low and the resulting data can generate
+    significant ongoing energy management value.
+  issue_severity: none
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: industrial operator
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: industrial renewables
+  source_pages: &id021
+  - 9
+  evidence_excerpt: Large benefits can be obtained at minor cost using the resources
+    involved in metering and integration of data tags to integrate additional existing
+    tags already in the SCADA / BMS etc.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/george-weston-foods-feasibility-study-into-onsite-thermal-systems/
+  kb_category: Renewables for industry
+  kb_publish_date: 21/01/2025
+  kb_year: '2024'
+  kb_associated_project: George Weston Foods - Feasibility Study into Onsite Thermal
+    Systems
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $243k
+  total_project_value: $534k
+  lead_organisation: 'George Weston Foods Limited '
+  arena_program: Industrial Energy Transformation Studies (IETS) Program
+  project_status: Past
+  project_start_date: 26/02/2024
+  location: Castlemaine, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/01/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Lessons-Learnt-Report-1.pdf
+  markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_lessons_learnt_report_1.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-18558
+  contributing_source_titles:
+  - George Weston Foods' Feasibility Study into Onsite Thermal Systems - Lessons Learnt
+    Report 1
+  contributing_sources:
+  - source_title: George Weston Foods' Feasibility Study into Onsite Thermal Systems
+      - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2025/01/George-Weston-Foods-–-Feasibility-Study-into-Onsite-Thermal-Systems-Lessons-Learnt-Report-1.pdf
+    source_pages: *id021
+    source_url: https://arena.gov.au/knowledge-bank/george-weston-foods-feasibility-study-into-onsite-thermal-systems-lessons-learnt-report-1/
+    markdown_filename: george_weston_foods_feasibility_study_into_onsite_thermal_systems_lessons_learnt_report_1.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false

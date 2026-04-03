@@ -1,0 +1,2057 @@
+- record_id: ARENA-DLV-6901
+  source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+    Report 2
+  publish_date: 2025-05
+  project_name: Project Spark - ANC Last Mile Delivery Vehicle Electrification
+  what_happened: EV real-world range fell significantly short of pre-deployment projections
+    — LDV vehicles achieved approximately 200km versus the 250km+ projection (a 20%+
+    reduction), and JAC trucks achieved approximately 150km versus 200km+ (a 25%+
+    reduction). The shortfall was driven by tail-lift energy draw, stop-start urban
+    traffic cycles, and climate control loads.
+  lesson_learnt: Do not rely on manufacturer range specifications for route planning
+    in last-mile logistics — real-world operational conditions including tail-lift
+    use, air conditioning, and urban driving patterns can reduce range by 20–25%;
+    build this buffer into route design and charging schedules from the outset.
+  issue_severity: major
+  project_type: transport electrification
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: fleet/logistics operator
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: ANC introduced route-matching tools to align specific vehicles
+    with specific delivery runs based on derated range and payload, and confirmed
+    daily mid-shift top-up charging as operationally necessary.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages:
+  - 22
+  - 23
+  - 29
+  - 30
+  evidence_excerpt: 'Real-world driving conditions, including harsh braking, climate
+    control usage, and tail-lift operations, significantly reduce the range. For example:
+    LDV Cab Chassis: 200km (a 25%+ reduction from assumed range). JAC N90: 150km +
+    (a 20+% reduction from assumed range).'
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/anc-last-mile-delivery-ev/
+  kb_category: Electric vehicles
+  kb_publish_date: 18/07/2025
+  kb_year: '2024'
+  kb_associated_project: ANC - Last Mile Delivery EV
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $12.82m
+  total_project_value: $36.83m
+  lead_organisation: Fleets Flyers Pty Ltd (ANC)
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Bella Vista, New South Wales
+  project_partners: 'CarBon Leasing & Rentals Pty Ltd (CarBon)Origin Energy Electricity
+    Limited (Origin Energy)Leggo Studio Pty Ltd (Spotlumos Technology)Atecco - LDV
+    AustraliaJAC Motors '
+  pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+  markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-6901
+  - ARENA-DLV-24105
+  contributing_source_titles:
+  - ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt Report 2
+  - ANC Last Mile Delivery EV - Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+    source_pages:
+    - 22
+    - 29
+    - 30
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+    markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  - source_title: ANC Last Mile Delivery EV - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2025/02/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-1.pdf
+    source_pages:
+    - 22
+    - 23
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-ev-lessons-learnt-report-1/
+    markdown_filename: anc_last_mile_delivery_ev_lessons_learnt_report_1.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-6902
+  source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+    Report 2
+  publish_date: 2025-05
+  project_name: Project Spark - ANC Last Mile Delivery Vehicle Electrification
+  what_happened: DC fast charging underperformed against the assumed 100kW baseline
+    — LDV vehicles were capped at approximately 97kW and JAC trucks at approximately
+    90kW in real-world operation. AC overnight charging was capped at 11kW/hour and
+    was insufficient to deliver a full overnight charge for large-format vehicles
+    operating routes exceeding 150km.
+  lesson_learnt: Do not size depot charging infrastructure on nominal charger or vehicle
+    OEM specifications. Validate actual charging rates under field conditions for
+    the specific vehicle models and duty cycles involved before finalising infrastructure
+    investment and operational scheduling.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: fleet/logistics operator
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: ANC confirmed daily top-up charging across all EVs as operationally
+    necessary and prioritised investment in shared depot DC fast charging scaled to
+    actual fleet concentration and shift intensity.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages:
+  - 16
+  - 22
+  - 23
+  - 29
+  - 30
+  evidence_excerpt: Depot-based fast charging at 22kW is increasingly seen as a necessity
+    to ensure sufficient daily range... Trucks often do not achieve a full overnight
+    charge and require additional day-time charging due to higher operational demands.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/anc-last-mile-delivery-ev/
+  kb_category: Electric vehicles
+  kb_publish_date: 18/07/2025
+  kb_year: '2024'
+  kb_associated_project: ANC - Last Mile Delivery EV
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $12.82m
+  total_project_value: $36.83m
+  lead_organisation: Fleets Flyers Pty Ltd (ANC)
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Bella Vista, New South Wales
+  project_partners: 'CarBon Leasing & Rentals Pty Ltd (CarBon)Origin Energy Electricity
+    Limited (Origin Energy)Leggo Studio Pty Ltd (Spotlumos Technology)Atecco - LDV
+    AustraliaJAC Motors '
+  pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+  markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-6902
+  - ARENA-DLV-24107
+  contributing_source_titles:
+  - ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt Report 2
+  - ANC Last Mile Delivery EV - Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+    source_pages:
+    - 16
+    - 29
+    - 30
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+    markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  - source_title: ANC Last Mile Delivery EV - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2025/02/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-1.pdf
+    source_pages:
+    - 22
+    - 23
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-ev-lessons-learnt-report-1/
+    markdown_filename: anc_last_mile_delivery_ev_lessons_learnt_report_1.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: design assumption failure, technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-6903
+  source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+    Report 2
+  publish_date: 2025-05
+  project_name: Project Spark - ANC Last Mile Delivery Vehicle Electrification
+  what_happened: Vehicles frequently returned from daily operations with only approximately
+    10% state of charge (SOC) against the pre-deployment assumption of 20% return
+    SOC, requiring immediate recharging and creating scheduling pressure on depot
+    charging infrastructure.
+  lesson_learnt: Plan depot charging capacity assuming vehicles will return with lower
+    state of charge than anticipated — a 10% buffer rather than 20% means faster turnaround
+    charging is needed, which requires higher-capacity depot chargers and potentially
+    affects overnight charging schedules.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: fleet/logistics operator
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: ANC redesigned route schedules and charging plans to incorporate
+    mandatory mid-shift top-ups, reducing the probability of vehicles returning critically
+    low.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages:
+  - 22
+  - 23
+  - 29
+  - 30
+  evidence_excerpt: 'SOC upon Return: Vehicles frequently returned with only 10% battery
+    remaining. Return State of Charge (SOC): Vehicles were assumed to return from
+    daily operation with 20% battery.'
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/anc-last-mile-delivery-ev/
+  kb_category: Electric vehicles
+  kb_publish_date: 18/07/2025
+  kb_year: '2024'
+  kb_associated_project: ANC - Last Mile Delivery EV
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $12.82m
+  total_project_value: $36.83m
+  lead_organisation: Fleets Flyers Pty Ltd (ANC)
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Bella Vista, New South Wales
+  project_partners: 'CarBon Leasing & Rentals Pty Ltd (CarBon)Origin Energy Electricity
+    Limited (Origin Energy)Leggo Studio Pty Ltd (Spotlumos Technology)Atecco - LDV
+    AustraliaJAC Motors '
+  pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+  markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-6903
+  - ARENA-DLV-24106
+  contributing_source_titles:
+  - ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt Report 2
+  - ANC Last Mile Delivery EV - Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+    source_pages:
+    - 22
+    - 29
+    - 30
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+    markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  - source_title: ANC Last Mile Delivery EV - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2025/02/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-1.pdf
+    source_pages:
+    - 23
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-ev-lessons-learnt-report-1/
+    markdown_filename: anc_last_mile_delivery_ev_lessons_learnt_report_1.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-6904
+  source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+    Report 2
+  publish_date: 2025-05
+  project_name: Project Spark - ANC Last Mile Delivery Vehicle Electrification
+  what_happened: Payload weight limits were frequently reached before volumetric cargo
+    space was fully utilised — LDV vehicles reached approximately 1,500kg with up
+    to 17.86 CBM used, and JAC trucks were weight-capped at approximately 4,100kg
+    while cubic space remained underutilised. Pre-deployment assumptions had assumed
+    both weight and volume limits would be reached simultaneously.
+  lesson_learnt: Conduct parcel density and weight profiling for specific delivery
+    runs before procuring or configuring commercial EVs. Where freight is weight-heavy
+    rather than volume-heavy, payload-optimised vehicle configurations should be selected
+    and routes should be designed around weight capping rather than volumetric capacity.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: fleet/logistics operator
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: ANC reconfigured JAC vehicles into 8-pallet (4,424kg) and 10-pallet
+    (4,025kg) models to better match actual freight profiles, and introduced parcel
+    density analysis to inform route matching.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages:
+  - 22
+  - 23
+  - 24
+  - 29
+  - 30
+  evidence_excerpt: Vehicles often reach their maximum payload weight before utilising
+    their full cubic capacity, resulting in underutilisation of space (up to 50%+
+    of cubic capacity remains unused). This affects delivery optimisation, with fewer
+    stops per run due to weight constraints, rather than space limitations.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/anc-last-mile-delivery-ev/
+  kb_category: Electric vehicles
+  kb_publish_date: 18/07/2025
+  kb_year: '2024'
+  kb_associated_project: ANC - Last Mile Delivery EV
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $12.82m
+  total_project_value: $36.83m
+  lead_organisation: Fleets Flyers Pty Ltd (ANC)
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Bella Vista, New South Wales
+  project_partners: 'CarBon Leasing & Rentals Pty Ltd (CarBon)Origin Energy Electricity
+    Limited (Origin Energy)Leggo Studio Pty Ltd (Spotlumos Technology)Atecco - LDV
+    AustraliaJAC Motors '
+  pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+  markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-6904
+  - ARENA-DLV-24108
+  contributing_source_titles:
+  - ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt Report 2
+  - ANC Last Mile Delivery EV - Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+    source_pages:
+    - 22
+    - 29
+    - 30
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+    markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  - source_title: ANC Last Mile Delivery EV - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2025/02/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-1.pdf
+    source_pages:
+    - 23
+    - 24
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-ev-lessons-learnt-report-1/
+    markdown_filename: anc_last_mile_delivery_ev_lessons_learnt_report_1.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-6905
+  source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+    Report 2
+  publish_date: 2025-05
+  project_name: Project Spark - ANC Last Mile Delivery Vehicle Electrification
+  what_happened: Route designs inherited from ICE vehicle operations proved inefficient
+    for EVs. EV-specific constraints — including range derating, weight capping, and
+    the need for mid-shift charging — were not reflected in existing route structures,
+    reducing operational efficiency and increasing energy consumption.
+  lesson_learnt: Do not transfer ICE route designs directly to EV fleets. Redesign
+    routes from first principles using EV-specific parameters including derated range,
+    payload weight limits, and access to charging locations. Route-matching tools
+    that align individual vehicle specifications with parcel profiles and delivery
+    geography are essential before scaling.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: fleet/logistics operator
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: ANC introduced route-matching tools and parcel density analysis
+    to redesign routes based on EV range and payload capacity, and confirmed these
+    as core operational tools for subsequent milestones.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id001
+  - 22
+  - 23
+  - 30
+  evidence_excerpt: Route designs built for ICE vehicles are not efficient for EVs;
+    parcel density and weight capping are new constraints. EVs now require proactive
+    route-matching to ensure range and load compatibility.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/anc-last-mile-delivery-ev/
+  kb_category: Electric vehicles
+  kb_publish_date: 18/07/2025
+  kb_year: '2024'
+  kb_associated_project: ANC - Last Mile Delivery EV
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $12.82m
+  total_project_value: $36.83m
+  lead_organisation: Fleets Flyers Pty Ltd (ANC)
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Bella Vista, New South Wales
+  project_partners: 'CarBon Leasing & Rentals Pty Ltd (CarBon)Origin Energy Electricity
+    Limited (Origin Energy)Leggo Studio Pty Ltd (Spotlumos Technology)Atecco - LDV
+    AustraliaJAC Motors '
+  pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+  markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6905
+  contributing_source_titles:
+  - ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+    markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-6906
+  source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+    Report 2
+  publish_date: 2025-05
+  project_name: Project Spark - ANC Last Mile Delivery Vehicle Electrification
+  what_happened: Public EV charging infrastructure proved physically inaccessible
+    for large-format commercial vehicles including JAC trucks, LDV cab chassis, and
+    heavy vans. Physical constraints including insufficient bay clearance, narrow
+    turning circles, and height restrictions prevented these vehicles from using the
+    majority of public fast chargers, which are designed for passenger vehicles. This
+    gap underpinned a renegotiation of charging milestones.
+  lesson_learnt: Do not include public fast-charging networks in operational contingency
+    planning for large-format commercial EV fleets. Charging infrastructure strategies
+    for trucks, cab chassis, and large vans must be anchored entirely in depot and
+    client-site DC solutions. Advocate for commercial vehicle access standards to
+    be embedded in future public charging site design.
+  issue_severity: major
+  project_type: transport electrification
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: fleet/logistics operator
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: ANC began documenting commercial vehicle access constraints at
+    public charging sites and commenced engagement with industry bodies and infrastructure
+    planners to improve future design standards. Depot and client-site DC charging
+    was prioritised as the primary infrastructure investment.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id002
+  - 16
+  - 24
+  - 25
+  evidence_excerpt: Larger format vehicles often face physical access limitations,
+    including insufficient clearance, narrow bays, or restricted turning circles.
+    These constraints diminish the viability of public charging for a key segment
+    of ANC's operational fleet. This gap has been a material lesson learnt and underpinned
+    the renegotiation of charging milestones.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/anc-last-mile-delivery-ev/
+  kb_category: Electric vehicles
+  kb_publish_date: 18/07/2025
+  kb_year: '2024'
+  kb_associated_project: ANC - Last Mile Delivery EV
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $12.82m
+  total_project_value: $36.83m
+  lead_organisation: Fleets Flyers Pty Ltd (ANC)
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Bella Vista, New South Wales
+  project_partners: 'CarBon Leasing & Rentals Pty Ltd (CarBon)Origin Energy Electricity
+    Limited (Origin Energy)Leggo Studio Pty Ltd (Spotlumos Technology)Atecco - LDV
+    AustraliaJAC Motors '
+  pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+  markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6906
+  contributing_source_titles:
+  - ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+    markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-6907
+  source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+    Report 2
+  publish_date: 2025-05
+  project_name: Project Spark - ANC Last Mile Delivery Vehicle Electrification
+  what_happened: Depot charging infrastructure deployment was significantly delayed
+    by grid upgrade requirements, the need for landlord approvals, and the absence
+    of a uniform funding mechanism for depot electrification. These delays caused
+    misalignment between charger installation milestones and vehicle deployment targets,
+    ultimately requiring 77 charger installations to be deferred from Milestone 3
+    to Milestone 4.
+  lesson_learnt: Initiate grid upgrade assessments and landlord approval processes
+    for depot charging well ahead of vehicle delivery schedules. Milestone targets
+    for charging infrastructure should include realistic lead times for grid works
+    and approvals — treating charger installation as a fast-follow to vehicle procurement
+    will consistently create operational bottlenecks.
+  issue_severity: major
+  project_type: transport electrification
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: fleet/logistics operator
+  delay_category: commissioning/integration
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: ANC proposed shifting 77 charger installations from M3 to M4,
+    fast-tracking 26 chargers to partially fulfil M3 targets, and explored formalising
+    partner-installed chargers (e.g. via client Mondo) toward project targets.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages:
+  - 8
+  - 16
+  - 17
+  - 32
+  - 33
+  evidence_excerpt: 'Depot-based charging remains complex and slow to deploy due to:
+    Long lead times for grid upgrades. The need for landlord approval for charger
+    installation. Lack of a uniform funding mechanism for depot electrification. A
+    misalignment has emerged between the number of chargers required, the entities
+    responsible for their installation, and the timing of those installations.'
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/anc-last-mile-delivery-ev/
+  kb_category: Electric vehicles
+  kb_publish_date: 18/07/2025
+  kb_year: '2024'
+  kb_associated_project: ANC - Last Mile Delivery EV
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $12.82m
+  total_project_value: $36.83m
+  lead_organisation: Fleets Flyers Pty Ltd (ANC)
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Bella Vista, New South Wales
+  project_partners: 'CarBon Leasing & Rentals Pty Ltd (CarBon)Origin Energy Electricity
+    Limited (Origin Energy)Leggo Studio Pty Ltd (Spotlumos Technology)Atecco - LDV
+    AustraliaJAC Motors '
+  pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+  markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-6907
+  - ARENA-DLV-24104
+  contributing_source_titles:
+  - ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt Report 2
+  - ANC Last Mile Delivery EV - Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+    source_pages:
+    - 32
+    - 33
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+    markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  - source_title: ANC Last Mile Delivery EV - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2025/02/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-1.pdf
+    source_pages:
+    - 8
+    - 16
+    - 17
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-ev-lessons-learnt-report-1/
+    markdown_filename: anc_last_mile_delivery_ev_lessons_learnt_report_1.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-6908
+  source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+    Report 2
+  publish_date: 2025-05
+  project_name: Project Spark - ANC Last Mile Delivery Vehicle Electrification
+  what_happened: An ANC client independently installed 54 chargers across their national
+    sites by May 2025 and absorbed 24 of the 34 EVs delivered under M3. This led Principal
+    Contractors (PCs) to become reluctant to invest in their own charging infrastructure,
+    relying instead on client installations. PCs also refused to fund home-based charger
+    installations for individual delivery professionals, citing driver turnover risk
+    and asset depreciation concerns.
+  lesson_learnt: Clarify charging infrastructure ownership and funding responsibilities
+    across all parties — client, principal contractor, and delivery professional —
+    before vehicle deployment begins. Where a major client self-funds infrastructure,
+    formalise how this is counted toward project targets and ensure it does not inadvertently
+    crowd out investment by principal contractors in their own independent charging
+    capacity.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: fleet/logistics operator
+  delay_category: null
+  failure_mode: coordination & stakeholders
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: ANC proposed formalising collaboration with partners such as
+    Mondo to count their charger installations toward ANC's project targets, while
+    forgoing reimbursement claims for partner-funded installations.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id003
+  - 32
+  - 33
+  - 34
+  evidence_excerpt: An ANC client is absorbing 24 of the 34 EVs delivered under M3
+    and has independently installed 54 chargers across their sites nationally by May
+    2025. As a result, Principal Contractors (PCs) are becoming increasingly reluctant
+    to invest in their own EV charging infrastructure, instead relying on ANC's client
+    installations.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/anc-last-mile-delivery-ev/
+  kb_category: Electric vehicles
+  kb_publish_date: 18/07/2025
+  kb_year: '2024'
+  kb_associated_project: ANC - Last Mile Delivery EV
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $12.82m
+  total_project_value: $36.83m
+  lead_organisation: Fleets Flyers Pty Ltd (ANC)
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Bella Vista, New South Wales
+  project_partners: 'CarBon Leasing & Rentals Pty Ltd (CarBon)Origin Energy Electricity
+    Limited (Origin Energy)Leggo Studio Pty Ltd (Spotlumos Technology)Atecco - LDV
+    AustraliaJAC Motors '
+  pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+  markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  source_page_pdf: 32
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6908
+  contributing_source_titles:
+  - ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+    markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-6909
+  source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+    Report 2
+  publish_date: 2025-05
+  project_name: Project Spark - ANC Last Mile Delivery Vehicle Electrification
+  what_happened: Many delivery professionals (owner-operators) were unable to install
+    home chargers due to rental tenancy status, strata title restrictions preventing
+    property modifications, or the absence of secure off-street parking. This created
+    significant variability in overnight charging availability across the subcontractor
+    fleet and increased reliance on public infrastructure that was often unsuitable
+    for large-format vehicles.
+  lesson_learnt: Before assigning EVs to subcontractor delivery professionals, assess
+    their home charging feasibility — tenancy status, property type, and off-street
+    parking availability are binary barriers. Where home charging is not viable for
+    a material proportion of drivers, depot or hub-based overnight charging capacity
+    must be resourced accordingly.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: fleet/logistics operator
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: ANC explored increased reliance on depot-based charging and investigated
+    flexible infrastructure options with energy providers to substitute for home charging
+    where it was not feasible.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id004
+  - 32
+  evidence_excerpt: 'Many DPs are unable to install chargers at home due to lack of
+    access or authority: They may not own the property they live in. Some properties
+    are under strata title, which restricts modifications. Others do not have consistent
+    or secure off-street parking to support overnight charging.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/anc-last-mile-delivery-ev/
+  kb_category: Electric vehicles
+  kb_publish_date: 18/07/2025
+  kb_year: '2024'
+  kb_associated_project: ANC - Last Mile Delivery EV
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $12.82m
+  total_project_value: $36.83m
+  lead_organisation: Fleets Flyers Pty Ltd (ANC)
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Bella Vista, New South Wales
+  project_partners: 'CarBon Leasing & Rentals Pty Ltd (CarBon)Origin Energy Electricity
+    Limited (Origin Energy)Leggo Studio Pty Ltd (Spotlumos Technology)Atecco - LDV
+    AustraliaJAC Motors '
+  pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+  markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6909
+  contributing_source_titles:
+  - ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+    markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-6910
+  source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+    Report 2
+  publish_date: 2025-05
+  project_name: Project Spark - ANC Last Mile Delivery Vehicle Electrification
+  what_happened: The high upfront capital cost of EVs and supporting charging infrastructure
+    continued to limit adoption among subcontractors operating under ANC's owner-driver
+    model, even with ARENA co-funding. Insurance products remained poorly differentiated
+    from ICE vehicles, and access to tailored EV financing for small operators was
+    limited. Charging downtime introduced a new income certainty risk for owner-operators
+    not present in the ICE model.
+  lesson_learnt: Fleet electrification programs relying on subcontractor or owner-operator
+    models must address financial product gaps as a first-order barrier — not a secondary
+    one. Tailored EV leasing, residual value guarantees, group insurance rates, and
+    income-protection structures for charging downtime are prerequisites for subcontractor
+    uptake, not optional enhancements.
+  issue_severity: major
+  project_type: transport electrification
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: fleet/logistics operator
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: ANC engaged with OEMs and financiers to explore residual value
+    guarantees and trade-in schemes, pursued bulk EV purchase agreements, and initiated
+    engagement with insurers to develop EV-specific underwriting models.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id005
+  - 14
+  - 15
+  evidence_excerpt: The upfront capital cost of EVs and supporting infrastructure
+    continues to limit adoption for subcontractors. Even with ARENA support, long-term
+    financial viability remains sensitive to vehicle cost, maintenance, depreciation,
+    and limited access to affordable finance. Insurance premiums remain high, with
+    minimal differentiation between ICE and EV risk profiles.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/anc-last-mile-delivery-ev/
+  kb_category: Electric vehicles
+  kb_publish_date: 18/07/2025
+  kb_year: '2024'
+  kb_associated_project: ANC - Last Mile Delivery EV
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $12.82m
+  total_project_value: $36.83m
+  lead_organisation: Fleets Flyers Pty Ltd (ANC)
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Bella Vista, New South Wales
+  project_partners: 'CarBon Leasing & Rentals Pty Ltd (CarBon)Origin Energy Electricity
+    Limited (Origin Energy)Leggo Studio Pty Ltd (Spotlumos Technology)Atecco - LDV
+    AustraliaJAC Motors '
+  pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+  markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6910
+  contributing_source_titles:
+  - ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+    markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-6911
+  source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+    Report 2
+  publish_date: 2025-05
+  project_name: Project Spark - ANC Last Mile Delivery Vehicle Electrification
+  what_happened: The market price of green certificates (e.g. LGCs and carbon offsets)
+    rose significantly during the KS2 reporting period, driven by increased demand
+    and carbon pricing policy. ANC had incorporated green certificate procurement
+    as part of its zero-emissions delivery claims strategy, but escalating prices
+    introduced material financial uncertainty and undermined the predictability of
+    long-term cost models for low-emissions logistics operations.
+  lesson_learnt: Do not anchor fleet decarbonisation strategies primarily on green
+    certificate markets. Rising certificate prices driven by policy and demand growth
+    create cost volatility that is incompatible with long-term commercial predictability.
+    Shift to direct renewable energy procurement through fixed-price PPAs or on-site
+    generation as the primary emissions integrity mechanism.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: fleet/logistics operator
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: ANC began evaluating fixed-price renewable energy PPAs and on-site
+    solar and battery storage investments at depots to reduce exposure to volatile
+    green certificate markets.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id006
+  - 14
+  - 15
+  - 24
+  evidence_excerpt: The cost of purchasing verified green energy certificates to support
+    low-emissions claims has risen significantly over the reporting period, influenced
+    by increased market demand and volatility in carbon pricing. This has introduced
+    further financial complexity, as the price trajectory of green certificates is
+    expected to continue upward in response to national and international decarbonisation
+    policies.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/anc-last-mile-delivery-ev/
+  kb_category: Electric vehicles
+  kb_publish_date: 18/07/2025
+  kb_year: '2024'
+  kb_associated_project: ANC - Last Mile Delivery EV
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $12.82m
+  total_project_value: $36.83m
+  lead_organisation: Fleets Flyers Pty Ltd (ANC)
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Bella Vista, New South Wales
+  project_partners: 'CarBon Leasing & Rentals Pty Ltd (CarBon)Origin Energy Electricity
+    Limited (Origin Energy)Leggo Studio Pty Ltd (Spotlumos Technology)Atecco - LDV
+    AustraliaJAC Motors '
+  pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+  markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6911
+  contributing_source_titles:
+  - ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+    markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-6912
+  source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+    Report 2
+  publish_date: 2025-05
+  project_name: Project Spark - ANC Last Mile Delivery Vehicle Electrification
+  what_happened: Carbon accounting for the fleet remained fragmented during the KS2
+    period. Vehicle telematics, energy usage data, and ESG reporting frameworks were
+    not yet fully integrated, preventing ANC from claiming and reporting GHG reductions
+    with confidence or precision. This limitation became more significant as clients
+    began moving toward mandatory climate disclosure under ASRS and ISSB frameworks.
+  lesson_learnt: Establish integrated carbon accounting infrastructure — linking vehicle
+    telematics to energy source verification and ESG reporting systems — before making
+    GHG reduction claims to clients. The growing regulatory requirement for mandatory
+    climate disclosure means fragmented data systems will increasingly become a commercial
+    and reputational liability.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: fleet/logistics operator
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: ANC identified vehicle-specific emissions tracking in partnership
+    with energy providers as a required next step, and began evaluating integration
+    of climate data and energy source verification into operational performance dashboards.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages:
+  - 8
+  - 20
+  - 21
+  - 23
+  evidence_excerpt: KS2 also confirms that carbon accounting remains fragmented. Energy
+    usage data, vehicle telematics, and ESG reporting frameworks are not yet fully
+    integrated. This limits ANC's ability to claim and report GHG reductions with
+    confidence and precision.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/anc-last-mile-delivery-ev/
+  kb_category: Electric vehicles
+  kb_publish_date: 18/07/2025
+  kb_year: '2024'
+  kb_associated_project: ANC - Last Mile Delivery EV
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $12.82m
+  total_project_value: $36.83m
+  lead_organisation: Fleets Flyers Pty Ltd (ANC)
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Bella Vista, New South Wales
+  project_partners: 'CarBon Leasing & Rentals Pty Ltd (CarBon)Origin Energy Electricity
+    Limited (Origin Energy)Leggo Studio Pty Ltd (Spotlumos Technology)Atecco - LDV
+    AustraliaJAC Motors '
+  pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+  markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-6912
+  - ARENA-DLV-24112
+  contributing_source_titles:
+  - ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt Report 2
+  - ANC Last Mile Delivery EV - Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+    source_pages:
+    - 20
+    - 23
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+    markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  - source_title: ANC Last Mile Delivery EV - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2025/02/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-1.pdf
+    source_pages:
+    - 8
+    - 20
+    - 21
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-ev-lessons-learnt-report-1/
+    markdown_filename: anc_last_mile_delivery_ev_lessons_learnt_report_1.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-6913
+  source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+    Report 2
+  publish_date: 2025-05
+  project_name: Project Spark - ANC Last Mile Delivery Vehicle Electrification
+  what_happened: The absence of verified renewable energy at many charging locations
+    significantly weakened the actual emissions reduction benefit of EV deployment.
+    Charging through fossil-based grid energy cannot be counted as zero-emissions,
+    yet many depot and public charging sites did not have access to verified green
+    electricity during the KS2 period.
+  lesson_learnt: The emissions reduction benefit of EV fleet deployment is only as
+    strong as the energy source verification at charging locations. Ensure verified
+    renewable energy supply — through on-site generation, green energy tariffs with
+    certificate backing, or PPAs — is established at all primary charging sites before
+    claiming zero-emissions fleet status.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: fleet/logistics operator
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: ANC partnered with energy providers to explore renewable energy
+    integration for charging infrastructure and identified the need for standardised
+    green energy verification for public and depot-based chargers.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages:
+  - 8
+  - 20
+  - 21
+  - 23
+  evidence_excerpt: The foundational promise of EV deployment is reduced tailpipe
+    emissions. While this is being achieved, the lack of verified green energy at
+    many charging locations significantly weakens the emissions benefit. Charging
+    through fossil-based grid energy cannot be counted as zero-emissions.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/anc-last-mile-delivery-ev/
+  kb_category: Electric vehicles
+  kb_publish_date: 18/07/2025
+  kb_year: '2024'
+  kb_associated_project: ANC - Last Mile Delivery EV
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $12.82m
+  total_project_value: $36.83m
+  lead_organisation: Fleets Flyers Pty Ltd (ANC)
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Bella Vista, New South Wales
+  project_partners: 'CarBon Leasing & Rentals Pty Ltd (CarBon)Origin Energy Electricity
+    Limited (Origin Energy)Leggo Studio Pty Ltd (Spotlumos Technology)Atecco - LDV
+    AustraliaJAC Motors '
+  pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+  markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-6913
+  - ARENA-DLV-24111
+  contributing_source_titles:
+  - ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt Report 2
+  - ANC Last Mile Delivery EV - Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+    source_pages:
+    - 20
+    - 23
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+    markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  - source_title: ANC Last Mile Delivery EV - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2025/02/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-1.pdf
+    source_pages:
+    - 8
+    - 20
+    - 21
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-ev-lessons-learnt-report-1/
+    markdown_filename: anc_last_mile_delivery_ev_lessons_learnt_report_1.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-6914
+  source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+    Report 2
+  publish_date: 2025-05
+  project_name: Project Spark - ANC Last Mile Delivery Vehicle Electrification
+  what_happened: Initial range anxiety among drivers decreased significantly through
+    the KS2 period as real-world EV experience accumulated and training was provided.
+    However, new concerns emerged around charging downtime affecting route efficiency
+    and shift productivity, and around the handling characteristics of larger EV formats.
+  lesson_learnt: Plan driver engagement programs to address the evolving nature of
+    EV concerns — early programs should focus on range anxiety, but subsequent phases
+    must address charging downtime management, shift productivity impacts, and vehicle-specific
+    handling. A single upfront training program is insufficient; ongoing feedback
+    loops and responsive operational adjustments are needed.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: fleet/logistics operator
+  delay_category: stakeholder/land/community
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: ANC maintained structured education sessions for subcontractors
+    and delivery professionals, and explored EV-related performance bonuses linked
+    to efficiency, charging compliance, and customer feedback.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages:
+  - 8
+  - 18
+  - 19
+  evidence_excerpt: Driver confidence has continued to grow through exposure, training,
+    and operational feedback loops. Real-world experience with EV performance in peak
+    delivery windows has helped address earlier concerns. That said, new behavioural
+    dynamics have emerged. Drivers are now concerned with the predictability of charging
+    access and the impact of mid-shift charging on route efficiency.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/anc-last-mile-delivery-ev/
+  kb_category: Electric vehicles
+  kb_publish_date: 18/07/2025
+  kb_year: '2024'
+  kb_associated_project: ANC - Last Mile Delivery EV
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $12.82m
+  total_project_value: $36.83m
+  lead_organisation: Fleets Flyers Pty Ltd (ANC)
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Bella Vista, New South Wales
+  project_partners: 'CarBon Leasing & Rentals Pty Ltd (CarBon)Origin Energy Electricity
+    Limited (Origin Energy)Leggo Studio Pty Ltd (Spotlumos Technology)Atecco - LDV
+    AustraliaJAC Motors '
+  pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+  markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-6914
+  - ARENA-DLV-24109
+  contributing_source_titles:
+  - ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt Report 2
+  - ANC Last Mile Delivery EV - Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+    source_pages:
+    - 19
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+    markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  - source_title: ANC Last Mile Delivery EV - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2025/02/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-1.pdf
+    source_pages:
+    - 8
+    - 18
+    - 19
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-ev-lessons-learnt-report-1/
+    markdown_filename: anc_last_mile_delivery_ev_lessons_learnt_report_1.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-6915
+  source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+    Report 2
+  publish_date: 2025-05
+  project_name: Project Spark - ANC Last Mile Delivery Vehicle Electrification
+  what_happened: Client engagement evolved positively during KS2 — clients who were
+    initially hesitant became more enthusiastic when EV usage visibly aligned with
+    their corporate ESG goals. Site-based charging collaboration with clients proved
+    particularly effective in shifting sentiment from passive support to proactive
+    co-investment, with one major client independently installing 54 chargers across
+    their national sites.
+  lesson_learnt: Frame EV fleet electrification directly in clients' ESG reporting
+    terms from the outset. Where clients have scope 3 emissions obligations, site-based
+    charging co-investment offers a concrete mechanism for aligning commercial delivery
+    relationships with sustainability goals — proactively proposing joint charging
+    infrastructure is a more effective engagement lever than general ESG messaging.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: fleet/logistics operator
+  delay_category: stakeholder/land/community
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: ANC undertook proactive educational efforts including information
+    sessions and sustainability-focused discussions to correct misconceptions and
+    promote the operational and environmental benefits of EVs to clients.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages:
+  - 8
+  - 18
+  - 19
+  - 32
+  evidence_excerpt: Clients, initially hesitant, have shown greater enthusiasm when
+    EV usage aligns with their corporate ESG goals. Site-based charging collaboration
+    with ANC's clients is proving highly valuable in transitioning sentiment from
+    supportive to proactive.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/anc-last-mile-delivery-ev/
+  kb_category: Electric vehicles
+  kb_publish_date: 18/07/2025
+  kb_year: '2024'
+  kb_associated_project: ANC - Last Mile Delivery EV
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $12.82m
+  total_project_value: $36.83m
+  lead_organisation: Fleets Flyers Pty Ltd (ANC)
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Bella Vista, New South Wales
+  project_partners: 'CarBon Leasing & Rentals Pty Ltd (CarBon)Origin Energy Electricity
+    Limited (Origin Energy)Leggo Studio Pty Ltd (Spotlumos Technology)Atecco - LDV
+    AustraliaJAC Motors '
+  pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+  markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-6915
+  - ARENA-DLV-24110
+  contributing_source_titles:
+  - ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt Report 2
+  - ANC Last Mile Delivery EV - Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+    source_pages:
+    - 19
+    - 32
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+    markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  - source_title: ANC Last Mile Delivery EV - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2025/02/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-1.pdf
+    source_pages:
+    - 8
+    - 18
+    - 19
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-ev-lessons-learnt-report-1/
+    markdown_filename: anc_last_mile_delivery_ev_lessons_learnt_report_1.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-6916
+  source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+    Report 2
+  publish_date: 2025-05
+  project_name: Project Spark - ANC Last Mile Delivery Vehicle Electrification
+  what_happened: ANC deepened collaboration with OEMs and body builders through KS2,
+    enabling more sophisticated vehicle customisation aligned with last-mile delivery
+    performance requirements. JAC vehicles were reconfigured into 8-pallet and 10-pallet
+    tuckaway variants (4,424kg and 4,025kg respectively) to better match actual freight
+    load profiles observed in field deployment.
+  lesson_learnt: Engage OEMs and body builders early and maintain an ongoing co-development
+    relationship through deployment phases. Vehicle specifications drawn up pre-deployment
+    will not fully anticipate real-world freight profiles — structured mechanisms
+    for vehicle reconfiguration based on operational data should be built into procurement
+    and supplier agreements from the outset.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: procurement
+  proponent_type: fleet/logistics operator
+  delay_category: procurement/supply chain
+  failure_mode: no major failure stated
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: ANC reconfigured JAC N90 vehicles into revised pallet configurations
+    (8-pallet at 4,424kg and 10-pallet at 4,025kg) based on M3 field data, and established
+    ongoing coordinated vehicle specification discussions with OEMs.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages:
+  - 12
+  - 16
+  - 17
+  - 22
+  - 30
+  evidence_excerpt: ANC leveraged early learnings from the deployment of three generation
+    one SEA Electric trucks to design and drive the manufacturing of custom-built
+    vehicles fit for purpose for last mile delivery requirements... Whilst the new
+    vehicles configuration favours on-road efficiency, at-home charging for this format
+    is slightly more restrictive.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/anc-last-mile-delivery-ev/
+  kb_category: Electric vehicles
+  kb_publish_date: 18/07/2025
+  kb_year: '2024'
+  kb_associated_project: ANC - Last Mile Delivery EV
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $12.82m
+  total_project_value: $36.83m
+  lead_organisation: Fleets Flyers Pty Ltd (ANC)
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Bella Vista, New South Wales
+  project_partners: 'CarBon Leasing & Rentals Pty Ltd (CarBon)Origin Energy Electricity
+    Limited (Origin Energy)Leggo Studio Pty Ltd (Spotlumos Technology)Atecco - LDV
+    AustraliaJAC Motors '
+  pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+  markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-6916
+  - ARENA-DLV-24113
+  contributing_source_titles:
+  - ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt Report 2
+  - ANC Last Mile Delivery EV - Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+    source_pages:
+    - 12
+    - 22
+    - 30
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+    markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  - source_title: ANC Last Mile Delivery EV - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2025/02/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-1.pdf
+    source_pages:
+    - 16
+    - 17
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-ev-lessons-learnt-report-1/
+    markdown_filename: anc_last_mile_delivery_ev_lessons_learnt_report_1.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-6917
+  source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+    Report 2
+  publish_date: 2025-05
+  project_name: Project Spark - ANC Last Mile Delivery Vehicle Electrification
+  what_happened: Charger installation targets set for Milestone 3 became misaligned
+    with actual deployment timelines and partner capacity. The misalignment encompassed
+    the number of chargers required, the entities responsible for installation, and
+    the timing of installations, necessitating a formal renegotiation of project milestones
+    and the deferral of 77 charger installations.
+  lesson_learnt: Charging infrastructure milestones in fleet electrification projects
+    must explicitly name responsible installation parties, include realistic lead-time
+    buffers for grid works and approvals, and be stress-tested against partner capacity
+    constraints before being committed to as grant deliverables. Milestone targets
+    that assume installation parties will act independently without formal commitment
+    mechanisms are high-risk.
+  issue_severity: major
+  project_type: transport electrification
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: fleet/logistics operator
+  delay_category: commissioning/integration
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: ANC proposed cascading milestone charger targets by one milestone,
+    fast-tracking 26 installations to partially meet M3 commitments, and sought to
+    formalise partner-installed chargers toward project targets.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages: &id007
+  - 33
+  - 34
+  evidence_excerpt: Charger targets set for Milestone 3 no longer align with actual
+    delivery timelines or partner capacity. A misalignment has emerged between the
+    number of chargers required, the entities responsible for their installation,
+    and the timing of those installations.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/anc-last-mile-delivery-ev/
+  kb_category: Electric vehicles
+  kb_publish_date: 18/07/2025
+  kb_year: '2024'
+  kb_associated_project: ANC - Last Mile Delivery EV
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $12.82m
+  total_project_value: $36.83m
+  lead_organisation: Fleets Flyers Pty Ltd (ANC)
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Bella Vista, New South Wales
+  project_partners: 'CarBon Leasing & Rentals Pty Ltd (CarBon)Origin Energy Electricity
+    Limited (Origin Energy)Leggo Studio Pty Ltd (Spotlumos Technology)Atecco - LDV
+    AustraliaJAC Motors '
+  pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+  markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6917
+  contributing_source_titles:
+  - ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+    markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: schedule slippage
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-6918
+  source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+    Report 2
+  publish_date: 2025-05
+  project_name: Project Spark - ANC Last Mile Delivery Vehicle Electrification
+  what_happened: Owner-operator delivery professionals expressed unwillingness to
+    invest in home renewable energy systems (solar, battery storage) due to the additional
+    capital cost and, for renters, the physical impossibility of installing such systems.
+    This prevented home-based green charging from being a viable emissions reduction
+    pathway for a significant portion of the subcontractor fleet.
+  lesson_learnt: Fleet electrification programs should not assume that owner-operator
+    delivery professionals have the means or authority to invest in home renewable
+    energy. Where a large portion of drivers are renters or otherwise unable to modify
+    their premises, centralised green energy infrastructure — depot solar, battery
+    storage, or green PPAs — must be the primary pathway for verified low-emissions
+    charging.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: fleet/logistics operator
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: ANC initiated evaluation of depot-level solar and battery storage
+    investments and fixed-price green PPAs as the primary mechanism for verified green
+    charging across the fleet.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id008
+  - 32
+  - 33
+  evidence_excerpt: DPs have expressed unwillingness to incur the extra costs associated
+    with green energy installation (e.g., solar, battery systems) in their homes.
+    For many, installing such systems is not feasible due to tenancy status (i.e.,
+    they are renters).
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/anc-last-mile-delivery-ev/
+  kb_category: Electric vehicles
+  kb_publish_date: 18/07/2025
+  kb_year: '2024'
+  kb_associated_project: ANC - Last Mile Delivery EV
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $12.82m
+  total_project_value: $36.83m
+  lead_organisation: Fleets Flyers Pty Ltd (ANC)
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Bella Vista, New South Wales
+  project_partners: 'CarBon Leasing & Rentals Pty Ltd (CarBon)Origin Energy Electricity
+    Limited (Origin Energy)Leggo Studio Pty Ltd (Spotlumos Technology)Atecco - LDV
+    AustraliaJAC Motors '
+  pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+  markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6918
+  contributing_source_titles:
+  - ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+    markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-6919
+  source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+    Report 2
+  publish_date: 2025-05
+  project_name: Project Spark - ANC Last Mile Delivery Vehicle Electrification
+  what_happened: A phased, incremental approach to EV rollout across Project Spark
+    enabled ANC to capture real-world operational data and apply it to refine route
+    design, vehicle configuration, charging strategy, and commercial models before
+    scaling. Assumptions that diverged significantly from field reality — including
+    range, charging rates, payload, and SOC — were identified and corrected within
+    the project lifecycle rather than at full scale.
+  lesson_learnt: Structure large fleet electrification programs as phased incremental
+    rollouts with formal assumption-versus-reality review points built into milestones.
+    This approach creates controlled learning cycles that allow vehicle specifications,
+    route designs, and infrastructure plans to be recalibrated on real data before
+    commitments are locked in for the full fleet.
+  issue_severity: none
+  project_type: transport electrification
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: fleet/logistics operator
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages:
+  - 8
+  - 11
+  - 12
+  - 25
+  evidence_excerpt: ANC adopted an incremental approach to EV deployment, which allowed
+    the team to refine operations, optimise vehicle performance, and address range
+    anxiety gradually. This approach included real-time data collection and analysis
+    to support driver confidence and adapt routes to the specific needs of EVs.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/anc-last-mile-delivery-ev/
+  kb_category: Electric vehicles
+  kb_publish_date: 18/07/2025
+  kb_year: '2024'
+  kb_associated_project: ANC - Last Mile Delivery EV
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $12.82m
+  total_project_value: $36.83m
+  lead_organisation: Fleets Flyers Pty Ltd (ANC)
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Bella Vista, New South Wales
+  project_partners: 'CarBon Leasing & Rentals Pty Ltd (CarBon)Origin Energy Electricity
+    Limited (Origin Energy)Leggo Studio Pty Ltd (Spotlumos Technology)Atecco - LDV
+    AustraliaJAC Motors '
+  pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+  markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-6919
+  - ARENA-DLV-24114
+  contributing_source_titles:
+  - ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt Report 2
+  - ANC Last Mile Delivery EV - Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+    source_pages:
+    - 8
+    - 25
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+    markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  - source_title: ANC Last Mile Delivery EV - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2025/02/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-1.pdf
+    source_pages:
+    - 11
+    - 12
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-ev-lessons-learnt-report-1/
+    markdown_filename: anc_last_mile_delivery_ev_lessons_learnt_report_1.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-6920
+  source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+    Report 2
+  publish_date: 2025-05
+  project_name: Project Spark - ANC Last Mile Delivery Vehicle Electrification
+  what_happened: Subcontractor delivery professionals reported measurable cost savings
+    from EV operation compared to diesel — approximately $20–$30 per day in energy
+    costs versus approximately $60 per day for diesel on equivalent delivery runs.
+    One delivery professional reported business growth attributable to EV adoption,
+    scaling from sole trader to operating five to six vehicles.
+  lesson_learnt: The operational cost advantage of EVs over diesel is real and demonstrable
+    to subcontractors when experienced first-hand. Peer-based evidence sharing — including
+    documented running cost comparisons — is an effective tool for overcoming initial
+    resistance to EV adoption among owner-operators who are primarily motivated by
+    income certainty.
+  issue_severity: none
+  project_type: transport electrification
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: fleet/logistics operator
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id009
+  - 35
+  evidence_excerpt: To drive an EV van is cheaper. The cost of diesel is around $60
+    a day. To do the same run on EV will cost you around $20 to $30 a day. Business
+    is improving after the EVs got introduced in my fleet. Changing to EVs has made
+    me bigger as a company instead of being a sole trader for the last maybe four
+    years.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/anc-last-mile-delivery-ev/
+  kb_category: Electric vehicles
+  kb_publish_date: 18/07/2025
+  kb_year: '2024'
+  kb_associated_project: ANC - Last Mile Delivery EV
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $12.82m
+  total_project_value: $36.83m
+  lead_organisation: Fleets Flyers Pty Ltd (ANC)
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Bella Vista, New South Wales
+  project_partners: 'CarBon Leasing & Rentals Pty Ltd (CarBon)Origin Energy Electricity
+    Limited (Origin Energy)Leggo Studio Pty Ltd (Spotlumos Technology)Atecco - LDV
+    AustraliaJAC Motors '
+  pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+  markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  source_page_pdf: 35
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-6920
+  contributing_source_titles:
+  - ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt Report 2
+  contributing_sources:
+  - source_title: ANC - Last Mile Delivery Vehicle Electrification - Lessons Learnt
+      Report 2
+    pdf_url: https://arena.gov.au/assets/2025/07/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-2.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-vehicle-electrification-lessons-learnt-report-2/
+    markdown_filename: anc_last_mile_delivery_vehicle_electrification_lessons_learnt_report_2.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-24101
+  source_title: ANC Last Mile Delivery EV - Lessons Learnt Report 1
+  publish_date: 2024-11
+  project_name: Project Spark
+  what_happened: Subcontractors faced difficulty accessing competitive financing for
+    EV acquisition due to limited credit access, while insurance providers applied
+    varied risk assessments that resulted in higher-than-expected premiums, creating
+    financial barriers to EV adoption.
+  lesson_learnt: Develop tailored financial products and EV-specific insurance policies
+    before scaling fleet electrification to subcontractors — generic financing and
+    insurance products create adoption barriers that can stall deployment, particularly
+    for operators with limited credit access.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: fleet/logistics operator
+  delay_category: financing/commercial close
+  failure_mode: commercial & market
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: ANC engaged directly with insurers to improve understanding of
+    EV risk profiles and pursued flexible financing options, including bulk purchasing
+    agreements and bundled green premiums, to reduce TCO burden for subcontractors.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages: &id010
+  - 14
+  - 15
+  evidence_excerpt: Financing delays and insurance complexities created barriers to
+    the seamless adoption of EVs. Subcontractors faced difficulties in securing competitive
+    financing, and insurance providers displayed varied risk assessments, leading
+    to increased premiums.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-ev-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/anc-last-mile-delivery-ev/
+  kb_category: Electric vehicles
+  kb_publish_date: 4/02/2025
+  kb_year: '2024'
+  kb_associated_project: ANC - Last Mile Delivery EV
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $12.82m
+  total_project_value: $36.83m
+  lead_organisation: Fleets Flyers Pty Ltd (ANC)
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Bella Vista, New South Wales
+  project_partners: 'CarBon Leasing & Rentals Pty Ltd (CarBon)Origin Energy Electricity
+    Limited (Origin Energy)Leggo Studio Pty Ltd (Spotlumos Technology)Atecco - LDV
+    AustraliaJAC Motors '
+  pdf_url: https://arena.gov.au/assets/2025/02/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-1.pdf
+  markdown_filename: anc_last_mile_delivery_ev_lessons_learnt_report_1.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-24101
+  contributing_source_titles:
+  - ANC Last Mile Delivery EV - Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: ANC Last Mile Delivery EV - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2025/02/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-1.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-ev-lessons-learnt-report-1/
+    markdown_filename: anc_last_mile_delivery_ev_lessons_learnt_report_1.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-24102
+  source_title: ANC Last Mile Delivery EV - Lessons Learnt Report 1
+  publish_date: 2024-11
+  project_name: Project Spark
+  what_happened: The high Total Cost of Ownership (TCO) of EVs, including upfront
+    purchase price, maintenance, and depreciation costs, created significant economic
+    strain and challenged the short-term financial viability of the fleet electrification
+    programme.
+  lesson_learnt: Account for the full TCO gap between EVs and ICE vehicles at project
+    planning stage and build in mitigation strategies such as bulk purchasing agreements
+    and bundled green premiums — failure to do so creates ongoing financial strain
+    that can threaten programme viability.
+  issue_severity: major
+  project_type: transport electrification
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: fleet/logistics operator
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: ANC explored bundling green premiums and brand carry options
+    to help bridge the TCO gap, and evaluated bulk purchasing agreements to leverage
+    economies of scale.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id011
+  - 8
+  - 14
+  - 15
+  evidence_excerpt: The high Total Cost of Ownership (TCO), including purchase, maintenance,
+    and depreciation, added economic strain to the project. ANC explored solutions
+    such as bundling green premiums and utilising brand carry options to offset costs.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-ev-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/anc-last-mile-delivery-ev/
+  kb_category: Electric vehicles
+  kb_publish_date: 4/02/2025
+  kb_year: '2024'
+  kb_associated_project: ANC - Last Mile Delivery EV
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $12.82m
+  total_project_value: $36.83m
+  lead_organisation: Fleets Flyers Pty Ltd (ANC)
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Bella Vista, New South Wales
+  project_partners: 'CarBon Leasing & Rentals Pty Ltd (CarBon)Origin Energy Electricity
+    Limited (Origin Energy)Leggo Studio Pty Ltd (Spotlumos Technology)Atecco - LDV
+    AustraliaJAC Motors '
+  pdf_url: https://arena.gov.au/assets/2025/02/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-1.pdf
+  markdown_filename: anc_last_mile_delivery_ev_lessons_learnt_report_1.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-24102
+  contributing_source_titles:
+  - ANC Last Mile Delivery EV - Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: ANC Last Mile Delivery EV - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2025/02/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-1.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-ev-lessons-learnt-report-1/
+    markdown_filename: anc_last_mile_delivery_ev_lessons_learnt_report_1.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: cost overrun
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-24103
+  source_title: ANC Last Mile Delivery EV - Lessons Learnt Report 1
+  publish_date: 2024-11
+  project_name: Project Spark
+  what_happened: Uncertainty around EV battery resale and residual values complicated
+    long-term asset management and financial planning, with no established market
+    benchmarks available to inform TCO modelling.
+  lesson_learnt: Before committing to large-scale EV fleet acquisition, commission
+    research into EV battery resale values and develop lifecycle cost models specific
+    to the operational context — the absence of these models creates material uncertainty
+    in TCO calculations and asset management decisions.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: fleet/logistics operator
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id012
+  - 14
+  - 15
+  evidence_excerpt: Resale and residual values of EV batteries remain uncertain, impacting
+    long-term asset management and financial planning.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-ev-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/anc-last-mile-delivery-ev/
+  kb_category: Electric vehicles
+  kb_publish_date: 4/02/2025
+  kb_year: '2024'
+  kb_associated_project: ANC - Last Mile Delivery EV
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $12.82m
+  total_project_value: $36.83m
+  lead_organisation: Fleets Flyers Pty Ltd (ANC)
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Bella Vista, New South Wales
+  project_partners: 'CarBon Leasing & Rentals Pty Ltd (CarBon)Origin Energy Electricity
+    Limited (Origin Energy)Leggo Studio Pty Ltd (Spotlumos Technology)Atecco - LDV
+    AustraliaJAC Motors '
+  pdf_url: https://arena.gov.au/assets/2025/02/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-1.pdf
+  markdown_filename: anc_last_mile_delivery_ev_lessons_learnt_report_1.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-24103
+  contributing_source_titles:
+  - ANC Last Mile Delivery EV - Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: ANC Last Mile Delivery EV - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2025/02/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-1.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-ev-lessons-learnt-report-1/
+    markdown_filename: anc_last_mile_delivery_ev_lessons_learnt_report_1.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-24115
+  source_title: ANC Last Mile Delivery EV - Lessons Learnt Report 1
+  publish_date: 2024-11
+  project_name: Project Spark
+  what_happened: Key clients such as IKEA, with zero-emission delivery (ZED) targets,
+    provisioned onsite chargers at their facilities to support EV delivery operations,
+    demonstrating that client-side charging infrastructure can materially support
+    fleet electrification where client ESG commitments are strong.
+  lesson_learnt: Identify clients with strong ESG commitments and zero-emission targets
+    early in fleet electrification planning — these clients can be leveraged as partners
+    to co-fund or provision onsite charging infrastructure, reducing the proponent's
+    infrastructure burden and accelerating deployment.
+  issue_severity: none
+  project_type: transport electrification
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: fleet/logistics operator
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id013
+  - 12
+  evidence_excerpt: Some key clients are well progressed in supporting the energy
+    transition such as IKEA who are provisioning onsite chargers to support zero emission
+    delivery making the transition for delivery professionals smoother.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-ev-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/anc-last-mile-delivery-ev/
+  kb_category: Electric vehicles
+  kb_publish_date: 4/02/2025
+  kb_year: '2024'
+  kb_associated_project: ANC - Last Mile Delivery EV
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $12.82m
+  total_project_value: $36.83m
+  lead_organisation: Fleets Flyers Pty Ltd (ANC)
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Bella Vista, New South Wales
+  project_partners: 'CarBon Leasing & Rentals Pty Ltd (CarBon)Origin Energy Electricity
+    Limited (Origin Energy)Leggo Studio Pty Ltd (Spotlumos Technology)Atecco - LDV
+    AustraliaJAC Motors '
+  pdf_url: https://arena.gov.au/assets/2025/02/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-1.pdf
+  markdown_filename: anc_last_mile_delivery_ev_lessons_learnt_report_1.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-24115
+  contributing_source_titles:
+  - ANC Last Mile Delivery EV - Lessons Learnt Report 1
+  contributing_sources:
+  - source_title: ANC Last Mile Delivery EV - Lessons Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2025/02/ANC-Last-Mile-Delivery-Vehicle-Electrification-Lessons-Learnt-Report-1.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/anc-last-mile-delivery-ev-lessons-learnt-report-1/
+    markdown_filename: anc_last_mile_delivery_ev_lessons_learnt_report_1.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Deployment
+  is_consortium: false

@@ -1,0 +1,1050 @@
+- record_id: ARENA-DLV-48551
+  source_title: 'Alice Springs: A Case Study of Increasing Levels of PV Penetration
+    in an Electricity Supply System'
+  publish_date: 2011-06
+  project_name: Alice Springs PV Penetration Case Study
+  what_happened: During several system frequency drop events in 2010, PV inverters
+    on the Alice Springs network tripped offline when frequency fell below 49.9Hz
+    — the default European grid-connection trip setting programmed into the inverters
+    at manufacture. With close to 2MW of installed PV capacity, the sudden loss of
+    approximately 1MW of PV generation caused a rapid increase in net load on the
+    central generators, worsening the frequency event.
+  lesson_learnt: In small autonomous grids with wide frequency operating ranges, PV
+    inverter low-frequency trip settings must be configured to local grid requirements,
+    not imported default settings. For the Alice Springs network, P&W set the requirement
+    to 46Hz (below the last load-shedding threshold of 47Hz) to keep PV systems online
+    during frequency events — utilities operating small grids should specify and verify
+    inverter trip settings at connection, not after an incident.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: utility/large-scale
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated integration
+  intervention_note: For Solar City PV systems, P&W coordinated with the ASC project
+    and contracted installers to progressively update settings during 12-monthly service
+    inspections; no equivalent verification mechanism existed for non-Solar-City systems.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages:
+  - 33
+  - 34
+  - 35
+  evidence_excerpt: After investigating the events P&W came to the conclusion that
+    this sudden 1MW rise in load was due to the PV systems on the network dropping
+    out once the system frequency fell below the PV inverters' low-frequency trip
+    setting of 49.9Hz. PV system inverters connected to the Alice Springs network
+    prior to that time had been programmed with frequency trip settings of 50Hz +/-
+    0.1Hz which it is understood were the default settings programmed into the inverters
+    during manufacture in line with European grid-connection requirements.
+  confidence_note: Canonical record merged from 3 source records across 1 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/alice-springs-a-case-study-of-increasing-levels-of-pv-penetration-in-an-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Alice-Springs-High-Penetration-PV-Case-Study-Report-June-2011.pdf
+  markdown_filename: alice_springs_a_case_study_of_increasing_levels_of_pv_penetration_in_an_electricity_supply_system.md
+  source_page_pdf: 34
+  corroboration_count: 3
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48551
+  - ARENA-DLV-48552
+  - ARENA-DLV-48553
+  contributing_source_titles:
+  - 'Alice Springs: A Case Study of Increasing Levels of PV Penetration in an Electricity
+    Supply System'
+  contributing_sources:
+  - source_title: 'Alice Springs: A Case Study of Increasing Levels of PV Penetration
+      in an Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Alice-Springs-High-Penetration-PV-Case-Study-Report-June-2011.pdf
+    source_pages:
+    - 33
+    - 34
+    - 35
+    source_url: https://arena.gov.au/knowledge-bank/alice-springs-a-case-study-of-increasing-levels-of-pv-penetration-in-an-electricity-supply-system/
+    markdown_filename: alice_springs_a_case_study_of_increasing_levels_of_pv_penetration_in_an_electricity_supply_system.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-48554
+  source_title: 'Alice Springs: A Case Study of Increasing Levels of PV Penetration
+    in an Electricity Supply System'
+  publish_date: 2011-06
+  project_name: Alice Springs PV Penetration Case Study
+  what_happened: With close to 2MW of distributed PV installed across the Alice Springs
+    network, P&W began observing cloud-induced fluctuations in system net load of
+    the order of 1MW over periods of minutes. While not yet causing material operational
+    problems, the effect was large enough to be visible on the system net load profile
+    and raised concern about spinning reserve adequacy as PV penetration grows — particularly
+    with the pending connection of the 1MW Uterne single-site system.
+  lesson_learnt: As PV penetration on small isolated grids increases, utilities must
+    proactively review spinning reserve requirements to account for rapid MW-scale
+    PV power swings caused by clouds, particularly when large single-site systems
+    are added — distributed PV arrays buffer this effect better than a single large
+    array of equivalent capacity.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: utility/large-scale
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: P&W flagged the issue for ongoing monitoring and committed to
+    reviewing spinning reserve requirements before connecting the Uterne 1MW system.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id001
+  - 36
+  - 37
+  evidence_excerpt: P&W says these fluctuations can be of the order of close to 1MW
+    and of duration of the order of minutes... P&W says these fluctuations are currently
+    having no material impact on system operation however it is something they will
+    be keeping an eye on, particularly with the pending connection of the Uterne 1MW
+    PV system, given it is a large single system which will be more directly affected
+    by clouds than the smaller distributed PV systems.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/alice-springs-a-case-study-of-increasing-levels-of-pv-penetration-in-an-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Alice-Springs-High-Penetration-PV-Case-Study-Report-June-2011.pdf
+  markdown_filename: alice_springs_a_case_study_of_increasing_levels_of_pv_penetration_in_an_electricity_supply_system.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48554
+  contributing_source_titles:
+  - 'Alice Springs: A Case Study of Increasing Levels of PV Penetration in an Electricity
+    Supply System'
+  contributing_sources:
+  - source_title: 'Alice Springs: A Case Study of Increasing Levels of PV Penetration
+      in an Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Alice-Springs-High-Penetration-PV-Case-Study-Report-June-2011.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/alice-springs-a-case-study-of-increasing-levels-of-pv-penetration-in-an-electricity-supply-system/
+    markdown_filename: alice_springs_a_case_study_of_increasing_levels_of_pv_penetration_in_an_electricity_supply_system.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+- record_id: ARENA-DLV-48555
+  source_title: 'Alice Springs: A Case Study of Increasing Levels of PV Penetration
+    in an Electricity Supply System'
+  publish_date: 2011-06
+  project_name: Alice Springs PV Penetration Case Study
+  what_happened: With the 1MW Uterne PV system due for connection in mid-2011, P&W
+    identified that PV peak power penetration at the system level would rise to approximately
+    8% of winter midday load — roughly 50% higher than existing penetration — and
+    that spinning reserve requirements during midday hours would need to be reviewed
+    to account for potential rapid loss of up to 2.5MW of PV generation.
+  lesson_learnt: Network operators should conduct a formal spinning reserve review
+    before connecting any single PV system large enough to materially shift system-level
+    PV penetration, as the step-change in instantaneous generation exposure may require
+    revised generator dispatch arrangements.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: utility/large-scale
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: P&W committed to closely monitoring the Uterne system operation
+    on the network and reviewing spinning reserve levels with the pending connection.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id002
+  - 29
+  - 37
+  evidence_excerpt: With the pending connection of the Uterne 1MW system, the level
+    of spinning reserve required during the middle of the day will need to be reviewed
+    by P&W. P&W will also be monitoring the potential effects of having an additional
+    1MW of PV power drop in or out of the system over a period of potentially seconds,
+    and the potential effect of this on the gas-fired generators.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/alice-springs-a-case-study-of-increasing-levels-of-pv-penetration-in-an-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Alice-Springs-High-Penetration-PV-Case-Study-Report-June-2011.pdf
+  markdown_filename: alice_springs_a_case_study_of_increasing_levels_of_pv_penetration_in_an_electricity_supply_system.md
+  source_page_pdf: 37
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48555
+  contributing_source_titles:
+  - 'Alice Springs: A Case Study of Increasing Levels of PV Penetration in an Electricity
+    Supply System'
+  contributing_sources:
+  - source_title: 'Alice Springs: A Case Study of Increasing Levels of PV Penetration
+      in an Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Alice-Springs-High-Penetration-PV-Case-Study-Report-June-2011.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/alice-springs-a-case-study-of-increasing-levels-of-pv-penetration-in-an-electricity-supply-system/
+    markdown_filename: alice_springs_a_case_study_of_increasing_levels_of_pv_penetration_in_an_electricity_supply_system.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+- record_id: ARENA-DLV-48556
+  source_title: 'Alice Springs: A Case Study of Increasing Levels of PV Penetration
+    in an Electricity Supply System'
+  publish_date: 2011-06
+  project_name: Alice Springs PV Penetration Case Study
+  what_happened: Despite a significant increase in PV systems connected to the Alice
+    Springs LV network — reaching up to 31% PV power/load ratio at the distribution
+    transformer level on the highest-penetration transformer — P&W had not experienced
+    any PV-related LV voltage management problems as at the time of the report. However
+    P&W recognised this as a latent risk and initiated a targeted voltage study on
+    the highest-concentration section of the network in conjunction with Charles Darwin
+    University.
+  lesson_learnt: Proactively commission a distribution-level voltage study on the
+    highest-PV-concentration circuits before voltage problems emerge, rather than
+    waiting for customer complaints — this gives network planners time to identify
+    and implement mitigation (e.g. lowering nominal LV voltage from 240V to 230V)
+    before penetration reaches critical levels.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: utility/large-scale
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: P&W initiated a voltage study with CDU Centre for Renewable Energy
+    focused on the residential street with the highest PV concentration (up to 18
+    systems on one distribution transformer), and planned to install meters on high-penetration
+    distribution transformers to collect actual voltage, current and power data.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id003
+  - 33
+  - 38
+  - 39
+  evidence_excerpt: P&W has stated that to date, despite a significant increase in
+    the number of PV systems connected to the Alice network, they have not yet experienced
+    PV-related voltage issues of any note as there has not been a high enough concentration
+    of PV system penetration in any one area to cause such problems... P&W has recently
+    commenced a project, in conjunction with the Centre for Renewable Energy at Charles
+    Darwin University, to investigate the potential effects of high levels of PV system
+    penetration on LV system voltage on the Alice network.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/alice-springs-a-case-study-of-increasing-levels-of-pv-penetration-in-an-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Alice-Springs-High-Penetration-PV-Case-Study-Report-June-2011.pdf
+  markdown_filename: alice_springs_a_case_study_of_increasing_levels_of_pv_penetration_in_an_electricity_supply_system.md
+  source_page_pdf: 38
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48556
+  contributing_source_titles:
+  - 'Alice Springs: A Case Study of Increasing Levels of PV Penetration in an Electricity
+    Supply System'
+  contributing_sources:
+  - source_title: 'Alice Springs: A Case Study of Increasing Levels of PV Penetration
+      in an Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Alice-Springs-High-Penetration-PV-Case-Study-Report-June-2011.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/alice-springs-a-case-study-of-increasing-levels-of-pv-penetration-in-an-electricity-supply-system/
+    markdown_filename: alice_springs_a_case_study_of_increasing_levels_of_pv_penetration_in_an_electricity_supply_system.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+- record_id: ARENA-DLV-48557
+  source_title: 'Alice Springs: A Case Study of Increasing Levels of PV Penetration
+    in an Electricity Supply System'
+  publish_date: 2011-06
+  project_name: Alice Springs PV Penetration Case Study
+  what_happened: P&W identified that reducing the nominal LV system voltage from 240V
+    to 230V — an industry-wide transition already underway in Australia — would provide
+    an additional 10V of headroom below the 253V upper voltage limit, directly reducing
+    the risk of PV-induced overvoltage events on the LV network. P&W treated management
+    of PV-related voltage rise as an additional incentive to accelerate this transition.
+  lesson_learnt: Network operators planning for increasing PV penetration should accelerate
+    the transition from 240V to 230V nominal LV voltage, as the additional headroom
+    this creates below the 253V upper limit directly reduces the risk of PV-induced
+    overvoltage and defers the need for more costly network interventions.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: utility/large-scale
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: P&W incorporated PV voltage management as an additional driver
+    for completing the NT-wide LV voltage transition from 240V to 230V, effectively
+    gaining 10V of overvoltage headroom at no incremental cost.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id004
+  - 39
+  evidence_excerpt: P&W has a broader plan to reduce the nominal system LV supply
+    voltage in the Northern Territory from 240V to 230V... This will also help reduce
+    the likelihood of PV-induced voltage excursions above the LV system upper voltage
+    limit... P&W considers the need to manage PV-related LV voltage effects an additional
+    incentive to complete this move to a 230V nominal LV voltage sooner rather than
+    later.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/alice-springs-a-case-study-of-increasing-levels-of-pv-penetration-in-an-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Alice-Springs-High-Penetration-PV-Case-Study-Report-June-2011.pdf
+  markdown_filename: alice_springs_a_case_study_of_increasing_levels_of_pv_penetration_in_an_electricity_supply_system.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48557
+  contributing_source_titles:
+  - 'Alice Springs: A Case Study of Increasing Levels of PV Penetration in an Electricity
+    Supply System'
+  contributing_sources:
+  - source_title: 'Alice Springs: A Case Study of Increasing Levels of PV Penetration
+      in an Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Alice-Springs-High-Penetration-PV-Case-Study-Report-June-2011.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/alice-springs-a-case-study-of-increasing-levels-of-pv-penetration-in-an-electricity-supply-system/
+    markdown_filename: alice_springs_a_case_study_of_increasing_levels_of_pv_penetration_in_an_electricity_supply_system.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+- record_id: ARENA-DLV-48558
+  source_title: 'Alice Springs: A Case Study of Increasing Levels of PV Penetration
+    in an Electricity Supply System'
+  publish_date: 2011-06
+  project_name: Alice Springs PV Penetration Case Study
+  what_happened: P&W observed that when PV systems nearing the output capacity of
+    a commercial site's load operate in unity-power-factor (real power only) mode
+    — as required by P&W's standard connection rules — the customer's net demand drawn
+    from the network during sunny midday periods could consist almost entirely of
+    reactive power. P&W identified this as a potential network reactive power management
+    problem at higher PV penetration levels.
+  lesson_learnt: Network operators should assess reactive power implications of PV
+    systems before penetration levels rise, particularly for commercial customers
+    where PV capacity may approach site load — requiring larger systems to provide
+    reactive power support (or installing power factor correction) addresses the issue
+    at the point of connection rather than retrospectively.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: utility/large-scale
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: P&W required a 100kW PV system to install a 60 kVAr power factor
+    correction unit (~$6,000) to maintain power factor above 0.85, and made reactive
+    power provision a specific requirement in the Uterne 1MW power purchase agreement.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id005
+  - 40
+  - 41
+  evidence_excerpt: P&W has made it a requirement of the power purchase agreement
+    for the Uterne 1MW PV system that reactive power is to be provided by the Uterne
+    system as well as real power and that the mix of the two shall be broadly be in
+    line with the Alice system's average load power factor... P&W has required a 100kW
+    PV system to have a 60 kVAr power factor correction unit installed to keep the
+    power customer's power factor above 0.85. P&W notes that the cost for this unit
+    was approximately $6,000.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/alice-springs-a-case-study-of-increasing-levels-of-pv-penetration-in-an-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Alice-Springs-High-Penetration-PV-Case-Study-Report-June-2011.pdf
+  markdown_filename: alice_springs_a_case_study_of_increasing_levels_of_pv_penetration_in_an_electricity_supply_system.md
+  source_page_pdf: 41
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48558
+  contributing_source_titles:
+  - 'Alice Springs: A Case Study of Increasing Levels of PV Penetration in an Electricity
+    Supply System'
+  contributing_sources:
+  - source_title: 'Alice Springs: A Case Study of Increasing Levels of PV Penetration
+      in an Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Alice-Springs-High-Penetration-PV-Case-Study-Report-June-2011.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/alice-springs-a-case-study-of-increasing-levels-of-pv-penetration-in-an-electricity-supply-system/
+    markdown_filename: alice_springs_a_case_study_of_increasing_levels_of_pv_penetration_in_an_electricity_supply_system.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+- record_id: ARENA-DLV-48559
+  source_title: 'Alice Springs: A Case Study of Increasing Levels of PV Penetration
+    in an Electricity Supply System'
+  publish_date: 2011-06
+  project_name: Alice Springs PV Penetration Case Study
+  what_happened: The Alice Solar City program funded smart meters with interval data
+    logging for all 277 residential and 35 commercial PV systems installed under the
+    program, capturing gross load consumption and PV output separately. The 183 residential
+    systems installed outside the program received only simple consumption meters
+    without interval data capability, creating an uneven monitoring dataset across
+    the network and limiting P&W's ability to analyse actual PV performance and penetration
+    effects.
+  lesson_learnt: Standardise metering requirements across all grid-connected PV installations
+    — not just program-funded ones — to ensure a complete and consistent dataset for
+    network monitoring and analysis; retrospectively upgrading metering on non-program
+    systems is costly, and the gap in data quality directly limits a utility's ability
+    to identify and respond to emerging PV penetration issues.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: utility/large-scale
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: P&W assessed the feasibility of using smart meters already installed
+    at ASC and larger commercial PV system premises to log voltage data alongside
+    billing data, and planned to install meters on high-penetration distribution transformers
+    to supplement the gaps in customer-level data.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id006
+  - 23
+  - 24
+  - 39
+  evidence_excerpt: The 183 residential PV systems installed outside the ASC program
+    typically receive utility meters that are configured as simple consumption meters
+    that measure total PV system output and total load consumption separately but
+    are not configured to measure interval data or support in-house energy displays...
+    These different approaches to metering and monitoring obviously result in different
+    levels of energy data being available for these PV systems and their associated
+    households, for monitoring and analysis purposes.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/alice-springs-a-case-study-of-increasing-levels-of-pv-penetration-in-an-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Alice-Springs-High-Penetration-PV-Case-Study-Report-June-2011.pdf
+  markdown_filename: alice_springs_a_case_study_of_increasing_levels_of_pv_penetration_in_an_electricity_supply_system.md
+  source_page_pdf: 23
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48559
+  contributing_source_titles:
+  - 'Alice Springs: A Case Study of Increasing Levels of PV Penetration in an Electricity
+    Supply System'
+  contributing_sources:
+  - source_title: 'Alice Springs: A Case Study of Increasing Levels of PV Penetration
+      in an Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Alice-Springs-High-Penetration-PV-Case-Study-Report-June-2011.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/alice-springs-a-case-study-of-increasing-levels-of-pv-penetration-in-an-electricity-supply-system/
+    markdown_filename: alice_springs_a_case_study_of_increasing_levels_of_pv_penetration_in_an_electricity_supply_system.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-48560
+  source_title: 'Alice Springs: A Case Study of Increasing Levels of PV Penetration
+    in an Electricity Supply System'
+  publish_date: 2011-06
+  project_name: Alice Springs PV Penetration Case Study
+  what_happened: The Alice Solar City program — one of seven Australian Government
+    Solar Cities — drove a rapid increase in PV connections from 2 systems before
+    2008 to 528 systems (2.1MWp) by April 2011, through a combination of direct financial
+    incentives, a community support framework, and government-funded iconic showcase
+    installations. The program generated significant community momentum for PV adoption,
+    but was scheduled to end in mid-2013 with no confirmed successor mechanism.
+  lesson_learnt: Government-funded solar city or similar aggregated deployment programs
+    can rapidly accelerate PV penetration on isolated networks, but utilities need
+    to develop long-term integration management plans that extend beyond the program
+    horizon — relying on ongoing program funding as the primary driver of PV growth
+    creates planning uncertainty for network operators who must manage the cumulative
+    penetration impact.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: utility/large-scale
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: ASC program stakeholders commenced discussions on post-2013 solar
+    support options before program end; P&W identified future cost-driven PV uptake
+    (declining system costs, rising electricity prices, diesel fuel costs) as likely
+    to sustain growth independent of program support.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id007
+  - 8
+  - 24
+  - 25
+  evidence_excerpt: The Alice Solar City project has helped facilitate many of the
+    PV systems installed on the Alice network via specific ASC financial incentives
+    as well as by providing a general broader support framework for the use of solar
+    energy in Alice Springs. As a result the program has helped to generate significant
+    momentum in the community for the installation of PV systems, and the acceptance
+    of this as 'normal' practice... the Australian Government's Solar City program
+    is scheduled to finish in mid 2013 and so further subsidisation of PV systems
+    through the Solar City program are likely to be limited.
+  confidence_note: 'project_scale_band reconciled to ''utility/large-scale'' from:
+    utility/large-scale (14/15), programmatic/portfolio-level (1/15); proponent_type
+    reconciled to ''network business'' from: network business (14/15), government/public-sector
+    body (1/15)'
+  source_url: https://arena.gov.au/knowledge-bank/alice-springs-a-case-study-of-increasing-levels-of-pv-penetration-in-an-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Alice-Springs-High-Penetration-PV-Case-Study-Report-June-2011.pdf
+  markdown_filename: alice_springs_a_case_study_of_increasing_levels_of_pv_penetration_in_an_electricity_supply_system.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48560
+  contributing_source_titles:
+  - 'Alice Springs: A Case Study of Increasing Levels of PV Penetration in an Electricity
+    Supply System'
+  contributing_sources:
+  - source_title: 'Alice Springs: A Case Study of Increasing Levels of PV Penetration
+      in an Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Alice-Springs-High-Penetration-PV-Case-Study-Report-June-2011.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/alice-springs-a-case-study-of-increasing-levels-of-pv-penetration-in-an-electricity-supply-system/
+    markdown_filename: alice_springs_a_case_study_of_increasing_levels_of_pv_penetration_in_an_electricity_supply_system.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+- record_id: ARENA-DLV-48561
+  source_title: 'Alice Springs: A Case Study of Increasing Levels of PV Penetration
+    in an Electricity Supply System'
+  publish_date: 2011-06
+  project_name: Alice Springs PV Penetration Case Study
+  what_happened: P&W found that in the Alice Springs isolated network, PV peak power
+    penetration was higher in winter (5.3% of midday load) than summer (4.3%) despite
+    lower absolute PV output in winter, because winter midday system load (26MW average)
+    is substantially lower than summer midday load (40MW average). This counter-intuitive
+    relationship between seasonal load profile and effective PV penetration was identified
+    as an important planning consideration for small autonomous grids.
+  lesson_learnt: On small isolated networks with pronounced seasonal load variation,
+    utilities should assess PV penetration against minimum seasonal load conditions
+    (not peak load) to identify the binding constraint — effective PV penetration
+    can be significantly higher in low-demand seasons even when absolute PV output
+    is lower, and this drives spinning reserve, voltage and frequency management requirements.
+  issue_severity: none
+  project_type: network/grid
+  project_scale_band: utility/large-scale
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id008
+  - 9
+  - 24
+  evidence_excerpt: Interestingly PV power penetration is estimated to be higher in
+    winter due to the considerably lower winter midday system load relative to the
+    midday summer system load.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/alice-springs-a-case-study-of-increasing-levels-of-pv-penetration-in-an-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Alice-Springs-High-Penetration-PV-Case-Study-Report-June-2011.pdf
+  markdown_filename: alice_springs_a_case_study_of_increasing_levels_of_pv_penetration_in_an_electricity_supply_system.md
+  source_page_pdf: 29
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48561
+  contributing_source_titles:
+  - 'Alice Springs: A Case Study of Increasing Levels of PV Penetration in an Electricity
+    Supply System'
+  contributing_sources:
+  - source_title: 'Alice Springs: A Case Study of Increasing Levels of PV Penetration
+      in an Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Alice-Springs-High-Penetration-PV-Case-Study-Report-June-2011.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/alice-springs-a-case-study-of-increasing-levels-of-pv-penetration-in-an-electricity-supply-system/
+    markdown_filename: alice_springs_a_case_study_of_increasing_levels_of_pv_penetration_in_an_electricity_supply_system.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+- record_id: ARENA-DLV-48562
+  source_title: 'Alice Springs: A Case Study of Increasing Levels of PV Penetration
+    in an Electricity Supply System'
+  publish_date: 2011-06
+  project_name: Alice Springs PV Penetration Case Study
+  what_happened: P&W's distribution of PV capacity across the Alice network was relatively
+    even, with no single distribution transformer having more than 18 residential
+    PV systems connected and with the three large iconic/showcase systems located
+    at physically distant points on the network. P&W found this geographic spread
+    helped buffer the system-level impact of passing clouds on aggregate PV output
+    and reduced localised voltage and penetration concerns.
+  lesson_learnt: When planning PV deployment across a distribution network, utilities
+    and program managers should actively manage the geographic distribution of both
+    small distributed systems and large centralised systems to avoid concentrations
+    that amplify cloud-induced intermittency effects and localised voltage problems
+    — a single 1MW system has a materially greater intermittency impact on the central
+    generation system than 500 dispersed 2kW systems of equivalent aggregate capacity.
+  issue_severity: none
+  project_type: network/grid
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id009
+  - 20
+  - 25
+  - 37
+  evidence_excerpt: The PV systems are reasonably well spread across the Alice network.
+    A good distribution of PV systems across the network can help to reduce localised
+    concentrations of PV capacity and therefore help reduce localised PV penetration
+    effects. It can also help to reduce the effects on the system of passing clouds,
+    particularly on the system-wide net power demand... if PV capacity is highly concentrated
+    in particular PV systems or specific localised areas of the network then the effects
+    of passing clouds on overall system PV output power could be significant, causing
+    large and rapid swings in system PV output power.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/alice-springs-a-case-study-of-increasing-levels-of-pv-penetration-in-an-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Alice-Springs-High-Penetration-PV-Case-Study-Report-June-2011.pdf
+  markdown_filename: alice_springs_a_case_study_of_increasing_levels_of_pv_penetration_in_an_electricity_supply_system.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48562
+  contributing_source_titles:
+  - 'Alice Springs: A Case Study of Increasing Levels of PV Penetration in an Electricity
+    Supply System'
+  contributing_sources:
+  - source_title: 'Alice Springs: A Case Study of Increasing Levels of PV Penetration
+      in an Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Alice-Springs-High-Penetration-PV-Case-Study-Report-June-2011.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/alice-springs-a-case-study-of-increasing-levels-of-pv-penetration-in-an-electricity-supply-system/
+    markdown_filename: alice_springs_a_case_study_of_increasing_levels_of_pv_penetration_in_an_electricity_supply_system.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+- record_id: ARENA-DLV-48563
+  source_title: 'Alice Springs: A Case Study of Increasing Levels of PV Penetration
+    in an Electricity Supply System'
+  publish_date: 2011-06
+  project_name: Alice Springs PV Penetration Case Study
+  what_happened: P&W, which does not own or control grid-connected PV inverters on
+    its network, identified that as PV penetration grows, the need for system-wide
+    inverter setting changes (e.g. frequency trip, voltage trip, reactive power) will
+    become more frequent and operationally significant. The existing model — directing
+    individual owners or installers to manually update inverter settings — is inefficient,
+    unverifiable and unlikely to achieve full compliance across a large fleet.
+  lesson_learnt: Future grid codes and standards (e.g. AS 4777) should require grid-connected
+    PV inverters to support remote interrogation and control by the network operator,
+    enabling efficient network-wide setting changes without reliance on installer-mediated
+    manual updates — this becomes a critical operational requirement as fleet sizes
+    grow to hundreds or thousands of units.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: utility/large-scale
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated integration
+  intervention_note: P&W advocated for relevant regulators and standards bodies to
+    consider whether AS 4777 and related codes should be amended to allow or require
+    remote interrogation and control capability for grid-connected PV inverters.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id010
+  - 11
+  - 35
+  evidence_excerpt: P&W is of the view that it should be simpler and more efficient
+    to change certain PV inverter settings if needed and that inverters should be
+    required to have the capability for this to be done remotely and across many/all
+    inverters at once (e.g. via software and communication links)... This is an issue
+    P&W believes may increase in significance as PV penetration levels increase, and
+    one that should be considered in future reviews of relevant standards and regulations
+    for grid-connected inverters.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/alice-springs-a-case-study-of-increasing-levels-of-pv-penetration-in-an-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Alice-Springs-High-Penetration-PV-Case-Study-Report-June-2011.pdf
+  markdown_filename: alice_springs_a_case_study_of_increasing_levels_of_pv_penetration_in_an_electricity_supply_system.md
+  source_page_pdf: 35
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48563
+  contributing_source_titles:
+  - 'Alice Springs: A Case Study of Increasing Levels of PV Penetration in an Electricity
+    Supply System'
+  contributing_sources:
+  - source_title: 'Alice Springs: A Case Study of Increasing Levels of PV Penetration
+      in an Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Alice-Springs-High-Penetration-PV-Case-Study-Report-June-2011.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/alice-springs-a-case-study-of-increasing-levels-of-pv-penetration-in-an-electricity-supply-system/
+    markdown_filename: alice_springs_a_case_study_of_increasing_levels_of_pv_penetration_in_an_electricity_supply_system.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-48564
+  source_title: 'Alice Springs: A Case Study of Increasing Levels of PV Penetration
+    in an Electricity Supply System'
+  publish_date: 2011-06
+  project_name: Alice Springs PV Penetration Case Study
+  what_happened: P&W assessed reverse power flow, network fault protection impacts,
+    PV islanding, and harmonic injection from PV inverters as potential integration
+    issues, and determined that at current and near-term PV penetration levels none
+    of these represented a concern on the Alice network. P&W attributed the absence
+    of harmonic issues to the good quality inverters installed, rather than to low
+    penetration alone.
+  lesson_learnt: Utilities integrating PV at moderate penetration levels on small
+    grids should systematically assess and document all canonical high-penetration
+    risk categories — including reverse power flow, fault protection, islanding and
+    harmonics — even when current penetration levels are low, to establish a baseline
+    and prioritise future monitoring as penetration grows; inverter quality specification
+    at connection approval is an effective pre-emptive control for harmonics.
+  issue_severity: none
+  project_type: network/grid
+  project_scale_band: utility/large-scale
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id011
+  - 43
+  - 44
+  evidence_excerpt: P&W states that harmonic injection from PV inverters is not an
+    issue on the Alice Springs network... P&W is of the view that good quality inverters
+    have primarily been installed on the Alice network and that is why there are no
+    system harmonic issues relating to PV inverters... P&W states that it has assessed
+    the network protection systems on the Alice system with respect to the increased
+    levels of PV system penetration and this is not presently an issue.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/alice-springs-a-case-study-of-increasing-levels-of-pv-penetration-in-an-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Alice-Springs-High-Penetration-PV-Case-Study-Report-June-2011.pdf
+  markdown_filename: alice_springs_a_case_study_of_increasing_levels_of_pv_penetration_in_an_electricity_supply_system.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48564
+  contributing_source_titles:
+  - 'Alice Springs: A Case Study of Increasing Levels of PV Penetration in an Electricity
+    Supply System'
+  contributing_sources:
+  - source_title: 'Alice Springs: A Case Study of Increasing Levels of PV Penetration
+      in an Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Alice-Springs-High-Penetration-PV-Case-Study-Report-June-2011.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/alice-springs-a-case-study-of-increasing-levels-of-pv-penetration-in-an-electricity-supply-system/
+    markdown_filename: alice_springs_a_case_study_of_increasing_levels_of_pv_penetration_in_an_electricity_supply_system.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+- record_id: ARENA-DLV-48565
+  source_title: 'Alice Springs: A Case Study of Increasing Levels of PV Penetration
+    in an Electricity Supply System'
+  publish_date: 2011-06
+  project_name: Alice Springs PV Penetration Case Study
+  what_happened: At the time of the case study, no collated information existed on
+    actual PV power output and energy delivered across all systems on the Alice network,
+    meaning PV penetration figures at the system level could only be estimated using
+    assumed output factors rather than measured data. P&W identified this as a gap
+    in its ability to monitor and manage PV penetration effects.
+  lesson_learnt: Network operators should establish a mechanism to collate actual
+    PV power and energy output data from all connected systems — not just program-funded
+    or large systems — before penetration levels reach the point where active management
+    is required; relying on estimated output factors for penetration assessments limits
+    the precision of operational decision-making.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: utility/large-scale
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: P&W initiated a broader metering and monitoring improvement program
+    including installing meters on high-penetration distribution transformers and
+    assessing use of smart meters for ongoing voltage and power data collection.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id012
+  - 29
+  evidence_excerpt: It is noted that the values for PV peak power and PV energy in
+    the above tables are estimates only, based on total installed PV capacity and
+    an estimated likely average output factor for PV systems across the network at
+    the times nominated, as there is currently no collated information available on
+    PV power and energy supplied by all PV systems across the network to provide actual
+    values for these measures.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/alice-springs-a-case-study-of-increasing-levels-of-pv-penetration-in-an-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Alice-Springs-High-Penetration-PV-Case-Study-Report-June-2011.pdf
+  markdown_filename: alice_springs_a_case_study_of_increasing_levels_of_pv_penetration_in_an_electricity_supply_system.md
+  source_page_pdf: 29
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-48565
+  contributing_source_titles:
+  - 'Alice Springs: A Case Study of Increasing Levels of PV Penetration in an Electricity
+    Supply System'
+  contributing_sources:
+  - source_title: 'Alice Springs: A Case Study of Increasing Levels of PV Penetration
+      in an Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Alice-Springs-High-Penetration-PV-Case-Study-Report-June-2011.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/alice-springs-a-case-study-of-increasing-levels-of-pv-penetration-in-an-electricity-supply-system/
+    markdown_filename: alice_springs_a_case_study_of_increasing_levels_of_pv_penetration_in_an_electricity_supply_system.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.95

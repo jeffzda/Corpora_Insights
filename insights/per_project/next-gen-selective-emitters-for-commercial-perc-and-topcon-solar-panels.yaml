@@ -1,0 +1,399 @@
+- record_id: ARENA-DLV-14202
+  source_title: Next-Gen Selective-Emitters for Commercial PERC and TOPCon Solar Panels
+    Report
+  publish_date: 2023-03
+  project_name: Next-Generation Selective-Emitters for Commercial PERC and TOPCon
+    Solar Panels
+  what_happened: Root-cause investigation of the NFT Ag contact formation failure
+    revealed that the low density of Ag crystallites at metal/Si interfaces was due
+    to the special low-reactivity glass frit system used in NFT pastes — a system
+    intentionally designed to avoid fire-through of SiNx layers, which simultaneously
+    prevents effective Ag crystallite formation on the silicon surface.
+  lesson_learnt: When adopting screen-printing paste materials for unconventional
+    contact formation roles (e.g. NFT Ag pastes forming direct metal/Si contacts),
+    verify contact formation feasibility early in the experimental phase — the glass
+    frit chemistry of NFT pastes is fundamentally unsuited to Ag crystallite formation,
+    and this constraint will block efficiency gains until paste chemistry is reformulated.
+  issue_severity: major
+  project_type: manufacturing/supply chain
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Switched to conventional fire-through (FT) Ag pastes on the same
+    laser-doped surface, achieving contact resistivity of 0.5 mΩ.cm2 and confirming
+    the issue was paste-specific, not process-specific; the low-area selective contact
+    design was pursued instead.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages:
+  - 4
+  - 9
+  - 10
+  evidence_excerpt: the formation of Ag crystallites on the silicon surface is closely
+    related to the direct reaction between Ag+ ions dissolved in the glass layer and
+    the silicon surface, such a low density of Ag crystallites formed with NFT Ag
+    pastes could be largely attributed to the special glass frit system of them.
+  confidence_note: Canonical record merged from 2 source records across 1 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/next-gen-selective-emitters-for-commercial-perc-and-topcon-solar-panels-report/
+  project_page_url: https://arena.gov.au/projects/next-gen-selective-emitters-for-commercial-perc-and-topcon-solar-panels/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 18/05/2023
+  kb_year: '2020'
+  kb_associated_project: Next-Gen Selective-Emitters for Commercial PERC and TOPCon
+    Solar Panels
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.23m
+  total_project_value: $4.66m
+  lead_organisation: University of New South Wales
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 19/09/2020
+  location: Kensington, New South Wales
+  project_partners: Suzhou Talesun Solar Technologies Co., Ltd Trina Solar Ltd
+  pdf_url: https://arena.gov.au/assets/2023/05/next-generation-selective-emitters-for-commercial-perc-topcon-solar-panels.pdf
+  markdown_filename: next_gen_selective_emitters_for_commercial_perc_and_topcon_solar_panels_report.md
+  source_page_pdf: 9
+  corroboration_count: 2
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14201
+  - ARENA-DLV-14202
+  contributing_source_titles:
+  - Next-Gen Selective-Emitters for Commercial PERC and TOPCon Solar Panels Report
+  contributing_sources:
+  - source_title: Next-Gen Selective-Emitters for Commercial PERC and TOPCon Solar
+      Panels Report
+    pdf_url: https://arena.gov.au/assets/2023/05/next-generation-selective-emitters-for-commercial-perc-topcon-solar-panels.pdf
+    source_pages:
+    - 4
+    - 9
+    - 10
+    source_url: https://arena.gov.au/knowledge-bank/next-gen-selective-emitters-for-commercial-perc-and-topcon-solar-panels-report/
+    markdown_filename: next_gen_selective_emitters_for_commercial_perc_and_topcon_solar_panels_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: design assumption failure, technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-14203
+  source_title: Next-Gen Selective-Emitters for Commercial PERC and TOPCon Solar Panels
+    Report
+  publish_date: 2023-03
+  project_name: Next-Generation Selective-Emitters for Commercial PERC and TOPCon
+    Solar Panels
+  what_happened: 'The project identified a fundamental trade-off in low-area contact
+    design: reducing metal/Si interface areas lowers contact recombination losses
+    but simultaneously increases resistive losses due to elevated contact resistance
+    and spreading resistance at localised contact regions, creating a design optimisation
+    constraint not fully anticipated at project outset.'
+  lesson_learnt: Any future project modifying contacting pattern geometry to reduce
+    recombination losses must simultaneously model resistive loss penalties — a systemic
+    multi-loss optimisation approach is required, as reducing interface area without
+    achieving sufficiently low contact resistivity will yield no net efficiency gain.
+  issue_severity: moderate
+  project_type: manufacturing/supply chain
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Spreading resistance contribution was separated from measured
+    contact resistance using Quokka 3 simulation, enabling quantified trade-off analysis
+    and informing optimised contact geometry design.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id001
+  - 6
+  - 7
+  evidence_excerpt: reducing metal/Si interface areas to lower contact recombination
+    losses in screen-printed solar cells must be done in a way without triggering
+    excessive increases in resistive losses, which requires careful evaluation to
+    balance reductions in contact recombination losses and increases in resistive
+    losses.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/next-gen-selective-emitters-for-commercial-perc-and-topcon-solar-panels-report/
+  project_page_url: https://arena.gov.au/projects/next-gen-selective-emitters-for-commercial-perc-and-topcon-solar-panels/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 18/05/2023
+  kb_year: '2020'
+  kb_associated_project: Next-Gen Selective-Emitters for Commercial PERC and TOPCon
+    Solar Panels
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.23m
+  total_project_value: $4.66m
+  lead_organisation: University of New South Wales
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 19/09/2020
+  location: Kensington, New South Wales
+  project_partners: Suzhou Talesun Solar Technologies Co., Ltd Trina Solar Ltd
+  pdf_url: https://arena.gov.au/assets/2023/05/next-generation-selective-emitters-for-commercial-perc-topcon-solar-panels.pdf
+  markdown_filename: next_gen_selective_emitters_for_commercial_perc_and_topcon_solar_panels_report.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14203
+  contributing_source_titles:
+  - Next-Gen Selective-Emitters for Commercial PERC and TOPCon Solar Panels Report
+  contributing_sources:
+  - source_title: Next-Gen Selective-Emitters for Commercial PERC and TOPCon Solar
+      Panels Report
+    pdf_url: https://arena.gov.au/assets/2023/05/next-generation-selective-emitters-for-commercial-perc-topcon-solar-panels.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/next-gen-selective-emitters-for-commercial-perc-and-topcon-solar-panels-report/
+    markdown_filename: next_gen_selective_emitters_for_commercial_perc_and_topcon_solar_panels_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-14204
+  source_title: Next-Gen Selective-Emitters for Commercial PERC and TOPCon Solar Panels
+    Report
+  publish_date: 2023-03
+  project_name: Next-Generation Selective-Emitters for Commercial PERC and TOPCon
+    Solar Panels
+  what_happened: The low-area selective contact design (as distinct from the blocked
+    low-area laser-doped contact approach) was successfully demonstrated on PERC solar
+    cells, achieving up to 12 mV improvement in open-circuit voltage and more than
+    0.3%abs efficiency gain compared to conventional contacting designs, confirming
+    reduced metal/Si interface area as an effective efficiency lever.
+  lesson_learnt: Reducing metal/Si interface areas via the low-area selective contact
+    scheme is a technically validated route to meaningful PERC efficiency improvement;
+    projects targeting >24% screen-printed PERC efficiency should include this contact
+    geometry as a candidate design, particularly where conventional paste chemistries
+    are retained.
+  issue_severity: none
+  project_type: manufacturing/supply chain
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id002
+  - 3
+  - 4
+  evidence_excerpt: a promising VOC gain of 12 mV and efficiency improvements of up
+    to 0.3%abs have been demonstrated on PERC solar cells fabricated with the low-area
+    selective contact design, compared to reference cells with conventional screen-printed
+    contacts.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/next-gen-selective-emitters-for-commercial-perc-and-topcon-solar-panels-report/
+  project_page_url: https://arena.gov.au/projects/next-gen-selective-emitters-for-commercial-perc-and-topcon-solar-panels/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 18/05/2023
+  kb_year: '2020'
+  kb_associated_project: Next-Gen Selective-Emitters for Commercial PERC and TOPCon
+    Solar Panels
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.23m
+  total_project_value: $4.66m
+  lead_organisation: University of New South Wales
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 19/09/2020
+  location: Kensington, New South Wales
+  project_partners: Suzhou Talesun Solar Technologies Co., Ltd Trina Solar Ltd
+  pdf_url: https://arena.gov.au/assets/2023/05/next-generation-selective-emitters-for-commercial-perc-topcon-solar-panels.pdf
+  markdown_filename: next_gen_selective_emitters_for_commercial_perc_and_topcon_solar_panels_report.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14204
+  contributing_source_titles:
+  - Next-Gen Selective-Emitters for Commercial PERC and TOPCon Solar Panels Report
+  contributing_sources:
+  - source_title: Next-Gen Selective-Emitters for Commercial PERC and TOPCon Solar
+      Panels Report
+    pdf_url: https://arena.gov.au/assets/2023/05/next-generation-selective-emitters-for-commercial-perc-topcon-solar-panels.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/next-gen-selective-emitters-for-commercial-perc-and-topcon-solar-panels-report/
+    markdown_filename: next_gen_selective_emitters_for_commercial_perc_and_topcon_solar_panels_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-14205
+  source_title: Next-Gen Selective-Emitters for Commercial PERC and TOPCon Solar Panels
+    Report
+  publish_date: 2023-03
+  project_name: Next-Generation Selective-Emitters for Commercial PERC and TOPCon
+    Solar Panels
+  what_happened: Pilot production of full-area bifacial PERC solar cells at partner
+    facilities (Trina and Talesun) using the developed contacting technology achieved
+    an average efficiency above 23.60%abs and a peak efficiency of 23.71%abs, validating
+    technology transferability from lab to industrial production environment using
+    industry-standard equipment.
+  lesson_learnt: Pilot production validation at partner industrial facilities using
+    standard equipment is a critical step before commercialisation claims — the successful
+    small-batch production at partner sites using this contact scheme demonstrates
+    that lab-developed LDSE technologies can be transferred to industrial screen-printing
+    lines without major processing changes.
+  issue_severity: none
+  project_type: manufacturing/supply chain
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id003
+  - 4
+  - 5
+  evidence_excerpt: a batch of large-area bi-facial PERC solar cells have been successfully
+    manufactured at partner facilities with a remarkable average efficiency above
+    23.60%abs and a peak efficiency as high as 23.71%abs.
+  confidence_note: 'project_scale_band assigned as pilot because this was a small-batch
+    production run at partner facilities for validation purposes, not a full commercial
+    production run.; project_scale_band reconciled to ''demonstration'' from: demonstration
+    (5/6), pilot (1/6)'
+  source_url: https://arena.gov.au/knowledge-bank/next-gen-selective-emitters-for-commercial-perc-and-topcon-solar-panels-report/
+  project_page_url: https://arena.gov.au/projects/next-gen-selective-emitters-for-commercial-perc-and-topcon-solar-panels/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 18/05/2023
+  kb_year: '2020'
+  kb_associated_project: Next-Gen Selective-Emitters for Commercial PERC and TOPCon
+    Solar Panels
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.23m
+  total_project_value: $4.66m
+  lead_organisation: University of New South Wales
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 19/09/2020
+  location: Kensington, New South Wales
+  project_partners: Suzhou Talesun Solar Technologies Co., Ltd Trina Solar Ltd
+  pdf_url: https://arena.gov.au/assets/2023/05/next-generation-selective-emitters-for-commercial-perc-topcon-solar-panels.pdf
+  markdown_filename: next_gen_selective_emitters_for_commercial_perc_and_topcon_solar_panels_report.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14205
+  contributing_source_titles:
+  - Next-Gen Selective-Emitters for Commercial PERC and TOPCon Solar Panels Report
+  contributing_sources:
+  - source_title: Next-Gen Selective-Emitters for Commercial PERC and TOPCon Solar
+      Panels Report
+    pdf_url: https://arena.gov.au/assets/2023/05/next-generation-selective-emitters-for-commercial-perc-topcon-solar-panels.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/next-gen-selective-emitters-for-commercial-perc-and-topcon-solar-panels-report/
+    markdown_filename: next_gen_selective_emitters_for_commercial_perc_and_topcon_solar_panels_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-14206
+  source_title: Next-Gen Selective-Emitters for Commercial PERC and TOPCon Solar Panels
+    Report
+  publish_date: 2023-03
+  project_name: Next-Generation Selective-Emitters for Commercial PERC and TOPCon
+    Solar Panels
+  what_happened: A key knowledge gap was identified regarding how to achieve lower
+    contact resistivity with current LDSE technology and industrial Ag pastes. Two
+    candidate approaches — improving glass frit reactivity or forming more heavily
+    doped LDSE regions — were found to carry their own efficiency trade-offs (increased
+    surface/Auger recombination), leaving no resolved pathway to low contact resistivity
+    within current material constraints.
+  lesson_learnt: Future projects developing screen-printed contacts with reduced interface
+    areas should treat contact resistivity reduction as an independent parallel research
+    track — the interaction between glass frit chemistry, laser doping intensity,
+    and recombination losses creates interdependencies that cannot be resolved by
+    optimising any single variable in isolation.
+  issue_severity: moderate
+  project_type: manufacturing/supply chain
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id004
+  - 6
+  - 7
+  evidence_excerpt: a key knowledge gap identified is how to achieve a lower contact
+    resistivity without deviating from the current LDSE technology and the use of
+    industrial standard Ag pastes.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/next-gen-selective-emitters-for-commercial-perc-and-topcon-solar-panels-report/
+  project_page_url: https://arena.gov.au/projects/next-gen-selective-emitters-for-commercial-perc-and-topcon-solar-panels/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 18/05/2023
+  kb_year: '2020'
+  kb_associated_project: Next-Gen Selective-Emitters for Commercial PERC and TOPCon
+    Solar Panels
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.23m
+  total_project_value: $4.66m
+  lead_organisation: University of New South Wales
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 19/09/2020
+  location: Kensington, New South Wales
+  project_partners: Suzhou Talesun Solar Technologies Co., Ltd Trina Solar Ltd
+  pdf_url: https://arena.gov.au/assets/2023/05/next-generation-selective-emitters-for-commercial-perc-topcon-solar-panels.pdf
+  markdown_filename: next_gen_selective_emitters_for_commercial_perc_and_topcon_solar_panels_report.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-14206
+  contributing_source_titles:
+  - Next-Gen Selective-Emitters for Commercial PERC and TOPCon Solar Panels Report
+  contributing_sources:
+  - source_title: Next-Gen Selective-Emitters for Commercial PERC and TOPCon Solar
+      Panels Report
+    pdf_url: https://arena.gov.au/assets/2023/05/next-generation-selective-emitters-for-commercial-perc-topcon-solar-panels.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/next-gen-selective-emitters-for-commercial-perc-and-topcon-solar-panels-report/
+    markdown_filename: next_gen_selective_emitters_for_commercial_perc_and_topcon_solar_panels_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92

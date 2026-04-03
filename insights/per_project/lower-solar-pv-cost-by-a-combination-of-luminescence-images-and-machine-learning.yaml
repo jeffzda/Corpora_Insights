@@ -1,0 +1,710 @@
+- record_id: ARENA-DLV-44051
+  source_title: Lower Solar PV Cost by a Combination of Luminescence Images and Machine-Learning
+    Report
+  publish_date: 2023-02
+  project_name: Advanced Silicon - Lower photovoltaic cost by a combination of luminescence
+    images and machine-learning
+  what_happened: A deep learning-based super-resolution algorithm (ESRGAN) was developed
+    and demonstrated to outperform traditional bicubic interpolation for enhancing
+    the spatial resolution of luminescence images of solar cells, successfully reconstructing
+    fine defect features even on images significantly different from the training
+    dataset.
+  lesson_learnt: When seeking to increase luminescence image spatial resolution for
+    solar cell inspection, ML-based super-resolution algorithms (e.g. ESRGAN) should
+    be preferred over traditional image processing methods such as bicubic interpolation
+    — they generalise to unseen image types and recover fine defect detail that traditional
+    methods miss, reducing the need for costly high-resolution hardware.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id001
+  - 7
+  - 8
+  - 9
+  evidence_excerpt: image enhancement algorithms based on ML outperform traditional
+    image processing algorithms to increase the spatial resolution of luminescence
+    images... the developed ML-based algorithms learn to improve the image resolution
+    even in cases that are significantly different from the images used in the training
+    phase.
+  confidence_note: project_scale_band classified as demonstration because primary
+    goal is proving technical feasibility and generating evidence, with a commercialisation
+    plan noted as a next step rather than a deployed commercial product.
+  source_url: https://arena.gov.au/knowledge-bank/lower-solar-pv-cost-by-a-combination-of-luminescence-images-and-machine-learning-report/
+  project_page_url: https://arena.gov.au/projects/lower-solar-pv-cost-by-a-combination-of-luminescence-images-and-machine-learning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/02/2023
+  kb_year: '2020'
+  kb_associated_project: Lower Solar PV Cost by a Combination of Luminescence Images
+    and Machine-Learning
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $694k
+  total_project_value: $2.81m
+  lead_organisation: University of New South Wales
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Kensington, New South Wales
+  project_partners: BT Imaging, Jinko Solar
+  pdf_url: https://arena.gov.au/assets/2023/02/lower-solar-pv-cost-by-a-combinatio-of-luminescence-images-and-machine-learning-report.pdf
+  markdown_filename: lower_solar_pv_cost_by_a_combination_of_luminescence_images_and_machine_learning_report.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-44051
+  contributing_source_titles:
+  - Lower Solar PV Cost by a Combination of Luminescence Images and Machine-Learning
+    Report
+  contributing_sources:
+  - source_title: Lower Solar PV Cost by a Combination of Luminescence Images and
+      Machine-Learning Report
+    pdf_url: https://arena.gov.au/assets/2023/02/lower-solar-pv-cost-by-a-combinatio-of-luminescence-images-and-machine-learning-report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/lower-solar-pv-cost-by-a-combination-of-luminescence-images-and-machine-learning-report/
+    markdown_filename: lower_solar_pv_cost_by_a_combination_of_luminescence_images_and_machine_learning_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-44052
+  source_title: Lower Solar PV Cost by a Combination of Luminescence Images and Machine-Learning
+    Report
+  publish_date: 2023-02
+  project_name: Advanced Silicon - Lower photovoltaic cost by a combination of luminescence
+    images and machine-learning
+  what_happened: Existing image quality metrics were found to be inadequate for accurately
+    quantifying reconstructed super-resolution luminescence images in relation to
+    human visual perception, creating a knowledge gap that limits rigorous evaluation
+    of ML-based image enhancement methods.
+  lesson_learnt: Projects applying ML-based image super-resolution to solar cell inspection
+    should not rely solely on standard image metrics (e.g. SSIM, PSNR) to validate
+    results — these metrics have severe limitations in capturing perceptually relevant
+    quality and new evaluation methods need to be developed or adopted before results
+    can be fully trusted at scale.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The team implemented data curation and correct labelling procedures
+    to improve dataset quality, enabling the final models to achieve F1 scores of
+    98.3% and accuracy of 99.6%.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages:
+  - 4
+  - 7
+  evidence_excerpt: Image metrics play a fundamental role in assessing enhanced super-resolution
+    images. While various metrics have been proposed, it is acknowledged that none
+    of them accurately measures the quality of an image. Hence, the existing metrics
+    have severe limitations in effectively quantifying the reconstructed images in
+    relation to human visual perception. There is an urgent need to develop more accurate
+    image metrics to facilitate the evaluation of image quality.
+  confidence_note: issue_severity set to minor — this is a methodological gap that
+    did not prevent project completion but limits confidence in quantitative evaluation
+    outputs. Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/lower-solar-pv-cost-by-a-combination-of-luminescence-images-and-machine-learning-report/
+  project_page_url: https://arena.gov.au/projects/lower-solar-pv-cost-by-a-combination-of-luminescence-images-and-machine-learning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/02/2023
+  kb_year: '2020'
+  kb_associated_project: Lower Solar PV Cost by a Combination of Luminescence Images
+    and Machine-Learning
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $694k
+  total_project_value: $2.81m
+  lead_organisation: University of New South Wales
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Kensington, New South Wales
+  project_partners: BT Imaging, Jinko Solar
+  pdf_url: https://arena.gov.au/assets/2023/02/lower-solar-pv-cost-by-a-combinatio-of-luminescence-images-and-machine-learning-report.pdf
+  markdown_filename: lower_solar_pv_cost_by_a_combination_of_luminescence_images_and_machine_learning_report.md
+  source_page_pdf: 7
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-44052
+  - ARENA-DLV-58551
+  contributing_source_titles:
+  - Lower Solar PV Cost by a Combination of Luminescence Images and Machine-Learning
+    Report
+  - Low Solar PV Cost Interim Public Dissemination Report
+  contributing_sources:
+  - source_title: Lower Solar PV Cost by a Combination of Luminescence Images and
+      Machine-Learning Report
+    pdf_url: https://arena.gov.au/assets/2023/02/lower-solar-pv-cost-by-a-combinatio-of-luminescence-images-and-machine-learning-report.pdf
+    source_pages:
+    - 7
+    source_url: https://arena.gov.au/knowledge-bank/lower-solar-pv-cost-by-a-combination-of-luminescence-images-and-machine-learning-report/
+    markdown_filename: lower_solar_pv_cost_by_a_combination_of_luminescence_images_and_machine_learning_report.md
+  - source_title: Low Solar PV Cost Interim Public Dissemination Report
+    pdf_url: https://arena.gov.au/assets/2021/11/low-solar-pv-cost-interim-public-dissemination-report.pdf
+    source_pages:
+    - 4
+    source_url: https://arena.gov.au/knowledge-bank/low-solar-pv-cost-interim-public-dissemination-report/
+    markdown_filename: low_solar_pv_cost_interim_public_dissemination_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-44053
+  source_title: Lower Solar PV Cost by a Combination of Luminescence Images and Machine-Learning
+    Report
+  publish_date: 2023-02
+  project_name: Advanced Silicon - Lower photovoltaic cost by a combination of luminescence
+    images and machine-learning
+  what_happened: A hybrid model combining an empirical expression (Martin Green's
+    fill-factor equation) with a machine learning residual-correction framework significantly
+    outperformed both the pure empirical model (R² 0.81) and the pure ML model on
+    a validation set of 2,000 solar cells, achieving superior R² and RMSE on fill-factor
+    prediction from luminescence images.
+  lesson_learnt: When predicting solar cell electrical parameters from luminescence
+    images, use a hybrid approach — apply an empirical expression for initial estimation
+    and train an ML model to predict the residual error — rather than a pure ML or
+    pure empirical model; this yields materially better accuracy, potentially with
+    less training data.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id002
+  - 10
+  - 11
+  evidence_excerpt: The accuracy of physical models or empirical expressions can be
+    improved using ML models. The empirical expression is used for initial estimation
+    whereas the ML model improves its accuracy further. The hybrid approach is found
+    to be much more successful than either empirical or pure ML model approaches.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/lower-solar-pv-cost-by-a-combination-of-luminescence-images-and-machine-learning-report/
+  project_page_url: https://arena.gov.au/projects/lower-solar-pv-cost-by-a-combination-of-luminescence-images-and-machine-learning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/02/2023
+  kb_year: '2020'
+  kb_associated_project: Lower Solar PV Cost by a Combination of Luminescence Images
+    and Machine-Learning
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $694k
+  total_project_value: $2.81m
+  lead_organisation: University of New South Wales
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Kensington, New South Wales
+  project_partners: BT Imaging, Jinko Solar
+  pdf_url: https://arena.gov.au/assets/2023/02/lower-solar-pv-cost-by-a-combinatio-of-luminescence-images-and-machine-learning-report.pdf
+  markdown_filename: lower_solar_pv_cost_by_a_combination_of_luminescence_images_and_machine_learning_report.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-44053
+  contributing_source_titles:
+  - Lower Solar PV Cost by a Combination of Luminescence Images and Machine-Learning
+    Report
+  contributing_sources:
+  - source_title: Lower Solar PV Cost by a Combination of Luminescence Images and
+      Machine-Learning Report
+    pdf_url: https://arena.gov.au/assets/2023/02/lower-solar-pv-cost-by-a-combinatio-of-luminescence-images-and-machine-learning-report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/lower-solar-pv-cost-by-a-combination-of-luminescence-images-and-machine-learning-report/
+    markdown_filename: lower_solar_pv_cost_by_a_combination_of_luminescence_images_and_machine_learning_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-44054
+  source_title: Lower Solar PV Cost by a Combination of Luminescence Images and Machine-Learning
+    Report
+  publish_date: 2023-02
+  project_name: Advanced Silicon - Lower photovoltaic cost by a combination of luminescence
+    images and machine-learning
+  what_happened: Hybrid ML models for solar cell parameter prediction were validated
+    only on data from a single production line, leaving their generalisability across
+    different industrial production environments unverified at project completion.
+  lesson_learnt: Before deploying hybrid physical-ML models in solar cell manufacturing,
+    validate performance on datasets from multiple production lines — a model trained
+    and tested on one line may not generalise to others, and this gap should be explicitly
+    addressed in any follow-on commercialisation or scale-up programme.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id003
+  - 10
+  evidence_excerpt: in order to fully assess the robustness and reliability of these
+    models, it is important to evaluate their performance using datasets obtained
+    from different production lines. This will provide insights into the generalisability
+    and applicability of the models across different industrial settings.
+  confidence_note: lifecycle_phase assigned close-out/post-project review because
+    this gap was identified at project completion as a remaining limitation, not a
+    failure during development.
+  source_url: https://arena.gov.au/knowledge-bank/lower-solar-pv-cost-by-a-combination-of-luminescence-images-and-machine-learning-report/
+  project_page_url: https://arena.gov.au/projects/lower-solar-pv-cost-by-a-combination-of-luminescence-images-and-machine-learning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/02/2023
+  kb_year: '2020'
+  kb_associated_project: Lower Solar PV Cost by a Combination of Luminescence Images
+    and Machine-Learning
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $694k
+  total_project_value: $2.81m
+  lead_organisation: University of New South Wales
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Kensington, New South Wales
+  project_partners: BT Imaging, Jinko Solar
+  pdf_url: https://arena.gov.au/assets/2023/02/lower-solar-pv-cost-by-a-combinatio-of-luminescence-images-and-machine-learning-report.pdf
+  markdown_filename: lower_solar_pv_cost_by_a_combination_of_luminescence_images_and_machine_learning_report.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-44054
+  contributing_source_titles:
+  - Lower Solar PV Cost by a Combination of Luminescence Images and Machine-Learning
+    Report
+  contributing_sources:
+  - source_title: Lower Solar PV Cost by a Combination of Luminescence Images and
+      Machine-Learning Report
+    pdf_url: https://arena.gov.au/assets/2023/02/lower-solar-pv-cost-by-a-combinatio-of-luminescence-images-and-machine-learning-report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/lower-solar-pv-cost-by-a-combination-of-luminescence-images-and-machine-learning-report/
+    markdown_filename: lower_solar_pv_cost_by_a_combination_of_luminescence_images_and_machine_learning_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-44055
+  source_title: Lower Solar PV Cost by a Combination of Luminescence Images and Machine-Learning
+    Report
+  publish_date: 2023-02
+  project_name: Advanced Silicon - Lower photovoltaic cost by a combination of luminescence
+    images and machine-learning
+  what_happened: An ML-based automated solar cell sorting and fault classification
+    system achieved 99.2% overall accuracy, demonstrating that the manual expert-dependent
+    inspection process used in production lines can be reliably automated using luminescence
+    images.
+  lesson_learnt: Automated ML-based fault classification using luminescence images
+    can replace slow, expert-dependent manual inspection in solar cell production
+    lines, achieving >99% accuracy; future manufacturing projects should consider
+    this approach to increase throughput and reduce inspection costs rather than defaulting
+    to manual or rule-based methods.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id004
+  - 4
+  evidence_excerpt: The developed approach achieved an outstanding result with an
+    overall accuracy of 99.2%.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/lower-solar-pv-cost-by-a-combination-of-luminescence-images-and-machine-learning-report/
+  project_page_url: https://arena.gov.au/projects/lower-solar-pv-cost-by-a-combination-of-luminescence-images-and-machine-learning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/02/2023
+  kb_year: '2020'
+  kb_associated_project: Lower Solar PV Cost by a Combination of Luminescence Images
+    and Machine-Learning
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $694k
+  total_project_value: $2.81m
+  lead_organisation: University of New South Wales
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Kensington, New South Wales
+  project_partners: BT Imaging, Jinko Solar
+  pdf_url: https://arena.gov.au/assets/2023/02/lower-solar-pv-cost-by-a-combinatio-of-luminescence-images-and-machine-learning-report.pdf
+  markdown_filename: lower_solar_pv_cost_by_a_combination_of_luminescence_images_and_machine_learning_report.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-44055
+  contributing_source_titles:
+  - Lower Solar PV Cost by a Combination of Luminescence Images and Machine-Learning
+    Report
+  contributing_sources:
+  - source_title: Lower Solar PV Cost by a Combination of Luminescence Images and
+      Machine-Learning Report
+    pdf_url: https://arena.gov.au/assets/2023/02/lower-solar-pv-cost-by-a-combinatio-of-luminescence-images-and-machine-learning-report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/lower-solar-pv-cost-by-a-combination-of-luminescence-images-and-machine-learning-report/
+    markdown_filename: lower_solar_pv_cost_by_a_combination_of_luminescence_images_and_machine_learning_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-44056
+  source_title: Lower Solar PV Cost by a Combination of Luminescence Images and Machine-Learning
+    Report
+  publish_date: 2023-02
+  project_name: Advanced Silicon - Lower photovoltaic cost by a combination of luminescence
+    images and machine-learning
+  what_happened: A deep learning model was developed to predict the extent of PV module
+    degradation using only the first 10% of damp-heat test measurements, achieving
+    a mean absolute percentage error of ~0.005 and effectively compressing 1,500-hour
+    test programmes.
+  lesson_learnt: For PV module reliability testing, deep learning models trained on
+    early test data (the first 10% of measurements) can reliably predict end-of-test
+    degradation outcomes, offering a route to dramatically reduce the duration and
+    cost of standard damp-heat qualification tests without sacrificing accuracy.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id005
+  - 4
+  evidence_excerpt: deep learning-based algorithms were developed to predict the extent
+    of degradation using only the initial 10% of the measurements. The developed approach
+    predicts the performance at the end of the test, achieving an excellent mean absolute
+    percentage error of ∼0.005.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/lower-solar-pv-cost-by-a-combination-of-luminescence-images-and-machine-learning-report/
+  project_page_url: https://arena.gov.au/projects/lower-solar-pv-cost-by-a-combination-of-luminescence-images-and-machine-learning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/02/2023
+  kb_year: '2020'
+  kb_associated_project: Lower Solar PV Cost by a Combination of Luminescence Images
+    and Machine-Learning
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $694k
+  total_project_value: $2.81m
+  lead_organisation: University of New South Wales
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Kensington, New South Wales
+  project_partners: BT Imaging, Jinko Solar
+  pdf_url: https://arena.gov.au/assets/2023/02/lower-solar-pv-cost-by-a-combinatio-of-luminescence-images-and-machine-learning-report.pdf
+  markdown_filename: lower_solar_pv_cost_by_a_combination_of_luminescence_images_and_machine_learning_report.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-44056
+  contributing_source_titles:
+  - Lower Solar PV Cost by a Combination of Luminescence Images and Machine-Learning
+    Report
+  contributing_sources:
+  - source_title: Lower Solar PV Cost by a Combination of Luminescence Images and
+      Machine-Learning Report
+    pdf_url: https://arena.gov.au/assets/2023/02/lower-solar-pv-cost-by-a-combinatio-of-luminescence-images-and-machine-learning-report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/lower-solar-pv-cost-by-a-combination-of-luminescence-images-and-machine-learning-report/
+    markdown_filename: lower_solar_pv_cost_by_a_combination_of_luminescence_images_and_machine_learning_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-44057
+  source_title: Lower Solar PV Cost by a Combination of Luminescence Images and Machine-Learning
+    Report
+  publish_date: 2023-02
+  project_name: Advanced Silicon - Lower photovoltaic cost by a combination of luminescence
+    images and machine-learning
+  what_happened: Despite widespread collection of electrical and weather data from
+    Australian utility-scale PV plants, the project found this data was rarely used
+    to enhance plant performance or minimise degradation and soiling losses, representing
+    a systemic missed opportunity in the existing fleet.
+  lesson_learnt: Owners and operators of utility-scale PV plants should actively leverage
+    routinely collected electrical and weather data with ML-based algorithms to detect
+    early-stage performance degradation and predict faults before they cause damage
+    — current non-utilisation of this data represents avoidable financial loss from
+    degradation and soiling.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id006
+  - 6
+  evidence_excerpt: Despite the frequent collection of electrical and weather data
+    from nearly all PV plants in Australia, it is uncommon for this data to be utilised
+    to enhance plant performance and minimise potential losses such as degradation
+    and soiling losses.
+  confidence_note: 'issue_severity set to moderate — this is a systemic gap across
+    the Australian fleet rather than a single project failure, but the financial consequences
+    of non-action are described as material. proponent_type reflects the fleet operators
+    described, not the research lead.; project_type reconciled to ''software/data/digital''
+    from: software/data/digital (6/7), generation (1/7); project_scale_band reconciled
+    to ''demonstration'' from: demonstration (6/7), utility/large-scale (1/7); proponent_type
+    reconciled to ''research organisation/university'' from: research organisation/university
+    (6/7), utility/energy retailer (1/7)'
+  source_url: https://arena.gov.au/knowledge-bank/lower-solar-pv-cost-by-a-combination-of-luminescence-images-and-machine-learning-report/
+  project_page_url: https://arena.gov.au/projects/lower-solar-pv-cost-by-a-combination-of-luminescence-images-and-machine-learning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/02/2023
+  kb_year: '2020'
+  kb_associated_project: Lower Solar PV Cost by a Combination of Luminescence Images
+    and Machine-Learning
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $694k
+  total_project_value: $2.81m
+  lead_organisation: University of New South Wales
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Kensington, New South Wales
+  project_partners: BT Imaging, Jinko Solar
+  pdf_url: https://arena.gov.au/assets/2023/02/lower-solar-pv-cost-by-a-combinatio-of-luminescence-images-and-machine-learning-report.pdf
+  markdown_filename: lower_solar_pv_cost_by_a_combination_of_luminescence_images_and_machine_learning_report.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-44057
+  contributing_source_titles:
+  - Lower Solar PV Cost by a Combination of Luminescence Images and Machine-Learning
+    Report
+  contributing_sources:
+  - source_title: Lower Solar PV Cost by a Combination of Luminescence Images and
+      Machine-Learning Report
+    pdf_url: https://arena.gov.au/assets/2023/02/lower-solar-pv-cost-by-a-combinatio-of-luminescence-images-and-machine-learning-report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/lower-solar-pv-cost-by-a-combination-of-luminescence-images-and-machine-learning-report/
+    markdown_filename: lower_solar_pv_cost_by_a_combination_of_luminescence_images_and_machine_learning_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-58552
+  source_title: Low Solar PV Cost Interim Public Dissemination Report
+  publish_date: 2021-09
+  project_name: UNSW – R&D Project – Advanced Silicon – Lower photovoltaic cost by
+    a combination of luminescence images and machine-learning
+  what_happened: ML models trained on one type of luminescence image dataset (electroluminescence)
+    could not be directly applied to a different dataset type without fine-tuning,
+    and required close monitoring for distribution shifts when redeployed.
+  lesson_learnt: Do not assume a trained ML model will transfer directly to a new
+    dataset type — fine-tune the model on the target dataset and monitor closely for
+    distribution drift before relying on outputs; this applies when moving between
+    electroluminescence and photoluminescence image sets or between different production
+    lines.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Fine-tuning on the target dataset type was identified as the
+    required mitigation; the project flagged extension to photoluminescence images
+    as a next step requiring this approach.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id007
+  - 4
+  evidence_excerpt: Once the model is trained on a dataset, it should be tested on
+    the same type of dataset. If these models need to be used for a different type
+    of dataset, then finetuning should be performed and these models should be closely
+    monitored to inspect any deviation in the distribution of the dataset.
+  confidence_note: issue_severity set to minor as the constraint was anticipated and
+    managed within normal R&D contingency; no material delay or cost impact described.
+  source_url: https://arena.gov.au/knowledge-bank/low-solar-pv-cost-interim-public-dissemination-report/
+  project_page_url: https://arena.gov.au/projects/lower-solar-pv-cost-by-a-combination-of-luminescence-images-and-machine-learning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 9/09/2021
+  kb_year: '2020'
+  kb_associated_project: Lower Solar PV Cost by a Combination of Luminescence Images
+    and Machine-Learning
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $694k
+  total_project_value: $2.81m
+  lead_organisation: University of New South Wales
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Kensington, New South Wales
+  project_partners: BT Imaging, Jinko Solar
+  pdf_url: https://arena.gov.au/assets/2021/11/low-solar-pv-cost-interim-public-dissemination-report.pdf
+  markdown_filename: low_solar_pv_cost_interim_public_dissemination_report.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-58552
+  contributing_source_titles:
+  - Low Solar PV Cost Interim Public Dissemination Report
+  contributing_sources:
+  - source_title: Low Solar PV Cost Interim Public Dissemination Report
+    pdf_url: https://arena.gov.au/assets/2021/11/low-solar-pv-cost-interim-public-dissemination-report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/low-solar-pv-cost-interim-public-dissemination-report/
+    markdown_filename: low_solar_pv_cost_interim_public_dissemination_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-58553
+  source_title: Low Solar PV Cost Interim Public Dissemination Report
+  publish_date: 2021-09
+  project_name: UNSW – R&D Project – Advanced Silicon – Lower photovoltaic cost by
+    a combination of luminescence images and machine-learning
+  what_happened: Noisy and low-resolution luminescence images reduced the accuracy
+    of trained ML models, making it difficult for models to extract useful information
+    during both training and inference.
+  lesson_learnt: Specify minimum image quality standards (resolution and noise thresholds)
+    before deploying ML-based characterisation tools on a production line — low-resolution
+    or noisy input images degrade model accuracy and can undermine the reliability
+    of automated fault classification and efficiency prediction.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id008
+  - 4
+  evidence_excerpt: Noisy and low-res images reduce the accuracy of the model. Image
+    quality should be good enough for the model to extract the required information.
+    Noise and low-resolution images can make it difficult for the model to train and
+    extract useful information.
+  confidence_note: No specific resolution or noise thresholds are quantified in the
+    document; the lesson is clear in principle but would need further specification
+    for direct operational implementation.
+  source_url: https://arena.gov.au/knowledge-bank/low-solar-pv-cost-interim-public-dissemination-report/
+  project_page_url: https://arena.gov.au/projects/lower-solar-pv-cost-by-a-combination-of-luminescence-images-and-machine-learning/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 9/09/2021
+  kb_year: '2020'
+  kb_associated_project: Lower Solar PV Cost by a Combination of Luminescence Images
+    and Machine-Learning
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $694k
+  total_project_value: $2.81m
+  lead_organisation: University of New South Wales
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Kensington, New South Wales
+  project_partners: BT Imaging, Jinko Solar
+  pdf_url: https://arena.gov.au/assets/2021/11/low-solar-pv-cost-interim-public-dissemination-report.pdf
+  markdown_filename: low_solar_pv_cost_interim_public_dissemination_report.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-58553
+  contributing_source_titles:
+  - Low Solar PV Cost Interim Public Dissemination Report
+  contributing_sources:
+  - source_title: Low Solar PV Cost Interim Public Dissemination Report
+    pdf_url: https://arena.gov.au/assets/2021/11/low-solar-pv-cost-interim-public-dissemination-report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/low-solar-pv-cost-interim-public-dissemination-report/
+    markdown_filename: low_solar_pv_cost_interim_public_dissemination_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82

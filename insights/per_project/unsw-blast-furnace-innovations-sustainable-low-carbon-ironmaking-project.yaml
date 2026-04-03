@@ -1,0 +1,592 @@
+- record_id: ARENA-DLV-0701
+  source_title: 'UNSW, Blast Furnace Innovations: Integrating New Injections and Burdens
+    for Sustainable, Low-Carbon Ironmaking Project - Core Research Midpoint Technical
+    Report'
+  publish_date: 2025-12
+  project_name: 'UNSW Blast Furnace Innovations: Sustainable, Low-Carbon Ironmaking
+    Project'
+  what_happened: Developing an industrial-scale reactive CFD-DEM model capable of
+    simulating coupled gas–solid flow, heat transfer, and chemical reactions at furnace
+    scale placed extreme demands on computational resources and numerical stability,
+    with runtimes that were initially impractical for iterative scenario testing.
+  lesson_learnt: For industrial-scale multi-physics simulation models in R&D projects,
+    introduce coarse-graining, implicit time-stepping, and simplified particle geometry
+    early in model design — these techniques reduced simulation time by over an order
+    of magnitude while maintaining fidelity and made iterative scenario testing feasible
+    within project timeframes.
+  issue_severity: moderate
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Implemented implicit time-stepping, coarse-graining, and simplified
+    particle geometry, reducing simulation runtime by over an order of magnitude while
+    preserving particle-scale accuracy.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: industrial renewables
+  source_pages: &id001
+  - 15
+  evidence_excerpt: To balance precision and computational cost, implicit time-stepping,
+    coarse-graining, and simplified particle geometry were introduced. These reduced
+    simulation time by over an order of magnitude while maintaining fidelity, establishing
+    a practical workflow for industrial-scale predictive modelling.
+  confidence_note: delay_category data/validation/testing reflects the computational
+    bottleneck in model development rather than a project schedule delay.
+  source_url: https://arena.gov.au/knowledge-bank/unsw-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-core-research-interim-report/
+  project_page_url: https://arena.gov.au/projects/unsw-blast-furnace-innovations-sustainable/
+  kb_category: Renewables for industry
+  kb_publish_date: 17/12/2025
+  kb_year: '2024'
+  kb_associated_project: 'UNSW - blast furnace innovations: sustainable, low-carbon
+    ironmaking project'
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $4.4m
+  total_project_value: $18.07m
+  lead_organisation: 'University of New South Wales '
+  arena_program: Iron and Steel Research and Development Funding Round
+  project_status: Current
+  project_start_date: 01/03/2024
+  location: Kensington, New South Wales
+  project_partners: 'Rio Tinto Bluescope Steel (AIS) The University of Newcastle  The
+    University of Queensland  University of Technology Sydney  Cleantech Energy Australia   JCED
+    Australia   Australian Coal Research  ArcelorMittal France  Baowu Steel, China  Sinosteel,
+    China  Northeastern University, China '
+  pdf_url: https://arena.gov.au/assets/2025/12/UNSW-–-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-Core-Research-Interim-Report.pdf
+  markdown_filename: unsw_blast_furnace_innovations_sustainable_low_carbon_ironmaking_project_core_research_interim_repor.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-0701
+  contributing_source_titles:
+  - 'UNSW, Blast Furnace Innovations: Integrating New Injections and Burdens for Sustainable,
+    Low-Carbon Ironmaking Project - Core Research Midpoint Technical Report'
+  contributing_sources:
+  - source_title: 'UNSW, Blast Furnace Innovations: Integrating New Injections and
+      Burdens for Sustainable, Low-Carbon Ironmaking Project - Core Research Midpoint
+      Technical Report'
+    pdf_url: https://arena.gov.au/assets/2025/12/UNSW-–-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-Core-Research-Interim-Report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/unsw-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-core-research-interim-report/
+    markdown_filename: unsw_blast_furnace_innovations_sustainable_low_carbon_ironmaking_project_core_research_interim_repor.md
+  arena_category:
+  - Industrial renewables
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-0702
+  source_title: 'UNSW, Blast Furnace Innovations: Integrating New Injections and Burdens
+    for Sustainable, Low-Carbon Ironmaking Project - Core Research Midpoint Technical
+    Report'
+  publish_date: 2025-12
+  project_name: 'UNSW Blast Furnace Innovations: Sustainable, Low-Carbon Ironmaking
+    Project'
+  what_happened: The 3D transient CFD blast furnace model — described as the first
+    capable of simultaneously capturing both temporal and spatial features at industrial
+    scale — presented major numerical and computational challenges, with computation
+    potentially exceeding several hundred hours per case and requiring high stability
+    over long physical simulation times.
+  lesson_learnt: When developing first-of-kind transient multi-phase CFD models at
+    industrial scale, plan for computation times potentially exceeding several hundred
+    hours per case and build in dedicated numerical stability treatments (implicit
+    time-stepping, adaptive meshing, simplified particle-shape representation) from
+    the outset rather than retrofitting them after stability failures emerge.
+  issue_severity: moderate
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: Implemented implicit time-stepping, adaptive meshing, and simplified
+    particle-shape representation to achieve both numerical stability and computational
+    efficiency in long transient simulations.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: industrial renewables
+  source_pages: &id002
+  - 15
+  evidence_excerpt: This is the first BF CFD model capable of simultaneously capturing
+    both temporal and spatial features at an industrial scale. Simulating such a large,
+    multiphase reactor with fully coupled flow, heat transfer, and chemical reactions
+    presented major numerical and computational challenges. The complex transient
+    solution process required high stability over long physical times, with computation
+    potentially exceeding several hundred hours per case.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/unsw-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-core-research-interim-report/
+  project_page_url: https://arena.gov.au/projects/unsw-blast-furnace-innovations-sustainable/
+  kb_category: Renewables for industry
+  kb_publish_date: 17/12/2025
+  kb_year: '2024'
+  kb_associated_project: 'UNSW - blast furnace innovations: sustainable, low-carbon
+    ironmaking project'
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $4.4m
+  total_project_value: $18.07m
+  lead_organisation: 'University of New South Wales '
+  arena_program: Iron and Steel Research and Development Funding Round
+  project_status: Current
+  project_start_date: 01/03/2024
+  location: Kensington, New South Wales
+  project_partners: 'Rio Tinto Bluescope Steel (AIS) The University of Newcastle  The
+    University of Queensland  University of Technology Sydney  Cleantech Energy Australia   JCED
+    Australia   Australian Coal Research  ArcelorMittal France  Baowu Steel, China  Sinosteel,
+    China  Northeastern University, China '
+  pdf_url: https://arena.gov.au/assets/2025/12/UNSW-–-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-Core-Research-Interim-Report.pdf
+  markdown_filename: unsw_blast_furnace_innovations_sustainable_low_carbon_ironmaking_project_core_research_interim_repor.md
+  source_page_pdf: 15
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-0702
+  contributing_source_titles:
+  - 'UNSW, Blast Furnace Innovations: Integrating New Injections and Burdens for Sustainable,
+    Low-Carbon Ironmaking Project - Core Research Midpoint Technical Report'
+  contributing_sources:
+  - source_title: 'UNSW, Blast Furnace Innovations: Integrating New Injections and
+      Burdens for Sustainable, Low-Carbon Ironmaking Project - Core Research Midpoint
+      Technical Report'
+    pdf_url: https://arena.gov.au/assets/2025/12/UNSW-–-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-Core-Research-Interim-Report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/unsw-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-core-research-interim-report/
+    markdown_filename: unsw_blast_furnace_innovations_sustainable_low_carbon_ironmaking_project_core_research_interim_repor.md
+  arena_category:
+  - Industrial renewables
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-0703
+  source_title: 'UNSW, Blast Furnace Innovations: Integrating New Injections and Burdens
+    for Sustainable, Low-Carbon Ironmaking Project - Core Research Midpoint Technical
+    Report'
+  publish_date: 2025-12
+  project_name: 'UNSW Blast Furnace Innovations: Sustainable, Low-Carbon Ironmaking
+    Project'
+  what_happened: The Heat and Mass Balance (HMB) model development was constrained
+    by limited public data for new injection conditions (hydrogen-rich gas, biochar),
+    requiring estimation of key parameters such as reserve-zone temperature and chemical
+    efficiency without full experimental datasets.
+  lesson_learnt: When modelling novel injection conditions for which public data is
+    scarce, adopt a flexible equilibrium–kinetic framework calibrated with empirical
+    data rather than waiting for complete experimental datasets — this approach enabled
+    prediction of feasible operating windows and CO₂-saving potential and kept the
+    project on schedule.
+  issue_severity: minor
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: data & measurement
+  intervention_note: Introduced a flexible equilibrium–kinetic framework calibrated
+    with empirical data, allowing prediction of feasible operating windows and CO₂-saving
+    potential even without full experimental datasets.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: industrial renewables
+  source_pages: &id003
+  - 15
+  evidence_excerpt: 'Limited public data for new injection conditions required estimation
+    of key parameters such as reserve-zone temperature and chemical efficiency. Solution
+    / Lessons Learned: A flexible equilibrium–kinetic framework was introduced, calibrated
+    with empirical data, allowing prediction of feasible operating windows and CO₂-saving
+    potential even without full experimental datasets.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/unsw-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-core-research-interim-report/
+  project_page_url: https://arena.gov.au/projects/unsw-blast-furnace-innovations-sustainable/
+  kb_category: Renewables for industry
+  kb_publish_date: 17/12/2025
+  kb_year: '2024'
+  kb_associated_project: 'UNSW - blast furnace innovations: sustainable, low-carbon
+    ironmaking project'
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $4.4m
+  total_project_value: $18.07m
+  lead_organisation: 'University of New South Wales '
+  arena_program: Iron and Steel Research and Development Funding Round
+  project_status: Current
+  project_start_date: 01/03/2024
+  location: Kensington, New South Wales
+  project_partners: 'Rio Tinto Bluescope Steel (AIS) The University of Newcastle  The
+    University of Queensland  University of Technology Sydney  Cleantech Energy Australia   JCED
+    Australia   Australian Coal Research  ArcelorMittal France  Baowu Steel, China  Sinosteel,
+    China  Northeastern University, China '
+  pdf_url: https://arena.gov.au/assets/2025/12/UNSW-–-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-Core-Research-Interim-Report.pdf
+  markdown_filename: unsw_blast_furnace_innovations_sustainable_low_carbon_ironmaking_project_core_research_interim_repor.md
+  source_page_pdf: 15
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-0703
+  contributing_source_titles:
+  - 'UNSW, Blast Furnace Innovations: Integrating New Injections and Burdens for Sustainable,
+    Low-Carbon Ironmaking Project - Core Research Midpoint Technical Report'
+  contributing_sources:
+  - source_title: 'UNSW, Blast Furnace Innovations: Integrating New Injections and
+      Burdens for Sustainable, Low-Carbon Ironmaking Project - Core Research Midpoint
+      Technical Report'
+    pdf_url: https://arena.gov.au/assets/2025/12/UNSW-–-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-Core-Research-Interim-Report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/unsw-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-core-research-interim-report/
+    markdown_filename: unsw_blast_furnace_innovations_sustainable_low_carbon_ironmaking_project_core_research_interim_repor.md
+  arena_category:
+  - Industrial renewables
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-0704
+  source_title: 'UNSW, Blast Furnace Innovations: Integrating New Injections and Burdens
+    for Sustainable, Low-Carbon Ironmaking Project - Core Research Midpoint Technical
+    Report'
+  publish_date: 2025-12
+  project_name: 'UNSW Blast Furnace Innovations: Sustainable, Low-Carbon Ironmaking
+    Project'
+  what_happened: Integrating heterogeneous simulation, experimental, and operational
+    datasets into the machine learning model introduced data inconsistency and model
+    uncertainty, threatening the physical validity and generalisability of predictions.
+  lesson_learnt: When training ML models on mixed simulation, experimental, and operational
+    data in industrial R&D projects, embed thermodynamic and kinetic constraints as
+    physics-informed features from the outset — this ensures physically consistent
+    and generalisable predictions and prevents data inconsistency from undermining
+    model reliability.
+  issue_severity: minor
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Developed a hybrid physics-informed ML framework embedding thermodynamic
+    and kinetic constraints, ensuring physically consistent and generalisable predictions
+    and forming a reliable surrogate for rapid optimisation.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: industrial renewables
+  source_pages: &id004
+  - 15
+  - 16
+  evidence_excerpt: 'Integrating heterogeneous simulation, experimental, and operational
+    datasets introduced data inconsistency and model uncertainty. Solution / Lessons
+    Learned: A hybrid physics-informed ML framework was developed, embedding thermodynamic
+    and kinetic constraints to ensure physically consistent and generalisable predictions,
+    forming a reliable surrogate for rapid optimisation.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/unsw-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-core-research-interim-report/
+  project_page_url: https://arena.gov.au/projects/unsw-blast-furnace-innovations-sustainable/
+  kb_category: Renewables for industry
+  kb_publish_date: 17/12/2025
+  kb_year: '2024'
+  kb_associated_project: 'UNSW - blast furnace innovations: sustainable, low-carbon
+    ironmaking project'
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $4.4m
+  total_project_value: $18.07m
+  lead_organisation: 'University of New South Wales '
+  arena_program: Iron and Steel Research and Development Funding Round
+  project_status: Current
+  project_start_date: 01/03/2024
+  location: Kensington, New South Wales
+  project_partners: 'Rio Tinto Bluescope Steel (AIS) The University of Newcastle  The
+    University of Queensland  University of Technology Sydney  Cleantech Energy Australia   JCED
+    Australia   Australian Coal Research  ArcelorMittal France  Baowu Steel, China  Sinosteel,
+    China  Northeastern University, China '
+  pdf_url: https://arena.gov.au/assets/2025/12/UNSW-–-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-Core-Research-Interim-Report.pdf
+  markdown_filename: unsw_blast_furnace_innovations_sustainable_low_carbon_ironmaking_project_core_research_interim_repor.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-0704
+  contributing_source_titles:
+  - 'UNSW, Blast Furnace Innovations: Integrating New Injections and Burdens for Sustainable,
+    Low-Carbon Ironmaking Project - Core Research Midpoint Technical Report'
+  contributing_sources:
+  - source_title: 'UNSW, Blast Furnace Innovations: Integrating New Injections and
+      Burdens for Sustainable, Low-Carbon Ironmaking Project - Core Research Midpoint
+      Technical Report'
+    pdf_url: https://arena.gov.au/assets/2025/12/UNSW-–-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-Core-Research-Interim-Report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/unsw-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-core-research-interim-report/
+    markdown_filename: unsw_blast_furnace_innovations_sustainable_low_carbon_ironmaking_project_core_research_interim_repor.md
+  arena_category:
+  - Industrial renewables
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-0705
+  source_title: 'UNSW, Blast Furnace Innovations: Integrating New Injections and Burdens
+    for Sustainable, Low-Carbon Ironmaking Project - Core Research Midpoint Technical
+    Report'
+  publish_date: 2025-12
+  project_name: 'UNSW Blast Furnace Innovations: Sustainable, Low-Carbon Ironmaking
+    Project'
+  what_happened: All five planned modelling tools (CFD-DEM, 3D CFD, HMB, ML, and thermodynamic/kinetic
+    modules) were completed and validated at the project midpoint, with the project
+    confirmed as on schedule and ready to proceed to numerical simulation, laboratory
+    testing, and benchtop demonstration phases.
+  lesson_learnt: Structuring a multi-model R&D programme with clearly defined completion
+    milestones for each modelling tool — verified against industrial partner data
+    — enables confident confirmation of on-schedule status at midpoint and a clear
+    handoff to experimental validation phases.
+  issue_severity: none
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: industrial renewables
+  source_pages: &id005
+  - 3
+  - 7
+  evidence_excerpt: By the Midpoint Research Stage, all planned modelling tools (CFD–DEM,
+    3D CFD, HMB, ML, and thermodynamic/kinetic modules) have been developed and validated,
+    demonstrating that the project is on schedule and ready for numerical simulation,
+    laboratory testing and benchtop RISB demonstrations.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/unsw-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-core-research-interim-report/
+  project_page_url: https://arena.gov.au/projects/unsw-blast-furnace-innovations-sustainable/
+  kb_category: Renewables for industry
+  kb_publish_date: 17/12/2025
+  kb_year: '2024'
+  kb_associated_project: 'UNSW - blast furnace innovations: sustainable, low-carbon
+    ironmaking project'
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $4.4m
+  total_project_value: $18.07m
+  lead_organisation: 'University of New South Wales '
+  arena_program: Iron and Steel Research and Development Funding Round
+  project_status: Current
+  project_start_date: 01/03/2024
+  location: Kensington, New South Wales
+  project_partners: 'Rio Tinto Bluescope Steel (AIS) The University of Newcastle  The
+    University of Queensland  University of Technology Sydney  Cleantech Energy Australia   JCED
+    Australia   Australian Coal Research  ArcelorMittal France  Baowu Steel, China  Sinosteel,
+    China  Northeastern University, China '
+  pdf_url: https://arena.gov.au/assets/2025/12/UNSW-–-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-Core-Research-Interim-Report.pdf
+  markdown_filename: unsw_blast_furnace_innovations_sustainable_low_carbon_ironmaking_project_core_research_interim_repor.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-0705
+  contributing_source_titles:
+  - 'UNSW, Blast Furnace Innovations: Integrating New Injections and Burdens for Sustainable,
+    Low-Carbon Ironmaking Project - Core Research Midpoint Technical Report'
+  contributing_sources:
+  - source_title: 'UNSW, Blast Furnace Innovations: Integrating New Injections and
+      Burdens for Sustainable, Low-Carbon Ironmaking Project - Core Research Midpoint
+      Technical Report'
+    pdf_url: https://arena.gov.au/assets/2025/12/UNSW-–-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-Core-Research-Interim-Report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/unsw-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-core-research-interim-report/
+    markdown_filename: unsw_blast_furnace_innovations_sustainable_low_carbon_ironmaking_project_core_research_interim_repor.md
+  arena_category:
+  - Industrial renewables
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-0706
+  source_title: 'UNSW, Blast Furnace Innovations: Integrating New Injections and Burdens
+    for Sustainable, Low-Carbon Ironmaking Project - Core Research Midpoint Technical
+    Report'
+  publish_date: 2025-12
+  project_name: 'UNSW Blast Furnace Innovations: Sustainable, Low-Carbon Ironmaking
+    Project'
+  what_happened: Active engagement with industrial partners (BlueScope, Rio Tinto,
+    ArcelorMittal, Shougang) throughout the Core Research stage provided process data,
+    material specifications, and operational insights that directly supported model
+    calibration and validation, ensured realistic boundary conditions, and guided
+    the design of renewable-injection scenarios.
+  lesson_learnt: In industrial R&D modelling projects, secure formal industrial partner
+    engagement before model development begins rather than after — access to real
+    operational data for calibration and validation is essential to ensure models
+    reflect practical constraints and are credible for pilot-scale uptake.
+  issue_severity: none
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: industrial renewables
+  source_pages: &id006
+  - 16
+  - 17
+  evidence_excerpt: Industry partners have been actively engaged throughout the Core
+    Research Midpoint stage, providing essential process data, material specifications,
+    and operational insights that directly supported model development, calibration,
+    and validation... Regular technical meetings ensured accurate interpretation of
+    operational constraints, timely data exchange, and planning for pilot- and plant-scale
+    demonstrations.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/unsw-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-core-research-interim-report/
+  project_page_url: https://arena.gov.au/projects/unsw-blast-furnace-innovations-sustainable/
+  kb_category: Renewables for industry
+  kb_publish_date: 17/12/2025
+  kb_year: '2024'
+  kb_associated_project: 'UNSW - blast furnace innovations: sustainable, low-carbon
+    ironmaking project'
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $4.4m
+  total_project_value: $18.07m
+  lead_organisation: 'University of New South Wales '
+  arena_program: Iron and Steel Research and Development Funding Round
+  project_status: Current
+  project_start_date: 01/03/2024
+  location: Kensington, New South Wales
+  project_partners: 'Rio Tinto Bluescope Steel (AIS) The University of Newcastle  The
+    University of Queensland  University of Technology Sydney  Cleantech Energy Australia   JCED
+    Australia   Australian Coal Research  ArcelorMittal France  Baowu Steel, China  Sinosteel,
+    China  Northeastern University, China '
+  pdf_url: https://arena.gov.au/assets/2025/12/UNSW-–-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-Core-Research-Interim-Report.pdf
+  markdown_filename: unsw_blast_furnace_innovations_sustainable_low_carbon_ironmaking_project_core_research_interim_repor.md
+  source_page_pdf: 16
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-0706
+  contributing_source_titles:
+  - 'UNSW, Blast Furnace Innovations: Integrating New Injections and Burdens for Sustainable,
+    Low-Carbon Ironmaking Project - Core Research Midpoint Technical Report'
+  contributing_sources:
+  - source_title: 'UNSW, Blast Furnace Innovations: Integrating New Injections and
+      Burdens for Sustainable, Low-Carbon Ironmaking Project - Core Research Midpoint
+      Technical Report'
+    pdf_url: https://arena.gov.au/assets/2025/12/UNSW-–-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-Core-Research-Interim-Report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/unsw-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-core-research-interim-report/
+    markdown_filename: unsw_blast_furnace_innovations_sustainable_low_carbon_ironmaking_project_core_research_interim_repor.md
+  arena_category:
+  - Industrial renewables
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-0707
+  source_title: 'UNSW, Blast Furnace Innovations: Integrating New Injections and Burdens
+    for Sustainable, Low-Carbon Ironmaking Project - Core Research Midpoint Technical
+    Report'
+  publish_date: 2025-12
+  project_name: 'UNSW Blast Furnace Innovations: Sustainable, Low-Carbon Ironmaking
+    Project'
+  what_happened: The RISB technology commercialisation strategy is structured as a
+    licensing model targeting TRL 5 readiness after laboratory and benchtop validation,
+    with pilot-scale trials (TRL 6/7) contingent on securing industry co-investment,
+    and an initial focus on Australia before international expansion.
+  lesson_learnt: For low-capital retrofit decarbonisation technologies targeting the
+    existing BF-BOF steelmaking route, a licensing commercialisation pathway — sequenced
+    through LCA/TEA de-risking before seeking industry co-investment for pilot trials
+    — reduces the capital barrier for early adopters and provides a credible pathway
+    from TRL 4/5 to TRL 7 without requiring greenfield infrastructure.
+  issue_severity: none
+  project_type: industrial decarbonisation
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: industrial renewables
+  source_pages: &id007
+  - 16
+  evidence_excerpt: The preferred commercial pathway is a licensing model, enabling
+    steelmakers to adopt the RISB process using existing BF infrastructure, supported
+    by protected IP and model-driven deployment guidance. Key short-term objectives
+    are to complete laboratory characterisation, validate the RISB operating windows,
+    and integrate results into LCA/TEA to reach TRL 5 readiness, which is essential
+    to de-risk the technology and enable a strong pathway toward successful implementation.
+  confidence_note: lifecycle_phase assigned as concept/feasibility as this reflects
+    the stage at which the commercialisation pathway is being designed, not an operational
+    delivery phase.
+  source_url: https://arena.gov.au/knowledge-bank/unsw-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-core-research-interim-report/
+  project_page_url: https://arena.gov.au/projects/unsw-blast-furnace-innovations-sustainable/
+  kb_category: Renewables for industry
+  kb_publish_date: 17/12/2025
+  kb_year: '2024'
+  kb_associated_project: 'UNSW - blast furnace innovations: sustainable, low-carbon
+    ironmaking project'
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $4.4m
+  total_project_value: $18.07m
+  lead_organisation: 'University of New South Wales '
+  arena_program: Iron and Steel Research and Development Funding Round
+  project_status: Current
+  project_start_date: 01/03/2024
+  location: Kensington, New South Wales
+  project_partners: 'Rio Tinto Bluescope Steel (AIS) The University of Newcastle  The
+    University of Queensland  University of Technology Sydney  Cleantech Energy Australia   JCED
+    Australia   Australian Coal Research  ArcelorMittal France  Baowu Steel, China  Sinosteel,
+    China  Northeastern University, China '
+  pdf_url: https://arena.gov.au/assets/2025/12/UNSW-–-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-Core-Research-Interim-Report.pdf
+  markdown_filename: unsw_blast_furnace_innovations_sustainable_low_carbon_ironmaking_project_core_research_interim_repor.md
+  source_page_pdf: 16
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-0707
+  contributing_source_titles:
+  - 'UNSW, Blast Furnace Innovations: Integrating New Injections and Burdens for Sustainable,
+    Low-Carbon Ironmaking Project - Core Research Midpoint Technical Report'
+  contributing_sources:
+  - source_title: 'UNSW, Blast Furnace Innovations: Integrating New Injections and
+      Burdens for Sustainable, Low-Carbon Ironmaking Project - Core Research Midpoint
+      Technical Report'
+    pdf_url: https://arena.gov.au/assets/2025/12/UNSW-–-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-Core-Research-Interim-Report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/unsw-blast-furnace-innovations-sustainable-low-carbon-ironmaking-project-core-research-interim-report/
+    markdown_filename: unsw_blast_furnace_innovations_sustainable_low_carbon_ironmaking_project_core_research_interim_repor.md
+  arena_category:
+  - Industrial renewables
+  activity_type: R&D
+  is_consortium: false

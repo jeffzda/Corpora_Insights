@@ -1,0 +1,2004 @@
+- record_id: ARENA-DLV-43801
+  source_title: Project Edith Stage 3 Insights Report
+  publish_date: 2025-12
+  project_name: Project Edith
+  what_happened: Dynamic network prices in Stage 1 were generated using simple weather-based
+    algorithms (e.g. higher import prices when temperature exceeded 30°C) and tested
+    with 200 customers and one retail partner, demonstrating that price signals could
+    be sent via a standard-based API and elicit CER behavioural change in a low-risk
+    environment with a no-worse-off guarantee.
+  lesson_learnt: Starting a dynamic pricing trial with a no-worse-off guarantee and
+    simple, interpretable algorithms allows a network to safely test a wide variety
+    of price signals without harming customers, generating foundational evidence on
+    CER responsiveness before increasing complexity.
+  issue_severity: none
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id001
+  - 9
+  evidence_excerpt: The first stage of Project Edith focused on demonstrating that
+    dynamic tariffs could work in a safe, low-risk environment. Ausgrid collaborated
+    with customer agent partner Reposit Power to offer dynamic network prices to 200
+    customers. In this stage of the project, simple algorithms were used to create
+    prices, such as higher import prices when the temperature was above 30 degrees
+    during certain hours.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/12/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+  markdown_filename: project_edith_stage_3_insights_report.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-43801
+  contributing_source_titles:
+  - Project Edith Stage 3 Insights Report
+  contributing_sources:
+  - source_title: Project Edith Stage 3 Insights Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+    markdown_filename: project_edith_stage_3_insights_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+- record_id: ARENA-DLV-43802
+  source_title: Project Edith Stage 3 Insights Report
+  publish_date: 2025-12
+  project_name: Project Edith
+  what_happened: In Stage 2, a capacity subscription scheme was trialled allowing
+    customers to pay upfront for a specific capacity allocation, but it was subsequently
+    withdrawn because it had limited impact on customer behaviour and was complex
+    to implement.
+  lesson_learnt: Capacity subscription pricing structures are likely to add complexity
+    without meaningfully influencing CER behaviour in a residential dynamic pricing
+    context — simpler tariff designs that directly link price to network congestion
+    are more effective and easier to administer.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: The capacity subscription scheme was withdrawn and replaced with
+    a more advanced weather-adjusted time-of-use model, later evolving to a network-congestion-linked
+    tariff.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id002
+  - 11
+  evidence_excerpt: A capacity subscription scheme was also trialled, allowing customers
+    to pay upfront for a specific capacity allocation. However, this approach was
+    later withdrawn due to its limited impact on customer behaviour and the complexity
+    of implementation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/12/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+  markdown_filename: project_edith_stage_3_insights_report.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-43802
+  contributing_source_titles:
+  - Project Edith Stage 3 Insights Report
+  contributing_sources:
+  - source_title: Project Edith Stage 3 Insights Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+    markdown_filename: project_edith_stage_3_insights_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-43803
+  source_title: Project Edith Stage 3 Insights Report
+  publish_date: 2025-12
+  project_name: Project Edith
+  what_happened: In Stage 2, the pricing engine used optimal power flow to produce
+    bespoke per-customer, per-5-minute-interval prices, but this highly complex model
+    was difficult to understand or justify, making it hard to explain why prices differed
+    across locations and posing a barrier to regulatory acceptance for an on-market
+    tariff.
+  lesson_learnt: Pricing engines for dynamic network tariffs should prioritise transparency
+    and justifiability over mathematical optimality — a simpler asset-based utilisation
+    model that customers and regulators can readily interpret is more suitable for
+    progressing from trial to on-market deployment.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: In Stage 3 the pricing engine was changed to a network-aware,
+    asset-based utilisation model, making pricing decisions more transparent and justifiable
+    as a step toward on-market tariff approval.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id003
+  - 12
+  evidence_excerpt: This model is highly complex, and prices are fine-grained (to
+    the individual household level). Therefore, it can often be hard to understand
+    or easily justify the outputs, such as why certain prices were set in different
+    locations. During the enhancement stage, the pricing engine was changed to use
+    a network-aware model... This made pricing decisions more transparent and justifiable,
+    helping demonstrate how dynamic prices could be linked to network congestion,
+    which was a key step toward developing an on-market tariff.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/12/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+  markdown_filename: project_edith_stage_3_insights_report.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-43803
+  contributing_source_titles:
+  - Project Edith Stage 3 Insights Report
+  contributing_sources:
+  - source_title: Project Edith Stage 3 Insights Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+    markdown_filename: project_edith_stage_3_insights_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-43804
+  source_title: Project Edith Stage 3 Insights Report
+  publish_date: 2025-12
+  project_name: Project Edith
+  what_happened: Using a single simulated feeder for all Edith customers negatively
+    impacted forecasting accuracy because weather significantly influences electricity
+    demand and a single feeder could not represent the geographic diversity of participating
+    customers across Ausgrid's network.
+  lesson_learnt: Dynamic pricing trials that span geographically diverse areas should
+    assign customers to multiple location-matched simulated feeders rather than a
+    single model — using geographic weather zones substantially improves forecast
+    accuracy and the realism of price signals received by customers.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: In Stage 3, Ausgrid introduced six simulated feeders based on
+    main weather zones and assigned customers to the nearest feeder, improving price
+    signal accuracy and relevance.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id004
+  - 12
+  evidence_excerpt: Weather significantly influences electricity demand and supply
+    and forecasting accuracy was negatively impacted by only using a single simulated
+    feeder. Allocation to nearby feeders enables prices to mirror real-world CER conditions,
+    simplifies the network data requirements for the pricing engine, and offers flexibility
+    to model various network scenarios. In practice, we have six simulated feeders,
+    which provide a good geographical distribution of our network.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/12/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+  markdown_filename: project_edith_stage_3_insights_report.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-43804
+  contributing_source_titles:
+  - Project Edith Stage 3 Insights Report
+  contributing_sources:
+  - source_title: Project Edith Stage 3 Insights Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+    markdown_filename: project_edith_stage_3_insights_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-43809
+  source_title: Project Edith Stage 3 Insights Report
+  publish_date: 2025-12
+  project_name: Project Edith
+  what_happened: Customer battery responses to high dynamic price events showed strong
+    initial response that diminished over 2–3 hours as batteries depleted; once depleted,
+    VPP operators had no additional tools to respond, and the load profile reverted
+    to — or exceeded — baseline consumption, sometimes exhibiting positive price elasticity
+    (higher prices coinciding with increased consumption) during the evening peak.
+  lesson_learnt: Dynamic pricing algorithms should anticipate battery depletion dynamics
+    and avoid sustaining high-price events beyond the typical 2-hour response window
+    — once battery capacity is exhausted, continued high prices can produce perverse
+    outcomes including increased demand, undermining the network benefit the price
+    signal was designed to achieve.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Ausgrid evolved its pricing methodology over successive trial
+    stages to incorporate this constraint, with the current methodology applying increasingly
+    higher prices as forecasted network loading exceeds 80%.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages:
+  - 13
+  - 19
+  - 20
+  - 49
+  evidence_excerpt: Edith's results to date suggest that customers find it challenging
+    to provide flexibility for an extended period, which means that high prices no
+    longer motivate a response... the algorithm supporting the pricing engine is being
+    adjusted to ensure that high-priced events do not last more than two consecutive
+    hours... Edith's data analysis suggests that a customer's battery response tends
+    to decrease after about 2 hours, which matches the fact that at the time of the
+    experiment, home batteries and inverters are typically sized for 2 hours of maximum
+    discharge.
+  confidence_note: Canonical record merged from 3 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/12/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+  markdown_filename: project_edith_stage_3_insights_report.md
+  source_page_pdf: null
+  corroboration_count: 3
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-43805
+  - ARENA-DLV-43809
+  - ARENA-DLV-68320
+  contributing_source_titles:
+  - DEIP Market Integration Trials Summary Report 3.0
+  - Project Edith Stage 3 Insights Report
+  contributing_sources:
+  - source_title: Project Edith Stage 3 Insights Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+    source_pages:
+    - 13
+    - 19
+    - 20
+    source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+    markdown_filename: project_edith_stage_3_insights_report.md
+  - source_title: DEIP Market Integration Trials Summary Report 3.0
+    pdf_url: https://arena.gov.au/assets/2026/02/DEIP-Market-Integration-Trials-Summary30.pdf
+    source_pages:
+    - 49
+    source_url: https://arena.gov.au/knowledge-bank/deip-market-integration-trials-summary-report-3-0/
+    markdown_filename: deip_market_integration_trials_summary_report_30.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-43806
+  source_title: Project Edith Stage 3 Insights Report
+  publish_date: 2025-12
+  project_name: Project Edith
+  what_happened: Introducing dynamic network pricing tariffs required significant
+    investment in metering and billing infrastructure. Ausgrid's existing systems
+    were inflexible and not designed to support the complexity of 5-minute dynamic
+    tariffs, requiring a detailed documentation of business requirements and an upgrade
+    of the enterprise resource planning system.
+  lesson_learnt: Networks planning to deploy dynamic pricing should assess billing
+    and metering system capability early — legacy systems are typically unable to
+    support 5-minute dynamic tariff complexity, and the system upgrade workstream
+    requires dedicated resourcing alongside tariff design, not as an afterthought.
+  issue_severity: major
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: execution & logistics
+  intervention_note: Ausgrid completed a detailed documentation of business requirements
+    and initiated an ERP system upgrade to support on-market dynamic tariff billing;
+    retailers also began implementing new systems in parallel.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id005
+  - 13
+  evidence_excerpt: Introducing dynamic network pricing tariffs poses a new challenge
+    for network billing, requiring investment in both metering and billing infrastructure.
+    Current systems are often inflexible and were not designed to support the complexity
+    of dynamic tariffs... a detailed documentation of business requirements has been
+    completed and is being used to inform an upgrade of the enterprise resource planning
+    system.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/12/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+  markdown_filename: project_edith_stage_3_insights_report.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-43806
+  contributing_source_titles:
+  - Project Edith Stage 3 Insights Report
+  contributing_sources:
+  - source_title: Project Edith Stage 3 Insights Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+    markdown_filename: project_edith_stage_3_insights_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-43807
+  source_title: Project Edith Stage 3 Insights Report
+  publish_date: 2025-12
+  project_name: Project Edith
+  what_happened: Early testing of IEEE 2030.5 pricing functionality within CSIP-AUS
+    to send dynamic network prices alongside export limits worked technically for
+    aggregators but required a large amount of communication between CER devices (or
+    aggregators) and the server, making it inefficient for 5-minute dynamic pricing.
+  lesson_learnt: When implementing dynamic network price communication via CSIP-AUS,
+    the base IEEE 2030.5 pricing functionality requires adaptation for the Australian
+    5-minute pricing context — integrating pricing into the next version of CSIP-AUS
+    (v1.3) leverages existing network-wide integrations and governance while reducing
+    communication overhead.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: The pricing functionality is being considered for adoption in
+    CSIP-AUS v1.3 with adaptations to make it more efficient and suited to the Australian
+    5-minute dynamic pricing context.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id006
+  - 10
+  evidence_excerpt: Early testing showed that while using standard IEEE 2030.5 pricing
+    functionality to send dynamic prices alongside export limits in CSIP-AUS worked
+    for aggregators, it required a large amount of communication between the CER (or
+    aggregator) and server. This pricing functionality is now being considered for
+    adoption in the upcoming version 1.3 of CSIP-AUS with adaptations to make it more
+    efficient and suited to the Australian context of 5-minute dynamic prices.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/12/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+  markdown_filename: project_edith_stage_3_insights_report.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-43807
+  contributing_source_titles:
+  - Project Edith Stage 3 Insights Report
+  contributing_sources:
+  - source_title: Project Edith Stage 3 Insights Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+    markdown_filename: project_edith_stage_3_insights_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-43808
+  source_title: Project Edith Stage 3 Insights Report
+  publish_date: 2025-12
+  project_name: Project Edith
+  what_happened: Preliminary results from March to November 2024 showed that a 45c/kWh
+    change in dynamic price produced an average 500W variation in instantaneous demand
+    across Edith customers, implying customers are prepared to adjust consumption
+    by 1 kWh for roughly 90c/kWh — substantially lower than the value of customer
+    reliability ($38.53/kWh) or other demand response payment mechanisms.
+  lesson_learnt: Dynamic network prices can elicit measurable CER demand response
+    at cost levels competitive with other demand management tools, but the elasticity
+    measure is highly context-dependent and does not yet account for response duration
+    or scalability — trials should design analysis to capture time-varying response
+    curves, not just instantaneous price-demand relationships.
+  issue_severity: none
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages:
+  - 19
+  - 49
+  evidence_excerpt: On average, from March to November 2024, a 45c/kWh change in price
+    resulted in a 500W variation in the instantaneous demand of Edith customers...
+    This implies that Edith customers are prepared to adjust their power consumption
+    by 1 kWh for roughly 90c/kWh. For comparison, this is dramatically lower than
+    metrics such as the value of customer reliability ($38.53/kWh in 2024 for NSW)
+    or other demand response payments such as RERT or WDRM, which are often above
+    $3/kWh.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/12/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+  markdown_filename: project_edith_stage_3_insights_report.md
+  source_page_pdf: 19
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-43808
+  - ARENA-DLV-68339
+  contributing_source_titles:
+  - DEIP Market Integration Trials Summary Report 3.0
+  - Project Edith Stage 3 Insights Report
+  contributing_sources:
+  - source_title: Project Edith Stage 3 Insights Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+    source_pages:
+    - 19
+    source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+    markdown_filename: project_edith_stage_3_insights_report.md
+  - source_title: DEIP Market Integration Trials Summary Report 3.0
+    pdf_url: https://arena.gov.au/assets/2026/02/DEIP-Market-Integration-Trials-Summary30.pdf
+    source_pages:
+    - 49
+    source_url: https://arena.gov.au/knowledge-bank/deip-market-integration-trials-summary-report-3-0/
+    markdown_filename: deip_market_integration_trials_summary_report_30.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+- record_id: ARENA-DLV-43810
+  source_title: Project Edith Stage 3 Insights Report
+  publish_date: 2025-12
+  project_name: Project Edith
+  what_happened: An asymmetric tariff experiment in which dynamic rewards were applied
+    to exports but imports remained under standard TOU pricing was identified by Ausgrid's
+    project partners as creating an incentive for battery cycling — repeatedly charging
+    and discharging during a price event to maximise export revenue — representing
+    a design flaw in the tariff.
+  lesson_learnt: Asymmetric dynamic network tariffs where export rewards are not matched
+    by equivalent import charges create a structural incentive for battery cycling
+    arbitrage; symmetric pricing (where import charges equal export rewards) should
+    be the default design to prevent gaming, as it eliminates this risk without requiring
+    complex anti-cycling provisions.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Ausgrid decided to implement dynamic network prices symmetrically,
+    eliminating the need for complex arrangements to prevent cycling; the flawed asymmetric
+    tariff was withdrawn.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id007
+  - 23
+  evidence_excerpt: Ausgrid's project partners identified an issue with the tariff.
+    Because the cost to charge batteries is lower than the payments for discharging,
+    the tariff could encourage cycling of batteries to maximise export revenue...
+    This experience shows that asymmetric pricing should be used carefully if at all
+    because of the risk of manipulation through cycling between charging and discharging
+    during a price event... Ausgrid has decided to implement dynamic network prices
+    symmetrically, eliminating the need for complex tariff arrangements to reduce
+    the risk of cycling.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/12/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+  markdown_filename: project_edith_stage_3_insights_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-43810
+  contributing_source_titles:
+  - Project Edith Stage 3 Insights Report
+  contributing_sources:
+  - source_title: Project Edith Stage 3 Insights Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+    markdown_filename: project_edith_stage_3_insights_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-43811
+  source_title: Project Edith Stage 3 Insights Report
+  publish_date: 2025-12
+  project_name: Project Edith
+  what_happened: Dynamic network prices vary significantly between transformers on
+    the same feeder — some transformers in the Edith trial experience critical peak
+    price events frequently while others never reach the congestion threshold and
+    face only low default prices throughout the year, creating large disparities in
+    annual network charges and rewards between customers in geographically close locations.
+  lesson_learnt: Widescale rollout of dynamic network tariffs must address fairness
+    concerns arising from transformer-level price diversity — providing customers
+    and agents with location-specific information on likely price outcomes before
+    they opt in is essential, and policy makers need to develop clear principles on
+    the fairness-efficiency trade-off inherent in highly localised pricing.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Ausgrid is developing information tools for customers and aggregators
+    on expected tariff value by location, and is examining options including coarser
+    granularity (zone substation level) and targeted rollout in constrained areas
+    to manage fairness concerns.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id008
+  - 21
+  - 22
+  evidence_excerpt: Dynamic tariffs vary significantly across different transformers
+    (Figure 9), which could pose challenges for fairness and acceptance. In the Edith
+    trial, some transformers are heavily loaded and often face critical peak price
+    events. In contrast, other transformers never reach the congestion level needed
+    to trigger a dynamic price event. Customers connected to the unconstrained transformers
+    could have low default prices throughout the year. These differences occur even
+    though the dynamic prices are set based on geographically close locations, with
+    different transformers on the same feeder.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/12/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+  markdown_filename: project_edith_stage_3_insights_report.md
+  source_page_pdf: 21
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-43811
+  contributing_source_titles:
+  - Project Edith Stage 3 Insights Report
+  contributing_sources:
+  - source_title: Project Edith Stage 3 Insights Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+    markdown_filename: project_edith_stage_3_insights_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-43812
+  source_title: Project Edith Stage 3 Insights Report
+  publish_date: 2025-12
+  project_name: Project Edith
+  what_happened: The Australian Energy Regulator's current network utilisation metric
+    (peak demand relative to maximum capacity) paradoxically shows a decline in utilisation
+    — appearing as worse performance — when a DNSP successfully reduces peak demand
+    through dynamic pricing and CER coordination, making it impossible to use the
+    existing metric to demonstrate the network benefits of dynamic tariffs.
+  lesson_learnt: Projects deploying dynamic network pricing should not rely on existing
+    AER network utilisation metrics to demonstrate network benefit — new metrics capable
+    of capturing load profile flattening and deferral of network upgrades must be
+    developed and agreed with the regulator before benefits can be formally recognised,
+    and project design should include a measurement framework that anticipates this
+    gap.
+  issue_severity: major
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: The AER has acknowledged the metric is incomplete and signalled
+    willingness to consider improved measures in future performance reports; UTS research
+    has been commissioned to explore alternative network utilisation metrics.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id009
+  - 24
+  - 25
+  evidence_excerpt: Using current metrics, if a DNSP is effectively able to integrate
+    high proportions of CER, driving a reduction in summer peak demand, its network
+    utilisation figure would decline, reflecting negatively on the DNSP... Since Edith's
+    dynamic prices are designed to reduce demand during peak demand events, they can
+    be expected to drive a reduction in the current network utilisation metric, even
+    though the prices are helping to better manage power system flows. The AER has
+    recognised that the current network utilisation metric is an incomplete metric
+    and has signalled its willingness to consider improved measures.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/12/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+  markdown_filename: project_edith_stage_3_insights_report.md
+  source_page_pdf: 25
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-43812
+  contributing_source_titles:
+  - Project Edith Stage 3 Insights Report
+  contributing_sources:
+  - source_title: Project Edith Stage 3 Insights Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+    markdown_filename: project_edith_stage_3_insights_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-43813
+  source_title: Project Edith Stage 3 Insights Report
+  publish_date: 2025-12
+  project_name: Project Edith
+  what_happened: Analysis of the median Edith customer from July to October 2024 estimated
+    potential wholesale market earnings of $226 over four months; after adjusting
+    for time-of-use network charges the net benefit was reduced by approximately $50,
+    but under the Edith dynamic tariff the customer earned an additional $79 in dynamic
+    network rewards, producing a net benefit approximately $129 higher than for equivalent
+    time-of-use customers — more than offsetting Edith's higher daily network access
+    charge of $38.29 over the period.
+  lesson_learnt: A dynamic network tariff designed to 'get out of the way' during
+    unconstrained periods — setting low anytime energy charges and only applying dynamic
+    charges at congestion — can increase customers' wholesale market earnings enough
+    to more than offset a higher daily access charge, creating a net benefit that
+    supports customer opt-in and commercial viability of the tariff.
+  issue_severity: none
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id010
+  - 27
+  - 28
+  evidence_excerpt: The results show that customers with flexible CER assets have
+    the potential to earn significant additional revenue by participating in the wholesale
+    market – in this example, $226 over 4 months... when we adjusted the potential
+    earnings to take account of dynamic energy charges, Edith customers earned an
+    extra $79 because they also benefited from dynamic network rewards. Overall, the
+    potential energy arbitrage value for Edith customers was around $129 more than
+    for time-of-use customers... The cost of the higher NAC was $38.29 over the period.
+    This result suggests that the Edith customers' higher NAC was more than offset
+    by the opportunity to earn more revenue in the wholesale market.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/12/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+  markdown_filename: project_edith_stage_3_insights_report.md
+  source_page_pdf: 27
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-43813
+  contributing_source_titles:
+  - Project Edith Stage 3 Insights Report
+  contributing_sources:
+  - source_title: Project Edith Stage 3 Insights Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+    markdown_filename: project_edith_stage_3_insights_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+- record_id: ARENA-DLV-43814
+  source_title: Project Edith Stage 3 Insights Report
+  publish_date: 2025-12
+  project_name: Project Edith
+  what_happened: Customers with both solar and a battery were observed to typically
+    have a relatively large solar system compared to their battery size, meaning most
+    solar-battery customers still export significant energy to the grid during midday,
+    and their average load profile resembles a flattened duck curve rather than being
+    fully self-consuming — indicating batteries are not eliminating the midday export
+    and evening demand challenge at the distribution level.
+  lesson_learnt: DNSPs and VPP aggregators should not assume that residential solar-battery
+    customers have neutralised their duck curve contribution — the typical battery
+    size (approximately 2-hour discharge) is insufficient to fully offset large rooftop
+    PV systems, and dynamic network pricing design must account for continued midday
+    export and evening import peaks from these customers.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id011
+  - 28
+  evidence_excerpt: We have observed that customers with both solar and a battery
+    often have a relatively large solar system compared to the size of their battery.
+    A typical solar plus battery customer still exports energy to the grid in the
+    middle of the day... the solar systems are relatively large compared to the batteries,
+    so the battery's impact isn't substantial enough to fully offset the rooftop PV
+    output of the average customer, particularly later in the afternoon. As a result,
+    the average load profile of a solar-battery customer appears as a more flattened
+    version of a duck curve.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/12/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+  markdown_filename: project_edith_stage_3_insights_report.md
+  source_page_pdf: 18
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-43814
+  contributing_source_titles:
+  - Project Edith Stage 3 Insights Report
+  contributing_sources:
+  - source_title: Project Edith Stage 3 Insights Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+    markdown_filename: project_edith_stage_3_insights_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-43815
+  source_title: Project Edith Stage 3 Insights Report
+  publish_date: 2025-12
+  project_name: Project Edith
+  what_happened: The dynamic pricing engine for Project Edith depends on a wide variety
+    of data inputs — operational, forecasted, and static — from diverse sources with
+    varying degrees of reliability, accuracy, and timeliness. Data gaps, delays, or
+    inaccuracies were identified as a material operational risk that the pricing engine
+    must be designed to tolerate, as incomplete data could generate incorrect or misleading
+    price signals.
+  lesson_learnt: Dynamic network pricing systems must be designed for resilience to
+    incomplete, delayed, or inaccurate data inputs from the outset — building data
+    quality tolerance into the pricing engine is a prerequisite for reliable operation,
+    and improving data infrastructure (CER asset capabilities, forward-looking schedules,
+    granular usage data) is a parallel workstream that can also benefit dynamic operating
+    envelopes.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id012
+  - 29
+  evidence_excerpt: Dynamic network pricing depends on a wide variety of data inputs
+    that differ greatly in their availability, accuracy, and timeliness... Pricing
+    engines must continue to function and generate reasonable price signals even when
+    data is incomplete, delayed, or incorrect. Future opportunities exist for improved
+    data collection that could enhance the effectiveness of dynamic pricing. This
+    includes more detailed information about CER asset capabilities and limitations,
+    forward-looking operational schedules from batteries and other flexible resources,
+    and granular customer usage patterns beyond basic load profiles.
+  confidence_note: delay_category field uses 'data/validation/testing' as allowed
+    for delay_category (not lifecycle_phase) per taxonomy.
+  source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/12/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+  markdown_filename: project_edith_stage_3_insights_report.md
+  source_page_pdf: 29
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-43815
+  contributing_source_titles:
+  - Project Edith Stage 3 Insights Report
+  contributing_sources:
+  - source_title: Project Edith Stage 3 Insights Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+    markdown_filename: project_edith_stage_3_insights_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-43816
+  source_title: Project Edith Stage 3 Insights Report
+  publish_date: 2025-12
+  project_name: Project Edith
+  what_happened: 'Measuring the price elasticity of CER demand response under dynamic
+    network pricing proved analytically challenging due to multiple confounding factors:
+    most demand changes are driven by non-discretionary household consumption unrelated
+    to price signals; customers also respond to correlated wholesale market prices;
+    aggregators cannot control all customers'' rooftop PV output; and battery state
+    of charge creates time-varying responsiveness that declines over a price event.'
+  lesson_learnt: Trial designs for dynamic network pricing must build in robust counterfactual
+    baseline methodologies from the start — isolating network price-driven responses
+    from wholesale market responses, unmanaged solar, and battery state-of-charge
+    effects requires careful experimental design with matched control cohorts, not
+    just aggregate price-demand correlation analysis.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: The Edith team is developing a reliable measure of price elasticity
+    and has established a baseline cohort of comparable solar-battery customers not
+    in the trial for counterfactual comparison.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id013
+  - 21
+  evidence_excerpt: 'The Edith team is examining options to develop a reliable measure
+    of price elasticity. As discussed earlier, several complications make it difficult
+    to reach a definitive conclusion. These complications include: Most changes in
+    customer demand are entirely unrelated to network price signals... Customers or
+    customer assets also respond to the wholesale market price, which is often correlated
+    with the dynamic price... The aggregators and retailers in the Edith trial cannot
+    adjust the output of all their customers'' rooftop PV systems based on price...
+    The responsiveness to a given price change during the high price event, with a
+    strong reaction at the start that diminishes over time.'
+  confidence_note: delay_category field uses 'data/validation/testing' as allowed
+    for delay_category per taxonomy.
+  source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/12/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+  markdown_filename: project_edith_stage_3_insights_report.md
+  source_page_pdf: 21
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-43816
+  contributing_source_titles:
+  - Project Edith Stage 3 Insights Report
+  contributing_sources:
+  - source_title: Project Edith Stage 3 Insights Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+    markdown_filename: project_edith_stage_3_insights_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-43817
+  source_title: Project Edith Stage 3 Insights Report
+  publish_date: 2025-12
+  project_name: Project Edith
+  what_happened: The current billing process for Edith trial customers uses a post-reconciliation
+    off-market process — assessing how customers perform on the Edith tariff relative
+    to their underlying network tariff and making reconciliation payments — which
+    is funded through Ausgrid's Demand Management Innovation Allowance and cannot
+    be scaled to a full commercial rollout.
+  lesson_learnt: Off-market post-reconciliation billing is viable for small-scale
+    dynamic pricing trials but creates a funding dependency on innovation allowances
+    and cannot support large-scale or commercial deployment; transitioning to on-market
+    billing integrated with the network's billing and metering systems is a prerequisite
+    for commercial rollout and should be progressed in parallel with tariff design,
+    not sequentially.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: poor scoping
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Ausgrid is integrating on-market billing into its Billing Data
+    Management and Metering Business System for the Stage 4 subthreshold tariff, with
+    a detailed business requirements document completed to guide the ERP upgrade.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id014
+  - 13
+  evidence_excerpt: The current billing process for participating Edith customers
+    is managed through a post-reconciliation process... These payments are currently
+    funded through Ausgrid's Demand Management Innovation Allowance. Launching on
+    the market will also allow more retailers to participate, as we will have full
+    network billing capability, eliminating the current process of post-reconciliation
+    payments.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/12/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+  markdown_filename: project_edith_stage_3_insights_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-43817
+  contributing_source_titles:
+  - Project Edith Stage 3 Insights Report
+  contributing_sources:
+  - source_title: Project Edith Stage 3 Insights Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+    markdown_filename: project_edith_stage_3_insights_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-43818
+  source_title: Project Edith Stage 3 Insights Report
+  publish_date: 2025-12
+  project_name: Project Edith
+  what_happened: A solar soak experiment conducted in April–May 2024 applied an 8c/kWh
+    dynamic export price between 11:30am–12:30pm and a 90c/kWh dynamic import price
+    between 4:30–5:30pm; Edith customers demonstrably exported less during the day
+    and consumed less in the evening, effectively flattening the load profile compared
+    to a baseline cohort of solar-battery customers on static tariffs.
+  lesson_learnt: Dynamic network pricing can successfully incentivise residential
+    CER to address both midday solar export peaks and evening demand peaks simultaneously
+    — a two-sided dynamic tariff applied at specific intervals is sufficient to meaningfully
+    flatten the duck curve, demonstrating the mechanism's potential for deferring
+    network augmentation.
+  issue_severity: none
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id015
+  - 25
+  - 26
+  evidence_excerpt: In April-May 2024, an experiment was conducted to explore whether
+    dynamic prices could help to flatten customers' load profiles during periods of
+    high exports as well as high demand. A group of Edith customers received an 8-cent
+    dynamic export price (or dynamic import reward) between 11:30 am and 12:30 pm,
+    and a 90-cent dynamic import price (or dynamic export reward) between 4:30 and
+    5:30 pm... Edith's customers exported less during the day and consumed less in
+    the evening – essentially flattening the load.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/12/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+  markdown_filename: project_edith_stage_3_insights_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-43818
+  contributing_source_titles:
+  - Project Edith Stage 3 Insights Report
+  contributing_sources:
+  - source_title: Project Edith Stage 3 Insights Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+    markdown_filename: project_edith_stage_3_insights_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+- record_id: ARENA-DLV-43819
+  source_title: Project Edith Stage 3 Insights Report
+  publish_date: 2025-12
+  project_name: Project Edith
+  what_happened: Project Edith operates at a current dynamic price cap of approximately
+    $1.10/kWh, which is substantially lower than the wholesale market price cap ($20.3/kWh)
+    or the NSW value of customer reliability ($38.53/kWh), meaning customers and VPP
+    operators may prioritise responding to wholesale market price spikes over network
+    price signals when the two compete for the same battery capacity.
+  lesson_learnt: The relative level of dynamic network price caps versus wholesale
+    market prices creates a hierarchy of response priority for VPP operators — where
+    network and wholesale peaks align, low network price caps reduce CER response
+    to network needs; trial designers should model the interaction between network
+    and wholesale price signals and determine appropriate cap levels before scaling,
+    noting that higher caps deliver more network response but raise cost and overcompensation
+    risks.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: The Edith team is examining options for price cap levels and
+    their interaction with wholesale market signals; future investigation will determine
+    suitable cap levels for the on-market phase.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id016
+  - 21
+  evidence_excerpt: Since the wholesale market price cap for FY25-26 is $20,300/MWh
+    ($20.3/kWh), customers and their agents might find it more profitable to concentrate
+    on responding to wholesale market price spikes, based on their expectations about
+    how often, how large, and how long these spikes might occur... Currently, Edith's
+    maximum prices are based on long run marginal cost and relatively low. Using higher
+    maximums, such as the market price cap or the value of customer reliability, offers
+    the advantage of encouraging more flexibility to support the network but can be
+    costly and may lead to inefficient overcompensation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/12/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+  markdown_filename: project_edith_stage_3_insights_report.md
+  source_page_pdf: 21
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-43819
+  contributing_source_titles:
+  - Project Edith Stage 3 Insights Report
+  contributing_sources:
+  - source_title: Project Edith Stage 3 Insights Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+    markdown_filename: project_edith_stage_3_insights_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-43820
+  source_title: Project Edith Stage 3 Insights Report
+  publish_date: 2025-12
+  project_name: Project Edith
+  what_happened: Project Edith successfully scaled from 200 customers and one retail
+    partner in Stage 1 to approximately 1,200 customers across four customer agent
+    partners (Reposit Power, Origin Energy, EnergyAustralia, Shinehub) by Stage 2,
+    enabling testing of a more diverse set of retail products and customer types under
+    dynamic pricing.
+  lesson_learnt: A phased expansion model that begins with a single trusted partner
+    and simple technology before adding partners and complexity is an effective low-risk
+    approach for scaling dynamic pricing trials — early-stage learning from one partner
+    relationship can inform partner onboarding requirements and API integration standards
+    for subsequent partners.
+  issue_severity: none
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id017
+  - 11
+  evidence_excerpt: 'The second stage expanded the trial from 200 customers to approximately
+    1,200 by bringing in additional partners: Origin Energy, EnergyAustralia, and
+    Shinehub. This enabled both a large customer base to test dynamic pricing and
+    a more diverse set of retail products utilising this pricing.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/12/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+  markdown_filename: project_edith_stage_3_insights_report.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-43820
+  contributing_source_titles:
+  - Project Edith Stage 3 Insights Report
+  contributing_sources:
+  - source_title: Project Edith Stage 3 Insights Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+    markdown_filename: project_edith_stage_3_insights_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+- record_id: ARENA-DLV-43821
+  source_title: Project Edith Stage 3 Insights Report
+  publish_date: 2025-12
+  project_name: Project Edith
+  what_happened: Dynamic network price responsiveness depends substantially on the
+    VPP operator's algorithm and tools — including the customer's battery state of
+    charge, whether the agent can curtail solar PV exports, and VPP contractual constraints
+    — meaning that measured price elasticity reflects the aggregator's decision-making
+    rather than the end-user's willingness to respond, and varies significantly between
+    agent partners.
+  lesson_learnt: Dynamic network pricing trials should track and report price elasticity
+    by agent-partner separately, not as a single aggregate figure — since responsiveness
+    is driven by agent algorithm capability rather than end-user behaviour, understanding
+    which agent architectures produce the best responses is key to designing effective
+    incentives and informing future tariff parameters.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id018
+  - 19
+  - 21
+  evidence_excerpt: Price responsiveness depends on the agent's algorithm and the
+    tools available to them, particularly the charge level in the customer's battery
+    and whether they can directly curtail exports from a customer's solar PV... At
+    this stage in Edith, the dynamic price signals are managed by customer agents
+    through their VPPs; end-users do not see the prices. Therefore, any measure of
+    price elasticity depends on the customer agents' algorithm rather than the end-user's
+    willingness to adjust their demand in response to a price change.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/12/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+  markdown_filename: project_edith_stage_3_insights_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-43821
+  contributing_source_titles:
+  - Project Edith Stage 3 Insights Report
+  contributing_sources:
+  - source_title: Project Edith Stage 3 Insights Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+    markdown_filename: project_edith_stage_3_insights_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+- record_id: ARENA-DLV-43822
+  source_title: Project Edith Stage 3 Insights Report
+  publish_date: 2025-12
+  project_name: Project Edith
+  what_happened: The data requirements for dynamic network pricing (real-time network
+    visibility, CER capability data, accurate forecasting, reliable communication
+    channels) closely overlap with the data requirements for dynamic operating envelopes,
+    creating an opportunity for shared data infrastructure that supports both mechanisms
+    and lowers combined implementation costs.
+  lesson_learnt: Networks investing in data infrastructure for dynamic pricing should
+    design it to simultaneously support dynamic operating envelopes — the overlapping
+    data requirements mean that a single integrated data platform can serve both mechanisms,
+    substantially reducing unit implementation cost and enabling a toolkit approach
+    to CER network management.
+  issue_severity: none
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id019
+  - 29
+  evidence_excerpt: Many of the data requirements for dynamic network pricing closely
+    match those for dynamic operating envelopes, such as real-time network visibility,
+    understanding of CER capabilities, accurate forecasting, and dependable communication
+    channels. This overlap offers opportunities for integrated approaches where a
+    data infrastructure can support both dynamic pricing and dynamic operating envelopes,
+    lowering implementation costs while giving network operators multiple tools to
+    manage CER integration.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/12/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+  markdown_filename: project_edith_stage_3_insights_report.md
+  source_page_pdf: 29
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-43822
+  contributing_source_titles:
+  - Project Edith Stage 3 Insights Report
+  contributing_sources:
+  - source_title: Project Edith Stage 3 Insights Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+    markdown_filename: project_edith_stage_3_insights_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+- record_id: ARENA-DLV-43823
+  source_title: Project Edith Stage 3 Insights Report
+  publish_date: 2025-12
+  project_name: Project Edith
+  what_happened: Current dynamic network tariffs used in Project Edith carry a relatively
+    high fixed daily network access charge (NAC) to prevent cross-subsidisation with
+    non-Edith customers, but trial experience and modelling indicate the NAC may need
+    to be further increased to better recover costs and minimise cross-subsidies,
+    while trial-specific settings such as artificial simulated constraints must be
+    removed before market deployment.
+  lesson_learnt: Dynamic network tariff parameters — particularly the fixed network
+    access charge, dynamic price triggers, scaling mechanisms, default pricing levels,
+    and price caps — require systematic calibration based on real-world performance
+    data before commercial deployment; trial designers should build in a formal tariff
+    parameter review process rather than treating initial settings as fixed.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Ausgrid has identified tariff parameter refinement as a specific
+    future focus area and will use subthreshold trial data to recalibrate the NAC,
+    price triggers, and caps.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id020
+  - 30
+  evidence_excerpt: Trial experience and modelling indicate that the network access
+    charge may need to be increased to better recover costs and minimise cross-subsidies.
+    Dynamic price triggers, scaling mechanisms, default pricing levels, and maximum
+    prices also require calibration based on real-world performance data.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/12/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+  markdown_filename: project_edith_stage_3_insights_report.md
+  source_page_pdf: 30
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-43823
+  contributing_source_titles:
+  - Project Edith Stage 3 Insights Report
+  contributing_sources:
+  - source_title: Project Edith Stage 3 Insights Report
+    pdf_url: https://arena.gov.au/assets/2025/12/Edith-Stage3-Insights.pdf
+    source_pages: *id020
+    source_url: https://arena.gov.au/knowledge-bank/project-edith-stage-3-insights-report/
+    markdown_filename: project_edith_stage_3_insights_report.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-50565
+  source_title: DEIP Market Integration Trials Summary Report 1.0
+  publish_date: 2022-09
+  project_name: Project Edith
+  what_happened: The SA Power Networks and AusNet Flexible Exports trial found that
+    a high percentage of existing inverters could not comply with operating envelopes.
+    In response, Project Edith introduced a subscription model where consumers (through
+    their trader) can select and pay for a minimum export limit compatible with their
+    equipment capability, replacing part of the consumer's current network tariff.
+  lesson_learnt: Where existing consumer inverter hardware cannot comply with dynamic
+    export limits, a subscription model — allowing consumers to select a minimum compliant
+    limit rather than forcing compliance with a uniform envelope — can maintain participation
+    incentives while accommodating legacy equipment; this approach also creates a
+    commercial signal for consumers to upgrade hardware over time.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: A subscription model was introduced allowing consumers to select
+    a minimum export limit their equipment can comply with, replacing part of the
+    current network tariff.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id021
+  - 35
+  evidence_excerpt: Recently a subscription model was introduced to help with the
+    allocation of network capacity through DOEs while considering different consumer
+    equipment capabilities. As was noted earlier, the Flexible Export for Solar PV
+    trials found a high percentage of existing inverters are not able to comply with
+    operating envelopes. Through a subscription model, the consumer (through their
+    trader) can select and pay for a minimum limit that can be complied with, therefore
+    creating an incentive for flexibility while accommodating existing capabilities.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/deip-der-market-integration-trials-summary-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 29/09/2022
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2022/09/DEIP-Market-Integration-Trials-Summary-Report-1.0.pdf
+  markdown_filename: deip_market_integration_trials_summary_report_10.md
+  source_page_pdf: 35
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-50565
+  contributing_source_titles:
+  - DEIP Market Integration Trials Summary Report 1.0
+  contributing_sources:
+  - source_title: DEIP Market Integration Trials Summary Report 1.0
+    pdf_url: https://arena.gov.au/assets/2022/09/DEIP-Market-Integration-Trials-Summary-Report-1.0.pdf
+    source_pages: *id021
+    source_url: https://arena.gov.au/knowledge-bank/deip-der-market-integration-trials-summary-report/
+    markdown_filename: deip_market_integration_trials_summary_report_10.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-50572
+  source_title: DEIP Market Integration Trials Summary Report 1.0
+  publish_date: 2022-09
+  project_name: Project Edith
+  what_happened: Project Edith adopted a point-to-point data architecture with standards
+    (CSIP-AUS) and leveraged existing AEMO market systems (MarketNet, MMS) rather
+    than building new integrated platforms, deliberately limiting complexity to reduce
+    short-term costs and allow an iterative implementation approach.
+  lesson_learnt: Where simpler point-to-point architectures using existing market
+    infrastructure are sufficient for the trial scope, prefer them over purpose-built
+    integrated platforms — this reduces cost, accelerates delivery, and limits complex
+    interactions while still generating transferable learnings on DER integration.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id022
+  - 25
+  - 35
+  evidence_excerpt: Project Edith aims to leverage existing systems and processes
+    to reduce the cost and complexity of DER integration. The trial uses a point-to-point
+    architecture with standards, where the DNSP communicates with the trader through
+    a standardised interface (e.g. CSIP-AUS), and the trader operates in the market
+    as they currently do through MarketNet and the Market Management System (MMS).
+    This reduces short term costs and allows for an iterative implementation approach,
+    limiting complex interactions where simpler solutions prove sufficient.
+  confidence_note: 'project_type reconciled to ''DER/customer-side'' from: DER/customer-side
+    (23/28), software/data/digital (4/28), network/grid (1/28)'
+  source_url: https://arena.gov.au/knowledge-bank/deip-der-market-integration-trials-summary-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 29/09/2022
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2022/09/DEIP-Market-Integration-Trials-Summary-Report-1.0.pdf
+  markdown_filename: deip_market_integration_trials_summary_report_10.md
+  source_page_pdf: 25
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-50572
+  contributing_source_titles:
+  - DEIP Market Integration Trials Summary Report 1.0
+  contributing_sources:
+  - source_title: DEIP Market Integration Trials Summary Report 1.0
+    pdf_url: https://arena.gov.au/assets/2022/09/DEIP-Market-Integration-Trials-Summary-Report-1.0.pdf
+    source_pages: *id022
+    source_url: https://arena.gov.au/knowledge-bank/deip-der-market-integration-trials-summary-report/
+    markdown_filename: deip_market_integration_trials_summary_report_10.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+- record_id: ARENA-DLV-68321
+  source_title: DEIP Market Integration Trials Summary Report 3.0
+  publish_date: '2026-01-27'
+  project_name: Project Edith
+  what_happened: Project Edith found that initial dynamic network prices were created
+    through complex means to maximise economic efficiency, but over time simplifications
+    and adjustments were required to make the pricing methodology understandable for
+    consumers, traders, and regulators, at some cost to economic efficiency.
+  lesson_learnt: Dynamic network pricing methodology design must balance economic
+    efficiency against understandability for consumers, traders, and regulators —
+    overly complex pricing mechanisms will require mid-program simplification and
+    should be tested for interpretability with all stakeholders before deployment.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Pricing methodology was simplified progressively across trial
+    stages, resulting in a current approach with a small default anytime price and
+    increasingly higher prices as forecasted network element usage exceeds 80%.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id023
+  - 49
+  evidence_excerpt: Throughout the trial work has been done to improve the pricing
+    methodology. Initial prices were created through complex means to maximise economic
+    efficiency. Over time, simplifications and adjustments were made to prices to
+    make it easier for consumers, traders and regulators to understand the price creation
+    mechanism.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/deip-market-integration-trials-summary-report-3-0/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/02/2026
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/02/DEIP-Market-Integration-Trials-Summary30.pdf
+  markdown_filename: deip_market_integration_trials_summary_report_30.md
+  source_page_pdf: 49
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-68321
+  contributing_source_titles:
+  - DEIP Market Integration Trials Summary Report 3.0
+  contributing_sources:
+  - source_title: DEIP Market Integration Trials Summary Report 3.0
+    pdf_url: https://arena.gov.au/assets/2026/02/DEIP-Market-Integration-Trials-Summary30.pdf
+    source_pages: *id023
+    source_url: https://arena.gov.au/knowledge-bank/deip-market-integration-trials-summary-report-3-0/
+    markdown_filename: deip_market_integration_trials_summary_report_30.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-68322
+  source_title: DEIP Market Integration Trials Summary Report 3.0
+  publish_date: '2026-01-27'
+  project_name: Project Edith
+  what_happened: Project Edith found that dynamic network prices differ significantly
+    across locations — some customers experiencing highly fluctuating rates and others
+    seeing no variable changes — raising fairness and efficiency concerns that require
+    regulatory and industry attention.
+  lesson_learnt: When rolling out dynamic network pricing, traders and consumers must
+    be provided with information on likely price outcomes at their specific location
+    before sign-up — the location-specific nature of dynamic prices can disadvantage
+    some customers relative to others and requires regulatory frameworks addressing
+    equity.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Project Edith highlighted the importance of providing traders
+    and consumers with information on likely price outcomes so they can determine
+    whether a dynamic tariff suits their specific location.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id024
+  - 50
+  evidence_excerpt: Dynamic prices can differ significantly across locations, with
+    some customers experiencing highly fluctuating rates while others see no variable
+    changes. This diversity reflects differences in local network conditions but raises
+    important questions about fairness and efficiency that industry and regulators
+    will need to address.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/deip-market-integration-trials-summary-report-3-0/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 12/02/2026
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/02/DEIP-Market-Integration-Trials-Summary30.pdf
+  markdown_filename: deip_market_integration_trials_summary_report_30.md
+  source_page_pdf: 50
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-68322
+  contributing_source_titles:
+  - DEIP Market Integration Trials Summary Report 3.0
+  contributing_sources:
+  - source_title: DEIP Market Integration Trials Summary Report 3.0
+    pdf_url: https://arena.gov.au/assets/2026/02/DEIP-Market-Integration-Trials-Summary30.pdf
+    source_pages: *id024
+    source_url: https://arena.gov.au/knowledge-bank/deip-market-integration-trials-summary-report-3-0/
+    markdown_filename: deip_market_integration_trials_summary_report_30.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78

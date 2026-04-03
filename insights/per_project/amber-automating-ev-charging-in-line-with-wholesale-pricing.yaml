@@ -1,0 +1,2904 @@
+- record_id: ARENA-DLV-16951
+  source_title: Amber - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report 2
+  publish_date: 2025-04
+  project_name: Automating EV Charging in line with Wholesale Pricing
+  what_happened: Amber selected OCPP as its primary communication protocol for smart
+    charger integration rather than charger-specific APIs, on the basis that OCPP
+    compatibility is near-universal across charger brands, making future integrations
+    with additional charger models significantly easier.
+  lesson_learnt: For smart charging platforms targeting multiple charger brands, prioritise
+    OCPP as the integration layer over proprietary APIs — a single OCPP integration
+    creates a reusable foundation, while charger-specific APIs require individual
+    development effort for each new charger and may be added later once the OCPP integration
+    is mature.
+  issue_severity: minor
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id001
+  - 14
+  evidence_excerpt: We decided to opt for this option instead of API as most chargers
+    are OCPP compatible. Once we have the integration that supports this protocol,
+    we believe that adding another integration with a different OCPP-compatible charger
+    in the future should be relatively easy.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 5/05/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/05/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-2.pdf
+  markdown_filename: amber_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_2.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16951
+  contributing_source_titles:
+  - Amber - Automating EV Charging in line with Wholesale Pricing - Lessons Learnt
+    Report 2
+  contributing_sources:
+  - source_title: Amber - Automating EV Charging in line with Wholesale Pricing -
+      Lessons Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2025/05/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-2.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/amber-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-2/
+    markdown_filename: amber_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_2.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-16952
+  source_title: Amber - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report 2
+  publish_date: 2025-04
+  project_name: Automating EV Charging in line with Wholesale Pricing
+  what_happened: During EVSE commissioning, Amber established a process where chargers
+    were onboarded into its OCPP environment either by the on-site installer or remotely
+    by the charger manufacturer immediately after installation, ensuring the charger
+    was fully commissioned shortly after physical installation and delivering a positive
+    customer experience.
+  lesson_learnt: Design the commissioning handoff so that OCPP onboarding occurs on
+    the day of physical installation — either by training installers to complete onboarding
+    on-site or by coordinating with the charger manufacturer to do it remotely — to
+    avoid a gap between hardware installation and functional availability that degrades
+    customer experience.
+  issue_severity: none
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Chargers were onboarded in Amber's OCPP environment by the installer
+    on site or remotely by the charger manufacturer after installation, ensuring full
+    commissioning shortly after installation.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id002
+  - 14
+  evidence_excerpt: The chargers were either on boarded in Amber's OCPP environment
+    by the installer on site or remotely by the charger manufacturer after installation,
+    this way provided a great customer experience as the charger was fully commissioned
+    shortly after installation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 5/05/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/05/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-2.pdf
+  markdown_filename: amber_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16952
+  contributing_source_titles:
+  - Amber - Automating EV Charging in line with Wholesale Pricing - Lessons Learnt
+    Report 2
+  contributing_sources:
+  - source_title: Amber - Automating EV Charging in line with Wholesale Pricing -
+      Lessons Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2025/05/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-2.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/amber-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-2/
+    markdown_filename: amber_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_2.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-16953
+  source_title: Amber - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report 2
+  publish_date: 2025-04
+  project_name: Automating EV Charging in line with Wholesale Pricing
+  what_happened: Amber identified that constant communication between all parties
+    — installer partners, charger manufacturer, and platform operator — was essential
+    for successful charger connections and good customer experience when commissioning
+    at scale, and that breakdowns in this communication created friction.
+  lesson_learnt: When scaling smart charger deployment across multiple installer partners
+    and a charger manufacturer, establish formal communication channels and clear
+    responsibilities among all parties before installation begins — ad hoc coordination
+    is insufficient and will produce connection failures and poor customer experience
+    at scale.
+  issue_severity: minor
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages: &id003
+  - 14
+  evidence_excerpt: For future projects or when looking to build robust processes
+    to scale up and support charger penetration, constant communication between all
+    the parties is needed for successful connections of the chargers and to ensure
+    a great customer experience.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 5/05/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/05/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-2.pdf
+  markdown_filename: amber_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_2.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16953
+  contributing_source_titles:
+  - Amber - Automating EV Charging in line with Wholesale Pricing - Lessons Learnt
+    Report 2
+  contributing_sources:
+  - source_title: Amber - Automating EV Charging in line with Wholesale Pricing -
+      Lessons Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2025/05/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-2.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/amber-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-2/
+    markdown_filename: amber_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_2.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-16954
+  source_title: Amber - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report 2
+  publish_date: 2025-04
+  project_name: Automating EV Charging in line with Wholesale Pricing
+  what_happened: Tesla announced in December 2024 that its previously free Command
+    and Fleet APIs would move to a paid model. Amber had built its entire EV automation
+    product (A4EV) using the Command API via polling; the first bill under this approach
+    would have been 40 times more expensive than using the Fleet API for telemetry
+    instead.
+  lesson_learnt: When building an automation product dependent on a third-party API,
+    assess the long-term cost structure of each available API endpoint before committing
+    to an architecture — building on a free API that later shifts to paid can force
+    a costly and disruptive platform rewrite; using the purpose-built telemetry endpoint
+    (Fleet API) rather than the control endpoint (Command API) for data collection
+    reduced costs to approximately 2.5% of the worst-case scenario.
+  issue_severity: major
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: internal governance/resourcing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: Amber migrated from polling via the Command API to receiving
+    telemetry via the Fleet API; the first paid bill under the new architecture was
+    approximately 2.5% of the cost under the original approach.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages: &id004
+  - 16
+  - 17
+  evidence_excerpt: Using Command API, (not fleet API) our first bill would have been
+    40 times more expensive... Using Fleet API (for telemetry) and Command API (for
+    charge/discharge/wake), our first paid bill was around 2.5% of the potential cost
+    i.e. most expensive case scenario.
+  confidence_note: delay_category assigned as internal governance/resourcing because
+    the trigger was an internal architecture decision rather than an external approval
+    or supply issue; cost overrun is flagged because the original approach would have
+    imposed a cost 40× higher than the revised approach, representing a material unplanned
+    cost variance.
+  source_url: https://arena.gov.au/knowledge-bank/amber-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 5/05/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/05/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-2.pdf
+  markdown_filename: amber_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16954
+  contributing_source_titles:
+  - Amber - Automating EV Charging in line with Wholesale Pricing - Lessons Learnt
+    Report 2
+  contributing_sources:
+  - source_title: Amber - Automating EV Charging in line with Wholesale Pricing -
+      Lessons Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2025/05/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-2.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/amber-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-2/
+    markdown_filename: amber_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_2.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: cost overrun
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-16955
+  source_title: Amber - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report 2
+  publish_date: 2025-04
+  project_name: Automating EV Charging in line with Wholesale Pricing
+  what_happened: Amber's transition from Tesla's Command API (polling) to the Fleet
+    API (push telemetry) required reconfiguring each enrolled Tesla vehicle to send
+    its telemetry to Amber's servers — a significant technical change involving both
+    platform re-architecture and per-vehicle configuration, representing substantial
+    engineering rework mid-project.
+  lesson_learnt: When designing a vehicle API integration, prefer push-based telemetry
+    (Fleet API) over polling (Command API) from the outset — a forced mid-project
+    migration from polling to push required re-architecture of the platform and per-vehicle
+    reconfiguration of all enrolled vehicles, adding complexity and engineering cost
+    that could have been avoided with upfront architecture decisions.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: internal governance/resourcing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: Amber adopted the Fleet API for telemetry reception and retained
+    the Command API only for charge/discharge/wake commands, reducing per-user API
+    costs significantly.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages: &id005
+  - 16
+  - 17
+  evidence_excerpt: This was a significant change, moving from a simple API we could
+    poll to a more complex API where we receive telemetry whenever it changes. There
+    is also complexity in the fact that we have to configure each Tesla to tell it
+    where to send its telemetry (to Amber's servers).
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 5/05/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/05/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-2.pdf
+  markdown_filename: amber_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_2.md
+  source_page_pdf: 17
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16955
+  contributing_source_titles:
+  - Amber - Automating EV Charging in line with Wholesale Pricing - Lessons Learnt
+    Report 2
+  contributing_sources:
+  - source_title: Amber - Automating EV Charging in line with Wholesale Pricing -
+      Lessons Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2025/05/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-2.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/amber-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-2/
+    markdown_filename: amber_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_2.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-16956
+  source_title: Amber - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report 2
+  publish_date: 2025-04
+  project_name: Automating EV Charging in line with Wholesale Pricing
+  what_happened: When automating excess solar consumption for Connected Solar customers,
+    Amber discovered that telemetry from different hardware vendors (solar inverter,
+    consumption meter, EV) arrives at different rates and with different delays, causing
+    the automation system to issue incorrect charging commands based on stale or inconsistent
+    data — resulting in grid draw instead of genuine solar self-consumption.
+  lesson_learnt: Multi-source home energy automation systems must implement a data
+    consistency check before issuing control commands — when telemetry from the inverter,
+    consumption meter, and EV is not temporally aligned, the system will calculate
+    incorrect available solar surplus and command the wrong charge rate; gate each
+    new command on confirmed receipt of fresh data from all sources.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: data & measurement
+  intervention_note: Amber introduced a 'consistent data' check using timestamps from
+    each telemetry source; after issuing a charging command, the system waits until
+    fresh data has been received from each source (solar inverter, consumption meter,
+    EV) before issuing the next command.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages: &id006
+  - 17
+  - 18
+  evidence_excerpt: Different hardware vendors collect telemetry data at different
+    rates. Some vendors collect data in near real time, others only collect data once
+    every few minutes... When this data is inconsistent, we will direct vehicles to
+    make charging decisions that are incorrect... In order to avoid the scenario above
+    (with inconsistent data), we introduced the concept of consistent data. This uses
+    the timestamp received from each piece of telemetry.
+  confidence_note: lifecycle_phase set to commissioning/integration because the issue
+    was discovered during early operational optimisation of newly installed systems,
+    before the product was stable; could also be read as operations.
+  source_url: https://arena.gov.au/knowledge-bank/amber-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 5/05/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/05/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-2.pdf
+  markdown_filename: amber_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_2.md
+  source_page_pdf: 18
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16956
+  contributing_source_titles:
+  - Amber - Automating EV Charging in line with Wholesale Pricing - Lessons Learnt
+    Report 2
+  contributing_sources:
+  - source_title: Amber - Automating EV Charging in line with Wholesale Pricing -
+      Lessons Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2025/05/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-2.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/amber-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-2/
+    markdown_filename: amber_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_2.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-16957
+  source_title: Amber - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report 2
+  publish_date: 2025-04
+  project_name: Automating EV Charging in line with Wholesale Pricing
+  what_happened: Approximately 70% of enrolled Tesla customers opted into one of Amber's
+    excess solar charging offerings (Predictive Solar or Connected Solar), demonstrating
+    strong customer demand for solar self-consumption optimisation as a primary EV
+    charging mode.
+  lesson_learnt: For EV smart charging products targeting residential solar owners,
+    solar self-consumption optimisation is the primary value proposition for the majority
+    of customers — design the product to prioritise this feature from launch, and
+    ensure the solar integration is robust before scaling enrolments.
+  issue_severity: none
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id007
+  - 17
+  evidence_excerpt: Our excess solar has proven very popular with customers - approximately
+    70% of enrolled Tesla customers are using one of our excess solar offerings.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 5/05/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/05/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-2.pdf
+  markdown_filename: amber_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_2.md
+  source_page_pdf: 17
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16957
+  contributing_source_titles:
+  - Amber - Automating EV Charging in line with Wholesale Pricing - Lessons Learnt
+    Report 2
+  contributing_sources:
+  - source_title: Amber - Automating EV Charging in line with Wholesale Pricing -
+      Lessons Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2025/05/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-2.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/amber-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-2/
+    markdown_filename: amber_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_2.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-16958
+  source_title: Amber - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report 2
+  publish_date: 2025-04
+  project_name: Automating EV Charging in line with Wholesale Pricing
+  what_happened: V2G chargers available in Australia are limited in number and most
+    still require network exemptions to connect, as they have not yet completed certification
+    against AS/NZS 4777.2 and Clean Energy Council listing requirements; this is constraining
+    Amber's ability to commence Phase 2 of the project and is likely to restrict the
+    trial to one or two charger brands and select EV models.
+  lesson_learnt: Projects planning V2G deployment in Australia must account for the
+    certification gap — most available V2G chargers are not yet CEC listed or AS/NZS
+    4777.2 compliant, requiring individual DNSP exemptions that are granted inconsistently;
+    engage target DNSPs early to understand their exemption policies and prioritise
+    hardware selection toward chargers closest to full certification.
+  issue_severity: major
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: technology vendor
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Amber is working with SA Power Networks and Essential Energy,
+    which are actively supporting V2G advancement, to understand network flexibility
+    on certification requirements while testing candidate charger hardware.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages: &id008
+  - 21
+  - 22
+  evidence_excerpt: Only a handful of V2G chargers are currently available in Australia,
+    and most still require network exemptions to connect... For V2G to work at scale,
+    V2G chargers must meet Australian standards (AS/NZS 4777.2) and be Clean Energy
+    Council (CEC) listed. As many chargers are still in the process of being certified,
+    the networks (DNSPs) need to provide exemptions for bidirectional chargers to
+    be installed, however at this stage approvals are limited.
+  confidence_note: secondary_failure_mode coded as procurement/supply chain because
+    limited hardware availability compounds the regulatory barrier.
+  source_url: https://arena.gov.au/knowledge-bank/amber-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 5/05/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/05/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-2.pdf
+  markdown_filename: amber_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_2.md
+  source_page_pdf: 21
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16958
+  contributing_source_titles:
+  - Amber - Automating EV Charging in line with Wholesale Pricing - Lessons Learnt
+    Report 2
+  contributing_sources:
+  - source_title: Amber - Automating EV Charging in line with Wholesale Pricing -
+      Lessons Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2025/05/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-2.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/amber-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-2/
+    markdown_filename: amber_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_2.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: procurement/supply chain
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-16959
+  source_title: Amber - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report 2
+  publish_date: 2025-04
+  project_name: Automating EV Charging in line with Wholesale Pricing
+  what_happened: Many new EV models have the hardware capability for V2G but remain
+    software-locked or unendorsed by manufacturers for bidirectional use; the absence
+    of warranty endorsements from car manufacturers is the principal constraint preventing
+    V2G from being offered to most Amber customers.
+  lesson_learnt: V2G project scoping must treat OEM warranty endorsement as a critical-path
+    dependency — even where vehicle hardware supports bidirectional charging, software
+    locks and warranty restrictions imposed by manufacturers can prevent deployment;
+    engage OEMs directly and early to secure endorsements, and plan for the trial
+    to be limited to the subset of vehicles where endorsements are confirmed.
+  issue_severity: major
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: approvals/regulatory
+  failure_mode: poor scoping
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Amber is engaged in ongoing conversations with car manufacturers
+    to unlock V2G software capability and secure warranty endorsements, with updates
+    expected in coming months.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages: &id009
+  - 21
+  evidence_excerpt: The main constraint to V2G at this stage is the lack of warranty
+    endorsement from car manufacturers. We expect more manufacturers to roll out software
+    updates over time, for now, V2G remains unsupported for most vehicles.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 5/05/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/05/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-2.pdf
+  markdown_filename: amber_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_2.md
+  source_page_pdf: 21
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16959
+  contributing_source_titles:
+  - Amber - Automating EV Charging in line with Wholesale Pricing - Lessons Learnt
+    Report 2
+  contributing_sources:
+  - source_title: Amber - Automating EV Charging in line with Wholesale Pricing -
+      Lessons Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2025/05/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-2.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/amber-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-2/
+    markdown_filename: amber_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_2.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-16960
+  source_title: Amber - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report 2
+  publish_date: 2025-04
+  project_name: Automating EV Charging in line with Wholesale Pricing
+  what_happened: The absence of a universal communication standard between EVs and
+    V2G chargers means interoperability is currently limited to closed ecosystems
+    — specific car brands only work with specific chargers — and each DNSP has its
+    own compliance standards, preventing any-charger-any-car-any-network operation.
+  lesson_learnt: V2G trial design must account for the lack of interoperability between
+    vehicles, chargers, and networks — until ISO 15118/20 is universally adopted,
+    trials must be scoped to compatible vehicle–charger pairs within networks that
+    have agreed compliance pathways, rather than assuming open interoperability.
+  issue_severity: major
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: approvals/regulatory
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: Amber is collaborating with vehicle manufacturers, charger manufacturers,
+    and networks to expand compatibility and participating in the National Bidirectional
+    EV Charging Roadmap Co-design Workshop to shape a national pathway.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages: &id010
+  - 22
+  - 23
+  evidence_excerpt: Currently there is no universal 'language' between cars and chargers.
+    The lack of a standardised communication protocol is a major roadblock to widespread
+    V2G adoption... we have a series of closed ecosystems operating independently
+    – not one whole ecosystem with consistent interoperability.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 5/05/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/05/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-2.pdf
+  markdown_filename: amber_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16960
+  contributing_source_titles:
+  - Amber - Automating EV Charging in line with Wholesale Pricing - Lessons Learnt
+    Report 2
+  contributing_sources:
+  - source_title: Amber - Automating EV Charging in line with Wholesale Pricing -
+      Lessons Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2025/05/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-2.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/amber-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-2/
+    markdown_filename: amber_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_2.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-16961
+  source_title: Amber - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report 2
+  publish_date: 2025-04
+  project_name: Automating EV Charging in line with Wholesale Pricing
+  what_happened: New CSIP-Aus flexible export requirements mean V2G chargers will
+    need to dynamically adjust export levels based on grid conditions, and this requires
+    on-site coordination with home solar systems, adding a further layer of technical
+    complexity to V2G deployment beyond basic charger certification.
+  lesson_learnt: V2G project design must incorporate CSIP-Aus compliance from the
+    outset — flexible export requirements will mandate that V2G chargers communicate
+    with and respond to DNSP signals, which requires on-site HEMS coordination with
+    solar; projects that do not plan for this integration will face rework when DNSPs
+    enforce CSIP-Aus compliance conditions.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: Amber is working with networks to develop a CSIP-Aus compliance
+    roadmap and exploring HEMS solutions that may be required to support this requirement.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages: &id011
+  - 22
+  evidence_excerpt: New flexible export requirements (CSIP-Aus) mean chargers will
+    also need to adjust exports based on grid conditions, requiring on-site coordination
+    with home solar. We are working with the networks to understand how we can develop
+    the roadmap for CSIP compliance together while looking at various HEMS solutions
+    which might be required to support this in the near future.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 5/05/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/05/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-2.pdf
+  markdown_filename: amber_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_2.md
+  source_page_pdf: 22
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16961
+  contributing_source_titles:
+  - Amber - Automating EV Charging in line with Wholesale Pricing - Lessons Learnt
+    Report 2
+  contributing_sources:
+  - source_title: Amber - Automating EV Charging in line with Wholesale Pricing -
+      Lessons Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2025/05/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-2.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/amber-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-2/
+    markdown_filename: amber_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_2.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-16962
+  source_title: Amber - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report 2
+  publish_date: 2025-04
+  project_name: Automating EV Charging in line with Wholesale Pricing
+  what_happened: Since the project's V2G phase was announced, 2,057 people expressed
+    interest and 88 proactively stated they were deferring an EV purchase until a
+    V2G-capable vehicle became available, demonstrating strong latent consumer demand
+    but also significant customer knowledge gaps — the most common questions concerned
+    availability timing, compatible vehicles, costs, home upgrade requirements, and
+    battery warranty impacts.
+  lesson_learnt: V2G trials should be accompanied by a structured customer education
+    programme addressing the specific knowledge gaps that drive consumer hesitation
+    — availability, vehicle compatibility, cost, home requirements, and battery warranty
+    — as unaddressed uncertainty leads customers to defer EV purchases and reduces
+    the addressable participant pool for trials.
+  issue_severity: minor
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: stakeholder/land/community
+  failure_mode: coordination & stakeholders
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Amber participated in V2G panels at Everything Electric and Smart
+    Energy Conference to raise consumer awareness and energy literacy, and is committed
+    to creating new communication channels to address customer questions.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages: &id012
+  - 19
+  - 20
+  evidence_excerpt: 88 people have proactively stated without being prompted (without
+    responding to an specific question) that they are waiting on V2G technology to
+    become available to purchase a V2G capable EV... Although there is a lot of enthusiasm
+    and excitement around V2G technology and its role in the future of energy consumption,
+    there is still a lot to do to increase energy literacy and public awareness on
+    this topic.
+  confidence_note: failure_mode set to commercial/demand failure in the sense that
+    consumer uncertainty is suppressing demand for V2G-capable vehicles, which in
+    turn constrains the participant pool; could also be read as no major failure stated
+    at this stage.
+  source_url: https://arena.gov.au/knowledge-bank/amber-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 5/05/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/05/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-2.pdf
+  markdown_filename: amber_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_2.md
+  source_page_pdf: 19
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16962
+  contributing_source_titles:
+  - Amber - Automating EV Charging in line with Wholesale Pricing - Lessons Learnt
+    Report 2
+  contributing_sources:
+  - source_title: Amber - Automating EV Charging in line with Wholesale Pricing -
+      Lessons Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2025/05/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-2.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/amber-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-2/
+    markdown_filename: amber_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_2.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.72
+- record_id: ARENA-DLV-16963
+  source_title: Amber - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report 2
+  publish_date: 2025-04
+  project_name: Automating EV Charging in line with Wholesale Pricing
+  what_happened: Amber selected the Zappi charger from Myenergi for its subsidised
+    smart charger rollout on the basis of a defined selection criteria set including
+    OCPP/API integration, WiFi/Ethernet connectivity, significant market share, local
+    solar monitoring capability, an established supply chain with local technical
+    support, and a 3-year warranty (versus 1 year from other products); this enabled
+    smooth procurement and installer support.
+  lesson_learnt: When selecting smart charger hardware for a residential trial at
+    scale, weight supply chain maturity, local technical support availability, and
+    warranty duration alongside technical specifications — chargers with short warranties
+    or thin local support networks will generate disproportionate ongoing support
+    costs and participant attrition.
+  issue_severity: none
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: procurement
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id013
+  - 13
+  evidence_excerpt: '● Integration via OCPP or API ● Communication options: Wifi /
+    Ethernet ● Significant market share ● Local solar monitoring or solar charging
+    ● Established supply chain, high level of Local Tech support ● 3 year warranty
+    vs 1 year from other products'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 5/05/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/05/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-2.pdf
+  markdown_filename: amber_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_2.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16963
+  contributing_source_titles:
+  - Amber - Automating EV Charging in line with Wholesale Pricing - Lessons Learnt
+    Report 2
+  contributing_sources:
+  - source_title: Amber - Automating EV Charging in line with Wholesale Pricing -
+      Lessons Learnt Report 2
+    pdf_url: https://arena.gov.au/assets/2025/05/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-2.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/amber-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-2/
+    markdown_filename: amber_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_2.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-37151
+  source_title: 'Amber Electric - Automating EV Charging in line with Wholesale Pricing
+    - Lessons Learnt Report #3'
+  publish_date: 2025-10
+  project_name: Amber Electric - Automating EV Charging in line with Wholesale Pricing
+  what_happened: Customers using both Amber (price-based charging) and Zappi (solar-only
+    ECO/ECO+) had to manage two separate apps, creating control conflicts — for example,
+    Zappi's solar mode was unaware of negative export prices, causing unintended grid
+    spill, while Amber's price-based commands overrode Zappi's solar logic unexpectedly.
+  lesson_learnt: When integrating cloud-based price optimisation with hardware-native
+    solar charging, designate a single control brain. Have the cloud platform set
+    the hardware mode (e.g. ECO+ vs FAST) rather than both systems issuing independent
+    commands — this eliminates mode conflicts and support tickets while preserving
+    hardware advantages such as millisecond-level solar following.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: Amber redesigned the integration so the Amber algorithm issues
+    mode directives (Charge from solar, Charge at max rate, Stop) that are translated
+    into native Zappi modes, making Amber the single control brain while Zappi handles
+    local power matching.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id014
+  - 10
+  - 11
+  evidence_excerpt: Customers told us that splitting control between Amber (price)
+    and Zappi (solar) felt clunky and error‑prone (e.g., user sets ECO+ in Zappi but
+    Amber triggers price‑based charging)... Amber removed this 'two‑brain' control
+    by letting Amber set Zappi modes directly.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 6/11/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+  markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37151
+  contributing_source_titles:
+  - 'Amber Electric - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report #3'
+  contributing_sources:
+  - source_title: 'Amber Electric - Automating EV Charging in line with Wholesale
+      Pricing - Lessons Learnt Report #3'
+    pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+    markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-37152
+  source_title: 'Amber Electric - Automating EV Charging in line with Wholesale Pricing
+    - Lessons Learnt Report #3'
+  publish_date: 2025-10
+  project_name: Amber Electric - Automating EV Charging in line with Wholesale Pricing
+  what_happened: After a Zappi charger restart, some units defaulted back to maximum-rate
+    (FAST) charging regardless of the prior state set by the Amber platform, undermining
+    automated control and potentially causing unintended high-cost charging.
+  lesson_learnt: When integrating with third-party hardware chargers, test and account
+    for device restart/power-cycle behaviour explicitly — default post-restart states
+    can silently override platform commands and must be detected and corrected programmatically.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Amber identified the issue and stated they are developing a workaround
+    to detect and correct the post-restart default state.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id015
+  - 11
+  evidence_excerpt: Issue after device restart. After a restart, some Zappi's default
+    to max‑rate (FAST) regardless of prior state; we are developing a work around
+    for this.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 6/11/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+  markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37152
+  contributing_source_titles:
+  - 'Amber Electric - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report #3'
+  contributing_sources:
+  - source_title: 'Amber Electric - Automating EV Charging in line with Wholesale
+      Pricing - Lessons Learnt Report #3'
+    pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+    markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-37153
+  source_title: 'Amber Electric - Automating EV Charging in line with Wholesale Pricing
+    - Lessons Learnt Report #3'
+  publish_date: 2025-10
+  project_name: Amber Electric - Automating EV Charging in line with Wholesale Pricing
+  what_happened: The mode-orchestration approach for Zappi solar charging requires
+    a CT clamp to be installed at the customer site; without it the hardware cannot
+    track excess solar reliably, limiting which customers can access the feature.
+  lesson_learnt: During customer onboarding for smart EV charging with solar integration,
+    verify CT clamp presence and correct configuration before activating solar-charging
+    modes — site-by-site hardware prerequisites must be surfaced at onboarding to
+    avoid misconfiguration and customer confusion.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Amber planned to expose 'Charger Capabilities' checks during
+    onboarding and in FAQs, including checking for CT clamps and evidence of battery-to-EV
+    energy dumping.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id016
+  - 11
+  evidence_excerpt: Hardware prerequisites. For this approach to work, a CT clamp
+    is required... Expose 'Charger Capabilities' during onboarding and in FAQs...
+    check for CT clamps, check for evidence of battery to EV dumping, check for grid
+    spill.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 6/11/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+  markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37153
+  contributing_source_titles:
+  - 'Amber Electric - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report #3'
+  contributing_sources:
+  - source_title: 'Amber Electric - Automating EV Charging in line with Wholesale
+      Pricing - Lessons Learnt Report #3'
+    pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+    markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-37154
+  source_title: 'Amber Electric - Automating EV Charging in line with Wholesale Pricing
+    - Lessons Learnt Report #3'
+  publish_date: 2025-10
+  project_name: Amber Electric - Automating EV Charging in line with Wholesale Pricing
+  what_happened: Price Paid (c/kWh) analysis across the trial cohort showed that customers
+    with solar achieved a mean price of 6.7 c/kWh versus 10.4 c/kWh for non-solar
+    customers, with the best 10% of solar customers paying 0 c/kWh, demonstrating
+    that equipment configuration materially drives financial outcomes.
+  lesson_learnt: Use a simple, single 'Price Paid' metric (c/kWh) to give customers
+    direct feedback on smart charging performance; segment defaults and nudges by
+    equipment type (solar vs. no solar) and state, as geography and on-site generation
+    have a larger impact on charging cost than time-of-use scheduling alone.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id017
+  - 11
+  - 12
+  - 13
+  evidence_excerpt: 'Has Solar: Mean 6.7, p90 17.0, p50 5.0, p10 0.0 / No Solar: Mean
+    10.4, p90 22.0, p50 9.0, p10 1.0... ''Price Paid'' is a simple feedback loop:
+    Did I really get cheap charging?'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 6/11/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+  markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37154
+  contributing_source_titles:
+  - 'Amber Electric - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report #3'
+  contributing_sources:
+  - source_title: 'Amber Electric - Automating EV Charging in line with Wholesale
+      Pricing - Lessons Learnt Report #3'
+    pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+    markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-37155
+  source_title: 'Amber Electric - Automating EV Charging in line with Wholesale Pricing
+    - Lessons Learnt Report #3'
+  publish_date: 2025-10
+  project_name: Amber Electric - Automating EV Charging in line with Wholesale Pricing
+  what_happened: 'State-level Price Paid data revealed significant geographic variance
+    in charging costs: Queensland customers achieved a mean of 4.43 c/kWh versus 12.05
+    c/kWh in Victoria, indicating that a single national default Opportunity Price
+    threshold was not optimal for all customer locations.'
+  lesson_learnt: Opportunity price thresholds for smart EV charging should be state-aware
+    and seasonally adjustable — a single national default leads to suboptimal outcomes
+    in states with structurally different wholesale price profiles, such as Queensland
+    (low prices) versus Victoria (high prices).
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Amber identified the need to implement equipment and location-based
+    defaults for opportunity price charging thresholds as a next step.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id018
+  - 12
+  - 13
+  evidence_excerpt: 'Default Opportunity Price should be state‑aware (e.g., lower
+    in QLD, higher in VIC) and seasonally adjustable... QLD: Mean 4.43, p90 2.0 /
+    VIC: Mean 12.05, p90 12.0'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 6/11/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+  markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37155
+  contributing_source_titles:
+  - 'Amber Electric - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report #3'
+  contributing_sources:
+  - source_title: 'Amber Electric - Automating EV Charging in line with Wholesale
+      Pricing - Lessons Learnt Report #3'
+    pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+    markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-37156
+  source_title: 'Amber Electric - Automating EV Charging in line with Wholesale Pricing
+    - Lessons Learnt Report #3'
+  publish_date: 2025-10
+  project_name: Amber Electric - Automating EV Charging in line with Wholesale Pricing
+  what_happened: The Price Paid metric, while intuitive for customers, uses a complex
+    calculation (incorporating solar at 0 c/kWh via a 'last on the stack' rule) that
+    does not align with line items on the customer's monthly electricity bill, creating
+    a risk of customer confusion.
+  lesson_learnt: When designing customer-facing outcome metrics for complex DER optimisation
+    products, validate that the metric's calculation aligns with bill line items or
+    proactively explain the discrepancy — a metric that doesn't match the bill can
+    erode customer trust even when the outcome is genuinely favourable.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Amber planned in-product education to clarify negative FiT trade-offs
+    and the logic behind the Price Paid calculation.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id019
+  - 13
+  evidence_excerpt: Because the price paid in c/kwh factors in more than import price
+    when EV charging, it will not align with line items on the customer's monthly
+    bill.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 6/11/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+  markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37156
+  contributing_source_titles:
+  - 'Amber Electric - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report #3'
+  contributing_sources:
+  - source_title: 'Amber Electric - Automating EV Charging in line with Wholesale
+      Pricing - Lessons Learnt Report #3'
+    pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+    markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.72
+- record_id: ARENA-DLV-37157
+  source_title: 'Amber Electric - Automating EV Charging in line with Wholesale Pricing
+    - Lessons Learnt Report #3'
+  publish_date: 2025-10
+  project_name: Amber Electric - Automating EV Charging in line with Wholesale Pricing
+  what_happened: The battery-EV coordination approach developed for the Tesla direct-API
+    integration could not be directly reused for the Zappi charger integration because
+    Zappi does not support granular power-level control, requiring Amber to develop
+    a new mode-based battery coordination method.
+  lesson_learnt: Do not assume that battery-EV coordination logic developed for one
+    charger integration (e.g., direct power-setpoint control) will transfer to other
+    charger OEMs — chargers with only mode-based APIs require a fundamentally different
+    coordination architecture, increasing development effort and integration risk.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: 'Amber developed a new battery-dispatch interlock for Zappi:
+    when SmartShift actively dispatches the battery, EV solar charging is suspended
+    until dispatch ends; curtailment is also paused while EV solar-charging is active
+    so Zappi can track excess reliably.'
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id020
+  - 14
+  evidence_excerpt: The coordination between home battery and EV charging automation
+    that has been developed with the Tesla integration cannot be extended to our integrations
+    with chargers, due to the inability to control power-level charging with the Zappi...
+    This meant we had to develop new methods for delivering battery coordination with
+    the Zappi.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 6/11/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+  markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37157
+  contributing_source_titles:
+  - 'Amber Electric - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report #3'
+  contributing_sources:
+  - source_title: 'Amber Electric - Automating EV Charging in line with Wholesale
+      Pricing - Lessons Learnt Report #3'
+    pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+    source_pages: *id020
+    source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+    markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-37158
+  source_title: 'Amber Electric - Automating EV Charging in line with Wholesale Pricing
+    - Lessons Learnt Report #3'
+  publish_date: 2025-10
+  project_name: Amber Electric - Automating EV Charging in line with Wholesale Pricing
+  what_happened: When Amber's SmartShift platform dispatched the home battery to discharge
+    to the grid during high feed-in-tariff periods, the Zappi charger misinterpreted
+    the battery export as excess solar generation and incorrectly restarted EV charging,
+    causing unintended battery-to-EV energy flows.
+  lesson_learnt: When orchestrating multiple DER assets (battery + EV charger) on
+    the same site, implement explicit interlocks to prevent one device's dispatch
+    signal from being misinterpreted by another — particularly where a charger uses
+    local power sensing rather than cloud commands to determine charging state.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Amber implemented a battery-dispatch interlock that suspends
+    EV solar-charging when SmartShift is actively dispatching the battery, and resumes
+    it automatically when dispatch ends.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id021
+  - 14
+  evidence_excerpt: 'SmartShift dispatch: when Amber tells a battery to discharge
+    to grid (high FiT), Zappi can misinterpret that export as excess solar, restarting
+    EV charging.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 6/11/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+  markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37158
+  contributing_source_titles:
+  - 'Amber Electric - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report #3'
+  contributing_sources:
+  - source_title: 'Amber Electric - Automating EV Charging in line with Wholesale
+      Pricing - Lessons Learnt Report #3'
+    pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+    source_pages: *id021
+    source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+    markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  failure_mode_confidence: 0.95
+- record_id: ARENA-DLV-37159
+  source_title: 'Amber Electric - Automating EV Charging in line with Wholesale Pricing
+    - Lessons Learnt Report #3'
+  publish_date: 2025-10
+  project_name: Amber Electric - Automating EV Charging in line with Wholesale Pricing
+  what_happened: As home battery sizes increase, the battery-dominant coordination
+    logic risks leaving customers with little or no EV solar charging opportunity
+    — the battery absorbs all available solar, then dispatches at peak, blocking the
+    EV from charging at all during those windows.
+  lesson_learnt: Battery-EV coordination algorithms should include a customer-configurable
+    or adaptive priority mechanism so that as batteries scale up, EV solar charging
+    is not entirely locked out — consider minimum EV charging allocations or time-based
+    splits to balance both assets.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id022
+  - 15
+  evidence_excerpt: Risk of a battery dominant implementation. As batteries get larger,
+    our battery dominant implementation may leave some customers with very little
+    or no opportunity for EV solar charging. For example a battery fills up with all
+    the solar, so the EV gets none. The battery then dispatches at peak, so EV cannot
+    charge.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 6/11/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+  markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  source_page_pdf: 15
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37159
+  contributing_source_titles:
+  - 'Amber Electric - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report #3'
+  contributing_sources:
+  - source_title: 'Amber Electric - Automating EV Charging in line with Wholesale
+      Pricing - Lessons Learnt Report #3'
+    pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+    source_pages: *id022
+    source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+    markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-37160
+  source_title: 'Amber Electric - Automating EV Charging in line with Wholesale Pricing
+    - Lessons Learnt Report #3'
+  publish_date: 2025-10
+  project_name: Amber Electric - Automating EV Charging in line with Wholesale Pricing
+  what_happened: Of 101 smart EV charging customers enrolled in Phase 1, only 4 churned
+    from the program; the majority were willing to pause onboarding while Zappi integration
+    issues were resolved, suggesting high tolerance for delay when customers are kept
+    informed.
+  lesson_learnt: Transparent communication during integration delays can preserve
+    customer retention in DER trials — proactively pausing onboarding and explaining
+    the reason for delay is preferable to proceeding with a degraded experience, as
+    most customers will wait when they understand the issue.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Amber paused onboarding for affected customers while the Zappi
+    integration was improved, retaining the majority of the cohort.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id023
+  - 15
+  evidence_excerpt: We have had limited churn from the EV program to date. Out of
+    the 101 customers we have had 4 customers leave the program. The majority of customers
+    were very willing to pause onboarding while the integration with MyEnergi Zappi
+    was improved.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 6/11/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+  markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  source_page_pdf: 15
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37160
+  contributing_source_titles:
+  - 'Amber Electric - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report #3'
+  contributing_sources:
+  - source_title: 'Amber Electric - Automating EV Charging in line with Wholesale
+      Pricing - Lessons Learnt Report #3'
+    pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+    source_pages: *id023
+    source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+    markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-37161
+  source_title: 'Amber Electric - Automating EV Charging in line with Wholesale Pricing
+    - Lessons Learnt Report #3'
+  publish_date: 2025-10
+  project_name: Amber Electric - Automating EV Charging in line with Wholesale Pricing
+  what_happened: A single-site V2G/V2H pilot over three months in Victoria demonstrated
+    $1,170 net customer benefit (earnings and savings after grid charging costs),
+    with 1,440 kWh supplied to household load via V2H and 797 kWh exported to the
+    grid, providing early commercial viability evidence for residential V2G.
+  lesson_learnt: Early single-site V2G pilots can generate indicative customer value
+    estimates that justify broader rollout; however, results from winter trials in
+    high-grid-carbon states (e.g., Victoria with limited onsite solar) will understate
+    potential benefits — plan follow-on trials across diverse demographics, seasons,
+    and locations before drawing portfolio conclusions.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id024
+  - 16
+  - 17
+  evidence_excerpt: After 3-months, the total benefit to the customer was an estimated
+    $1,170 including earnings and savings (i.e. net position after grid-sourced charging
+    costs).
+  confidence_note: 'project_scale_band reconciled to ''demonstration'' from: demonstration
+    (14/16), pilot (2/16)'
+  source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 6/11/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+  markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  source_page_pdf: 17
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37161
+  contributing_source_titles:
+  - 'Amber Electric - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report #3'
+  contributing_sources:
+  - source_title: 'Amber Electric - Automating EV Charging in line with Wholesale
+      Pricing - Lessons Learnt Report #3'
+    pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+    source_pages: *id024
+    source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+    markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-37162
+  source_title: 'Amber Electric - Automating EV Charging in line with Wholesale Pricing
+    - Lessons Learnt Report #3'
+  publish_date: 2025-10
+  project_name: Amber Electric - Automating EV Charging in line with Wholesale Pricing
+  what_happened: Carbon benefits from the V2G pilot were limited due to the Victoria
+    grid's higher carbon intensity and a winter testing period with a small onsite
+    PV array, reducing the proportion of renewable-sourced charging and therefore
+    the carbon abatement achievable via V2G discharge.
+  lesson_learnt: V2G carbon benefit calculations are highly sensitive to grid emissions
+    intensity and the availability of onsite solar — pilots in high-carbon grid regions
+    during low-solar seasons will understate climate benefits; design trial cohorts
+    to include high-solar, low-carbon-grid sites for a complete picture.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id025
+  - 17
+  evidence_excerpt: Overall carbon benefits were limited given a number of factors.
+    The site was located in Victoria with higher grid carbon intensity contributing
+    to higher grid-sourced emissions. The testing period occurred over winter, which
+    in combination with a small onsite PV array, reduced potential for charging with
+    excess solar.
+  confidence_note: 'project_scale_band reconciled to ''demonstration'' from: demonstration
+    (14/16), pilot (2/16)'
+  source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 6/11/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+  markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  source_page_pdf: 17
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37162
+  contributing_source_titles:
+  - 'Amber Electric - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report #3'
+  contributing_sources:
+  - source_title: 'Amber Electric - Automating EV Charging in line with Wholesale
+      Pricing - Lessons Learnt Report #3'
+    pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+    source_pages: *id025
+    source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+    markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-37163
+  source_title: 'Amber Electric - Automating EV Charging in line with Wholesale Pricing
+    - Lessons Learnt Report #3'
+  publish_date: 2025-10
+  project_name: Amber Electric - Automating EV Charging in line with Wholesale Pricing
+  what_happened: EV manufacturer warranties excluding V2G use remained the primary
+    barrier to broad V2G adoption in the trial; most automakers have not yet formalised
+    V2G warranty positions in Australia, partly because Australia is a small market
+    that is deprioritised for new product rollouts requiring additional hardware (ISO
+    15118-20).
+  lesson_learnt: Proactively negotiate V2G warranty exemptions with vehicle manufacturers
+    before recruiting customer participants — the absence of warranty cover is the
+    primary adoption barrier, and trial-specific exemption agreements (as achieved
+    with BYD) are achievable but require early relationship-building with OEM teams.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: technology vendor
+  delay_category: approvals/regulatory
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: Amber negotiated a specific exemption agreement with BYD to warrant
+    customer vehicles for V2G use as part of the ARENA trial, allowing the trial to
+    proceed with BYD vehicles.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages: &id026
+  - 18
+  evidence_excerpt: 'EV Warranties: This remains the primary barrier to broad V2G
+    adoption... Amber note that an agreement has been formed with BYD to provide exemptions
+    that warrant customer vehicles for V2G use as part of the ARENA trial.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 6/11/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+  markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37163
+  contributing_source_titles:
+  - 'Amber Electric - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report #3'
+  contributing_sources:
+  - source_title: 'Amber Electric - Automating EV Charging in line with Wholesale
+      Pricing - Lessons Learnt Report #3'
+    pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+    source_pages: *id026
+    source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+    markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-37164
+  source_title: 'Amber Electric - Automating EV Charging in line with Wholesale Pricing
+    - Lessons Learnt Report #3'
+  publish_date: 2025-10
+  project_name: Amber Electric - Automating EV Charging in line with Wholesale Pricing
+  what_happened: None of the V2G chargers tested (SigEnergy, StarCharge, Ambibox/RedEarth,
+    Infypower, V2Grid Australia) were fit for purpose from the outset; all required
+    collaborative software development with manufacturers before they could meet Amber's
+    control requirements for residential automation.
+  lesson_learnt: When procuring V2G chargers for a residential automation trial, plan
+    for significant co-development effort with manufacturers — no currently available
+    V2G EVSE has production-ready control software for complex multi-device residential
+    sites, and deep R&D collaboration with OEM teams is required to achieve fit-for-purpose
+    integration.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: execution & logistics
+  intervention_note: Amber worked closely with each manufacturer's R&D team to develop
+    and refine control software — for example, collaborating with SigEnergy to enable
+    a new version of granular control and with StarCharge to develop software fit
+    for Amber's automation requirements.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages: &id027
+  - 18
+  - 19
+  evidence_excerpt: No V2G charger has been fit for purpose from the outset. We've
+    worked closely with manufacturers to make them so and Amber is helping develop
+    software that works for simple and complex applications, which we hope benefit
+    the broader industry in Australia and globally.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 6/11/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+  markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37164
+  contributing_source_titles:
+  - 'Amber Electric - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report #3'
+  contributing_sources:
+  - source_title: 'Amber Electric - Automating EV Charging in line with Wholesale
+      Pricing - Lessons Learnt Report #3'
+    pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+    source_pages: *id027
+    source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+    markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-37165
+  source_title: 'Amber Electric - Automating EV Charging in line with Wholesale Pricing
+    - Lessons Learnt Report #3'
+  publish_date: 2025-10
+  project_name: Amber Electric - Automating EV Charging in line with Wholesale Pricing
+  what_happened: The Infypower V2G charger is available for purchase but the manufacturer
+    has no local presence in Australia; Amber's primary contact is a distributor,
+    raising concerns about long-term manufacturer support for customers if issues
+    arise.
+  lesson_learnt: When selecting V2G or smart charging hardware for a customer trial,
+    prioritise chargers backed by manufacturers with a local presence or formal local
+    support arrangement — relying solely on a distributor as the interface to an overseas
+    manufacturer creates unacceptable customer support risk at scale.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: procurement
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: coordination & stakeholders
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Amber flagged the issue as a risk and continued testing in Q4
+    while assessing whether the distributor relationship provides adequate support
+    coverage.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id028
+  - 19
+  evidence_excerpt: Unlike other listed OEMs, the manufacturer does not have a presence
+    locally, with a distributor our main point of contact locally... Amber wants to
+    ensure products we support backed by manufacturers should we/customers need their
+    support.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 6/11/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+  markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  source_page_pdf: 19
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37165
+  contributing_source_titles:
+  - 'Amber Electric - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report #3'
+  contributing_sources:
+  - source_title: 'Amber Electric - Automating EV Charging in line with Wholesale
+      Pricing - Lessons Learnt Report #3'
+    pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+    source_pages: *id028
+    source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+    markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-37166
+  source_title: 'Amber Electric - Automating EV Charging in line with Wholesale Pricing
+    - Lessons Learnt Report #3'
+  publish_date: 2025-10
+  project_name: Amber Electric - Automating EV Charging in line with Wholesale Pricing
+  what_happened: Several V2G chargers tested (Infypower and V2Grid Australia) are
+    incompatible with 800V architecture EVs, while others have unknown compatibility,
+    significantly limiting the addressable vehicle fleet for V2G trials as 800V platforms
+    become increasingly common in the market.
+  lesson_learnt: Screen V2G charger candidates for 800V EV architecture compatibility
+    before procurement — as 800V platforms proliferate, chargers that only support
+    400V architectures will exclude a growing share of the customer fleet and reduce
+    trial scalability.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: procurement
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id029
+  - 19
+  evidence_excerpt: Will not work with 800V architecture EVs [Infypower]... Unknown
+    fit for 800V EVs [Ambibox/RedEarth]
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 6/11/2025
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+  markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-37166
+  contributing_source_titles:
+  - 'Amber Electric - Automating EV Charging in line with Wholesale Pricing - Lessons
+    Learnt Report #3'
+  contributing_sources:
+  - source_title: 'Amber Electric - Automating EV Charging in line with Wholesale
+      Pricing - Lessons Learnt Report #3'
+    pdf_url: https://arena.gov.au/assets/2025/11/Amber-Electric-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-3.pdf
+    source_pages: *id029
+    source_url: https://arena.gov.au/knowledge-bank/amber-electric-automating-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-3/
+    markdown_filename: amber_electric_automating_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_3.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-64701
+  source_title: 'Amber - Automatic EV Charging in line with Wholesale Pricing, Lessons
+    Learnt Report #1'
+  publish_date: 2024-10
+  project_name: Amber EV Automation Trial
+  what_happened: Customer research with 1,592 survey respondents showed Tesla's dominant
+    market share in Australia and that software-level API integration was achievable
+    for Tesla vehicles, leading the project to launch smart charging with Tesla vehicles
+    as the starting point.
+  lesson_learnt: Prioritise integration with the dominant vehicle brand in your target
+    market first — Tesla's market share and software API accessibility made it the
+    lowest-friction starting point for an EV smart charging trial, enabling faster
+    onboarding of 200 vehicles.
+  issue_severity: none
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id030
+  - 10
+  evidence_excerpt: Based on these results, launching our smart charging solution
+    with Tesla vehicles appeared to be a strong starting point, not just because of
+    Tesla's market share of Tesla in Australia but also because the integration in
+    this case can be achieved at a software level.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-automatic-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 29/10/2024
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2024/10/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-1.pdf
+  markdown_filename: amber_automatic_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_1.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64701
+  contributing_source_titles:
+  - 'Amber - Automatic EV Charging in line with Wholesale Pricing, Lessons Learnt
+    Report #1'
+  contributing_sources:
+  - source_title: 'Amber - Automatic EV Charging in line with Wholesale Pricing, Lessons
+      Learnt Report #1'
+    pdf_url: https://arena.gov.au/assets/2024/10/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-1.pdf
+    source_pages: *id030
+    source_url: https://arena.gov.au/knowledge-bank/amber-automatic-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-1/
+    markdown_filename: amber_automatic_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_1.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-64702
+  source_title: 'Amber - Automatic EV Charging in line with Wholesale Pricing, Lessons
+    Learnt Report #1'
+  publish_date: 2024-10
+  project_name: Amber EV Automation Trial
+  what_happened: Customer interviews revealed that EV owners strongly prefer a 'set
+    and forget' experience focused on cost minimisation, with a secondary preference
+    for maximising solar self-consumption, and that the desire for manual control
+    diminishes when confidence in the technology is high.
+  lesson_learnt: Design EV smart charging products around a 'set and forget' experience
+    with cost minimisation as the primary goal and solar self-consumption as a close
+    secondary — customers de-prioritise manual control when the system proves reliable,
+    so reliability is the critical success factor for adoption.
+  issue_severity: none
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id031
+  - 11
+  evidence_excerpt: Customers predominantly favor a 'set and forget' experience, where
+    the charging automatically finds optimal charging times, with a primary focus
+    on minimizing costs, though environmental considerations are secondary... While
+    having control over the system is highly rated, it becomes less critical if customers
+    have confidence in the technology and find it reliable and effective.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-automatic-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 29/10/2024
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2024/10/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-1.pdf
+  markdown_filename: amber_automatic_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64702
+  contributing_source_titles:
+  - 'Amber - Automatic EV Charging in line with Wholesale Pricing, Lessons Learnt
+    Report #1'
+  contributing_sources:
+  - source_title: 'Amber - Automatic EV Charging in line with Wholesale Pricing, Lessons
+      Learnt Report #1'
+    pdf_url: https://arena.gov.au/assets/2024/10/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-1.pdf
+    source_pages: *id031
+    source_url: https://arena.gov.au/knowledge-bank/amber-automatic-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-1/
+    markdown_filename: amber_automatic_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_1.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-64703
+  source_title: 'Amber - Automatic EV Charging in line with Wholesale Pricing, Lessons
+    Learnt Report #1'
+  publish_date: 2024-10
+  project_name: Amber EV Automation Trial
+  what_happened: Around 70–80% of the project's EV owner cohort also had rooftop solar,
+    and most wanted to maximise solar self-consumption for EV charging. However, the
+    majority of installed EVSE hardware lacked the solar monitoring capability needed
+    to deliver exact excess-solar charging, requiring software workarounds.
+  lesson_learnt: When designing EV smart charging software for the Australian market,
+    assume the majority of users will have solar PV but will not have solar-monitoring-capable
+    EVSE hardware — build software-side approximation of excess solar availability
+    using export history as a fallback, rather than depending on hardware capability.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: Used the retailer's awareness of customer export history to predict
+    available solar energy as a software-side workaround for customers without solar-monitoring
+    EVSE hardware.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id032
+  - 11
+  evidence_excerpt: However, this type of EVSE equipment and installation is more
+    expensive and currently it represents a small proportion of the market. As such,
+    adding excess solar functionality for the majority of home solar setups requires
+    product solutions and compromises.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-automatic-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 29/10/2024
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2024/10/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-1.pdf
+  markdown_filename: amber_automatic_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_1.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64703
+  contributing_source_titles:
+  - 'Amber - Automatic EV Charging in line with Wholesale Pricing, Lessons Learnt
+    Report #1'
+  contributing_sources:
+  - source_title: 'Amber - Automatic EV Charging in line with Wholesale Pricing, Lessons
+      Learnt Report #1'
+    pdf_url: https://arena.gov.au/assets/2024/10/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-1.pdf
+    source_pages: *id032
+    source_url: https://arena.gov.au/knowledge-bank/amber-automatic-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-1/
+    markdown_filename: amber_automatic_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_1.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-64704
+  source_title: 'Amber - Automatic EV Charging in line with Wholesale Pricing, Lessons
+    Learnt Report #1'
+  publish_date: 2024-10
+  project_name: Amber EV Automation Trial
+  what_happened: The FBT exemption introduced by the Australian government in 2022,
+    combined with novated leasing, was identified as a significant financial driver
+    of EV adoption among the project's customer base, with customers buying EVs for
+    financial rather than purely environmental reasons.
+  lesson_learnt: Government financial incentives such as FBT exemptions materially
+    accelerate EV adoption — EV smart charging trials should account for a broadening
+    customer profile motivated primarily by cost savings, and should design product
+    value propositions accordingly rather than assuming an environmentally-driven
+    early adopter base.
+  issue_severity: none
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id033
+  - 12
+  evidence_excerpt: According to our research a growing number of people are buying
+    EVs for financial advantages, not just for environmental reasons. The appeal includes
+    savings on fuel and maintenance costs, along with tax exemptions via the combination
+    of novated leasing and the Fringe Benefit Tax exemption (FBT).
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-automatic-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 29/10/2024
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2024/10/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-1.pdf
+  markdown_filename: amber_automatic_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_1.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64704
+  contributing_source_titles:
+  - 'Amber - Automatic EV Charging in line with Wholesale Pricing, Lessons Learnt
+    Report #1'
+  contributing_sources:
+  - source_title: 'Amber - Automatic EV Charging in line with Wholesale Pricing, Lessons
+      Learnt Report #1'
+    pdf_url: https://arena.gov.au/assets/2024/10/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-1.pdf
+    source_pages: *id033
+    source_url: https://arena.gov.au/knowledge-bank/amber-automatic-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-1/
+    markdown_filename: amber_automatic_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_1.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-64705
+  source_title: 'Amber - Automatic EV Charging in line with Wholesale Pricing, Lessons
+    Learnt Report #1'
+  publish_date: 2024-10
+  project_name: Amber EV Automation Trial
+  what_happened: GPS coordinates retrieved from the Tesla API for determining whether
+    a vehicle was at the customer's home were found to be unreliable — an initial
+    100m radius was insufficient for edge cases including large properties, incorrect
+    stored coordinates, and stale GPS data.
+  lesson_learnt: When using vehicle API GPS data to determine home presence, use a
+    radius of at least 300m to account for large properties, database coordinate inaccuracies,
+    and stale GPS readings — and provide a user override in the app to handle cases
+    the algorithm cannot resolve.
+  issue_severity: minor
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: data & measurement
+  intervention_note: Extended the home detection radius from 100m to 300m and added
+    a user interface override allowing customers to manually confirm vehicle home
+    status for the duration of a charging session.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages: &id034
+  - 12
+  evidence_excerpt: Initially we had a small radius of 100m for determining whether
+    a vehicle was at the house, but we extended this radius to 300m in order to allow
+    for the following edge cases... We also learned that the GPS coordinates attributed
+    to the car can be stale - implying that the vehicle is in a previous location
+    and not at home.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-automatic-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 29/10/2024
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2024/10/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-1.pdf
+  markdown_filename: amber_automatic_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_1.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64705
+  contributing_source_titles:
+  - 'Amber - Automatic EV Charging in line with Wholesale Pricing, Lessons Learnt
+    Report #1'
+  contributing_sources:
+  - source_title: 'Amber - Automatic EV Charging in line with Wholesale Pricing, Lessons
+      Learnt Report #1'
+    pdf_url: https://arena.gov.au/assets/2024/10/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-1.pdf
+    source_pages: *id034
+    source_url: https://arena.gov.au/knowledge-bank/amber-automatic-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-1/
+    markdown_filename: amber_automatic_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_1.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-64706
+  source_title: 'Amber - Automatic EV Charging in line with Wholesale Pricing, Lessons
+    Learnt Report #1'
+  publish_date: 2024-10
+  project_name: Amber EV Automation Trial
+  what_happened: Running separate software systems for EV charging and home battery
+    optimisation created a risk of 'duelling control' where both systems competed
+    over the same energy resources, including scenarios where the EV drew from the
+    home battery unintentionally and solar energy was curtailed instead of being used
+    for EV charging.
+  lesson_learnt: When deploying smart charging software alongside an existing home
+    battery management system, build the systems in parallel with inter-system communication
+    rather than stacking them — each system should maintain control of its own domain
+    and be able to request preferred behaviour from the other system, avoiding complex
+    unresolved edge cases from integrated control.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Built EV charging software as a parallel system to the existing
+    battery optimisation software, with each system able to request preferred behaviour
+    from the other for a specified period, avoiding direct competition for shared
+    resources.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id035
+  - 13
+  evidence_excerpt: When two devices in the home are being controlled by competing
+    software solutions, there is a potential for dueling control. Although we currently
+    optimise compatible batteries through Amber for Batteries, we have intentionally
+    built our EV charging software in parallel, rather than on top. This has allowed
+    us to avoid complex edge cases until we can determine the best product solution
+    for customers with batteries.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-automatic-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 29/10/2024
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2024/10/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-1.pdf
+  markdown_filename: amber_automatic_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_1.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64706
+  contributing_source_titles:
+  - 'Amber - Automatic EV Charging in line with Wholesale Pricing, Lessons Learnt
+    Report #1'
+  contributing_sources:
+  - source_title: 'Amber - Automatic EV Charging in line with Wholesale Pricing, Lessons
+      Learnt Report #1'
+    pdf_url: https://arena.gov.au/assets/2024/10/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-1.pdf
+    source_pages: *id035
+    source_url: https://arena.gov.au/knowledge-bank/amber-automatic-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-1/
+    markdown_filename: amber_automatic_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_1.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-64707
+  source_title: 'Amber - Automatic EV Charging in line with Wholesale Pricing, Lessons
+    Learnt Report #1'
+  publish_date: 2024-10
+  project_name: Amber EV Automation Trial
+  what_happened: Standard EVSE hardware communicating via OCPP does not share state
+    of charge (SOC) data with the controlling software, preventing the development
+    of SOC-guarantee features such as 'ensure the car is charged to X% by Y time'.
+  lesson_learnt: Do not design EV smart charging product features that depend on SOC
+    data when using OCPP-connected chargers — OCPP does not expose SOC, so either
+    use vehicle API integration or design features that deliver value through price-based
+    and solar-based charging logic that does not require SOC knowledge.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Built product features that deliver value through wholesale price
+    thresholds and solar feed-in awareness without requiring SOC data, deferring SOC-dependent
+    features to vehicle API integrations.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id036
+  - 14
+  evidence_excerpt: Using a standard EVSE and communicating via OCPP, the SOC is not
+    shared. A product built around guaranteeing a certain SOC at a certain time could
+    not be built using OCPP.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-automatic-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 29/10/2024
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2024/10/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-1.pdf
+  markdown_filename: amber_automatic_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_1.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64707
+  contributing_source_titles:
+  - 'Amber - Automatic EV Charging in line with Wholesale Pricing, Lessons Learnt
+    Report #1'
+  contributing_sources:
+  - source_title: 'Amber - Automatic EV Charging in line with Wholesale Pricing, Lessons
+      Learnt Report #1'
+    pdf_url: https://arena.gov.au/assets/2024/10/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-1.pdf
+    source_pages: *id036
+    source_url: https://arena.gov.au/knowledge-bank/amber-automatic-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-1/
+    markdown_filename: amber_automatic_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_1.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-64708
+  source_title: 'Amber - Automatic EV Charging in line with Wholesale Pricing, Lessons
+    Learnt Report #1'
+  publish_date: 2024-10
+  project_name: Amber EV Automation Trial
+  what_happened: After evaluating multiple EVSE options against criteria including
+    integration quality, market share, price, OCPP/API compatibility, manufacturer
+    reliability, and local solar monitoring capability, the project selected the Myenergi
+    Zappi as the smart charger for the 100-unit installation component of the trial.
+  lesson_learnt: When selecting EVSE hardware for a smart charging trial, evaluate
+    candidates against a multi-criteria framework that includes local solar monitoring
+    capability as a mandatory criterion — hardware-level solar monitoring that is
+    inverter-agnostic provides the most flexible and reliable excess-solar charging
+    capability and avoids the need for software workarounds.
+  issue_severity: none
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: procurement
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id037
+  - 14
+  - 15
+  evidence_excerpt: 'After testing the pre-selected chargers, we selected the Myenergi
+    Zappi smart charger as this one fulfills the following criteria: Integration via
+    OCPP or API · Significant market share · Established supply chain · Communication
+    options: Wifi / Ethernet · High level of Local Tech support · 3 year warranty
+    vs 1 year from other products · Local solar monitoring or solar charging'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-automatic-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 29/10/2024
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2024/10/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-1.pdf
+  markdown_filename: amber_automatic_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_1.md
+  source_page_pdf: 15
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64708
+  contributing_source_titles:
+  - 'Amber - Automatic EV Charging in line with Wholesale Pricing, Lessons Learnt
+    Report #1'
+  contributing_sources:
+  - source_title: 'Amber - Automatic EV Charging in line with Wholesale Pricing, Lessons
+      Learnt Report #1'
+    pdf_url: https://arena.gov.au/assets/2024/10/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-1.pdf
+    source_pages: *id037
+    source_url: https://arena.gov.au/knowledge-bank/amber-automatic-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-1/
+    markdown_filename: amber_automatic_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_1.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-64709
+  source_title: 'Amber - Automatic EV Charging in line with Wholesale Pricing, Lessons
+    Learnt Report #1'
+  publish_date: 2024-10
+  project_name: Amber EV Automation Trial
+  what_happened: To accelerate EVSE installation timelines and build knowledge of
+    distribution and installation processes, the project engaged two experienced industry
+    partners (JET Charge and Electric Future) rather than managing supply and installation
+    directly.
+  lesson_learnt: For EV charger installation programmes, engage established distribution
+    and installation partners with existing industry expertise rather than building
+    in-house capability from scratch — this accelerates timelines, surfaces industry
+    best practices, and generates scalability insights applicable to future rollouts.
+  issue_severity: none
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: procurement
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id038
+  - 16
+  evidence_excerpt: In an effort to accelerate installation timelines and broaden
+    our understanding of distribution and installation processes, we selected two
+    leading industry partners JET Charge and Electric Future to supply and install
+    the smart chargers for this trial. By collaborating with experienced partners,
+    we aim to simplify operations, learn and improve our current processes, and gather
+    valuable knowledge that will guide future scalability.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/amber-automatic-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/amber-automating-ev-charging-in-line-with-wholesale-pricing/
+  kb_category: Electric vehicles
+  kb_publish_date: 29/10/2024
+  kb_year: '2024'
+  kb_associated_project: Amber - Automating EV Charging in line with Wholesale Pricing
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $3.2m
+  total_project_value: $8.48m
+  lead_organisation: 'Amber Electric Pty Ltd '
+  arena_program: Driving the Nation Program
+  project_status: Current
+  project_start_date: 01/04/2024
+  location: National
+  project_partners: 'enX Pty Ltd '
+  pdf_url: https://arena.gov.au/assets/2024/10/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-1.pdf
+  markdown_filename: amber_automatic_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_1.md
+  source_page_pdf: 16
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-64709
+  contributing_source_titles:
+  - 'Amber - Automatic EV Charging in line with Wholesale Pricing, Lessons Learnt
+    Report #1'
+  contributing_sources:
+  - source_title: 'Amber - Automatic EV Charging in line with Wholesale Pricing, Lessons
+      Learnt Report #1'
+    pdf_url: https://arena.gov.au/assets/2024/10/Amber-Automating-EV-Charging-in-line-with-Wholesale-Pricing-Lessons-Learnt-Report-1.pdf
+    source_pages: *id038
+    source_url: https://arena.gov.au/knowledge-bank/amber-automatic-ev-charging-in-line-with-wholesale-pricing-lessons-learnt-report-1/
+    markdown_filename: amber_automatic_ev_charging_in_line_with_wholesale_pricing_lessons_learnt_report_1.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Pilot / demonstration
+  is_consortium: false

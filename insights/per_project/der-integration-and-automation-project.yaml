@@ -1,0 +1,1496 @@
+- record_id: ARENA-DLV-46201
+  source_title: DER Integration and Automation Project Final Report
+  publish_date: null
+  project_name: DER Integration and Automation Project
+  what_happened: The project scope was reduced to a Minimum Viable Product (MVP) after
+    project management delays accumulated during the testing phase, resulting in the
+    full regression testing suite — covering multiple weather and DER penetration
+    scenarios — not being completed.
+  lesson_learnt: Build sufficient schedule contingency into simulation and testing
+    phases of DER integration projects to accommodate iterative debugging; when timing
+    and correlation ID challenges compound, the testing scope is likely to contract
+    to MVP rather than full regression coverage.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: data/validation/testing
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: execution & logistics
+  intervention_note: The project consortium agreed with ARENA to adopt an MVP deliverable,
+    demonstrating the three core use cases while deferring extended scenario testing
+    to a potential next phase.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id001
+  - 43
+  - 44
+  evidence_excerpt: With increasing project management delays for the project, the
+    project consortium agreed with not completing the full-scale testing for this
+    simulation project.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+  project_page_url: https://arena.gov.au/projects/der-integration-and-automation-project/
+  kb_category: Distributed energy resources
+  kb_publish_date: 28/07/2021
+  kb_year: '2019'
+  kb_associated_project: DER Integration and Automation Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.05m
+  total_project_value: $4.11m
+  lead_organisation: Evoenergy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2019
+  location: Australian Capital Territory
+  project_partners: GreenSync, Schneider Electric, Withywindle, SA Power Networks,
+    Energy Queensland Limited
+  pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+  markdown_filename: der_integration_and_automation_project_final_report.md
+  source_page_pdf: 42
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46201
+  contributing_source_titles:
+  - DER Integration and Automation Project Final Report
+  contributing_sources:
+  - source_title: DER Integration and Automation Project Final Report
+    pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+    markdown_filename: der_integration_and_automation_project_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-46202
+  source_title: DER Integration and Automation Project Final Report
+  publish_date: null
+  project_name: DER Integration and Automation Project
+  what_happened: A race condition was identified in which a change to a DER group's
+    planned schedule between DERMS sending a dispatch request and deX generating a
+    response could result in deX requesting an incorrect power delta that would not
+    fully resolve the detected grid constraint, requiring multiple iterations.
+  lesson_learnt: Multi-platform DER orchestration architectures must implement correlation
+    IDs between exchanged schedule messages so that each platform can confirm it is
+    responding to the correct request version — without this, race conditions under
+    dynamic schedule updates will require multiple constraint-resolution iterations
+    and reduce reliability.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The issue was mitigated for the current project by using one-hour
+    time resolution schedules, which made race conditions unlikely in practice; a
+    full fix via correlation IDs was deferred to a next project phase.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id002
+  - 44
+  - 45
+  evidence_excerpt: The race condition can be prevented if the IoT hub communicates
+    to deX knows which planned schedule is considered by EcoStruxure DERMS for resolving
+    detected problem. To use adequate planned schedule of DER group, deX needs additional
+    information, e.g., correlation Id of exchanged messages.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+  project_page_url: https://arena.gov.au/projects/der-integration-and-automation-project/
+  kb_category: Distributed energy resources
+  kb_publish_date: 28/07/2021
+  kb_year: '2019'
+  kb_associated_project: DER Integration and Automation Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.05m
+  total_project_value: $4.11m
+  lead_organisation: Evoenergy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2019
+  location: Australian Capital Territory
+  project_partners: GreenSync, Schneider Electric, Withywindle, SA Power Networks,
+    Energy Queensland Limited
+  pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+  markdown_filename: der_integration_and_automation_project_final_report.md
+  source_page_pdf: 44
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46202
+  contributing_source_titles:
+  - DER Integration and Automation Project Final Report
+  contributing_sources:
+  - source_title: DER Integration and Automation Project Final Report
+    pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+    markdown_filename: der_integration_and_automation_project_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-46203
+  source_title: DER Integration and Automation Project Final Report
+  publish_date: null
+  project_name: DER Integration and Automation Project
+  what_happened: The current solution had no mechanism to notify deX of real-time
+    changes to network topology; revised DER limits resulting from a topology change
+    would only be reflected the next time deX submitted a desired schedule for validation,
+    creating a window where DER limits could be inconsistent with actual network conditions.
+  lesson_learnt: DER limit validation workflows must include a real-time topology-change
+    notification pathway from the network management system to the market/aggregation
+    platform — relying solely on the next scheduled polling cycle leaves a gap during
+    which DER could operate against stale limits.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Recognised as a lesson learnt for the next phase; accepted as
+    low-risk for this project because LV topology changes are infrequent and the gap
+    was considered tolerable within the use-case scope.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id003
+  - 45
+  - 46
+  evidence_excerpt: In the instance of any change to network topology, the current
+    solution does not provide a mechanism for deX to be notified of these changes.
+    Any changes to individual limits as a result topology changes will be reflected
+    in revised schedules from the ADMS, the next time a desired schedule is passed
+    through.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+  project_page_url: https://arena.gov.au/projects/der-integration-and-automation-project/
+  kb_category: Distributed energy resources
+  kb_publish_date: 28/07/2021
+  kb_year: '2019'
+  kb_associated_project: DER Integration and Automation Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.05m
+  total_project_value: $4.11m
+  lead_organisation: Evoenergy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2019
+  location: Australian Capital Territory
+  project_partners: GreenSync, Schneider Electric, Withywindle, SA Power Networks,
+    Energy Queensland Limited
+  pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+  markdown_filename: der_integration_and_automation_project_final_report.md
+  source_page_pdf: 45
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46203
+  contributing_source_titles:
+  - DER Integration and Automation Project Final Report
+  contributing_sources:
+  - source_title: DER Integration and Automation Project Final Report
+    pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+    markdown_filename: der_integration_and_automation_project_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-46204
+  source_title: DER Integration and Automation Project Final Report
+  publish_date: null
+  project_name: DER Integration and Automation Project
+  what_happened: The original project design included a merit-order approach to DER
+    curtailment where customers would be curtailed in price sequence; during detailed
+    design this was changed to a 'pain sharing' approach that curtails all DER customers
+    equally, because the merit-order method raised equity-of-access concerns.
+  lesson_learnt: When designing DER curtailment logic for DNSP constraint management,
+    evaluate equity-of-access implications at the outset — a merit-order approach
+    may be technically optimal but politically and regulatorily unacceptable, requiring
+    redesign if not addressed early.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Design was revised in detailed design phase to adopt equal curtailment
+    ('pain sharing') across all LV DER customers when a grid constraint must be resolved.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id004
+  - 45
+  - 46
+  evidence_excerpt: In the initial project proposal, a merit order approach to DER
+    curtailment had been proposed... In detailed design, this approach was revisited,
+    and the curtailment approach was adjusted to a 'pain sharing' approach, which
+    curtails across all customers equally.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+  project_page_url: https://arena.gov.au/projects/der-integration-and-automation-project/
+  kb_category: Distributed energy resources
+  kb_publish_date: 28/07/2021
+  kb_year: '2019'
+  kb_associated_project: DER Integration and Automation Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.05m
+  total_project_value: $4.11m
+  lead_organisation: Evoenergy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2019
+  location: Australian Capital Territory
+  project_partners: GreenSync, Schneider Electric, Withywindle, SA Power Networks,
+    Energy Queensland Limited
+  pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+  markdown_filename: der_integration_and_automation_project_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46204
+  contributing_source_titles:
+  - DER Integration and Automation Project Final Report
+  contributing_sources:
+  - source_title: DER Integration and Automation Project Final Report
+    pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+    markdown_filename: der_integration_and_automation_project_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-46205
+  source_title: DER Integration and Automation Project Final Report
+  publish_date: null
+  project_name: DER Integration and Automation Project
+  what_happened: When DERMS sent a requested schedule to deX and the IoT Hub polled
+    deX before the new schedule had been generated, the hub passed back the old (unchanged)
+    schedule to DERMS, causing DERMS to re-send the same request — potentially confusing
+    deX into treating it as an additional new request.
+  lesson_learnt: IoT Hub polling logic in multi-platform DER orchestration should
+    use an ID-increment or event-driven publish mechanism rather than fixed-interval
+    polling, so that DERMS only receives a response once deX has actually generated
+    updated schedules — reducing spurious re-requests and platform confusion.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Identified that the deX bridge API already supports a 'last ID'
+    mechanism allowing the client to retrieve only schedules generated after a given
+    ID; adopting this would eliminate the stale-poll issue.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id005
+  - 46
+  - 47
+  evidence_excerpt: The current configuration has the IoT Hub polling deX each 15
+    minutes, and passes everything through to DERMS, regardless of whether the schedules
+    have changed. So, in case that the schedules are still not changed, IoT Hub will
+    collect old results and send them to DERMS.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+  project_page_url: https://arena.gov.au/projects/der-integration-and-automation-project/
+  kb_category: Distributed energy resources
+  kb_publish_date: 28/07/2021
+  kb_year: '2019'
+  kb_associated_project: DER Integration and Automation Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.05m
+  total_project_value: $4.11m
+  lead_organisation: Evoenergy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2019
+  location: Australian Capital Territory
+  project_partners: GreenSync, Schneider Electric, Withywindle, SA Power Networks,
+    Energy Queensland Limited
+  pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+  markdown_filename: der_integration_and_automation_project_final_report.md
+  source_page_pdf: 46
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46205
+  contributing_source_titles:
+  - DER Integration and Automation Project Final Report
+  contributing_sources:
+  - source_title: DER Integration and Automation Project Final Report
+    pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+    markdown_filename: der_integration_and_automation_project_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-46206
+  source_title: DER Integration and Automation Project Final Report
+  publish_date: null
+  project_name: DER Integration and Automation Project
+  what_happened: During use case execution it was found that even when DERMS issued
+    a requested schedule within the stated flexibility limits of a DER group, the
+    service could not be delivered because the available energy for the day had already
+    been exhausted; DERMS received an unchanged schedule with no indication of why
+    the request was refused.
+  lesson_learnt: Network management systems need visibility of available energy (not
+    just instantaneous power flexibility limits) per DER group so that constraint-resolution
+    requests are sized to what is actually deliverable — without energy state information,
+    DERMS cannot distinguish a refused request due to insufficient energy from other
+    failure modes.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Identified as a standards gap (current standards only support
+    providing flexibility limits without energy state); recommended as a priority
+    item for a next project phase.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id006
+  - 46
+  - 47
+  evidence_excerpt: During execution of the use cases, it was noticed that sometimes
+    even the requested schedules are within provided flexibility limits, the service
+    could not be provided since the requested energy was larger than the available
+    energy that can be used during a day, and DERMS received schedules that were not
+    changed.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+  project_page_url: https://arena.gov.au/projects/der-integration-and-automation-project/
+  kb_category: Distributed energy resources
+  kb_publish_date: 28/07/2021
+  kb_year: '2019'
+  kb_associated_project: DER Integration and Automation Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.05m
+  total_project_value: $4.11m
+  lead_organisation: Evoenergy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2019
+  location: Australian Capital Territory
+  project_partners: GreenSync, Schneider Electric, Withywindle, SA Power Networks,
+    Energy Queensland Limited
+  pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+  markdown_filename: der_integration_and_automation_project_final_report.md
+  source_page_pdf: 46
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46206
+  contributing_source_titles:
+  - DER Integration and Automation Project Final Report
+  contributing_sources:
+  - source_title: DER Integration and Automation Project Final Report
+    pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+    markdown_filename: der_integration_and_automation_project_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-46207
+  source_title: DER Integration and Automation Project Final Report
+  publish_date: null
+  project_name: DER Integration and Automation Project
+  what_happened: The DERMS architecture assigned each DER to a single DER group, meaning
+    a single DER resource could not simultaneously contribute to resolving multiple
+    co-located network issues (e.g., both a transformer overload and a feeder voltage
+    violation), limiting the value that individual DER assets could provide.
+  lesson_learnt: DER group management systems should be designed for non-exclusivity
+    from the outset — allowing a DER to be a member of multiple groups simultaneously
+    enables it to contribute to resolving more than one network constraint and maximises
+    the utilisation value of each asset.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id007
+  - 47
+  - 48
+  evidence_excerpt: To allow DER to provide the greatest possible value, it should
+    be possible for DER to be used in resolution of more than one network issue. To
+    achieve this, it is necessary for DER to be capable of belonging to multiple DER
+    groups in network systems.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+  project_page_url: https://arena.gov.au/projects/der-integration-and-automation-project/
+  kb_category: Distributed energy resources
+  kb_publish_date: 28/07/2021
+  kb_year: '2019'
+  kb_associated_project: DER Integration and Automation Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.05m
+  total_project_value: $4.11m
+  lead_organisation: Evoenergy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2019
+  location: Australian Capital Territory
+  project_partners: GreenSync, Schneider Electric, Withywindle, SA Power Networks,
+    Energy Queensland Limited
+  pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+  markdown_filename: der_integration_and_automation_project_final_report.md
+  source_page_pdf: 47
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46207
+  contributing_source_titles:
+  - DER Integration and Automation Project Final Report
+  contributing_sources:
+  - source_title: DER Integration and Automation Project Final Report
+    pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+    markdown_filename: der_integration_and_automation_project_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-46208
+  source_title: DER Integration and Automation Project Final Report
+  publish_date: null
+  project_name: DER Integration and Automation Project
+  what_happened: Network systems were not provided with visibility of the capacity
+    of contracts available through the deX Evaluation Engine; when DERMS issued a
+    constraint-resolution request that exceeded available contract capacity, the Evaluation
+    Engine refused it and returned an unchanged DER flexibility schedule with no explicit
+    rejection signal.
+  lesson_learnt: Network management systems should be given visibility of DER contract
+    capacities held by the market platform so that constraint-resolution requests
+    are sized within deliverable bounds; additionally, the architecture must explicitly
+    handle and communicate contract-capacity refusals rather than returning an unchanged
+    schedule, which is indistinguishable from other failure conditions.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: 'Identified as a design requirement for production implementation:
+    expose contract capacity data from the market platform to the network management
+    system, and implement explicit accept/reject messaging between platforms.'
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id008
+  - 47
+  - 48
+  evidence_excerpt: In the implementation of this solution, network systems have not
+    been provided with visibility over the capacities of the contracts available to
+    resolve the network issue. This means that when a network issue arises, network
+    systems may request a service response that exceeds the capacities of the contracts.
+    This would result in a refusal of the requested schedule by the Evaluation Engine,
+    which would be communicated back to network systems as unchanged DER flexibility
+    schedule.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+  project_page_url: https://arena.gov.au/projects/der-integration-and-automation-project/
+  kb_category: Distributed energy resources
+  kb_publish_date: 28/07/2021
+  kb_year: '2019'
+  kb_associated_project: DER Integration and Automation Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.05m
+  total_project_value: $4.11m
+  lead_organisation: Evoenergy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2019
+  location: Australian Capital Territory
+  project_partners: GreenSync, Schneider Electric, Withywindle, SA Power Networks,
+    Energy Queensland Limited
+  pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+  markdown_filename: der_integration_and_automation_project_final_report.md
+  source_page_pdf: 47
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46208
+  contributing_source_titles:
+  - DER Integration and Automation Project Final Report
+  contributing_sources:
+  - source_title: DER Integration and Automation Project Final Report
+    pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+    markdown_filename: der_integration_and_automation_project_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-46209
+  source_title: DER Integration and Automation Project Final Report
+  publish_date: null
+  project_name: DER Integration and Automation Project
+  what_happened: Large DER group flexibility schedule payloads from deX were too large
+    to transmit as a single packet; deX split them into multiple messages, and the
+    IoT Hub had to merge them before forwarding to DERMS, adding integration complexity
+    and a potential point of message-assembly failure.
+  lesson_learnt: When integrating DER market platforms with network management systems
+    via an IoT Hub, design and test message-size handling from the outset — large
+    flexibility schedule payloads will likely exceed single-packet limits, requiring
+    explicit splitting and merging logic in the hub that must be validated as a first-class
+    integration requirement.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: IoT Hub was configured to merge split incoming messages from
+    deX into a single packet for DERMS, and to split outgoing DERMS messages into
+    multiple packets for deX.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id009
+  - 43
+  - 44
+  evidence_excerpt: DER group flexibility is sent through many messages instead of
+    a single packet due to the large size from deX. IoT hub is merging those messages
+    into a single message and forwarding to DERMS, and splitting the message received
+    from DERMS and sending them to deX.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+  project_page_url: https://arena.gov.au/projects/der-integration-and-automation-project/
+  kb_category: Distributed energy resources
+  kb_publish_date: 28/07/2021
+  kb_year: '2019'
+  kb_associated_project: DER Integration and Automation Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.05m
+  total_project_value: $4.11m
+  lead_organisation: Evoenergy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2019
+  location: Australian Capital Territory
+  project_partners: GreenSync, Schneider Electric, Withywindle, SA Power Networks,
+    Energy Queensland Limited
+  pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+  markdown_filename: der_integration_and_automation_project_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46209
+  contributing_source_titles:
+  - DER Integration and Automation Project Final Report
+  contributing_sources:
+  - source_title: DER Integration and Automation Project Final Report
+    pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+    markdown_filename: der_integration_and_automation_project_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-46210
+  source_title: DER Integration and Automation Project Final Report
+  publish_date: null
+  project_name: DER Integration and Automation Project
+  what_happened: When testing Use Case 1, the initial simulation attempted a 10% load
+    violation but the deX-enrolled DER could not resolve a constraint of that magnitude;
+    the test was iteratively scaled down until a ~2% overload was achieved that the
+    DER could resolve, establishing the MVP boundary.
+  lesson_learnt: Lack of inter-visibility between DERMS and market platforms on total
+    suppliable and consumable DER energy restricts the size of constraint that can
+    be managed; pilot projects should quantify this constraint-resolution ceiling
+    early in testing to avoid discovering it only during acceptance testing.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated integration
+  intervention_note: Iteratively reduced the simulated constraint magnitude from 10%
+    to 2% overload until the enrolled DER capacity was sufficient to demonstrate constraint
+    resolution.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id010
+  - 31
+  - 32
+  evidence_excerpt: 'Started with simulating 10% violation but deX enrolled DER were
+    unable to resolve the constraint. Iterative processes lead to a relatively small
+    constraint being managed and resolve proving the use case for minimum viable product.
+    Learnings: Lack of inter-visibility between the platforms on the total suppliable
+    and consumable energy restricted larger constraint simulation.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+  project_page_url: https://arena.gov.au/projects/der-integration-and-automation-project/
+  kb_category: Distributed energy resources
+  kb_publish_date: 28/07/2021
+  kb_year: '2019'
+  kb_associated_project: DER Integration and Automation Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.05m
+  total_project_value: $4.11m
+  lead_organisation: Evoenergy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2019
+  location: Australian Capital Territory
+  project_partners: GreenSync, Schneider Electric, Withywindle, SA Power Networks,
+    Energy Queensland Limited
+  pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+  markdown_filename: der_integration_and_automation_project_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46210
+  contributing_source_titles:
+  - DER Integration and Automation Project Final Report
+  contributing_sources:
+  - source_title: DER Integration and Automation Project Final Report
+    pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+    markdown_filename: der_integration_and_automation_project_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: integration failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-46211
+  source_title: DER Integration and Automation Project Final Report
+  publish_date: null
+  project_name: DER Integration and Automation Project
+  what_happened: Planned DER schedules were only sent to DERMS for some DERs in the
+    network rather than for all DERs, limiting DERMS's ability to verify that revised
+    DER limits had been fully reflected in subsequent planned behaviour.
+  lesson_learnt: In DER orchestration integrations, the completeness of planned schedule
+    reporting back to the network management system should be specified as an explicit
+    requirement — partial coverage of the DER fleet limits the DNSP's ability to confirm
+    constraint compliance and reduces the value of the dynamic operating envelope
+    workflow.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id011
+  - 34
+  evidence_excerpt: Planned schedules are sent only for some DERs in the network.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+  project_page_url: https://arena.gov.au/projects/der-integration-and-automation-project/
+  kb_category: Distributed energy resources
+  kb_publish_date: 28/07/2021
+  kb_year: '2019'
+  kb_associated_project: DER Integration and Automation Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.05m
+  total_project_value: $4.11m
+  lead_organisation: Evoenergy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2019
+  location: Australian Capital Territory
+  project_partners: GreenSync, Schneider Electric, Withywindle, SA Power Networks,
+    Energy Queensland Limited
+  pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+  markdown_filename: der_integration_and_automation_project_final_report.md
+  source_page_pdf: 34
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46211
+  contributing_source_titles:
+  - DER Integration and Automation Project Final Report
+  contributing_sources:
+  - source_title: DER Integration and Automation Project Final Report
+    pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+    markdown_filename: der_integration_and_automation_project_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-46212
+  source_title: DER Integration and Automation Project Final Report
+  publish_date: null
+  project_name: DER Integration and Automation Project
+  what_happened: The network model used in the DERMS pilot required manual fine-tuning
+    by the vendor (Schneider Electric) because the GIS data quality was insufficient
+    to produce logically consistent load-flow results; the tuning changes were not
+    tracked back to the GIS, leaving a persistent divergence between the pilot model
+    and the production GIS.
+  lesson_learnt: Before deploying model-based DERMS functionality, DNSPs should conduct
+    a dedicated GIS data quality audit and remediation exercise; model corrections
+    made during vendor tuning must be formally tracked back to the GIS to avoid a
+    persistent divergence that will need to be reconciled before any production deployment.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Schneider Electric performed a fine-tuning process with minimal
+    changes to produce logical and expected results; however, changes were not tracked
+    back to the production GIS.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id012
+  - 37
+  evidence_excerpt: In the case when the quality of GIS data is not high enough, the
+    quality of calculated state and results of model-based functionalities will be
+    lower... These changes are not tracked back in the GIS so there are slightly differences
+    between the model used in the pilot project and Evoenergy GIS data.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+  project_page_url: https://arena.gov.au/projects/der-integration-and-automation-project/
+  kb_category: Distributed energy resources
+  kb_publish_date: 28/07/2021
+  kb_year: '2019'
+  kb_associated_project: DER Integration and Automation Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.05m
+  total_project_value: $4.11m
+  lead_organisation: Evoenergy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2019
+  location: Australian Capital Territory
+  project_partners: GreenSync, Schneider Electric, Withywindle, SA Power Networks,
+    Energy Queensland Limited
+  pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+  markdown_filename: der_integration_and_automation_project_final_report.md
+  source_page_pdf: 36
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46212
+  contributing_source_titles:
+  - DER Integration and Automation Project Final Report
+  contributing_sources:
+  - source_title: DER Integration and Automation Project Final Report
+    pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+    markdown_filename: der_integration_and_automation_project_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-46213
+  source_title: DER Integration and Automation Project Final Report
+  publish_date: null
+  project_name: DER Integration and Automation Project
+  what_happened: Hourly feeder current data — the only consumption data available
+    — was insufficient for quality load forecast execution given the high DER penetration
+    on the selected feeder; a simplified algorithm using load curves derived from
+    smart meter historical data was substituted.
+  lesson_learnt: In high-DER-penetration networks, raw feeder current data is an inadequate
+    input for DERMS forecast engines — smart meter historical data or equivalent granular
+    consumption records must be secured before model deployment to avoid degraded
+    forecast quality and constraint-management accuracy.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: A simplified algorithm using existing load curves formed from
+    smart meter historical data was adopted in place of deriving load forecast from
+    hourly current data and DER production assumptions.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id013
+  - 37
+  - 38
+  evidence_excerpt: In terms of power consumption, only hourly current data were available
+    for each feeder. Due to the high penetration of distributed energy resources,
+    these data were not sufficient for quality forecast execution. Therefore, a simplified
+    algorithm was used in which load curves that already exist in the obtained Evoenergy
+    scheme are used to derive load forecast.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+  project_page_url: https://arena.gov.au/projects/der-integration-and-automation-project/
+  kb_category: Distributed energy resources
+  kb_publish_date: 28/07/2021
+  kb_year: '2019'
+  kb_associated_project: DER Integration and Automation Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.05m
+  total_project_value: $4.11m
+  lead_organisation: Evoenergy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2019
+  location: Australian Capital Territory
+  project_partners: GreenSync, Schneider Electric, Withywindle, SA Power Networks,
+    Energy Queensland Limited
+  pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+  markdown_filename: der_integration_and_automation_project_final_report.md
+  source_page_pdf: 37
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46213
+  contributing_source_titles:
+  - DER Integration and Automation Project Final Report
+  contributing_sources:
+  - source_title: DER Integration and Automation Project Final Report
+    pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+    markdown_filename: der_integration_and_automation_project_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-46214
+  source_title: DER Integration and Automation Project Final Report
+  publish_date: null
+  project_name: DER Integration and Automation Project
+  what_happened: The project was initiated in early 2018 but the DER orchestration
+    landscape — including relevant standards and interoperability norms — evolved
+    significantly during the project's life, meaning that some design choices made
+    at initiation were no longer aligned with industry norms by the time of completion.
+  lesson_learnt: Long-duration DER integration projects should include explicit checkpoints
+    to reassess alignment with evolving industry standards and regulatory frameworks;
+    design assumptions made at initiation may be superseded before delivery, and a
+    mechanism to incorporate emerging standards mid-project reduces the risk of delivering
+    against an outdated architecture.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id014
+  - 48
+  - 49
+  evidence_excerpt: Since early 2018 when the project was first initiated with ARENA,
+    the industry landscape has moved in relation to DER. The multiple projects and
+    standards that have become the norm for DER orchestration are valid but were not
+    considered for this project.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+  project_page_url: https://arena.gov.au/projects/der-integration-and-automation-project/
+  kb_category: Distributed energy resources
+  kb_publish_date: 28/07/2021
+  kb_year: '2019'
+  kb_associated_project: DER Integration and Automation Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.05m
+  total_project_value: $4.11m
+  lead_organisation: Evoenergy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2019
+  location: Australian Capital Territory
+  project_partners: GreenSync, Schneider Electric, Withywindle, SA Power Networks,
+    Energy Queensland Limited
+  pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+  markdown_filename: der_integration_and_automation_project_final_report.md
+  source_page_pdf: 48
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46214
+  contributing_source_titles:
+  - DER Integration and Automation Project Final Report
+  contributing_sources:
+  - source_title: DER Integration and Automation Project Final Report
+    pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+    markdown_filename: der_integration_and_automation_project_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  lifecycle_phase_original: variation/re-scope
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-46215
+  source_title: DER Integration and Automation Project Final Report
+  publish_date: null
+  project_name: DER Integration and Automation Project
+  what_happened: The project successfully demonstrated that DERMS can use DER groups
+    to perform preventive constraint management (avoiding feeder overloads) and that
+    the DERMS–IoT Hub–deX integration can operate autonomously for multiple weeks
+    without human intervention, completing DER schedules and constraint management
+    exercises automatically.
+  lesson_learnt: An ADMS-integrated DERMS platform connected via an IoT Hub to a DER
+    market platform (deX) can autonomously manage distribution-level constraints at
+    scale — this architecture is a viable production pathway for DNSPs seeking to
+    defer network augmentation investment through DER flexibility, provided data quality
+    and inter-platform visibility issues are resolved first.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id015
+  - 43
+  - 44
+  evidence_excerpt: Throughout the project testing phase, the logs of the project
+    platforms from deX, IoT Hub and DERMS showcased that the systems were running
+    unassisted for multiple weeks, while completing various DER schedules and automated
+    constraint management exercises without any human intervention.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (18/20), DER/customer-side (2/20)'
+  source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+  project_page_url: https://arena.gov.au/projects/der-integration-and-automation-project/
+  kb_category: Distributed energy resources
+  kb_publish_date: 28/07/2021
+  kb_year: '2019'
+  kb_associated_project: DER Integration and Automation Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.05m
+  total_project_value: $4.11m
+  lead_organisation: Evoenergy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2019
+  location: Australian Capital Territory
+  project_partners: GreenSync, Schneider Electric, Withywindle, SA Power Networks,
+    Energy Queensland Limited
+  pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+  markdown_filename: der_integration_and_automation_project_final_report.md
+  source_page_pdf: 43
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46215
+  contributing_source_titles:
+  - DER Integration and Automation Project Final Report
+  contributing_sources:
+  - source_title: DER Integration and Automation Project Final Report
+    pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+    markdown_filename: der_integration_and_automation_project_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-46216
+  source_title: DER Integration and Automation Project Final Report
+  publish_date: null
+  project_name: DER Integration and Automation Project
+  what_happened: The project demonstrated that market operators (retailers, aggregators)
+    can be given real-time visibility of distribution-level network impacts of their
+    intended VPP dispatch calls, enabling DNSPs to evaluate and approve VPP calls
+    without causing network constraint violations.
+  lesson_learnt: Integrating DERMS validation of VPP dispatch requests into the market
+    platform workflow (via IoT Hub) provides a scalable mechanism for DNSPs to approve
+    more frequent and larger VPP calls with confidence — this capability is a prerequisite
+    for high-DER-penetration networks where uncoordinated VPP calls could cause reliability
+    events.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id016
+  - 7
+  - 8
+  evidence_excerpt: The project demonstrated that market operators can be given visibility
+    over distribution level impacts of their intended calls on the DER within a specific
+    geographical location to ensure that market calls by retailers or aggregators
+    in response to spot price hedging or VPP calls do not cause network constraints
+    in the distribution network.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (18/20), DER/customer-side (2/20)'
+  source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+  project_page_url: https://arena.gov.au/projects/der-integration-and-automation-project/
+  kb_category: Distributed energy resources
+  kb_publish_date: 28/07/2021
+  kb_year: '2019'
+  kb_associated_project: DER Integration and Automation Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.05m
+  total_project_value: $4.11m
+  lead_organisation: Evoenergy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2019
+  location: Australian Capital Territory
+  project_partners: GreenSync, Schneider Electric, Withywindle, SA Power Networks,
+    Energy Queensland Limited
+  pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+  markdown_filename: der_integration_and_automation_project_final_report.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46216
+  contributing_source_titles:
+  - DER Integration and Automation Project Final Report
+  contributing_sources:
+  - source_title: DER Integration and Automation Project Final Report
+    pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+    markdown_filename: der_integration_and_automation_project_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-46217
+  source_title: DER Integration and Automation Project Final Report
+  publish_date: null
+  project_name: DER Integration and Automation Project
+  what_happened: The project published the API interface between the deX platform
+    and the IoT Hub, enabling DNSPs not using the Schneider ADMS to access deX functionality
+    and providing a replicable integration pathway for other network businesses.
+  lesson_learnt: Publishing API documentation for DER platform integrations as a project
+    knowledge-sharing deliverable significantly multiplies the transferability value
+    of a pilot — other DNSPs can replicate the integration without repeating the design
+    work, accelerating industry-wide DER orchestration capability.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id017
+  - 8
+  evidence_excerpt: The project API interface now enables DNSPs not on the Schneider
+    ADMS platform to access GreenSync deX functionality. The API integration provides
+    a pathway and capability of ingesting network limits from network management systems
+    via an IoT Hub integration. By making the API document public, third parties can
+    better understand the interactions between deX and network systems.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+  project_page_url: https://arena.gov.au/projects/der-integration-and-automation-project/
+  kb_category: Distributed energy resources
+  kb_publish_date: 28/07/2021
+  kb_year: '2019'
+  kb_associated_project: DER Integration and Automation Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.05m
+  total_project_value: $4.11m
+  lead_organisation: Evoenergy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2019
+  location: Australian Capital Territory
+  project_partners: GreenSync, Schneider Electric, Withywindle, SA Power Networks,
+    Energy Queensland Limited
+  pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+  markdown_filename: der_integration_and_automation_project_final_report.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46217
+  contributing_source_titles:
+  - DER Integration and Automation Project Final Report
+  contributing_sources:
+  - source_title: DER Integration and Automation Project Final Report
+    pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+    markdown_filename: der_integration_and_automation_project_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-46218
+  source_title: DER Integration and Automation Project Final Report
+  publish_date: null
+  project_name: DER Integration and Automation Project
+  what_happened: The project identified that DER group membership in the DERMS must
+    be updated dynamically as the distribution network is reconfigured (e.g., when
+    a resource moves from one feeder to another), but no mechanism existed in the
+    current implementation to automate this membership update.
+  lesson_learnt: Production DER management systems must implement dynamic DER group
+    membership update mechanisms driven by network reconfiguration events — static
+    group membership will cause constraint-management errors whenever the network
+    topology changes, which is a routine operational occurrence for DNSPs.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id018
+  - 49
+  evidence_excerpt: To reflect the dynamic nature of the distribution network configuration,
+    it is essential that DER group membership can be updated over time. Dynamic membership
+    complements the non-exclusivity functionality, by ensuring that the membership
+    of DER to DER group(s), reflects the capability of those resources to address
+    network issues associated with that group.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+  project_page_url: https://arena.gov.au/projects/der-integration-and-automation-project/
+  kb_category: Distributed energy resources
+  kb_publish_date: 28/07/2021
+  kb_year: '2019'
+  kb_associated_project: DER Integration and Automation Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.05m
+  total_project_value: $4.11m
+  lead_organisation: Evoenergy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2019
+  location: Australian Capital Territory
+  project_partners: GreenSync, Schneider Electric, Withywindle, SA Power Networks,
+    Energy Queensland Limited
+  pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+  markdown_filename: der_integration_and_automation_project_final_report.md
+  source_page_pdf: 49
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46218
+  contributing_source_titles:
+  - DER Integration and Automation Project Final Report
+  contributing_sources:
+  - source_title: DER Integration and Automation Project Final Report
+    pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+    markdown_filename: der_integration_and_automation_project_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-46219
+  source_title: DER Integration and Automation Project Final Report
+  publish_date: null
+  project_name: DER Integration and Automation Project
+  what_happened: The project identified that a polling/publishing model — where data
+    is exchanged between the network management system and the market platform only
+    when data is ready — is needed, rather than the fixed-interval polling used in
+    this implementation, which transmitted stale data and caused redundant processing.
+  lesson_learnt: Fixed-interval polling between DERMS and DER market platforms generates
+    unnecessary data traffic, stale schedule transmissions, and redundant constraint-resolution
+    attempts; a publish-on-change (event-driven) data exchange model should be the
+    target architecture for production DER orchestration integrations.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id019
+  - 48
+  - 49
+  evidence_excerpt: A Polling/Publishing method is required, where the data is exchanged
+    between Network Management System and a Market platform, when data is ready to
+    be sent instead of a set time cycle.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+  project_page_url: https://arena.gov.au/projects/der-integration-and-automation-project/
+  kb_category: Distributed energy resources
+  kb_publish_date: 28/07/2021
+  kb_year: '2019'
+  kb_associated_project: DER Integration and Automation Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.05m
+  total_project_value: $4.11m
+  lead_organisation: Evoenergy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2019
+  location: Australian Capital Territory
+  project_partners: GreenSync, Schneider Electric, Withywindle, SA Power Networks,
+    Energy Queensland Limited
+  pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+  markdown_filename: der_integration_and_automation_project_final_report.md
+  source_page_pdf: 48
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46219
+  contributing_source_titles:
+  - DER Integration and Automation Project Final Report
+  contributing_sources:
+  - source_title: DER Integration and Automation Project Final Report
+    pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+    markdown_filename: der_integration_and_automation_project_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-46220
+  source_title: DER Integration and Automation Project Final Report
+  publish_date: null
+  project_name: DER Integration and Automation Project
+  what_happened: The project identified that without an explicit accept/reject messaging
+    protocol between the DERMS and the market platform, a refused constraint-resolution
+    request was indistinguishable from a normal unchanged schedule — creating ambiguity
+    that could lead to repeated or misinterpreted requests.
+  lesson_learnt: Multi-platform DER orchestration architectures require dedicated
+    accept/reject message types for constraint-resolution service requests — relying
+    on an unchanged flexibility schedule as an implicit rejection creates diagnostic
+    ambiguity and risks repeated or misinterpreted constraint-management requests
+    in production.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id020
+  - 48
+  - 49
+  evidence_excerpt: In order to reduce confusion, specific messages for accepting
+    or rejecting a service request will be needed between platforms.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+  project_page_url: https://arena.gov.au/projects/der-integration-and-automation-project/
+  kb_category: Distributed energy resources
+  kb_publish_date: 28/07/2021
+  kb_year: '2019'
+  kb_associated_project: DER Integration and Automation Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.05m
+  total_project_value: $4.11m
+  lead_organisation: Evoenergy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 19/09/2019
+  location: Australian Capital Territory
+  project_partners: GreenSync, Schneider Electric, Withywindle, SA Power Networks,
+    Energy Queensland Limited
+  pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+  markdown_filename: der_integration_and_automation_project_final_report.md
+  source_page_pdf: 48
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-46220
+  contributing_source_titles:
+  - DER Integration and Automation Project Final Report
+  contributing_sources:
+  - source_title: DER Integration and Automation Project Final Report
+    pdf_url: https://arena.gov.au/assets/2021/08/der-integration-and-automation-project-report.pdf
+    source_pages: *id020
+    source_url: https://arena.gov.au/knowledge-bank/der-integration-and-automation-project-final-report/
+    markdown_filename: der_integration_and_automation_project_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92

@@ -1,0 +1,2302 @@
+- record_id: ARENA-DLV-27111
+  source_title: Advisian Wind & Solar Forecasting for the NEM Final Report
+  publish_date: '2021-02-17'
+  project_name: Wind & Solar Forecasting for the NEM
+  what_happened: The self-forecasting algorithm demonstrated particularly strong improvement
+    over ANEMOS in the period immediately after AEMO-imposed generation constraints
+    were lifted, with the wind farm showing 63.2% MAE and 74.6% RMSE improvement during
+    constrained periods — a substantially larger gain than during normal unconstrained
+    operation.
+  lesson_learnt: Post-constraint ramping periods represent the highest-value use case
+    for self-forecasting over centralised AEMO forecasts — projects evaluating self-forecasting
+    ROI should weight this period heavily, as extreme CPF deviations at constraint
+    release disproportionately inflate total FCAS liability.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages:
+  - 9
+  - 10
+  - 16
+  - 20
+  evidence_excerpt: Our algorithm showed an average improvement of 19.8% on MAE and
+    45.6% on RMSE during unconstrained periods... The work undertaken to develop the
+    wind power forecasting model has shown conclusively that it is possible to achieve
+    a high accuracy forecast using only standard SCADA data as inputs. Strong results
+    were achieved without adding new sensors such as meteorological stations, wind
+    masts or lidar.
+  confidence_note: Canonical record merged from 2 source records across 1 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 17/02/2021
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2021/02/advisian-wind-and-solar-forecasting-for-the-nem-report.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_final_report.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-27101
+  - ARENA-DLV-27111
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Final Report
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Final Report
+    pdf_url: https://arena.gov.au/assets/2021/02/advisian-wind-and-solar-forecasting-for-the-nem-report.pdf
+    source_pages:
+    - 9
+    - 10
+    - 20
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_final_report.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-27102
+  source_title: Advisian Wind & Solar Forecasting for the NEM Final Report
+  publish_date: '2021-02-17'
+  project_name: Wind & Solar Forecasting for the NEM
+  what_happened: The Ross River Solar Farm self-forecasting model achieved only modest
+    improvements over the AEMO ASEFS (ANEMOS) benchmark — 2% on MAE and 8% on RMSE
+    during unconstrained periods — falling well short of the gains achieved at the
+    wind farm site.
+  lesson_learnt: Solar farm self-forecasting models built using only met station and
+    SCADA data are unlikely to achieve the same accuracy improvements as wind models;
+    additional inputs such as sky camera cloud imagery are needed to meaningfully
+    improve solar forecast accuracy.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: partial success
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id001
+  - 13
+  - 14
+  - 21
+  evidence_excerpt: Our algorithm showed an average improvement of 2% on MAE and 8%
+    on RMSE during unconstrained periods... The solar model did not achieve the same
+    accuracy improvements as the wind model. Integration of sky camera imagery into
+    the model would likely have led to an improvement in forecasting accuracy.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 17/02/2021
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2021/02/advisian-wind-and-solar-forecasting-for-the-nem-report.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-27102
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Final Report
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Final Report
+    pdf_url: https://arena.gov.au/assets/2021/02/advisian-wind-and-solar-forecasting-for-the-nem-report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_final_report.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-27103
+  source_title: Advisian Wind & Solar Forecasting for the NEM Final Report
+  publish_date: '2021-02-17'
+  project_name: Wind & Solar Forecasting for the NEM
+  what_happened: Sky cameras procured for solar farm cloud imagery encountered multiple
+    technical commissioning problems — difficulties integrating with the customer's
+    IT network, firmware issues for daytime imaging, and overheating of the camera
+    control unit — and were ultimately excluded from the forecasting model. COVID-related
+    interstate travel restrictions also contributed to logistical problems.
+  lesson_learnt: When procuring sky cameras for solar forecasting, specify commercially
+    available digital cameras designed for daytime imaging in Australian conditions
+    rather than scientific cameras — they offer simpler integration and greater reliability,
+    reducing commissioning risk.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: unvalidated technical assumptions
+  outcome_class: partial success
+  secondary_failure_mode: execution & logistics
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages:
+  - 1
+  - 7
+  - 20
+  evidence_excerpt: Sky Camera imaging for the solar farm was initially intended to
+    be included as an input to the solar farm forecasting model but was eventually
+    dropped due technical difficulties with Sky Camera commissioning and logistical
+    problems associated with COVID-related interstate travel restrictions... Numerous
+    technical challenges were encountered during commissioning, including integrating
+    the camera into the customer's IT network, adjusting the camera firmware for daytime
+    imaging and overheating of the camera control unit. In hindsight, a commercially
+    available digital sky camera specifically designed for daytime imaging in Australian
+    conditions would have provided a simpler and more reliable solution.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 17/02/2021
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2021/02/advisian-wind-and-solar-forecasting-for-the-nem-report.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_final_report.md
+  source_page_pdf: 8
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-27103
+  - ARENA-DLV-27752
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt 1
+  - Advisian Wind & Solar Forecasting for the NEM Final Report
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Final Report
+    pdf_url: https://arena.gov.au/assets/2021/02/advisian-wind-and-solar-forecasting-for-the-nem-report.pdf
+    source_pages:
+    - 7
+    - 20
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_final_report.md
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+      1
+    pdf_url: https://arena.gov.au/assets/2019/12/advisian-wind-solar-forecasting-for-nem-lessons-learnt.pdf
+    source_pages:
+    - 1
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-and-solar-forecasting-for-the-nem-project-lessons-learnt-1/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_1.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-27104
+  source_title: Advisian Wind & Solar Forecasting for the NEM Final Report
+  publish_date: '2021-02-17'
+  project_name: Wind & Solar Forecasting for the NEM
+  what_happened: Several solar irradiance variables (diffuse irradiance, ambient relative
+    humidity, wind speed, and wind direction) were missing from the Ross River Solar
+    Farm dataset for the first three months (February to April 2019), requiring those
+    variables to be omitted from the model. Active power was not captured at all in
+    the dataset, requiring a proxy calculation using gross power multiplied by an
+    efficiency loss factor.
+  lesson_learnt: Data quality gaps in historical SCADA datasets — including missing
+    sensor channels and absent active power readings — constrain model inputs and
+    force proxy approaches; proponents should audit data completeness before model
+    development begins and address gaps proactively.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: partial success
+  secondary_failure_mode: null
+  intervention_note: Diffuse irradiance was omitted as other irradiance measures were
+    available over the full dataset; gross power was multiplied by an efficiency loss
+    factor as a proxy for active power.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages:
+  - 1
+  - 7
+  evidence_excerpt: Diffuse irradiance, ambient relative humidity, wind speed and
+    wind direction were missing in the data set from February 2019 to April 2019,
+    so these variables were omitted from the model... Active power was not captured
+    at all in the data set so gross power was multiplied by an efficiency loss factor
+    to derive net power as a proxy of active power.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 17/02/2021
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2021/02/advisian-wind-and-solar-forecasting-for-the-nem-report.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_final_report.md
+  source_page_pdf: 8
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-27104
+  - ARENA-DLV-27755
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt 1
+  - Advisian Wind & Solar Forecasting for the NEM Final Report
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Final Report
+    pdf_url: https://arena.gov.au/assets/2021/02/advisian-wind-and-solar-forecasting-for-the-nem-report.pdf
+    source_pages:
+    - 7
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_final_report.md
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+      1
+    pdf_url: https://arena.gov.au/assets/2019/12/advisian-wind-solar-forecasting-for-nem-lessons-learnt.pdf
+    source_pages:
+    - 1
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-and-solar-forecasting-for-the-nem-project-lessons-learnt-1/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_1.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-27105
+  source_title: Advisian Wind & Solar Forecasting for the NEM Final Report
+  publish_date: '2021-02-17'
+  project_name: Wind & Solar Forecasting for the NEM
+  what_happened: Many wind and solar farm sites historise SCADA data at infrequent
+    intervals (5 or 10 minutes), which is insufficient to train a 5-minute ahead self-forecasting
+    model to the required accuracy. The project required at least 1-minute interval
+    data.
+  lesson_learnt: Operators planning to adopt self-forecasting should immediately begin
+    historising SCADA data at 1-minute intervals — sites that delay this will have
+    insufficient historical data to train an accurate model when they are ready to
+    deploy.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id002
+  - 20
+  evidence_excerpt: Many sites historise data infrequently (sometimes 5 or 10-minute
+    intervals) which would leave insufficient information to deliver a forecast to
+    required accuracy. Operators intending to move to self-forecasting should immediately
+    begin historising their data at least 1-minute intervals.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 17/02/2021
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2021/02/advisian-wind-and-solar-forecasting-for-the-nem-report.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_final_report.md
+  source_page_pdf: 20
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-27105
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Final Report
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Final Report
+    pdf_url: https://arena.gov.au/assets/2021/02/advisian-wind-and-solar-forecasting-for-the-nem-report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_final_report.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-27106
+  source_title: Advisian Wind & Solar Forecasting for the NEM Final Report
+  publish_date: '2021-02-17'
+  project_name: Wind & Solar Forecasting for the NEM
+  what_happened: Deploying machine learning forecasting models at the edge on Dell
+    Edge 5100 Gateways — integrated directly with onsite SCADA systems via Modbus
+    — proved effective, with no adverse effects on latency or model performance, and
+    provided resilience against internet outages.
+  lesson_learnt: 'Edge deployment of machine learning forecasting models is a viable
+    and robust approach for renewable energy sites: it reduces bandwidth requirements,
+    ensures continuity during internet outages, and does not compromise latency or
+    accuracy.'
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id003
+  - 8
+  - 20
+  evidence_excerpt: Deployment of machine learning forecasting algorithms to the edge
+    is an effective means of deployment with no identifiable adverse effects on latency
+    or model performance... The edge devices provide local buffering of data and by
+    not transmitting large volumes of live data, the bandwidth needs for internet
+    communication are reduced. It also means the models will continue to run if the
+    internet connection is interrupted for any reason.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 17/02/2021
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2021/02/advisian-wind-and-solar-forecasting-for-the-nem-report.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_final_report.md
+  source_page_pdf: 20
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-27106
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Final Report
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Final Report
+    pdf_url: https://arena.gov.au/assets/2021/02/advisian-wind-and-solar-forecasting-for-the-nem-report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_final_report.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-27107
+  source_title: Advisian Wind & Solar Forecasting for the NEM Final Report
+  publish_date: '2021-02-17'
+  project_name: Wind & Solar Forecasting for the NEM
+  what_happened: An ensemble model architecture — running multiple parallel models
+    that switch based on available input data (unconstrained operation, constrained
+    operation, and post-constraint ramping) — was found to be the most effective approach
+    for producing accurate forecasts across all operating modes of wind and solar
+    farms.
+  lesson_learnt: Design self-forecasting systems as ensemble models with mode-switching
+    logic rather than a single model — this approach handles the distinct data environments
+    of constrained and unconstrained operation, and transition periods, delivering
+    superior accuracy across all operating states.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id004
+  - 8
+  - 20
+  evidence_excerpt: Producing a forecast that is accurate across all operating modes
+    of a wind or solar farm is best achieved by running multiple models in parallel,
+    whereby the algorithm switches between models based on available input data...
+    The combination of these different models running in parallel means that our algorithm
+    can respond more accurately when constraints are active and lifted by switching
+    between models.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 17/02/2021
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2021/02/advisian-wind-and-solar-forecasting-for-the-nem-report.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_final_report.md
+  source_page_pdf: 20
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-27107
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Final Report
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Final Report
+    pdf_url: https://arena.gov.au/assets/2021/02/advisian-wind-and-solar-forecasting-for-the-nem-report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_final_report.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-27108
+  source_title: Advisian Wind & Solar Forecasting for the NEM Final Report
+  publish_date: '2021-02-17'
+  project_name: Wind & Solar Forecasting for the NEM
+  what_happened: The AEMO AWEFS (ANEMOS) forecast for Waterloo Wind Farm exhibited
+    heavy negative skewness (−8.24) and very high kurtosis (114.28), meaning it systematically
+    over-predicted generation output and was prone to extreme forecast errors — particularly
+    in the period immediately after constraints were lifted. The Advisian self-forecast
+    showed near-neutral skewness (−0.01) and substantially lower kurtosis (10.52).
+  lesson_learnt: Wind self-forecasting models should be evaluated not only on mean
+    error metrics but also on skewness and kurtosis of residuals — systematic over-prediction
+    bias (negative skewness) inflates Causer Pays Factors and FCAS costs, and a neutrally
+    biased model can deliver disproportionately large commercial benefits during extreme
+    network events.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id005
+  - 12
+  - 13
+  evidence_excerpt: The Skewness of the distribution shows the bias of the distribution
+    towards over or under prediction. Our model is neutrally biased with a Skewness
+    very close to zero. The ANEMOS forecast is heavily negatively biased, meaning
+    that it is more likely to over predict the generation output than underpredict...
+    High Kurtosis for the ANEMOS forecast means that its more likely to deliver high
+    forecasting errors than our self-forecasting model.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 17/02/2021
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2021/02/advisian-wind-and-solar-forecasting-for-the-nem-report.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_final_report.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-27108
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Final Report
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Final Report
+    pdf_url: https://arena.gov.au/assets/2021/02/advisian-wind-and-solar-forecasting-for-the-nem-report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_final_report.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-27109
+  source_title: Advisian Wind & Solar Forecasting for the NEM Final Report
+  publish_date: '2021-02-17'
+  project_name: Wind & Solar Forecasting for the NEM
+  what_happened: Estimated annualised FCAS cost savings from the wind self-forecasting
+    algorithm were $45,000–$100,000 per year for a 100 MW wind facility, while savings
+    for the solar algorithm were only $5,000–$20,000 per year, reflecting the much
+    smaller accuracy improvement achieved at the solar farm. Savings were noted to
+    be potentially much larger during extreme pricing events.
+  lesson_learnt: The financial case for self-forecasting is substantially stronger
+    for wind than solar under current model capabilities — project developers should
+    quantify FCAS cost exposure when assessing the return on investment of deploying
+    self-forecasting, noting that benefits during extreme events may be materially
+    underestimated by average-based calculations.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id006
+  - 15
+  - 16
+  evidence_excerpt: Annualised savings are estimated between $45,000 to $100,000 per
+    year for the wind power forecasting algorithm, and $5,000 to $20,000 for the solar
+    power forecasting algorithm under 'normal' FCAS price ranges. Savings could easily
+    exceed these estimates, particularly during extreme pricing events such as the
+    South Australia separation incident in late January 2020.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 17/02/2021
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2021/02/advisian-wind-and-solar-forecasting-for-the-nem-report.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_final_report.md
+  source_page_pdf: 16
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-27109
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Final Report
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Final Report
+    pdf_url: https://arena.gov.au/assets/2021/02/advisian-wind-and-solar-forecasting-for-the-nem-report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_final_report.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-27110
+  source_title: Advisian Wind & Solar Forecasting for the NEM Final Report
+  publish_date: '2021-02-17'
+  project_name: Wind & Solar Forecasting for the NEM
+  what_happened: 'The project identified a fundamental tension in its objective: optimising
+    for forecast accuracy (the stated goal) may not be aligned with minimising individual
+    generator FCAS costs if the 4-second CPF performance measures work against frequency
+    support. The forecasting models did not incorporate frequency trend or inertia,
+    leaving open the question of whether a biased forecast could deliver better commercial
+    outcomes.'
+  lesson_learnt: Future self-forecasting projects should investigate whether incorporating
+    frequency direction and inertia into the model — to produce a strategically biased
+    forecast that aids power system frequency stability — would reduce FCAS costs
+    more effectively than pure accuracy optimisation; the project objective of 'accurate
+    forecast' and the commercial objective of 'lowest FCAS cost' may not be the same
+    thing.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id007
+  - 20
+  - 21
+  evidence_excerpt: Whilst this objective has been achieved there is a question as
+    to whether this is the right objective. Achieving an accurate forecast may not
+    necessarily support frequency stability in the NEM if the 4-second CPF performance
+    measures are working against frequency support. Further work is needed to investigate
+    how to integrate frequency direction and inertia into the model to develop a forecast
+    which aids power system frequency stability.
+  confidence_note: The issue_severity of 'minor' reflects that the project achieved
+    its stated objective but the design assumption about what objective to optimise
+    was later questioned — not a delivery failure per se.
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 17/02/2021
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2021/02/advisian-wind-and-solar-forecasting-for-the-nem-report.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_final_report.md
+  source_page_pdf: 22
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-27110
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Final Report
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Final Report
+    pdf_url: https://arena.gov.au/assets/2021/02/advisian-wind-and-solar-forecasting-for-the-nem-report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_final_report.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-27751
+  source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+    1
+  publish_date: 2019-10
+  project_name: Advisian Wind and Solar Forecasting for the NEM Project
+  what_happened: The ARENA contract took longer than expected to finalise, which in
+    turn delayed finalisation of subcontracts with partner organisations (Palisade
+    and Monash University), resulting in a late project start and requiring milestone
+    dates to be amended.
+  lesson_learnt: When multiple contracting parties are involved, build additional
+    time allowances into the project schedule for contracting delays — sequential
+    subcontract finalisation downstream of the ARENA contract can compound delays
+    and push out all downstream milestones.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: technology vendor
+  delay_category: approvals/regulatory
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: Milestone dates were amended to accommodate the late start caused
+    by contracting delays.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: other
+  source_pages: &id008
+  - 1
+  evidence_excerpt: Delays in finalising the ARENA contract and subsequent delays
+    in finalising the terms and conditions for partner subcontracts resulted in a
+    late start to the project which required milestone dates to amended.
+  confidence_note: delay_category set to approvals/regulatory as closest match to
+    contract finalisation delays; no specific duration stated so delay_magnitude is
+    not quantified.
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-and-solar-forecasting-for-the-nem-project-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2019/12/advisian-wind-solar-forecasting-for-nem-lessons-learnt.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_1.md
+  source_page_pdf: 1
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-27751
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt 1
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+      1
+    pdf_url: https://arena.gov.au/assets/2019/12/advisian-wind-solar-forecasting-for-nem-lessons-learnt.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-and-solar-forecasting-for-the-nem-project-lessons-learnt-1/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_1.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: schedule slippage
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-27753
+  source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+    1
+  publish_date: 2019-10
+  project_name: Advisian Wind and Solar Forecasting for the NEM Project
+  what_happened: Camera installation and commissioning at the solar farm was delayed
+    because the recently commissioned site was occupied with post-construction and
+    start-up activities that took priority over the forecasting project's equipment
+    work.
+  lesson_learnt: When deploying monitoring or forecasting equipment at a recently
+    commissioned generation site, coordinate installation timing with the site operations
+    team to avoid competing with post-construction and start-up activities that will
+    take scheduling priority.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id009
+  - 1
+  evidence_excerpt: The solar farm was only recently commissioned, and the site was
+    very busy with post construction and start-up activities. This meant that camera
+    installation and commissioning was delayed as other work took priority.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-and-solar-forecasting-for-the-nem-project-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2019/12/advisian-wind-solar-forecasting-for-nem-lessons-learnt.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_1.md
+  source_page_pdf: 1
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-27753
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt 1
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+      1
+    pdf_url: https://arena.gov.au/assets/2019/12/advisian-wind-solar-forecasting-for-nem-lessons-learnt.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-and-solar-forecasting-for-the-nem-project-lessons-learnt-1/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_1.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: schedule slippage
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-27754
+  source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+    1
+  publish_date: 2019-10
+  project_name: Advisian Wind and Solar Forecasting for the NEM Project
+  what_happened: SCADA data integration was required to incorporate generation site
+    data into forecasting models; the team worked with the Palisade instrument team
+    to identify a compatible integration method, and the Edge Device software natively
+    supported the chosen protocol.
+  lesson_learnt: Confirm SCADA system capabilities and integration protocols with
+    site operators before finalising forecasting system design — early engagement
+    with the generator operations team resolved a potential integration barrier without
+    project impact.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Worked with the Palisade instrument team to identify a suitable
+    SCADA integration method; Edge Device software natively supported the chosen protocol.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: other
+  source_pages: &id010
+  - 1
+  evidence_excerpt: Incorporation of the SCADA data into models requires integration
+    with the SCADA system. We were able to work with the Palisade instrument team
+    to identify a suitable method for SCADA data integration, and our Edge Device
+    software natively supports the integration protocol chosen.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-and-solar-forecasting-for-the-nem-project-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2019/12/advisian-wind-solar-forecasting-for-nem-lessons-learnt.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_1.md
+  source_page_pdf: 1
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-27754
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt 1
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+      1
+    pdf_url: https://arena.gov.au/assets/2019/12/advisian-wind-solar-forecasting-for-nem-lessons-learnt.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-and-solar-forecasting-for-the-nem-project-lessons-learnt-1/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_1.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+- record_id: ARENA-DLV-27756
+  source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+    1
+  publish_date: 2019-10
+  project_name: Advisian Wind and Solar Forecasting for the NEM Project
+  what_happened: The solar farm took longer to reach full operation than expected,
+    limiting the volume of data available for forecasting model development and analysis
+    despite allowances having been made in the project schedule.
+  lesson_learnt: When a forecasting or analytics project depends on data from a recently
+    commissioned generation asset, assess the site's operational readiness realistically
+    and build additional schedule contingency — commissioning delays at the generation
+    asset will directly constrain available training data.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id011
+  - 1
+  evidence_excerpt: As the solar farm is only recently commissioned, data for analysis
+    limited. Allowances were made for this in the project schedule, but the solar
+    farm took longer to be fully operational than expected which has impacted the
+    amount of data available for analysis.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-and-solar-forecasting-for-the-nem-project-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2019/12/advisian-wind-solar-forecasting-for-nem-lessons-learnt.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_1.md
+  source_page_pdf: 1
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-27756
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt 1
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+      1
+    pdf_url: https://arena.gov.au/assets/2019/12/advisian-wind-solar-forecasting-for-nem-lessons-learnt.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-and-solar-forecasting-for-the-nem-project-lessons-learnt-1/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_1.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-27757
+  source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+    1
+  publish_date: 2019-10
+  project_name: Advisian Wind and Solar Forecasting for the NEM Project
+  what_happened: Wind farm data exhibited high degrees of seasonality requiring more
+    complex modelling approaches, and the training datasets were large; together these
+    factors created substantial computational demands that could not be met within
+    reasonable timeframes on standard infrastructure.
+  lesson_learnt: Plan for scalable cloud-based computing resources when developing
+    wind forecasting models — high seasonality and large training datasets create
+    significant computational demands that standard infrastructure cannot meet within
+    project timelines.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: execution & logistics
+  intervention_note: Adopted cloud-hosted computing resources to scale the computing
+    platform as needed to support model iterations within acceptable timeframes.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id012
+  - 1
+  - 2
+  evidence_excerpt: These two factors together have a considerable impact on the computation
+    power needed to train models within a reasonable time frame. We have used cloud
+    hosted computing resources which allows us to scale our computing platform as
+    needed to support model iterations.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-and-solar-forecasting-for-the-nem-project-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2019/12/advisian-wind-solar-forecasting-for-nem-lessons-learnt.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_1.md
+  source_page_pdf: 1
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-27757
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt 1
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+      1
+    pdf_url: https://arena.gov.au/assets/2019/12/advisian-wind-solar-forecasting-for-nem-lessons-learnt.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-and-solar-forecasting-for-the-nem-project-lessons-learnt-1/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_1.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-27758
+  source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+    1
+  publish_date: 2019-10
+  project_name: Advisian Wind and Solar Forecasting for the NEM Project
+  what_happened: Exogenous variables including AEMO dispatch constraints and maintenance
+    outages artificially suppressed wind farm power output, requiring those periods
+    to be removed from the model training dataset, resulting in data gaps that may
+    reduce model accuracy.
+  lesson_learnt: Identify and filter exogenous variables (such as network constraints
+    and maintenance outages) that artificially suppress generation output before training
+    forecasting models — failure to do so will corrupt training data, but removal
+    creates gaps; plan for periodic model retraining in production to recover accuracy
+    incrementally.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: Removed periods of artificially suppressed output from the training
+    dataset and planned for periodic model retraining post-production to achieve incremental
+    accuracy improvements.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id013
+  - 2
+  evidence_excerpt: Exogenous variables such as AEMO constraints and maintenance outages
+    can cause power output to be artificially suppressed and these periods had to
+    be removed from the dataset used to train the model. This results in time periods
+    where data is unavailable for model training which may have a detrimental impact
+    on model accuracy.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-and-solar-forecasting-for-the-nem-project-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2019/12/advisian-wind-solar-forecasting-for-nem-lessons-learnt.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_1.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-27758
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt 1
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+      1
+    pdf_url: https://arena.gov.au/assets/2019/12/advisian-wind-solar-forecasting-for-nem-lessons-learnt.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-and-solar-forecasting-for-the-nem-project-lessons-learnt-1/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_1.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-27759
+  source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+    1
+  publish_date: 2019-10
+  project_name: Advisian Wind and Solar Forecasting for the NEM Project
+  what_happened: The target wind farm contained two different Vestas turbine variants,
+    raising the possibility that model performance differed significantly across turbine
+    types and potentially requiring the development of separate models for each variant.
+  lesson_learnt: Before scoping wind forecasting model development, confirm whether
+    a wind farm contains multiple turbine variants — heterogeneous turbine fleets
+    may require separate models, increasing development effort and complexity beyond
+    what a single-model approach assumes.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Evaluated performance differences across turbine variants at
+    the aggregated wind farm level to determine whether separate models were required.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id014
+  - 2
+  evidence_excerpt: The target wind farm has two different Vestas wind turbines. We
+    are evaluating whether there are significant differences in the performance of
+    our models across the two wind turbine variants when aggregated across the overall
+    wind farm. This may require us to develop separate models depending on results.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-and-solar-forecasting-for-the-nem-project-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2019/12/advisian-wind-solar-forecasting-for-nem-lessons-learnt.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_1.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-27759
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt 1
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+      1
+    pdf_url: https://arena.gov.au/assets/2019/12/advisian-wind-solar-forecasting-for-nem-lessons-learnt.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-and-solar-forecasting-for-the-nem-project-lessons-learnt-1/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_1.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-27760
+  source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+    1
+  publish_date: 2019-10
+  project_name: Advisian Wind and Solar Forecasting for the NEM Project
+  what_happened: The team encountered persistent difficulties accessing the AEMO API
+    portal for downloading reference documents and files, with team members located
+    outside Australia unable to access the portal for an extended period.
+  lesson_learnt: Investigate and resolve AEMO API portal accessibility issues — particularly
+    for internationally located team members — before project commencement, as prolonged
+    access failures can block data-dependent workstreams.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: other
+  source_pages: &id015
+  - 2
+  evidence_excerpt: We encountered difficulties in gaining access to the API portal
+    for download of the API reference documents and files. For a long period of time
+    we were able to access the portal and have encountered problems with team members
+    who are accessing the portal form outside of Australia.
+  confidence_note: The excerpt contains an apparent typo ('were able' likely should
+    read 'were unable'); interpreted in context as persistent access difficulties.
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-and-solar-forecasting-for-the-nem-project-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2019/12/advisian-wind-solar-forecasting-for-nem-lessons-learnt.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_1.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-27760
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt 1
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+      1
+    pdf_url: https://arena.gov.au/assets/2019/12/advisian-wind-solar-forecasting-for-nem-lessons-learnt.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-and-solar-forecasting-for-the-nem-project-lessons-learnt-1/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_1.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-27761
+  source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+    1
+  publish_date: 2019-10
+  project_name: Advisian Wind and Solar Forecasting for the NEM Project
+  what_happened: Weekly cross-organisational meetings between Advisian, Palisade and
+    Monash team members across multiple locations proved highly effective at maintaining
+    project momentum and resolving issues quickly, with Palisade's operational input
+    being essential for interpreting raw data.
+  lesson_learnt: Establish regular structured collaboration meetings across all partner
+    organisations from project outset — in geographically distributed multi-party
+    teams, weekly reviews maintain momentum, enable rapid issue resolution, and ensure
+    operational context from site partners informs model development.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: other
+  source_pages: &id016
+  - 2
+  evidence_excerpt: Weekly meetings between Advisian, Palisades and Monash project
+    team members have proven to be extremely valuable. With a team spread over multiple
+    locations the regular project review meetings allows us to maintain momentum and
+    quickly address issues as they arise. Input from Palisades has been essential
+    to interpret the raw data and understand the current operation of the network.
+  confidence_note: lifecycle_phase set to operations as the insight relates to ongoing
+    project management practice rather than a discrete phase event.
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-and-solar-forecasting-for-the-nem-project-lessons-learnt-1/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 9/12/2019
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2019/12/advisian-wind-solar-forecasting-for-nem-lessons-learnt.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_1.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-27761
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt 1
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+      1
+    pdf_url: https://arena.gov.au/assets/2019/12/advisian-wind-solar-forecasting-for-nem-lessons-learnt.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-and-solar-forecasting-for-the-nem-project-lessons-learnt-1/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_1.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+- record_id: ARENA-DLV-66701
+  source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+    2
+  publish_date: '2020-04-30'
+  project_name: Advisian Wind and Solar Forecasting for the NEM Project
+  what_happened: Integration with site SCADA systems required specialist support from
+    SCADA engineers to connect data into the Edge Gateway software. In some cases,
+    site hardware or software upgrades were needed, adding cost and deployment lead
+    time for asset owners.
+  lesson_learnt: Plan for SCADA integration effort early — it requires specialist
+    SCADA engineers and may necessitate hardware or software upgrades at the site,
+    creating additional cost and schedule risk for asset owners. Customers should
+    be made aware of this upfront.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: Engaged specialist SCADA engineers to complete the integration
+    and, where required, upgraded site hardware/software.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id017
+  - 1
+  evidence_excerpt: Integration with Site SCADA systems requires specialist support
+    from SCADA engineers to connect data into the Edge Gateway software. In some instances,
+    depending on the site configurations it may require upgrade of the site hardware/software
+    the project cost for the asset owner and the deployment lead time.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem-project-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2020/07/advisian-wind-solar-forecasting-for-nem-lessons-learnt-2.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_2.md
+  source_page_pdf: 1
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-66701
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt 2
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+      2
+    pdf_url: https://arena.gov.au/assets/2020/07/advisian-wind-solar-forecasting-for-nem-lessons-learnt-2.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem-project-lessons-learnt-2/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_2.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-66702
+  source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+    2
+  publish_date: '2020-04-30'
+  project_name: Advisian Wind and Solar Forecasting for the NEM Project
+  what_happened: An hour-long offset error was discovered between AEMO power values
+    and SCADA wind power values in early wind forecasting models because AEMO, the
+    SCADA system, and the Edge Gateway all operated in different time zones, requiring
+    debugging effort to resolve.
+  lesson_learnt: Explicitly align and normalise time zones across all data sources
+    (AEMO, SCADA, Edge Gateway) before deploying a forecasting model — mismatched
+    time zones produced a systematic one-hour offset in early models that consumed
+    significant debugging time.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: Trended early model outputs and compared them against SCADA data
+    to identify and correct the one-hour time zone offset.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id018
+  - 1
+  evidence_excerpt: Trending of our early models found an hour offset between the
+    AEMO power values and SCADA wind power values which took time to debug.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem-project-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2020/07/advisian-wind-solar-forecasting-for-nem-lessons-learnt-2.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_2.md
+  source_page_pdf: 1
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-66702
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt 2
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+      2
+    pdf_url: https://arena.gov.au/assets/2020/07/advisian-wind-solar-forecasting-for-nem-lessons-learnt-2.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem-project-lessons-learnt-2/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_2.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-66703
+  source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+    2
+  publish_date: '2020-04-30'
+  project_name: Advisian Wind and Solar Forecasting for the NEM Project
+  what_happened: Misalignment in units of measure between model input variables and
+    values received from SCADA (e.g. kW vs MW) caused erroneous forecasts that required
+    debugging over multiple monitoring periods.
+  lesson_learnt: Validate units of measure for all SCADA input variables before model
+    deployment — a mismatch (e.g. kW vs MW) will produce silently erroneous forecasts
+    that can take hours of comparative monitoring to identify and fix.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated integration
+  intervention_note: Monitored model inputs and outputs over approximately 3-hour
+    periods and compared them with recent SCADA data to identify and correct the unit
+    mismatch.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: wind
+  source_pages: &id019
+  - 1
+  evidence_excerpt: Misalignment in Units of Measure used for input variables in the
+    model vs those received from SCADA caused erroneous forecasts which needed to
+    be debugged. (Eg kW vs MW). These problems were solved after monitoring the input
+    and outputs of the model over different time periods (approximately 3 hours) and
+    comparing them with recent SCADA data.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem-project-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2020/07/advisian-wind-solar-forecasting-for-nem-lessons-learnt-2.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_2.md
+  source_page_pdf: 1
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-66703
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt 2
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+      2
+    pdf_url: https://arena.gov.au/assets/2020/07/advisian-wind-solar-forecasting-for-nem-lessons-learnt-2.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem-project-lessons-learnt-2/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_2.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-66704
+  source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+    2
+  publish_date: '2020-04-30'
+  project_name: Advisian Wind and Solar Forecasting for the NEM Project
+  what_happened: Wind farm operating constraints meant wind power data could not be
+    used as a model input during constrained periods, degrading forecast accuracy
+    unless a parallel model using external meteorological inputs was developed and
+    switched to automatically.
+  lesson_learnt: Design wind forecasting algorithms with a parallel constraint-aware
+    model — when the wind farm is curtailed, switching to a model driven by wind speed
+    and direction rather than power output is essential for delivering accurate forecasts
+    when constraints are lifted.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Developed two parallel models — one using wind power during unconstrained
+    periods and one using external wind speed/direction inputs during constrained
+    periods — with automatic switching logic.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id020
+  - 1
+  evidence_excerpt: During periods where the wind farm is operating under constraint,
+    the wind power cannot be used as an input to the model. As such we have developed
+    two models, one using Wind Power and during non-constrained periods and the other
+    which relies on external factors such as wind speed and direction. These two models
+    run in parallel and the algorithm switches between models depending on whether
+    a constraint is active.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem-project-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2020/07/advisian-wind-solar-forecasting-for-nem-lessons-learnt-2.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_2.md
+  source_page_pdf: 1
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-66704
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt 2
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+      2
+    pdf_url: https://arena.gov.au/assets/2020/07/advisian-wind-solar-forecasting-for-nem-lessons-learnt-2.pdf
+    source_pages: *id020
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem-project-lessons-learnt-2/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_2.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-66705
+  source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+    2
+  publish_date: '2020-04-30'
+  project_name: Advisian Wind and Solar Forecasting for the NEM Project
+  what_happened: Sky cameras for solar forecasting were ordered with filters tested
+    for UK daylight conditions; upon commissioning in Australia the images were overexposed
+    due to much higher solar brightness, requiring new lens filters to be ordered.
+    Delivery of replacement filters was significantly delayed due to COVID-19.
+  lesson_learnt: When sourcing sky cameras for solar forecasting in Australia, do
+    not rely on filter specifications validated in lower-irradiance environments such
+    as the UK — test under representative Australian solar conditions before procurement
+    to avoid costly and time-consuming filter replacements.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: procurement/supply chain
+  failure_mode: unvalidated technical assumptions
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: execution & logistics
+  intervention_note: Ordered new lens filters appropriate for Australian solar brightness
+    conditions; delivery was delayed by COVID-19 supply chain disruption.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages:
+  - 2
+  evidence_excerpt: The cameras were ordered with filters for use in daylight hours
+    and this was tested in the UK prior to delivery. During commissioning we found
+    that the images captured were over exposed due to the much higher brightness of
+    the sky in Australia. As such we have had to order new lens filters which were
+    significantly delayed due to COVID-19.
+  confidence_note: Canonical record merged from 2 source records across 1 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem-project-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2020/07/advisian-wind-solar-forecasting-for-nem-lessons-learnt-2.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_2.md
+  source_page_pdf: 2
+  corroboration_count: 2
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-66705
+  - ARENA-DLV-66706
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt 2
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+      2
+    pdf_url: https://arena.gov.au/assets/2020/07/advisian-wind-solar-forecasting-for-nem-lessons-learnt-2.pdf
+    source_pages:
+    - 2
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem-project-lessons-learnt-2/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_2.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-66707
+  source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+    2
+  publish_date: '2020-04-30'
+  project_name: Advisian Wind and Solar Forecasting for the NEM Project
+  what_happened: The AEMO API documentation contained technical errors and lacked
+    business process information, including incorrect header naming conventions and
+    inconsistent authentication guidance, causing integration delays.
+  lesson_learnt: When integrating with the AEMO API, independently verify all header
+    names, authentication methods, and case-sensitive fields against a working implementation
+    — the published documentation contained errors (e.g. 'BasicAuth' vs standard 'Authorization'
+    header, incorrect 'Content-type' casing) that would cause silent failures if followed
+    literally.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: Identified errors through testing and worked around incorrect
+    documentation; recommended AEMO provide corrected documentation including example
+    key structures.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id021
+  - 2
+  - 3
+  evidence_excerpt: We found that the AEMO API documentation contained some technical
+    errors and is also lacking business process information. The example below indicates
+    that 'BasicAuth' should be used as a custom header value in the POST, although
+    later there is mention of 'BASIC Authentication details' which would indicate
+    the usual Authorization header with BASIC should be used. Likewise 'Content-type'
+    should be 'Content-Type' (they specifically indicate that these are case sensitive).
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem-project-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2020/07/advisian-wind-solar-forecasting-for-nem-lessons-learnt-2.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_2.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-66707
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt 2
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+      2
+    pdf_url: https://arena.gov.au/assets/2020/07/advisian-wind-solar-forecasting-for-nem-lessons-learnt-2.pdf
+    source_pages: *id021
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem-project-lessons-learnt-2/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_2.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-66708
+  source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+    2
+  publish_date: '2020-04-30'
+  project_name: Advisian Wind and Solar Forecasting for the NEM Project
+  what_happened: When using the Azure Event Hub to connect with the AEMO API, failure
+    to checkpoint data during processing could require reprocessing over one million
+    events, making it impossible to submit new forecast values within the required
+    5-minute window.
+  lesson_learnt: When using Azure Event Hub for AEMO API integration, implement data
+    checkpointing during processing to avoid needing to reprocess up to 1 million+
+    unexpired events — without this, the system cannot meet the 5-minute forecast
+    submission window under failure recovery conditions.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Implemented data checkpointing during Event Hub processing to
+    eliminate the need to reprocess previous events and ensure new forecast submissions
+    met the 5-minute window requirement.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id022
+  - 2
+  evidence_excerpt: When using an Azure Event Hub, you must checkpoint the data during
+    processing to remove the need to reprocess previous events. This is because the
+    time taken to reprocess from the start of unexpired Events on the Event Hub exceeds
+    the requirement of being able to send any new 'prediction' event values to the
+    AEMO API within the applicable 5 minute window.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem-project-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2020/07/advisian-wind-solar-forecasting-for-nem-lessons-learnt-2.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_2.md
+  source_page_pdf: 2
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-66708
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt 2
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+      2
+    pdf_url: https://arena.gov.au/assets/2020/07/advisian-wind-solar-forecasting-for-nem-lessons-learnt-2.pdf
+    source_pages: *id022
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem-project-lessons-learnt-2/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_2.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-66709
+  source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+    2
+  publish_date: '2020-04-30'
+  project_name: Advisian Wind and Solar Forecasting for the NEM Project
+  what_happened: The AEMO API only accepted UTC+10 (AEST) as a valid time zone, despite
+    the API documentation implying other time zones might be accepted, creating an
+    integration constraint for operators in other time zones.
+  lesson_learnt: When submitting forecasts to the AEMO API, hardcode the time zone
+    to UTC+10 (AEST) — the API rejects all other time zone values regardless of what
+    the documentation implies, and this must be accounted for in systems operating
+    across different time zones.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id023
+  - 3
+  evidence_excerpt: AEMO API requires time zone to be specified, however we found
+    that any time zone other than UTC +10 (AEST) was invalid.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem-project-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2020/07/advisian-wind-solar-forecasting-for-nem-lessons-learnt-2.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_2.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-66709
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt 2
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+      2
+    pdf_url: https://arena.gov.au/assets/2020/07/advisian-wind-solar-forecasting-for-nem-lessons-learnt-2.pdf
+    source_pages: *id023
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem-project-lessons-learnt-2/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_2.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-66710
+  source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+    2
+  publish_date: '2020-04-30'
+  project_name: Advisian Wind and Solar Forecasting for the NEM Project
+  what_happened: The AEMO API rejected forecast submissions that exceeded the integer-rounded-down
+    maximum capacity value — for example, Waterloo Wind Farm's rated capacity of 130.8
+    MW was stored as 130 MW, causing rejection of any submission between 130 and 130.8
+    MW.
+  lesson_learnt: When submitting forecasts to the AEMO API, cap maximum forecast values
+    at the integer floor of the registered capacity — the API stores maximum capacity
+    as an integer rounded down and will reject any submission exceeding this value,
+    even if it is within the actual rated capacity.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id024
+  - 3
+  evidence_excerpt: When submitting a forecast to the AEMO API, it must be between
+    0 and the capacity of the entity; however, the maximum capacity is stored as an
+    integer and always rounded down. For example, Waterloo Wind Farm has a rated capacity
+    of 130.8 MW and therefore a max capacity forecast should not exceed 130 MW else
+    if will be rejected by AEMO.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem-project-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2020/07/advisian-wind-solar-forecasting-for-nem-lessons-learnt-2.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_2.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-66710
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt 2
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+      2
+    pdf_url: https://arena.gov.au/assets/2020/07/advisian-wind-solar-forecasting-for-nem-lessons-learnt-2.pdf
+    source_pages: *id024
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem-project-lessons-learnt-2/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_2.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-66711
+  source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+    2
+  publish_date: '2020-04-30'
+  project_name: Advisian Wind and Solar Forecasting for the NEM Project
+  what_happened: Self-forecasting under the AEMO framework requires ongoing active
+    management by the project owner, including maintaining MSATS access, validating
+    SCADA signals, and continuously monitoring forecast performance to avoid suspension
+    if forecasts underperform AWEFS.
+  lesson_learnt: Self-forecasting is not a set-and-forget solution — project owners
+    must actively maintain MSATS access, verify SCADA signal integrity, and monitor
+    forecast accuracy in real time, as sustained underperformance relative to AWEFS
+    risks forecast suspension by AEMO.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: Advisian deployed a user interface based on the Arundo Marathon
+    platform to support real-time monitoring of model performance against live AEMO
+    SCADA MW data.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id025
+  - 3
+  - 4
+  evidence_excerpt: Self-forecasting is not a 'set and forget' process - a project
+    owner is required by both the site asset manager and forecast provider to ensure
+    MSATS access remains valid, SCADA signals are correct, and to analyse performance
+    for ongoing optimisation and improvement of the forecast.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem-project-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2020/07/advisian-wind-solar-forecasting-for-nem-lessons-learnt-2.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_2.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-66711
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt 2
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+      2
+    pdf_url: https://arena.gov.au/assets/2020/07/advisian-wind-solar-forecasting-for-nem-lessons-learnt-2.pdf
+    source_pages: *id025
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem-project-lessons-learnt-2/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_2.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-66712
+  source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+    2
+  publish_date: '2020-04-30'
+  project_name: Advisian Wind and Solar Forecasting for the NEM Project
+  what_happened: Following model deployment, forecasting models required periodic
+    retraining or code adjustments, particularly during the early post-deployment
+    phase, creating an ongoing need for ad hoc technical support from the model developer.
+  lesson_learnt: Budget for at least one year of ad hoc technical support from the
+    forecasting model developer after deployment — models will likely need retraining
+    or code adjustments during the early operational phase as real-world performance
+    diverges from design assumptions.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: wind
+  source_pages: &id026
+  - 4
+  evidence_excerpt: Depending on performance, the forecasting models may need to be
+    periodically enhanced either through retraining or adjustments in the model code
+    especially during the early phase post model deployment. This will require ad
+    hoc technical support from the model developer over the first year of operation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem-project-lessons-learnt-2/
+  project_page_url: https://arena.gov.au/projects/advanced-short-term-power-generation/
+  kb_category: Solar energy, Wind energy
+  kb_publish_date: 5/04/2020
+  kb_year: '2018'
+  kb_associated_project: Application of Advanced Short Term Power Generation Forecasting
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $499k
+  total_project_value: $999k
+  lead_organisation: Advisian Pty Ltd
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/11/2018
+  location: Queensland
+  project_partners: Monash University, Palisade Investment Partners Limited
+  pdf_url: https://arena.gov.au/assets/2020/07/advisian-wind-solar-forecasting-for-nem-lessons-learnt-2.pdf
+  markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_2.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-66712
+  contributing_source_titles:
+  - Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt 2
+  contributing_sources:
+  - source_title: Advisian Wind & Solar Forecasting for the NEM Project Lessons Learnt
+      2
+    pdf_url: https://arena.gov.au/assets/2020/07/advisian-wind-solar-forecasting-for-nem-lessons-learnt-2.pdf
+    source_pages: *id026
+    source_url: https://arena.gov.au/knowledge-bank/advisian-wind-solar-forecasting-for-the-nem-project-lessons-learnt-2/
+    markdown_filename: advisian_wind_solar_forecasting_for_the_nem_project_lessons_learnt_2.md
+  arena_category:
+  - Solar PV
+  - Wind
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78

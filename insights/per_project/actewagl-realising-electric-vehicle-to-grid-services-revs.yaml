@@ -1,0 +1,68 @@
+- record_id: ARENA-DLV-53897
+  source_title: Demand Flexibility Portfolio Retrospective Analysis Report
+  publish_date: 2023-07
+  project_name: ActewAGL Realising Electric Vehicle-to-Grid Services (REVS)
+  what_happened: ActewAGL's REVS trial found that reactive power management and peak
+    shaving could not be tested because they were not yet implemented in the JET Charge
+    controller software, and reactive power was not tested due to lack of firmware
+    support — limiting the range of grid services that could be demonstrated within
+    the trial period.
+  lesson_learnt: EV grid integration projects should conduct detailed firmware and
+    software capability assessments of all hardware vendors before finalising the
+    trial scope; committing to grid service demonstrations (reactive power, peak shaving,
+    voltage management) that depend on vendor software readiness creates a risk of
+    key trial objectives being unachievable within the project timeframe.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated technical assumptions
+  outcome_class: partial success
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages:
+  - 18
+  - 23
+  evidence_excerpt: Reactive power has not been tested due to a lack of firmware support
+    with chargers, while peak shaving and voltage management was not tested as they
+    are not yet able to be implemented by the controller.
+  confidence_note: 'project_type reconciled to ''DER/customer-side'' from: DER/customer-side
+    (36/49), transport electrification (12/49), industrial decarbonisation (1/49)'
+  source_url: https://arena.gov.au/knowledge-bank/demand-flexibility-portfolio-retrospective-analysis-report/
+  project_page_url: null
+  kb_category: Demand response
+  kb_publish_date: 25/07/2023
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2023/07/demand-flexibility-portfolio-retrospective-analysis-report.pdf
+  markdown_filename: demand_flexibility_portfolio_retrospective_analysis_report.md
+  source_page_pdf: 18
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53897
+  contributing_source_titles:
+  - Demand Flexibility Portfolio Retrospective Analysis Report
+  arena_category:
+  - Demand response
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.88

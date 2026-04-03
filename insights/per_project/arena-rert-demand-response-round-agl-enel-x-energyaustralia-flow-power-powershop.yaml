@@ -1,0 +1,75 @@
+- record_id: ARENA-DLV-53861
+  source_title: Demand Flexibility Portfolio Retrospective Analysis Report
+  publish_date: 2023-07
+  project_name: ARENA RERT Demand Response Round (AGL, Enel X, EnergyAustralia, Flow
+    Power, Powershop, Zen Ecosystems)
+  what_happened: Customers enrolled in 'critical peak' network tariffs with Ausnet
+    in Victoria could not participate in RERT because reducing demand for a network
+    event lowered their intra-day RERT baseline calculation, removing the financial
+    incentive to respond; separately, uncertainty about AEMO's interpretation of dual
+    RERT/FCAS eligibility led aggregators to prioritise one value stream over the
+    other.
+  lesson_learnt: Conflicts between value streams (RERT vs. network critical peak tariffs;
+    RERT vs. FCAS) can effectively exclude significant portions of a customer portfolio
+    from participating in one or more streams; program designers must map regulatory
+    interactions between value streams before recruiting customers and seek explicit
+    written clarification from AEMO on dual-registration eligibility.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: 'A protocol was developed (via the Tesla/AEMO collaboration)
+    for the FCAS/wholesale conflict: wholesale price signals were prioritised when
+    frequency was within normal band, and FCAS response was prioritised otherwise.
+    No equivalent resolution was achieved for RERT/network tariff conflicts.'
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: demand response
+  source_pages:
+  - 19
+  evidence_excerpt: Participants in the RERT funding round reported that customers
+    already on 'critical peak' network tariffs with Ausnet (Victoria) did not participate
+    in RERT because they would face financial penalties even if they missed just 1
+    or 2 events… There was also uncertainty about AEMO's interpretation of dual participation
+    which led aggregators and businesses to prioritise network demand response participation
+    ahead of RERT.
+  confidence_note: 'project_scale_band reconciled to ''demonstration'' from: demonstration
+    (36/49), programmatic/portfolio-level (13/49)'
+  source_url: https://arena.gov.au/knowledge-bank/demand-flexibility-portfolio-retrospective-analysis-report/
+  project_page_url: null
+  kb_category: Demand response
+  kb_publish_date: 25/07/2023
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2023/07/demand-flexibility-portfolio-retrospective-analysis-report.pdf
+  markdown_filename: demand_flexibility_portfolio_retrospective_analysis_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53861
+  contributing_source_titles:
+  - Demand Flexibility Portfolio Retrospective Analysis Report
+  arena_category:
+  - Demand response
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.92

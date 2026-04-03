@@ -1,0 +1,781 @@
+- record_id: ARENA-DLV-53551
+  source_title: Forecasting and Characterising Grid Connected Solar Energy and Developing
+    Synergies with Wind - Project results and lessons learnt
+  publish_date: '2015'
+  project_name: Forecasting and Characterising Grid Connected Solar Energy and Developing
+    Synergies with Wind
+  what_happened: A multi-institution research collaboration (UNSW, University of South
+    Australia, Bureau of Meteorology, Australian PV Association, and Epuron) developed
+    solar and wind forecasting tools across three research stages from 2011 to 2015,
+    delivering site assessment metrics, numerical and statistical forecasting models,
+    and analysis of solar-wind synergies for grid integration.
+  lesson_learnt: Collaborative research projects that span forecasting, meteorology,
+    statistics, renewable integration, and market mechanisms achieve broader and more
+    practically applicable outcomes than single-discipline efforts — assemble teams
+    with complementary expertise when tackling multi-faceted energy system challenges.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id001
+  - 23
+  - 24
+  evidence_excerpt: The key collaborators covered a range of expertise in forecasting,
+    weather models, statistics, integration of renewables and market mechanisms. This
+    ensured a clear link of development between the weather and solar and wind resource,
+    siting and implications to large scale and distributed technology, as well as
+    the network and market mechanisms associated with integration of solar technologies.
+  confidence_note: publish_date is 2015 based on completion date stated on cover page;
+    no specific month available.
+  source_url: https://arena.gov.au/knowledge-bank/characterising-and-forecasting-grid-connected-solar-energy/
+  project_page_url: https://arena.gov.au/projects/characterising-and-forecasting-grid-connected-solar-energy/
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2016
+  kb_year: '2011'
+  kb_associated_project: Characterising and Forecasting Grid Connected Solar Energy
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $470k
+  total_project_value: $832k
+  lead_organisation: University of NSW
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 01/04/2011
+  location: New South Wales
+  project_partners: University of South Australia, Australian Photovoltaic Association,
+    Epuron and Australian Bureau of Meteorology
+  pdf_url: https://arena.gov.au/assets/2016/03/Forecasting-and-Characterising-Grid-Connected-Solar-Energy-Final-Report.pdf
+  markdown_filename: characterising_and_forecasting_grid_connected_solar_energy.md
+  source_page_pdf: 23
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53551
+  contributing_source_titles:
+  - Forecasting and Characterising Grid Connected Solar Energy and Developing Synergies
+    with Wind - Project results and lessons learnt
+  contributing_sources:
+  - source_title: Forecasting and Characterising Grid Connected Solar Energy and Developing
+      Synergies with Wind - Project results and lessons learnt
+    pdf_url: https://arena.gov.au/assets/2016/03/Forecasting-and-Characterising-Grid-Connected-Solar-Energy-Final-Report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/characterising-and-forecasting-grid-connected-solar-energy/
+    markdown_filename: characterising_and_forecasting_grid_connected_solar_energy.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-53552
+  source_title: Forecasting and Characterising Grid Connected Solar Energy and Developing
+    Synergies with Wind - Project results and lessons learnt
+  publish_date: '2015'
+  project_name: Forecasting and Characterising Grid Connected Solar Energy and Developing
+    Synergies with Wind
+  what_happened: Numerical Weather Prediction modelling using TAPM found that a 45
+    km spatial resolution produced the lowest RMSE for solar irradiance forecasting,
+    and that increasing resolution to finer scales did not improve — and sometimes
+    degraded — forecast accuracy.
+  lesson_learnt: When configuring NWP models for solar irradiance forecasting, coarser
+    resolutions (around 45 km) can outperform finer resolutions; do not assume higher
+    spatial resolution improves forecast skill — validate performance across resolution
+    settings before operational deployment.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Applied a regression-based correction to the 45 km GHI output
+    for clear-sky errors, reducing RMSE by up to 16%, MAE by up to 26%, and MBE by
+    up to 84%.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id002
+  - 10
+  - 21
+  evidence_excerpt: The results revealed that a resolution of 45 km had the lowest
+    Root Mean Square Error (RMSE)... This means that variations on scales less than
+    45 km cannot be captured by the model properly.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/characterising-and-forecasting-grid-connected-solar-energy/
+  project_page_url: https://arena.gov.au/projects/characterising-and-forecasting-grid-connected-solar-energy/
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2016
+  kb_year: '2011'
+  kb_associated_project: Characterising and Forecasting Grid Connected Solar Energy
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $470k
+  total_project_value: $832k
+  lead_organisation: University of NSW
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 01/04/2011
+  location: New South Wales
+  project_partners: University of South Australia, Australian Photovoltaic Association,
+    Epuron and Australian Bureau of Meteorology
+  pdf_url: https://arena.gov.au/assets/2016/03/Forecasting-and-Characterising-Grid-Connected-Solar-Energy-Final-Report.pdf
+  markdown_filename: characterising_and_forecasting_grid_connected_solar_energy.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53552
+  contributing_source_titles:
+  - Forecasting and Characterising Grid Connected Solar Energy and Developing Synergies
+    with Wind - Project results and lessons learnt
+  contributing_sources:
+  - source_title: Forecasting and Characterising Grid Connected Solar Energy and Developing
+      Synergies with Wind - Project results and lessons learnt
+    pdf_url: https://arena.gov.au/assets/2016/03/Forecasting-and-Characterising-Grid-Connected-Solar-Energy-Final-Report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/characterising-and-forecasting-grid-connected-solar-energy/
+    markdown_filename: characterising_and_forecasting_grid_connected_solar_energy.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-53553
+  source_title: Forecasting and Characterising Grid Connected Solar Energy and Developing
+    Synergies with Wind - Project results and lessons learnt
+  publish_date: '2015'
+  project_name: Forecasting and Characterising Grid Connected Solar Energy and Developing
+    Synergies with Wind
+  what_happened: During cloudy conditions, RMSE for TAPM solar irradiance forecasts
+    increased by approximately 300% compared to clear-sky conditions, driven primarily
+    by misrepresentation of clouds including deep low-pressure systems, cold fronts,
+    easterly troughs, and cloud bands.
+  lesson_learnt: Solar irradiance forecasting models exhibit severely degraded accuracy
+    under cloudy and frontal conditions — forecasting systems deployed for operational
+    grid management must explicitly account for model skill collapse during high-cloud
+    events and should apply cloud-specific corrections or ensemble approaches.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id003
+  - 10
+  evidence_excerpt: During cloudy conditions, the RMSE could increase by around 300%
+    compared to clear-sky conditions for both lower and higher resolutions. Therefore,
+    most of the large errors that occur during cloudy conditions are associated with
+    the misrepresentation of clouds in the model, in particular during deep low-pressure
+    systems, passage of cold fronts, Easterly troughs, cloud bands.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/characterising-and-forecasting-grid-connected-solar-energy/
+  project_page_url: https://arena.gov.au/projects/characterising-and-forecasting-grid-connected-solar-energy/
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2016
+  kb_year: '2011'
+  kb_associated_project: Characterising and Forecasting Grid Connected Solar Energy
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $470k
+  total_project_value: $832k
+  lead_organisation: University of NSW
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 01/04/2011
+  location: New South Wales
+  project_partners: University of South Australia, Australian Photovoltaic Association,
+    Epuron and Australian Bureau of Meteorology
+  pdf_url: https://arena.gov.au/assets/2016/03/Forecasting-and-Characterising-Grid-Connected-Solar-Energy-Final-Report.pdf
+  markdown_filename: characterising_and_forecasting_grid_connected_solar_energy.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53553
+  contributing_source_titles:
+  - Forecasting and Characterising Grid Connected Solar Energy and Developing Synergies
+    with Wind - Project results and lessons learnt
+  contributing_sources:
+  - source_title: Forecasting and Characterising Grid Connected Solar Energy and Developing
+      Synergies with Wind - Project results and lessons learnt
+    pdf_url: https://arena.gov.au/assets/2016/03/Forecasting-and-Characterising-Grid-Connected-Solar-Energy-Final-Report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/characterising-and-forecasting-grid-connected-solar-energy/
+    markdown_filename: characterising_and_forecasting_grid_connected_solar_energy.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-53554
+  source_title: Forecasting and Characterising Grid Connected Solar Energy and Developing
+    Synergies with Wind - Project results and lessons learnt
+  publish_date: '2015'
+  project_name: Forecasting and Characterising Grid Connected Solar Energy and Developing
+    Synergies with Wind
+  what_happened: The WRF model underestimated the spatial extent of clouds over Victoria,
+    New South Wales, and South Australia during a storm event, and increasing spatial
+    resolution increased RMSE by 5–13% for GHI and 7% for DNI rather than improving
+    accuracy.
+  lesson_learnt: WRF's cloud representation limitations mean higher spatial resolution
+    does not reliably improve solar irradiance forecast accuracy; practitioners should
+    test WRF performance on extreme weather events before relying on it for operational
+    solar forecasting, and prefer TAPM for GHI accuracy while using WRF when DNI forecasting
+    is required.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: WRF was identified as the preferred model when DNI forecasting
+    was required (important for CST applications), despite its weaker GHI performance
+    relative to TAPM.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id004
+  - 11
+  evidence_excerpt: WRF underestimated the spatial extent of clouds over Victoria,
+    New South Wales and South Australia... An increase in spatial resolution did not
+    improve the performance of the model and increased the RMSE by 5% and 7% for GHI
+    and DNI respectively during clear sky and by a maximum of 13% (GHI) and 7% (DNI)
+    during cloudy conditions.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/characterising-and-forecasting-grid-connected-solar-energy/
+  project_page_url: https://arena.gov.au/projects/characterising-and-forecasting-grid-connected-solar-energy/
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2016
+  kb_year: '2011'
+  kb_associated_project: Characterising and Forecasting Grid Connected Solar Energy
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $470k
+  total_project_value: $832k
+  lead_organisation: University of NSW
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 01/04/2011
+  location: New South Wales
+  project_partners: University of South Australia, Australian Photovoltaic Association,
+    Epuron and Australian Bureau of Meteorology
+  pdf_url: https://arena.gov.au/assets/2016/03/Forecasting-and-Characterising-Grid-Connected-Solar-Energy-Final-Report.pdf
+  markdown_filename: characterising_and_forecasting_grid_connected_solar_energy.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53554
+  contributing_source_titles:
+  - Forecasting and Characterising Grid Connected Solar Energy and Developing Synergies
+    with Wind - Project results and lessons learnt
+  contributing_sources:
+  - source_title: Forecasting and Characterising Grid Connected Solar Energy and Developing
+      Synergies with Wind - Project results and lessons learnt
+    pdf_url: https://arena.gov.au/assets/2016/03/Forecasting-and-Characterising-Grid-Connected-Solar-Energy-Final-Report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/characterising-and-forecasting-grid-connected-solar-energy/
+    markdown_filename: characterising_and_forecasting_grid_connected_solar_energy.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-53555
+  source_title: Forecasting and Characterising Grid Connected Solar Energy and Developing
+    Synergies with Wind - Project results and lessons learnt
+  publish_date: '2015'
+  project_name: Forecasting and Characterising Grid Connected Solar Energy and Developing
+    Synergies with Wind
+  what_happened: The CARDS (Coupled Auto Regressive and Dynamical System) short-term
+    statistical forecasting model was developed and successfully validated on Australian
+    and French offshore island data across timescales of ten minutes to one hour,
+    outperforming comparable methods in the literature.
+  lesson_learnt: Data-driven additive de-seasoning using Fourier series methods —
+    rather than standard clear-sky index approaches — produces robust short-term solar
+    forecasting models that generalise across diverse climates; this approach should
+    be evaluated for adoption in operational Australian solar forecasting schemes
+    such as ASEFS.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id005
+  - 12
+  - 22
+  evidence_excerpt: The CARDS model for short term forecasting has been tested against
+    the best in the literature, performing very well... It has been extensively tested
+    on data from Australia, as well as from French offshore island locations, Guadeloupe
+    and Reunion Island. This testing has been on time scales of ten minutes to one
+    hour.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/characterising-and-forecasting-grid-connected-solar-energy/
+  project_page_url: https://arena.gov.au/projects/characterising-and-forecasting-grid-connected-solar-energy/
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2016
+  kb_year: '2011'
+  kb_associated_project: Characterising and Forecasting Grid Connected Solar Energy
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $470k
+  total_project_value: $832k
+  lead_organisation: University of NSW
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 01/04/2011
+  location: New South Wales
+  project_partners: University of South Australia, Australian Photovoltaic Association,
+    Epuron and Australian Bureau of Meteorology
+  pdf_url: https://arena.gov.au/assets/2016/03/Forecasting-and-Characterising-Grid-Connected-Solar-Energy-Final-Report.pdf
+  markdown_filename: characterising_and_forecasting_grid_connected_solar_energy.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53555
+  contributing_source_titles:
+  - Forecasting and Characterising Grid Connected Solar Energy and Developing Synergies
+    with Wind - Project results and lessons learnt
+  contributing_sources:
+  - source_title: Forecasting and Characterising Grid Connected Solar Energy and Developing
+      Synergies with Wind - Project results and lessons learnt
+    pdf_url: https://arena.gov.au/assets/2016/03/Forecasting-and-Characterising-Grid-Connected-Solar-Energy-Final-Report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/characterising-and-forecasting-grid-connected-solar-energy/
+    markdown_filename: characterising_and_forecasting_grid_connected_solar_energy.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-53556
+  source_title: Forecasting and Characterising Grid Connected Solar Energy and Developing
+    Synergies with Wind - Project results and lessons learnt
+  publish_date: '2015'
+  project_name: Forecasting and Characterising Grid Connected Solar Energy and Developing
+    Synergies with Wind
+  what_happened: The BRL (Boland-Ridley-Lauret) decomposition model was applied to
+    convert GHI forecasts (the standard NWP output) into diffuse and direct normal
+    irradiance (DNI), enabling CST performance estimation from models that only forecast
+    GHI.
+  lesson_learnt: When planning solar forecasting systems that must support both PV
+    and concentrated solar technology (CST), include a validated GHI decomposition
+    model such as BRL to derive DNI — NWP models typically only forecast GHI directly,
+    creating a gap for CST applications that can be bridged post-processing.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar thermal
+  source_pages: &id006
+  - 13
+  - 14
+  evidence_excerpt: When producing forecasts from models such as TAPM, only the GHI
+    is forecast. Often one also needs DNI, especially if interested in CST... the
+    results show that the BRL model is well equipped to not just estimate the diffuse
+    solar irradiance from the global solar, but also to go from there to estimate
+    the direct normal irradiance.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/characterising-and-forecasting-grid-connected-solar-energy/
+  project_page_url: https://arena.gov.au/projects/characterising-and-forecasting-grid-connected-solar-energy/
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2016
+  kb_year: '2011'
+  kb_associated_project: Characterising and Forecasting Grid Connected Solar Energy
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $470k
+  total_project_value: $832k
+  lead_organisation: University of NSW
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 01/04/2011
+  location: New South Wales
+  project_partners: University of South Australia, Australian Photovoltaic Association,
+    Epuron and Australian Bureau of Meteorology
+  pdf_url: https://arena.gov.au/assets/2016/03/Forecasting-and-Characterising-Grid-Connected-Solar-Energy-Final-Report.pdf
+  markdown_filename: characterising_and_forecasting_grid_connected_solar_energy.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53556
+  contributing_source_titles:
+  - Forecasting and Characterising Grid Connected Solar Energy and Developing Synergies
+    with Wind - Project results and lessons learnt
+  contributing_sources:
+  - source_title: Forecasting and Characterising Grid Connected Solar Energy and Developing
+      Synergies with Wind - Project results and lessons learnt
+    pdf_url: https://arena.gov.au/assets/2016/03/Forecasting-and-Characterising-Grid-Connected-Solar-Energy-Final-Report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/characterising-and-forecasting-grid-connected-solar-energy/
+    markdown_filename: characterising_and_forecasting_grid_connected_solar_energy.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-53557
+  source_title: Forecasting and Characterising Grid Connected Solar Energy and Developing
+    Synergies with Wind - Project results and lessons learnt
+  publish_date: '2015'
+  project_name: Forecasting and Characterising Grid Connected Solar Energy and Developing
+    Synergies with Wind
+  what_happened: Analysis of 12 years of satellite-derived irradiance data (1998–2010)
+    revealed that northern Australia (particularly northern Queensland) experiences
+    longer DNI lulls in summer, while southern Australia experiences longer lulls
+    in winter, with western Tasmania, coastal NSW, and parts of Victoria having the
+    highest number of consecutive low-DNI days — regions that also have good wind
+    resources.
+  lesson_learnt: Site suitability assessment for concentrated solar technologies must
+    account for the seasonality and geographic pattern of DNI lulls — regions with
+    the highest solar lull frequency (coastal NSW, Victoria, western Tasmania) coincide
+    with strong wind resources, making these locations candidates for hybrid solar-wind
+    deployment to mitigate intermittency risk.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar thermal
+  source_pages: &id007
+  - 6
+  - 7
+  - 8
+  evidence_excerpt: Western Tasmania, coastal NSW and regions of Victoria have a higher
+    number of consecutive lulls, but this is also where many of our wind farms are
+    located. These locations experience good wind conditions, therefore for synergistic
+    deployment of wind and solar, and diversity of our resources we would look for
+    locations where wind was optimum in one location and solar optimum in another.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/characterising-and-forecasting-grid-connected-solar-energy/
+  project_page_url: https://arena.gov.au/projects/characterising-and-forecasting-grid-connected-solar-energy/
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2016
+  kb_year: '2011'
+  kb_associated_project: Characterising and Forecasting Grid Connected Solar Energy
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $470k
+  total_project_value: $832k
+  lead_organisation: University of NSW
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 01/04/2011
+  location: New South Wales
+  project_partners: University of South Australia, Australian Photovoltaic Association,
+    Epuron and Australian Bureau of Meteorology
+  pdf_url: https://arena.gov.au/assets/2016/03/Forecasting-and-Characterising-Grid-Connected-Solar-Energy-Final-Report.pdf
+  markdown_filename: characterising_and_forecasting_grid_connected_solar_energy.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53557
+  contributing_source_titles:
+  - Forecasting and Characterising Grid Connected Solar Energy and Developing Synergies
+    with Wind - Project results and lessons learnt
+  contributing_sources:
+  - source_title: Forecasting and Characterising Grid Connected Solar Energy and Developing
+      Synergies with Wind - Project results and lessons learnt
+    pdf_url: https://arena.gov.au/assets/2016/03/Forecasting-and-Characterising-Grid-Connected-Solar-Energy-Final-Report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/characterising-and-forecasting-grid-connected-solar-energy/
+    markdown_filename: characterising_and_forecasting_grid_connected_solar_energy.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-53558
+  source_title: Forecasting and Characterising Grid Connected Solar Energy and Developing
+    Synergies with Wind - Project results and lessons learnt
+  publish_date: '2015'
+  project_name: Forecasting and Characterising Grid Connected Solar Energy and Developing
+    Synergies with Wind
+  what_happened: Correlation analysis of wind and solar output across the NEM found
+    that solar demand correlation was 100% positive (except reduced in winter), while
+    wind-demand correlation was only positive on 85% of days, and solar matched demand
+    better than wind overall; synergies between wind and PV were found to be site-specific
+    rather than uniform across a state.
+  lesson_learnt: Solar PV is a better match to electricity demand than wind on most
+    days in the NEM; however, wind-solar synergies vary significantly within a state
+    and must be assessed at the site level — portfolio planners should not assume
+    state-level complementarity and should conduct site-specific correlation analysis
+    when designing hybrid systems.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: hybrid systems
+  source_pages: &id008
+  - 18
+  - 22
+  evidence_excerpt: On 85% of days in 2010 the energy demand and wind were positively
+    correlated, whereas the energy demand and solar were 100% positively correlated,
+    except the correlations went down during winter... synergies between PV and wind
+    need to be made on a site specific basis as weather varies so much within a state.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/characterising-and-forecasting-grid-connected-solar-energy/
+  project_page_url: https://arena.gov.au/projects/characterising-and-forecasting-grid-connected-solar-energy/
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2016
+  kb_year: '2011'
+  kb_associated_project: Characterising and Forecasting Grid Connected Solar Energy
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $470k
+  total_project_value: $832k
+  lead_organisation: University of NSW
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 01/04/2011
+  location: New South Wales
+  project_partners: University of South Australia, Australian Photovoltaic Association,
+    Epuron and Australian Bureau of Meteorology
+  pdf_url: https://arena.gov.au/assets/2016/03/Forecasting-and-Characterising-Grid-Connected-Solar-Energy-Final-Report.pdf
+  markdown_filename: characterising_and_forecasting_grid_connected_solar_energy.md
+  source_page_pdf: 18
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53558
+  contributing_source_titles:
+  - Forecasting and Characterising Grid Connected Solar Energy and Developing Synergies
+    with Wind - Project results and lessons learnt
+  contributing_sources:
+  - source_title: Forecasting and Characterising Grid Connected Solar Energy and Developing
+      Synergies with Wind - Project results and lessons learnt
+    pdf_url: https://arena.gov.au/assets/2016/03/Forecasting-and-Characterising-Grid-Connected-Solar-Energy-Final-Report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/characterising-and-forecasting-grid-connected-solar-energy/
+    markdown_filename: characterising_and_forecasting_grid_connected_solar_energy.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-53559
+  source_title: Forecasting and Characterising Grid Connected Solar Energy and Developing
+    Synergies with Wind - Project results and lessons learnt
+  publish_date: '2015'
+  project_name: Forecasting and Characterising Grid Connected Solar Energy and Developing
+    Synergies with Wind
+  what_happened: Modelling of residential rooftop PV with battery storage for Sydney
+    households found that adding storage to PV systems increases the system's financial
+    benefit and significantly reduces network peak load, potentially deferring network
+    augmentation investment.
+  lesson_learnt: When evaluating the value proposition of residential PV, include
+    the network peak demand reduction benefit of co-located battery storage — storage's
+    ability to shift PV output to coincide with network peaks can defer network augmentation
+    costs and should be factored into tariff design and network investment planning.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id009
+  - 20
+  - 22
+  evidence_excerpt: This study concluded that the benefits of a PV rooftop system
+    can be increased by incorporating storage, with the added benefit that storage
+    can also significantly impact the network peak load, which can lead to deferral
+    of network augmentation.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (9/10), storage (1/10)'
+  source_url: https://arena.gov.au/knowledge-bank/characterising-and-forecasting-grid-connected-solar-energy/
+  project_page_url: https://arena.gov.au/projects/characterising-and-forecasting-grid-connected-solar-energy/
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2016
+  kb_year: '2011'
+  kb_associated_project: Characterising and Forecasting Grid Connected Solar Energy
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $470k
+  total_project_value: $832k
+  lead_organisation: University of NSW
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 01/04/2011
+  location: New South Wales
+  project_partners: University of South Australia, Australian Photovoltaic Association,
+    Epuron and Australian Bureau of Meteorology
+  pdf_url: https://arena.gov.au/assets/2016/03/Forecasting-and-Characterising-Grid-Connected-Solar-Energy-Final-Report.pdf
+  markdown_filename: characterising_and_forecasting_grid_connected_solar_energy.md
+  source_page_pdf: 20
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53559
+  contributing_source_titles:
+  - Forecasting and Characterising Grid Connected Solar Energy and Developing Synergies
+    with Wind - Project results and lessons learnt
+  contributing_sources:
+  - source_title: Forecasting and Characterising Grid Connected Solar Energy and Developing
+      Synergies with Wind - Project results and lessons learnt
+    pdf_url: https://arena.gov.au/assets/2016/03/Forecasting-and-Characterising-Grid-Connected-Solar-Energy-Final-Report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/characterising-and-forecasting-grid-connected-solar-energy/
+    markdown_filename: characterising_and_forecasting_grid_connected_solar_energy.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-53560
+  source_title: Forecasting and Characterising Grid Connected Solar Energy and Developing
+    Synergies with Wind - Project results and lessons learnt
+  publish_date: '2015'
+  project_name: Forecasting and Characterising Grid Connected Solar Energy and Developing
+    Synergies with Wind
+  what_happened: The project identified that distributed (rooftop) PV forecasting
+    requires a fundamentally different approach from large-scale centralised solar
+    farm forecasting, and that the techniques developed in this project require significant
+    adaptation before they can be applied to distributed generation forecasting.
+  lesson_learnt: Forecasting tools developed for utility-scale solar plants cannot
+    be directly transferred to distributed rooftop PV forecasting — projects targeting
+    distributed PV integration should treat distributed forecasting as a distinct
+    research and development challenge requiring dedicated methodology, not a straightforward
+    extension of centralised forecasting.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: The team noted that some techniques from the project can be adapted
+    for distributed forecasting and identified this as a knowledge gap for follow-on
+    work within ASEFS.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id010
+  - 23
+  evidence_excerpt: Distributed forecasting requires a very different approach to
+    the solar forecasting problem than what has been covered for large scale generation.
+    Some of the techniques used in this project can be adapted to forecasting distributed
+    generation.
+  confidence_note: lifecycle_phase assigned as close-out/post-project review because
+    this gap was identified retrospectively at project end, not during an earlier
+    active phase.
+  source_url: https://arena.gov.au/knowledge-bank/characterising-and-forecasting-grid-connected-solar-energy/
+  project_page_url: https://arena.gov.au/projects/characterising-and-forecasting-grid-connected-solar-energy/
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2016
+  kb_year: '2011'
+  kb_associated_project: Characterising and Forecasting Grid Connected Solar Energy
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $470k
+  total_project_value: $832k
+  lead_organisation: University of NSW
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 01/04/2011
+  location: New South Wales
+  project_partners: University of South Australia, Australian Photovoltaic Association,
+    Epuron and Australian Bureau of Meteorology
+  pdf_url: https://arena.gov.au/assets/2016/03/Forecasting-and-Characterising-Grid-Connected-Solar-Energy-Final-Report.pdf
+  markdown_filename: characterising_and_forecasting_grid_connected_solar_energy.md
+  source_page_pdf: 23
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53560
+  contributing_source_titles:
+  - Forecasting and Characterising Grid Connected Solar Energy and Developing Synergies
+    with Wind - Project results and lessons learnt
+  contributing_sources:
+  - source_title: Forecasting and Characterising Grid Connected Solar Energy and Developing
+      Synergies with Wind - Project results and lessons learnt
+    pdf_url: https://arena.gov.au/assets/2016/03/Forecasting-and-Characterising-Grid-Connected-Solar-Energy-Final-Report.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/characterising-and-forecasting-grid-connected-solar-energy/
+    markdown_filename: characterising_and_forecasting_grid_connected_solar_energy.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78

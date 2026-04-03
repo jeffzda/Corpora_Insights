@@ -1,0 +1,73 @@
+- record_id: ARENA-DLV-53873
+  source_title: Demand Flexibility Portfolio Retrospective Analysis Report
+  publish_date: 2023-07
+  project_name: ARENA RERT Demand Response Round — FCAS/Wholesale Value Stream Conflict
+  what_happened: 'ARENA projects found that high FCAS prices created a conflict with
+    RERT participation: AEMO informed Enel X that any load ''contracted under a reserve
+    contract'' was ineligible for FCAS, meaning Invitations to Tender under RERT (lasting
+    up to a week) caused Enel X to forgo up to 60 hours of FCAS payments. This led
+    Enel X to focus on recruiting new RERT sites rather than dual-registering existing
+    FCAS customers.'
+  lesson_learnt: Regulatory clarity on dual-registration eligibility for RERT and
+    FCAS must be obtained in writing from AEMO before designing portfolios that attempt
+    to access both value streams; the financial asymmetry between RERT availability
+    payments and FCAS event payments makes dual participation commercially complex
+    even where it is technically permitted.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: In collaboration with AEMO, a protocol was developed (via Tesla's
+    project) to prioritise wholesale signals when frequency was within normal band
+    and FCAS signals when frequency deviated, partially resolving the FCAS/wholesale
+    conflict but not the RERT/FCAS eligibility issue.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: demand response
+  source_pages:
+  - 19
+  evidence_excerpt: Enel X records that AEMO informed them that any load 'contracted
+    under a reserve contract' is ineligible for FCAS. Invitations to Tender (ITTs)
+    under RERT can last for a week and therefore miss 60-hours of FCAS payments under
+    this interpretation. High FCAS prices and uncertainty about AEMO interpretation
+    led them to primarily focus on recruiting new sites for RERT and not to dual-register
+    existing FCAS sites.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/demand-flexibility-portfolio-retrospective-analysis-report/
+  project_page_url: null
+  kb_category: Demand response
+  kb_publish_date: 25/07/2023
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2023/07/demand-flexibility-portfolio-retrospective-analysis-report.pdf
+  markdown_filename: demand_flexibility_portfolio_retrospective_analysis_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53873
+  contributing_source_titles:
+  - Demand Flexibility Portfolio Retrospective Analysis Report
+  arena_category:
+  - Demand response
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.88

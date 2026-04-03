@@ -1,0 +1,1760 @@
+- record_id: ARENA-DLV-49051
+  source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in
+    an Isolated Electricity Supply System'
+  publish_date: 2012-04
+  project_name: Carnarvon PV Penetration Case Study
+  what_happened: Horizon Power imposed a 1.15MWp cap on distributed PV connections
+    to the Carnarvon isolated network in July 2011, halting all new renewable energy
+    system connections unless covered by a Power Purchase Agreement providing Horizon
+    Power operational control, due to concerns about power quality and system security.
+  lesson_learnt: In isolated grids, utilities will cap distributed PV at the level
+    of spinning reserve they can maintain for potential simultaneous PV disconnection;
+    proponents seeking to connect above this threshold must negotiate a PPA or feed-in
+    management agreement that gives the utility dispatch control before connection
+    will be permitted.
+  issue_severity: major
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: network business
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Horizon Power allowed the 300kWp EMC system to connect under
+    a Power Purchase Agreement that included feed-in management, reactive power support,
+    and utility dispatch control, effectively creating a pathway above the 1.15MWp
+    cap.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id001
+  - 6
+  - 19
+  evidence_excerpt: As of 20/7/2011 no new renewable energy systems (regardless of
+    size) were allowed to be connected in Carnarvon due to an applied total PV hosting
+    capacity of 1.15MWp, unless connected under a Power Purchase Agreement (PPA) with
+    Horizon Power.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+  markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  source_page_pdf: 19
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49051
+  contributing_source_titles:
+  - 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in an Isolated
+    Electricity Supply System'
+  contributing_sources:
+  - source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration
+      in an Isolated Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+    markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-49052
+  source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in
+    an Isolated Electricity Supply System'
+  publish_date: 2012-04
+  project_name: Carnarvon PV Penetration Case Study
+  what_happened: A system-wide frequency disturbance caused multiple PV inverters
+    to simultaneously disconnect from the Carnarvon isolated network via their anti-islanding
+    protection, effectively adding approximately 700kW of apparent load to the central
+    generators at the moment the generators were already stressed by the disturbance.
+  lesson_learnt: In isolated grids, mass simultaneous inverter disconnection during
+    frequency events exacerbates rather than relieves generation deficits; inverter
+    under-frequency trip settings must be set below the network's under-frequency
+    load shedding threshold so that load is shed before PV disconnects, protecting
+    generators from compounded stress.
+  issue_severity: major
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Horizon Power initiated a review of all inverter anti-islanding
+    set points to ensure under-frequency trip levels sit below network protection
+    thresholds, and trialled a dispatchable load scheme that disconnects a matched
+    non-critical load whenever a PV system trips, neutralising the net load step seen
+    by generators.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id002
+  - 7
+  - 26
+  - 27
+  - 28
+  evidence_excerpt: There has been one recorded instance of multiple PV systems disconnecting
+    due to a system wide frequency disturbance, resulting in additional load for the
+    central generator to cover rapidly. A lack of standardisation amongst inverter
+    anti islanding protection settings within AS4777 is also a concern.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+  markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49052
+  contributing_source_titles:
+  - 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in an Isolated
+    Electricity Supply System'
+  contributing_sources:
+  - source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration
+      in an Isolated Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+    markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-49053
+  source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in
+    an Isolated Electricity Supply System'
+  publish_date: 2012-04
+  project_name: Carnarvon PV Penetration Case Study
+  what_happened: AS4777 permits inverter frequency trip settings within a wide range
+    (45–55 Hz), but many European inverters shipped with default trip settings of
+    50 ± 0.25 Hz — a range that falls entirely within Horizon Power's normal operating
+    band of 47.5–52 Hz — causing inverter disconnection during normal, non-fault network
+    operation.
+  lesson_learnt: Procurers of PV inverters for isolated Australian grids must verify
+    and adjust manufacturer default protection set points before installation; the
+    AS4777 compliance range is too broad to guarantee compatibility with isolated-grid
+    frequency excursions, and defaults from international markets can cause nuisance
+    tripping under normal operation.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated integration
+  intervention_note: Horizon Power undertook a survey of inverter types and protection
+    settings across the network and initiated a review to standardise anti-islanding
+    set points, preferring a fixed value over the variable range permitted by AS4777.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id003
+  - 26
+  - 27
+  evidence_excerpt: many European inverters have default frequency set points of 50+/-0.25Hz,
+    which is allowable according to AS4777, and falls inside of Horizon Power's allowable
+    frequency range of 47.5-52Hz. However, a frequency of 51Hz, for example, would
+    be within Horizon Power's power quality standards and would therefore cause inverter
+    disconnection during normal network operation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+  markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  source_page_pdf: 26
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49053
+  contributing_source_titles:
+  - 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in an Isolated
+    Electricity Supply System'
+  contributing_sources:
+  - source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration
+      in an Isolated Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+    markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-49054
+  source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in
+    an Isolated Electricity Supply System'
+  publish_date: 2012-04
+  project_name: Carnarvon PV Penetration Case Study
+  what_happened: Horizon Power's strategy of maintaining full spinning reserve sufficient
+    to cover simultaneous loss of all PV generation (n-1 for both largest generator
+    and all PV) reduced generator efficiency and increased maintenance costs, effectively
+    negating part of the fuel-saving benefit of the installed PV systems.
+  lesson_learnt: Isolated-grid operators that maintain static spinning reserve sized
+    for total PV loss forgo much of the economic benefit of PV; a dynamic spinning
+    reserve strategy informed by real-time cloud sensing and PV output forecasting
+    can reduce reserve requirements and recover fuel savings without compromising
+    security.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Horizon Power trialled cloud sensor and sky-camera technology
+    to forecast PV output variability and enable dynamic adjustment of spinning reserve
+    in response to anticipated cloud events, analogous to their existing practice
+    of pre-adjusting reserve for large load start-ups.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id004
+  - 28
+  - 35
+  - 41
+  evidence_excerpt: This policy reduces the value of PV to power system operation
+    as sufficient central generators are still running, albeit at reduced load, to
+    cover the possible loss of the PV generation. This results in lower efficiency
+    of operation of the central generating sets as well as higher maintenance costs
+    than if the strategy could assume that the PV systems would stay connected at
+    times of downward frequency excursions.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+  markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  source_page_pdf: 28
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49054
+  contributing_source_titles:
+  - 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in an Isolated
+    Electricity Supply System'
+  contributing_sources:
+  - source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration
+      in an Isolated Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+    markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-49055
+  source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in
+    an Isolated Electricity Supply System'
+  publish_date: 2012-04
+  project_name: Carnarvon PV Penetration Case Study
+  what_happened: Clustered PV systems in the Carnarvon urban area created a cloud-shear
+    risk where a single passing cloud could reduce aggregate PV output by up to 70–80%
+    within seconds, potentially presenting the central generators with an apparent
+    load step of approximately 500kW within minutes — comparable to the loss of a
+    major load.
+  lesson_learnt: Where PV systems are geographically clustered in an isolated grid,
+    cloud shear can produce aggregate generation ramps large enough to threaten frequency
+    stability; operators should quantify this risk using high-resolution irradiance
+    sensing and geographic diversity analysis before approving further PV connections.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Horizon Power deployed a solar irradiation sensor array and sky
+    camera to monitor cloud cover and model aggregated PV output, aiming to predict
+    generation ramps and dynamically adjust spinning reserve ahead of cloud events.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id005
+  - 27
+  - 28
+  - 29
+  evidence_excerpt: a 10kW inverter during a survey of PV system installations when
+    a small cloud passed over the output of the inverter changed from 8kW to 2.2kW
+    in approximately 2 seconds as the cloud passed over resulting in a 72% change
+    in PV output... it can be estimated that PV generation fluctuations of approximately
+    500kW could potentially be seen by the central generators over a period of minutes.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+  markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  source_page_pdf: 29
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49055
+  contributing_source_titles:
+  - 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in an Isolated
+    Electricity Supply System'
+  contributing_sources:
+  - source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration
+      in an Isolated Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+    markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-49056
+  source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in
+    an Isolated Electricity Supply System'
+  publish_date: 2012-04
+  project_name: Carnarvon PV Penetration Case Study
+  what_happened: Insufficient data resolution (15-minute intervals) in Horizon Power's
+    network monitoring systems meant that rapid frequency and PV output fluctuations
+    — which occur over seconds — could not be captured or diagnosed, preventing the
+    utility from confirming the cause of suspected inverter disconnection events or
+    quantifying cloud-shear impacts on system stability.
+  lesson_learnt: Monitoring infrastructure for isolated grids with significant PV
+    penetration must record frequency and generation data at sub-minute resolution
+    (ideally seconds); 15-minute SCADA data is structurally incapable of capturing
+    the rapid transients that drive inverter disconnection and cloud-shear frequency
+    events.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Horizon Power installed additional power quality monitoring equipment
+    on the Gibson distribution transformer and, as part of the 300kWp system connection,
+    increased the level of monitoring to capture higher-resolution performance data.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id006
+  - 27
+  - 28
+  evidence_excerpt: it should be noted here that a 15 minute data resolution is insufficient
+    to capture the frequency fluctuations which are of the most importance. The lack
+    of specific high resolution data makes it difficult to identify this issue. Routine
+    collection of high resolution system frequency data will help networks understand
+    how inverters are behaving on the network.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+  markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  source_page_pdf: 27
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49056
+  contributing_source_titles:
+  - 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in an Isolated
+    Electricity Supply System'
+  contributing_sources:
+  - source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration
+      in an Isolated Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+    markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.95
+- record_id: ARENA-DLV-49057
+  source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in
+    an Isolated Electricity Supply System'
+  publish_date: 2012-04
+  project_name: Carnarvon PV Penetration Case Study
+  what_happened: A voltage rise event on the Gibson distribution transformer (carrying
+    70% nominal PV penetration relative to transformer capacity) caused multiple PV
+    inverters to disconnect; the root cause was an operational decision to move a
+    normally-open network point that connected more generation to a single transformer,
+    raising LV voltages to levels visible in Figure 14 (up to 258V at customer connection
+    points).
+  lesson_learnt: Network reconfiguration decisions — including moving normally-open
+    points — must be assessed for their effect on PV hosting capacity and LV voltage
+    profiles before implementation; in networks with clustered PV, switching that
+    concentrates generation behind a single transformer can immediately trigger over-voltage
+    and mass inverter disconnection.
+  issue_severity: major
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: The open point was moved back to its original position to remove
+    generation from the affected transformer, and Horizon Power recommended relocating
+    the large PV system onto a dedicated transformer and replacing consumer mains
+    in the area.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id007
+  - 31
+  - 32
+  evidence_excerpt: The root cause of the problem was that a normally open point was
+    moved resulting in more generation being connected to the one transformer. The
+    result of this was a high network voltage... The solution to this problem was
+    to move the open point back to the original position thus removing some generation
+    from the transformer and lowering the voltage.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+  markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  source_page_pdf: 31
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49057
+  contributing_source_titles:
+  - 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in an Isolated
+    Electricity Supply System'
+  contributing_sources:
+  - source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration
+      in an Isolated Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+    markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: integration failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-49058
+  source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in
+    an Isolated Electricity Supply System'
+  publish_date: 2012-04
+  project_name: Carnarvon PV Penetration Case Study
+  what_happened: A voltage rise on the Richardson distribution transformer (17% nominal
+    PV penetration) caused multiple inverter disconnections; investigation revealed
+    a load imbalance where one phase had low load and high PV generation, but no formal
+    study was undertaken at the time because local operators lacked knowledge of PV
+    impacts.
+  lesson_learnt: Phase imbalance between load and PV connection points can trigger
+    voltage rise and inverter disconnection even at relatively low aggregate penetration
+    levels (17%); phase allocation should be explicitly checked for PV balance during
+    installation approval rather than reactively corrected after a disconnection event.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Load imbalance was corrected by switching customers to different
+    phases to balance the load; Horizon Power subsequently adopted a policy of checking
+    phase balance during PV connection inspections.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id008
+  - 31
+  evidence_excerpt: There was no detailed study into this instance as the impression
+    of the local network operators was that it was an isolated instance with the root
+    cause being unknown due to lack of information on the effects of PV systems at
+    the time. In this instance a load imbalance was identified where one phase had
+    low load and a high amount of generation and the problem was rectified by switching
+    customers to different phases to balance the load.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+  markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  source_page_pdf: 31
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49058
+  contributing_source_titles:
+  - 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in an Isolated
+    Electricity Supply System'
+  contributing_sources:
+  - source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration
+      in an Isolated Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+    markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-49059
+  source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in
+    an Isolated Electricity Supply System'
+  publish_date: 2012-04
+  project_name: Carnarvon PV Penetration Case Study
+  what_happened: Australian distribution utilities have historically tapped distribution
+    transformers high (above nominal voltage) to compensate for voltage drop under
+    load, but this pre-existing elevated voltage reduces the headroom available for
+    PV-induced voltage rise, making inverter disconnection more likely even at moderate
+    PV penetrations.
+  lesson_learnt: Before approving PV connections in an area, network planners should
+    audit and lower distribution transformer tap settings to create voltage headroom
+    for PV injection; high tap settings that were appropriate for load-drop compensation
+    become a liability once bidirectional power flows are introduced.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Horizon Power identified lowering distribution transformer tap
+    settings as a low-cost mitigation option requiring only a network study and short
+    field time, while cautioning that voltage at peak load must be verified to remain
+    above minimum standards before any tap reduction.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id009
+  - 32
+  - 33
+  evidence_excerpt: Many Australian utilities have traditionally tapped the transformer
+    high to accommodate for losses in distribution lines, especial in rural type areas,
+    resulting in disconnection of inverters even in periods of low generation. By
+    lowering the tap of the transformer the network voltage is lowered and this means
+    that there is room for the PV systems to raise the voltage and stay within regulated
+    standards.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+  markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  source_page_pdf: 33
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49059
+  contributing_source_titles:
+  - 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in an Isolated
+    Electricity Supply System'
+  contributing_sources:
+  - source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration
+      in an Isolated Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+    markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-49060
+  source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in
+    an Isolated Electricity Supply System'
+  publish_date: 2012-04
+  project_name: Carnarvon PV Penetration Case Study
+  what_happened: A fire originated from a defective junction box on a rooftop PV system
+    in Carnarvon due to moisture ingress; the fire was made more hazardous because
+    the PV panels continued generating DC power during the blaze, creating electrocution
+    risk for firefighters until the DC circuit was broken.
+  lesson_learnt: PV installation quality control must include review of junction box
+    ingress protection ratings for the local climate, and firefighter training must
+    cover DC live-circuit risks; defective junction box designs identified through
+    incidents should be flagged to the industry and removed from service proactively.
+  issue_severity: major
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: execution & logistics
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Management procedures were reinforced requiring accredited installation
+    personnel; Horizon Power proposed extended firefighter training and a change to
+    the defective junction box designs identified as the failure source.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id010
+  - 8
+  - 35
+  - 36
+  evidence_excerpt: There has been one instance in Carnarvon where a fire has resulted
+    from a PV system installation. The fire originated from a defective junction box
+    of a rooftop solar system and was due to a level of moisture ingress. Thankfully
+    the fire was quickly contained and the level of damage to the property was minimised
+    after the DC circuit was broken.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+  markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  source_page_pdf: 36
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49060
+  contributing_source_titles:
+  - 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in an Isolated
+    Electricity Supply System'
+  contributing_sources:
+  - source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration
+      in an Isolated Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+    markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-49061
+  source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in
+    an Isolated Electricity Supply System'
+  publish_date: 2012-04
+  project_name: Carnarvon PV Penetration Case Study
+  what_happened: The variability of distributed PV output complicated Horizon Power's
+    network peak-load forecasting, because PV generation simultaneously reduces net
+    load on average days while a rapid cloud event during a high-demand summer afternoon
+    could eliminate ~700–900kW of generation precisely when air-conditioning load
+    is peaking.
+  lesson_learnt: Utilities planning network augmentation in the presence of significant
+    PV penetration must use probabilistic forecasting methods that model the correlated
+    risk of peak demand occurring simultaneously with low PV output (e.g. cloud cover
+    on a hot day); deterministic deferral of upgrades based solely on average PV contribution
+    understates risk.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Horizon Power undertook forecasting work to separate 'influenced'
+    (with PV) and 'uninfluenced' load profiles and applied probabilistic methods to
+    determine the risk-adjusted contribution of PV to peak demand deferral.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id011
+  - 29
+  - 38
+  evidence_excerpt: The variability of PV system output makes it difficult to plan
+    for system peak loads as seen by the dispatchable generation... it is possible
+    to envisage periods of very high summer, air-conditioning driven demand, where
+    rapid clouding over Carnarvon might rapidly decrease PV generation whilst the
+    cooling load takes considerably longer to reduce.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+  markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49061
+  contributing_source_titles:
+  - 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in an Isolated
+    Electricity Supply System'
+  contributing_sources:
+  - source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration
+      in an Isolated Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+    markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-49062
+  source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in
+    an Isolated Electricity Supply System'
+  publish_date: 2012-04
+  project_name: Carnarvon PV Penetration Case Study
+  what_happened: Connection of a 300kWp commercial PV system in Carnarvon required
+    significant network investigation, extensive administrative procedures, and a
+    bespoke Power Purchase Agreement before it could proceed; commercial PV system
+    installers identified the lack of a standardised connection process across Australian
+    utilities as a material barrier and source of commercial risk.
+  lesson_learnt: The absence of a standardised connection process for commercial-scale
+    PV systems across Australian utilities creates unpredictable costs and timelines
+    that undermine project business cases; a standard document covering grid type,
+    expected impacts, and connection procedures for commercial systems would reduce
+    commercial risk and accelerate deployment.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: network business
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: Horizon Power and EMC agreed a Power Purchase Agreement incorporating
+    feed-in management, reactive power support, and utility dispatch control that
+    enabled the 300kWp system to connect above the general 1.15MWp cap.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id012
+  - 29
+  - 42
+  evidence_excerpt: There are particular challenges when introducing such systems
+    to the network because of the significant network investigation that is often
+    required to determine the suitability of the system and proposed network connection
+    point. Also applications of this type often currently require a large amount of
+    administrative procedures and there has been concern over the lack of a standardised
+    process amongst all Australian utilities to facilitate the connection of commercial
+    PV systems.
+  confidence_note: 'project_type reconciled to ''network/grid'' from: network/grid
+    (19/22), generation (3/22); project_scale_band reconciled to ''demonstration''
+    from: demonstration (17/22), programmatic/portfolio-level (3/22), first commercial/FOAK
+    (2/22); proponent_type reconciled to ''network business'' from: network business
+    (17/22), project developer (3/22), government/public-sector body (2/22)'
+  source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+  markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  source_page_pdf: 30
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49062
+  contributing_source_titles:
+  - 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in an Isolated
+    Electricity Supply System'
+  contributing_sources:
+  - source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration
+      in an Isolated Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+    markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-49063
+  source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in
+    an Isolated Electricity Supply System'
+  publish_date: 2012-04
+  project_name: Carnarvon PV Penetration Case Study
+  what_happened: A state government feed-in tariff of 58.93c/kWh announced in May
+    2010 drove rapid PV uptake in Western Australia, reaching 70MWp statewide within
+    approximately one year — far exceeding projections — leading to a tariff reduction
+    in July 2011 and suspension by August 2011 when the 150MWp state cap was met;
+    in Carnarvon the hosting capacity limit was reached before the state tariff reduction
+    took effect.
+  lesson_learnt: High feed-in tariff rates in areas with strong solar resources can
+    drive PV uptake far faster than policy-makers anticipate, exhausting both financial
+    caps and network hosting capacity before review mechanisms activate; tariff policy
+    design should include network hosting capacity as an explicit constraint alongside
+    financial caps.
+  issue_severity: major
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: approvals/regulatory
+  failure_mode: commercial & market
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: The state government reduced the FiT from 40c/kWh to 20c/kWh
+    in July 2011 and suspended it entirely in August 2011 once the 150MWp cap was
+    met; Carnarvon reverted to REBS at 18.93c/kWh.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id013
+  - 19
+  evidence_excerpt: FiT reduced from 40c/KWh to 20c/KWh thus reducing the total scheme
+    to 38.96c/KWh. This is due to the rapid PV uptake in the state over the calendar
+    year to total 70MWp installed capacity... FiT suspended as the quota has been
+    met.
+  confidence_note: 'project_scale_band reconciled to ''demonstration'' from: demonstration
+    (17/22), programmatic/portfolio-level (3/22), first commercial/FOAK (2/22); proponent_type
+    reconciled to ''network business'' from: network business (17/22), project developer
+    (3/22), government/public-sector body (2/22)'
+  source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+  markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  source_page_pdf: 19
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49063
+  contributing_source_titles:
+  - 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in an Isolated
+    Electricity Supply System'
+  contributing_sources:
+  - source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration
+      in an Isolated Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+    markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-49064
+  source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in
+    an Isolated Electricity Supply System'
+  publish_date: 2012-04
+  project_name: Carnarvon PV Penetration Case Study
+  what_happened: The Western Australian Distribution Connections Manual specifies
+    a guideline limiting PV system connections to 20% of distribution transformer
+    capacity to prevent islanding and backfeeding; however, Horizon Power had allowed
+    this limit to be exceeded in isolated cases (with one transformer reaching 70%
+    penetration) without encountering significant islanding or protection problems
+    to date.
+  lesson_learnt: The 20% distribution transformer PV penetration guideline is a conservative
+    default; utilities that conduct detailed network studies and implement appropriate
+    monitoring and protection measures may be able to safely exceed it, but should
+    do so in a controlled and monitored manner rather than through ad hoc approvals.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Horizon Power earthed de-energised LV networks prior to any line
+    work as a safety backstop against PV islanding, and undertook detailed network
+    studies for the highest-penetration transformers to validate that protection schemes
+    remained adequate above the 20% guideline.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id014
+  - 34
+  evidence_excerpt: The Western Australian Connection Manual states that, as a guideline
+    PV system penetration should be limited to 20% of the distribution transformer's
+    capacity... Horizon Power has in isolated cases allowed the 20% limit to be breached
+    to gain an understanding of any possible issues. So far no significant issues
+    have been found.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+  markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49064
+  contributing_source_titles:
+  - 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in an Isolated
+    Electricity Supply System'
+  contributing_sources:
+  - source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration
+      in an Isolated Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+    markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+- record_id: ARENA-DLV-49065
+  source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in
+    an Isolated Electricity Supply System'
+  publish_date: 2012-04
+  project_name: Carnarvon PV Penetration Case Study
+  what_happened: PV generation at current Carnarvon penetration levels (approximately
+    13% of midday load) offset an estimated 833 tonnes of CO2 per annum and reduced
+    generator fuel consumption, but the spinning reserve strategy required to accommodate
+    possible simultaneous PV loss partially offset these benefits through reduced
+    generator efficiency and higher maintenance costs.
+  lesson_learnt: The net fuel and emissions benefit of PV in isolated diesel/gas grids
+    is materially reduced by static spinning reserve strategies sized for total PV
+    loss; quantifying this offset is necessary to accurately value PV's contribution
+    and build the business case for dynamic reserve strategies that would recover
+    the full benefit.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: partial success
+  secondary_failure_mode: poor scoping
+  intervention_note: Horizon Power identified implementation of a dynamic spinning
+    reserve strategy as the key lever to maximise fuel and emissions savings, with
+    cloud sensing technology under trial to provide the forecasting input required.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id015
+  - 9
+  - 36
+  - 37
+  - 41
+  evidence_excerpt: The current PV system generation in the network is resulting in
+    a generator fuel saving which is equivalent to approximately 830 tonnes CO2 per
+    annum... actual financial savings are difficult to calculate due to the potential
+    costs (maintenance and reduction in generator efficiency) associated with the
+    current spinning reserve strategy which is designed to allow for the loss of PV
+    generation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+  markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49065
+  contributing_source_titles:
+  - 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in an Isolated
+    Electricity Supply System'
+  contributing_sources:
+  - source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration
+      in an Isolated Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+    markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-49066
+  source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in
+    an Isolated Electricity Supply System'
+  publish_date: 2012-04
+  project_name: Carnarvon PV Penetration Case Study
+  what_happened: PV generation in Carnarvon correlated well with the summer peak load
+    period (approximately 580kW at 2pm on sunny summer days), and community evidence
+    suggested that the connection of approximately 500kWp of PV in 2010 materially
+    reduced the frequency of power outages that had historically occurred during summer
+    when generators were derated and bore-field loads connected.
+  lesson_learnt: In isolated grids with summer daytime peaks and derated generators,
+    PV can deliver concrete reliability benefits by offsetting the large loads that
+    historically triggered outages; this reliability value should be explicitly quantified
+    and credited in PV business cases and network planning alongside fuel savings.
+  issue_severity: none
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id016
+  - 37
+  - 38
+  evidence_excerpt: There is evidence from the community that suggests the frequency
+    of these outages has decreased dramatically since the connection of 500kWp of
+    solar in 2010 as this approximately matches the size of the bore field load.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+  markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  source_page_pdf: 38
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49066
+  contributing_source_titles:
+  - 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in an Isolated
+    Electricity Supply System'
+  contributing_sources:
+  - source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration
+      in an Isolated Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+    markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+- record_id: ARENA-DLV-49067
+  source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in
+    an Isolated Electricity Supply System'
+  publish_date: 2012-04
+  project_name: Carnarvon PV Penetration Case Study
+  what_happened: Localised reverse power flow through the Gibson distribution transformer
+    was observed during midday on sunny days, driven by a nominal PV penetration of
+    70% of transformer capacity; at the 22kV level no backfeeding was observed, but
+    the situation was flagged as likely to change following connection of the 300kWp
+    system to the same South River Feeder.
+  lesson_learnt: Distribution transformers with PV penetrations approaching or exceeding
+    70% of rated capacity should be monitored for reverse power flow and their protection
+    schemes reviewed before further PV connections are approved on the same feeder;
+    adding large commercial PV systems to feeders already hosting high-penetration
+    transformers requires explicit analysis of cumulative impact.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Horizon Power proposed monitoring at higher PV penetrations and
+    a review of protection schemes as a precautionary measure; no immediate corrective
+    action was required as the reverse power flow was not considered a significant
+    problem at current penetrations.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id017
+  - 9
+  - 34
+  - 41
+  evidence_excerpt: Currently PV systems are causing localised backfeeding through
+    some distribution transformers but no significant effects are visible on the 22kV
+    network... the connection of the 300kW feeder in February 2012 may cause this
+    to change and should be monitored.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+  markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49067
+  contributing_source_titles:
+  - 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in an Isolated
+    Electricity Supply System'
+  contributing_sources:
+  - source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration
+      in an Isolated Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+    markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-49068
+  source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in
+    an Isolated Electricity Supply System'
+  publish_date: 2012-04
+  project_name: Carnarvon PV Penetration Case Study
+  what_happened: The 300kWp EMC system connected to the Carnarvon network in January
+    2012 included a feed-in management system providing network reactive power support,
+    utility-controlled output curtailment, and fault ride-through capability — features
+    agreed as conditions of connection above the 1.15MWp cap and intended as a pilot
+    for managing large PV systems in isolated grids.
+  lesson_learnt: Feed-in management systems that give the utility real-time reactive
+    power support, output curtailment, and dispatch control are a viable pathway to
+    connecting large PV systems above the spinning-reserve-derived hosting capacity
+    limit in isolated grids; embedding these controls in the connection agreement
+    rather than retrofitting them avoids future renegotiation.
+  issue_severity: none
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id018
+  - 29
+  - 30
+  - 42
+  evidence_excerpt: One strategy being proposed for the 300kWp system currently being
+    installed in Carnavon is a feed in management system that will include network
+    reactive power support by the inverter, and utility control whereby the utility
+    has the capability to reduce power output or disconnect the system from the grid
+    as appropriate.
+  confidence_note: 'project_type reconciled to ''network/grid'' from: network/grid
+    (19/22), generation (3/22); project_scale_band reconciled to ''demonstration''
+    from: demonstration (17/22), programmatic/portfolio-level (3/22), first commercial/FOAK
+    (2/22); proponent_type reconciled to ''network business'' from: network business
+    (17/22), project developer (3/22), government/public-sector body (2/22)'
+  source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+  markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  source_page_pdf: 30
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49068
+  contributing_source_titles:
+  - 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in an Isolated
+    Electricity Supply System'
+  contributing_sources:
+  - source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration
+      in an Isolated Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+    markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+- record_id: ARENA-DLV-49069
+  source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in
+    an Isolated Electricity Supply System'
+  publish_date: 2012-04
+  project_name: Carnarvon PV Penetration Case Study
+  what_happened: Stakeholders reported that PV-related incidents — including inverter
+    disconnection events and voltage problems — were under-reported in Carnarvon,
+    either due to lack of awareness among customers or because the incidents had limited
+    immediate impact on daily life, leaving the utility without a complete picture
+    of network impacts.
+  lesson_learnt: Utilities operating isolated grids with significant PV penetration
+    should establish formal incident reporting and customer education programmes for
+    PV-related network events; relying on voluntary community reporting results in
+    systematic under-capture of events that are important for managing higher future
+    penetrations.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id019
+  - 37
+  evidence_excerpt: One further problem in identifying the impacts of PV systems in
+    Carnarvon was the absence of reporting of PV related issues. This could either
+    stem from lack of awareness of the problems with PV systems or the minimal effect
+    the problems have had on people's lives. But for further development in this area
+    more care needs to be taken to educate stakeholders and carefully monitor PV system
+    issues to ensure they are captured and dealt with appropriately in the future.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+  markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  source_page_pdf: 39
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49069
+  contributing_source_titles:
+  - 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in an Isolated
+    Electricity Supply System'
+  contributing_sources:
+  - source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration
+      in an Isolated Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+    markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-49070
+  source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in
+    an Isolated Electricity Supply System'
+  publish_date: 2012-04
+  project_name: Carnarvon PV Penetration Case Study
+  what_happened: Community members in Carnarvon expressed willingness to help Horizon
+    Power by modifying their inverter disconnection settings beyond Australian standards
+    to prevent nuisance tripping at high voltages; this created a risk of equipment
+    damage and potential compromise of passive anti-islanding protection if implemented
+    without utility oversight.
+  lesson_learnt: Utilities should ensure PV inverters are either password-protected
+    or require specialist cables to modify protection settings, and should proactively
+    communicate with PV owners about why protection limits cannot be relaxed unilaterally;
+    community pressure to extend inverter voltage limits is a foreseeable risk in
+    networks with strong PV culture.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: coordination & stakeholders
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Horizon Power noted that the majority of inverters were either
+    password-protected or accessible only by specific cables, making customer modification
+    difficult, and emphasised that the utility must manage voltage levels to remove
+    the incentive for modification.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id020
+  - 33
+  evidence_excerpt: During interviews for the case study members of the community
+    have expressed a willingness to help Horizon Power to change inverter disconnection
+    settings in order to stop the inverter disconnecting due to high voltages. Changing
+    such settings to allow network voltages outside equipment ratings and network
+    standards risks potential damage to equipment as it will be exposed to higher
+    voltages, and may also have implications for the passive anti islanding protection
+    schemes.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+  markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  source_page_pdf: 33
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49070
+  contributing_source_titles:
+  - 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in an Isolated
+    Electricity Supply System'
+  contributing_sources:
+  - source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration
+      in an Isolated Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+    source_pages: *id020
+    source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+    markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-49071
+  source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in
+    an Isolated Electricity Supply System'
+  publish_date: 2012-04
+  project_name: Carnarvon PV Penetration Case Study
+  what_happened: Commercial PV system installers from Perth identified the lack of
+    a standardised connection process across Australian utilities, combined with uncertain
+    network augmentation costs, as creating significant commercial risk that deterred
+    investment in large commercial PV systems in regional and isolated-grid areas.
+  lesson_learnt: A standard national framework for commercial PV system connection
+    — covering different grid types, expected technical impacts, and required mitigation
+    measures — would reduce the commercial risk premium currently embedded in large
+    PV project costs in isolated and regional Australian grids.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: network business
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: commercial & market
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id021
+  - 29
+  - 42
+  evidence_excerpt: The current process and potential network augmentation costs introduce
+    a large level of commercial risk to these projects and the current lack of uniform
+    procedure across Australia is a deterrent to a large scale system business case.
+  confidence_note: 'project_type reconciled to ''network/grid'' from: network/grid
+    (19/22), generation (3/22); project_scale_band reconciled to ''demonstration''
+    from: demonstration (17/22), programmatic/portfolio-level (3/22), first commercial/FOAK
+    (2/22); proponent_type reconciled to ''network business'' from: network business
+    (17/22), project developer (3/22), government/public-sector body (2/22)'
+  source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+  markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  source_page_pdf: 30
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49071
+  contributing_source_titles:
+  - 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in an Isolated
+    Electricity Supply System'
+  contributing_sources:
+  - source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration
+      in an Isolated Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+    source_pages: *id021
+    source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+    markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-49072
+  source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in
+    an Isolated Electricity Supply System'
+  publish_date: 2012-04
+  project_name: Carnarvon PV Penetration Case Study
+  what_happened: Under some metering and tariff arrangements in place at the time
+    of the study, a PV system could reduce network revenue for a utility such as Horizon
+    Power without reducing required network expenditure, and at high penetrations
+    could actually increase required network expenditure, creating a structural misalignment
+    between policy incentives and network management outcomes.
+  lesson_learnt: Tariff and metering frameworks for distributed PV must be designed
+    to align customer incentives with network management outcomes; net feed-in tariffs
+    that maximise export can increase network integration costs at high penetrations,
+    and arrangements that recognise both the value of PV and the costs it imposes
+    on the network are necessary to sustain high-penetration deployment.
+  issue_severity: moderate
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: commercial & market
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id022
+  - 44
+  evidence_excerpt: under some metering and tariff arrangements it is possible for
+    a PV system to reduce network revenue for utilities without reducing required
+    network expenditure and, at high penetrations, potentially increasing the amount
+    of network expenditure required. Policy support such as net feed-in tariffs can
+    also encourage PV deployment and customer behaviours that potentially increase
+    network integration challenges by encouraging households to maximise export onto
+    the grid.
+  confidence_note: 'project_scale_band reconciled to ''demonstration'' from: demonstration
+    (17/22), programmatic/portfolio-level (3/22), first commercial/FOAK (2/22); proponent_type
+    reconciled to ''network business'' from: network business (17/22), project developer
+    (3/22), government/public-sector body (2/22)'
+  source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+  project_page_url: null
+  kb_category: Solar energy
+  kb_publish_date: 1/01/2012
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+  markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  source_page_pdf: 44
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49072
+  contributing_source_titles:
+  - 'Carnarvon: A Case Study of Increasing Levels of PV Penetration in an Isolated
+    Electricity Supply System'
+  contributing_sources:
+  - source_title: 'Carnarvon: A Case Study of Increasing Levels of PV Penetration
+      in an Isolated Electricity Supply System'
+    pdf_url: https://arena.gov.au/assets/knowledge-bank/Carnarvon-High-PV-Penetration-Case-Study.pdf
+    source_pages: *id022
+    source_url: https://arena.gov.au/knowledge-bank/carnarvon-a-case-study-of-increasing-levels-of-pv-penetration-in-an-isolated-electricity-supply-system/
+    markdown_filename: carnarvon_a_case_study_of_increasing_levels_of_pv_penetration_in_an_isolated_electricity_supply_syst.md
+  arena_category:
+  - Solar PV
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.82

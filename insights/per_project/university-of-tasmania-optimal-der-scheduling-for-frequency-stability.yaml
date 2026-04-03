@@ -1,0 +1,70 @@
+- record_id: ARENA-DLV-45015
+  source_title: Network Hosting Capacity Projects Progress Report (Year One)
+  publish_date: 2020-03
+  project_name: 'University of Tasmania: Optimal DER Scheduling for Frequency Stability'
+  what_happened: Detailed modelling of inverter-interfaced DER (PV, batteries, EVs,
+    heat pumps, and resistive loads) demonstrated that these resources can provide
+    fast frequency responses with less frequency deviation and smaller settling time
+    than conventional generation, particularly in systems with decreasing physical
+    inertia — but the network-constrained bidding optimisation software, while implemented,
+    required further development before it was fit for market integration testing.
+  lesson_learnt: Inverter-based DER can technically substitute for synchronous inertia
+    in frequency response, but translating this into market-ready optimisation software
+    requires considerably more development time than the modelling itself — projects
+    aiming to demonstrate DER participation in FCAS markets should separate the modelling
+    milestone from the market integration software milestone and allocate additional
+    development contingency for the latter.
+  issue_severity: minor
+  project_type: network/grid
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: execution & logistics
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages:
+  - 7
+  - 8
+  evidence_excerpt: This optimisation software has been implemented and tested but
+    is undergoing further development.
+  confidence_note: 'proponent_type reconciled to ''network business'' from: network
+    business (6/15), technology vendor (5/15), research organisation/university (3/15),
+    project developer (1/15)'
+  source_url: https://arena.gov.au/knowledge-bank/network-hosting-capacity-projects-progress-report-year-one/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 26/03/2020
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2020/03/network-hosting-capacity-projects-progress-report-year-one.pdf
+  markdown_filename: network_hosting_capacity_projects_progress_report_year_one.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45015
+  contributing_source_titles:
+  - Network Hosting Capacity Projects Progress Report (Year One)
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78

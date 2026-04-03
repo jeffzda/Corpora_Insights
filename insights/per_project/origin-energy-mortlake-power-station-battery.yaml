@@ -1,0 +1,1082 @@
+- record_id: ARENA-DLV-7101
+  source_title: Origin Energy - Mortlake Power Station Battery - Lessons Learnt Report
+    3
+  publish_date: 2025-03
+  project_name: Mortlake Power Station Battery Project
+  what_happened: During the Generator Performance Standard (GPS) submission process,
+    AEMO's due diligence review flagged non-compliance with reactive current rise
+    time requirements (NER S5.2.5.5) because Origin's studies used only positive sequence
+    reactive current (Iq_poc_pos), while AEMO's assessment used total reactive current
+    including both positive and negative sequence components (Iq_poc). The differing
+    methodologies produced higher calculated rise times during unbalanced fault conditions,
+    leading to an initial finding of non-compliance.
+  lesson_learnt: Projects deploying GFM inverters should not assume that fault current
+    limiting behaviour is standardised or fully mature — each OEM implements a proprietary
+    approach with distinct stability trade-offs. Connection assessments must probe
+    the specific current limiting methodology in depth and budget additional time
+    for iterative model validation, as industry convergence on best practice has not
+    yet occurred.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: grid connection/system studies
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Technical discussions between Origin, AEMO, and technical consultants
+    led AEMO to acknowledge that positive sequence reactive current was the more appropriate
+    methodology for unbalanced faults; methodologies were aligned and the GPS assessment
+    proceeded without major rework.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 7
+  - 8
+  - 9
+  evidence_excerpt: 'Very little is known about how fault current limiting is designed
+    and implemented, as it is proprietary to the OEM, and the design is still evolving...
+    the most recent current limiting methodologies can be categorized as follows,
+    along with their advantages and challenges: Mode Switching (MS)... Current Saturation
+    (CS)... Threshold Virtual Impedance (TVI or VI)... Voltage Saturation (VS).'
+  confidence_note: issue_severity set to moderate — the issue was resolved through
+    discussion without major rework, but it required additional technical engagement
+    and introduced some schedule pressure. Canonical record merged from 2 source records
+    across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/origin-energy-mortlake-power-station-battery-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/origin-energy-mortlake-power-station-battery/
+  kb_category: Battery storage
+  kb_publish_date: 1/07/2025
+  kb_year: '2024'
+  kb_associated_project: Origin Energy Mortlake Power Station Battery
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $24m
+  total_project_value: $417m
+  lead_organisation: 'Origin Energy Power Limited '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Mortlake, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/07/Origin-Mortlake-Power-Station-Battery-Project-Lessons-Learnt-Report-3.pdf
+  markdown_filename: origin_energy_mortlake_power_station_battery_lessons_learnt_report_3.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-7101
+  - ARENA-DLV-45553
+  contributing_source_titles:
+  - Origin Energy - Mortlake Power Station Battery - Lessons Learnt Report 3
+  - Origin Energy Mortlake Power Station Battery - Lessons Learnt Report No. 2
+  contributing_sources:
+  - source_title: Origin Energy - Mortlake Power Station Battery - Lessons Learnt
+      Report 3
+    pdf_url: https://arena.gov.au/assets/2025/07/Origin-Mortlake-Power-Station-Battery-Project-Lessons-Learnt-Report-3.pdf
+    source_pages:
+    - 7
+    - 8
+    - 9
+    source_url: https://arena.gov.au/knowledge-bank/origin-energy-mortlake-power-station-battery-lessons-learnt-report-3/
+    markdown_filename: origin_energy_mortlake_power_station_battery_lessons_learnt_report_3.md
+  - source_title: Origin Energy Mortlake Power Station Battery - Lessons Learnt Report
+      No. 2
+    pdf_url: https://arena.gov.au/assets/2024/12/Origin-Energy-Mortlake-Power-Station-Battery-Lessons-Learnt-Report-2.pdf
+    source_pages:
+    - 8
+    source_url: https://arena.gov.au/knowledge-bank/origin-energy-mortlake-power-station-battery-lessons-learnt-report-2/
+    markdown_filename: origin_energy_mortlake_power_station_battery_lessons_learnt_report_no_2.md
+  arena_category:
+  - Battery storage
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-7102
+  source_title: Origin Energy - Mortlake Power Station Battery - Lessons Learnt Report
+    3
+  publish_date: 2025-03
+  project_name: Mortlake Power Station Battery Project
+  what_happened: During an active connection application period, AEMO released SSIAG
+    v2.2 in July 2024 (superseding v2.1 which was current at the time of initial submission
+    in Q1 2024) and subsequently published four technical note updates to the System
+    Strength Quantity (SSQ) methodology between June 2024 and February 2025. These
+    updates required the project team to revise their simulation approach to remain
+    aligned with the latest interpretation, adding effort and pressure to already
+    tight delivery timelines. The technical notes were not widely circulated or accompanied
+    by extended lead times, making them easy to miss.
+  lesson_learnt: Developers should dedicate internal resources or processes to actively
+    monitor all regulatory and technical publications from AEMO — including technical
+    notes and minor updates, not just formal guideline revisions — throughout the
+    connection process; supplementary clarifications such as technical notes can influence
+    compliance expectations without prominent circulation, and early engagement during
+    draft consultation phases reduces the risk of last-minute rework and schedule
+    disruption.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: grid connection/system studies
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: data & measurement
+  intervention_note: The project team tracked the evolving guidance, interpreted the
+    changes, and updated their simulation approach to remain aligned with the latest
+    SSQ methodology; the revised methodology did not materially impact project outcomes.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 8
+  - 9
+  - 26
+  evidence_excerpt: The technical note updates, unlike the formal SSIAG revisions,
+    were not circulated as widely or with significant lead time, making them easy
+    to miss unless actively monitored. As a result, the project team had to dedicate
+    effort to track the evolving guidance, interpret the changes, and reflect them
+    in ongoing work—placing additional pressure on already tight delivery timelines.
+  confidence_note: secondary_failure_mode of resource/capability shortfall included
+    because the document explicitly notes the burden placed on project team capacity
+    to track non-prominent regulatory updates. Canonical record merged from 2 source
+    records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/origin-energy-mortlake-power-station-battery-lessons-learnt-report-3/
+  project_page_url: https://arena.gov.au/projects/origin-energy-mortlake-power-station-battery/
+  kb_category: Battery storage
+  kb_publish_date: 1/07/2025
+  kb_year: '2024'
+  kb_associated_project: Origin Energy Mortlake Power Station Battery
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $24m
+  total_project_value: $417m
+  lead_organisation: 'Origin Energy Power Limited '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Mortlake, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/07/Origin-Mortlake-Power-Station-Battery-Project-Lessons-Learnt-Report-3.pdf
+  markdown_filename: origin_energy_mortlake_power_station_battery_lessons_learnt_report_3.md
+  source_page_pdf: 8
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-7102
+  - ARENA-DLV-35256
+  contributing_source_titles:
+  - Origin Energy - Mortlake Power Station Battery - Lessons Learnt Report 3
+  - Origin - Mortlake Power Station Battery Project - Development and Grid Connection
+    Report
+  contributing_sources:
+  - source_title: Origin Energy - Mortlake Power Station Battery - Lessons Learnt
+      Report 3
+    pdf_url: https://arena.gov.au/assets/2025/07/Origin-Mortlake-Power-Station-Battery-Project-Lessons-Learnt-Report-3.pdf
+    source_pages:
+    - 8
+    - 9
+    source_url: https://arena.gov.au/knowledge-bank/origin-energy-mortlake-power-station-battery-lessons-learnt-report-3/
+    markdown_filename: origin_energy_mortlake_power_station_battery_lessons_learnt_report_3.md
+  - source_title: Origin - Mortlake Power Station Battery Project - Development and
+      Grid Connection Report
+    pdf_url: https://arena.gov.au/assets/2026/02/Origin-Mortlake-Power-Station-Battery-Project-Development-and-Grid-Connection-Report.pdf
+    source_pages:
+    - 26
+    source_url: https://arena.gov.au/knowledge-bank/origin-mortlake-power-station-battery-project-development-and-grid-connection-report/
+    markdown_filename: origin_mortlake_power_station_battery_project_development_and_grid_connection_report.md
+  arena_category:
+  - Battery storage
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-67151
+  source_title: Origin Energy - Mortlake Power Station Battery Project - Lessons Learnt
+    Report No.1
+  publish_date: 2024-05
+  project_name: Mortlake Power Station Battery Project
+  what_happened: During GPS model development for the 300MW/650MWh BESS project, harmonic
+    filters were first modelled on the BESS side of the connection but did not resolve
+    harmonic concerns within the HV grid. Investigation determined that harmonic issues
+    were inherent in the existing 500kV HV grid, requiring harmonic filters to be
+    sized on the HV grid connection side — a cost and scope not anticipated at capital
+    approval.
+  lesson_learnt: Unrecognised harmonic issues in the existing HV grid are not detected
+    until full GPS modelling is underway, which typically occurs after capital expenditure
+    approval and equipment selection. Projects should proactively assess existing
+    grid harmonic conditions and budget contingency for HV-side harmonic filters before
+    capital approval, as the cost of grid-scale harmonic filters is magnitudes higher
+    than generator-side equivalents and can threaten project viability.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: grid connection/system studies
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: Harmonic filters were resized and specified for the HV grid connection
+    side of the development to directly address the existing HV grid harmonic issues.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 6
+  - 7
+  - 25
+  evidence_excerpt: During the GPS model development for the Project harmonics were
+    determined to be a connection issue of concern. Initially harmonic filters were
+    modelled on the BESS side of the connection prior to 33kV to 500kV transformation,
+    however this did not resolve the harmonic concerns within the HV Grid. It was
+    thus determined, as the harmonic issues were inherent issues within the existing
+    HV Grid, that harmonic filters were required to be sized on the HV side of the
+    connection to deal directly with the existing HV Grid issues.
+  confidence_note: issue_severity assessed as major given the document states the
+    additional cost 'may in some instances significantly affect the economics of a
+    new project and thus its viability'; no specific cost or schedule quantum provided
+    so severity calibrated from described impact. Canonical record merged from 2 source
+    records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/origin-energy-mortlake-power-station-battery-project-lessons-learnt-report-no-1/
+  project_page_url: https://arena.gov.au/projects/origin-energy-mortlake-power-station-battery/
+  kb_category: Battery storage
+  kb_publish_date: 4/07/2024
+  kb_year: '2024'
+  kb_associated_project: Origin Energy Mortlake Power Station Battery
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $24m
+  total_project_value: $417m
+  lead_organisation: 'Origin Energy Power Limited '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Mortlake, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/07/Origin-energy-Mortlake-power-station-battery-Lessons-learnt-report-1-1.pdf
+  markdown_filename: origin_energy_mortlake_power_station_battery_project_lessons_learnt_report_no1.md
+  source_page_pdf: 7
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-35251
+  - ARENA-DLV-67151
+  contributing_source_titles:
+  - Origin - Mortlake Power Station Battery Project - Development and Grid Connection
+    Report
+  - Origin Energy - Mortlake Power Station Battery Project - Lessons Learnt Report
+    No.1
+  contributing_sources:
+  - source_title: Origin - Mortlake Power Station Battery Project - Development and
+      Grid Connection Report
+    pdf_url: https://arena.gov.au/assets/2026/02/Origin-Mortlake-Power-Station-Battery-Project-Development-and-Grid-Connection-Report.pdf
+    source_pages:
+    - 25
+    source_url: https://arena.gov.au/knowledge-bank/origin-mortlake-power-station-battery-project-development-and-grid-connection-report/
+    markdown_filename: origin_mortlake_power_station_battery_project_development_and_grid_connection_report.md
+  - source_title: Origin Energy - Mortlake Power Station Battery Project - Lessons
+      Learnt Report No.1
+    pdf_url: https://arena.gov.au/assets/2024/07/Origin-energy-Mortlake-power-station-battery-Lessons-learnt-report-1-1.pdf
+    source_pages:
+    - 6
+    - 7
+    source_url: https://arena.gov.au/knowledge-bank/origin-energy-mortlake-power-station-battery-project-lessons-learnt-report-no-1/
+    markdown_filename: origin_energy_mortlake_power_station_battery_project_lessons_learnt_report_no1.md
+  arena_category:
+  - Battery storage
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: cost overrun
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-67152
+  source_title: Origin Energy - Mortlake Power Station Battery Project - Lessons Learnt
+    Report No.1
+  publish_date: 2024-05
+  project_name: Mortlake Power Station Battery Project
+  what_happened: The inverter OEM (SMA) provided only a technical memorandum covering
+    basic grid-forming model algorithms rather than a comprehensive technical manual.
+    The memorandum failed to clarify that two control modes (inertia mode and droop
+    mode) within the grid-forming functionality are mutually exclusive, causing the
+    modelling engineer to make incorrect initial assumptions and delaying the GPS
+    modelling exercise by approximately one month.
+  lesson_learnt: When selecting inverter OEMs for grid-forming BESS projects, prioritise
+    transparency and maturity of technical models; insufficient OEM documentation
+    forces trial-and-error modelling, as each setting update requires at least two
+    weeks for full verification across hundreds of tests, compounding time and cost
+    impacts. Where full technical manuals are not available, proactively engage OEMs
+    to extract necessary detail before modelling commences.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: grid connection/system studies
+  failure_mode: unvalidated technical assumptions
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: The modelling engineer identified the mutual exclusivity of the
+    two GFM control modes through trial and error, ultimately resolving the incorrect
+    assumptions and completing the GPS modelling, albeit approximately one month late.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 8
+  - 25
+  evidence_excerpt: Original Equipment Manufacturer's ability to provide a full suite
+    of the necessary technical detail at an early stage to allow for timely completion
+    of GPS models associated with connection applications. Improved efficiency of
+    model tuning process and in the reduction of timeline of preparing acceptable
+    GPS modelling based on Grid forming basis.
+  confidence_note: transferability assessed as moderate rather than broad because
+    the issue is specific to novel grid-forming inverter technology and OEM IP practices;
+    it is less directly applicable to projects using conventional inverter technology
+    or non-BESS project types. Canonical record merged from 2 source records across
+    2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/origin-energy-mortlake-power-station-battery-project-lessons-learnt-report-no-1/
+  project_page_url: https://arena.gov.au/projects/origin-energy-mortlake-power-station-battery/
+  kb_category: Battery storage
+  kb_publish_date: 4/07/2024
+  kb_year: '2024'
+  kb_associated_project: Origin Energy Mortlake Power Station Battery
+  kb_document_type: Lessons
+  kb_document_folder: Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $24m
+  total_project_value: $417m
+  lead_organisation: 'Origin Energy Power Limited '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Mortlake, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/07/Origin-energy-Mortlake-power-station-battery-Lessons-learnt-report-1-1.pdf
+  markdown_filename: origin_energy_mortlake_power_station_battery_project_lessons_learnt_report_no1.md
+  source_page_pdf: 8
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-35252
+  - ARENA-DLV-67152
+  contributing_source_titles:
+  - Origin - Mortlake Power Station Battery Project - Development and Grid Connection
+    Report
+  - Origin Energy - Mortlake Power Station Battery Project - Lessons Learnt Report
+    No.1
+  contributing_sources:
+  - source_title: Origin - Mortlake Power Station Battery Project - Development and
+      Grid Connection Report
+    pdf_url: https://arena.gov.au/assets/2026/02/Origin-Mortlake-Power-Station-Battery-Project-Development-and-Grid-Connection-Report.pdf
+    source_pages:
+    - 25
+    source_url: https://arena.gov.au/knowledge-bank/origin-mortlake-power-station-battery-project-development-and-grid-connection-report/
+    markdown_filename: origin_mortlake_power_station_battery_project_development_and_grid_connection_report.md
+  - source_title: Origin Energy - Mortlake Power Station Battery Project - Lessons
+      Learnt Report No.1
+    pdf_url: https://arena.gov.au/assets/2024/07/Origin-energy-Mortlake-power-station-battery-Lessons-learnt-report-1-1.pdf
+    source_pages:
+    - 8
+    source_url: https://arena.gov.au/knowledge-bank/origin-energy-mortlake-power-station-battery-project-lessons-learnt-report-no-1/
+    markdown_filename: origin_energy_mortlake_power_station_battery_project_lessons_learnt_report_no1.md
+  arena_category:
+  - Battery storage
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-45551
+  source_title: Origin Energy Mortlake Power Station Battery - Lessons Learnt Report
+    No. 2
+  publish_date: 2024-11
+  project_name: Mortlake Power Station Battery Project
+  what_happened: During the Mortlake BESS connection application and AEMO Due Diligence
+    review, the Grid Forming (GFM) inverter's Virtual Impedance (VI) mode exhibited
+    overlapping entry and exit criteria, causing retriggering and mode-sticking instability
+    — particularly in weak grid conditions with low Short Circuit Ratios. The inverter
+    oscillated between entering and exiting VI mode during fault ride-through, or
+    in some scenarios remained permanently stuck in VI mode after a fault cleared.
+  lesson_learnt: GFM inverter designs must use mutually exclusive, non-overlapping
+    criteria for entering and exiting Virtual Impedance mode — overlapping thresholds
+    cause retriggering or permanent mode-sticking in weak grids. Future projects should
+    require vendors to demonstrate that VI entry/exit logic is robust across weak-system
+    scenarios (low SCR, extended voltage excursions) before finalising the connection
+    model.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: grid connection/system studies
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated integration
+  intervention_note: Control parameters were adjusted and inverter settings fine-tuned
+    through iterative testing to resolve VI retriggering and sticking issues, ultimately
+    achieving model freeze required for connection approval.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 6
+  - 7
+  - 8
+  - 25
+  evidence_excerpt: 'The overlapping criteria for entering and exiting Virtual Impedance
+    (VI) mode can lead to several potential consequences: VI Mode Retriggering: Overlapping
+    criteria can cause the inverter to oscillate between entering and exiting VI mode,
+    leading to instability during faults... VI Mode Transitioning: Due to unclear
+    criteria for entering and exiting VI mode, the inverter may enter VI mode and
+    fail to exit.'
+  confidence_note: delay_category set to commissioning/integration as the issue manifested
+    during connection model validation (AEMO Due Diligence), which precedes physical
+    commissioning but is functionally equivalent in this context. delay_magnitude
+    not quantified as no explicit duration given for VI-related delays. Canonical
+    record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/origin-energy-mortlake-power-station-battery-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/origin-energy-mortlake-power-station-battery/
+  kb_category: Battery storage
+  kb_publish_date: 18/12/2024
+  kb_year: '2024'
+  kb_associated_project: Origin Energy Mortlake Power Station Battery
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $24m
+  total_project_value: $417m
+  lead_organisation: 'Origin Energy Power Limited '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Mortlake, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Origin-Energy-Mortlake-Power-Station-Battery-Lessons-Learnt-Report-2.pdf
+  markdown_filename: origin_energy_mortlake_power_station_battery_lessons_learnt_report_no_2.md
+  source_page_pdf: 7
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-35253
+  - ARENA-DLV-45551
+  contributing_source_titles:
+  - Origin - Mortlake Power Station Battery Project - Development and Grid Connection
+    Report
+  - Origin Energy Mortlake Power Station Battery - Lessons Learnt Report No. 2
+  contributing_sources:
+  - source_title: Origin - Mortlake Power Station Battery Project - Development and
+      Grid Connection Report
+    pdf_url: https://arena.gov.au/assets/2026/02/Origin-Mortlake-Power-Station-Battery-Project-Development-and-Grid-Connection-Report.pdf
+    source_pages:
+    - 6
+    - 7
+    - 25
+    source_url: https://arena.gov.au/knowledge-bank/origin-mortlake-power-station-battery-project-development-and-grid-connection-report/
+    markdown_filename: origin_mortlake_power_station_battery_project_development_and_grid_connection_report.md
+  - source_title: Origin Energy Mortlake Power Station Battery - Lessons Learnt Report
+      No. 2
+    pdf_url: https://arena.gov.au/assets/2024/12/Origin-Energy-Mortlake-Power-Station-Battery-Lessons-Learnt-Report-2.pdf
+    source_pages:
+    - 6
+    - 7
+    - 8
+    source_url: https://arena.gov.au/knowledge-bank/origin-energy-mortlake-power-station-battery-lessons-learnt-report-2/
+    markdown_filename: origin_energy_mortlake_power_station_battery_lessons_learnt_report_no_2.md
+  arena_category:
+  - Battery storage
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-45552
+  source_title: Origin Energy Mortlake Power Station Battery - Lessons Learnt Report
+    No. 2
+  publish_date: 2024-11
+  project_name: Mortlake Power Station Battery Project
+  what_happened: During AEMO's Due Diligence review of the Mortlake BESS connection
+    application, a newly added reactive power prioritization mode in the GFM inverter
+    firmware caused active power output to drop significantly more than expected under
+    unbalanced fault conditions. The connection assessment team disabled the reactive
+    power prioritization mode because it was newly developed and considered insufficiently
+    mature, accepting reduced reactive power performance to restore acceptable active
+    power behaviour.
+  lesson_learnt: New inverter firmware functionalities — such as reactive power prioritization
+    — must be comprehensively tested across the full range of fault scenarios before
+    inclusion in a connection model submission; immature features can introduce unexpected
+    trade-offs (in this case, improved reactive power at the cost of excessive active
+    power drop) that require removal under regulatory scrutiny. Standardising current
+    limiting methods across the industry would reduce project-by-project integration
+    risk.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: grid connection/system studies
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated integration
+  intervention_note: The connection assessment team disabled the reactive power prioritization
+    mode after comparison studies showed it caused unacceptable active power reduction,
+    reverting to standard current limiting settings to achieve model freeze.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 6
+  - 8
+  - 9
+  - 25
+  evidence_excerpt: During AEMO's Due Diligence review, it was found that the inverter's
+    active power output dropped significantly more than expected during VI mode under
+    unbalanced faults... enabling reactive power prioritization mode caused a large
+    shift in the current on the healthy phases, which affected the three-phase active
+    power. Due to the lack of detailed explanation from the vendor, the connection
+    assessment team decided to switch off the reactive power prioritization mode,
+    understanding that this mode is newly developed and may not be fully mature at
+    this stage.
+  confidence_note: delay_category set to data/validation/testing as the issue was
+    discovered during AEMO's model validation/due diligence process. outcome_class
+    is re-scoped/adapted because the feature was disabled rather than fixed, representing
+    a functional trade-off rather than full resolution. Canonical record merged from
+    2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/origin-energy-mortlake-power-station-battery-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/origin-energy-mortlake-power-station-battery/
+  kb_category: Battery storage
+  kb_publish_date: 18/12/2024
+  kb_year: '2024'
+  kb_associated_project: Origin Energy Mortlake Power Station Battery
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $24m
+  total_project_value: $417m
+  lead_organisation: 'Origin Energy Power Limited '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Mortlake, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Origin-Energy-Mortlake-Power-Station-Battery-Lessons-Learnt-Report-2.pdf
+  markdown_filename: origin_energy_mortlake_power_station_battery_lessons_learnt_report_no_2.md
+  source_page_pdf: 8
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-35254
+  - ARENA-DLV-45552
+  contributing_source_titles:
+  - Origin - Mortlake Power Station Battery Project - Development and Grid Connection
+    Report
+  - Origin Energy Mortlake Power Station Battery - Lessons Learnt Report No. 2
+  contributing_sources:
+  - source_title: Origin - Mortlake Power Station Battery Project - Development and
+      Grid Connection Report
+    pdf_url: https://arena.gov.au/assets/2026/02/Origin-Mortlake-Power-Station-Battery-Project-Development-and-Grid-Connection-Report.pdf
+    source_pages:
+    - 25
+    source_url: https://arena.gov.au/knowledge-bank/origin-mortlake-power-station-battery-project-development-and-grid-connection-report/
+    markdown_filename: origin_mortlake_power_station_battery_project_development_and_grid_connection_report.md
+  - source_title: Origin Energy Mortlake Power Station Battery - Lessons Learnt Report
+      No. 2
+    pdf_url: https://arena.gov.au/assets/2024/12/Origin-Energy-Mortlake-Power-Station-Battery-Lessons-Learnt-Report-2.pdf
+    source_pages:
+    - 6
+    - 8
+    - 9
+    source_url: https://arena.gov.au/knowledge-bank/origin-energy-mortlake-power-station-battery-lessons-learnt-report-2/
+    markdown_filename: origin_energy_mortlake_power_station_battery_lessons_learnt_report_no_2.md
+  arena_category:
+  - Battery storage
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-35255
+  source_title: Origin - Mortlake Power Station Battery Project - Development and
+    Grid Connection Report
+  publish_date: '2026-01-09'
+  project_name: Mortlake Power Station Battery Project
+  what_happened: A discrepancy between Origin's and AEMO's calculation methodology
+    for reactive current rise time requirements led to an initially flagged non-compliance.
+    Origin used only positive sequence current in calculations, while AEMO included
+    both positive and negative sequences.
+  lesson_learnt: Align calculation methodologies for reactive current rise time requirements
+    with AEMO and NSPs at the outset of connection studies — undisclosed differences
+    in sequence current inclusion (positive-only vs. positive and negative) can generate
+    false non-compliance findings, triggering unnecessary rework and delays.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: grid connection/system studies
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id001
+  - 26
+  evidence_excerpt: A discrepancy arose because Origin used only the positive sequence
+    current in its calculations, while AEMO included both positive and negative sequences,
+    leading to initially flagged non-compliance. Future projects should ensure early
+    alignment with AEMO and NSPs on calculation methodologies to avoid misinterpretations,
+    unnecessary rework, and delays.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/origin-mortlake-power-station-battery-project-development-and-grid-connection-report/
+  project_page_url: https://arena.gov.au/projects/origin-energy-mortlake-power-station-battery/
+  kb_category: Battery storage
+  kb_publish_date: 19/02/2026
+  kb_year: '2024'
+  kb_associated_project: Origin Energy Mortlake Power Station Battery
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $24m
+  total_project_value: $417m
+  lead_organisation: 'Origin Energy Power Limited '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Mortlake, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/02/Origin-Mortlake-Power-Station-Battery-Project-Development-and-Grid-Connection-Report.pdf
+  markdown_filename: origin_mortlake_power_station_battery_project_development_and_grid_connection_report.md
+  source_page_pdf: 26
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-35255
+  contributing_source_titles:
+  - Origin - Mortlake Power Station Battery Project - Development and Grid Connection
+    Report
+  contributing_sources:
+  - source_title: Origin - Mortlake Power Station Battery Project - Development and
+      Grid Connection Report
+    pdf_url: https://arena.gov.au/assets/2026/02/Origin-Mortlake-Power-Station-Battery-Project-Development-and-Grid-Connection-Report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/origin-mortlake-power-station-battery-project-development-and-grid-connection-report/
+    markdown_filename: origin_mortlake_power_station_battery_project_development_and_grid_connection_report.md
+  arena_category:
+  - Battery storage
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-35257
+  source_title: Origin - Mortlake Power Station Battery Project - Development and
+    Grid Connection Report
+  publish_date: '2026-01-09'
+  project_name: Mortlake Power Station Battery Project
+  what_happened: An early decision was made to switch the Mortlake BESS from grid-following
+    (GFL) to grid-forming (GFM) inverter operation, avoiding system strength connection
+    charges of $2–3 million per annum. The GFM option carried an additional construction
+    cost of $1 million and a longer nominal GPS timeframe (20 months vs 17 months)
+    but eliminated annual system strength charges and opened additional revenue streams
+    including SRAS and TNSP system strength supply contracts.
+  lesson_learnt: Evaluate grid-forming inverter technology early in BESS project development
+    — the additional upfront cost (~$1M construction) and modestly longer GPS timeframe
+    (~3 months) is typically offset within the first year by avoided system strength
+    charges ($2–3M/yr) and additional revenue streams, making GFM economically superior
+    for projects connecting into weak grid locations.
+  issue_severity: none
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: concept/feasibility
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id002
+  - 6
+  - 7
+  evidence_excerpt: There was an early decision on Mortlake BESS Development to change
+    power converter operation from grid following to grid forming, thereby avoiding
+    system strength connection fee ranging from $2m per annum to $3m per annum, depending
+    on network strength status at Connection Agreement. This is a significant minimum
+    reduction of 20% of total annual opex.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/origin-mortlake-power-station-battery-project-development-and-grid-connection-report/
+  project_page_url: https://arena.gov.au/projects/origin-energy-mortlake-power-station-battery/
+  kb_category: Battery storage
+  kb_publish_date: 19/02/2026
+  kb_year: '2024'
+  kb_associated_project: Origin Energy Mortlake Power Station Battery
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $24m
+  total_project_value: $417m
+  lead_organisation: 'Origin Energy Power Limited '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Mortlake, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/02/Origin-Mortlake-Power-Station-Battery-Project-Development-and-Grid-Connection-Report.pdf
+  markdown_filename: origin_mortlake_power_station_battery_project_development_and_grid_connection_report.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-35257
+  contributing_source_titles:
+  - Origin - Mortlake Power Station Battery Project - Development and Grid Connection
+    Report
+  contributing_sources:
+  - source_title: Origin - Mortlake Power Station Battery Project - Development and
+      Grid Connection Report
+    pdf_url: https://arena.gov.au/assets/2026/02/Origin-Mortlake-Power-Station-Battery-Project-Development-and-Grid-Connection-Report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/origin-mortlake-power-station-battery-project-development-and-grid-connection-report/
+    markdown_filename: origin_mortlake_power_station_battery_project_development_and_grid_connection_report.md
+  arena_category:
+  - Battery storage
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-35258
+  source_title: Origin - Mortlake Power Station Battery Project - Development and
+    Grid Connection Report
+  publish_date: '2026-01-09'
+  project_name: Mortlake Power Station Battery Project
+  what_happened: During connection studies, AEMO requested additional tuning of the
+    GFM inverter control system response to minimise post-fault voltage dips below
+    90% of normal voltage. This required switching the MLBESS inverters from P-Inertia
+    to P-Droop mode to deliver faster active power settlement post-fault, rather than
+    emulating synchronous machine inertial swing which caused increased active power
+    swing and POC voltage dips.
+  lesson_learnt: In low SCR connection environments, plan for AEMO to request post-fault
+    voltage performance tuning beyond baseline GFM settings — the switch from P-Inertia
+    to P-Droop mode resolved post-fault voltage dip issues but represents a meaningful
+    control design iteration that should be anticipated in connection study timelines
+    for GFM BESS projects.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: grid connection/system studies
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: The MLBESS inverters were switched from P-Inertia to P-Droop
+    GFM mode, delivering faster active power settlement post-fault and eliminating
+    the post-fault voltage dip below 90% threshold.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id003
+  - 8
+  - 9
+  evidence_excerpt: AEMO requested further tuning of the control system response to
+    minimise post-fault voltage dips below 90% of the normal voltage (500 kV). To
+    meet this requirement, the MLBESS inverters were switched to a P-Droop mode, instead
+    of P-Inertia, to deliver a fast active power settlement post-fault.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/origin-mortlake-power-station-battery-project-development-and-grid-connection-report/
+  project_page_url: https://arena.gov.au/projects/origin-energy-mortlake-power-station-battery/
+  kb_category: Battery storage
+  kb_publish_date: 19/02/2026
+  kb_year: '2024'
+  kb_associated_project: Origin Energy Mortlake Power Station Battery
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $24m
+  total_project_value: $417m
+  lead_organisation: 'Origin Energy Power Limited '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Mortlake, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/02/Origin-Mortlake-Power-Station-Battery-Project-Development-and-Grid-Connection-Report.pdf
+  markdown_filename: origin_mortlake_power_station_battery_project_development_and_grid_connection_report.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-35258
+  contributing_source_titles:
+  - Origin - Mortlake Power Station Battery Project - Development and Grid Connection
+    Report
+  contributing_sources:
+  - source_title: Origin - Mortlake Power Station Battery Project - Development and
+      Grid Connection Report
+    pdf_url: https://arena.gov.au/assets/2026/02/Origin-Mortlake-Power-Station-Battery-Project-Development-and-Grid-Connection-Report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/origin-mortlake-power-station-battery-project-development-and-grid-connection-report/
+    markdown_filename: origin_mortlake_power_station_battery_project_development_and_grid_connection_report.md
+  arena_category:
+  - Battery storage
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-35259
+  source_title: Origin - Mortlake Power Station Battery Project - Development and
+    Grid Connection Report
+  publish_date: '2026-01-09'
+  project_name: Mortlake Power Station Battery Project
+  what_happened: Grid-forming inverter technology (GFM) introduced increased complexity
+    in GPS assessment for several NER clauses (S5.2.5.5, S5.2.5.8, S5.2.5.13) because
+    no widely accepted performance standards existed for GFM at the time, requiring
+    negotiation with NSPs and AEMO on clause-by-clause interpretations.
+  lesson_learnt: For BESS projects using grid-forming inverters, allocate additional
+    time and specialist resources for GPS clause negotiation — the absence of widely
+    accepted GFM performance standards for clauses S5.2.5.5 (contingency response),
+    S5.2.5.8 (protection/islanding), and S5.2.5.13 (voltage/reactive control) substantially
+    increases assessment complexity and negotiation duration compared with grid-following
+    projects.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: grid connection/system studies
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: NSPs and AEMO demonstrated cooperative approach in GFM GPS negotiations
+    despite the absence of formal standards, enabling eventual resolution of clause
+    interpretations.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id004
+  - 24
+  evidence_excerpt: There is no widely accepted performance standard for GFM yet,
+    which can increase the complexity when negotiating on this clause. Although the
+    prospect for certain clauses is not well understood at the moment, NSPs and AEMO
+    tend to be more cooperative in the negotiation for GFM.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/origin-mortlake-power-station-battery-project-development-and-grid-connection-report/
+  project_page_url: https://arena.gov.au/projects/origin-energy-mortlake-power-station-battery/
+  kb_category: Battery storage
+  kb_publish_date: 19/02/2026
+  kb_year: '2024'
+  kb_associated_project: Origin Energy Mortlake Power Station Battery
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $24m
+  total_project_value: $417m
+  lead_organisation: 'Origin Energy Power Limited '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Mortlake, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/02/Origin-Mortlake-Power-Station-Battery-Project-Development-and-Grid-Connection-Report.pdf
+  markdown_filename: origin_mortlake_power_station_battery_project_development_and_grid_connection_report.md
+  source_page_pdf: 24
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-35259
+  contributing_source_titles:
+  - Origin - Mortlake Power Station Battery Project - Development and Grid Connection
+    Report
+  contributing_sources:
+  - source_title: Origin - Mortlake Power Station Battery Project - Development and
+      Grid Connection Report
+    pdf_url: https://arena.gov.au/assets/2026/02/Origin-Mortlake-Power-Station-Battery-Project-Development-and-Grid-Connection-Report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/origin-mortlake-power-station-battery-project-development-and-grid-connection-report/
+    markdown_filename: origin_mortlake_power_station_battery_project_development_and_grid_connection_report.md
+  arena_category:
+  - Battery storage
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-35260
+  source_title: Origin - Mortlake Power Station Battery Project - Development and
+    Grid Connection Report
+  publish_date: '2026-01-09'
+  project_name: Mortlake Power Station Battery Project
+  what_happened: The MLBESS project received formal connection approvals and a 534A
+    letter in June 2025, with connection agreements signed by early November 2025.
+    The GPS process for the GFM option took a nominal 20 months (compared with 17
+    months for a GFL option), but successfully completed with all AEMO core GFM compliance
+    tests and DMAT GPS tests passed.
+  lesson_learnt: Grid-forming BESS projects connecting at 500kV in weak grid locations
+    should budget a nominal GPS process of approximately 20 months — three months
+    longer than equivalent grid-following projects — reflecting additional tuning,
+    novel clause negotiation, and model acceptance iteration inherent to first-of-type
+    GFM connections.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: grid connection/system studies
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: 3-12 months
+  technology_domain: battery storage
+  source_pages: &id005
+  - 4
+  - 7
+  evidence_excerpt: 'GPS Time-Frame (Nominal): Grid-Following 17 months (Jan 2025),
+    Grid-Forming 20 months (Apr 2025). In June 2025, the project received formal connection
+    approvals along with the issuance of a 534A letter.'
+  confidence_note: Delay magnitude of 3–12 months represents the incremental difference
+    between GFL and GFM GPS timelines (3 months), not total GPS duration.
+  source_url: https://arena.gov.au/knowledge-bank/origin-mortlake-power-station-battery-project-development-and-grid-connection-report/
+  project_page_url: https://arena.gov.au/projects/origin-energy-mortlake-power-station-battery/
+  kb_category: Battery storage
+  kb_publish_date: 19/02/2026
+  kb_year: '2024'
+  kb_associated_project: Origin Energy Mortlake Power Station Battery
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $24m
+  total_project_value: $417m
+  lead_organisation: 'Origin Energy Power Limited '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Mortlake, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2026/02/Origin-Mortlake-Power-Station-Battery-Project-Development-and-Grid-Connection-Report.pdf
+  markdown_filename: origin_mortlake_power_station_battery_project_development_and_grid_connection_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-35260
+  contributing_source_titles:
+  - Origin - Mortlake Power Station Battery Project - Development and Grid Connection
+    Report
+  contributing_sources:
+  - source_title: Origin - Mortlake Power Station Battery Project - Development and
+      Grid Connection Report
+    pdf_url: https://arena.gov.au/assets/2026/02/Origin-Mortlake-Power-Station-Battery-Project-Development-and-Grid-Connection-Report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/origin-mortlake-power-station-battery-project-development-and-grid-connection-report/
+    markdown_filename: origin_mortlake_power_station_battery_project_development_and_grid_connection_report.md
+  arena_category:
+  - Battery storage
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-45554
+  source_title: Origin Energy Mortlake Power Station Battery - Lessons Learnt Report
+    No. 2
+  publish_date: 2024-11
+  project_name: Mortlake Power Station Battery Project
+  what_happened: The Mortlake BESS project achieved model freeze for its PSCAD/PSSE
+    simulation models — a prerequisite for grid connection approval — only after resolving
+    multiple critical performance issues in the vendor-supplied models, including
+    excessive active power drop and VI sticking/retriggering. Resolution required
+    adjusting control parameters, fine-tuning inverter settings, and conducting iterative
+    testing cycles.
+  lesson_learnt: When procuring GFM BESS systems, the EPC or proponent should contractually
+    require the OEM to deliver a validated, connection-ready simulation model (PSCAD/PSSE)
+    with demonstrated compliance across all NER fault scenarios before model submission
+    to AEMO — vendor models with unresolved critical behaviours will require time-consuming
+    iterative correction cycles that delay connection approval.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: grid connection/system studies
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Issues were resolved by adjusting control parameters, fine-tuning
+    inverter settings, and conducting iterative testing to ensure stable performance,
+    ultimately achieving model freeze.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id006
+  - 4
+  evidence_excerpt: During this period, we achieved the milestone of reaching model
+    freeze after addressing several critical performance issues, such as excessive
+    active power drop and VI sticking/retriggering related to the PPC/inverter PSCAD/PSSE
+    simulation model from the vendor. These issues were resolved by adjusting control
+    parameters, fine-tuning inverter settings, and conducting iterative testing to
+    ensure stable performance.
+  confidence_note: No explicit duration stated for the model freeze delay; delay_magnitude
+    set to not quantified. The event straddles approvals/contracting and the technical
+    work underpinning it — lifecycle_phase set to approvals/contracting as model freeze
+    is a connection approval prerequisite.
+  source_url: https://arena.gov.au/knowledge-bank/origin-energy-mortlake-power-station-battery-lessons-learnt-report-2/
+  project_page_url: https://arena.gov.au/projects/origin-energy-mortlake-power-station-battery/
+  kb_category: Battery storage
+  kb_publish_date: 18/12/2024
+  kb_year: '2024'
+  kb_associated_project: Origin Energy Mortlake Power Station Battery
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $24m
+  total_project_value: $417m
+  lead_organisation: 'Origin Energy Power Limited '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 01/02/2024
+  location: Mortlake, Victoria
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/12/Origin-Energy-Mortlake-Power-Station-Battery-Lessons-Learnt-Report-2.pdf
+  markdown_filename: origin_energy_mortlake_power_station_battery_lessons_learnt_report_no_2.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-45554
+  contributing_source_titles:
+  - Origin Energy Mortlake Power Station Battery - Lessons Learnt Report No. 2
+  contributing_sources:
+  - source_title: Origin Energy Mortlake Power Station Battery - Lessons Learnt Report
+      No. 2
+    pdf_url: https://arena.gov.au/assets/2024/12/Origin-Energy-Mortlake-Power-Station-Battery-Lessons-Learnt-Report-2.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/origin-energy-mortlake-power-station-battery-lessons-learnt-report-2/
+    markdown_filename: origin_energy_mortlake_power_station_battery_lessons_learnt_report_no_2.md
+  arena_category:
+  - Battery storage
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.78

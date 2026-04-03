@@ -1,0 +1,408 @@
+- record_id: ARENA-DLV-0101
+  source_title: Cost-Effective GaAsP Top Solar Cell Grown On A High Performance, Low
+    Cost Silicon Solar Cell
+  publish_date: 2017-03
+  project_name: Cost-Effective GaAsP Top Solar Cell Grown On A High Performance, Low
+    Cost Silicon Solar Cell
+  what_happened: During development of the GaAsP/SiGe tandem solar cell, key optical
+    constants and electrical parameters for the III-V and SiGe material alloys had
+    never been published, creating a knowledge gap that required the team to design
+    specific test structures to extract the missing material parameters before accurate
+    device modelling could proceed.
+  lesson_learnt: Integrate test structures into the tandem solar cell mask set from
+    the outset so that optical constants and electrical parameters for each layer
+    can be extracted simultaneously with cell fabrication — this enables accurate
+    device modelling and performance prediction without separate experimental campaigns.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: Designed test structures (for resistivity, thickness, and mobility)
+    integrated into the photolithography mask set and fabricated simultaneously with
+    solar cells; extracted optical constants and electrical parameters were published
+    in peer-reviewed journals.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id001
+  - 13
+  - 14
+  evidence_excerpt: During the course of this project, we identified that some important
+    optical constants and electrical parameters of III-V material relevant to this
+    project had never been published. To fill this knowledge gap, we designed specific
+    structures to obtain the parameters of III-V materials we needed.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/cost-effective%e2%80%8b-%e2%80%8bgaasp%e2%80%8b-%e2%80%8btop-solar%e2%80%8b-%e2%80%8bcell%e2%80%8b-%e2%80%8bgrown%e2%80%8b-%e2%80%8bon%e2%80%8b-%e2%80%8ba%e2%80%8b-%e2%80%8bhigh-performance%e2%80%8b/
+  project_page_url: https://arena.gov.au/projects/cost-effective-gallium-arsenide-phosphide-top-solar-cell-grown-on-a-high-performance-low-cost-silicon-solar-cell/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 11/10/2017
+  kb_year: '2011'
+  kb_associated_project: Cost Effective Gallium Arsenide Phosphide Top Solar Cell
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.61m
+  total_project_value: $7.11m
+  lead_organisation: University of NSW
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 14/12/2011
+  location: New South Wales
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/10/Cost-Effective-GaAsP-UNSW-Australia-project-results-lessons.pdf
+  markdown_filename: cost_effective8203_8203gaasp8203_8203top_solar8203_8203cell8203_8203grown8203_8203on8203_8203a8203_8.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-0101
+  contributing_source_titles:
+  - Cost-Effective GaAsP Top Solar Cell Grown On A High Performance, Low Cost Silicon
+    Solar Cell
+  contributing_sources:
+  - source_title: Cost-Effective GaAsP Top Solar Cell Grown On A High Performance,
+      Low Cost Silicon Solar Cell
+    pdf_url: https://arena.gov.au/assets/2017/10/Cost-Effective-GaAsP-UNSW-Australia-project-results-lessons.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/cost-effective%e2%80%8b-%e2%80%8bgaasp%e2%80%8b-%e2%80%8btop-solar%e2%80%8b-%e2%80%8bcell%e2%80%8b-%e2%80%8bgrown%e2%80%8b-%e2%80%8bon%e2%80%8b-%e2%80%8ba%e2%80%8b-%e2%80%8bhigh-performance%e2%80%8b/
+    markdown_filename: cost_effective8203_8203gaasp8203_8203top_solar8203_8203cell8203_8203grown8203_8203on8203_8203a8203_8.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-0102
+  source_title: Cost-Effective GaAsP Top Solar Cell Grown On A High Performance, Low
+    Cost Silicon Solar Cell
+  publish_date: 2017-03
+  project_name: Cost-Effective GaAsP Top Solar Cell Grown On A High Performance, Low
+    Cost Silicon Solar Cell
+  what_happened: Without a method to independently characterise individual sub-cells
+    within the tandem structure, the project team could not identify current-limiting
+    or current-matching conditions, hindering targeted device improvement. A three-terminal
+    (3T) measurement approach was conceived and validated to separately analyse the
+    top and bottom cells simultaneously.
+  lesson_learnt: Apply a three-terminal (3T) measurement approach to tandem solar
+    cell analysis before committing to two-terminal (2T) design and fabrication —
+    this reduces unknowns, identifies which sub-cell limits performance, and enables
+    targeted improvements at an early design stage. The technique is transferable
+    to other tandem solar cell projects.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Designed a 3T device with front, middle, and rear metal contacts;
+    used circuit simulation and an adjustable light source to characterise current-limiting
+    cases and achieve current-matching, increasing tandem efficiency from 18.9% to
+    20.6% at one sun and 23.8% at 7.2 suns.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id002
+  - 15
+  - 16
+  evidence_excerpt: Three-terminal (3T) measurements allow separate analysis of top
+    cell and bottom cell in a tandem structure. It can not only provide current-voltage
+    characteristics for both sub cells simultaneously, but also facilitates the detailed
+    analysis of current-limiting and current-matching cases, and the extraction of
+    the cell parameters. This is a leveraging technique for this project and can also
+    be applied to other tandem solar cell projects.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/cost-effective%e2%80%8b-%e2%80%8bgaasp%e2%80%8b-%e2%80%8btop-solar%e2%80%8b-%e2%80%8bcell%e2%80%8b-%e2%80%8bgrown%e2%80%8b-%e2%80%8bon%e2%80%8b-%e2%80%8ba%e2%80%8b-%e2%80%8bhigh-performance%e2%80%8b/
+  project_page_url: https://arena.gov.au/projects/cost-effective-gallium-arsenide-phosphide-top-solar-cell-grown-on-a-high-performance-low-cost-silicon-solar-cell/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 11/10/2017
+  kb_year: '2011'
+  kb_associated_project: Cost Effective Gallium Arsenide Phosphide Top Solar Cell
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.61m
+  total_project_value: $7.11m
+  lead_organisation: University of NSW
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 14/12/2011
+  location: New South Wales
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/10/Cost-Effective-GaAsP-UNSW-Australia-project-results-lessons.pdf
+  markdown_filename: cost_effective8203_8203gaasp8203_8203top_solar8203_8203cell8203_8203grown8203_8203on8203_8203a8203_8.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-0102
+  contributing_source_titles:
+  - Cost-Effective GaAsP Top Solar Cell Grown On A High Performance, Low Cost Silicon
+    Solar Cell
+  contributing_sources:
+  - source_title: Cost-Effective GaAsP Top Solar Cell Grown On A High Performance,
+      Low Cost Silicon Solar Cell
+    pdf_url: https://arena.gov.au/assets/2017/10/Cost-Effective-GaAsP-UNSW-Australia-project-results-lessons.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/cost-effective%e2%80%8b-%e2%80%8bgaasp%e2%80%8b-%e2%80%8btop-solar%e2%80%8b-%e2%80%8bcell%e2%80%8b-%e2%80%8bgrown%e2%80%8b-%e2%80%8bon%e2%80%8b-%e2%80%8ba%e2%80%8b-%e2%80%8bhigh-performance%e2%80%8b/
+    markdown_filename: cost_effective8203_8203gaasp8203_8203top_solar8203_8203cell8203_8203grown8203_8203on8203_8203a8203_8.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-0103
+  source_title: Cost-Effective GaAsP Top Solar Cell Grown On A High Performance, Low
+    Cost Silicon Solar Cell
+  publish_date: 2017-03
+  project_name: Cost-Effective GaAsP Top Solar Cell Grown On A High Performance, Low
+    Cost Silicon Solar Cell
+  what_happened: III/V active layer growth without in-situ stress monitoring produced
+    high threading dislocation density (TDD) of 7.8×10⁷ cm⁻², degrading device open-circuit
+    voltage and overall tandem performance. Lattice-matching conditions were being
+    set at room temperature rather than at growth temperature, causing undetected
+    wafer bowing and elevated defect density.
+  lesson_learnt: Equip the MOCVD reactor with an in-situ optical stress sensor to
+    monitor wafer bowing during III/V material growth and adjust lattice-matching
+    conditions at growth temperature — this is essential to achieving TDD below 10⁶
+    cm⁻² and attaining the highest device voltages.
+  issue_severity: major
+  project_type: generation
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: data & measurement
+  intervention_note: Introduced an in-situ optical stress sensor during III/V growth
+    and adjusted lattice-matching at growth temperature, reducing TDD from 7.8×10⁷
+    cm⁻² to 2.8×10⁶ cm⁻² and achieving a Woc of 0.48V — the lowest reported for ternary
+    III-V solar cells grown on Si substrates.
+  transferability: narrow
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id003
+  - 17
+  - 18
+  evidence_excerpt: Using an in-situ optical stress sensor during the III/V material
+    growth and adjusting the lattice-matching conditions at the growth temperature
+    instead of at room temperature, the TDD of the III/V active layer was decreased
+    from 7.8×10⁷ cm⁻² to 2.8×10⁶ cm⁻².
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/cost-effective%e2%80%8b-%e2%80%8bgaasp%e2%80%8b-%e2%80%8btop-solar%e2%80%8b-%e2%80%8bcell%e2%80%8b-%e2%80%8bgrown%e2%80%8b-%e2%80%8bon%e2%80%8b-%e2%80%8ba%e2%80%8b-%e2%80%8bhigh-performance%e2%80%8b/
+  project_page_url: https://arena.gov.au/projects/cost-effective-gallium-arsenide-phosphide-top-solar-cell-grown-on-a-high-performance-low-cost-silicon-solar-cell/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 11/10/2017
+  kb_year: '2011'
+  kb_associated_project: Cost Effective Gallium Arsenide Phosphide Top Solar Cell
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.61m
+  total_project_value: $7.11m
+  lead_organisation: University of NSW
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 14/12/2011
+  location: New South Wales
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/10/Cost-Effective-GaAsP-UNSW-Australia-project-results-lessons.pdf
+  markdown_filename: cost_effective8203_8203gaasp8203_8203top_solar8203_8203cell8203_8203grown8203_8203on8203_8203a8203_8.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-0103
+  contributing_source_titles:
+  - Cost-Effective GaAsP Top Solar Cell Grown On A High Performance, Low Cost Silicon
+    Solar Cell
+  contributing_sources:
+  - source_title: Cost-Effective GaAsP Top Solar Cell Grown On A High Performance,
+      Low Cost Silicon Solar Cell
+    pdf_url: https://arena.gov.au/assets/2017/10/Cost-Effective-GaAsP-UNSW-Australia-project-results-lessons.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/cost-effective%e2%80%8b-%e2%80%8bgaasp%e2%80%8b-%e2%80%8btop-solar%e2%80%8b-%e2%80%8bcell%e2%80%8b-%e2%80%8bgrown%e2%80%8b-%e2%80%8bon%e2%80%8b-%e2%80%8ba%e2%80%8b-%e2%80%8bhigh-performance%e2%80%8b/
+    markdown_filename: cost_effective8203_8203gaasp8203_8203top_solar8203_8203cell8203_8203grown8203_8203on8203_8203a8203_8.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-0104
+  source_title: Cost-Effective GaAsP Top Solar Cell Grown On A High Performance, Low
+    Cost Silicon Solar Cell
+  publish_date: 2017-03
+  project_name: Cost-Effective GaAsP Top Solar Cell Grown On A High Performance, Low
+    Cost Silicon Solar Cell
+  what_happened: The SiGe bottom cell structure was not optimised at the outset, resulting
+    in the bottom cell limiting current output of the entire dual-junction tandem
+    due to insufficient current density and the current-matching requirement for a
+    two-terminal tandem. Optical constants for the required SiGe alloy composition
+    had also never been reported, creating an additional material characterisation
+    gap.
+  lesson_learnt: Prioritise maximising bottom cell current from the start of tandem
+    cell design, and include a back-surface reflector (BSR) — a SiO₂ dielectric layer
+    between the Si substrate and the Al back contact — in the fabrication process
+    early to increase both short-circuit current and open-circuit voltage of the SiGe
+    bottom cell, thereby improving overall tandem performance.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: Re-designed the SiGe alloy with higher Ge composition, reduced
+    layer thickness and doping, applied light trapping techniques, added anti-reflection
+    coating, and incorporated a BSR — achieving a best current density of 20.3 mA/cm²
+    (close to the 21 mA/cm² target) with a 19 mV Voc improvement attributable to the
+    BSR alone.
+  transferability: narrow
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id004
+  - 19
+  - 20
+  evidence_excerpt: The current of this dual junction tandem solar cell is limited
+    by the SiGe bottom cell as the structure and composition of the bottom cell are
+    not yet optimised. This also constrains the performance of the tandem solar cell
+    due to the requirement of current matching for a 2T double junction tandem solar
+    cell.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/cost-effective%e2%80%8b-%e2%80%8bgaasp%e2%80%8b-%e2%80%8btop-solar%e2%80%8b-%e2%80%8bcell%e2%80%8b-%e2%80%8bgrown%e2%80%8b-%e2%80%8bon%e2%80%8b-%e2%80%8ba%e2%80%8b-%e2%80%8bhigh-performance%e2%80%8b/
+  project_page_url: https://arena.gov.au/projects/cost-effective-gallium-arsenide-phosphide-top-solar-cell-grown-on-a-high-performance-low-cost-silicon-solar-cell/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 11/10/2017
+  kb_year: '2011'
+  kb_associated_project: Cost Effective Gallium Arsenide Phosphide Top Solar Cell
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.61m
+  total_project_value: $7.11m
+  lead_organisation: University of NSW
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 14/12/2011
+  location: New South Wales
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/10/Cost-Effective-GaAsP-UNSW-Australia-project-results-lessons.pdf
+  markdown_filename: cost_effective8203_8203gaasp8203_8203top_solar8203_8203cell8203_8203grown8203_8203on8203_8203a8203_8.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-0104
+  contributing_source_titles:
+  - Cost-Effective GaAsP Top Solar Cell Grown On A High Performance, Low Cost Silicon
+    Solar Cell
+  contributing_sources:
+  - source_title: Cost-Effective GaAsP Top Solar Cell Grown On A High Performance,
+      Low Cost Silicon Solar Cell
+    pdf_url: https://arena.gov.au/assets/2017/10/Cost-Effective-GaAsP-UNSW-Australia-project-results-lessons.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/cost-effective%e2%80%8b-%e2%80%8bgaasp%e2%80%8b-%e2%80%8btop-solar%e2%80%8b-%e2%80%8bcell%e2%80%8b-%e2%80%8bgrown%e2%80%8b-%e2%80%8bon%e2%80%8b-%e2%80%8ba%e2%80%8b-%e2%80%8bhigh-performance%e2%80%8b/
+    markdown_filename: cost_effective8203_8203gaasp8203_8203top_solar8203_8203cell8203_8203grown8203_8203on8203_8203a8203_8.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-0105
+  source_title: Cost-Effective GaAsP Top Solar Cell Grown On A High Performance, Low
+    Cost Silicon Solar Cell
+  publish_date: 2017-03
+  project_name: Cost-Effective GaAsP Top Solar Cell Grown On A High Performance, Low
+    Cost Silicon Solar Cell
+  what_happened: The project achieved a record GaAsP/SiGe tandem solar cell efficiency
+    of 23.8% under 7.2× concentrated light on a silicon substrate, surpassing the
+    previous best III-V on Si solar cell efficiency of 21.2%, demonstrating pathways
+    to efficiencies above 33% under higher concentration and identifying a commercial
+    cost pathway to $1.08/W system cost using 4× concentration with single-axis tracking.
+  lesson_learnt: Combining iterative design cycles (modelling → fabrication → analysis)
+    with parallel test-structure characterisation, 3T sub-cell analysis, in-situ stress
+    monitoring, and bottom-cell light trapping can progressively push tandem III-V/Si
+    cell performance to commercially relevant levels — future projects should build
+    all four practices into the initial project plan rather than discovering them
+    reactively.
+  issue_severity: none
+  project_type: generation
+  project_scale_band: lab/bench
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id005
+  - 3
+  - 11
+  evidence_excerpt: A cost-effective and high performance GaAsP/SiGe tandem solar
+    cell grown on silicon substrate has achieved an efficiency of 23.8%. This is the
+    highest efficiency achieved for any III-V on silicon solar cell. We have also
+    demonstrated the pathways to an efficiency higher than 35%.
+  confidence_note: issue_severity set to none as the record captures a positive delivery
+    outcome; the project ran to completion with its primary technical goal met.
+  source_url: https://arena.gov.au/knowledge-bank/cost-effective%e2%80%8b-%e2%80%8bgaasp%e2%80%8b-%e2%80%8btop-solar%e2%80%8b-%e2%80%8bcell%e2%80%8b-%e2%80%8bgrown%e2%80%8b-%e2%80%8bon%e2%80%8b-%e2%80%8ba%e2%80%8b-%e2%80%8bhigh-performance%e2%80%8b/
+  project_page_url: https://arena.gov.au/projects/cost-effective-gallium-arsenide-phosphide-top-solar-cell-grown-on-a-high-performance-low-cost-silicon-solar-cell/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 11/10/2017
+  kb_year: '2011'
+  kb_associated_project: Cost Effective Gallium Arsenide Phosphide Top Solar Cell
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.61m
+  total_project_value: $7.11m
+  lead_organisation: University of NSW
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 14/12/2011
+  location: New South Wales
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/10/Cost-Effective-GaAsP-UNSW-Australia-project-results-lessons.pdf
+  markdown_filename: cost_effective8203_8203gaasp8203_8203top_solar8203_8203cell8203_8203grown8203_8203on8203_8203a8203_8.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-0105
+  contributing_source_titles:
+  - Cost-Effective GaAsP Top Solar Cell Grown On A High Performance, Low Cost Silicon
+    Solar Cell
+  contributing_sources:
+  - source_title: Cost-Effective GaAsP Top Solar Cell Grown On A High Performance,
+      Low Cost Silicon Solar Cell
+    pdf_url: https://arena.gov.au/assets/2017/10/Cost-Effective-GaAsP-UNSW-Australia-project-results-lessons.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/cost-effective%e2%80%8b-%e2%80%8bgaasp%e2%80%8b-%e2%80%8btop-solar%e2%80%8b-%e2%80%8bcell%e2%80%8b-%e2%80%8bgrown%e2%80%8b-%e2%80%8bon%e2%80%8b-%e2%80%8ba%e2%80%8b-%e2%80%8bhigh-performance%e2%80%8b/
+    markdown_filename: cost_effective8203_8203gaasp8203_8203top_solar8203_8203cell8203_8203grown8203_8203on8203_8203a8203_8.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false

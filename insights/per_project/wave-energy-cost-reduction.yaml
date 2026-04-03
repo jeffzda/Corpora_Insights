@@ -1,0 +1,900 @@
+- record_id: ARENA-DLV-53901
+  source_title: Wave Energy Cost Reduction Resource Assessment Report
+  publish_date: 2021-10
+  project_name: Wave Energy Cost Reduction through Location and Configuration Optimisation
+    (ARENA 2015 RND086)
+  what_happened: The base case wave farm location (L3) was selected purely on the
+    basis of expected maximum power output, without considering infrastructure costs
+    such as foundation engineering and cabling. This approach — inherited from industry
+    practice — produced a normalised cost of $6.314M/MW for cabling and foundation
+    infrastructure relative to mean power output.
+  lesson_learnt: Wave energy farm site selection based solely on wave power resource
+    maximisation systematically underperforms on whole-of-project cost; simultaneously
+    optimising for infrastructure costs (cabling distance, foundation requirements)
+    alongside power output can reduce the normalised infrastructure-to-power cost
+    by ~7% through location selection alone, before any configuration optimisation
+    is applied.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: A multi-objective optimisation framework was developed and applied
+    to simultaneously evaluate power output and infrastructure costs across nine candidate
+    locations, identifying L4 as the optimal site with a normalised cost of $5.867M/MW
+    — a 7% improvement over the base case at L3.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: other
+  source_pages: &id001
+  - 12
+  - 13
+  - 14
+  - 37
+  - 38
+  - 59
+  evidence_excerpt: current practice for selecting new commercial WEC projects is
+    often initially weighted heavily to identifying sites based on having ideal regional
+    offshore (deep water) wave conditions to maximise wave generation capacity. Engineering
+    solutions are then developed at largely pre-determined sites with subsequent consideration
+    for economic viability only after the full costs are assessed.
+  confidence_note: Technology domain coded 'other' as wave energy is not an explicit
+    allowed value; closest would be 'grid/system stability' but that is inappropriate
+    — 'other' is most accurate.
+  source_url: https://arena.gov.au/knowledge-bank/wave-energy-cost-reduction-resource-assessment-report/
+  project_page_url: https://arena.gov.au/projects/wave-energy-cost-reduction-through-location-and-configuration-optimisation/
+  kb_category: Ocean energy
+  kb_publish_date: 30/10/2021
+  kb_year: '2016'
+  kb_associated_project: Wave Energy Cost Reduction
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $994k
+  total_project_value: $3.6m
+  lead_organisation: University of Western Australia
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 08/04/2016
+  location: Perth, Western Australia
+  project_partners: Carnegie Wave Energy
+  pdf_url: https://arena.gov.au/assets/2021/10/wave-energy-cost-reduction-resource-assessment-report.pdf
+  markdown_filename: wave_energy_cost_reduction_resource_assessment_report.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53901
+  contributing_source_titles:
+  - Wave Energy Cost Reduction Resource Assessment Report
+  contributing_sources:
+  - source_title: Wave Energy Cost Reduction Resource Assessment Report
+    pdf_url: https://arena.gov.au/assets/2021/10/wave-energy-cost-reduction-resource-assessment-report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/wave-energy-cost-reduction-resource-assessment-report/
+    markdown_filename: wave_energy_cost_reduction_resource_assessment_report.md
+  arena_category: []
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-53902
+  source_title: Wave Energy Cost Reduction Resource Assessment Report
+  publish_date: 2021-10
+  project_name: Wave Energy Cost Reduction through Location and Configuration Optimisation
+    (ARENA 2015 RND086)
+  what_happened: Foundation design for the wave energy converter array was based directly
+    on offshore oil and gas industry standards (ISO 19902), which are designed for
+    manned facilities where foundations represent ~2% of total installed cost. For
+    wave energy devices, foundations and moorings can represent up to 30% of total
+    development cost, making the inherited conservatism economically inappropriate
+    and unnecessarily costly.
+  lesson_learnt: Applying oil and gas foundation design codes to wave energy converters
+    imports excessive conservatism that is economically unjustified; wave energy developers
+    should use design methods calibrated to WEC-specific loading regimes and economic
+    conditions rather than defaulting to oil and gas standards, as doing so can materially
+    reduce foundation costs.
+  issue_severity: major
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Developed new pile design methodology specific to point-absorber
+    WEC loading regimes and a calibrated sample quantile approach to reduce conservatism
+    while maintaining target failure probabilities, reducing pile lengths by up to
+    30% compared to the base case.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: other
+  source_pages: &id002
+  - 12
+  - 13
+  evidence_excerpt: foundation design for offshore renewable energy devices has been
+    adopted directly from the offshore oil and gas industry, with no consideration
+    of the different economic, societal, and technical conditions. For instance, the
+    foundation costs for an oil and gas facility are typically a mere 2% of the total
+    installed costs... such that the incentive to reduce conservatism in the foundation
+    design is very low.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/wave-energy-cost-reduction-resource-assessment-report/
+  project_page_url: https://arena.gov.au/projects/wave-energy-cost-reduction-through-location-and-configuration-optimisation/
+  kb_category: Ocean energy
+  kb_publish_date: 30/10/2021
+  kb_year: '2016'
+  kb_associated_project: Wave Energy Cost Reduction
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $994k
+  total_project_value: $3.6m
+  lead_organisation: University of Western Australia
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 08/04/2016
+  location: Perth, Western Australia
+  project_partners: Carnegie Wave Energy
+  pdf_url: https://arena.gov.au/assets/2021/10/wave-energy-cost-reduction-resource-assessment-report.pdf
+  markdown_filename: wave_energy_cost_reduction_resource_assessment_report.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53902
+  contributing_source_titles:
+  - Wave Energy Cost Reduction Resource Assessment Report
+  contributing_sources:
+  - source_title: Wave Energy Cost Reduction Resource Assessment Report
+    pdf_url: https://arena.gov.au/assets/2021/10/wave-energy-cost-reduction-resource-assessment-report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/wave-energy-cost-reduction-resource-assessment-report/
+    markdown_filename: wave_energy_cost_reduction_resource_assessment_report.md
+  arena_category: []
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-53903
+  source_title: Wave Energy Cost Reduction Resource Assessment Report
+  publish_date: 2021-10
+  project_name: Wave Energy Cost Reduction through Location and Configuration Optimisation
+    (ARENA 2015 RND086)
+  what_happened: In the base case, foundation piles for all sixty anchors across the
+    twenty-WEC array were designed using a single cone penetration test (CPT) located
+    at the centre of the site, with a conservative 5% quantile design line as recommended
+    by Eurocode 7. This produced a required pile length of 18.2 m and a total foundation
+    cost of $52.325M.
+  lesson_learnt: Designing all foundations in a large WEC array from a single central
+    CPT using a 5% quantile design line is excessively conservative; optimising the
+    number and location of CPTs and calibrating the design quantile to the actual
+    soil variability can reduce pile lengths by 20–30% and total foundation costs
+    by up to $9.8M for a 20-device array.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Developed a site investigation optimisation technique that calculates
+    pile foundation reliability as a function of soil variability and CPT proximity,
+    enabling selection of the optimal number and layout of CPTs; using 20 CPTs reduced
+    pile length to 13.4 m and total foundation cost to $42.476M — a $9.8M saving versus
+    base case.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: other
+  source_pages: &id003
+  - 43
+  - 44
+  - 57
+  - 58
+  evidence_excerpt: Best practice might consider performing a borehole and CPT at
+    the location of each of the sixty foundations, but this approach could be cost
+    prohibitive in the sense that the savings generated on the foundation may be offset
+    by the cost of the soil characterisation. For a given site and given conditions,
+    there is an optimal number and location of CPTs that would lead to a minimum total
+    cost of site characterisation and foundation engineering.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/wave-energy-cost-reduction-resource-assessment-report/
+  project_page_url: https://arena.gov.au/projects/wave-energy-cost-reduction-through-location-and-configuration-optimisation/
+  kb_category: Ocean energy
+  kb_publish_date: 30/10/2021
+  kb_year: '2016'
+  kb_associated_project: Wave Energy Cost Reduction
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $994k
+  total_project_value: $3.6m
+  lead_organisation: University of Western Australia
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 08/04/2016
+  location: Perth, Western Australia
+  project_partners: Carnegie Wave Energy
+  pdf_url: https://arena.gov.au/assets/2021/10/wave-energy-cost-reduction-resource-assessment-report.pdf
+  markdown_filename: wave_energy_cost_reduction_resource_assessment_report.md
+  source_page_pdf: 44
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53903
+  contributing_source_titles:
+  - Wave Energy Cost Reduction Resource Assessment Report
+  contributing_sources:
+  - source_title: Wave Energy Cost Reduction Resource Assessment Report
+    pdf_url: https://arena.gov.au/assets/2021/10/wave-energy-cost-reduction-resource-assessment-report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/wave-energy-cost-reduction-resource-assessment-report/
+    markdown_filename: wave_energy_cost_reduction_resource_assessment_report.md
+  arena_category: []
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-53904
+  source_title: Wave Energy Cost Reduction Resource Assessment Report
+  publish_date: 2021-10
+  project_name: Wave Energy Cost Reduction through Location and Configuration Optimisation
+    (ARENA 2015 RND086)
+  what_happened: Standard industry practice applied an inclined load reduction factor
+    (γ_inc = 0.8) to account for the 40° tether inclination angle in WEC pile foundations,
+    assuming a detrimental coupling between vertical and horizontal load components.
+    Centrifuge testing (Huang et al. 2019) demonstrated that for 40° inclination,
+    the coupling is in fact beneficial, increasing pile capacity — meaning standard
+    practice was unnecessarily conservative by approximately 12%.
+  lesson_learnt: Current offshore design codes assume detrimental coupling for inclined
+    pile loading at angles relevant to WEC tethers (40°), but experimental evidence
+    shows the coupling is beneficial at this inclination; WEC developers should use
+    the improved load inclination factor (γ_inc = 0.95 or higher with further validation)
+    to avoid over-designing pile foundations, which adds unnecessary cost.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Adopted a revised inclined load factor of γ_inc = 0.95 (up from
+    0.8) based on centrifuge test results demonstrating beneficial coupling at 40°
+    load inclination, reducing the factored design load from 8.03 MN to 7.11 MN and
+    contributing to pile length reductions.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: other
+  source_pages: &id004
+  - 46
+  evidence_excerpt: centrifuge tests on piles in sand under loads of inclination varying
+    from 0° to 90° from the vertical... indicated that for load inclination of 40°,
+    as relevant to the case investigated here, the coupling was beneficial and resulted
+    in an increased capacity of the pile... we decided here to still take a conservative,
+    yet less punitive, approach and adopted a γ_inc of 0.95, leading to a factored
+    design load γ_L S_design/γ_inc = 7.11 MN.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/wave-energy-cost-reduction-resource-assessment-report/
+  project_page_url: https://arena.gov.au/projects/wave-energy-cost-reduction-through-location-and-configuration-optimisation/
+  kb_category: Ocean energy
+  kb_publish_date: 30/10/2021
+  kb_year: '2016'
+  kb_associated_project: Wave Energy Cost Reduction
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $994k
+  total_project_value: $3.6m
+  lead_organisation: University of Western Australia
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 08/04/2016
+  location: Perth, Western Australia
+  project_partners: Carnegie Wave Energy
+  pdf_url: https://arena.gov.au/assets/2021/10/wave-energy-cost-reduction-resource-assessment-report.pdf
+  markdown_filename: wave_energy_cost_reduction_resource_assessment_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53904
+  contributing_source_titles:
+  - Wave Energy Cost Reduction Resource Assessment Report
+  contributing_sources:
+  - source_title: Wave Energy Cost Reduction Resource Assessment Report
+    pdf_url: https://arena.gov.au/assets/2021/10/wave-energy-cost-reduction-resource-assessment-report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/wave-energy-cost-reduction-resource-assessment-report/
+    markdown_filename: wave_energy_cost_reduction_resource_assessment_report.md
+  arena_category: []
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-53905
+  source_title: Wave Energy Cost Reduction Resource Assessment Report
+  publish_date: 2021-10
+  project_name: Wave Energy Cost Reduction through Location and Configuration Optimisation
+    (ARENA 2015 RND086)
+  what_happened: A multi-objective optimisation of the 20-WEC array configuration
+    at location L4 simultaneously maximised power production (q-factor) and minimised
+    transmission cable length, yielding an optimal layout with inter-WEC spacing of
+    107.8 m (versus the base case fixed spacing of 150 m), row spacing of 55 m, and
+    an orientation of 320°. This increased mean power output from 9.7 MW (Phase I)
+    to 10.2 MW while reducing within-array cable length from approximately 2,838 m
+    (base case at L3) to 1,830 m.
+  lesson_learnt: Fixing inter-WEC spacing at a minimum collision-avoidance distance
+    (150 m) without optimisation for both power and cable cost forgoes significant
+    gains; applying multi-objective optimisation to array geometry can simultaneously
+    increase power output and reduce cabling costs, and also enables coastal impact
+    screening at no additional computational cost.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Developed and applied a MOEA-based multi-objective optimisation
+    framework (minimising cable length and maximising array q-factor) to generate
+    a Pareto front of array configurations, with coastal sediment transport impact
+    used as a secondary filter to select the final optimal layout.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: other
+  source_pages: &id005
+  - 38
+  - 41
+  - 42
+  - 43
+  evidence_excerpt: 'As a result of the multi-objective optimisation and subsequent
+    PTO optimisation for each WEC in the array, the mean power output for this layout
+    (Figure 5.17) increased from 9.7MW (L4 farm from Phase I) to 10.2 MW. The cable
+    length components for the optimised layout is shown in Table 5.3 [within array:
+    1830 m].'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/wave-energy-cost-reduction-resource-assessment-report/
+  project_page_url: https://arena.gov.au/projects/wave-energy-cost-reduction-through-location-and-configuration-optimisation/
+  kb_category: Ocean energy
+  kb_publish_date: 30/10/2021
+  kb_year: '2016'
+  kb_associated_project: Wave Energy Cost Reduction
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $994k
+  total_project_value: $3.6m
+  lead_organisation: University of Western Australia
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 08/04/2016
+  location: Perth, Western Australia
+  project_partners: Carnegie Wave Energy
+  pdf_url: https://arena.gov.au/assets/2021/10/wave-energy-cost-reduction-resource-assessment-report.pdf
+  markdown_filename: wave_energy_cost_reduction_resource_assessment_report.md
+  source_page_pdf: 43
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53905
+  contributing_source_titles:
+  - Wave Energy Cost Reduction Resource Assessment Report
+  contributing_sources:
+  - source_title: Wave Energy Cost Reduction Resource Assessment Report
+    pdf_url: https://arena.gov.au/assets/2021/10/wave-energy-cost-reduction-resource-assessment-report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/wave-energy-cost-reduction-resource-assessment-report/
+    markdown_filename: wave_energy_cost_reduction_resource_assessment_report.md
+  arena_category: []
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-53906
+  source_title: Wave Energy Cost Reduction Resource Assessment Report
+  publish_date: 2021-10
+  project_name: Wave Energy Cost Reduction through Location and Configuration Optimisation
+    (ARENA 2015 RND086)
+  what_happened: The holistic optimisation combining location selection (Phase I)
+    and array configuration plus foundation design optimisation (Phase II) reduced
+    the normalised infrastructure cost (cabling and foundations per MW) from $6.314M/MW
+    (base case) to $4.879M/MW (optimised case with 20 CPTs) — a 22.8% reduction —
+    while mean power output increased from 9.13 MW to 10.2 MW.
+  lesson_learnt: Integrating wave resource assessment, seabed characterisation, foundation
+    engineering, and array configuration optimisation into a single holistic framework
+    delivers materially better cost outcomes (~23% reduction in normalised infrastructure
+    cost) than sequential or single-parameter optimisation; this integrated approach
+    is applicable to any wave energy or fixed/floating offshore wind development.
+  issue_severity: moderate
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: design assumption failure
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Developed a four-component integrated optimisation framework
+    (wave model, foundation design methodology, site investigation optimisation, multi-objective
+    array configuration) and demonstrated its application on a virtual 20-CETO6 array
+    at Torbay, WA.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: other
+  source_pages: &id006
+  - 10
+  - 59
+  evidence_excerpt: The final normalised cost after phase II of the optimisation process
+    is $4.879M/MW; a reduction of 22.8% compared to the base case, and an additional
+    reduction of 15.7% between phase I and phase II of the optimisation process.
+  confidence_note: outcome_class set to 'successful demonstration' as the project
+    achieved its stated research goal of demonstrating cost reduction methodology;
+    no delivery failure occurred.
+  source_url: https://arena.gov.au/knowledge-bank/wave-energy-cost-reduction-resource-assessment-report/
+  project_page_url: https://arena.gov.au/projects/wave-energy-cost-reduction-through-location-and-configuration-optimisation/
+  kb_category: Ocean energy
+  kb_publish_date: 30/10/2021
+  kb_year: '2016'
+  kb_associated_project: Wave Energy Cost Reduction
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $994k
+  total_project_value: $3.6m
+  lead_organisation: University of Western Australia
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 08/04/2016
+  location: Perth, Western Australia
+  project_partners: Carnegie Wave Energy
+  pdf_url: https://arena.gov.au/assets/2021/10/wave-energy-cost-reduction-resource-assessment-report.pdf
+  markdown_filename: wave_energy_cost_reduction_resource_assessment_report.md
+  source_page_pdf: 59
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53906
+  contributing_source_titles:
+  - Wave Energy Cost Reduction Resource Assessment Report
+  contributing_sources:
+  - source_title: Wave Energy Cost Reduction Resource Assessment Report
+    pdf_url: https://arena.gov.au/assets/2021/10/wave-energy-cost-reduction-resource-assessment-report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/wave-energy-cost-reduction-resource-assessment-report/
+    markdown_filename: wave_energy_cost_reduction_resource_assessment_report.md
+  arena_category: []
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-53907
+  source_title: Wave Energy Cost Reduction Resource Assessment Report
+  publish_date: 2021-10
+  project_name: Wave Energy Cost Reduction through Location and Configuration Optimisation
+    (ARENA 2015 RND086)
+  what_happened: The optimal number of CPTs for minimising total cost (site investigation
+    plus foundation) was found to be twenty (one per WEC), not one (minimum effort)
+    and not sixty or sixty-five (one per pile). Increasing from 1 to 20 CPTs reduced
+    pile length from 14.6 m to 13.4 m and total foundation cost from $43.869M to $42.476M,
+    while the site investigation cost increased from $0.575M to $2M. Adding further
+    CPTs (60 or 65) reduced pile length marginally further but increased SI cost enough
+    to raise total cost above the 20-CPT optimum.
+  lesson_learnt: 'There is a quantifiable optimal level of geotechnical site investigation
+    for WEC (and offshore renewable) array foundations: too few CPTs forces overly
+    conservative pile design; too many CPTs incur investigation costs that exceed
+    foundation savings. For a 20-device array in conditions similar to Torbay, one
+    CPT per WEC (20 total) was optimal — developers should conduct a cost-benefit
+    analysis of site investigation intensity rather than defaulting to minimum effort.'
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Developed a site investigation optimisation technique using random
+    field theory and reliability analysis (subset simulation) to identify the number
+    and location of CPTs that minimises total cost of site investigation plus foundation
+    installation for a given site.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: other
+  source_pages: &id007
+  - 57
+  - 58
+  evidence_excerpt: The optimal number of CPTs for the case investigated here is twenty,
+    resulting in a reduction in foundation engineering cost of $9.8M, compared to
+    the base case, and a $6.8M reduction compared to the phase I optimisation... a
+    higher number of CPTs results in less uncertainty in the soil conditions and a
+    less expensive (shorter) designed pile. However, this also results in an increased
+    site investigation cost, which needs to be balanced by the savings made on the
+    foundation design.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/wave-energy-cost-reduction-resource-assessment-report/
+  project_page_url: https://arena.gov.au/projects/wave-energy-cost-reduction-through-location-and-configuration-optimisation/
+  kb_category: Ocean energy
+  kb_publish_date: 30/10/2021
+  kb_year: '2016'
+  kb_associated_project: Wave Energy Cost Reduction
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $994k
+  total_project_value: $3.6m
+  lead_organisation: University of Western Australia
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 08/04/2016
+  location: Perth, Western Australia
+  project_partners: Carnegie Wave Energy
+  pdf_url: https://arena.gov.au/assets/2021/10/wave-energy-cost-reduction-resource-assessment-report.pdf
+  markdown_filename: wave_energy_cost_reduction_resource_assessment_report.md
+  source_page_pdf: 57
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53907
+  contributing_source_titles:
+  - Wave Energy Cost Reduction Resource Assessment Report
+  contributing_sources:
+  - source_title: Wave Energy Cost Reduction Resource Assessment Report
+    pdf_url: https://arena.gov.au/assets/2021/10/wave-energy-cost-reduction-resource-assessment-report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/wave-energy-cost-reduction-resource-assessment-report/
+    markdown_filename: wave_energy_cost_reduction_resource_assessment_report.md
+  arena_category: []
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-53908
+  source_title: Wave Energy Cost Reduction Resource Assessment Report
+  publish_date: 2021-10
+  project_name: Wave Energy Cost Reduction through Location and Configuration Optimisation
+    (ARENA 2015 RND086)
+  what_happened: Comparing nine candidate locations along the 30 m depth contour and
+    at increasing offshore water depths (35–50 m), the project found that mean power
+    output increased with water depth (L9 at ~50 m produced 10.76 MW vs 9.13 MW at
+    L3 at 30 m), but deeper locations also required longer piles due to lower sand
+    relative density, increasing foundation costs. The highest-power location (L9)
+    was not the lowest normalised cost location.
+  lesson_learnt: Higher wave power output at deeper offshore locations for point-absorber
+    WECs does not automatically translate to lower cost of energy — deeper water reduces
+    sand density, increasing pile lengths and foundation costs; a full cost-to-power
+    ratio assessment across multiple candidate locations is necessary to identify
+    the economically optimal deployment depth.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Conducted comparative analysis of nine locations combining power
+    output modelling, seabed characterisation, foundation cost estimation, and cable
+    cost estimation to produce normalised cost ($/MW) rankings, identifying L4 as
+    the optimal location rather than the highest-power or nearest-to-grid location.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: other
+  source_pages: &id008
+  - 31
+  - 32
+  - 34
+  - 35
+  - 36
+  - 37
+  - 38
+  evidence_excerpt: The mean power generated by the wave farms increased with increasing
+    water depth... the pile length increases with increasing water depth and the associated
+    reduction in sand relative density... location L4 exhibits the lowest normalised
+    cost at $5.867M/MW.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/wave-energy-cost-reduction-resource-assessment-report/
+  project_page_url: https://arena.gov.au/projects/wave-energy-cost-reduction-through-location-and-configuration-optimisation/
+  kb_category: Ocean energy
+  kb_publish_date: 30/10/2021
+  kb_year: '2016'
+  kb_associated_project: Wave Energy Cost Reduction
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $994k
+  total_project_value: $3.6m
+  lead_organisation: University of Western Australia
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 08/04/2016
+  location: Perth, Western Australia
+  project_partners: Carnegie Wave Energy
+  pdf_url: https://arena.gov.au/assets/2021/10/wave-energy-cost-reduction-resource-assessment-report.pdf
+  markdown_filename: wave_energy_cost_reduction_resource_assessment_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53908
+  contributing_source_titles:
+  - Wave Energy Cost Reduction Resource Assessment Report
+  contributing_sources:
+  - source_title: Wave Energy Cost Reduction Resource Assessment Report
+    pdf_url: https://arena.gov.au/assets/2021/10/wave-energy-cost-reduction-resource-assessment-report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/wave-energy-cost-reduction-resource-assessment-report/
+    markdown_filename: wave_energy_cost_reduction_resource_assessment_report.md
+  arena_category: []
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-53909
+  source_title: Wave Energy Cost Reduction Resource Assessment Report
+  publish_date: 2021-10
+  project_name: Wave Energy Cost Reduction through Location and Configuration Optimisation
+    (ARENA 2015 RND086)
+  what_happened: The project found that a single CPT can accurately estimate vertical
+    soil variability parameters (COV(qc), Dr, θ_v) with relative errors of 6.9–13.3%,
+    but cannot estimate the horizontal scale of fluctuation (θ_h) because no horizontal
+    data pairs are available from a single vertical measurement. Without θ_h, the
+    design must adopt the most conservative possible sample quantile, limiting the
+    foundation cost savings achievable with minimal site investigation.
+  lesson_learnt: A single CPT is sufficient to characterise vertical soil variability
+    for WEC foundation design, but additional CPTs with horizontal separation are
+    required to estimate the horizontal scale of fluctuation (θ_h); without θ_h, designers
+    must use a conservative design quantile that limits cost savings — adding even
+    a small number of strategically placed CPTs to enable θ_h estimation can unlock
+    further pile length and cost reductions.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Added five supplementary CPTs (65-CPT strategy) to the 60-CPT
+    layout specifically to reduce minimum CPT spacing below the estimated θ_h, enabling
+    reliable θ_h estimation and achieving SQ = 37.2% versus SQ = 32.0% for the 60-CPT
+    case, further reducing mean pile length to 12.7 m.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: other
+  source_pages: &id009
+  - 47
+  - 48
+  - 55
+  evidence_excerpt: Note that the horizontal scale of fluctuation θ_h cannot be estimated
+    from only a single CPT because there is no data pair available in the horizontal
+    direction... the sixty CPTs case, the soil strength at every pile location was
+    measured... However, the value of θ_h was unable to be accurately estimated because
+    the minimum CPT spacing was larger than the estimated θ_h.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/wave-energy-cost-reduction-resource-assessment-report/
+  project_page_url: https://arena.gov.au/projects/wave-energy-cost-reduction-through-location-and-configuration-optimisation/
+  kb_category: Ocean energy
+  kb_publish_date: 30/10/2021
+  kb_year: '2016'
+  kb_associated_project: Wave Energy Cost Reduction
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $994k
+  total_project_value: $3.6m
+  lead_organisation: University of Western Australia
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 08/04/2016
+  location: Perth, Western Australia
+  project_partners: Carnegie Wave Energy
+  pdf_url: https://arena.gov.au/assets/2021/10/wave-energy-cost-reduction-resource-assessment-report.pdf
+  markdown_filename: wave_energy_cost_reduction_resource_assessment_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53909
+  contributing_source_titles:
+  - Wave Energy Cost Reduction Resource Assessment Report
+  contributing_sources:
+  - source_title: Wave Energy Cost Reduction Resource Assessment Report
+    pdf_url: https://arena.gov.au/assets/2021/10/wave-energy-cost-reduction-resource-assessment-report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/wave-energy-cost-reduction-resource-assessment-report/
+    markdown_filename: wave_energy_cost_reduction_resource_assessment_report.md
+  arena_category: []
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-53910
+  source_title: Wave Energy Cost Reduction Resource Assessment Report
+  publish_date: 2021-10
+  project_name: Wave Energy Cost Reduction through Location and Configuration Optimisation
+    (ARENA 2015 RND086)
+  what_happened: The wave energy sector has no design guidelines specifically addressing
+    hydrodynamic loadings on mooring lines and foundations for point-absorber WECs;
+    current design codes do not adequately account for the specific loading characteristics
+    of WECs. This regulatory and standards gap forces practitioners to default to
+    oil and gas codes that are mismatched to WEC economics and load conditions, increasing
+    costs.
+  lesson_learnt: The absence of WEC-specific foundation and mooring design standards
+    is a structural barrier to cost reduction in wave energy; the sector requires
+    purpose-built design guidelines that account for point-absorber loading regimes
+    — developers and industry bodies should invest in developing and publishing such
+    standards to enable rational, cost-efficient foundation design across commercial
+    deployments.
+  issue_severity: major
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Research team developed and published new design methodologies
+    for WEC pile foundations including load characterisation, calibrated design quantile
+    selection, and inclined load coupling effects, providing a basis for future standards
+    development.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: other
+  source_pages: &id010
+  - 9
+  - 12
+  evidence_excerpt: industry practices are inherited from the offshore oil and gas
+    industry which, despite evident knowledge and technology transfer, may not be
+    fully appropriate to wave energy developments... wave energy converters, which
+    are not adequately considered in design codes and guidelines, notably with respect
+    to hydrodynamic loadings on mooring lines and foundations.
+  confidence_note: failure_mode 'regulatory misfit' used because the issue is the
+    mismatch of available standards to the technology context, not a project-specific
+    design error.
+  source_url: https://arena.gov.au/knowledge-bank/wave-energy-cost-reduction-resource-assessment-report/
+  project_page_url: https://arena.gov.au/projects/wave-energy-cost-reduction-through-location-and-configuration-optimisation/
+  kb_category: Ocean energy
+  kb_publish_date: 30/10/2021
+  kb_year: '2016'
+  kb_associated_project: Wave Energy Cost Reduction
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $994k
+  total_project_value: $3.6m
+  lead_organisation: University of Western Australia
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 08/04/2016
+  location: Perth, Western Australia
+  project_partners: Carnegie Wave Energy
+  pdf_url: https://arena.gov.au/assets/2021/10/wave-energy-cost-reduction-resource-assessment-report.pdf
+  markdown_filename: wave_energy_cost_reduction_resource_assessment_report.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53910
+  contributing_source_titles:
+  - Wave Energy Cost Reduction Resource Assessment Report
+  contributing_sources:
+  - source_title: Wave Energy Cost Reduction Resource Assessment Report
+    pdf_url: https://arena.gov.au/assets/2021/10/wave-energy-cost-reduction-resource-assessment-report.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/wave-energy-cost-reduction-resource-assessment-report/
+    markdown_filename: wave_energy_cost_reduction_resource_assessment_report.md
+  arena_category: []
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-53911
+  source_title: Wave Energy Cost Reduction Resource Assessment Report
+  publish_date: 2021-10
+  project_name: Wave Energy Cost Reduction through Location and Configuration Optimisation
+    (ARENA 2015 RND086)
+  what_happened: The optimisation approach developed in this project considered cabling,
+    foundation engineering, power output, and coastal impacts simultaneously, but
+    excluded several potentially material parameters — including the location of the
+    grid connection point, specific cost item variability, and alternative foundation
+    types — due to data limitations or complexity constraints. The authors note these
+    omissions would affect the magnitude of savings achieved but not the validity
+    of the optimisation approach.
+  lesson_learnt: Wave energy farm optimisation frameworks that exclude the grid connection
+    point location, foundation type alternatives, or detailed cost model sensitivity
+    risk overstating or mislocating cost savings; future deployments should integrate
+    grid connection location as a variable and explore alternative foundation solutions
+    (e.g., suction caissons) better suited to WEC loading regimes.
+  issue_severity: minor
+  project_type: generation
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: other
+  source_pages: &id011
+  - 16
+  - 59
+  - 60
+  evidence_excerpt: other parameters could have been considered in the optimisation
+    (e.g. location of the grid connection point, cost of specific items, type of foundations,
+    etc.) These parameters were not considered because either they would unnecessarily
+    complicate the analysis or insufficient information was available... Additional
+    savings can be generated by integrating additional key variables into the multi-objective
+    optimisation but also by considering alternative foundation solutions that would
+    exhibit better performance under the loading regimes generated by point absorbers.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/wave-energy-cost-reduction-resource-assessment-report/
+  project_page_url: https://arena.gov.au/projects/wave-energy-cost-reduction-through-location-and-configuration-optimisation/
+  kb_category: Ocean energy
+  kb_publish_date: 30/10/2021
+  kb_year: '2016'
+  kb_associated_project: Wave Energy Cost Reduction
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $994k
+  total_project_value: $3.6m
+  lead_organisation: University of Western Australia
+  arena_program: Research and Development
+  project_status: Past
+  project_start_date: 08/04/2016
+  location: Perth, Western Australia
+  project_partners: Carnegie Wave Energy
+  pdf_url: https://arena.gov.au/assets/2021/10/wave-energy-cost-reduction-resource-assessment-report.pdf
+  markdown_filename: wave_energy_cost_reduction_resource_assessment_report.md
+  source_page_pdf: 16
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53911
+  contributing_source_titles:
+  - Wave Energy Cost Reduction Resource Assessment Report
+  contributing_sources:
+  - source_title: Wave Energy Cost Reduction Resource Assessment Report
+    pdf_url: https://arena.gov.au/assets/2021/10/wave-energy-cost-reduction-resource-assessment-report.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/wave-energy-cost-reduction-resource-assessment-report/
+    markdown_filename: wave_energy_cost_reduction_resource_assessment_report.md
+  arena_category: []
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78

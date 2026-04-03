@@ -1,0 +1,58 @@
+- record_id: ARENA-DLV-50561
+  source_title: DEIP Market Integration Trials Summary Report 1.0
+  publish_date: 2022-09
+  project_name: Advanced VPP Grid Integration (SAPN–Tesla)
+  what_happened: The Advanced VPP Grid Integration trial between SA Power Networks and Tesla demonstrated that dynamic export limits could increase total VPP export capacity from 5 MW to 6–8 MW during solar
+    hours, that SAPN could successfully override forecasted export limits for planned and unplanned outages, and that an API based on IEEE 2030.5 was effective for transmitting dynamic export limits and
+    operational data.
+  lesson_learnt: Implementing site-level dynamic export limits via a standardised API (such as IEEE 2030.5/CSIP-AUS) can materially increase aggregate VPP capacity available to system-level markets; include
+    an operational override capability in the API design from the outset to handle maintenance and outage events.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages:
+  - 20
+  evidence_excerpt: The total export capacity of the VPP could be increased from 5 MW to 6-8 MW during solar hours, thereby increasing the amount of network capacity available to system-level markets. SAPN
+    were successfully able to override forecasted export limits for planned maintenance or unplanned outages. SAPN and Tesla developed an API (based on IEEE 2030.5) to transmit data over the internet, such
+    as registration, operational data, and the dynamic export limits.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/deip-der-market-integration-trials-summary-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 29/09/2022
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2022/09/DEIP-Market-Integration-Trials-Summary-Report-1.0.pdf
+  markdown_filename: deip_market_integration_trials_summary_report_10.md
+  source_page_pdf: 20
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-50561
+  contributing_source_titles:
+  - DEIP Market Integration Trials Summary Report 1.0
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false

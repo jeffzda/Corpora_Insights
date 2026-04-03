@@ -1,0 +1,302 @@
+- record_id: ARENA-DLV-21604
+  source_title: 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update Report'
+  publish_date: 2025-10
+  project_name: Victorian Big Battery (VBB)
+  what_happened: During the GFL-to-GFM transition under the NER clause 5.3.9 Connection
+    Alteration process, VBB required installation of additional protection equipment,
+    revision of existing protection settings to manage arc flash risk due to changed
+    fault contribution, development of bespoke firmware for legacy equipment, and
+    installation of new meters — hardware works that were not anticipated when the
+    strategy of connecting in GFL mode first was adopted.
+  lesson_learnt: Avoid the strategy of connecting in GFL mode and transitioning to
+    GFM via the NER cl 5.3.9 process for new projects; connecting in GFM mode from
+    the outset avoids unanticipated hardware upgrades (protection equipment, firmware,
+    meters) and associated costs and outages during transition, and the connection
+    timeline gap between GFM and GFL has now substantially closed.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: commissioning/integration
+  proponent_type: project developer
+  delay_category: commissioning/integration
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Neoen completed the required hardware upgrades (protection equipment,
+    firmware, meters) to enable GFM operation and subsequently recommended future
+    projects connect in GFM mode from the outset.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id001
+  - 17
+  - 18
+  evidence_excerpt: At VBB, installation of additional protection equipment and revision
+    of the existing protection settings was required to manage arc flash risk due
+    to the change in fault contribution and fault ride through capability after switching
+    to GFM mode. The VBB retrofit also required bespoke firmware to be developed to
+    accommodate GFM operation on legacy equipment, and the installation of new meters
+    to enable a new control philosophy for GFM operation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/ekistica-arena-grid-forming-battery-portfolio-series/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 3/07/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/10/ARENA-Grid-Forming-Battery-Portfolio-Series-Update-Report.pdf
+  markdown_filename: ekistica_arena_grid_forming_battery_portfolio_series.md
+  source_page_pdf: 17
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-21604
+  contributing_source_titles:
+  - 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update Report'
+  contributing_sources:
+  - source_title: 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update
+      Report'
+    pdf_url: https://arena.gov.au/assets/2025/10/ARENA-Grid-Forming-Battery-Portfolio-Series-Update-Report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/ekistica-arena-grid-forming-battery-portfolio-series/
+    markdown_filename: ekistica_arena_grid_forming_battery_portfolio_series.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: cost overrun
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-21605
+  source_title: 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update Report'
+  publish_date: 2025-10
+  project_name: Victorian Big Battery (VBB)
+  what_happened: The NER cl 5.3.9 Connection Alteration process required VBB to comply
+    with the latest version of the NER rather than the NER at the time of original
+    commissioning, meaning plant characteristics that were compliant when built potentially
+    required redesign or retrofitting to maintain GPS compliance.
+  lesson_learnt: Legacy BESS facilities seeking to upgrade to GFM capability via the
+    NER cl 5.3.9 process should assess compliance against the current NER — not the
+    NER at time of original build — as retroactive compliance obligations can require
+    costly redesign or retrofits that were not budgeted.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id002
+  - 21
+  - 22
+  evidence_excerpt: The evaluation of the BESS against the new NER terms introduces
+    risk for legacy facilities who may seek to upgrade to GFM capabilities, that characteristics
+    of their plant that were compliant when originally commissioned, now may need
+    to be re-designed or retrofitted to maintain compliance with its GPS.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/ekistica-arena-grid-forming-battery-portfolio-series/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 3/07/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/10/ARENA-Grid-Forming-Battery-Portfolio-Series-Update-Report.pdf
+  markdown_filename: ekistica_arena_grid_forming_battery_portfolio_series.md
+  source_page_pdf: 22
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-21605
+  contributing_source_titles:
+  - 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update Report'
+  contributing_sources:
+  - source_title: 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update
+      Report'
+    pdf_url: https://arena.gov.au/assets/2025/10/ARENA-Grid-Forming-Battery-Portfolio-Series-Update-Report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/ekistica-arena-grid-forming-battery-portfolio-series/
+    markdown_filename: ekistica_arena_grid_forming_battery_portfolio_series.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: cost overrun
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-21612
+  source_title: 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update Report'
+  publish_date: 2025-10
+  project_name: Victorian Big Battery (VBB)
+  what_happened: VBB encountered challenges meeting the reactive current rise time
+    GPS measurement requirement at the Point of Connection (PoC) due to impedance
+    between the inverter terminals and the PoC, requiring expensive bespoke control
+    system updates.
+  lesson_learnt: For GFM BESS — which typically operate at lower inverter terminal
+    voltages than synchronous machines — engage AEMO and the NSP early to agree whether
+    reactive current compliance can be measured at inverter terminals rather than
+    the PoC, avoiding costly control system bespoke engineering; the May 2025 NER
+    rule change now permits this where agreed by AEMO and the NSP.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: grid connection/system studies
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: VBB undertook expensive bespoke control system updates to meet
+    the PoC measurement requirement; the AEMC's May 2025 NER rule change now allows
+    measurement at inverter terminals where agreed by AEMO and NSP.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id003
+  - 20
+  - 28
+  evidence_excerpt: Allowing GFM BESS units to measure compliance with reactive current
+    injection at the inverter terminals could avoid the need for expensive bespoke
+    control system updates to meet GPS as that project encountered.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/ekistica-arena-grid-forming-battery-portfolio-series/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 3/07/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/10/ARENA-Grid-Forming-Battery-Portfolio-Series-Update-Report.pdf
+  markdown_filename: ekistica_arena_grid_forming_battery_portfolio_series.md
+  source_page_pdf: 28
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-21612
+  contributing_source_titles:
+  - 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update Report'
+  contributing_sources:
+  - source_title: 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update
+      Report'
+    pdf_url: https://arena.gov.au/assets/2025/10/ARENA-Grid-Forming-Battery-Portfolio-Series-Update-Report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/ekistica-arena-grid-forming-battery-portfolio-series/
+    markdown_filename: ekistica_arena_grid_forming_battery_portfolio_series.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: cost overrun
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-21619
+  source_title: 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update Report'
+  publish_date: 2025-10
+  project_name: Victorian Big Battery (VBB)
+  what_happened: At VBB, the ability to derive optimal GFM parameters was compromised
+    by limitations of the models available to the proponent and a lack of location-specific
+    inertia data from the NEM; tuning was performed using a PSCAD single machine infinite
+    bus (SMIB) study rather than a wide area analysis, reducing confidence in the
+    optimality of settings.
+  lesson_learnt: Request AEMO or the NSP to conduct wide area PSCAD analysis and identify
+    inertia shortfalls at critical network nodes before finalising GFM parameter tuning;
+    proponent-side SMIB studies cannot substitute for wide area analysis in determining
+    optimal location-specific GFM settings.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: utility/large-scale
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: grid connection/system studies
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id004
+  - 25
+  evidence_excerpt: The ability to derive optimal GFM parameters for a given location
+    is somewhat compromised by limitations of models available to the proponent, and
+    the availability of inertia data in the NEM... localised optimal inertia settings
+    should ideally be from a wide area analysis, rather than the PSCAD SMIB (single
+    machine infinite bus) study done by the proponent.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/ekistica-arena-grid-forming-battery-portfolio-series/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 3/07/2025
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2025/10/ARENA-Grid-Forming-Battery-Portfolio-Series-Update-Report.pdf
+  markdown_filename: ekistica_arena_grid_forming_battery_portfolio_series.md
+  source_page_pdf: 25
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-21619
+  contributing_source_titles:
+  - 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update Report'
+  contributing_sources:
+  - source_title: 'Ekistica - ARENA Grid-Forming Battery Portfolio Series: Update
+      Report'
+    pdf_url: https://arena.gov.au/assets/2025/10/ARENA-Grid-Forming-Battery-Portfolio-Series-Update-Report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/ekistica-arena-grid-forming-battery-portfolio-series/
+    markdown_filename: ekistica_arena_grid_forming_battery_portfolio_series.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82

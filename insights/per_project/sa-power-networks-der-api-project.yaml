@@ -1,0 +1,150 @@
+- record_id: ARENA-DLV-52518
+  source_title: ARENA's Virtual Power Plant Knowledge Sharing Workshop Summary
+  publish_date: 2019-03
+  project_name: SA Power Networks DER API Project
+  what_happened: SA Power Networks identified that large VPPs dispatched without regard
+    to network constraints could easily exceed the limits of the local network at
+    certain times, and that the network had almost no visibility of the low-voltage
+    network, meaning inverter trips on overvoltage could affect VPP performance and
+    asset overloads could cause widespread outages.
+  lesson_learnt: VPP operators and aggregators must have access to dynamic, locational
+    network constraint information and common communications standards to avoid overloading
+    distribution networks — dispatching VPPs without network constraint awareness
+    is a material risk to grid security and VPP performance.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: operations
+  proponent_type: government/public-sector body
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: SA Power Networks initiated an ARENA-funded DER API project with
+    an industry consultation and reference architecture based on IEEE 2030.5 to provide
+    dynamic network constraint information to VPP platforms.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id001
+  - 99
+  - 106
+  evidence_excerpt: Large VPPs could easily exceed the limits of the local network
+    if dispatched without regard to network constraints at certain times – this is
+    in no-one's interest... Almost no visibility of low-voltage network today
+  confidence_note: 'project_scale_band reconciled to ''programmatic/portfolio-level''
+    from: programmatic/portfolio-level (21/31), demonstration (9/31), first commercial/FOAK
+    (1/31); proponent_type reconciled to ''government/public-sector body'' from: government/public-sector
+    body (15/31), technology vendor (6/31), network business (4/31), research organisation/university
+    (4/31), project developer (2/31)'
+  source_url: https://arena.gov.au/knowledge-bank/arenas-virtual-power-plant-knowledge-sharing-workshop-summary/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 2/04/2019
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports, Presentation
+  kb_document_folder: Reports_Presentation
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2019/04/virtual-power-plant-knowledge-sharing-workshop-summary.pdf
+  markdown_filename: arenarsquos_virtual_power_plant_knowledge_sharing_workshop_summary.md
+  source_page_pdf: 106
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52518
+  contributing_source_titles:
+  - ARENA's Virtual Power Plant Knowledge Sharing Workshop Summary
+  contributing_sources:
+  - source_title: ARENA's Virtual Power Plant Knowledge Sharing Workshop Summary
+    pdf_url: https://arena.gov.au/assets/2019/04/virtual-power-plant-knowledge-sharing-workshop-summary.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/arenas-virtual-power-plant-knowledge-sharing-workshop-summary/
+    markdown_filename: arenarsquos_virtual_power_plant_knowledge_sharing_workshop_summary.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: integration failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-52519
+  source_title: ARENA's Virtual Power Plant Knowledge Sharing Workshop Summary
+  publish_date: 2019-03
+  project_name: SA Power Networks DER API Project
+  what_happened: SA Power Networks developed a DER API reference architecture and
+    conducted a multi-stage industry consultation process (three workshops between
+    May and October 2018) before launching a pilot in July 2019 as part of an ARENA-funded
+    project, with the full trial completion targeted for July 2020.
+  lesson_learnt: Early, structured industry consultation — including multiple workshops
+    before committing to architecture — is an effective approach for developing DER
+    API standards that the industry will adopt; SA Power Networks' phased consultation-to-pilot
+    pathway is a replicable model for other networks.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: programmatic/portfolio-level
+  lifecycle_phase: development/design
+  proponent_type: government/public-sector body
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id002
+  - 105
+  evidence_excerpt: Workshop 1 May 18 Key principles... Workshop 2 Aug 18 Design and
+    architecture... Workshop 3 Oct 18 Draft API spec Jan 2019... Pilot launch July
+    19
+  confidence_note: 'project_type reconciled to ''DER/customer-side'' from: DER/customer-side
+    (30/31), network/grid (1/31); project_scale_band reconciled to ''programmatic/portfolio-level''
+    from: programmatic/portfolio-level (21/31), demonstration (9/31), first commercial/FOAK
+    (1/31); proponent_type reconciled to ''government/public-sector body'' from: government/public-sector
+    body (15/31), technology vendor (6/31), network business (4/31), research organisation/university
+    (4/31), project developer (2/31)'
+  source_url: https://arena.gov.au/knowledge-bank/arenas-virtual-power-plant-knowledge-sharing-workshop-summary/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 2/04/2019
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports, Presentation
+  kb_document_folder: Reports_Presentation
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2019/04/virtual-power-plant-knowledge-sharing-workshop-summary.pdf
+  markdown_filename: arenarsquos_virtual_power_plant_knowledge_sharing_workshop_summary.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52519
+  contributing_source_titles:
+  - ARENA's Virtual Power Plant Knowledge Sharing Workshop Summary
+  contributing_sources:
+  - source_title: ARENA's Virtual Power Plant Knowledge Sharing Workshop Summary
+    pdf_url: https://arena.gov.au/assets/2019/04/virtual-power-plant-knowledge-sharing-workshop-summary.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/arenas-virtual-power-plant-knowledge-sharing-workshop-summary/
+    markdown_filename: arenarsquos_virtual_power_plant_knowledge_sharing_workshop_summary.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false

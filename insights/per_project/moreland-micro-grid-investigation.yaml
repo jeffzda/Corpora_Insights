@@ -1,0 +1,1327 @@
+- record_id: ARENA-DLV-1051
+  source_title: Here Comes The Sun
+  publish_date: null
+  project_name: Here Comes the Sun
+  what_happened: Modelling showed that solar PV alone achieves only marginal reductions
+    in overall peak demand from the network because residential peak demand occurs
+    in the evening, outside the solar generation window. Solar reduced energy imported
+    from the network by 40% but did not meaningfully shift the peak.
+  lesson_learnt: Solar PV without battery storage is ineffective at reducing network
+    peak demand in residential settings — batteries are required to shift generation
+    to the evening peak period. Project designs targeting network peak reduction should
+    not rely on solar-only configurations.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id001
+  - 22
+  - 23
+  evidence_excerpt: Solar by itself achieves only marginal reductions in the overall
+    peak demand from the network, as the peak remains in the evening which is generally
+    outside of the PV generation envelope.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+  project_page_url: https://arena.gov.au/projects/moreland-micro-grid-investigation/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 14/11/2017
+  kb_year: '2015'
+  kb_associated_project: Moreland Micro-Grid Investigation
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $112k
+  total_project_value: $226k
+  lead_organisation: Moreland Energy Foundation Ltd
+  arena_program: Emerging Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2015
+  location: Melbourne, Victoria
+  project_partners: GreenSync
+  pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+  markdown_filename: here_comes_the_sun.md
+  source_page_pdf: 23
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-1051
+  contributing_source_titles:
+  - Here Comes The Sun
+  contributing_sources:
+  - source_title: Here Comes The Sun
+    pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+    markdown_filename: here_comes_the_sun.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-1052
+  source_title: Here Comes The Sun
+  publish_date: null
+  project_name: Here Comes the Sun
+  what_happened: Modelling demonstrated that combining solar PV with battery storage
+    achieved approximately 45% reduction in overall peak demand and a 60% reduction
+    in energy imported from the network, and eliminated solar export to the grid entirely
+    by storing generation for later use.
+  lesson_learnt: Solar and battery storage combined delivers substantially greater
+    network and consumer benefits than solar alone — project designers should model
+    combined solar-storage configurations as the default rather than solar-only when
+    targeting peak demand reduction and energy import minimisation.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: hybrid systems
+  source_pages: &id002
+  - 23
+  - 24
+  evidence_excerpt: Solar combined with battery storage can achieve a significant
+    reduction in the overall peak demand from the network; about 45% for the modelled
+    outcome as the storage shifts PV generation to reduce the evening peak. Solar
+    combined with battery storage sees a further reduction in the volume of energy
+    imported from the network; a 60% reduction in energy imported.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+  project_page_url: https://arena.gov.au/projects/moreland-micro-grid-investigation/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 14/11/2017
+  kb_year: '2015'
+  kb_associated_project: Moreland Micro-Grid Investigation
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $112k
+  total_project_value: $226k
+  lead_organisation: Moreland Energy Foundation Ltd
+  arena_program: Emerging Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2015
+  location: Melbourne, Victoria
+  project_partners: GreenSync
+  pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+  markdown_filename: here_comes_the_sun.md
+  source_page_pdf: 24
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-1052
+  contributing_source_titles:
+  - Here Comes The Sun
+  contributing_sources:
+  - source_title: Here Comes The Sun
+    pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+    markdown_filename: here_comes_the_sun.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-1053
+  source_title: Here Comes The Sun
+  publish_date: null
+  project_name: Here Comes the Sun
+  what_happened: Modelling found that in an uncoordinated 'shared energy only' scenario
+    without demand management, batteries could discharge rapidly without solar generation,
+    depleting by mid-evening and forcing the network to supply a late evening peak
+    — potentially producing a higher critical peak than the business-as-usual scenario.
+  lesson_learnt: Shared battery storage without coordination and demand management
+    can worsen network peak events rather than reduce them — active energy management
+    systems are essential for shared microgrid configurations to avoid unintended
+    peak demand contributions.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: The modelling introduced a 'shared energy and demand management'
+    scenario that coordinated battery dispatch to limit maximum combined demand during
+    critical peak times.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id003
+  - 24
+  - 25
+  evidence_excerpt: When uncoordinated, a 'shared energy' only scenario could have
+    a higher critical peak as storage in this scenario discharges rapidly when there
+    is no solar generation to avoid import. This results in the battery depleting
+    by mid evening and calling on the network to supply the late evening peak.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+  project_page_url: https://arena.gov.au/projects/moreland-micro-grid-investigation/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 14/11/2017
+  kb_year: '2015'
+  kb_associated_project: Moreland Micro-Grid Investigation
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $112k
+  total_project_value: $226k
+  lead_organisation: Moreland Energy Foundation Ltd
+  arena_program: Emerging Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2015
+  location: Melbourne, Victoria
+  project_partners: GreenSync
+  pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+  markdown_filename: here_comes_the_sun.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-1053
+  contributing_source_titles:
+  - Here Comes The Sun
+  contributing_sources:
+  - source_title: Here Comes The Sun
+    pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+    markdown_filename: here_comes_the_sun.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-1054
+  source_title: Here Comes The Sun
+  publish_date: null
+  project_name: Here Comes the Sun
+  what_happened: The project found that households were under-utilising available
+    rooftop solar capacity because declining feed-in tariffs incentivised sizing systems
+    to match maximum daily demand rather than rooftop capacity. Modelling showed that
+    increasing solar by 40% above business-as-usual sizing and battery storage by
+    50% could meet at least 80% of annual net energy needs locally.
+  lesson_learnt: Microgrid and shared energy business cases should be designed around
+    maximising available rooftop solar capacity rather than individual household demand
+    matching — shared configurations can absorb the additional generation that would
+    otherwise be uneconomic for individual households under low feed-in tariffs.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id004
+  - 25
+  - 26
+  evidence_excerpt: By increasing solar PV by 40% on the 'business as usual' sizing
+    (modest given available roof space) and battery storage by 50%, at least 80% of
+    annual net energy needs can be met locally.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+  project_page_url: https://arena.gov.au/projects/moreland-micro-grid-investigation/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 14/11/2017
+  kb_year: '2015'
+  kb_associated_project: Moreland Micro-Grid Investigation
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $112k
+  total_project_value: $226k
+  lead_organisation: Moreland Energy Foundation Ltd
+  arena_program: Emerging Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2015
+  location: Melbourne, Victoria
+  project_partners: GreenSync
+  pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+  markdown_filename: here_comes_the_sun.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-1054
+  contributing_source_titles:
+  - Here Comes The Sun
+  contributing_sources:
+  - source_title: Here Comes The Sun
+    pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+    markdown_filename: here_comes_the_sun.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-1055
+  source_title: Here Comes The Sun
+  publish_date: null
+  project_name: Here Comes the Sun
+  what_happened: At approximately $300/kWh installed, battery storage had not reached
+    a price point viable for mass residential uptake at the time of the study. Market
+    research found that approximately 53% of households intended to 'wait and see'
+    on battery costs before purchasing.
+  lesson_learnt: Battery cost is a primary barrier to residential microgrid uptake
+    — project business cases should explicitly model future cost trajectories and
+    consider staged deployment strategies that allow households to join as battery
+    costs decline, rather than requiring upfront commitment at current prices.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id005
+  - 27
+  - 35
+  evidence_excerpt: Overall, at an average of $300/kWh, battery storage has not yet
+    reached a price viable for mass uptake in the residential market... about half
+    (53%) intended to 'wait and see what happens with costs'.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+  project_page_url: https://arena.gov.au/projects/moreland-micro-grid-investigation/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 14/11/2017
+  kb_year: '2015'
+  kb_associated_project: Moreland Micro-Grid Investigation
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $112k
+  total_project_value: $226k
+  lead_organisation: Moreland Energy Foundation Ltd
+  arena_program: Emerging Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2015
+  location: Melbourne, Victoria
+  project_partners: GreenSync
+  pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+  markdown_filename: here_comes_the_sun.md
+  source_page_pdf: 27
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-1055
+  contributing_source_titles:
+  - Here Comes The Sun
+  contributing_sources:
+  - source_title: Here Comes The Sun
+    pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+    markdown_filename: here_comes_the_sun.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-1056
+  source_title: Here Comes The Sun
+  publish_date: null
+  project_name: Here Comes the Sun
+  what_happened: Market research with 107 Victorian households found that while 60%
+    expressed interest in sharing arrangements, nearly a third (31%) simply wanted
+    cheaper electricity and were indifferent to delivery method, and households generally
+    lacked strong understanding of on-grid microgrid concepts. The research identified
+    a gap between cited aspirations and likely uptake rates.
+  lesson_learnt: Residential microgrid projects should not rely on stated consumer
+    interest as a proxy for actual uptake — market assessments must distinguish aspirational
+    responses from purchase-ready demand, and project designs must prioritise simplicity
+    and cost competitiveness over technical sophistication to cross from innovator
+    to early majority markets.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id006
+  - 33
+  - 34
+  evidence_excerpt: Nearly a third of all survey respondents (31%) agreed or strongly
+    agreed that they 'just want cheaper electricity, I don't care how it arrives'...
+    the interviews and focus groups indicated that households did not have a strong
+    understanding of sharing and related concepts, particularly on-grid microgrids.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+  project_page_url: https://arena.gov.au/projects/moreland-micro-grid-investigation/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 14/11/2017
+  kb_year: '2015'
+  kb_associated_project: Moreland Micro-Grid Investigation
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $112k
+  total_project_value: $226k
+  lead_organisation: Moreland Energy Foundation Ltd
+  arena_program: Emerging Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2015
+  location: Melbourne, Victoria
+  project_partners: GreenSync
+  pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+  markdown_filename: here_comes_the_sun.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-1056
+  contributing_source_titles:
+  - Here Comes The Sun
+  contributing_sources:
+  - source_title: Here Comes The Sun
+    pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+    markdown_filename: here_comes_the_sun.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-1057
+  source_title: Here Comes The Sun
+  publish_date: null
+  project_name: Here Comes the Sun
+  what_happened: Consumer research found that households strongly preferred a third-party
+    or body corporate led model for microgrid governance, and were unwilling to recruit
+    neighbours themselves or extend mortgages to finance participation. Payment preferences
+    favoured financed purchase (42%) or upfront payment (35%), with ongoing fee arrangements
+    (16%) significantly less popular.
+  lesson_learnt: Residential microgrid projects should be structured with third-party
+    governance and financing options — consumer-led models that require households
+    to recruit neighbours or take on additional debt are unlikely to attract broad
+    participation beyond innovator segments.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id007
+  - 36
+  evidence_excerpt: They preferred a body corporate model and were satisfied with
+    an excess payment scheme for electricity use over an 'agreed capacity' approach.
+    Also, while willing to recruit neighbours to a Consumer (DIY) microgrid arrangement,
+    these households preferred separate meters and to not know each other's electricity
+    use, and expressed concern about maintaining good relationships.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+  project_page_url: https://arena.gov.au/projects/moreland-micro-grid-investigation/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 14/11/2017
+  kb_year: '2015'
+  kb_associated_project: Moreland Micro-Grid Investigation
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $112k
+  total_project_value: $226k
+  lead_organisation: Moreland Energy Foundation Ltd
+  arena_program: Emerging Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2015
+  location: Melbourne, Victoria
+  project_partners: GreenSync
+  pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+  markdown_filename: here_comes_the_sun.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-1057
+  contributing_source_titles:
+  - Here Comes The Sun
+  contributing_sources:
+  - source_title: Here Comes The Sun
+    pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+    markdown_filename: here_comes_the_sun.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-1058
+  source_title: Here Comes The Sun
+  publish_date: null
+  project_name: Here Comes the Sun
+  what_happened: The project found that shared microgrid arrangements face a significant
+    financial viability constraint in 'in front of the meter' configurations because
+    the costs and regulations associated with transporting energy across the grid
+    can outweigh the benefits of sharing, particularly when network benefits are not
+    explicitly recognised and remunerated in the business case.
+  lesson_learnt: In-front-of-the-meter microgrid business cases must explicitly quantify
+    and capture network benefits — projects that rely only on consumer-side savings
+    are unlikely to be financially viable due to grid transport costs and regulatory
+    charges. Engage network operators early to assess whether network constraint payments
+    or reduced connection fees are available.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id008
+  - 49
+  evidence_excerpt: While the benefit to each end user has been identified, in many
+    cases projects are frustrated by the cost and regulations associated with transporting
+    the energy across the grid. To be viable, in front of the meter projects need
+    to reflect the benefit to the network operator, not just the consumers.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+  project_page_url: https://arena.gov.au/projects/moreland-micro-grid-investigation/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 14/11/2017
+  kb_year: '2015'
+  kb_associated_project: Moreland Micro-Grid Investigation
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $112k
+  total_project_value: $226k
+  lead_organisation: Moreland Energy Foundation Ltd
+  arena_program: Emerging Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2015
+  location: Melbourne, Victoria
+  project_partners: GreenSync
+  pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+  markdown_filename: here_comes_the_sun.md
+  source_page_pdf: 49
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-1058
+  contributing_source_titles:
+  - Here Comes The Sun
+  contributing_sources:
+  - source_title: Here Comes The Sun
+    pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+    markdown_filename: here_comes_the_sun.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-1059
+  source_title: Here Comes The Sun
+  publish_date: null
+  project_name: Here Comes the Sun
+  what_happened: The legal and regulatory review found that existing Australian energy
+    law creates significant obstacles for residential microgrid deployment, including
+    monopoly distribution rights, licensing requirements to sell electricity, and
+    the need for private easements to cross private land titles — none of which were
+    designed with neighbourhood sharing arrangements in mind.
+  lesson_learnt: Residential microgrid projects must undertake a detailed legal and
+    regulatory feasibility assessment before committing to a delivery model — the
+    current regulatory framework was not designed for neighbourhood energy sharing
+    and multiple approvals, licences, and legal instruments (easements, body corporate
+    agreements) are required before any physical deployment.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: research organisation/university
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id009
+  - 42
+  - 43
+  - 44
+  - 45
+  - 46
+  evidence_excerpt: Microgrid proposals will be impacted by the law in differing ways,
+    depending upon the way in which the microgrid is intended to be implemented...
+    some approaches may not even be possible within the current regulatory framework,
+    while others will test existing arrangements governing the generation, distribution
+    and retailing of energy.
+  confidence_note: Regulatory misfit is the dominant failure mode; the review identified
+    multiple overlapping legal regimes at state and federal level.
+  source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+  project_page_url: https://arena.gov.au/projects/moreland-micro-grid-investigation/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 14/11/2017
+  kb_year: '2015'
+  kb_associated_project: Moreland Micro-Grid Investigation
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $112k
+  total_project_value: $226k
+  lead_organisation: Moreland Energy Foundation Ltd
+  arena_program: Emerging Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2015
+  location: Melbourne, Victoria
+  project_partners: GreenSync
+  pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+  markdown_filename: here_comes_the_sun.md
+  source_page_pdf: 42
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-1059
+  contributing_source_titles:
+  - Here Comes The Sun
+  contributing_sources:
+  - source_title: Here Comes The Sun
+    pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+    markdown_filename: here_comes_the_sun.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-1060
+  source_title: Here Comes The Sun
+  publish_date: null
+  project_name: Here Comes the Sun
+  what_happened: A real-life cluster design exercise using six 1925-era houses in
+    Northcote, Victoria, found that brownfield residential microgrid deployment faces
+    significant physical constraints including proximity of participating houses,
+    availability of channels for private wire connections, and space for a central
+    battery, with existing commercial microgrid technology available but requiring
+    site-specific design work.
+  lesson_learnt: Brownfield residential microgrids require site-specific physical
+    feasibility assessment covering private wire routing, battery siting, and proximity
+    constraints before project commitment — greenfield sites are substantially easier
+    to configure and should be prioritised for first-of-kind deployments where practicable.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The design exercise confirmed that existing commercial components
+    can support an urban microgrid with central plant without customisation, reducing
+    technology risk.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id010
+  - 38
+  - 39
+  evidence_excerpt: Brown field sites may be constrained by proximity to other houses
+    who want to form the microgrid, access to channels to link the houses via private
+    wire and the availability of space to place a central battery.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+  project_page_url: https://arena.gov.au/projects/moreland-micro-grid-investigation/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 14/11/2017
+  kb_year: '2015'
+  kb_associated_project: Moreland Micro-Grid Investigation
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $112k
+  total_project_value: $226k
+  lead_organisation: Moreland Energy Foundation Ltd
+  arena_program: Emerging Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2015
+  location: Melbourne, Victoria
+  project_partners: GreenSync
+  pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+  markdown_filename: here_comes_the_sun.md
+  source_page_pdf: 38
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-1060
+  contributing_source_titles:
+  - Here Comes The Sun
+  contributing_sources:
+  - source_title: Here Comes The Sun
+    pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+    markdown_filename: here_comes_the_sun.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-1061
+  source_title: Here Comes The Sun
+  publish_date: null
+  project_name: Here Comes the Sun
+  what_happened: The project found that battery safety specifications — with at least
+    one major brand specifying a maximum operating temperature of 40°C — were potentially
+    inadequate for Australian conditions, meaning safety management software could
+    shut batteries down multiple times per year in many Australian locations.
+  lesson_learnt: Residential battery storage projects in Australia must verify that
+    equipment operating temperature specifications are appropriate for local climate
+    conditions — specifying batteries rated only to 40°C for Australian sites risks
+    repeated thermal shutdowns that undermine system performance and customer value.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: procurement
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id011
+  - 41
+  evidence_excerpt: Perhaps the only indicator of this risk in Australia for house-mounted
+    lithium batteries is that the maximum specified operating temperature was 40 degrees
+    Celsius for one large brand. This may be too low for many Australian sites, and
+    safety software installed in batteries means they are likely to shut down several
+    times a year if 40 degrees is the operating temperature limit.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+  project_page_url: https://arena.gov.au/projects/moreland-micro-grid-investigation/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 14/11/2017
+  kb_year: '2015'
+  kb_associated_project: Moreland Micro-Grid Investigation
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $112k
+  total_project_value: $226k
+  lead_organisation: Moreland Energy Foundation Ltd
+  arena_program: Emerging Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2015
+  location: Melbourne, Victoria
+  project_partners: GreenSync
+  pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+  markdown_filename: here_comes_the_sun.md
+  source_page_pdf: 41
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-1061
+  contributing_source_titles:
+  - Here Comes The Sun
+  contributing_sources:
+  - source_title: Here Comes The Sun
+    pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+    markdown_filename: here_comes_the_sun.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-1062
+  source_title: Here Comes The Sun
+  publish_date: null
+  project_name: Here Comes the Sun
+  what_happened: The project identified that shared microgrid assets are not covered
+    by standard home and contents insurance, requiring participants to source separate
+    insurance arrangements at variable and potentially significant additional cost
+    — an issue not typically anticipated by householders entering sharing arrangements.
+  lesson_learnt: Residential microgrid projects must address insurance requirements
+    explicitly in project design and participant agreements — shared microgrid assets
+    fall outside standard home insurance scope and failure to arrange appropriate
+    cover creates both financial risk and a barrier to participant commitment.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id012
+  - 42
+  evidence_excerpt: The issue of a microgrid and co-owned or shared products falls
+    outside the current scope of home insurance. Separate insurance would need to
+    be sourced to insure the microgrid. Insurance options and costs will vary with
+    size, type and layout of microgrid.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+  project_page_url: https://arena.gov.au/projects/moreland-micro-grid-investigation/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 14/11/2017
+  kb_year: '2015'
+  kb_associated_project: Moreland Micro-Grid Investigation
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $112k
+  total_project_value: $226k
+  lead_organisation: Moreland Energy Foundation Ltd
+  arena_program: Emerging Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2015
+  location: Melbourne, Victoria
+  project_partners: GreenSync
+  pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+  markdown_filename: here_comes_the_sun.md
+  source_page_pdf: 42
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-1062
+  contributing_source_titles:
+  - Here Comes The Sun
+  contributing_sources:
+  - source_title: Here Comes The Sun
+    pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+    markdown_filename: here_comes_the_sun.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-1063
+  source_title: Here Comes The Sun
+  publish_date: null
+  project_name: Here Comes the Sun
+  what_happened: The project found that without a well-defined upfront legal agreement,
+    shared microgrid arrangements among neighbouring households risk conflict over
+    entry and exit rights, cost allocation, demand changes, plant replacement, and
+    physical access — issues that are specific to the proximity and ongoing relationship
+    of microgrid participants.
+  lesson_learnt: Residential microgrid projects must establish binding legal agreements
+    covering conflict resolution, entry and exit conditions, cost allocation, demand
+    management, and physical access before deployment — failure to do so risks participant
+    disputes that can undermine the entire arrangement, particularly given participants
+    are neighbours with ongoing relationships.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: coordination & stakeholders
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Third-party led models (PPA or lease) were identified as reducing
+    inter-participant conflict risk by channelling disputes to a householder-provider
+    relationship rather than among neighbours.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id013
+  - 44
+  evidence_excerpt: A well-defined, up-front legal agreement will set expectations
+    for how the system is to be operated and shared and how, if a participant is dissatisfied,
+    they can leave the arrangement. Setting these things out and getting binding legal
+    agreement will avert a wide range of potential conflicts.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+  project_page_url: https://arena.gov.au/projects/moreland-micro-grid-investigation/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 14/11/2017
+  kb_year: '2015'
+  kb_associated_project: Moreland Micro-Grid Investigation
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $112k
+  total_project_value: $226k
+  lead_organisation: Moreland Energy Foundation Ltd
+  arena_program: Emerging Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2015
+  location: Melbourne, Victoria
+  project_partners: GreenSync
+  pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+  markdown_filename: here_comes_the_sun.md
+  source_page_pdf: 44
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-1063
+  contributing_source_titles:
+  - Here Comes The Sun
+  contributing_sources:
+  - source_title: Here Comes The Sun
+    pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+    markdown_filename: here_comes_the_sun.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-1064
+  source_title: Here Comes The Sun
+  publish_date: null
+  project_name: Here Comes the Sun
+  what_happened: The project found that network benefit magnitude is highly sensitive
+    to the state of the local network — microgrids and virtual power plants provide
+    the greatest financial value in areas of network constraint or poor power supply
+    quality, where reduced connection fees or service payments are available, while
+    the business case is weaker on unconstrained networks.
+  lesson_learnt: Residential microgrid projects should prioritise deployment in areas
+    of network constraint — the financial viability of in-front-of-the-meter models
+    is strongly site-dependent and developers should use network constraint mapping
+    to identify locations where network benefits are sufficient to anchor the business
+    case before committing to a specific site.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id014
+  - 49
+  evidence_excerpt: Costs and benefits vary from project to project, with the magnitude
+    of network benefits in particular being highly sensitive to the state of the local
+    network... In areas of network constraint or where power supply quality is poor,
+    microgrids and virtual power plants can provide network support by reducing total
+    load on the network, or providing local generation or power quality services.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+  project_page_url: https://arena.gov.au/projects/moreland-micro-grid-investigation/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 14/11/2017
+  kb_year: '2015'
+  kb_associated_project: Moreland Micro-Grid Investigation
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $112k
+  total_project_value: $226k
+  lead_organisation: Moreland Energy Foundation Ltd
+  arena_program: Emerging Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2015
+  location: Melbourne, Victoria
+  project_partners: GreenSync
+  pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+  markdown_filename: here_comes_the_sun.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-1064
+  contributing_source_titles:
+  - Here Comes The Sun
+  contributing_sources:
+  - source_title: Here Comes The Sun
+    pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+    markdown_filename: here_comes_the_sun.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-1065
+  source_title: Here Comes The Sun
+  publish_date: null
+  project_name: Here Comes the Sun
+  what_happened: The project identified that a capacity-based billing model (where
+    each household is allocated and billed to an agreed maximum daily draw) is preferable
+    to variable metered billing for shared microgrid systems, as it preserves privacy,
+    aligns ownership proportionally to estimated demand, reduces risk of overconsumption
+    of the shared resource, and simplifies system management.
+  lesson_learnt: Shared microgrid billing models should be designed around agreed
+    capacity limits rather than variable per-kWh metering — capacity-based models
+    better manage the 'tragedy of the commons' risk, simplify governance, preserve
+    household privacy, and create clearer incentives for energy conservation among
+    participants.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id015
+  - 40
+  - 41
+  evidence_excerpt: In general, it would be desirable that ownership of the system
+    is in proportion to estimated household demand. This then would set a maximum
+    capacity for each house... It is private – there need be no observation of energy
+    usage patterns on a house to house basis for consumption within the agreed maximum.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+  project_page_url: https://arena.gov.au/projects/moreland-micro-grid-investigation/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 14/11/2017
+  kb_year: '2015'
+  kb_associated_project: Moreland Micro-Grid Investigation
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $112k
+  total_project_value: $226k
+  lead_organisation: Moreland Energy Foundation Ltd
+  arena_program: Emerging Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2015
+  location: Melbourne, Victoria
+  project_partners: GreenSync
+  pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+  markdown_filename: here_comes_the_sun.md
+  source_page_pdf: 40
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-1065
+  contributing_source_titles:
+  - Here Comes The Sun
+  contributing_sources:
+  - source_title: Here Comes The Sun
+    pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+    markdown_filename: here_comes_the_sun.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-1066
+  source_title: Here Comes The Sun
+  publish_date: null
+  project_name: Here Comes the Sun
+  what_happened: The project found that Australia's existing grid infrastructure was
+    designed for unidirectional power flow from central generators to consumers, meaning
+    reverse power flow from distributed solar causes voltage regulation issues and
+    potential safety risks that network operators must actively manage.
+  lesson_learnt: Projects deploying distributed rooftop solar at scale must include
+    voltage management strategies in their technical design — reverse power flow from
+    distributed solar into networks designed for unidirectional flow creates voltage
+    rise and variability issues that can result in solar export being curtailed or
+    restricted by network operators, destroying project economics.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id016
+  - 12
+  - 48
+  evidence_excerpt: The existing grid was designed to transport power from central
+    generators to households; 'reverse power flow' from distributed solar to the grid
+    leads to voltage regulation issues and can create potential safety risks.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+  project_page_url: https://arena.gov.au/projects/moreland-micro-grid-investigation/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 14/11/2017
+  kb_year: '2015'
+  kb_associated_project: Moreland Micro-Grid Investigation
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $112k
+  total_project_value: $226k
+  lead_organisation: Moreland Energy Foundation Ltd
+  arena_program: Emerging Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2015
+  location: Melbourne, Victoria
+  project_partners: GreenSync
+  pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+  markdown_filename: here_comes_the_sun.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-1066
+  contributing_source_titles:
+  - Here Comes The Sun
+  contributing_sources:
+  - source_title: Here Comes The Sun
+    pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+    markdown_filename: here_comes_the_sun.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-1067
+  source_title: Here Comes The Sun
+  publish_date: null
+  project_name: Here Comes the Sun
+  what_happened: The project found that without appropriate network planning and control,
+    residential batteries could increase rather than reduce unplanned and peak demand
+    — for example through households charging electric vehicles during an early evening
+    peak or through battery discharge patterns that depleted storage before late evening
+    demand events.
+  lesson_learnt: Battery storage deployments in residential settings must include
+    coordinated energy management systems — unmanaged batteries can exacerbate peak
+    demand events rather than reduce them, and this risk must be explicitly addressed
+    in system design and network operator engagement.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id017
+  - 12
+  - 48
+  evidence_excerpt: There is also the risk that without appropriate network planning
+    and control, batteries could increase rather than reduce unplanned and peak demand
+    (for example, through households charging electric vehicles during an early evening
+    peak).
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+  project_page_url: https://arena.gov.au/projects/moreland-micro-grid-investigation/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 14/11/2017
+  kb_year: '2015'
+  kb_associated_project: Moreland Micro-Grid Investigation
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $112k
+  total_project_value: $226k
+  lead_organisation: Moreland Energy Foundation Ltd
+  arena_program: Emerging Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2015
+  location: Melbourne, Victoria
+  project_partners: GreenSync
+  pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+  markdown_filename: here_comes_the_sun.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-1067
+  contributing_source_titles:
+  - Here Comes The Sun
+  contributing_sources:
+  - source_title: Here Comes The Sun
+    pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+    markdown_filename: here_comes_the_sun.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-1068
+  source_title: Here Comes The Sun
+  publish_date: null
+  project_name: Here Comes the Sun
+  what_happened: Market research found that 42% of surveyed households preferred the
+    utility to lead investment in batteries and solar technologies, while power purchase
+    agreement arrangements had not proven popular for solar in Australia — potentially
+    due to lack of trust in retailers and a preference for asset ownership.
+  lesson_earnt: Residential energy sharing projects should offer ownership-based financing
+    pathways as the primary option — PPA and ongoing fee structures have not gained
+    traction in the Australian market, and programmes that replicate the household-owned
+    solar model (financed purchase or upfront payment) are more likely to achieve
+    uptake targets.
+  lesson_learnt: Residential energy sharing projects should offer ownership-based
+    financing pathways as the primary option — PPA and ongoing fee structures have
+    not gained traction in the Australian market, and programmes that replicate the
+    household-owned solar model (financed purchase or upfront payment) are more likely
+    to achieve uptake targets.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id018
+  - 36
+  evidence_excerpt: Arrangements such as in most power purchase agreements (PPAs)
+    have not proven popular for solar in Australia - potentially due to lack of trust
+    in retailers or the lack of evident ownership of the assets.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+  project_page_url: https://arena.gov.au/projects/moreland-micro-grid-investigation/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 14/11/2017
+  kb_year: '2015'
+  kb_associated_project: Moreland Micro-Grid Investigation
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $112k
+  total_project_value: $226k
+  lead_organisation: Moreland Energy Foundation Ltd
+  arena_program: Emerging Renewables Program
+  project_status: Past
+  project_start_date: 11/11/2015
+  location: Melbourne, Victoria
+  project_partners: GreenSync
+  pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+  markdown_filename: here_comes_the_sun.md
+  source_page_pdf: 36
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-1068
+  contributing_source_titles:
+  - Here Comes The Sun
+  contributing_sources:
+  - source_title: Here Comes The Sun
+    pdf_url: https://arena.gov.au/assets/2017/11/here-comes-the-sun-moreland-energy-foundation.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/here-comes-the-sun/
+    markdown_filename: here_comes_the_sun.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.92

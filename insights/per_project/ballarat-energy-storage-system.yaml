@@ -1,0 +1,288 @@
+- record_id: ARENA-DLV-2957
+  source_title: Large-Scale Battery Storage Knowledge Sharing Report
+  publish_date: 2019-09
+  project_name: Ballarat Energy Storage System
+  what_happened: The BESS was the first stand-alone battery system to connect to the
+    grid in Victoria, requiring GPS negotiations to establish new precedents with
+    AEMO for a stand-alone battery configuration, including negotiation of ramp rate
+    settings and R2 testing requirements for a system operating as both generator
+    and load.
+  lesson_learnt: Stand-alone battery projects in Australia must expect to negotiate
+    GPS precedents with AEMO, including ramp rate settings, testing requirements and
+    operating modes that have not previously been applied to batteries; engaging AEMO
+    early and proactively to resolve these novel regulatory interpretations can reduce
+    delay in the registration and commissioning process.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: project developer
+  delay_category: grid connection/system studies
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: AEMO's MASS tool was negotiated for the battery to operate with
+    a three-second ramp rate; R2 testing requirements were developed and refined for
+    the stand-alone battery configuration.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id001
+  - 13
+  - 14
+  evidence_excerpt: Generator Performance Standards (GPS) applied to the BESS project
+    as a stand-alone battery system were refined with AEMO through the GPS negotiation
+    and registration process deployment, which added complexity to the GPS negotiations.
+    The project therefore had to establish a GPS precedent to be able to connect to
+    the grid.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/large-scale-battery-storage-knowledge-sharing-report/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 25/09/2019
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2019/11/large-scale-battery-storage-knowledge-sharing-report.pdf
+  markdown_filename: large_scale_battery_storage_knowledge_sharing_report.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-2957
+  contributing_source_titles:
+  - Large-Scale Battery Storage Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Large-Scale Battery Storage Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2019/11/large-scale-battery-storage-knowledge-sharing-report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/large-scale-battery-storage-knowledge-sharing-report/
+    markdown_filename: large_scale_battery_storage_knowledge_sharing_report.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-2958
+  source_title: Large-Scale Battery Storage Knowledge Sharing Report
+  publish_date: 2019-09
+  project_name: Ballarat Energy Storage System
+  what_happened: The BESS system would trip if state of charge dipped below 3%, a
+    behaviour discovered during early operations; Fluence used the event as an opportunity
+    to update its training regime and SOC management software.
+  lesson_learnt: SOC management software and operator training should be validated
+    against operational edge cases (such as low-SOC trip thresholds) before commercial
+    operation; deficiencies in these areas discovered post-commissioning can be remedied
+    but require software updates and retraining that interrupt normal operations.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: project developer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated technical assumptions
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: data & measurement
+  intervention_note: Fluence updated both its training regime and SOC management software
+    to ensure system performance falls within stated guidelines.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id002
+  - 14
+  evidence_excerpt: Initially, the system would trip if State of Charge (SOC) dipped
+    below three per cent – the Fluence team used the opportunity to update both its
+    training regime as well as its SOC management software to ensure system performance
+    falls within stated guidelines.
+  confidence_note: 'proponent_type reconciled to ''project developer'' from: project
+    developer (29/33), network business (3/33), technology vendor (1/33)'
+  source_url: https://arena.gov.au/knowledge-bank/large-scale-battery-storage-knowledge-sharing-report/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 25/09/2019
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2019/11/large-scale-battery-storage-knowledge-sharing-report.pdf
+  markdown_filename: large_scale_battery_storage_knowledge_sharing_report.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-2958
+  contributing_source_titles:
+  - Large-Scale Battery Storage Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Large-Scale Battery Storage Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2019/11/large-scale-battery-storage-knowledge-sharing-report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/large-scale-battery-storage-knowledge-sharing-report/
+    markdown_filename: large_scale_battery_storage_knowledge_sharing_report.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-2959
+  source_title: Large-Scale Battery Storage Knowledge Sharing Report
+  publish_date: 2019-09
+  project_name: Ballarat Energy Storage System
+  what_happened: The BESS auxiliary load is connected via a single revenue meter and
+    the system operates exclusive of auxiliaries while revenue settlement is inclusive
+    of auxiliaries, creating a mismatch between measured performance and commercial
+    settlement that required management.
+  lesson_learnt: Auxiliary power metering and settlement arrangements for stand-alone
+    LSBS should be clarified and explicitly designed into the metering configuration
+    before commissioning — failure to account for parasitic auxiliary loads in revenue
+    metering can create ongoing commercial discrepancies between measured system output
+    and market settlement.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: project developer
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: partial success
+  secondary_failure_mode: unvalidated integration
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id003
+  - 14
+  evidence_excerpt: management of constant parasitic load – the system's auxiliary
+    load is connected via a single revenue meter and the system itself operates exclusive
+    of auxiliaries while the revenue settlement is inclusive of auxiliaries.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/large-scale-battery-storage-knowledge-sharing-report/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 25/09/2019
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2019/11/large-scale-battery-storage-knowledge-sharing-report.pdf
+  markdown_filename: large_scale_battery_storage_knowledge_sharing_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-2959
+  contributing_source_titles:
+  - Large-Scale Battery Storage Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Large-Scale Battery Storage Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2019/11/large-scale-battery-storage-knowledge-sharing-report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/large-scale-battery-storage-knowledge-sharing-report/
+    markdown_filename: large_scale_battery_storage_knowledge_sharing_report.md
+  arena_category:
+  - Battery storage
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-2981
+  source_title: Large-Scale Battery Storage Knowledge Sharing Report
+  publish_date: 2019-09
+  project_name: Ballarat Energy Storage System
+  what_happened: The BESS was the first LSBS project in Australia built by an Australian
+    EPC company (Fluence using local contracting capability), demonstrating that domestic
+    engineering, procurement and construction expertise for LSBS has begun to develop
+    within the Australian market.
+  lesson_learnt: The development of domestic EPC capability for LSBS (as demonstrated
+    by Ballarat) reduces reliance on international contractors and builds local skills
+    that future Australian projects can leverage; project proponents should consider
+    using and supporting Australian EPC firms to develop the local supply chain and
+    reduce delivery risk for future projects.
+  issue_severity: none
+  project_type: storage
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: construction/installation
+  proponent_type: project developer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id004
+  - 13
+  evidence_excerpt: The BESS is the first project of its kind to be built by an Australian
+    Engineering, Procurement and Construction (EPC) company. This is a good indication
+    of growing the necessary skill-sets within the Australian market and will help
+    to develop expertise that can be leveraged for future projects.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/large-scale-battery-storage-knowledge-sharing-report/
+  project_page_url: null
+  kb_category: Battery storage
+  kb_publish_date: 25/09/2019
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports, Insights
+  kb_document_folder: Reports_Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2019/11/large-scale-battery-storage-knowledge-sharing-report.pdf
+  markdown_filename: large_scale_battery_storage_knowledge_sharing_report.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-2981
+  contributing_source_titles:
+  - Large-Scale Battery Storage Knowledge Sharing Report
+  contributing_sources:
+  - source_title: Large-Scale Battery Storage Knowledge Sharing Report
+    pdf_url: https://arena.gov.au/assets/2019/11/large-scale-battery-storage-knowledge-sharing-report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/large-scale-battery-storage-knowledge-sharing-report/
+    markdown_filename: large_scale_battery_storage_knowledge_sharing_report.md
+  arena_category:
+  - Battery storage
+  is_consortium: false

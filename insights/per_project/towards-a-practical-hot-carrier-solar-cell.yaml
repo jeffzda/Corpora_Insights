@@ -1,0 +1,301 @@
+- record_id: ARENA-DLV-16551
+  source_title: Hot Carrier Solar Cell - Project Results and Lessons Learnt
+  publish_date: 2015-08
+  project_name: The Hot Carrier Solar Cells
+  what_happened: Si quantum dot (QD) energy selective contacts fabricated by annealing
+    silicon-rich oxide layers produced a resonance peak half-width exceeding 400 meV
+    — more than an order of magnitude broader than the recommended value — making
+    the approach impractical for hot carrier solar cell efficiency targets.
+  lesson_learnt: Avoid Si QD-based energy selective contacts formed by thermal annealing
+    of silicon-rich oxide; the inherently wide size distribution of QDs broadens the
+    resonance peak unacceptably. Use quantum well (QW) resonant tunnelling structures
+    instead, where well thickness can be precisely controlled, or Langmuir-Blodgett-deposited
+    uniform nanoparticle arrays.
+  issue_severity: moderate
+  project_type: null
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Switched to Al2O3/Si QW/Al2O3 quantum well structures, achieving
+    6× better energy selectivity than the prior SiO2/Si QD/SiO2 approach.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id001
+  - 8
+  - 9
+  evidence_excerpt: Although evidence of resonant tunnelling was obtained, the observed
+    half width of the resonance peak was more than 400 meV, which is an order of magnitude
+    larger than the recommended value.
+  confidence_note: project_type field used 'research organisation/university' as proponent_type
+    value — project_type set to 'generation' is less apt; no allowed value perfectly
+    fits a university R&D project so 'generation' (solar) was considered but lab/bench
+    R&D is better captured via proponent_type and scale_band.
+  source_url: https://arena.gov.au/knowledge-bank/hot-carrier-solar-cell-project-results-and-lessons-learnt/
+  project_page_url: https://arena.gov.au/projects/towards-a-practical-hot-carrier-solar-cell/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/01/2015
+  kb_year: '2011'
+  kb_associated_project: Towards a Practical Hot Carrier Solar Cell
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.27m
+  total_project_value: $6.54m
+  lead_organisation: University of NSW
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 14/12/2011
+  location: New South Wales, Sydney
+  project_partners: Arizona State University, Purdue University, National Renewable
+    Energy Laboratory, and Lawrence Berkeley National Laboratory
+  pdf_url: https://arena.gov.au/assets/2015/09/Hot-Carrier-Solar-Cell-Project-results.pdf
+  markdown_filename: hot_carrier_solar_cell_project_results_and_lessons_learnt.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16551
+  contributing_source_titles:
+  - Hot Carrier Solar Cell - Project Results and Lessons Learnt
+  contributing_sources:
+  - source_title: Hot Carrier Solar Cell - Project Results and Lessons Learnt
+    pdf_url: https://arena.gov.au/assets/2015/09/Hot-Carrier-Solar-Cell-Project-results.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/hot-carrier-solar-cell-project-results-and-lessons-learnt/
+    markdown_filename: hot_carrier_solar_cell_project_results_and_lessons_learnt.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-16552
+  source_title: Hot Carrier Solar Cell - Project Results and Lessons Learnt
+  publish_date: 2015-08
+  project_name: The Hot Carrier Solar Cells
+  what_happened: InN-based hot carrier solar cells, which are theoretically optimal
+    due to InN's large phonon gap and small electronic band gap, could not be made
+    practically viable because growing InN and its energy selective contact materials
+    (InxGaN1-x) to sufficient crystalline quality proved too difficult, and integrating
+    absorber and ESC was hindered by incompatible processing conditions.
+  lesson_learnt: Future projects targeting hot carrier solar cells should not rely
+    on InN-based absorbers given current material growth limitations; transition metal
+    nitrides such as HfN and zirconium nitride are more practical alternatives with
+    large phonon gaps capable of suppressing Klemens phonon decay and slowing carrier
+    cooling.
+  issue_severity: major
+  project_type: null
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated integration
+  intervention_note: Substituted HfN thin films and colloidal Si nanoparticles as
+    absorber materials, and adopted Al2O3/Si(Ge) QW/Al2O3 structures for energy selective
+    contacts, enabling fabrication of proof-of-concept HC solar cell devices.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id002
+  - 9
+  - 10
+  evidence_excerpt: However, with the current technology, InN-based HC solar cells
+    are not practical to make due to difficulty in growing these materials with sufficiently
+    good quality... it has been difficult to integrate absorber and energy selective
+    contacts due to their different processing conditions.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/hot-carrier-solar-cell-project-results-and-lessons-learnt/
+  project_page_url: https://arena.gov.au/projects/towards-a-practical-hot-carrier-solar-cell/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/01/2015
+  kb_year: '2011'
+  kb_associated_project: Towards a Practical Hot Carrier Solar Cell
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.27m
+  total_project_value: $6.54m
+  lead_organisation: University of NSW
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 14/12/2011
+  location: New South Wales, Sydney
+  project_partners: Arizona State University, Purdue University, National Renewable
+    Energy Laboratory, and Lawrence Berkeley National Laboratory
+  pdf_url: https://arena.gov.au/assets/2015/09/Hot-Carrier-Solar-Cell-Project-results.pdf
+  markdown_filename: hot_carrier_solar_cell_project_results_and_lessons_learnt.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16552
+  contributing_source_titles:
+  - Hot Carrier Solar Cell - Project Results and Lessons Learnt
+  contributing_sources:
+  - source_title: Hot Carrier Solar Cell - Project Results and Lessons Learnt
+    pdf_url: https://arena.gov.au/assets/2015/09/Hot-Carrier-Solar-Cell-Project-results.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/hot-carrier-solar-cell-project-results-and-lessons-learnt/
+    markdown_filename: hot_carrier_solar_cell_project_results_and_lessons_learnt.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: integration failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-16553
+  source_title: Hot Carrier Solar Cell - Project Results and Lessons Learnt
+  publish_date: 2015-08
+  project_name: The Hot Carrier Solar Cells
+  what_happened: The project successfully demonstrated proof-of-concept hot carrier
+    solar cell devices combining HfN absorbers with double-barrier resonant tunnelling
+    energy selective contacts, confirming power generation and hot carrier collection
+    — all milestones were met and 12 journal publications were produced.
+  lesson_learnt: A phased approach — separately optimising absorber and energy selective
+    contact components before integration — is effective for complex multi-component
+    third-generation solar cell research; this pathway can compress iteration cycles
+    and validate feasibility without requiring full device integration at every experimental
+    step.
+  issue_severity: none
+  project_type: null
+  project_scale_band: lab/bench
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id003
+  - 4
+  - 5
+  - 6
+  evidence_excerpt: The project has achieved all the milestones and project outcomes.
+    This work has generated 12 journal publications and a similar number of conference
+    proceedings... Both types of devices show power generation. The measurements are
+    very repeatable. This demonstrates collection of hot carriers from the front of
+    the device with an ESC.
+  confidence_note: 'project_type reconciled to ''research organisation/university''
+    from: research organisation/university (2/4), generation (2/4)'
+  source_url: https://arena.gov.au/knowledge-bank/hot-carrier-solar-cell-project-results-and-lessons-learnt/
+  project_page_url: https://arena.gov.au/projects/towards-a-practical-hot-carrier-solar-cell/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/01/2015
+  kb_year: '2011'
+  kb_associated_project: Towards a Practical Hot Carrier Solar Cell
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.27m
+  total_project_value: $6.54m
+  lead_organisation: University of NSW
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 14/12/2011
+  location: New South Wales, Sydney
+  project_partners: Arizona State University, Purdue University, National Renewable
+    Energy Laboratory, and Lawrence Berkeley National Laboratory
+  pdf_url: https://arena.gov.au/assets/2015/09/Hot-Carrier-Solar-Cell-Project-results.pdf
+  markdown_filename: hot_carrier_solar_cell_project_results_and_lessons_learnt.md
+  source_page_pdf: 5
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16553
+  contributing_source_titles:
+  - Hot Carrier Solar Cell - Project Results and Lessons Learnt
+  contributing_sources:
+  - source_title: Hot Carrier Solar Cell - Project Results and Lessons Learnt
+    pdf_url: https://arena.gov.au/assets/2015/09/Hot-Carrier-Solar-Cell-Project-results.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/hot-carrier-solar-cell-project-results-and-lessons-learnt/
+    markdown_filename: hot_carrier_solar_cell_project_results_and_lessons_learnt.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-16554
+  source_title: Hot Carrier Solar Cell - Project Results and Lessons Learnt
+  publish_date: 2015-08
+  project_name: The Hot Carrier Solar Cells
+  what_happened: Market assessment of hot carrier solar cells found that thin-film
+    deposition-based HC solar cell costs are very high compared to commercial silicon
+    PV, while solution-processed (roll-to-roll) fabrication could potentially achieve
+    lower costs than silicon solar cells.
+  lesson_learnt: Thin-film deposition routes for hot carrier solar cells are not cost-competitive
+    with commercial silicon PV at present; future development pathways should prioritise
+    solution-processed or roll-to-roll fabrication architectures to have a realistic
+    prospect of cost parity.
+  issue_severity: minor
+  project_type: null
+  project_scale_band: lab/bench
+  lifecycle_phase: concept/feasibility
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id004
+  - 6
+  evidence_excerpt: The results show that the cost of thin film based HC solar cells
+    is very high compared to commercial silicon photovoltaics. However, the cost for
+    solution processed HC devices could be lower than silicon solar cells.
+  confidence_note: 'project_type reconciled to ''research organisation/university''
+    from: research organisation/university (2/4), generation (2/4)'
+  source_url: https://arena.gov.au/knowledge-bank/hot-carrier-solar-cell-project-results-and-lessons-learnt/
+  project_page_url: https://arena.gov.au/projects/towards-a-practical-hot-carrier-solar-cell/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/01/2015
+  kb_year: '2011'
+  kb_associated_project: Towards a Practical Hot Carrier Solar Cell
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $2.27m
+  total_project_value: $6.54m
+  lead_organisation: University of NSW
+  arena_program: Australian Solar Institute
+  project_status: Past
+  project_start_date: 14/12/2011
+  location: New South Wales, Sydney
+  project_partners: Arizona State University, Purdue University, National Renewable
+    Energy Laboratory, and Lawrence Berkeley National Laboratory
+  pdf_url: https://arena.gov.au/assets/2015/09/Hot-Carrier-Solar-Cell-Project-results.pdf
+  markdown_filename: hot_carrier_solar_cell_project_results_and_lessons_learnt.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-16554
+  contributing_source_titles:
+  - Hot Carrier Solar Cell - Project Results and Lessons Learnt
+  contributing_sources:
+  - source_title: Hot Carrier Solar Cell - Project Results and Lessons Learnt
+    pdf_url: https://arena.gov.au/assets/2015/09/Hot-Carrier-Solar-Cell-Project-results.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/hot-carrier-solar-cell-project-results-and-lessons-learnt/
+    markdown_filename: hot_carrier_solar_cell_project_results_and_lessons_learnt.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false

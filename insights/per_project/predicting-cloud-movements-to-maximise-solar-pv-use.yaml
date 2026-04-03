@@ -1,0 +1,695 @@
+- record_id: ARENA-DLV-67901
+  source_title: Fulcrum 3D CloudCAM Final Report
+  publish_date: 2016-11
+  project_name: Cloud detection and prediction for maximising solar PV utilisation
+    in off-grid hybrid power systems (CloudCAM)
+  what_happened: Solar glare from the fisheye lens was initially misinterpreted as
+    cloud by the binary cloud detection algorithm, creating false positives in cloud
+    detection and inaccurate shadow placement predictions. This problem had been underestimated
+    at project conception.
+  lesson_learnt: Sky imaging systems for cloud detection must account for solar flare
+    from the outset — glare near the sun can be misidentified as cloud, undermining
+    prediction accuracy. A dedicated solar flare filter algorithm that tracks sun
+    position and applies precise near-sun detection logic should be designed in before
+    field deployment, not retrofitted.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: Developed a solar flare filter algorithm applied to each image
+    that tracks the sun position using calibration data and applies a more precise
+    detection threshold near the sun, treating clear sky near the sun as sharp white
+    rather than cloud.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id001
+  - 16
+  - 17
+  - 18
+  - 19
+  evidence_excerpt: At the conception of the project, Fulcrum3D had underestimated
+    the impact that solar flare would have on accurate cloud detection... These facets,
+    if untreated, have the potential to be misinterpreted as cloud leading to inaccuracies
+    in cloud detection and shadow placement prediction.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum-3d-cloudcam-final-report/
+  project_page_url: https://arena.gov.au/projects/predicting-cloud-movements-to-maximise-solar-pv-use/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/01/2016
+  kb_year: '2014'
+  kb_associated_project: Predicting Cloud Movements to Maximise Solar PV Use
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $546k
+  total_project_value: $1.11m
+  lead_organisation: Fulcrum 3D
+  arena_program: Emerging Renewables Program
+  project_status: Past
+  project_start_date: 08/09/2014
+  location: Alice Springs, Northern Territory
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2016/11/Fulcrum3D-CloudCAM-ARENA-Public-report.pdf
+  markdown_filename: fulcrum_3d_cloudcam_final_report.md
+  source_page_pdf: 18
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67901
+  contributing_source_titles:
+  - Fulcrum 3D CloudCAM Final Report
+  contributing_sources:
+  - source_title: Fulcrum 3D CloudCAM Final Report
+    pdf_url: https://arena.gov.au/assets/2016/11/Fulcrum3D-CloudCAM-ARENA-Public-report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum-3d-cloudcam-final-report/
+    markdown_filename: fulcrum_3d_cloudcam_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-67902
+  source_title: Fulcrum 3D CloudCAM Final Report
+  publish_date: 2016-11
+  project_name: Cloud detection and prediction for maximising solar PV utilisation
+    in off-grid hybrid power systems (CloudCAM)
+  what_happened: Clouds within 5 degrees of the horizon were initially not accurately
+    detected due to low spatial resolution at the horizon and the whiter sky appearance
+    at low angles caused by aerosol light scattering, resulting in additional false
+    negatives in the cloud detection algorithm.
+  lesson_learnt: Sky imaging cloud detection algorithms must include a dedicated near-horizon
+    filter accounting for increased air mass and aerosol scattering effects that whiten
+    the sky at low angles — treating horizon sky the same as mid-sky sky will produce
+    systematic under-detection of low clouds.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: technology vendor
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Increased resolution of colour balance and created a filter revolving
+    around distance from the sun, enabling better detection of near-horizon clouds
+    while continuing to account for sun glare.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id002
+  - 12
+  evidence_excerpt: clouds within 5 degrees of the horizon were initially not accurately
+    detected; in part due to the low spatial resolution towards the horizon combined
+    with the whiter appearance of the sky at low angles (increased air mass near the
+    horizon leads to scattered light from aerosols giving the sky a slightly whiter
+    appearance compared with the rest of the sky).
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum-3d-cloudcam-final-report/
+  project_page_url: https://arena.gov.au/projects/predicting-cloud-movements-to-maximise-solar-pv-use/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/01/2016
+  kb_year: '2014'
+  kb_associated_project: Predicting Cloud Movements to Maximise Solar PV Use
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $546k
+  total_project_value: $1.11m
+  lead_organisation: Fulcrum 3D
+  arena_program: Emerging Renewables Program
+  project_status: Past
+  project_start_date: 08/09/2014
+  location: Alice Springs, Northern Territory
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2016/11/Fulcrum3D-CloudCAM-ARENA-Public-report.pdf
+  markdown_filename: fulcrum_3d_cloudcam_final_report.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67902
+  contributing_source_titles:
+  - Fulcrum 3D CloudCAM Final Report
+  contributing_sources:
+  - source_title: Fulcrum 3D CloudCAM Final Report
+    pdf_url: https://arena.gov.au/assets/2016/11/Fulcrum3D-CloudCAM-ARENA-Public-report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum-3d-cloudcam-final-report/
+    markdown_filename: fulcrum_3d_cloudcam_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-67903
+  source_title: Fulcrum 3D CloudCAM Final Report
+  publish_date: 2016-11
+  project_name: Cloud detection and prediction for maximising solar PV utilisation
+    in off-grid hybrid power systems (CloudCAM)
+  what_happened: The project's original design target was cloud shadow prediction
+    10–20 minutes ahead of time. Through engagement with utilities and solar farm
+    operators during the project, the team discovered that remote area hybrid grids
+    require only 2–5 minutes lead time (enough to start a diesel generator or pre-emptively
+    ramp PV), making the longer prediction window largely redundant in the current
+    Australian market.
+  lesson_learnt: For off-grid hybrid solar PV projects, validate the required forecasting
+    lead time with actual grid operators and utilities before locking in system design
+    — the operational requirement (2–5 minutes to start a diesel generator) may be
+    far shorter than the technically ambitious target, fundamentally changing the
+    system's scope and accuracy requirements.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Refocused the software development from 15–20 minute forecasting
+    to 2–5 minute short-term prediction after meetings with utilities and project
+    developers confirmed the shorter timeframe was what the market needed; satellite
+    imagery integration was also dropped as it offered no benefit at this timescale.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id003
+  - 20
+  - 21
+  evidence_excerpt: The project's original expectation was that prediction 15 minutes
+    ahead and longer would be required by the solar industry. However, after talking
+    to many potential users of the technology we now think that a few minutes ahead
+    is the target... most remote area hybrid grids seem focused on 2 to 5 minutes
+    which is enough time to start a classical diesel generator.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum-3d-cloudcam-final-report/
+  project_page_url: https://arena.gov.au/projects/predicting-cloud-movements-to-maximise-solar-pv-use/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/01/2016
+  kb_year: '2014'
+  kb_associated_project: Predicting Cloud Movements to Maximise Solar PV Use
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $546k
+  total_project_value: $1.11m
+  lead_organisation: Fulcrum 3D
+  arena_program: Emerging Renewables Program
+  project_status: Past
+  project_start_date: 08/09/2014
+  location: Alice Springs, Northern Territory
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2016/11/Fulcrum3D-CloudCAM-ARENA-Public-report.pdf
+  markdown_filename: fulcrum_3d_cloudcam_final_report.md
+  source_page_pdf: 20
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67903
+  contributing_source_titles:
+  - Fulcrum 3D CloudCAM Final Report
+  contributing_sources:
+  - source_title: Fulcrum 3D CloudCAM Final Report
+    pdf_url: https://arena.gov.au/assets/2016/11/Fulcrum3D-CloudCAM-ARENA-Public-report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum-3d-cloudcam-final-report/
+    markdown_filename: fulcrum_3d_cloudcam_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-67904
+  source_title: Fulcrum 3D CloudCAM Final Report
+  publish_date: 2016-11
+  project_name: Cloud detection and prediction for maximising solar PV utilisation
+    in off-grid hybrid power systems (CloudCAM)
+  what_happened: The CloudCAM Advanced system, which aimed to determine cloud heights
+    using novel sensors, did not reach the expected pilot-scale demonstration outcome
+    within the project timeframe. No commercially available sensor met the resolution
+    requirements at a cost-effective price, requiring Fulcrum3D to design and build
+    custom hardware. Continual technical difficulties persisted to project close,
+    compounded by time and commercial constraints.
+  lesson_learnt: When a project depends on novel sensing hardware not yet available
+    on the commercial market, the R&D timeline and budget should explicitly account
+    for iterative sensor selection, custom hardware fabrication, and the risk that
+    solving known problems will reveal further unknown ones — underestimating this
+    compound risk is a recurring cause of FOAK technology projects not reaching their
+    target demonstration stage.
+  issue_severity: major
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: procurement/supply chain
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: execution & logistics
+  intervention_note: Tested multiple sensor types in Sydney and at NT solar power
+    stations before identifying the most suitable sensor; designed and built custom
+    mounting hardware to enable full-hemisphere sky scanning, achieving a proof-of-concept
+    prototype, though not a commercial product.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id004
+  - 22
+  - 23
+  evidence_excerpt: Setbacks were experienced during early stages of the project for
+    the CloudCAM Advanced system in sourcing hardware sufficient for the purposes
+    of accurate advanced sky sensing... It is not the problems that are known that
+    have caused the halt in the development of the advanced imaging technique, but
+    the realisation that fixing these problems may uncover further unknown problems
+    during trials.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum-3d-cloudcam-final-report/
+  project_page_url: https://arena.gov.au/projects/predicting-cloud-movements-to-maximise-solar-pv-use/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/01/2016
+  kb_year: '2014'
+  kb_associated_project: Predicting Cloud Movements to Maximise Solar PV Use
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $546k
+  total_project_value: $1.11m
+  lead_organisation: Fulcrum 3D
+  arena_program: Emerging Renewables Program
+  project_status: Past
+  project_start_date: 08/09/2014
+  location: Alice Springs, Northern Territory
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2016/11/Fulcrum3D-CloudCAM-ARENA-Public-report.pdf
+  markdown_filename: fulcrum_3d_cloudcam_final_report.md
+  source_page_pdf: 22
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67904
+  contributing_source_titles:
+  - Fulcrum 3D CloudCAM Final Report
+  contributing_sources:
+  - source_title: Fulcrum 3D CloudCAM Final Report
+    pdf_url: https://arena.gov.au/assets/2016/11/Fulcrum3D-CloudCAM-ARENA-Public-report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum-3d-cloudcam-final-report/
+    markdown_filename: fulcrum_3d_cloudcam_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-67905
+  source_title: Fulcrum 3D CloudCAM Final Report
+  publish_date: 2016-11
+  project_name: Cloud detection and prediction for maximising solar PV utilisation
+    in off-grid hybrid power systems (CloudCAM)
+  what_happened: The CloudCAM optical system was successfully trialled at Epuron solar
+    power stations in the Northern Territory and integrated into solar control systems
+    in early 2016, delivering measurable increases in PV yield and reductions in battery
+    cycling — outcomes that exceeded initial expectations for the optical system and
+    led to the first commercial third-party sale in August 2016.
+  lesson_learnt: A well-developed optical sky camera system with high-resolution fisheye
+    lens and robust cloud detection software can deliver commercially useful short-term
+    PV output prediction for off-grid high-penetration hybrid solar sites without
+    requiring advanced sensor augmentation — do not underestimate the standalone commercial
+    value of a simpler optical system while pursuing a more technically ambitious
+    parallel development.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id005
+  - 3
+  - 11
+  evidence_excerpt: The trials, where CloudCAM was installed at solar farms in the
+    NT, were extremely successful. With the solar power stations showing an increase
+    of yield from the PV output and a decrease in the cycling of installed batteries
+    for grid stability purposes... The resulting commercial sales of CloudCAM and
+    the continued interest in the product from corporations and utilities across Australia
+    has exceeded the expectation for the optical system from the conception of the
+    project.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum-3d-cloudcam-final-report/
+  project_page_url: https://arena.gov.au/projects/predicting-cloud-movements-to-maximise-solar-pv-use/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/01/2016
+  kb_year: '2014'
+  kb_associated_project: Predicting Cloud Movements to Maximise Solar PV Use
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $546k
+  total_project_value: $1.11m
+  lead_organisation: Fulcrum 3D
+  arena_program: Emerging Renewables Program
+  project_status: Past
+  project_start_date: 08/09/2014
+  location: Alice Springs, Northern Territory
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2016/11/Fulcrum3D-CloudCAM-ARENA-Public-report.pdf
+  markdown_filename: fulcrum_3d_cloudcam_final_report.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67905
+  contributing_source_titles:
+  - Fulcrum 3D CloudCAM Final Report
+  contributing_sources:
+  - source_title: Fulcrum 3D CloudCAM Final Report
+    pdf_url: https://arena.gov.au/assets/2016/11/Fulcrum3D-CloudCAM-ARENA-Public-report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum-3d-cloudcam-final-report/
+    markdown_filename: fulcrum_3d_cloudcam_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-67906
+  source_title: Fulcrum 3D CloudCAM Final Report
+  publish_date: 2016-11
+  project_name: Cloud detection and prediction for maximising solar PV utilisation
+    in off-grid hybrid power systems (CloudCAM)
+  what_happened: For off-grid high-penetration solar PV sites without CloudCAM, operators
+    were forced to curtail solar output when battery state-of-charge was low, to ensure
+    any cloud event would not cause sudden unacceptable PV output drops. CloudCAM's
+    short-term prediction allowed the site to operate at full PV output regardless
+    of battery state, because operators had confidence no cloud shadow would occur
+    in the next 2–5 minutes.
+  lesson_learnt: Short-term cloud prediction (2–5 minutes) can eliminate the need
+    for output curtailment at off-grid high-penetration solar PV sites when batteries
+    are not fully charged, directly increasing yield — this operational benefit should
+    be quantified and included in business cases for cloud prediction systems at remote
+    hybrid sites.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id006
+  - 5
+  - 11
+  evidence_excerpt: Without CloudCAM, and when the batteries are not at full capacity,
+    the solar site has to limit its generation so that any cloud events would not
+    cause sudden PV output drops... With a CloudCAM installed, solar operators have
+    an accurate understanding of the risk of sudden solar variance occurring in the
+    next 2-5 minutes, meaning that even without battery backup or extra spinning reserve,
+    off grid power stations can operate without curtailment.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (7/9), generation (2/9)'
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum-3d-cloudcam-final-report/
+  project_page_url: https://arena.gov.au/projects/predicting-cloud-movements-to-maximise-solar-pv-use/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/01/2016
+  kb_year: '2014'
+  kb_associated_project: Predicting Cloud Movements to Maximise Solar PV Use
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $546k
+  total_project_value: $1.11m
+  lead_organisation: Fulcrum 3D
+  arena_program: Emerging Renewables Program
+  project_status: Past
+  project_start_date: 08/09/2014
+  location: Alice Springs, Northern Territory
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2016/11/Fulcrum3D-CloudCAM-ARENA-Public-report.pdf
+  markdown_filename: fulcrum_3d_cloudcam_final_report.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67906
+  contributing_source_titles:
+  - Fulcrum 3D CloudCAM Final Report
+  contributing_sources:
+  - source_title: Fulcrum 3D CloudCAM Final Report
+    pdf_url: https://arena.gov.au/assets/2016/11/Fulcrum3D-CloudCAM-ARENA-Public-report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum-3d-cloudcam-final-report/
+    markdown_filename: fulcrum_3d_cloudcam_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-67907
+  source_title: Fulcrum 3D CloudCAM Final Report
+  publish_date: 2016-11
+  project_name: Cloud detection and prediction for maximising solar PV utilisation
+    in off-grid hybrid power systems (CloudCAM)
+  what_happened: Integrating CloudCAM at off-grid solar PV sites enabled operators
+    to pre-emptively ramp down before cloud events rather than relying on batteries
+    to stabilise the grid while diesel generators caught up. This reduced battery
+    cycling, extending battery life and decreasing energy lost in charge/discharge
+    round-trip inefficiency.
+  lesson_learnt: Pre-emptive ramp-down capability enabled by short-term cloud forecasting
+    reduces battery cycling at hybrid solar PV sites — this should be valued in battery
+    sizing and lifecycle cost analyses for remote hybrid grids, as reduced cycling
+    extends battery life and can reduce the required battery capacity at greenfield
+    sites.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id007
+  - 11
+  evidence_excerpt: The reduction of the cycling of batteries is also an important
+    benefit and occurred because the solar site could pre-emptively ramp down before
+    a cloud event, rather than using battery output to stabilise the grid while diesel
+    generators caught up to the increase in required generation. This reduction in
+    battery cycling allows for longer battery life, making this type of Grid Stability
+    System more economically viable and also increases yield by decreasing the energy
+    inherently lost in charging and discharging battery systems.
+  confidence_note: 'project_type reconciled to ''software/data/digital'' from: software/data/digital
+    (7/9), generation (2/9)'
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum-3d-cloudcam-final-report/
+  project_page_url: https://arena.gov.au/projects/predicting-cloud-movements-to-maximise-solar-pv-use/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/01/2016
+  kb_year: '2014'
+  kb_associated_project: Predicting Cloud Movements to Maximise Solar PV Use
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $546k
+  total_project_value: $1.11m
+  lead_organisation: Fulcrum 3D
+  arena_program: Emerging Renewables Program
+  project_status: Past
+  project_start_date: 08/09/2014
+  location: Alice Springs, Northern Territory
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2016/11/Fulcrum3D-CloudCAM-ARENA-Public-report.pdf
+  markdown_filename: fulcrum_3d_cloudcam_final_report.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67907
+  contributing_source_titles:
+  - Fulcrum 3D CloudCAM Final Report
+  contributing_sources:
+  - source_title: Fulcrum 3D CloudCAM Final Report
+    pdf_url: https://arena.gov.au/assets/2016/11/Fulcrum3D-CloudCAM-ARENA-Public-report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum-3d-cloudcam-final-report/
+    markdown_filename: fulcrum_3d_cloudcam_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-67908
+  source_title: Fulcrum 3D CloudCAM Final Report
+  publish_date: 2016-11
+  project_name: Cloud detection and prediction for maximising solar PV utilisation
+    in off-grid hybrid power systems (CloudCAM)
+  what_happened: Australia had very few grid-connected large-scale solar plants at
+    the time of the project, meaning there was no existing domestic market for the
+    30-minute ahead prediction needed for scheduling and bidding in the NEM. The project's
+    forecasting capability was therefore designed for and validated against remote
+    hybrid grid use cases only.
+  lesson_learnt: When developing solar PV forecasting technology, distinguish clearly
+    between the off-grid hybrid grid use case (2–5 minute lead time for generator
+    dispatch) and the grid-connected large-scale market (30-minute lead time for scheduling/bidding)
+    — these are fundamentally different product requirements, and a system optimised
+    for one may need significant re-development to serve the other.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id008
+  - 21
+  evidence_excerpt: We note that Australia has very few grid connected large-scale
+    plants (e.g. Broken Hill, Moree and Nyngan) and as such the 30 minute prediction
+    for informing scheduling / bidding is not a market in Australia at present. However
+    over the coming few years, such a demand is expected to emerge and as such CloudCAM
+    will need to evolve to adapt to this longer time frame of required prediction.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum-3d-cloudcam-final-report/
+  project_page_url: https://arena.gov.au/projects/predicting-cloud-movements-to-maximise-solar-pv-use/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/01/2016
+  kb_year: '2014'
+  kb_associated_project: Predicting Cloud Movements to Maximise Solar PV Use
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $546k
+  total_project_value: $1.11m
+  lead_organisation: Fulcrum 3D
+  arena_program: Emerging Renewables Program
+  project_status: Past
+  project_start_date: 08/09/2014
+  location: Alice Springs, Northern Territory
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2016/11/Fulcrum3D-CloudCAM-ARENA-Public-report.pdf
+  markdown_filename: fulcrum_3d_cloudcam_final_report.md
+  source_page_pdf: 21
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67908
+  contributing_source_titles:
+  - Fulcrum 3D CloudCAM Final Report
+  contributing_sources:
+  - source_title: Fulcrum 3D CloudCAM Final Report
+    pdf_url: https://arena.gov.au/assets/2016/11/Fulcrum3D-CloudCAM-ARENA-Public-report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum-3d-cloudcam-final-report/
+    markdown_filename: fulcrum_3d_cloudcam_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-67909
+  source_title: Fulcrum 3D CloudCAM Final Report
+  publish_date: 2016-11
+  project_name: Cloud detection and prediction for maximising solar PV utilisation
+    in off-grid hybrid power systems (CloudCAM)
+  what_happened: The cloud detection and prediction software was developed to operate
+    independently of the CloudCAM hardware, meaning it could run on third-party hardware,
+    function in remote areas without server access, and be deployed remotely to existing
+    installed units — a design decision that broadened the commercial applicability
+    of the software beyond the original hardware platform.
+  lesson_learnt: Decoupling prediction software from proprietary hardware from the
+    outset broadens commercial applicability and enables remote software updates to
+    deployed units — for forecasting and monitoring products in remote energy applications,
+    hardware-independent software architecture should be a deliberate design requirement.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: technology vendor
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id009
+  - 9
+  evidence_excerpt: This software has been developed so that it operated independently
+    of the hardware which means it can be applied to Fulcrum3D's CloudCAM or third
+    party hardware. It is also capable of running on site in remote areas and does
+    not require access to large servers or databases.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/fulcrum-3d-cloudcam-final-report/
+  project_page_url: https://arena.gov.au/projects/predicting-cloud-movements-to-maximise-solar-pv-use/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 1/01/2016
+  kb_year: '2014'
+  kb_associated_project: Predicting Cloud Movements to Maximise Solar PV Use
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $546k
+  total_project_value: $1.11m
+  lead_organisation: Fulcrum 3D
+  arena_program: Emerging Renewables Program
+  project_status: Past
+  project_start_date: 08/09/2014
+  location: Alice Springs, Northern Territory
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2016/11/Fulcrum3D-CloudCAM-ARENA-Public-report.pdf
+  markdown_filename: fulcrum_3d_cloudcam_final_report.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67909
+  contributing_source_titles:
+  - Fulcrum 3D CloudCAM Final Report
+  contributing_sources:
+  - source_title: Fulcrum 3D CloudCAM Final Report
+    pdf_url: https://arena.gov.au/assets/2016/11/Fulcrum3D-CloudCAM-ARENA-Public-report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/fulcrum-3d-cloudcam-final-report/
+    markdown_filename: fulcrum_3d_cloudcam_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Pilot / demonstration
+  is_consortium: false

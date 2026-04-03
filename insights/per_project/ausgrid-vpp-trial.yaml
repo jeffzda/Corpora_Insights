@@ -1,0 +1,146 @@
+- record_id: ARENA-DLV-50557
+  source_title: DEIP Market Integration Trials Summary Report 1.0
+  publish_date: 2022-09
+  project_name: Ausgrid VPP Trial
+  what_happened: During the Ausgrid VPP Trial, it was discovered that batteries scheduled
+    to provide network support must be charged before a network event, but if charging
+    occurs too close to the event it can itself contribute to peak demand. Additionally,
+    'value stacking' — where DER participates in multiple markets simultaneously —
+    reduced VPP availability during peak demand days because capacity was committed
+    to other market services.
+  lesson_learnt: When scheduling battery VPPs for network support, plan charging windows
+    well in advance of demand events to avoid charge-driven peak demand spikes; also
+    implement clear capacity allocation rules to prevent value stacking from committing
+    VPP capacity away from critical network support obligations.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated integration
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id001
+  - 15
+  evidence_excerpt: some batteries must charge before a network event and if that
+    charging happens too close to an event it can contribute to peak demand. Another
+    lesson is that 'value stacking', in which DER participates in multiple markets,
+    can impact the availability of VPPs during peak demand days as they may be committed
+    to providing services in other markets.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/deip-der-market-integration-trials-summary-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 29/09/2022
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2022/09/DEIP-Market-Integration-Trials-Summary-Report-1.0.pdf
+  markdown_filename: deip_market_integration_trials_summary_report_10.md
+  source_page_pdf: 15
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-50557
+  contributing_source_titles:
+  - DEIP Market Integration Trials Summary Report 1.0
+  contributing_sources:
+  - source_title: DEIP Market Integration Trials Summary Report 1.0
+    pdf_url: https://arena.gov.au/assets/2022/09/DEIP-Market-Integration-Trials-Summary-Report-1.0.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/deip-der-market-integration-trials-summary-report/
+    markdown_filename: deip_market_integration_trials_summary_report_10.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-50558
+  source_title: DEIP Market Integration Trials Summary Report 1.0
+  publish_date: 2022-09
+  project_name: Ausgrid VPP Trial
+  what_happened: The Ausgrid VPP Trial experienced a conflict between network support
+    dispatch obligations (scheduled 17:00–21:00) and concurrent RERT obligations,
+    which forced the network support dispatch start time to be moved to 16:30.
+  lesson_learnt: When a DER fleet is enrolled in both network support and wholesale
+    market services, establish explicit capacity conflict resolution rules and service
+    priority hierarchies agreed by all parties before operations begin — conflicting
+    dispatch obligations will otherwise require ad hoc adjustments that compromise
+    service delivery.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: coordination & stakeholders
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Dispatch start time for network support was adjusted from 17:00
+    to 16:30 to accommodate RERT obligations.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id002
+  - 22
+  evidence_excerpt: Ausgrid's VPP trial experienced this conflict in priority of delivering
+    services when the VPP was scheduled to dispatch network support between 17:00-21:00,
+    yet the VPP had conflicting RERT obligations which meant the network support dispatch
+    start time had to be adjusted to 16:30.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/deip-der-market-integration-trials-summary-report/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 29/09/2022
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2022/09/DEIP-Market-Integration-Trials-Summary-Report-1.0.pdf
+  markdown_filename: deip_market_integration_trials_summary_report_10.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-50558
+  contributing_source_titles:
+  - DEIP Market Integration Trials Summary Report 1.0
+  contributing_sources:
+  - source_title: DEIP Market Integration Trials Summary Report 1.0
+    pdf_url: https://arena.gov.au/assets/2022/09/DEIP-Market-Integration-Trials-Summary-Report-1.0.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/deip-der-market-integration-trials-summary-report/
+    markdown_filename: deip_market_integration_trials_summary_report_10.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.82

@@ -1,0 +1,474 @@
+- record_id: ARENA-DLV-39651
+  source_title: UNSW - Machine Learning Applications for Utility-Scale Photovoltaics
+    R&D Interim Report
+  publish_date: '2024-05-15'
+  project_name: Machine Learning Applications for Utility-Scale Photovoltaics
+  what_happened: PVsyst modelling software — the industry standard for utility-scale
+    PV performance simulation — was found to be unsuitable for real-time, intra-hourly
+    performance assessment. Comparison against 5-minute measured data from an Australian
+    utility-scale PV plant showed hourly errors exceeding 20% of nominal AC capacity
+    during variable irradiance conditions, with approximately 5% of residuals lying
+    beyond two standard deviations from the mean.
+  lesson_learnt: Do not use PVsyst digital twins for real-time or sub-hourly performance
+    monitoring of utility-scale PV plants — its minimum 1-hour time step produces
+    errors exceeding 20% during cloud-variable conditions, masking soiling and degradation
+    signals. Reserve PVsyst for monthly-to-yearly aggregate performance projections,
+    where cumulative error is below 1%, and develop more advanced digital-twin models
+    for high-resolution fault detection.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: The team identified the fundamental sampling-rate mismatch between
+    PVsyst (1-hour minimum time step) and plant instrumentation (5-minute intervals)
+    and concluded that more advanced digital-twin models are required for intra-hourly
+    use cases.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id001
+  - 7
+  - 8
+  evidence_excerpt: PVsyst models face challenges in accurately predicting intra-daily
+    data, with error > 20% for sub-hourly intervals... Approximately 5% of residuals
+    lie further than 2 standard deviations away from the frequency histogram mean,
+    which corresponds to an error greater than 20% of the PV plant's nominal AC capacity.
+  confidence_note: 'issue_severity rated moderate: the finding constrains a planned
+    platform feature (real-time monitoring) but does not prevent long-term performance
+    assessment; it redirects rather than terminates the research approach.'
+  source_url: https://arena.gov.au/knowledge-bank/unsw-machine-learning-applications-for-utility-scale-photovoltaics-rd-interim-report/
+  project_page_url: https://arena.gov.au/projects/machine-learning-applications-for-utility-scale-pv/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 2/10/2024
+  kb_year: '2022'
+  kb_associated_project: Machine Learning Applications for Utility-Scale PV
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $2.58m
+  total_project_value: $10.32m
+  lead_organisation: The University of New South Wales
+  arena_program: Ultra Low Cost Solar PV Research and Development Round
+  project_status: Current
+  project_start_date: 05/12/2022
+  location: Kensington, New South Wales
+  project_partners: 'ANU, Sun Cable, Spark Renewables, Neoen, Wirsol, Lightsource,
+    Jinko Solar, Meritech Data '
+  pdf_url: https://arena.gov.au/assets/2024/10/UNSW_Machine-Learning-Applications-for-Utility-Scale-Photovoltaics_Interim-Report.pdf
+  markdown_filename: unsw_machine_learning_applications_for_utility_scale_photovoltaics_rd_interim_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39651
+  contributing_source_titles:
+  - UNSW - Machine Learning Applications for Utility-Scale Photovoltaics R&D Interim
+    Report
+  contributing_sources:
+  - source_title: UNSW - Machine Learning Applications for Utility-Scale Photovoltaics
+      R&D Interim Report
+    pdf_url: https://arena.gov.au/assets/2024/10/UNSW_Machine-Learning-Applications-for-Utility-Scale-Photovoltaics_Interim-Report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/unsw-machine-learning-applications-for-utility-scale-photovoltaics-rd-interim-report/
+    markdown_filename: unsw_machine_learning_applications_for_utility_scale_photovoltaics_rd_interim_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-39652
+  source_title: UNSW - Machine Learning Applications for Utility-Scale Photovoltaics
+    R&D Interim Report
+  publish_date: '2024-05-15'
+  project_name: Machine Learning Applications for Utility-Scale Photovoltaics
+  what_happened: PVsyst digital twins were validated as accurate for long-term aggregate
+    performance projection, with cumulative annual error of only 0.4% of annual yield
+    at a utility-scale Australian PV plant, confirming their suitability for monthly-to-yearly
+    performance benchmarking.
+  lesson_learnt: PVsyst-based digital twins are reliable for monthly-to-yearly utility-scale
+    PV performance projection (cumulative error below 1%) and can be confidently used
+    for long-term energy yield assessments and degradation trending over extended
+    periods; project teams should not discard PVsyst for these use cases based on
+    its intra-hourly limitations.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id002
+  - 8
+  evidence_excerpt: The net cumulative variance (summation of the residuals over the
+    year-long observation period) was only 0.4% of annual yield, which indicates a
+    low aggregate impact on power estimation for longer periods of months to years.
+    As such, PVsyst-based digital twins enable accurate modelling of monthly-to-yearly
+    utility-scale PV system performance with a cumulative error below 1%.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/unsw-machine-learning-applications-for-utility-scale-photovoltaics-rd-interim-report/
+  project_page_url: https://arena.gov.au/projects/machine-learning-applications-for-utility-scale-pv/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 2/10/2024
+  kb_year: '2022'
+  kb_associated_project: Machine Learning Applications for Utility-Scale PV
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $2.58m
+  total_project_value: $10.32m
+  lead_organisation: The University of New South Wales
+  arena_program: Ultra Low Cost Solar PV Research and Development Round
+  project_status: Current
+  project_start_date: 05/12/2022
+  location: Kensington, New South Wales
+  project_partners: 'ANU, Sun Cable, Spark Renewables, Neoen, Wirsol, Lightsource,
+    Jinko Solar, Meritech Data '
+  pdf_url: https://arena.gov.au/assets/2024/10/UNSW_Machine-Learning-Applications-for-Utility-Scale-Photovoltaics_Interim-Report.pdf
+  markdown_filename: unsw_machine_learning_applications_for_utility_scale_photovoltaics_rd_interim_report.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39652
+  contributing_source_titles:
+  - UNSW - Machine Learning Applications for Utility-Scale Photovoltaics R&D Interim
+    Report
+  contributing_sources:
+  - source_title: UNSW - Machine Learning Applications for Utility-Scale Photovoltaics
+      R&D Interim Report
+    pdf_url: https://arena.gov.au/assets/2024/10/UNSW_Machine-Learning-Applications-for-Utility-Scale-Photovoltaics_Interim-Report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/unsw-machine-learning-applications-for-utility-scale-photovoltaics-rd-interim-report/
+    markdown_filename: unsw_machine_learning_applications_for_utility_scale_photovoltaics_rd_interim_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-39653
+  source_title: UNSW - Machine Learning Applications for Utility-Scale Photovoltaics
+    R&D Interim Report
+  publish_date: '2024-05-15'
+  project_name: Machine Learning Applications for Utility-Scale Photovoltaics
+  what_happened: Post-mortem examination of silicon heterojunction (SHJ) modules installed
+    in 2007 and retrieved after a decade of field operation identified hydrogen loss
+    from the amorphous silicon surface passivation layer as the primary degradation
+    mechanism, manifesting as decreased open-circuit voltage and increased first-diode
+    recombination current density.
+  lesson_learnt: For SHJ and other high-efficiency PV technologies relying on amorphous
+    silicon passivation (including TOPCon), plan for gradual hydrogen migration as
+    a key long-term degradation risk — post-mortem characterisation programmes should
+    include dynamic secondary ion mass spectroscopy of passivation layers to identify
+    this mechanism early and inform module lifetime warranty assumptions.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The research team applied a detailed post-mortem suite including
+    photoluminescence imaging, Suns-VOC measurements, and dynamic secondary ion mass
+    spectroscopy to isolate hydrogen depletion in passivation layers as the root cause,
+    providing a methodology transferable to TOPCon devices.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id003
+  - 10
+  - 11
+  evidence_excerpt: There is a clear reduction of passivation layer hydrogen content
+    for fielded modules compared to un-fielded control modules... Thus, the gradual
+    loss and/or diffusion of hydrogen away from amorphous silicon regions of SHJ layers
+    is a key mechanism behind the observed decrease in SHJ module voltages in the
+    field.
+  confidence_note: project_scale_band set to demonstration as the post-mortem work
+    is laboratory-based R&D generating evidence rather than a commercial deployment;
+    technology_domain solar PV covers SHJ modules.
+  source_url: https://arena.gov.au/knowledge-bank/unsw-machine-learning-applications-for-utility-scale-photovoltaics-rd-interim-report/
+  project_page_url: https://arena.gov.au/projects/machine-learning-applications-for-utility-scale-pv/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 2/10/2024
+  kb_year: '2022'
+  kb_associated_project: Machine Learning Applications for Utility-Scale PV
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $2.58m
+  total_project_value: $10.32m
+  lead_organisation: The University of New South Wales
+  arena_program: Ultra Low Cost Solar PV Research and Development Round
+  project_status: Current
+  project_start_date: 05/12/2022
+  location: Kensington, New South Wales
+  project_partners: 'ANU, Sun Cable, Spark Renewables, Neoen, Wirsol, Lightsource,
+    Jinko Solar, Meritech Data '
+  pdf_url: https://arena.gov.au/assets/2024/10/UNSW_Machine-Learning-Applications-for-Utility-Scale-Photovoltaics_Interim-Report.pdf
+  markdown_filename: unsw_machine_learning_applications_for_utility_scale_photovoltaics_rd_interim_report.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39653
+  contributing_source_titles:
+  - UNSW - Machine Learning Applications for Utility-Scale Photovoltaics R&D Interim
+    Report
+  contributing_sources:
+  - source_title: UNSW - Machine Learning Applications for Utility-Scale Photovoltaics
+      R&D Interim Report
+    pdf_url: https://arena.gov.au/assets/2024/10/UNSW_Machine-Learning-Applications-for-Utility-Scale-Photovoltaics_Interim-Report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/unsw-machine-learning-applications-for-utility-scale-photovoltaics-rd-interim-report/
+    markdown_filename: unsw_machine_learning_applications_for_utility_scale_photovoltaics_rd_interim_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-39654
+  source_title: UNSW - Machine Learning Applications for Utility-Scale Photovoltaics
+    R&D Interim Report
+  publish_date: '2024-05-15'
+  project_name: Machine Learning Applications for Utility-Scale Photovoltaics
+  what_happened: Analysis of 952 PV sites across Australia found that median annual
+    performance degradation rates were similar across PV-specific climate temperature
+    zones T4 and T5, which together account for the majority of Australian utility-scale
+    PV installations, despite significant regional variation in climate and environmental
+    conditions.
+  lesson_learnt: When estimating degradation rates for Australian utility-scale PV
+    projects across the dominant T4 and T5 climate zones, a common median degradation
+    assumption is statistically supportable — project developers and asset managers
+    need not apply large regional corrections for sites in these zones, though appropriate
+    data preprocessing and filtering remain essential for accurate rate calculation.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id004
+  - 5
+  evidence_excerpt: The comparison between temperature zones 'T4' and 'T5', which
+    accounts for most sites currently installed in Australia, shows similar median
+    values, suggesting comparable performance despite regional variations in climate
+    and environmental conditions.
+  confidence_note: 'project_scale_band set to programmatic/portfolio-level given the
+    952-site cross-portfolio analysis nature of this finding.; project_scale_band
+    reconciled to ''demonstration'' from: demonstration (5/6), programmatic/portfolio-level
+    (1/6)'
+  source_url: https://arena.gov.au/knowledge-bank/unsw-machine-learning-applications-for-utility-scale-photovoltaics-rd-interim-report/
+  project_page_url: https://arena.gov.au/projects/machine-learning-applications-for-utility-scale-pv/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 2/10/2024
+  kb_year: '2022'
+  kb_associated_project: Machine Learning Applications for Utility-Scale PV
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $2.58m
+  total_project_value: $10.32m
+  lead_organisation: The University of New South Wales
+  arena_program: Ultra Low Cost Solar PV Research and Development Round
+  project_status: Current
+  project_start_date: 05/12/2022
+  location: Kensington, New South Wales
+  project_partners: 'ANU, Sun Cable, Spark Renewables, Neoen, Wirsol, Lightsource,
+    Jinko Solar, Meritech Data '
+  pdf_url: https://arena.gov.au/assets/2024/10/UNSW_Machine-Learning-Applications-for-Utility-Scale-Photovoltaics_Interim-Report.pdf
+  markdown_filename: unsw_machine_learning_applications_for_utility_scale_photovoltaics_rd_interim_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39654
+  contributing_source_titles:
+  - UNSW - Machine Learning Applications for Utility-Scale Photovoltaics R&D Interim
+    Report
+  contributing_sources:
+  - source_title: UNSW - Machine Learning Applications for Utility-Scale Photovoltaics
+      R&D Interim Report
+    pdf_url: https://arena.gov.au/assets/2024/10/UNSW_Machine-Learning-Applications-for-Utility-Scale-Photovoltaics_Interim-Report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/unsw-machine-learning-applications-for-utility-scale-photovoltaics-rd-interim-report/
+    markdown_filename: unsw_machine_learning_applications_for_utility_scale_photovoltaics_rd_interim_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-39655
+  source_title: UNSW - Machine Learning Applications for Utility-Scale Photovoltaics
+    R&D Interim Report
+  publish_date: '2024-05-15'
+  project_name: Machine Learning Applications for Utility-Scale Photovoltaics
+  what_happened: A site-specific soiling model using only freely available remote
+    satellite data was developed and validated against real-world plant measurements,
+    achieving agreement within 1%, and a soiling map of Australia was generated showing
+    strong regional patterns.
+  lesson_learnt: Utility-scale PV plant operators can use satellite-derived soiling
+    models to reliably estimate site-specific soiling rates (within 1% of ground-truth)
+    without deploying dedicated on-site soiling measurement equipment — this approach
+    is particularly valuable for optimising cleaning schedules and reducing O&M costs
+    at remote sites where instrumentation is costly.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id005
+  - 5
+  evidence_excerpt: A site-specific soiling model using only remote satellite data
+    was developed and validated against real world data, with good agreement to within
+    1%. A soiling map of Australia was generated, identifying strong regional patterns.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/unsw-machine-learning-applications-for-utility-scale-photovoltaics-rd-interim-report/
+  project_page_url: https://arena.gov.au/projects/machine-learning-applications-for-utility-scale-pv/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 2/10/2024
+  kb_year: '2022'
+  kb_associated_project: Machine Learning Applications for Utility-Scale PV
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $2.58m
+  total_project_value: $10.32m
+  lead_organisation: The University of New South Wales
+  arena_program: Ultra Low Cost Solar PV Research and Development Round
+  project_status: Current
+  project_start_date: 05/12/2022
+  location: Kensington, New South Wales
+  project_partners: 'ANU, Sun Cable, Spark Renewables, Neoen, Wirsol, Lightsource,
+    Jinko Solar, Meritech Data '
+  pdf_url: https://arena.gov.au/assets/2024/10/UNSW_Machine-Learning-Applications-for-Utility-Scale-Photovoltaics_Interim-Report.pdf
+  markdown_filename: unsw_machine_learning_applications_for_utility_scale_photovoltaics_rd_interim_report.md
+  source_page_pdf: 5
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39655
+  contributing_source_titles:
+  - UNSW - Machine Learning Applications for Utility-Scale Photovoltaics R&D Interim
+    Report
+  contributing_sources:
+  - source_title: UNSW - Machine Learning Applications for Utility-Scale Photovoltaics
+      R&D Interim Report
+    pdf_url: https://arena.gov.au/assets/2024/10/UNSW_Machine-Learning-Applications-for-Utility-Scale-Photovoltaics_Interim-Report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/unsw-machine-learning-applications-for-utility-scale-photovoltaics-rd-interim-report/
+    markdown_filename: unsw_machine_learning_applications_for_utility_scale_photovoltaics_rd_interim_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-39656
+  source_title: UNSW - Machine Learning Applications for Utility-Scale Photovoltaics
+    R&D Interim Report
+  publish_date: '2024-05-15'
+  project_name: Machine Learning Applications for Utility-Scale Photovoltaics
+  what_happened: Degradation rate calculations from multiple commonly-used statistical
+    models converged to similar values when sufficient data preprocessing and filtering
+    was applied, demonstrating that preprocessing methodology is a more important
+    determinant of calculated degradation rates than the choice of statistical model.
+  lesson_learnt: When calculating PV plant degradation rates, invest rigorously in
+    data preprocessing and filtering before selecting a statistical model — the choice
+    of model matters less than the quality of preprocessing, and inconsistent preprocessing
+    is a primary source of divergent degradation rate estimates across studies.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The research team applied a comparative study of statistical
+    degradation models with standardised preprocessing to demonstrate convergence,
+    establishing preprocessing protocols as the critical variable.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id006
+  - 5
+  evidence_excerpt: It was found that when sufficient preprocessing is applied the
+    calculated degradation rates from commonly-used models converge to similar values,
+    highlighting the impact that preprocessing and filtering can have.
+  confidence_note: 'issue_severity minor: this is a methodological finding rather
+    than a project delivery failure, but it has direct implications for O&M decision-making
+    accuracy at operating plants.'
+  source_url: https://arena.gov.au/knowledge-bank/unsw-machine-learning-applications-for-utility-scale-photovoltaics-rd-interim-report/
+  project_page_url: https://arena.gov.au/projects/machine-learning-applications-for-utility-scale-pv/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 2/10/2024
+  kb_year: '2022'
+  kb_associated_project: Machine Learning Applications for Utility-Scale PV
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $2.58m
+  total_project_value: $10.32m
+  lead_organisation: The University of New South Wales
+  arena_program: Ultra Low Cost Solar PV Research and Development Round
+  project_status: Current
+  project_start_date: 05/12/2022
+  location: Kensington, New South Wales
+  project_partners: 'ANU, Sun Cable, Spark Renewables, Neoen, Wirsol, Lightsource,
+    Jinko Solar, Meritech Data '
+  pdf_url: https://arena.gov.au/assets/2024/10/UNSW_Machine-Learning-Applications-for-Utility-Scale-Photovoltaics_Interim-Report.pdf
+  markdown_filename: unsw_machine_learning_applications_for_utility_scale_photovoltaics_rd_interim_report.md
+  source_page_pdf: 5
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39656
+  contributing_source_titles:
+  - UNSW - Machine Learning Applications for Utility-Scale Photovoltaics R&D Interim
+    Report
+  contributing_sources:
+  - source_title: UNSW - Machine Learning Applications for Utility-Scale Photovoltaics
+      R&D Interim Report
+    pdf_url: https://arena.gov.au/assets/2024/10/UNSW_Machine-Learning-Applications-for-Utility-Scale-Photovoltaics_Interim-Report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/unsw-machine-learning-applications-for-utility-scale-photovoltaics-rd-interim-report/
+    markdown_filename: unsw_machine_learning_applications_for_utility_scale_photovoltaics_rd_interim_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.9

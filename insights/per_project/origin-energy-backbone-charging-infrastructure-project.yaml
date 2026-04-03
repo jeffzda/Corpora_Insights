@@ -1,0 +1,162 @@
+- record_id: ARENA-DLV-32601
+  source_title: Origin Energy - Backbone Charging Infrastructure Project - Lessons
+    Learnt Report 1
+  publish_date: '2025-02-28'
+  project_name: Backbone Charging Infrastructure Project
+  what_happened: During design of the Origin Load Management System (LMS) for EV charging
+    in apartment buildings, both Modbus and OCPP communication protocols were evaluated.
+    Modbus was selected over OCPP as the preferred protocol for real-time EVSE control
+    due to lower latency, reduced cybersecurity exposure, CSMS-agnostic compatibility,
+    and the ability to integrate with other distributed energy resources on-site.
+  lesson_learnt: For building-level EV load management systems, Modbus is preferable
+    to OCPP as the edge communication protocol — it provides real-time response, operates
+    on an isolated network reducing cyber risk, avoids CSMS compatibility conflicts,
+    and can integrate with other on-site DER (solar PV, batteries, BMS) in ways OCPP
+    cannot.
+  issue_severity: minor
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: design assumption failure
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Evaluated both protocols against criteria of latency, security,
+    CSMS interoperability, and DER integration capability before selecting Modbus
+    as the LMS edge protocol.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id001
+  - 5
+  - 6
+  - 7
+  evidence_excerpt: 'Modbus was selected as the preferred communication protocol for
+    the Origin LMS. This was determined based on the following factors: 1. Real-Time
+    Communication... 2. Enhanced Security... 3. CSMS Agnostic and Compatibility with
+    Legacy Systems... 4. Ability to integrate with Distributed Energy Resources'
+  confidence_note: issue_severity set to minor as no delivery failure occurred — this
+    is a design decision with a positive outcome. failure_mode set to design assumption
+    failure as initial design considered both protocols and required evaluation to
+    resolve the better fit.
+  source_url: https://arena.gov.au/knowledge-bank/origin-energy-backbone-charging-infrastructure-project-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/origin-energy-backbone-charging-infrastructure-project/
+  kb_category: Electric vehicles
+  kb_publish_date: 10/06/2025
+  kb_year: '2024'
+  kb_associated_project: Origin Energy - Backbone Charging Infrastructure Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $4.22m
+  total_project_value: $12.95m
+  lead_organisation: 'Origin Energy Electricity Limited (ABN 33 071 052 287) '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 08/11/2024
+  location: null
+  project_partners: 'GreenFlux '
+  pdf_url: https://arena.gov.au/assets/2025/06/Origin-Backbone-Charging-Infrastructure-Project-Lessons-Learnt-Report-1.pdf
+  markdown_filename: origin_energy_backbone_charging_infrastructure_project_lessons_learnt_report_1.md
+  source_page_pdf: 5
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-32601
+  contributing_source_titles:
+  - Origin Energy - Backbone Charging Infrastructure Project - Lessons Learnt Report
+    1
+  contributing_sources:
+  - source_title: Origin Energy - Backbone Charging Infrastructure Project - Lessons
+      Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2025/06/Origin-Backbone-Charging-Infrastructure-Project-Lessons-Learnt-Report-1.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/origin-energy-backbone-charging-infrastructure-project-lessons-learnt-report-1/
+    markdown_filename: origin_energy_backbone_charging_infrastructure_project_lessons_learnt_report_1.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-32602
+  source_title: Origin Energy - Backbone Charging Infrastructure Project - Lessons
+    Learnt Report 1
+  publish_date: '2025-02-28'
+  project_name: Backbone Charging Infrastructure Project
+  what_happened: Owners' corporates in existing apartment buildings were found to
+    be a significant barrier to EV charger installation due to limited information
+    on load management risks, infrastructure costs, cost allocation, and approval
+    processes — leading to delayed or refused approvals for individual residents seeking
+    to install EV chargers.
+  lesson_learnt: EV charging deployment in multi-dwelling units requires a turnkey
+    package specifically addressing owners' corporate concerns — including load analysis,
+    financing options, cost allocation mechanisms, and guided approval processes —
+    before individual charger installations can proceed at scale.
+  issue_severity: moderate
+  project_type: transport electrification
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: utility/energy retailer
+  delay_category: stakeholder/land/community
+  failure_mode: coordination & stakeholders
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: Origin developed a Backbone as a Service (BaaS) commercial model
+    packaging financing, O&M, load management, and an assisted OC approval process
+    into a monthly service fee to reduce upfront capital barriers.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages: &id002
+  - 4
+  evidence_excerpt: One of the key barriers to EV adoption is the complexity in installing
+    charging infrastructure in existing apartment buildings... owners' corporates
+    have limited information on the key considerations in relation to approving these
+    requests for charging infrastructure and therefore may likely not approve these
+    requests or will take a long time in coming to a decision.
+  confidence_note: outcome_class set to re-scoped/adapted as the project response
+    was to develop a structured BaaS model to address the identified barrier rather
+    than proceeding with simple charger installation.
+  source_url: https://arena.gov.au/knowledge-bank/origin-energy-backbone-charging-infrastructure-project-lessons-learnt-report-1/
+  project_page_url: https://arena.gov.au/projects/origin-energy-backbone-charging-infrastructure-project/
+  kb_category: Electric vehicles
+  kb_publish_date: 10/06/2025
+  kb_year: '2024'
+  kb_associated_project: Origin Energy - Backbone Charging Infrastructure Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $4.22m
+  total_project_value: $12.95m
+  lead_organisation: 'Origin Energy Electricity Limited (ABN 33 071 052 287) '
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 08/11/2024
+  location: null
+  project_partners: 'GreenFlux '
+  pdf_url: https://arena.gov.au/assets/2025/06/Origin-Backbone-Charging-Infrastructure-Project-Lessons-Learnt-Report-1.pdf
+  markdown_filename: origin_energy_backbone_charging_infrastructure_project_lessons_learnt_report_1.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-32602
+  contributing_source_titles:
+  - Origin Energy - Backbone Charging Infrastructure Project - Lessons Learnt Report
+    1
+  contributing_sources:
+  - source_title: Origin Energy - Backbone Charging Infrastructure Project - Lessons
+      Learnt Report 1
+    pdf_url: https://arena.gov.au/assets/2025/06/Origin-Backbone-Charging-Infrastructure-Project-Lessons-Learnt-Report-1.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/origin-energy-backbone-charging-infrastructure-project-lessons-learnt-report-1/
+    markdown_filename: origin_energy_backbone_charging_infrastructure_project_lessons_learnt_report_1.md
+  arena_category:
+  - Electric vehicles
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82

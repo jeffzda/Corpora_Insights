@@ -1,0 +1,3468 @@
+- record_id: ARENA-DLV-39951
+  source_title: Solar Enablement Initiative Project Progress Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: The state estimator's performance was dramatically improved during
+    Phase 3, with single solution iterations on the largest test feeder reduced from
+    20 minutes down to approximately 400 milliseconds through parallelisation, algorithm
+    substitution, Kron reduction, and caching.
+  lesson_learnt: Early profiling and targeted algorithmic optimisation (parallelisation
+    of Jacobian generation, replacing SVD with hardware-optimised matrix inversion,
+    Kron reduction with caching) can yield order-of-magnitude performance improvements
+    in power-system state estimation software — prioritise these before scaling to
+    larger networks.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Applied parallelisation of Jacobian generation, replaced singular
+    value decomposition with Intel MKL-optimised matrix inversion, implemented Kron
+    reduction with network caching, and enabled parallel processing of time steps
+    via a scheduler.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id001
+  - 16
+  evidence_excerpt: The performance of the State Estimator has dramatically improved
+    during Phase 3. Single solution iterations of the largest test feeder, have reduced
+    from 20 min to down to = 400 ms.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+  markdown_filename: solar_enablement_initiative_project_progress_report.md
+  source_page_pdf: 16
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39951
+  contributing_source_titles:
+  - Solar Enablement Initiative Project Progress Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Project Progress Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+    markdown_filename: solar_enablement_initiative_project_progress_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.72
+- record_id: ARENA-DLV-39952
+  source_title: Solar Enablement Initiative Project Progress Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: The most critical performance bottleneck remaining at the end of
+    Phase 3 was identified as writing results from large estimation runs back to the
+    database, with a plan to procure a new database server optimised for high read/write
+    operations.
+  lesson_learnt: When deploying real-time state estimation at scale, database write
+    performance — not computation — can become the binding constraint; size and specify
+    the database infrastructure for high-frequency read/write throughput before scaling
+    up estimation runs.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: internal governance/resourcing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: Planned procurement of a new database server optimised for the
+    large number of read/write operations required.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id002
+  - 20
+  evidence_excerpt: The most critical bottle neck now is writing the results from
+    large estimation runs back to the database. A plan is in place to procure a new
+    database sever that is optimised for the large number of read/write operations
+    that the database interaction requires.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+  markdown_filename: solar_enablement_initiative_project_progress_report.md
+  source_page_pdf: 20
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39952
+  contributing_source_titles:
+  - Solar Enablement Initiative Project Progress Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Project Progress Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+    markdown_filename: solar_enablement_initiative_project_progress_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-39953
+  source_title: Solar Enablement Initiative Project Progress Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: The closed-delta voltage regulator model produced results diverging
+    from SINCAL benchmarks under heavy load conditions and at or near maximum tap
+    positions, with testing still ongoing at the end of Phase 3.
+  lesson_learnt: Network element models should be validated across the full operating
+    envelope — including extremes of tap position and load — before deployment; regulator
+    models that perform well at normal conditions may fail at the operating extremes
+    that matter most for hosting capacity assessment.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Investigation and development ongoing; site test results sought
+    for comparison against the SINCAL benchmark.
+  transferability: narrow
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id003
+  - 10
+  evidence_excerpt: The closed-delta regulator benchmark tests have shown similar
+    results to SINCAL under normal and light operating loads and tap positions not
+    near the extremes. However, at or near maximum taps and heavy load conditions,
+    the results so far have been different to SINCAL. Investigation and development
+    are ongoing and site tests results have been sought as a comparison.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+  markdown_filename: solar_enablement_initiative_project_progress_report.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39953
+  contributing_source_titles:
+  - Solar Enablement Initiative Project Progress Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Project Progress Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+    markdown_filename: solar_enablement_initiative_project_progress_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-39954
+  source_title: Solar Enablement Initiative Project Progress Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: Smart meter data from United Energy used a half-hourly sampling period
+    for P and Q values while voltage measurements were on a 5-minute cycle and recloser
+    measurements were also on a shorter interval, requiring all non-smart-meter inputs
+    to be averaged to 30-minute values and reducing the temporal resolution of state
+    estimates.
+  lesson_learnt: Mismatched measurement sampling periods across devices on the same
+    network degrade state estimation quality by forcing down-sampling to the coarsest
+    interval; when specifying measurement infrastructure for state estimation, align
+    all devices to the same sampling period — 5 or 10 minutes appears sufficiently
+    granular, but 30-minute periods are too coarse.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Other measurements were averaged over each half-hour period to
+    align with the smart meter P and Q sampling period, producing a 'half hour average
+    state' estimate as a workaround.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id004
+  - 14
+  - 15
+  evidence_excerpt: The difference of sampling period between aggregated P and Q values
+    and the other measurements in the network requires that the other measurements
+    in the network are converted to half hour values. This is achieved by averaging
+    each of the measured values over the half hour period.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+  markdown_filename: solar_enablement_initiative_project_progress_report.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39954
+  contributing_source_titles:
+  - Solar Enablement Initiative Project Progress Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Project Progress Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+    markdown_filename: solar_enablement_initiative_project_progress_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-39955
+  source_title: Solar Enablement Initiative Project Progress Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: Aggregated smart meter P and Q values from United Energy could not
+    be split by phase, requiring the three-phase total to be divided equally across
+    the three phases — an assumption that introduces error where load is unbalanced
+    across phases.
+  lesson_learnt: When procuring or requesting measurement data from DNSPs for state
+    estimation, specify that P and Q values must be provided as per-phase quantities;
+    aggregated three-phase totals force an equal-split assumption that degrades estimation
+    accuracy on unbalanced networks.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Three-phase P and Q totals were divided by three and applied
+    as equal single-phase measurements as a workaround.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id005
+  - 14
+  evidence_excerpt: With respect to the half hourly P and Q values, it was not possible
+    for the values to by split by phase; these are total values across the three-phases.
+    To apply single-phase measurements, the three-phase values have been divided by
+    three.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+  markdown_filename: solar_enablement_initiative_project_progress_report.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39955
+  contributing_source_titles:
+  - Solar Enablement Initiative Project Progress Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Project Progress Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+    markdown_filename: solar_enablement_initiative_project_progress_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-39956
+  source_title: Solar Enablement Initiative Project Progress Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: On the very long feeder test case, two-phase measurement functionality
+    had not yet been developed, meaning two-phase transformer monitor readings could
+    not be used as estimator inputs; the voltage regulator was also bypassed at the
+    time new measurements became available, removing it as a usable input.
+  lesson_learnt: Software capability gaps that prevent ingestion of specific measurement
+    types should be identified and resolved before new measurement infrastructure
+    is deployed; otherwise newly installed monitoring devices cannot contribute to
+    the estimation and their value is deferred.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: data & measurement
+  intervention_note: The two-phase measurement was retained as an independent validation
+    point for comparison rather than an estimator input, providing a useful benchmark
+    despite the limitation.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id006
+  - 38
+  evidence_excerpt: At this stage, functionality has not been developed to allow the
+    generic application of two-phase measurements and so values from the two-phase
+    measurement on are not currently being used as inputs to the estimator.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+  markdown_filename: solar_enablement_initiative_project_progress_report.md
+  source_page_pdf: 38
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39956
+  contributing_source_titles:
+  - Solar Enablement Initiative Project Progress Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Project Progress Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+    markdown_filename: solar_enablement_initiative_project_progress_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-39957
+  source_title: Solar Enablement Initiative Project Progress Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: Adding three new transformer monitors to the very long feeder significantly
+    improved state estimation quality, particularly for the voltage profile before
+    the recloser where a significant portion of load resides, and reduced the iterations
+    required to converge from 9–14 down to 4–6.
+  lesson_learnt: On long feeders with sparse measurements, installing transformer
+    monitors at the beginning of the feeder (upstream of major load concentrations)
+    provides disproportionate quality improvements to state estimation — prioritise
+    measurement placement at feeder entry points and at sectionalisation devices rather
+    than distributing devices uniformly.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id007
+  - 41
+  evidence_excerpt: The addition of three new transformer monitor measurements have
+    provided significant benefits to the quality of results obtained in estimation
+    runs. In particular, measurement of power and voltage at the unit at the beginning
+    of the feeder provides significant improvements to the estimated voltage profile
+    before the recloser, where a significant amount of load resides.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+  markdown_filename: solar_enablement_initiative_project_progress_report.md
+  source_page_pdf: 41
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39957
+  contributing_source_titles:
+  - Solar Enablement Initiative Project Progress Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Project Progress Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+    markdown_filename: solar_enablement_initiative_project_progress_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-39958
+  source_title: Solar Enablement Initiative Project Progress Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: On the high-measurement-penetration LV customer meter feeder, the
+    state estimator produced larger voltage residuals (up to ±2 V) than on distribution-transformer-monitored
+    feeders, attributable to unknown voltage drop between the LV transformer terminals
+    and customer connection points where measurements were taken.
+  lesson_learnt: When using customer smart meter voltages as state estimation inputs,
+    the impedance between the distribution transformer LV terminal and the customer
+    metering point must be modelled; ignoring this voltage drop introduces a systematic
+    residual bias that degrades estimation quality and should be included in the LV
+    network model.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Network model was calibrated/tuned to reduce residuals; LV network
+    model improvement was identified as a future activity.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id008
+  - 45
+  evidence_excerpt: This increased residuals (as compared to the results on the Energex
+    feeders) is likely introduced by the unknown voltage drop between the LV of the
+    transformers and the customer connection point where the measurement is taken
+    from.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+  markdown_filename: solar_enablement_initiative_project_progress_report.md
+  source_page_pdf: 45
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39958
+  contributing_source_titles:
+  - Solar Enablement Initiative Project Progress Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Project Progress Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+    markdown_filename: solar_enablement_initiative_project_progress_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-39959
+  source_title: Solar Enablement Initiative Project Progress Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: On the short industrial feeder, 90% of energy was consumed by three
+    distribution transformers not covered by measurements, despite 7 of 11 transformers
+    having monitors installed; the resulting estimation quality was described as only
+    'in the ballpark' of measured values due to the measured loads not being representative
+    of the dominant unmeasured loads.
+  lesson_learnt: Measurement coverage by transformer count can be misleading — coverage
+    must be assessed by share of energy consumption; on networks with large industrial
+    customers, prioritise installing monitors on the highest-consumption transformers
+    rather than maximising the count of monitored units.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Identified that providing measurements from the large direct-connected
+    industrial customer would greatly improve results; tuning of the estimator also
+    noted as a potential improvement.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id009
+  - 49
+  - 50
+  evidence_excerpt: However, 90% of energy on this feeder is consumed by 3 transformers
+    that are not covered by measurements... it is likely that the unmeasured load
+    on the feeder does not behave similarly to the measured loads resulting in distortion
+    of the estimated profile.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+  markdown_filename: solar_enablement_initiative_project_progress_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39959
+  contributing_source_titles:
+  - Solar Enablement Initiative Project Progress Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Project Progress Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+    markdown_filename: solar_enablement_initiative_project_progress_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-39960
+  source_title: Solar Enablement Initiative Project Progress Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: On the medium-measurement-penetration feeder (approximately 30% load
+    coverage), the state estimator overestimated PV impact during the middle of the
+    day because the measured subset of systems had a higher-than-average PV penetration
+    compared to unmeasured systems.
+  lesson_learnt: When selecting distribution transformers for monitoring on feeders
+    with rooftop PV, ensure the monitored sample is representative of the PV penetration
+    across the feeder — over-representing PV-connected transformers in the measurement
+    set will cause state estimation to systematically overestimate PV impact and hosting
+    capacity assessments will be biased.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Three additional transformer monitors were subsequently installed
+    to improve coverage and reduce the representativeness bias.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id010
+  - 53
+  - 54
+  evidence_excerpt: There are minor deviations from measured values during the middle
+    of the day, where the State Estimator is overestimating the impact of PV in the
+    network. This is likely caused by an over representation of PV in the set of measured
+    systems, as compared to unmeasured systems.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+  markdown_filename: solar_enablement_initiative_project_progress_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39960
+  contributing_source_titles:
+  - Solar Enablement Initiative Project Progress Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Project Progress Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+    markdown_filename: solar_enablement_initiative_project_progress_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-39961
+  source_title: Solar Enablement Initiative Project Progress Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: Histogram analysis of LV voltage residuals revealed that three distribution
+    transformers had incorrectly recorded tap positions in the estimator input dataset;
+    one transformer also had an incorrect nominal secondary voltage (415 V instead
+    of 433 V) recorded in the asset register.
+  lesson_learnt: Poor asset data quality — specifically incorrect transformer tap
+    positions and nominal secondary voltages — directly degrades state estimation
+    accuracy; DNSPs should establish quality asset records for transformers including
+    actual tap position and rated secondary voltage before deploying state estimation,
+    and can use the estimator's residual diagnostics to identify and correct errors.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Tap positions corrected in the input dataset and nominal secondary
+    voltage corrected from 415 V to 433 V; post-correction histograms confirmed residuals
+    returned to near-zero.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id011
+  - 17
+  - 18
+  - 19
+  evidence_excerpt: In this histogram, there are three transformers whose residual
+    means have a significant bias from 0, and as a result likely have incorrect tap
+    positions... For unit one unit, the voltage residuals have a mean of about + 4.5
+    V. Through analysis of the input data it was identified that the nominal secondary
+    voltage of this unit was defined as 415 V; where all other units were listed as
+    having nominal secondary voltages of 433 V.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+  markdown_filename: solar_enablement_initiative_project_progress_report.md
+  source_page_pdf: 17
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39961
+  contributing_source_titles:
+  - Solar Enablement Initiative Project Progress Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Project Progress Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+    markdown_filename: solar_enablement_initiative_project_progress_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-39962
+  source_title: Solar Enablement Initiative Project Progress Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: Incorrect measurement phasing was identified on three transformer
+    units on a feeder, with their voltage residual variance significantly elevated
+    under the 'no rotation' phase mapping; correcting these three units reduced residuals
+    not only for the affected units but also for other measurements across the network.
+  lesson_learnt: Incorrect phase mapping of measurement devices can propagate errors
+    across an entire network's state estimation, not just at the misphased device;
+    DNSPs should establish and maintain accurate measurement phasing records, and
+    state estimation residual variance diagnostics should be used systematically during
+    commissioning to detect and correct phasing errors.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: A positive phase rotation was applied to the three incorrectly
+    phased units in the input system, reducing residuals across the network.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id012
+  - 19
+  - 20
+  evidence_excerpt: In Figure 6-3, the variance of voltage residuals for each measurement
+    for a feeder is presented prior to any phase corrections being applied. In this
+    table, there are three units whose residuals under 'no rotation' phasing are significantly
+    increased... Not only does this result in a reduction in residuals of the three
+    incorrectly phased units, but also in the residuals of the remainder of the measurements
+    in the network.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+  markdown_filename: solar_enablement_initiative_project_progress_report.md
+  source_page_pdf: 19
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39962
+  contributing_source_titles:
+  - Solar Enablement Initiative Project Progress Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Project Progress Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+    markdown_filename: solar_enablement_initiative_project_progress_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-39963
+  source_title: Solar Enablement Initiative Project Progress Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: State estimation was successfully applied across all eight nominated
+    test feeders from three DNSP partners, with the estimator fully optimised for
+    five of eight feeders and further work remaining for three; the project was on
+    track against ARENA deliverables at the end of Phase 3.
+  lesson_learnt: Deploying state estimation across multiple DNSP networks simultaneously
+    accelerates cross-network learning about data quality, measurement coverage, and
+    network model requirements — structuring a multi-DNSP trial is an effective way
+    to identify which feeder archetypes (long rural, urban high-density, industrial)
+    present distinct challenges for common tooling.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id013
+  - 54
+  - 56
+  evidence_excerpt: State estimation has been successfully applied to the eight feeders
+    nominated by the three DNSP project partners... The progress of the SEI Project
+    to date has been as planned and is on target based on the deliverables required
+    and expectation from ARENA.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+  markdown_filename: solar_enablement_initiative_project_progress_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39963
+  contributing_source_titles:
+  - Solar Enablement Initiative Project Progress Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Project Progress Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+    markdown_filename: solar_enablement_initiative_project_progress_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-39964
+  source_title: Solar Enablement Initiative Project Progress Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: Analysis of the analysis tool case study found that inverter power
+    factor has a substantial impact on maximum PV hosting capacity — operating at
+    0.85 leading power factor could significantly increase hosting capacity compared
+    to unity power factor, but also risked under-voltage issues at low PV penetration
+    levels.
+  lesson_learnt: PV hosting capacity assessments should include inverter power factor
+    as a variable in the analysis, not just installed capacity at unity power factor;
+    tools designed to support DNSP connection assessments need to surface the power-factor
+    dimension to enable network operators to specify reactive power settings that
+    maximise hosting capacity without creating under-voltage risks.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id014
+  - 35
+  - 36
+  evidence_excerpt: As shown in Figure 8-12, there is a substantial difference between
+    operating with power factor 0.85 lead and 1. As a result, by changing the power
+    factors of the customers' rooftop PVs the limit of PV penetration may increase
+    in distribution networks.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+  markdown_filename: solar_enablement_initiative_project_progress_report.md
+  source_page_pdf: 35
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39964
+  contributing_source_titles:
+  - Solar Enablement Initiative Project Progress Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Project Progress Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+    markdown_filename: solar_enablement_initiative_project_progress_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-39965
+  source_title: Solar Enablement Initiative Project Progress Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: The analysis tool case study noted that thermal ratings of MV/LV
+    transformers and distribution feeder conductors — not only voltage constraints
+    — would restrict maximum PV hosting capacity, and that concentrating maximum PV
+    at a single node would likely preclude further PV connections on the feeder.
+  lesson_learnt: PV hosting capacity tools that assess only voltage constraints will
+    overstate available capacity; thermal ratings of transformers and conductors must
+    be incorporated as binding constraints, and assessments should account for the
+    network-wide impact of concentrated PV connections rather than evaluating each
+    connection in isolation.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id015
+  - 36
+  evidence_excerpt: The rating of the MV/LV transformers and the thermal rating of
+    distribution feeder would restrict the maximum hosting capacity in this case...
+    if the full capacity was installed at this one site, it will likely result in
+    no further PV connections being feasible for export on the feeder.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+  markdown_filename: solar_enablement_initiative_project_progress_report.md
+  source_page_pdf: 36
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39965
+  contributing_source_titles:
+  - Solar Enablement Initiative Project Progress Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Project Progress Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+    markdown_filename: solar_enablement_initiative_project_progress_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-39966
+  source_title: Solar Enablement Initiative Project Progress Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: State estimation on the high-measurement-penetration distribution
+    transformer feeder (13 of 16 transformers monitored, >75% energy coverage) was
+    extremely healthy — residuals within ±0.6 V and the estimator consistently converging
+    in 3 iterations — demonstrating that high transformer monitor coverage yields
+    reliable estimation without manual tuning.
+  lesson_learnt: Distribution transformer monitor coverage above approximately 75%
+    of energy consumption, with measurements spread across the feeder, enables state
+    estimation to converge reliably and with minimal calibration effort; this coverage
+    level should be used as a design target when planning monitoring deployments for
+    state estimation applications.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id016
+  - 48
+  evidence_excerpt: Estimation on this feeder is extremely healthy with over 75% measurement
+    coverage. The estimated voltage and current track the measured values very closely...
+    and all residuals lie within +/- 0.6 V... The estimator consistently solves in
+    3 iterations.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+  markdown_filename: solar_enablement_initiative_project_progress_report.md
+  source_page_pdf: 48
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39966
+  contributing_source_titles:
+  - Solar Enablement Initiative Project Progress Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Project Progress Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+    markdown_filename: solar_enablement_initiative_project_progress_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-39967
+  source_title: Solar Enablement Initiative Project Progress Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: The general discussion section concluded that the state estimator
+    performs better with higher measurement penetration but can still produce useful
+    results at low coverage when measurements are uniformly distributed, the network
+    is sectionalised by flow devices, and measured loads are representative of unmeasured
+    loads.
+  lesson_learnt: 'When resources constrain the number of measurement devices that
+    can be installed for state estimation, prioritise: (1) uniform geographic spread
+    rather than clustering, (2) flow measurement devices at sectionalisation points,
+    and (3) representativeness of load types — these three factors determine whether
+    low-coverage deployments will yield reliable results.'
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id017
+  - 54
+  evidence_excerpt: 'As expected, the State Estimator performs better with a higher
+    percentage of measured units on the network. However, as demonstrated with the
+    long feeders, a very good result can still be achieved with very low measurement
+    coverage. Factors that contributed to this results are: relatively uniform spread
+    of measurements throughout the network; sectionalisation of the network with flow
+    measurements; relatively homogenous loads, of which the measured loads provide
+    a representative sample.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+  markdown_filename: solar_enablement_initiative_project_progress_report.md
+  source_page_pdf: 54
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39967
+  contributing_source_titles:
+  - Solar Enablement Initiative Project Progress Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Project Progress Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+    markdown_filename: solar_enablement_initiative_project_progress_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-39968
+  source_title: Solar Enablement Initiative Project Progress Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: The project identified that calibration of state estimation using
+    LV customer measurements was largely a manual process at the time of this report,
+    with plans to automate it in a future phase.
+  lesson_learnt: Manual calibration of state estimation networks using customer meter
+    data is not scalable for large DNSP deployments; automation of the tuning and
+    calibration process should be built into the development roadmap from the outset,
+    not deferred as a future enhancement, to avoid creating a bottleneck at the point
+    of operational rollout.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: Plans were underway to automate the calibration process in a
+    future phase.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id018
+  - 54
+  evidence_excerpt: State estimation result using LV customer measurements demonstrated
+    that optimisation of the network model can be undertaken to improve the quality
+    of the results from the State Estimator. At this stage, this is largely a manual
+    process, however plans are underway to automate the process.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+  markdown_filename: solar_enablement_initiative_project_progress_report.md
+  source_page_pdf: 54
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-39968
+  contributing_source_titles:
+  - Solar Enablement Initiative Project Progress Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Project Progress Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-project-progress-report.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-project-progress-report/
+    markdown_filename: solar_enablement_initiative_project_progress_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-40051
+  source_title: Solar Enablement Initiative Lessons Learnt Report
+  publish_date: '2019-12-06'
+  project_name: Solar Enablement Initiative
+  what_happened: The project team was assembled with diverse professional backgrounds
+    spanning academia, consultancy, utility companies, and software development, which
+    proved fundamental to successfully delivering a project with high technical requirements,
+    DNSP integration needs, tight milestones, and complex coding requirements.
+  lesson_learnt: Assemble a project team with deliberately diverse skill sets matched
+    to the specific project deliverables — for software-centric projects, ensure dedicated
+    software developers are included from the outset, as cross-disciplinary composition
+    was identified as fundamental to delivery success.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id019
+  - 9
+  evidence_excerpt: The makeup of the project team including with people with diverse
+    professional backgrounds tailored to the project deliverables was extremely valuable...
+    the team that was assembled was fundamental to the project's success.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-lessons-learnt-report.pdf
+  markdown_filename: solar_enablement_initiative_lessons_learnt_report.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40051
+  contributing_source_titles:
+  - Solar Enablement Initiative Lessons Learnt Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-lessons-learnt-report.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-lessons-learnt-report/
+    markdown_filename: solar_enablement_initiative_lessons_learnt_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-40052
+  source_title: Solar Enablement Initiative Lessons Learnt Report
+  publish_date: '2019-12-06'
+  project_name: Solar Enablement Initiative
+  what_happened: The project aspired to have DNSPs using the state estimation and
+    analysis tools as business-as-usual within the two-year project timeframe, but
+    DNSPs stated that integrating any new process or software into a large, highly
+    regulated organisation takes far longer than two years — especially when development
+    time is included.
+  lesson_learnt: When targeting adoption of a new tool or process within large regulated
+    organisations such as DNSPs, set realistic integration timelines — two years inclusive
+    of development is insufficient for business-as-usual adoption, and integration
+    should be scoped as a separate, subsequent project.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: internal governance/resourcing
+  failure_mode: coordination & stakeholders
+  outcome_class: partial success
+  secondary_failure_mode: poor scoping
+  intervention_note: Post-project commercial roll-out of the tool with DNSP partners
+    was continued by GridQube outside the project scope.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id020
+  - 10
+  evidence_excerpt: The DNSPs have expressed serious interest and begun using the
+    software, they have stated that the time required to get any new process or software
+    into the business as usual in large, highly regulated organisations is very long.
+    This was not possible in the time frame of 2 years which included development
+    time.
+  confidence_note: failure_mode classified as commercial/demand failure as the tool
+    was not adopted as intended within the project scope; governance/coordination
+    failure was also considered.
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-lessons-learnt-report.pdf
+  markdown_filename: solar_enablement_initiative_lessons_learnt_report.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40052
+  contributing_source_titles:
+  - Solar Enablement Initiative Lessons Learnt Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-lessons-learnt-report.pdf
+    source_pages: *id020
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-lessons-learnt-report/
+    markdown_filename: solar_enablement_initiative_lessons_learnt_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-40053
+  source_title: Solar Enablement Initiative Lessons Learnt Report
+  publish_date: '2019-12-06'
+  project_name: Solar Enablement Initiative
+  what_happened: Data quality issues existed in DNSP source data that had never been
+    detected or had been manually corrected without feedback to the original data
+    source, resulting in duplicated correction effort across the project and incomplete
+    harmonisation of the dataset.
+  lesson_learnt: When correcting data quality issues identified in source datasets,
+    feed corrections back to the original data owner to avoid duplication of effort
+    in future projects and to progressively improve data quality at the source.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Partial feedback about bad data correction was provided to harmonise
+    the dataset for integration into the dashboard.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id021
+  - 11
+  evidence_excerpt: Since these partial models and pieces of data have never been
+    combined in this way, many data quality issues have either not been noticed or
+    were manually compensated for or corrected in the past. Not all these corrections
+    and information about bad data has been fed back to the original source of the
+    bad data.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-lessons-learnt-report.pdf
+  markdown_filename: solar_enablement_initiative_lessons_learnt_report.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40053
+  contributing_source_titles:
+  - Solar Enablement Initiative Lessons Learnt Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-lessons-learnt-report.pdf
+    source_pages: *id021
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-lessons-learnt-report/
+    markdown_filename: solar_enablement_initiative_lessons_learnt_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-40054
+  source_title: Solar Enablement Initiative Lessons Learnt Report
+  publish_date: '2019-12-06'
+  project_name: Solar Enablement Initiative
+  what_happened: Data provided by different DNSPs used inconsistent identifiers for
+    network elements, requiring manual mapping to combine data from multiple sources
+    before it could be integrated into the dashboard — an issue that persisted throughout
+    the project.
+  lesson_learnt: Projects integrating data across multiple DNSPs should anticipate
+    the need for manual identifier mapping and advocate for DNSPs to adopt consistent
+    data identification standards; without standardisation, data integration remains
+    labour-intensive and error-prone for every future project.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Manual mapping was performed to combine data from different sources
+    and integrate it into the dashboard.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id022
+  - 12
+  evidence_excerpt: Different sources of data use inconsistent identifiers, which
+    requires manual mapping to combine data from different sources. This remains to
+    be an issue and needs to be addressed by the DNSPs.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-lessons-learnt-report.pdf
+  markdown_filename: solar_enablement_initiative_lessons_learnt_report.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40054
+  contributing_source_titles:
+  - Solar Enablement Initiative Lessons Learnt Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-lessons-learnt-report.pdf
+    source_pages: *id022
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-lessons-learnt-report/
+    markdown_filename: solar_enablement_initiative_lessons_learnt_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-40055
+  source_title: Solar Enablement Initiative Lessons Learnt Report
+  publish_date: '2019-12-06'
+  project_name: Solar Enablement Initiative
+  what_happened: Although the state estimation algorithm could handle incomplete measurement
+    data, auxiliary data such as load statistics and mutable network parameters (transformer
+    tap positions, switching state) were not systematically stored or accessible,
+    requiring manual location and validation throughout the entire project.
+  lesson_learnt: DNSPs should systematically store and associate mutable network parameters
+    (e.g. transformer tap positions, switching states) with their network models —
+    future projects relying on this data will otherwise face persistent manual data-retrieval
+    overhead that cannot be resolved algorithmically.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Manual location and validation of mutable network parameters
+    was performed throughout the project as a workaround.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id023
+  - 13
+  evidence_excerpt: Throughout the project this has remained a manual task, including
+    locating and validating these pieces of data.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-lessons-learnt-report.pdf
+  markdown_filename: solar_enablement_initiative_lessons_learnt_report.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40055
+  contributing_source_titles:
+  - Solar Enablement Initiative Lessons Learnt Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-lessons-learnt-report.pdf
+    source_pages: *id023
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-lessons-learnt-report/
+    markdown_filename: solar_enablement_initiative_lessons_learnt_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-40056
+  source_title: Solar Enablement Initiative Lessons Learnt Report
+  publish_date: '2019-12-06'
+  project_name: Solar Enablement Initiative
+  what_happened: Because required network data was collected for separate operational
+    purposes and had never been combined for this use case, the project had to interface
+    with or manually interact with many different DNSP IT systems to retrieve data,
+    increasing complexity and error risk.
+  lesson_learnt: Projects integrating data from multiple DNSP IT systems should advocate
+    for the establishment of a data exchange middleware layer across Australian DNSPs;
+    without such abstraction, every future integration project faces the same complexity
+    of interfacing with multiple heterogeneous, often home-grown IT subsystems.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated integration
+  intervention_note: Many different IT systems were manually interfaced with or interacted
+    with to retrieve the required data throughout the project.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id024
+  - 14
+  evidence_excerpt: Throughout the project many different IT systems had to be interfaced
+    with or manually interacted with to retrieve the required data... A coordinated
+    approach supported and implemented by all Australian DNSPs, possibly in line with
+    international activities in this space, would make future integration work and
+    the transferability of solutions between DNSPs less time consuming and less error
+    prone.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-lessons-learnt-report.pdf
+  markdown_filename: solar_enablement_initiative_lessons_learnt_report.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40056
+  contributing_source_titles:
+  - Solar Enablement Initiative Lessons Learnt Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-lessons-learnt-report.pdf
+    source_pages: *id024
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-lessons-learnt-report/
+    markdown_filename: solar_enablement_initiative_lessons_learnt_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-40057
+  source_title: Solar Enablement Initiative Lessons Learnt Report
+  publish_date: '2019-12-06'
+  project_name: Solar Enablement Initiative
+  what_happened: DNSP cyber security strategies created separate IT security zones
+    that prevented all required data sources from being accessed from the same client,
+    leading to additional manual work and increased risk of data inconsistencies during
+    the project.
+  lesson_learnt: When working with DNSP data across cyber security zones, establish
+    data mirroring schemes that allow read-only access across zones while isolating
+    primary data sources — this avoids manual workarounds and reduces inconsistency
+    risk in future integration projects.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: Additional manual work was performed to retrieve data from DNSP
+    IT systems across security zones.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id025
+  - 15
+  evidence_excerpt: The participating DNSPs established different security zones within
+    their IT network as part of their Cyber Security strategy. This, in many cases,
+    led to the situation that not all required data sources could be connected to
+    from the same client, leading to additional manual work and increased risk of
+    inconsistencies.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-lessons-learnt-report.pdf
+  markdown_filename: solar_enablement_initiative_lessons_learnt_report.md
+  source_page_pdf: 15
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40057
+  contributing_source_titles:
+  - Solar Enablement Initiative Lessons Learnt Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-lessons-learnt-report.pdf
+    source_pages: *id025
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-lessons-learnt-report/
+    markdown_filename: solar_enablement_initiative_lessons_learnt_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-40058
+  source_title: Solar Enablement Initiative Lessons Learnt Report
+  publish_date: '2019-12-06'
+  project_name: Solar Enablement Initiative
+  what_happened: Customer energy consumption data — among the most useful auxiliary
+    input data — raised privacy concerns under existing regulations. While not a major
+    issue at the MV level where only aggregate transformer-level values were needed,
+    the team identified this as a significant barrier for future LV network state
+    estimation work where individual customer data may be required.
+  lesson_learnt: DNSPs should proactively develop data privacy policies covering how
+    individual customer consumption data can be made available for development, testing,
+    and external service provider access — projects expanding state estimation to
+    LV networks or sparse rural areas will otherwise face privacy barriers that cannot
+    be resolved at the project level.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Data was manually anonymised (transformer renamed 'Customer X')
+    to allow analyses to proceed while maintaining customer privacy.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: grid/system stability
+  source_pages: &id026
+  - 16
+  evidence_excerpt: Some of the most useful auxiliary data (e.g. customer energy consumption
+    data) can create issues around privacy and existing privacy regulations. While
+    not a major issue in this project... this can become an issue when expanding the
+    use of state estimation into Low Voltage networks.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-lessons-learnt-report.pdf
+  markdown_filename: solar_enablement_initiative_lessons_learnt_report.md
+  source_page_pdf: 16
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40058
+  contributing_source_titles:
+  - Solar Enablement Initiative Lessons Learnt Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-lessons-learnt-report.pdf
+    source_pages: *id026
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-lessons-learnt-report/
+    markdown_filename: solar_enablement_initiative_lessons_learnt_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-40059
+  source_title: Solar Enablement Initiative Lessons Learnt Report
+  publish_date: '2019-12-06'
+  project_name: Solar Enablement Initiative
+  what_happened: Results from the state estimation model were delivered to DNSP partners
+    later in the project timeline than partners expected, reducing the opportunity
+    for detailed evaluation and discussion of the model outputs with subject matter
+    experts during the development phase.
+  lesson_learnt: Deliver preliminary results to DNSP or industry partners earlier
+    in the project timeline — early delivery enables more thorough feedback cycles
+    on model behaviour and increases the depth of partner engagement before the project
+    window closes.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: internal governance/resourcing
+  failure_mode: coordination & stakeholders
+  outcome_class: partial success
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id027
+  - 17
+  evidence_excerpt: The results were delivered but a bit late in comparison with the
+    partners' expectancy. Delivering results early in the project's timeline could
+    allow a more thorough discussion about the model and the estimation.
+  confidence_note: issue_severity assessed as minor — the delay affected depth of
+    partner engagement but did not impair final delivery.
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-lessons-learnt-report.pdf
+  markdown_filename: solar_enablement_initiative_lessons_learnt_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40059
+  contributing_source_titles:
+  - Solar Enablement Initiative Lessons Learnt Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-lessons-learnt-report.pdf
+    source_pages: *id027
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-lessons-learnt-report/
+    markdown_filename: solar_enablement_initiative_lessons_learnt_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-40060
+  source_title: Solar Enablement Initiative Lessons Learnt Report
+  publish_date: '2019-12-06'
+  project_name: Solar Enablement Initiative
+  what_happened: DNSP collaboration was hampered by unclear internal routing — the
+    project lacked clarity on which subject matter experts within each DNSP to engage
+    at each development stage. Additionally, recruiting an external customer for the
+    real-time trial was far more time-consuming than originally anticipated.
+  lesson_learnt: When collaborating with DNSPs, establish at the outset which internal
+    experts to engage at each project phase — a single primary contact is insufficient
+    for complex development work. For real-time trials, use internal or company-owned
+    sites rather than external customers to avoid protracted recruitment and engagement
+    overhead.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: stakeholder/land/community
+  failure_mode: coordination & stakeholders
+  outcome_class: partial success
+  secondary_failure_mode: null
+  intervention_note: Regular meetings with DNSP partners were organised to maintain
+    project tracking and gather feedback on tool requirements.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id028
+  - 18
+  evidence_excerpt: Clarity from DNSPs around the particular experts to engage and
+    seek feedback from at each stage was sometimes lacking (i.e. development of the
+    analysis tool). Furthermore, engaging a customer for the real-time trial was far
+    more time consuming than originally thought.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-lessons-learnt-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-lessons-learnt-report.pdf
+  markdown_filename: solar_enablement_initiative_lessons_learnt_report.md
+  source_page_pdf: 18
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-40060
+  contributing_source_titles:
+  - Solar Enablement Initiative Lessons Learnt Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Lessons Learnt Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-lessons-learnt-report.pdf
+    source_pages: *id028
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-lessons-learnt-report/
+    markdown_filename: solar_enablement_initiative_lessons_learnt_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-50151
+  source_title: Solar Enablement Initiative Final Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: The SEI project successfully demonstrated that Distribution System
+    State Estimation (DSSE) is technically feasible using existing DNSP data, progressing
+    a proof-of-concept from university research to a commercially available product
+    across 20 medium-voltage feeders with three participating DNSPs.
+  lesson_learnt: Existing DNSP measurement data is sufficient to run a high-quality
+    distribution state estimation algorithm on the majority of MV feeders — full measurement
+    coverage is not a prerequisite for realising sophisticated network analysis functions,
+    removing a common barrier to deployment.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id029
+  - 4
+  evidence_excerpt: Both objectives have been achieved, with the DSSE having proven
+    feasible in all analysed scenarios and now commercially available, as well as
+    the development of a semi-automated PV assessment tool that supports connection
+    assessment teams in analyzing the estimated system state.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+  markdown_filename: solar_enablement_initiative_final_report.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-50151
+  contributing_source_titles:
+  - Solar Enablement Initiative Final Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Final Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+    source_pages: *id029
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+    markdown_filename: solar_enablement_initiative_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-50152
+  source_title: Solar Enablement Initiative Final Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: All three participating DNSPs were found to have sufficient existing
+    operational data to generate high-quality state estimates of their MV feeders,
+    confirming that sophisticated network analysis requiring a completely known system
+    state can be achieved without additional instrumentation investment.
+  lesson_learnt: DNSPs should not defer distribution state estimation deployment on
+    the assumption that additional metering infrastructure is required — existing
+    data is likely sufficient and should be tested before committing to costly measurement
+    upgrades.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id030
+  - 4
+  evidence_excerpt: The key learnings from the SEI project was that all directly participating
+    DNSPs had sufficient data to generate high quality estimates of the entire operational
+    state of the analysed MV feeders – 20 in total... Additional measurement data
+    will improve the quality of system state estimates, but full measurement coverage
+    is no longer a requirement in order to realise said functions.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+  markdown_filename: solar_enablement_initiative_final_report.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-50152
+  contributing_source_titles:
+  - Solar Enablement Initiative Final Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Final Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+    source_pages: *id030
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+    markdown_filename: solar_enablement_initiative_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-50153
+  source_title: Solar Enablement Initiative Final Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: 'The project scope expanded substantially during delivery: the state
+    estimator was applied to 16 Energy Queensland feeders, far exceeding the initial
+    contractual requirement of modelling only three feeders, demonstrating the scalability
+    of the platform.'
+  lesson_learnt: When a digital network analysis tool proves robust at small scale,
+    budget and timeline provisions should anticipate voluntary scope expansion by
+    DNSP partners — the platform's scalability can drive rapid organic uptake that
+    outpaces the original project plan.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id031
+  - 6
+  evidence_excerpt: The project was initially only required to model three. The results
+    from the large-scale implementation proved that the database and the algorithm
+    are robust enough to load, model and perform estimation for a large number of
+    feeders.
+  confidence_note: Scope expansion was positive; severity coded 'none' is also defensible
+    but 'minor' used to flag that original scope assumptions proved conservative.
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+  markdown_filename: solar_enablement_initiative_final_report.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-50153
+  contributing_source_titles:
+  - Solar Enablement Initiative Final Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Final Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+    source_pages: *id031
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+    markdown_filename: solar_enablement_initiative_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-50154
+  source_title: Solar Enablement Initiative Final Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: Without the SEI state estimator, DNSPs were assessing embedded generation
+    (including PV) connections using a generic assumed-type approach due to lack of
+    network visibility, resulting in conservative export limits such as zero-export
+    conditions being imposed on customers who may have had available capacity.
+  lesson_learnt: Generic, conservative PV connection assessment methods impose unnecessary
+    zero-export limits on customers; DNSPs with access to state estimation tools can
+    identify real available capacity and unlock additional PV connections, improving
+    both customer outcomes and network utilisation.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: data & measurement
+  intervention_note: The SEI PV Analysis Tool used full state estimation visibility
+    to assess connection capacity more precisely, identifying 465 kW maximum export
+    where a generic assessment had imposed a 0 MW export limit.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id032
+  - 13
+  - 15
+  evidence_excerpt: Due to the lack of visibility in distribution network, embedded
+    generation applications are currently assessed with a generic assumed type approach...
+    An initial assessment using the typical approach required the connection to have
+    a 0 MW export limit imposed, due to existing penetration of PV at the 11kV feeder
+    level.
+  confidence_note: 'proponent_type reconciled to ''research organisation/university''
+    from: research organisation/university (13/18), network business (4/18), consortium/multi-party
+    venture (1/18)'
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+  markdown_filename: solar_enablement_initiative_final_report.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-50154
+  contributing_source_titles:
+  - Solar Enablement Initiative Final Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Final Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+    source_pages: *id032
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+    markdown_filename: solar_enablement_initiative_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-50155
+  source_title: Solar Enablement Initiative Final Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: The clustering analysis technique, developed by QUT and integrated
+    into the SEI tool, reduced the number of network states requiring PV power flow
+    analysis from ~52,560 annual time steps to approximately 20 critical cases, achieving
+    computation time reductions of 99.7–99.97% across four tested feeders with less
+    than 3% difference in maximum PV capacity results.
+  lesson_learnt: State-clustering pre-processing is a highly effective technique for
+    making distribution-level PV connection assessments computationally tractable
+    — adopting it reduces analysis run-time by orders of magnitude with negligible
+    accuracy penalty, enabling routine use in DNSP business-as-usual processes.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id033
+  - 19
+  - 20
+  - 21
+  evidence_excerpt: The PV maximum capacity results difference is less than 3%. The
+    time reduction is at least 99% for iteratively running Newton Raphson power flow
+    studies (NRPF).
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+  markdown_filename: solar_enablement_initiative_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-50155
+  contributing_source_titles:
+  - Solar Enablement Initiative Final Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Final Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+    source_pages: *id033
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+    markdown_filename: solar_enablement_initiative_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-50156
+  source_title: Solar Enablement Initiative Final Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: Running one year of state estimation consumed over 20 hours of computation
+    time, and the subsequent clustering step required more than one additional day
+    of processing time before PV analysis could commence, creating a significant practical
+    barrier to routine use of the full-year dataset approach.
+  lesson_learnt: Full-year state estimation followed by clustering is computationally
+    intensive and unsuitable for routine connection assessment without high-performance
+    computing infrastructure; projects deploying this approach should plan for multi-node
+    computation environments or adopt the clustered critical-cases workflow from the
+    outset.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: execution & logistics
+  intervention_note: Clustering was run on a single computation node; the report notes
+    computation can be improved in future, and the critical-cases approach reduces
+    PV analysis run-time to 14 minutes.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id034
+  - 19
+  evidence_excerpt: 'Running 1 year of state estimation: 20:26:05. Clustering for
+    the year state estimation results: 1 Day and 10:14:36. PV Analysis Tool: 00:14:14.
+    Clustering runs on a single computation node (computation can be improved in future).'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+  markdown_filename: solar_enablement_initiative_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-50156
+  contributing_source_titles:
+  - Solar Enablement Initiative Final Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Final Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+    source_pages: *id034
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+    markdown_filename: solar_enablement_initiative_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-50157
+  source_title: Solar Enablement Initiative Final Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: PI connection problems between the real-time deployment environment
+    and OSIsoft/Energy Queensland systems required resolution involving three separate
+    organisations (OSIsoft, Energy Queensland, and SEI project staff) and were not
+    resolved until mid-2019, delaying progress on the real-time deployment stage.
+  lesson_learnt: Integration of research-developed software into operational DNSP
+    IT environments (particularly historian/PI systems) requires early engagement
+    with all system owners and should not be assumed straightforward — multi-party
+    IT integration should be treated as a critical-path activity with dedicated resources.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: PI connection problems were resolved through direct engagement
+    involving OSIsoft, Energy Queensland and SEI project staff in mid-2019.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id035
+  - 22
+  evidence_excerpt: PI connection problems were resolved involving OSIsoft, Energy
+    Queensland and SEI-Project staff in mid-2019.
+  confidence_note: Delay magnitude cannot be precisely quantified from the document;
+    described as resolved mid-2019 in a project ending December 2019.
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+  markdown_filename: solar_enablement_initiative_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-50157
+  contributing_source_titles:
+  - Solar Enablement Initiative Final Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Final Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+    source_pages: *id035
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+    markdown_filename: solar_enablement_initiative_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-50158
+  source_title: Solar Enablement Initiative Final Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: At project close, the real-time deployment of the state estimator
+    was not fully automated — export limit results from Capacity Constrained Optimisation
+    were being used for manual validation only, with full automated export limit broadcasting
+    not yet enabled, meaning the second stage of the real-time trial was incomplete.
+  lesson_learnt: Fully automated closed-loop control systems integrating research-developed
+    optimisation tools into operational DNSP environments require more lead-time than
+    initial closed-loop trials with simpler data sources; project timelines for automation
+    milestones should include realistic allowance for validation, verification, and
+    regulatory acceptance steps.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: partial success
+  secondary_failure_mode: execution & logistics
+  intervention_note: Manual validation of export limit results was implemented as
+    an interim step; full automated broadcasting was expected to be enabled in the
+    near future after project close.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id036
+  - 22
+  evidence_excerpt: Currently export limit results coming out of the Capacity Constrained
+    Optimisation are used for manual validation and verification only. It is expected
+    that fully automated export limit broadcasting based on data coming out of the
+    State Estimator/Constraining is to be enabled in the near future completing the
+    second stage and the real-time trial.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+  markdown_filename: solar_enablement_initiative_final_report.md
+  source_page_pdf: 22
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-50158
+  contributing_source_titles:
+  - Solar Enablement Initiative Final Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Final Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+    source_pages: *id036
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+    markdown_filename: solar_enablement_initiative_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-50159
+  source_title: Solar Enablement Initiative Final Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: The PV Analysis Tool in its delivered form does not scale PV power
+    output based on cloud cover or other variable renewable energy factors — it assesses
+    the same export value for all scenarios — limiting the accuracy of assessments
+    for variable generation profiles.
+  lesson_learnt: Future versions of distribution-level PV connection assessment tools
+    should incorporate variable generation scaling (e.g. cloud cover, irradiance profiles)
+    to avoid overstating available export capacity in critical scenarios; projects
+    should scope this functionality explicitly rather than leaving it for post-project
+    development.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: partial success
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id037
+  - 14
+  evidence_excerpt: The tool in its present form assesses the same export for all
+    scenarios. The power output of the embedded generation is not scaled based on
+    cloud cover, or any other cause of variable renewable energy.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+  markdown_filename: solar_enablement_initiative_final_report.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-50159
+  contributing_source_titles:
+  - Solar Enablement Initiative Final Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Final Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+    source_pages: *id037
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+    markdown_filename: solar_enablement_initiative_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-50160
+  source_title: Solar Enablement Initiative Final Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: The case study demonstrated that a customer with an existing 62 kW
+    PV system subject to a 0 MW export limit (imposed under generic assessment) had
+    an actual maximum export capacity of 465 kW, with economic modelling showing potential
+    income of up to $457K over three years at a 0.18 $/kWh feed-in tariff — substantially
+    more than the zero-export status allowed.
+  lesson_learnt: Generic conservative PV connection assessments can result in significant
+    under-utilisation of available network capacity and foreclose substantial economic
+    value for customers; state-estimation-based assessment tools can identify real
+    capacity and support economically justified upgrade business cases.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: The SEI PV Analysis Tool assessed historical state estimation
+    results and identified 465 kW maximum export capacity, compared to the 0 MW limit
+    set by the generic approach.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id038
+  - 15
+  - 18
+  - 19
+  evidence_excerpt: An initial assessment using the typical approach required the
+    connection to have a 0 MW export limit imposed... for this case study, the PV
+    maximum capacity is 465.105 kW... within 3 years' time, there is about $457K income
+    for the 465 kW system at 0.18 FiT.
+  confidence_note: 'proponent_type reconciled to ''research organisation/university''
+    from: research organisation/university (13/18), network business (4/18), consortium/multi-party
+    venture (1/18)'
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+  markdown_filename: solar_enablement_initiative_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-50160
+  contributing_source_titles:
+  - Solar Enablement Initiative Final Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Final Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+    source_pages: *id038
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+    markdown_filename: solar_enablement_initiative_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-50161
+  source_title: Solar Enablement Initiative Final Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: Voltage rise at the LV terminal of the distribution transformer was
+    identified as the most frequent binding constraint limiting PV maximum capacity
+    across the ten real case PV assessments conducted, with limited network remediation
+    options available other than dynamic reactive power capability or export limiting
+    schemes.
+  lesson_learnt: Voltage rise on distribution transformer LV terminals is the dominant
+    technical constraint for MV-connected PV in Australian distribution networks;
+    project developers and DNSPs should assess dynamic reactive power capability or
+    export limiting as preferred mitigation options rather than relying on costly
+    network upgrades.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: The tool identified voltage rise as the binding constraint and
+    noted that remedial options include dynamic reactive power capability, voltage
+    controllers, or runback/export limiting schemes rather than network infrastructure
+    upgrades.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id039
+  - 15
+  - 17
+  - 18
+  evidence_excerpt: For the ten real cases, the most frequent binding constraint for
+    limiting PV maximum capacity is 'voltage rise on distribution transformer LV terminal
+    A phase'... there are not many remedial actions you can take to address voltage
+    rise unless request the installation to have dynamic reactive power capability
+    or a voltage controller or a runback/export limiting scheme.
+  confidence_note: 'proponent_type reconciled to ''research organisation/university''
+    from: research organisation/university (13/18), network business (4/18), consortium/multi-party
+    venture (1/18)'
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+  markdown_filename: solar_enablement_initiative_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-50161
+  contributing_source_titles:
+  - Solar Enablement Initiative Final Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Final Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+    source_pages: *id039
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+    markdown_filename: solar_enablement_initiative_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-50162
+  source_title: Solar Enablement Initiative Final Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: At project close, integration of the SEI PV Analysis Tool into DNSP
+    business-as-usual connection assessment processes had not been achieved; the tool
+    existed as a standalone dashboard requiring manual use rather than being embedded
+    in DNSP workflows, with integration identified as the highest-priority future
+    work item.
+  lesson_learnt: Developing a technically sound tool is insufficient for adoption
+    — integration into DNSP IT and workflow systems must be scoped and resourced within
+    the project, not deferred as future work; without this, tools risk remaining as
+    research artefacts rather than operational assets.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: coordination & stakeholders
+  outcome_class: partial success
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id040
+  - 24
+  evidence_excerpt: 'The highest priority are: Adding further functionality to the
+    PV assessment tool... Integrating the SEI PV analysis tool with DNSP''s assessment
+    process.'
+  confidence_note: lifecycle_phase set to close-out/post-project review as this reflects
+    the project's unresolved integration gap identified at final reporting stage,
+    not an event during an earlier phase.
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+  markdown_filename: solar_enablement_initiative_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-50162
+  contributing_source_titles:
+  - Solar Enablement Initiative Final Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Final Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+    source_pages: *id040
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+    markdown_filename: solar_enablement_initiative_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-50163
+  source_title: Solar Enablement Initiative Final Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: The SEI state estimator and PV Analysis Tool were not extended to
+    the LV network during the project period, limiting the tool's applicability to
+    MV-connected customers (30 kW–1500 kW systems) and leaving the large population
+    of small LV-connected residential and commercial PV customers unserved by the
+    improved assessment methodology.
+  lesson_learnt: Distribution state estimation projects targeting PV connection improvements
+    should plan for LV network extension from the outset, as the majority of solar
+    PV connections occur at LV level; confining scope to MV limits the tool's impact
+    on the broader PV connection bottleneck.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: partial success
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id041
+  - 13
+  - 24
+  evidence_excerpt: This semi-automated PV Analysis tool has been designed to support
+    connection assessment for mid-sized PV systems (30 kW to 1500 kW) that are connected
+    to MV network or to the LV terminals of distribution transformers... Extension
+    of the state estimator and analysis tool to the LV network.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+  markdown_filename: solar_enablement_initiative_final_report.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-50163
+  contributing_source_titles:
+  - Solar Enablement Initiative Final Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Final Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+    source_pages: *id041
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+    markdown_filename: solar_enablement_initiative_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-50164
+  source_title: Solar Enablement Initiative Final Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: The real-time capacity constrained optimisation trial demonstrated
+    that available network capacity could be automatically re-assessed every one minute
+    and allocated dynamically to PV customers previously subject to zero-export limits,
+    operating in a fully automated closed-loop fashion for the first stage using transformer
+    monitor data.
+  lesson_learnt: Real-time state estimation combined with optimised constraint analysis
+    can enable dynamic, minute-by-minute PV export limit management that replaces
+    static zero-export limits — this approach is technically proven at demonstration
+    scale and represents a viable pathway to unlocking stranded network capacity for
+    existing constrained customers.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id042
+  - 4
+  - 22
+  evidence_excerpt: The corresponding trials were done on two feeders for which the
+    available capacity was automatically re-assessed every one minute and allocated
+    to PV customer that have previously been subject to zero-export limits... The
+    first stage – using transformer monitor data to set broad PV export limits – was
+    implemented in a closed loop fashion... This was a fully automated process.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+  markdown_filename: solar_enablement_initiative_final_report.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-50164
+  contributing_source_titles:
+  - Solar Enablement Initiative Final Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Final Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+    source_pages: *id042
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+    markdown_filename: solar_enablement_initiative_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-50165
+  source_title: Solar Enablement Initiative Final Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: The Capacity Constrained Optimisation feature was added to the real-time
+    deployment environment only in early November 2019, near the end of the project,
+    leaving insufficient time to validate and enable automated export limit broadcasting
+    before the final report was written.
+  lesson_learnt: Advanced optimisation features intended for operational deployment
+    should be integrated into real-time environments significantly earlier than the
+    final months of a project — late integration compresses the validation period
+    and risks leaving key milestones incomplete at project close.
+  issue_severity: moderate
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: commissioning/integration
+  failure_mode: execution & logistics
+  outcome_class: partial success
+  secondary_failure_mode: null
+  intervention_note: Manual validation was used as an interim step to verify optimisation
+    outputs while automated broadcasting was prepared.
+  transferability: moderate
+  delay_magnitude: 1-3 months
+  technology_domain: solar PV
+  source_pages: &id043
+  - 22
+  evidence_excerpt: In early November 2019, the State Estimator software was updated
+    in the RTD to make the new Constraining Analysis and Capacity Constrained Optimisation
+    features... available in the RTD environment... Currently export limit results
+    coming out of the Capacity Constrained Optimisation are used for manual validation
+    and verification only.
+  confidence_note: Report dated 5 December 2019; November 2019 integration left approximately
+    one month before project close — delay magnitude coded 1–3 months as the validation
+    window was effectively foreclosed.
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+  markdown_filename: solar_enablement_initiative_final_report.md
+  source_page_pdf: 22
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-50165
+  contributing_source_titles:
+  - Solar Enablement Initiative Final Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Final Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+    source_pages: *id043
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+    markdown_filename: solar_enablement_initiative_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-50166
+  source_title: Solar Enablement Initiative Final Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: The equitable allocation optimisation option within the Capacity
+    Constrained Optimisation module was marked as 'currently not functional' at the
+    time of the final report, indicating that a planned feature was not completed
+    within the project timeframe.
+  lesson_learnt: Optimisation modules with multiple allocation strategies (technical
+    vs. equitable) require explicit scoping and testing time for each strategy; features
+    that are partially implemented but non-functional at project close should be flagged
+    early and either de-scoped or resourced, rather than delivered in a broken state.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: execution & logistics
+  outcome_class: partial success
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id044
+  - 11
+  evidence_excerpt: 'Option Apply Equitable Allocation (currently not functional):
+    if set to 1, will use Max Allocation and Min Allocation as allocation ratios for
+    generation (Max Allocation) and load (Min Allocation).'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+  markdown_filename: solar_enablement_initiative_final_report.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-50166
+  contributing_source_titles:
+  - Solar Enablement Initiative Final Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Final Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+    source_pages: *id044
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+    markdown_filename: solar_enablement_initiative_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-50167
+  source_title: Solar Enablement Initiative Final Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: 'A conservative approach to managing uncertainty in the clustered
+    critical-cases method was identified: applying an 80% de-rating to the maximum
+    PV capacity result provides a margin more than twice the observed maximum error
+    of less than 3%, offering a practical risk management method for DNSPs using the
+    tool.'
+  lesson_learnt: When using clustering-based PV connection assessment tools, applying
+    an 80% de-rating factor to maximum PV capacity outputs provides a robust and conservative
+    safety margin that comfortably exceeds observed modelling error — DNSPs should
+    adopt this or a similar conservative approach pending further validation against
+    broader feeder types.
+  issue_severity: none
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id045
+  - 21
+  evidence_excerpt: A conservative approach is to take a percentage (e.g. 80%) of
+    the maximum PV capacity run from the clustered critical cases. This approach leaves
+    20% room for error margin and the 20% margin is much larger than the expected
+    error.
+  confidence_note: 'proponent_type reconciled to ''research organisation/university''
+    from: research organisation/university (13/18), network business (4/18), consortium/multi-party
+    venture (1/18)'
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+  markdown_filename: solar_enablement_initiative_final_report.md
+  source_page_pdf: 21
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-50167
+  contributing_source_titles:
+  - Solar Enablement Initiative Final Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Final Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+    source_pages: *id045
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+    markdown_filename: solar_enablement_initiative_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-50168
+  source_title: Solar Enablement Initiative Final Report
+  publish_date: 2019-12
+  project_name: Solar Enablement Initiative (SEI)
+  what_happened: The SEI project was structured as a multi-party consortium involving
+    a university lead (UQ), a second university (QUT), three DNSPs, an engineering
+    consultancy (Aurecon), an industry body (ENA), a training body (API), and a property
+    developer (Springfield City Group), with cash and in-kind contributions from multiple
+    sources.
+  lesson_learnt: Multi-party research-to-deployment projects in the distribution network
+    space benefit from direct DNSP participation providing real network data and operational
+    feedback — however, governance and coordination across seven or more organisations
+    with different roles (funder, data provider, software developer, validator) requires
+    explicit coordination structures to avoid integration delays.
+  issue_severity: minor
+  project_type: software/data/digital
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: coordination & stakeholders
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id046
+  - 3
+  - 4
+  evidence_excerpt: It was directly supported by the Australian power industry through
+    cash contributions from the Australian Power Institute (API) and Energy Networks
+    Australia (ENA) and through direct participation and in-kind contributions from
+    Energy Queensland, United Energy and TasNetworks. Other partners were Aurecon,
+    Springfield City Group.
+  confidence_note: 'Failure mode coded governance/coordination failure on the basis
+    of the PI integration delay (record ARENA-DLV-50157) which is a characteristic
+    multi-party coordination problem; this record captures the structural context
+    rather than a specific event.; proponent_type reconciled to ''research organisation/university''
+    from: research organisation/university (13/18), network business (4/18), consortium/multi-party
+    venture (1/18)'
+  source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+  project_page_url: https://arena.gov.au/projects/increasing-visibility-of-distribution-networks/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 5/12/2019
+  kb_year: '2017'
+  kb_associated_project: Increasing Visibility of Distribution Networks
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.19m
+  total_project_value: $2.78m
+  lead_organisation: University of Queensland
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 01/12/2017
+  location: Brisbane, Queensland
+  project_partners: Queensland University of Technology, Australian Power Institute,
+    Energy Networks Australia, Tasnetworks, United Energy, Energex Part of the Energy
+    Queensland Group, Aurecon, Redback Technologies, Springfield City Group
+  pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+  markdown_filename: solar_enablement_initiative_final_report.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-50168
+  contributing_source_titles:
+  - Solar Enablement Initiative Final Report
+  contributing_sources:
+  - source_title: Solar Enablement Initiative Final Report
+    pdf_url: https://arena.gov.au/assets/2018/02/uq-solar-enablement-initiative-final-report.pdf
+    source_pages: *id046
+    source_url: https://arena.gov.au/knowledge-bank/solar-enablement-initiative-final-report/
+    markdown_filename: solar_enablement_initiative_final_report.md
+  arena_category:
+  - Solar PV
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.92

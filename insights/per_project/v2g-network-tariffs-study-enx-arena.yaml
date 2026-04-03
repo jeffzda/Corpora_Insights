@@ -1,0 +1,1815 @@
+- record_id: ARENA-DLV-49001
+  source_title: ARENA - Vehicle to Grid - Network tariffs report
+  publish_date: '2024-02-22'
+  project_name: V2G Network Tariffs Study (enX/ARENA)
+  what_happened: Modelling of six network and retail tariff combinations for V2G at
+    10% residential penetration found that dynamic network tariffs combined with spot
+    price passthrough (scenario 6) delivered the greatest critical peak demand reduction
+    (2.54 MW, 6.29% of substation firm capacity) and the best customer financial outcome
+    (net weekly earnings of $5.54 per customer) among all scenarios tested.
+  lesson_learnt: Design V2G tariff frameworks around dynamic network pricing plus
+    spot passthrough rather than time-of-use arrangements — this combination simultaneously
+    maximises peak demand mitigation and customer savings, and should be the target
+    architecture for future V2G tariff trials and regulatory proposals.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id001
+  - 4
+  - 5
+  - 6
+  - 7
+  - 64
+  - 76
+  evidence_excerpt: Grid benefits were highest under dynamic tariff and spot price
+    passthrough arrangements which, combined, provided incentives for exports during
+    critical peak times and lowest cost re- and pre-charging.
+  confidence_note: project_scale_band set to demonstration as the study is modelling/analytical
+    rather than a live deployment; no commercial revenue stream.
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+  markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49001
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Network tariffs report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Network tariffs report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+    markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: false
+- record_id: ARENA-DLV-49002
+  source_title: ARENA - Vehicle to Grid - Network tariffs report
+  publish_date: '2024-02-22'
+  project_name: V2G Network Tariffs Study (enX/ARENA)
+  what_happened: Modelling showed that bidirectional time-of-use (ToU) network tariffs
+    (scenario 2) produced only a 0.9 MW (2.23%) peak demand reduction — marginally
+    better than unidirectional ToU — because the fixed schedule over- or under-incentivises
+    discharge throughout the year regardless of actual grid conditions, and the flat
+    retail feed-in tariff reinforces off-peak discharging.
+  lesson_learnt: Bidirectional ToU network tariffs are unlikely to support efficient
+    V2G outcomes at scale — their fixed schedule structure means they must over-compensate
+    discharges year-round to achieve critical-peak response, making them unaffordable
+    to networks or under-rewarding to customers; treat them as a transitional step
+    toward dynamic pricing rather than a destination.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id002
+  - 7
+  - 54
+  - 76
+  evidence_excerpt: Bidirectional ToU network tariffs are unlikely to support efficient
+    outcomes from V2G operation as they suffer from the same intractable limitation
+    as all ToU prices; in order to offer sufficient incentives to support V2G battery
+    discharge during critical peaks, they must overcompensate discharges throughout
+    the year (or season), so they default to under-compensation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+  markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49002
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Network tariffs report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Network tariffs report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+    markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-49003
+  source_title: ARENA - Vehicle to Grid - Network tariffs report
+  publish_date: '2024-02-22'
+  project_name: V2G Network Tariffs Study (enX/ARENA)
+  what_happened: Unidirectional ToU network tariffs combined with ToU retail pricing
+    (scenario 1) delivered the weakest V2G grid performance — only 0.6 MW (1.48%)
+    critical peak reduction — because flat feed-in tariffs incentivised daytime self-consumption
+    discharge regardless of grid conditions, and the network tariff provided no export
+    reward during critical peaks.
+  lesson_learnt: Standard unidirectional ToU network tariffs with flat feed-in tariff
+    retail products should not be relied upon to deliver meaningful V2G grid services;
+    project teams and policymakers should avoid designing V2G programs around these
+    structures and prioritise bidirectional or dynamic pricing from the outset.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id003
+  - 52
+  - 53
+  evidence_excerpt: Overall, having V2G on standard retail and network ToU pricing
+    does not materially mitigate local network critical peak demand. The principal
+    barriers to more efficient V2G operation appear to be flat rates for exports (FiTs),
+    and insufficient incentives to reduce peak demand by exporting to the grid at
+    critical peak times.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+  markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  source_page_pdf: 52
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49003
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Network tariffs report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Network tariffs report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+    markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-49004
+  source_title: ARENA - Vehicle to Grid - Network tariffs report
+  publish_date: '2024-02-22'
+  project_name: V2G Network Tariffs Study (enX/ARENA)
+  what_happened: Dynamic network pricing scenarios (s3 and s6) both achieved the highest
+    critical peak reduction (2.54 MW, 6.29%) and the lowest customer electricity bills,
+    because the dynamic charge/reward applied only during verified critical peak periods,
+    eliminating variable network charges at all other times and thereby reducing transaction
+    costs for spot market participation.
+  lesson_learnt: Dynamic network tariffs should be structured to apply variable charges
+    only during critical peak periods and set at zero otherwise — this eliminates
+    transaction costs that otherwise suppress spot market arbitrage and amplifies
+    the combined benefit of dynamic network pricing and spot passthrough for V2G customers.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id004
+  - 7
+  - 62
+  - 71
+  - 76
+  - 77
+  evidence_excerpt: Dynamic network tariffs amplify the benefits of spot passthrough
+    arrangements by reducing transaction costs outside of critical peak periods. This
+    allows for freer trade in the spot market and greater opportunities for spot market
+    arbitrage.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+  markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49004
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Network tariffs report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Network tariffs report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+    markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: false
+- record_id: ARENA-DLV-49005
+  source_title: ARENA - Vehicle to Grid - Network tariffs report
+  publish_date: '2024-02-22'
+  project_name: V2G Network Tariffs Study (enX/ARENA)
+  what_happened: 'Spot passthrough retail pricing (scenarios 4–6) significantly outperformed
+    ToU retail pricing for V2G customers: average annual V2G savings over smart charging
+    ranged from $646–$827 under spot passthrough versus $317–$408 under ToU arrangements,
+    with spot passthrough enabling customers to exploit short-duration wholesale market
+    price movements.'
+  lesson_learnt: V2G programs should prioritise spot passthrough retail contracts
+    over ToU retail products — spot exposure enables bidirectional resources to arbitrage
+    short-duration wholesale price movements, delivering materially higher customer
+    savings and improving the financial case for V2G hardware investment.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id005
+  - 6
+  - 7
+  - 69
+  - 77
+  evidence_excerpt: Spot passthrough retail contracts can greatly reduce costs for
+    EV owners with smart charging and V2G. Customers with flexible, and especially
+    bidirectional resources, can move their load and generation around to take advantage
+    of dynamic spot market conditions.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+  markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49005
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Network tariffs report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Network tariffs report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+    markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: false
+- record_id: ARENA-DLV-49006
+  source_title: ARENA - Vehicle to Grid - Network tariffs report
+  publish_date: '2024-02-22'
+  project_name: V2G Network Tariffs Study (enX/ARENA)
+  what_happened: During initial V2G modelling under spot passthrough tariffs, EV charging
+    rebounded sharply after high-price discharge events, creating secondary peaks
+    that threatened substation capacity limits — at 20% V2G penetration these secondary
+    peaks reached Metford substation capacity limits.
+  lesson_learnt: V2G trial and program design must include dynamic operating envelopes
+    (DOEs) or equivalent import/export controls to prevent rebound charging from creating
+    secondary peaks, especially as penetration approaches 10–20%; relying solely on
+    price signals is insufficient to guarantee grid stability under high V2G uptake.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated integration
+  intervention_note: Dynamic operating envelopes (DOEs) were simulated across all
+    modelling scenarios with import limits tightening proportionally once substation
+    load exceeded 60% of rated firm capacity, effectively mitigating adverse secondary
+    peak outcomes.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id006
+  - 8
+  - 43
+  - 78
+  evidence_excerpt: Initial test modelling runs of V2G under spot passthrough tariffs
+    indicated that price incentives may not be sufficient to ensure stable, grid-friendly
+    charge operation. During periods of price volatility, we found that vehicles responded
+    sharply and that after periods of sustained high pricing, EV charging could rebound,
+    creating secondary peaks that had the potential to threaten grid limits.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+  markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  source_page_pdf: 43
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49006
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Network tariffs report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Network tariffs report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+    markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-49007
+  source_title: ARENA - Vehicle to Grid - Network tariffs report
+  publish_date: '2024-02-22'
+  project_name: V2G Network Tariffs Study (enX/ARENA)
+  what_happened: The wholesale electricity market floor price (MFP) of -$1,000/MWh
+    created a risk that V2G assets would switch into charge mode during local critical
+    network peak events if the spot market simultaneously fell to the MFP, counteracting
+    network peak reduction. To ensure a firm V2G response, dynamic network pricing
+    had to be set at $1.20/kWh — above the $1.00/kWh minimum needed to offset the
+    MFP — inflating network costs.
+  lesson_learnt: When designing dynamic network tariffs for V2G, the peak price must
+    exceed the retail equivalent of the wholesale market floor price to guarantee
+    a firm discharge response; the AEMC Reliability Panel should formally assess the
+    MFP's implications for DER and local network operation, and contract-for-difference
+    stop-loss arrangements should be explored to reduce the required peak price and
+    lower network costs.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: An 'insurance approach' was adopted, setting the dynamic peak
+    price at $1.20/kWh to ensure the export incentive prevailed over any countervailing
+    MFP wholesale spot price signal of -$1.00/kWh.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id007
+  - 7
+  - 40
+  - 41
+  - 76
+  evidence_excerpt: The network export incentive must be greater that $1/kWh to offset
+    the import incentive created by the wholesale market during a MFP event... Setting
+    network prices against worst case and rare coincidences of wholesale market and
+    local network conditions creates costs to networks.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+  markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  source_page_pdf: 41
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49007
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Network tariffs report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Network tariffs report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+    markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-49008
+  source_title: ARENA - Vehicle to Grid - Network tariffs report
+  publish_date: '2024-02-22'
+  project_name: V2G Network Tariffs Study (enX/ARENA)
+  what_happened: All modelled V2G tariff scenarios delivered critical peak demand
+    reduction at a cost below Ausgrid's estimated long run marginal cost (LRMC) of
+    network expansion ($42.80/kW annualised), with dynamic tariff scenarios (s3, s6)
+    resulting in net payments to customers of approximately $39/kW — confirming that
+    V2G can defer network augmentation cost-effectively.
+  lesson_learnt: Network businesses should use LRMC as the primary cost benchmark
+    when evaluating V2G tariff structures — all tested arrangements, including dynamic
+    and ToU bidirectional tariffs, delivered peak demand reduction below the cost
+    of network augmentation, validating the economic case for V2G network support
+    tariffs.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id008
+  - 5
+  - 6
+  - 73
+  - 74
+  evidence_excerpt: While all scenarios delivered reductions at a cost below LRMC,
+    ES Figure 2 shows that in s2 and s5, the network achieved net earnings over a
+    year... The cost of critical peak demand reduction each scenario was lower than
+    the estimated long run marginal cost (LRMC) of network expansion.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+  markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  source_page_pdf: 5
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49008
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Network tariffs report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Network tariffs report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+    markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: false
+- record_id: ARENA-DLV-49009
+  source_title: ARENA - Vehicle to Grid - Network tariffs report
+  publish_date: '2024-02-22'
+  project_name: V2G Network Tariffs Study (enX/ARENA)
+  what_happened: Ausgrid's current bidirectional network support tariff (EA025+EA029)
+    modelling showed net earnings to the network from V2G customers over a year, suggesting
+    slight over-recovery of variable costs relative to LRMC. The study identified
+    that residual costs had been partially included in export rewards, driving additional
+    battery cycling not justified by network need.
+  lesson_learnt: Bidirectional network support tariff design should base export charges
+    and rewards solely on LRMC of exports and exclude residual cost recovery from
+    variable export tariff components — including residual costs inflates tariff attractiveness,
+    drives excess battery cycling, and results in over-recovery from V2G customers
+    relative to the network value they provide.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Ausgrid revised its approach to base export charges and rewards
+    only on the LRMC of exports, excluding residual cost recovery from variable tariff
+    components.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id009
+  - 5
+  - 6
+  - 19
+  - 74
+  evidence_excerpt: Ausgrid... found it made its trial tariff too lucrative for customers
+    investing in batteries and drove additional cycling of batteries that was not
+    justifiable based on network need. This has informed its decision to base export
+    charges and rewards only on the LRMC of exports on its network.
+  confidence_note: 'proponent_type reconciled to ''research organisation/university''
+    from: research organisation/university (15/24), network business (6/24), government/public-sector
+    body (3/24)'
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+  markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49009
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Network tariffs report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Network tariffs report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+    markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-49010
+  source_title: ARENA - Vehicle to Grid - Network tariffs report
+  publish_date: '2024-02-22'
+  project_name: V2G Network Tariffs Study (enX/ARENA)
+  what_happened: V2G was financially superior to smart charging for all customers
+    under all six modelled scenarios, with average annual savings of $550 per household
+    and payback periods ranging from 2.6 to 21.2 years depending on customer type
+    and tariff. Under the best tariff configuration (s6, dynamic network + spot passthrough),
+    payback fell below 4 years for all user types, and one economy user achieved net
+    annual revenue of $95.
+  lesson_learnt: V2G can be financially attractive to diverse EV owner types without
+    cost subsidies when tariffs are cost-reflective; ARENA-funded V2G pilots should
+    prioritise dynamic network plus spot passthrough tariff structures and target
+    high-usage residential customers to maximise both customer uptake and demonstrated
+    network value.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id010
+  - 6
+  - 7
+  - 70
+  - 77
+  evidence_excerpt: V2G is more cost-beneficial than smart charging for all customers
+    under all modelled scenarios with average savings per household of $550 per annum...
+    Under spot passthrough arrangements, this dropped to under 4 years.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+  markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49010
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Network tariffs report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Network tariffs report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+    markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: false
+- record_id: ARENA-DLV-49011
+  source_title: ARENA - Vehicle to Grid - Network tariffs report
+  publish_date: '2024-02-22'
+  project_name: V2G Network Tariffs Study (enX/ARENA)
+  what_happened: Vehicle availability — not just tariff structure — was found to be
+    a significant determinant of fleet-level V2G discharge magnitude. Some of the
+    largest fleet discharges occurred on Saturday afternoon (11 March 2023) when nearly
+    57% more vehicles were plugged in compared to the Monday critical peak event,
+    even though network demand was not at a critical level.
+  lesson_learnt: V2G field trials must collect high-quality residential plug-in behaviour
+    data and develop realistic vehicle availability models disaggregated by user type
+    (commuter vs. work-from-home) — availability can amplify or suppress fleet response
+    independently of price signals, and without this data, grid benefit estimates
+    will be unreliable.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: A population-level weekly plug-in availability target profile
+    was constructed by synthesising data from ABS road user surveys, Tesla aggregate
+    charge profiles, Energex SmartCharge, Vector NZ and AGL EV trial outcomes.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id011
+  - 8
+  - 48
+  - 77
+  - 78
+  evidence_excerpt: 'Unfortunately, there is no reliable and publicly available data
+    on residential EV plug-in behaviour, including among the substantial knowledge-sharing
+    outputs from ARENA, local and international trials... One of the main reasons
+    that fleet discharges were so high, was simply because there many more vehicles
+    connected at the time: nearly 57% more than during the Monday critical peak demand
+    event.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+  markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  source_page_pdf: 48
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49011
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Network tariffs report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Network tariffs report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+    markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-49012
+  source_title: ARENA - Vehicle to Grid - Network tariffs report
+  publish_date: '2024-02-22'
+  project_name: V2G Network Tariffs Study (enX/ARENA)
+  what_happened: Only 25.73% of residential NEM customers were on a cost-reflective
+    network tariff as at 30 June 2022 — an increase of approximately 9% from the prior
+    year — due to slow meter rollout, retailer reluctance to pass through complex
+    tariffs, and legacy billing system constraints. Retailers were found to commonly
+    shield customers from network price signals with flat or fixed retail products.
+  lesson_learnt: Network tariff reform must be paired with mandatory or incentivised
+    retailer pass-through of cost-reflective price signals and investment in billing
+    system capability — without retail-level transmission of dynamic network prices,
+    the distribution-level tariff innovations modelled in this study will not reach
+    V2G customers or influence their behaviour.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: coordination & stakeholders
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: commercial & market
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id012
+  - 8
+  - 19
+  - 27
+  evidence_excerpt: On 30 June 2022 only 25.73% were on a cost reflective tariff,
+    an increase of approximately 9% from the previous year... Retailers can package
+    network tariffs into their retail offer in a way that replicates the network tariff
+    price signals, but mostly they don't.
+  confidence_note: 'project_scale_band reconciled to ''demonstration'' from: demonstration
+    (15/24), programmatic/portfolio-level (9/24); proponent_type reconciled to ''research
+    organisation/university'' from: research organisation/university (15/24), network
+    business (6/24), government/public-sector body (3/24)'
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+  markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49012
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Network tariffs report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Network tariffs report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+    markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-49013
+  source_title: ARENA - Vehicle to Grid - Network tariffs report
+  publish_date: '2024-02-22'
+  project_name: V2G Network Tariffs Study (enX/ARENA)
+  what_happened: Legacy retailer billing systems were identified as a material barrier
+    to the pass-through of dynamic and complex network tariffs. Ausgrid's current
+    billing system, for example, cannot pair a customer demand measure (kW) with a
+    usage charge (c/kWh), limiting its ability to offer innovative tariffs to retailers
+    and therefore to end customers.
+  lesson_learnt: Network businesses planning to offer dynamic or bidirectional V2G
+    tariffs must upgrade billing systems ahead of, or alongside, tariff design work
+    — the inability to pair demand and usage charges in legacy systems blocks the
+    commercial deployment of any technically optimal tariff structure developed in
+    trials.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Ausgrid is seeking to invest in new billing systems to be able
+    to offer more dynamic and innovative tariffs to retailers.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id013
+  - 27
+  evidence_excerpt: Ausgrid's current billing system, for example will not allow it
+    to pair customer demand measure (kW) with a usage charge (c/kWh).
+  confidence_note: 'project_scale_band reconciled to ''demonstration'' from: demonstration
+    (15/24), programmatic/portfolio-level (9/24); proponent_type reconciled to ''research
+    organisation/university'' from: research organisation/university (15/24), network
+    business (6/24), government/public-sector body (3/24)'
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+  markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49013
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Network tariffs report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Network tariffs report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+    markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-49014
+  source_title: ARENA - Vehicle to Grid - Network tariffs report
+  publish_date: '2024-02-22'
+  project_name: V2G Network Tariffs Study (enX/ARENA)
+  what_happened: Australia's network tariff landscape was found to be fragmented —
+    different DNSPs adopt different approaches — and there is no national policy direction
+    or AER mandate to promote consistency across network areas, which the study found
+    discourages international EV and V2G technology providers from entering the Australian
+    market.
+  lesson_learnt: ARENA-funded V2G programs and network tariff trials should be accompanied
+    by coordinated knowledge-sharing between DNSPs and advocacy for national tariff
+    coherence signals — inconsistency between network areas is a supply chain barrier
+    that deters international V2G technology investment independently of the technical
+    merits of individual tariff structures.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id014
+  - 8
+  - 11
+  - 16
+  - 78
+  evidence_excerpt: Australia's approach to network tariffs can be characterised as
+    fragmented (with different approaches in different network areas) and experimental...
+    inconsistencies between network businesses (alongside a lack of national policy
+    direction) discourage technology providers entering the Australian market.
+  confidence_note: 'project_scale_band reconciled to ''demonstration'' from: demonstration
+    (15/24), programmatic/portfolio-level (9/24); proponent_type reconciled to ''research
+    organisation/university'' from: research organisation/university (15/24), network
+    business (6/24), government/public-sector body (3/24)'
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+  markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49014
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Network tariffs report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Network tariffs report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+    markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-49015
+  source_title: ARENA - Vehicle to Grid - Network tariffs report
+  publish_date: '2024-02-22'
+  project_name: V2G Network Tariffs Study (enX/ARENA)
+  what_happened: Current NER export pricing rules prohibit DNSPs from charging for
+    exports below a 'basic export level' until 2034, which Ausgrid estimated removes
+    the price signal from approximately 70% of exports driving its future network
+    costs. This structural regulatory constraint limits the ability to implement fully
+    symmetrical LRMC-based bidirectional tariffs that are theoretically optimal for
+    V2G.
+  lesson_learnt: V2G tariff designers must account for the NER constraint that prevents
+    symmetrical LRMC-based export charging below the basic export level until 2034
+    — this limits the range of cost-reflective bidirectional tariff structures available
+    and should be factored into regulatory proposals and trial design for the current
+    regulatory period.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: research organisation/university
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages: &id015
+  - 25
+  evidence_excerpt: This limits the ability for DNSPs to offer a symmetrical LRMC
+    charge for consumption and exports below the basic export level until 2034. Ausgrid
+    estimates that this requirement removes the price signal from around 70% of exports
+    that drive its future network costs.
+  confidence_note: 'project_scale_band reconciled to ''demonstration'' from: demonstration
+    (15/24), programmatic/portfolio-level (9/24); proponent_type reconciled to ''research
+    organisation/university'' from: research organisation/university (15/24), network
+    business (6/24), government/public-sector body (3/24)'
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+  markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  source_page_pdf: 25
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49015
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Network tariffs report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Network tariffs report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+    markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-49016
+  source_title: ARENA - Vehicle to Grid - Network tariffs report
+  publish_date: '2024-02-22'
+  project_name: V2G Network Tariffs Study (enX/ARENA)
+  what_happened: The NER regulatory framework for network tariffs requires compliance
+    with pricing principles assessed on a per-network basis, without an explicit AER
+    mandate for national consistency, and allows only a 2% side-constraint on revenue
+    rebalancing between tariff classes per year. This slows the pace of tariff reform
+    and prevents rapid adoption of leading-practice tariff innovations across the
+    NEM.
+  lesson_learnt: Tariff reform processes need to be accelerated — the current 5-year
+    regulatory cycle with 2% annual side constraints is too slow to respond to rapid
+    DER technology uptake, and regulators should explore faster pathways (e.g., expanded
+    trial tariff provisions) to implement technology-aware dynamic pricing within
+    current regulatory control periods.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: research organisation/university
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: EV
+  source_pages: &id016
+  - 8
+  - 25
+  - 78
+  evidence_excerpt: Network tariff reform needs to be accelerated and become more
+    'technology aware'... Innovative approaches to tariff design are needed to unlock
+    the value of DER and greater effort is required to coordinate learning between
+    networks to support the diffusion of leading approaches.
+  confidence_note: 'project_scale_band reconciled to ''demonstration'' from: demonstration
+    (15/24), programmatic/portfolio-level (9/24); proponent_type reconciled to ''research
+    organisation/university'' from: research organisation/university (15/24), network
+    business (6/24), government/public-sector body (3/24)'
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+  markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49016
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Network tariffs report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Network tariffs report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+    markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-49017
+  source_title: ARENA - Vehicle to Grid - Network tariffs report
+  publish_date: '2024-02-22'
+  project_name: V2G Network Tariffs Study (enX/ARENA)
+  what_happened: 'The study found that V2G customer outcomes vary significantly by
+    household load profile: economy users had the lowest savings under most scenarios
+    (e.g., $118/yr additional savings over smart charging under s2) while high-consumption
+    sponge users achieved up to $960/yr. Payback periods for economy users ranged
+    from 3.3 to 21.2 years compared to 2.6 to 7.2 years for sponge users.'
+  lesson_learnt: V2G field trials should recruit a diversity of household consumption
+    types and report outcomes disaggregated by user profile — blanket averages mask
+    very wide variation in customer benefit and payback, and targeting V2G incentives
+    at higher-consumption households will maximise both customer uptake and network
+    value-for-money.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id017
+  - 7
+  - 69
+  - 70
+  evidence_excerpt: This illustrates that the cost effectiveness of V2G varies widely
+    by customer type. Larger users stand to benefit the most, as do customers on more
+    variable and cost reflective energy and network pricing arrangements.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+  markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  source_page_pdf: 70
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49017
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Network tariffs report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Network tariffs report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+    markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: false
+- record_id: ARENA-DLV-49018
+  source_title: ARENA - Vehicle to Grid - Network tariffs report
+  publish_date: '2024-02-22'
+  project_name: V2G Network Tariffs Study (enX/ARENA)
+  what_happened: Spot passthrough scenarios (s5, s6) resulted in significantly higher
+    EV battery throughput — including more grid-imports and export cycles — compared
+    to ToU pricing scenarios, raising concerns about accelerated battery degradation.
+    The model found the hardest-working battery (sponge user, s6) remained in a 30–80%
+    SoC range 90% of the time, which is considered a health-preserving range.
+  lesson_learnt: V2G trials under spot passthrough tariffs should monitor EV battery
+    health metrics and capture the impact of increased cycling throughput on degradation
+    rates — while modelling suggests SoC ranges remain healthy, this needs empirical
+    validation, and vehicle battery warranty conditions need to formally account for
+    V2G operation before mass deployment.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id018
+  - 71
+  - 72
+  - 73
+  evidence_excerpt: Battery discharge increase under the spot passthrough scenarios
+    (s5 & s6) reflecting much greater opportunity for energy arbitrage both through
+    self-consumption and export... Ultimately, vehicle battery warranty conditions
+    will need be formalised to account for V2G operation and these can be applied
+    as a constraint in future modelling.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+  markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  source_page_pdf: 71
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49018
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Network tariffs report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Network tariffs report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+    markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: false
+- record_id: ARENA-DLV-49019
+  source_title: ARENA - Vehicle to Grid - Network tariffs report
+  publish_date: '2024-02-22'
+  project_name: V2G Network Tariffs Study (enX/ARENA)
+  what_happened: The study identified that there is no nationally agreed communications
+    protocol to support enrolment and operation of dynamic network pricing or critical
+    peak pricing at scale, which is listed as a key limitation of otherwise technically
+    superior dynamic tariff approaches.
+  lesson_learnt: Any ARENA-supported V2G scale-up program must be accompanied by investment
+    in standardising the communications infrastructure (protocols for dynamic operating
+    envelopes, HEMS enrolment, and dynamic tariff delivery) — without a national protocol,
+    even technically optimal tariff structures cannot be deployed at scale across
+    multiple network areas.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id019
+  - 81
+  - 82
+  evidence_excerpt: There is currently no nationally agreed communications protocol
+    to support enrolment and operation at scale.
+  confidence_note: 'This limitation appears twice in Appendix A, for both dynamic
+    network prices and critical peak pricing tariff types.; project_scale_band reconciled
+    to ''demonstration'' from: demonstration (15/24), programmatic/portfolio-level
+    (9/24); proponent_type reconciled to ''research organisation/university'' from:
+    research organisation/university (15/24), network business (6/24), government/public-sector
+    body (3/24)'
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+  markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  source_page_pdf: 81
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49019
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Network tariffs report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Network tariffs report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+    markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-49020
+  source_title: ARENA - Vehicle to Grid - Network tariffs report
+  publish_date: '2024-02-22'
+  project_name: V2G Network Tariffs Study (enX/ARENA)
+  what_happened: Modelling found that dynamic network pricing with spot passthrough
+    (s6) reduced all variable network charges to near zero outside critical peak periods
+    for the Ausgrid network, directly reducing the 'transaction cost tax' on wholesale
+    market arbitrage and enabling the economy user — the smallest load profile modelled
+    — to achieve net annual revenue of $95 after paying for all household electricity
+    and EV charging.
+  lesson_learnt: Dynamic network tariff design should explicitly aim to minimise variable
+    network charges outside of critical peak periods to zero — this is not merely
+    a design choice but a material driver of customer economics, particularly for
+    smaller users who would otherwise be priced out of V2G financial viability.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id020
+  - 7
+  - 70
+  - 71
+  evidence_excerpt: One small customer (not shown) was even able to pay for all household
+    load, charge their EV and earn net revenue of $95 in a year... Variable network
+    costs outside of critical peak or trough periods can be viewed as a tax on trade
+    that delivers no economic benefit to individual customers or network users collectively.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+  markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49020
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Network tariffs report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Network tariffs report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+    source_pages: *id020
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+    markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: false
+- record_id: ARENA-DLV-49021
+  source_title: ARENA - Vehicle to Grid - Network tariffs report
+  publish_date: '2024-02-22'
+  project_name: V2G Network Tariffs Study (enX/ARENA)
+  what_happened: The study found that declining direct load control enrolment (falling
+    at 2–3% per year for hot water systems in Energy Queensland's network area) and
+    the inability of controlled load circuits to enable solar self-consumption are
+    reducing the effectiveness of traditional network demand management tools as DER
+    penetration rises.
+  lesson_learnt: Network businesses transitioning DER integration programs away from
+    legacy direct load control should plan for accelerating enrolment decline and
+    ensure that new dynamic tariff or price-signal-based demand response mechanisms
+    are ready to absorb the gap — the decline is structural and is not being offset
+    by new connections.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Energy Queensland is reviewing its controlled load program in
+    response to declining enrolment.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id021
+  - 29
+  - 30
+  evidence_excerpt: The number of hot water systems connected to load control tariffs
+    in existing homes has been declining at a rate of 2-3% per year, and this is not
+    being mitigated by new connections. We understand that, as a result, Energy Queensland
+    is reviewing this measure.
+  confidence_note: 'project_type reconciled to ''DER/customer-side'' from: DER/customer-side
+    (22/24), network/grid (2/24); project_scale_band reconciled to ''demonstration''
+    from: demonstration (15/24), programmatic/portfolio-level (9/24); proponent_type
+    reconciled to ''research organisation/university'' from: research organisation/university
+    (15/24), network business (6/24), government/public-sector body (3/24)'
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+  markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  source_page_pdf: 29
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49021
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Network tariffs report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Network tariffs report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+    source_pages: *id021
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+    markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-49022
+  source_title: ARENA - Vehicle to Grid - Network tariffs report
+  publish_date: '2024-02-22'
+  project_name: V2G Network Tariffs Study (enX/ARENA)
+  what_happened: Field trials are identified as essential to validate the modelling
+    findings of this study, particularly to determine customer and DER technology
+    types that most benefit from spot passthrough and dynamic network tariff arrangements,
+    and to measure instantaneous and intertemporal demand elasticity under real-world
+    conditions.
+  lesson_learnt: Modelling-based findings on V2G tariff performance should not be
+    treated as sufficient evidence for large-scale policy or regulatory decisions
+    — field trials with diverse customer types, real V2G hardware, and real tariff
+    exposure are required to validate demand elasticity assumptions and quantify household-level
+    outcomes before committing to broad tariff reforms.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id022
+  - 7
+  - 8
+  - 77
+  - 78
+  evidence_excerpt: Field trials are needed to validate our modelling results and
+    to determine, more precisely, the customer and DER technology types that can most
+    benefit under spot passthrough and dynamic network tariff arrangements... Outcomes
+    from field trials will be essential in determining instantaneous and intertemporal
+    demand elasticity and to inform models that networks can use to support the use
+    of more targeted incentives without undermining broader network operation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+  markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49022
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Network tariffs report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Network tariffs report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+    source_pages: *id022
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+    markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: false
+- record_id: ARENA-DLV-49023
+  source_title: ARENA - Vehicle to Grid - Network tariffs report
+  publish_date: '2024-02-22'
+  project_name: V2G Network Tariffs Study (enX/ARENA)
+  what_happened: The study found that V2G benefits will primarily accrue to owner-occupied
+    standalone dwellings, leaving apartment dwellers and renters unable to participate
+    in the near term, raising social equity concerns about who captures value from
+    the technology and who cross-subsidises grid costs.
+  lesson_learnt: ARENA-funded V2G programs should include an explicit equity dimension
+    — ensuring network pricing remains cost-reflective is the minimum requirement
+    so that V2G benefits spill over to all electricity customers, not just early adopters;
+    future R&D should also target shared-facility and renter-accessible V2G architectures.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: commercial & market
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id023
+  - 7
+  - 77
+  evidence_excerpt: Unfortunately, the households who stand to gain from V2G are likely
+    to be standalone, owner-occupied dwellings. While future commercial and technical
+    innovation may allow apartment dwellers and renters to benefit, in the meantime
+    social equity can be supported by ensuring network pricing remains 'cost-reflective'
+    such that the net benefits of V2G spill over to all electricity customers.
+  confidence_note: 'project_scale_band reconciled to ''demonstration'' from: demonstration
+    (15/24), programmatic/portfolio-level (9/24)'
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+  markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49023
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Network tariffs report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Network tariffs report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+    source_pages: *id023
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+    markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-49024
+  source_title: ARENA - Vehicle to Grid - Network tariffs report
+  publish_date: '2024-02-22'
+  project_name: V2G Network Tariffs Study (enX/ARENA)
+  what_happened: By 2022, the NEM's regulatory framework for network tariffs had been
+    in operation for eight years since the 2014 Distribution Network Pricing Arrangements
+    rule, yet nearly three-quarters of residential customers remained on non-cost-reflective
+    tariffs. The study attributed slow progress in part to the revenue cap control
+    mechanism applying to all standard control services, which reduces DNSP incentives
+    to drive more efficient tariff uptake.
+  lesson_learnt: Regulatory bodies should consider shifting distribution networks
+    from revenue caps to weighted average price caps (WAPCs) as V2G and price-responsive
+    DER becomes mainstream — under revenue caps, DNSPs have reduced incentives to
+    promote cost-reflective tariff adoption because revenues are guaranteed regardless
+    of how customers are priced.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: grid/system stability
+  source_pages: &id024
+  - 19
+  - 20
+  - 22
+  evidence_excerpt: A revenue cap is generally associated with stable pricing structures
+    to ensure revenue predictability. This may mean networks are less interested in
+    using tariffs (including V2G) to drive efficient behaviour and better network
+    utilisation as its revenues are guaranteed. There is some evidence of this in
+    the lack of customers on cost reflective tariffs.
+  confidence_note: 'project_type reconciled to ''DER/customer-side'' from: DER/customer-side
+    (22/24), network/grid (2/24); project_scale_band reconciled to ''demonstration''
+    from: demonstration (15/24), programmatic/portfolio-level (9/24); proponent_type
+    reconciled to ''research organisation/university'' from: research organisation/university
+    (15/24), network business (6/24), government/public-sector body (3/24)'
+  source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+  project_page_url: null
+  kb_category: Electric vehicles
+  kb_publish_date: 26/02/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+  markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  source_page_pdf: 22
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-49024
+  contributing_source_titles:
+  - ARENA - Vehicle to Grid - Network tariffs report
+  contributing_sources:
+  - source_title: ARENA - Vehicle to Grid - Network tariffs report
+    pdf_url: https://arena.gov.au/assets/2024/02/ARENA-Vehicle-to-Grid-Network-tariffs-report.pdf
+    source_pages: *id024
+    source_url: https://arena.gov.au/knowledge-bank/arena-vehicle-to-grid-network-tariffs-report/
+    markdown_filename: arena_vehicle_to_grid_network_tariffs_report.md
+  arena_category:
+  - Electric vehicles
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.92

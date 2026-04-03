@@ -1,0 +1,2148 @@
+- record_id: ARENA-DLV-5201
+  source_title: Engie - Yuri Renewable Hydrogen to Ammonia - Lessons Learned Report
+  publish_date: 2023-07
+  project_name: Project Yuri Phase 0 – 10MW Green Hydrogen for Ammonia in the Pilbara
+  what_happened: The Energy Management System (EMS) for a complex microgrid integrating
+    solar PV, BESS, synchronous generators, and an electrolyser proved difficult to
+    procure and engineer because very few suppliers have capability to control both
+    generation assets and process equipment simultaneously, and electrolyser OEMs
+    had limited data on how flexible operation affects performance and degradation.
+  lesson_learnt: Treat the EMS as a long-lead item and appoint the EMS supplier as
+    early as possible; structure the engineering and procurement model to minimise
+    supplier interfaces and concentrate expertise on resolving the technical complexity
+    of integrating electrolyser process controls with the power management system.
+  issue_severity: major
+  project_type: multi-technology/hybrid
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: procurement/supply chain
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages:
+  - 4
+  - 21
+  evidence_excerpt: The autonomous control of microgrids with integrated EMS & PMS
+    is relatively novel and few companies have expertise and capability to deliver
+    this control system... EMS providers are experienced in controlling generation
+    assets; however, have limited to no experience controlling process equipment and
+    are generally reluctant to include this in their scope.
+  confidence_note: delay_magnitude not quantified in document; delay_category inferred
+    from long-lead procurement implication rather than an explicit stated delay. Canonical
+    record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/engie-yuri-renewable-hydrogen-to-ammonia-lessons-learned-report/
+  project_page_url: https://arena.gov.au/projects/yuri-renewable-hydrogen-to-ammonia-project/
+  kb_category: Battery storage, Hydrogen energy, Large-scale solar
+  kb_publish_date: 30/11/2023
+  kb_year: '2022'
+  kb_associated_project: Yuri Renewable Hydrogen to Ammonia Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $47.5m
+  total_project_value: $87.13m
+  lead_organisation: Yuri SPV, ENGIE (lead sponsor)
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 14/09/2022
+  location: Karratha, Western Australia
+  project_partners: Yara Pilbara Fertilisers, Department of Jobs, Tourism, Science
+    and Innovation (WA Government), The consortium of T.EN Australia and New Zealand,
+    Monford Group
+  pdf_url: https://arena.gov.au/assets/2023/11/Engie-Yuri-Renewable-Hydrogen-to-Ammonia-lessons-learned-report.pdf
+  markdown_filename: engie_yuri_renewable_hydrogen_to_ammonia_lessons_learned_report.md
+  source_page_pdf: 4
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-5201
+  - ARENA-DLV-15923
+  contributing_source_titles:
+  - Engie - Yuri Renewable Hydrogen to Ammonia - Lessons Learned Report
+  - Yuri Renewable Hydrogen to Ammonia Project - Project Technology & Market Report
+  contributing_sources:
+  - source_title: Engie - Yuri Renewable Hydrogen to Ammonia - Lessons Learned Report
+    pdf_url: https://arena.gov.au/assets/2023/11/Engie-Yuri-Renewable-Hydrogen-to-Ammonia-lessons-learned-report.pdf
+    source_pages:
+    - 4
+    source_url: https://arena.gov.au/knowledge-bank/engie-yuri-renewable-hydrogen-to-ammonia-lessons-learned-report/
+    markdown_filename: engie_yuri_renewable_hydrogen_to_ammonia_lessons_learned_report.md
+  - source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology
+      & Market Report
+    pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+    source_pages:
+    - 21
+    source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+    markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  arena_category:
+  - Battery storage
+  - Hydrogen
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: integration failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-15910
+  source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology &
+    Market Report
+  publish_date: 2025-06
+  project_name: Yuri Renewable Hydrogen to Ammonia Project
+  what_happened: The harmonic filter required a 9–12 month procurement lead time,
+    but could not be ordered until upstream harmonic studies were completed, which
+    in turn required all major equipment (electrolyser rectifiers, PV inverters, BESS
+    PCS) to be selected and vendor software models to be available — creating a long
+    in-series dependency chain that was not adequately reflected in the initial schedule.
+  lesson_learnt: Map the harmonic filter procurement dependency chain (major equipment
+    selection → vendor software models → harmonic studies → filter sizing → procurement)
+    at the start of detailed engineering and place it on the critical path — the 9–12
+    month lead time combined with upstream study dependencies can add over 18 months
+    to the schedule if not identified early.
+  issue_severity: moderate
+  project_type: multi-technology/hybrid
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: procurement/supply chain
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: execution & logistics
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages:
+  - 4
+  - 5
+  - 24
+  evidence_excerpt: The lead time for a harmonic filter is approximately 9-12 months
+    from placement of the order to delivery ex-works. Prior to the placement of the
+    purchase order, detailed harmonic analyses are required for the sizing and design
+    of the harmonic filter... Consequently, sufficient time must be allocated in the
+    schedule to allow for the in-series duration of the selection of major equipment,
+    the supply of the associated software models, performance of the harmonic studies
+    to size the filter, and ultimately the filter procurement process.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+  project_page_url: https://arena.gov.au/projects/yuri-renewable-hydrogen-to-ammonia-project/
+  kb_category: Battery storage, Hydrogen energy, Large-scale solar
+  kb_publish_date: 30/07/2025
+  kb_year: '2022'
+  kb_associated_project: Yuri Renewable Hydrogen to Ammonia Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $47.5m
+  total_project_value: $87.13m
+  lead_organisation: Yuri SPV, ENGIE (lead sponsor)
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 14/09/2022
+  location: Karratha, Western Australia
+  project_partners: Yara Pilbara Fertilisers, Department of Jobs, Tourism, Science
+    and Innovation (WA Government), The consortium of T.EN Australia and New Zealand,
+    Monford Group
+  pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+  markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  source_page_pdf: 24
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-5202
+  - ARENA-DLV-15910
+  contributing_source_titles:
+  - Engie - Yuri Renewable Hydrogen to Ammonia - Lessons Learned Report
+  - Yuri Renewable Hydrogen to Ammonia Project - Project Technology & Market Report
+  contributing_sources:
+  - source_title: Engie - Yuri Renewable Hydrogen to Ammonia - Lessons Learned Report
+    pdf_url: https://arena.gov.au/assets/2023/11/Engie-Yuri-Renewable-Hydrogen-to-Ammonia-lessons-learned-report.pdf
+    source_pages:
+    - 4
+    - 5
+    source_url: https://arena.gov.au/knowledge-bank/engie-yuri-renewable-hydrogen-to-ammonia-lessons-learned-report/
+    markdown_filename: engie_yuri_renewable_hydrogen_to_ammonia_lessons_learned_report.md
+  - source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology
+      & Market Report
+    pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+    source_pages:
+    - 24
+    source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+    markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  arena_category:
+  - Battery storage
+  - Hydrogen
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-15904
+  source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology &
+    Market Report
+  publish_date: 2025-06
+  project_name: Yuri Renewable Hydrogen to Ammonia Project
+  what_happened: Overseas equipment vendors and sub-vendors repeatedly failed to comply
+    with Australian standards (ASME, AS3000, EEHA), causing delays and rework during
+    engineering, procurement, and equipment assembly. The hydrogen compressor supplier
+    had to be replaced several months into the project.
+  lesson_learnt: Conduct thorough due diligence on electrolyser OEMs to identify gaps
+    in Australian standards compliance and local support capacity; assess what supplemental
+    in-country resources are needed for engineering, fabrication, and QA/QC; and independently
+    validate OEM delivery schedules before contract award.
+  issue_severity: major
+  project_type: multi-technology/hybrid
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: procurement
+  proponent_type: utility/energy retailer
+  delay_category: procurement/supply chain
+  failure_mode: execution & logistics
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: Equipment was sourced from alternative vendors; the hydrogen
+    compressor supplier was replaced several months into the project to achieve standards
+    compliance.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages:
+  - 5
+  - 25
+  evidence_excerpt: Overseas vendors and sub-vendors' compliance with ASME code, AS3000
+    (Australian Standard for Electrical Installations) and EEHA (Electrical Equipment
+    in Hazardous Areas) has been a major challenge for this project, resulting in
+    delays during engineering, procurement, and equipment assembly... the hydrogen
+    compressor supplier had to be changed several months into the project as the original
+    vendor was not able to supply the equipment in accordance with AU and ASME standards.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+  project_page_url: https://arena.gov.au/projects/yuri-renewable-hydrogen-to-ammonia-project/
+  kb_category: Battery storage, Hydrogen energy, Large-scale solar
+  kb_publish_date: 30/07/2025
+  kb_year: '2022'
+  kb_associated_project: Yuri Renewable Hydrogen to Ammonia Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $47.5m
+  total_project_value: $87.13m
+  lead_organisation: Yuri SPV, ENGIE (lead sponsor)
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 14/09/2022
+  location: Karratha, Western Australia
+  project_partners: Yara Pilbara Fertilisers, Department of Jobs, Tourism, Science
+    and Innovation (WA Government), The consortium of T.EN Australia and New Zealand,
+    Monford Group
+  pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+  markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  source_page_pdf: 25
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-5203
+  - ARENA-DLV-15904
+  contributing_source_titles:
+  - Engie - Yuri Renewable Hydrogen to Ammonia - Lessons Learned Report
+  - Yuri Renewable Hydrogen to Ammonia Project - Project Technology & Market Report
+  contributing_sources:
+  - source_title: Engie - Yuri Renewable Hydrogen to Ammonia - Lessons Learned Report
+    pdf_url: https://arena.gov.au/assets/2023/11/Engie-Yuri-Renewable-Hydrogen-to-Ammonia-lessons-learned-report.pdf
+    source_pages:
+    - 5
+    source_url: https://arena.gov.au/knowledge-bank/engie-yuri-renewable-hydrogen-to-ammonia-lessons-learned-report/
+    markdown_filename: engie_yuri_renewable_hydrogen_to_ammonia_lessons_learned_report.md
+  - source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology
+      & Market Report
+    pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+    source_pages:
+    - 25
+    source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+    markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  arena_category:
+  - Battery storage
+  - Hydrogen
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-5204
+  source_title: Engie - Yuri Renewable Hydrogen to Ammonia - Lessons Learned Report
+  publish_date: 2023-07
+  project_name: Project Yuri Phase 0 – 10MW Green Hydrogen for Ammonia in the Pilbara
+  what_happened: Limited solar PV operating data for the Pilbara region meant soiling
+    loss assumptions used in project development were not well-supported by local
+    evidence, introducing uncertainty in energy yield forecasts and O&M planning for
+    panel cleaning.
+  lesson_learnt: For projects in data-sparse locations such as the Pilbara, initiate
+    a soiling monitoring campaign as early as possible in the development phase so
+    that soiling loss assumptions and panel cleaning strategies are informed by site-specific
+    measurements before final design is locked in.
+  issue_severity: moderate
+  project_type: multi-technology/hybrid
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: concept/feasibility
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id001
+  - 5
+  - 6
+  evidence_excerpt: There is a limited number of solar photovoltaic (PV) plants in
+    the Pilbara. Consequently, little data is available on soiling losses in the region...
+    it is recommended to perform soiling monitoring campaign as early as possible
+    during development phase to inform both soiling losses and possible solutions.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/engie-yuri-renewable-hydrogen-to-ammonia-lessons-learned-report/
+  project_page_url: https://arena.gov.au/projects/yuri-renewable-hydrogen-to-ammonia-project/
+  kb_category: Battery storage, Hydrogen energy, Large-scale solar
+  kb_publish_date: 30/11/2023
+  kb_year: '2022'
+  kb_associated_project: Yuri Renewable Hydrogen to Ammonia Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $47.5m
+  total_project_value: $87.13m
+  lead_organisation: Yuri SPV, ENGIE (lead sponsor)
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 14/09/2022
+  location: Karratha, Western Australia
+  project_partners: Yara Pilbara Fertilisers, Department of Jobs, Tourism, Science
+    and Innovation (WA Government), The consortium of T.EN Australia and New Zealand,
+    Monford Group
+  pdf_url: https://arena.gov.au/assets/2023/11/Engie-Yuri-Renewable-Hydrogen-to-Ammonia-lessons-learned-report.pdf
+  markdown_filename: engie_yuri_renewable_hydrogen_to_ammonia_lessons_learned_report.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-5204
+  contributing_source_titles:
+  - Engie - Yuri Renewable Hydrogen to Ammonia - Lessons Learned Report
+  contributing_sources:
+  - source_title: Engie - Yuri Renewable Hydrogen to Ammonia - Lessons Learned Report
+    pdf_url: https://arena.gov.au/assets/2023/11/Engie-Yuri-Renewable-Hydrogen-to-Ammonia-lessons-learned-report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/engie-yuri-renewable-hydrogen-to-ammonia-lessons-learned-report/
+    markdown_filename: engie_yuri_renewable_hydrogen_to_ammonia_lessons_learned_report.md
+  arena_category:
+  - Battery storage
+  - Hydrogen
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-15916
+  source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology &
+    Market Report
+  publish_date: 2025-06
+  project_name: Yuri Renewable Hydrogen to Ammonia Project
+  what_happened: There was no clear regulatory position from DWER on whether hydrogen
+    production facilities require Works Approval under environmental protection regulations
+    (Part V, Schedule 1 – Category 31 Chemical Manufacturing), as these regulations
+    were issued in 1987 and had not been updated for hydrogen projects.
+  lesson_learnt: When deploying new technologies such as BESS in jurisdictions with
+    regulatory gaps, proactively identify those gaps early and engage regulators collaboratively
+    to develop workable compliance pathways; referencing equivalent standards from
+    other Australian states can accelerate resolution where local regulations are
+    absent.
+  issue_severity: moderate
+  project_type: multi-technology/hybrid
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Project team collaborated with regulatory authorities to develop
+    BESS fire protection requirements, drawing on regulations from other Australian
+    states where WA-specific rules were absent.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 6
+  - 35
+  evidence_excerpt: There is no clear position from DWER on whether hydrogen production
+    facilities are subject to approvals of the environmental protection regulations,
+    specifically Part V, schedule 1 – Category 31 Chemical manufacturing. These regulations
+    were issued in 1987 and not updated for hydrogen projects. While this did not
+    ultimately impact the schedule, the project decided on a conservative approach
+    to apply for the Works Approval.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+  project_page_url: https://arena.gov.au/projects/yuri-renewable-hydrogen-to-ammonia-project/
+  kb_category: Battery storage, Hydrogen energy, Large-scale solar
+  kb_publish_date: 30/07/2025
+  kb_year: '2022'
+  kb_associated_project: Yuri Renewable Hydrogen to Ammonia Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $47.5m
+  total_project_value: $87.13m
+  lead_organisation: Yuri SPV, ENGIE (lead sponsor)
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 14/09/2022
+  location: Karratha, Western Australia
+  project_partners: Yara Pilbara Fertilisers, Department of Jobs, Tourism, Science
+    and Innovation (WA Government), The consortium of T.EN Australia and New Zealand,
+    Monford Group
+  pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+  markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  source_page_pdf: 35
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-5205
+  - ARENA-DLV-15916
+  contributing_source_titles:
+  - Engie - Yuri Renewable Hydrogen to Ammonia - Lessons Learned Report
+  - Yuri Renewable Hydrogen to Ammonia Project - Project Technology & Market Report
+  contributing_sources:
+  - source_title: Engie - Yuri Renewable Hydrogen to Ammonia - Lessons Learned Report
+    pdf_url: https://arena.gov.au/assets/2023/11/Engie-Yuri-Renewable-Hydrogen-to-Ammonia-lessons-learned-report.pdf
+    source_pages:
+    - 6
+    source_url: https://arena.gov.au/knowledge-bank/engie-yuri-renewable-hydrogen-to-ammonia-lessons-learned-report/
+    markdown_filename: engie_yuri_renewable_hydrogen_to_ammonia_lessons_learned_report.md
+  - source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology
+      & Market Report
+    pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+    source_pages:
+    - 35
+    source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+    markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  arena_category:
+  - Battery storage
+  - Hydrogen
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.95
+- record_id: ARENA-DLV-5206
+  source_title: Engie - Yuri Renewable Hydrogen to Ammonia - Lessons Learned Report
+  publish_date: 2023-07
+  project_name: Project Yuri Phase 0 – 10MW Green Hydrogen for Ammonia in the Pilbara
+  what_happened: In the cyclone-prone Pilbara, larger solar PV panels required lower
+    tilt angles than smaller panels to withstand wind loads, reducing power generation
+    output relative to what would have been achievable with a standard tilt optimised
+    for energy yield.
+  lesson_learnt: In cyclone-prone regions, conduct panel pre-qualification during
+    conceptual design by holistically assessing PV plant design including tilt angle,
+    panel size and orientation, layout, and structural certifications, to avoid late-stage
+    redesign that sacrifices energy yield for structural compliance.
+  issue_severity: moderate
+  project_type: multi-technology/hybrid
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id002
+  - 6
+  - 7
+  evidence_excerpt: Large solar panels magnify forces required to be sustained by
+    the whole panel system, particular in cyclone regions. As a result, larger panels
+    may need to be installed at lower tilt angles than smaller panels, which reduces
+    power generation.
+  confidence_note: transferability rated narrow because the finding is specific to
+    cyclone-prone regions and large-format panel configurations.
+  source_url: https://arena.gov.au/knowledge-bank/engie-yuri-renewable-hydrogen-to-ammonia-lessons-learned-report/
+  project_page_url: https://arena.gov.au/projects/yuri-renewable-hydrogen-to-ammonia-project/
+  kb_category: Battery storage, Hydrogen energy, Large-scale solar
+  kb_publish_date: 30/11/2023
+  kb_year: '2022'
+  kb_associated_project: Yuri Renewable Hydrogen to Ammonia Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $47.5m
+  total_project_value: $87.13m
+  lead_organisation: Yuri SPV, ENGIE (lead sponsor)
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 14/09/2022
+  location: Karratha, Western Australia
+  project_partners: Yara Pilbara Fertilisers, Department of Jobs, Tourism, Science
+    and Innovation (WA Government), The consortium of T.EN Australia and New Zealand,
+    Monford Group
+  pdf_url: https://arena.gov.au/assets/2023/11/Engie-Yuri-Renewable-Hydrogen-to-Ammonia-lessons-learned-report.pdf
+  markdown_filename: engie_yuri_renewable_hydrogen_to_ammonia_lessons_learned_report.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-5206
+  contributing_source_titles:
+  - Engie - Yuri Renewable Hydrogen to Ammonia - Lessons Learned Report
+  contributing_sources:
+  - source_title: Engie - Yuri Renewable Hydrogen to Ammonia - Lessons Learned Report
+    pdf_url: https://arena.gov.au/assets/2023/11/Engie-Yuri-Renewable-Hydrogen-to-Ammonia-lessons-learned-report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/engie-yuri-renewable-hydrogen-to-ammonia-lessons-learned-report/
+    markdown_filename: engie_yuri_renewable_hydrogen_to_ammonia_lessons_learned_report.md
+  arena_category:
+  - Battery storage
+  - Hydrogen
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-15903
+  source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology &
+    Market Report
+  publish_date: 2025-06
+  project_name: Yuri Renewable Hydrogen to Ammonia Project
+  what_happened: The WA EPA approval process was initially estimated at 12 months
+    but took 24 months, delaying the project's ability to make key commitments and
+    negatively affecting the overall project schedule during 2021 and 2022.
+  lesson_learnt: Build materially longer permitting timelines into project schedules
+    for Australian projects, particularly where environmental approvals involve community
+    consultation and cultural heritage assessments; where possible, select development
+    areas with limited environmental or cultural sensitivity to reduce approval complexity.
+  issue_severity: major
+  project_type: multi-technology/hybrid
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: The WA government's JTSI assigned a dedicated officer to follow
+    up the Yuri project's approval processes under the Lead Agency Framework, and
+    permits were ultimately obtained.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages:
+  - 7
+  - 34
+  - 35
+  - 37
+  evidence_excerpt: The EPA approval timeline was initially estimated at around 12
+    months but ended up taking 24 months... The prolonged approval delayed the project's
+    ability to make key commitments, thus having a negative effect on the overall
+    project schedule during 2021 and 2022.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+  project_page_url: https://arena.gov.au/projects/yuri-renewable-hydrogen-to-ammonia-project/
+  kb_category: Battery storage, Hydrogen energy, Large-scale solar
+  kb_publish_date: 30/07/2025
+  kb_year: '2022'
+  kb_associated_project: Yuri Renewable Hydrogen to Ammonia Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $47.5m
+  total_project_value: $87.13m
+  lead_organisation: Yuri SPV, ENGIE (lead sponsor)
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 14/09/2022
+  location: Karratha, Western Australia
+  project_partners: Yara Pilbara Fertilisers, Department of Jobs, Tourism, Science
+    and Innovation (WA Government), The consortium of T.EN Australia and New Zealand,
+    Monford Group
+  pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+  markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-5207
+  - ARENA-DLV-15903
+  contributing_source_titles:
+  - Engie - Yuri Renewable Hydrogen to Ammonia - Lessons Learned Report
+  - Yuri Renewable Hydrogen to Ammonia Project - Project Technology & Market Report
+  contributing_sources:
+  - source_title: Engie - Yuri Renewable Hydrogen to Ammonia - Lessons Learned Report
+    pdf_url: https://arena.gov.au/assets/2023/11/Engie-Yuri-Renewable-Hydrogen-to-Ammonia-lessons-learned-report.pdf
+    source_pages:
+    - 7
+    source_url: https://arena.gov.au/knowledge-bank/engie-yuri-renewable-hydrogen-to-ammonia-lessons-learned-report/
+    markdown_filename: engie_yuri_renewable_hydrogen_to_ammonia_lessons_learned_report.md
+  - source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology
+      & Market Report
+    pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+    source_pages:
+    - 34
+    - 35
+    - 37
+    source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+    markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  arena_category:
+  - Battery storage
+  - Hydrogen
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  failure_mode_confidence: 0.95
+- record_id: ARENA-DLV-5208
+  source_title: Engie - Yuri Renewable Hydrogen to Ammonia - Lessons Learned Report
+  publish_date: 2023-07
+  project_name: Project Yuri Phase 0 – 10MW Green Hydrogen for Ammonia in the Pilbara
+  what_happened: Community and Traditional Owner consultation for the Yuri project
+    was supported by Yara Pilbara's long-standing, relationship-based engagement with
+    the Murujuga Aboriginal Corporation and surrounding communities, built through
+    years of residential presence, regular informal engagement, and transparency including
+    facility tours — avoiding the transactional, fly-in/fly-out engagement approach.
+  lesson_learnt: Social licence for new projects co-located with established industrial
+    operators is most effectively secured by inheriting and reinforcing long-term,
+    trust-based community relationships rather than initiating project-specific consultation
+    in isolation; residential presence, transparency, and ongoing informal engagement
+    are more effective than scheduled formal meetings alone.
+  issue_severity: none
+  project_type: multi-technology/hybrid
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: hydrogen
+  source_pages:
+  - 7
+  - 8
+  - 35
+  - 36
+  evidence_excerpt: Yara's approach to community engagement is relationship-based
+    rather than transactional, with many years devoted to building mutual respect
+    and trust... Yara's operational team is fully residential and does not use fly-in/fly-out,
+    which allows for sustained and informal engagement with stakeholders at all levels
+    of the community almost daily.
+  confidence_note: issue_severity set to none as this record documents a successful
+    practice rather than a failure; outcome_class set to successful demonstration
+    accordingly. Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/engie-yuri-renewable-hydrogen-to-ammonia-lessons-learned-report/
+  project_page_url: https://arena.gov.au/projects/yuri-renewable-hydrogen-to-ammonia-project/
+  kb_category: Battery storage, Hydrogen energy, Large-scale solar
+  kb_publish_date: 30/11/2023
+  kb_year: '2022'
+  kb_associated_project: Yuri Renewable Hydrogen to Ammonia Project
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $47.5m
+  total_project_value: $87.13m
+  lead_organisation: Yuri SPV, ENGIE (lead sponsor)
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 14/09/2022
+  location: Karratha, Western Australia
+  project_partners: Yara Pilbara Fertilisers, Department of Jobs, Tourism, Science
+    and Innovation (WA Government), The consortium of T.EN Australia and New Zealand,
+    Monford Group
+  pdf_url: https://arena.gov.au/assets/2023/11/Engie-Yuri-Renewable-Hydrogen-to-Ammonia-lessons-learned-report.pdf
+  markdown_filename: engie_yuri_renewable_hydrogen_to_ammonia_lessons_learned_report.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-5208
+  - ARENA-DLV-15918
+  contributing_source_titles:
+  - Engie - Yuri Renewable Hydrogen to Ammonia - Lessons Learned Report
+  - Yuri Renewable Hydrogen to Ammonia Project - Project Technology & Market Report
+  contributing_sources:
+  - source_title: Engie - Yuri Renewable Hydrogen to Ammonia - Lessons Learned Report
+    pdf_url: https://arena.gov.au/assets/2023/11/Engie-Yuri-Renewable-Hydrogen-to-Ammonia-lessons-learned-report.pdf
+    source_pages:
+    - 7
+    - 8
+    source_url: https://arena.gov.au/knowledge-bank/engie-yuri-renewable-hydrogen-to-ammonia-lessons-learned-report/
+    markdown_filename: engie_yuri_renewable_hydrogen_to_ammonia_lessons_learned_report.md
+  - source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology
+      & Market Report
+    pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+    source_pages:
+    - 35
+    - 36
+    source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+    markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  arena_category:
+  - Battery storage
+  - Hydrogen
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: false
+- record_id: ARENA-DLV-15901
+  source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology &
+    Market Report
+  publish_date: 2025-06
+  project_name: Yuri Renewable Hydrogen to Ammonia Project
+  what_happened: The overall project budget increased from A$87 million to A$123 million,
+    a 41% cost increase, due to underestimation of delays, project management requirements,
+    and procurement costs.
+  lesson_learnt: Conduct detailed financial planning and risk assessments that explicitly
+    account for FOAK complexity, international supply chain compliance costs, and
+    regulatory approval durations — budget contingency for hydrogen FOAK projects
+    should be materially higher than conventional projects.
+  issue_severity: major
+  project_type: industrial decarbonisation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: close-out/post-project review
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Secured diverse funding sources including ARENA ($47.5M) and
+    WA Renewable Hydrogen Fund ($5M) to help absorb the cost increase.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: hydrogen
+  source_pages: &id003
+  - 4
+  evidence_excerpt: The overall project budget increased from A$87 million to A$123
+    million due to underestimation of delays, project management requirements and
+    procurement costs.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+  project_page_url: https://arena.gov.au/projects/yuri-renewable-hydrogen-to-ammonia-project/
+  kb_category: Battery storage, Hydrogen energy, Large-scale solar
+  kb_publish_date: 30/07/2025
+  kb_year: '2022'
+  kb_associated_project: Yuri Renewable Hydrogen to Ammonia Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $47.5m
+  total_project_value: $87.13m
+  lead_organisation: Yuri SPV, ENGIE (lead sponsor)
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 14/09/2022
+  location: Karratha, Western Australia
+  project_partners: Yara Pilbara Fertilisers, Department of Jobs, Tourism, Science
+    and Innovation (WA Government), The consortium of T.EN Australia and New Zealand,
+    Monford Group
+  pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+  markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-15901
+  contributing_source_titles:
+  - Yuri Renewable Hydrogen to Ammonia Project - Project Technology & Market Report
+  contributing_sources:
+  - source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology
+      & Market Report
+    pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+    markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  arena_category:
+  - Battery storage
+  - Hydrogen
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  lifecycle_phase_original: variation/re-scope
+  failure_mode_v2: cost overrun
+  secondary_failure_mode_v2: schedule slippage
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-15902
+  source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology &
+    Market Report
+  publish_date: 2025-06
+  project_name: Yuri Renewable Hydrogen to Ammonia Project
+  what_happened: The project schedule grew from 19 months to 33 months (a 14-month
+    extension) due to multiple compounding factors including engineering rework, vendor
+    delays, construction underestimation, and EPA approval overruns.
+  lesson_learnt: FOAK hydrogen projects should plan for schedule durations approximately
+    double the initial estimate; build explicit contingency for engineering rework
+    from international vendors, compliance gaps, and regulatory approvals — each of
+    which independently caused multi-month delays on this project.
+  issue_severity: major
+  project_type: industrial decarbonisation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: construction/installation
+  proponent_type: utility/energy retailer
+  delay_category: procurement/supply chain
+  failure_mode: poor scoping
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: regulatory & approvals
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: 1-3 years
+  technology_domain: hydrogen
+  source_pages: &id004
+  - 37
+  evidence_excerpt: The original schedule proposed a total duration of 19 months from
+    Notice to Proceed to Provisional Completion. Towards the end of the engineering
+    phase, the forecast schedule was updated to 33 months. The 14 months added to
+    the schedule duration were due to multiple factors.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+  project_page_url: https://arena.gov.au/projects/yuri-renewable-hydrogen-to-ammonia-project/
+  kb_category: Battery storage, Hydrogen energy, Large-scale solar
+  kb_publish_date: 30/07/2025
+  kb_year: '2022'
+  kb_associated_project: Yuri Renewable Hydrogen to Ammonia Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $47.5m
+  total_project_value: $87.13m
+  lead_organisation: Yuri SPV, ENGIE (lead sponsor)
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 14/09/2022
+  location: Karratha, Western Australia
+  project_partners: Yara Pilbara Fertilisers, Department of Jobs, Tourism, Science
+    and Innovation (WA Government), The consortium of T.EN Australia and New Zealand,
+    Monford Group
+  pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+  markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  source_page_pdf: 37
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-15902
+  contributing_source_titles:
+  - Yuri Renewable Hydrogen to Ammonia Project - Project Technology & Market Report
+  contributing_sources:
+  - source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology
+      & Market Report
+    pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+    markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  arena_category:
+  - Battery storage
+  - Hydrogen
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-15905
+  source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology &
+    Market Report
+  publish_date: 2025-06
+  project_name: Yuri Renewable Hydrogen to Ammonia Project
+  what_happened: Lead times communicated by hydrogen equipment suppliers during tendering
+    were overly optimistic and did not account for design verification, adaptation
+    to Australian standards, or flexible operation requirements, causing repeated
+    schedule slippage across multiple equipment packages.
+  lesson_learnt: Treat hydrogen equipment vendor lead times as indicative only and
+    add explicit contingency for design verification, Australian standards adaptation,
+    and flexible/cyclic operation requirements — budget at least 50% additional time
+    over vendor-stated lead times for FOAK hydrogen projects.
+  issue_severity: major
+  project_type: industrial decarbonisation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: procurement
+  proponent_type: utility/energy retailer
+  delay_category: procurement/supply chain
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages: &id005
+  - 25
+  evidence_excerpt: The lead times communicated by the hydrogen equipment suppliers
+    during the tendering phase were overly optimistic and did not appropriately consider
+    contingencies for design verification, adaptation to Australian standards and
+    flexible operation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+  project_page_url: https://arena.gov.au/projects/yuri-renewable-hydrogen-to-ammonia-project/
+  kb_category: Battery storage, Hydrogen energy, Large-scale solar
+  kb_publish_date: 30/07/2025
+  kb_year: '2022'
+  kb_associated_project: Yuri Renewable Hydrogen to Ammonia Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $47.5m
+  total_project_value: $87.13m
+  lead_organisation: Yuri SPV, ENGIE (lead sponsor)
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 14/09/2022
+  location: Karratha, Western Australia
+  project_partners: Yara Pilbara Fertilisers, Department of Jobs, Tourism, Science
+    and Innovation (WA Government), The consortium of T.EN Australia and New Zealand,
+    Monford Group
+  pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+  markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  source_page_pdf: 25
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-15905
+  contributing_source_titles:
+  - Yuri Renewable Hydrogen to Ammonia Project - Project Technology & Market Report
+  contributing_sources:
+  - source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology
+      & Market Report
+    pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+    markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  arena_category:
+  - Battery storage
+  - Hydrogen
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-15906
+  source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology &
+    Market Report
+  publish_date: 2025-06
+  project_name: Yuri Renewable Hydrogen to Ammonia Project
+  what_happened: International OEM vendors repeatedly failed to cascade project specification
+    requirements to their sub-vendors, particularly requirements for automatic and
+    cyclic operations, leading to significant delays and rework. Equipment designed
+    for continuous operation was delivered without provision for intermittent service.
+  lesson_learnt: Allocate dedicated QAQC and package management personnel based overseas
+    to monitor international vendors and their sub-vendor chains — contract commitments
+    on quality and schedule are insufficient without active on-the-ground oversight
+    at the sub-vendor level.
+  issue_severity: major
+  project_type: industrial decarbonisation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: procurement
+  proponent_type: utility/energy retailer
+  delay_category: procurement/supply chain
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages: &id006
+  - 25
+  evidence_excerpt: Throughout the project, it was discovered on numerous occasions
+    that Project specification requirements were often not cascaded to sub-vendors
+    of international suppliers... In general, it was observed that overseas vendors
+    were not always efficient at managing their sub-vendors and enforcing strict schedule
+    and quality control measures. This led to significant delays and rework. While
+    commitments on quality and schedule were included in the supply contracts, these
+    were often not respected.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+  project_page_url: https://arena.gov.au/projects/yuri-renewable-hydrogen-to-ammonia-project/
+  kb_category: Battery storage, Hydrogen energy, Large-scale solar
+  kb_publish_date: 30/07/2025
+  kb_year: '2022'
+  kb_associated_project: Yuri Renewable Hydrogen to Ammonia Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $47.5m
+  total_project_value: $87.13m
+  lead_organisation: Yuri SPV, ENGIE (lead sponsor)
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 14/09/2022
+  location: Karratha, Western Australia
+  project_partners: Yara Pilbara Fertilisers, Department of Jobs, Tourism, Science
+    and Innovation (WA Government), The consortium of T.EN Australia and New Zealand,
+    Monford Group
+  pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+  markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  source_page_pdf: 25
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-15906
+  contributing_source_titles:
+  - Yuri Renewable Hydrogen to Ammonia Project - Project Technology & Market Report
+  contributing_sources:
+  - source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology
+      & Market Report
+    pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+    markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  arena_category:
+  - Battery storage
+  - Hydrogen
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-15907
+  source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology &
+    Market Report
+  publish_date: 2025-06
+  project_name: Yuri Renewable Hydrogen to Ammonia Project
+  what_happened: The alkaline electrolyser OEM (Peric) had very limited experience
+    with flexible/intermittent operating conditions driven by variable renewable energy,
+    causing significant engineering effort and delays in developing control system
+    logic, operating procedures, daily start/stop sequencing, and de-pressurisation
+    processes.
+  lesson_learnt: During the electrolyser tender phase, explicitly qualify vendors
+    on flexible/intermittent renewable operation experience and require detailed responses
+    on daily start-up/shutdown sequences, ramp rates, and de-pressurisation procedures
+    — then allocate substantial schedule margin during engineering and commissioning
+    to close any identified gaps.
+  issue_severity: major
+  project_type: industrial decarbonisation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated technical assumptions
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: execution & logistics
+  intervention_note: Yuri outsourced pressure vessel fatigue and pipe stress analysis
+    to third parties when the OEM could not perform these calculations in-house, and
+    added variable speed drives to manage lye flow at reduced loads.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages:
+  - 23
+  - 24
+  - 37
+  evidence_excerpt: The electrolyser OEM has only very limited experience in flexible
+    operating conditions. As such, it has been very challenging for the OEM to understand
+    and estimate durations for starting the plant each day, ramping up the electrolyser,
+    and ultimately producing hydrogen at specification... This has caused some delay
+    in the development of the control system logic and operating procedures. The lack
+    of knowledge on these issues is not unique to the selected OEM and can be attributed
+    to the lack of operating experience with intermittent generation from renewable
+    sources.
+  confidence_note: Canonical record merged from 2 source records across 1 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+  project_page_url: https://arena.gov.au/projects/yuri-renewable-hydrogen-to-ammonia-project/
+  kb_category: Battery storage, Hydrogen energy, Large-scale solar
+  kb_publish_date: 30/07/2025
+  kb_year: '2022'
+  kb_associated_project: Yuri Renewable Hydrogen to Ammonia Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $47.5m
+  total_project_value: $87.13m
+  lead_organisation: Yuri SPV, ENGIE (lead sponsor)
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 14/09/2022
+  location: Karratha, Western Australia
+  project_partners: Yara Pilbara Fertilisers, Department of Jobs, Tourism, Science
+    and Innovation (WA Government), The consortium of T.EN Australia and New Zealand,
+    Monford Group
+  pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+  markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  source_page_pdf: 24
+  corroboration_count: 2
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-15907
+  - ARENA-DLV-15925
+  contributing_source_titles:
+  - Yuri Renewable Hydrogen to Ammonia Project - Project Technology & Market Report
+  contributing_sources:
+  - source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology
+      & Market Report
+    pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+    source_pages:
+    - 23
+    - 24
+    source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+    markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  arena_category:
+  - Battery storage
+  - Hydrogen
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-15908
+  source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology &
+    Market Report
+  publish_date: 2025-06
+  project_name: Yuri Renewable Hydrogen to Ammonia Project
+  what_happened: Daily on/off pressure cycling of the alkaline electrolyser and associated
+    hydrogen equipment — a consequence of solar-driven intermittent operation — necessitated
+    pressure vessel fatigue and pipe stress analyses that the electrolyser OEM could
+    not perform in-house, requiring third-party outsourcing late in the project.
+  lesson_learnt: For solar-coupled alkaline electrolyser plants, commission independent
+    pressure vessel fatigue and pipe stress analysis early in the engineering phase
+    — do not rely on the OEM to perform this work, as existing vendors lack the in-house
+    capability for cyclic operation analysis.
+  issue_severity: moderate
+  project_type: industrial decarbonisation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: data/validation/testing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: execution & logistics
+  intervention_note: Yuri outsourced pressure vessel fatigue and pipe stress analysis
+    to third-party specialists when the OEM could not perform these calculations in-house.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages: &id007
+  - 23
+  evidence_excerpt: The daily on/off switching subjects the electrolyser and associated
+    hydrogen equipment to pressure cycles, necessitating an increased focus on pressure
+    vessel fatigue and pipe stress analysis. The electrolyser OEM did not have the
+    ability to perform these calculations in-house and Yuri had to outsource much
+    of this scope to 3rd parties late in the project.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+  project_page_url: https://arena.gov.au/projects/yuri-renewable-hydrogen-to-ammonia-project/
+  kb_category: Battery storage, Hydrogen energy, Large-scale solar
+  kb_publish_date: 30/07/2025
+  kb_year: '2022'
+  kb_associated_project: Yuri Renewable Hydrogen to Ammonia Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $47.5m
+  total_project_value: $87.13m
+  lead_organisation: Yuri SPV, ENGIE (lead sponsor)
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 14/09/2022
+  location: Karratha, Western Australia
+  project_partners: Yara Pilbara Fertilisers, Department of Jobs, Tourism, Science
+    and Innovation (WA Government), The consortium of T.EN Australia and New Zealand,
+    Monford Group
+  pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+  markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  source_page_pdf: 23
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-15908
+  contributing_source_titles:
+  - Yuri Renewable Hydrogen to Ammonia Project - Project Technology & Market Report
+  contributing_sources:
+  - source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology
+      & Market Report
+    pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+    markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  arena_category:
+  - Battery storage
+  - Hydrogen
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-15909
+  source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology &
+    Market Report
+  publish_date: 2025-06
+  project_name: Yuri Renewable Hydrogen to Ammonia Project
+  what_happened: At reduced electrolyser loads during solar variability, lye pumps
+    operating at constant full-load flow rates risked inefficient gas-liquid separation,
+    potentially allowing H2 and O2 gases to accumulate in the lye loop and creating
+    an explosion risk. The standard vendor design did not include variable speed drives
+    for the lye pumps.
+  lesson_learnt: When operating alkaline electrolysers at variable loads driven by
+    renewable generation, add variable speed drives to lye circulation pumps as a
+    non-negotiable design requirement — the standard vendor configuration for constant-flow
+    lye pumps is unsafe at part-load and the OEM will not identify this without owner-driven
+    analysis.
+  issue_severity: major
+  project_type: industrial decarbonisation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: The project added a variable speed drive (VSD) to the standard
+    vendor design to reduce lye flow rate at reduced electrolyser loads, minimising
+    the risk of H2 and O2 mixing in the separators.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: hydrogen
+  source_pages: &id008
+  - 23
+  - 24
+  evidence_excerpt: Consequently, the project has added a variable speed drive (VSD)
+    to the standard vendor design to reduce the flow rate of the lye system when the
+    electrolyser is operating at reduced loads, thereby minimising the risk of an
+    explosion due to H2 and O2 mixing in the separators.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+  project_page_url: https://arena.gov.au/projects/yuri-renewable-hydrogen-to-ammonia-project/
+  kb_category: Battery storage, Hydrogen energy, Large-scale solar
+  kb_publish_date: 30/07/2025
+  kb_year: '2022'
+  kb_associated_project: Yuri Renewable Hydrogen to Ammonia Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $47.5m
+  total_project_value: $87.13m
+  lead_organisation: Yuri SPV, ENGIE (lead sponsor)
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 14/09/2022
+  location: Karratha, Western Australia
+  project_partners: Yara Pilbara Fertilisers, Department of Jobs, Tourism, Science
+    and Innovation (WA Government), The consortium of T.EN Australia and New Zealand,
+    Monford Group
+  pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+  markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  source_page_pdf: 24
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-15909
+  contributing_source_titles:
+  - Yuri Renewable Hydrogen to Ammonia Project - Project Technology & Market Report
+  contributing_sources:
+  - source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology
+      & Market Report
+    pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+    markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  arena_category:
+  - Battery storage
+  - Hydrogen
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-15911
+  source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology &
+    Market Report
+  publish_date: 2025-06
+  project_name: Yuri Renewable Hydrogen to Ammonia Project
+  what_happened: Significant rework of engineering deliverables from Chinese vendors
+    was required due to poor quality, non-compliance with project standards, and documentation
+    gaps between Chinese and Australian/Western requirements, affecting P&IDs, single
+    line diagrams, stability studies, electrical protection studies, cause-and-effect
+    charts, functional specifications, and MSDS documents.
+  lesson_learnt: Require Chinese equipment vendors to submit key engineering deliverables
+    (P&IDs, SLDs, cause-and-effect charts, functional specs, MSDS) for compliance
+    review against Australian standards at the award stage, not after delivery — rework
+    of these documents after receipt caused substantial schedule delay and should
+    be treated as a known risk on all projects with Chinese supply.
+  issue_severity: major
+  project_type: industrial decarbonisation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: procurement/supply chain
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages: &id009
+  - 37
+  evidence_excerpt: Significant re-work of engineering deliverables due to inherent
+    poor quality, compliance to Project standards and documentation gaps between Chinese
+    and Australian / Western requirements. This is applicable to electrolyser and
+    inverter technologies and impacted a variety of documents including P&IDs, Single
+    Line Diagrams, stability and electrical protection studies, Cause & Effect Charts,
+    and functional specifications. It is also important that Material Safety Data
+    Sheets (MSDS) are compliant to Australian standards to support Dangerous Goods
+    Applications.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+  project_page_url: https://arena.gov.au/projects/yuri-renewable-hydrogen-to-ammonia-project/
+  kb_category: Battery storage, Hydrogen energy, Large-scale solar
+  kb_publish_date: 30/07/2025
+  kb_year: '2022'
+  kb_associated_project: Yuri Renewable Hydrogen to Ammonia Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $47.5m
+  total_project_value: $87.13m
+  lead_organisation: Yuri SPV, ENGIE (lead sponsor)
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 14/09/2022
+  location: Karratha, Western Australia
+  project_partners: Yara Pilbara Fertilisers, Department of Jobs, Tourism, Science
+    and Innovation (WA Government), The consortium of T.EN Australia and New Zealand,
+    Monford Group
+  pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+  markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  source_page_pdf: 37
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-15911
+  contributing_source_titles:
+  - Yuri Renewable Hydrogen to Ammonia Project - Project Technology & Market Report
+  contributing_sources:
+  - source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology
+      & Market Report
+    pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+    markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  arena_category:
+  - Battery storage
+  - Hydrogen
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: resource/capability shortfall
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-15912
+  source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology &
+    Market Report
+  publish_date: 2025-06
+  project_name: Yuri Renewable Hydrogen to Ammonia Project
+  what_happened: Construction duration was underestimated because the EPC contractor
+    did not adequately account for safety restrictions and construction complexity
+    associated with working on an active, operating ammonia plant site.
+  lesson_learnt: When constructing new facilities within the boundary of an operating
+    hazardous process plant, apply a construction productivity factor that explicitly
+    accounts for access restrictions, permit-to-work overhead, safety inductions,
+    and brownfield interface constraints — standard greenfield construction rates
+    are not applicable.
+  issue_severity: moderate
+  project_type: industrial decarbonisation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: construction/installation
+  proponent_type: utility/energy retailer
+  delay_category: construction/installation
+  failure_mode: unvalidated technical assumptions
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages: &id010
+  - 37
+  evidence_excerpt: Contractor underestimation of construction and safety restrictions
+    due to working on an operating ammonia plant site.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+  project_page_url: https://arena.gov.au/projects/yuri-renewable-hydrogen-to-ammonia-project/
+  kb_category: Battery storage, Hydrogen energy, Large-scale solar
+  kb_publish_date: 30/07/2025
+  kb_year: '2022'
+  kb_associated_project: Yuri Renewable Hydrogen to Ammonia Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $47.5m
+  total_project_value: $87.13m
+  lead_organisation: Yuri SPV, ENGIE (lead sponsor)
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 14/09/2022
+  location: Karratha, Western Australia
+  project_partners: Yara Pilbara Fertilisers, Department of Jobs, Tourism, Science
+    and Innovation (WA Government), The consortium of T.EN Australia and New Zealand,
+    Monford Group
+  pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+  markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-15912
+  contributing_source_titles:
+  - Yuri Renewable Hydrogen to Ammonia Project - Project Technology & Market Report
+  contributing_sources:
+  - source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology
+      & Market Report
+    pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+    markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  arena_category:
+  - Battery storage
+  - Hydrogen
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-15913
+  source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology &
+    Market Report
+  publish_date: 2025-06
+  project_name: Yuri Renewable Hydrogen to Ammonia Project
+  what_happened: Solar panel installation duration was underestimated due to the site's
+    classification as a Cyclone D environment subject to extensive flooding, requiring
+    significantly more time than planned for installation works.
+  lesson_learnt: In extreme weather environments (cyclone or flood zones), apply site-specific
+    productivity derating factors to solar panel installation schedules — standard
+    installation rates from temperate or non-cyclonic sites are not transferable to
+    Cyclone D environments in the Pilbara.
+  issue_severity: moderate
+  project_type: industrial decarbonisation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: construction/installation
+  proponent_type: utility/energy retailer
+  delay_category: construction/installation
+  failure_mode: unvalidated technical assumptions
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: narrow
+  delay_magnitude: not quantified
+  technology_domain: solar PV
+  source_pages: &id011
+  - 37
+  evidence_excerpt: Underestimation of the duration required to install solar panels
+    in a Cyclone D environment, which is also subject to extensive flooding.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+  project_page_url: https://arena.gov.au/projects/yuri-renewable-hydrogen-to-ammonia-project/
+  kb_category: Battery storage, Hydrogen energy, Large-scale solar
+  kb_publish_date: 30/07/2025
+  kb_year: '2022'
+  kb_associated_project: Yuri Renewable Hydrogen to Ammonia Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $47.5m
+  total_project_value: $87.13m
+  lead_organisation: Yuri SPV, ENGIE (lead sponsor)
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 14/09/2022
+  location: Karratha, Western Australia
+  project_partners: Yara Pilbara Fertilisers, Department of Jobs, Tourism, Science
+    and Innovation (WA Government), The consortium of T.EN Australia and New Zealand,
+    Monford Group
+  pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+  markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  source_page_pdf: 37
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-15913
+  contributing_source_titles:
+  - Yuri Renewable Hydrogen to Ammonia Project - Project Technology & Market Report
+  contributing_sources:
+  - source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology
+      & Market Report
+    pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+    markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  arena_category:
+  - Battery storage
+  - Hydrogen
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-15914
+  source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology &
+    Market Report
+  publish_date: 2025-06
+  project_name: Yuri Renewable Hydrogen to Ammonia Project
+  what_happened: Design integration challenges arose from the EPC consortium execution
+    strategy, where responsibilities were split between Technip Energies (H2 plant
+    engineering and procurement) and Monford Group (construction and solar/BESS scope),
+    creating interface coordination issues that contributed to schedule extension.
+  lesson_learnt: When using a split-responsibility EPC consortium for multi-technology
+    hydrogen projects, invest heavily in defining and managing system integration
+    interfaces at contract award — the boundary between process technology and power/civil
+    packages is a high-risk coordination point that requires dedicated interface management
+    resources.
+  issue_severity: moderate
+  project_type: industrial decarbonisation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: construction/installation
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated integration
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages: &id012
+  - 37
+  evidence_excerpt: Design integration challenges associated with the EPC consortium
+    execution strategy.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+  project_page_url: https://arena.gov.au/projects/yuri-renewable-hydrogen-to-ammonia-project/
+  kb_category: Battery storage, Hydrogen energy, Large-scale solar
+  kb_publish_date: 30/07/2025
+  kb_year: '2022'
+  kb_associated_project: Yuri Renewable Hydrogen to Ammonia Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $47.5m
+  total_project_value: $87.13m
+  lead_organisation: Yuri SPV, ENGIE (lead sponsor)
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 14/09/2022
+  location: Karratha, Western Australia
+  project_partners: Yara Pilbara Fertilisers, Department of Jobs, Tourism, Science
+    and Innovation (WA Government), The consortium of T.EN Australia and New Zealand,
+    Monford Group
+  pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+  markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-15914
+  contributing_source_titles:
+  - Yuri Renewable Hydrogen to Ammonia Project - Project Technology & Market Report
+  contributing_sources:
+  - source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology
+      & Market Report
+    pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+    markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  arena_category:
+  - Battery storage
+  - Hydrogen
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: schedule slippage
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-15915
+  source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology &
+    Market Report
+  publish_date: 2025-06
+  project_name: Yuri Renewable Hydrogen to Ammonia Project
+  what_happened: Electrolyser vendor supply capacity limitations contributed to schedule
+    delays, reflecting broader market constraints in the rapidly evolving electrolyser
+    supply market at the time of project procurement.
+  lesson_learnt: Secure electrolyser supply commitments — including firm delivery
+    slots and capacity reservations — as early as possible in project development;
+    the global electrolyser supply market has limited capacity and vendor delivery
+    slots are a genuine critical-path constraint for hydrogen projects.
+  issue_severity: moderate
+  project_type: industrial decarbonisation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: procurement
+  proponent_type: utility/energy retailer
+  delay_category: procurement/supply chain
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: hydrogen
+  source_pages: &id013
+  - 37
+  evidence_excerpt: Vendor supply capacity limitations, in particular electrolysers.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+  project_page_url: https://arena.gov.au/projects/yuri-renewable-hydrogen-to-ammonia-project/
+  kb_category: Battery storage, Hydrogen energy, Large-scale solar
+  kb_publish_date: 30/07/2025
+  kb_year: '2022'
+  kb_associated_project: Yuri Renewable Hydrogen to Ammonia Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $47.5m
+  total_project_value: $87.13m
+  lead_organisation: Yuri SPV, ENGIE (lead sponsor)
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 14/09/2022
+  location: Karratha, Western Australia
+  project_partners: Yara Pilbara Fertilisers, Department of Jobs, Tourism, Science
+    and Innovation (WA Government), The consortium of T.EN Australia and New Zealand,
+    Monford Group
+  pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+  markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-15915
+  contributing_source_titles:
+  - Yuri Renewable Hydrogen to Ammonia Project - Project Technology & Market Report
+  contributing_sources:
+  - source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology
+      & Market Report
+    pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+    markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  arena_category:
+  - Battery storage
+  - Hydrogen
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: schedule slippage
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-15917
+  source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology &
+    Market Report
+  publish_date: 2025-06
+  project_name: Yuri Renewable Hydrogen to Ammonia Project
+  what_happened: The Yuri project successfully obtained all six required regulatory
+    permits, supported by Yara's pre-existing stakeholder relationships, a JTSI Lead
+    Agency Framework officer assigned to the project, and early identification of
+    permit requirements in the pre-feasibility study (2019).
+  lesson_learnt: Identify all required permits and relevant stakeholders in the pre-feasibility
+    study and develop a dedicated permitting plan in the feasibility study — projects
+    that start permitting engagement early and leverage the government's Lead Agency
+    Framework can significantly reduce approval risk even for novel project types.
+  issue_severity: none
+  project_type: industrial decarbonisation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: hydrogen
+  source_pages: &id014
+  - 34
+  evidence_excerpt: 'The project received all the permits required due to the constructive
+    work of the parties... the project developers: Identified the permits required
+    and the applicable stakeholders in the pre-feasibility study initiated early 2019;
+    Developed the permitting plan in the following feasibility study; Allocated the
+    permitting tasks to the appropriate sponsor or contractor in the relevant contracts
+    in 2019 and 2020.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+  project_page_url: https://arena.gov.au/projects/yuri-renewable-hydrogen-to-ammonia-project/
+  kb_category: Battery storage, Hydrogen energy, Large-scale solar
+  kb_publish_date: 30/07/2025
+  kb_year: '2022'
+  kb_associated_project: Yuri Renewable Hydrogen to Ammonia Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $47.5m
+  total_project_value: $87.13m
+  lead_organisation: Yuri SPV, ENGIE (lead sponsor)
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 14/09/2022
+  location: Karratha, Western Australia
+  project_partners: Yara Pilbara Fertilisers, Department of Jobs, Tourism, Science
+    and Innovation (WA Government), The consortium of T.EN Australia and New Zealand,
+    Monford Group
+  pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+  markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-15917
+  contributing_source_titles:
+  - Yuri Renewable Hydrogen to Ammonia Project - Project Technology & Market Report
+  contributing_sources:
+  - source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology
+      & Market Report
+    pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+    markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  arena_category:
+  - Battery storage
+  - Hydrogen
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+- record_id: ARENA-DLV-15919
+  source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology &
+    Market Report
+  publish_date: 2025-06
+  project_name: Yuri Renewable Hydrogen to Ammonia Project
+  what_happened: The electrolyser selection process used a global multi-criteria qualification
+    framework maintained by Engie, including HSE, QAQC, commercial, operational, and
+    performance criteria — resulting in the selection of Peric (China) based on cost
+    competitiveness and operating experience with alkaline technology.
+  lesson_learnt: Hydrogen project developers without an existing approved vendor database
+    should engage a technology owner or global operator with a maintained electrolyser
+    qualification framework at pre-FEED stage — the multi-criteria evaluation process
+    is resource-intensive and not suited to being developed from scratch within an
+    individual project's timeline.
+  issue_severity: none
+  project_type: industrial decarbonisation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: hydrogen
+  source_pages: &id015
+  - 17
+  - 18
+  evidence_excerpt: Engie as an interested global investor has managed a global qualification
+    process for electrolysers which subjects the OEM vendors to an in-depth multi-criteria
+    evaluation including HSE performance, QAQC programs, scope of supply, experience
+    in delivery, performance characteristics, documentation, engineering capabilities,
+    and O&M services... Ultimately PERIC was selected by the Project, largely driven
+    by cost and their operating experience, with their design maturity among the best
+    in the industry.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+  project_page_url: https://arena.gov.au/projects/yuri-renewable-hydrogen-to-ammonia-project/
+  kb_category: Battery storage, Hydrogen energy, Large-scale solar
+  kb_publish_date: 30/07/2025
+  kb_year: '2022'
+  kb_associated_project: Yuri Renewable Hydrogen to Ammonia Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $47.5m
+  total_project_value: $87.13m
+  lead_organisation: Yuri SPV, ENGIE (lead sponsor)
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 14/09/2022
+  location: Karratha, Western Australia
+  project_partners: Yara Pilbara Fertilisers, Department of Jobs, Tourism, Science
+    and Innovation (WA Government), The consortium of T.EN Australia and New Zealand,
+    Monford Group
+  pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+  markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  source_page_pdf: 17
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-15919
+  contributing_source_titles:
+  - Yuri Renewable Hydrogen to Ammonia Project - Project Technology & Market Report
+  contributing_sources:
+  - source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology
+      & Market Report
+    pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+    markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  arena_category:
+  - Battery storage
+  - Hydrogen
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+- record_id: ARENA-DLV-15920
+  source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology &
+    Market Report
+  publish_date: 2025-06
+  project_name: Yuri Renewable Hydrogen to Ammonia Project
+  what_happened: IGBT-based rectifier technology, which would significantly reduce
+    harmonics and potentially eliminate the requirement for a separate harmonic filter,
+    was not mandated for the Yuri project because doing so would have excluded several
+    OEMs using thyristor-based rectifiers in their standard designs, introducing interface
+    risk and likely schedule delay.
+  lesson_learnt: For future solar-coupled electrolyser projects, evaluate IGBT-based
+    rectifier technology at the concept stage — mandating IGBT rectifiers may reduce
+    or eliminate the harmonic filter (a 9–12 month procurement item) and simplify
+    the power system, provided sufficient OEM options remain in the shortlist.
+  issue_severity: minor
+  project_type: industrial decarbonisation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: hydrogen
+  source_pages: &id016
+  - 24
+  evidence_excerpt: It is noted that on Yuri, the rectifier provided as part of the
+    OEM standard design is thyristor based. Insulated Gate Bipolar Transistor (IGBT)
+    based technology could significantly reduce harmonics and may reduce the size
+    or eliminate the requirement of the harmonic filter. However, the IGBT technology
+    was not mandated for this project since this would have excluded several OEMs
+    which deploy thyristor-based rectifiers in their standard design.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+  project_page_url: https://arena.gov.au/projects/yuri-renewable-hydrogen-to-ammonia-project/
+  kb_category: Battery storage, Hydrogen energy, Large-scale solar
+  kb_publish_date: 30/07/2025
+  kb_year: '2022'
+  kb_associated_project: Yuri Renewable Hydrogen to Ammonia Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $47.5m
+  total_project_value: $87.13m
+  lead_organisation: Yuri SPV, ENGIE (lead sponsor)
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 14/09/2022
+  location: Karratha, Western Australia
+  project_partners: Yara Pilbara Fertilisers, Department of Jobs, Tourism, Science
+    and Innovation (WA Government), The consortium of T.EN Australia and New Zealand,
+    Monford Group
+  pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+  markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  source_page_pdf: 24
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-15920
+  contributing_source_titles:
+  - Yuri Renewable Hydrogen to Ammonia Project - Project Technology & Market Report
+  contributing_sources:
+  - source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology
+      & Market Report
+    pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+    markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  arena_category:
+  - Battery storage
+  - Hydrogen
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-15921
+  source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology &
+    Market Report
+  publish_date: 2025-06
+  project_name: Yuri Renewable Hydrogen to Ammonia Project
+  what_happened: The commissioning sequence was structured to test the electrical
+    production system (PV, BESS, substation) in island mode against a load bank before
+    interconnecting with the hydrogen plant, enabling controlled de-risking of each
+    subsystem before full integration.
+  lesson_learnt: Structure commissioning of solar-hydrogen microgrids in staged phases
+    — validate the electrical production system independently in island mode before
+    interconnecting with the hydrogen plant, and validate in islanded mode before
+    connecting to the host plant — this reduces the risk of compounding failures during
+    first-of-kind integration.
+  issue_severity: none
+  project_type: industrial decarbonisation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: hydrogen
+  source_pages: &id017
+  - 26
+  evidence_excerpt: The first hot commissioning phase will consist of testing the
+    electrical production system in island mode in its final configuration, but under
+    controlled conditions... Once the electrical production system is fully tested
+    and the hydrogen plant is ready to produce hydrogen, then both systems can be
+    interconnected to start the hydrogen production.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+  project_page_url: https://arena.gov.au/projects/yuri-renewable-hydrogen-to-ammonia-project/
+  kb_category: Battery storage, Hydrogen energy, Large-scale solar
+  kb_publish_date: 30/07/2025
+  kb_year: '2022'
+  kb_associated_project: Yuri Renewable Hydrogen to Ammonia Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $47.5m
+  total_project_value: $87.13m
+  lead_organisation: Yuri SPV, ENGIE (lead sponsor)
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 14/09/2022
+  location: Karratha, Western Australia
+  project_partners: Yara Pilbara Fertilisers, Department of Jobs, Tourism, Science
+    and Innovation (WA Government), The consortium of T.EN Australia and New Zealand,
+    Monford Group
+  pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+  markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  source_page_pdf: 26
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-15921
+  contributing_source_titles:
+  - Yuri Renewable Hydrogen to Ammonia Project - Project Technology & Market Report
+  contributing_sources:
+  - source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology
+      & Market Report
+    pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+    markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  arena_category:
+  - Battery storage
+  - Hydrogen
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+- record_id: ARENA-DLV-15922
+  source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology &
+    Market Report
+  publish_date: 2025-06
+  project_name: Yuri Renewable Hydrogen to Ammonia Project
+  what_happened: The Yuri project is the world's first industrial-scale renewable
+    hydrogen project to be certified under the Smart Energy Council's Zero Carbon
+    Certification Scheme, receiving pre-certification before commissioning with a
+    Bureau Veritas technical assessment confirming carbon footprints of 0.109 kgCO2-e/kgNH3
+    and 0.26 kgCO2-e/kgH2.
+  lesson_learnt: Engage a third-party certification body early in the project design
+    phase to obtain pre-certification under a recognised green hydrogen/ammonia scheme
+    — early certification provides commercial differentiation and confirms the design
+    will meet the scheme's standards before construction, reducing the risk of costly
+    post-commissioning design changes.
+  issue_severity: none
+  project_type: industrial decarbonisation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: hydrogen
+  source_pages: &id018
+  - 33
+  evidence_excerpt: The Smart Energy Council has provided YARA a pre-certification
+    under the Zero Carbon Certification Scheme for the portion of ammonia derived
+    from the Yuri Project. It is the first green ammonia project to receive the Council's
+    certification.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+  project_page_url: https://arena.gov.au/projects/yuri-renewable-hydrogen-to-ammonia-project/
+  kb_category: Battery storage, Hydrogen energy, Large-scale solar
+  kb_publish_date: 30/07/2025
+  kb_year: '2022'
+  kb_associated_project: Yuri Renewable Hydrogen to Ammonia Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $47.5m
+  total_project_value: $87.13m
+  lead_organisation: Yuri SPV, ENGIE (lead sponsor)
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 14/09/2022
+  location: Karratha, Western Australia
+  project_partners: Yara Pilbara Fertilisers, Department of Jobs, Tourism, Science
+    and Innovation (WA Government), The consortium of T.EN Australia and New Zealand,
+    Monford Group
+  pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+  markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  source_page_pdf: 33
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-15922
+  contributing_source_titles:
+  - Yuri Renewable Hydrogen to Ammonia Project - Project Technology & Market Report
+  contributing_sources:
+  - source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology
+      & Market Report
+    pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+    markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  arena_category:
+  - Battery storage
+  - Hydrogen
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture
+- record_id: ARENA-DLV-15924
+  source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology &
+    Market Report
+  publish_date: 2025-06
+  project_name: Yuri Renewable Hydrogen to Ammonia Project
+  what_happened: The BESS was sized primarily for islanded operation — dynamic studies
+    determined that an 8 MW power rating was required to achieve the minimum short
+    circuit ratio needed to run the electrolyser and auxiliaries at full load in island
+    mode — rather than for energy shifting to extend electrolyser operation.
+  lesson_learnt: Size the BESS in solar-hydrogen microgrids against the islanded operation
+    short circuit ratio requirement (power rating) rather than energy shifting (energy
+    rating) — the power rating driven by islanded stability will typically be the
+    binding constraint and should be confirmed through dynamic stability studies early
+    in design.
+  issue_severity: none
+  project_type: industrial decarbonisation
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id019
+  - 22
+  evidence_excerpt: The BESS size was driven by the islanded mode of operation where
+    dynamic studies confirmed that a power rating of 8MW would be required to achieve
+    the minimum short circuit ratio required at the PV inverters to run the electrolyser
+    and auxiliaries at full load.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+  project_page_url: https://arena.gov.au/projects/yuri-renewable-hydrogen-to-ammonia-project/
+  kb_category: Battery storage, Hydrogen energy, Large-scale solar
+  kb_publish_date: 30/07/2025
+  kb_year: '2022'
+  kb_associated_project: Yuri Renewable Hydrogen to Ammonia Project
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Current
+  in_arena_portfolio: true
+  arena_funding: $47.5m
+  total_project_value: $87.13m
+  lead_organisation: Yuri SPV, ENGIE (lead sponsor)
+  arena_program: Advancing Renewables Program
+  project_status: Current
+  project_start_date: 14/09/2022
+  location: Karratha, Western Australia
+  project_partners: Yara Pilbara Fertilisers, Department of Jobs, Tourism, Science
+    and Innovation (WA Government), The consortium of T.EN Australia and New Zealand,
+    Monford Group
+  pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+  markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  source_page_pdf: 22
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-15924
+  contributing_source_titles:
+  - Yuri Renewable Hydrogen to Ammonia Project - Project Technology & Market Report
+  contributing_sources:
+  - source_title: Yuri Renewable Hydrogen to Ammonia Project - Project Technology
+      & Market Report
+    pdf_url: https://arena.gov.au/assets/2025/07/Yuri-Technology-Market-Report-Rev-0-Public.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/yuri-renewable-hydrogen-to-ammonia-project-project-technology-market-report/
+    markdown_filename: yuri_renewable_hydrogen_to_ammonia_project_project_technology_market_report.md
+  arena_category:
+  - Battery storage
+  - Hydrogen
+  - Solar PV
+  activity_type: Deployment
+  is_consortium: true
+  proponent_type_original: consortium/multi-party venture

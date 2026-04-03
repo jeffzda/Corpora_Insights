@@ -1,0 +1,982 @@
+- record_id: ARENA-DLV-10851
+  source_title: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Technology
+  publish_date: 2022-01
+  project_name: Substitution of niche-market PV production tools with cost-effective
+    consumer-electronics technology
+  what_happened: During microwave processing experiments, the project found that infrared
+    thermometry systematically underestimates internal sample temperature because
+    microwave heating generates heat from the inside out, leaving the surface cooler
+    than the interior — the opposite of conventional heating. This led to incorrect
+    temperature measurements and has caused other research groups to wrongly report
+    'non-thermal effects'.
+  lesson_learnt: When designing microwave-based thermal processes for silicon solar
+    cells, do not rely on surface IR thermometry alone — develop mathematical models
+    or alternative measurement approaches to estimate internal temperature, particularly
+    when insulating layers are present, to avoid systematic underestimation and false
+    conclusions about non-thermal effects.
+  issue_severity: moderate
+  project_type: manufacturing/supply chain
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: The team developed mathematical models to estimate the transient
+    temperature of the cell under a glass plate, enabling more accurate temperature
+    measurement during microwave processing.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id001
+  - 5
+  - 6
+  evidence_excerpt: As IR thermometry only captures the temperature at the surface,
+    this measurement technique leads to an underestimation of the temperature. This
+    problem becomes more severe when there are insulating layers on the sample, e.g.
+    glass plates on a silicon solar cell. This is a common problem when working with
+    microwaves and has resulted in several research groups wrongly reporting 'non-thermal
+    effects' in microwave processing.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/substitution-of-niche-market-pv-production-tools-with-cost-effective-technology/
+  project_page_url: https://arena.gov.au/projects/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 31/01/2022
+  kb_year: '2020'
+  kb_associated_project: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Consumer-Electronics
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $420k
+  total_project_value: $1.62m
+  lead_organisation: Macquarie University
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Macquarie Park, New South Wales
+  project_partners: University of New South Wales, Soleritas, Hanwha Q Cells GmbH
+  pdf_url: https://arena.gov.au/assets/2022/01/substitution-of-niche-market-pv-production-tools-with-cost-effective-technology.pdf
+  markdown_filename: substitution_of_niche_market_pv_production_tools_with_cost_effective_technology.md
+  source_page_pdf: 5
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-10851
+  contributing_source_titles:
+  - Substitution of Niche-Market PV Production Tools with Cost-Effective Technology
+  contributing_sources:
+  - source_title: Substitution of Niche-Market PV Production Tools with Cost-Effective
+      Technology
+    pdf_url: https://arena.gov.au/assets/2022/01/substitution-of-niche-market-pv-production-tools-with-cost-effective-technology.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/substitution-of-niche-market-pv-production-tools-with-cost-effective-technology/
+    markdown_filename: substitution_of_niche_market_pv_production_tools_with_cost_effective_technology.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-10852
+  source_title: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Technology
+  publish_date: 2022-01
+  project_name: Substitution of niche-market PV production tools with cost-effective
+    consumer-electronics technology
+  what_happened: Plasma arcing occurred in the microwave cavity when smaller rectangular
+    silicon samples were used, causing non-uniform heating, temperature control difficulties,
+    sample cracking, and reduced magnetron lifetime. The issue was resolved by switching
+    to circular samples and ensuring full-sized wafers (6 inches and larger) were
+    lifted at least 5 cm above the cavity base on a non-absorbing, non-conductive
+    support.
+  lesson_learnt: When using microwave cavities for silicon processing, use circular
+    or full-sized wafers (≥6 inches) and elevate samples at least 5 cm above the cavity
+    base on a non-absorbing, non-conductive support to prevent plasma arcing and the
+    associated heating non-uniformity, sample damage, and magnetron degradation.
+  issue_severity: moderate
+  project_type: manufacturing/supply chain
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Switched to circular samples and elevated full-sized wafers at
+    least 5 cm above the microwave cavity base using a non-absorbing, non-conductive
+    support, which eliminated arcing.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id002
+  - 6
+  evidence_excerpt: We were able to reduce the arcing by using circular samples. Further,
+    we learned that the full-size wafers (6 inches and more) do not have the problem
+    of arcing in the microwave, even with the rectangular shape and sharp edges. To
+    achieve this, the sample needs to be lifted at least 5 cm above the base of the
+    microwave cavity by a non-absorbing and non-conductive material.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/substitution-of-niche-market-pv-production-tools-with-cost-effective-technology/
+  project_page_url: https://arena.gov.au/projects/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 31/01/2022
+  kb_year: '2020'
+  kb_associated_project: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Consumer-Electronics
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $420k
+  total_project_value: $1.62m
+  lead_organisation: Macquarie University
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Macquarie Park, New South Wales
+  project_partners: University of New South Wales, Soleritas, Hanwha Q Cells GmbH
+  pdf_url: https://arena.gov.au/assets/2022/01/substitution-of-niche-market-pv-production-tools-with-cost-effective-technology.pdf
+  markdown_filename: substitution_of_niche_market_pv_production_tools_with_cost_effective_technology.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-10852
+  contributing_source_titles:
+  - Substitution of Niche-Market PV Production Tools with Cost-Effective Technology
+  contributing_sources:
+  - source_title: Substitution of Niche-Market PV Production Tools with Cost-Effective
+      Technology
+    pdf_url: https://arena.gov.au/assets/2022/01/substitution-of-niche-market-pv-production-tools-with-cost-effective-technology.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/substitution-of-niche-market-pv-production-tools-with-cost-effective-technology/
+    markdown_filename: substitution_of_niche_market_pv_production_tools_with_cost_effective_technology.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-10853
+  source_title: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Technology
+  publish_date: 2022-01
+  project_name: Substitution of niche-market PV production tools with cost-effective
+    consumer-electronics technology
+  what_happened: The project discovered that standard lens-based CCD flatbed scanners
+    produce inaccurate measurements of solar cells because their built-in flat-field/vignetting
+    correction is optimised for documents and photos, not for the uniform reflectance
+    characteristics of solar cells. Contact image sensor (CIS) scanners do not have
+    this limitation and provide reliable, consistent data across the full cell area.
+  lesson_learnt: Future projects using flatbed scanners for solar cell quality control
+    should specify contact image sensor (CIS) type scanners rather than standard CCD
+    lens-based models — CIS scanners provide accurate uniform intensity data across
+    solar cells, are cheaper, lighter, and smaller, and avoid the vignetting correction
+    artefacts that corrupt solar cell measurements.
+  issue_severity: moderate
+  project_type: manufacturing/supply chain
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Switched to contact image sensor-based scanners, which readily
+    provided accurate and reliable data without requiring recalibration.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id003
+  - 7
+  evidence_excerpt: The built-in correction is optimised to work well for documents
+    and photos which have very different characteristics to solar cells, so this leads
+    to inaccurate data when imaging our devices. While it may be possible to find
+    a new calibration procedure for these more standard scanners, the contact image
+    sensor-based scanners readily provide more reliable data and they are typically
+    lighter, smaller and cheaper.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/substitution-of-niche-market-pv-production-tools-with-cost-effective-technology/
+  project_page_url: https://arena.gov.au/projects/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 31/01/2022
+  kb_year: '2020'
+  kb_associated_project: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Consumer-Electronics
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $420k
+  total_project_value: $1.62m
+  lead_organisation: Macquarie University
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Macquarie Park, New South Wales
+  project_partners: University of New South Wales, Soleritas, Hanwha Q Cells GmbH
+  pdf_url: https://arena.gov.au/assets/2022/01/substitution-of-niche-market-pv-production-tools-with-cost-effective-technology.pdf
+  markdown_filename: substitution_of_niche_market_pv_production_tools_with_cost_effective_technology.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-10853
+  contributing_source_titles:
+  - Substitution of Niche-Market PV Production Tools with Cost-Effective Technology
+  contributing_sources:
+  - source_title: Substitution of Niche-Market PV Production Tools with Cost-Effective
+      Technology
+    pdf_url: https://arena.gov.au/assets/2022/01/substitution-of-niche-market-pv-production-tools-with-cost-effective-technology.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/substitution-of-niche-market-pv-production-tools-with-cost-effective-technology/
+    markdown_filename: substitution_of_niche_market_pv_production_tools_with_cost_effective_technology.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-10854
+  source_title: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Technology
+  publish_date: 2022-01
+  project_name: Substitution of niche-market PV production tools with cost-effective
+    consumer-electronics technology
+  what_happened: Testing of low-cost consumer thermal cameras (operating in the 7–14
+    µm wavelength range) for solar cell process monitoring revealed that silicon solar
+    cells behave as mirrors and semi-transparent windows at these wavelengths, making
+    low-cost thermal cameras unsuitable as direct drop-in replacements for conventional
+    production thermal cameras (3–5 µm range) without significant adaptation to account
+    for the fundamentally different optical behaviour.
+  lesson_learnt: Before deploying low-cost thermal cameras for solar cell inspection,
+    verify their operating wavelength range — cameras in the 7–14 µm range cause silicon
+    wafers to appear mirror-like or semi-transparent, producing misleading thermal
+    images; this optical behaviour must be characterised and compensated for before
+    the technology can be used reliably for defect detection or process monitoring.
+  issue_severity: moderate
+  project_type: manufacturing/supply chain
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id004
+  - 8
+  - 9
+  evidence_excerpt: In the 7 to 14 µm range a solar cell behaves as a mirror, and
+    so we can see a well-defined reflection of this hot block... Changing from thermal
+    cameras that operate in the 3-5 µm range to the 7-14 µm range has significant
+    implications for the application of monitoring solar cells.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/substitution-of-niche-market-pv-production-tools-with-cost-effective-technology/
+  project_page_url: https://arena.gov.au/projects/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 31/01/2022
+  kb_year: '2020'
+  kb_associated_project: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Consumer-Electronics
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $420k
+  total_project_value: $1.62m
+  lead_organisation: Macquarie University
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Macquarie Park, New South Wales
+  project_partners: University of New South Wales, Soleritas, Hanwha Q Cells GmbH
+  pdf_url: https://arena.gov.au/assets/2022/01/substitution-of-niche-market-pv-production-tools-with-cost-effective-technology.pdf
+  markdown_filename: substitution_of_niche_market_pv_production_tools_with_cost_effective_technology.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-10854
+  contributing_source_titles:
+  - Substitution of Niche-Market PV Production Tools with Cost-Effective Technology
+  contributing_sources:
+  - source_title: Substitution of Niche-Market PV Production Tools with Cost-Effective
+      Technology
+    pdf_url: https://arena.gov.au/assets/2022/01/substitution-of-niche-market-pv-production-tools-with-cost-effective-technology.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/substitution-of-niche-market-pv-production-tools-with-cost-effective-technology/
+    markdown_filename: substitution_of_niche_market_pv_production_tools_with_cost_effective_technology.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-10855
+  source_title: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Technology
+  publish_date: 2022-01
+  project_name: Substitution of niche-market PV production tools with cost-effective
+    consumer-electronics technology
+  what_happened: Cost-benefit analysis conducted with industry consultants Solinno
+    Pty Ltd revealed that among the three technology streams investigated (microwave
+    processing, flatbed scanning, thermal imaging), flatbed scanner technology was
+    the most commercially promising due to its extremely low cost and variety of use
+    cases, leading to the decision to focus phase 2 resources on flatbed scanning
+    and deprioritise the other two streams.
+  lesson_learnt: When pursuing a multi-stream R&D project, conduct cost-benefit modelling
+    with industry consultants at the midpoint to enable evidence-based prioritisation
+    of resources into the most commercially viable technology streams before committing
+    phase 2 funding.
+  issue_severity: minor
+  project_type: manufacturing/supply chain
+  project_scale_band: lab/bench
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Engaged industry expert consultants Solinno Pty Ltd to conduct
+    detailed cost-benefit modelling across all three technology streams, with flatbed
+    scanner technology identified as the priority for phase 2 development.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages:
+  - 3
+  - 4
+  evidence_excerpt: The first part of this project found the microwave and flatbed
+    scanner streams to be the most technologically promising with both streams offering
+    useful PV production capabilities achievable at relatively lost cost compared
+    to conventional approaches. However, further economic modelling and analysis determined
+    that the flatbed scanner technology was the overall best candidate for further
+    development and advancement in technology readiness level within the scope and
+    timescales of the project.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/substitution-of-niche-market-pv-production-tools-with-cost-effective-technology/
+  project_page_url: https://arena.gov.au/projects/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 31/01/2022
+  kb_year: '2020'
+  kb_associated_project: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Consumer-Electronics
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $420k
+  total_project_value: $1.62m
+  lead_organisation: Macquarie University
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Macquarie Park, New South Wales
+  project_partners: University of New South Wales, Soleritas, Hanwha Q Cells GmbH
+  pdf_url: https://arena.gov.au/assets/2022/01/substitution-of-niche-market-pv-production-tools-with-cost-effective-technology.pdf
+  markdown_filename: substitution_of_niche_market_pv_production_tools_with_cost_effective_technology.md
+  source_page_pdf: 4
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-10855
+  - ARENA-DLV-60351
+  contributing_source_titles:
+  - Substitution of Niche-Market PV Production Tools with Cost-Effective Consumer-Electronics
+    Report
+  - Substitution of Niche-Market PV Production Tools with Cost-Effective Technology
+  contributing_sources:
+  - source_title: Substitution of Niche-Market PV Production Tools with Cost-Effective
+      Technology
+    pdf_url: https://arena.gov.au/assets/2022/01/substitution-of-niche-market-pv-production-tools-with-cost-effective-technology.pdf
+    source_pages:
+    - 3
+    - 4
+    source_url: https://arena.gov.au/knowledge-bank/substitution-of-niche-market-pv-production-tools-with-cost-effective-technology/
+    markdown_filename: substitution_of_niche_market_pv_production_tools_with_cost_effective_technology.md
+  - source_title: Substitution of Niche-Market PV Production Tools with Cost-Effective
+      Consumer-Electronics Report
+    pdf_url: https://arena.gov.au/assets/2023/04/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report.pdf
+    source_pages:
+    - 3
+    - 4
+    source_url: https://arena.gov.au/knowledge-bank/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report/
+    markdown_filename: substitution_of_niche_market_pv_production_tools_with_cost_effective_consumer_electronics_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-60352
+  source_title: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Consumer-Electronics Report
+  publish_date: '2023-02-27'
+  project_name: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Consumer-Electronics
+  what_happened: A flatbed scanner-based prototype was developed and validated against
+    a high-cost calibrated laboratory tool (LOANA from PV-tools), demonstrating equivalent
+    measurement capability at approximately 1/100th of the cost, and was successfully
+    integrated into a standard production tool at UNSW's Solar Industrial Research
+    Facility.
+  lesson_learnt: Consumer-grade flatbed scanner technology can replace high-cost niche
+    PV characterisation tools for optical inspection at a fraction of the cost — benchmark
+    validation against an established lab tool (LOANA) is a practical method to qualify
+    the prototype before production line deployment.
+  issue_severity: none
+  project_type: manufacturing/supply chain
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: research organisation/university
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id005
+  - 4
+  - 5
+  evidence_excerpt: System qualification was provided through comparison with a high-cost
+    lab-based tool (LOANA from PV-tools). The prototypes were found to be capable
+    of industrial speeds at a fraction of the cost, indicating a high potential for
+    commercialisation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report/
+  project_page_url: https://arena.gov.au/projects/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 27/02/2023
+  kb_year: '2020'
+  kb_associated_project: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Consumer-Electronics
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $420k
+  total_project_value: $1.62m
+  lead_organisation: Macquarie University
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Macquarie Park, New South Wales
+  project_partners: University of New South Wales, Soleritas, Hanwha Q Cells GmbH
+  pdf_url: https://arena.gov.au/assets/2023/04/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report.pdf
+  markdown_filename: substitution_of_niche_market_pv_production_tools_with_cost_effective_consumer_electronics_report.md
+  source_page_pdf: 5
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60352
+  contributing_source_titles:
+  - Substitution of Niche-Market PV Production Tools with Cost-Effective Consumer-Electronics
+    Report
+  contributing_sources:
+  - source_title: Substitution of Niche-Market PV Production Tools with Cost-Effective
+      Consumer-Electronics Report
+    pdf_url: https://arena.gov.au/assets/2023/04/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report/
+    markdown_filename: substitution_of_niche_market_pv_production_tools_with_cost_effective_consumer_electronics_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-60353
+  source_title: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Consumer-Electronics Report
+  publish_date: '2023-02-27'
+  project_name: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Consumer-Electronics
+  what_happened: Microwave-based lamination and delamination of solar modules was
+    demonstrated to be faster and more energy-efficient than conventional industrial
+    laminators, but scaling the technology to commercial module sizes remained a significant
+    unresolved challenge due to the size mismatch between consumer microwave cavities
+    and large-area PV modules.
+  lesson_learnt: When adapting consumer-grade microwave technology for industrial
+    PV processes, scalability of the cavity to commercial module dimensions must be
+    addressed early — the size mismatch between consumer microwave tools and commercial
+    solar modules is a critical barrier that requires purpose-designed in-line compatible
+    resonant cavity engineering before the technology can be adopted at production
+    scale.
+  issue_severity: moderate
+  project_type: manufacturing/supply chain
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Mode stirring was applied to limit time-averaged temperature
+    variation below 1°C, partially addressing non-uniformity of heating in the prototype
+    cavity.
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id006
+  - 7
+  - 8
+  evidence_excerpt: Adapting the consumer grade microwave technology to suit an industrial
+    line remains challenging. Although microwave heating was proved to be sufficient
+    for delamination/lamination of solar modules with faster speed and lower energy
+    consumption, the size of commercial solar modules is much bigger than the microwave
+    tools used in the consumer electronics market, indicating that scaling up of microwave
+    technology is critical for its applications in PV production lines.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report/
+  project_page_url: https://arena.gov.au/projects/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 27/02/2023
+  kb_year: '2020'
+  kb_associated_project: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Consumer-Electronics
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $420k
+  total_project_value: $1.62m
+  lead_organisation: Macquarie University
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Macquarie Park, New South Wales
+  project_partners: University of New South Wales, Soleritas, Hanwha Q Cells GmbH
+  pdf_url: https://arena.gov.au/assets/2023/04/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report.pdf
+  markdown_filename: substitution_of_niche_market_pv_production_tools_with_cost_effective_consumer_electronics_report.md
+  source_page_pdf: 7
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60353
+  contributing_source_titles:
+  - Substitution of Niche-Market PV Production Tools with Cost-Effective Consumer-Electronics
+    Report
+  contributing_sources:
+  - source_title: Substitution of Niche-Market PV Production Tools with Cost-Effective
+      Consumer-Electronics Report
+    pdf_url: https://arena.gov.au/assets/2023/04/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report/
+    markdown_filename: substitution_of_niche_market_pv_production_tools_with_cost_effective_consumer_electronics_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-60354
+  source_title: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Consumer-Electronics Report
+  publish_date: '2023-02-27'
+  project_name: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Consumer-Electronics
+  what_happened: Microwave lamination of a single-cell mini module was achieved in
+    7 minutes at 400 W — one minute faster than the latest industrial-scale laminator
+    — using selective heating of silicon via microwave absorption without arcing,
+    leveraging the transparency of glass and EVA/POE laminates to microwaves at room
+    temperature.
+  lesson_learnt: Microwave absorption enables selective, faster lamination by heating
+    silicon directly rather than transferring heat through bulk glass and backsheet
+    layers — accurate control of microwave power and resonant cavity design compatible
+    with in-line processing are the key engineering requirements for scaling this
+    approach.
+  issue_severity: none
+  project_type: manufacturing/supply chain
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id007
+  - 7
+  - 8
+  evidence_excerpt: The lamination process took 7 minutes at 400 W, which is one minute
+    shorter than the latest industrial-scale laminator.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report/
+  project_page_url: https://arena.gov.au/projects/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 27/02/2023
+  kb_year: '2020'
+  kb_associated_project: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Consumer-Electronics
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $420k
+  total_project_value: $1.62m
+  lead_organisation: Macquarie University
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Macquarie Park, New South Wales
+  project_partners: University of New South Wales, Soleritas, Hanwha Q Cells GmbH
+  pdf_url: https://arena.gov.au/assets/2023/04/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report.pdf
+  markdown_filename: substitution_of_niche_market_pv_production_tools_with_cost_effective_consumer_electronics_report.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60354
+  contributing_source_titles:
+  - Substitution of Niche-Market PV Production Tools with Cost-Effective Consumer-Electronics
+    Report
+  contributing_sources:
+  - source_title: Substitution of Niche-Market PV Production Tools with Cost-Effective
+      Consumer-Electronics Report
+    pdf_url: https://arena.gov.au/assets/2023/04/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report/
+    markdown_filename: substitution_of_niche_market_pv_production_tools_with_cost_effective_consumer_electronics_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-60355
+  source_title: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Consumer-Electronics Report
+  publish_date: '2023-02-27'
+  project_name: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Consumer-Electronics
+  what_happened: Luminescence imaging (both electroluminescence and photoluminescence)
+    was demonstrated using the flatbed scanner prototype with minimum hardware modifications,
+    producing EL images of comparable quality to a commercial BT imaging tool LIS-R3,
+    at a system cost estimated to be over 100 times lower.
+  lesson_learnt: Flatbed scanner technology can be adapted for luminescence imaging
+    of solar cells with minor modifications (external power source for EL; LED board
+    and short-pass filter for PL), offering a pathway to democratise access to EL/PL
+    characterisation for research groups with constrained budgets and to lower integration
+    costs in PV manufacturing lines.
+  issue_severity: none
+  project_type: manufacturing/supply chain
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id008
+  - 8
+  - 9
+  evidence_excerpt: Using a low-cost alternative to replace the current high-cost
+    characterisation lab tools indicates the potential to reduce overall costs in
+    PV production lines. An example EL result comparison measured with the prototype
+    and a BT imaging tool LIS-R3 under 6 amps of current is shown in Figure 3. The
+    high similarity of the images demonstrates that the flatbed scanner technology-based
+    prototype can achieve high-quality EL images that reveal the features of defects
+    on silicon PV solar cells.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report/
+  project_page_url: https://arena.gov.au/projects/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 27/02/2023
+  kb_year: '2020'
+  kb_associated_project: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Consumer-Electronics
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $420k
+  total_project_value: $1.62m
+  lead_organisation: Macquarie University
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Macquarie Park, New South Wales
+  project_partners: University of New South Wales, Soleritas, Hanwha Q Cells GmbH
+  pdf_url: https://arena.gov.au/assets/2023/04/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report.pdf
+  markdown_filename: substitution_of_niche_market_pv_production_tools_with_cost_effective_consumer_electronics_report.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60355
+  contributing_source_titles:
+  - Substitution of Niche-Market PV Production Tools with Cost-Effective Consumer-Electronics
+    Report
+  contributing_sources:
+  - source_title: Substitution of Niche-Market PV Production Tools with Cost-Effective
+      Consumer-Electronics Report
+    pdf_url: https://arena.gov.au/assets/2023/04/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report/
+    markdown_filename: substitution_of_niche_market_pv_production_tools_with_cost_effective_consumer_electronics_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+- record_id: ARENA-DLV-60356
+  source_title: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Consumer-Electronics Report
+  publish_date: '2023-02-27'
+  project_name: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Consumer-Electronics
+  what_happened: The flatbed scanner prototype's small form factor was identified
+    as a key advantage for in-line PV manufacturing integration, but the electronic
+    controller and wire arrangements initially constrained the overall device size,
+    necessitating development of a custom PCB design smaller than the sensor itself.
+  lesson_learnt: Cable arrangement and controller placement are critical determinants
+    of overall prototype form factor for in-line PV tool integration — choosing small
+    hardware components and simplifying PCB design from the outset enables deployment
+    at multiple locations along a production line without space constraints.
+  issue_severity: minor
+  project_type: manufacturing/supply chain
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: A customised control circuit minimising the form factor was developed;
+    the final PCB design achieved dimensions smaller than the sensor itself (approximately
+    8 cm × 8.3 cm).
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id009
+  - 9
+  - 10
+  evidence_excerpt: Although the line scanner bar chosen in this project is small,
+    the electronic controller and the wire arrangements can limit the overall size
+    of the prototype. To reduce the form factor, a customised control circuit which
+    minimised the form factor was developed to maximise integration opportunities
+    in the PV manufacturing for in-line measurements as shown in Figure 4. The final
+    PCB design is smaller than the sensor used.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report/
+  project_page_url: https://arena.gov.au/projects/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 27/02/2023
+  kb_year: '2020'
+  kb_associated_project: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Consumer-Electronics
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $420k
+  total_project_value: $1.62m
+  lead_organisation: Macquarie University
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Macquarie Park, New South Wales
+  project_partners: University of New South Wales, Soleritas, Hanwha Q Cells GmbH
+  pdf_url: https://arena.gov.au/assets/2023/04/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report.pdf
+  markdown_filename: substitution_of_niche_market_pv_production_tools_with_cost_effective_consumer_electronics_report.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60356
+  contributing_source_titles:
+  - Substitution of Niche-Market PV Production Tools with Cost-Effective Consumer-Electronics
+    Report
+  contributing_sources:
+  - source_title: Substitution of Niche-Market PV Production Tools with Cost-Effective
+      Consumer-Electronics Report
+    pdf_url: https://arena.gov.au/assets/2023/04/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report/
+    markdown_filename: substitution_of_niche_market_pv_production_tools_with_cost_effective_consumer_electronics_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-60357
+  source_title: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Consumer-Electronics Report
+  publish_date: '2023-02-27'
+  project_name: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Consumer-Electronics
+  what_happened: The Raspberry Pi Pico microcontroller used in the flatbed scanner
+    prototype limited data transfer speed, resulting in prototype measurement throughput
+    (25–1,800 samples/hour depending on use case) that was materially slower than
+    typical PV production line speeds of 3,600 cells/hour, with luminescence imaging
+    at only 25 samples/hour representing the most severe gap.
+  lesson_learnt: When designing low-cost measurement tools for integration into high-throughput
+    PV production lines, the microcontroller and analogue front-end must be specified
+    to match production line speeds from the outset — using a consumer microcontroller
+    such as the Raspberry Pi Pico creates a data transfer bottleneck that can make
+    in-line deployment impractical; a dedicated high-speed analogue front end (e.g.
+    WM8255) and a fast microcontroller (e.g. Teensy 4) are needed and add only approximately
+    $50 to the build cost.
+  issue_severity: moderate
+  project_type: manufacturing/supply chain
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: The project identified that replacing the Raspberry Pi Pico with
+    a WM8255 analogue front end and Teensy 4 microcontroller would improve processing
+    speed by a factor of 10 at an additional component cost of approximately $50.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id010
+  - 10
+  - 11
+  evidence_excerpt: The current solar cell production line speed is an average of
+    3,600 cells/hour. However, implementing the scanner within sections of other tools
+    means having to capture data at the same throughput... Comparing to the measurement
+    speed of each use-case of the flatbed scanner prototype listed in Table 1 for
+    low-resolution results, the manufacturing speed is faster, indicating that the
+    measurement speed of the prototype needs to be increased. The main limit factor
+    of the prototype measurement speed lies in the microcontroller. The Raspberry
+    Pi Pico microcontroller limits the speed of data transfer between the flatbed
+    scanner and the computer.
+  confidence_note: secondary_failure_mode of design assumption failure included because
+    the speed bottleneck reflects an initial design choice about microcontroller selection
+    that was not validated against production line throughput requirements.
+  source_url: https://arena.gov.au/knowledge-bank/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report/
+  project_page_url: https://arena.gov.au/projects/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 27/02/2023
+  kb_year: '2020'
+  kb_associated_project: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Consumer-Electronics
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $420k
+  total_project_value: $1.62m
+  lead_organisation: Macquarie University
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Macquarie Park, New South Wales
+  project_partners: University of New South Wales, Soleritas, Hanwha Q Cells GmbH
+  pdf_url: https://arena.gov.au/assets/2023/04/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report.pdf
+  markdown_filename: substitution_of_niche_market_pv_production_tools_with_cost_effective_consumer_electronics_report.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60357
+  contributing_source_titles:
+  - Substitution of Niche-Market PV Production Tools with Cost-Effective Consumer-Electronics
+    Report
+  contributing_sources:
+  - source_title: Substitution of Niche-Market PV Production Tools with Cost-Effective
+      Consumer-Electronics Report
+    pdf_url: https://arena.gov.au/assets/2023/04/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report/
+    markdown_filename: substitution_of_niche_market_pv_production_tools_with_cost_effective_consumer_electronics_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-60358
+  source_title: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Consumer-Electronics Report
+  publish_date: '2023-02-27'
+  project_name: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Consumer-Electronics
+  what_happened: The flatbed scanner prototype was demonstrated to support multiple
+    distinct QC use cases across PV production — texturing quality analysis, deposition
+    uniformity measurement, metallisation process control, colour binning, and luminescence
+    imaging — suggesting it could replace several separate high-cost characterisation
+    tools deployed at different stages of the manufacturing line.
+  lesson_learnt: A single low-cost flatbed scanner platform can address multiple QC
+    functions across PV manufacturing stages; project teams developing cost-reduction
+    tools should map all potential use cases early in design to maximise the commercial
+    value proposition and prioritise those use cases with throughput requirements
+    compatible with the chosen hardware platform.
+  issue_severity: none
+  project_type: manufacturing/supply chain
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: solar PV
+  source_pages: &id011
+  - 5
+  - 6
+  - 7
+  evidence_excerpt: Multiple use cases for the prototype technology were identified,
+    including texturing analysis, thin-film deposition uniformity inspection, metallisation
+    analysis, luminescence imaging for yield analysis and colour inspection of completed
+    solar cells. This suggests that flatbed scanner technology can be applied as process
+    control metrology at several stages of PV manufacturing.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report/
+  project_page_url: https://arena.gov.au/projects/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics/
+  kb_category: Solar energy, Solar PV R&amp;D
+  kb_publish_date: 27/02/2023
+  kb_year: '2020'
+  kb_associated_project: Substitution of Niche-Market PV Production Tools with Cost-Effective
+    Consumer-Electronics
+  kb_document_type: Reports, Lessons
+  kb_document_folder: Reports_Lessons
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $420k
+  total_project_value: $1.62m
+  lead_organisation: Macquarie University
+  arena_program: Addressing Solar PV End-of-Life Issues and Lowering Solar PV Cost
+  project_status: Past
+  project_start_date: 18/09/2020
+  location: Macquarie Park, New South Wales
+  project_partners: University of New South Wales, Soleritas, Hanwha Q Cells GmbH
+  pdf_url: https://arena.gov.au/assets/2023/04/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report.pdf
+  markdown_filename: substitution_of_niche_market_pv_production_tools_with_cost_effective_consumer_electronics_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-60358
+  contributing_source_titles:
+  - Substitution of Niche-Market PV Production Tools with Cost-Effective Consumer-Electronics
+    Report
+  contributing_sources:
+  - source_title: Substitution of Niche-Market PV Production Tools with Cost-Effective
+      Consumer-Electronics Report
+    pdf_url: https://arena.gov.au/assets/2023/04/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/substitution-of-niche-market-pv-production-tools-with-cost-effective-consumer-electronics-report/
+    markdown_filename: substitution_of_niche_market_pv_production_tools_with_cost_effective_consumer_electronics_report.md
+  arena_category:
+  - Solar PV
+  activity_type: R&D
+  is_consortium: false

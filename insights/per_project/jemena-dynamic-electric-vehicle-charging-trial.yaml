@@ -1,0 +1,138 @@
+- record_id: ARENA-DLV-51462
+  source_title: UTS - Flexible Demand State of Play in Australia - Report
+  publish_date: 2024-05
+  project_name: Jemena – Dynamic Electric Vehicle Charging Trial
+  what_happened: Demand response events in the Jemena EV charging trial produced unintended
+    secondary demand peaks just outside the event window as participants resumed charging
+    immediately after restrictions lifted.
+  lesson_learnt: Demand response event design must account for the 'rebound peak'
+    immediately following event windows — future EV charging incentive schemes should
+    use staggered event end times, randomised release windows, or post-event price
+    signals to dampen the secondary peak.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id001
+  - 34
+  evidence_excerpt: An unintended consequence of the demand response events were secondary
+    demand peaks just outside the event window, which need to be considered in future
+    incentive design.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/uts-flexible-demand-state-of-play-in-aust-report/
+  project_page_url: null
+  kb_category: Demand response
+  kb_publish_date: 12/06/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/06/UTS-Flexible-Demand-State-of-Play-in-Aust-Report.pdf
+  markdown_filename: uts_flexible_demand_state_of_play_in_australia_report.md
+  source_page_pdf: 34
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-51462
+  contributing_source_titles:
+  - UTS - Flexible Demand State of Play in Australia - Report
+  contributing_sources:
+  - source_title: UTS - Flexible Demand State of Play in Australia - Report
+    pdf_url: https://arena.gov.au/assets/2024/06/UTS-Flexible-Demand-State-of-Play-in-Aust-Report.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/uts-flexible-demand-state-of-play-in-aust-report/
+    markdown_filename: uts_flexible_demand_state_of_play_in_australia_report.md
+  arena_category:
+  - Demand response
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-51463
+  source_title: UTS - Flexible Demand State of Play in Australia - Report
+  publish_date: 2024-05
+  project_name: Jemena – Dynamic Electric Vehicle Charging Trial
+  what_happened: In the Jemena EV trial, 20% of participants did not participate in
+    demand response or solar soak events due to chargers being switched off when not
+    in use, Wi-Fi connectivity issues, or inconvenient timing — representing a structural
+    non-participation floor unrelated to incentive design.
+  lesson_learnt: Plan for a structural non-participation floor of at least 20% in
+    residential EV demand response programs due to connectivity dropouts and charger
+    availability; technology specifications should require always-on connectivity
+    and auto-reconnect features, and event scheduling should consider participant
+    routines.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: EV
+  source_pages: &id002
+  - 34
+  evidence_excerpt: 20% did not participate for various reasons including chargers
+    being switched off when not in use, WI-FI connectivity or inconvenient timing.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/uts-flexible-demand-state-of-play-in-aust-report/
+  project_page_url: null
+  kb_category: Demand response
+  kb_publish_date: 12/06/2024
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2024/06/UTS-Flexible-Demand-State-of-Play-in-Aust-Report.pdf
+  markdown_filename: uts_flexible_demand_state_of_play_in_australia_report.md
+  source_page_pdf: 34
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-51463
+  contributing_source_titles:
+  - UTS - Flexible Demand State of Play in Australia - Report
+  contributing_sources:
+  - source_title: UTS - Flexible Demand State of Play in Australia - Report
+    pdf_url: https://arena.gov.au/assets/2024/06/UTS-Flexible-Demand-State-of-Play-in-Aust-Report.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/uts-flexible-demand-state-of-play-in-aust-report/
+    markdown_filename: uts_flexible_demand_state_of_play_in_australia_report.md
+  arena_category:
+  - Demand response
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82

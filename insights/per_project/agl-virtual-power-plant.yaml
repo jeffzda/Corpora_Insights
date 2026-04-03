@@ -1,0 +1,3886 @@
+- record_id: ARENA-DLV-69617
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: Grid voltages across the South Australian LV network sat persistently
+    at the upper end of the allowable range throughout the year; in spring, approximately
+    40% of the Tesla fleet experienced voltages in excess of the 253V upper limit,
+    constraining DER operation and triggering power quality response modes.
+  lesson_learnt: VPP programs in Australian LV networks should expect persistent high-voltage
+    conditions as the operational baseline — design dispatch strategies, availability
+    calculations, and customer value estimates accounting for Volt-VAr and Volt-Watt
+    mode curtailment, and engage DNSPs early on voltage management to understand which
+    circuits have the least headroom.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: AGL conducted detailed voltage notch testing across 764 assets
+    to quantify real and reactive power voltage sensitivity, informing regulatory
+    submissions advocating for voltage management reform and dynamic export limits.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages:
+  - 3
+  - 4
+  - 21
+  - 24
+  - 29
+  - 30
+  - 36
+  - 37
+  - 38
+  evidence_excerpt: Local network voltage is a key factor in the performance of the
+    overall fleet, especially where the fleet is directed to dispatch at a time when
+    solar production is at a high level... high local grid voltages within a distribution
+    network present a challenge to the availability of the full fleet of energy storage
+    systems.
+  confidence_note: Canonical record merged from 4 source records across 3 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: 38
+  corroboration_count: 4
+  source_doc_count: 3
+  contributing_record_ids:
+  - ARENA-DLV-9953
+  - ARENA-DLV-22103
+  - ARENA-DLV-22111
+  - ARENA-DLV-69617
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  - Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  - 'Empowered Consumers: Distributed Energy Resources Portfolio Update'
+  contributing_sources:
+  - source_title: 'Empowered Consumers: Distributed Energy Resources Portfolio Update'
+    pdf_url: https://arena.gov.au/assets/2018/10/AR_024_DER-Portfolio-Update.pdf
+    source_pages:
+    - 3
+    - 4
+    source_url: https://arena.gov.au/knowledge-bank/empowered-consumers-distributed-energy-resources-portfolio-update/
+    markdown_filename: empowered_consumers_distributed_energy_resources_portfolio_update.md
+  - source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+    pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+    source_pages:
+    - 21
+    - 24
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages:
+    - 36
+    - 37
+    - 38
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-22113
+  source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  publish_date: '2017-07-31'
+  project_name: Virtual Power Plant in South Australia (SA-VPP)
+  what_happened: A large proportion of prospective customers were unaware that adding
+    storage would disqualify them from the PFiT, and many did not understand the mechanism
+    by which battery storage generates financial savings, suggesting a widespread
+    consumer knowledge gap about storage economics.
+  lesson_learnt: Screen VPP participants for feed-in tariff eligibility early in the
+    sales process — customers unwilling to forgo premium feed-in tariffs represent
+    a substantial disqualifying factor (35% attrition in this trial) and should be
+    filtered at the top of the recruitment funnel to avoid wasted sales effort.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: stakeholder/land/community
+  failure_mode: coordination & stakeholders
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: AGL continuously updated a 'Frequently Asked Questions' list
+    on the landing page based on learnings from sales calls, capturing and addressing
+    customer knowledge gaps in near-real time.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 4
+  - 12
+  - 15
+  - 21
+  evidence_excerpt: A large proportion of consumers who receive a PFiT appear not
+    to be aware that installing an energy storage system will deem them ineligible
+    to continue receiving the PFiT... it appears that if one assumes that most customers
+    expressing interest in the program are doing so for financial savings then the
+    mechanism by which those savings are realised is not well understood.
+  confidence_note: Canonical record merged from 4 source records across 3 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 29/03/2018
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+  markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  source_page_pdf: 15
+  corroboration_count: 4
+  source_doc_count: 3
+  contributing_record_ids:
+  - ARENA-DLV-9954
+  - ARENA-DLV-22102
+  - ARENA-DLV-22113
+  - ARENA-DLV-69603
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  - Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  - 'Empowered Consumers: Distributed Energy Resources Portfolio Update'
+  contributing_sources:
+  - source_title: 'Empowered Consumers: Distributed Energy Resources Portfolio Update'
+    pdf_url: https://arena.gov.au/assets/2018/10/AR_024_DER-Portfolio-Update.pdf
+    source_pages:
+    - 4
+    source_url: https://arena.gov.au/knowledge-bank/empowered-consumers-distributed-energy-resources-portfolio-update/
+    markdown_filename: empowered_consumers_distributed_energy_resources_portfolio_update.md
+  - source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+    pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+    source_pages:
+    - 15
+    - 21
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages:
+    - 12
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.72
+- record_id: ARENA-DLV-9955
+  source_title: 'Empowered Consumers: Distributed Energy Resources Portfolio Update'
+  publish_date: '2018'
+  project_name: AGL Virtual Power Plant
+  what_happened: In Stage 1 of the AGL VPP trial, approximately 50% of customers opted
+    to pay an additional fee for backup power functionality, indicating backup power
+    was a high-priority feature for South Australian residential energy storage consumers.
+  lesson_learnt: Design residential battery storage products to include backup power
+    as a standard or prominently offered feature — high customer willingness to pay
+    for backup power (50% uptake in this trial) suggests it is a key value driver
+    for residential adoption in South Australia and likely other markets.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id001
+  - 4
+  evidence_excerpt: Approximately 50% of customers opted to pay the additional fee
+    for their system to provide backup power, pointing to the importance of backup
+    power functionality for South Australian energy storage consumers.
+  confidence_note: 'proponent_type reconciled to ''research organisation/university''
+    from: research organisation/university (5/12), utility/energy retailer (5/12),
+    network business (1/12), consortium/multi-party venture (1/12)'
+  source_url: https://arena.gov.au/knowledge-bank/empowered-consumers-distributed-energy-resources-portfolio-update/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 25/10/2018
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2018/10/AR_024_DER-Portfolio-Update.pdf
+  markdown_filename: empowered_consumers_distributed_energy_resources_portfolio_update.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-9955
+  contributing_source_titles:
+  - 'Empowered Consumers: Distributed Energy Resources Portfolio Update'
+  contributing_sources:
+  - source_title: 'Empowered Consumers: Distributed Energy Resources Portfolio Update'
+    pdf_url: https://arena.gov.au/assets/2018/10/AR_024_DER-Portfolio-Update.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/empowered-consumers-distributed-energy-resources-portfolio-update/
+    markdown_filename: empowered_consumers_distributed_energy_resources_portfolio_update.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-9956
+  source_title: 'Empowered Consumers: Distributed Energy Resources Portfolio Update'
+  publish_date: '2018'
+  project_name: AGL Virtual Power Plant
+  what_happened: During Stage 2 extended dispatch events, maintaining a consistent
+    power export target across the VPP fleet proved complex due to high grid voltage,
+    battery state-of-charge variations, variability in solar production, and household
+    load differences across sites. Battery inverter disconnections continued to have
+    a significant impact.
+  lesson_learnt: VPP fleet control systems must account for simultaneous variability
+    in grid voltage, individual battery state of charge, solar generation, and household
+    load — consistent aggregate power export targets cannot be reliably held without
+    robust site-level feedback and control logic that handles these compounding factors.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: research organisation/university
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Test designs were modified to include advance pre-charging protocols
+    for subsequent dispatch demonstrations.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages:
+  - 4
+  - 26
+  - 29
+  evidence_excerpt: There were several interesting lessons from these trials, including
+    the complexity of maintaining a consistent power export target over the course
+    of extended dispatches. Reasons for this complexity include the impact of high
+    grid voltage, battery state of charge variations, and the variability of solar
+    production and household load on each of the individual sites. Battery inverter
+    disconnections continued to have a significant impact during this Stage of the
+    project.
+  confidence_note: 'proponent_type reconciled to ''research organisation/university''
+    from: research organisation/university (5/12), utility/energy retailer (5/12),
+    network business (1/12), consortium/multi-party venture (1/12) Canonical record
+    merged from 2 source records across 2 document(s).'
+  source_url: https://arena.gov.au/knowledge-bank/empowered-consumers-distributed-energy-resources-portfolio-update/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 25/10/2018
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Insights
+  kb_document_folder: Insights
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2018/10/AR_024_DER-Portfolio-Update.pdf
+  markdown_filename: empowered_consumers_distributed_energy_resources_portfolio_update.md
+  source_page_pdf: 4
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-9956
+  - ARENA-DLV-22118
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  - 'Empowered Consumers: Distributed Energy Resources Portfolio Update'
+  contributing_sources:
+  - source_title: 'Empowered Consumers: Distributed Energy Resources Portfolio Update'
+    pdf_url: https://arena.gov.au/assets/2018/10/AR_024_DER-Portfolio-Update.pdf
+    source_pages:
+    - 4
+    source_url: https://arena.gov.au/knowledge-bank/empowered-consumers-distributed-energy-resources-portfolio-update/
+    markdown_filename: empowered_consumers_distributed_energy_resources_portfolio_update.md
+  - source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+    pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+    source_pages:
+    - 26
+    - 29
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: integration failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-22101
+  source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  publish_date: '2017-07-31'
+  project_name: Virtual Power Plant in South Australia (SA-VPP)
+  what_happened: AGL sold all 150 Stage 1 energy storage systems approximately three
+    months ahead of the April 2017 deadline, with more than 1,200 leads generated
+    largely from launch news coverage and social media, and formal online lead generation
+    not beginning until February 2017.
+  lesson_learnt: Significant latent consumer demand for behind-the-meter storage can
+    be unlocked by high-profile program launches — plan installation capacity and
+    sales pipeline to absorb demand surges that arrive ahead of schedule rather than
+    relying on gradual lead generation.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id002
+  - 3
+  - 20
+  evidence_excerpt: AGL has successfully completed Stage 1 of the three-stage project
+    and at the time of writing had sold the 150 energy storage systems allocated to
+    this stage three months ahead of schedule.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 29/03/2018
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+  markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-22101
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+    pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-22104
+  source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  publish_date: '2017-07-31'
+  project_name: Virtual Power Plant in South Australia (SA-VPP)
+  what_happened: SAPN's service and installation rules capped single-phase embedded
+    generation at 10 kVA (subsequently reduced to 5 kVA under AS4777.2:2015), meaning
+    any customer with existing solar plus the 5 kW Sunverge inverter would breach
+    the export limit without active export limiting.
+  lesson_learnt: Before selecting hardware for a distributed storage programme, verify
+    the combined inverter export capacity of the storage unit plus any co-located
+    solar against the local DNSP's connection rules — breaching export limits can
+    block installations or require software mitigations that need regulator acceptance.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: AGL implemented an export limiting function through the Sunverge
+    control software and demonstrated to SAPN that it could reliably cap site export
+    to the required limit; export limiting now ships as standard with all units.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id003
+  - 22
+  evidence_excerpt: This export limit was subsequently reduced to 5 kVa after the
+    current version of AS4777.2:2015 came into effect. This rule posed a challenge
+    as when combined with the Schneider 5 kW inverter in the Sunverge energy storage
+    system, any capacity of associated solar would exceed the 5kVA limit imposed by
+    SAPN without some form of export limiting functionality.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 29/03/2018
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+  markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  source_page_pdf: 22
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-22104
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+    pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-69605
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: The allowable site voltage rise limits under the revised AS4777.1
+    (2016) meant that in some instances customers required sub-mains upgrades because
+    battery installation location options were limited relative to the switchboard,
+    adding cost and complexity to installations.
+  lesson_warnt: Assess site voltage rise compliance requirements and sub-mains upgrade
+    risk during pre-installation site inspection — newer hardware with flexible mounting
+    options (wall and ground-mounted) can reduce the frequency of costly sub-mains
+    upgrades and should be evaluated when selecting hardware for retrofit ESS programs.
+  lesson_learnt: Assess site voltage rise compliance requirements and sub-mains upgrade
+    risk during pre-installation site inspection — newer hardware with flexible mounting
+    options (wall and ground-mounted) can reduce the frequency of costly sub-mains
+    upgrades and should be evaluated when selecting hardware for retrofit ESS programs.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: utility/energy retailer
+  delay_category: approvals/regulatory
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: Newer hardware systems introduced during the program allowed
+    for a wider range of installation location options, reducing the requirement for
+    sub-mains upgrades in some instances.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages:
+  - 10
+  - 22
+  evidence_excerpt: Previous milestone reports have highlighted issues relating to
+    the allowable site voltage rise in the recently revised AS4777.1 (2016). In some
+    instances, this resulted in a requirement to upgrade customer sub-mains at some
+    customer sites due to the limited options for battery locations, relative to the
+    switchboard.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: 10
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-22105
+  - ARENA-DLV-69605
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  - Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+    pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+    source_pages:
+    - 22
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages:
+    - 10
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-22106
+  source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  publish_date: '2017-07-31'
+  project_name: Virtual Power Plant in South Australia (SA-VPP)
+  what_happened: 78% of Stage 1 installation sites required some form of variation
+    quote after the pre-installation site inspection, most commonly switchboard modification
+    or a concrete plinth, with an average variation value of just over $400; all customers
+    quoted for sub-main upgrades (three in total) cancelled due to cost.
+  lesson_learnt: For residential behind-the-meter storage rollouts, assume the majority
+    of sites will require electrical variations — build an explicit requoting and
+    customer communication process, and set upfront eligibility criteria that exclude
+    sites likely to face prohibitively expensive upgrades (e.g. sub-main replacements).
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: utility/energy retailer
+  delay_category: construction/installation
+  failure_mode: poor scoping
+  outcome_class: partial success
+  secondary_failure_mode: execution & logistics
+  intervention_note: Pre-install site inspections were conducted for all sales to
+    capture switchboard, electrical, and groundworks requirements before installation
+    day, improving installer preparation and safety.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages:
+  - 17
+  - 21
+  evidence_excerpt: Approximately 78% of sites in Stage 1 required some form of variation...
+    the average value is just over $400... at the time of writing, all customers who
+    had been quoted for a submain upgrades had cancelled (three in total) due to the
+    high cost of that upgrade.
+  confidence_note: Canonical record merged from 2 source records across 1 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 29/03/2018
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+  markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  source_page_pdf: null
+  corroboration_count: 2
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-22106
+  - ARENA-DLV-22107
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+    pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+    source_pages:
+    - 17
+    - 21
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: cost overrun
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-22108
+  source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  publish_date: '2017-07-31'
+  project_name: Virtual Power Plant in South Australia (SA-VPP)
+  what_happened: AGL chose an AC front-coupled battery architecture for the SA-VPP
+    to avoid triggering compliance requirements of AS/NZS 5033:2014 on existing solar
+    PV systems; DC-coupled systems would have required retrofitting rooftop isolators,
+    re-stringing arrays, or replacing solar inverters at unpredictable cost.
+  lesson_learnt: For retrofit residential ESS programs, AC-coupled architectures significantly
+    reduce installation cost and complexity by eliminating the need to modify existing
+    solar PV systems — evaluate this design choice explicitly at program design stage
+    rather than discovering modification costs during deployment.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages:
+  - 10
+  - 13
+  evidence_excerpt: AGL estimated that more than 50% of existing solar PV systems
+    would require some form of modification to make them compliant with current Australian
+    standards, and that the likely cost of modification is typically in the order
+    of $500-$1000 per system. This necessitates a costly variation to a customer quote.
+    To avoid the cost of modifying existing solar PV systems, AGL chose to use only
+    AC-front coupled energy storage systems in the VPP-SA program.
+  confidence_note: Canonical record merged from 2 source records across 2 document(s).
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 29/03/2018
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+  markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  source_page_pdf: 10
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-22108
+  - ARENA-DLV-69607
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  - Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+    pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+    source_pages:
+    - 10
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages:
+    - 13
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-22109
+  source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  publish_date: '2017-07-31'
+  project_name: Virtual Power Plant in South Australia (SA-VPP)
+  what_happened: Manual handling of the heavy Sunverge cabinet units during residential
+    installations was identified as a significant HSE risk, particularly on uneven,
+    steep, or constrained access paths; a three-person minimum rule was imposed for
+    the standing-up phase.
+  lesson_learnt: For residential storage installations involving heavy cabinet units,
+    conduct a specific manual handling risk assessment and procure purpose-built handling
+    equipment before rollout — relying on improvised solutions (trolleys, slide boards)
+    at scale creates persistent injury risk that standard contingency measures do
+    not fully mitigate.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: execution & logistics
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: A minimum of three people was mandated on site for the cabinet
+    standing-up phase, and steps were initiated to source purpose-built equipment
+    to manage steep ground, tight gateways, and narrow paths.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id004
+  - 34
+  evidence_excerpt: One of the most significant lessons learned to date concerns the
+    manual handling risks posed by the requirement to move the energy storage units
+    into position on the customer's property... Steps are underway to source purpose
+    built equipment to minimise the risks posed by the need to stand the cabinets
+    up on site as well as the hazards of steep ground, uneven ground, tight gateways,
+    and narrow paths.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 29/03/2018
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+  markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  source_page_pdf: 35
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-22109
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+    pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-22110
+  source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  publish_date: '2017-07-31'
+  project_name: Virtual Power Plant in South Australia (SA-VPP)
+  what_happened: VPP dispatch and frequency control tests conducted with only 28 units
+    (out of 47 installed) demonstrated that the fleet could reliably respond to both
+    planned and unplanned dispatch events and could follow an AGC frequency control
+    signal, with communications latency not precluding participation in the 6-second
+    contingency FCAS market.
+  lesson_learnt: Core VPP dispatch and frequency control capability can be meaningfully
+    validated with a small sub-fleet early in deployment — conducting structured tests
+    at this scale generates credible evidence for regulators and market operators
+    before full fleet build-out, reducing later commercialisation risk.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id005
+  - 24
+  - 29
+  evidence_excerpt: AGL's initial findings show that the speed of communications to
+    and from the energy storage system do not preclude the fleet (pending resolution
+    of other regulatory and technical barriers) participating in the six second contingency
+    FCAS market. This is an important development.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 29/03/2018
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+  markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-22110
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+    pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-22112
+  source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  publish_date: '2017-07-31'
+  project_name: Virtual Power Plant in South Australia (SA-VPP)
+  what_happened: AGL increased the battery size from 7.7 kWh to 11.68 kWh at no additional
+    cost to consumers to enable access to additional value streams including backup
+    power and provide greater dispatch flexibility for VPP testing.
+  lesson_learnt: Selecting a larger battery capacity than the minimum commercial case
+    requires — if cost-neutral — materially expands the range of services and value
+    stacks that can be demonstrated, improving both customer value and the breadth
+    of evidence generated for the program.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id006
+  - 3
+  evidence_excerpt: AGL increased the battery size from 7.7 kWh to 11.68 kWh at no
+    cost to consumers to provide greater value to customers and allow for more flexibility
+    to test different value pools such as backup power.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 29/03/2018
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+  markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-22112
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+    pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-22114
+  source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  publish_date: '2017-07-31'
+  project_name: Virtual Power Plant in South Australia (SA-VPP)
+  what_happened: Early adopter Stage 1 customers were predominantly from affluent,
+    tech-savvy demographic segments ('Exclusive Environs', 'Knowledgeable Success',
+    'Affluent Acreage'), with 70% of customers falling into just four Mosaic lifestyle
+    groups, indicating the programme had not yet reached mainstream consumer segments.
+  lesson_learnt: VPP customer acquisition strategies targeting mainstream uptake need
+    to extend beyond early-adopter marketing channels — mass-market segments require
+    different product framing, simpler sales processes, and potentially different
+    financing or subsidy structures to achieve broader penetration.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id007
+  - 23
+  evidence_excerpt: Mosaic analysis of the first 200 SA-VPP customers shows that 70%
+    of customers fall into just four Mosaic groups... Customers classified in the
+    'Exclusive Environs', 'Knowledgeable Success' and 'Affluent Acreage' groupings
+    were over-represented relative to the general Adelaide population.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 29/03/2018
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+  markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-22114
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+    pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-22115
+  source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  publish_date: '2017-07-31'
+  project_name: Virtual Power Plant in South Australia (SA-VPP)
+  what_happened: AGL trained four installation crews and assisted 12 electricians
+    to gain Clean Energy Council (CEC) accreditation as a direct result of the SA-VPP
+    program, building installer workforce capacity from scratch to reach 12–15 installations
+    per week by Stage 1 completion.
+  lesson_learnt: For the first residential battery storage rollout in a market, proactively
+    invest in installer accreditation and crew training from program launch — workforce
+    capacity constraints will otherwise become the binding constraint on deployment
+    rate, not customer demand.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: AGL established a dedicated training pathway including CEC accreditation
+    support, growing installation capacity to 12–15 units per week by end of Stage
+    1.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id008
+  - 3
+  evidence_excerpt: At the time of writing AGL had trained four installation crews
+    and assisted 12 electricians gain their Clean Energy Council (CEC) accreditation
+    for energy storage system installation as a direct result of this program.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 29/03/2018
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+  markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  source_page_pdf: 3
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-22115
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+    pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-22116
+  source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  publish_date: '2017-07-31'
+  project_name: Virtual Power Plant in South Australia (SA-VPP)
+  what_happened: The VPP's normal solar self-consumption optimisation operation produced
+    an approximately 60% reduction in maximum demand from VPP fleet households and
+    a significantly smoother solar export profile to the local grid, demonstrating
+    measurable network benefits from coordinated DER operation.
+  lesson_learnt: Even in normal daily operation (without explicit VPP dispatch events),
+    a coordinated fleet of behind-the-meter batteries can deliver substantial demand
+    flattening and solar export smoothing — these passive network benefits should
+    be quantified and communicated to DNSPs as a component of the VPP value proposition.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id009
+  - 31
+  evidence_excerpt: the batteries are contributing to a dramatic flattening of these
+    household loads with an approximate 60% reduction in maximum demand and a more
+    constant level of grid demand.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 29/03/2018
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+  markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  source_page_pdf: 31
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-22116
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+    pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-22117
+  source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  publish_date: '2017-07-31'
+  project_name: Virtual Power Plant in South Australia (SA-VPP)
+  what_happened: AGL established a complex two-stage sales consultation process (initial
+    eligibility check followed by a 35–45 minute technical sales call) with dedicated
+    specialist sales staff, which the document identifies as necessary given the technical
+    complexity of the product but which also creates a higher cost-to-acquire per
+    customer.
+  lesson_learnt: Residential storage products involving eligibility constraints, technical
+    configuration options, and regulatory variations require a structured multi-step
+    sales process supported by specialist staff — underestimating sales process complexity
+    leads to inadequate staffing and poor conversion rates.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id010
+  - 13
+  - 14
+  evidence_excerpt: The relatively complex sales process is divided into an initial
+    eligibility consultation and a more detailed technical sales consultation... This
+    call typically took 35-45 minutes.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 29/03/2018
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+  markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-22117
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+    pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-22119
+  source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  publish_date: '2017-07-31'
+  project_name: Virtual Power Plant in South Australia (SA-VPP)
+  what_happened: The absence of a suitable Australian battery pack safety standard
+    at the time of program delivery meant that no domestic standard governed battery
+    management system operation; AGL actively advocated for immediate adoption of
+    IEC62619 as an Australian standard.
+  lesson_learnt: Where a programme deploys technology ahead of the development of
+    domestic safety standards, the proponent should actively engage standards bodies
+    and regulators to accelerate adoption of relevant international standards — this
+    reduces certification uncertainty for subsequent deployments and protects consumer
+    safety.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: policy/market influence only
+  secondary_failure_mode: null
+  intervention_note: AGL advocated publicly for direct adoption of IEC62619 as an
+    Australian standard and selected hardware already tested to international standards
+    (IEC62133, UL1973) to manage the gap.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id011
+  - 35
+  - 36
+  evidence_excerpt: until recently there has not been a suitable pack standard to
+    certify battery packs including the operation of their battery management systems...
+    AGL is advocating for the immediate direct adoption of IEC62616 as an Australian
+    standard and for it to be the minimum standard for battery packs installed in
+    Australia.
+  confidence_note: Document references both IEC62619 and IEC62616 — likely a typographical
+    inconsistency in the source for the same standard.
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 29/03/2018
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+  markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  source_page_pdf: 36
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-22119
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+    pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-22120
+  source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  publish_date: '2017-07-31'
+  project_name: Virtual Power Plant in South Australia (SA-VPP)
+  what_happened: Customers consistently raised technical questions about battery cycle
+    life, depth of discharge, C-ratings, and battery management systems during sales
+    consultations, indicating that the early adopter customer base had conducted substantial
+    independent research before contacting AGL.
+  lesson_learnt: Sales teams for residential battery storage programmes must be technically
+    literate and prepared for detailed product specifications questions — inadequate
+    technical depth in sales staff will undermine conversion rates with the early
+    adopter customer segment most likely to purchase at program launch.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id012
+  - 20
+  evidence_excerpt: 'Many appeared to have researched energy storage system offers
+    extensively and asked a large number of questions during the initial sales consultation.
+    In particular, the sales team reported a number of topics that were raised consistently
+    in sales consultations. These include: Expected/warranted cycle life, Depth of
+    discharge characteristics, C-ratings (ratio of output to capacity), and Battery
+    Management Systems.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 29/03/2018
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+  markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  source_page_pdf: 20
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-22120
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Stage 1 & 2 Reports
+    pdf_url: https://arena.gov.au/assets/2017/02/VPP-SA-Public-Milestone-1-Report-Final-for-issue.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia_stage_1_2_reports.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-42766
+  source_title: Evaluation of ARENA's VPP Portfolio
+  publish_date: 2021-06
+  project_name: AGL Virtual Power Plant
+  what_happened: The AGL VPP project demonstrated that cloud-based API interfaces
+    can control a diverse fleet of residential batteries — an approach novel at the
+    time, when most VPP programs relied on a physical gateway device installed at
+    each site — and AGL has since incorporated VPPs into its business-as-usual offering.
+  lesson_learnt: Cloud-based API integration between multiple hardware vendors and
+    a single VPP software platform is technically viable at scale for residential
+    DER fleets and avoids the cost and complexity of per-site gateway hardware — new
+    VPP programs should evaluate this architecture as the default over gateway-based
+    approaches.
+  issue_severity: none
+  project_type: null
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: government/public-sector body
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages:
+  - 8
+  - 49
+  evidence_excerpt: The project provided a strong learning opportunity on how cloud-based
+    (API) interfaces can be used to control a diverse fleet of assets. Though common
+    today, the approach was novel at the time, with most VPP programs relying on a
+    gateway device being installed alongside each battery to communicate with a single
+    cloud control platform.
+  confidence_note: 'project_type reconciled to ''programmatic/portfolio-level'' from:
+    programmatic/portfolio-level (16/43), DER/customer-side (15/43), network/grid
+    (6/43), storage (3/43), software/data/digital (3/43); project_scale_band reconciled
+    to ''demonstration'' from: demonstration (22/43), programmatic/portfolio-level
+    (12/43), first commercial/FOAK (8/43), pilot (1/43); proponent_type reconciled
+    to ''government/public-sector body'' from: government/public-sector body (14/43),
+    utility/energy retailer (9/43), network business (6/43), consortium/multi-party
+    venture (5/43), research organisation/university (5/43), technology vendor (4/43)
+    Canonical record merged from 2 source records across 2 document(s).'
+  source_url: https://arena.gov.au/knowledge-bank/evaluation-of-arenas-vpp-portfolio/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 6/06/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/evaluation-of-arena-vpp-portfolio-final-report.pdf
+  markdown_filename: evaluation_of_arenarsquos_vpp_portfolio.md
+  source_page_pdf: 49
+  corroboration_count: 2
+  source_doc_count: 2
+  contributing_record_ids:
+  - ARENA-DLV-42766
+  - ARENA-DLV-69628
+  contributing_source_titles:
+  - Evaluation of ARENA's VPP Portfolio
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Evaluation of ARENA's VPP Portfolio
+    pdf_url: https://arena.gov.au/assets/2021/10/evaluation-of-arena-vpp-portfolio-final-report.pdf
+    source_pages:
+    - 49
+    source_url: https://arena.gov.au/knowledge-bank/evaluation-of-arenas-vpp-portfolio/
+    markdown_filename: evaluation_of_arenarsquos_vpp_portfolio.md
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages:
+    - 8
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-42767
+  source_title: Evaluation of ARENA's VPP Portfolio
+  publish_date: 2021-06
+  project_name: AGL Virtual Power Plant
+  what_happened: AGL attempted to participate in the 6-second FCAS market but determined
+    it was not technically feasible with the existing hardware and control architecture
+    deployed in the project.
+  lesson_learnt: Before committing to a VPP trial objective of accessing specific
+    FCAS markets (particularly fast-response markets such as the 6-second market),
+    confirm technical feasibility of the control latency achievable through the chosen
+    communication and control architecture.
+  issue_severity: minor
+  project_type: null
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: government/public-sector body
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id013
+  - 48
+  evidence_excerpt: AGL was not enrolled with the FCAS market initially, they tried
+    participating in the 6 second market but realised it was not technically feasible.
+  confidence_note: 'project_type reconciled to ''programmatic/portfolio-level'' from:
+    programmatic/portfolio-level (16/43), DER/customer-side (15/43), network/grid
+    (6/43), storage (3/43), software/data/digital (3/43); project_scale_band reconciled
+    to ''demonstration'' from: demonstration (22/43), programmatic/portfolio-level
+    (12/43), first commercial/FOAK (8/43), pilot (1/43); proponent_type reconciled
+    to ''government/public-sector body'' from: government/public-sector body (14/43),
+    utility/energy retailer (9/43), network business (6/43), consortium/multi-party
+    venture (5/43), research organisation/university (5/43), technology vendor (4/43)'
+  source_url: https://arena.gov.au/knowledge-bank/evaluation-of-arenas-vpp-portfolio/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 6/06/2021
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2021/10/evaluation-of-arena-vpp-portfolio-final-report.pdf
+  markdown_filename: evaluation_of_arenarsquos_vpp_portfolio.md
+  source_page_pdf: 48
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-42767
+  contributing_source_titles:
+  - Evaluation of ARENA's VPP Portfolio
+  contributing_sources:
+  - source_title: Evaluation of ARENA's VPP Portfolio
+    pdf_url: https://arena.gov.au/assets/2021/10/evaluation-of-arena-vpp-portfolio-final-report.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/evaluation-of-arenas-vpp-portfolio/
+    markdown_filename: evaluation_of_arenarsquos_vpp_portfolio.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-52058
+  source_title: ARENA Distributed Energy Resources Projects
+  publish_date: 2019-03
+  project_name: AGL Virtual Power Plant
+  what_happened: AGL deployed a 5 MW VPP of 1,000 distributed battery storage systems
+    in South Australia and documented lessons on customer recruitment, response to
+    both planned and unplanned dispatch events, and VPP participation in the FCAS
+    market.
+  lesson_learnt: VPP deployments at scale surface distinct challenges across customer
+    recruitment, dispatch reliability (planned vs. unplanned events), and ancillary
+    services market participation — each dimension requires dedicated design and operational
+    protocols before commercial rollout.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id014
+  - 8
+  evidence_excerpt: Customer recruitment lessons learned, response to both planned
+    and unplanned dispatch events, VPP participation FCAS market.
+  confidence_note: Summary is brief; specific failure modes not itemised. Severity
+    assessed as minor based on the framing as lessons learned rather than material
+    failures.
+  source_url: https://arena.gov.au/knowledge-bank/arena-distributed-energy-resources-projects/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 4/04/2019
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2019/04/arena-distributed-energy-resources-projects.pdf
+  markdown_filename: arena_distributed_energy_resources_projects.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52058
+  contributing_source_titles:
+  - ARENA Distributed Energy Resources Projects
+  contributing_sources:
+  - source_title: ARENA Distributed Energy Resources Projects
+    pdf_url: https://arena.gov.au/assets/2019/04/arena-distributed-energy-resources-projects.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/arena-distributed-energy-resources-projects/
+    markdown_filename: arena_distributed_energy_resources_projects.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-69601
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: Sales and installations were paused in late 2017 to prepare for the
+    inclusion of new hardware systems, with the program restarting in early 2018 after
+    contracting new hardware partners (LG Chem, SolarEdge, Tesla) and a new VPP software
+    provider (Enbala).
+  lesson_learnt: When expanding a multi-vendor DER fleet mid-program, plan for a significant
+    installation pause — integrating new hardware types and software platforms requires
+    sufficient lead time and will interrupt deployment momentum; budget and schedule
+    contingency should account for this interruption.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: execution & logistics
+  intervention_note: Three new hardware providers (LG Chem, SolarEdge, Tesla) and
+    a new VPP software provider (Enbala) were contracted, and installations restarted
+    with a streamlined approach achieving a peak rate of approximately 30 systems
+    per week.
+  transferability: moderate
+  delay_magnitude: 3-12 months
+  technology_domain: battery storage
+  source_pages: &id015
+  - 3
+  - 4
+  evidence_excerpt: Sales and installations paused to prepare for inclusion of new
+    hardware systems in fleet... Announcement of new hardware solution system offerings,
+    and restarting of sales and installation
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69601
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-69602
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: Achieving 1,000 battery sales required sustained effort over nearly
+    three years because eligibility criteria — requiring sufficient excess solar,
+    non-premium feed-in tariff status, home ownership, five-year residency commitment,
+    and suitable installation location — substantially narrowed the eligible customer
+    pool.
+  lesson_learnt: 'Design VPP customer eligibility criteria carefully before launch:
+    each criterion compounds to reduce the eligible pool dramatically; on a typical
+    circuit with 40% solar penetration, the sellable cohort could be as low as 5–10
+    customers, so marketing budgets and timelines must reflect realistic conversion
+    funnels, not headline addressable markets.'
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: stakeholder/land/community
+  failure_mode: commercial & market
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: AGL evolved marketing channels over three years, finding that
+    targeted eDMs to existing AGL solar customers was the most cost-effective channel,
+    supported by one-to-one sales conversations to explain VPP value.
+  transferability: broad
+  delay_magnitude: 1-3 years
+  technology_domain: battery storage
+  source_pages: &id016
+  - 9
+  evidence_excerpt: Regardless of the relatively low prices offered to customers for
+    the battery hardware and installation, achieving 1,000 battery sales was an area
+    that required significant effort, as customer eligibility for participation was
+    necessarily limited.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69602
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-69604
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: A revision to the SAPN connection standard TS-129 (referencing AS4777.1
+    2016) came into force during the deployment phase in 2017, limiting total inverter
+    capacity at any site to 10 kVA, which threatened to preclude customers with existing
+    solar inverters above 5 kVA from joining the program.
+  lesson_learnt: Monitor network connection standard changes actively throughout a
+    DER rollout — mid-program revisions to DNSP technical standards can immediately
+    affect customer eligibility and require urgent engagement with the network operator
+    to clarify or negotiate a revised position before installations are affected at
+    scale.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: SA Power Networks clarified their position and updated their
+    technical standard to allow a total site inverter capacity of 20 kVA (10 kVA solar
+    PV + 10 kVA ESS), limiting only grid-connected ESS inverters to a total site export
+    of 5 kW, which resolved the issue with limited impact on the broader rollout.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id017
+  - 10
+  evidence_excerpt: A revision of the SAPN connection standard TS-129, referencing
+    the Australian Standard for grid connected inverter systems, AS4777.1 (2016),
+    came into force during the deployment phase of the program in 2017, which limited
+    the total inverter capacity at any site to 10 kVA. This had the potential to preclude
+    customers with existing solar inverters with a capacity greater than 5 kVA from
+    installing a new energy storage system.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69604
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-69606
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: Quality management of field-based battery installations remained
+    a challenge throughout the program; in particular, installation and commissioning
+    of metering devices was difficult to diagnose without clear test and commissioning
+    protocols, and only 7 of 23 installation teams were responsible for 80% of successful
+    installations.
+  lesson_learnt: 'Residential battery installation quality is highly dependent on
+    installer capability: vet teams rigorously before scale-up, dedicate specific
+    teams to each hardware type, require hands-on training beyond online vendor accreditation,
+    and maintain clear commissioning protocols for metering devices — the skewed distribution
+    of output (80% from 7 of 23 teams) shows that underperforming teams should be
+    removed early rather than retained for overflow capacity.'
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: construction/installation
+  proponent_type: utility/energy retailer
+  delay_category: construction/installation
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: data & measurement
+  intervention_note: AGL implemented pre-installation site inspections, hands-on installer
+    guidance for first installations, dedicated teams per hardware type, and an installer
+    induction training program with regularly updated installation overlay instructions.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id018
+  - 9
+  - 11
+  - 12
+  evidence_excerpt: Of these 23 teams, just 7 were responsible for 80% of installations...
+    a handful were able to safely and effectively install batteries and so completed
+    a significant amount of the volume, whereas other teams struggled and so did not
+    complete a meaningful amount of volume.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69606
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-69608
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: Pre-installation site inspections were found to be essential to achieving
+    safe, first-time-right installations across the 1,000-battery program, identifying
+    switchboard issues (including asbestos, space constraints, and age), cable sizing
+    compliance, internet connection planning, and customer location preferences.
+  lesson_learnt: Mandate pre-installation site inspections for all residential battery
+    installations — they identify showstoppers (unsafe access, switchboard asbestos,
+    incompatible UPS requirements) and pre-works before the installation crew arrives,
+    preventing costly aborted visits and rework.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: construction/installation
+  proponent_type: utility/energy retailer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id019
+  - 13
+  evidence_excerpt: Pre-installation site inspections are key to achieving safe, 'first
+    time right' installations – AGL continued to employ pre-installation site inspections
+    for battery installations throughout the VPP-SA project.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69608
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-69609
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: Older suburban switchboards presented recurring installation challenges
+    including the presence of asbestos, insufficient space for metering devices and
+    CTs, and lack of space to segregate backup power circuits, requiring switchboard
+    upgrades at a significant proportion of sites in affected areas.
+  lesson_learnt: When targeting older suburbs for residential battery rollouts, explicitly
+    model switchboard upgrade rates in project cost and schedule estimates — asbestos
+    and space constraints can affect a high percentage of sites in some areas and
+    represent a material cost and timeline risk.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: construction/installation
+  proponent_type: utility/energy retailer
+  delay_category: construction/installation
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: AGL used pre-installation site inspections to identify switchboard
+    issues in advance and agree pre-works with customers before installation day.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id020
+  - 14
+  evidence_excerpt: Age and condition of switchboards, particularly in older suburbs
+    where the need for a complete switchboard upgrade affects a high percentage of
+    sites. Specific challenges with switchboards include the presence of asbestos,
+    lack of space within the switchboard cabinet for metering devices and CTs and
+    a lack of available space to segregate circuit breakers and wiring for backup
+    power.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69609
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id020
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: cost overrun
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-69610
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: BESS vendors published multiple updates to their installation methodologies
+    during the project, requiring AGL to update training materials each time and ensure
+    all installers were informed of changes, creating recurring operational overhead.
+  lesson_learnt: When contracting multiple hardware vendors for a DER rollout, establish
+    a formal process for tracking and propagating vendor installation methodology
+    updates — changes issued mid-program create real risk of non-compliant installations
+    if installer training is not refreshed promptly.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: construction/installation
+  proponent_type: utility/energy retailer
+  delay_category: procurement/supply chain
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: execution & logistics
+  intervention_note: AGL updated training materials each time vendor installation
+    methodologies changed and ensured installers were notified of changes.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id021
+  - 14
+  evidence_excerpt: BESS vendors published updates to their installation methodologies
+    several times through the project. AGL needed to update our training materials
+    each time and ensure the installers were aware of the changes.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69610
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id021
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.72
+- record_id: ARENA-DLV-69611
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: Work-at-height safety compliance was an ongoing challenge among residential
+    battery installers, particularly small businesses and sole traders who tended
+    to cut corners on fall protection during short rooftop visits, creating high-potential
+    safety incidents.
+  lesson_learnt: Do not assume residential installers will self-manage work-at-height
+    safety on short rooftop visits — implement formal HSE audit programs, empower
+    field technical staff to stop work for unsafe practices, and reinforce requirements
+    continuously; brief visits are where corner-cutting is most likely.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: construction/installation
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: coordination & stakeholders
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: AGL conducted formal HSE audits on approximately 12% of installations
+    and empowered field technical personnel to stop work for any unsafe practice;
+    zero Lost Time Injuries and zero Medical Treatment Injuries were recorded across
+    1,000 installations.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id022
+  - 15
+  evidence_excerpt: It was our observation that these short periods of rooftop work
+    more often resulted in a tendency to cut corners on safety. This issue was managed
+    to good effect through risk awareness activities, constant reinforcement of AGL's
+    requirements and in-field HSE assurance and auditing.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: 15
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69611
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id022
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-69612
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: Customer satisfaction with information provided during the technology
+    upgrade process received a notably low NPS score of 24, significantly below other
+    satisfaction dimensions (78–84), driven by delays in communicating information
+    about battery upgrades to next-generation technology.
+  lesson_learnt: When transitioning a customer fleet to new hardware mid-program,
+    proactive and timely communication about the upgrade process is critical — delayed
+    or unclear information about hardware changes is the single largest driver of
+    customer dissatisfaction in aggregation programs and can erode trust in the VPP
+    model.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id023
+  - 26
+  evidence_excerpt: Customer responses regarding Information were impacted by the
+    delays in receiving information regarding battery upgrades to next generation
+    technology, and the lower score is largely reflective of customer frustration
+    regarding these delays.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: 26
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69612
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id023
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-69613
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: Many customers entered sales conversations expecting the installed
+    BESS to provide uninterruptible backup power comparable to a UPS, when in fact
+    VPP-SA battery inverters did not comply with UPS requirements and could not be
+    installed where a UPS was required (e.g., for essential medical devices).
+  lesson_learnt: Clearly distinguish BESS backup capability from UPS functionality
+    in all customer-facing materials and sales training before deployment — misaligned
+    customer expectations about backup power are a recurring source of sales friction
+    and complaints, and the technical and regulatory distinction is not intuitive
+    to most customers.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: construction/installation
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: AGL trained sales consultants to conduct nuanced, technical conversations
+    with customers to ensure clarity on backup capability prior to accepting a quote.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id024
+  - 14
+  evidence_excerpt: VPP-SA battery inverters do not comply with the requirements of
+    an uninterruptible power supply (UPS), and as such, AGL was not able to install
+    a battery where a UPS was required (to power an essential medical device, as an
+    example). The distinction between a UPS and a BESS with backup capability was
+    difficult for some customers unfamiliar with the Australian Standards governing
+    UPS systems to appreciate.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69613
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id024
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-69614
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: Reliable site communications (internet connectivity between the BESS
+    and the VPP platform) required ongoing management throughout fleet operations,
+    as connectivity failures reduced asset availability for dispatch.
+  lesson_learnt: 'Design-in communications resilience from the outset of a VPP program:
+    standardise on hardwired connections where cost-effective, specify hardware with
+    failover capability (primary and secondary communications medium), and implement
+    automated monitoring to detect and triage connectivity issues proactively.'
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: execution & logistics
+  intervention_note: AGL standardised on hardwired internet connections between the
+    battery and customer router wherever cost-effective, established clear guidance
+    for installers and customers on reliable communications media, and implemented
+    ongoing connectivity monitoring.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id025
+  - 10
+  evidence_excerpt: Reliable site communications have been noted by AGL and other
+    VPP operators as an area requiring ongoing focus and management.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69614
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id025
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-69615
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: The upfront cost of the battery was identified as the most sensitive
+    variable in driving sales leads and conversions throughout the program; targeted
+    campaigns at lower price points demonstrated materially higher conversion rates,
+    and a sub-$1,000 trial offer generated significantly higher take-up than prior
+    campaigns.
+  lesson_learnt: Price point is the primary lever for VPP customer recruitment — model
+    the minimum subsidy required to achieve target conversion rates before launching
+    a sales campaign, particularly for geographically targeted deployments where the
+    eligible pool is small; digital and eDM channels to existing solar customers are
+    the most cost-effective acquisition channels.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id026
+  - 12
+  - 56
+  - 57
+  evidence_excerpt: The upfront cost of the battery was the most sensitive variable
+    in attracting sales leads. Targeted marketing campaigns at lower price points
+    demonstrated much higher conversion rates... AGL offered eight homes batteries
+    at a sub-$1,000 (incl. GST) price point, and found that take-up rates were significantly
+    higher than in the previous targeted marketing campaign.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: 12
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69615
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id026
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-69616
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: Hyper-local targeted sales campaigns to deploy batteries in specific
+    network zones identified by SAPN were constrained by very small eligible customer
+    pools; on a typical low-voltage circuit of 100 customers with 40% solar penetration,
+    the viable sales target within the remaining eligible cohort could be as low as
+    a handful of customers.
+  lesson_learnt: Network-targeted VPP deployments face a severe funnel compression
+    problem — stack all eligibility filters (solar, load, tariff, tenure, location)
+    before finalising network zone targets and required battery numbers; achieving
+    even 3–5% penetration of an LV circuit typically requires intensive multi-channel
+    local marketing and very competitive pricing.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: stakeholder/land/community
+  failure_mode: commercial & market
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: AGL used a combination of direct mail, eDM, outbound telemarketing,
+    and hyper-local marketing (town hall events, printed flyers, targeted Facebook
+    advertising) combined with a highly competitive sub-$1,000 price point to achieve
+    120 sales in target zones.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id027
+  - 9
+  - 57
+  evidence_excerpt: Additionally, the targeted sale of batteries into network locations
+    identified by the DNSP for the demonstration of network services with a VPP presented
+    its own challenges... a low voltage circuit with 100 customers connected might
+    have a higher than average solar penetration of 40%, so 40 eligible customers
+    with solar... Targeting a 5-10% penetration of batteries within that circuit,
+    the number of sales required within the remaining eligible cohort would be a challenge.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69616
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id027
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-69618
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: High grid voltages caused Volt-VAr and Volt-Watt modes to be invoked
+    frequently, curtailing real power output from battery inverters and reducing the
+    ability of the VPP fleet to participate in FCAS contingency events — in some cases
+    high site voltages during a FCAS discharge caused voltages to rise above 258V,
+    triggering complete BESS disconnection.
+  lesson_learnt: Power quality response modes (Volt-VAr and Volt-Watt) can directly
+    conflict with and curtail FCAS contingency service delivery from behind-the-meter
+    BESS — VPP operators should seek regulatory clarification on whether these modes
+    should be suspended during FCAS events, and bid FCAS availability conservatively
+    to account for voltage-induced curtailment.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated integration
+  intervention_note: AGL submitted regulatory recommendations to AEMO and policymakers
+    to assess whether Volt-VAr and Volt-Watt modes should be suspended during FCAS
+    contingency events and whether export limits should exclude FCAS services.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id028
+  - 49
+  - 50
+  evidence_excerpt: High voltage levels observed across the fleet cause power quality
+    response modes (Volt-VAr and Volt-Watt) to be invoked more frequently, limiting
+    the ability of the VPP fleet to be operated in FCAS mode... For sites that are
+    experiencing high voltages at the start of an event, and where a contingency event
+    triggers an inverter discharge, the site voltage could rise to over 258V, causing
+    the BESS system to disconnect entirely and not be able to contribute to FCAS contingency
+    events.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69618
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id028
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-69619
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: Notch testing across 764 VPP-SA assets demonstrated that the voltage
+    response to real and reactive power dispatches varied by a factor of five to seven
+    across the fleet, with higher-impedance network locations being significantly
+    more responsive; many devices had negligible voltage impact due to network characteristics
+    or their position in the circuit.
+  lesson_learnt: Do not assume uniform voltage management effectiveness from blanket
+    Volt-VAr and Volt-Watt mandates across a DER fleet — network impedance characteristics
+    vary widely within a single DNSP region, and devices on low-impedance networks
+    provide negligible voltage support while incurring the same customer value impact;
+    targeted deployment of reactive power modes on high-impedance sites is more efficient.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: AGL conducted reactive power and active power notch tests at
+    3:30am on 764 assets to measure per-site voltage sensitivity and inferred network
+    impedance, providing evidence for regulatory submissions on targeted versus blanket
+    power quality mode application.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id029
+  - 45
+  - 46
+  evidence_excerpt: Clearly however, the response of network voltages to changes in
+    real or reactive power is not uniform... the impact these modes have on consumer
+    value may not be matched by a commensurate impact on network power quality. That
+    is, when Volt-VAr and Volt-Watt modes are mandated consistently across all grid-connected
+    inverter devices, there will be a large proportion of systems that are not contributing
+    meaningfully to the actual improvement of network voltages due to the characteristics
+    of the network they are on or their position within the network.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69619
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id029
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-69620
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: During a wholesale dispatch event on 30 January 2020, the VPP was
+    dispatched during early high-price intervals but energy prices then moved significantly
+    higher (to $11,200/MWh and $12,217/MWh) in subsequent intervals that were not
+    predicted by pre-dispatch price forecasts, meaning the fleet had already partially
+    depleted state of charge and missed the highest-value intervals.
+  lesson_learnt: VPP wholesale dispatch strategies must account for state-of-charge
+    depletion across consecutive high-demand days — accurate production, load, and
+    price forecasting is essential, and operators should evaluate grid-charging strategies
+    ahead of anticipated high-price periods to preserve fleet availability for peak
+    price intervals.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id030
+  - 53
+  - 54
+  evidence_excerpt: In the subsequent intervals, when the VPP returned to solar self
+    consumption, the energy price moved higher to $11,200/MWh and then to $12,217/MWh.
+    This outcome wasn't predicted by the predispatch price forecasts.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: 54
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69620
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id030
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-69621
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: The VPP-SA project was the first retailer-led VPP to join the AEMO
+    VPP Demonstrations, enabling participation of the majority of the fleet in all
+    six contingency FCAS markets; relaxed metering requirements (1s rather than 50ms
+    reporting) were negotiated with AEMO to enable DER device metering to be used,
+    avoiding the need for high-speed meters at each site.
+  lesson_learnt: Early engagement with AEMO to negotiate fit-for-purpose metering
+    and technical specifications for DER participation in ancillary services markets
+    can unlock participation that would otherwise be commercially unviable — the standard
+    high-speed metering requirement (50ms) would have made per-site FCAS participation
+    economically impossible at residential scale.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: AEMO developed an amendment to the DER Market Ancillary Service
+    Specification relaxing metering requirements from 50ms to 1s reporting, enabling
+    use of existing DER device metering and avoiding the need for high-speed meters
+    at each installation.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id031
+  - 8
+  - 49
+  evidence_excerpt: AEMO developed an amendment to the Distributed Energy Resource
+    addition to the Market Ancillary Service Specification, which relaxed the metering
+    requirements for verifying the delivery of FCAS Contingency services from 50ms
+    reporting to 1s, allowing use of the DER device metering capability, and avoiding
+    the need for a high-speed meter alongside each BESS installation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: 49
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69621
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id031
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-69622
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: Peak demand management testing demonstrated that a defined sub-fleet
+    of 60 co-located BESS could manage aggregate demand at an LV substation, but devices
+    needed to be reserved for the service — including in the lead-up period to retain
+    sufficient state of charge — preventing them from simultaneously participating
+    in other value-generating markets such as FCAS or wholesale dispatch.
+  lesson_learnt: Network peak demand management from VPPs requires dedicating a device
+    sub-fleet not just during the peak event but in the hours before it to maintain
+    state of charge availability — co-optimisation algorithms that allow devices to
+    participate in multiple markets will require explicit treatment of this reservation
+    requirement, and greater fleet penetration reduces per-device impact.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id032
+  - 43
+  evidence_excerpt: The devices themselves were dedicated to the provision of that
+    service not just during the peak demand period, but in the lead up to the event
+    as well (as they were required to retain sufficient charge to see the event through).
+    This means that they were not able to participate in other value generating functions
+    at the same time, such as participation in frequency markets, or dispatching against
+    a wholesale price trigger.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: 43
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69622
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id032
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-69623
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: An LV substation impact measurement test with only three BESS on
+    a circuit with 77 connections achieved 15kW of controllable load but could only
+    detect a 0.5V voltage change at the transformer, demonstrating that a minimum
+    critical mass of batteries is required before substation-level voltage management
+    becomes measurable or meaningful.
+  lesson_learnt: When designing VPP network service demonstrations for voltage or
+    thermal management, ensure sufficient BESS penetration on the target circuit before
+    attempting to measure aggregate impact at the distribution transformer — three
+    devices on a 77-connection circuit is insufficient; also clarify phase mapping
+    in advance as poor LV phase documentation limits phase-level impact measurement.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: data/validation/testing
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: data & measurement
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id033
+  - 48
+  evidence_excerpt: Metering at the transformer did pick up a change in demand, however
+    could only pick up a very small 0.5V change in voltage on some of the phases.
+    Clearly the penetration of BESS systems across the three phases has to be higher
+    for a more meaningful impact.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: 48
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69623
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id033
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-69624
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: Phase mapping on LV circuits was historically poorly documented by
+    SAPN, limiting AGL's ability to measure the per-phase impact of BESS orchestration
+    events at the distribution transformer and to optimise phase-level deployment
+    of batteries for voltage management services.
+  lesson_learnt: Request or develop phase mapping of LV circuits before deploying
+    BESS for network services — poor phase documentation is a systemic limitation
+    of most DNSPs that prevents effective phase-level measurement and optimisation
+    of DER-based voltage and thermal management, and should be raised as a data-sharing
+    requirement in DNSP engagement.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id034
+  - 48
+  evidence_excerpt: Phase mapping is historically not well documented at the LV circuit
+    level and this is likely to be increasingly important to understand which systems
+    are on which phase so the impact of energy storage orchestration can be measured
+    by networks on a phase by phase basis.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: 48
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69624
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id034
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-69625
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: Orchestration events that discharge customer BESS during VPP dispatches
+    can reduce customer solar self-consumption savings; the net customer billing impact
+    may take up to 24 hours to fully realise and depends on whether the battery recovers
+    its charge from solar the following day (brought-forward exports) or must draw
+    from the grid (foregone self-consumption).
+  lesson_learnt: VPP operators must implement unit-level counterfactual billing impact
+    calculations for every orchestration event — fleet-level aggregate powerflow is
+    not a valid proxy for customer impact, and the full impact may not be quantifiable
+    until up to 24 hours after the event; customer transparency on event impacts is
+    an essential consumer protection obligation.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: AGL developed a counterfactual methodology for calculating per-unit
+    customer billing impact and was building customer-facing tools in AGL's app and
+    MyAccount portal to provide transparency on orchestration event impacts.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id035
+  - 21
+  - 22
+  - 55
+  evidence_excerpt: The net impact of an orchestration event to customer value cannot
+    be calculated until the costs of foregone self-consumption and/or brought forward
+    exports have been realised. In some cases, these costs may only be realised days
+    after the event has concluded... customer impacts of orchestration events is a
+    complex calculation that needs to be performed at unit level rather than at a
+    fleet level.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: 22
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69625
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id035
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-69626
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: The annual customer churn rate from the VPP-SA program averaged 1–2%,
+    with property sale or lease being the most common reason, requiring management
+    of contract novation or early termination fee processes.
+  lesson_learnt: Design VPP service contracts with explicit, customer-friendly exit
+    provisions from the outset — property transactions are the primary churn driver
+    in residential VPP programs, and offering novation to new owners (in addition
+    to early termination fees) can preserve fleet participation rates and reduce friction.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: AGL offered customers exiting due to property sale or lease the
+    option to novate the VPP services contract to new owners or pay a prorated early
+    termination fee.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id036
+  - 10
+  evidence_excerpt: AGL has seen an average annual churn rate of 1-2%. The most common
+    reason for customers leaving the program is a change of living conditions, typically
+    the sale or lease of the property where the battery is installed. Where this occurs,
+    customers are provided a number of options for exiting the program, including
+    novation of the VPP services contract to the new owners, or the payment of an
+    early termination fee that is prorated to account for the period that the customer
+    has been involved in the program.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69626
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id036
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-69627
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: Under standard flat retail tariffs, orchestration events that discharge
+    customer batteries for VPP purposes had a net subtractive impact on individual
+    customer energy bills; customers' benefit in the VPP-SA program was provided entirely
+    through the upfront battery purchase subsidy rather than through ongoing orchestration
+    payments.
+  lesson_learnt: On flat retail tariffs, VPP orchestration events typically cost customers
+    money — future VPP programs must either ensure customers receive ongoing financial
+    remuneration for orchestration participation or are on tariffs where orchestration
+    events create net savings, and should clearly communicate billing impacts to build
+    and maintain customer trust.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id037
+  - 21
+  evidence_excerpt: 'For customers on standard single-rate tariffs (i.e.: flat consumption
+    tariff and flat feed in tariff, as per the ''Flat tariff''), orchestration events
+    will typically have a net subtractive impact on the customer energy bills, and
+    thus it''s important that all orchestration customer offers have both clear boundaries
+    on the frequency and volume of orchestration events, and a mechanism for remuneration
+    to the customer for participation in those events.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69627
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id037
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-69629
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: Solar diverter devices (which redirect excess solar to hot water)
+    and power conditioners (power factor correction devices) were encountered at customer
+    sites and had to be disconnected or removed before BESS installation could proceed,
+    as they interfered with inverter operation or diverted energy away from battery
+    charging.
+  lesson_warnt: null
+  lesson_learnt: Screen for solar diverters and power conditioners during pre-installation
+    site inspection and include their disconnection or removal as a formal pre-work
+    step in installation protocols — failure to identify these devices before installation
+    day can result in aborted visits or post-installation performance issues.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: construction/installation
+  proponent_type: utility/energy retailer
+  delay_category: construction/installation
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: AGL required solar diverters to be disconnected before BESS installation
+    and, in cases where power conditioners were present, arranged for their removal
+    where they interfered with inverter operation.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id038
+  - 14
+  evidence_excerpt: Solar diverters are devices that send excess solar energy to hot
+    water storage tanks. As these divert power away from the battery system charging,
+    AGL required the devices to be disconnected. AGL encountered two sites where the
+    customers had installed 'power conditioners' (essentially power factor correction
+    devices) intended to reduce bills. In some instances, these devices may need to
+    be removed to install a BESS as they may interfere with the inverters normal operation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: 14
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69629
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id038
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-69630
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: The absence of an accepted framework for valuing thermal and voltage
+    network services on the LV network prevented AGL from contracting with SAPN for
+    network services, meaning the network services value pool remained largely inaccessible
+    commercially despite successful demonstration of technical capability.
+  lesson_learnt: DER-based network services value will remain largely inaccessible
+    without a regulatory framework that standardises the valuation of LV thermal and
+    voltage services — project proponents should actively engage regulators (AER,
+    AEMC) and DNSPs to develop accepted valuation methodologies, and not assume network
+    services revenue will be available to fund project business cases without this
+    reform.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: commercial & market
+  intervention_note: AGL submitted regulatory reform proposals to the AEMC, AER, and
+    government including advocating for a standardised LV network services valuation
+    framework, reduced RIT-D threshold from $6M to $1M, and greater publication of
+    LV network constraint data.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id039
+  - 57
+  - 58
+  - 64
+  evidence_excerpt: There is no accepted framework for valuation of thermal and voltage
+    services on the LV network. As a result, AGL used the RIT-D framework coupled
+    with low voltage augmentation deferral and voltage management costs listed in
+    the Energeia Report to quantify the annualised deferral value proposed below in
+    this report.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: 64
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69630
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id039
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-69631
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: The regulatory investment test for distribution (RIT-D) threshold
+    of $6M was identified as a structural barrier to non-network solutions from VPPs,
+    because most LV augmentation projects that exceed this threshold require many
+    MW/MWh of storage concentrated in one area — a scale difficult for a single aggregator
+    to achieve from residential behind-the-meter assets.
+  lesson_learnt: The RIT-D threshold is a binding constraint on VPP network services
+    commercialisation — advocate for a reduction in the RIT-D threshold (e.g. from
+    $6M to $1M as proposed by the Australian Energy Council) as a priority regulatory
+    reform; without it, most LV network service opportunities will remain below the
+    required competitive tender scale.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: policy/market influence only
+  secondary_failure_mode: null
+  intervention_note: AGL supported the rule change proposal by the Australian Energy
+    Council to reduce the RIT-D threshold from $6M to $1M.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id040
+  - 60
+  evidence_excerpt: The RIT-D threshold (i.e. threshold whereby the network is required
+    to go to market to invite responses from non-network solution providers) is currently
+    set at $6M. This threshold is set too high as typically augmentation projects
+    that exceed this threshold require many MW/MWh of controllable storage in a concentrated
+    area to defer the network solution making critical mass for a single aggregator
+    very difficult to achieve.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: 60
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69631
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id040
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-69632
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: LV network constraint data held by DNSPs was not publicly available
+    through standard planning publications, meaning VPP aggregators had no market-facing
+    mechanism to identify or assess non-network service opportunities except through
+    direct bilateral engagement with individual DNSPs.
+  lesson_learnt: Policymakers and regulators should require DNSPs to publish LV network
+    constraint data (including power and energy required to defer augmentation and
+    associated deferral values) as part of Distribution Annual Planning Reports —
+    without this, competitive markets for non-network solutions cannot form, and VPP
+    network services value remains locked to bilateral negotiations.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: policy/market influence only
+  secondary_failure_mode: null
+  intervention_note: AGL worked bilaterally with SAPN to obtain LV network constraint
+    data for the trial under a direct request arrangement, and submitted regulatory
+    recommendations for mandatory publication of this data by all DNSPs.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id041
+  - 60
+  evidence_excerpt: The kind of information that AGL relied upon in the trial is not
+    generally available to the market... Most networks today however do not publish
+    constraints on the LV Distribution Network as part of their Distribution Annual
+    Planning Reports. The power and energy required to defer augmentation as well
+    as the annual deferment value that can be paid to an aggregator for services within
+    a geographic area need to be transparent and made available to the market.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69632
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id041
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-69633
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: Battery solar utilisation was constrained in both summer (batteries
+    too often full due to high solar generation) and winter (insufficient solar generation),
+    resulting in broadly similar seasonal solar-to-load offset via battery of approximately
+    7 kWh/day across all seasons — limiting the incremental value of batteries for
+    solar self-consumption optimisation.
+  lesson_warnt: null
+  lesson_learnt: When projecting customer payback periods for residential BESS, account
+    for seasonal utilisation constraints at both ends — summer excess solar and winter
+    solar deficit can converge to produce similar but lower-than-expected cycling,
+    and customer load profiles must be modelled individually rather than using average
+    assumptions.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id042
+  - 34
+  - 35
+  evidence_excerpt: Solar utilisation to offset load via the battery is broadly consistent
+    across each season at ~7kWh – this consistency is driven by two competing limits
+    that result in similar solar-battery utilisation. In summer, the battery utilisation
+    is limited as the average battery is more often full, given the high levels of
+    solar generation, and in winter the battery utilisation is limited to limited
+    solar generation.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: 34
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69633
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id042
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-69634
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: Under the VPP-SA subsidised pricing ($3,500 incl. GST), customers
+    could expect an average ~9-year payback on a flat tariff; under the SA Home Battery
+    Scheme market pricing ($5,499), the expected payback extended to ~15 years, indicating
+    that without subsidy, residential battery economics remain unattractive for most
+    customers.
+  lesson_learnt: Without significant government subsidy or a solar sponge/TOU tariff,
+    residential battery paybacks of 12–15 years make standalone BESS commercially
+    unattractive for most households — VPP business cases must not assume subsidy-free
+    uptake at scale, and should model the sensitivity of customer recruitment to price
+    point explicitly.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id043
+  - 17
+  evidence_excerpt: Under the VPP-SA pricing, customers could expect an average ~9
+    year payback under a flat tariff (interquartile range 8-12)... Under the SA Home
+    Battery Scheme pricing, including the AGL orchestration discount, customers on
+    a flat tariff would expect a payback period of ~15 years.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: 17
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69634
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id043
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false
+- record_id: ARENA-DLV-69635
+  source_title: Virtual Power Plant in South Australia - Final Milestone Report
+  publish_date: 2020-10
+  project_name: Virtual Power Plant in South Australia (VPP-SA)
+  what_happened: A granular operational data platform built from program commencement
+    proved invaluable for identifying hardware, metering, and connectivity issues
+    at individual sites and for informing discussions on network voltages and their
+    impact on DER performance throughout the four-year program.
+  lesson_learnt: Invest in a granular per-device operational data ingestion platform
+    from day one of a DER fleet program — retrospective data collection cannot substitute
+    for continuous site-level monitoring, and the data asset becomes increasingly
+    valuable for fleet optimisation, performance diagnostics, regulatory evidence,
+    and customer-facing reporting as the program scales.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: first commercial/FOAK
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id044
+  - 8
+  evidence_excerpt: From the start of the program, AGL built and maintained a data
+    ingestion platform to retain granular operational data from each device in the
+    VPP... The granular data has also been invaluable in identifying hardware, metering,
+    or connectivity issues at sites, and for informing the discussion around network
+    voltages and their impact on DER performance.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+  project_page_url: https://arena.gov.au/projects/agl-virtual-power-plant/
+  kb_category: Distributed energy resources
+  kb_publish_date: 20/10/2020
+  kb_year: '2017'
+  kb_associated_project: AGL Virtual Power Plant
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $5.3m
+  total_project_value: $19.52m
+  lead_organisation: AGL Energy Limited
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 13/02/2017
+  location: Adelaide, South Australia
+  project_partners: None
+  pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+  markdown_filename: virtual_power_plant_in_south_australia.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-69635
+  contributing_source_titles:
+  - Virtual Power Plant in South Australia - Final Milestone Report
+  contributing_sources:
+  - source_title: Virtual Power Plant in South Australia - Final Milestone Report
+    pdf_url: https://arena.gov.au/assets/2020/10/virtual-power-plant-in-south-australia.pdf
+    source_pages: *id044
+    source_url: https://arena.gov.au/knowledge-bank/virtual-power-plant-in-south-australia/
+    markdown_filename: virtual_power_plant_in_south_australia.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Pilot / demonstration
+  is_consortium: false

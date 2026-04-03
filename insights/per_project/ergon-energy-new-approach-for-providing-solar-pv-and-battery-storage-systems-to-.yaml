@@ -1,0 +1,140 @@
+- record_id: ARENA-DLV-52052
+  source_title: ARENA Distributed Energy Resources Projects
+  publish_date: 2019-03
+  project_name: Ergon Energy New approach for providing solar PV and battery storage
+    systems to residential customer
+  what_happened: Manual processes used to activate residential BESS systems as a VPP
+    did not result in dispatch that matched peak demand events, reducing the effectiveness
+    of aggregated demand response.
+  lesson_learnt: Manual VPP dispatch processes are insufficient for matching peak
+    demand events — integration with a trading or VPP platform via API is required
+    to enable automated discharge when threshold prices are reached.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: execution & logistics
+  intervention_note: Project recommended API integration with a trading or VPP platform
+    to allow automated discharge when threshold prices are reached.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id001
+  - 11
+  evidence_excerpt: Initially manually processes used to activate systems as a VPP,
+    but this did not result in dispatch to match peak events. Integration with trading
+    or VPP platform via Application Programming Interface is recommended to allow
+    automated discharge when threshold prices are reached.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-distributed-energy-resources-projects/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 4/04/2019
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2019/04/arena-distributed-energy-resources-projects.pdf
+  markdown_filename: arena_distributed_energy_resources_projects.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52052
+  contributing_source_titles:
+  - ARENA Distributed Energy Resources Projects
+  contributing_sources:
+  - source_title: ARENA Distributed Energy Resources Projects
+    pdf_url: https://arena.gov.au/assets/2019/04/arena-distributed-energy-resources-projects.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/arena-distributed-energy-resources-projects/
+    markdown_filename: arena_distributed_energy_resources_projects.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: integration failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-52053
+  source_title: ARENA Distributed Energy Resources Projects
+  publish_date: 2019-03
+  project_name: Ergon Energy New approach for providing solar PV and battery storage
+    systems to residential customer
+  what_happened: When Cyclone Debbie caused a grid outage, the deployment of residential
+    BESS systems highlighted the absence of standard procedures for operating BESS
+    during outage conditions, raising concerns about customer safety and network stability.
+  lesson_learnt: Standard operating procedures for BESS systems during grid outage
+    events must be developed before deployment at scale — the absence of such procedures
+    creates customer safety and network stability risks in emergency conditions.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id002
+  - 11
+  evidence_excerpt: Use of BESS in grid outage due to Cyclone Debbie highlighted a
+    need to develop standard procedures for BESS systems to ensure customer safety
+    and network stability.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/arena-distributed-energy-resources-projects/
+  project_page_url: null
+  kb_category: Distributed energy resources
+  kb_publish_date: 4/04/2019
+  kb_year: null
+  kb_associated_project: null
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+  pdf_url: https://arena.gov.au/assets/2019/04/arena-distributed-energy-resources-projects.pdf
+  markdown_filename: arena_distributed_energy_resources_projects.md
+  source_page_pdf: 11
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-52053
+  contributing_source_titles:
+  - ARENA Distributed Energy Resources Projects
+  contributing_sources:
+  - source_title: ARENA Distributed Energy Resources Projects
+    pdf_url: https://arena.gov.au/assets/2019/04/arena-distributed-energy-resources-projects.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/arena-distributed-energy-resources-projects/
+    markdown_filename: arena_distributed_energy_resources_projects.md
+  arena_category:
+  - Distributed energy resources
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.82

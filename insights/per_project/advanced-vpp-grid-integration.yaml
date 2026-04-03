@@ -1,0 +1,3637 @@
+- record_id: ARENA-DLV-65851
+  source_title: Analysis of the VPP Dynamic Network Constraint Management
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration Project
+  what_happened: SA Power Networks' static 5 kW per-customer export limit constrained
+    the Tesla VPP to half its nameplate capacity (5 MW instead of 10 MW for 1,000
+    customers), preventing the VPP from operating at full rated output and limiting
+    its market participation.
+  lesson_learnt: Static per-customer export limits are a fundamental constraint on
+    VPP capacity — project teams integrating VPPs into distribution networks should
+    engage the DNSP early to design dynamic constraint mechanisms, as static limits
+    may halve the effective dispatchable capacity of the VPP.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: unvalidated integration
+  intervention_note: SAPN and Tesla co-designed a dynamic constraint API (SAPN API)
+    that communicated real-time, locational export limits to the VPP, enabling exports
+    above the static 5 kW limit when network capacity permitted.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id001
+  - 16
+  - 36
+  evidence_excerpt: The 'nameplate' peak power rating of Tesla's VPP at the end of
+    its second phase of deployment (1,000 customers) will be 10 MW... However, under
+    SAPN's present connection rules, the static export limit of 5 kW that applies
+    per household limits the maximum power output of the VPP to 5 MW.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 19/01/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+  markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-65851
+  contributing_source_titles:
+  - Analysis of the VPP Dynamic Network Constraint Management
+  contributing_sources:
+  - source_title: Analysis of the VPP Dynamic Network Constraint Management
+    pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+    markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-65852
+  source_title: Analysis of the VPP Dynamic Network Constraint Management
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration Project
+  what_happened: Dynamic network constraint management demonstrated a 60% increase
+    in daily average DER export capacity (from 5 kW to over 8 kW) across the year,
+    and up to 100% increase (to 10 kW) during winter months, compared to the standard
+    static limit.
+  lesson_learnt: Dynamic, locational export limits delivered through a network-VPP
+    API can unlock 60–100% additional DER export capacity compared to static limits
+    — VPP developers and DNSPs should consider dynamic constraint management as a
+    prerequisite for full-capacity VPP operation in high-DER networks.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id002
+  - 11
+  - 38
+  evidence_excerpt: DER export capacity can be increased in average over the whole
+    day from 5 kW to over 8 kW (a 60% increase in capacity) across the year, and up
+    to 10 kW (a 100% increase in capacity) during Winter months (workdays).
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 19/01/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+  markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  source_page_pdf: 38
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-65852
+  contributing_source_titles:
+  - Analysis of the VPP Dynamic Network Constraint Management
+  contributing_sources:
+  - source_title: Analysis of the VPP Dynamic Network Constraint Management
+    pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+    markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-65853
+  source_title: Analysis of the VPP Dynamic Network Constraint Management
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration Project
+  what_happened: Analysis revealed that communicating DER export capacity as a simple
+    daily average (24-hour basis) substantially overstated exploitable capacity for
+    solar-dominated VPPs, because network congestion is typically highest during daylight
+    hours when PV generation is active.
+  lesson_learnt: When reporting or communicating DER export capacity for solar-integrated
+    VPPs, always use a daylight-hours average metric rather than a 24-hour average
+    — the 24-hour metric can be misleading because it includes off-peak night hours
+    when capacity is plentiful but PV cannot generate.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The analysis defined a daylight-hours average available capacity
+    metric (ACdl) as the preferred representation, showing 20% increase over the year
+    versus 60% for the potentially misleading 24-hour metric.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id003
+  - 14
+  - 36
+  - 46
+  evidence_excerpt: A caveat is in order in regards to the quantification of DER export
+    capacity as a daily average, which can be misleading for PV export capacity. Indeed,
+    since DER export capacity is typically the lowest during daylight hours in feeders
+    with high PV penetration, network capacity available for PV exports is more realistically
+    represented as a daylight average.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 19/01/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+  markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  source_page_pdf: 46
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-65853
+  contributing_source_titles:
+  - Analysis of the VPP Dynamic Network Constraint Management
+  contributing_sources:
+  - source_title: Analysis of the VPP Dynamic Network Constraint Management
+    pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+    markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-65854
+  source_title: Analysis of the VPP Dynamic Network Constraint Management
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration Project
+  what_happened: 'The project found that available DER export capacity and released
+    energy are highly location-dependent across the VPP: fewer than 20% of transformers
+    could be allocated maximum export capacity increases year-round, while all transformers
+    could receive maximum increases only during May–August.'
+  lesson_learnt: VPP developers and DNSPs must account for locational heterogeneity
+    in network capacity when designing dispatch strategies — aggregate capacity metrics
+    can mask the fact that only a minority of nodes can access maximum export headroom
+    across the full year, requiring node-level constraint management.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The SAPN API allocated capacity at the constraint-node level
+    rather than as a flat per-site limit, enabling locational differentiation in export
+    allowances.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id004
+  - 36
+  - 43
+  - 44
+  evidence_excerpt: Less than 20% of the transformers connected to the VPP can be
+    allocated the maximum increases in capacity enabled by dynamic constraints across
+    the year... All of the transformers connected to the VPP have potential for the
+    maximum increases in DER export capacity during the months from May to August.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 19/01/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+  markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  source_page_pdf: 43
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-65854
+  contributing_source_titles:
+  - Analysis of the VPP Dynamic Network Constraint Management
+  contributing_sources:
+  - source_title: Analysis of the VPP Dynamic Network Constraint Management
+    pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+    markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-65855
+  source_title: Analysis of the VPP Dynamic Network Constraint Management
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration Project
+  what_happened: Dynamic, locational export limits were shown to increase the network's
+    DER hosting capacity by 25–300% compared to static limits, depending on the acceptable
+    level of curtailment — 25% more DER for 10% curtailment tolerance, up to 300%
+    more DER for 50% curtailment tolerance.
+  lesson_learnt: DNSPs planning for high DER penetration should adopt dynamic operating
+    envelopes — accepting occasional export constraints enables hosting 2–4 times
+    more DER on existing infrastructure without costly network augmentation, and the
+    network planning framework should formalise acceptable curtailment tolerance levels.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id005
+  - 9
+  - 48
+  - 51
+  evidence_excerpt: 'Dynamic export limits enable the network to host: 25% more DER
+    if their exports are dynamically managed to operate unconstrained 90% of the time,
+    55% more DER if their exports are dynamically managed to operate unconstrained
+    80% of the time, 300% more DER if their exports are dynamically managed to operate
+    unconstrained 50% of the time.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 19/01/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+  markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-65855
+  contributing_source_titles:
+  - Analysis of the VPP Dynamic Network Constraint Management
+  contributing_sources:
+  - source_title: Analysis of the VPP Dynamic Network Constraint Management
+    pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+    markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-65856
+  source_title: Analysis of the VPP Dynamic Network Constraint Management
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration Project
+  what_happened: Under a regime of static 100%-unconstrained export limits, 56.1%
+    of SAPN's 75,530 transformers had zero available capacity headroom for additional
+    DER, and 86.8% had 1 kW or less — indicating the existing network was already
+    heavily saturated under static limit assumptions.
+  lesson_learnt: In high-DER networks, static unconstrained hosting capacity is effectively
+    exhausted at most distribution transformers; future DER connection assessments
+    should use dynamic capacity frameworks rather than static hosting capacity limits
+    to avoid systematically underestimating available headroom.
+  issue_severity: major
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: The analysis demonstrated that by switching to dynamic locational
+    limits (accepting 50% unconstrained operation), the available hosting capacity
+    grew from 200 MW to 600 MW across the SAPN network.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id006
+  - 51
+  evidence_excerpt: 56.1% of the transformers have no capacity available, and even
+    for those transformers with capacity available, an additional 30.7% of transformers
+    have less than 1 kW available.
+  confidence_note: Severity rated major because the majority of transformers are at
+    capacity under static rules, representing a structural delivery barrier for DER
+    connection at scale.
+  source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 19/01/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+  markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  source_page_pdf: 51
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-65856
+  contributing_source_titles:
+  - Analysis of the VPP Dynamic Network Constraint Management
+  contributing_sources:
+  - source_title: Analysis of the VPP Dynamic Network Constraint Management
+    pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+    markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-65857
+  source_title: Analysis of the VPP Dynamic Network Constraint Management
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration Project
+  what_happened: The preliminary economic analysis used static export limits (2 kW,
+    5 kW, 10 kW) as proxies for dynamic limits because the actual trial data and dynamic
+    limit time series were not available at the time of analysis, limiting the precision
+    and applicability of the cost-benefit findings.
+  lesson_learnt: Economic analyses of dynamic constraint management systems should
+    be built on actual dynamic limit observations rather than static proxies — using
+    static limits as upper/lower bounds significantly understates the nuance of value
+    distribution and can lead to misleading benefit estimates.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: network business
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Authors flagged that future analysis should use dynamic export
+    limit data from the trial and include FCAS revenues to produce more accurate benefit
+    estimates.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id007
+  - 13
+  - 63
+  evidence_excerpt: With the data available at this stage of the project, benefits
+    to the VPP DER operator are estimated in terms of the additional market value...
+    all three cases are using static limits to estimate the upper and lower bounds
+    of potential value. Further analysis should incorporate the value of dynamic limits
+    between these static limits varying through time based on historic market data
+    and sampled VPP performance.
+  confidence_note: 'proponent_type reconciled to ''network business'' from: network
+    business (11/20), research organisation/university (5/20), technology vendor (3/20),
+    consortium/multi-party venture (1/20)'
+  source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 19/01/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+  markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-65857
+  contributing_source_titles:
+  - Analysis of the VPP Dynamic Network Constraint Management
+  contributing_sources:
+  - source_title: Analysis of the VPP Dynamic Network Constraint Management
+    pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+    markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-65858
+  source_title: Analysis of the VPP Dynamic Network Constraint Management
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration Project
+  what_happened: 'The energy arbitrage benefit of increasing export limits was nonlinear:
+    the jump from 2 kW to 5 kW delivered substantially greater benefit ($164 to $388
+    per site per year) than the jump from 5 kW to 10 kW ($388 to $423 per site per
+    year), because exports above 5 kW are constrained by the simultaneous availability
+    of both battery and solar.'
+  lesson_learnt: VPP export limit design should be matched to system hardware capability
+    — for PV-plus-battery systems with 5 kW inverters, a 5 kW export limit captures
+    most of the arbitrage value, and further increases yield diminishing returns unless
+    hardware is also upgraded.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id008
+  - 58
+  - 63
+  evidence_excerpt: Average energy arbitrage benefits per site equalled $164 in the
+    2-kW case, $388 in the 5kW case and $423 in the 10-kW case... It should be noted
+    that the matching between system size and export limits would have considerable
+    impact to benefits. Most benefit would be obtained from export limits that are
+    commensurate with battery output power.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 19/01/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+  markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-65858
+  contributing_source_titles:
+  - Analysis of the VPP Dynamic Network Constraint Management
+  contributing_sources:
+  - source_title: Analysis of the VPP Dynamic Network Constraint Management
+    pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+    markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-65859
+  source_title: Analysis of the VPP Dynamic Network Constraint Management
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration Project
+  what_happened: The constraint engine cost-benefit analysis assumed zero ongoing
+    operational costs after the initial $460,065 implementation cost, which the authors
+    acknowledged was uncertain and likely underestimated true long-run costs of operating
+    the dynamic constraint system.
+  lesson_learnt: Ongoing operational costs for dynamic constraint management systems
+    (data collection, cleaning, model maintenance, API operation) must be explicitly
+    estimated and included in cost-benefit analyses — assuming zero ongoing costs
+    will overstate NPV and mislead investment decisions.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Authors recommended further work to determine accurate ongoing
+    costs for the constraints engine, including data collection, cleaning, analysis,
+    and VPP communication costs.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id009
+  - 63
+  evidence_excerpt: More work is required to determine an accurate cost for developing
+    and operating a constraints engine. The default cost assumption used in this report
+    -- $460,000 – is uncertain at best.
+  confidence_note: 'proponent_type reconciled to ''network business'' from: network
+    business (11/20), research organisation/university (5/20), technology vendor (3/20),
+    consortium/multi-party venture (1/20)'
+  source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 19/01/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+  markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  source_page_pdf: 66
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-65859
+  contributing_source_titles:
+  - Analysis of the VPP Dynamic Network Constraint Management
+  contributing_sources:
+  - source_title: Analysis of the VPP Dynamic Network Constraint Management
+    pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+    markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.72
+- record_id: ARENA-DLV-65860
+  source_title: Analysis of the VPP Dynamic Network Constraint Management
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration Project
+  what_happened: The SAPN constraint engine used a prototypical modelling approach
+    extrapolated from a reduced sample of representative feeder models, and there
+    was little to no analysis conducted during the trial to verify or validate the
+    accuracy of the constraint profiles against actual network conditions.
+  lesson_learnt: Dynamic operating envelope systems should include a data collection
+    and validation programme from the outset — deploying a constraint engine without
+    mechanisms to verify its accuracy against real network data introduces conservatism
+    and uncertainty that reduce released value and limit confidence in the results.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Authors recommended combining data-driven and physics-based state
+    estimation techniques, and incorporating real-time weather, voltage, and load
+    data to refine and validate the constraint engine.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id010
+  - 14
+  - 65
+  evidence_excerpt: At this stage, these profiles provide an average daily capacity
+    curve per month of the year, and there has been little to no analysis conducted
+    to demonstrate the accuracy or reasonableness of the constraint engine. Indeed,
+    there is limited data to even verify the constraint engine, so a data collection
+    exercise is recommended in addition to additional analysis.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 19/01/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+  markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  source_page_pdf: 65
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-65860
+  contributing_source_titles:
+  - Analysis of the VPP Dynamic Network Constraint Management
+  contributing_sources:
+  - source_title: Analysis of the VPP Dynamic Network Constraint Management
+    pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+    markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-65861
+  source_title: Analysis of the VPP Dynamic Network Constraint Management
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration Project
+  what_happened: There was no Australian standard or industry-agreed approach for
+    calculating hosting capacity or for how DNSPs should communicate dynamic export
+    limits to VPP operators and customers at the time of the trial, creating inconsistency
+    between VPP developers and DNSPs.
+  lesson_learnt: The absence of a national standard for hosting capacity calculation
+    and communication creates integration friction and additional cost for VPP developers
+    — industry bodies and regulators should prioritise establishing agreed methodologies
+    for dynamic operating envelopes to reduce per-project negotiation overhead.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: network business
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated integration
+  intervention_note: The project team engaged with DEIP's Dynamic Operating Envelopes
+    Workstream and noted foundational work by EPRI as a basis for developing consensus
+    standards.
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id011
+  - 14
+  - 65
+  - 66
+  evidence_excerpt: There is yet no Australian standard or industry-agreed upon approach
+    for calculating hosting capacity... Having one would create a number of benefits,
+    including consistency for VPP developers and clear guidance about how DNSPs should
+    communicate these limits to their customers.
+  confidence_note: 'proponent_type reconciled to ''network business'' from: network
+    business (11/20), research organisation/university (5/20), technology vendor (3/20),
+    consortium/multi-party venture (1/20)'
+  source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 19/01/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+  markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-65861
+  contributing_source_titles:
+  - Analysis of the VPP Dynamic Network Constraint Management
+  contributing_sources:
+  - source_title: Analysis of the VPP Dynamic Network Constraint Management
+    pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+    markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-65862
+  source_title: Analysis of the VPP Dynamic Network Constraint Management
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration Project
+  what_happened: The PV-battery systems deployed in the trial were not optimised for
+    dynamic export limits, which constrained the realised upside of the dynamic limit
+    scheme relative to the 5 kW static limit and limited the economic benefits that
+    could be captured.
+  lesson_learnt: When deploying VPP systems under a dynamic constraint management
+    regime, ensure the inverter and battery hardware and control software are specifically
+    configured to respond to dynamic export signals — using hardware optimised for
+    static limits will leave value unrealised even when the network can support higher
+    exports.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id012
+  - 15
+  evidence_excerpt: The PV-battery systems used in the trial were not optimised for
+    dynamic limits, which limited the potential upside versus the 5-kW static limit.
+  confidence_note: 'proponent_type reconciled to ''network business'' from: network
+    business (11/20), research organisation/university (5/20), technology vendor (3/20),
+    consortium/multi-party venture (1/20)'
+  source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 19/01/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+  markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  source_page_pdf: 15
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-65862
+  contributing_source_titles:
+  - Analysis of the VPP Dynamic Network Constraint Management
+  contributing_sources:
+  - source_title: Analysis of the VPP Dynamic Network Constraint Management
+    pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+    markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-65863
+  source_title: Analysis of the VPP Dynamic Network Constraint Management
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration Project
+  what_happened: The economic analysis excluded FCAS market revenues from benefit
+    calculations due to model limitations, meaning the reported NPV figures systematically
+    understated the total value available to VPP operators under dynamic export limits.
+  lesson_learnt: Cost-benefit analyses for VPP projects must include FCAS and ancillary
+    service revenues alongside energy arbitrage — omitting FCAS from benefit calculations
+    materially understates VPP value, which risks underinvestment in dynamic constraint
+    management infrastructure.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: network business
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Authors recommended that follow-up analysis include FCAS revenues
+    and referenced an AEMO VPP demonstrations report that provided insights on contingency
+    FCAS market revenues.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id013
+  - 15
+  - 63
+  evidence_excerpt: For the present analysis, the model did not consider export limits
+    for FCAS. Accordingly, the calculation of benefits focussed on energy market arbitrage
+    revenues only... a more detailed cost-benefit analysis should include dynamic
+    export limits... and the inclusion of FCAS revenues in benefit calculations.
+  confidence_note: 'proponent_type reconciled to ''network business'' from: network
+    business (11/20), research organisation/university (5/20), technology vendor (3/20),
+    consortium/multi-party venture (1/20)'
+  source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 19/01/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+  markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  source_page_pdf: 54
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-65863
+  contributing_source_titles:
+  - Analysis of the VPP Dynamic Network Constraint Management
+  contributing_sources:
+  - source_title: Analysis of the VPP Dynamic Network Constraint Management
+    pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+    markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-65864
+  source_title: Analysis of the VPP Dynamic Network Constraint Management
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration Project
+  what_happened: The VPP rollout reached only 584 active sites across 425 transformers
+    by the time of analysis, against a target of 1,000 sites, because the trial enrolled
+    sites progressively (552 by September 2019, 783 by December 2019, 893 by February
+    2020).
+  lesson_learnt: VPP trial programmes should build in sufficient lead time to reach
+    full enrolment before conducting major analysis — partial rollout means the constraint
+    engine and economic models reflect a sub-scale sample, limiting the generalisability
+    of quantitative results.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: execution & logistics
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: 3-12 months
+  technology_domain: DER
+  source_pages: &id014
+  - 17
+  evidence_excerpt: The trial had 552 VPP sites registered by September 2019, 783
+    by December 2019 and 893 by February 2020. The full trial will enable the solution
+    to operate with the first 1,000 VPP sites of the Tesla VPP rollout in SA. The
+    analysis reported in this document is based on data for N=584 VPP sites spread
+    across T=425 transformers.
+  confidence_note: 'proponent_type reconciled to ''network business'' from: network
+    business (11/20), research organisation/university (5/20), technology vendor (3/20),
+    consortium/multi-party venture (1/20)'
+  source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 19/01/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+  markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  source_page_pdf: 17
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-65864
+  contributing_source_titles:
+  - Analysis of the VPP Dynamic Network Constraint Management
+  contributing_sources:
+  - source_title: Analysis of the VPP Dynamic Network Constraint Management
+    pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+    markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.72
+- record_id: ARENA-DLV-65865
+  source_title: Analysis of the VPP Dynamic Network Constraint Management
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration Project
+  what_happened: The SAPN API design included a failsafe that reverted VPP sites to
+    default static export limits when communication with the API was lost, protecting
+    network security but also representing a floor on VPP export capacity during communication
+    outages.
+  lesson_learnt: Dynamic constraint management APIs for VPP integration should always
+    include a defined fallback to static limits on communication failure — this protects
+    network integrity but project teams should quantify the frequency and duration
+    of communication outages to understand the associated revenue impact on VPP operators.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id015
+  - 22
+  evidence_excerpt: In the event that the VPP system is unable to communicate with
+    the API, it will revert to a default export limit configuration commensurate with
+    normal static limits.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 19/01/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+  markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  source_page_pdf: 22
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-65865
+  contributing_source_titles:
+  - Analysis of the VPP Dynamic Network Constraint Management
+  contributing_sources:
+  - source_title: Analysis of the VPP Dynamic Network Constraint Management
+    pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+    markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-65866
+  source_title: Analysis of the VPP Dynamic Network Constraint Management
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration Project
+  what_happened: The SAPN API allocated transformer capacity equally across all VPP
+    sites connected to that transformer, rather than allowing differentiated allocation
+    — this simplified implementation but reduced the ability of the VPP aggregator
+    to optimise dispatch across nodes.
+  lesson_learnt: Future dynamic constraint API designs should support differentiated
+    capacity allocation at the sub-node level to enable VPP optimisation — equal-share
+    allocation is a pragmatic starting point but leaves portfolio-level dispatch optimisation
+    value unrealised.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The authors noted that the API was designed to support both site-level
+    and node-level limits, and that the VPP could in principle allocate capacity in
+    different ratios to VPP sites under the same node.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id016
+  - 24
+  - 28
+  evidence_excerpt: In general, the VPP could allocate capacity in different ratios
+    to VPP sites under the same node... the allocation approach adopted is that the
+    capacity limit made available to the transformer i through Mi(t) is distributed
+    in equal ratio to all the VPP sites connected to the transformer.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 19/01/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+  markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-65866
+  contributing_source_titles:
+  - Analysis of the VPP Dynamic Network Constraint Management
+  contributing_sources:
+  - source_title: Analysis of the VPP Dynamic Network Constraint Management
+    pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+    markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-65867
+  source_title: Analysis of the VPP Dynamic Network Constraint Management
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration Project
+  what_happened: Released energy analysis showed that the benefit of dynamic constraint
+    management was heavily concentrated in a minority of VPP sites — for example,
+    released energy levels of ~17 kWh were typically only available to around 25%
+    of VPP sites during non-workdays, while most sites received far less.
+  lesson_learnt: VPP developers should not distribute dynamic constraint management
+    benefits uniformly across participants in project economics or customer offers
+    — the network-derived uplift is concentrated at a minority of well-located sites,
+    and participant agreements and revenue-sharing models need to reflect this locational
+    inequality.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id017
+  - 45
+  evidence_excerpt: Most of the released energy is typically associated to a minority
+    of the VPP sites. Observe for example in Figure 20 that released energy levels
+    of around 17 kWh are only typically available to around 25% of VPP sites during
+    non-workdays.
+  confidence_note: 'proponent_type reconciled to ''network business'' from: network
+    business (11/20), research organisation/university (5/20), technology vendor (3/20),
+    consortium/multi-party venture (1/20)'
+  source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 19/01/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+  markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  source_page_pdf: 45
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-65867
+  contributing_source_titles:
+  - Analysis of the VPP Dynamic Network Constraint Management
+  contributing_sources:
+  - source_title: Analysis of the VPP Dynamic Network Constraint Management
+    pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+    markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-65868
+  source_title: Analysis of the VPP Dynamic Network Constraint Management
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration Project
+  what_happened: Customer load profile data was unavailable for South Australia due
+    to privacy constraints, requiring the use of synthetic profiles derived from NSW
+    Ausgrid Smart Grid Smart Cities data that were then scaled to SA conditions —
+    a methodology the authors acknowledged was imperfect for capturing interstate
+    differences in energy use patterns.
+  lesson_learnt: VPP economic modelling projects should establish data-sharing agreements
+    with the relevant DNSP or retailer to access real customer load profiles before
+    analysis commences — reliance on synthetic or interstate proxies introduces material
+    uncertainty in benefit estimates and undermines the credibility of cost-benefit
+    conclusions.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: network business
+  delay_category: data/validation/testing
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: A mixture of synthetic profiles derived from 5,000 NSW Ausgrid
+    profiles were scaled to SA conditions using relative load and frequency distribution
+    matching as a workaround.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id018
+  - 54
+  evidence_excerpt: It remains a challenge to access public load profiles due to privacy
+    considerations. For that reason, we used a mixture of synthetic load profiles
+    based on those of real customers... This process should adjust for differences
+    in timing (daytime hours) and climate but is probably insufficient to account
+    for all differences in gas versus electricity use, for example, between different
+    states.
+  confidence_note: 'proponent_type reconciled to ''network business'' from: network
+    business (11/20), research organisation/university (5/20), technology vendor (3/20),
+    consortium/multi-party venture (1/20)'
+  source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 19/01/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+  markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  source_page_pdf: 54
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-65868
+  contributing_source_titles:
+  - Analysis of the VPP Dynamic Network Constraint Management
+  contributing_sources:
+  - source_title: Analysis of the VPP Dynamic Network Constraint Management
+    pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+    markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-65869
+  source_title: Analysis of the VPP Dynamic Network Constraint Management
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration Project
+  what_happened: The project successfully demonstrated the full technical architecture
+    for a network-VPP API (registration, monitoring, and constraint management functions)
+    operating at scale across 584 sites in the SA distribution network, providing
+    a replicable blueprint for DNSP-VPP integration.
+  lesson_learnt: A three-function API architecture covering DER registration, real-time
+    monitoring, and dynamic constraint management provides a proven integration blueprint
+    for DNSPs seeking to co-ordinate VPPs — future projects should use this architecture
+    as a reference design rather than developing from scratch.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id019
+  - 21
+  - 22
+  evidence_excerpt: 'The main functions of the API are outlined as follows: DER registration...
+    DER monitoring... Constraint management — This part of the API provides dynamic
+    network capacity information to the VPP in the form of forecast export capacity
+    limits, which define DER operating envelopes at nodal aggregate level.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 19/01/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+  markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-65869
+  contributing_source_titles:
+  - Analysis of the VPP Dynamic Network Constraint Management
+  contributing_sources:
+  - source_title: Analysis of the VPP Dynamic Network Constraint Management
+    pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+    markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-65870
+  source_title: Analysis of the VPP Dynamic Network Constraint Management
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration Project
+  what_happened: The economic modelling used a single static solar PV output profile
+    derived from one location (Kent Town, Adelaide) uniformly applied to all 1,000
+    simulated VPP customers, ignoring spatial and orientation diversity across customer
+    premises.
+  lesson_learnt: Economic models for spatially distributed VPPs should incorporate
+    diversity in PV output profiles across sites — using a single representative profile
+    systematically over- or under-estimates simultaneously available export capacity
+    and reduces the accuracy of cost-benefit conclusions for large-scale VPP deployments.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: close-out/post-project review
+  proponent_type: network business
+  delay_category: null
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id020
+  - 57
+  evidence_excerpt: The same solar PV output profile was used in this analysis for
+    each customer. PVWATTS was used to generate a representative solar profile at
+    the following specification drawn from Adelaide-Kent Town, Australia.
+  confidence_note: 'proponent_type reconciled to ''network business'' from: network
+    business (11/20), research organisation/university (5/20), technology vendor (3/20),
+    consortium/multi-party venture (1/20)'
+  source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 19/01/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+  markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-65870
+  contributing_source_titles:
+  - Analysis of the VPP Dynamic Network Constraint Management
+  contributing_sources:
+  - source_title: Analysis of the VPP Dynamic Network Constraint Management
+    pdf_url: https://arena.gov.au/assets/2021/01/analysis-of-the-vpp-dynamic-network-constraint-management.pdf
+    source_pages: *id020
+    source_url: https://arena.gov.au/knowledge-bank/analysis-of-the-vpp-dynamic-network-constraint-management/
+    markdown_filename: analysis_of_the_vpp_dynamic_network_constraint_management.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-67301
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: SA Power Networks and Tesla successfully demonstrated the use of
+    DNSP-supplied dynamic operating envelopes (DOEs) by a 1,000-customer VPP during
+    live NEM market trading — the first such demonstration at scale in Australia.
+    The project ran from January 2019 to March 2021 and all four milestones were achieved
+    on or ahead of schedule.
+  lesson_learnt: Dynamic operating envelopes delivered via a standardised API can
+    increase VPP export capacity by 20–60% above static limits without compromising
+    network power quality — the approach is technically proven at scale and ready
+    for broader rollout.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id021
+  - 2
+  - 3
+  - 4
+  evidence_excerpt: As far as we are aware, this project has been the first to demonstrate
+    the use of DNSP-supplied dynamic operating envelopes by a large-scale VPP during
+    real-world trading in the NEM.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: 4
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67301
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id021
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-67302
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: Development of changes to Tesla's Autobidder platform — a globally
+    deployed system used to manage Tesla's entire battery fleet — proved to be the
+    critical path for the trial. Heavy impact on operational development teams outside
+    the project, competing priorities, and the risk of adversely affecting existing
+    global operational processes all constrained the pace of Autobidder development.
+  lesson_learnt: When a trial depends on changes to a vendor's production platform
+    shared with global operations, treat that development work as the critical path
+    from day one and negotiate dedicated resourcing commitments before project launch
+    — competing global priorities will otherwise dominate.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: procurement/supply chain
+  failure_mode: coordination & stakeholders
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: execution & logistics
+  intervention_note: Tesla engineers were physically embedded in the SA Power Networks
+    Network Innovation Centre on-site team, which proved critical in coordinating
+    design, integration and test activities with Tesla's US-based product engineering
+    teams and meeting the aggressive six-month build timeframe.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id022
+  - 23
+  - 25
+  evidence_excerpt: Prioritising development work for Autobidder turned out to be
+    the critical path for the trial due to the heavy impact on operational development
+    teams outside the project with a range of other priorities, coupled with the risk
+    of adversely impacting existing operational processes.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: 23
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67302
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id022
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: governance/coordination failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-67303
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: SA Power Networks adopted agile development methodology with two-week
+    sprint cycles for the technology build phase despite having very limited in-house
+    agile experience at the time. The method was applied to a six-month compressed
+    build timeline involving cross-functional teams and a partner with US-based engineering
+    resources.
+  lesson_learnt: An agile, sprint-based methodology with cross-functional co-located
+    teams (including embedded vendor engineers) is well suited to rapid technology
+    build phases in grid-DER integration trials — the approach enabled SA Power Networks
+    to meet an aggressive timeline and has since become its standard development method.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Established a new cross-functional team co-located at the Network
+    Innovation Centre, embedded Tesla engineers on-site, and used Microsoft Azure
+    with agile sprints — delivering the full technology build in six months and 11,000+
+    lines of code.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id023
+  - 25
+  - 26
+  evidence_excerpt: While this approach was expected to be well suited to the rapid
+    build out, test and refinement that would be required to meet the project timeline,
+    it also introduced a level of delivery risk, as there was very limited experience
+    in agile development within SA Power Networks' engineering development teams at
+    the time. As described in section 2.7 above, the new method proved highly successful.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: 25
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67303
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id023
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-67304
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: Tesla's firmware changes for the Powerwall 2 and Gateway were incorporated
+    into Tesla's global production firmware rather than a trial-specific release,
+    meaning all changes had to pass Tesla's global software development, test and
+    quality control process, adding schedule constraint to the trial's technology
+    build phase.
+  lesson_learnt: When trial requirements necessitate changes to a vendor's global
+    production firmware, factor the vendor's full QA and release cycle into the project
+    schedule — this is a non-negotiable constraint that cannot be compressed, and
+    should be scoped and sequenced as the first critical path item.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: poor scoping
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: unvalidated integration
+  intervention_note: Embedded Tesla engineers on-site at SA Power Networks to coordinate
+    directly with US product engineering teams and manage the firmware release within
+    the project timeline.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id024
+  - 23
+  evidence_excerpt: The timeframes involved in Tesla's global software development,
+    test and quality control process were a key consideration in implementation planning
+    for the trial.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67304
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id024
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-67305
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: 'During operations stage 2 testing, four specific technical issues
+    were identified: (1) Autobidder updated Powerwalls every 15 minutes while DOEs
+    were published every 5 minutes, causing sites to apply the last 5-minute limit
+    rather than the minimum for the 15-minute window; (2) forced dispatch events activated
+    outside Autobidder could exceed published limits; (3) a missing commissioning
+    check meant sites were not initialised to the 5kW default failsafe limit on first
+    registration; and (4) two sites had incorrect metering installation causing persistent
+    non-compliance.'
+  lesson_learnt: Integration testing at scale with live customer equipment is essential
+    to reveal mismatches between the DNSP's 5-minute operating envelope publication
+    cadence and the VPP's 15-minute update cycle, missing commissioning checklist
+    items, and installation quality issues — these are not detectable in lab or unit
+    testing alone.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: execution & logistics
+  intervention_note: Operating procedures were changed to preclude forced dispatch
+    outside Autobidder; the commissioning process was updated to require initialisation
+    to 5kW default; metering faults were corrected; and the 15-minute limitation was
+    deferred to a future Autobidder update supporting 5-minute NEM settlement.
+  transferability: moderate
+  delay_magnitude: 1-3 months
+  technology_domain: battery storage
+  source_pages: &id025
+  - 27
+  - 28
+  evidence_excerpt: 'This stage of the trial identified four notable issues: 1. Dynamic
+    operating envelopes are published to the API in 5-minute increments… Tesla''s
+    Autobidder only updates Powerwalls once every 15-minutes… 2. Forced dispatch events…
+    can exceed published limits… 3. Sites must be initiated to a 5kW limit when first
+    registered… 4. Two sites were detected that were persistently non-compliant… traced
+    to incorrect installation of metering.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: 27
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67305
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id025
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-67306
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: The trial field end date was extended from September 2020 to March
+    2021 (a six-month extension) to capture additional spring and summer seasonal
+    data, ensuring the trial covered at least one full annual cycle of network hosting
+    capacity variation.
+  lesson_learnt: Plan field trial duration to cover at least one full seasonal cycle
+    before finalising the schedule — for DER network integration trials in temperate
+    climates, a minimum of 12 months of live operation is needed to capture the full
+    range of network hosting capacity and market conditions.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: data/validation/testing
+  failure_mode: poor scoping
+  outcome_class: delayed but recoverable
+  secondary_failure_mode: null
+  intervention_note: Trial duration extended by six months with ARENA agreement to
+    capture spring and summer data; all project milestones were ultimately achieved.
+  transferability: moderate
+  delay_magnitude: 3-12 months
+  technology_domain: DER
+  source_pages: &id026
+  - 10
+  - 25
+  evidence_excerpt: The field trial was originally planned to end in September 2020;
+    however, this was extended to March 2021 in order to capture additional spring
+    and summer data.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: 10
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67306
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id026
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-67307
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: 'The existing IEEE2030.5 standard, identified as the most suitable
+    base standard for the DNSP-VPP API, required significant modification for the
+    trial: it is device-oriented rather than site-oriented, and oriented towards direct
+    device control rather than publication of operating envelopes. A custom subset
+    and extension of the standard had to be designed from scratch.'
+  lesson_learnt: Do not assume that existing DER communication standards (including
+    IEEE2030.5) can be adopted without substantial adaptation for DNSP-VPP dynamic
+    operating envelope use cases — allocate design effort and timeline for custom
+    extensions, and contribute the outputs to national standardisation groups to reduce
+    future project costs.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: internal governance/resourcing
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: poor scoping
+  intervention_note: SA Power Networks designed a custom subset of IEEE2030.5 with
+    new 'site', 'limit' and 'group limit' concepts, published an open developer portal,
+    and established the DER Integration API Working Group to progress the specification
+    towards a national Australian standard.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id027
+  - 13
+  - 14
+  evidence_excerpt: IEEE2030.5 is a feature-rich and complex protocol, however, and
+    it was designed to support the direct control of DER by utilities rather than
+    the publication of dynamic limits. Hence, for the purpose of this project, it
+    was decided to implement only a minimal subset of the base standard, and it was
+    necessary to modify certain aspects.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67307
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id027
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-67308
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: SA Power Networks established two national industry forums — the
+    DER Integration API Technical Working Group (subject-matter experts from ARENA-funded
+    projects) and the API Technical Reference Group (70+ broader industry stakeholders)
+    — in early 2019 to collaboratively shape the API design and foster alignment with
+    future national standards.
+  lesson_learnt: Establishing co-design forums with peer ARENA projects and broader
+    industry stakeholders at the start of a DNSP-DER integration trial significantly
+    increases the likelihood that the resulting technical specifications will be adopted
+    as national standards rather than remaining project-specific artefacts.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: The DER Integration API Working Group was subsequently adopted
+    and convened by ANU, and the API Technical Reference Group was adopted by AEMO
+    as a reference group for the VPP Demonstrations project — both outcomes extending
+    industry reach beyond the original trial.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id028
+  - 13
+  - 14
+  evidence_excerpt: Two new industry groups were established early in 2019 to collaborate
+    more broadly and help guide the API development process… Through this group, the
+    SA Power Networks API was adopted by the Australian National University (ANU)
+    evolve project… This working group has grown steadily since its inception and
+    is now convened by ANU.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: 13
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67308
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id028
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-67309
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: SA Power Networks built all core IT systems from scratch using Microsoft
+    Azure cloud services, as there were few existing internal systems that could be
+    leveraged. The build required approximately 3.2 staff years of development effort,
+    10 new Azure components and more than 11,000 lines of code, most of which was
+    delivered within the first six months.
+  lesson_learnt: Design trial IT systems for production-scale from the outset — the
+    modular Azure-based architecture developed for this trial became the foundation
+    for subsequent ARENA-funded solar PV flexible exports trials and has been extended
+    to other business applications, demonstrating that investment in scalable architecture
+    pays back well beyond the original trial.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: Microsoft Azure was selected for its scalability, performance,
+    security and rapid development capability; the architecture was designed to scale
+    to 1,000,000 devices across multiple VPPs with minimal changes.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id029
+  - 21
+  - 22
+  - 24
+  evidence_excerpt: An early goal established for the project was that the systems
+    developed for the trial should be designed from the outset to be able to scale
+    up to support a full production service in future, with multiple VPPs and hundreds
+    of thousands of devices… The modular technology platform developed for the project
+    will also provide the foundation for our next phase of field trials.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: 22
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67309
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id029
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-67310
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: During initial telemetry testing approximately 10% of monitoring
+    data from VPP sites was lost each day due to dropouts in the customer internet
+    connection between the Powerwall devices and the Tesla cloud. Sites experience
+    communications outages approximately 5% of the time throughout the trial.
+  lesson_learnt: Design DNSP-VPP API systems with explicit fallback export limits
+    and data buffering/backfill capabilities from the outset — consumer internet is
+    not a reliable communications medium for DER control and telemetry, and assuming
+    ~5% outage time is reasonable for residential VPP deployments.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Fallback export limits of 5kW were configured for communications
+    outages; Tesla implemented data buffering on Powerwall devices; data backfill
+    capability was identified as a gap in the API and flagged for future implementation.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id030
+  - 26
+  - 42
+  - 43
+  evidence_excerpt: During the initial telemetry test, around 90% of data was received
+    correctly on each day of testing. The cause of missing data was confirmed as being
+    occasional dropouts in the communications links between customer batteries and
+    the Tesla cloud… Evidence from the project suggests that sites experience outages
+    for approximately 5% of the time that result in monitoring data loss and/or the
+    inability to communicate export limits to the device.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: 26
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67310
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id030
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-67311
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: Telemetry data from the approximately 1,000 VPP sites revealed around
+    20 sites where VPP equipment had been installed or commissioned incorrectly (e.g.
+    export meter added twice to the Tesla gateway), causing them to appear non-compliant
+    with operating envelopes when they were actually operating correctly. Separately,
+    voltage telemetry identified a faulty neutral at one VPP site — a potential electric
+    shock hazard — that would not otherwise have been detected.
+  lesson_learnt: Real-time telemetry from VPP sites via the DNSP API provides a powerful
+    installation quality assurance mechanism and network safety monitoring capability
+    that goes well beyond VPP dispatch compliance — build automated data quality alerts
+    into the API backend from day one to detect and escalate anomalies promptly.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: data & measurement
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: execution & logistics
+  intervention_note: Manual monitoring of incoming data by the SAPN project team detected
+    Tesla system outages typically several days after they occurred; a backup server
+    for Tesla's monitoring data push service was instantiated, and automated data
+    monitoring and alerting on the SAPN API was identified as a priority requirement.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id031
+  - 35
+  - 41
+  - 42
+  evidence_excerpt: The telemetry data received via the API also revealed around 20
+    sites where the VPP equipment had been installed or commissioned incorrectly…
+    the voltage data shown below is from a site where analysis of the telemetry data
+    provided through the interface revealed a faulty neutral at one of the VPP sites,
+    which is a potential electric shock hazard for the customer.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: 41
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67311
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id031
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-67312
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: The first-generation hosting capacity model used seasonal worst-case
+    scenarios to set operating envelopes. This unnecessarily restricted VPP export
+    capacity on days with unusually high local load or low passive PV generation compared
+    to the seasonal average. A second issue was that some LV networks with high uncertainty
+    in connected PV capacity could not be modelled reliably and had to remain on static
+    5kW limits throughout the trial.
+  lesson_learnt: A prototypical seasonal network model is sufficient to demonstrate
+    the DOE concept and unlock significant capacity gains over static limits, but
+    real-time local weather and load data integration is needed to maximise capacity
+    availability — and high-quality records of small-scale DER connected to the network
+    are a prerequisite for accurate hosting capacity modelling.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: data & measurement
+  intervention_note: Real-time local weather data (Weatherzone, updated every 15 minutes)
+    and load data were incorporated into the constraints engine to improve capacity
+    availability on days diverging from seasonal norms; networks with uncertain PV
+    data were excluded from dynamic limits.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id032
+  - 31
+  - 32
+  evidence_excerpt: The use of seasonal load and generation profiles unnecessarily
+    restricted VPP capacity on days with unusually high local load or low passive
+    PV generation… Congested periods were not identified successfully on some LV networks
+    where there is high uncertainty in the amount of PV capacity connected on those
+    networks… This issue arises from data quality issues in SA Power Networks' legacy
+    DER records.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: 37
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67312
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id032
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-67313
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: Voltage measurements received via the API were taken at the battery
+    inverter, which sits some electrical distance away from the customer's network
+    connection point. Under high export conditions, the battery can raise voltage
+    within the customer's premises while the local LV network remains compliant. An
+    initial threshold of 253V at the inverter was used, which proved overly conservative
+    and unnecessarily restricted VPP capacity.
+  lesson_learnt: When using inverter-side voltage measurements as a network constraint
+    proxy, account for the voltage rise across the customer's on-site wiring between
+    the inverter and the network connection point — failing to do so results in overly
+    conservative operating envelopes and significant lost export capacity.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: unvalidated technical assumptions
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: An analysis of expected voltage rise at VPP sites between the
+    network connection point and the inverter was conducted, and the threshold was
+    revised from 253V to 256V at the inverter — enabling significantly additional
+    export capacity to be released.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id033
+  - 35
+  evidence_excerpt: One learning from the trial was that the impedance of the customers'
+    on-site wiring must be taken into account in interpreting the data, because the
+    voltage measurements received via the API were obtained at the battery inverter…
+    a threshold of 256V at the inverter was chosen to calibrate the constraints engine,
+    as this typically corresponds to the 253V upper-limit for regulatory compliance
+    at the network connection point. This enabled significant additional capacity
+    to be released to the VPP compared to the initial settings.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67313
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id033
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-67314
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: During the SA islanding event of 31 January 2020, the Heywood interconnector
+    was damaged and South Australia operated isolated from the NEM for approximately
+    two weeks. VPP sites providing contingency FCAS raise services produced transient
+    export excursions above the published 5kW operating envelopes, with one site peaking
+    at 7.8kW export during the 2 March 2020 FCAS event. Approximately 150 sites breached
+    static 5kW limits during that single event for roughly 90 seconds.
+  lesson_learnt: Design operating protocols to explicitly distinguish between steady-state
+    and emergency operating envelopes — during contingency FCAS events, transient
+    excursions above steady-state limits may be acceptable and network-beneficial,
+    but this must be pre-agreed with defined risk parameters rather than managed informally
+    during an event.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: A risk assessment determined that transient FCAS excursions were
+    acceptable given low VPP site concentrations per LV area, voltage-driven (not
+    thermal) network limits, and AS4777 inverter overvoltage response modes — operating
+    envelopes were given lower priority than frequency droop response in site control
+    systems.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id034
+  - 29
+  - 30
+  - 31
+  - 47
+  - 48
+  evidence_excerpt: The minimum instantaneous readings, however, show that there have
+    been some transient excursions outside the published operating envelopes, notably
+    in the first days of February… The VPP provided a > 3MW equivalent response but
+    in doing so approximately 150 sites had breached their static 5kW site export
+    limits. The combined duration of excursions over the 5kW limit lasted only roughly
+    90 seconds.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: 35
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67314
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id034
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-67315
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: The Powerwall 2 Gateway controls exports through battery management
+    only and has no control path to the solar PV inverter. When the battery is fully
+    charged, the gateway cannot prevent energy from being exported at times of negative
+    wholesale prices. This caused the VPP to generate negative net monthly wholesale
+    revenues on three occasions (September and December 2020, January 2021).
+  lesson_learnt: VPP site design should include a control path from the energy management
+    gateway to the solar PV inverter — relying on battery control alone for export
+    management creates an uncontrolled export residual during negative price events
+    and limits the VPP's ability to optimise state of charge for market dispatch.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: commercial & market
+  intervention_note: The SA Government subsequently mandated remote curtailment capability
+    for all new small embedded generator installations, partially addressing the underlying
+    issue for future VPP sites.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id035
+  - 23
+  - 42
+  - 43
+  evidence_excerpt: A notable limitation of the site configuration is the inability
+    of the Powerwall Gateway to control the actions of the PV system. Site exports
+    are managed through battery control only… net monthly wholesale trading revenues
+    were negative on three occasions during this period… This is reflective of the
+    fact that the VPP is unable to curtail solar output directly as there is no control
+    path from the Tesla gateway to the solar inverter, so once the site battery is
+    full it is no longer possible to prevent energy from being exported at times of
+    negative wholesale price.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: 23
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67315
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id035
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-67316
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: Wholesale trading was suspended for a period from approximately April
+    to June 2020 to resolve an interaction between wholesale market trading and FCAS
+    calculation in the VPP Demonstrations trial. Following resolution, wholesale trading
+    resumed at reduced capacity, limiting the VPP's ability to fully utilise the higher
+    export limits enabled by the dynamic operating envelope scheme during that period.
+  lesson_learnt: VPP operators running parallel market participation trials (wholesale
+    and FCAS) must anticipate that interactions between the two control strategies
+    can require temporary suspension of one mode — factor contingency time into the
+    project schedule for diagnosing and resolving cross-trial control system interactions.
+  issue_severity: moderate
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: internal governance/resourcing
+  failure_mode: unvalidated integration
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: execution & logistics
+  intervention_note: Wholesale market trading functions were paused and the interaction
+    between wholesale trading and FCAS calculation was identified and resolved through
+    the concurrent AEMO VPP Demonstrations trial; trading resumed at reduced capacity
+    thereafter.
+  transferability: moderate
+  delay_magnitude: 3-12 months
+  technology_domain: battery storage
+  source_pages: &id036
+  - 42
+  evidence_excerpt: The reduction in trading revenues from April to June 2020 is because
+    wholesale market trading functions were essentially paused during this time to
+    resolve an issue with the interaction between market trading and the calculation
+    of FCAS response identified through AEMO's VPP Demonstrations trial.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: 48
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67316
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id036
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  secondary_failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-67317
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: Tesla's cost to implement the API integration for the trial was $460,065.
+    A preliminary CSIRO economic analysis found that, under conditions where static
+    export limits remain at 5kW, the incremental NPV of implementing the interface
+    to achieve an increase from 5kW to 10kW export was marginal based on wholesale
+    market trading alone. However, when static limits are reduced below 5kW, when
+    FCAS revenues are included, or when VPP scale exceeds 5MW, the business case becomes
+    strongly positive.
+  lesson_learnt: The business case for VPP operators investing in DNSP API integration
+    for dynamic operating envelopes is sensitive to the static export limit counterfactual,
+    VPP scale, and access to FCAS markets — integration costs are broadly fixed while
+    benefits scale with fleet size, so early movers should target larger fleets and
+    multiple revenue streams to justify API development investment.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id037
+  - 44
+  - 45
+  evidence_excerpt: The actual cost to Tesla of implementing the API for this trial
+    was $460,065… With a 5kW static export limit as the counterfactual, the NPV to
+    implement the interface to achieve an incremental increase in export capacity
+    from 5kW to 10kW for a 1,000 customer / 5MW VPP would be marginal if the only
+    value stream for the VPP were wholesale market arbitrage.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67317
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id037
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-67318
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: FCAS revenues significantly exceeded wholesale market trading revenues
+    throughout the trial period. In February 2020 alone (during the SA islanding event),
+    Tesla's VPP earned more FCAS revenue than the total for all 16 other months between
+    September 2019 and January 2021 combined. Modelling showed that enabling an additional
+    1MW of FCAS raise capacity through dynamic exports would have increased 2 March
+    2020 FCAS revenues by 46%.
+  lesson_learnt: VPP business cases must include FCAS as a primary value stream, not
+    a secondary one — FCAS revenues can dominate the economic case, especially during
+    system contingency events, and the incremental FCAS capacity enabled by dynamic
+    operating envelopes can be highly material to overall project value.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id038
+  - 44
+  - 49
+  - 50
+  evidence_excerpt: In this month alone Tesla's VPP earned more FCAS revenue than
+    the total for the sixteen other months between September 2019 and January 2021…
+    being able to add an additional 1 MW of FCAS with dynamic exports enabled would
+    have increased revenues by 46%.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67318
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id038
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-67319
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: 'SA Power Networks had poor LV network visibility prior to the trial:
+    over 90% of overhead LV conductor types were unknown and only 400 monitoring devices
+    were available on the LV network. The trial''s 1,000-site VPP telemetry dataset
+    provided the single largest source of LV power quality data SA Power Networks
+    had ever accessed, enabling new use cases including neutral fault detection, voltage
+    distribution mapping, and hosting capacity model calibration.'
+  lesson_learnt: VPP telemetry delivered via a DNSP-DER API provides a cost-effective
+    pathway to achieving LV network visibility — DNSPs with poor LV monitoring coverage
+    should prioritise API-based telemetry collection as a complement to traditional
+    monitoring infrastructure, as it delivers substantial operational benefits beyond
+    VPP dispatch management.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id039
+  - 20
+  - 34
+  - 35
+  evidence_excerpt: Currently, SA Power Networks has poor visibility of the low voltage
+    network and installed DER capabilities and locations. For example, over 90% of
+    overhead low voltage conductor types on the SA distribution network are unknown
+    and, prior to this trial, SA Power Networks only had 400 monitoring devices available
+    on the low voltage network… At the time of this trial, this project provided the
+    single largest source of LV power quality data that SA Power Networks had ever
+    had access to, with circa 1,000 sites.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: 40
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67319
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id039
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-67320
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: The SAPN API and associated backend systems experienced no system
+    outages during the entire field trial, with the trial running on a single server
+    instance. However, several outages in Tesla's monitoring data push service were
+    only detected manually by the SAPN project team, typically several days after
+    the outage occurred, resulting in data loss gaps.
+  lesson_learnt: Automated data flow monitoring and alerting should be implemented
+    on the DNSP API backend before go-live — manual monitoring of incoming data streams
+    is insufficient for timely detection of third-party system outages, and late detection
+    increases data loss in telemetry records used for both operations and regulatory
+    compliance.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: data & measurement
+  outcome_class: re-scoped/adapted
+  secondary_failure_mode: null
+  intervention_note: Tesla instantiated a backup server for the monitoring data push
+    service; automated data monitoring and alerting on the SAPN API was identified
+    as a priority for production deployment.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id040
+  - 42
+  evidence_excerpt: There were a small number of instances in the trial where services
+    running in the Tesla systems experienced outages that impacted the sending of
+    the time-series monitoring data over the API. In these instances, the issue was
+    picked up by the SAPN project team through manual monitoring of the incoming data,
+    typically several days after the outage occurred.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: 42
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67320
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id040
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: data quality/measurement failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-67321
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: Tesla's semi-autonomous Powerwall control approach — where individual
+    devices operate with reference to price forecasts from Autobidder rather than
+    strict central dispatch commands — was found to have implications for the design
+    of operating protocols for dynamic operating envelopes. Under this architecture,
+    the DNSP cannot assume that a central VPP dispatch command will translate immediately
+    and precisely into site-level limit compliance.
+  lesson_learnt: DNSP operating envelope protocols must account for the degree of
+    centralisation in the VPP's control architecture — semi-autonomous DER designs
+    that depend on customer internet and local device logic require different compliance
+    monitoring approaches and fallback limit protocols compared to centrally dispatched
+    VPPs.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Fallback export limits were configured at the device level to
+    apply when communications to Autobidder were lost, mitigating the compliance risk
+    of semi-autonomous operation.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id041
+  - 23
+  evidence_excerpt: Tesla also does not use strict central control for the operation
+    of their VPP… individual Powerwalls have been designed to operate semi-autonomously
+    with reference to price forecasts and other data provided by Autobidder. This
+    approach is well suited to an environment that relies on customer internet for
+    site communications, which is not always reliable. This semi-autonomous site behaviour
+    has implications for the design of the DSO-VPP interface and the operating protocols
+    around dynamic operating envelopes.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67321
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id041
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-67322
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: The dynamic operating envelope approach increased total VPP export
+    capacity from 5MW to 6–8MW during solar hours — a 20–60% increase above static
+    limits — without causing measurable power quality issues on the LV network. During
+    winter months the average per-site export capacity reached 8kW (60% above the
+    5kW static limit); during spring/summer it averaged 6kW (20% above).
+  lesson_learnt: Even a conservative prototypical network model generating seasonal
+    DOEs can unlock 20–60% additional export capacity for a VPP compared to static
+    limits, with the greatest gains in low-solar winter periods — the technical and
+    commercial case for dynamic operating envelopes is proven at 1,000-site scale
+    in the NEM.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id042
+  - 25
+  - 26
+  - 27
+  evidence_excerpt: During winter months, the average export capacity of the VPP reaches
+    8kW/site, or a 60% increase on the VPP's original 5MW export capacity under static
+    limits. During spring and summer months, where there is generally more passive
+    PV exporting on the same networks, the average export capacity reduces to 6kW/site,
+    or a 20% increase versus static limits.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67322
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id042
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-67323
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: Providing operating envelopes at the network node (distribution transformer)
+    level rather than at individual NMI level was intended to allow the VPP aggregator
+    to optimally allocate network capacity across sites. In practice, Tesla's control
+    strategy at the time of the trial did not support this optimisation, and capacity
+    was simply divided equally across all NMIs below a constrained transformer.
+  lesson_learnt: Specify the VPP aggregator's capacity allocation logic when designing
+    the node-level operating envelope protocol — equal distribution is a valid and
+    safe default but leaves value on the table; agreeing optimisation rules (e.g.
+    allocation by state of charge) in advance enables the DNSP and VPP to realise
+    the full efficiency of node-level envelope granularity.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id043
+  - 15
+  evidence_excerpt: Operating envelopes are currently being provided to Tesla at the
+    level of the network element, or node, that is congested… The intent is that this
+    gives the VPP operator the opportunity to optimise allocation of network capacity
+    across the sites below the congested network element, taking into account battery
+    state of charge or other factors… Tesla's control strategy does not currently
+    allow for this, however, and at the present time capacity is simply divided equally
+    across all NMIs below a constrained network element.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: 15
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67323
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id043
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-67324
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: The trial demonstrated that, where node-level operating envelope
+    capacity is allocated to individual customers by the aggregator rather than directly
+    by the DNSP, the arrangement requires explicit consent from customers to allow
+    the aggregator to set their individual export limit, and the network must formally
+    qualify the aggregator as a trusted party. These governance requirements were
+    not fully formalised at trial commencement and required working through during
+    operations.
+  lesson_learnt: Formalise the consent framework and aggregator qualification process
+    for node-level operating envelope allocation before trial go-live — the regulatory
+    relationship for network connection limits runs between the DNSP and the individual
+    customer, not the DNSP and the aggregator, and this must be resolved in connection
+    agreements before commercial production deployment.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: network business
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: not quantified
+  technology_domain: DER
+  source_pages: &id044
+  - 51
+  evidence_excerpt: Effectively, the customer needs to opt-in to allowing the aggregator
+    to set their export limit, rather than the network, and the network must qualify
+    the aggregator as a party trusted to disaggregate nodal limits to individual sites
+    on its behalf.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: 57
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67324
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id044
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-67325
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: Site equipment for the trial was configured with 5kVA PV inverters
+    and 5kVA Powerwalls, optimised to match the prevailing 5kW static export limit.
+    This meant that outside solar hours, maximum export was capped at 5kW from the
+    battery alone, and export above 5kW was only possible during solar hours — precisely
+    when wholesale prices are typically depressed, limiting the economic upside of
+    dynamic operating envelopes for wholesale market arbitrage.
+  lesson_learnt: Future VPP sites should be designed with battery export capacity
+    that exceeds the anticipated static export limit — as static limits are progressively
+    reduced below 5kW, the relative value of dynamic operating envelopes will increase
+    and site configurations with higher battery export capacity will be able to access
+    more of that value at times outside solar hours.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id045
+  - 47
+  evidence_excerpt: In this context it is important to consider that site equipment
+    selection has been optimised according to existing static export limits (5kW per
+    phase)… Therefore, the maximum theoretical export outside of solar hours was 5kW,
+    with additional export up to 10kW only possible during solar hours, when wholesale
+    prices are typically depressed. This limits the opportunity for upside for purely
+    wholesale market trading.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: 53
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67325
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id045
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-67326
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: The trial demonstrated that manual override capability for network
+    control room operators to adjust or exclude specific nodes from the constraints
+    engine was initially built for end-to-end testing purposes, but proved essential
+    during live operations for managing unplanned outages of voltage regulation equipment
+    and other network abnormalities.
+  lesson_learnt: Build manual network operator override capability into the DNSP constraints
+    engine from the outset — even if initially intended only for testing, operational
+    experience shows it is a critical safety feature for managing unplanned network
+    events and will be a mandatory requirement for any production deployment of dynamic
+    operating envelopes.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: successful demonstration
+  secondary_failure_mode: null
+  intervention_note: Manual adjustments were used during the trial to lower operating
+    envelopes to 5kW during unplanned outages of voltage regulation equipment, confirming
+    the utility and necessity of the override function.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id046
+  - 19
+  - 32
+  - 33
+  evidence_excerpt: The constraint estimation engine also supports the ability for
+    an operator to apply manual adjustments to network constraints prior to publication
+    via the API, and to exclude specific nodes from receiving limits. While these
+    functions were initially implemented to support end-to-end testing, it became
+    clear through the trial that this kind of functionality is very important to network
+    control room operators for managing unexpected situations or network faults.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: 19
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67326
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id046
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-67327
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: The project generated industry-standard outputs (an open developer
+    portal, an API specification, and industry working group contributions) that enabled
+    a third-party VPP operator to integrate with the SAPN API in July 2020, outside
+    the original trial scope, using only registration and telemetry functions. This
+    demonstrated that the API design was sufficiently open and documented for other
+    industry participants to adopt without bespoke assistance.
+  lesson_learnt: Publishing an automatically-generated developer portal that stays
+    in sync with the live API configuration, and designing the API as an open standard
+    from the outset, materially reduces the cost and effort for third-party VPP operators
+    to onboard — this approach should be standard practice for all DNSP DER integration
+    APIs.
+  issue_severity: none
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: no major failure stated
+  outcome_class: follow-on scale-up enabled
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: DER
+  source_pages: &id047
+  - 52
+  evidence_excerpt: In July 2020, SA Power Networks conducted the first integration
+    of the API with a third party outside of the Advanced VPP Grid Integration trial,
+    for registration and telemetry functions only. This has been an opportunity to
+    test the onboarding and integration processes developed as part of the trial,
+    and demonstrated that other vendors can easily integrate with the API.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: 58
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67327
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id047
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-67328
+  source_title: Advanced VPP Grid Integration Final Report
+  publish_date: 2021-05
+  project_name: Advanced VPP Grid Integration
+  what_happened: 'South Australia wholesale spot prices shifted materially over the
+    trial period: SA transitioned from having the highest NEM spot prices to among
+    the lowest; midday prices collapsed to zero or negative frequently; and daily
+    energy arbitrage opportunities nonetheless increased from $71 to $84 per customer
+    on average. This structural market shift was not anticipated in the original 2019
+    economic modelling.'
+  lesson_learnt: VPP economic models must include scenario analysis for rapid structural
+    market change — the emergence of midday negative prices due to solar penetration
+    growth can shift battery revenue streams significantly within a trial period,
+    and models anchored to conditions at project commencement may quickly become unrepresentative.
+  issue_severity: minor
+  project_type: DER/customer-side
+  project_scale_band: demonstration
+  lifecycle_phase: operations
+  proponent_type: network business
+  delay_category: no material delay stated
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The trial's extended duration (to March 2021) captured the full
+    market shift, and the report documents the changed conditions and their implications
+    for future VPP configurations including active solar curtailment, improved negative
+    price forecasting and potential battery-only VPP sites.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id048
+  - 41
+  - 42
+  - 43
+  evidence_excerpt: South Australia has transitioned from having the highest spot
+    prices in the National Electricity Market to among the lowest… Daily lowest wholesale
+    energy prices now occur regularly in the middle of the day rather than overnight…
+    Negative price events have reduced the value proposition of solar PV exports.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+  project_page_url: https://arena.gov.au/projects/advanced-vpp-grid-integration/
+  kb_category: Distributed energy resources
+  kb_publish_date: 14/05/2021
+  kb_year: '2019'
+  kb_associated_project: Advanced VPP Grid Integration
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $1.03m
+  total_project_value: $2.48m
+  lead_organisation: SA Power Networks
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 15/01/2019
+  location: South Australia
+  project_partners: Tesla Motors Australia, CSIRO
+  pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+  markdown_filename: advanced_vpp_grid_integration_final_report.md
+  source_page_pdf: 47
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-67328
+  contributing_source_titles:
+  - Advanced VPP Grid Integration Final Report
+  contributing_sources:
+  - source_title: Advanced VPP Grid Integration Final Report
+    pdf_url: https://arena.gov.au/assets/2021/05/advanced-vpp-grid-integration-final-report.pdf
+    source_pages: *id048
+    source_url: https://arena.gov.au/knowledge-bank/advanced-vpp-grid-integration-final-report/
+    markdown_filename: advanced_vpp_grid_integration_final_report.md
+  arena_category:
+  - Distributed energy resources
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.92

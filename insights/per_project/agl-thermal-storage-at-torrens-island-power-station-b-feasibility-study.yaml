@@ -1,0 +1,1631 @@
+- record_id: ARENA-DLV-53451
+  source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island
+    Power Station B Feasibility Study
+  publish_date: 2024-03
+  project_name: AGL Thermal Storage at Torrens Island B Power Station Feasibility
+    Study (Project Calor)
+  what_happened: The feasibility study found that thermal energy storage (TES) could
+    not be integrated with the existing boilers at TIPS B. The boilers transfer heat
+    primarily through radiation, while TES heat transfer relies on conduction and
+    convection, making the existing boilers unsuitable. This required replacing all
+    four boilers with Heat Recovery Steam Generators (HRSGs) despite the project being
+    designed to replace only one of four 200MW gas-fired generation units.
+  lesson_learnt: When evaluating TES retrofit into an existing thermal power station,
+    do not assume existing boilers can be reused — the fundamental difference in heat
+    transfer mechanisms (radiation vs. convection/conduction) necessitates full boiler
+    replacement with HRSGs, which significantly increases capital cost and development
+    complexity beyond initial assumptions.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id001
+  - 36
+  - 37
+  - 47
+  - 50
+  evidence_excerpt: A key finding of this Project was that the TES cannot be integrated
+    with the current boilers. The boilers at the TIPS B are designed with a furnace
+    to combust gas and transfer heat through radiative, conduction and convection
+    heat transfer processes, with radiative being the largest component. Heat transfer
+    from the TES largely occurs due to conduction and convection, with little to no
+    radiative heat being transferred via radiation given that there is no high temperature
+    combustion taking place. As a result, the boilers are not suitable to transfer
+    heat from the TES into the working fluid (steam). Consequently, installation of
+    HRSGs is required for TES to be integrated into an existing thermal power station.
+  confidence_note: Technology domain set to 'battery storage' as the closest available
+    value; TES is a thermal storage technology not perfectly mapped to any single
+    allowed value. project_scale_band set to 'demonstration' as the project was a
+    desktop feasibility study with no commercial revenue stream established.
+  source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  project_page_url: https://arena.gov.au/projects/agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  kb_category: Geothermal energy, Renewables for industry
+  kb_publish_date: 3/07/2024
+  kb_year: '2022'
+  kb_associated_project: AGL Thermal Storage at Torrens Island Power Station B Feasibility
+    Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $423k
+  total_project_value: $1.01m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/10/2022
+  location: Port Adelaide, South Australia
+  project_partners: Kraftblock GmbH, MGA Thermal
+  pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+  markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  source_page_pdf: 36
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53451
+  contributing_source_titles:
+  - Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island Power Station
+    B Feasibility Study
+  contributing_sources:
+  - source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens
+      Island Power Station B Feasibility Study
+    pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+    source_pages: *id001
+    source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+    markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: cost overrun
+  failure_mode_confidence: 0.88
+- record_id: ARENA-DLV-53452
+  source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island
+    Power Station B Feasibility Study
+  publish_date: 2024-03
+  project_name: AGL Thermal Storage at Torrens Island B Power Station Feasibility
+    Study (Project Calor)
+  what_happened: The overall round-trip efficiency (RTE) of integrating TES into the
+    existing TIPS B steam turbine was estimated at only 37% (Kraftblock) to 40% (MGA
+    Thermal), driven primarily by the inherent inefficiency of the Rankine cycle steam
+    turbine (~45% efficient). This low RTE meant the TES had to store 5,000–7,467
+    MWh of gross thermal energy to deliver 1,600 MWh of electrical output, massively
+    increasing the required scale and capital cost of the system.
+  lesson_learnt: The hypothesis that leveraging existing thermal power station infrastructure
+    (particularly steam turbines) would reduce TES costs relative to greenfield storage
+    should be tested rigorously early in feasibility — the low Rankine cycle efficiency
+    (~45%) dominates overall RTE and forces a disproportionate increase in storage
+    volume and capital cost, potentially eliminating the cost advantage over alternative
+    storage technologies.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id002
+  - 22
+  - 23
+  - 46
+  - 52
+  - 53
+  evidence_excerpt: Due to the significantly low RTE, the TES storage systems must
+    charge and store a large amount of energy. To produce the required 200MW for eight
+    continuous hours, the TES must produce the equivalent of 1,600MWh of electrical
+    energy as heat, requiring the gross thermal storage volume of 7,467MWh (Kraftblock)
+    and 5,000MWh (MGA Thermal).
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  project_page_url: https://arena.gov.au/projects/agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  kb_category: Geothermal energy, Renewables for industry
+  kb_publish_date: 3/07/2024
+  kb_year: '2022'
+  kb_associated_project: AGL Thermal Storage at Torrens Island Power Station B Feasibility
+    Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $423k
+  total_project_value: $1.01m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/10/2022
+  location: Port Adelaide, South Australia
+  project_partners: Kraftblock GmbH, MGA Thermal
+  pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+  markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  source_page_pdf: 6
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53452
+  contributing_source_titles:
+  - Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island Power Station
+    B Feasibility Study
+  contributing_sources:
+  - source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens
+      Island Power Station B Feasibility Study
+    pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+    source_pages: *id002
+    source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+    markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  secondary_failure_mode_v2: technical underperformance
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-53453
+  source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island
+    Power Station B Feasibility Study
+  publish_date: 2024-03
+  project_name: AGL Thermal Storage at Torrens Island B Power Station Feasibility
+    Study (Project Calor)
+  what_happened: Installing TES at TIPS B would require a footprint of 18,330–25,000
+    m², requiring the complete demolition of all four existing boilers even though
+    the TES was designed to replace only one of four gas-fired generation units. This
+    made the project effectively incompatible with continuing to operate the remaining
+    three generation units during or after TES installation.
+  lesson_learnt: A TES retrofit designed to replace a single generation unit at an
+    existing thermal power station may require demolition of all existing boilers
+    to provide sufficient footprint, rendering the remaining units inoperable — this
+    critical site constraint should be assessed at the earliest stage of feasibility
+    to determine whether phased or partial replacement is viable.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id003
+  - 47
+  - 48
+  - 50
+  - 51
+  evidence_excerpt: To construct it at TIPS B, it will require the complete demolition
+    and removal of all four boilers, despite the systems being designed to replace
+    only one gas fired generation unit.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  project_page_url: https://arena.gov.au/projects/agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  kb_category: Geothermal energy, Renewables for industry
+  kb_publish_date: 3/07/2024
+  kb_year: '2022'
+  kb_associated_project: AGL Thermal Storage at Torrens Island Power Station B Feasibility
+    Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $423k
+  total_project_value: $1.01m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/10/2022
+  location: Port Adelaide, South Australia
+  project_partners: Kraftblock GmbH, MGA Thermal
+  pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+  markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  source_page_pdf: 67
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53453
+  contributing_source_titles:
+  - Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island Power Station
+    B Feasibility Study
+  contributing_sources:
+  - source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens
+      Island Power Station B Feasibility Study
+    pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+    source_pages: *id003
+    source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+    markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-53454
+  source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island
+    Power Station B Feasibility Study
+  publish_date: 2024-03
+  project_name: AGL Thermal Storage at Torrens Island B Power Station Feasibility
+    Study (Project Calor)
+  what_happened: The project found that integrating TES into TIPS B was technically
+    feasible but commercially unviable. Capital cost estimates ranged from $1B to
+    $1.2B (inclusive of 30% contingency) for a 1,600 MWh electrical-equivalent system,
+    equating to a levelised cost of storage (LCOS) of $220–$320/MWh. The original
+    hypothesis — that leveraging existing infrastructure would reduce capital cost
+    — was not borne out, as significant new plant (HRSGs, transformers, switchboards)
+    was required.
+  lesson_learnt: Feasibility studies for TES retrofits into gas power stations should
+    not assume that existing infrastructure reuse will deliver cost savings competitive
+    with alternative storage technologies — the need to install HRSGs and substantial
+    electrical infrastructure can result in capital costs of $1B+ and LCOS above $220/MWh,
+    undermining commercial viability.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: commercial & market
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id004
+  - 38
+  - 52
+  - 53
+  - 71
+  evidence_excerpt: While the Project hypothesised that leveraging existing TIPS infrastructure
+    could reduce capital costs, this was not the case. As not all the existing infrastructure
+    at TIPS B could be utilised, integrating a TES system design would incur significant
+    plant upgrade costs, in addition to capital costs. It is estimated that integrating
+    TES to TIPS B will cost between $1B to $1.2B.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  project_page_url: https://arena.gov.au/projects/agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  kb_category: Geothermal energy, Renewables for industry
+  kb_publish_date: 3/07/2024
+  kb_year: '2022'
+  kb_associated_project: AGL Thermal Storage at Torrens Island Power Station B Feasibility
+    Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $423k
+  total_project_value: $1.01m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/10/2022
+  location: Port Adelaide, South Australia
+  project_partners: Kraftblock GmbH, MGA Thermal
+  pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+  markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  source_page_pdf: 71
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53454
+  contributing_source_titles:
+  - Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island Power Station
+    B Feasibility Study
+  contributing_sources:
+  - source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens
+      Island Power Station B Feasibility Study
+    pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+    source_pages: *id004
+    source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+    markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  secondary_failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-53455
+  source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island
+    Power Station B Feasibility Study
+  publish_date: 2024-03
+  project_name: AGL Thermal Storage at Torrens Island B Power Station Feasibility
+    Study (Project Calor)
+  what_happened: The project did not progress beyond Stage 1 (desktop feasibility
+    study) to Stage 2 (pilot plant sizing). The decision was made not to proceed after
+    the feasibility study identified that low RTE, inability to reuse existing boilers,
+    and the significant development footprint collectively undermined commercial viability.
+  lesson_learnt: Structuring a TES integration project with an explicit gate review
+    between feasibility and pilot sizing is effective practice — it allows early exit
+    when fundamental commercial or technical barriers are identified, avoiding investment
+    in pilot design for a configuration that is unlikely to be viable at full scale.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: AGL applied a gate review after Stage 1; the project was stopped
+    at this gate rather than proceeding to pilot-scale investment.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id005
+  - 3
+  - 23
+  evidence_excerpt: Stage 2 would proceed if results from Stage 1 had proven feasible,
+    sizing a pilot plant to test the co-generation solution. However, the decision
+    was made to not progress to this stage – thereby removing the need to size a pilot
+    scale asset.
+  confidence_note: failure_mode set to 'no major failure stated' because not progressing
+    to Stage 2 was a planned gate decision, not an unplanned failure. The broader
+    commercial unviability is captured in ARENA-DLV-53454.
+  source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  project_page_url: https://arena.gov.au/projects/agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  kb_category: Geothermal energy, Renewables for industry
+  kb_publish_date: 3/07/2024
+  kb_year: '2022'
+  kb_associated_project: AGL Thermal Storage at Torrens Island Power Station B Feasibility
+    Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $423k
+  total_project_value: $1.01m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/10/2022
+  location: Port Adelaide, South Australia
+  project_partners: Kraftblock GmbH, MGA Thermal
+  pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+  markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  source_page_pdf: 22
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53455
+  contributing_source_titles:
+  - Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island Power Station
+    B Feasibility Study
+  contributing_sources:
+  - source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens
+      Island Power Station B Feasibility Study
+    pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+    source_pages: *id005
+    source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+    markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-53456
+  source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island
+    Power Station B Feasibility Study
+  publish_date: 2024-03
+  project_name: AGL Thermal Storage at Torrens Island B Power Station Feasibility
+    Study (Project Calor)
+  what_happened: The study found that TES technology, while poorly suited to grid-scale
+    electricity generation via steam turbine (due to low RTE), is highly efficient
+    at storing and discharging heat for industrial process heat applications across
+    a wide temperature range (0–750°C+). No prior analysis of TES for industrial heat
+    had been conducted within the project scope.
+  lesson_learnt: When evaluating TES for power station integration, explicitly assess
+    industrial process heat as an alternative or complementary value stream from the
+    outset — the technology's high heat storage efficiency (99% charge-discharge)
+    makes it far more suitable for industrial decarbonisation than for electricity
+    generation via steam turbine, and this pathway may determine commercial viability.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id006
+  - 9
+  - 26
+  - 34
+  - 35
+  - 46
+  - 47
+  evidence_excerpt: It is however now evident that the TES designs offer a low carbon
+    method to produce heat and are highly efficient in storing and discharging heat
+    that could otherwise be beneficial to the industrial sectors that use process
+    heat.
+  confidence_note: 'project_type set to ''industrial decarbonisation'' for this record
+    to reflect the cross-cutting lesson about alternative use cases; the broader project
+    is storage.; project_type reconciled to ''storage'' from: storage (18/20), industrial
+    decarbonisation (2/20)'
+  source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  project_page_url: https://arena.gov.au/projects/agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  kb_category: Geothermal energy, Renewables for industry
+  kb_publish_date: 3/07/2024
+  kb_year: '2022'
+  kb_associated_project: AGL Thermal Storage at Torrens Island Power Station B Feasibility
+    Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $423k
+  total_project_value: $1.01m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/10/2022
+  location: Port Adelaide, South Australia
+  project_partners: Kraftblock GmbH, MGA Thermal
+  pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+  markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  source_page_pdf: 9
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53456
+  contributing_source_titles:
+  - Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island Power Station
+    B Feasibility Study
+  contributing_sources:
+  - source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens
+      Island Power Station B Feasibility Study
+    pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+    source_pages: *id006
+    source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+    markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-53457
+  source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island
+    Power Station B Feasibility Study
+  publish_date: 2024-03
+  project_name: AGL Thermal Storage at Torrens Island B Power Station Feasibility
+    Study (Project Calor)
+  what_happened: 'The electrical integration requirements for charging the TES were
+    substantial: two 275kV connection points each capable of importing 250MW, two
+    250MVA three-winding transformers, and a large series of two-winding transformers
+    to step down to 690VAC utilisation voltage. While the high-voltage connection
+    points were available at TIPS B, the additional transformer and switchboard infrastructure
+    required represented a significant capital cost and engineering scope.'
+  lesson_learnt: TES charging infrastructure at utility scale requires extensive high-voltage
+    electrical integration work (including large transformers and switchboards) that
+    should be scoped and costed explicitly early in feasibility — the availability
+    of existing HV connection points does not eliminate the need for substantial new
+    MV/LV electrical equipment.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id007
+  - 15
+  - 34
+  - 35
+  - 47
+  evidence_excerpt: While the electrical connection points required to charge the
+    TES are available at TIPS B, the electrical integration will require additional
+    equipment, most notable being a series of two-winding transformers and new switchboards.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  project_page_url: https://arena.gov.au/projects/agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  kb_category: Geothermal energy, Renewables for industry
+  kb_publish_date: 3/07/2024
+  kb_year: '2022'
+  kb_associated_project: AGL Thermal Storage at Torrens Island Power Station B Feasibility
+    Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $423k
+  total_project_value: $1.01m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/10/2022
+  location: Port Adelaide, South Australia
+  project_partners: Kraftblock GmbH, MGA Thermal
+  pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+  markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  source_page_pdf: 38
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53457
+  contributing_source_titles:
+  - Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island Power Station
+    B Feasibility Study
+  contributing_sources:
+  - source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens
+      Island Power Station B Feasibility Study
+    pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+    source_pages: *id007
+    source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+    markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-53458
+  source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island
+    Power Station B Feasibility Study
+  publish_date: 2024-03
+  project_name: AGL Thermal Storage at Torrens Island B Power Station Feasibility
+    Study (Project Calor)
+  what_happened: The study identified that modular or phased deployment of TES capacity
+    at TIPS B was not feasible given the integrated system design. Each system design
+    was optimised for specific pressures, flow rates and process parameters, making
+    future expansion require a full system redesign.
+  lesson_learnt: TES integration into an existing thermal power station does not readily
+    lend itself to modular or phased capacity expansion — if scalability is a requirement,
+    it must be designed in from the outset of the engineering process, as retrofit
+    modularity requires a complete system redesign.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id008
+  - 19
+  evidence_excerpt: A brief investigation of this approach determined that modular
+    deployment on the TIPS B site poses significant design and engineering challenges
+    for this application. Each of the storage systems are based on an integrated design,
+    for which pressures, flow rates and other vital quantities were specifically determined.
+    A system re-design would be required to allow for any type of modular deployment
+    and future expansion projects.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  project_page_url: https://arena.gov.au/projects/agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  kb_category: Geothermal energy, Renewables for industry
+  kb_publish_date: 3/07/2024
+  kb_year: '2022'
+  kb_associated_project: AGL Thermal Storage at Torrens Island Power Station B Feasibility
+    Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $423k
+  total_project_value: $1.01m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/10/2022
+  location: Port Adelaide, South Australia
+  project_partners: Kraftblock GmbH, MGA Thermal
+  pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+  markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  source_page_pdf: 38
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53458
+  contributing_source_titles:
+  - Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island Power Station
+    B Feasibility Study
+  contributing_sources:
+  - source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens
+      Island Power Station B Feasibility Study
+    pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+    source_pages: *id008
+    source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+    markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-53459
+  source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island
+    Power Station B Feasibility Study
+  publish_date: 2024-03
+  project_name: AGL Thermal Storage at Torrens Island B Power Station Feasibility
+    Study (Project Calor)
+  what_happened: The study identified that regulatory requirements and approvals for
+    TES as a new asset type were unknown at the time of assessment, representing a
+    significant risk to any deployment — pilot or full-scale. This regulatory uncertainty
+    was identified as a risk but not resolved during the feasibility stage.
+  lesson_learnt: Early engagement with relevant regulatory bodies (e.g. EPA, safety
+    regulators) is essential for novel storage-generation hybrid technologies — unknown
+    regulatory requirements for new asset types like TES-integrated power stations
+    can represent a fatal-flaw risk that should be characterised before committing
+    to detailed design or pilot investment.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: approvals/contracting
+  proponent_type: utility/energy retailer
+  delay_category: approvals/regulatory
+  failure_mode: regulatory & approvals
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: The risk register recommended consulting with the Environmental
+    Protection Agency (EPA) as a control, but this was not actioned within the Stage
+    1 scope.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id009
+  - 8
+  - 40
+  - 41
+  - 52
+  - 53
+  evidence_excerpt: Regulation – As a new asset type, the regulation requirements
+    and associated approvals are unknown, raising risk to any deployment, pilot or
+    full-scale project.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  project_page_url: https://arena.gov.au/projects/agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  kb_category: Geothermal energy, Renewables for industry
+  kb_publish_date: 3/07/2024
+  kb_year: '2022'
+  kb_associated_project: AGL Thermal Storage at Torrens Island Power Station B Feasibility
+    Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $423k
+  total_project_value: $1.01m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/10/2022
+  location: Port Adelaide, South Australia
+  project_partners: Kraftblock GmbH, MGA Thermal
+  pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+  markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53459
+  contributing_source_titles:
+  - Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island Power Station
+    B Feasibility Study
+  contributing_sources:
+  - source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens
+      Island Power Station B Feasibility Study
+    pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+    source_pages: *id009
+    source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+    markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: regulatory misfit
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-53460
+  source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island
+    Power Station B Feasibility Study
+  publish_date: 2024-03
+  project_name: AGL Thermal Storage at Torrens Island B Power Station Feasibility
+    Study (Project Calor)
+  what_happened: The study found that TES technologies (Kraftblock and MGA Thermal)
+    are immature with no existing examples of integration into a thermal power station
+    or operation at the required scale. Both technologies had only been demonstrated
+    at small scale or in limited industrial applications prior to this study.
+  lesson_learnt: Projects seeking to integrate emerging TES technologies into utility-scale
+    power stations should apply a 30% or higher capital cost contingency and explicitly
+    plan for a pilot program to validate performance at intermediate scale before
+    committing to full-scale deployment — technology maturity risk is substantial
+    when no prior utility-scale reference exists.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: unvalidated technical assumptions
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: A 30% contingency was applied to capital cost estimates specifically
+    to account for technology maturity risk.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id010
+  - 8
+  - 38
+  - 39
+  evidence_excerpt: 'TES are emerging technologies, with no examples of such technology
+    being integrated in a thermal power station or operating at this scale. Accordingly,
+    the following broad range of project risks were identified: Technology risk –
+    The TES technologies are relatively young and carry inherent maturity risk.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  project_page_url: https://arena.gov.au/projects/agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  kb_category: Geothermal energy, Renewables for industry
+  kb_publish_date: 3/07/2024
+  kb_year: '2022'
+  kb_associated_project: AGL Thermal Storage at Torrens Island Power Station B Feasibility
+    Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $423k
+  total_project_value: $1.01m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/10/2022
+  location: Port Adelaide, South Australia
+  project_partners: Kraftblock GmbH, MGA Thermal
+  pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+  markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  source_page_pdf: 8
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53460
+  contributing_source_titles:
+  - Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island Power Station
+    B Feasibility Study
+  contributing_sources:
+  - source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens
+      Island Power Station B Feasibility Study
+    pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+    source_pages: *id010
+    source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+    markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: technical underperformance
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-53461
+  source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island
+    Power Station B Feasibility Study
+  publish_date: 2024-03
+  project_name: AGL Thermal Storage at Torrens Island B Power Station Feasibility
+    Study (Project Calor)
+  what_happened: The study found that TES and HRSGs must be located in close proximity
+    to the generating units to minimise steam travel distance and heat loss. At TIPS
+    B, the only suitable location was directly behind the generation units where the
+    existing boilers were located, requiring demolition of all four boilers to free
+    up the required footprint.
+  lesson_learnt: Site layout is a critical constraint for TES-integrated power station
+    projects — the thermodynamic requirement to minimise steam travel distance effectively
+    forces co-location with existing turbomachinery, which at a brownfield site may
+    require demolition of incumbent equipment well beyond the scope of the individual
+    unit being replaced.
+  issue_severity: major
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id011
+  - 7
+  - 28
+  - 29
+  - 47
+  - 48
+  - 50
+  - 51
+  evidence_excerpt: Due to the low RTE, it is important to locate the TES and HRSGs
+    near the generating units to reduce the distance the steam must travel between
+    equipment and thereby minimise heat loss... Both Kraftblock and MGA Thermal's
+    proposed system would require the complete demolition and removal of all four
+    TIPS B boilers.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  project_page_url: https://arena.gov.au/projects/agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  kb_category: Geothermal energy, Renewables for industry
+  kb_publish_date: 3/07/2024
+  kb_year: '2022'
+  kb_associated_project: AGL Thermal Storage at Torrens Island Power Station B Feasibility
+    Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $423k
+  total_project_value: $1.01m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/10/2022
+  location: Port Adelaide, South Australia
+  project_partners: Kraftblock GmbH, MGA Thermal
+  pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+  markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53461
+  contributing_source_titles:
+  - Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island Power Station
+    B Feasibility Study
+  contributing_sources:
+  - source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens
+      Island Power Station B Feasibility Study
+    pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+    source_pages: *id011
+    source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+    markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-53462
+  source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island
+    Power Station B Feasibility Study
+  publish_date: 2024-03
+  project_name: AGL Thermal Storage at Torrens Island B Power Station Feasibility
+    Study (Project Calor)
+  what_happened: The closed-loop heat transfer cycle used by MGA Thermal achieved
+    approximately 87–88% HRSG efficiency compared to 83% for Kraftblock's open-loop
+    design. The open-loop design was chosen by Kraftblock to allow greater depth of
+    discharge and reduce storage volume, but the efficiency gain from the closed-loop
+    cycle outweighed this benefit, resulting in MGA Thermal requiring less total gross
+    storage volume (5,000 MWh vs 7,467 MWh for Kraftblock).
+  lesson_learnt: For TES systems integrated with steam generation, a closed-loop heat
+    transfer fluid cycle (e.g. recycled inert gas) provides materially higher HRSG
+    efficiency (~87% vs ~83%) and lower total storage volume requirements compared
+    to open-loop designs — the capital cost savings from reduced storage volume in
+    a closed-loop design can offset the higher auxiliary power draw from the gas recirculation
+    system.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: narrow
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id012
+  - 5
+  - 6
+  - 22
+  - 23
+  - 25
+  - 26
+  - 50
+  - 51
+  evidence_excerpt: The MGA Thermal process used a closed loop cycle with inert gas
+    as the heat transfer fluid. The exhaust inert gas from the HRSG heat exchanger
+    is recycled to the thermal storage block, and hence the heat in the exhaust inert
+    gas is re-captured rather than lost to atmosphere. This difference in system design
+    results in an HRSG efficiency variance of approximately 87% to 83%.
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  project_page_url: https://arena.gov.au/projects/agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  kb_category: Geothermal energy, Renewables for industry
+  kb_publish_date: 3/07/2024
+  kb_year: '2022'
+  kb_associated_project: AGL Thermal Storage at Torrens Island Power Station B Feasibility
+    Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $423k
+  total_project_value: $1.01m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/10/2022
+  location: Port Adelaide, South Australia
+  project_partners: Kraftblock GmbH, MGA Thermal
+  pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+  markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53462
+  contributing_source_titles:
+  - Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island Power Station
+    B Feasibility Study
+  contributing_sources:
+  - source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens
+      Island Power Station B Feasibility Study
+    pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+    source_pages: *id012
+    source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+    markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-53463
+  source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island
+    Power Station B Feasibility Study
+  publish_date: 2024-03
+  project_name: AGL Thermal Storage at Torrens Island B Power Station Feasibility
+    Study (Project Calor)
+  what_happened: Supply chain disruption and the cost of procuring 500MW of 690VAC
+    electrical infrastructure (requiring many transformers, significant land space
+    and oil) were identified as material project risks that could raise project costs.
+    Both OEMs indicated willingness to source materials domestically, and Kraftblock
+    would need to establish a production facility in Australia to manufacture the
+    TES.
+  lesson_learnt: Utility-scale TES projects requiring large quantities of medium-voltage
+    transformers and switchboards should engage multiple large-scale Australian suppliers
+    early and proactively manage long-lead electrical equipment — supply chain constraints
+    for this equipment class can materially affect project cost and schedule.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: procurement
+  proponent_type: utility/energy retailer
+  delay_category: procurement/supply chain
+  failure_mode: execution & logistics
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: unvalidated technical assumptions
+  intervention_note: Risk register recommended engaging with multiple large-scale
+    suppliers and using standard equipment where possible to mitigate supply chain
+    risk.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id013
+  - 40
+  - 41
+  - 37
+  evidence_excerpt: 'Supply-chain disruption: There is a risk that delays and inability
+    to source key supplies and materials are caused due to supply chain disruption
+    and constraints, and that such constraints raise the costs for key Project materials...
+    Cost of key resources: There is a risk that because 500MW of 690VAC requires many
+    transformers, land space and oil, it will increase project costs.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  project_page_url: https://arena.gov.au/projects/agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  kb_category: Geothermal energy, Renewables for industry
+  kb_publish_date: 3/07/2024
+  kb_year: '2022'
+  kb_associated_project: AGL Thermal Storage at Torrens Island Power Station B Feasibility
+    Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $423k
+  total_project_value: $1.01m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/10/2022
+  location: Port Adelaide, South Australia
+  project_partners: Kraftblock GmbH, MGA Thermal
+  pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+  markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  source_page_pdf: 60
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53463
+  contributing_source_titles:
+  - Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island Power Station
+    B Feasibility Study
+  contributing_sources:
+  - source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens
+      Island Power Station B Feasibility Study
+    pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+    source_pages: *id013
+    source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+    markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.78
+- record_id: ARENA-DLV-53464
+  source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island
+    Power Station B Feasibility Study
+  publish_date: 2024-03
+  project_name: AGL Thermal Storage at Torrens Island B Power Station Feasibility
+    Study (Project Calor)
+  what_happened: The study identified that installation of TES at TIPS B would likely
+    encroach on Air Liquide's carbonation plant and require rerouting of shared access
+    roads. These site-specific constraints affected both Kraftblock and MGA Thermal
+    designs, adding uncertainty to the development footprint.
+  lesson_learnt: For TES retrofits at active industrial sites with co-located tenants,
+    third-party occupancy and shared infrastructure (access roads, utilities) must
+    be mapped and engaged with early in feasibility — encroachment on co-located operators
+    can create planning, negotiation and cost risks that are difficult to resolve
+    at advanced stages of design.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: development/design
+  proponent_type: utility/energy retailer
+  delay_category: stakeholder/land/community
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: coordination & stakeholders
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id014
+  - 30
+  - 31
+  evidence_excerpt: 'Carbonation plant: Level of impact is currently uncertain however
+    it is likely that installation of the TES would encroach on Air Liquide''s carbonation
+    plant. Shared roadway entry to Torrens Island: Installation of the TES and associated
+    equipment would require existing roads to be rerouted.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  project_page_url: https://arena.gov.au/projects/agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  kb_category: Geothermal energy, Renewables for industry
+  kb_publish_date: 3/07/2024
+  kb_year: '2022'
+  kb_associated_project: AGL Thermal Storage at Torrens Island Power Station B Feasibility
+    Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $423k
+  total_project_value: $1.01m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/10/2022
+  location: Port Adelaide, South Australia
+  project_partners: Kraftblock GmbH, MGA Thermal
+  pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+  markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53464
+  contributing_source_titles:
+  - Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island Power Station
+    B Feasibility Study
+  contributing_sources:
+  - source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens
+      Island Power Station B Feasibility Study
+    pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+    source_pages: *id014
+    source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+    markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: governance/coordination failure
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.82
+- record_id: ARENA-DLV-53465
+  source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island
+    Power Station B Feasibility Study
+  publish_date: 2024-03
+  project_name: AGL Thermal Storage at Torrens Island B Power Station Feasibility
+    Study (Project Calor)
+  what_happened: The study identified that the age of existing generating units at
+    TIPS B posed a risk to achieving the performance reliability targets required
+    for the integrated TES system, as aging turbomachinery may not meet the specification
+    needed to support the TES output requirements.
+  lesson_learnt: When selecting an existing thermal power station for TES integration,
+    the age and condition of turbomachinery must be assessed as part of feasibility
+    — aging generators may not reliably meet the output parameters required by TES
+    designs, and refurbishment or replacement costs should be factored into capital
+    cost estimates.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Risk register recommended working with OEMs to ensure asset age,
+    capability and specifications inform performance reliability targets.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id015
+  - 40
+  evidence_excerpt: 'Asset age: There is a risk that the age of the existing unit
+    generators at TIPS B will impact performance reliability and the Project reliability
+    targets cannot be met.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  project_page_url: https://arena.gov.au/projects/agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  kb_category: Geothermal energy, Renewables for industry
+  kb_publish_date: 3/07/2024
+  kb_year: '2022'
+  kb_associated_project: AGL Thermal Storage at Torrens Island Power Station B Feasibility
+    Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $423k
+  total_project_value: $1.01m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/10/2022
+  location: Port Adelaide, South Australia
+  project_partners: Kraftblock GmbH, MGA Thermal
+  pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+  markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  source_page_pdf: 59
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53465
+  contributing_source_titles:
+  - Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island Power Station
+    B Feasibility Study
+  contributing_sources:
+  - source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens
+      Island Power Station B Feasibility Study
+    pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+    source_pages: *id015
+    source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+    markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: design assumption failure
+  failure_mode_confidence: 0.9
+- record_id: ARENA-DLV-53466
+  source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island
+    Power Station B Feasibility Study
+  publish_date: 2024-03
+  project_name: AGL Thermal Storage at Torrens Island B Power Station Feasibility
+    Study (Project Calor)
+  what_happened: The study identified that changes in energy market conditions or
+    government policy could negatively impact the commercial value of TES-integrated
+    generation, noting the need to monitor market dynamics and investigate alternative
+    revenue streams including FCAS, industrial process heat, and combined heat and
+    power (CHP).
+  lesson_learnt: TES projects that depend on arbitrage value from wholesale market
+    price spreads are exposed to energy market policy risk — feasibility assessments
+    should model multiple revenue streams (FCAS, industrial heat, CHP) to stress-test
+    commercial viability against adverse market or policy scenarios.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: commercial & market
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: Risk register recommended monitoring energy market and government
+    policy and investigating alternative uses of the asset including industrial process
+    heat, FCAS and CHP.
+  transferability: broad
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id016
+  - 41
+  evidence_excerpt: 'Changing energy market conditions: There is a risk that changes
+    in energy market conditions or government policy negatively impacts the potential
+    value delivered by this application of the TES technology.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  project_page_url: https://arena.gov.au/projects/agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  kb_category: Geothermal energy, Renewables for industry
+  kb_publish_date: 3/07/2024
+  kb_year: '2022'
+  kb_associated_project: AGL Thermal Storage at Torrens Island Power Station B Feasibility
+    Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $423k
+  total_project_value: $1.01m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/10/2022
+  location: Port Adelaide, South Australia
+  project_partners: Kraftblock GmbH, MGA Thermal
+  pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+  markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  source_page_pdf: 61
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53466
+  contributing_source_titles:
+  - Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island Power Station
+    B Feasibility Study
+  contributing_sources:
+  - source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens
+      Island Power Station B Feasibility Study
+    pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+    source_pages: *id016
+    source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+    markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: commercial/demand failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-53467
+  source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island
+    Power Station B Feasibility Study
+  publish_date: 2024-03
+  project_name: AGL Thermal Storage at Torrens Island B Power Station Feasibility
+    Study (Project Calor)
+  what_happened: The study identified that the specialised skills required to operate
+    a TES-retrofitted thermal power station may be unavailable due to competition
+    for skilled workers from other opportunities in the energy transition, despite
+    TIPS B having an existing skilled workforce.
+  lesson_learnt: Workforce transition planning for TES-integrated power stations should
+    begin during feasibility — the skills required to operate TES-modified plant overlap
+    with but differ from conventional power station operations, and the pool of qualified
+    personnel is small; early workforce planning reduces the risk of operational resource
+    shortfalls post-commissioning.
+  issue_severity: minor
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: coordination & stakeholders
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: poor scoping
+  intervention_note: Risk register recommended developing and implementing a workforce
+    transition plan as a control.
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id017
+  - 41
+  - 42
+  evidence_excerpt: 'Specialist personnel availability: There is a risk that the skills
+    and expertise required to operate the retrofitted TIPS B is unavailable due to
+    take up of employment opportunities elsewhere.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  project_page_url: https://arena.gov.au/projects/agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  kb_category: Geothermal energy, Renewables for industry
+  kb_publish_date: 3/07/2024
+  kb_year: '2022'
+  kb_associated_project: AGL Thermal Storage at Torrens Island Power Station B Feasibility
+    Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $423k
+  total_project_value: $1.01m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/10/2022
+  location: Port Adelaide, South Australia
+  project_partners: Kraftblock GmbH, MGA Thermal
+  pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+  markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  source_page_pdf: 61
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53467
+  contributing_source_titles:
+  - Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island Power Station
+    B Feasibility Study
+  contributing_sources:
+  - source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens
+      Island Power Station B Feasibility Study
+    pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+    source_pages: *id017
+    source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+    markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: resource/capability shortfall
+  secondary_failure_mode_v2: null
+  failure_mode_confidence: 0.72
+- record_id: ARENA-DLV-53468
+  source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island
+    Power Station B Feasibility Study
+  publish_date: 2024-03
+  project_name: AGL Thermal Storage at Torrens Island B Power Station Feasibility
+    Study (Project Calor)
+  what_happened: The study found that unforeseen site integration issues represent
+    a key risk for TES integration, given that the technology is new and no reference
+    integration into a thermal power station exists. Construction and commissioning
+    delays from unforeseen integration challenges were identified as a material risk.
+  lesson_learnt: For first-of-kind TES integration into existing thermal power stations,
+    a pilot plant at representative scale should be built and tested before committing
+    to full-scale construction — the absence of any prior integration reference means
+    unforeseen commissioning issues are highly likely and could cause significant
+    delays and cost overruns.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: commissioning/integration
+  proponent_type: utility/energy retailer
+  delay_category: commissioning/integration
+  failure_mode: unvalidated integration
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: The risk register recommended building a pilot plant to test
+    the system at scale as the primary control for integration risk.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id018
+  - 40
+  - 41
+  evidence_excerpt: 'Site integration: There is a risk that unforeseen integration
+    issues emerge because TES technology is new, causing construction and commissioning
+    delays. Build a pilot plant to test the system at scale.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  project_page_url: https://arena.gov.au/projects/agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  kb_category: Geothermal energy, Renewables for industry
+  kb_publish_date: 3/07/2024
+  kb_year: '2022'
+  kb_associated_project: AGL Thermal Storage at Torrens Island Power Station B Feasibility
+    Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $423k
+  total_project_value: $1.01m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/10/2022
+  location: Port Adelaide, South Australia
+  project_partners: Kraftblock GmbH, MGA Thermal
+  pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+  markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  source_page_pdf: 60
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53468
+  contributing_source_titles:
+  - Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island Power Station
+    B Feasibility Study
+  contributing_sources:
+  - source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens
+      Island Power Station B Feasibility Study
+    pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+    source_pages: *id018
+    source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+    markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: integration failure
+  failure_mode_confidence: 0.92
+- record_id: ARENA-DLV-53469
+  source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island
+    Power Station B Feasibility Study
+  publish_date: 2024-03
+  project_name: AGL Thermal Storage at Torrens Island B Power Station Feasibility
+    Study (Project Calor)
+  what_happened: The study found that the maximum achievable output temperature of
+    the heat transfer fluid from the TES is a critical parameter determining which
+    industrial sectors can use the stored heat. MGA Thermal's current technology addresses
+    heat requirements up to 750°C, with development underway for very high temperature
+    (above 650°C) applications such as alumina calcination, iron and steel, and cement
+    production.
+  lesson_learnt: When specifying TES for industrial heat applications, the maximum
+    achievable heat transfer fluid output temperature is the primary technology selection
+    criterion — it determines which downstream industrial processes are accessible
+    and should be matched to target markets during technology selection rather than
+    after procurement.
+  issue_severity: none
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: concept/feasibility
+  proponent_type: utility/energy retailer
+  delay_category: null
+  failure_mode: no major failure stated
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: null
+  intervention_note: null
+  transferability: moderate
+  delay_magnitude: null
+  technology_domain: battery storage
+  source_pages: &id019
+  - 26
+  - 34
+  - 35
+  - 46
+  evidence_excerpt: MGA Thermal identified the most critical parameter when determining
+    applicable markets was the maximum achievable output temperature of the heat transfer
+    fluid. This temperature limits the downstream processes the storage can provide
+    energy to.
+  confidence_note: 'project_type reconciled to ''storage'' from: storage (18/20),
+    industrial decarbonisation (2/20)'
+  source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  project_page_url: https://arena.gov.au/projects/agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  kb_category: Geothermal energy, Renewables for industry
+  kb_publish_date: 3/07/2024
+  kb_year: '2022'
+  kb_associated_project: AGL Thermal Storage at Torrens Island Power Station B Feasibility
+    Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $423k
+  total_project_value: $1.01m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/10/2022
+  location: Port Adelaide, South Australia
+  project_partners: Kraftblock GmbH, MGA Thermal
+  pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+  markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  source_page_pdf: null
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53469
+  contributing_source_titles:
+  - Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island Power Station
+    B Feasibility Study
+  contributing_sources:
+  - source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens
+      Island Power Station B Feasibility Study
+    pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+    source_pages: *id019
+    source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+    markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+- record_id: ARENA-DLV-53470
+  source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island
+    Power Station B Feasibility Study
+  publish_date: 2024-03
+  project_name: AGL Thermal Storage at Torrens Island B Power Station Feasibility
+    Study (Project Calor)
+  what_happened: The study identified that the bespoke, non-standard nature of the
+    TES system designs carried a risk of project delays and increased costs during
+    construction. The absence of standardised TES designs meant each installation
+    required custom engineering.
+  lesson_learnt: TES projects using novel storage media should invest in standardising
+    system design — bespoke, custom-engineered configurations increase construction
+    risk and cost; where possible, designs should use modular, standardised components
+    to reduce this risk before progressing to full-scale construction.
+  issue_severity: moderate
+  project_type: storage
+  project_scale_band: demonstration
+  lifecycle_phase: construction/installation
+  proponent_type: utility/energy retailer
+  delay_category: construction/installation
+  failure_mode: poor scoping
+  outcome_class: knowledge generated despite setback
+  secondary_failure_mode: execution & logistics
+  intervention_note: Risk register recommended delivering a pilot project of 5MW with
+    internal stacking of blocks and following robust design processes as controls.
+  transferability: moderate
+  delay_magnitude: not quantified
+  technology_domain: battery storage
+  source_pages: &id020
+  - 39
+  - 40
+  evidence_excerpt: 'Bespoke construction: There is a risk that bespoke design may
+    cause project delays and a potential increase in project costs.'
+  confidence_note: null
+  source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  project_page_url: https://arena.gov.au/projects/agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+  kb_category: Geothermal energy, Renewables for industry
+  kb_publish_date: 3/07/2024
+  kb_year: '2022'
+  kb_associated_project: AGL Thermal Storage at Torrens Island Power Station B Feasibility
+    Study
+  kb_document_type: Reports
+  kb_document_folder: Reports
+  kb_project_status: Past
+  in_arena_portfolio: true
+  arena_funding: $423k
+  total_project_value: $1.01m
+  lead_organisation: AGL Energy
+  arena_program: Advancing Renewables Program
+  project_status: Past
+  project_start_date: 14/10/2022
+  location: Port Adelaide, South Australia
+  project_partners: Kraftblock GmbH, MGA Thermal
+  pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+  markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  source_page_pdf: 59
+  corroboration_count: 1
+  source_doc_count: 1
+  contributing_record_ids:
+  - ARENA-DLV-53470
+  contributing_source_titles:
+  - Knowledge Sharing Report for the AGL Thermal Storage at Torrens Island Power Station
+    B Feasibility Study
+  contributing_sources:
+  - source_title: Knowledge Sharing Report for the AGL Thermal Storage at Torrens
+      Island Power Station B Feasibility Study
+    pdf_url: https://arena.gov.au/assets/2024/07/AGL-Thermal-Storage-at-Torrens-Island-Power-Station-Final-KS-Report-Public.pdf
+    source_pages: *id020
+    source_url: https://arena.gov.au/knowledge-bank/knowledge-sharing-report-for-the-agl-thermal-storage-at-torrens-island-power-station-b-feasibility-study/
+    markdown_filename: knowledge_sharing_report_for_the_agl_thermal_storage_at_torrens_island_power_station_b_feasibility_s.md
+  arena_category:
+  - Industrial renewables
+  activity_type: Study / feasibility
+  is_consortium: false
+  failure_mode_v2: schedule slippage
+  secondary_failure_mode_v2: cost overrun
+  failure_mode_confidence: 0.82
