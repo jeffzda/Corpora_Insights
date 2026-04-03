@@ -618,6 +618,148 @@ the remaining 6,562 adverse records in working categories may not.
 
 ---
 
+## Part 10: Validation Pass Results (2,533-record sample)
+
+### Methodology
+
+A stratified 20% sample of all adverse records (2,533 records across all 10 v2 failure modes,
+with a floor of 100 per category) was classified by Haiku against the proposed 8-category
+taxonomy. Each record was assigned exactly one v3 category, a confidence score, and a free-form
+root-cause tag. Cost: ~$4.
+
+### Key findings
+
+**1. "Technical assumptions" became a 30% catch-all.**
+
+| v3 Category | Count | % | Severity Ratio |
+|---|---|---|---|
+| Technical assumptions | 759 | 30.0% | 0.34 |
+| Poor scoping | 517 | 20.4% | 0.21 |
+| Commercial & market | 312 | 12.3% | 0.59 |
+| Coordination & stakeholders | 254 | 10.0% | 0.14 |
+| Regulatory & approvals | 243 | 9.6% | 0.60 |
+| Data & measurement | 203 | 8.0% | 0.14 |
+| Execution & logistics | 172 | 6.8% | 0.28 |
+| Capability shortfall | 73 | 2.9% | 0.24 |
+
+We dissolved "design assumption failure" because it was a 20% catch-all. "Technical
+assumptions" at 30% is worse. It absorbed 52% of design assumption failure, 73% of technical
+underperformance, and 36% of integration failure — three different source categories collapsing
+into one bucket.
+
+**2. Capability shortfall failed the prevalence test at 2.9%.** The confusion matrix showed
+resource/capability shortfall dispersed: 39% stayed as capability shortfall, 25% went to
+execution & logistics, 16% to poor scoping. It's not a coherent standalone category.
+
+**3. Severity ratios are genuinely distinct across categories.** Regulatory & approvals (0.60)
+and commercial & market (0.59) produce hard failures. Coordination & stakeholders (0.14) and
+data & measurement (0.14) are nuisance-level. This is strong evidence the categories carry
+independent analytical signal.
+
+**4. Zero low-confidence records.** Haiku classified everything at 0.77+ confidence, suggesting
+it's not flagging genuine boundary ambiguity. The confidence scores may not be reliable for
+identifying boundary cases.
+
+**5. Confusion matrix validated most migration patterns:**
+- Commercial/demand → commercial & market: 72% (clean 1:1)
+- Data quality → data & measurement: 86% (cleanest)
+- Regulatory misfit → regulatory & approvals: 76% (clean 1:1)
+- Governance/coordination → coordination & stakeholders: 72% (clean 1:1)
+- Design assumption failure → technical assumptions 57% + poor scoping 33% (splits as expected)
+- Technical underperformance → technical assumptions 73% (validates dissolving it)
+- Schedule slippage → poor scoping 30% + execution & logistics 33% + regulatory 22% (disperses)
+- Cost overrun → poor scoping 51% (most cost overruns were actually scoping failures)
+
+**6. JSD analysis flagged two merge candidates:**
+- Poor scoping + coordination & stakeholders (JSD < 0.05 across all dimensions) — but severity
+  ratios differ (0.21 vs 0.14), so they carry different analytical weight. Keep separate.
+- Technical assumptions + data & measurement (JSD < 0.05) — but severity ratios differ
+  (0.34 vs 0.14). Keep separate.
+
+### Decision: split "technical assumptions" into 3 sub-categories
+
+Sub-clustering of the 759 records classified as "technical assumptions" revealed 4 natural
+sub-groups, each with a distinct PM due diligence question:
+
+| Sub-group | % of 759 | PM question |
+|---|---|---|
+| Unvalidated performance | 42% (~319) | "Does this work here?" |
+| Unvalidated integration | 22% (~167) | "Do these work together?" |
+| Unvalidated design parameters | 22% (~167) | "Are our numbers right for this context?" |
+| Unvalidated commercial viability | 14% (~106) | "Does the market context hold?" |
+
+Sub-group 4 (commercial viability, 14%) overlaps with the existing "commercial & market"
+category and falls below the 5% prevalence threshold when extrapolated to the full corpus
+(~4.2%). It is absorbed back into "commercial & market."
+
+The remaining 3 sub-groups each pass prevalence when extrapolated:
+- Unvalidated performance: ~12.6% of corpus
+- Unvalidated integration: ~6.6% of corpus
+- Unvalidated design parameters: ~6.6% of corpus
+
+**Note on "unvalidated integration":** This is distinct from the dissolved "system integration
+failure" (Part 1). "System integration failure" was a consequence ("the systems didn't work
+together"). "Unvalidated integration" is a mechanism ("the interface between systems was never
+validated before deployment"). The broken thing is the absent validation step, not the
+observable outcome. It passes the mechanism test.
+
+### Decision: absorb "capability shortfall" into adjacent categories
+
+At 2.9% prevalence, capability shortfall doesn't justify a standalone category. The confusion
+matrix shows its records naturally distribute to execution & logistics (25%) and poor scoping
+(16%). The coding rule for the remaining categories already handles the edge cases: if the team
+lacked skills and made wrong assumptions, classify by what was broken (the assumption), not why
+(the skill gap).
+
+### No established taxonomy covers this level of detail
+
+A search of existing frameworks (IPA/Merrow, Flyvbjerg, PMI RBS, FMEA, AACE) found no
+off-the-shelf taxonomy that classifies project delivery failure mechanisms at this level of
+specificity. The closest is the PMI Risk Breakdown Structure, which has "design, technology,
+execution" under technical risks — roughly mapping to parameters, performance, and integration.
+IPA's detailed frameworks are proprietary. The four-way split that emerged from the data is
+more granular than anything in the published literature.
+
+---
+
+## Part 11: Final v3 Failure Mode Taxonomy (9 categories)
+
+| # | Failure mode | Mechanism | Severity Ratio |
+|---|---|---|---|
+| 1 | Poor scoping | Scope definition failed to capture what the project needed | 0.21 |
+| 2 | Unvalidated performance | Technology/component not proven to work in deployment context | ~0.40* |
+| 3 | Unvalidated design parameters | Numerical inputs borrowed from wrong context without validation | ~0.25* |
+| 4 | Unvalidated integration | Interfaces between systems never validated before deployment | ~0.35* |
+| 5 | Regulatory & approvals | Regulatory pathway unmapped, misunderstood, or underestimated | 0.60 |
+| 6 | Commercial & market | Business case rested on unvalidated or unviable commercial conditions | 0.59 |
+| 7 | Coordination & stakeholders | Parties who needed to work together weren't set up to do so | 0.14 |
+| 8 | Data & measurement | Data infrastructure inadequate for design, verification, or operations | 0.14 |
+| 9 | Execution & logistics | Delivery plan insufficient for physical realities of implementation | 0.28 |
+
+*Severity ratios for categories 2–4 are estimated from sub-cluster proportions; actual ratios
+will be confirmed after full corpus reclassification.
+
+### What changed from the 8-category proposal
+
+- **"Technical assumptions" dissolved** — it was 30% of records, a catch-all. Split into
+  three mechanism-level categories (#2, #3, #4) each answering a different PM question.
+- **"Capability shortfall" absorbed** — 2.9% prevalence, records distribute naturally into
+  #1 (poor scoping), #9 (execution & logistics), and others.
+- **"Commercial viability" sub-cluster absorbed into #6** — overlaps with commercial & market
+  and below prevalence threshold.
+- **Net result: 9 categories**, up from 8, but with no catch-all and each category passing
+  the mechanism, distinctiveness, actionability, and prevalence tests.
+
+### Implementation: reclassification pass
+
+The full corpus reclassification will use Haiku batch to classify all 12,376 adverse records
+against the 9 v3 categories. Estimated cost: ~$8-12. The existing `failure_mode` field is
+preserved as `failure_mode_v2`. The reclassification prompt is derived from
+`FAILURE_MODE_DEFINITIONS_V3.md`, which must be updated to reflect the 9-category taxonomy
+before the pass is run.
+
+---
+
 ## Open Questions
 
 1. Should the "no major failure stated" records be reclassified? Some may contain minor issues
@@ -633,13 +775,17 @@ the remaining 6,562 adverse records in working categories may not.
 4. What minimum sample size should be required before surfacing challenge-based failure mode
    distributions in the dashboard?
 
-5. Should the "scaling to field" challenge's high design-assumption-failure rate (44%) be
+5. ~~Should the "scaling to field" challenge's high design-assumption-failure rate (44%) be
    treated as signal or as evidence that design assumption failure is still acting as a
-   catch-all? This will be clearer after failure mode reclassification.
+   catch-all?~~ **Resolved: design assumption failure is dissolved. The challenge analysis
+   will be re-run after failure mode reclassification.**
 
 6. The test pass showed 51% of records match exactly 2 challenges. Is this the right level of
    overlap, or should challenge definitions be tightened to increase exclusivity?
 
-7. After bottom-up clustering, how many of the original 10 failure modes survive intact vs
-   need splitting or merging? The working hypothesis is that 5-6 survive and the 4 problematic
-   categories redistribute into 3-5 new ones, yielding 8-11 total.
+7. ~~After bottom-up clustering, how many of the original 10 failure modes survive intact vs
+   need splitting or merging?~~ **Resolved: 9 categories. See Part 11.**
+
+8. The validation pass showed zero low-confidence records (all ≥0.77). Is Haiku's confidence
+   calibration reliable, or should a manual review of 50 boundary cases be done before full
+   reclassification?
