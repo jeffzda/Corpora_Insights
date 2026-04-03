@@ -227,24 +227,26 @@ def load_project_profiles() -> list[dict]:
 
 
 def _sev_ratio(profs):
-    """Severity escalation ratio: (major+critical) / (minor+moderate) across project records."""
+    """Severity percentage: major+critical as % of all adverse (major+critical+minor+moderate)."""
     severe = sum(p["sev_severe"] for p in profs)
     mild = sum(p["sev_mild"] for p in profs)
-    return severe / mild if mild > 0 else None
+    total = severe + mild
+    return (severe / total * 100) if total > 0 else None
 
 
 def _sev_ratio_fmt(profs):
-    """Format severity ratio as string, or '—' if no mild records."""
+    """Format severity percentage as string, or '—' if no adverse records."""
     r = _sev_ratio(profs)
-    return f"{r:.2f}" if r is not None else "—"
+    return f"{r:.0f}%" if r is not None else "—"
 
 
 def _sev_ratio_from_counts(severe, mild):
-    """Severity ratio from raw counts."""
-    return severe / mild if mild > 0 else None
+    """Severity percentage from raw counts."""
+    total = severe + mild
+    return (severe / total * 100) if total > 0 else None
 
 
-def _sev_ratio_cell(ratio, vmin=0.0, vmax=0.8):
+def _sev_ratio_cell(ratio, vmin=0.0, vmax=60.0):
     """Return inline style for a severity ratio cell. Higher = more red."""
     if ratio is None:
         return 'background:#f8fafc;color:#94a3b8'
@@ -269,7 +271,7 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
     Generate HTML for the reference-class matrices.
     Unit of analysis is the PROJECT (one profile per project), not the record.
     Adv% = % of projects with at least one major/critical record.
-    Sev. ratio = (major+critical records) / (minor+moderate records) across all records in the group.
+    Sev% = major+critical as % of all adverse records in the group.
     """
 
     # ── Group profiles ────────────────────────────────────────────────────────
@@ -348,7 +350,7 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
             fms = proj_top_fms(profs, 2)
             fm1 = fms[0] if fms else "—"
             fm2 = fms[1] if len(fms) > 1 else "—"
-            sr_fmt = f"{sr:.2f}" if sr is not None else "—"
+            sr_fmt = f"{sr:.0f}%" if sr is not None else "—"
             ma_rows.append(
                 f'<tr><td>{ac}</td><td>{at}</td>'
                 f'<td class="rcm-num">{len(profs)}</td>'
@@ -359,7 +361,7 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
                 f'</tr>'
             )
 
-    corpus_sr_fmt = f"{corpus_sev_ratio:.2f}" if corpus_sev_ratio is not None else "—"
+    corpus_sr_fmt = f"{corpus_sev_ratio:.0f}%" if corpus_sev_ratio is not None else "—"
     ma_empty = '<tr><td colspan="7" class="rcm-empty">No cells meet minimum n threshold</td></tr>'
     ma_html = (
         f'<div class="an-card an-wide">'
@@ -367,13 +369,13 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
         f'<div class="an-card-sub">'
         f'{n_projects:,} projects &nbsp;·&nbsp; '
         f'Corpus: <strong>{_pct(corpus_adv)}</strong> had major+ issues, '
-        f'severity ratio <strong>{corpus_sr_fmt}</strong> &nbsp;·&nbsp; '
+        f'severity <strong>{corpus_sr_fmt}</strong> &nbsp;·&nbsp; '
         f'n = projects (not records) &nbsp;·&nbsp; cells &lt; {min_n} omitted &nbsp;·&nbsp; '
         f'R&amp;D projects excluded &nbsp;·&nbsp; '
         f'colour scale normalised to {_pct(vmin)}–{_pct(vmax)}</div>'
         f'<div class="rcm-scroll"><table class="rcm-table">'
         f'<thead><tr><th>ARENA category</th><th>Activity type</th><th>Projects</th>'
-        f'<th>Adv%</th><th>Sev. ratio</th><th>Top failure mode</th><th>2nd failure mode</th></tr></thead>'
+        f'<th>Adv%</th><th>Sev%</th><th>Top failure mode</th><th>2nd failure mode</th></tr></thead>'
         f'<tbody>{"".join(ma_rows) if ma_rows else ma_empty}</tbody>'
         f'</table></div></div>'
     )
@@ -422,7 +424,7 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
         sign = "+" if delta >= 0 else ""
         delta_col = "#dc2626" if delta >= 0.05 else ("#16a34a" if delta <= -0.05 else "#64748b")
         fms = proj_top_fms(profs, 1)
-        sr_fmt = f"{sr:.2f}" if sr is not None else "—"
+        sr_fmt = f"{sr:.0f}%" if sr is not None else "—"
         mc_rows.append(
             f'<tr><td>{pt}</td>'
             f'<td class="rcm-num">{len(profs)}</td>'
@@ -443,8 +445,8 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
         up_col = "#dc2626" if uplift >= 0.03 else ("#16a34a" if uplift <= -0.03 else "#64748b")
         sr_yes = _sev_ratio(cons_yes)
         sr_no = _sev_ratio(cons_no)
-        sr_yes_fmt = f"{sr_yes:.2f}" if sr_yes is not None else "—"
-        sr_no_fmt = f"{sr_no:.2f}" if sr_no is not None else "—"
+        sr_yes_fmt = f"{sr_yes:.0f}%" if sr_yes is not None else "—"
+        sr_no_fmt = f"{sr_no:.0f}%" if sr_no is not None else "—"
         cons_adj_html = (
             f'<tr style="border-top:2px solid #cbd5e1;background:#f8fafc">'
             f'<td><em>Consortium governance adjustment</em></td>'
@@ -461,11 +463,11 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
         f'<div class="an-card an-wide">'
         f'<div class="an-card-title">Matrix 3 — Proponent Type Adjustment Factor</div>'
         f'<div class="an-card-sub">Corpus baseline: <strong>{_pct(corpus_adv)}</strong> adversity, '
-        f'severity ratio <strong>{corpus_sr_fmt}</strong>.'
+        f'severity <strong>{corpus_sr_fmt}</strong>.'
         f' Red adjustment = above baseline, green = below.</div>'
         f'<div class="rcm-scroll"><table class="rcm-table">'
         f'<thead><tr><th>Proponent type</th><th>Projects</th><th>Adv%</th>'
-        f'<th>Adjustment</th><th>Sev. ratio</th><th>Primary risk</th></tr></thead>'
+        f'<th>Adjustment</th><th>Sev%</th><th>Primary risk</th></tr></thead>'
         f'<tbody>{"".join(mc_rows) if mc_rows else mc_empty}{cons_adj_html}</tbody>'
         f'</table></div></div>'
     )
@@ -482,13 +484,13 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
         total = sev + mild
         if total < 10:
             continue
-        ratio = sev / mild if mild > 0 else None
+        ratio = (sev / total * 100) if total > 0 else None
         se_data.append((ratio if ratio is not None else 999, fm, sev, mild, total, ratio))
     se_data.sort(reverse=True)
 
     se_rows = []
     for _, fm, sev, mild, total, ratio in se_data:
-        r_fmt = f"{ratio:.2f}" if ratio is not None else "—"
+        r_fmt = f"{ratio:.0f}%" if ratio is not None else "—"
         se_rows.append(
             f'<tr><td>{fm}</td>'
             f'<td class="rcm-num">{total:,}</td>'
@@ -503,12 +505,12 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
         f'<div class="an-card an-wide">'
         f'<div class="an-card-title">Matrix 5 — Severity Escalation by Failure Mode</div>'
         f'<div class="an-card-sub">Which failure types tend to be severe when they occur? '
-        f'Ratio = (major + critical) / (minor + moderate). '
+        f'Sev% = major+critical as % of all adverse records. '
         f'Corpus baseline: <strong>{corpus_sr_fmt}</strong>. '
-        f'High ratio = problems escalate; low ratio = problems stay manageable.</div>'
+        f'Higher = problems tend to be severe; lower = problems stay manageable.</div>'
         f'<div class="rcm-scroll"><table class="rcm-table">'
         f'<thead><tr><th>Failure mode</th><th>Adverse records</th>'
-        f'<th>Major/critical</th><th>Minor/moderate</th><th>Sev. ratio</th></tr></thead>'
+        f'<th>Major/critical</th><th>Minor/moderate</th><th>Sev%</th></tr></thead>'
         f'<tbody>{"".join(se_rows) if se_rows else se_empty}</tbody>'
         f'</table></div></div>'
     )
@@ -527,7 +529,7 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
 
     sc_rows = []
     for ac, n_p, sev, mild, sr, adv in sorted(ac_sev_data, key=lambda x: (x[4] if x[4] is not None else -1), reverse=True):
-        sr_fmt = f"{sr:.2f}" if sr is not None else "—"
+        sr_fmt = f"{sr:.0f}%" if sr is not None else "—"
         sc_rows.append(
             f'<tr><td>{ac}</td>'
             f'<td class="rcm-num">{n_p}</td>'
@@ -543,10 +545,10 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
         f'<div class="an-card an-wide">'
         f'<div class="an-card-title">Matrix 6 — Severity Escalation by ARENA Category</div>'
         f'<div class="an-card-sub">How severe are problems when they occur, by technology? '
-        f'Sorted by ratio. Corpus baseline: <strong>{corpus_sr_fmt}</strong>.</div>'
+        f'Sorted by severity %. Corpus baseline: <strong>{corpus_sr_fmt}</strong>.</div>'
         f'<div class="rcm-scroll"><table class="rcm-table">'
         f'<thead><tr><th>ARENA category</th><th>Projects</th><th>Adv%</th>'
-        f'<th>Major/critical</th><th>Minor/moderate</th><th>Sev. ratio</th></tr></thead>'
+        f'<th>Major/critical</th><th>Minor/moderate</th><th>Sev%</th></tr></thead>'
         f'<tbody>{"".join(sc_rows) if sc_rows else sc_empty}</tbody>'
         f'</table></div></div>'
     )
@@ -1112,8 +1114,8 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
         <canvas id="an-severity"></canvas>
       </div>
       <div class="an-card">
-        <div class="an-card-title">Severity escalation ratio by failure mode</div>
-        <div class="an-card-sub">(major+critical) ÷ (minor+moderate) · Dashed line = corpus baseline</div>
+        <div class="an-card-title">Severity % by failure mode</div>
+        <div class="an-card-sub">Major+critical as % of adverse records · Dashed line = corpus baseline</div>
         <canvas id="an-sev-ratio"></canvas>
       </div>
       <div class="an-card an-wide">
@@ -2049,14 +2051,15 @@ function renderAnalysis(recs) {{
   const failPct = total > 0 ? (withFailure / total * 100).toFixed(0) : '0';
   const sevMajCrit = recs.filter(r => r.issue_severity === 'major' || r.issue_severity === 'critical').length;
   const sevMinMod = recs.filter(r => r.issue_severity === 'minor' || r.issue_severity === 'moderate').length;
-  const sevRatio = sevMinMod > 0 ? (sevMajCrit / sevMinMod).toFixed(2) : '—';
+  const sevTotal = sevMajCrit + sevMinMod;
+  const sevPct = sevTotal > 0 ? Math.round(sevMajCrit / sevTotal * 100) + '%' : '—';
   const isFiltered = total < RECORDS.length;
   const totalLabel = isFiltered ? `${{total.toLocaleString()}} <span style="font-size:18px;color:#64748b">of ${{RECORDS.length.toLocaleString()}}</span>` : total.toLocaleString();
   document.getElementById('an-stats').innerHTML = `
     <div class="stat"><span class="stat-value">${{totalLabel}}</span><span class="stat-label">${{isFiltered ? 'Filtered records' : 'Total records'}}</span></div>
     <div class="stat"><span class="stat-value">${{nProjects.toLocaleString()}}</span><span class="stat-label">Projects covered</span></div>
     <div class="stat"><span class="stat-value">${{withFailure.toLocaleString()}} <span style="font-size:18px;color:#64748b">(${{failPct}}%)</span></span><span class="stat-label">Records with any failure</span></div>
-    <div class="stat"><span class="stat-value">${{sevRatio}}</span><span class="stat-label">Severity ratio (major÷mild)</span></div>`;
+    <div class="stat"><span class="stat-value">${{sevPct}}</span><span class="stat-label">Severity % (major+critical of adverse)</span></div>`;
 
   const warnEl = document.getElementById('an-warn');
   if (total > 0 && total < 30) {{
@@ -2286,29 +2289,31 @@ function anSevRatio(recs) {{
     if (s === 'major' || s === 'critical') {{ sevCounts[fm][s]++; allMajCrit++; }}
     if (s === 'minor' || s === 'moderate') {{ sevCounts[fm][s]++; allMinMod++; }}
   }});
-  const baseline = allMinMod > 0 ? allMajCrit / allMinMod : 0;
-  const ratios = fms.map(fm => {{
+  const allTotal = allMajCrit + allMinMod;
+  const baseline = allTotal > 0 ? allMajCrit / allTotal * 100 : 0;
+  const pcts = fms.map(fm => {{
     const mc = sevCounts[fm].major + sevCounts[fm].critical;
     const mm = sevCounts[fm].minor + sevCounts[fm].moderate;
-    return mm > 0 ? mc / mm : 0;
+    const tot = mc + mm;
+    return tot > 0 ? mc / tot * 100 : 0;
   }});
-  // Sort by ratio descending
-  const indexed = fms.map((fm, i) => ({{fm, ratio: ratios[i]}})).sort((a,b) => b.ratio - a.ratio);
+  // Sort by severity % descending
+  const indexed = fms.map((fm, i) => ({{fm, pct: pcts[i]}})).sort((a,b) => b.pct - a.pct);
   _anCharts.sevRatio = new Chart(document.getElementById('an-sev-ratio'), {{
     type: 'bar',
     data: {{
       labels: indexed.map(d => d.fm),
       datasets: [
         {{
-          data: indexed.map(d => +d.ratio.toFixed(3)),
+          data: indexed.map(d => +d.pct.toFixed(1)),
           backgroundColor: indexed.map(d => FM_COLOURS[d.fm] + 'cc'),
           borderColor: indexed.map(d => FM_COLOURS[d.fm]),
           borderWidth: 1, borderRadius: 3
         }},
         {{
           type: 'line',
-          label: `Corpus baseline (${{baseline.toFixed(2)}})`,
-          data: indexed.map(() => +baseline.toFixed(3)),
+          label: `Corpus baseline (${{Math.round(baseline)}}%)`,
+          data: indexed.map(() => +baseline.toFixed(1)),
           borderColor: '#64748b', borderWidth: 2, borderDash: [6,3],
           pointRadius: 0, fill: false
         }}
@@ -2318,10 +2323,10 @@ function anSevRatio(recs) {{
       indexAxis: 'y', responsive: true, maintainAspectRatio: true,
       plugins: {{
         legend: {{ display: true, labels: {{ filter: item => item.text && item.text.includes('Corpus'), font: {{ size: 9 }} }} }},
-        tooltip: {{ callbacks: {{ label: ctx => ctx.dataset.type === 'line' ? `Baseline: ${{ctx.parsed.x.toFixed(3)}}` : `Ratio: ${{ctx.parsed.x.toFixed(3)}}` }} }}
+        tooltip: {{ callbacks: {{ label: ctx => ctx.dataset.type === 'line' ? `Baseline: ${{Math.round(ctx.parsed.x)}}%` : `${{Math.round(ctx.parsed.x)}}%` }} }}
       }},
       scales: {{
-        x: {{ title: {{ display: true, text: 'Escalation ratio', font: {{ size: 14 }} }}, grid: {{ color: '#f1f5f9' }} }},
+        x: {{ title: {{ display: true, text: 'Severity %', font: {{ size: 14 }} }}, max: 100, grid: {{ color: '#f1f5f9' }} }},
         y: {{ ticks: {{ font: {{ size: 14 }} }}, grid: {{ display: false }} }}
       }}
     }}
