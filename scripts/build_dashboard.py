@@ -336,10 +336,13 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
         bg, fg = _viridis_cell(rate, vmin, vmax)
         return f'background:{bg};color:{fg}'
 
-    # ── Matrix 1: arena_category × activity_type ───────────────────────────
+    # ── Matrix 1: arena_category × activity_type (2D heatmap) ──────────────
     corpus_sev_ratio = _sev_ratio(profiles)
+    corpus_sr_fmt = f"{corpus_sev_ratio:.0f}%" if corpus_sev_ratio is not None else "—"
 
-    ma_rows = []
+    # Collect all sev% values for colour normalisation
+    ma_sev_vals = []
+    ma_cells: dict = {}  # (ac, at) → (n, adv, sr, fm1)
     for ac in _AC_ORDER:
         for at in _AT_ORDER:
             profs = ac_at.get((ac, at), [])
@@ -347,67 +350,90 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
                 continue
             adv = proj_adv(profs)
             sr = _sev_ratio(profs)
-            fms = proj_top_fms(profs, 2)
+            fms = proj_top_fms(profs, 1)
             fm1 = fms[0] if fms else "—"
-            fm2 = fms[1] if len(fms) > 1 else "—"
-            sr_fmt = f"{sr:.0f}%" if sr is not None else "—"
-            ma_rows.append(
-                f'<tr><td>{ac}</td><td>{at}</td>'
-                f'<td class="rcm-num">{len(profs)}</td>'
-                f'<td class="rcm-num rcm-rate" style="{adv_cell(adv)}">{_pct(adv)}</td>'
-                f'<td class="rcm-num" style="{_sev_ratio_cell(sr)}">{sr_fmt}</td>'
-                f'<td class="rcm-fm">{fm1}</td>'
-                f'<td class="rcm-fm">{fm2}</td>'
-                f'</tr>'
-            )
+            ma_cells[(ac, at)] = (len(profs), adv, sr, fm1)
+            if sr is not None:
+                ma_sev_vals.append(sr)
 
-    corpus_sr_fmt = f"{corpus_sev_ratio:.0f}%" if corpus_sev_ratio is not None else "—"
-    ma_empty = '<tr><td colspan="7" class="rcm-empty">No cells meet minimum n threshold</td></tr>'
+    # Build header row
+    at_short = {"Study / feasibility": "Study", "Pilot / demonstration": "Pilot", "Deployment": "Deploy"}
+    ma_hdr = '<tr><th class="hm-row-hdr">ARENA category</th>'
+    for at in _AT_ORDER:
+        ma_hdr += f'<th>{at_short.get(at, at)}</th>'
+    ma_hdr += '</tr>'
+
+    # Build data rows
+    ma_rows = []
+    for ac in _AC_ORDER:
+        has_data = any((ac, at) in ma_cells for at in _AT_ORDER)
+        if not has_data:
+            continue
+        row = f'<tr><td class="hm-row-hdr">{ac}</td>'
+        for at in _AT_ORDER:
+            if (ac, at) in ma_cells:
+                n, adv, sr, fm1 = ma_cells[(ac, at)]
+                sr_fmt = f"{sr:.0f}%" if sr is not None else "—"
+                tip = f"n={n} projects · Adv%={_pct(adv)} · Top: {fm1}"
+                row += f'<td style="{_sev_ratio_cell(sr)}" title="{tip}">{sr_fmt}</td>'
+            else:
+                row += '<td class="hm-empty">—</td>'
+        row += '</tr>'
+        ma_rows.append(row)
+
     ma_html = (
         f'<div class="an-card an-wide">'
-        f'<div class="an-card-title">Matrix 1 — Technology × Activity Type</div>'
+        f'<div class="an-card-title">ARENA Category × Activity Type</div>'
         f'<div class="an-card-sub">'
-        f'{n_projects:,} projects &nbsp;·&nbsp; '
-        f'Corpus: <strong>{_pct(corpus_adv)}</strong> had major+ issues, '
-        f'severity <strong>{corpus_sr_fmt}</strong> &nbsp;·&nbsp; '
-        f'n = projects (not records) &nbsp;·&nbsp; cells &lt; {min_n} omitted &nbsp;·&nbsp; '
-        f'R&amp;D projects excluded &nbsp;·&nbsp; '
-        f'colour scale normalised to {_pct(vmin)}–{_pct(vmax)}</div>'
-        f'<div class="rcm-scroll"><table class="rcm-table">'
-        f'<thead><tr><th>ARENA category</th><th>Activity type</th><th>Projects</th>'
-        f'<th>Adv%</th><th>Sev%</th><th>Top failure mode</th><th>2nd failure mode</th></tr></thead>'
-        f'<tbody>{"".join(ma_rows) if ma_rows else ma_empty}</tbody>'
+        f'Sev% = major+critical as % of adverse records. '
+        f'Corpus baseline: <strong>{corpus_sr_fmt}</strong>. '
+        f'Hover for detail. '
+        f'Cells with &lt; {min_n} projects omitted. R&amp;D excluded.</div>'
+        f'<div class="rcm-scroll"><table class="hm-table">'
+        f'<thead>{ma_hdr}</thead>'
+        f'<tbody>{"".join(ma_rows)}</tbody>'
         f'</table></div></div>'
     )
 
-    # ── Matrix 2: arena_category × lifecycle_phase ──────────────────────────
+    # ── Matrix 2: arena_category × lifecycle_phase (2D heatmap) ─────────────
+    ph_short = {
+        "concept/feasibility": "Concept", "development/design": "Design",
+        "approvals/contracting": "Approvals", "procurement": "Procure",
+        "construction/installation": "Build", "commissioning/integration": "Commiss.",
+        "operations": "Ops", "close-out/post-project review": "Close-out",
+    }
+
+    mb_hdr = '<tr><th class="hm-row-hdr">ARENA category</th>'
+    for ph in _PH_ORDER:
+        mb_hdr += f'<th>{ph_short.get(ph, ph)}</th>'
+    mb_hdr += '</tr>'
+
     mb_rows = []
     for ac in _AC_ORDER:
+        has_data = any((ac, ph) in ac_ph_cells for ph in _PH_ORDER)
+        if not has_data:
+            continue
+        row = f'<tr><td class="hm-row-hdr">{ac}</td>'
         for ph in _PH_ORDER:
-            if (ac, ph) not in ac_ph_cells:
-                continue
-            n_cov, adv, fm1 = ac_ph_cells[(ac, ph)]
-            mb_rows.append(
-                f'<tr><td>{ac}</td><td>{ph}</td>'
-                f'<td class="rcm-num">{n_cov}</td>'
-                f'<td class="rcm-num rcm-rate" style="{adv_cell(adv)}">{_pct(adv)}</td>'
-                f'<td class="rcm-fm">{fm1}</td>'
-                f'</tr>'
-            )
+            if (ac, ph) in ac_ph_cells:
+                n_cov, adv, fm1 = ac_ph_cells[(ac, ph)]
+                tip = f"n={n_cov} projects · Watch for: {fm1}"
+                row += f'<td style="{adv_cell(adv)}" title="{tip}">{_pct(adv)}</td>'
+            else:
+                row += '<td class="hm-empty">—</td>'
+        row += '</tr>'
+        mb_rows.append(row)
 
-    mb_empty = '<tr><td colspan="5" class="rcm-empty">No cells meet minimum n threshold</td></tr>'
     mb_html = (
         f'<div class="an-card an-wide">'
-        f'<div class="an-card-title">Matrix 2 — Phase Risk Watch-list</div>'
+        f'<div class="an-card-title">ARENA Category × Lifecycle Phase</div>'
         f'<div class="an-card-sub">'
-        f'ARENA category × lifecycle phase. '
-        f'n = projects that covered that phase. '
-        f'Adv% = % with a major+ issue at that specific phase. '
-        f'Cells &lt; {min_n_b} omitted.</div>'
-        f'<div class="rcm-scroll"><table class="rcm-table">'
-        f'<thead><tr><th>ARENA category</th><th>Lifecycle phase</th>'
-        f'<th>Projects</th><th>Adv%</th><th>Watch for</th></tr></thead>'
-        f'<tbody>{"".join(mb_rows) if mb_rows else mb_empty}</tbody>'
+        f'Adv% = % of projects with a major+ issue at that phase. '
+        f'Hover for detail. '
+        f'Cells with &lt; {min_n_b} projects omitted.</div>'
+        f'<div class="rcm-scroll"><table class="hm-table">'
+        f'<thead>{mb_hdr}</thead>'
+        f'<tbody>{"".join(mb_rows)}</tbody>'
         f'</table></div></div>'
     )
 
@@ -962,6 +988,15 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
   .rcm-rate {{ font-weight: 700; }}
   .rcm-fm {{ color: #475569; font-size:15px; }}
   .rcm-empty {{ color: #94a3b8; text-align: center; padding: 16px; }}
+  .hm-table {{ border-collapse: collapse; font-size: 14px; }}
+  .hm-table th {{ background: #f8fafc; padding: 6px 8px; font-size: 13px; font-weight: 700;
+                  color: #475569; text-transform: uppercase; letter-spacing: 0.3px;
+                  border: 1px solid #e2e8f0; white-space: nowrap; text-align: center; }}
+  .hm-table th.hm-row-hdr {{ text-align: left; min-width: 140px; }}
+  .hm-table td {{ padding: 6px 8px; border: 1px solid #e2e8f0; text-align: center;
+                  font-weight: 700; font-size: 14px; min-width: 70px; cursor: default; }}
+  .hm-table td.hm-row-hdr {{ text-align: left; font-weight: 600; color: #1e293b; background: #f8fafc; white-space: nowrap; }}
+  .hm-table td.hm-empty {{ background: #f8fafc; color: #cbd5e1; font-weight: 400; font-size: 12px; }}
 
   /* ── Benchmarks tab ── */
   .bench-layout {{ display: flex; height: calc(100vh - 120px); }}
