@@ -27,17 +27,15 @@ AGGREGATED_DIR = ROOT / "tables" / "aggregated"
 PER_PROJECT_DIR = ROOT / "insights" / "per_project"
 
 FAILURE_MODE_COLOURS = {
-    "no major failure stated":        "#22c55e",
-    "design assumption failure":      "#f97316",
-    "regulatory misfit":              "#a855f7",
-    "data quality/measurement failure": "#eab308",
-    "integration failure":            "#ef4444",
-    "technical underperformance":     "#f43f5e",
-    "commercial/demand failure":      "#14b8a6",
-    "governance/coordination failure":"#ec4899",
-    "schedule slippage":              "#fb923c",
-    "cost overrun":                   "#dc2626",
-    "resource/capability shortfall":  "#6366f1",
+    "no major failure stated":          "#22c55e",
+    "poor scoping":                     "#f97316",
+    "unvalidated technical assumptions":"#ef4444",
+    "unvalidated integration":          "#f43f5e",
+    "regulatory & approvals":           "#a855f7",
+    "commercial & market":              "#14b8a6",
+    "coordination & stakeholders":      "#ec4899",
+    "data & measurement":               "#eab308",
+    "execution & logistics":            "#6366f1",
 }
 
 OUTCOME_COLOURS = {
@@ -1190,6 +1188,11 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
         <div class="an-card-sub">Magnitude of delivery issues across all records</div>
         <canvas id="an-severity"></canvas>
       </div>
+      <div class="an-card">
+        <div class="an-card-title">Severity escalation ratio by failure mode</div>
+        <div class="an-card-sub">(major+critical) ÷ (minor+moderate) · Dashed line = corpus baseline</div>
+        <canvas id="an-sev-ratio"></canvas>
+      </div>
       <div class="an-card an-wide">
         <div class="an-card-title">Issue severity by lifecycle phase</div>
         <div class="an-card-sub">Does severity increase as projects progress through delivery?</div>
@@ -2154,6 +2157,7 @@ function initAnalysis() {{
   anOutcomes();
   anSeverity();
   anPhaseSev();
+  anSevRatio();
   anCooccurrence();
 }}
 
@@ -2364,20 +2368,73 @@ function anPhaseSev() {{
   }});
 }}
 
+function anSevRatio() {{
+  const FM_NO_FAILURE = 'no major failure stated';
+  const fms = FM_LIST.filter(fm => fm !== FM_NO_FAILURE);
+  const sevCounts = {{}};
+  fms.forEach(fm => {{ sevCounts[fm] = {{major:0,critical:0,minor:0,moderate:0}}; }});
+  let allMajCrit = 0, allMinMod = 0;
+  RECORDS.forEach(r => {{
+    const fm = r.failure_mode;
+    if (!fm || fm === FM_NO_FAILURE || !sevCounts[fm]) return;
+    const s = r.issue_severity;
+    if (s === 'major' || s === 'critical') {{ sevCounts[fm][s]++; allMajCrit++; }}
+    if (s === 'minor' || s === 'moderate') {{ sevCounts[fm][s]++; allMinMod++; }}
+  }});
+  const baseline = allMinMod > 0 ? allMajCrit / allMinMod : 0;
+  const ratios = fms.map(fm => {{
+    const mc = sevCounts[fm].major + sevCounts[fm].critical;
+    const mm = sevCounts[fm].minor + sevCounts[fm].moderate;
+    return mm > 0 ? mc / mm : 0;
+  }});
+  // Sort by ratio descending
+  const indexed = fms.map((fm, i) => ({{fm, ratio: ratios[i]}})).sort((a,b) => b.ratio - a.ratio);
+  new Chart(document.getElementById('an-sev-ratio'), {{
+    type: 'bar',
+    data: {{
+      labels: indexed.map(d => d.fm),
+      datasets: [
+        {{
+          data: indexed.map(d => +d.ratio.toFixed(3)),
+          backgroundColor: indexed.map(d => FM_COLOURS[d.fm] + 'cc'),
+          borderColor: indexed.map(d => FM_COLOURS[d.fm]),
+          borderWidth: 1, borderRadius: 3
+        }},
+        {{
+          type: 'line',
+          label: `Corpus baseline (${{baseline.toFixed(2)}})`,
+          data: indexed.map(() => +baseline.toFixed(3)),
+          borderColor: '#64748b', borderWidth: 2, borderDash: [6,3],
+          pointRadius: 0, fill: false
+        }}
+      ]
+    }},
+    options: {{
+      indexAxis: 'y', responsive: true, maintainAspectRatio: true,
+      plugins: {{
+        legend: {{ display: true, labels: {{ filter: item => item.text && item.text.includes('Corpus'), font: {{ size: 9 }} }} }},
+        tooltip: {{ callbacks: {{ label: ctx => ctx.dataset.type === 'line' ? `Baseline: ${{ctx.parsed.x.toFixed(3)}}` : `Ratio: ${{ctx.parsed.x.toFixed(3)}}` }} }}
+      }},
+      scales: {{
+        x: {{ title: {{ display: true, text: 'Escalation ratio', font: {{ size: 10 }} }}, grid: {{ color: '#f1f5f9' }} }},
+        y: {{ ticks: {{ font: {{ size: 10 }} }}, grid: {{ display: false }} }}
+      }}
+    }}
+  }});
+}}
+
 function anCooccurrence() {{
   const FM_NO_FAILURE = 'no major failure stated';
   const FMS = FM_LIST.filter(fm => fm !== FM_NO_FAILURE);
   const SHORT = {{
-    'design assumption failure':      'Design assumption',
-    'regulatory misfit':              'Regulatory misfit',
-    'integration failure':            'Integration',
-    'technical underperformance':     'Tech underperf.',
-    'schedule slippage':              'Schedule slippage',
-    'cost overrun':                   'Cost overrun',
-    'resource/capability shortfall':  'Resource shortfall',
-    'commercial/demand failure':      'Commercial/demand',
-    'governance/coordination failure':'Governance',
-    'data quality/measurement failure':'Data quality',
+    'poor scoping':                     'Poor scoping',
+    'unvalidated technical assumptions':'Tech assumptions',
+    'unvalidated integration':          'Integration',
+    'regulatory & approvals':           'Regulatory',
+    'commercial & market':              'Commercial',
+    'coordination & stakeholders':      'Coordination',
+    'data & measurement':               'Data & measurement',
+    'execution & logistics':            'Execution',
   }};
 
   // matrix[primary][secondary] = count
