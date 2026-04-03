@@ -479,7 +479,7 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
             f'<td class="rcm-num" style="color:{up_col};font-weight:600">{up_sign}{round(100 * uplift, 1):+.1f}pp</td>'
             f'<td class="rcm-num">{sr_yes_fmt} vs {sr_no_fmt}</td>'
             f'<td class="rcm-num">{_pct(proj_disc(cons_yes))} vs {_pct(proj_disc(cons_no))}</td>'
-            f'<td class="rcm-fm">governance/coordination failure</td>'
+            f'<td class="rcm-fm">coordination &amp; stakeholders</td>'
             f'</tr>'
         )
 
