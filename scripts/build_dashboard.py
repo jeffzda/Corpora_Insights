@@ -12,12 +12,32 @@ import csv
 import glob
 import json
 from collections import Counter, defaultdict
+from concurrent.futures import ProcessPoolExecutor
+from multiprocessing import cpu_count
 from pathlib import Path
 
 try:
     import yaml
 except ImportError:
     raise SystemExit("pyyaml not installed. Run: pip install pyyaml")
+
+
+# ── Parallel YAML loading ───────────────────────────────────────────────────
+
+def _load_yaml_file(path: str) -> list[dict]:
+    """Load a single YAML file — used as a worker function for ProcessPoolExecutor."""
+    with open(path, encoding="utf-8") as f:
+        recs = yaml.safe_load(f)
+    return recs if recs else []
+
+
+def _parallel_load_yaml(paths: list[str], workers: int = None) -> list[list[dict]]:
+    """Load many YAML files in parallel using ProcessPoolExecutor."""
+    if not paths:
+        return []
+    w = workers or min(cpu_count() or 4, len(paths))
+    with ProcessPoolExecutor(max_workers=w) as pool:
+        return list(pool.map(_load_yaml_file, paths))
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_INPUT = ROOT / "insights" / "per_doc"
@@ -133,9 +153,10 @@ def load_project_profiles() -> list[dict]:
     for project-level matrix rates.
     """
     _SEV_HIGH_SET = {"major", "critical"}
+    paths = sorted(str(p) for p in PER_PROJECT_DIR.glob("*.yaml"))
+    all_file_records = _parallel_load_yaml(paths)
     profiles = []
-    for path in sorted(PER_PROJECT_DIR.glob("*.yaml")):
-        records = yaml.safe_load(open(path, encoding="utf-8")) or []
+    for records in all_file_records:
         if not records:
             continue
 
@@ -565,12 +586,11 @@ def load_benchmarks() -> dict:
 
 
 def load_records(input_dir: Path) -> list[dict]:
+    paths = sorted(glob.glob(str(input_dir / "doc_*.yaml")))
+    batches = _parallel_load_yaml(paths)
     records = []
-    for path in sorted(glob.glob(str(input_dir / "doc_*.yaml"))):
-        with open(path, encoding="utf-8") as f:
-            recs = yaml.safe_load(f)
-            if recs:
-                records.extend(recs)
+    for recs in batches:
+        records.extend(recs)
     return records
 
 
@@ -582,16 +602,15 @@ def load_deduped_records(registry_path: Path) -> list[dict]:
 
 def load_qa_results() -> dict:
     """Load QA verdicts from per_doc_qa/, keyed by record_id."""
-    qa = {}
     if not QA_DIR.exists():
-        return qa
-    for path in sorted(glob.glob(str(QA_DIR / "doc_*_qa.yaml"))):
-        with open(path, encoding="utf-8") as f:
-            results = yaml.safe_load(f)
-            if results:
-                for r in results:
-                    if r.get("record_id"):
-                        qa[r["record_id"]] = r
+        return {}
+    paths = sorted(glob.glob(str(QA_DIR / "doc_*_qa.yaml")))
+    batches = _parallel_load_yaml(paths)
+    qa = {}
+    for results in batches:
+        for r in results:
+            if r.get("record_id"):
+                qa[r["record_id"]] = r
     return qa
 
 
@@ -3293,9 +3312,14 @@ def main():
         if not records:
             raise SystemExit(f"No records found in {input_dir}")
 
-    portfolio_size = load_portfolio_size()
-    benchmarks = load_benchmarks()
-    qa_results = load_qa_results()
+    from concurrent.futures import ThreadPoolExecutor as _ThreadPool
+    with _ThreadPool(max_workers=3) as tp:
+        f_portfolio = tp.submit(load_portfolio_size)
+        f_bench = tp.submit(load_benchmarks)
+        f_qa = tp.submit(load_qa_results)
+    portfolio_size = f_portfolio.result()
+    benchmarks = f_bench.result()
+    qa_results = f_qa.result()
     total_bench_rows = sum(len(v['rows']) for v in benchmarks.values())
     if not args.deduped:
         print(f"Loaded {len(records)} records from {Path(args.input)}")
