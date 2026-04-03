@@ -2232,29 +2232,35 @@ function anTypeFailRate(recs) {{
 function anTechFM(recs) {{
   if (_anCharts.techFM) _anCharts.techFM.destroy();
   const techCounts = {{}};
+  const advCounts = {{}};
   recs.forEach(r => {{ (r.arena_category || []).forEach(cat => {{ techCounts[cat] = (techCounts[cat]||0)+1; }}); }});
   const topTechs = Object.entries(techCounts).sort((a,b)=>b[1]-a[1]).slice(0,10).map(([k])=>k);
   const matrix = {{}};
-  topTechs.forEach(t => {{ matrix[t] = {{}}; FM_ADV.forEach(fm => {{ matrix[t][fm] = 0; }}); }});
+  topTechs.forEach(t => {{ matrix[t] = {{}}; advCounts[t] = 0; FM_ADV.forEach(fm => {{ matrix[t][fm] = 0; }}); }});
   recs.forEach(r => {{
     (r.arena_category || []).forEach(cat => {{
-      if (matrix[cat] && r.failure_mode && r.failure_mode !== FM_NO && matrix[cat][r.failure_mode] !== undefined)
+      if (matrix[cat] && r.failure_mode && r.failure_mode !== FM_NO && matrix[cat][r.failure_mode] !== undefined) {{
         matrix[cat][r.failure_mode]++;
+        advCounts[cat]++;
+      }}
     }});
   }});
+  const labels = topTechs.map(t => `${{t}} (n=${{advCounts[t]}})`);
   const datasets = FM_ADV.map(fm => ({{
     label: fm,
-    data: topTechs.map(t => matrix[t][fm]||0),
+    data: topTechs.map(t => advCounts[t] > 0 ? +((matrix[t][fm]||0) / advCounts[t] * 100).toFixed(1) : 0),
     backgroundColor: FM_COLOURS[fm]+'cc', borderColor: FM_COLOURS[fm], borderWidth: 1,
   }}));
   _anCharts.techFM = new Chart(document.getElementById('an-tech-fm'), {{
     type: 'bar',
-    data: {{ labels: topTechs, datasets }},
+    data: {{ labels, datasets }},
     options: {{
       indexAxis: 'y', responsive: true, maintainAspectRatio: true,
-      plugins: {{ legend: {{ display: false }} }},
+      plugins: {{ legend: {{ display: false }},
+        tooltip: {{ callbacks: {{ label: ctx => `${{ctx.dataset.label}}: ${{ctx.parsed.x.toFixed(1)}}%` }} }}
+      }},
       scales: {{
-        x: {{ stacked: true, grid: {{ color: '#f1f5f9' }} }},
+        x: {{ stacked: true, max: 100, title: {{ display: true, text: '% of adverse records', font: {{ size: 14 }} }}, grid: {{ color: '#f1f5f9' }} }},
         y: {{ stacked: true, ticks: {{ font: {{ size: 14 }} }}, grid: {{ display: false }} }}
       }}
     }}
