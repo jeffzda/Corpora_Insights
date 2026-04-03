@@ -2214,21 +2214,22 @@ function anFMFreq(recs) {{
   if (_anCharts.fmFreq) _anCharts.fmFreq.destroy();
   const counts = {{}};
   recs.forEach(r => {{ if (r.failure_mode) counts[r.failure_mode] = (counts[r.failure_mode] || 0) + 1; }});
+  const total = recs.length || 1;
   const sorted = Object.entries(counts).sort((a,b) => b[1]-a[1]);
   _anCharts.fmFreq = new Chart(document.getElementById('an-fm-freq'), {{
     type: 'bar',
     data: {{
-      labels: sorted.map(([k]) => k),
-      datasets: [{{ data: sorted.map(([,v]) => v),
+      labels: sorted.map(([k,v]) => `${{k}} (n=${{v}})`),
+      datasets: [{{ data: sorted.map(([,v]) => +(v/total*100).toFixed(1)),
         backgroundColor: sorted.map(([k]) => FM_COLOURS[k] || '#94a3b8'), borderWidth: 0, borderRadius: 3 }}]
     }},
     options: {{
       indexAxis: 'y', responsive: true, maintainAspectRatio: true,
       plugins: {{ legend: {{ display: false }}, tooltip: {{ callbacks: {{
-        label: ctx => `${{ctx.parsed.x.toLocaleString()}} records (${{(ctx.parsed.x/RECORDS.length*100).toFixed(1)}}%)`
+        label: ctx => `${{ctx.parsed.x.toFixed(1)}}%`
       }} }} }},
       scales: {{
-        x: {{ grid: {{ color: '#f1f5f9' }} }},
+        x: {{ max: 100, title: {{ display: true, text: '% of records', font: {{ size: 10 }} }}, grid: {{ color: '#f1f5f9' }} }},
         y: {{ ticks: {{ font: {{ size: 10 }} }}, grid: {{ display: false }} }}
       }}
     }}
@@ -2258,7 +2259,7 @@ function anTypeFailRate(recs) {{
     }});
   const datasets = SEV_ORDER.map(sev => ({{
     label: sev,
-    data: types.map(t => matrix[t]?.[sev] || 0),
+    data: types.map(t => +((matrix[t]?.[sev] || 0) / totals[t] * 100).toFixed(1)),
     backgroundColor: IS_COLOURS[sev] + 'cc',
     borderColor: IS_COLOURS[sev],
     borderWidth: 1,
@@ -2271,11 +2272,11 @@ function anTypeFailRate(recs) {{
       plugins: {{
         legend: {{ position: 'top', labels: {{ font: {{ size: 10 }}, boxWidth: 12 }} }},
         tooltip: {{ callbacks: {{
-          label: ctx => `${{ctx.dataset.label}}: ${{ctx.parsed.x}} records`
+          label: ctx => `${{ctx.dataset.label}}: ${{ctx.parsed.x.toFixed(1)}}%`
         }} }}
       }},
       scales: {{
-        x: {{ stacked: true, title: {{ display: true, text: 'Record count by severity', font: {{ size: 10 }} }}, grid: {{ color: '#f1f5f9' }} }},
+        x: {{ stacked: true, max: 100, title: {{ display: true, text: '% of records by severity', font: {{ size: 10 }} }}, grid: {{ color: '#f1f5f9' }} }},
         y: {{ stacked: true, ticks: {{ font: {{ size: 10 }} }}, grid: {{ display: false }} }}
       }}
     }}
