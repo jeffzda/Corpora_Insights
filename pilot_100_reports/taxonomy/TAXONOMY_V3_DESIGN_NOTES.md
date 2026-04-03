@@ -446,6 +446,58 @@ pre-computed.
 
 ---
 
+## Part 7: Dropping `outcome_class`
+
+### Why it's being removed
+
+`outcome_class` (8 values: successful demonstration, partial success, delayed but recoverable,
+re-scoped/adapted, knowledge generated despite setback, discontinued/not progressed, follow-on
+scale-up enabled, policy/market influence only) is removed entirely in v3.
+
+**It's a record-level guess at a project-level property.** A record about a procurement delay
+in month 6 gets classified as "delayed but recoverable" — but the LLM doesn't know whether
+the project eventually succeeded or was discontinued. It's inferring outcome from the tone of
+a single paragraph.
+
+**"Knowledge generated despite setback" absorbed 39% of all records.** This label communicates
+nothing — every failure in a lessons-learned report generates knowledge by definition. It's
+the path of least resistance for the LLM when classifying any failure described in positive
+framing. 39% of records tagged with it is equivalent to saying "something went wrong and
+someone wrote about it."
+
+**It overlaps with severity without adding independent information.** Analysis showed:
+- 83% of discontinued records are major or critical severity
+- 60% of critical records are discontinued
+- "Partial success", "re-scoped/adapted", and "delayed but recoverable" are effectively
+  severity judgements (how bad was it?) rather than outcomes (what ultimately happened?)
+
+**The only value with real information is "discontinued/not progressed"** (1% of records),
+which is usually stated explicitly in the source text. But discontinuation is a project-level
+fact, not a record-level classification — and it's already available from the portfolio CSV
+(`project_status`) and from explicit statements in the source documents.
+
+### What replaces it
+
+Nothing directly. The information outcome_class was trying to capture is covered by:
+- **Issue severity** — how bad the event was (more reliable, 2.5% QA dispute rate)
+- **Challenge outcome tags** (failure/success/neutral) — whether the challenge was navigated
+  successfully, assessed per-record with respect to the specific challenge being addressed
+- **Portfolio CSV project_status** — whether the project is past/active (project-level fact)
+- **Discontinuation** — derivable from records that explicitly state it, flagged at the
+  project profile level rather than inferred per-record
+
+### Origin
+
+`outcome_class` was not from ARENA data — it was designed in the v1.0 taxonomy as the
+"Flyvbjerg dimension: outcome" to support reference class forecasting. The values were our own
+invention. The intent was sound (capture project-level outcomes) but the implementation was
+flawed (per-record LLM inference from narrative tone). The challenge framework's three-way
+outcome classification (failure/success/neutral) serves the analytical purpose better because
+it's scoped to the record's relationship with a specific challenge, not a guess at the
+project's ultimate fate.
+
+---
+
 ## Open Questions
 
 1. Should the "no major failure stated" records be reclassified? Some may contain minor issues
