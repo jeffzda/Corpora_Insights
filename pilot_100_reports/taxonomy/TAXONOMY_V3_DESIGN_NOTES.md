@@ -298,6 +298,112 @@ properties, what kinds of problems have historically shown up, at what phase, an
 
 ---
 
+## Part 5: Test Pass Results (500-record sample, Haiku)
+
+A test LLM pass was run on a stratified sample of 500 records using claude-haiku-4-5 to
+validate the challenge framework. Each record was classified with:
+- Which challenges (0, 1, or multiple) are being addressed
+- Confidence score (0.0–1.0) for each tag
+- Outcome: failure / success / neutral for each challenge
+
+### Key validation results
+
+**The three-way outcome classification works reliably.**
+Across all challenges, the split is roughly 60% failure / 25% success / 15% neutral. Confidence
+is high: 93.5% of tags are 0.7+, with 51% above 0.85. The model isn't guessing.
+
+**Coverage is good.** Only 9.4% of records received no challenge tag. 34.6% matched exactly
+one challenge, 51.4% matched two, 4.6% matched three or more. The six categories provide
+near-comprehensive coverage without excessive overlap.
+
+**Success records are genuine.** High-confidence success examples include:
+- 1.25 MW electrolyser demonstrating sub-1-minute start-up (scale-up, conf 0.88)
+- Community engagement on Lord Howe Island starting 5 years before contract (site/env, conf 0.92)
+- DVMS trial retained in production after successful demonstration (software, conf 0.88)
+
+### Challenge → Failure Mode signatures
+
+Each challenge produces a **distinct failure mode distribution** that differs meaningfully from
+the baseline. This is the core validation — challenges are not just relabelled failure modes,
+they're causal drivers with different downstream patterns.
+
+| Challenge | Strongest signal vs baseline |
+|---|---|
+| **Regulatory** | regulatory misfit 27% (vs 9% baseline, **+18pp**) |
+| **Software/controls** | tech underperformance 25% + integration 12% + data quality 14% (triple lift) |
+| **Supply chain** | schedule slippage 17% + resource shortfall 12% (delivery problems) |
+| **Grid connection** | tech underperformance 21% + integration 13% (technical/interop) |
+| **Scaling to field** | design assumption failure 44% (vs 28%, **+16pp**) — scaling magnifies design errors |
+| **Site/environment** | design assumption 35% + cost overrun 9% (vs 2%) — context invalidates plans |
+
+### Severity escalation by challenge and outcome
+
+The failure-only severity ratios are the strongest finding:
+
+| Challenge | Overall ratio | Failure-only ratio | Interpretation |
+|---|---|---|---|
+| **Regulatory** | 0.50 | **0.72** | When regulatory fails, it fails hard |
+| **Grid connection** | 0.48 | **0.74** | Same — severe when it goes wrong |
+| Scaling to field | 0.23 | 0.33 | Moderate severity |
+| Supply chain | 0.24 | 0.32 | Moderate severity |
+| Software/controls | 0.20 | 0.29 | Frequent but manageable |
+| Site/environment | 0.15 | 0.21 | Frequent but manageable |
+
+This directly informs milestone design: grid and regulatory challenges need hard gates before
+committing capital; software and site challenges can be managed iteratively.
+
+### Comparison: challenge analysis vs reference class matrices
+
+The challenge-filtered analysis produces stronger signals than the existing dashboard matrices:
+
+- **Matrices** answer: "What's the base rate for this cell?" (e.g., hydrogen × pilot = 75%
+  adversity). This is static and can't explain *why*.
+- **Challenge analysis** answers: "What specifically goes wrong when projects face the same
+  difficulties you're about to face, and how bad does it get?" This is causal and actionable.
+- **Combined with severity ratio**, challenges enable statements like: "Grid connection failures
+  have a severity ratio of 0.74 — structure a hard gate on connection approval. Software
+  failures have a ratio of 0.29 — use iterative checkpoints instead."
+
+The matrices retain their role as the **entry point** — quick risk profile lookup for a
+reference class. The challenge layer provides the **analytical depth** underneath.
+
+### Downstream application: LLM-generated briefings
+
+The challenge tags enable a powerful workflow for proposal assessment:
+1. PM receives proposal (e.g., hydrogen electrolyser pilot, consortium-led, grid-connected)
+2. Filter records: `arena_category = Hydrogen` + `activity_type = Pilot/demonstration` +
+   challenge = `GRID_CONNECTION`
+3. This produces a focused set of 40-80 records, filtered to the specific intersection
+4. Feed filtered records to an LLM: "Summarise the distinct failure patterns, what severity
+   they reach, and what successful projects did differently"
+5. Output: a 2-page empirical brief contrasting failures against successes for the exact
+   combination of technology, activity, and challenge
+
+The success/failure/neutral classification is critical here — the LLM synthesis can contrast
+what went wrong against what went right in the same challenge context, rather than just listing
+problems.
+
+---
+
+## Part 6: Revised Analytical Architecture
+
+The dashboard and analysis tools should flow through three levels:
+
+**Level 1 — Reference class matrices (existing)**
+Quick lookup: arena_category × activity_type → adversity rate, severity ratio, top failure
+modes. Entry point for any assessment. Static, pre-computed.
+
+**Level 2 — Challenge breakdown (new)**
+For a given reference class, what challenges do projects in this class face? Per challenge:
+failure mode distribution, severity ratio, success rate. Pre-computed from the challenge tags.
+
+**Level 3 — Synthesised brief (new, on-demand)**
+For a specific combination of reference class + challenges, generate an LLM-written summary
+from the filtered records. Contrasts failures against successes. Generated on demand, not
+pre-computed.
+
+---
+
 ## Open Questions
 
 1. Should the "no major failure stated" records be reclassified? Some may contain minor issues
@@ -306,12 +412,16 @@ properties, what kinds of problems have historically shown up, at what phase, an
 2. Should `delay_category` be revised alongside `failure_mode`? The same boundary issues apply,
    and 52% of records have blank delay_category.
 
-3. Should the technical challenge definitions be refined further before the LLM pass? The
-   current list is based on narrative analysis but hasn't been validated against a stratified
-   sample.
+3. Can the failure mode reclassification and challenge tagging be done in a single LLM pass to
+   reduce cost and ensure consistency? (Estimated combined cost: ~$10-15 for full corpus on
+   Haiku batch.)
 
-4. Can the failure mode reclassification and challenge tagging be done in a single LLM pass to
-   reduce cost and ensure consistency?
-
-5. What minimum sample size should be required before surfacing challenge-based failure mode
+4. What minimum sample size should be required before surfacing challenge-based failure mode
    distributions in the dashboard?
+
+5. Should the "scaling to field" challenge's high design-assumption-failure rate (44%) be
+   treated as signal or as evidence that design assumption failure is still acting as a
+   catch-all? This will be clearer after failure mode reclassification.
+
+6. The test pass showed 51% of records match exactly 2 challenges. Is this the right level of
+   overlap, or should challenge definitions be tightened to increase exclusivity?
