@@ -38,16 +38,6 @@ FAILURE_MODE_COLOURS = {
     "execution & logistics":            "#6366f1",
 }
 
-OUTCOME_COLOURS = {
-    "successful demonstration":        "#16a34a",
-    "follow-on scale-up enabled":      "#15803d",
-    "knowledge generated despite setback": "#3b82f6",
-    "policy/market influence only":    "#8b5cf6",
-    "partial success":                 "#ca8a04",
-    "delayed but recoverable":         "#ea580c",
-    "re-scoped/adapted":               "#0891b2",
-    "discontinued/not progressed":     "#dc2626",
-}
 
 ISSUE_SEVERITY_COLOURS = {
     "none":     "#22c55e",
@@ -69,7 +59,6 @@ QA_DIR = ROOT / "insights" / "per_doc_qa"
 # ── Reference class matrix constants ────────────────────────────────────────
 
 _NO_FAIL = "no major failure stated"
-_DISC_OC = "discontinued/not progressed"
 
 _AC_ORDER = [
     "Solar PV", "Battery storage", "Distributed energy resources", "Hydrogen",
@@ -85,21 +74,6 @@ _PH_ORDER = [
     "procurement", "construction/installation", "commissioning/integration",
     "operations", "close-out/post-project review",
 ]
-# Legacy orderings kept for backwards compatibility in profile loading
-_PT_ORDER = [
-    "DER/customer-side", "software/data/digital", "industrial decarbonisation",
-    "storage", "generation", "transport electrification", "manufacturing/supply chain",
-    "network/grid", "multi-technology/hybrid", "enabling infrastructure",
-]
-_SB_ORDER = [
-    "lab/bench", "pilot", "demonstration", "first commercial/FOAK",
-    "commercial expansion", "utility/large-scale", "programmatic/portfolio-level",
-]
-_TD_ORDER = [
-    "solar PV", "battery storage", "DER", "hydrogen", "EV", "demand response",
-    "bioenergy", "solar thermal", "grid/system stability", "wind", "pumped hydro",
-    "industrial renewables", "hybrid systems", "other",
-]
 
 
 _SEV_HIGH = {"moderate", "major", "critical"}
@@ -110,9 +84,6 @@ _SEV_MILD = {"minor", "moderate"}
 def _adv_rate(recs):
     return sum(1 for r in recs if (r.get("issue_severity") or "") in _SEV_HIGH) / len(recs) if recs else 0.0
 
-
-def _disc_rate(recs):
-    return sum(1 for r in recs if (r.get("outcome_class") or "") == _DISC_OC) / len(recs) if recs else 0.0
 
 
 def _top_fms(recs, n=2):
@@ -217,15 +188,8 @@ def load_project_profiles() -> list[dict]:
             "activity_type":     majority("activity_type"),
             "proponent_type":    majority("proponent_type"),
             "is_consortium":     any(r.get("is_consortium") for r in records),
-            # Legacy fields for backwards compat
-            "project_type":      majority("project_type"),
-            "project_scale_band": majority("project_scale_band"),
-            "technology_domain": majority("technology_domain"),
             "had_moderate_plus": any(
                 (r.get("issue_severity") or "") in _SEV_HIGH_SET for r in records
-            ),
-            "discontinued": any(
-                (r.get("outcome_class") or "") == _DISC_OC for r in records
             ),
             "failure_modes": {
                 r.get("failure_mode") for r in records
@@ -284,7 +248,6 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
     Generate HTML for the reference-class matrices.
     Unit of analysis is the PROJECT (one profile per project), not the record.
     Adv% = % of projects with at least one moderate/major/critical record.
-    Disc% = % of projects with at least one discontinued/not progressed record.
     Sev. ratio = (major+critical records) / (minor+moderate records) across all records in the group.
     """
 
@@ -307,13 +270,8 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
 
     n_projects = len(profiles)
     corpus_adv = sum(1 for p in profiles if p["had_moderate_plus"]) / n_projects if n_projects else 0.0
-    corpus_disc = sum(1 for p in profiles if p["discontinued"]) / n_projects if n_projects else 0.0
-
     def proj_adv(profs):
         return sum(1 for p in profs if p["had_moderate_plus"]) / len(profs) if profs else 0.0
-
-    def proj_disc(profs):
-        return sum(1 for p in profs if p["discontinued"]) / len(profs) if profs else 0.0
 
     def proj_top_fms(profs, n=2):
         c = Counter(fm for p in profs for fm in p["failure_modes"])
@@ -365,7 +323,6 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
             if len(profs) < min_n:
                 continue
             adv = proj_adv(profs)
-            disc = proj_disc(profs)
             sr = _sev_ratio(profs)
             fms = proj_top_fms(profs, 2)
             fm1 = fms[0] if fms else "—"
@@ -376,28 +333,26 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
                 f'<td class="rcm-num">{len(profs)}</td>'
                 f'<td class="rcm-num rcm-rate" style="{adv_cell(adv)}">{_pct(adv)}</td>'
                 f'<td class="rcm-num" style="{_sev_ratio_cell(sr)}">{sr_fmt}</td>'
-                f'<td class="rcm-num">{_pct(disc)}</td>'
                 f'<td class="rcm-fm">{fm1}</td>'
                 f'<td class="rcm-fm">{fm2}</td>'
                 f'</tr>'
             )
 
     corpus_sr_fmt = f"{corpus_sev_ratio:.2f}" if corpus_sev_ratio is not None else "—"
-    ma_empty = '<tr><td colspan="8" class="rcm-empty">No cells meet minimum n threshold</td></tr>'
+    ma_empty = '<tr><td colspan="7" class="rcm-empty">No cells meet minimum n threshold</td></tr>'
     ma_html = (
         f'<div class="an-card an-wide">'
         f'<div class="an-card-title">Matrix 1 — Technology × Activity Type</div>'
         f'<div class="an-card-sub">'
         f'{n_projects:,} projects &nbsp;·&nbsp; '
         f'Corpus: <strong>{_pct(corpus_adv)}</strong> had moderate+ issues, '
-        f'<strong>{_pct(corpus_disc)}</strong> discontinued, '
         f'severity ratio <strong>{corpus_sr_fmt}</strong> &nbsp;·&nbsp; '
         f'n = projects (not records) &nbsp;·&nbsp; cells &lt; {min_n} omitted &nbsp;·&nbsp; '
         f'R&amp;D projects excluded &nbsp;·&nbsp; '
         f'colour scale normalised to {_pct(vmin)}–{_pct(vmax)}</div>'
         f'<div class="rcm-scroll"><table class="rcm-table">'
         f'<thead><tr><th>ARENA category</th><th>Activity type</th><th>Projects</th>'
-        f'<th>Adv%</th><th>Sev. ratio</th><th>Disc%</th><th>Top failure mode</th><th>2nd failure mode</th></tr></thead>'
+        f'<th>Adv%</th><th>Sev. ratio</th><th>Top failure mode</th><th>2nd failure mode</th></tr></thead>'
         f'<tbody>{"".join(ma_rows) if ma_rows else ma_empty}</tbody>'
         f'</table></div></div>'
     )
@@ -441,7 +396,6 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
     mc_rows = []
     for pt, profs in mc_data:
         adv = proj_adv(profs)
-        disc = proj_disc(profs)
         sr = _sev_ratio(profs)
         delta = adv - corpus_adv
         sign = "+" if delta >= 0 else ""
@@ -454,7 +408,6 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
             f'<td class="rcm-num rcm-rate" style="{adv_cell(adv)}">{_pct(adv)}</td>'
             f'<td class="rcm-num" style="color:{delta_col};font-weight:600">{sign}{round(100 * delta, 1):+.1f}pp</td>'
             f'<td class="rcm-num" style="{_sev_ratio_cell(sr)}">{sr_fmt}</td>'
-            f'<td class="rcm-num">{_pct(disc)}</td>'
             f'<td class="rcm-fm">{fms[0] if fms else "—"}</td>'
             f'</tr>'
         )
@@ -478,12 +431,11 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
             f'<td class="rcm-num">{_pct(adv_yes)} vs {_pct(adv_no)}</td>'
             f'<td class="rcm-num" style="color:{up_col};font-weight:600">{up_sign}{round(100 * uplift, 1):+.1f}pp</td>'
             f'<td class="rcm-num">{sr_yes_fmt} vs {sr_no_fmt}</td>'
-            f'<td class="rcm-num">{_pct(proj_disc(cons_yes))} vs {_pct(proj_disc(cons_no))}</td>'
             f'<td class="rcm-fm">coordination &amp; stakeholders</td>'
             f'</tr>'
         )
 
-    mc_empty = '<tr><td colspan="7" class="rcm-empty">Insufficient data</td></tr>'
+    mc_empty = '<tr><td colspan="6" class="rcm-empty">Insufficient data</td></tr>'
     mc_html = (
         f'<div class="an-card an-wide">'
         f'<div class="an-card-title">Matrix 3 — Proponent Type Adjustment Factor</div>'
@@ -492,44 +444,8 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
         f' Red adjustment = above baseline, green = below.</div>'
         f'<div class="rcm-scroll"><table class="rcm-table">'
         f'<thead><tr><th>Proponent type</th><th>Projects</th><th>Adv%</th>'
-        f'<th>Adjustment</th><th>Sev. ratio</th><th>Disc%</th><th>Primary risk</th></tr></thead>'
+        f'<th>Adjustment</th><th>Sev. ratio</th><th>Primary risk</th></tr></thead>'
         f'<tbody>{"".join(mc_rows) if mc_rows else mc_empty}{cons_adj_html}</tbody>'
-        f'</table></div></div>'
-    )
-
-    # ── Discontinuation risk summary ──────────────────────────────────────────
-    disc_data = []
-    for (ac, at), profs in ac_at.items():
-        if len(profs) < min_n:
-            continue
-        dr = proj_disc(profs)
-        if 100 * dr >= 3.0:
-            fms = proj_top_fms(profs, 1)
-            disc_data.append((dr, ac, at, len(profs), fms[0] if fms else "—"))
-    disc_data.sort(reverse=True)
-
-    disc_vmin = disc_data[-1][0] if disc_data else 0.0
-    disc_vmax = disc_data[0][0] if disc_data else 1.0
-
-    disc_rows = []
-    for dr, ac, at, n, fm1 in disc_data:
-        bg, fg = _viridis_cell(dr, disc_vmin, disc_vmax)
-        disc_rows.append(
-            f'<tr><td><strong>{ac}</strong> &times; {at}</td>'
-            f'<td class="rcm-num">{n}</td>'
-            f'<td class="rcm-num rcm-rate" style="background:{bg};color:{fg}">{_pct(dr)}</td>'
-            f'<td class="rcm-fm">{fm1}</td>'
-            f'</tr>'
-        )
-
-    dt_empty = '<tr><td colspan="4" class="rcm-empty">No reference classes exceed threshold</td></tr>'
-    dt_html = (
-        f'<div class="an-card an-wide">'
-        f'<div class="an-card-title">Discontinuation Risk Summary</div>'
-        f'<div class="an-card-sub">Reference class cells with discontinuation rate ≥ 3% (n ≥ {min_n} projects).</div>'
-        f'<div class="rcm-scroll"><table class="rcm-table">'
-        f'<thead><tr><th>Reference class</th><th>Projects</th><th>Disc%</th><th>Primary driver</th></tr></thead>'
-        f'<tbody>{"".join(disc_rows) if disc_rows else dt_empty}</tbody>'
         f'</table></div></div>'
     )
 
@@ -614,7 +530,7 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
         f'</table></div></div>'
     )
 
-    return ma_html + mb_html + mc_html + dt_html + se_html + sc_html
+    return ma_html + mb_html + mc_html + se_html + sc_html
 
 
 def load_portfolio_size() -> int:
@@ -708,7 +624,6 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
     records = [clean_record(r) for r in records]
     data_json = json.dumps(records, ensure_ascii=False)
     fm_colours = json.dumps(FAILURE_MODE_COLOURS)
-    oc_colours = json.dumps(OUTCOME_COLOURS)
     is_colours = json.dumps(ISSUE_SEVERITY_COLOURS)
     qa_colours = json.dumps(QA_VERDICT_COLOURS)
     benchmarks_json = json.dumps(benchmarks or {}, ensure_ascii=False)
@@ -716,19 +631,13 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
 
     failure_modes = distinct_sorted(records, "failure_mode")
     proponent_types = distinct_sorted(records, "proponent_type")
-    outcome_classes = distinct_sorted(records, "outcome_class")
     lifecycle_phases = distinct_sorted(records, "lifecycle_phase")
     severity_levels = distinct_sorted(records, "issue_severity")
     transferability_vals = distinct_sorted(records, "transferability")
     qa_verdicts = distinct_sorted(records, "qa_verdict")
     qa_classifications = distinct_sorted(records, "qa_classification")
-    # New taxonomy v2 fields
     arena_categories = sorted({c for r in records for c in (r.get("arena_category") or []) if c})
     activity_types = sorted({r.get("activity_type") for r in records if r.get("activity_type")})
-    # Legacy fields kept for card rendering
-    project_types = distinct_sorted(records, "project_type")
-    tech_domains = distinct_sorted(records, "technology_domain")
-    scale_bands = distinct_sorted(records, "project_scale_band")
 
     def options(values):
         return "\n".join(f'<option value="{v}">{v}</option>' for v in values)
@@ -1082,7 +991,6 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
     <div class="fi"><label>ARENA category</label><select id="f-category"><option value="">All categories</option>{options(arena_categories)}</select></div>
     <div class="fi"><label>Activity type</label><select id="f-activity"><option value="">All activities</option>{options(activity_types)}</select></div>
     <div class="fi"><label>Failure mode</label><select id="f-failure"><option value="">All failures</option>{options(failure_modes)}</select></div>
-    <div class="fi"><label>Outcome</label><select id="f-outcome"><option value="">All outcomes</option>{options(outcome_classes)}</select></div>
     <div class="fi"><label>Proponent</label><select id="f-proponent"><option value="">All proponents</option>{options(proponent_types)}</select></div>
     <div class="fi"><label>Lifecycle phase</label><select id="f-phase"><option value="">All phases</option>{options(lifecycle_phases)}</select></div>
     <div class="fi"><label>Severity</label><select id="f-severity"><option value="">All severities</option>{options(severity_levels)}</select></div>
@@ -1180,11 +1088,6 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
         <canvas id="an-tech-fm"></canvas>
       </div>
       <div class="an-card">
-        <div class="an-card-title">Outcome class distribution</div>
-        <div class="an-card-sub">How projects resolved delivery events</div>
-        <canvas id="an-outcomes"></canvas>
-      </div>
-      <div class="an-card">
         <div class="an-card-title">Issue severity distribution</div>
         <div class="an-card-sub">Magnitude of delivery issues across all records</div>
         <canvas id="an-severity"></canvas>
@@ -1250,16 +1153,8 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
           <div id="m-failure"></div>
         </div>
         <div class="modal-section">
-          <div class="modal-section-label">Outcome</div>
-          <div id="m-outcome"></div>
-        </div>
-        <div class="modal-section">
           <div class="modal-section-label">Lifecycle phase</div>
           <div class="modal-section-value" id="m-phase"></div>
-        </div>
-        <div class="modal-section">
-          <div class="modal-section-label">Delay category</div>
-          <div class="modal-section-value" id="m-delay"></div>
         </div>
       </div>
       <div id="m-intervention-wrap" class="modal-section">
@@ -1319,7 +1214,6 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
 <script>
 const RECORDS = {data_json};
 const FM_COLOURS = {fm_colours};
-const OC_COLOURS = {oc_colours};
 const IS_COLOURS = {is_colours};
 const QA_COLOURS = {qa_colours};
 Chart.defaults.font.size = 14;
@@ -1406,9 +1300,7 @@ document.addEventListener('click', e => {{
     const r = RECORD_MAP.get(link.dataset.id);
     if (!r) return;
     const fm = r.failure_mode || '—';
-    const oc = r.outcome_class || '—';
     const fmCol = FM_COLOURS[fm] || '#64748b';
-    const ocCol = OC_COLOURS[oc] || '#64748b';
     const isCol = IS_COLOURS[r.issue_severity] || '#94a3b8';
     const srcUrl = buildSrcUrl(r);
     let chips = '';
@@ -1430,7 +1322,6 @@ document.addEventListener('click', e => {{
           ${{r.lifecycle_phase ? `<span class="badge" style="background:#64748b">${{r.lifecycle_phase}}</span>` : ''}}
           ${{fm !== '—' ? `<span class="badge" style="background:${{fmCol}}">${{fm}}</span>` : ''}}
           ${{r.issue_severity ? `<span class="badge" style="background:${{isCol}}">${{r.issue_severity}}</span>` : ''}}
-          ${{oc !== '—' ? `<span class="badge" style="background:${{ocCol}}">${{oc}}</span>` : ''}}
           ${{r.proponent_type ? `<span class="badge" style="background:#0891b2">${{r.proponent_type}}</span>` : ''}}
         </div>
         <div style="display:flex;justify-content:space-between;align-items:center;padding-top:4px">
@@ -1600,7 +1491,6 @@ async function deleteServerReport(id, btn) {{
 
 // ── Delivery Records ──────────────────────────────────────────
 function fmColour(v) {{ return FM_COLOURS[v] || '#64748b'; }}
-function ocColour(v) {{ return OC_COLOURS[v] || '#64748b'; }}
 function isColour(v) {{ return IS_COLOURS[v] || '#94a3b8'; }}
 function qaColour(v) {{ return QA_COLOURS[v] || '#94a3b8'; }}
 
@@ -1662,7 +1552,6 @@ function renderPage() {{
     card.onclick = () => openModal(r);
     const year = r.publish_date ? r.publish_date.slice(0,4) : (r.kb_year || '');
     const fm = r.failure_mode || '—';
-    const oc = r.outcome_class || '—';
     const srcUrl = buildSrcUrl(r);
     const srcBtn = srcUrl
       ? `<a class="card-src-btn" href="${{srcUrl}}" target="_blank" title="Open source" onclick="event.stopPropagation()">↗</a>`
@@ -1683,7 +1572,6 @@ function renderPage() {{
     if (r.lifecycle_phase)  footerItems.push(['Stage',    `<span class="badge" style="background:#64748b;color:white">${{r.lifecycle_phase}}</span>`]);
     if (r.failure_mode)     footerItems.push(['Type',     `<span class="badge" style="background:${{fmColour(fm)}};color:white">${{fm}}</span>`]);
     if (r.issue_severity)   footerItems.push(['Severity', `<span class="badge" style="background:${{isColour(r.issue_severity)}};color:white">${{r.issue_severity}}</span>`]);
-    if (r.outcome_class)    footerItems.push(['Outcome',  `<span class="badge" style="background:${{ocColour(oc)}};color:white">${{oc}}</span>`]);
     const footerHtml = footerItems.map(([label, badge]) =>
       `<div class="card-meta-item"><span class="card-meta-label">${{label}}</span>${{badge}}</div>`
     ).join('');
@@ -1702,7 +1590,7 @@ function renderPage() {{
   }});
 }}
 
-const ALL_FILTER_IDS = ['search','f-category','f-activity','f-failure','f-outcome','f-proponent','f-phase','f-severity','f-consortium','f-transferability','f-qa','f-qa-class'];
+const ALL_FILTER_IDS = ['search','f-category','f-activity','f-failure','f-proponent','f-phase','f-severity','f-consortium','f-transferability','f-qa','f-qa-class'];
 const PROJECT_SET = new Set(RECORDS.map(r => r.kb_associated_project).filter(Boolean));
 const PAGE_SIZE = 50;
 let _curPage = 0, _lastFiltered = [];
@@ -1950,7 +1838,6 @@ function getFilters() {{
     category:       document.getElementById('f-category').value,
     activity:       document.getElementById('f-activity').value,
     failure:        document.getElementById('f-failure').value,
-    outcome:        document.getElementById('f-outcome').value,
     proponent:      document.getElementById('f-proponent').value,
     phase:          document.getElementById('f-phase').value,
     severity:       document.getElementById('f-severity').value,
@@ -1965,7 +1852,6 @@ function matchesDimFilters(r, f) {{
   if (f.category && !(r.arena_category || []).includes(f.category)) return false;
   if (f.activity && r.activity_type !== f.activity) return false;
   if (f.failure && r.failure_mode !== f.failure) return false;
-  if (f.outcome && r.outcome_class !== f.outcome) return false;
   if (f.proponent && r.proponent_type !== f.proponent) return false;
   if (f.phase && r.lifecycle_phase !== f.phase) return false;
   if (f.severity && r.issue_severity !== f.severity) return false;
@@ -2040,16 +1926,12 @@ function openModal(r) {{
 
   // failure + severity
   const fm = r.failure_mode || '—';
-  const oc = r.outcome_class || '—';
   const isBadge = r.issue_severity
     ? ` <span class="badge" style="background:${{isColour(r.issue_severity)}};color:white">${{r.issue_severity}}</span>`
     : '';
   document.getElementById('m-failure').innerHTML =
     `<span class="badge" style="background:${{fmColour(fm)}};color:white">${{fm}}</span>${{isBadge}}`;
-  document.getElementById('m-outcome').innerHTML =
-    `<span class="badge" style="background:${{ocColour(oc)}};color:white">${{oc}}</span>`;
   document.getElementById('m-phase').textContent = r.lifecycle_phase || '—';
-  document.getElementById('m-delay').textContent = r.delay_category || '—';
 
   // intervention_note
   const iw = document.getElementById('m-intervention-wrap');
@@ -2065,10 +1947,6 @@ function openModal(r) {{
   if (r.is_consortium) tags.push(['Governance', 'Consortium', '#92400e']);
   if (r.transferability) tags.push(['Transferability', r.transferability, '#0f766e']);
   if (r.kb_associated_project) tags.push(['ARENA project', r.kb_associated_project, '#0f766e']);
-  // Legacy fields as grey metadata
-  if (r.project_type) tags.push(['Project type (legacy)', r.project_type, '#94a3b8']);
-  if (r.technology_domain) tags.push(['Technology (legacy)', r.technology_domain, '#94a3b8']);
-  if (r.project_scale_band) tags.push(['Scale (legacy)', r.project_scale_band, '#94a3b8']);
   document.getElementById('m-tags').innerHTML = tags.map(([label, val, colour]) =>
     `<span class="tag" style="background:${{colour}}" title="${{label}}">${{val}}</span>`).join('');
 
@@ -2173,7 +2051,6 @@ function renderAnalysis(recs) {{
   anFMFreq(recs);
   anTypeFailRate(recs);
   anTechFM(recs);
-  anOutcomes(recs);
   anSeverity(recs);
   anPhaseSev(recs);
   anSevRatio(recs);
@@ -2319,25 +2196,6 @@ function anTechFM(recs) {{
   }});
 }}
 
-function anOutcomes(recs) {{
-  if (_anCharts.outcomes) _anCharts.outcomes.destroy();
-  const counts = {{}};
-  recs.forEach(r => {{ if (r.outcome_class) counts[r.outcome_class] = (counts[r.outcome_class]||0)+1; }});
-  const sorted = Object.entries(counts).sort((a,b)=>b[1]-a[1]);
-  _anCharts.outcomes = new Chart(document.getElementById('an-outcomes'), {{
-    type: 'doughnut',
-    data: {{
-      labels: sorted.map(([k])=>k),
-      datasets: [{{ data: sorted.map(([,v])=>v),
-        backgroundColor: sorted.map(([k])=>OC_COLOURS[k]||'#94a3b8'), borderWidth: 2 }}]
-    }},
-    options: {{
-      responsive: true, maintainAspectRatio: true,
-      plugins: {{ legend: {{ position: 'right', labels: {{ font: {{ size: 14 }}, boxWidth: 14 }} }},
-        tooltip: {{ callbacks: {{ label: ctx => `${{ctx.label}}: ${{ctx.parsed.toLocaleString()}} (${{(ctx.parsed/RECORDS.length*100).toFixed(1)}}%)` }} }} }}
-    }}
-  }});
-}}
 
 function anSeverity(recs) {{
   if (_anCharts.severity) _anCharts.severity.destroy();
@@ -2918,13 +2776,11 @@ function getActiveFilterDesc() {{
   if (_selectedDoc) parts.push(`report: ${{_selectedDoc.title}} (${{_selectedDoc.proj}})`);
   else if (_selectedProjects.size === 1) parts.push(`project: ${{[..._selectedProjects][0]}}`);
   else if (_selectedProjects.size > 1) parts.push(`${{_selectedProjects.size}} projects selected`);
-  if (f.type)     parts.push(`project type: ${{f.type}}`);
-  if (f.tech)     parts.push(`technology: ${{f.tech}}`);
+  if (f.category) parts.push(`ARENA category: ${{f.category}}`);
+  if (f.activity) parts.push(`activity type: ${{f.activity}}`);
   if (f.phase)    parts.push(`lifecycle phase: ${{f.phase}}`);
   if (f.failure)  parts.push(`failure mode: ${{f.failure}}`);
-  if (f.outcome)  parts.push(`outcome: ${{f.outcome}}`);
   if (f.proponent)parts.push(`proponent: ${{f.proponent}}`);
-  if (f.scale)    parts.push(`scale: ${{f.scale}}`);
   if (f.severity) parts.push(`severity: ${{f.severity}}`);
   if (f.search)   parts.push(`search: "${{f.search}}"`);
   return parts.length ? parts.join(', ') : 'all records';
@@ -2940,7 +2796,6 @@ function buildSynthPrompt(records, mode) {{
     lesson: r.lesson_learnt,
     failure_mode: r.failure_mode,
     phase: r.lifecycle_phase,
-    outcome: r.outcome_class,
     severity: r.issue_severity,
     intervention: r.intervention_note,
   }}));
@@ -3210,7 +3065,6 @@ function generateReportHtml(rep) {{
   const modeLabel = rep.mode === 'brief' ? 'Brief Summary' : rep.mode === 'short' ? 'Short Report' : 'Detailed Report';
   const dateStr = new Date(rep.date).toLocaleDateString('en-AU', {{day:'numeric',month:'long',year:'numeric'}});
   const FM_COLOURS_JSON = JSON.stringify({fm_colours});
-  const OC_COLOURS_JSON = JSON.stringify({oc_colours});
   const IS_COLOURS_JSON = JSON.stringify({is_colours});
   return `<!DOCTYPE html>
 <html lang="en">
@@ -3278,7 +3132,6 @@ const CITED = ${{JSON.stringify(cited)}};
 const RECORD_MAP = new Map(CITED.map(r => [r.record_id, r]));
 const INDEX_MAP = new Map(CITED.map((r, i) => [r.record_id, i + 1]));
 const FM_COLOURS = ${{FM_COLOURS_JSON}};
-const OC_COLOURS = ${{OC_COLOURS_JSON}};
 const IS_COLOURS = ${{IS_COLOURS_JSON}};
 
 function buildSrcUrl(r) {{
@@ -3343,7 +3196,6 @@ document.addEventListener('click', e => {{
     const r = RECORD_MAP.get(link.dataset.id);
     if (!r) {{ closeTooltip(); return; }}
     const fm = r.failure_mode || '—';
-    const oc = r.outcome_class || '—';
     let chips = '';
     if (r.arena_category && r.arena_category.length) r.arena_category.forEach(c => {{ chips += \`<span class="chip chip-tech">\${{c}}</span>\`; }});
     if (r.activity_type) chips += \`<span class="chip chip-scale">\${{r.activity_type}}</span>\`;
@@ -3361,7 +3213,6 @@ document.addEventListener('click', e => {{
           \${{r.lifecycle_phase ? \`<span class="badge" style="background:#64748b">\${{r.lifecycle_phase}}</span>\` : ''}}
           \${{fm !== '—' ? \`<span class="badge" style="background:\${{FM_COLOURS[fm]||'#64748b'}}">\${{fm}}</span>\` : ''}}
           \${{r.issue_severity ? \`<span class="badge" style="background:\${{IS_COLOURS[r.issue_severity]||'#94a3b8'}}">\${{r.issue_severity}}</span>\` : ''}}
-          \${{oc !== '—' ? \`<span class="badge" style="background:\${{OC_COLOURS[oc]||'#64748b'}}">\${{oc}}</span>\` : ''}}
         </div>
         <div style="display:flex;justify-content:space-between;align-items:center;padding-top:4px">
           \${{year ? \`<span style="font-size:14px;color:#94a3b8">\${{year}}</span>\` : '<span></span>'}}
