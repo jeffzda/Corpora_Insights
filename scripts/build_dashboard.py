@@ -756,12 +756,12 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
 
   /* Header */
   header {{ background: #0f172a; color: white; padding: 20px 32px; display: flex; align-items: center; justify-content: space-between; }}
-  header h1 {{ font-size: 20px; font-weight: 600; letter-spacing: -0.3px; }}
-  header span {{ font-size: 13px; color: #94a3b8; }}
+  header h1 {{ font-size:24px; font-weight: 600; letter-spacing: -0.3px; }}
+  header span {{ font-size:17px; color: #94a3b8; }}
 
   /* Tab navigation */
   .tabs {{ background: white; border-bottom: 2px solid #e2e8f0; padding: 0 32px; display: flex; }}
-  .tab {{ padding: 14px 22px; font-size: 13px; font-weight: 600; color: #64748b; cursor: pointer;
+  .tab {{ padding: 14px 22px; font-size:17px; font-weight: 600; color: #64748b; cursor: pointer;
           border-bottom: 3px solid transparent; margin-bottom: -2px; transition: color 0.15s; }}
   .tab:hover {{ color: #1e293b; }}
   .tab.active {{ color: #6366f1; border-bottom-color: #6366f1; }}
@@ -771,18 +771,18 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
   /* Stats bar */
   .stats {{ background: white; border-bottom: 1px solid #e2e8f0; padding: 16px 32px; display: flex; gap: 32px; }}
   .stat {{ display: flex; flex-direction: column; }}
-  .stat-value {{ font-size: 24px; font-weight: 700; color: #0f172a; }}
-  .stat-label {{ font-size: 12px; color: #64748b; margin-top: 2px; }}
+  .stat-value {{ font-size:28px; font-weight: 700; color: #0f172a; }}
+  .stat-label {{ font-size:16px; color: #64748b; margin-top: 2px; }}
 
   /* Filter bar */
   .filter-bar {{ background: white; border-bottom: 1px solid #e2e8f0; padding: 8px 20px; display: flex; align-items: flex-end; gap: 10px; overflow-x: auto; flex-shrink: 0; white-space: nowrap; }}
   .fi {{ display: inline-flex; flex-direction: column; gap: 2px; }}
-  .fi label {{ font-size: 9px; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; }}
-  .fi select, .fi input {{ font-size: 12px; padding: 4px 7px; border: 1px solid #e2e8f0; border-radius: 5px; background: #f8fafc; color: #1e293b; height: 28px; }}
+  .fi label {{ font-size:13px; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; }}
+  .fi select, .fi input {{ font-size:16px; padding: 4px 7px; border: 1px solid #e2e8f0; border-radius: 5px; background: #f8fafc; color: #1e293b; height: 28px; }}
   .fi select:focus, .fi input:focus {{ outline: none; border-color: #6366f1; }}
   .fi-search input {{ width: 180px; }}
   .fi select {{ min-width: 110px; }}
-  .filter-clear-btn {{ font-size: 11px; padding: 0 12px; height: 28px; background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 5px; cursor: pointer; color: #475569; flex-shrink: 0; align-self: flex-end; }}
+  .filter-clear-btn {{ font-size:15px; padding: 0 12px; height: 28px; background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 5px; cursor: pointer; color: #475569; flex-shrink: 0; align-self: flex-end; }}
   .filter-clear-btn:hover {{ background: #e2e8f0; }}
 
   /* Two-panel layout */
@@ -790,10 +790,10 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
 
   .project-panel {{ width: 320px; min-width: 320px; background: white; border-right: 1px solid #e2e8f0; display: flex; flex-direction: column; overflow: hidden; }}
   .proj-panel-top {{ padding: 10px 12px 8px; border-bottom: 1px solid #f1f5f9; display: flex; flex-direction: column; gap: 6px; flex-shrink: 0; }}
-  .proj-panel-top .search-box {{ font-size: 13px; padding: 7px 10px; border: 1px solid #e2e8f0; border-radius: 6px; width: 100%; background: #f8fafc; }}
+  .proj-panel-top .search-box {{ font-size:17px; padding: 7px 10px; border: 1px solid #e2e8f0; border-radius: 6px; width: 100%; background: #f8fafc; }}
   .proj-panel-top .search-box:focus {{ outline: none; border-color: #6366f1; }}
-  .proj-panel-count {{ font-size: 11px; color: #94a3b8; padding: 0 2px; display: flex; justify-content: space-between; align-items: center; }}
-  .proj-sel-clear {{ font-size: 11px; color: #6366f1; cursor: pointer; text-decoration: underline; flex-shrink: 0; }}
+  .proj-panel-count {{ font-size:15px; color: #94a3b8; padding: 0 2px; display: flex; justify-content: space-between; align-items: center; }}
+  .proj-sel-clear {{ font-size:15px; color: #6366f1; cursor: pointer; text-decoration: underline; flex-shrink: 0; }}
   .proj-sel-clear:hover {{ color: #4f46e5; }}
 
   .proj-list {{ flex: 1; overflow-y: auto; }}
@@ -803,29 +803,29 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
   .proj-item-header:hover {{ background: #f8fafc; }}
   .proj-item.selected .proj-item-header:hover {{ background: #e0e7ff; }}
   .proj-item-name-row {{ display: flex; align-items: flex-start; gap: 4px; }}
-  .proj-arrow {{ display: inline-block; font-size: 8px; color: #94a3b8; margin-top: 3px; flex-shrink: 0; transition: transform 0.15s; line-height: 1; }}
+  .proj-arrow {{ display: inline-block; font-size:12px; color: #94a3b8; margin-top: 3px; flex-shrink: 0; transition: transform 0.15s; line-height: 1; }}
   .proj-item.expanded .proj-arrow {{ transform: rotate(90deg); }}
-  .proj-item-name {{ font-size: 12px; font-weight: 600; color: #1e293b; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 3px; }}
-  .proj-item-meta {{ font-size: 10px; color: #64748b; line-height: 1.6; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }}
+  .proj-item-name {{ font-size:16px; font-weight: 600; color: #1e293b; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 3px; }}
+  .proj-item-meta {{ font-size:14px; color: #64748b; line-height: 1.6; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }}
   .proj-item-footer {{ display: flex; justify-content: space-between; align-items: center; margin-top: 4px; gap: 6px; }}
-  .proj-item-loc {{ font-size: 10px; color: #94a3b8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1; min-width: 0; }}
-  .proj-item-count {{ font-size: 11px; font-weight: 700; color: #6366f1; background: #eef2ff; padding: 2px 7px; border-radius: 12px; flex-shrink: 0; white-space: nowrap; }}
+  .proj-item-loc {{ font-size:14px; color: #94a3b8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1; min-width: 0; }}
+  .proj-item-count {{ font-size:15px; font-weight: 700; color: #6366f1; background: #eef2ff; padding: 2px 7px; border-radius: 12px; flex-shrink: 0; white-space: nowrap; }}
   .proj-docs {{ display: none; border-top: 1px solid #e2e8f0; }}
   .proj-item.expanded .proj-docs {{ display: block; }}
   .proj-doc-item {{ display: flex; align-items: center; gap: 8px; padding: 6px 12px 6px 26px; cursor: pointer; border-bottom: 1px solid #f1f5f9; background: #fafbff; transition: background 0.1s; }}
   .proj-doc-item:last-child {{ border-bottom: none; }}
   .proj-doc-item:hover {{ background: #eef2ff; }}
   .proj-doc-item.selected {{ background: #e0e7ff; }}
-  .proj-doc-title {{ font-size: 10px; color: #475569; line-height: 1.4; flex: 1; min-width: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }}
-  .proj-doc-count {{ font-size: 10px; font-weight: 700; color: #818cf8; background: #eef2ff; padding: 1px 5px; border-radius: 10px; flex-shrink: 0; white-space: nowrap; }}
+  .proj-doc-title {{ font-size:14px; color: #475569; line-height: 1.4; flex: 1; min-width: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }}
+  .proj-doc-count {{ font-size:14px; font-weight: 700; color: #818cf8; background: #eef2ff; padding: 1px 5px; border-radius: 10px; flex-shrink: 0; white-space: nowrap; }}
 
   .records-panel {{ flex: 1; overflow-y: auto; display: flex; flex-direction: column; padding: 16px 20px; gap: 0; min-width: 0; }}
 
   /* Compat: search-box used in proj-panel-top */
-  .search-box {{ font-size: 13px; padding: 8px 10px; border: 1px solid #e2e8f0; border-radius: 6px; width: 100%; background: #f8fafc; }}
+  .search-box {{ font-size:17px; padding: 8px 10px; border: 1px solid #e2e8f0; border-radius: 6px; width: 100%; background: #f8fafc; }}
   .search-box:focus {{ outline: none; border-color: #6366f1; }}
 
-  .results-header {{ font-size: 13px; color: #64748b; margin-bottom: 14px; }}
+  .results-header {{ font-size:17px; color: #64748b; margin-bottom: 14px; }}
   .results-header strong {{ color: #1e293b; }}
 
   /* Cards */
@@ -833,19 +833,19 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
   .card {{ background: white; border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px; cursor: pointer; transition: box-shadow 0.15s, border-color 0.15s; display: flex; flex-direction: column; gap: 10px; }}
   .card:hover {{ box-shadow: 0 4px 16px rgba(0,0,0,0.08); border-color: #c7d2fe; }}
   .card-top {{ display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }}
-  .card-id {{ font-size: 10px; font-weight: 700; color: #94a3b8; letter-spacing: 0.5px; white-space: nowrap; }}
-  .card-year {{ font-size: 10px; color: #94a3b8; white-space: nowrap; }}
-  .card-project {{ font-size: 13px; font-weight: 600; color: #1e293b; line-height: 1.4; }}
-  .card-source {{ font-size: 10px; color: #94a3b8; line-height: 1.4; margin-top: 2px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }}
+  .card-id {{ font-size:14px; font-weight: 700; color: #94a3b8; letter-spacing: 0.5px; white-space: nowrap; }}
+  .card-year {{ font-size:14px; color: #94a3b8; white-space: nowrap; }}
+  .card-project {{ font-size:17px; font-weight: 600; color: #1e293b; line-height: 1.4; }}
+  .card-source {{ font-size:14px; color: #94a3b8; line-height: 1.4; margin-top: 2px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }}
   .card-chips {{ display: flex; flex-wrap: wrap; gap: 4px; margin-top: 2px; }}
-  .chip {{ font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 20px; white-space: nowrap; color: white; }}
+  .chip {{ font-size:14px; font-weight: 600; padding: 2px 8px; border-radius: 20px; white-space: nowrap; color: white; }}
   .chip-scale {{ background: #0891b2; }}
   .chip-tech  {{ background: #7c3aed; }}
-  .card-what {{ font-size: 12px; color: #475569; line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }}
+  .card-what {{ font-size:16px; color: #475569; line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }}
   .card-footer {{ display: flex; flex-wrap: wrap; gap: 6px; padding-top: 8px; border-top: 1px solid #f1f5f9; }}
   .card-meta-item {{ display: flex; flex-direction: column; gap: 2px; min-width: 0; }}
-  .card-meta-label {{ font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #94a3b8; }}
-  .badge {{ font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 20px; color: white;
+  .card-meta-label {{ font-size:13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #94a3b8; }}
+  .badge {{ font-size:14px; font-weight: 600; padding: 2px 8px; border-radius: 20px; color: white;
             white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 160px; display: inline-block; }}
 
   /* Modal */
@@ -853,29 +853,29 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
   .overlay.active {{ display: flex; }}
   .modal {{ background: white; border-radius: 14px; width: 100%; max-width: 760px; max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 60px rgba(0,0,0,0.2); }}
   .modal-header {{ padding: 20px 24px 16px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; position: sticky; top: 0; background: white; z-index: 1; }}
-  .modal-title {{ font-size: 16px; font-weight: 700; color: #0f172a; line-height: 1.4; }}
-  .modal-sub {{ font-size: 12px; color: #64748b; margin-top: 4px; }}
-  .close-btn {{ font-size: 20px; color: #94a3b8; cursor: pointer; line-height: 1; flex-shrink: 0; padding: 4px; }}
+  .modal-title {{ font-size:20px; font-weight: 700; color: #0f172a; line-height: 1.4; }}
+  .modal-sub {{ font-size:16px; color: #64748b; margin-top: 4px; }}
+  .close-btn {{ font-size:24px; color: #94a3b8; cursor: pointer; line-height: 1; flex-shrink: 0; padding: 4px; }}
   .close-btn:hover {{ color: #1e293b; }}
   .modal-body {{ padding: 20px 24px; display: flex; flex-direction: column; gap: 18px; }}
   .modal-section {{ display: flex; flex-direction: column; gap: 6px; }}
-  .modal-section-label {{ font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: #94a3b8; }}
-  .modal-section-value {{ font-size: 14px; color: #1e293b; line-height: 1.6; }}
+  .modal-section-label {{ font-size:14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: #94a3b8; }}
+  .modal-section-value {{ font-size:18px; color: #1e293b; line-height: 1.6; }}
   .modal-grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }}
-  .excerpt {{ background: #f8fafc; border-left: 3px solid #6366f1; padding: 12px 14px; border-radius: 0 8px 8px 0; font-size: 13px; color: #374151; line-height: 1.7; font-style: italic; }}
+  .excerpt {{ background: #f8fafc; border-left: 3px solid #6366f1; padding: 12px 14px; border-radius: 0 8px 8px 0; font-size:17px; color: #374151; line-height: 1.7; font-style: italic; }}
   .modal-links {{ display: flex; gap: 10px; flex-wrap: wrap; }}
-  .link-btn {{ font-size: 12px; font-weight: 600; padding: 8px 14px; border-radius: 8px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }}
+  .link-btn {{ font-size:16px; font-weight: 600; padding: 8px 14px; border-radius: 8px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }}
   .link-btn-primary {{ background: #6366f1; color: white; }}
   .link-btn-primary:hover {{ background: #4f46e5; }}
   .link-btn-secondary {{ background: #f1f5f9; color: #475569; border: 1px solid #e2e8f0; }}
   .link-btn-secondary:hover {{ background: #e2e8f0; }}
-  .confidence-note {{ background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 10px 12px; font-size: 12px; color: #92400e; line-height: 1.6; }}
+  .confidence-note {{ background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 10px 12px; font-size:16px; color: #92400e; line-height: 1.6; }}
   .modal-tags {{ display: flex; flex-wrap: wrap; gap: 6px; }}
-  .tag {{ font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 20px; white-space: nowrap; color: white; display: inline-block; }}
+  .tag {{ font-size:14px; font-weight: 600; padding: 2px 8px; border-radius: 20px; white-space: nowrap; color: white; display: inline-block; }}
   .hidden {{ display: none !important; }}
 
   /* ── Synthesis ── */
-  .synth-btn {{ font-size: 12px; font-weight: 600; padding: 6px 14px; border-radius: 6px;
+  .synth-btn {{ font-size:16px; font-weight: 600; padding: 6px 14px; border-radius: 6px;
                background: #6366f1; color: white; border: none; cursor: pointer; margin-left: 12px; }}
   .synth-btn:hover {{ background: #4f46e5; }}
   .synth-btn:disabled {{ background: #a5b4fc; cursor: default; }}
@@ -887,27 +887,27 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
                  box-shadow: 0 20px 60px rgba(0,0,0,0.25); }}
   .synth-header {{ padding: 18px 22px 14px; border-bottom: 1px solid #e2e8f0; display: flex;
                   justify-content: space-between; align-items: center; flex-shrink: 0; }}
-  .synth-title {{ font-size: 15px; font-weight: 700; color: #0f172a; }}
-  .synth-meta {{ font-size: 11px; color: #94a3b8; margin-top: 3px; }}
+  .synth-title {{ font-size:19px; font-weight: 700; color: #0f172a; }}
+  .synth-meta {{ font-size:15px; color: #94a3b8; margin-top: 3px; }}
   .synth-body {{ padding: 20px 24px; overflow-y: auto; flex: 1; }}
-  .synth-text {{ font-size: 13px; color: #1e293b; line-height: 1.8; }}
-  .synth-text h1 {{ font-size: 17px; font-weight: 700; margin: 18px 0 8px; color: #0f172a; }}
-  .synth-text h2 {{ font-size: 15px; font-weight: 700; margin: 16px 0 6px; color: #0f172a; border-bottom: 1px solid #e2e8f0; padding-bottom: 4px; }}
-  .synth-text h3 {{ font-size: 13px; font-weight: 700; margin: 12px 0 4px; color: #1e293b; }}
+  .synth-text {{ font-size:17px; color: #1e293b; line-height: 1.8; }}
+  .synth-text h1 {{ font-size:21px; font-weight: 700; margin: 18px 0 8px; color: #0f172a; }}
+  .synth-text h2 {{ font-size:19px; font-weight: 700; margin: 16px 0 6px; color: #0f172a; border-bottom: 1px solid #e2e8f0; padding-bottom: 4px; }}
+  .synth-text h3 {{ font-size:17px; font-weight: 700; margin: 12px 0 4px; color: #1e293b; }}
   .synth-text p {{ margin: 6px 0; }}
   .synth-text ul, .synth-text ol {{ margin: 6px 0 6px 20px; }}
   .synth-text li {{ margin: 3px 0; }}
   .synth-text strong {{ font-weight: 700; color: #0f172a; }}
   .synth-text hr {{ border: none; border-top: 1px solid #e2e8f0; margin: 16px 0; }}
-  .synth-text code {{ font-family: monospace; font-size: 12px; background: #f1f5f9; padding: 1px 4px; border-radius: 3px; }}
+  .synth-text code {{ font-family: monospace; font-size:16px; background: #f1f5f9; padding: 1px 4px; border-radius: 3px; }}
   .synth-cursor {{ display: inline-block; width: 2px; height: 14px; background: #6366f1;
                   animation: blink 0.8s step-end infinite; vertical-align: middle; margin-left: 2px; }}
   @keyframes blink {{ 50% {{ opacity: 0; }} }}
   .synth-key-form {{ display: flex; flex-direction: column; gap: 10px; padding: 20px 0; }}
-  .synth-key-input {{ font-size: 13px; padding: 9px 12px; border: 1px solid #e2e8f0; border-radius: 8px;
+  .synth-key-input {{ font-size:17px; padding: 9px 12px; border: 1px solid #e2e8f0; border-radius: 8px;
                      width: 100%; font-family: monospace; }}
   .synth-key-input:focus {{ outline: none; border-color: #6366f1; }}
-  .synth-key-btn {{ font-size: 13px; font-weight: 600; padding: 9px 18px; background: #6366f1; color: white;
+  .synth-key-btn {{ font-size:17px; font-weight: 600; padding: 9px 18px; background: #6366f1; color: white;
                    border: none; border-radius: 8px; cursor: pointer; align-self: flex-start; }}
   .synth-key-btn:hover {{ background: #4f46e5; }}
 
@@ -921,19 +921,19 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
                     max-height: 480px; overflow-y: auto; display: none; }}
   #record-tooltip .rt-header {{ display: flex; align-items: center; justify-content: space-between;
                                padding: 12px 14px 8px; border-bottom: 1px solid #f1f5f9; position: sticky; top: 0; background: white; z-index: 1; }}
-  #record-tooltip .rt-id {{ font-size: 10px; color: #6366f1; font-weight: 700; letter-spacing: .5px; }}
-  #record-tooltip .rt-close {{ font-size: 14px; color: #94a3b8; cursor: pointer; line-height: 1; padding: 2px 4px; }}
+  #record-tooltip .rt-id {{ font-size:14px; color: #6366f1; font-weight: 700; letter-spacing: .5px; }}
+  #record-tooltip .rt-close {{ font-size:18px; color: #94a3b8; cursor: pointer; line-height: 1; padding: 2px 4px; }}
   #record-tooltip .rt-close:hover {{ color: #475569; }}
-  #record-tooltip .rt-body {{ padding: 10px 14px 14px; font-size: 12px; line-height: 1.6; display: flex; flex-direction: column; gap: 6px; }}
-  #record-tooltip .rt-project {{ font-weight: 700; color: #1e293b; font-size: 13px; }}
+  #record-tooltip .rt-body {{ padding: 10px 14px 14px; font-size:16px; line-height: 1.6; display: flex; flex-direction: column; gap: 6px; }}
+  #record-tooltip .rt-project {{ font-weight: 700; color: #1e293b; font-size:17px; }}
   #record-tooltip .rt-chips {{ display: flex; flex-wrap: wrap; gap: 4px; }}
   #record-tooltip .rt-what {{ color: #334155; }}
   #record-tooltip .rt-lesson {{ color: #475569; font-style: italic; }}
-  #record-tooltip .rt-excerpt {{ font-size: 11px; color: #64748b; background: #f8fafc;
+  #record-tooltip .rt-excerpt {{ font-size:15px; color: #64748b; background: #f8fafc;
                                 border-left: 3px solid #e2e8f0; padding: 6px 8px; border-radius: 0 4px 4px 0; }}
   #record-tooltip .rt-footer {{ display: flex; flex-wrap: wrap; gap: 6px; padding-top: 4px; border-top: 1px solid #f1f5f9; }}
-  #record-tooltip .rt-meta {{ font-size: 10px; color: #64748b; }}
-  #record-tooltip .rt-src {{ font-size: 11px; color: #6366f1; text-decoration: none; }}
+  #record-tooltip .rt-meta {{ font-size:14px; color: #64748b; }}
+  #record-tooltip .rt-src {{ font-size:15px; color: #6366f1; text-decoration: none; }}
   #record-tooltip .rt-src:hover {{ text-decoration: underline; }}
 
   /* Reports tab */
@@ -941,36 +941,36 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
   .rep-card {{ background: white; border: 1px solid #e2e8f0; border-radius: 10px;
               padding: 16px 20px; display: flex; flex-direction: column; gap: 6px; }}
   .rep-card-header {{ display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }}
-  .rep-card-title {{ font-size: 14px; font-weight: 700; color: #1e293b; cursor: pointer; }}
+  .rep-card-title {{ font-size:18px; font-weight: 700; color: #1e293b; cursor: pointer; }}
   .rep-card-title:hover {{ color: #6366f1; }}
-  .rep-card-meta {{ font-size: 11px; color: #94a3b8; }}
-  .rep-card-summary {{ font-size: 12px; color: #475569; line-height: 1.5; }}
+  .rep-card-meta {{ font-size:15px; color: #94a3b8; }}
+  .rep-card-summary {{ font-size:16px; color: #475569; line-height: 1.5; }}
   .rep-card-actions {{ display: flex; gap: 8px; flex-shrink: 0; }}
-  .rep-action-btn {{ font-size: 11px; padding: 4px 10px; border-radius: 5px; border: 1px solid #e2e8f0;
+  .rep-action-btn {{ font-size:15px; padding: 4px 10px; border-radius: 5px; border: 1px solid #e2e8f0;
                     background: #f8fafc; color: #475569; cursor: pointer; white-space: nowrap; }}
   .rep-action-btn:hover {{ background: #f1f5f9; }}
-  .rep-empty {{ padding: 48px 24px; color: #94a3b8; font-size: 14px; text-align: center; }}
+  .rep-empty {{ padding: 48px 24px; color: #94a3b8; font-size:18px; text-align: center; }}
 
   /* New v1.3 card elements */
   .card-lesson {{
-    font-size: 11px; color: #166534; background: #f0fdf4;
+    font-size:15px; color: #166534; background: #f0fdf4;
     border-left: 3px solid #22c55e; padding: 6px 8px; border-radius: 4px;
     line-height: 1.5;
     display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
   }}
   .card-top-right {{ display: flex; align-items: center; gap: 6px; }}
   .card-src-btn {{
-    font-size: 10px; color: #6366f1; text-decoration: none;
+    font-size:14px; color: #6366f1; text-decoration: none;
     padding: 2px 5px; border: 1px solid #c7d2fe; border-radius: 4px; line-height: 1.4;
   }}
   .card-src-btn:hover {{ background: #eef2ff; }}
   .lesson-value {{ color: #166534; background: #f0fdf4; padding: 8px 10px; border-radius: 6px;
                   border-left: 3px solid #22c55e; line-height: 1.6; }}
   .qa-excerpt {{ background: #fefce8; border-left: 3px solid #ca8a04; padding: 10px 14px;
-                border-radius: 0 8px 8px 0; font-size: 13px; color: #374151; line-height: 1.7;
+                border-radius: 0 8px 8px 0; font-size:17px; color: #374151; line-height: 1.7;
                 font-style: italic; }}
   .src-link {{
-    display: inline-block; font-size: 11px; font-weight: 600; padding: 5px 10px;
+    display: inline-block; font-size:15px; font-weight: 600; padding: 5px 10px;
     border-radius: 6px; text-decoration: none; margin-right: 6px; margin-top: 4px;
     background: #6366f1; color: white;
   }}
@@ -979,7 +979,7 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
   .src-link-kb   {{ background: #64748b; }}
   .src-link-proj {{ background: #7c3aed; }}
   .corroboration-badge {{
-    font-size: 10px; font-weight: 700; color: #0891b2;
+    font-size:14px; font-weight: 700; color: #0891b2;
     background: #e0f2fe; border: 1px solid #bae6fd;
     padding: 2px 6px; border-radius: 12px; white-space: nowrap;
   }}
@@ -988,27 +988,27 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
   .proj-summary {{ background: white; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px 18px; margin-bottom: 12px; display: none; }}
   .proj-summary.visible {{ display: block; }}
   .proj-summary-header {{ display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; margin-bottom: 14px; }}
-  .proj-summary-title {{ font-size: 15px; font-weight: 700; color: #0f172a; }}
+  .proj-summary-title {{ font-size:19px; font-weight: 700; color: #0f172a; }}
   .proj-meta {{ display: flex; gap: 8px; flex-wrap: wrap; margin-top: 5px; }}
-  .proj-meta-tag {{ font-size: 11px; padding: 2px 8px; border-radius: 12px; background: #f1f5f9; color: #475569; font-weight: 500; }}
-  .coverage-strip {{ display: flex; gap: 20px; font-size: 12px; color: #64748b; flex-shrink: 0; padding-top: 2px; }}
+  .proj-meta-tag {{ font-size:15px; padding: 2px 8px; border-radius: 12px; background: #f1f5f9; color: #475569; font-weight: 500; }}
+  .coverage-strip {{ display: flex; gap: 20px; font-size:16px; color: #64748b; flex-shrink: 0; padding-top: 2px; }}
   .coverage-strip strong {{ color: #0f172a; }}
   .phase-grid {{ display: grid; grid-template-columns: repeat(8, 1fr); gap: 8px; }}
   .phase-col {{ display: flex; flex-direction: column; gap: 4px; }}
-  .phase-col-label {{ font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; color: #94a3b8; line-height: 1.3; min-height: 26px; display: flex; align-items: flex-end; }}
+  .phase-col-label {{ font-size:13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; color: #94a3b8; line-height: 1.3; min-height: 26px; display: flex; align-items: flex-end; }}
   .phase-dots {{ display: flex; flex-wrap: wrap; gap: 3px; min-height: 18px; padding: 5px 0 2px; border-top: 2px solid #f1f5f9; }}
   .phase-dots.has-dots {{ border-top-color: #cbd5e1; }}
   .phase-dot {{ width: 10px; height: 10px; border-radius: 50%; cursor: pointer; flex-shrink: 0; transition: transform 0.1s; }}
   .phase-dot:hover {{ transform: scale(1.4); }}
-  .phase-empty-msg {{ font-size: 10px; color: #e2e8f0; padding-top: 3px; }}
+  .phase-empty-msg {{ font-size:14px; color: #e2e8f0; padding-top: 3px; }}
 
   /* ── Pagination ── */
   .pagination {{ display: flex; align-items: center; gap: 10px; padding: 12px 0 4px; }}
-  .page-btn {{ font-size: 12px; font-weight: 600; padding: 5px 12px; border: 1px solid #e2e8f0;
+  .page-btn {{ font-size:16px; font-weight: 600; padding: 5px 12px; border: 1px solid #e2e8f0;
               border-radius: 6px; background: #f8fafc; cursor: pointer; color: #475569; }}
   .page-btn:hover {{ background: #eef2ff; border-color: #c7d2fe; color: #6366f1; }}
   .page-btn:disabled {{ opacity: 0.35; cursor: default; pointer-events: none; }}
-  .page-info {{ font-size: 12px; color: #64748b; }}
+  .page-info {{ font-size:16px; color: #64748b; }}
 
   /* ── Analysis tab ── */
   .an-page {{ display: flex; flex-direction: column; height: calc(100vh - 108px); overflow: hidden; }}
@@ -1016,48 +1016,48 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
   .an-grid {{ padding: 20px 24px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; overflow-y: auto; flex: 1; }}
   .an-card {{ background: white; border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px 18px; display: flex; flex-direction: column; gap: 8px; }}
   .an-card.an-wide {{ grid-column: span 2; }}
-  .an-card-title {{ font-size: 12px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.4px; }}
-  .an-card-sub {{ font-size: 11px; color: #94a3b8; }}
+  .an-card-title {{ font-size:16px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.4px; }}
+  .an-card-sub {{ font-size:15px; color: #94a3b8; }}
   .an-card canvas {{ max-height: 280px; }}
   .an-card.an-wide canvas {{ max-height: 340px; }}
   .rcm-scroll {{ overflow-x: auto; margin-top: 8px; }}
-  .rcm-table {{ border-collapse: collapse; width: 100%; font-size: 12px; }}
-  .rcm-table th {{ background: #f8fafc; padding: 8px 10px; text-align: left; font-size: 10px;
+  .rcm-table {{ border-collapse: collapse; width: 100%; font-size:16px; }}
+  .rcm-table th {{ background: #f8fafc; padding: 8px 10px; text-align: left; font-size:14px;
                   font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.4px;
                   border-bottom: 2px solid #e2e8f0; white-space: nowrap; }}
-  .rcm-table td {{ padding: 7px 10px; border-bottom: 1px solid #f1f5f9; vertical-align: middle; font-size: 12px; }}
+  .rcm-table td {{ padding: 7px 10px; border-bottom: 1px solid #f1f5f9; vertical-align: middle; font-size:16px; }}
   .rcm-table tr:last-child td {{ border-bottom: none; }}
   .rcm-table tr:hover td {{ background: #fafbff; }}
   .rcm-num {{ text-align: center; white-space: nowrap; }}
   .rcm-rate {{ font-weight: 700; }}
-  .rcm-fm {{ color: #475569; font-size: 11px; }}
+  .rcm-fm {{ color: #475569; font-size:15px; }}
   .rcm-empty {{ color: #94a3b8; text-align: center; padding: 16px; }}
 
   /* ── Benchmarks tab ── */
   .bench-layout {{ display: flex; height: calc(100vh - 120px); }}
   .bench-nav {{ width: 220px; min-width: 220px; background: white; border-right: 1px solid #e2e8f0;
                padding: 16px 12px; display: flex; flex-direction: column; gap: 6px; overflow-y: auto; }}
-  .bench-nav-btn {{ font-size: 12px; font-weight: 600; padding: 10px 12px; border-radius: 8px;
+  .bench-nav-btn {{ font-size:16px; font-weight: 600; padding: 10px 12px; border-radius: 8px;
                    border: 1px solid #e2e8f0; background: #f8fafc; cursor: pointer; text-align: left;
                    color: #374151; display: flex; justify-content: space-between; align-items: center; }}
   .bench-nav-btn:hover {{ background: #eef2ff; border-color: #c7d2fe; }}
   .bench-nav-btn.active {{ background: #6366f1; color: white; border-color: #6366f1; }}
   .bench-main {{ flex: 1; overflow-y: auto; padding: 20px 24px; display: flex; flex-direction: column; gap: 16px; }}
   .bench-header {{ display: flex; flex-direction: column; gap: 3px; }}
-  .bench-title {{ font-size: 16px; font-weight: 700; color: #0f172a; }}
-  .bench-desc {{ font-size: 12px; color: #64748b; }}
+  .bench-title {{ font-size:20px; font-weight: 700; color: #0f172a; }}
+  .bench-desc {{ font-size:16px; color: #64748b; }}
   .bench-chart-wrap {{ background: white; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px;
                        position: relative; }}
   .bench-chart-wrap canvas {{ max-height: 300px; }}
   .bench-controls {{ display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }}
-  .bench-search {{ font-size: 13px; padding: 7px 10px; border: 1px solid #e2e8f0; border-radius: 6px;
+  .bench-search {{ font-size:17px; padding: 7px 10px; border: 1px solid #e2e8f0; border-radius: 6px;
                   width: 260px; background: #f8fafc; }}
   .bench-search:focus {{ outline: none; border-color: #6366f1; }}
-  .bench-filter {{ font-size: 13px; padding: 7px 10px; border: 1px solid #e2e8f0; border-radius: 6px; background: #f8fafc; color: #1e293b; }}
-  .bench-count {{ font-size: 12px; color: #64748b; margin-left: auto; }}
+  .bench-filter {{ font-size:17px; padding: 7px 10px; border: 1px solid #e2e8f0; border-radius: 6px; background: #f8fafc; color: #1e293b; }}
+  .bench-count {{ font-size:16px; color: #64748b; margin-left: auto; }}
   .bench-table-wrap {{ overflow-x: auto; border: 1px solid #e2e8f0; border-radius: 10px; }}
-  .bench-table {{ border-collapse: collapse; width: 100%; font-size: 12px; }}
-  .bench-table th {{ background: #f8fafc; padding: 10px 12px; text-align: left; font-size: 11px; font-weight: 700;
+  .bench-table {{ border-collapse: collapse; width: 100%; font-size:16px; }}
+  .bench-table th {{ background: #f8fafc; padding: 10px 12px; text-align: left; font-size:15px; font-weight: 700;
                     color: #475569; text-transform: uppercase; letter-spacing: 0.5px;
                     border-bottom: 1px solid #e2e8f0; white-space: nowrap; cursor: pointer; user-select: none; }}
   .bench-table th:hover {{ background: #eef2ff; color: #6366f1; }}
@@ -1105,7 +1105,7 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
 <div class="tab-content active" id="tc-records" style="flex-direction:column">
   <div class="stats">
     <div class="stat"><span class="stat-value" id="stat-shown">{n}</span><span class="stat-label">Records shown</span></div>
-    <div class="stat"><span class="stat-value">{n_projects_covered} <span style="font-size:14px;color:#64748b">of {portfolio_size} ({portfolio_pct})</span></span><span class="stat-label">ARENA portfolio covered</span></div>
+    <div class="stat"><span class="stat-value">{n_projects_covered} <span style="font-size:18px;color:#64748b">of {portfolio_size} ({portfolio_pct})</span></span><span class="stat-label">ARENA portfolio covered</span></div>
     <div class="stat"><span class="stat-value">{n_failures}</span><span class="stat-label">With failure mode</span></div>
     <div class="stat"><span class="stat-value">{len(records) - n_failures}</span><span class="stat-label">No major failure</span></div>
   </div>
@@ -1131,7 +1131,7 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
       </div>
       <div class="results-header" style="display:flex;align-items:center;padding-bottom:8px">
         <span><strong id="count-label">{n} records</strong> · click any card to view detail</span>
-        <select id="synth-mode" style="font-size:12px;padding:5px 8px;border:1px solid #e2e8f0;border-radius:6px;background:#f8fafc;color:#475569;margin-left:12px;cursor:pointer">
+        <select id="synth-mode" style="font-size:16px;padding:5px 8px;border:1px solid #e2e8f0;border-radius:6px;background:#f8fafc;color:#475569;margin-left:12px;cursor:pointer">
           <option value="brief">Brief summary</option>
           <option value="short">Short report</option>
           <option value="detailed" selected>Detailed report</option>
@@ -1141,7 +1141,7 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
       <div style="padding-bottom:8px">
         <textarea id="synth-context" rows="2"
           placeholder="Optional: add focus or context for the synthesis — e.g. 'focus on grid connection risks' or 'I need evidence to assess a hydrogen proposal at approvals stage'"
-          style="width:100%;font-size:12px;padding:7px 10px;border:1px solid #e2e8f0;border-radius:6px;background:#f8fafc;color:#1e293b;resize:vertical;font-family:inherit;box-sizing:border-box"></textarea>
+          style="width:100%;font-size:16px;padding:7px 10px;border:1px solid #e2e8f0;border-radius:6px;background:#f8fafc;color:#1e293b;resize:vertical;font-family:inherit;box-sizing:border-box"></textarea>
       </div>
       <div class="pagination">
         <button class="page-btn" id="btn-prev" onclick="changePage(-1)">&#8592; Prev</button>
@@ -1156,7 +1156,7 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
 <!-- ── Analysis tab ── -->
 <div class="tab-content" id="tc-analysis">
   <div class="an-page">
-    <div id="an-warn" style="display:none;background:#fef3c7;border:1px solid #f59e0b;border-radius:6px;padding:8px 14px;margin-bottom:10px;font-size:12px;color:#92400e"></div>
+    <div id="an-warn" style="display:none;background:#fef3c7;border:1px solid #f59e0b;border-radius:6px;padding:8px 14px;margin-bottom:10px;font-size:16px;color:#92400e"></div>
     <div class="an-stats" id="an-stats"></div>
     <div class="an-grid">
       <div class="an-card an-wide">
@@ -1214,7 +1214,7 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
   <div class="bench-layout">
     <div class="bench-nav" id="bench-nav"></div>
     <div class="bench-main" id="bench-main">
-      <div style="color:#94a3b8;padding:40px;font-size:14px;text-align:center">
+      <div style="color:#94a3b8;padding:40px;font-size:18px;text-align:center">
         Select a dataset from the left panel.
       </div>
     </div>
@@ -1274,12 +1274,12 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
         <div class="modal-section-label">QA verification</div>
         <div id="m-qa-verdict"></div>
         <div class="qa-excerpt" id="m-qa-text" style="margin-top:8px"></div>
-        <div style="font-size:12px;color:#64748b;margin-top:6px" id="m-qa-note"></div>
+        <div style="font-size:16px;color:#64748b;margin-top:6px" id="m-qa-note"></div>
       </div>
       <div id="m-corr-wrap" class="modal-section">
         <div class="modal-section-label">Corroboration</div>
         <div class="modal-section-value" id="m-corr"></div>
-        <div style="font-size:12px;color:#64748b;margin-top:4px" id="m-corr-titles"></div>
+        <div style="font-size:16px;color:#64748b;margin-top:4px" id="m-corr-titles"></div>
       </div>
       <div id="m-note-wrap" class="modal-section">
         <div class="modal-section-label">Confidence note</div>
@@ -1649,7 +1649,7 @@ function renderPage() {{
   const container = document.getElementById('cards');
   container.innerHTML = '';
   if (total === 0) {{
-    container.innerHTML = '<div style="color:#94a3b8;font-size:14px;padding:20px">No records match the current filters.</div>';
+    container.innerHTML = '<div style="color:#94a3b8;font-size:18px;padding:20px">No records match the current filters.</div>';
     return;
   }}
   pageRecs.forEach(r => {{
@@ -2127,7 +2127,7 @@ function openModal(r) {{
   const projLink = r.project_page_url
     ? `<a href="${{r.project_page_url}}" target="_blank" class="src-link src-link-proj">Project page</a>` : '';
   document.getElementById('m-links').innerHTML =
-    (linkBlocks + projLink) || '<span style="color:#94a3b8;font-size:13px">No source links available</span>';
+    (linkBlocks + projLink) || '<span style="color:#94a3b8;font-size:17px">No source links available</span>';
 
   document.getElementById('overlay').classList.add('active');
   document.body.style.overflow = 'hidden';
@@ -2150,11 +2150,11 @@ function renderAnalysis(recs) {{
   const sevMinMod = recs.filter(r => r.issue_severity === 'minor' || r.issue_severity === 'moderate').length;
   const sevRatio = sevMinMod > 0 ? (sevMajCrit / sevMinMod).toFixed(2) : '—';
   const isFiltered = total < RECORDS.length;
-  const totalLabel = isFiltered ? `${{total.toLocaleString()}} <span style="font-size:14px;color:#64748b">of ${{RECORDS.length.toLocaleString()}}</span>` : total.toLocaleString();
+  const totalLabel = isFiltered ? `${{total.toLocaleString()}} <span style="font-size:18px;color:#64748b">of ${{RECORDS.length.toLocaleString()}}</span>` : total.toLocaleString();
   document.getElementById('an-stats').innerHTML = `
     <div class="stat"><span class="stat-value">${{totalLabel}}</span><span class="stat-label">${{isFiltered ? 'Filtered records' : 'Total records'}}</span></div>
     <div class="stat"><span class="stat-value">${{nProjects.toLocaleString()}}</span><span class="stat-label">Projects covered</span></div>
-    <div class="stat"><span class="stat-value">${{withFailure.toLocaleString()}} <span style="font-size:14px;color:#64748b">(${{failPct}}%)</span></span><span class="stat-label">Records with any failure</span></div>
+    <div class="stat"><span class="stat-value">${{withFailure.toLocaleString()}} <span style="font-size:18px;color:#64748b">(${{failPct}}%)</span></span><span class="stat-label">Records with any failure</span></div>
     <div class="stat"><span class="stat-value">${{sevRatio}}</span><span class="stat-label">Severity ratio (major÷mild)</span></div>`;
 
   const warnEl = document.getElementById('an-warn');
@@ -2483,12 +2483,12 @@ function anCooccurrence(recs) {{
   }}
   function cellFg(v) {{ return v / maxVal > 0.45 ? 'white' : '#1e293b'; }}
 
-  const th = `style="padding:3px 5px;background:#f8fafc;border:1px solid #e2e8f0;font-size:9px;font-weight:700;color:#475569"`;
-  const rotTh = `style="padding:3px;background:#f8fafc;border:1px solid #e2e8f0;font-size:9px;font-weight:600;color:#475569;writing-mode:vertical-lr;transform:rotate(180deg);height:90px;text-align:left;vertical-align:bottom"`;
+  const th = `style="padding:3px 5px;background:#f8fafc;border:1px solid #e2e8f0;font-size:13px;font-weight:700;color:#475569"`;
+  const rotTh = `style="padding:3px;background:#f8fafc;border:1px solid #e2e8f0;font-size:13px;font-weight:600;color:#475569;writing-mode:vertical-lr;transform:rotate(180deg);height:90px;text-align:left;vertical-align:bottom"`;
 
-  let html = `<table style="border-collapse:collapse;font-size:10px;width:100%">`;
+  let html = `<table style="border-collapse:collapse;font-size:14px;width:100%">`;
   // Header: columns = secondary
-  html += `<tr><td ${{th}} style="color:#94a3b8;font-size:8px">Primary ↓ / Secondary →</td>`;
+  html += `<tr><td ${{th}} style="color:#94a3b8;font-size:12px">Primary ↓ / Secondary →</td>`;
   FMS.forEach(s => {{ html += `<th ${{rotTh}}>${{SHORT[s]||s}}</th>`; }});
   html += `</tr>`;
 
@@ -2521,7 +2521,7 @@ const PALETTE = ['#6366f1','#0891b2','#059669','#f97316','#a855f7','#ec4899','#c
     const btn = document.createElement('button');
     btn.className = 'bench-nav-btn';
     btn.dataset.key = key;
-    btn.innerHTML = `<span>${{ds.title}}</span><span style="font-size:10px;opacity:0.65">${{ds.rows.length}}</span>`;
+    btn.innerHTML = `<span>${{ds.title}}</span><span style="font-size:14px;opacity:0.65">${{ds.rows.length}}</span>`;
     btn.onclick = () => loadBenchmark(key);
     nav.appendChild(btn);
   }});
@@ -3026,7 +3026,7 @@ function showKeyForm() {{
   document.getElementById('synth-meta').textContent = 'Stored in browser localStorage — never sent anywhere except api.anthropic.com';
   document.getElementById('synth-body').innerHTML = `
     <div class="synth-key-form">
-      <div style="font-size:13px;color:#475569">Enter your Anthropic API key to enable synthesis. It will be saved locally and reused.</div>
+      <div style="font-size:17px;color:#475569">Enter your Anthropic API key to enable synthesis. It will be saved locally and reused.</div>
       <input class="synth-key-input" id="synth-key-input" type="password" placeholder="sk-ant-…" autocomplete="off">
       <button class="synth-key-btn" onclick="saveKeyAndRun()">Save and synthesise</button>
     </div>`;
@@ -3085,7 +3085,7 @@ async function runSynthesis(apiKey) {{
       const err = await response.json().catch(() => ({{}}));
       if (response.status === 401) {{
         localStorage.removeItem('arena_api_key');
-        body.innerHTML = '<div style="color:#dc2626;font-size:13px;padding:8px 0">Invalid API key — removed. Click Synthesise again to re-enter.</div>';
+        body.innerHTML = '<div style="color:#dc2626;font-size:17px;padding:8px 0">Invalid API key — removed. Click Synthesise again to re-enter.</div>';
         return;
       }}
       throw new Error(err.error?.message || `HTTP ${{response.status}}`);
@@ -3138,7 +3138,7 @@ async function runSynthesis(apiKey) {{
   }} catch(e) {{
     document.getElementById('synth-cursor')?.remove();
     streamEl.textContent = '';
-    body.innerHTML += `<div style="color:#dc2626;font-size:13px;padding:8px 0">Error: ${{e.message}}</div>`;
+    body.innerHTML += `<div style="color:#dc2626;font-size:17px;padding:8px 0">Error: ${{e.message}}</div>`;
   }} finally {{
     document.getElementById('synth-btn').disabled = false;
   }}
@@ -3220,41 +3220,41 @@ function generateReportHtml(rep) {{
 body{{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f8fafc;color:#1e293b;margin:0;padding:0}}
 .rp-page{{max-width:820px;margin:0 auto;padding:40px 24px 80px}}
 .rp-header{{margin-bottom:32px;padding-bottom:20px;border-bottom:2px solid #e2e8f0}}
-.rp-mode{{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#6366f1;margin-bottom:8px}}
-.rp-title{{font-size:22px;font-weight:800;color:#0f172a;margin-bottom:6px;line-height:1.3}}
-.rp-meta{{font-size:12px;color:#94a3b8}}
-.rp-context{{margin-top:10px;font-size:13px;color:#475569;background:#f1f5f9;padding:10px 14px;border-radius:8px;border-left:3px solid #6366f1}}
-.rp-body{{font-size:14px;color:#1e293b;line-height:1.8}}
-.rp-body h1{{font-size:20px;font-weight:800;margin:28px 0 10px;color:#0f172a}}
-.rp-body h2{{font-size:17px;font-weight:700;margin:24px 0 8px;color:#0f172a;border-bottom:1px solid #e2e8f0;padding-bottom:4px}}
-.rp-body h3{{font-size:15px;font-weight:700;margin:18px 0 6px;color:#1e293b}}
+.rp-mode{{font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#6366f1;margin-bottom:8px}}
+.rp-title{{font-size:26px;font-weight:800;color:#0f172a;margin-bottom:6px;line-height:1.3}}
+.rp-meta{{font-size:16px;color:#94a3b8}}
+.rp-context{{margin-top:10px;font-size:17px;color:#475569;background:#f1f5f9;padding:10px 14px;border-radius:8px;border-left:3px solid #6366f1}}
+.rp-body{{font-size:18px;color:#1e293b;line-height:1.8}}
+.rp-body h1{{font-size:24px;font-weight:800;margin:28px 0 10px;color:#0f172a}}
+.rp-body h2{{font-size:21px;font-weight:700;margin:24px 0 8px;color:#0f172a;border-bottom:1px solid #e2e8f0;padding-bottom:4px}}
+.rp-body h3{{font-size:19px;font-weight:700;margin:18px 0 6px;color:#1e293b}}
 .rp-body p{{margin:8px 0}}
 .rp-body ul,.rp-body ol{{margin:8px 0 8px 24px}}
 .rp-body li{{margin:4px 0}}
 .rp-body strong{{font-weight:700;color:#0f172a}}
 .rp-body hr{{border:none;border-top:1px solid #e2e8f0;margin:20px 0}}
-.rp-body code{{font-family:monospace;font-size:12px;background:#f1f5f9;padding:1px 5px;border-radius:3px}}
+.rp-body code{{font-family:monospace;font-size:16px;background:#f1f5f9;padding:1px 5px;border-radius:3px}}
 .record-link{{color:#6366f1!important;text-decoration:underline;text-decoration-style:dotted;cursor:pointer;font-weight:500}}
 .record-link:hover{{color:#4f46e5!important}}
-.badge{{font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;color:white;white-space:nowrap}}
-.chip{{font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px;white-space:nowrap}}
+.badge{{font-size:14px;font-weight:700;padding:3px 9px;border-radius:20px;color:white;white-space:nowrap}}
+.chip{{font-size:14px;font-weight:600;padding:2px 8px;border-radius:20px;white-space:nowrap}}
 .chip-scale{{background:#e0f2fe;color:#0369a1}}
 .chip-tech{{background:#ede9fe;color:#6d28d9}}
 #record-tooltip{{position:fixed;z-index:9999;width:380px;background:white;border:1px solid #e2e8f0;border-radius:12px;box-shadow:0 12px 32px rgba(0,0,0,.16);max-height:480px;overflow-y:auto;display:none}}
 #record-tooltip .rt-header{{display:flex;align-items:center;justify-content:space-between;padding:12px 14px 8px;border-bottom:1px solid #f1f5f9;position:sticky;top:0;background:white;z-index:1}}
-#record-tooltip .rt-id{{font-size:10px;color:#6366f1;font-weight:700;letter-spacing:.5px}}
-#record-tooltip .rt-close{{font-size:14px;color:#94a3b8;cursor:pointer;padding:2px 4px}}
+#record-tooltip .rt-id{{font-size:14px;color:#6366f1;font-weight:700;letter-spacing:.5px}}
+#record-tooltip .rt-close{{font-size:18px;color:#94a3b8;cursor:pointer;padding:2px 4px}}
 #record-tooltip .rt-close:hover{{color:#475569}}
-#record-tooltip .rt-body{{padding:10px 14px 14px;font-size:12px;line-height:1.6;display:flex;flex-direction:column;gap:6px}}
-#record-tooltip .rt-project{{font-weight:700;color:#1e293b;font-size:13px}}
+#record-tooltip .rt-body{{padding:10px 14px 14px;font-size:16px;line-height:1.6;display:flex;flex-direction:column;gap:6px}}
+#record-tooltip .rt-project{{font-weight:700;color:#1e293b;font-size:17px}}
 #record-tooltip .rt-chips{{display:flex;flex-wrap:wrap;gap:4px}}
 #record-tooltip .rt-what{{color:#334155}}
 #record-tooltip .rt-lesson{{color:#475569;font-style:italic}}
-#record-tooltip .rt-excerpt{{font-size:11px;color:#64748b;background:#f8fafc;border-left:3px solid #e2e8f0;padding:6px 8px;border-radius:0 4px 4px 0}}
+#record-tooltip .rt-excerpt{{font-size:15px;color:#64748b;background:#f8fafc;border-left:3px solid #e2e8f0;padding:6px 8px;border-radius:0 4px 4px 0}}
 #record-tooltip .rt-footer{{display:flex;flex-wrap:wrap;gap:6px;padding-top:4px;border-top:1px solid #f1f5f9}}
-#record-tooltip .rt-src{{font-size:11px;color:#6366f1;text-decoration:none}}
+#record-tooltip .rt-src{{font-size:15px;color:#6366f1;text-decoration:none}}
 #record-tooltip .rt-src:hover{{text-decoration:underline}}
-.rp-footer{{margin-top:48px;padding-top:16px;border-top:1px solid #e2e8f0;font-size:11px;color:#94a3b8}}
+.rp-footer{{margin-top:48px;padding-top:16px;border-top:1px solid #e2e8f0;font-size:15px;color:#94a3b8}}
 </style>
 </head>
 <body>
@@ -3360,7 +3360,7 @@ document.addEventListener('click', e => {{
           \${{oc !== '—' ? \`<span class="badge" style="background:\${{OC_COLOURS[oc]||'#64748b'}}">\${{oc}}</span>\` : ''}}
         </div>
         <div style="display:flex;justify-content:space-between;align-items:center;padding-top:4px">
-          \${{year ? \`<span style="font-size:10px;color:#94a3b8">\${{year}}</span>\` : '<span></span>'}}
+          \${{year ? \`<span style="font-size:14px;color:#94a3b8">\${{year}}</span>\` : '<span></span>'}}
           \${{srcUrl ? \`<a class="rt-src" href="\${{srcUrl}}" target="_blank">\${{srcUrl.includes('assets') ? 'Open PDF ↗' : 'Open source ↗'}}</a>\` : ''}}
         </div>
       </div>\`;
