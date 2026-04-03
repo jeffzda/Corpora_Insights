@@ -75,6 +75,28 @@ QA_VERDICT_COLOURS = {
 }
 
 QA_DIR = ROOT / "insights" / "per_doc_qa"
+CHALLENGES_DIR = ROOT / "insights" / "per_doc_challenges"
+
+CHALLENGE_ORDER = [
+    "GRID_CONNECTION", "SCALING_TO_FIELD", "SOFTWARE_CONTROLS",
+    "SUPPLY_CHAIN", "REGULATORY_ENVIRONMENT", "SITE_CONTEXT",
+]
+CHALLENGE_SHORT = {
+    "GRID_CONNECTION": "Grid connection",
+    "SCALING_TO_FIELD": "Scaling to field",
+    "SOFTWARE_CONTROLS": "Software & controls",
+    "SUPPLY_CHAIN": "Supply chain",
+    "REGULATORY_ENVIRONMENT": "Regulatory environment",
+    "SITE_CONTEXT": "Site context",
+}
+CHALLENGE_COLOURS = {
+    "GRID_CONNECTION":        "#3b82f6",
+    "SCALING_TO_FIELD":       "#f97316",
+    "SOFTWARE_CONTROLS":      "#8b5cf6",
+    "SUPPLY_CHAIN":           "#ef4444",
+    "REGULATORY_ENVIRONMENT": "#14b8a6",
+    "SITE_CONTEXT":           "#ca8a04",
+}
 
 # ── Reference class matrix constants ────────────────────────────────────────
 
@@ -642,6 +664,21 @@ def load_qa_results() -> dict:
     return qa
 
 
+def load_challenge_tags() -> dict:
+    """Load challenge tags from per_doc_challenges/, keyed by record_id."""
+    if not CHALLENGES_DIR.exists():
+        return {}
+    paths = sorted(glob.glob(str(CHALLENGES_DIR / "doc_*_challenges.yaml")))
+    batches = _parallel_load_yaml(paths)
+    tags = {}
+    for results in batches:
+        for r in results:
+            rid = r.get("record_id")
+            if rid:
+                tags[rid] = [c["id"] for c in r.get("challenges", [])]
+    return tags
+
+
 def clean_record(r: dict) -> dict:
     return {k: (v if v is not None else "") for k, v in r.items()}
 
@@ -652,8 +689,13 @@ def distinct_sorted(records, field):
 
 
 def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = None,
-               qa_results: dict = None) -> str:
+               qa_results: dict = None, challenge_tags: dict = None) -> str:
     qa_results = qa_results or {}
+    challenge_tags = challenge_tags or {}
+    # Merge challenge tags onto records
+    for r in records:
+        rid = r.get("record_id")
+        r["challenges"] = challenge_tags.get(rid, []) if rid else []
     # Merge QA verdicts onto records
     for r in records:
         rid = r.get("record_id")
@@ -1163,6 +1205,21 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
         <div class="an-card-sub">Rows = primary failure mode · Columns = secondary failure mode · Cell = record count</div>
         <div id="an-cooccur" style="overflow-x:auto;margin-top:4px"></div>
       </div>
+      <div class="an-card an-wide">
+        <div class="an-card-title">Failure modes by challenge context</div>
+        <div class="an-card-sub">P(failure mode | challenge) — what goes wrong when each ex-ante challenge is the context? Dashed line = corpus baseline for each failure mode</div>
+        <canvas id="an-ch-fm"></canvas>
+      </div>
+      <div class="an-card">
+        <div class="an-card-title">Severity by challenge context</div>
+        <div class="an-card-sub">Escalation ratio (major+critical %) by challenge · Dashed line = corpus baseline</div>
+        <canvas id="an-ch-sev"></canvas>
+      </div>
+      <div class="an-card">
+        <div class="an-card-title">Severity by challenge × top failure mode</div>
+        <div class="an-card-sub">Escalation ratio for the dominant failure mode within each challenge</div>
+        <div id="an-ch-fm-sev" style="overflow-x:auto;margin-top:4px"></div>
+      </div>
       {matrix_html}
     </div>
   </div>
@@ -1272,6 +1329,9 @@ const RECORDS = {data_json};
 const FM_COLOURS = {fm_colours};
 const IS_COLOURS = {is_colours};
 const QA_COLOURS = {qa_colours};
+const CH_ORDER = {json.dumps(CHALLENGE_ORDER)};
+const CH_SHORT = {json.dumps(CHALLENGE_SHORT)};
+const CH_COLOURS = {json.dumps(CHALLENGE_COLOURS)};
 Chart.defaults.font.size = 14;
 Chart.defaults.plugins.legend.labels.font = {{ size: 14 }};
 Chart.defaults.plugins.tooltip.bodyFont = {{ size: 14 }};
@@ -2112,6 +2172,9 @@ function renderAnalysis(recs) {{
   anPhaseSev(recs);
   anSevRatio(recs);
   anCooccurrence(recs);
+  anChallengeFM(recs);
+  anChallengeSev(recs);
+  anChallengeFMSev(recs);
 }}
 
 const AN_PHASES = ['concept/feasibility','development/design','approvals/contracting','procurement',
@@ -2444,6 +2507,190 @@ function anCooccurrence(recs) {{
   }});
   html += `</table>`;
   document.getElementById('an-cooccur').innerHTML = html;
+}}
+
+// ── Challenge analysis ─────────────────────────────────────────
+
+function anChallengeFM(recs) {{
+  if (_anCharts.chFM) _anCharts.chFM.destroy();
+  const adv = recs.filter(r => r.failure_mode && r.failure_mode !== FM_NO);
+  if (adv.length === 0) return;
+
+  // Baseline FM distribution
+  const baseFM = {{}};
+  FM_ADV.forEach(fm => {{ baseFM[fm] = 0; }});
+  adv.forEach(r => {{ if (baseFM[r.failure_mode] !== undefined) baseFM[r.failure_mode]++; }});
+
+  // Per-challenge FM distribution
+  const chData = {{}};
+  const chTotals = {{}};
+  CH_ORDER.forEach(ch => {{ chData[ch] = {{}}; FM_ADV.forEach(fm => {{ chData[ch][fm] = 0; }}); chTotals[ch] = 0; }});
+  adv.forEach(r => {{
+    (r.challenges || []).forEach(ch => {{
+      if (chData[ch] && chData[ch][r.failure_mode] !== undefined) {{
+        chData[ch][r.failure_mode]++;
+        chTotals[ch]++;
+      }}
+    }});
+  }});
+
+  // Build 100% stacked horizontal bar — one bar per challenge
+  const labels = CH_ORDER.filter(ch => chTotals[ch] > 0).map(ch => `${{CH_SHORT[ch]}} (n=${{chTotals[ch]}})`);
+  const chFiltered = CH_ORDER.filter(ch => chTotals[ch] > 0);
+
+  const datasets = FM_ADV.map(fm => ({{
+    label: fm,
+    data: chFiltered.map(ch => chTotals[ch] > 0 ? (chData[ch][fm] / chTotals[ch] * 100) : 0),
+    backgroundColor: FM_COLOURS[fm],
+  }}));
+
+  _anCharts.chFM = new Chart(document.getElementById('an-ch-fm'), {{
+    type: 'bar',
+    data: {{ labels, datasets }},
+    options: {{
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {{
+        x: {{ stacked: true, max: 100, title: {{ display: true, text: '% of adverse records' }} }},
+        y: {{ stacked: true }}
+      }},
+      plugins: {{
+        legend: {{ position: 'bottom', labels: {{ boxWidth: 12, font: {{ size: 12 }} }} }},
+        tooltip: {{
+          callbacks: {{
+            label: ctx => `${{ctx.dataset.label}}: ${{ctx.raw.toFixed(1)}}%`
+          }}
+        }}
+      }}
+    }}
+  }});
+  document.getElementById('an-ch-fm').parentElement.style.minHeight = '420px';
+}}
+
+function anChallengeSev(recs) {{
+  if (_anCharts.chSev) _anCharts.chSev.destroy();
+  const adv = recs.filter(r => r.failure_mode && r.failure_mode !== FM_NO);
+  if (adv.length === 0) return;
+
+  // Baseline escalation ratio
+  const baseHigh = adv.filter(r => r.issue_severity === 'major' || r.issue_severity === 'critical').length;
+  const baseLow = adv.filter(r => r.issue_severity === 'minor' || r.issue_severity === 'moderate').length;
+  const baseTotal = baseHigh + baseLow;
+  const baseEsc = baseTotal > 0 ? (baseHigh / baseTotal * 100) : 0;
+
+  // Per-challenge escalation
+  const chEsc = {{}};
+  const chN = {{}};
+  CH_ORDER.forEach(ch => {{ chEsc[ch] = 0; chN[ch] = 0; }});
+  adv.forEach(r => {{
+    const sev = r.issue_severity;
+    if (sev !== 'minor' && sev !== 'moderate' && sev !== 'major' && sev !== 'critical') return;
+    (r.challenges || []).forEach(ch => {{
+      if (chN[ch] !== undefined) {{
+        chN[ch]++;
+        if (sev === 'major' || sev === 'critical') chEsc[ch]++;
+      }}
+    }});
+  }});
+
+  const chFiltered = CH_ORDER.filter(ch => chN[ch] > 0);
+  const labels = chFiltered.map(ch => `${{CH_SHORT[ch]}} (n=${{chN[ch]}})`);
+  const data = chFiltered.map(ch => chN[ch] > 0 ? (chEsc[ch] / chN[ch] * 100) : 0);
+  const colours = chFiltered.map(ch => CH_COLOURS[ch]);
+
+  _anCharts.chSev = new Chart(document.getElementById('an-ch-sev'), {{
+    type: 'bar',
+    data: {{
+      labels,
+      datasets: [
+        {{
+          data,
+          backgroundColor: colours,
+          borderColor: colours.map(c => c),
+          borderWidth: 1,
+          borderRadius: 3,
+        }},
+        {{
+          type: 'line',
+          label: `Corpus baseline (${{Math.round(baseEsc)}}%)`,
+          data: chFiltered.map(() => +baseEsc.toFixed(1)),
+          borderColor: '#64748b',
+          borderWidth: 2,
+          borderDash: [6, 3],
+          pointRadius: 0,
+          fill: false,
+        }}
+      ]
+    }},
+    options: {{
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {{
+        x: {{ title: {{ display: true, text: 'Escalation ratio (major+critical %)' }}, max: Math.max(50, ...data) + 5 }},
+        y: {{ grid: {{ display: false }} }}
+      }},
+      plugins: {{
+        legend: {{ display: true, labels: {{ filter: item => item.text && item.text.includes('Corpus'), font: {{ size: 9 }} }} }},
+        tooltip: {{ callbacks: {{ label: ctx => ctx.dataset.type === 'line' ? `Baseline: ${{Math.round(ctx.parsed.x)}}%` : `${{ctx.raw.toFixed(1)}}%` }} }}
+      }}
+    }}
+  }});
+  document.getElementById('an-ch-sev').parentElement.style.minHeight = '320px';
+}}
+
+function anChallengeFMSev(recs) {{
+  const adv = recs.filter(r => r.failure_mode && r.failure_mode !== FM_NO);
+  if (adv.length === 0) {{ document.getElementById('an-ch-fm-sev').innerHTML = ''; return; }}
+
+  // Per challenge × failure mode: severity counts
+  const data = {{}};
+  CH_ORDER.forEach(ch => {{ data[ch] = {{}}; }});
+  adv.forEach(r => {{
+    const fm = r.failure_mode, sev = r.issue_severity;
+    if (!fm || !sev) return;
+    (r.challenges || []).forEach(ch => {{
+      if (!data[ch]) return;
+      if (!data[ch][fm]) data[ch][fm] = {{ total: 0, high: 0 }};
+      data[ch][fm].total++;
+      if (sev === 'major' || sev === 'critical') data[ch][fm].high++;
+    }});
+  }});
+
+  // Build table: one row per challenge, showing top 3 FMs with escalation %
+  const th = `style="padding:5px 8px;background:#f8fafc;border:1px solid #e2e8f0;font-size:13px;font-weight:700;color:#475569"`;
+  const td = `style="padding:5px 8px;border:1px solid #e2e8f0;font-size:13px"`;
+
+  function escColour(pct) {{
+    if (pct >= 40) return '#dc2626';
+    if (pct >= 25) return '#f97316';
+    if (pct >= 15) return '#ca8a04';
+    return '#16a34a';
+  }}
+
+  let html = `<table style="border-collapse:collapse;width:100%">`;
+  html += `<tr><th ${{th}}>Challenge</th><th ${{th}}>Failure mode</th><th ${{th}} style="text-align:right">n</th><th ${{th}} style="text-align:right">Esc %</th><th ${{th}} style="width:100px"></th></tr>`;
+
+  CH_ORDER.forEach(ch => {{
+    const fms = Object.entries(data[ch] || {{}}).sort((a,b) => b[1].total - a[1].total).slice(0, 3);
+    if (fms.length === 0) return;
+    fms.forEach(([ fm, counts ], i) => {{
+      const esc = counts.total > 0 ? (counts.high / counts.total * 100) : 0;
+      const barW = Math.min(esc, 100);
+      const col = escColour(esc);
+      const chLabel = i === 0 ? `<strong style="color:${{CH_COLOURS[ch]}}">${{CH_SHORT[ch]}}</strong>` : '';
+      html += `<tr>`;
+      html += `<td ${{td}}>${{chLabel}}</td>`;
+      html += `<td ${{td}}>${{fm}}</td>`;
+      html += `<td ${{td}} style="text-align:right">${{counts.total}}</td>`;
+      html += `<td ${{td}} style="text-align:right;font-weight:600;color:${{col}}">${{esc.toFixed(0)}}%</td>`;
+      html += `<td ${{td}}><div style="background:${{col}};height:14px;width:${{barW}}%;border-radius:2px"></div></td>`;
+      html += `</tr>`;
+    }});
+  }});
+  html += `</table>`;
+  document.getElementById('an-ch-fm-sev').innerHTML = html;
 }}
 
 // ── Benchmarks ─────────────────────────────────────────────────
@@ -3367,20 +3614,23 @@ def main():
             raise SystemExit(f"No records found in {input_dir}")
 
     from concurrent.futures import ThreadPoolExecutor as _ThreadPool
-    with _ThreadPool(max_workers=3) as tp:
+    with _ThreadPool(max_workers=4) as tp:
         f_portfolio = tp.submit(load_portfolio_size)
         f_bench = tp.submit(load_benchmarks)
         f_qa = tp.submit(load_qa_results)
+        f_ch = tp.submit(load_challenge_tags)
     portfolio_size = f_portfolio.result()
     benchmarks = f_bench.result()
     qa_results = f_qa.result()
+    challenge_tags = f_ch.result()
     total_bench_rows = sum(len(v['rows']) for v in benchmarks.values())
     if not args.deduped:
         print(f"Loaded {len(records)} records from {Path(args.input)}")
     print(f"Loaded {total_bench_rows} benchmark rows across {len(benchmarks)} datasets")
     print(f"Loaded {len(qa_results)} QA verdicts from {QA_DIR}")
+    print(f"Loaded {len(challenge_tags)} challenge tags from {CHALLENGES_DIR}")
 
-    html = build_html(records, portfolio_size, benchmarks, qa_results)
+    html = build_html(records, portfolio_size, benchmarks, qa_results, challenge_tags)
     output_path.write_text(html, encoding="utf-8")
     print(f"Dashboard written to {output_path}")
 
