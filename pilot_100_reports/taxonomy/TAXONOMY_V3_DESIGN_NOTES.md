@@ -367,6 +367,26 @@ The challenge-filtered analysis produces stronger signals than the existing dash
 The matrices retain their role as the **entry point** — quick risk profile lookup for a
 reference class. The challenge layer provides the **analytical depth** underneath.
 
+### Known limitation: success rates are not comparable across challenges
+
+Success rates are not surfaced in dashboard matrices. Proponents are more inclined to report
+on technical successes (grid integration, scale-up) that represent material delivery milestones
+than on supporting considerations (supply chain, regulations) that went smoothly. If procurement
+or regulatory approval goes to plan, there is little incentive to document it — but a successful
+grid connection or first-of-kind deployment is a reportable achievement. This reporting bias
+systematically under-represents supply chain and regulatory successes relative to technical
+successes, making cross-challenge success rate comparisons unreliable.
+
+Failure mode distributions and severity ratios are not materially affected by this bias —
+when something goes wrong, it gets reported regardless of whether it's a technical problem or
+a procurement problem, because the purpose of KB documents is to share what was learned from
+difficulties. The asymmetry in reporting incentives applies mainly to the success side.
+
+The success/failure/neutral classification remains valuable for the LLM synthesis step (Level 3)
+— when filtering records and generating a brief, having the successes in the set lets the
+synthesis contrast what went wrong against what went right. But the aggregate success *rate*
+per challenge should not be presented as a comparable statistic.
+
 ### Downstream application: LLM-generated briefings
 
 The challenge tags enable a powerful workflow for proposal assessment:
