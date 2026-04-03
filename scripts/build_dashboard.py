@@ -2207,8 +2207,8 @@ function anPhaseFM(recs) {{
       responsive: true, maintainAspectRatio: true,
       plugins: {{ legend: {{ position: 'right', labels: {{ font: {{ size: 14 }}, boxWidth: 14 }} }} }},
       scales: {{
-        x: {{ stacked: true, ticks: {{ font: {{ size: 10 }} }}, grid: {{ color: '#f1f5f9' }} }},
-        y: {{ stacked: true, title: {{ display: true, text: 'Record count', font: {{ size: 10 }} }}, grid: {{ color: '#f1f5f9' }} }}
+        x: {{ stacked: true, ticks: {{ font: {{ size: 14 }} }}, grid: {{ color: '#f1f5f9' }} }},
+        y: {{ stacked: true, title: {{ display: true, text: 'Record count', font: {{ size: 14 }} }}, grid: {{ color: '#f1f5f9' }} }}
       }}
     }}
   }});
@@ -2233,8 +2233,8 @@ function anFMFreq(recs) {{
         label: ctx => `${{ctx.parsed.x.toFixed(1)}}%`
       }} }} }},
       scales: {{
-        x: {{ max: 100, title: {{ display: true, text: '% of records', font: {{ size: 10 }} }}, grid: {{ color: '#f1f5f9' }} }},
-        y: {{ ticks: {{ font: {{ size: 10 }} }}, grid: {{ display: false }} }}
+        x: {{ max: 100, title: {{ display: true, text: '% of records', font: {{ size: 14 }} }}, grid: {{ color: '#f1f5f9' }} }},
+        y: {{ ticks: {{ font: {{ size: 14 }} }}, grid: {{ display: false }} }}
       }}
     }}
   }});
@@ -2280,8 +2280,8 @@ function anTypeFailRate(recs) {{
         }} }}
       }},
       scales: {{
-        x: {{ stacked: true, max: 100, title: {{ display: true, text: '% of records by severity', font: {{ size: 10 }} }}, grid: {{ color: '#f1f5f9' }} }},
-        y: {{ stacked: true, ticks: {{ font: {{ size: 10 }} }}, grid: {{ display: false }} }}
+        x: {{ stacked: true, max: 100, title: {{ display: true, text: '% of records by severity', font: {{ size: 14 }} }}, grid: {{ color: '#f1f5f9' }} }},
+        y: {{ stacked: true, ticks: {{ font: {{ size: 14 }} }}, grid: {{ display: false }} }}
       }}
     }}
   }});
@@ -2313,7 +2313,7 @@ function anTechFM(recs) {{
       plugins: {{ legend: {{ display: false }} }},
       scales: {{
         x: {{ stacked: true, grid: {{ color: '#f1f5f9' }} }},
-        y: {{ stacked: true, ticks: {{ font: {{ size: 10 }} }}, grid: {{ display: false }} }}
+        y: {{ stacked: true, ticks: {{ font: {{ size: 14 }} }}, grid: {{ display: false }} }}
       }}
     }}
   }});
@@ -2388,8 +2388,8 @@ function anPhaseSev(recs) {{
         }} }}
       }},
       scales: {{
-        x: {{ stacked: true, ticks: {{ font: {{ size: 10 }} }}, grid: {{ color: '#f1f5f9' }} }},
-        y: {{ stacked: true, title: {{ display: true, text: 'Record count', font: {{ size: 10 }} }}, grid: {{ color: '#f1f5f9' }} }}
+        x: {{ stacked: true, ticks: {{ font: {{ size: 14 }} }}, grid: {{ color: '#f1f5f9' }} }},
+        y: {{ stacked: true, title: {{ display: true, text: 'Record count', font: {{ size: 14 }} }}, grid: {{ color: '#f1f5f9' }} }}
       }}
     }}
   }});
@@ -2444,8 +2444,8 @@ function anSevRatio(recs) {{
         tooltip: {{ callbacks: {{ label: ctx => ctx.dataset.type === 'line' ? `Baseline: ${{ctx.parsed.x.toFixed(3)}}` : `Ratio: ${{ctx.parsed.x.toFixed(3)}}` }} }}
       }},
       scales: {{
-        x: {{ title: {{ display: true, text: 'Escalation ratio', font: {{ size: 10 }} }}, grid: {{ color: '#f1f5f9' }} }},
-        y: {{ ticks: {{ font: {{ size: 10 }} }}, grid: {{ display: false }} }}
+        x: {{ title: {{ display: true, text: 'Escalation ratio', font: {{ size: 14 }} }}, grid: {{ color: '#f1f5f9' }} }},
+        y: {{ ticks: {{ font: {{ size: 14 }} }}, grid: {{ display: false }} }}
       }}
     }}
   }});
@@ -2686,8 +2686,8 @@ function buildRangeBar(rows, labelField, lowField, highField, xLabel) {{
         callbacks: {{ label: ctx => `${{ctx.dataset.label}}: ${{ctx.raw[0]?.toFixed(0)}} – ${{ctx.raw[1]?.toFixed(0)}}` }}
       }} }},
       scales: {{
-        x: {{ title: {{ display: true, text: xLabel, font: {{ size: 11 }} }}, grid: {{ color: '#f1f5f9' }} }},
-        y: {{ ticks: {{ font: {{ size: 11 }} }}, grid: {{ display: false }} }}
+        x: {{ title: {{ display: true, text: xLabel, font: {{ size: 15 }} }}, grid: {{ color: '#f1f5f9' }} }},
+        y: {{ ticks: {{ font: {{ size: 15 }} }}, grid: {{ display: false }} }}
       }}
     }}
   }};
@@ -2732,8 +2732,8 @@ function buildCapexLine(rows) {{
       maintainAspectRatio: true,
       plugins: {{ legend: {{ position: 'right', labels: {{ font: {{ size: 14 }}, boxWidth: 14 }} }} }},
       scales: {{
-        x: {{ type: 'linear', title: {{ display: true, text: 'Scenario Year', font: {{ size: 11 }} }}, grid: {{ color: '#f1f5f9' }} }},
-        y: {{ title: {{ display: true, text: 'AUD$/kW (midpoint)', font: {{ size: 11 }} }}, grid: {{ color: '#f1f5f9' }} }}
+        x: {{ type: 'linear', title: {{ display: true, text: 'Scenario Year', font: {{ size: 15 }} }}, grid: {{ color: '#f1f5f9' }} }},
+        y: {{ title: {{ display: true, text: 'AUD$/kW (midpoint)', font: {{ size: 15 }} }}, grid: {{ color: '#f1f5f9' }} }}
       }}
     }}
   }};
@@ -2786,8 +2786,8 @@ function buildMACcurve(rows) {{
         tooltip: {{ callbacks: {{ label: ctx => `${{ctx.dataset.label}}: ${{ctx.parsed.x?.toFixed(0) ?? ctx.raw?.toFixed(0)}}` }} }}
       }},
       scales: {{
-        x: {{ title: {{ display: true, text: 'AUD$/tCO₂e (midpoint)', font: {{ size: 11 }} }}, grid: {{ color: '#f1f5f9' }} }},
-        y: {{ ticks: {{ font: {{ size: 10 }} }}, grid: {{ display: false }} }}
+        x: {{ title: {{ display: true, text: 'AUD$/tCO₂e (midpoint)', font: {{ size: 15 }} }}, grid: {{ color: '#f1f5f9' }} }},
+        y: {{ ticks: {{ font: {{ size: 14 }} }}, grid: {{ display: false }} }}
       }}
     }}
   }};
@@ -2845,8 +2845,8 @@ function buildCFScatter(rows) {{
         }} }}
       }},
       scales: {{
-        x: {{ title: {{ display: true, text: 'Designed CF (%)', font: {{ size: 11 }} }}, min: 0, grid: {{ color: '#f1f5f9' }} }},
-        y: {{ title: {{ display: true, text: 'Actual CF (%)', font: {{ size: 11 }} }}, min: 0, grid: {{ color: '#f1f5f9' }} }}
+        x: {{ title: {{ display: true, text: 'Designed CF (%)', font: {{ size: 15 }} }}, min: 0, grid: {{ color: '#f1f5f9' }} }},
+        y: {{ title: {{ display: true, text: 'Actual CF (%)', font: {{ size: 15 }} }}, min: 0, grid: {{ color: '#f1f5f9' }} }}
       }}
     }}
   }};
@@ -2898,12 +2898,12 @@ function buildRTEbar(rows) {{
       responsive: true,
       maintainAspectRatio: true,
       plugins: {{
-        legend: {{ position: 'top', labels: {{ font: {{ size: 11 }}, boxWidth: 12 }} }},
+        legend: {{ position: 'top', labels: {{ font: {{ size: 15 }}, boxWidth: 12 }} }},
         tooltip: {{ callbacks: {{ label: ctx => `${{ctx.dataset.label}}: ${{ctx.parsed.x?.toFixed(1)}}%` }} }}
       }},
       scales: {{
-        x: {{ title: {{ display: true, text: 'Round-Trip Efficiency (%)', font: {{ size: 11 }} }}, min: 0, max: 100, grid: {{ color: '#f1f5f9' }} }},
-        y: {{ ticks: {{ font: {{ size: 11 }} }}, grid: {{ display: false }} }}
+        x: {{ title: {{ display: true, text: 'Round-Trip Efficiency (%)', font: {{ size: 15 }} }}, min: 0, max: 100, grid: {{ color: '#f1f5f9' }} }},
+        y: {{ ticks: {{ font: {{ size: 15 }} }}, grid: {{ display: false }} }}
       }}
     }}
   }};
