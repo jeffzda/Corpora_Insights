@@ -1496,10 +1496,6 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
             <select id="rr-category" onchange="computeRisk()"><option value="">— Select —</option></select>
           </div>
           <div class="risk-field">
-            <label>Delivery dimension</label>
-            <select id="rr-dimension" onchange="computeRisk()"><option value="">— Select —</option></select>
-          </div>
-          <div class="risk-field">
             <label>Activity type</label>
             <select id="rr-activity" onchange="computeRisk()"><option value="">— Select —</option></select>
           </div>
@@ -3866,14 +3862,13 @@ function initRiskRating() {{
     }});
   }};
   sel('rr-category', RISK_DATA.by_category);
-  sel('rr-dimension', RISK_DATA.by_dimension, k => DIM_SHORT[k] || k);
   sel('rr-activity', RISK_DATA.by_activity);
   sel('rr-proponent', RISK_DATA.by_proponent);
   sel('rr-phase', RISK_DATA.by_phase);
 }}
 
 function resetRisk() {{
-  ['rr-category','rr-dimension','rr-activity','rr-proponent','rr-phase','rr-consortium'].forEach(id =>
+  ['rr-category','rr-activity','rr-proponent','rr-phase','rr-consortium'].forEach(id =>
     document.getElementById(id).value = '');
   document.getElementById('rr-output').innerHTML =
     '<div style="color:#94a3b8;font-size:18px;padding:40px 0;text-align:center">Select at least one attribute to see the risk profile.</div>';
@@ -3884,13 +3879,12 @@ function computeRisk() {{
   if (!R || !R.corpus) return;
 
   const cat = document.getElementById('rr-category').value;
-  const dim = document.getElementById('rr-dimension').value;
   const act = document.getElementById('rr-activity').value;
   const pro = document.getElementById('rr-proponent').value;
   const ph  = document.getElementById('rr-phase').value;
   const con = document.getElementById('rr-consortium').value;
 
-  if (!cat && !dim && !act && !pro && !ph && !con) {{
+  if (!cat && !act && !pro && !ph && !con) {{
     resetRisk();
     return;
   }}
@@ -3904,10 +3898,6 @@ function computeRisk() {{
   if (cat && R.by_category[cat]) {{
     const d = R.by_category[cat];
     dims.push({{ name: 'Category', label: cat, adv: d.adv_rate, sev: d.sev_pct, n: d.n, top_fm: d.top_fm, top3: d.top3_fm, weight: 3 }});
-  }}
-  if (dim && R.by_dimension[dim]) {{
-    const d = R.by_dimension[dim];
-    dims.push({{ name: 'Dimension', label: DIM_SHORT[dim] || dim, adv: d.adv_rate, sev: d.sev_pct, n: d.n, top_fm: d.top_fm, top3: d.top3_fm, weight: 3 }});
   }}
   if (act && R.by_activity[act]) {{
     const d = R.by_activity[act];
