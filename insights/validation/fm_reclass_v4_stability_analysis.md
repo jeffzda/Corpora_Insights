@@ -96,22 +96,98 @@ Rows = v3 (baseline) primary. Columns = v4 (new) primary. Each row sums to 100%.
 
 Technical underperformance now appears as secondary in 1,405 records. In the previous data (old taxonomy), it appeared in 4. This was the data gap that prompted this reclassification.
 
+## Intra-rater reliability test (identical prompt, run 1 vs run 2)
+
+The v4 prompt was run a second time on all 16,931 records to measure pure stochastic noise — same model, same prompt, same data. This is analogous to the same human rater reviewing the same cases on a different day.
+
+### Primary failure mode
+
+| Metric | Value |
+|---|---|
+| Agreement | 15,981 / 16,931 (94.4%) |
+| Disagreed | 950 / 16,931 (5.6%) |
+| Matched via primary/secondary swap | 645 (3.8%) |
+| Hard disagreement (no match in either) | 305 (1.8%) |
+
+**The stochastic noise floor for primary FM classification is ~5.6%.** Of the disagreements, most (3.8%) are primary/secondary reordering — the model identified the same two failure modes but ranked them differently. Only 1.8% of records land in a genuinely unrelated category across identical runs.
+
+### Secondary failure mode
+
+| Metric | n | % |
+|---|---|---|
+| Both null (agree, no secondary) | 7,498 | 44.3% |
+| Both same (agree on secondary) | 7,410 | 43.8% |
+| One null, one not | 664 | 3.9% |
+| Both present, different | 1,359 | 8.0% |
+| **Total secondary agreement** | **14,908** | **88.1%** |
+
+Secondary FM is noisier than primary (88.1% vs 94.4%), as expected — the model is less decisive about the co-occurring failure mode.
+
+### Confidence by agreement
+
+| Group | Mean confidence | Median | Stdev |
+|---|---|---|---|
+| Agreed (primary) | 0.885 | 0.88 | 0.052 |
+| Disagreed (primary) | 0.842 | 0.82 | 0.048 |
+
+Disagreed records have systematically lower confidence, confirming that the model's self-reported confidence is a meaningful signal for classification uncertainty.
+
+### Intra-rater stability matrix
+
+Rows = run 1 primary. Columns = run 2 primary. Each row sums to 100%.
+
+| Run 1 category | no failure | commercial | coordination | data | execution | regulatory | tech underperf | unval integr | n |
+|---|---|---|---|---|---|---|---|---|---|
+| **no failure** | **97.9** | 0.5 | 0.4 | 0.5 | 0.3 | 0.2 | 0.2 | 0.0 | 4,977 |
+| **commercial** | 1.6 | **94.9** | 1.5 | 0.3 | 0.3 | 0.8 | 0.5 | 0.0 | 2,432 |
+| **data** | 1.4 | 0.5 | 1.0 | **93.7** | 0.4 | 0.5 | 2.0 | 0.5 | 1,678 |
+| **regulatory** | 0.5 | 1.3 | 1.9 | 0.5 | 0.5 | **94.0** | 1.0 | 0.3 | 1,641 |
+| **tech underperf** | 1.0 | 1.4 | 0.2 | 1.2 | 1.5 | 0.4 | **92.7** | 1.7 | 1,990 |
+| **coordination** | 1.1 | 1.5 | **91.6** | 0.8 | 2.0 | 1.8 | 0.1 | 1.0 | 2,052 |
+| **execution** | 0.6 | 0.7 | 2.8 | 0.7 | **91.7** | 0.8 | 2.3 | 0.5 | 1,317 |
+| **unval integr** | 0.1 | 0.1 | 2.3 | 1.1 | 0.6 | 0.5 | 5.8 | **89.6** | 843 |
+
+All categories are 2-4 percentage points more stable than the v3→v4 comparison, confirming that a portion of the earlier drift was prompt-induced (adding the secondary FM field), not random noise.
+
+### Comparison: prompt change vs stochastic noise
+
+| Source of disagreement | Primary FM disagreement rate | Hard disagreement (no match either) |
+|---|---|---|
+| **Prompt change** (v3→v4, adding secondary) | 8.9% | 4.3% |
+| **Stochastic noise** (v4 run 1 vs run 2) | 5.6% | 1.8% |
+| **Difference** (attributable to prompt change) | 3.3% | 2.5% |
+
+The prompt change (asking for secondary FM) accounts for roughly 3 percentage points of additional primary FM instability beyond the stochastic baseline. This is consistent with the model reordering primary/secondary when given the option.
+
+### Category stability tiers (revised with intra-rater data)
+
+| Tier | Categories | Intra-rater stability | v3→v4 stability |
+|---|---|---|---|
+| **Tier 1** (>94%) | no failure, commercial, data, regulatory | 93.7–97.9% | 91.4–98.8% |
+| **Tier 2** (91-93%) | tech underperformance, coordination, execution | 91.6–92.7% | 84.0–87.2% |
+| **Tier 3** (<91%) | unvalidated integration | 89.6% | 78.8% |
+
+Unvalidated integration remains the least stable category. The unvalidated integration ↔ technical underperformance boundary (5.8% leakage) is the weakest joint in the taxonomy under both prompt change and stochastic noise conditions.
+
 ## Implications for dashboard use
 
-1. **Portfolio-level patterns are robust.** Classification noise is roughly symmetric and washes out across hundreds of records. The dominant failure modes, adversity rates by category, and severity distributions are reliable.
+1. **Portfolio-level patterns are robust.** The ~5.6% noise floor is roughly symmetric across categories and washes out across hundreds of records. Dominant failure modes, adversity rates by category, and severity distributions are reliable at the portfolio level.
 
-2. **Individual record classifications carry ~5-10% uncertainty.** Do not stake a decision on a single record's failure mode assignment.
+2. **Individual record classifications carry ~5-6% uncertainty on primary FM and ~12% on secondary FM.** Do not stake a decision on a single record's failure mode assignment.
 
-3. **The unvalidated integration / technical underperformance boundary is the weakest joint.** If presenting findings that distinguish these two, caveat it.
+3. **The unvalidated integration / technical underperformance boundary is the weakest joint.** ~6% leakage in both directions even under identical conditions. Any analysis that hinges on distinguishing these two categories should be caveated.
 
-4. **~2% of adverse records may not be genuinely adverse.** The adverse/non-adverse threshold is a soft boundary. Haiku reclassified 385 previously-adverse records as non-failures with high confidence (0.913).
+4. **The adverse/non-adverse boundary is soft at the margins.** ~1-2% of records classified as adverse may be borderline non-failures. The model's confidence score is a useful signal for identifying these borderline cases.
 
-5. **A true reproducibility test (identical prompt, ~$10) would establish a proper error bar** by isolating stochastic model noise from prompt-induced reordering. Not yet performed.
+5. **Self-reported confidence is meaningful.** Records that change classification between runs have systematically lower confidence (0.842 vs 0.885). Consider filtering to confidence > 0.85 for high-stakes analysis.
+
+6. **An inter-rater test (different model, e.g. Sonnet, on a stratified sample) would measure accuracy, not just precision.** This intra-rater test establishes the precision of the instrument — a necessary but not sufficient condition for accuracy.
 
 ## Files
 
 | File | Description |
 |---|---|
 | `scripts/batch_fm_reclass_v4.py` | v4 reclassification script |
-| `insights/per_doc_fm_v3/` | v4 results (overwrote v3) |
-| `insights/per_doc_fm_v3_baseline/` | v3 baseline (1,183 files, saved before v4 run) |
+| `insights/per_doc_fm_v3/` | v4 run 2 results (current) |
+| `insights/per_doc_fm_v3_run1/` | v4 run 1 results (saved for comparison) |
+| `insights/per_doc_fm_v3_baseline/` | v3 baseline (pre-v4, primary-only prompt) |
