@@ -2316,7 +2316,7 @@ function anTypeFailRate(recs) {{
     type: 'bar',
     data: {{ labels: types.map(t => `${{t}} (n=${{totals[t]}})`), datasets }},
     options: {{
-      indexAxis: 'y', responsive: true, maintainAspectRatio: true,
+      indexAxis: 'y', responsive: true, maintainAspectRatio: false,
       plugins: {{
         legend: {{ position: 'top', labels: {{ font: {{ size: 14 }}, boxWidth: 14 }} }},
         tooltip: {{ callbacks: {{
@@ -2329,6 +2329,7 @@ function anTypeFailRate(recs) {{
       }}
     }}
   }});
+  document.getElementById('an-type-fail').parentElement.style.minHeight = '520px';
 }}
 
 function anTechFM(recs) {{
