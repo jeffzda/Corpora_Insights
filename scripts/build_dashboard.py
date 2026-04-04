@@ -1240,7 +1240,7 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
       <div class="an-card an-wide">
         <div class="an-card-title">Failure modes by delivery dimension</div>
         <div class="an-card-sub">P(failure mode | dimension) — what goes wrong within each delivery dimension?</div>
-        <canvas id="an-dim-fm"></canvas>
+        <div id="an-dim-fm" style="overflow-x:auto;margin-top:4px"></div>
       </div>
       <div class="an-card">
         <div class="an-card-title">Escalation by delivery dimension</div>
@@ -2525,11 +2525,9 @@ function anCooccurrence(recs) {{
 // ── Challenge analysis ─────────────────────────────────────────
 
 function anDimFM(recs) {{
-  if (_anCharts.dimFM) _anCharts.dimFM.destroy();
   const adv = recs.filter(r => r.failure_mode && r.failure_mode !== FM_NO);
-  if (adv.length === 0) return;
+  if (adv.length === 0) {{ document.getElementById('an-dim-fm').innerHTML = ''; return; }}
 
-  // Per-dimension FM distribution
   const dimData = {{}};
   const dimTotals = {{}};
   DIM_ORDER.forEach(d => {{ dimData[d] = {{}}; FM_ADV.forEach(fm => {{ dimData[d][fm] = 0; }}); dimTotals[d] = 0; }});
@@ -2542,38 +2540,39 @@ function anDimFM(recs) {{
     }});
   }});
 
-  // Build 100% stacked horizontal bar — one bar per dimension
   const dimFiltered = DIM_ORDER.filter(d => dimTotals[d] > 0);
-  const labels = dimFiltered.map(d => `${{DIM_SHORT[d]}} (n=${{dimTotals[d]}})`);
-
-  const datasets = FM_ADV.map(fm => ({{
-    label: fm,
-    data: dimFiltered.map(d => dimTotals[d] > 0 ? (dimData[d][fm] / dimTotals[d] * 100) : 0),
-    backgroundColor: FM_COLOURS[fm],
+  let globalMaxPct = 0, globalMinPct = Infinity;
+  dimFiltered.forEach(d => FM_ADV.forEach(fm => {{
+    const p = dimTotals[d] > 0 ? dimData[d][fm] / dimTotals[d] : 0;
+    if (p > globalMaxPct) globalMaxPct = p;
+    if (p < globalMinPct) globalMinPct = p;
   }}));
+  if (globalMinPct === Infinity) globalMinPct = 0;
+  const hex2rgb = h => {{ const v = parseInt(h.replace('#',''),16); return [(v>>16)&255,(v>>8)&255,v&255]; }};
+  const range = globalMaxPct - globalMinPct;
 
-  _anCharts.dimFM = new Chart(document.getElementById('an-dim-fm'), {{
-    type: 'bar',
-    data: {{ labels, datasets }},
-    options: {{
-      indexAxis: 'y',
-      responsive: true,
-      maintainAspectRatio: false,
-      scales: {{
-        x: {{ stacked: true, max: 100, title: {{ display: true, text: '% of adverse records' }} }},
-        y: {{ stacked: true }}
-      }},
-      plugins: {{
-        legend: {{ position: 'bottom', labels: {{ boxWidth: 12, font: {{ size: 12 }} }} }},
-        tooltip: {{
-          callbacks: {{
-            label: ctx => `${{ctx.dataset.label}}: ${{ctx.raw.toFixed(1)}}%`
-          }}
-        }}
-      }}
-    }}
+  let h = '<div class="rcm-scroll"><table class="hm-table">';
+  h += '<thead><tr><th class="hm-row-hdr"></th>';
+  FM_ADV.forEach(fm => {{
+    h += `<th style="color:${{FM_COLOURS[fm]}}">${{fm}}</th>`;
   }});
-  document.getElementById('an-dim-fm').parentElement.style.minHeight = '520px';
+  h += '<th>n</th></tr></thead><tbody>';
+  dimFiltered.forEach(d => {{
+    h += `<tr><td class="hm-row-hdr">${{DIM_SHORT[d]}}</td>`;
+    FM_ADV.forEach(fm => {{
+      const cnt = dimData[d][fm] || 0;
+      const pct = dimTotals[d] > 0 ? (cnt / dimTotals[d] * 100).toFixed(1) : '0.0';
+      const pctRaw = dimTotals[d] > 0 ? cnt / dimTotals[d] : 0;
+      const alpha = range > 0 ? 0.2 + 0.8 * ((pctRaw - globalMinPct) / range) : 0.5;
+      const [r,g,b] = hex2rgb(FM_COLOURS[fm]);
+      const tip = `${{cnt}} records (${{pct}}% of dimension)`;
+      h += `<td style="background:rgba(${{r}},${{g}},${{b}},${{alpha.toFixed(2)}});color:#000;font-weight:600" title="${{tip}}">${{pct}}%</td>`;
+    }});
+    h += `<td class="hm-empty" style="color:#64748b;font-weight:600">${{dimTotals[d]}}</td>`;
+    h += '</tr>';
+  }});
+  h += '</tbody></table></div>';
+  document.getElementById('an-dim-fm').innerHTML = h;
 }}
 
 function anDimSev(recs) {{
