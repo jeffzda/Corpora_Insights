@@ -2368,11 +2368,14 @@ function anDimSevStacked(recs) {{
   }});
   const dimFiltered = DIM_ORDER.filter(d => dimTotals[d] > 0);
   const maxPctPerSev = {{}};
-  SEV_ORDER.forEach(s => {{ maxPctPerSev[s] = 0; }});
+  const minPctPerSev = {{}};
+  SEV_ORDER.forEach(s => {{ maxPctPerSev[s] = 0; minPctPerSev[s] = Infinity; }});
   dimFiltered.forEach(d => SEV_ORDER.forEach(s => {{
     const p = dimTotals[d] > 0 ? matrix[d][s] / dimTotals[d] : 0;
     if (p > maxPctPerSev[s]) maxPctPerSev[s] = p;
+    if (p < minPctPerSev[s]) minPctPerSev[s] = p;
   }}));
+  SEV_ORDER.forEach(s => {{ if (minPctPerSev[s] === Infinity) minPctPerSev[s] = 0; }});
   // hex to rgb helper
   const hex2rgb = h => {{ const v = parseInt(h.replace('#',''),16); return [(v>>16)&255,(v>>8)&255,v&255]; }};
   let h = '<div class="rcm-scroll"><table class="hm-table">';
@@ -2387,7 +2390,8 @@ function anDimSevStacked(recs) {{
       const cnt = matrix[d][s] || 0;
       const pct = dimTotals[d] > 0 ? (cnt / dimTotals[d] * 100).toFixed(1) : '0.0';
       const pctRaw = dimTotals[d] > 0 ? cnt / dimTotals[d] : 0;
-      const alpha = maxPctPerSev[s] > 0 ? 0.2 + 0.8 * (pctRaw / maxPctPerSev[s]) : 0.2;
+      const range = maxPctPerSev[s] - minPctPerSev[s];
+      const alpha = range > 0 ? 0.2 + 0.8 * ((pctRaw - minPctPerSev[s]) / range) : 0.5;
       const [r,g,b] = hex2rgb(IS_COLOURS[s]);
       const tip = `${{cnt}} records (${{pct}}% of dimension)`;
       h += `<td style="background:rgba(${{r}},${{g}},${{b}},${{alpha.toFixed(2)}});color:#000;font-weight:600" title="${{tip}}">${{pct}}%</td>`;
