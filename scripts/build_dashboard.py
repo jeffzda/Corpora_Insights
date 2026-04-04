@@ -873,7 +873,8 @@ def load_dimension_tags() -> dict:
 
 
 def load_fm_v3_tags() -> dict:
-    """Load v3 failure mode tags from per_doc_fm_v3/, keyed by record_id."""
+    """Load v3 failure mode tags from per_doc_fm_v3/, keyed by record_id.
+    Returns dict of {record_id: {"failure_mode": ..., "secondary_failure_mode": ...}}."""
     if not FM_V3_DIR.exists():
         return {}
     paths = sorted(glob.glob(str(FM_V3_DIR / "doc_*_fm_v3.yaml")))
@@ -885,7 +886,11 @@ def load_fm_v3_tags() -> dict:
             if rid:
                 fm = r.get("failure_mode", "")
                 if fm and fm != "none":
-                    tags[rid] = fm
+                    entry = {"failure_mode": fm}
+                    sfm = r.get("secondary_failure_mode")
+                    if sfm:
+                        entry["secondary_failure_mode"] = sfm
+                    tags[rid] = entry
     return tags
 
 
@@ -908,14 +913,22 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
     for r in records:
         rid = r.get("record_id")
         r["dimensions"] = dimension_tags.get(rid, []) if rid else []
-    # Merge v3 failure mode tags (overwrite old failure_mode)
+    # Merge v3 failure mode tags (overwrite old failure_mode and secondary)
     n_fm_updated = 0
+    n_sfm_updated = 0
     for r in records:
         rid = r.get("record_id")
         if rid and rid in fm_v3_tags:
-            r["failure_mode"] = fm_v3_tags[rid]
+            tag = fm_v3_tags[rid]
+            r["failure_mode"] = tag["failure_mode"]
             n_fm_updated += 1
-    print(f"  Updated {n_fm_updated} records with v3 failure modes")
+            if "secondary_failure_mode" in tag:
+                r["secondary_failure_mode"] = tag["secondary_failure_mode"]
+                n_sfm_updated += 1
+            else:
+                # Clear stale old-taxonomy secondary values
+                r["secondary_failure_mode"] = None
+    print(f"  Updated {n_fm_updated} records with v3 failure modes ({n_sfm_updated} with secondary)")
     # Merge QA verdicts onto records
     for r in records:
         rid = r.get("record_id")
