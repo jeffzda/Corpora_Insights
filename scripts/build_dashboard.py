@@ -2369,18 +2369,23 @@ function anDimSevStacked(recs) {{
   const dimFiltered = DIM_ORDER.filter(d => dimTotals[d] > 0);
   let maxCount = 0;
   dimFiltered.forEach(d => SEV_ORDER.forEach(s => {{ if (matrix[d][s] > maxCount) maxCount = matrix[d][s]; }}));
-  let h = '<table style="width:100%;border-collapse:collapse;font-size:13px">';
-  h += '<tr><th style="text-align:left;padding:6px 8px"></th>';
+  const nCols = SEV_ORDER.length + 1;
+  const colW = (100 / nCols).toFixed(2);
+  let h = '<table style="width:100%;border-collapse:collapse;font-size:13px;table-layout:fixed">';
+  h += `<colgroup><col style="width:auto">`;
+  for (let i = 0; i < nCols; i++) h += `<col style="width:${{colW}}%">`;
+  h += '</colgroup>';
+  h += '<tr><th style="text-align:right;padding:6px 8px"></th>';
   SEV_ORDER.forEach(s => {{
     h += `<th style="padding:6px 8px;text-align:center;color:${{IS_COLOURS[s]}};font-weight:600">${{s}}</th>`;
   }});
   h += '<th style="padding:6px 8px;text-align:center;color:#64748b">n</th></tr>';
   dimFiltered.forEach(d => {{
-    h += `<tr><td style="padding:6px 8px;font-weight:600;white-space:nowrap">${{DIM_SHORT[d]}}</td>`;
+    h += `<tr><td style="padding:6px 8px;font-weight:600;white-space:nowrap;text-align:right">${{DIM_SHORT[d]}}</td>`;
     SEV_ORDER.forEach(s => {{
       const cnt = matrix[d][s] || 0;
       const pct = dimTotals[d] > 0 ? (cnt / dimTotals[d] * 100).toFixed(1) : '0.0';
-      const opacity = maxCount > 0 ? 1 - 0.5 * (cnt / maxCount) : 1;
+      const opacity = maxCount > 0 ? 0.2 + 0.8 * (cnt / maxCount) : 0.2;
       const bg = IS_COLOURS[s];
       h += `<td style="padding:6px 8px;text-align:center;background:${{bg}};opacity:${{opacity.toFixed(2)}};color:#fff;font-weight:500">${{cnt}}<br><span style="font-size:11px">${{pct}}%</span></td>`;
     }});
