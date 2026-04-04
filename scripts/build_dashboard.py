@@ -755,7 +755,7 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
     benchmarks_json = json.dumps(benchmarks or {}, ensure_ascii=False)
     arena_root = str(ROOT).replace("\\", "/")
 
-    failure_modes = distinct_sorted(records, "failure_mode")
+    failure_modes = [fm for fm in distinct_sorted(records, "failure_mode") if fm in FAILURE_MODE_COLOURS]
     proponent_types = distinct_sorted(records, "proponent_type")
     lifecycle_phases = distinct_sorted(records, "lifecycle_phase")
     severity_levels = distinct_sorted(records, "issue_severity")
@@ -2261,7 +2261,7 @@ function anPhaseFM(recs) {{
 function anFMFreq(recs) {{
   if (_anCharts.fmFreq) _anCharts.fmFreq.destroy();
   const counts = {{}};
-  recs.forEach(r => {{ if (r.failure_mode) counts[r.failure_mode] = (counts[r.failure_mode] || 0) + 1; }});
+  recs.forEach(r => {{ if (r.failure_mode && FM_COLOURS[r.failure_mode] !== undefined) counts[r.failure_mode] = (counts[r.failure_mode] || 0) + 1; }});
   const total = recs.length || 1;
   const sorted = Object.entries(counts).sort((a,b) => b[1]-a[1]);
   _anCharts.fmFreq = new Chart(document.getElementById('an-fm-freq'), {{
