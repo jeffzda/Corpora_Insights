@@ -44,7 +44,6 @@ DEFAULT_INPUT = ROOT / "insights" / "per_doc"
 DEFAULT_OUTPUT = ROOT / "dashboard" / "insights.html"
 PROJECTS_FILE = ROOT / "arena-projects-export_1772932404.csv"
 AGGREGATED_DIR = ROOT / "tables" / "aggregated"
-PER_PROJECT_DIR = ROOT / "insights" / "per_project"
 
 FAILURE_MODE_COLOURS = {
     "no major failure stated":          "#22c55e",
@@ -178,27 +177,33 @@ def _viridis_cell(rate, vmin, vmax):
     return bg, "#000000"
 
 
-def load_project_profiles() -> list[dict]:
+def build_project_profiles(records: list[dict]) -> list[dict]:
     """
-    Build one profile per project from per_project/*.yaml files.
+    Build one profile per project from per_doc records, grouped by kb_associated_project.
     Each profile captures boolean flags and phase-level breakdown needed
-    for project-level matrix rates.
+    for project-level matrix rates and the risk rating tool.
     """
     _SEV_HIGH_SET = {"major", "critical"}
-    paths = sorted(str(p) for p in PER_PROJECT_DIR.glob("*.yaml"))
-    all_file_records = _parallel_load_yaml(paths)
+
+    # Group records by project name
+    by_project: dict = defaultdict(list)
+    for r in records:
+        proj = r.get("kb_associated_project")
+        if proj:
+            by_project[proj].append(r)
+
     profiles = []
-    for records in all_file_records:
-        if not records:
+    for proj_name, proj_recs in by_project.items():
+        if not proj_recs:
             continue
 
         def majority(field):
-            c = Counter(r.get(field) for r in records if r.get(field))
+            c = Counter(r.get(field) for r in proj_recs if r.get(field))
             return c.most_common(1)[0][0] if c else None
 
         # Aggregate per lifecycle phase
         phase_recs: dict = defaultdict(list)
-        for r in records:
+        for r in proj_recs:
             ph = r.get("lifecycle_phase")
             if ph:
                 phase_recs[ph].append(r)
@@ -216,18 +221,18 @@ def load_project_profiles() -> list[dict]:
 
         # arena_category: flatten list field, take most common
         ac_counter = Counter()
-        for r in records:
+        for r in proj_recs:
             for cat in (r.get("arena_category") or []):
                 ac_counter[cat] += 1
         arena_cat = ac_counter.most_common(1)[0][0] if ac_counter else None
 
         # Severity counts for escalation ratio
-        sev_severe = sum(1 for r in records if (r.get("issue_severity") or "") in _SEV_SEVERE)
-        sev_mild = sum(1 for r in records if (r.get("issue_severity") or "") in _SEV_MILD)
+        sev_severe = sum(1 for r in proj_recs if (r.get("issue_severity") or "") in _SEV_SEVERE)
+        sev_mild = sum(1 for r in proj_recs if (r.get("issue_severity") or "") in _SEV_MILD)
 
         # Per-failure-mode severity counts
         fm_sev: dict = defaultdict(lambda: [0, 0])  # fm → [severe, mild]
-        for r in records:
+        for r in proj_recs:
             fm = r.get("failure_mode") or ""
             sev = r.get("issue_severity") or ""
             if fm and fm != _NO_FAIL:
@@ -240,17 +245,17 @@ def load_project_profiles() -> list[dict]:
             "arena_category":    arena_cat,
             "activity_type":     majority("activity_type"),
             "proponent_type":    majority("proponent_type"),
-            "is_consortium":     any(r.get("is_consortium") for r in records),
+            "is_consortium":     any(r.get("is_consortium") for r in proj_recs),
             "had_moderate_plus": any(
-                (r.get("issue_severity") or "") in _SEV_HIGH_SET for r in records
+                (r.get("issue_severity") or "") in _SEV_HIGH_SET for r in proj_recs
             ),
             "failure_modes": {
-                r.get("failure_mode") for r in records
+                r.get("failure_mode") for r in proj_recs
                 if r.get("failure_mode") and r["failure_mode"] != _NO_FAIL
             },
             "phases_covered":  set(phase_recs.keys()),
             "phase_failures":  phase_failures,   # phase → top fm at that phase (major+ only)
-            "n_records":       len(records),
+            "n_records":       len(proj_recs),
             "sev_severe":      sev_severe,
             "sev_mild":        sev_mild,
             "fm_severity":     dict(fm_sev),      # fm → [severe, mild]
@@ -909,7 +914,7 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
     portfolio_pct = f"{n_projects_covered/portfolio_size*100:.0f}%" if portfolio_size else "—"
     n_failures = len([r for r in records if r.get("failure_mode") and r["failure_mode"] != "no major failure stated"])
     kb_projects = distinct_sorted(records, "kb_associated_project")
-    project_profiles = load_project_profiles() if PER_PROJECT_DIR.exists() else []
+    project_profiles = build_project_profiles(records)
     matrix_html = build_reference_class_html(project_profiles) if project_profiles else ""
     risk_data = build_risk_data(project_profiles) if project_profiles else {}
     risk_data_json = json.dumps(risk_data, ensure_ascii=False)
