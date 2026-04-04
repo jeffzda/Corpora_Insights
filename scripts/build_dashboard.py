@@ -1448,6 +1448,10 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
       <div class="an-card an-wide">
         <div class="an-card-title">Failure modes by delivery dimension</div>
         <div class="an-card-sub">P(failure mode | dimension) — what goes wrong within each delivery dimension?</div>
+        <div style="margin:6px 0 2px;display:flex;gap:16px;align-items:center">
+          <label style="font-size:13px;color:#475569;cursor:pointer"><input type="checkbox" id="an-dim-fm-pri" checked onchange="anDimFM(window._anLastRecs||RECORDS)"> Primary</label>
+          <label style="font-size:13px;color:#475569;cursor:pointer"><input type="checkbox" id="an-dim-fm-sec" checked onchange="anDimFM(window._anLastRecs||RECORDS)"> Secondary</label>
+        </div>
         <div id="an-dim-fm" style="overflow-x:auto;margin-top:4px"></div>
       </div>
       <div class="an-card">
@@ -2783,16 +2787,27 @@ function anCooccurrence(recs) {{
 // ── Challenge analysis ─────────────────────────────────────────
 
 function anDimFM(recs) {{
+  window._anLastRecs = recs;
   const adv = recs.filter(r => r.failure_mode && r.failure_mode !== FM_NO);
   if (adv.length === 0) {{ document.getElementById('an-dim-fm').innerHTML = ''; return; }}
+
+  const usePri = document.getElementById('an-dim-fm-pri').checked;
+  const useSec = document.getElementById('an-dim-fm-sec').checked;
+  if (!usePri && !useSec) {{ document.getElementById('an-dim-fm').innerHTML = '<p style="color:#94a3b8;font-size:13px">Select at least one failure mode type</p>'; return; }}
 
   const dimData = {{}};
   const dimTotals = {{}};
   DIM_ORDER.forEach(d => {{ dimData[d] = {{}}; FM_ADV.forEach(fm => {{ dimData[d][fm] = 0; }}); dimTotals[d] = 0; }});
   adv.forEach(r => {{
     (r.dimensions || []).forEach(d => {{
-      if (dimData[d] && dimData[d][r.failure_mode] !== undefined) {{
+      if (!dimData[d]) return;
+      if (usePri && dimData[d][r.failure_mode] !== undefined) {{
         dimData[d][r.failure_mode]++;
+        dimTotals[d]++;
+      }}
+      const sfm = r.secondary_failure_mode;
+      if (useSec && sfm && sfm !== FM_NO && sfm !== r.failure_mode && dimData[d][sfm] !== undefined) {{
+        dimData[d][sfm]++;
         dimTotals[d]++;
       }}
     }});
