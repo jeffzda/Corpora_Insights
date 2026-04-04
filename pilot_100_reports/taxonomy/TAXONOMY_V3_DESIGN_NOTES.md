@@ -1,8 +1,9 @@
 # Taxonomy v3.0 — Design Notes
 
 **Working document capturing design thinking for the next taxonomy iteration.**
-**Status: Design phase — not yet implemented.**
-**Date: April 2026**
+**Status: Failure modes reclassified (v3, 8 categories). Challenge tags collected (6 categories).
+Conditional distributions computed. Dashboard integration complete.**
+**Date: April 2026 (last updated: challenge context analysis and ARENA alignment)**
 
 ---
 
@@ -797,3 +798,214 @@ preserved as `failure_mode_v2`. The reclassification prompt is derived from
 8. The validation pass showed zero low-confidence records (all ≥0.77). Is Haiku's confidence
    calibration reliable, or should a manual review of 50 boundary cases be done before full
    reclassification?
+
+---
+
+## Part 12: Challenge Context as Conditioning Variable — Analytical Results
+
+### The core analytical contribution
+
+The most powerful output of the taxonomy is the conditional distribution P(failure mode | challenge).
+Each challenge produces a distinct failure mode signature that differs meaningfully from the
+corpus baseline. This was computed across all 12,376 adverse records with challenge tags.
+
+| Challenge | Dominant failure modes (× baseline) | Suppressed failure modes |
+|---|---|---|
+| GRID_CONNECTION | unvalidated integration 1.75×, regulatory 1.33× | execution & logistics 0.25×, coordination 0.45× |
+| SCALING_TO_FIELD | UTA 1.98× (56% of records) | regulatory 0.03×, coordination 0.29× |
+| SOFTWARE_CONTROLS | unvalidated integration 2.90×, data & measurement 2.29× | regulatory 0.17×, commercial 0.25× |
+| SUPPLY_CHAIN | execution & logistics 2.50× | regulatory 0.37×, data 0.43× |
+| REGULATORY_ENVIRONMENT | regulatory & approvals 2.77×, commercial 1.56× | UTA 0.49×, execution 0.14× |
+| SITE_CONTEXT | poor scoping 1.92×, execution & logistics 1.72× | regulatory 0.40×, commercial 0.38×, integration 0.29× |
+
+Key finding: **challenges, not ARENA categories, are the differentiating axis for failure mode
+distributions.** Failure modes appear relatively uniform across technology categories (sd ~6.8pp)
+but differentiate strongly by challenge context. This is why v1/v2 analysis showed muddy signals
+— the conditioning variable was wrong.
+
+### Severity profiles by challenge
+
+| Challenge | Escalation ratio | vs baseline (22.3%) |
+|---|---|---|
+| REGULATORY_ENVIRONMENT | 30.4% | 1.36× |
+| SUPPLY_CHAIN | 27.2% | 1.22× |
+| GRID_CONNECTION | 26.8% | 1.20× |
+| SCALING_TO_FIELD | 23.8% | 1.07× |
+| SITE_CONTEXT | 18.6% | 0.84× |
+| SOFTWARE_CONTROLS | 16.2% | 0.73× |
+
+Pattern: **technical failure modes are moderate severity; commercial and regulatory failure modes
+escalate regardless of which challenge produces them.** The challenge determines which failure
+mode emerges; the failure mode type determines how severe it is.
+
+### Standout challenge × failure mode severity combinations
+
+- **SCALING_TO_FIELD × commercial & market: 51% escalation** — when scaling projects hit
+  commercial failures, they're overwhelmingly major/critical ("built it and nobody wants it
+  at this price")
+- **REGULATORY_ENVIRONMENT × commercial & market: 42%** — markets that don't materialise because
+  the rules don't support them
+- **GRID_CONNECTION × regulatory & approvals: 41%** — grid connection regulatory problems are
+  where projects get stuck badly
+- **SOFTWARE_CONTROLS: low severity across the board** — highest is unvalidated integration at
+  21%. Software problems are iteratively fixable.
+
+---
+
+## Part 13: Ex-Ante Framing of Challenges
+
+### Challenges as project-level features
+
+Challenges are ex-ante properties of the project — features of the work knowable at inception:
+- GRID_CONNECTION: the project connects to the grid (yes/no)
+- SCALING_TO_FIELD: the project moves technology from controlled to real-world environment
+- SOFTWARE_CONTROLS: the project's core technical challenge involves software/controls
+- SUPPLY_CHAIN: the project procures novel or specialised equipment
+- REGULATORY_ENVIRONMENT: the project operates in an immature regulatory framework
+- SITE_CONTEXT: the physical site conditions are a defining constraint
+
+### Why per-record tagging is correct despite challenges being project-level
+
+A single project may generate 10 insight records. Grid connection is a feature of the project,
+but only 2-3 of those records may relate to the grid connection experience. The per-record tag
+captures "was this insight generated in the context of [challenge X]?" — not "does this project
+face [challenge X]?" This distinction is critical for computing conditional distributions.
+
+### The denominator problem
+
+Challenge tags are derived from narratives about noteworthy events. Records where grid connection
+went smoothly don't get a GRID_CONNECTION tag because there's nothing to report. This means:
+
+- P(failure mode | challenge) is reliable — measures "when this challenge was the story, what
+  went wrong"
+- P(challenge becomes problematic | challenge present) is **not directly measurable** — the
+  denominator of "all records where this challenge was relevant but uneventful" is missing
+- **Surprise failures** should be defined using corpus-wide priors (a failure mode appearing at
+  a rate significantly above its baseline within a challenge context), not by tag absence
+
+### Empirical base rates by project class
+
+Project-level challenge prominence was computed: for each (arena_category × activity_type) cell,
+what fraction of projects had each challenge featuring in >20% of their insights?
+
+Key findings at 50% project-level threshold:
+- **Pilot/demonstration has the most challenges** — this is where everything collides (scaling,
+  real infrastructure, real regulations, real site conditions)
+- **Study/feasibility is not sparse** — studies investigate these challenges, so they appear
+- **R&D is dominated by SCALE + SUPPLY_CHAIN** across all generation technologies
+- **Two challenges are deterministic from metadata** (GC from project type, SCALE from activity
+  type). Four require narrative evidence (SW, SC, REG, SITE) because they depend on
+  project-specific features not captured by (arena_category, activity_type) alone.
+
+### What the matrix is and isn't
+
+The empirical base rates are **observed rates**, not deterministic assignments. Presenting them
+as "93% of hydrogen pilots had supply chain as a prominent challenge" is defensible. Presenting
+them as "hydrogen pilots inherently face supply chain challenges" overclaims — the metadata is
+too coarse to carry that inference for all six challenges.
+
+---
+
+## Part 14: Three-Layer Risk Framework
+
+The analytical architecture that emerged from the challenge analysis:
+
+**Layer 1: Empirical base rates** — project-level challenge prominence by (arena_category ×
+activity_type). Deterministic lookup. "For this type of project, how often has each challenge
+historically featured prominently?"
+
+**Layer 2: Conditional failure mode distributions** — P(failure mode | challenge) with severity
+profiles. "When this challenge was the context, what went wrong and how badly?"
+
+**Layer 3: Synthesised brief** (on-demand) — LLM-generated summary from filtered records for a
+specific (category, activity_type, challenge) combination.
+
+Together: "Given a BESS deployment, grid connection challenges are expected (Layer 1, 88% of
+past projects). When grid connection is the context, the failure mode distribution is regulatory
+& approvals at 15% (1.33× baseline) and unvalidated integration at 12% (1.75× baseline), with
+an escalation ratio of 27% (Layer 2). Here's what specifically happened in similar projects
+(Layer 3)."
+
+---
+
+## Part 15: Alignment with ARENA Institutional Language
+
+### ARENA's own lesson category taxonomy
+
+The Lessons Learnt Report Template (grantee toolbox) prescribes 8 lesson categories:
+**Technical / Financial / Economic / Commercial / Social / Regulatory / Logistical / Risk / Other**
+
+Mapping to v3 failure modes:
+
+| ARENA lesson category | v3 failure mode |
+|---|---|
+| Technical | unvalidated technical assumptions, unvalidated integration |
+| Financial | execution & logistics (cost dimension) |
+| Economic | commercial & market |
+| Commercial | commercial & market |
+| Social | coordination & stakeholders |
+| Regulatory | regulatory & approvals |
+| Logistical | execution & logistics |
+| Risk | no direct equivalent (cross-cutting) |
+
+Key observations:
+- ARENA separates Financial / Economic / Commercial — the registry merges these. Worth
+  monitoring whether ARENA staff find this a limitation.
+- "Logistical" validates `execution & logistics` — this is language ARENA already uses.
+- "Social" validates `coordination & stakeholders` — the community/stakeholder dimension.
+- "Risk" is meta-level (risk management practices) with no v3 equivalent — a gap.
+
+### ARENA portfolio team labels
+
+Internal portfolio teams use different labels from both KB categories and our arena_category:
+Transport, Low Emissions Metals, Large Scale Integration, Ultra Low Cost Solar, Hydrogen,
+General Industry, Bioenergy, Flexible Demand / DER, Energy Storage.
+
+These are the terms ARENA staff actually use. Worth noting for any future socialisation of the
+dashboard within ARENA.
+
+### TRL/CRI as maturity dimensions
+
+ARENA's ARP guidance requires TRL and CRI (Commercial Readiness Index) assessment. The registry
+captures this implicitly through `activity_type` but does not surface TRL/CRI language. For
+portfolio managers who think in these terms, the mapping is:
+- R&D → TRL 1-4
+- Pilot / demonstration → TRL 5-7
+- Deployment → TRL 8-9 / CRI 2-4
+
+### Knowledge gaps — a missing dimension
+
+The Lessons Learnt Template asks grantees to identify "knowledge gaps that need filling." This
+forward-looking dimension has no registry field. It represents what the project couldn't answer
+— potentially valuable for identifying where to fund next. Not a failure mode or challenge, but
+a separate extraction target for future work.
+
+### Variation Policy materiality thresholds
+
+ARENA defines material vs non-material variations:
+- Non-material: timeline <6 months, minor scope, personnel changes
+- Material: scope beyond agreed Outcomes, design/construction/commissioning changes, location
+  changes, loss of participants, material reduction in co-funding
+
+This language maps to `outcome_class` values (now legacy) and could inform interpretation of
+`delay_magnitude` (also legacy). The 6-month threshold is a useful reference point.
+
+---
+
+## Updated Open Questions
+
+9. Should the Financial / Economic / Commercial distinction (from ARENA's own lesson categories)
+   be tested against the corpus? Does `commercial & market` lose signal by merging these?
+
+10. Should "knowledge gaps" be added as an extraction target in a future LLM pass? It would
+    capture forward-looking insight distinct from failure modes and lessons.
+
+11. The challenge base rate matrix has small cell sizes in many intersections (e.g., hydrogen
+    deployment n=3, off-grid pilot n=1). What minimum n should be required before presenting
+    rates? Sensitivity analysis on the 20% prominence threshold is needed.
+
+12. Should the dashboard surface TRL/CRI-equivalent language alongside activity_type to match
+    how ARENA portfolio managers think about technology maturity?
+
+13. The three-layer risk framework is the core analytical contribution. Is it worth writing up
+    as a standalone methodology paper, independent of ARENA-specific findings?
