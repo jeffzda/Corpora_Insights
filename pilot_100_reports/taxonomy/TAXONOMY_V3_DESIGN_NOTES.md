@@ -1,9 +1,9 @@
 # Taxonomy v3.0 — Design Notes
 
 **Working document capturing design thinking for the next taxonomy iteration.**
-**Status: Failure modes reclassified (v3, 8 categories). Challenge tags collected (6 categories).
-Conditional distributions computed. Dashboard integration complete.**
-**Date: April 2026 (last updated: challenge context analysis and ARENA alignment)**
+**Status: Failure modes reclassified (v3, 7+1 categories — validated). Delivery dimensions tagged
+(10 categories — validated). Full corpus retagged. Dashboard integration in progress.**
+**Date: April 2026 (last updated: full corpus FM reclassification and delivery dimension analysis)**
 
 ---
 
@@ -992,6 +992,249 @@ This language maps to `outcome_class` values (now legacy) and could inform inter
 
 ---
 
+## Part 16: Full Corpus Failure Mode Reclassification — Results
+
+### Background
+
+The v3 taxonomy (Part 11) retained "poor scoping" and "unvalidated technical assumptions" as
+failure modes. Cross-tabulation with delivery dimensions (Part 17) revealed that these two
+categories appeared in the top 3 failure modes for 8 out of 10 delivery dimensions, washing out
+the discriminating power of the conditional distributions. They were catch-alls, not categories.
+
+### Empirical confirmation: partial repass (4,699 records)
+
+A first reclassification pass took only the 4,699 records tagged "unvalidated technical
+assumptions" (2,926) or "poor scoping" (1,773) and asked Haiku to reclassify them using only
+the 6 specific failure modes (excluding the two broad ones), with "none" as an option.
+
+**Result: 87.5% reclassified into specific failure modes.** Only 12.5% were irreducible.
+
+Distribution from "unvalidated technical assumptions":
+- unvalidated integration: 29.5%
+- data & measurement: 22.3%
+- commercial & market: 14.2%
+- none (kept broad): 13.0%
+- regulatory & approvals: 9.8%
+- execution & logistics: 9.7%
+- coordination & stakeholders: 1.6%
+
+Distribution from "poor scoping":
+- execution & logistics: 22.2%
+- regulatory & approvals: 16.6%
+- coordination & stakeholders: 16.4%
+- commercial & market: 14.9%
+- none (kept broad): 11.8%
+- data & measurement: 9.8%
+- unvalidated integration: 8.2%
+
+"Poor scoping" spread almost evenly across all 6 categories — the textbook signature of a
+catch-all. "Unvalidated technical assumptions" concentrated more (50%+ into integration and
+data/measurement) but still distributed broadly enough to confirm it was absorbing records
+that belonged elsewhere.
+
+### Decision: restore "technical underperformance"
+
+The partial repass confirmed that the 6 specific categories covered most records, but left a
+gap: straightforward technical failure (the technology didn't perform) had no home. It was
+removed in v3 design (Part 11) on the grounds that it was "a consequence, not a mechanism."
+
+This rationale was inconsistent. None of the other failure modes describe mechanisms either —
+"commercial & market" doesn't tell you *why* the commercial side failed, "regulatory & approvals"
+doesn't tell you *why* the regulatory process was a problem. They describe the *domain* of the
+failure. "Technical underperformance" fits the same pattern: the technology was the thing that
+didn't work.
+
+### Full corpus reclassification (16,931 records)
+
+All 16,931 records were reclassified from scratch by Haiku batch against the revised 7 failure
+modes (+ "no major failure stated"). Each record received only `what_happened`, `lesson_learnt`,
+and `evidence_excerpt` — no existing labels, no delivery dimension tags, no metadata. Clean
+slate classification.
+
+Additionally, each record was asked:
+1. Are there failure mode categories missing from the list that would help classify more effectively?
+2. What is the ideal two-word label for the failure observed in this specific record?
+
+**Results: 16,931 records, 0 API errors, 6 parse errors.**
+
+### Final v3 failure mode distribution
+
+| Failure mode | Count | % | Notes |
+|---|---|---|---|
+| no major failure stated | 4,646 | 27.4% | Confirmed by ideal labels: top labels are "successful validation", "successful integration", "successful deployment" |
+| commercial & market | 2,385 | 14.1% | |
+| coordination & stakeholders | 2,205 | 13.0% | |
+| technical underperformance | 2,044 | 12.1% | New category; absorbed records from old UTA and from other categories |
+| regulatory & approvals | 1,656 | 9.8% | |
+| data & measurement | 1,577 | 9.3% | |
+| execution & logistics | 1,428 | 8.4% | |
+| unvalidated integration | 983 | 5.8% | |
+| none (unclassifiable) | 6 | 0.04% | |
+
+**Key properties of this distribution:**
+- **No catch-all.** The largest adversarial category is 14.1% (commercial & market). The old
+  taxonomy had "unvalidated technical assumptions" at ~20% and "design assumption failure" at ~20%.
+- **Even spread.** The 7 adversarial categories range from 5.8% to 14.1% — a 2.4× ratio.
+  The old taxonomy ranged from ~2% to ~20% — a 10× ratio. Even spread means each category
+  carries discriminating power in cross-tabulations.
+- **Near-zero residual.** Only 6 records out of 16,931 couldn't be classified. The taxonomy
+  covers the space.
+
+### Taxonomy validation: missing category survey
+
+71.7% of records (12,147) reported no missing categories needed. The taxonomy was sufficient.
+
+Of the 28.3% that suggested missing categories, the top suggestions were:
+
+| Suggested category | Count | Assessment |
+|---|---|---|
+| design & planning | 91 | Ghost of "poor scoping" — records that miss having a design/scope bucket. At 0.5% of corpus, not a gap worth filling. |
+| supply chain & procurement | 47 | Sub-category of execution & logistics. Already covered. |
+| design & engineering | 39 | Same as above — desire for a "design" category. |
+| design & specification | 34 | Same cluster. |
+| technology maturity & readiness | 34 | Sub-category of technical underperformance. Already covered. |
+| standards & interoperability | 19 | Boundary between regulatory & approvals and unvalidated integration. |
+| training & capability | 13 | Absorbed into coordination & stakeholders. Low prevalence. |
+| safety & hazard management | 12 | Genuine gap but at 0.07% prevalence, not material. |
+
+**No single missing category was suggested by more than 0.5% of the corpus.** The 7 failure
+modes are empirically validated as sufficient.
+
+### Taxonomy validation: ideal two-word labels
+
+The ideal label survey produced 16,931 free-text responses. The top labels cluster cleanly
+into the existing categories:
+
+**For "no major failure stated" records:**
+- successful validation (165), successful integration (142), design optimization (131),
+  successful deployment (130), successful demonstration (127), successful delivery (104)
+- Confirms these records genuinely contain no failure.
+
+**For adversarial records — labels map to existing categories:**
+- approval delays (114) → regulatory & approvals
+- supply chain disruption (65) → execution & logistics
+- stakeholder misalignment (63) → coordination & stakeholders
+- communication breakdown (54) → coordination & stakeholders
+- capability gap (50) → coordination & stakeholders
+- integration complexity (47) → unvalidated integration
+- cost underestimation (44) → commercial & market
+- standards gap (44) → regulatory & approvals
+- technology immaturity (35) → technical underperformance
+- material degradation (29) → technical underperformance
+- data unavailability (29) → data & measurement
+
+**No cluster of ideal labels points to a missing 8th category.** The taxonomy is validated
+from the bottom up.
+
+### Summary
+
+The v3 failure mode taxonomy is finalised at 7 adversarial categories + "no major failure stated":
+
+1. **commercial & market** (14.1%)
+2. **coordination & stakeholders** (13.0%)
+3. **technical underperformance** (12.1%)
+4. **regulatory & approvals** (9.8%)
+5. **data & measurement** (9.3%)
+6. **execution & logistics** (8.4%)
+7. **unvalidated integration** (5.8%)
+8. **no major failure stated** (27.4%)
+
+These 8 categories were validated by three independent methods:
+- **Reclassification convergence:** 87.5% of catch-all records reclassify into specific categories
+- **Missing category survey:** 71.7% of records need no additional categories; no suggestion exceeds 0.5%
+- **Ideal label survey:** free-text labels cluster into existing categories with no orphan clusters
+
+---
+
+## Part 17: Delivery Dimensions — A New Analytical Axis
+
+### The reframing: from "challenges" to "delivery dimensions"
+
+The original "challenge context" tags (Part 12) were 6 categories framed as things that made
+the project hard: grid connection, scaling to field, software/controls, supply chain, regulatory
+environment, site context. This framing had two problems:
+
+1. **"Regulatory environment" was both a challenge and a failure mode** — the same concept
+   appeared on both axes, contaminating the cross-tabulation.
+2. **"Challenge" implied risk** — but the categories were supposed to be neutral project features,
+   not pre-judgements about what would go wrong.
+
+The solution: reframe challenges as **delivery dimensions** — the physical or organisational
+aspects of the project that the proponent must provide or organise. Failure modes then describe
+what pushes back against delivery. The two axes are conceptually orthogonal: dimensions are
+"what you're delivering," failure modes are "what goes wrong."
+
+### The 10 delivery dimensions
+
+| Dimension | Description | Corpus prevalence |
+|---|---|---|
+| DESIGN | Engineering design, modelling, specifications | 38.6% |
+| GRID_CONNECTION | Connecting to electricity network | 25.8% |
+| SOFTWARE_CONTROLS | Software systems, SCADA, control algorithms | 25.3% |
+| PROCUREMENT | Sourcing equipment, materials, contractors | 21.6% |
+| OPERATIONS | Running the asset post-commissioning | 17.4% |
+| FINANCING | Project finance, PPAs, commercial close | 16.4% |
+| INTEGRATION_COMMISSIONING | Getting systems to work together | 15.5% |
+| SITING | Site conditions, land access, environmental constraints | 11.3% |
+| COMMUNITY_ENGAGEMENT | Stakeholder engagement, social licence | 10.2% |
+| CONSTRUCTION | Physical building, installation, civil works | 7.3% |
+
+Tagged via Haiku batch (16,931 records, 0 API errors, 5 parse errors). 53% of records have
+exactly 2 dimensions. 9.3% have no delivery dimension (policy/market/methodology records).
+
+### Spot-check validation
+
+10 random records were manually inspected. All dimension tags were accurate. Multi-tagging
+was particularly strong — e.g., a record about vendor equipment lacking standard SCADA interface
+was correctly tagged PROCUREMENT + SOFTWARE_CONTROLS + INTEGRATION_COMMISSIONING.
+
+### Design constraints for the taxonomy (not obvious to casual readers)
+
+Creating delivery dimensions that generalise across 500+ projects requires balancing three
+constraints simultaneously:
+
+1. **Generality:** dimensions must apply across all project types and activity types, from
+   lab-scale hydrogen electrolysis to utility-scale solar farms.
+2. **Specificity:** dimensions must be specific enough to produce distinct failure mode
+   signatures in cross-tabulation, not just "everything correlates with everything."
+3. **Orthogonality to failure modes:** for maximum analytical signal, delivery dimensions
+   should describe *what is being delivered* while failure modes describe *what went wrong*.
+   These should be independent axes. However, some alignment is unavoidable and acceptable —
+   "execution & logistics" as a failure mode naturally aligns with Construction and Procurement
+   as dimensions. The taxonomy works best when *most* failure modes are cross-cutting (e.g.,
+   "regulatory & approvals" cuts across Grid Connection, Siting, Financing, and Community
+   Engagement) while tolerating some aligned pairs.
+
+### Key analytical findings from delivery dimensions
+
+**Adversity rate by dimension:**
+- Procurement (80.2%) and Construction (80.0%) are the most hostile — when records mention
+  these, something has almost always gone wrong.
+- Operations (65.7%) is the least adversarial — more records about successful outcomes.
+
+**Escalation ratio by dimension:**
+- Financing: 31.1% (highest — financial problems are severe)
+- Grid Connection: 27.6%
+- Procurement: 25.2%
+- Corpus baseline: 21.1%
+- Community Engagement: 13.5% (lowest — frequent friction, rarely fatal)
+
+**Highest-escalation dimension × ARENA category combinations:**
+- Financing × Hydrogen: 47.8% — nearly half of hydrogen financing problems become major/critical
+- Financing × Pumped hydro: 42.9%
+- Grid Connection × Pumped hydro: 39.0%
+- Financing × Solar PV: 37.9%
+
+**Lowest-escalation combinations:**
+- Operations × Wind: 5.7% — wind is mature; operational problems are manageable
+- Community Engagement × Demand response: 6.4%
+- Operations × Hydrogen: 7.4% — hydrogen operational problems are rare if you survive to operations
+
+**The hydrogen story:** Financing problems are devastating (48% escalation) but if you survive
+to operations the escalation drops to 7%. The risk is front-loaded.
+
+---
+
 ## Updated Open Questions
 
 9. Should the Financial / Economic / Commercial distinction (from ARENA's own lesson categories)
@@ -1009,3 +1252,7 @@ This language maps to `outcome_class` values (now legacy) and could inform inter
 
 13. The three-layer risk framework is the core analytical contribution. Is it worth writing up
     as a standalone methodology paper, independent of ARENA-specific findings?
+
+14. Now that failure modes and delivery dimensions are both empirically validated, the full
+    P(failure_mode | dimension) conditional distributions should be recomputed with the v3
+    failure modes and integrated into the dashboard. This is the core analytical product.
