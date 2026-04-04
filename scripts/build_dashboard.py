@@ -2139,6 +2139,8 @@ document.addEventListener('keydown', e => {{ if (e.key === 'Escape') closeModalD
 const _anCharts = {{}};
 
 function renderAnalysis(recs) {{
+  // Exclude R&D records from analysis — R&D is upstream of the delivery pipeline
+  recs = recs.filter(r => r.activity_type !== 'R&D');
   const total = recs.length;
   const projects = new Set(recs.map(r => r.kb_associated_project).filter(Boolean));
   const nProjects = projects.size;
