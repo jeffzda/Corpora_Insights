@@ -1436,7 +1436,7 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
     <div style="padding:24px 32px 8px">
       <div style="font-size:20px;font-weight:700;color:#0f172a;margin-bottom:4px">Reference-class risk rating</div>
       <div style="font-size:16px;color:#64748b;margin-bottom:16px;max-width:800px;line-height:1.6">
-        Select a project's attributes to see its empirical risk profile based on {len(project_profiles)} ARENA projects.
+        Select a project's attributes to see its empirical risk profile based on {n_projects_covered} ARENA projects.
         The compound score chains adversity rate (likelihood) and severity escalation (consequence) across dimensions.
       </div>
     </div>
