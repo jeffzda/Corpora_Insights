@@ -1202,11 +1202,6 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
     <div id="an-warn" style="display:none;background:#fef3c7;border:1px solid #f59e0b;border-radius:6px;padding:8px 14px;margin-bottom:10px;font-size:16px;color:#92400e"></div>
     <div class="an-stats" id="an-stats"></div>
     <div class="an-grid">
-      <div class="an-card an-wide">
-        <div class="an-card-title">Failure mode by lifecycle phase</div>
-        <div class="an-card-sub">Where in delivery do different failure types cluster?</div>
-        <canvas id="an-phase-fm"></canvas>
-      </div>
       <div class="an-card">
         <div class="an-card-title">Failure mode frequency</div>
         <div class="an-card-sub">Most common failure types across all records</div>
@@ -1233,9 +1228,9 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
         <canvas id="an-sev-ratio"></canvas>
       </div>
       <div class="an-card an-wide">
-        <div class="an-card-title">Issue severity by lifecycle phase</div>
-        <div class="an-card-sub">Does severity increase as projects progress through delivery?</div>
-        <canvas id="an-phase-sev"></canvas>
+        <div class="an-card-title">Issue severity by delivery dimension</div>
+        <div class="an-card-sub">Severity distribution across delivery dimensions (100% stacked)</div>
+        <canvas id="an-dim-sev-stacked"></canvas>
       </div>
       <div class="an-card an-wide">
         <div class="an-card-title">Failure mode co-occurrence</div>
@@ -2203,13 +2198,12 @@ function renderAnalysis(recs) {{
     warnEl.style.display = 'none';
   }}
 
-  anPhaseFM(recs);
   anFMFreq(recs);
   anTypeFailRate(recs);
   anTechFM(recs);
   anSeverity(recs);
-  anPhaseSev(recs);
   anSevRatio(recs);
+  anDimSevStacked(recs);
   anCooccurrence(recs);
   anDimFM(recs);
   anDimSev(recs);
@@ -2222,41 +2216,6 @@ const AN_PHASE_SHORT = ['Concept','Design','Approvals','Procurement','Constructi
 const FM_LIST = Object.keys(FM_COLOURS);
 const FM_NO = 'no major failure stated';
 const FM_ADV = FM_LIST.filter(fm => fm !== FM_NO);
-
-function anPhaseFM(recs) {{
-  if (_anCharts.phaseFM) _anCharts.phaseFM.destroy();
-  const matrix = {{}};
-  const totals = {{}};
-  AN_PHASES.forEach(p => {{ matrix[p] = {{}}; totals[p] = 0; FM_ADV.forEach(fm => {{ matrix[p][fm] = 0; }}); }});
-  recs.forEach(r => {{
-    if (r.lifecycle_phase && matrix[r.lifecycle_phase] && r.failure_mode && r.failure_mode !== FM_NO && matrix[r.lifecycle_phase][r.failure_mode] !== undefined) {{
-      matrix[r.lifecycle_phase][r.failure_mode]++;
-      totals[r.lifecycle_phase]++;
-    }}
-  }});
-  const labels = AN_PHASES.map((p, i) => `${{AN_PHASE_SHORT[i]}} (n=${{totals[p]}})`);
-  const datasets = FM_ADV.map(fm => ({{
-    label: fm,
-    data: AN_PHASES.map(p => totals[p] > 0 ? +((matrix[p][fm] || 0) / totals[p] * 100).toFixed(1) : 0),
-    backgroundColor: FM_COLOURS[fm] + 'cc',
-    borderColor: FM_COLOURS[fm],
-    borderWidth: 1,
-  }}));
-  _anCharts.phaseFM = new Chart(document.getElementById('an-phase-fm'), {{
-    type: 'bar',
-    data: {{ labels, datasets }},
-    options: {{
-      responsive: true, maintainAspectRatio: true,
-      plugins: {{ legend: {{ position: 'right', labels: {{ font: {{ size: 14 }}, boxWidth: 14 }} }},
-        tooltip: {{ callbacks: {{ label: ctx => `${{ctx.dataset.label}}: ${{ctx.parsed.y.toFixed(1)}}%` }} }}
-      }},
-      scales: {{
-        x: {{ stacked: true, ticks: {{ font: {{ size: 14 }} }}, grid: {{ color: '#f1f5f9' }} }},
-        y: {{ stacked: true, max: 100, title: {{ display: true, text: '% of records at phase', font: {{ size: 14 }} }}, grid: {{ color: '#f1f5f9' }} }}
-      }}
-    }}
-  }});
-}}
 
 function anFMFreq(recs) {{
   if (_anCharts.fmFreq) _anCharts.fmFreq.destroy();
@@ -2392,43 +2351,49 @@ function anSeverity(recs) {{
   }});
 }}
 
-function anPhaseSev(recs) {{
-  if (_anCharts.phaseSev) _anCharts.phaseSev.destroy();
+function anDimSevStacked(recs) {{
+  if (_anCharts.dimSevStacked) _anCharts.dimSevStacked.destroy();
   const SEV_ORDER = ['critical','major','moderate','minor','none'];
   const matrix = {{}};
-  const phaseTotals = {{}};
-  AN_PHASES.forEach(p => {{ matrix[p] = {{}}; SEV_ORDER.forEach(s => {{ matrix[p][s] = 0; }}); phaseTotals[p] = 0; }});
+  const dimTotals = {{}};
+  DIM_ORDER.forEach(d => {{ matrix[d] = {{}}; SEV_ORDER.forEach(s => {{ matrix[d][s] = 0; }}); dimTotals[d] = 0; }});
   recs.forEach(r => {{
-    if (r.lifecycle_phase && matrix[r.lifecycle_phase] && r.issue_severity) {{
-      matrix[r.lifecycle_phase][r.issue_severity] = (matrix[r.lifecycle_phase][r.issue_severity] || 0) + 1;
-      phaseTotals[r.lifecycle_phase]++;
+    if (r.issue_severity) {{
+      (r.dimensions || []).forEach(d => {{
+        if (matrix[d]) {{
+          matrix[d][r.issue_severity] = (matrix[d][r.issue_severity] || 0) + 1;
+          dimTotals[d]++;
+        }}
+      }});
     }}
   }});
+  const dimFiltered = DIM_ORDER.filter(d => dimTotals[d] > 0);
+  const labels = dimFiltered.map(d => `${{DIM_SHORT[d]}} (n=${{dimTotals[d]}})`);
   const datasets = SEV_ORDER.map(sev => ({{
     label: sev,
-    data: AN_PHASES.map(p => phaseTotals[p] > 0 ? (matrix[p][sev] || 0) / phaseTotals[p] * 100 : 0),
+    data: dimFiltered.map(d => dimTotals[d] > 0 ? (matrix[d][sev] || 0) / dimTotals[d] * 100 : 0),
     backgroundColor: IS_COLOURS[sev] + 'cc',
     borderColor: IS_COLOURS[sev],
     borderWidth: 1,
   }}));
-  const labels = AN_PHASES.map((p, i) => `${{AN_PHASE_SHORT[i]}} (n=${{phaseTotals[p]}})`);
-  _anCharts.phaseSev = new Chart(document.getElementById('an-phase-sev'), {{
+  _anCharts.dimSevStacked = new Chart(document.getElementById('an-dim-sev-stacked'), {{
     type: 'bar',
     data: {{ labels, datasets }},
     options: {{
-      responsive: true, maintainAspectRatio: true,
+      indexAxis: 'y', responsive: true, maintainAspectRatio: false,
       plugins: {{
-        legend: {{ position: 'right', labels: {{ font: {{ size: 14 }}, boxWidth: 14 }} }},
+        legend: {{ position: 'top', labels: {{ font: {{ size: 14 }}, boxWidth: 14 }} }},
         tooltip: {{ callbacks: {{
           label: ctx => `${{ctx.dataset.label}}: ${{ctx.raw.toFixed(1)}}%`
         }} }}
       }},
       scales: {{
-        x: {{ stacked: true, ticks: {{ font: {{ size: 14 }} }}, grid: {{ color: '#f1f5f9' }} }},
-        y: {{ stacked: true, max: 100, title: {{ display: true, text: '% of records', font: {{ size: 14 }} }}, grid: {{ color: '#f1f5f9' }} }}
+        x: {{ stacked: true, max: 100, title: {{ display: true, text: '% of records', font: {{ size: 14 }} }}, grid: {{ color: '#f1f5f9' }} }},
+        y: {{ stacked: true, ticks: {{ font: {{ size: 14 }} }}, grid: {{ display: false }} }}
       }}
     }}
   }});
+  document.getElementById('an-dim-sev-stacked').parentElement.style.minHeight = '460px';
 }}
 
 function anSevRatio(recs) {{
