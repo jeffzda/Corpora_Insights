@@ -2369,30 +2369,28 @@ function anDimSevStacked(recs) {{
   const dimFiltered = DIM_ORDER.filter(d => dimTotals[d] > 0);
   let maxCount = 0;
   dimFiltered.forEach(d => SEV_ORDER.forEach(s => {{ if (matrix[d][s] > maxCount) maxCount = matrix[d][s]; }}));
-  const nCols = SEV_ORDER.length + 1;
-  const colW = (100 / nCols).toFixed(2);
-  let h = '<table style="width:100%;border-collapse:collapse;font-size:13px;table-layout:fixed">';
-  h += `<colgroup><col style="width:auto">`;
-  for (let i = 0; i < nCols; i++) h += `<col style="width:${{colW}}%">`;
-  h += '</colgroup>';
-  h += '<tr><th style="text-align:right;padding:6px 8px"></th>';
+  // hex to rgb helper
+  const hex2rgb = h => {{ const v = parseInt(h.replace('#',''),16); return [(v>>16)&255,(v>>8)&255,v&255]; }};
+  let h = '<div class="rcm-scroll"><table class="hm-table">';
+  h += '<thead><tr><th class="hm-row-hdr"></th>';
   SEV_ORDER.forEach(s => {{
-    h += `<th style="padding:6px 8px;text-align:center;color:${{IS_COLOURS[s]}};font-weight:600">${{s}}</th>`;
+    h += `<th>${{s}}</th>`;
   }});
-  h += '<th style="padding:6px 8px;text-align:center;color:#64748b">n</th></tr>';
+  h += '<th>n</th></tr></thead><tbody>';
   dimFiltered.forEach(d => {{
-    h += `<tr><td style="padding:6px 8px;font-weight:600;white-space:nowrap;text-align:right">${{DIM_SHORT[d]}}</td>`;
+    h += `<tr><td class="hm-row-hdr">${{DIM_SHORT[d]}}</td>`;
     SEV_ORDER.forEach(s => {{
       const cnt = matrix[d][s] || 0;
       const pct = dimTotals[d] > 0 ? (cnt / dimTotals[d] * 100).toFixed(1) : '0.0';
-      const opacity = maxCount > 0 ? 0.2 + 0.8 * (cnt / maxCount) : 0.2;
-      const bg = IS_COLOURS[s];
-      h += `<td style="padding:6px 8px;text-align:center;background:${{bg}};opacity:${{opacity.toFixed(2)}};color:#fff;font-weight:500">${{cnt}}<br><span style="font-size:11px">${{pct}}%</span></td>`;
+      const alpha = maxCount > 0 ? 0.2 + 0.8 * (cnt / maxCount) : 0.2;
+      const [r,g,b] = hex2rgb(IS_COLOURS[s]);
+      const tip = `${{cnt}} records (${{pct}}% of dimension)`;
+      h += `<td style="background:rgba(${{r}},${{g}},${{b}},${{alpha.toFixed(2)}});color:#000;font-weight:600" title="${{tip}}">${{pct}}%</td>`;
     }});
-    h += `<td style="padding:6px 8px;text-align:center;color:#64748b">${{dimTotals[d]}}</td>`;
+    h += `<td class="hm-empty" style="color:#64748b;font-weight:600">${{dimTotals[d]}}</td>`;
     h += '</tr>';
   }});
-  h += '</table>';
+  h += '</tbody></table></div>';
   document.getElementById('an-dim-sev-stacked').innerHTML = h;
 }}
 
