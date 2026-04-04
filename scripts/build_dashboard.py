@@ -1230,7 +1230,7 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
       <div class="an-card an-wide">
         <div class="an-card-title">Issue severity by delivery dimension</div>
         <div class="an-card-sub">Severity distribution across delivery dimensions (100% stacked)</div>
-        <canvas id="an-dim-sev-stacked"></canvas>
+        <div id="an-dim-sev-stacked" style="overflow-x:auto;margin-top:4px"></div>
       </div>
       <div class="an-card an-wide">
         <div class="an-card-title">Failure mode co-occurrence</div>
@@ -2352,8 +2352,7 @@ function anSeverity(recs) {{
 }}
 
 function anDimSevStacked(recs) {{
-  if (_anCharts.dimSevStacked) _anCharts.dimSevStacked.destroy();
-  const SEV_ORDER = ['critical','major','moderate','minor','none'];
+  const SEV_ORDER = ['none','minor','moderate','major','critical'];
   const matrix = {{}};
   const dimTotals = {{}};
   DIM_ORDER.forEach(d => {{ matrix[d] = {{}}; SEV_ORDER.forEach(s => {{ matrix[d][s] = 0; }}); dimTotals[d] = 0; }});
@@ -2368,32 +2367,28 @@ function anDimSevStacked(recs) {{
     }}
   }});
   const dimFiltered = DIM_ORDER.filter(d => dimTotals[d] > 0);
-  const labels = dimFiltered.map(d => `${{DIM_SHORT[d]}} (n=${{dimTotals[d]}})`);
-  const datasets = SEV_ORDER.map(sev => ({{
-    label: sev,
-    data: dimFiltered.map(d => dimTotals[d] > 0 ? (matrix[d][sev] || 0) / dimTotals[d] * 100 : 0),
-    backgroundColor: IS_COLOURS[sev] + 'cc',
-    borderColor: IS_COLOURS[sev],
-    borderWidth: 1,
-  }}));
-  _anCharts.dimSevStacked = new Chart(document.getElementById('an-dim-sev-stacked'), {{
-    type: 'bar',
-    data: {{ labels, datasets }},
-    options: {{
-      indexAxis: 'y', responsive: true, maintainAspectRatio: false,
-      plugins: {{
-        legend: {{ position: 'top', labels: {{ font: {{ size: 14 }}, boxWidth: 14 }} }},
-        tooltip: {{ callbacks: {{
-          label: ctx => `${{ctx.dataset.label}}: ${{ctx.raw.toFixed(1)}}%`
-        }} }}
-      }},
-      scales: {{
-        x: {{ stacked: true, max: 100, title: {{ display: true, text: '% of records', font: {{ size: 14 }} }}, grid: {{ color: '#f1f5f9' }} }},
-        y: {{ stacked: true, ticks: {{ font: {{ size: 14 }} }}, grid: {{ display: false }} }}
-      }}
-    }}
+  let maxCount = 0;
+  dimFiltered.forEach(d => SEV_ORDER.forEach(s => {{ if (matrix[d][s] > maxCount) maxCount = matrix[d][s]; }}));
+  let h = '<table style="width:100%;border-collapse:collapse;font-size:13px">';
+  h += '<tr><th style="text-align:left;padding:6px 8px"></th>';
+  SEV_ORDER.forEach(s => {{
+    h += `<th style="padding:6px 8px;text-align:center;color:${{IS_COLOURS[s]}};font-weight:600">${{s}}</th>`;
   }});
-  document.getElementById('an-dim-sev-stacked').parentElement.style.minHeight = '460px';
+  h += '<th style="padding:6px 8px;text-align:center;color:#64748b">n</th></tr>';
+  dimFiltered.forEach(d => {{
+    h += `<tr><td style="padding:6px 8px;font-weight:600;white-space:nowrap">${{DIM_SHORT[d]}}</td>`;
+    SEV_ORDER.forEach(s => {{
+      const cnt = matrix[d][s] || 0;
+      const pct = dimTotals[d] > 0 ? (cnt / dimTotals[d] * 100).toFixed(1) : '0.0';
+      const opacity = maxCount > 0 ? 1 - 0.5 * (cnt / maxCount) : 1;
+      const bg = IS_COLOURS[s];
+      h += `<td style="padding:6px 8px;text-align:center;background:${{bg}};opacity:${{opacity.toFixed(2)}};color:#fff;font-weight:500">${{cnt}}<br><span style="font-size:11px">${{pct}}%</span></td>`;
+    }});
+    h += `<td style="padding:6px 8px;text-align:center;color:#64748b">${{dimTotals[d]}}</td>`;
+    h += '</tr>';
+  }});
+  h += '</table>';
+  document.getElementById('an-dim-sev-stacked').innerHTML = h;
 }}
 
 function anSevRatio(recs) {{
