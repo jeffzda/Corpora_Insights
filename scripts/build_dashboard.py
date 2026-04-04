@@ -48,15 +48,16 @@ PER_PROJECT_DIR = ROOT / "insights" / "per_project"
 
 FAILURE_MODE_COLOURS = {
     "no major failure stated":          "#22c55e",
-    "poor scoping":                     "#f97316",
-    "unvalidated technical assumptions":"#ef4444",
-    "unvalidated integration":          "#f43f5e",
-    "regulatory & approvals":           "#a855f7",
     "commercial & market":              "#14b8a6",
     "coordination & stakeholders":      "#ec4899",
+    "technical underperformance":       "#ef4444",
+    "regulatory & approvals":           "#a855f7",
     "data & measurement":               "#eab308",
     "execution & logistics":            "#6366f1",
+    "unvalidated integration":          "#f43f5e",
 }
+
+FM_V3_DIR = ROOT / "insights" / "per_doc_fm_v3"
 
 
 ISSUE_SEVERITY_COLOURS = {
@@ -688,6 +689,23 @@ def load_dimension_tags() -> dict:
     return tags
 
 
+def load_fm_v3_tags() -> dict:
+    """Load v3 failure mode tags from per_doc_fm_v3/, keyed by record_id."""
+    if not FM_V3_DIR.exists():
+        return {}
+    paths = sorted(glob.glob(str(FM_V3_DIR / "doc_*_fm_v3.yaml")))
+    batches = _parallel_load_yaml(paths)
+    tags = {}
+    for results in batches:
+        for r in results:
+            rid = r.get("record_id")
+            if rid:
+                fm = r.get("failure_mode", "")
+                if fm and fm != "none":
+                    tags[rid] = fm
+    return tags
+
+
 def clean_record(r: dict) -> dict:
     return {k: (v if v is not None else "") for k, v in r.items()}
 
@@ -698,13 +716,23 @@ def distinct_sorted(records, field):
 
 
 def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = None,
-               qa_results: dict = None, dimension_tags: dict = None) -> str:
+               qa_results: dict = None, dimension_tags: dict = None,
+               fm_v3_tags: dict = None) -> str:
     qa_results = qa_results or {}
     dimension_tags = dimension_tags or {}
+    fm_v3_tags = fm_v3_tags or {}
     # Merge delivery dimension tags onto records
     for r in records:
         rid = r.get("record_id")
         r["dimensions"] = dimension_tags.get(rid, []) if rid else []
+    # Merge v3 failure mode tags (overwrite old failure_mode)
+    n_fm_updated = 0
+    for r in records:
+        rid = r.get("record_id")
+        if rid and rid in fm_v3_tags:
+            r["failure_mode"] = fm_v3_tags[rid]
+            n_fm_updated += 1
+    print(f"  Updated {n_fm_updated} records with v3 failure modes")
     # Merge QA verdicts onto records
     for r in records:
         rid = r.get("record_id")
@@ -2464,14 +2492,13 @@ function anCooccurrence(recs) {{
   const FM_NO_FAILURE = 'no major failure stated';
   const FMS = FM_LIST.filter(fm => fm !== FM_NO_FAILURE);
   const SHORT = {{
-    'poor scoping':                     'Poor scoping',
-    'unvalidated technical assumptions':'Tech assumptions',
-    'unvalidated integration':          'Integration',
-    'regulatory & approvals':           'Regulatory',
     'commercial & market':              'Commercial',
     'coordination & stakeholders':      'Coordination',
-    'data & measurement':               'Data & measurement',
+    'technical underperformance':       'Tech perf.',
+    'regulatory & approvals':           'Regulatory',
+    'data & measurement':               'Data/meas.',
     'execution & logistics':            'Execution',
+    'unvalidated integration':          'Integration',
   }};
 
   // matrix[primary][secondary] = count
@@ -3624,23 +3651,26 @@ def main():
             raise SystemExit(f"No records found in {input_dir}")
 
     from concurrent.futures import ThreadPoolExecutor as _ThreadPool
-    with _ThreadPool(max_workers=4) as tp:
+    with _ThreadPool(max_workers=5) as tp:
         f_portfolio = tp.submit(load_portfolio_size)
         f_bench = tp.submit(load_benchmarks)
         f_qa = tp.submit(load_qa_results)
         f_dim = tp.submit(load_dimension_tags)
+        f_fm = tp.submit(load_fm_v3_tags)
     portfolio_size = f_portfolio.result()
     benchmarks = f_bench.result()
     qa_results = f_qa.result()
     dimension_tags = f_dim.result()
+    fm_v3_tags = f_fm.result()
     total_bench_rows = sum(len(v['rows']) for v in benchmarks.values())
     if not args.deduped:
         print(f"Loaded {len(records)} records from {Path(args.input)}")
     print(f"Loaded {total_bench_rows} benchmark rows across {len(benchmarks)} datasets")
     print(f"Loaded {len(qa_results)} QA verdicts from {QA_DIR}")
     print(f"Loaded {len(dimension_tags)} dimension tags from {DIMENSIONS_DIR}")
+    print(f"Loaded {len(fm_v3_tags)} v3 failure mode tags from {FM_V3_DIR}")
 
-    html = build_html(records, portfolio_size, benchmarks, qa_results, dimension_tags)
+    html = build_html(records, portfolio_size, benchmarks, qa_results, dimension_tags, fm_v3_tags)
     output_path.write_text(html, encoding="utf-8")
     print(f"Dashboard written to {output_path}")
 
