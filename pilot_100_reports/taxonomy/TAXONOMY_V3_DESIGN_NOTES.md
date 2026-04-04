@@ -2,8 +2,10 @@
 
 **Working document capturing design thinking for the next taxonomy iteration.**
 **Status: Failure modes reclassified (v3, 7+1 categories — validated). Delivery dimensions tagged
-(10 categories — validated). Full corpus retagged. Dashboard integration in progress.**
-**Date: April 2026 (last updated: full corpus FM reclassification and delivery dimension analysis)**
+(10 categories — validated). Full corpus retagged. Dashboard integration complete. Dimension × FM
+× category matrices computed and exported. Dashboard charts converted to hm-table matrices.**
+**Date: April 2026 (last updated: 2026-04-05 — dimension × FM × category analysis, dashboard
+matrix visualisations, impact team mapping, Flyvbjerg framing)**
 
 ---
 
@@ -1235,6 +1237,72 @@ to operations the escalation drops to 7%. The risk is front-loaded.
 
 ---
 
+## Part 18: Dimension × FM × Category Analysis and Dashboard Integration
+
+### Per-ARENA-category dimension × failure mode matrices
+
+Full occurrence, percentage, and escalation matrices were computed for all 14 ARENA categories
+plus a corpus baseline. These are stored in `analysis/dimension_fm_matrices/` as CSVs (46 files:
+3 per category + 3 corpus). Key cross-category findings:
+
+**Universal patterns (true across all categories):**
+- FINANCING is always dominated by commercial & market (39–66% of dimension records)
+- CONSTRUCTION is always dominated by execution & logistics (35–62%)
+- GRID_CONNECTION almost always has regulatory & approvals as the top failure mode
+- Regulatory & approvals has the highest escalation of any failure mode in nearly every category
+
+**Severity ranking by category (overall escalation rate):**
+- Highest: pumped hydro (32%), grid stability (29%), solar thermal (28%)
+- Baseline: solar PV (23%), battery storage (23%)
+- Lowest: demand response (19%), wind (12%)
+
+Infrastructure-heavy, capital-intensive categories escalate most; mature/software-centric
+categories escalate least.
+
+**Standout escalation hotspots:**
+- Solar PV integration/commissioning × regulatory: 72% (n=18)
+- Solar thermal commercial & market overall: 62%
+- Demand response software/controls × regulatory: 60%
+- Pumped hydro technical underperformance: 52%
+
+### Dashboard matrix visualisations
+
+The severity × dimension and FM × dimension charts were converted from Chart.js stacked bar
+plots to HTML hm-table matrices matching the reference class matrix style. Key design decisions:
+- Cell background uses rgba with opacity normalised against global min/max percentage across
+  the entire matrix: `alpha = 0.2 + 0.8 * (pct - globalMin) / (globalMax - globalMin)`
+- FM columns use FM_COLOURS; severity columns use IS_COLOURS
+- Hover tooltips show raw count and percentage
+- Row totals in a final column
+
+### ARENA impact team mapping
+
+The 14 ARENA categories map to 6 internal impact teams:
+
+| Impact Team | ARENA Categories |
+|---|---|
+| Solar | Solar PV, Solar thermal, Wind |
+| Grid & Storage | Battery storage, Grid stability, Pumped hydro, Hybrid technologies |
+| DER | Distributed energy resources, Demand response, Off grid |
+| Hydrogen | Hydrogen |
+| Heavy Industry | Industrial renewables, Bioenergy |
+| Transport | Electric vehicles |
+
+This mapping is conceptual — not yet stamped onto records. The project-level `Category` field
+from `arena-projects-export` is the cleaner mapping unit (one category per project, no
+double-counting). The KB-level `arena_category` is a list and allows multi-tagging.
+
+### Flyvbjerg reference class framing
+
+The analytical framework aligns with Flyvbjerg's reference class forecasting:
+- **Reference class partitioning** — ARENA category × delivery dimension × failure mode
+- **Base rate severity** — escalation ratio as proxy for cost overrun severity (direct cost
+  overrun data is not available in ARENA KB; only 3.4% of records have quantified delay_magnitude)
+- **Systematic bias detection** — e.g., solar thermal commercial failures escalate at 62% while
+  wind sits at 18%, invisible without empirical base rates
+
+---
+
 ## Updated Open Questions
 
 9. Should the Financial / Economic / Commercial distinction (from ARENA's own lesson categories)
@@ -1253,6 +1321,17 @@ to operations the escalation drops to 7%. The risk is front-loaded.
 13. The three-layer risk framework is the core analytical contribution. Is it worth writing up
     as a standalone methodology paper, independent of ARENA-specific findings?
 
-14. Now that failure modes and delivery dimensions are both empirically validated, the full
+14. ~~Now that failure modes and delivery dimensions are both empirically validated, the full
     P(failure_mode | dimension) conditional distributions should be recomputed with the v3
-    failure modes and integrated into the dashboard. This is the core analytical product.
+    failure modes and integrated into the dashboard. This is the core analytical product.~~
+    **Resolved: done.** Full dimension × FM matrices computed per ARENA category with v3 failure
+    modes. Dashboard matrices integrated. CSV exports in `analysis/dimension_fm_matrices/`.
+
+15. Should the impact team mapping be stamped onto records/projects, or kept as a dashboard-level
+    grouping? The project-level Category field is the cleaner unit (one per project).
+
+16. The challenge tags (Part 2–5, 12–13) are designed and validated but not yet tagged on the
+    full corpus. The delivery dimensions (Part 17) serve a similar analytical role but from the
+    "what you're delivering" angle rather than "what makes it hard." Decide whether challenge
+    tags still add independent value on top of delivery dimensions, or whether the dimension
+    layer is sufficient.
