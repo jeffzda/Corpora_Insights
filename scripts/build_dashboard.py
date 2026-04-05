@@ -637,164 +637,26 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
     return ma_html + mb_html + mc_html + se_html + sc_html
 
 
-def build_risk_data(profiles: list[dict], min_n: int = 5) -> dict:
+def serialize_risk_profiles(profiles: list[dict]) -> str:
     """
-    Build lookup tables for the interactive risk rating tool.
-
-    Returns a dict with:
-      - corpus: {adv_rate, sev_pct, n_projects}
-      - by_category: {cat: {adv_rate, sev_pct, n, top_fm}}
-      - by_activity: {at: {adv_rate, sev_pct, n, top_fm}}
-      - by_proponent: {pt: {adv_rate, sev_pct, n, top_fm}}
-      - by_phase: {ph: {adv_rate, sev_pct, n, top_fm}}
-      - consortium: {yes: {adv_rate, sev_pct, n}, no: {adv_rate, sev_pct, n}}
-      - by_cat_at: {cat|at: {adv_rate, sev_pct, n, top_fm}}  (cross-tab)
-      - by_cat_phase: {cat|ph: {adv_rate, sev_pct, n, top_fm}} (cross-tab)
+    Serialize project profiles as compact JSON for the client-side risk rating tool.
+    Each profile keeps only the fields needed for filtering and computing stats.
     """
-    if not profiles:
-        return {}
-
-    n_all = len(profiles)
-
-    def _stats(profs):
-        if len(profs) < min_n:
-            return None
-        n = len(profs)
-        adv = sum(1 for p in profs if p["had_moderate_plus"]) / n
-        severe = sum(p["sev_severe"] for p in profs)
-        mild = sum(p["sev_mild"] for p in profs)
-        sev_pct = (severe / (severe + mild) * 100) if (severe + mild) > 0 else None
-        fm_c = Counter(fm for p in profs for fm in p["failure_modes"])
-        top_fm = fm_c.most_common(1)[0][0] if fm_c else None
-        top3 = [fm for fm, _ in fm_c.most_common(3)]
-        return {"adv_rate": round(adv, 4), "sev_pct": round(sev_pct, 1) if sev_pct is not None else None,
-                "n": n, "top_fm": top_fm, "top3_fm": top3}
-
-    # Corpus baseline
-    corpus_adv = sum(1 for p in profiles if p["had_moderate_plus"]) / n_all
-    corpus_severe = sum(p["sev_severe"] for p in profiles)
-    corpus_mild = sum(p["sev_mild"] for p in profiles)
-    corpus_sev = (corpus_severe / (corpus_severe + corpus_mild) * 100) if (corpus_severe + corpus_mild) > 0 else 0
-
-    result = {
-        "corpus": {"adv_rate": round(corpus_adv, 4), "sev_pct": round(corpus_sev, 1), "n": n_all},
-        "by_category": {},
-        "by_activity": {},
-        "by_proponent": {},
-        "by_phase": {},
-        "by_dimension": {},
-        "consortium": {},
-        "by_cat_at": {},
-        "by_cat_phase": {},
-    }
-
-    # By ARENA category
-    cat_groups = defaultdict(list)
+    out = []
     for p in profiles:
-        ac = p.get("arena_category")
-        if ac:
-            cat_groups[ac].append(p)
-    for cat, profs in cat_groups.items():
-        s = _stats(profs)
-        if s:
-            result["by_category"][cat] = s
-
-    # By activity type (exclude R&D)
-    at_groups = defaultdict(list)
-    for p in profiles:
-        at = p.get("activity_type")
-        if at and at != "R&D":
-            at_groups[at].append(p)
-    for at, profs in at_groups.items():
-        s = _stats(profs)
-        if s:
-            result["by_activity"][at] = s
-
-    # By proponent type
-    pt_groups = defaultdict(list)
-    for p in profiles:
-        pt = p.get("proponent_type")
-        if pt:
-            pt_groups[pt].append(p)
-    for pt, profs in pt_groups.items():
-        s = _stats(profs)
-        if s:
-            result["by_proponent"][pt] = s
-
-    # By lifecycle phase (project had records in that phase)
-    ph_groups = defaultdict(list)
-    for p in profiles:
-        for ph in p.get("phases_covered", set()):
-            ph_groups[ph].append(p)
-    for ph, profs in ph_groups.items():
-        # For phase: adv = had a major+ issue at that phase specifically
-        n = len(profs)
-        if n < min_n:
-            continue
-        adv = sum(1 for p in profs if ph in p.get("phase_failures", {})) / n
-        fm_c = Counter(p["phase_failures"][ph] for p in profs
-                       if ph in p.get("phase_failures", {}) and p["phase_failures"][ph])
-        top_fm = fm_c.most_common(1)[0][0] if fm_c else None
-        top3 = [fm for fm, _ in fm_c.most_common(3)]
-        result["by_phase"][ph] = {"adv_rate": round(adv, 4), "n": n, "top_fm": top_fm, "top3_fm": top3}
-
-    # By delivery dimension (project had records tagged with that dimension)
-    dim_groups = defaultdict(list)
-    for p in profiles:
-        for d in p.get("dimensions", set()):
-            dim_groups[d].append(p)
-    for dim, profs in dim_groups.items():
-        n = len(profs)
-        if n < min_n:
-            continue
-        # adv = had a major+ issue in a record with that dimension
-        adv = sum(1 for p in profs if dim in p.get("dim_failures", {})) / n
-        severe = sum(p["sev_severe"] for p in profs)
-        mild = sum(p["sev_mild"] for p in profs)
-        sev_pct = (severe / (severe + mild) * 100) if (severe + mild) > 0 else None
-        fm_c = Counter(p["dim_failures"][dim] for p in profs
-                       if dim in p.get("dim_failures", {}) and p["dim_failures"][dim])
-        top_fm = fm_c.most_common(1)[0][0] if fm_c else None
-        top3 = [fm for fm, _ in fm_c.most_common(3)]
-        result["by_dimension"][dim] = {
-            "adv_rate": round(adv, 4),
-            "sev_pct": round(sev_pct, 1) if sev_pct is not None else None,
-            "n": n, "top_fm": top_fm, "top3_fm": top3}
-
-    # Consortium
-    cons_yes = [p for p in profiles if p.get("is_consortium")]
-    cons_no = [p for p in profiles if not p.get("is_consortium")]
-    sy = _stats(cons_yes)
-    sn = _stats(cons_no)
-    if sy:
-        result["consortium"]["yes"] = sy
-    if sn:
-        result["consortium"]["no"] = sn
-
-    # Cross-tab: category × activity type
-    for (ac, at), key in [((ac, at), f"{ac}|{at}")
-                           for ac in cat_groups for at in at_groups]:
-        profs = [p for p in profiles
-                 if p.get("arena_category") == ac and p.get("activity_type") == at and at != "R&D"]
-        s = _stats(profs)
-        if s:
-            result["by_cat_at"][key] = s
-
-    # Cross-tab: category × phase
-    for ac in cat_groups:
-        ac_profs = [p for p in profiles if p.get("arena_category") == ac]
-        for ph in _PH_ORDER:
-            covered = [p for p in ac_profs if ph in p.get("phases_covered", set())]
-            if len(covered) < min_n:
-                continue
-            adv = sum(1 for p in covered if ph in p.get("phase_failures", {})) / len(covered)
-            fm_c = Counter(p["phase_failures"][ph] for p in covered
-                           if ph in p.get("phase_failures", {}) and p["phase_failures"][ph])
-            top_fm = fm_c.most_common(1)[0][0] if fm_c else None
-            result["by_cat_phase"][f"{ac}|{ph}"] = {
-                "adv_rate": round(adv, 4), "n": len(covered), "top_fm": top_fm}
-
-    return result
+        out.append({
+            "cat": p.get("arena_category"),
+            "act": p.get("activity_type"),
+            "pro": p.get("proponent_type"),
+            "con": p.get("is_consortium", False),
+            "adv": p.get("had_moderate_plus", False),
+            "sv": p.get("sev_severe", 0),
+            "ml": p.get("sev_mild", 0),
+            "fms": sorted(p.get("failure_modes") or []),
+            "phs": sorted(p.get("phases_covered") or []),
+            "phf": p.get("phase_failures") or {},
+        })
+    return json.dumps(out, ensure_ascii=False, separators=(",", ":"))
 
 
 def load_portfolio_size() -> int:
@@ -971,8 +833,7 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
     kb_projects = distinct_sorted(records, "kb_associated_project")
     project_profiles = build_project_profiles(records)
     matrix_html = build_reference_class_html(project_profiles) if project_profiles else ""
-    risk_data = build_risk_data(project_profiles) if project_profiles else {}
-    risk_data_json = json.dumps(risk_data, ensure_ascii=False)
+    risk_profiles_json = serialize_risk_profiles(project_profiles) if project_profiles else "[]"
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -1501,7 +1362,7 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
       <div style="font-size:20px;font-weight:700;color:#0f172a;margin-bottom:4px">Reference-class risk rating</div>
       <div style="font-size:16px;color:#64748b;margin-bottom:16px;max-width:800px;line-height:1.6">
         Select a project's attributes to see its empirical risk profile based on {n_projects_covered} ARENA projects.
-        The compound score chains adversity rate (likelihood) and severity escalation (consequence) across dimensions.
+        Rates are computed directly from the intersection of all selected attributes — no averaging of marginal statistics.
       </div>
     </div>
     <div style="padding:0 32px 24px;display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start">
@@ -1637,7 +1498,7 @@ const QA_COLOURS = {qa_colours};
 const DIM_ORDER = {json.dumps(DIMENSION_ORDER)};
 const DIM_SHORT = {json.dumps(DIMENSION_SHORT)};
 const DIM_COLOURS = {json.dumps(DIMENSION_COLOURS)};
-const RISK_DATA = {risk_data_json};
+const RISK_PROFILES = {risk_profiles_json};
 Chart.defaults.font.size = 14;
 Chart.defaults.plugins.legend.labels.font = {{ size: 14 }};
 Chart.defaults.plugins.tooltip.bodyFont = {{ size: 14 }};
@@ -3881,22 +3742,27 @@ async function createPermalink(repId) {{
 }}
 
 // ── Risk Rating Tool ─────────────────────────────────────────────
+// Filters project profiles to the intersection of ALL selected attributes,
+// then computes adversity rate, severity escalation, and top failure modes
+// directly from the filtered set. No weighted averages of marginal rates.
+
 let riskInitialised = false;
 function initRiskRating() {{
-  if (riskInitialised || !RISK_DATA || !RISK_DATA.corpus) return;
+  if (riskInitialised || !RISK_PROFILES || !RISK_PROFILES.length) return;
   riskInitialised = true;
-  const sel = (id, obj, labelFn) => {{
+  const P = RISK_PROFILES;
+  const addOpts = (id, vals) => {{
     const el = document.getElementById(id);
-    Object.keys(obj || {{}}).sort().forEach(k => {{
+    vals.sort().forEach(v => {{
       const o = document.createElement('option');
-      o.value = k; o.textContent = labelFn ? labelFn(k) : k;
+      o.value = v; o.textContent = v;
       el.appendChild(o);
     }});
   }};
-  sel('rr-category', RISK_DATA.by_category);
-  sel('rr-activity', RISK_DATA.by_activity);
-  sel('rr-proponent', RISK_DATA.by_proponent);
-  sel('rr-phase', RISK_DATA.by_phase);
+  addOpts('rr-category', [...new Set(P.map(p => p.cat).filter(Boolean))]);
+  addOpts('rr-activity', [...new Set(P.map(p => p.act).filter(v => v && v !== 'R&D'))]);
+  addOpts('rr-proponent', [...new Set(P.map(p => p.pro).filter(Boolean))]);
+  addOpts('rr-phase', [...new Set(P.flatMap(p => p.phs || []))]);
 }}
 
 function resetRisk() {{
@@ -3907,8 +3773,8 @@ function resetRisk() {{
 }}
 
 function computeRisk() {{
-  const R = RISK_DATA;
-  if (!R || !R.corpus) return;
+  const P = RISK_PROFILES;
+  if (!P || !P.length) return;
 
   const cat = document.getElementById('rr-category').value;
   const act = document.getElementById('rr-activity').value;
@@ -3921,84 +3787,81 @@ function computeRisk() {{
     return;
   }}
 
-  const corpus = R.corpus;
-  const corpusAdv = corpus.adv_rate;
-  const corpusSev = corpus.sev_pct;
+  // ── Filter profiles to intersection of ALL selected attributes ──
+  var filtered = P;
+  var filters = [];
+  if (cat) {{ filtered = filtered.filter(p => p.cat === cat); filters.push({{ name: 'Category', label: cat }}); }}
+  if (act) {{ filtered = filtered.filter(p => p.act === act); filters.push({{ name: 'Activity', label: act }}); }}
+  if (pro) {{ filtered = filtered.filter(p => p.pro === pro); filters.push({{ name: 'Proponent', label: pro }}); }}
+  if (ph)  {{ filtered = filtered.filter(p => (p.phs || []).indexOf(ph) >= 0); filters.push({{ name: 'Phase', label: ph }}); }}
+  if (con) {{ filtered = filtered.filter(p => con === 'yes' ? p.con : !p.con); filters.push({{ name: 'Consortium', label: con === 'yes' ? 'Yes' : 'No' }}); }}
 
-  // Collect all selected dimensions with their data
-  const dims = [];
-  if (cat && R.by_category[cat]) {{
-    const d = R.by_category[cat];
-    dims.push({{ name: 'Category', label: cat, adv: d.adv_rate, sev: d.sev_pct, n: d.n, top_fm: d.top_fm, top3: d.top3_fm, weight: 3 }});
-  }}
-  if (act && R.by_activity[act]) {{
-    const d = R.by_activity[act];
-    dims.push({{ name: 'Activity', label: act, adv: d.adv_rate, sev: d.sev_pct, n: d.n, top_fm: d.top_fm, top3: d.top3_fm, weight: 2 }});
-  }}
-  if (pro && R.by_proponent[pro]) {{
-    const d = R.by_proponent[pro];
-    dims.push({{ name: 'Proponent', label: pro, adv: d.adv_rate, sev: d.sev_pct, n: d.n, top_fm: d.top_fm, top3: d.top3_fm, weight: 2 }});
-  }}
-  if (ph && R.by_phase[ph]) {{
-    const d = R.by_phase[ph];
-    dims.push({{ name: 'Phase', label: ph, adv: d.adv_rate, sev: d.sev_pct, n: d.n, top_fm: d.top_fm, top3: d.top3_fm, weight: 1 }});
-  }}
-  if (con && R.consortium[con]) {{
-    const d = R.consortium[con];
-    dims.push({{ name: 'Consortium', label: con === 'yes' ? 'Yes' : 'No', adv: d.adv_rate, sev: d.sev_pct, n: d.n, top_fm: d.top_fm, top3: d.top3_fm, weight: 1 }});
-  }}
+  var n = filtered.length;
 
-  // Cross-tab: prefer more specific cell when available
-  var crossCatAt = null;
-  if (cat && act) {{
-    var key = cat + '|' + act;
-    if (R.by_cat_at[key]) crossCatAt = R.by_cat_at[key];
-  }}
-  var crossCatPh = null;
-  if (cat && ph) {{
-    var key2 = cat + '|' + ph;
-    if (R.by_cat_phase[key2]) crossCatPh = R.by_cat_phase[key2];
-  }}
-
-  if (dims.length === 0) {{
-    resetRisk();
+  if (n === 0) {{
+    document.getElementById('rr-output').innerHTML =
+      '<div style="color:#d97706;font-size:18px;padding:40px 0;text-align:center">'
+      + 'No projects match this combination of attributes. Try removing a filter.'
+      + '</div>';
     return;
   }}
 
-  // ── Scoring: absolute rates, weighted average ──────────────────
-  // Use the best available adversity rate:
-  //   1. Cross-tab cell (most specific) if available
-  //   2. Weighted average of all dimension rates
-  // This avoids the compression problem of normalised multipliers.
+  // ── Compute stats from the filtered set ──────────────────────
+  var nAdv = 0, severe = 0, mild = 0;
+  var fmCount = {{}};
+  filtered.forEach(function(p) {{
+    if (p.adv) nAdv++;
+    severe += p.sv;
+    mild += p.ml;
+    (p.fms || []).forEach(function(fm) {{
+      fmCount[fm] = (fmCount[fm] || 0) + 1;
+    }});
+  }});
 
-  var bestAdv = null;
-  var bestSev = null;
-  var bestLabel = null;
+  var advRate = nAdv / n;
+  var sevPct = (severe + mild) > 0 ? (severe / (severe + mild) * 100) : null;
+  var topFms = Object.entries(fmCount).sort(function(a,b) {{ return b[1] - a[1]; }}).slice(0, 5);
 
-  if (crossCatAt) {{
-    bestAdv = crossCatAt.adv_rate;
-    bestSev = crossCatAt.sev_pct;
-    bestLabel = cat + ' \u00d7 ' + act;
+  // Phase-specific adversity if a phase is selected
+  var phaseAdvRate = null;
+  if (ph) {{
+    var phAdv = filtered.filter(p => p.phf && p.phf[ph]).length;
+    phaseAdvRate = phAdv / n;
   }}
 
-  // Weighted average across all dimensions
-  var wSum = 0, wAdvSum = 0, wSevSum = 0, wSevN = 0;
-  dims.forEach(function(d) {{
-    wAdvSum += d.adv * d.weight;
-    wSum += d.weight;
-    if (d.sev != null) {{ wSevSum += d.sev * d.weight; wSevN += d.weight; }}
-  }});
-  var avgAdv = wSum > 0 ? wAdvSum / wSum : corpusAdv;
-  var avgSev = wSevN > 0 ? wSevSum / wSevN : corpusSev;
+  // Corpus baseline
+  var corpusN = P.length;
+  var corpusAdv = P.filter(p => p.adv).length / corpusN;
+  var corpusSevere = P.reduce((s,p) => s + p.sv, 0);
+  var corpusMild = P.reduce((s,p) => s + p.ml, 0);
+  var corpusSev = (corpusSevere + corpusMild) > 0 ? (corpusSevere / (corpusSevere + corpusMild) * 100) : 0;
 
-  // Final rates: cross-tab overrides if available, otherwise weighted average
-  var finalAdv = bestAdv != null ? bestAdv : avgAdv;
-  var finalSev = bestSev != null ? bestSev : avgSev;
+  // ── Compute marginal rates for comparison bars ──────────────
+  var marginals = [];
+  if (cat) {{
+    var mp = P.filter(p => p.cat === cat);
+    marginals.push({{ name: 'Category', label: cat, adv: mp.filter(p=>p.adv).length / mp.length, n: mp.length }});
+  }}
+  if (act) {{
+    var mp = P.filter(p => p.act === act);
+    marginals.push({{ name: 'Activity', label: act, adv: mp.filter(p=>p.adv).length / mp.length, n: mp.length }});
+  }}
+  if (pro) {{
+    var mp = P.filter(p => p.pro === pro);
+    marginals.push({{ name: 'Proponent', label: pro, adv: mp.filter(p=>p.adv).length / mp.length, n: mp.length }});
+  }}
+  if (ph) {{
+    var mp = P.filter(p => (p.phs||[]).indexOf(ph) >= 0);
+    marginals.push({{ name: 'Phase', label: ph, adv: mp.filter(p=>p.adv).length / mp.length, n: mp.length }});
+  }}
+  if (con) {{
+    var mp = P.filter(p => con === 'yes' ? p.con : !p.con);
+    marginals.push({{ name: 'Consortium', label: con === 'yes' ? 'Yes' : 'No', adv: mp.filter(p=>p.adv).length / mp.length, n: mp.length }});
+  }}
 
-  // Score on 1–10 scale using absolute position in the observed range
-  // Combined risk index = adv * (sev/100), ranging ~0.03 to ~0.67
-  // Map observed range [0.05, 0.55] to [1, 10]
-  var riskIndex = finalAdv * (finalSev / 100);
+  // ── Score: risk index from intersection stats ──────────────
+  var effectiveSev = sevPct != null ? sevPct : corpusSev;
+  var riskIndex = advRate * (effectiveSev / 100);
   var score = Math.max(1, Math.min(10, 1 + 9 * ((riskIndex - 0.05) / 0.30)));
 
   function scoreColour(s) {{
@@ -4020,21 +3883,11 @@ function computeRisk() {{
   var col = scoreColour(score);
   var lbl = scoreLabel(score);
 
-  // Collect top failure modes weighted by dimension importance + cross-tabs
-  var fmCount = {{}};
-  dims.forEach(function(d) {{
-    (d.top3 || [d.top_fm]).forEach(function(fm, i) {{
-      if (fm) fmCount[fm] = (fmCount[fm] || 0) + d.weight * (3 - i);
-    }});
-  }});
-  if (crossCatAt && crossCatAt.top_fm) fmCount[crossCatAt.top_fm] = (fmCount[crossCatAt.top_fm] || 0) + 5;
-  if (crossCatPh && crossCatPh.top_fm) fmCount[crossCatPh.top_fm] = (fmCount[crossCatPh.top_fm] || 0) + 4;
-  var topFms = Object.entries(fmCount).sort(function(a,b) {{ return b[1] - a[1]; }}).slice(0, 4);
-
   // ── Build output HTML ──────────────────────────────────────────
   var html = '';
 
-  // Score card
+  // Reference class description
+  var refDesc = filters.map(f => f.label).join(' \u00d7 ');
   html += '<div class="rr-card" style="display:flex;align-items:center;gap:24px;flex-wrap:wrap;background:' + scoreBg(score) + '">'
     + '<div class="rr-score-ring" style="border-color:' + col + ';color:' + col + '">'
     + '<div class="rr-score-label">Risk</div>'
@@ -4043,71 +3896,67 @@ function computeRisk() {{
     + '</div>'
     + '<div style="flex:1;min-width:200px">'
     + '<div style="font-size:16px;color:#475569;line-height:1.8">'
-    + '<strong style="color:#0f172a">Adversity rate:</strong> ' + (finalAdv*100).toFixed(0) + '%'
+    + '<strong style="color:#0f172a">Reference class:</strong> ' + refDesc
+    + ' <span style="color:#94a3b8">(<strong>' + n + '</strong> project' + (n !== 1 ? 's' : '') + ')</span><br>'
+    + '<strong style="color:#0f172a">Adversity rate:</strong> ' + (advRate*100).toFixed(0) + '%'
     + ' <span style="color:#94a3b8">(corpus ' + (corpusAdv*100).toFixed(0) + '%)</span><br>'
-    + '<strong style="color:#0f172a">Severity escalation:</strong> ' + finalSev.toFixed(0) + '%'
+    + '<strong style="color:#0f172a">Severity escalation:</strong> ' + (sevPct != null ? sevPct.toFixed(0) + '%' : 'n/a')
     + ' <span style="color:#94a3b8">(corpus ' + corpusSev.toFixed(0) + '%)</span>';
-  if (bestLabel) {{
-    html += '<br><strong style="color:#0f172a">Best cell:</strong> ' + bestLabel
-      + ' <span style="color:#94a3b8">(n=' + (crossCatAt ? crossCatAt.n : '?') + ')</span>';
+  if (phaseAdvRate != null) {{
+    html += '<br><strong style="color:#0f172a">Phase-specific adversity:</strong> ' + (phaseAdvRate*100).toFixed(0) + '%'
+      + ' <span style="color:#94a3b8">(major+ issues at ' + ph + ')</span>';
   }}
   html += '</div></div></div>';
 
-  // Dimension breakdown
-  html += '<div class="rr-card">'
-    + '<div style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px">Dimension breakdown</div>';
+  // Marginal vs intersection comparison
+  if (marginals.length > 1) {{
+    html += '<div class="rr-card">'
+      + '<div style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px">Marginal vs intersection</div>'
+      + '<div style="font-size:14px;color:#64748b;margin-bottom:10px">Each bar shows the adversity rate for that attribute alone. The intersection (bottom) shows the rate when all filters are applied simultaneously.</div>';
 
-  // Corpus baseline row
-  html += '<div class="rr-dim-row">'
-    + '<div class="rr-dim-label" style="color:#94a3b8;font-style:italic">Corpus baseline</div>'
-    + '<div class="rr-dim-bar"><div class="rr-bar"><div class="rr-bar-fill" style="width:' + (corpusAdv*100) + '%;background:#cbd5e1"></div></div></div>'
-    + '<div class="rr-dim-val" style="color:#94a3b8">' + (corpusAdv*100).toFixed(0) + '%</div>'
-    + '<div class="rr-dim-mult"></div>'
-    + '</div>';
-
-  dims.forEach(function(d) {{
-    var delta = d.adv - corpusAdv;
-    var deltaSign = delta >= 0 ? '+' : '';
-    var deltaPp = (delta * 100).toFixed(0);
-    var deltaCol = delta >= 0.05 ? '#dc2626' : (delta <= -0.05 ? '#16a34a' : '#64748b');
-    var barPct = Math.min(d.adv * 100, 100);
-    var dimSev = d.sev != null ? d.sev : corpusSev;
-    var barCol = scoreColour(1 + 9 * ((d.adv * dimSev / 100 - 0.05) / 0.30));
+    // Corpus baseline row
     html += '<div class="rr-dim-row">'
-      + '<div class="rr-dim-label">' + d.name + '</div>'
-      + '<div class="rr-dim-bar"><div class="rr-bar"><div class="rr-bar-fill" style="width:' + barPct + '%;background:' + barCol + '"></div></div></div>'
-      + '<div class="rr-dim-val">' + (d.adv*100).toFixed(0) + '%</div>'
-      + '<div class="rr-dim-mult" style="color:' + deltaCol + '">' + deltaSign + deltaPp + 'pp</div>'
+      + '<div class="rr-dim-label" style="color:#94a3b8;font-style:italic">Corpus baseline</div>'
+      + '<div class="rr-dim-bar"><div class="rr-bar"><div class="rr-bar-fill" style="width:' + (corpusAdv*100) + '%;background:#cbd5e1"></div></div></div>'
+      + '<div class="rr-dim-val" style="color:#94a3b8">' + (corpusAdv*100).toFixed(0) + '%</div>'
+      + '<div class="rr-dim-mult" style="color:#94a3b8">n=' + corpusN + '</div>'
       + '</div>';
-  }});
 
-  // Cross-tab refinements
-  if (crossCatAt) {{
-    html += '<div style="margin-top:10px;padding:10px 14px;background:#f0f9ff;border:1px solid #bae6fd;border-radius:6px;font-size:15px;color:#0c4a6e">'
-      + '<strong>Best available cell:</strong> ' + cat + ' \u00d7 ' + act + ' \u2014 '
-      + '<strong>' + (crossCatAt.adv_rate*100).toFixed(0) + '% adversity</strong>';
-    if (crossCatAt.sev_pct != null) html += ', <strong>' + crossCatAt.sev_pct.toFixed(0) + '% severity</strong>';
-    html += ' <span style="color:#94a3b8">(n=' + crossCatAt.n + ')</span></div>';
-  }}
-  if (crossCatPh) {{
-    html += '<div style="margin-top:6px;padding:10px 14px;background:#f0f9ff;border:1px solid #bae6fd;border-radius:6px;font-size:15px;color:#0c4a6e">'
-      + '<strong>Phase refinement:</strong> ' + cat + ' \u00d7 ' + ph + ' \u2014 '
-      + '<strong>' + (crossCatPh.adv_rate*100).toFixed(0) + '% adversity at this phase</strong>'
-      + ' <span style="color:#94a3b8">(n=' + crossCatPh.n + ')</span></div>';
-  }}
-  html += '</div>';
+    marginals.forEach(function(d) {{
+      var barCol = '#64748b';
+      var barPct = Math.min(d.adv * 100, 100);
+      html += '<div class="rr-dim-row">'
+        + '<div class="rr-dim-label">' + d.name + '</div>'
+        + '<div class="rr-dim-bar"><div class="rr-bar"><div class="rr-bar-fill" style="width:' + barPct + '%;background:' + barCol + '"></div></div></div>'
+        + '<div class="rr-dim-val">' + (d.adv*100).toFixed(0) + '%</div>'
+        + '<div class="rr-dim-mult" style="color:#94a3b8">n=' + d.n + '</div>'
+        + '</div>';
+    }});
 
-  // Top failure modes to watch
+    // Intersection row
+    var intCol = scoreColour(score);
+    html += '<div class="rr-dim-row" style="border-top:2px solid #e2e8f0;padding-top:6px;margin-top:4px">'
+      + '<div class="rr-dim-label" style="font-weight:700;color:' + intCol + '">Intersection</div>'
+      + '<div class="rr-dim-bar"><div class="rr-bar"><div class="rr-bar-fill" style="width:' + Math.min(advRate*100, 100) + '%;background:' + intCol + '"></div></div></div>'
+      + '<div class="rr-dim-val" style="font-weight:700;color:' + intCol + '">' + (advRate*100).toFixed(0) + '%</div>'
+      + '<div class="rr-dim-mult" style="font-weight:700;color:' + intCol + '">n=' + n + '</div>'
+      + '</div>';
+
+    html += '</div>';
+  }}
+
+  // Top failure modes
   if (topFms.length > 0) {{
     html += '<div class="rr-card">'
-      + '<div style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px">Top failure modes to watch</div>';
-    topFms.forEach(function(pair, i) {{
-      var fm = pair[0];
+      + '<div style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px">Top failure modes in reference class</div>';
+    topFms.forEach(function(pair) {{
+      var fm = pair[0], cnt = pair[1];
+      var pct = (cnt / n * 100).toFixed(0);
       var fmCol = FM_COLOURS[fm] || '#64748b';
       html += '<div class="rr-fm-item">'
         + '<div class="rr-fm-dot" style="background:' + fmCol + '"></div>'
         + '<div class="rr-fm-name">' + fm + '</div>'
-        + '<div class="rr-fm-pct" style="color:' + fmCol + '">#' + (i+1) + '</div>'
+        + '<div class="rr-fm-pct" style="color:' + fmCol + '">' + pct + '% <span style="color:#94a3b8;font-size:13px">(' + cnt + '/' + n + ')</span></div>'
         + '</div>';
     }});
     html += '</div>';
@@ -4118,42 +3967,25 @@ function computeRisk() {{
     + '<div style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px">Interpretation</div>'
     + '<div style="font-size:16px;color:#475569;line-height:1.7">';
   if (score <= 3.5) {{
-    html += 'This project profile has a <strong style="color:#16a34a">lower-than-average</strong> empirical risk. '
-      + 'The reference class suggests adversity is less frequent and tends to be less severe when it does occur.';
+    html += 'This reference class has a <strong style="color:#16a34a">lower-than-average</strong> empirical risk. '
+      + 'Among the ' + n + ' matching projects, adversity is less frequent and tends to be less severe.';
   }} else if (score <= 6.5) {{
-    html += 'This project profile has a <strong style="color:#d97706">moderate</strong> empirical risk. '
-      + 'Adversity rates are broadly in line with ARENA corpus averages. '
-      + 'Standard risk management should be sufficient, with attention to the failure modes flagged above.';
+    html += 'This reference class has a <strong style="color:#d97706">moderate</strong> empirical risk. '
+      + 'Among the ' + n + ' matching projects, adversity rates are broadly in line with the corpus average.';
   }} else {{
-    html += 'This project profile has an <strong style="color:#dc2626">elevated</strong> empirical risk. '
-      + 'The reference class shows both higher-than-average adversity and more severe outcomes. '
-      + 'Consider enhanced due diligence on the flagged failure modes.';
-  }}
-
-  // Key risk drivers
-  var highDims = dims.filter(function(d) {{ return d.adv - corpusAdv >= 0.05; }});
-  if (highDims.length > 0) {{
-    html += '<br><br><strong>Key risk drivers:</strong> '
-      + highDims.map(function(d) {{
-        return d.name.toLowerCase() + ' (' + d.label + ': ' + (d.adv*100).toFixed(0) + '% adversity, +'
-          + Math.round((d.adv - corpusAdv)*100) + 'pp above baseline)';
-      }}).join('; ') + '.';
-  }}
-  var lowDims = dims.filter(function(d) {{ return corpusAdv - d.adv >= 0.05; }});
-  if (lowDims.length > 0) {{
-    html += '<br><strong>Mitigating factors:</strong> '
-      + lowDims.map(function(d) {{
-        return d.name.toLowerCase() + ' (' + d.label + ': ' + (d.adv*100).toFixed(0) + '% adversity, '
-          + Math.round((corpusAdv - d.adv)*100) + 'pp below baseline)';
-      }}).join('; ') + '.';
+    html += 'This reference class has an <strong style="color:#dc2626">elevated</strong> empirical risk. '
+      + 'Among the ' + n + ' matching projects, both adversity rate and severity escalation are above average.';
   }}
   html += '</div></div>';
 
   // Sample size warning
-  var minN = Math.min.apply(null, dims.map(function(d) {{ return d.n; }}));
-  if (minN < 20) {{
-    html += '<div style="font-size:14px;color:#d97706;padding:8px 12px;background:#fffbeb;border:1px solid #fde68a;border-radius:6px">'
-      + 'Note: One or more dimensions have a small reference class (n=' + minN + '). Treat results with caution.'
+  if (n < 10) {{
+    html += '<div style="font-size:14px;color:#dc2626;padding:10px 14px;background:#fef2f2;border:1px solid #fecaca;border-radius:6px">'
+      + '\u26a0\ufe0f <strong>Very small reference class (n=' + n + ').</strong> These rates are unreliable. Consider removing a filter to broaden the reference class.'
+      + '</div>';
+  }} else if (n < 20) {{
+    html += '<div style="font-size:14px;color:#d97706;padding:10px 14px;background:#fffbeb;border:1px solid #fde68a;border-radius:6px">'
+      + 'Note: Small reference class (n=' + n + '). Treat results with caution.'
       + '</div>';
   }}
 
