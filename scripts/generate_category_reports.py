@@ -269,7 +269,7 @@ def build_coverage_timeline(recs):
     }
 
 
-def build_record_summaries(recs, max_records=200):
+def build_record_summaries(recs, max_records=400):
     """Extract the fields Sonnet needs for narrative colour, capped for token budget."""
     # Prioritise: recent records first, then severe, then unflagged
     def sort_key(r):
@@ -345,6 +345,14 @@ def build_prompt(category, matrix, fm_severity, coverage, record_summaries):
 
 Your audience is an experienced energy sector professional who wants specific, actionable insight — not generic risk management advice. Write with authority but acknowledge uncertainty where the data is thin.
 
+VOICE AND APPROACH:
+- Write like a senior adviser briefing a colleague, not a consultant delivering a report template. Be direct, specific, and opinionated where the data supports it.
+- Let the data guide the structure. If one dimension or failure mode dominates the story, spend more time on it. If a dimension has little to say, skip it or mention it in a sentence. Do not give equal airtime to every category just because it exists in the matrix.
+- Use direct quotes from the evidence_excerpt fields to ground your claims. These are primary source material from ARENA project reports — they carry more weight than your paraphrase. Quote selectively but frequently: a well-chosen quote from a project lessons-learnt report is worth more than a paragraph of synthesis.
+- Name specific projects, specific dollar amounts, specific timelines, specific technical details. "Multiple projects experienced delays" is weak. "The Yuri project's schedule extended from 19 to 33 months" is strong. The records give you this specificity — use it.
+- When you identify a pattern across multiple projects, show it: name at least 2-3 projects that demonstrate it, describe what happened in each, and then draw the conclusion. This is reference class analysis — the value is in the pattern, not the individual anecdote.
+- Do not hedge with "may" or "could" when the data clearly says "does" or "did". Reserve uncertainty language for genuinely uncertain conclusions.
+
 CRITICAL TEMPORAL GUIDANCE:
 - Records span 2012–2024. Newer records (2022+) are more representative of current risks.
 - Some records carry a temporal_warning flag indicating the insight relates to fast-moving technology and the source is pre-2021. These records may describe conditions (costs, capability, market) that have since changed substantially.
@@ -353,17 +361,25 @@ CRITICAL TEMPORAL GUIDANCE:
 - When the evidence for a claim comes primarily from pre-2018 records, say so explicitly.
 - Lead with recent patterns. Use older records for historical context and trend identification.
 
-STRUCTURE:
-1. **Executive summary** (3-4 sentences): What a PM should know before their first meeting about a {category} project.
-2. **Coverage and data quality**: How much data underlies this profile, its temporal distribution, and any caveats.
-3. **Risk landscape by delivery dimension**: For each dimension where there is meaningful data, describe what tends to go wrong and how severe it is. Thread the failure mode data through naturally — don't just list percentages. Identify which dimensions are highest-risk and why.
-4. **Failure mode deep-dive**: For the top 3-4 failure modes, provide narrative detail drawing on the individual records. What does this failure mode actually look like in {category} projects? Include specific examples from records where they illustrate a pattern.
-5. **Temporal trends**: How has the risk profile shifted over time? Are certain failure modes becoming more or less common? Are newer projects experiencing different patterns than older ones?
-6. **Key watchpoints for due diligence**: 5-7 specific things a PM should probe when reviewing a {category} project, grounded in the data.
+STRUCTURE (adapt as the data warrants — these are sections, not a straitjacket):
+1. **Executive summary**: What a PM should know before their first meeting about a {category} project. Be specific to this category — if someone could swap in a different technology name and the summary would still read the same, it's too generic.
+2. **The evidence base**: How much data underlies this profile, its temporal distribution, and any caveats about coverage or confidence. Be honest about gaps.
+3. **Where things go wrong**: The core analytical section. Organise by whatever axis tells the clearest story — by delivery dimension, by failure mode, by project phase, or by a hybrid. Go deep on the 3-5 most important risk areas with specific project examples, evidence quotes, and quantified impacts. For less important areas, a brief mention suffices.
+4. **Failure mode deep-dives**: For each major failure mode, build a narrative from the individual records. What does this failure mode actually look like in {category} projects? Show the mechanism — how does it start, how does it compound, what does it cost? Use multiple project examples to establish the pattern. Quote from evidence excerpts where they illuminate the point.
+5. **What has changed over time**: How has the risk profile evolved? Which risks are getting worse, which are improving, which are new? Ground this in the timeline data — don't speculate.
+6. **Due diligence checklist**: Specific, actionable items a PM should probe. For each item: what question to ask, what answer should raise concern, and what the data says about why this matters. These should be concrete enough that a PM could use them in a meeting. "Assess grid connection risk" is useless. "Ask for the connection timeline and compare against the 20-month median from similar ARENA projects — if the applicant claims less than 12 months for a GFM system, probe hard" is useful.
 
-LENGTH: 1500-2500 words. Be specific and evidence-based. Avoid generic statements that could apply to any technology category.
+Write as long as the data warrants. Do not pad, but do not truncate either — if there are 200 records with rich detail, use them. A thorough, well-evidenced profile is more valuable than a constrained one. Aim for depth over breadth: it is better to say a lot about the things that matter than a little about everything.
 
-FORMAT: Markdown with headers. Include a metadata block at the top with category, date generated, record count, project count."""
+FORMAT: Markdown with headers. Include a YAML metadata block at the top:
+```
+---
+category: "{category}"
+date_generated: YYYY-MM-DD
+record_count: N
+project_count: N
+---
+```"""
 
     user_prompt = f"""# {category} — Delivery Risk Profile Data Package
 
@@ -432,7 +448,7 @@ def generate_report(category, records, dry_run=False):
 
     response = client.messages.create(
         model="claude-sonnet-4-20250514",
-        max_tokens=4096,
+        max_tokens=16384,
         system=system_prompt,
         messages=[{"role": "user", "content": user_prompt}],
     )
@@ -499,7 +515,7 @@ def main():
         result = generate_report(cat, records, dry_run=args.dry_run)
         if result:
             results.append(result)
-            # Rough cost estimate: Sonnet input $3/MTok, output $15/MTok
+            # Rough cost estimate: Sonnet input $3/MTok, output $15/MTok (longer reports now)
             cost = result["tokens_in"] / 1e6 * 3 + result["tokens_out"] / 1e6 * 15
             total_cost += cost
             print(f"  Est. cost: ${cost:.3f}")
