@@ -657,6 +657,7 @@ def serialize_risk_records(records: list[dict]) -> str:
             "d": dims,
             "p": r.get("proponent_type") or "",
             "s": sev,
+            "j": r.get("kb_associated_project") or "",
         }
         if fm and fm != _NO_FAIL:
             entry["f"] = fm
@@ -3841,6 +3842,7 @@ function computeRisk() {{
   var sevPct = (severe + mild) > 0 ? (severe / (severe + mild) * 100) : null;
   var escRatio = mild > 0 ? (severe / mild) : (severe > 0 ? Infinity : null);
   var topFms = Object.entries(fmCount).sort(function(a,b) {{ return b[1] - a[1]; }}).slice(0, 7);
+  var nProjects = new Set(filtered.map(r => r.j).filter(Boolean)).size;
 
   // Corpus baseline severity escalation
   var corpusN = R.length;
@@ -3907,7 +3909,7 @@ function computeRisk() {{
     + '<div style="flex:1;min-width:200px">'
     + '<div style="font-size:16px;color:#475569;line-height:1.8">'
     + '<strong style="color:#0f172a">Reference class:</strong> ' + refDesc
-    + ' <span style="color:#94a3b8">(<strong>' + n.toLocaleString() + '</strong> record' + (n !== 1 ? 's' : '') + ', <strong>' + nWithFm + '</strong> with failure mode)</span><br>'
+    + ' <span style="color:#94a3b8">(<strong>' + n.toLocaleString() + '</strong> records from <strong>' + nProjects + '</strong> projects)</span><br>'
     + '<strong style="color:#0f172a">Severity escalation:</strong> ' + (sevPct != null ? sevPct.toFixed(0) + '%' : 'n/a')
     + ' <span style="color:#94a3b8">(corpus ' + corpusSev.toFixed(0) + '%)</span>';
   if (escRatio != null && escRatio !== Infinity) {{
