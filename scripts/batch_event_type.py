@@ -190,62 +190,76 @@ def submit_batch(records, batch_num=0):
     print(f"Batch submitted: {batch.id}")
     print(f"Status: {batch.processing_status}")
 
-    # Save state
-    state = {"batch_id": batch.id, "batch_num": batch_num, "n_requests": len(requests)}
+    # Save state — append to list of batches
+    if BATCH_STATE.exists():
+        with open(BATCH_STATE) as f:
+            all_state = json.load(f)
+        if not isinstance(all_state, list):
+            all_state = [all_state]  # migrate old single-batch format
+    else:
+        all_state = []
+    all_state.append({"batch_id": batch.id, "batch_num": batch_num, "n_requests": len(requests)})
     with open(BATCH_STATE, "w") as f:
-        json.dump(state, f, indent=2)
+        json.dump(all_state, f, indent=2)
     print(f"State saved to {BATCH_STATE}")
 
 
-def check_status():
-    """Check batch status."""
+def _load_batch_states():
+    """Load batch state, handling both old single-dict and new list format."""
     if not BATCH_STATE.exists():
         raise SystemExit("No batch state found. Run --batch submit first.")
     with open(BATCH_STATE) as f:
         state = json.load(f)
+    if isinstance(state, dict):
+        return [state]
+    return state
 
+
+def check_status():
+    """Check batch status for all batches."""
+    states = _load_batch_states()
     client = anthropic.Anthropic()
-    batch = client.messages.batches.retrieve(state["batch_id"])
-    print(f"Batch: {state['batch_id']}")
-    print(f"Status: {batch.processing_status}")
-    print(f"Requests: {state['n_requests']}")
-    counts = batch.request_counts
-    print(f"  Processing: {counts.processing}")
-    print(f"  Succeeded: {counts.succeeded}")
-    print(f"  Errored: {counts.errored}")
-    print(f"  Canceled: {counts.canceled}")
-    print(f"  Expired: {counts.expired}")
+
+    for state in states:
+        batch = client.messages.batches.retrieve(state["batch_id"])
+        print(f"Batch {state.get('batch_num', '?')}: {state['batch_id']}")
+        print(f"  Status: {batch.processing_status}")
+        print(f"  Requests: {state['n_requests']}")
+        counts = batch.request_counts
+        print(f"  Processing: {counts.processing}")
+        print(f"  Succeeded: {counts.succeeded}")
+        print(f"  Errored: {counts.errored}")
+        print()
 
 
 def collect_results():
-    """Collect batch results and save per-doc YAML files."""
-    if not BATCH_STATE.exists():
-        raise SystemExit("No batch state found.")
-    with open(BATCH_STATE) as f:
-        state = json.load(f)
-
+    """Collect batch results from all batches and save per-doc YAML files."""
+    states = _load_batch_states()
     client = anthropic.Anthropic()
-    batch = client.messages.batches.retrieve(state["batch_id"])
 
-    if batch.processing_status != "ended":
-        print(f"Batch not done yet: {batch.processing_status}")
-        return
+    # Check all batches are done
+    for state in states:
+        batch = client.messages.batches.retrieve(state["batch_id"])
+        if batch.processing_status != "ended":
+            print(f"Batch {state.get('batch_num', '?')} ({state['batch_id']}) not done yet: {batch.processing_status}")
+            return
 
-    # Collect results
+    # Collect results from all batches
     results = {}
     errors = 0
-    for result in client.messages.batches.results(state["batch_id"]):
-        rid = result.custom_id
-        if result.result.type == "succeeded":
-            text = result.result.message.content[0].text
-            parsed = parse_response(text, rid)
-            results[rid] = parsed
-        else:
-            errors += 1
-            results[rid] = {"event_type": "api_error", "consequence_level": None,
-                            "confidence": 0}
+    for state in states:
+        for result in client.messages.batches.results(state["batch_id"]):
+            rid = result.custom_id
+            if result.result.type == "succeeded":
+                text = result.result.message.content[0].text
+                parsed = parse_response(text, rid)
+                results[rid] = parsed
+            else:
+                errors += 1
+                results[rid] = {"event_type": "api_error", "consequence_level": None,
+                                "confidence": 0}
 
-    print(f"Collected {len(results)} results ({errors} errors)")
+    print(f"Collected {len(results)} results from {len(states)} batches ({errors} errors)")
 
     # Group by doc stem and save
     records = load_all_records()
