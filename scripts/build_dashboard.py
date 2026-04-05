@@ -2849,10 +2849,14 @@ function anDimFM(recs) {{
       const cnt = dimData[d][fm] || 0;
       const pct = dimTotals[d] > 0 ? (cnt / dimTotals[d] * 100).toFixed(1) : '0.0';
       const pctRaw = dimTotals[d] > 0 ? cnt / dimTotals[d] : 0;
-      const alpha = range > 0 ? 0.2 + 0.8 * ((pctRaw - globalMinPct) / range) : 0.5;
+      const sparse = cnt < 5;
+      const alpha = sparse ? 0 : (range > 0 ? 0.2 + 0.8 * ((pctRaw - globalMinPct) / range) : 0.5);
       const [r,g,b] = hex2rgb(FM_COLOURS[fm]);
-      const tip = `${{cnt}} records (${{pct}}% of dimension)`;
-      h += `<td style="background:rgba(${{r}},${{g}},${{b}},${{alpha.toFixed(2)}});color:#000;font-weight:600" title="${{tip}}">${{pct}}%</td>`;
+      const tip = `${{cnt}} records (${{pct}}% of dimension)${{sparse ? ' — sparse (n<5)' : ''}}`;
+      const style = sparse
+        ? 'background:#f1f5f9;color:#94a3b8;font-weight:400;font-style:italic'
+        : `background:rgba(${{r}},${{g}},${{b}},${{alpha.toFixed(2)}});color:#000;font-weight:600`;
+      h += `<td style="${{style}}" title="${{tip}}">${{pct}}%</td>`;
     }});
     h += `<td class="hm-empty" style="color:#64748b;font-weight:600">${{dimTotals[d]}}</td>`;
     h += '</tr>';
