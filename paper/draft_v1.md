@@ -74,7 +74,7 @@ The central challenge in generalising from RCF to RCD is the outcome metric. Cos
 
 We propose a severity escalation ratio as the bridge metric. For each delivery insight record extracted from a project report, the extraction model assigns an issue severity on a five-point scale (none, minor, moderate, major, critical) based on the natural language description of the event and its consequences. The escalation ratio for a reference class is defined as:
 
-$$\text{Escalation ratio} = \frac{n_{\text{major}} + n_{\text{critical}}}{n_{\text{minor}} + n_{\text{moderate}}}$$
+**Escalation ratio = (n_major + n_critical) / (n_minor + n_moderate)**
 
 computed across all adverse records (those with a non-null failure mode) within the reference class.
 
@@ -86,13 +86,13 @@ This metric has several properties that make it suitable as a proxy for quantita
 
 3. **Comparability across failure types.** A regulatory delay classified as "major" and a technology underperformance classified as "major" are comparable in their consequence signal even though the underlying mechanisms are entirely different. This comparability is what cost overrun provides for RCF; the escalation ratio provides an analogous function for RCD.
 
-4. **Discrimination.** The escalation ratio varies meaningfully across reference classes. In our corpus, it ranges from 0.08 (wind pilot projects) to 0.82 (hydrogen deployment projects), with systematic variation by failure mode, proponent type, and technology category.
+4. **Discrimination.** The escalation ratio varies meaningfully across reference classes. In our corpus, it ranges from 0.09 (wind study/feasibility projects) to 0.86 (hydrogen deployment projects), with systematic variation by failure mode, proponent type, and technology category (see Section 5.3).
 
 The trade-off is explicit: the escalation ratio is a noisier metric than cost overrun. It depends on model inference from natural language, carries the biases of the source documents' disclosure norms, and compresses a rich outcome space into a single number. But the alternative in most domains is no comparable consequence metric at all, which leaves RCF inapplicable and portfolio managers reliant on anecdote and intuition.
 
 ### 3.3 Delivery Dimensions vs Failure Modes
 
-A second conceptual contribution is the distinction between **delivery dimensions** and **failure modes**. Delivery dimensions describe what a project was attempting in a particular area — connecting to the grid, scaling from laboratory to field, navigating regulatory requirements, managing supply chains. Failure modes describe what went wrong — technical underperformance, coordination breakdown, commercial non-viability.
+A second conceptual contribution is the distinction between **delivery dimensions** and **failure modes**. Delivery dimensions describe what a project was attempting in a particular area — connecting to the grid, designing a system, procuring components, commissioning an installation. Failure modes describe what went wrong — technical underperformance, coordination breakdown, commercial non-viability.
 
 This distinction matters because a single delivery dimension can produce multiple failure modes, and a single failure mode can manifest across multiple delivery dimensions. Grid connection challenges, for example, can result in regulatory failures (standards incompatibility), technical failures (inverter performance), coordination failures (between developer and network operator), or commercial failures (connection cost blowouts). Conflating the dimension with the failure mode obscures the diagnostic signal.
 
@@ -155,7 +155,20 @@ The 7 adverse failure modes are:
 | Regulatory & approvals | Regulatory requirements, approvals, compliance, grid codes, standards, policy |
 | Unvalidated integration | Components or systems failing to work together, interface and interoperability |
 
-**Delivery dimensions.** Delivery dimensions describe what the project was attempting in a given area, independent of what went wrong. Seven dimensions were defined (e.g. grid connection, lab-to-field scaling, supply chain management, regulatory navigation) and assigned to records based on the content of the delivery event description. Dimensions are not mutually exclusive — a single record may involve multiple delivery dimensions.
+**Delivery dimensions.** Ten delivery dimensions describe what the project was attempting in a given area, independent of what went wrong. Dimensions were assigned to records based on the content of the delivery event description and are not mutually exclusive — a single record may involve multiple delivery dimensions.
+
+| Dimension | What it covers |
+|---|---|
+| Grid connection | Connecting to the electricity network, grid compliance, network studies |
+| Design | System design, engineering, modelling, specification |
+| Construction | Physical build, civil works, installation |
+| Procurement | Supply chain, sourcing, contracting, manufacturing |
+| Integration/commissioning | Combining subsystems, commissioning, performance verification |
+| Operations | Ongoing operation, maintenance, performance monitoring |
+| Software/controls | Control systems, SCADA, firmware, data platforms |
+| Siting | Site selection, land access, environmental conditions |
+| Community engagement | Stakeholder consultation, social licence, community acceptance |
+| Financing | Funding, revenue, business model, commercial close |
 
 **Reference class attributes.** Project-level attributes used to construct reference classes were chosen for deterministic assignability where possible:
 
@@ -225,29 +238,46 @@ These results establish a stochastic noise floor of approximately 5.6% on primar
 
 A separate comparison between two runs with different prompts (one requesting primary only, one requesting primary and secondary) showed 91.1% primary agreement, confirming that approximately 3 percentage points of additional instability is attributable to prompt structure rather than stochastic noise.
 
+**Table 1: Intra-rater stability matrix (identical prompt, run 1 vs run 2)**
+
+| Run 1 category | no failure | commercial | coordination | data | execution | regulatory | tech underperf | unval integr | n |
+|---|---|---|---|---|---|---|---|---|---|
+| **no failure** | **97.9** | 0.5 | 0.4 | 0.5 | 0.3 | 0.2 | 0.2 | 0.0 | 4,977 |
+| **commercial** | 1.6 | **94.9** | 1.5 | 0.3 | 0.3 | 0.8 | 0.5 | 0.0 | 2,432 |
+| **data** | 1.4 | 0.5 | 1.0 | **93.7** | 0.4 | 0.5 | 2.0 | 0.5 | 1,678 |
+| **regulatory** | 0.5 | 1.3 | 1.9 | 0.5 | 0.5 | **94.0** | 1.0 | 0.3 | 1,641 |
+| **tech underperf** | 1.0 | 1.4 | 0.2 | 1.2 | 1.5 | 0.4 | **92.7** | 1.7 | 1,990 |
+| **coordination** | 1.1 | 1.5 | **91.6** | 0.8 | 2.0 | 1.8 | 0.1 | 1.0 | 2,052 |
+| **execution** | 0.6 | 0.7 | 2.8 | 0.7 | **91.7** | 0.8 | 2.3 | 0.5 | 1,317 |
+| **unval integr** | 0.1 | 0.1 | 2.3 | 1.1 | 0.6 | 0.5 | 5.8 | **89.6** | 843 |
+
 ---
 
 ## 5. Results
 
 ### 5.1 Corpus Overview
 
-The extraction pipeline produced 16,931 delivery insight records from 1,448 documents covering 499 ARENA-funded projects. Of these, 73% contain an adverse delivery event (a failure mode other than "no major failure stated"), yielding 12,359 adverse records for analysis.
+The extraction pipeline produced 16,931 delivery insight records from 1,448 documents covering 499 ARENA-funded projects. Of these, 70.5% contain an adverse delivery event (a failure mode other than "no major failure stated"), yielding 11,936 adverse records for analysis.
 
-The adversity rate of 73% is not directly comparable to Flyvbjerg's cost overrun rates because it measures a different quantity: the proportion of extracted delivery insights that describe something going wrong, not the proportion of projects that exceeded their budgets. A single project may contribute multiple records, some adverse and some not. The rate reflects the density of delivery challenges in the corpus, not a project-level failure rate.
+The adversity rate of 70.5% is not directly comparable to Flyvbjerg's cost overrun rates because it measures a different quantity: the proportion of extracted delivery insights that describe something going wrong, not the proportion of projects that exceeded their budgets. A single project may contribute multiple records, some adverse and some not. The rate reflects the density of delivery challenges in the corpus, not a project-level failure rate.
 
 ### 5.2 Failure Mode Distribution
 
 The seven adverse failure modes are distributed across the corpus as follows:
 
+**Table 2: Failure mode distribution and severity escalation**
+
 | Failure mode | Records | % of adverse | Escalation ratio |
 |---|---|---|---|
-| Commercial & market | 2,432 | 19.7% | *[to compute]* |
-| Coordination & stakeholders | 2,052 | 16.6% | *[to compute]* |
-| Technical underperformance | 1,990 | 16.1% | *[to compute]* |
-| Data & measurement | 1,678 | 13.6% | *[to compute]* |
-| Regulatory & approvals | 1,641 | 13.3% | *[to compute]* |
-| Execution & logistics | 1,317 | 10.7% | *[to compute]* |
-| Unvalidated integration | 843 | 6.8% | *[to compute]* |
+| Commercial & market | 2,347 | 19.7% | 0.44 |
+| Coordination & stakeholders | 2,025 | 17.0% | 0.15 |
+| Technical underperformance | 1,953 | 16.4% | 0.30 |
+| Data & measurement | 1,634 | 13.7% | 0.13 |
+| Regulatory & approvals | 1,620 | 13.6% | 0.62 |
+| Execution & logistics | 1,317 | 11.0% | 0.26 |
+| Unvalidated integration | 825 | 6.9% | 0.28 |
+
+The escalation ratio reveals that prevalence and severity are poorly correlated. Regulatory & approvals failures are the fifth most common failure mode but by far the most severe (escalation ratio 0.62): when regulatory barriers are encountered, they tend to be consequential. Coordination & stakeholders failures are the second most common but the second least severe (0.15): coordination problems are ubiquitous but typically manageable. This distinction between frequency and consequence is invisible in adversity rate alone and is the core diagnostic contribution of the severity metric.
 
 53.7% of adverse records have a secondary failure mode, indicating that co-occurrence of failure modes is the norm rather than the exception in renewable energy project delivery.
 
@@ -255,40 +285,123 @@ The seven adverse failure modes are distributed across the corpus as follows:
 
 The corpus-wide severity escalation ratio is 0.26 — approximately one in four adverse events escalates to major or critical severity. However, this aggregate conceals dramatic variation across reference classes.
 
-**By failure mode:**
-
-| Failure mode | Escalation ratio | Interpretation |
-|---|---|---|
-| Regulatory misfit | 0.69 | When regulation blocks a project, it is severe |
-| Cost overrun | 0.62 | Disclosed cost overruns are almost always major |
-| Technical underperformance | *[to compute]* | |
-| Commercial/demand failure | *[to compute]* | |
-| Data quality | 0.10 | Data problems are common but rarely severe |
-| Governance | 0.16 | Coordination issues are frequent but manageable |
-
 **By proponent type:**
 
-The most striking finding is community/local body proponents, which show a low adversity rate but the highest escalation ratio (0.62). This means community-led projects encounter fewer problems, but when they do, the problems are severe. This pattern is invisible in adversity rate alone and would be masked in a cost-overrun-only analysis.
+**Table 3: Escalation ratio by proponent type**
 
-Consortium projects show the inverse pattern: high adversity rate (77%) but identical escalation ratio to non-consortium projects (0.26). Consortium governance adds failure *frequency* — more coordination touchpoints, more things that can go wrong — but does not increase failure *severity*.
+| Proponent type | Escalation ratio | n (adverse records) |
+|---|---|---|
+| Community/local body | 0.78 | 91 |
+| Manufacturer/OEM | 0.44 | 141 |
+| Project developer | 0.42 | 1,719 |
+| Government/public-sector body | 0.30 | 1,027 |
+| Utility/energy retailer | 0.30 | 2,356 |
+| Unvalidated integration | 0.28 | 825 |
+| Fleet/logistics operator | 0.27 | 157 |
+| Network business | 0.27 | 1,978 |
+| Research organisation/university | 0.27 | 2,394 |
+| Execution & logistics | 0.26 | 1,317 |
+| Industrial operator | 0.24 | 586 |
+| Technology vendor | 0.23 | 1,487 |
 
-**By technology × activity type:**
+The most striking finding is community/local body proponents, with an escalation ratio of 0.78 — nearly four times the corpus average. Community-led projects encounter failures less often than other proponent types, but when they do, the problems are overwhelmingly severe. This pattern is invisible in adversity rate alone and would be masked in a cost-overrun-only analysis that does not disaggregate by proponent type.
 
-The compound reference class reveals the sharpest contrasts. Hydrogen deployment projects have an escalation ratio of 0.82 — nearly every adverse event is severe. Wind pilot projects have a ratio of 0.08 — problems are common but almost never consequential. These extremes are diagnostic: they tell a portfolio manager that hydrogen deployment projects require intensive oversight of every delivery event, while wind pilot projects can tolerate a higher background rate of minor issues.
+**By ARENA category:**
+
+**Table 4: Escalation ratio by ARENA category**
+
+| ARENA category | Escalation ratio | n (adverse records) |
+|---|---|---|
+| Pumped hydro | 0.47 | 304 |
+| Grid stability | 0.43 | 891 |
+| Solar thermal | 0.42 | 400 |
+| Hydrogen | 0.34 | 901 |
+| Bioenergy | 0.33 | 388 |
+| Industrial renewables | 0.31 | 741 |
+| Solar PV | 0.30 | 2,787 |
+| Battery storage | 0.29 | 1,936 |
+| Electric vehicles | 0.28 | 901 |
+| Distributed energy resources | 0.28 | 2,327 |
+| Hybrid technologies | 0.28 | 730 |
+| Off grid | 0.28 | 275 |
+| Demand response | 0.23 | 1,007 |
+| Wind | 0.14 | 385 |
+
+Pumped hydro (0.47), grid stability (0.43), and solar thermal (0.42) escalate most sharply — these are categories involving large-scale physical infrastructure where failures tend to be consequential. Wind (0.14) has the lowest escalation ratio, suggesting that wind project delivery challenges, while present, are typically minor and manageable — consistent with wind being a mature technology with well-understood delivery pathways.
+
+**By technology category × activity type (compound reference class):**
+
+**Table 5: Severity escalation for selected compound reference classes (n ≥ 20)**
+
+| Reference class | Escalation ratio | n |
+|---|---|---|
+| Hydrogen — Deployment | 0.86 | 39 |
+| Bioenergy — Deployment | 0.67 | 21 |
+| Grid stability — Study/feasibility | 0.63 | 191 |
+| Grid stability — Deployment | 0.62 | 210 |
+| Pumped hydro — Study/feasibility | 0.56 | 175 |
+| Hybrid technologies — Pilot | 0.51 | 131 |
+| Solar thermal — R&D | 0.45 | 155 |
+| ... | | |
+| DER — Deployment | 0.19 | 389 |
+| Wind — Pilot | 0.18 | 184 |
+| Industrial renewables — R&D | 0.16 | 67 |
+| Demand response — Study/feasibility | 0.13 | 68 |
+| Wind — Deployment | 0.13 | 86 |
+| Hydrogen — R&D | 0.13 | 101 |
+| Wind — Study/feasibility | 0.09 | 115 |
+
+The compound reference class reveals the sharpest contrasts. Hydrogen deployment projects have an escalation ratio of 0.86 — nearly every adverse event is severe. Wind study/feasibility projects have a ratio of 0.09 — problems are common but almost never consequential. These extremes are diagnostic: they tell a portfolio manager that hydrogen deployment projects require intensive oversight of every delivery event, while wind feasibility studies can tolerate a higher background rate of minor issues.
+
+Note also that hydrogen R&D (0.13) and hydrogen deployment (0.86) occupy opposite extremes — the same technology category produces radically different risk profiles depending on activity type. This demonstrates why compound reference classes are essential: a single "hydrogen" reference class would average these extremes into a misleading middle.
 
 ### 5.4 Dimension-Specific Failure Mode Signatures
 
-Each delivery dimension produces a distinct failure mode signature — an empirical distribution of which failure modes dominate within that dimension:
+Each delivery dimension produces a distinct failure mode signature — an empirical distribution of which failure modes dominate within that dimension.
 
-*[To be populated with the dimension × failure mode matrix data from the dashboard, showing how grid connection produces primarily regulatory and coordination failures, while lab-to-field scaling produces primarily technical underperformance and data measurement failures, etc.]*
+**Table 6: Failure mode distribution by delivery dimension (% of adverse records in each dimension)**
 
-These signatures are the primary diagnostic output of the RCD framework. A portfolio manager assessing a project that involves grid connection and lab-to-field scaling can consult the relevant dimension signatures and anticipate the specific failure modes most likely to emerge — information that an aggregate cost overrun distribution cannot provide.
+| Dimension | Commercial | Coordination | Data | Execution | Regulatory | Technical | Integration | n |
+|---|---|---|---|---|---|---|---|---|
+| Financing | **67.8** | 10.8 | 5.9 | 2.0 | 11.1 | 1.9 | 0.4 | 2,052 |
+| Community engagement | 30.3 | **49.7** | 2.8 | 3.5 | 11.8 | 0.5 | 1.3 | 1,284 |
+| Construction | 3.4 | 13.1 | 2.3 | **58.7** | 6.0 | 13.4 | 3.0 | 952 |
+| Design | 14.6 | 9.6 | 16.4 | 10.4 | 12.0 | **30.7** | 6.3 | 4,594 |
+| Software/controls | 7.0 | 15.6 | **27.1** | 4.8 | 6.4 | 18.9 | **20.3** | 3,234 |
+| Grid connection | 15.1 | 13.8 | 15.8 | 2.8 | **28.8** | 14.5 | 9.1 | 3,221 |
+| Siting | 12.1 | 11.3 | 9.7 | **29.2** | **22.9** | 13.8 | 1.0 | 1,438 |
+| Integration/commissioning | 1.8 | **22.7** | 13.3 | 14.1 | 8.3 | 13.8 | **26.0** | 2,075 |
+| Operations | 20.3 | 14.5 | 19.7 | 9.0 | 4.1 | **28.8** | 3.6 | 1,904 |
+| Procurement | 14.5 | 16.0 | 5.7 | **26.8** | 10.3 | 18.6 | 8.1 | 2,856 |
+
+These signatures are sharply distinct. Financing is dominated by commercial & market failures (67.8%) — when the financial dimension of a project encounters problems, they are almost always commercial in nature. Community engagement is dominated by coordination & stakeholder failures (49.7%) — community-facing challenges are fundamentally about managing relationships between parties. Construction is dominated by execution & logistics (58.7%). Software/controls uniquely splits between data & measurement (27.1%) and unvalidated integration (20.3%) — the two failure modes most directly related to information systems.
+
+Grid connection produces a regulatory-heavy signature (28.8%) but with notable contributions from all other failure modes — reflecting the reality that grid connection sits at the intersection of technical, regulatory, commercial, and coordination challenges.
+
+These signatures are the primary diagnostic output of the RCD framework. A portfolio manager assessing a project that involves grid connection and community engagement can consult the relevant dimension signatures and anticipate the specific failure modes most likely to emerge — regulatory and coordination challenges, respectively — information that an aggregate cost overrun distribution cannot provide.
 
 ### 5.5 Secondary Failure Modes and Co-Occurrence
 
-53.7% of adverse records exhibit a secondary failure mode in addition to the primary. The most common secondary failure mode is coordination & stakeholders (25.7% of secondaries), suggesting that coordination challenges frequently accompany other types of failure as a compounding factor.
+53.7% of adverse records exhibit a secondary failure mode in addition to the primary. The most frequent co-occurring pairs reveal systematic failure cascades:
 
-*[To be populated with co-occurrence patterns — which primary/secondary pairs are most common, what this reveals about failure cascades in renewable energy delivery.]*
+**Table 7: Top 10 primary–secondary failure mode pairs**
+
+| Primary | Secondary | Count |
+|---|---|---|
+| Commercial & market | Coordination & stakeholders | 676 |
+| Regulatory & approvals | Coordination & stakeholders | 571 |
+| Coordination & stakeholders | Execution & logistics | 558 |
+| Technical underperformance | Execution & logistics | 505 |
+| Execution & logistics | Coordination & stakeholders | 479 |
+| Data & measurement | Technical underperformance | 406 |
+| Technical underperformance | Data & measurement | 378 |
+| Regulatory & approvals | Commercial & market | 339 |
+| Coordination & stakeholders | Commercial & market | 297 |
+| Data & measurement | Coordination & stakeholders | 294 |
+
+Coordination & stakeholders appears as either primary or secondary in 8 of the top 10 pairs, confirming that coordination challenges are pervasive compounding factors in renewable energy delivery. When commercial, regulatory, or execution failures occur, they frequently co-occur with coordination breakdowns — suggesting that multi-party governance is a standing vulnerability that amplifies other failure modes rather than operating independently.
+
+The data & measurement ↔ technical underperformance pair appears in both directions (406 and 378), indicating that data problems and technology underperformance are tightly coupled: projects that cannot measure performance accurately also tend to experience performance shortfalls, and vice versa.
 
 ---
 
@@ -300,14 +413,15 @@ The RCD framework produces a qualitatively different type of risk information th
 
 For a portfolio manager, this translates to specific actions:
 
-- **Assessment panel composition:** If the reference class signature shows dominant regulatory failures, include regulatory expertise on the assessment panel.
-- **Milestone design:** If failures concentrate in commissioning phase, design milestones with enhanced oversight at that stage.
-- **Due diligence focus:** If the escalation ratio is high for the reference class, every adverse flag warrants investigation; if it is low, minor issues can be monitored rather than escalated.
+- **Assessment panel composition:** If the reference class signature shows dominant regulatory failures (e.g. grid stability projects, escalation ratio 0.43 with regulatory as the leading failure mode), include regulatory expertise on the assessment panel.
+- **Milestone design:** If failures concentrate in commissioning phase with high integration failure rates, design milestones with enhanced oversight at that stage.
+- **Due diligence focus:** If the escalation ratio is high for the reference class (hydrogen deployment, 0.86), every adverse flag warrants investigation; if it is low (wind feasibility, 0.09), minor issues can be monitored rather than escalated.
 - **Consortium management:** The finding that consortia add failure frequency but not severity suggests that consortium projects need more touchpoints for coordination, not more conservative risk budgets.
+- **Proponent risk assessment:** Community/local body proponents show low adversity but extreme escalation (0.78). Funding assessors should not be reassured by a clean track record for this proponent type — the risk profile is low-frequency, high-consequence.
 
 ### 6.2 Limitations
 
-**Disclosure bias.** The source documents are reports written for a funding agency. Authors have incentives to understate problems and overstate successes. The 73% adversity rate may undercount the true incidence of delivery challenges, and severity assessments are likely conservative. The escalation ratio is therefore a lower bound on true severity escalation.
+**Disclosure bias.** The source documents are reports written for a funding agency. Authors have incentives to understate problems and overstate successes. The 70.5% adversity rate may undercount the true incidence of delivery challenges, and severity assessments are likely conservative. The escalation ratio is therefore a lower bound on true severity escalation.
 
 **Model inference.** Both extraction and classification depend on LLM inference, which introduces noise. The intra-rater reliability test establishes a 5.6% noise floor on primary failure mode classification and 11.9% on secondary. Portfolio-level patterns are robust to this noise; individual record classifications carry meaningful uncertainty.
 
@@ -342,7 +456,7 @@ Reference class forecasting demonstrated that empirical base rates outperform ex
 
 The key methodological move — using severity as a proxy for quantitative consequence — sacrifices precision but unlocks diagnostic dimensions that are unavailable to cost-based analysis: failure mode signatures, lifecycle concentration, co-occurrence patterns, and escalation profiles specific to compound reference classes.
 
-Applied to 16,931 records from 499 ARENA-funded renewable energy projects, the framework reveals patterns that would be invisible to aggregate cost analysis: community-led projects with low adversity but high escalation; consortium governance that adds failure frequency without increasing severity; hydrogen deployment projects where nearly every adverse event is consequential; and delivery-dimension-specific failure mode signatures that differ systematically across project types.
+Applied to 16,931 records from 499 ARENA-funded renewable energy projects, the framework reveals patterns that would be invisible to aggregate cost analysis: community-led projects with low adversity but high escalation (0.78); consortium governance that adds failure frequency without increasing severity; hydrogen deployment projects where nearly every adverse event is consequential (escalation ratio 0.86); and delivery-dimension-specific failure mode signatures that differ systematically — financing failures are 67.8% commercial, construction failures are 58.7% execution, and community engagement failures are 49.7% coordination.
 
 The framework is transferable to any domain that accumulates narrative project reports, and its diagnostic value increases with corpus size. As organisations invest in structured knowledge sharing, the compound reference classes fill in, producing increasingly specific and actionable risk profiles.
 
