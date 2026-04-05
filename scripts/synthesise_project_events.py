@@ -5,19 +5,24 @@ Synthesise project-level events from per-document delivery insight records.
 For each project, clusters records that describe the same underlying event into
 a single synthesised event record with corroboration counts and provenance links.
 
+Pre-computes TF-IDF similarity hints and sorts records by failure_mode/event_type
+to help the model identify related records in large projects.
+
 Usage:
     python scripts/synthesise_project_events.py --project "Yuri"     # test on one project
     python scripts/synthesise_project_events.py --dry-run             # print prompt for first project
     python scripts/synthesise_project_events.py --batch submit        # batch all projects
     python scripts/synthesise_project_events.py --batch status
     python scripts/synthesise_project_events.py --batch collect
+    python scripts/synthesise_project_events.py --stats               # summary from collected results
 """
 
 import argparse
 import glob
 import json
 import re
-from collections import defaultdict
+from collections import Counter, defaultdict
+from math import log, sqrt
 from pathlib import Path
 
 try:
@@ -37,11 +42,14 @@ EVENT_TYPE_DIR = ROOT / "insights" / "per_doc_event_type"
 OUTPUT_DIR = ROOT / "insights" / "per_project_events"
 BATCH_STATE = OUTPUT_DIR / "batch_state.json"
 MODEL = "claude-sonnet-4-6"
-MAX_TOKENS = 8192
+MAX_TOKENS = 16384
+BATCH_SIZE = 10_000  # Anthropic batch API limit
 
 SYSTEM_PROMPT = """You are synthesising delivery insight records from a single ARENA project into distinct events.
 
 You will receive a set of insight records — extracted from one or more documents about the same project. Many records describe the SAME underlying event from different documents or perspectives. Your job is to identify the distinct events and synthesise each one.
+
+Records are sorted by failure mode and event type to group related records together. You will also receive SIMILARITY HINTS showing pairs of records that share significant vocabulary — these are candidates for merging, but use your judgement.
 
 ## What is an "event"?
 
@@ -100,20 +108,119 @@ Respond with a JSON array of synthesised events. Each event:
 
 Respond ONLY with the JSON array. No markdown fencing, no explanation."""
 
+# ---------------------------------------------------------------------------
+# TF-IDF similarity
+# ---------------------------------------------------------------------------
 
-def load_project_records(project_name_pattern):
-    """Load all records for projects matching a name pattern, with fm_v3 and event_type merged."""
-    # Load all per_doc records
-    all_records = []
-    for path in sorted(glob.glob(str(PER_DOC_DIR / "doc_*.yaml"))):
-        with open(path, encoding="utf-8") as f:
-            recs = yaml.safe_load(f)
-            if recs:
-                stem = Path(path).stem
-                for r in recs:
-                    r["_doc_stem"] = stem
-                all_records.extend(recs)
+STOPWORDS = frozenset(
+    "the a an to of in for and or is was were are be been being have has had "
+    "that this with from by on at as it its not but which their they them "
+    "than into also can could would should may will about more other all some "
+    "any each no so if when very most such only own same both during after "
+    "before between through over under further then once did does do these "
+    "those here there where how what who whom project arena dlv record".split()
+)
 
+
+def _tokenise(text):
+    words = re.findall(r'[a-z]{3,}', (text or "").lower())
+    return [w for w in words if w not in STOPWORDS]
+
+
+def compute_similarity_hints(records, threshold=0.15, max_hints=50):
+    """Compute TF-IDF cosine similarity between records and return hint lines."""
+    docs = [
+        _tokenise((r.get("what_happened", "") + " " + r.get("lesson_learnt", "")))
+        for r in records
+    ]
+
+    # Document frequency
+    df = Counter()
+    for doc in docs:
+        for w in set(doc):
+            df[w] += 1
+    n_docs = len(docs)
+    if n_docs < 2:
+        return ""
+
+    # TF-IDF vectors
+    def tfidf(doc):
+        tf = Counter(doc)
+        vec = {}
+        for w, count in tf.items():
+            if df[w] < n_docs * 0.7:  # skip very common terms
+                vec[w] = count * log(n_docs / df[w])
+        return vec
+
+    def cosine(v1, v2):
+        common = set(v1) & set(v2)
+        if not common:
+            return 0.0
+        dot = sum(v1[w] * v2[w] for w in common)
+        mag1 = sqrt(sum(v ** 2 for v in v1.values()))
+        mag2 = sqrt(sum(v ** 2 for v in v2.values()))
+        if mag1 == 0 or mag2 == 0:
+            return 0.0
+        return dot / (mag1 * mag2)
+
+    vecs = [tfidf(d) for d in docs]
+
+    # Find similar pairs
+    pairs = []
+    for i in range(n_docs):
+        for j in range(i + 1, n_docs):
+            sim = cosine(vecs[i], vecs[j])
+            if sim >= threshold:
+                shared = sorted(
+                    set(vecs[i]) & set(vecs[j]),
+                    key=lambda w: -(vecs[i].get(w, 0) + vecs[j].get(w, 0)),
+                )[:5]
+                pairs.append((sim, records[i]["record_id"], records[j]["record_id"], shared))
+
+    if not pairs:
+        return ""
+
+    pairs.sort(reverse=True)
+    pairs = pairs[:max_hints]
+
+    lines = ["SIMILARITY HINTS (records sharing significant vocabulary):"]
+    for sim, r1, r2, shared in pairs:
+        lines.append(f"  {sim:.2f}  {r1} ↔ {r2}  [{' '.join(shared)}]")
+    return "\n".join(lines)
+
+
+# ---------------------------------------------------------------------------
+# Record sorting
+# ---------------------------------------------------------------------------
+
+EVENT_TYPE_ORDER = {
+    "realised_delivery_event": 0,
+    "design_technical_finding": 1,
+    "identified_future_risk": 2,
+    "contextual_observation": 3,
+    "unknown": 4,
+}
+
+
+def sort_records(records):
+    """Sort records by event_type, then failure_mode, then severity descending."""
+    severity_order = {"critical": 0, "major": 1, "moderate": 2, "minor": 3, "none": 4}
+    return sorted(
+        records,
+        key=lambda r: (
+            EVENT_TYPE_ORDER.get(r.get("event_type", "unknown"), 4),
+            r.get("failure_mode_v3") or "zzz",
+            severity_order.get(r.get("issue_severity", "none"), 4),
+        ),
+    )
+
+
+# ---------------------------------------------------------------------------
+# Data loading
+# ---------------------------------------------------------------------------
+
+def load_all_data():
+    """Load all per_doc records with fm_v3 and event_type merged. Returns dict of project -> records."""
     # Load fm_v3
     fm_v3_map = {}
     for path in sorted(glob.glob(str(FM_V3_DIR / "doc_*_fm_v3.yaml"))):
@@ -132,13 +239,17 @@ def load_project_records(project_name_pattern):
                 for r in data:
                     et_map[r["record_id"]] = r.get("event_type")
 
-    # Filter by project name and merge
-    pattern = project_name_pattern.lower()
-    project_records = []
-    for r in all_records:
-        pname = (r.get("kb_associated_project") or r.get("project_name") or "")
-        # Match if pattern appears as a whole word in the project name
-        if re.search(r'\b' + re.escape(pattern) + r'\b', pname.lower()):
+    # Load per_doc and group by kb_associated_project
+    projects = defaultdict(list)
+    for path in sorted(glob.glob(str(PER_DOC_DIR / "doc_*.yaml"))):
+        with open(path, encoding="utf-8") as f:
+            recs = yaml.safe_load(f)
+        if not recs:
+            continue
+        for r in recs:
+            pname = r.get("kb_associated_project")
+            if not pname:
+                continue
             rid = r.get("record_id")
             rec = {
                 "record_id": rid,
@@ -152,14 +263,36 @@ def load_project_records(project_name_pattern):
                 "event_type": et_map.get(rid, "unknown"),
                 "outcome_class": r.get("outcome_class"),
             }
-            project_records.append(rec)
+            projects[pname].append(rec)
 
-    return project_records
+    # Filter to 2+ records
+    return {k: v for k, v in projects.items() if len(v) >= 2}
 
+
+def load_project_records(project_name_pattern):
+    """Load records for a single project by name pattern."""
+    all_projects = load_all_data()
+    pattern = project_name_pattern.lower()
+    for pname, recs in all_projects.items():
+        if re.search(r'\b' + re.escape(pattern) + r'\b', pname.lower()):
+            return pname, recs
+    return None, []
+
+
+# ---------------------------------------------------------------------------
+# Prompt building
+# ---------------------------------------------------------------------------
 
 def build_user_prompt(records, project_name):
-    """Build the user prompt with all records for a project."""
+    """Build the user prompt with sorted records and similarity hints."""
+    records = sort_records(records)
+    hints = compute_similarity_hints(records)
+
     lines = [f"Project: {project_name}", f"Total records: {len(records)}", ""]
+    if hints:
+        lines.append(hints)
+        lines.append("")
+
     for r in records:
         lines.append(f"--- Record {r['record_id']} ---")
         lines.append(f"Source: {r.get('source_title', 'unknown')}")
@@ -174,25 +307,9 @@ def build_user_prompt(records, project_name):
     return "\n".join(lines)
 
 
-def get_all_projects():
-    """Get all projects with their record counts from per_doc files.
-
-    Uses kb_associated_project ONLY — the canonical name from the KB export.
-    Records without kb_associated_project are excluded because the model-inferred
-    project_name field produces hundreds of spurious variants. There are 499
-    canonical projects in the corpus; project_name inflates this to 1000+.
-    """
-    project_records = defaultdict(list)
-    for path in sorted(glob.glob(str(PER_DOC_DIR / "doc_*.yaml"))):
-        with open(path, encoding="utf-8") as f:
-            recs = yaml.safe_load(f)
-            if recs:
-                for r in recs:
-                    pname = r.get("kb_associated_project")
-                    if pname:
-                        project_records[pname].append(r.get("record_id"))
-    return {k: v for k, v in project_records.items() if len(v) >= 2}
-
+# ---------------------------------------------------------------------------
+# Single project run
+# ---------------------------------------------------------------------------
 
 def run_single(project_name, records):
     """Run synthesis for a single project via direct API call."""
@@ -241,39 +358,250 @@ def print_events(events):
             print(f"  Resolution: {e['resolution']}")
 
 
+# ---------------------------------------------------------------------------
+# Batch mode
+# ---------------------------------------------------------------------------
+
+def submit_batch():
+    """Submit all projects to the Anthropic batch API."""
+    client = anthropic.Anthropic()
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+    projects = load_all_data()
+    print(f"Loaded {len(projects)} projects with 2+ records "
+          f"({sum(len(v) for v in projects.values())} total records)")
+
+    # Build requests
+    requests = []
+    project_index = []
+    for pname in sorted(projects):
+        recs = projects[pname]
+        prompt = build_user_prompt(recs, pname)
+
+        # Scale max_tokens with project size
+        est_events = max(1, int(len(recs) * 0.6))
+        max_tok = min(MAX_TOKENS, max(4096, est_events * 500))
+
+        requests.append({
+            "custom_id": f"proj_{len(requests):04d}",
+            "params": {
+                "model": MODEL,
+                "max_tokens": max_tok,
+                "system": SYSTEM_PROMPT,
+                "messages": [{"role": "user", "content": prompt}],
+            },
+        })
+        project_index.append({
+            "id": f"proj_{len(project_index):04d}",
+            "project_name": pname,
+            "n_records": len(recs),
+            "record_ids": [r["record_id"] for r in recs],
+        })
+
+    # Save project index
+    with open(OUTPUT_DIR / "project_index.json", "w") as f:
+        json.dump(project_index, f, indent=2)
+
+    # Submit in batches of BATCH_SIZE
+    all_states = []
+    for batch_num, start in enumerate(range(0, len(requests), BATCH_SIZE)):
+        batch_reqs = requests[start:start + BATCH_SIZE]
+
+        jsonl_path = OUTPUT_DIR / f"batch_{batch_num}.jsonl"
+        with open(jsonl_path, "w") as f:
+            for req in batch_reqs:
+                f.write(json.dumps(req) + "\n")
+        print(f"Wrote {len(batch_reqs)} requests to {jsonl_path}")
+
+        batch = client.messages.batches.create(requests=batch_reqs)
+        print(f"Batch {batch_num} submitted: {batch.id}")
+        print(f"Status: {batch.processing_status}")
+
+        all_states.append({
+            "batch_id": batch.id,
+            "batch_num": batch_num,
+            "n_requests": len(batch_reqs),
+        })
+
+    with open(BATCH_STATE, "w") as f:
+        json.dump(all_states, f, indent=2)
+    print(f"\nState saved to {BATCH_STATE}")
+
+
+def check_status():
+    """Check batch status."""
+    if not BATCH_STATE.exists():
+        raise SystemExit("No batch state found. Run --batch submit first.")
+    with open(BATCH_STATE) as f:
+        states = json.load(f)
+    if isinstance(states, dict):
+        states = [states]
+
+    client = anthropic.Anthropic()
+    for state in states:
+        batch = client.messages.batches.retrieve(state["batch_id"])
+        counts = batch.request_counts
+        print(f"Batch {state.get('batch_num', '?')}: {state['batch_id']}")
+        print(f"  Status: {batch.processing_status}")
+        print(f"  Requests: {state['n_requests']}")
+        print(f"  Processing: {counts.processing}, Succeeded: {counts.succeeded}, "
+              f"Errored: {counts.errored}")
+        print()
+
+
+def collect_results():
+    """Collect batch results and save per-project event files."""
+    if not BATCH_STATE.exists():
+        raise SystemExit("No batch state found.")
+    with open(BATCH_STATE) as f:
+        states = json.load(f)
+    if isinstance(states, dict):
+        states = [states]
+    with open(OUTPUT_DIR / "project_index.json") as f:
+        project_index = json.load(f)
+
+    client = anthropic.Anthropic()
+
+    # Check all done
+    for state in states:
+        batch = client.messages.batches.retrieve(state["batch_id"])
+        if batch.processing_status != "ended":
+            print(f"Batch {state.get('batch_num', '?')} not done: {batch.processing_status}")
+            return
+
+    # Collect all results
+    results = {}
+    errors = 0
+    for state in states:
+        for result in client.messages.batches.results(state["batch_id"]):
+            pid = result.custom_id
+            if result.result.type == "succeeded":
+                text = result.result.message.content[0].text
+                try:
+                    parsed = json.loads(text)
+                except json.JSONDecodeError:
+                    m = re.search(r'\[.*\]', text, re.DOTALL)
+                    try:
+                        parsed = json.loads(m.group()) if m else None
+                    except (json.JSONDecodeError, AttributeError):
+                        parsed = None
+                if parsed is None:
+                    errors += 1
+                    parsed = {"_error": "parse_error", "_raw": text[:500]}
+                results[pid] = parsed
+            else:
+                errors += 1
+                results[pid] = {"_error": "api_error"}
+
+    print(f"Collected {len(results)} results ({errors} errors)")
+
+    # Save per-project YAML files
+    total_events = 0
+    total_records_covered = 0
+    total_records_expected = 0
+    coverage_issues = []
+
+    for entry in project_index:
+        pid = entry["id"]
+        pname = entry["project_name"]
+        r = results.get(pid)
+        if not r or isinstance(r, dict) and "_error" in r:
+            continue
+
+        events = r if isinstance(r, list) else []
+        total_events += len(events)
+
+        # Check coverage
+        expected = set(entry["record_ids"])
+        covered = set()
+        for e in events:
+            for s in e.get("source_records", []):
+                covered.add(s["record_id"])
+        total_records_expected += len(expected)
+        total_records_covered += len(covered & expected)
+        missing = expected - covered
+        if missing:
+            coverage_issues.append((pname, len(missing), len(expected)))
+
+        # Stamp project name onto each event
+        for e in events:
+            e["project_name"] = pname
+
+        # Save
+        safe_name = re.sub(r'[^\w\-]', '_', pname)[:80]
+        out_path = OUTPUT_DIR / f"{safe_name}.json"
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(events, f, indent=2, ensure_ascii=False)
+
+    # Summary
+    print(f"\n{'='*60}")
+    print(f"EVENT SYNTHESIS RESULTS")
+    print(f"{'='*60}")
+    print(f"Projects processed:  {len(project_index)}")
+    print(f"Total events:        {total_events}")
+    print(f"Record coverage:     {total_records_covered}/{total_records_expected} "
+          f"({total_records_covered/total_records_expected*100:.1f}%)")
+    print(f"Errors:              {errors}")
+
+    if coverage_issues:
+        print(f"\nCoverage issues ({len(coverage_issues)} projects):")
+        for pname, missing, total in sorted(coverage_issues, key=lambda x: -x[1])[:20]:
+            print(f"  {missing:3d}/{total:3d} missing  {pname[:60]}")
+
+    # Compression ratio
+    if total_events > 0:
+        print(f"\nCompression: {total_records_expected} records → {total_events} events "
+              f"({total_events/total_records_expected*100:.0f}%)")
+
+    print(f"\nResults saved to {OUTPUT_DIR}/")
+
+
+# ---------------------------------------------------------------------------
+# Main
+# ---------------------------------------------------------------------------
+
 def main():
     parser = argparse.ArgumentParser(description="Synthesise project-level events")
     parser.add_argument("--project", type=str, help="Project name pattern to test")
     parser.add_argument("--dry-run", action="store_true", help="Print prompt only")
     parser.add_argument("--batch", choices=["submit", "status", "collect"])
+    parser.add_argument("--stats", action="store_true", help="Show stats from collected results")
     args = parser.parse_args()
 
+    if args.batch == "status":
+        check_status()
+        return
+
+    if args.batch == "collect":
+        collect_results()
+        return
+
+    if args.batch == "submit":
+        submit_batch()
+        return
+
     if args.project:
-        records = load_project_records(args.project)
+        pname, records = load_project_records(args.project)
         if not records:
             print(f"No records found matching '{args.project}'")
             return
 
-        # Deduce project name from records
-        project_name = args.project
-        for r in records:
-            if r.get("source_title"):
-                project_name = args.project
-                break
-
         if args.dry_run:
-            prompt = build_user_prompt(records, project_name)
+            prompt = build_user_prompt(records, pname)
+            print(f"Project: {pname}")
             print(f"System prompt: {len(SYSTEM_PROMPT)} chars")
             print(f"User prompt: {len(prompt)} chars")
             print(f"Records: {len(records)}")
-            print(f"\n{prompt[:3000]}...")
+            hints = compute_similarity_hints(records)
+            if hints:
+                print(f"\n{hints}")
             return
 
-        events = run_single(project_name, records)
+        events = run_single(pname, records)
         if events:
             print_events(events)
 
-            # Verify all records accounted for
+            # Verify coverage
             input_ids = {r["record_id"] for r in records}
             output_ids = set()
             for e in events:
