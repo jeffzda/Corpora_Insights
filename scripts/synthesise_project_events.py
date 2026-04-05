@@ -42,7 +42,7 @@ EVENT_TYPE_DIR = ROOT / "insights" / "per_doc_event_type"
 OUTPUT_DIR = ROOT / "insights" / "per_project_events"
 BATCH_STATE = OUTPUT_DIR / "batch_state.json"
 MODEL = "claude-sonnet-4-6"
-MAX_TOKENS = 16384
+MAX_TOKENS = 128000
 BATCH_SIZE = 10_000  # Anthropic batch API limit
 
 SYSTEM_PROMPT = """You are synthesising delivery insight records from a single ARENA project into distinct events.
@@ -381,15 +381,11 @@ def submit_batch():
         recs = projects[pname]
         prompt = build_user_prompt(recs, pname)
 
-        # Scale max_tokens with project size
-        est_events = max(1, int(len(recs) * 0.6))
-        max_tok = min(MAX_TOKENS, max(4096, est_events * 500))
-
         requests.append({
             "custom_id": f"proj_{len(requests):04d}",
             "params": {
                 "model": MODEL,
-                "max_tokens": max_tok,
+                "max_tokens": MAX_TOKENS,
                 "system": SYSTEM_PROMPT,
                 "messages": [{"role": "user", "content": prompt}],
             },
