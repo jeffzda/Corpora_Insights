@@ -343,6 +343,14 @@ def main():
         print_stats()
         return
 
+    if args.batch == "status":
+        check_status()
+        return
+
+    if args.batch == "collect":
+        collect_results()
+        return
+
     records = load_all_records()
     print(f"Loaded {len(records)} records")
 
@@ -364,14 +372,9 @@ def main():
         return
 
     if args.batch == "submit":
-        # Split into batches if needed
         for i in range(0, len(records), BATCH_SIZE):
             batch_recs = records[i:i + BATCH_SIZE]
             submit_batch(batch_recs, batch_num=i // BATCH_SIZE)
-    elif args.batch == "status":
-        check_status()
-    elif args.batch == "collect":
-        collect_results()
 
 
 if __name__ == "__main__":
