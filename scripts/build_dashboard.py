@@ -3823,17 +3823,19 @@ function computeRisk() {{
   }}
 
   // ── Compute stats ──────────────────────────────────────────
-  var nAdv = 0, severe = 0, mild = 0;
+  // Adversity = major + critical severity (s >= 3)
+  var severe = 0, mild = 0, nWithFm = 0;
   var fmCount = {{}};
   filtered.forEach(function(r) {{
     if (r.f) {{
-      nAdv++;
+      nWithFm++;
       fmCount[r.f] = (fmCount[r.f] || 0) + 1;
     }}
     if (r.s >= 3) severe++;
     else if (r.s >= 1) mild++;
   }});
 
+  var nAdv = severe;  // adversity = major + critical
   var advRate = nAdv / n;
   var sevPct = (severe + mild) > 0 ? (severe / (severe + mild) * 100) : null;
   var escRatio = mild > 0 ? (severe / mild) : (severe > 0 ? Infinity : null);
@@ -3841,7 +3843,7 @@ function computeRisk() {{
 
   // Corpus baseline
   var corpusN = R.length;
-  var corpusAdv = R.filter(r => r.f).length / corpusN;
+  var corpusAdv = R.filter(r => r.s >= 3).length / corpusN;
   var corpusSevere = R.filter(r => r.s >= 3).length;
   var corpusMild = R.filter(r => r.s >= 1 && r.s < 3).length;
   var corpusSev = (corpusSevere + corpusMild) > 0 ? (corpusSevere / (corpusSevere + corpusMild) * 100) : 0;
@@ -3850,17 +3852,17 @@ function computeRisk() {{
   var marginals = [];
   if (cat) {{
     var mr = R.filter(r => _rrHasCat(r, cat));
-    var ma = mr.filter(r => r.f).length;
+    var ma = mr.filter(r => r.s >= 3).length;
     marginals.push({{ name: 'Category', label: cat, adv: ma / mr.length, n: mr.length }});
   }}
   if (dim) {{
     var mr = R.filter(r => (r.d||[]).indexOf(dim) >= 0);
-    var ma = mr.filter(r => r.f).length;
+    var ma = mr.filter(r => r.s >= 3).length;
     marginals.push({{ name: 'Dimension', label: DIM_SHORT[dim] || dim, adv: ma / mr.length, n: mr.length }});
   }}
   if (pro) {{
     var mr = R.filter(r => r.p === pro);
-    var ma = mr.filter(r => r.f).length;
+    var ma = mr.filter(r => r.s >= 3).length;
     marginals.push({{ name: 'Proponent', label: pro, adv: ma / mr.length, n: mr.length }});
   }}
 
@@ -3952,8 +3954,8 @@ function computeRisk() {{
       + '<div style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px">Failure mode breakdown</div>';
     topFms.forEach(function(pair) {{
       var fm = pair[0], cnt = pair[1];
-      var pct = (cnt / nAdv * 100).toFixed(0);
-      var barPct = (cnt / nAdv * 100);
+      var pct = nWithFm > 0 ? (cnt / nWithFm * 100).toFixed(0) : '0';
+      var barPct = nWithFm > 0 ? (cnt / nWithFm * 100) : 0;
       var fmCol = FM_COLOURS[fm] || '#64748b';
       html += '<div class="rr-fm-item" style="align-items:center">'
         + '<div class="rr-fm-dot" style="background:' + fmCol + '"></div>'
@@ -4003,7 +4005,7 @@ function computeRisk() {{
   // Top risk driver
   if (topFms.length > 0) {{
     html += ' The dominant failure mode is <strong>' + topFms[0][0] + '</strong> ('
-      + (topFms[0][1] / nAdv * 100).toFixed(0) + '% of adverse records).';
+      + (nWithFm > 0 ? (topFms[0][1] / nWithFm * 100).toFixed(0) : '0') + '% of records with a failure mode).';
   }}
   html += '</div></div>';
 
