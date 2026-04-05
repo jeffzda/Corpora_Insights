@@ -5,7 +5,7 @@
 (10 categories — validated). Full corpus retagged. Dashboard integration complete. Dimension × FM
 × category matrices computed and exported. Dashboard charts converted to hm-table matrices.**
 **Date: April 2026 (last updated: 2026-04-05 — dimension × FM × category analysis, dashboard
-matrix visualisations, impact team mapping, Flyvbjerg framing)**
+matrix visualisations, impact team mapping, Flyvbjerg framing, event type typology)**
 
 ---
 
@@ -1335,3 +1335,119 @@ The analytical framework aligns with Flyvbjerg's reference class forecasting:
     "what you're delivering" angle rather than "what makes it hard." Decide whether challenge
     tags still add independent value on top of delivery dimensions, or whether the dimension
     layer is sufficient.
+
+---
+
+## Part 19: Event Type Classification — Record-Level Typology
+
+### The problem
+
+The 16,931 insight records are heterogeneous. Some describe concrete things that happened to the
+project (a delay, a cost overrun, equipment failure). Others describe analytical findings from
+testing or modelling. Others flag future risks that haven't materialised. Others are commentary
+on market conditions or policy gaps. These are fundamentally different kinds of information with
+different analytical uses, but the registry treats them identically.
+
+A portfolio manager asking "what happened to similar projects?" wants realised delivery events
+— not contextual observations about market structure or theoretical risks from a feasibility
+study. Without a typology, every query returns a mix of substantive project events and background
+commentary, diluting the signal.
+
+### Event type taxonomy (4 values)
+
+Each record is classified into exactly one event type:
+
+| Event type | Definition | PM use |
+|---|---|---|
+| **realised_delivery_event** | The project experienced a concrete outcome — a delay, cost increase, performance shortfall, equipment failure, scope change, or cancellation. The cause can be internal or external (weather, pandemic, regulatory change) — what matters is that the project **suffered a measurable consequence**. If a risk was identified AND materialised, this is a realised delivery event. | "What actually happened?" — the core evidence base for reference class forecasting |
+| **design_technical_finding** | Analysis, testing, simulation, or modelling revealed a technical limitation, constraint, or unexpected behaviour. Nothing went wrong operationally — the finding IS the output of the work, not a failure of the work. | "What did testing/analysis reveal?" — informs design due diligence, not delivery risk |
+| **identified_future_risk** | A study or assessment flagged something that COULD happen but HAS NOT materialised. Risk register entries, scenario modelling of potential outcomes. Critical: if the risk actually materialised, classify as realised_delivery_event. | "What risks were flagged but didn't happen?" — useful for risk registers, not base rates |
+| **contextual_observation** | Commentary on market conditions, policy gaps, industry structure, cost curves, or other external context — not a project event. The record describes the environment, not something the project experienced. | Background context — not delivery evidence |
+
+### Key decision rules
+
+- If the project experienced a **consequence** (cost, delay, performance loss, scope change), it
+  is `realised_delivery_event` regardless of whether the cause was external.
+- "The project found that X is not commercially viable" from a feasibility study that was
+  **designed to answer that question** = `design_technical_finding` (the finding is the deliverable).
+- "The project was discontinued because X was not commercially viable" =
+  `realised_delivery_event` (the project suffered the consequence).
+- "There is a risk that X could happen" where X did NOT happen = `identified_future_risk`.
+
+### Consequence level (sub-classification for realised_delivery_event only)
+
+Records classified as `realised_delivery_event` receive a second label describing consequence
+severity:
+
+| Consequence level | Definition |
+|---|---|
+| **adaptation_required** | The project adjusted scope, design, timeline, or approach, but there is no evidence of quantifiable damage. The team adapted and moved on. |
+| **material_impact** | Evidence of quantifiable cost, schedule, or performance impact — dollar amounts, specific delay durations, measurable performance shortfalls, budget overruns. |
+| **project_threatening** | The project's viability was in question — references to potential cancellation, fundamental commercial unviability, existential technical challenges. |
+| **project_terminated** | The project was discontinued, abandoned, or not progressed. Explicitly stated. |
+
+Records with event_type other than `realised_delivery_event` have `consequence_level: null`.
+
+### Corpus distribution
+
+Classification was performed by Haiku batch across all 16,931 records.
+
+**Event type:**
+
+| Event type | Count | % |
+|---|---|---|
+| design_technical_finding | 7,961 | 47.0% |
+| realised_delivery_event | 6,625 | 39.1% |
+| contextual_observation | 1,934 | 11.4% |
+| identified_future_risk | 359 | 2.1% |
+| parse errors / misclassified | 52 | 0.3% |
+
+**Consequence level (of 6,625 realised delivery events):**
+
+| Consequence level | Count | % of RDE |
+|---|---|---|
+| adaptation_required | 4,374 | 66.0% |
+| material_impact | 2,095 | 31.6% |
+| project_terminated | 148 | 2.2% |
+| project_threatening | 34 | 0.5% |
+
+### Analytical implications
+
+**47% of records are design/technical findings, not delivery events.** Nearly half the corpus
+describes what testing or analysis revealed — not what happened to the project. These are
+valuable for design due diligence but should not be counted in delivery adversity base rates.
+Including them inflates the denominator and dilutes the signal.
+
+**Only 39% are realised delivery events.** This is the true evidence base for reference class
+forecasting — projects that actually experienced consequences. The adversity rates in the v2
+dashboard matrices are computed over all records; filtering to realised delivery events only
+would produce different (likely higher) adversity rates for the events that matter.
+
+**66% of delivery events required adaptation only.** Two-thirds of realised delivery events were
+navigated without quantifiable damage. The project adjusted and moved on. Only 31.6% had
+material impact, and project-threatening or terminated events are rare (2.7% combined).
+
+**Identified future risks are rare (2.1%).** The corpus is overwhelmingly retrospective — reports
+describe what happened, not what might happen. The few forward-looking risk flags are concentrated
+in feasibility studies and mid-project reviews.
+
+### Use in event synthesis
+
+The event_type classification feeds directly into the project-level event synthesis pipeline
+(`scripts/synthesise_project_events.py`). When clustering records into distinct synthesised
+events, the model sees each record's event_type label, enabling it to:
+
+- Cluster realised delivery events together (the core synthesis target)
+- Keep design/technical findings as supporting evidence rather than independent events
+- Separate contextual observations from substantive project events
+- Recognise that a realised event and a finding about the same topic may be related but
+  describe different things (the finding informed the design; the event is what happened
+  when it was built)
+
+### Implementation
+
+- **Script:** `scripts/batch_event_type.py`
+- **Model:** claude-haiku-4-5 (batch API)
+- **Output:** `insights/per_doc_event_type/doc_NNNN_event_type.yaml`
+- **Cost:** ~$5 for full corpus
+- **Fields per record:** `event_type`, `consequence_level` (or null), `confidence` (0.0–1.0)
