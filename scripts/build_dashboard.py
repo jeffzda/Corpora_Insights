@@ -884,6 +884,16 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
   .fi select:focus, .fi input:focus {{ outline: none; border-color: #6366f1; }}
   .fi-search input {{ width: 180px; }}
   .fi select {{ min-width: 110px; }}
+  .multi-select {{ position: relative; display: inline-block; }}
+  .multi-select-display {{ font-size:16px; padding:4px 7px; border:1px solid #e2e8f0; border-radius:5px; background:#f8fafc; color:#1e293b; height:28px; min-width:130px; cursor:pointer; user-select:none; display:flex; align-items:center; justify-content:space-between; gap:6px; white-space:nowrap; box-sizing:border-box; }}
+  .multi-select-display:hover {{ border-color:#6366f1; }}
+  .multi-select-display.ms-filtered {{ color:#6366f1; font-weight:600; }}
+  .ms-arrow {{ font-size:11px; color:#94a3b8; }}
+  .multi-select-dropdown {{ display:none; position:absolute; top:100%; left:0; z-index:100; background:white; border:1px solid #e2e8f0; border-radius:5px; box-shadow:0 4px 12px rgba(0,0,0,.12); padding:6px 0; min-width:180px; white-space:nowrap; }}
+  .multi-select-dropdown.open {{ display:block; }}
+  .multi-select-dropdown label {{ display:flex; align-items:center; gap:6px; padding:4px 12px; font-size:14px; cursor:pointer; color:#1e293b; }}
+  .multi-select-dropdown label:hover {{ background:#f1f5f9; }}
+  .multi-select-dropdown input[type=checkbox] {{ accent-color:#6366f1; }}
   .filter-clear-btn {{ font-size:15px; padding: 0 12px; height: 28px; background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 5px; cursor: pointer; color: #475569; flex-shrink: 0; align-self: flex-end; }}
   .filter-clear-btn:hover {{ background: #e2e8f0; }}
 
@@ -1213,7 +1223,17 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
 <div class="filter-bar">
     <div class="fi fi-search"><label>Search records</label><input id="search" type="text" placeholder="Keywords…"></div>
     <div class="fi"><label>ARENA category</label><select id="f-category"><option value="">All categories</option>{options(arena_categories)}</select></div>
-    <div class="fi"><label>Activity type</label><select id="f-activity"><option value="">All activities</option>{options(activity_types)}</select></div>
+    <div class="fi fi-activity"><label>Activity type</label>
+<div class="multi-select" id="f-activity-wrap">
+  <div class="multi-select-display" onclick="toggleMultiSelect('f-activity-wrap')">All activities <span class="ms-arrow">▾</span></div>
+  <div class="multi-select-dropdown" id="f-activity-dd">
+    <label><input type="checkbox" value="Deployment" checked onchange="onActivityChange()"> Deployment</label>
+    <label><input type="checkbox" value="Pilot / demonstration" checked onchange="onActivityChange()"> Pilot / demo</label>
+    <label><input type="checkbox" value="Study / feasibility" checked onchange="onActivityChange()"> Study / feasibility</label>
+    <label><input type="checkbox" value="R&amp;D" checked onchange="onActivityChange()"> R&amp;D</label>
+    <label><input type="checkbox" value="" checked onchange="onActivityChange()"> Unclassified</label>
+  </div>
+</div></div>
     <div class="fi"><label>Failure mode</label><select id="f-failure"><option value="">All failures</option>{options(failure_modes)}</select></div>
     <div class="fi"><label>Proponent</label><select id="f-proponent"><option value="">All proponents</option>{options(proponent_types)}</select></div>
     <div class="fi"><label>Lifecycle phase</label><select id="f-phase"><option value="">All phases</option>{options(lifecycle_phases)}</select></div>
@@ -1870,7 +1890,45 @@ function renderPage() {{
   }});
 }}
 
-const ALL_FILTER_IDS = ['search','f-category','f-activity','f-failure','f-proponent','f-phase','f-severity','f-consortium','f-transferability','f-qa','f-qa-class'];
+const ALL_FILTER_IDS = ['search','f-category','f-failure','f-proponent','f-phase','f-severity','f-consortium','f-transferability','f-qa','f-qa-class'];
+
+// ── Activity type multi-select ─────────────────────────────────
+const ACTIVITY_TYPES = ['Deployment','Pilot / demonstration','Study / feasibility','R&D',''];
+function getSelectedActivities() {{
+  const cbs = document.querySelectorAll('#f-activity-dd input[type=checkbox]');
+  const selected = [];
+  cbs.forEach(cb => {{ if (cb.checked) selected.push(cb.value); }});
+  return selected;
+}}
+function toggleMultiSelect(id) {{
+  const dd = document.getElementById(id).querySelector('.multi-select-dropdown');
+  dd.classList.toggle('open');
+}}
+function onActivityChange() {{
+  const selected = getSelectedActivities();
+  const display = document.querySelector('#f-activity-wrap .multi-select-display');
+  if (selected.length === ACTIVITY_TYPES.length) {{
+    display.textContent = 'All activities ';
+    display.innerHTML += '<span class="ms-arrow">▾</span>';
+    display.classList.remove('ms-filtered');
+  }} else if (selected.length === 0) {{
+    display.textContent = 'None selected ';
+    display.innerHTML += '<span class="ms-arrow">▾</span>';
+    display.classList.add('ms-filtered');
+  }} else {{
+    const names = selected.map(v => v || 'Unclassified');
+    display.textContent = names.join(', ') + ' ';
+    display.innerHTML += '<span class="ms-arrow">▾</span>';
+    display.classList.add('ms-filtered');
+  }}
+  applyFilters();
+}}
+document.addEventListener('click', e => {{
+  if (!e.target.closest('.multi-select')) {{
+    document.querySelectorAll('.multi-select-dropdown').forEach(d => d.classList.remove('open'));
+  }}
+}});
+
 const PROJECT_SET = new Set(RECORDS.map(r => r.kb_associated_project).filter(Boolean));
 const PAGE_SIZE = 50;
 let _curPage = 0, _lastFiltered = [];
@@ -2116,7 +2174,7 @@ function getFilters() {{
   return {{
     search:         document.getElementById('search').value.toLowerCase(),
     category:       document.getElementById('f-category').value,
-    activity:       document.getElementById('f-activity').value,
+    activities:     getSelectedActivities(),
     failure:        document.getElementById('f-failure').value,
     proponent:      document.getElementById('f-proponent').value,
     phase:          document.getElementById('f-phase').value,
@@ -2130,7 +2188,10 @@ function getFilters() {{
 
 function matchesDimFilters(r, f) {{
   if (f.category && !(r.arena_category || []).includes(f.category)) return false;
-  if (f.activity && r.activity_type !== f.activity) return false;
+  if (f.activities.length < ACTIVITY_TYPES.length) {{
+    const rAt = r.activity_type || '';
+    if (!f.activities.includes(rAt)) return false;
+  }}
   if (f.failure && r.failure_mode !== f.failure) return false;
   if (f.proponent && r.proponent_type !== f.proponent) return false;
   if (f.phase && r.lifecycle_phase !== f.phase) return false;
@@ -2174,6 +2235,8 @@ function changePage(delta) {{
 
 function clearFilters() {{
   ALL_FILTER_IDS.forEach(id => {{ const el = document.getElementById(id); if (el) el.value = ''; }});
+  document.querySelectorAll('#f-activity-dd input[type=checkbox]').forEach(cb => {{ cb.checked = true; }});
+  onActivityChange();
   _selectedProjects.clear();
   _expandedProjects.clear();
   _selectedDoc = null;
@@ -2303,8 +2366,7 @@ document.addEventListener('keydown', e => {{ if (e.key === 'Escape') closeModalD
 const _anCharts = {{}};
 
 function renderAnalysis(recs) {{
-  // Exclude R&D records from analysis — R&D is upstream of the delivery pipeline
-  recs = recs.filter(r => r.activity_type !== 'R&D');
+  // Activity type filtering now handled by the multi-select filter
   const total = recs.length;
   const projects = new Set(recs.map(r => r.kb_associated_project).filter(Boolean));
   const nProjects = projects.size;
