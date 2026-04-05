@@ -637,25 +637,32 @@ def build_reference_class_html(profiles: list[dict], min_n: int = 5) -> str:
     return ma_html + mb_html + mc_html + se_html + sc_html
 
 
-def serialize_risk_profiles(profiles: list[dict]) -> str:
+_SEV_ENCODE = {"none": 0, "minor": 1, "moderate": 2, "major": 3, "critical": 4}
+
+def serialize_risk_records(records: list[dict]) -> str:
     """
-    Serialize project profiles as compact JSON for the client-side risk rating tool.
-    Each profile keeps only the fields needed for filtering and computing stats.
+    Serialize records as compact JSON for the client-side risk rating tool.
+    Each record keeps only fields needed for filtering and computing stats.
+    Severity encoded as int: 0=none, 1=minor, 2=moderate, 3=major, 4=critical.
     """
     out = []
-    for p in profiles:
-        out.append({
-            "cat": p.get("arena_category"),
-            "act": p.get("activity_type"),
-            "pro": p.get("proponent_type"),
-            "con": p.get("is_consortium", False),
-            "adv": p.get("had_moderate_plus", False),
-            "sv": p.get("sev_severe", 0),
-            "ml": p.get("sev_mild", 0),
-            "fms": sorted(p.get("failure_modes") or []),
-            "phs": sorted(p.get("phases_covered") or []),
-            "phf": p.get("phase_failures") or {},
-        })
+    for r in records:
+        cats = r.get("arena_category") or []
+        dims = r.get("dimensions") or []
+        fm = r.get("failure_mode") or ""
+        sfm = r.get("secondary_failure_mode") or ""
+        sev = _SEV_ENCODE.get(r.get("issue_severity", ""), 0)
+        entry = {
+            "c": cats if len(cats) != 1 else cats[0],  # flatten single-element lists
+            "d": dims,
+            "p": r.get("proponent_type") or "",
+            "s": sev,
+        }
+        if fm and fm != _NO_FAIL:
+            entry["f"] = fm
+        if sfm and sfm != _NO_FAIL:
+            entry["f2"] = sfm
+        out.append(entry)
     return json.dumps(out, ensure_ascii=False, separators=(",", ":"))
 
 
@@ -833,7 +840,7 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
     kb_projects = distinct_sorted(records, "kb_associated_project")
     project_profiles = build_project_profiles(records)
     matrix_html = build_reference_class_html(project_profiles) if project_profiles else ""
-    risk_profiles_json = serialize_risk_profiles(project_profiles) if project_profiles else "[]"
+    risk_records_json = serialize_risk_records(records)
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -1362,36 +1369,24 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
       <div style="font-size:20px;font-weight:700;color:#0f172a;margin-bottom:4px">Reference-class risk rating</div>
       <div style="font-size:16px;color:#64748b;margin-bottom:16px;max-width:800px;line-height:1.6">
         Select a project's attributes to see its empirical risk profile based on {n_projects_covered} ARENA projects.
-        Rates are computed directly from the intersection of all selected attributes — no averaging of marginal statistics.
+        Rates are computed directly from the {n} records matching all selected attributes — no averaging of marginal statistics.
       </div>
     </div>
     <div style="padding:0 32px 24px;display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start">
       <div style="min-width:320px;max-width:400px;flex:1">
         <div style="background:white;border:1px solid #e2e8f0;border-radius:10px;padding:20px;display:flex;flex-direction:column;gap:14px">
-          <div style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:0.5px">Project attributes</div>
+          <div style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:0.5px">Reference class filters</div>
           <div class="risk-field">
             <label>ARENA category</label>
-            <select id="rr-category" onchange="computeRisk()"><option value="">— Select —</option></select>
+            <select id="rr-category" onchange="computeRisk()"><option value="">— Any —</option></select>
           </div>
           <div class="risk-field">
-            <label>Activity type</label>
-            <select id="rr-activity" onchange="computeRisk()"><option value="">— Select —</option></select>
+            <label>Delivery dimension</label>
+            <select id="rr-dimension" onchange="computeRisk()"><option value="">— Any —</option></select>
           </div>
           <div class="risk-field">
             <label>Proponent type</label>
-            <select id="rr-proponent" onchange="computeRisk()"><option value="">— Select —</option></select>
-          </div>
-          <div class="risk-field">
-            <label>Lifecycle phase</label>
-            <select id="rr-phase" onchange="computeRisk()"><option value="">— Select —</option></select>
-          </div>
-          <div class="risk-field">
-            <label>Consortium?</label>
-            <select id="rr-consortium" onchange="computeRisk()">
-              <option value="">— N/A —</option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </select>
+            <select id="rr-proponent" onchange="computeRisk()"><option value="">— Any —</option></select>
           </div>
           <button onclick="resetRisk()" style="font-size:15px;padding:6px 14px;border:1px solid #e2e8f0;border-radius:6px;background:#f8fafc;color:#475569;cursor:pointer;align-self:flex-start">Reset</button>
         </div>
@@ -1498,7 +1493,7 @@ const QA_COLOURS = {qa_colours};
 const DIM_ORDER = {json.dumps(DIMENSION_ORDER)};
 const DIM_SHORT = {json.dumps(DIMENSION_SHORT)};
 const DIM_COLOURS = {json.dumps(DIMENSION_COLOURS)};
-const RISK_PROFILES = {risk_profiles_json};
+const RISK_RECS = {risk_records_json};
 Chart.defaults.font.size = 14;
 Chart.defaults.plugins.legend.labels.font = {{ size: 14 }};
 Chart.defaults.plugins.tooltip.bodyFont = {{ size: 14 }};
@@ -3742,15 +3737,19 @@ async function createPermalink(repId) {{
 }}
 
 // ── Risk Rating Tool ─────────────────────────────────────────────
-// Filters project profiles to the intersection of ALL selected attributes,
-// then computes adversity rate, severity escalation, and top failure modes
-// directly from the filtered set. No weighted averages of marginal rates.
+// Filters individual delivery records to the intersection of selected
+// ARENA category × delivery dimension × proponent type, then computes
+// adversity rate, severity escalation, and failure mode distribution
+// directly from the filtered set.
+//
+// Record fields: c=arena_category (string or array), d=dimensions (array),
+// p=proponent_type, s=severity (0-4), f=primary FM, f2=secondary FM
 
 let riskInitialised = false;
 function initRiskRating() {{
-  if (riskInitialised || !RISK_PROFILES || !RISK_PROFILES.length) return;
+  if (riskInitialised || !RISK_RECS || !RISK_RECS.length) return;
   riskInitialised = true;
-  const P = RISK_PROFILES;
+  const R = RISK_RECS;
   const addOpts = (id, vals) => {{
     const el = document.getElementById(id);
     vals.sort().forEach(v => {{
@@ -3759,107 +3758,113 @@ function initRiskRating() {{
       el.appendChild(o);
     }});
   }};
-  addOpts('rr-category', [...new Set(P.map(p => p.cat).filter(Boolean))]);
-  addOpts('rr-activity', [...new Set(P.map(p => p.act).filter(v => v && v !== 'R&D'))]);
-  addOpts('rr-proponent', [...new Set(P.map(p => p.pro).filter(Boolean))]);
-  addOpts('rr-phase', [...new Set(P.flatMap(p => p.phs || []))]);
+  // Categories: flatten c field (can be string or array)
+  var cats = new Set();
+  R.forEach(r => {{
+    var c = r.c;
+    if (Array.isArray(c)) c.forEach(v => {{ if (v) cats.add(v); }});
+    else if (c) cats.add(c);
+  }});
+  addOpts('rr-category', [...cats]);
+  // Dimensions: use short labels
+  var dimSet = new Set();
+  R.forEach(r => (r.d || []).forEach(d => dimSet.add(d)));
+  var dimEl = document.getElementById('rr-dimension');
+  DIM_ORDER.filter(d => dimSet.has(d)).forEach(d => {{
+    var o = document.createElement('option');
+    o.value = d; o.textContent = DIM_SHORT[d] || d;
+    dimEl.appendChild(o);
+  }});
+  // Proponents
+  addOpts('rr-proponent', [...new Set(R.map(r => r.p).filter(Boolean))]);
 }}
 
 function resetRisk() {{
-  ['rr-category','rr-activity','rr-proponent','rr-phase','rr-consortium'].forEach(id =>
+  ['rr-category','rr-dimension','rr-proponent'].forEach(id =>
     document.getElementById(id).value = '');
   document.getElementById('rr-output').innerHTML =
     '<div style="color:#94a3b8;font-size:18px;padding:40px 0;text-align:center">Select at least one attribute to see the risk profile.</div>';
 }}
 
+function _rrHasCat(r, cat) {{
+  var c = r.c;
+  if (Array.isArray(c)) return c.indexOf(cat) >= 0;
+  return c === cat;
+}}
+
 function computeRisk() {{
-  const P = RISK_PROFILES;
-  if (!P || !P.length) return;
+  var R = RISK_RECS;
+  if (!R || !R.length) return;
 
-  const cat = document.getElementById('rr-category').value;
-  const act = document.getElementById('rr-activity').value;
-  const pro = document.getElementById('rr-proponent').value;
-  const ph  = document.getElementById('rr-phase').value;
-  const con = document.getElementById('rr-consortium').value;
+  var cat = document.getElementById('rr-category').value;
+  var dim = document.getElementById('rr-dimension').value;
+  var pro = document.getElementById('rr-proponent').value;
 
-  if (!cat && !act && !pro && !ph && !con) {{
+  if (!cat && !dim && !pro) {{
     resetRisk();
     return;
   }}
 
-  // ── Filter profiles to intersection of ALL selected attributes ──
-  var filtered = P;
+  // ── Filter records to intersection ──────────────────────────
+  var filtered = R;
   var filters = [];
-  if (cat) {{ filtered = filtered.filter(p => p.cat === cat); filters.push({{ name: 'Category', label: cat }}); }}
-  if (act) {{ filtered = filtered.filter(p => p.act === act); filters.push({{ name: 'Activity', label: act }}); }}
-  if (pro) {{ filtered = filtered.filter(p => p.pro === pro); filters.push({{ name: 'Proponent', label: pro }}); }}
-  if (ph)  {{ filtered = filtered.filter(p => (p.phs || []).indexOf(ph) >= 0); filters.push({{ name: 'Phase', label: ph }}); }}
-  if (con) {{ filtered = filtered.filter(p => con === 'yes' ? p.con : !p.con); filters.push({{ name: 'Consortium', label: con === 'yes' ? 'Yes' : 'No' }}); }}
+  if (cat) {{ filtered = filtered.filter(r => _rrHasCat(r, cat)); filters.push({{ name: 'Category', label: cat }}); }}
+  if (dim) {{ filtered = filtered.filter(r => (r.d || []).indexOf(dim) >= 0); filters.push({{ name: 'Dimension', label: DIM_SHORT[dim] || dim }}); }}
+  if (pro) {{ filtered = filtered.filter(r => r.p === pro); filters.push({{ name: 'Proponent', label: pro }}); }}
 
   var n = filtered.length;
 
   if (n === 0) {{
     document.getElementById('rr-output').innerHTML =
       '<div style="color:#d97706;font-size:18px;padding:40px 0;text-align:center">'
-      + 'No projects match this combination of attributes. Try removing a filter.'
+      + 'No records match this combination. Try removing a filter.'
       + '</div>';
     return;
   }}
 
-  // ── Compute stats from the filtered set ──────────────────────
+  // ── Compute stats ──────────────────────────────────────────
   var nAdv = 0, severe = 0, mild = 0;
   var fmCount = {{}};
-  filtered.forEach(function(p) {{
-    if (p.adv) nAdv++;
-    severe += p.sv;
-    mild += p.ml;
-    (p.fms || []).forEach(function(fm) {{
-      fmCount[fm] = (fmCount[fm] || 0) + 1;
-    }});
+  filtered.forEach(function(r) {{
+    if (r.f) {{
+      nAdv++;
+      fmCount[r.f] = (fmCount[r.f] || 0) + 1;
+    }}
+    if (r.s >= 3) severe++;
+    else if (r.s >= 1) mild++;
   }});
 
   var advRate = nAdv / n;
   var sevPct = (severe + mild) > 0 ? (severe / (severe + mild) * 100) : null;
-  var topFms = Object.entries(fmCount).sort(function(a,b) {{ return b[1] - a[1]; }}).slice(0, 5);
-
-  // Phase-specific adversity if a phase is selected
-  var phaseAdvRate = null;
-  if (ph) {{
-    var phAdv = filtered.filter(p => p.phf && p.phf[ph]).length;
-    phaseAdvRate = phAdv / n;
-  }}
+  var escRatio = mild > 0 ? (severe / mild) : (severe > 0 ? Infinity : null);
+  var topFms = Object.entries(fmCount).sort(function(a,b) {{ return b[1] - a[1]; }}).slice(0, 6);
 
   // Corpus baseline
-  var corpusN = P.length;
-  var corpusAdv = P.filter(p => p.adv).length / corpusN;
-  var corpusSevere = P.reduce((s,p) => s + p.sv, 0);
-  var corpusMild = P.reduce((s,p) => s + p.ml, 0);
+  var corpusN = R.length;
+  var corpusAdv = R.filter(r => r.f).length / corpusN;
+  var corpusSevere = R.filter(r => r.s >= 3).length;
+  var corpusMild = R.filter(r => r.s >= 1 && r.s < 3).length;
   var corpusSev = (corpusSevere + corpusMild) > 0 ? (corpusSevere / (corpusSevere + corpusMild) * 100) : 0;
 
-  // ── Compute marginal rates for comparison bars ──────────────
+  // ── Marginal rates for comparison ──────────────────────────
   var marginals = [];
   if (cat) {{
-    var mp = P.filter(p => p.cat === cat);
-    marginals.push({{ name: 'Category', label: cat, adv: mp.filter(p=>p.adv).length / mp.length, n: mp.length }});
+    var mr = R.filter(r => _rrHasCat(r, cat));
+    var ma = mr.filter(r => r.f).length;
+    marginals.push({{ name: 'Category', label: cat, adv: ma / mr.length, n: mr.length }});
   }}
-  if (act) {{
-    var mp = P.filter(p => p.act === act);
-    marginals.push({{ name: 'Activity', label: act, adv: mp.filter(p=>p.adv).length / mp.length, n: mp.length }});
+  if (dim) {{
+    var mr = R.filter(r => (r.d||[]).indexOf(dim) >= 0);
+    var ma = mr.filter(r => r.f).length;
+    marginals.push({{ name: 'Dimension', label: DIM_SHORT[dim] || dim, adv: ma / mr.length, n: mr.length }});
   }}
   if (pro) {{
-    var mp = P.filter(p => p.pro === pro);
-    marginals.push({{ name: 'Proponent', label: pro, adv: mp.filter(p=>p.adv).length / mp.length, n: mp.length }});
-  }}
-  if (ph) {{
-    var mp = P.filter(p => (p.phs||[]).indexOf(ph) >= 0);
-    marginals.push({{ name: 'Phase', label: ph, adv: mp.filter(p=>p.adv).length / mp.length, n: mp.length }});
-  }}
-  if (con) {{
-    var mp = P.filter(p => con === 'yes' ? p.con : !p.con);
-    marginals.push({{ name: 'Consortium', label: con === 'yes' ? 'Yes' : 'No', adv: mp.filter(p=>p.adv).length / mp.length, n: mp.length }});
+    var mr = R.filter(r => r.p === pro);
+    var ma = mr.filter(r => r.f).length;
+    marginals.push({{ name: 'Proponent', label: pro, adv: ma / mr.length, n: mr.length }});
   }}
 
-  // ── Score: risk index from intersection stats ──────────────
+  // ── Score ──────────────────────────────────────────────────
   var effectiveSev = sevPct != null ? sevPct : corpusSev;
   var riskIndex = advRate * (effectiveSev / 100);
   var score = Math.max(1, Math.min(10, 1 + 9 * ((riskIndex - 0.05) / 0.30)));
@@ -3883,11 +3888,11 @@ function computeRisk() {{
   var col = scoreColour(score);
   var lbl = scoreLabel(score);
 
-  // ── Build output HTML ──────────────────────────────────────────
+  // ── Build output HTML ──────────────────────────────────────
   var html = '';
-
-  // Reference class description
   var refDesc = filters.map(f => f.label).join(' \u00d7 ');
+
+  // Score card
   html += '<div class="rr-card" style="display:flex;align-items:center;gap:24px;flex-wrap:wrap;background:' + scoreBg(score) + '">'
     + '<div class="rr-score-ring" style="border-color:' + col + ';color:' + col + '">'
     + '<div class="rr-score-label">Risk</div>'
@@ -3897,95 +3902,119 @@ function computeRisk() {{
     + '<div style="flex:1;min-width:200px">'
     + '<div style="font-size:16px;color:#475569;line-height:1.8">'
     + '<strong style="color:#0f172a">Reference class:</strong> ' + refDesc
-    + ' <span style="color:#94a3b8">(<strong>' + n + '</strong> project' + (n !== 1 ? 's' : '') + ')</span><br>'
+    + ' <span style="color:#94a3b8">(<strong>' + n + '</strong> record' + (n !== 1 ? 's' : '') + ')</span><br>'
     + '<strong style="color:#0f172a">Adversity rate:</strong> ' + (advRate*100).toFixed(0) + '%'
     + ' <span style="color:#94a3b8">(corpus ' + (corpusAdv*100).toFixed(0) + '%)</span><br>'
     + '<strong style="color:#0f172a">Severity escalation:</strong> ' + (sevPct != null ? sevPct.toFixed(0) + '%' : 'n/a')
     + ' <span style="color:#94a3b8">(corpus ' + corpusSev.toFixed(0) + '%)</span>';
-  if (phaseAdvRate != null) {{
-    html += '<br><strong style="color:#0f172a">Phase-specific adversity:</strong> ' + (phaseAdvRate*100).toFixed(0) + '%'
-      + ' <span style="color:#94a3b8">(major+ issues at ' + ph + ')</span>';
+  if (escRatio != null && escRatio !== Infinity) {{
+    html += '<br><strong style="color:#0f172a">Escalation ratio:</strong> ' + escRatio.toFixed(2)
+      + ':1 <span style="color:#94a3b8">(major+critical per minor+moderate)</span>';
   }}
   html += '</div></div></div>';
 
-  // Marginal vs intersection comparison
+  // Marginal vs intersection
   if (marginals.length > 1) {{
     html += '<div class="rr-card">'
       + '<div style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px">Marginal vs intersection</div>'
-      + '<div style="font-size:14px;color:#64748b;margin-bottom:10px">Each bar shows the adversity rate for that attribute alone. The intersection (bottom) shows the rate when all filters are applied simultaneously.</div>';
+      + '<div style="font-size:14px;color:#64748b;margin-bottom:10px">Each bar shows the adversity rate for that attribute alone. The intersection shows the combined rate.</div>';
 
-    // Corpus baseline row
     html += '<div class="rr-dim-row">'
-      + '<div class="rr-dim-label" style="color:#94a3b8;font-style:italic">Corpus baseline</div>'
+      + '<div class="rr-dim-label" style="color:#94a3b8;font-style:italic">Corpus</div>'
       + '<div class="rr-dim-bar"><div class="rr-bar"><div class="rr-bar-fill" style="width:' + (corpusAdv*100) + '%;background:#cbd5e1"></div></div></div>'
       + '<div class="rr-dim-val" style="color:#94a3b8">' + (corpusAdv*100).toFixed(0) + '%</div>'
-      + '<div class="rr-dim-mult" style="color:#94a3b8">n=' + corpusN + '</div>'
+      + '<div class="rr-dim-mult" style="color:#94a3b8">n=' + corpusN.toLocaleString() + '</div>'
       + '</div>';
 
     marginals.forEach(function(d) {{
-      var barCol = '#64748b';
-      var barPct = Math.min(d.adv * 100, 100);
       html += '<div class="rr-dim-row">'
         + '<div class="rr-dim-label">' + d.name + '</div>'
-        + '<div class="rr-dim-bar"><div class="rr-bar"><div class="rr-bar-fill" style="width:' + barPct + '%;background:' + barCol + '"></div></div></div>'
+        + '<div class="rr-dim-bar"><div class="rr-bar"><div class="rr-bar-fill" style="width:' + Math.min(d.adv*100,100) + '%;background:#64748b"></div></div></div>'
         + '<div class="rr-dim-val">' + (d.adv*100).toFixed(0) + '%</div>'
-        + '<div class="rr-dim-mult" style="color:#94a3b8">n=' + d.n + '</div>'
+        + '<div class="rr-dim-mult" style="color:#94a3b8">n=' + d.n.toLocaleString() + '</div>'
         + '</div>';
     }});
 
-    // Intersection row
     var intCol = scoreColour(score);
     html += '<div class="rr-dim-row" style="border-top:2px solid #e2e8f0;padding-top:6px;margin-top:4px">'
       + '<div class="rr-dim-label" style="font-weight:700;color:' + intCol + '">Intersection</div>'
-      + '<div class="rr-dim-bar"><div class="rr-bar"><div class="rr-bar-fill" style="width:' + Math.min(advRate*100, 100) + '%;background:' + intCol + '"></div></div></div>'
+      + '<div class="rr-dim-bar"><div class="rr-bar"><div class="rr-bar-fill" style="width:' + Math.min(advRate*100,100) + '%;background:' + intCol + '"></div></div></div>'
       + '<div class="rr-dim-val" style="font-weight:700;color:' + intCol + '">' + (advRate*100).toFixed(0) + '%</div>'
-      + '<div class="rr-dim-mult" style="font-weight:700;color:' + intCol + '">n=' + n + '</div>'
+      + '<div class="rr-dim-mult" style="font-weight:700;color:' + intCol + '">n=' + n.toLocaleString() + '</div>'
       + '</div>';
 
     html += '</div>';
   }}
 
-  // Top failure modes
+  // Failure mode breakdown
   if (topFms.length > 0) {{
     html += '<div class="rr-card">'
-      + '<div style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px">Top failure modes in reference class</div>';
+      + '<div style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px">Failure mode breakdown</div>';
     topFms.forEach(function(pair) {{
       var fm = pair[0], cnt = pair[1];
-      var pct = (cnt / n * 100).toFixed(0);
+      var pct = (cnt / nAdv * 100).toFixed(0);
+      var barPct = (cnt / nAdv * 100);
       var fmCol = FM_COLOURS[fm] || '#64748b';
-      html += '<div class="rr-fm-item">'
+      html += '<div class="rr-fm-item" style="align-items:center">'
         + '<div class="rr-fm-dot" style="background:' + fmCol + '"></div>'
-        + '<div class="rr-fm-name">' + fm + '</div>'
-        + '<div class="rr-fm-pct" style="color:' + fmCol + '">' + pct + '% <span style="color:#94a3b8;font-size:13px">(' + cnt + '/' + n + ')</span></div>'
+        + '<div class="rr-fm-name" style="flex:1">' + fm + '</div>'
+        + '<div style="width:120px;height:8px;background:#f1f5f9;border-radius:4px;margin:0 8px"><div style="height:100%;border-radius:4px;background:' + fmCol + ';width:' + barPct + '%"></div></div>'
+        + '<div class="rr-fm-pct" style="color:' + fmCol + ';min-width:80px;text-align:right">' + pct + '% <span style="color:#94a3b8;font-size:13px">(' + cnt + ')</span></div>'
         + '</div>';
     }});
     html += '</div>';
   }}
+
+  // Severity breakdown
+  var sevNone = filtered.filter(r => r.s === 0).length;
+  var sevMinor = filtered.filter(r => r.s === 1).length;
+  var sevMod = filtered.filter(r => r.s === 2).length;
+  var sevMaj = filtered.filter(r => r.s === 3).length;
+  var sevCrit = filtered.filter(r => r.s === 4).length;
+  html += '<div class="rr-card">'
+    + '<div style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px">Severity distribution</div>'
+    + '<div style="display:flex;gap:12px;flex-wrap:wrap">';
+  [['None', sevNone, '#94a3b8'], ['Minor', sevMinor, '#16a34a'], ['Moderate', sevMod, '#d97706'],
+   ['Major', sevMaj, '#ea580c'], ['Critical', sevCrit, '#dc2626']].forEach(function(t) {{
+    var pct = (t[1]/n*100).toFixed(0);
+    html += '<div style="text-align:center;min-width:60px">'
+      + '<div style="font-size:22px;font-weight:700;color:' + t[2] + '">' + pct + '%</div>'
+      + '<div style="font-size:13px;color:#64748b">' + t[0] + '</div>'
+      + '<div style="font-size:12px;color:#94a3b8">(' + t[1] + ')</div>'
+      + '</div>';
+  }});
+  html += '</div></div>';
 
   // Interpretation
   html += '<div class="rr-card" style="background:#f8fafc;border-color:#e2e8f0">'
     + '<div style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px">Interpretation</div>'
     + '<div style="font-size:16px;color:#475569;line-height:1.7">';
   if (score <= 3.5) {{
-    html += 'This reference class has a <strong style="color:#16a34a">lower-than-average</strong> empirical risk. '
-      + 'Among the ' + n + ' matching projects, adversity is less frequent and tends to be less severe.';
+    html += 'This reference class has a <strong style="color:#16a34a">lower-than-average</strong> empirical risk profile. '
+      + 'Among ' + n.toLocaleString() + ' matching records, adversity is less frequent and tends to be less severe.';
   }} else if (score <= 6.5) {{
-    html += 'This reference class has a <strong style="color:#d97706">moderate</strong> empirical risk. '
-      + 'Among the ' + n + ' matching projects, adversity rates are broadly in line with the corpus average.';
+    html += 'This reference class has a <strong style="color:#d97706">moderate</strong> empirical risk profile. '
+      + 'Among ' + n.toLocaleString() + ' matching records, adversity rates are broadly in line with the corpus.';
   }} else {{
-    html += 'This reference class has an <strong style="color:#dc2626">elevated</strong> empirical risk. '
-      + 'Among the ' + n + ' matching projects, both adversity rate and severity escalation are above average.';
+    html += 'This reference class has an <strong style="color:#dc2626">elevated</strong> empirical risk profile. '
+      + 'Among ' + n.toLocaleString() + ' matching records, both adversity rate and severity escalation are above average.';
+  }}
+
+  // Top risk driver
+  if (topFms.length > 0) {{
+    html += ' The dominant failure mode is <strong>' + topFms[0][0] + '</strong> ('
+      + (topFms[0][1] / nAdv * 100).toFixed(0) + '% of adverse records).';
   }}
   html += '</div></div>';
 
-  // Sample size warning
-  if (n < 10) {{
+  // Sample size guidance
+  if (n < 20) {{
     html += '<div style="font-size:14px;color:#dc2626;padding:10px 14px;background:#fef2f2;border:1px solid #fecaca;border-radius:6px">'
-      + '\u26a0\ufe0f <strong>Very small reference class (n=' + n + ').</strong> These rates are unreliable. Consider removing a filter to broaden the reference class.'
+      + '\u26a0\ufe0f <strong>Small reference class (n=' + n + ').</strong> Rates may be unreliable. Consider removing a filter.'
       + '</div>';
-  }} else if (n < 20) {{
+  }} else if (n < 50) {{
     html += '<div style="font-size:14px;color:#d97706;padding:10px 14px;background:#fffbeb;border:1px solid #fde68a;border-radius:6px">'
-      + 'Note: Small reference class (n=' + n + '). Treat results with caution.'
+      + 'Moderate reference class (n=' + n + '). Rates are indicative but treat fine-grained percentages with caution.'
       + '</div>';
   }}
 
