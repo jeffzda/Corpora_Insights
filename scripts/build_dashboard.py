@@ -3823,53 +3823,56 @@ function computeRisk() {{
   }}
 
   // ── Compute stats ──────────────────────────────────────────
-  // Adversity = major + critical severity (s >= 3)
   var severe = 0, mild = 0, nWithFm = 0;
-  var fmCount = {{}};
+  var fmCount = {{}};      // fm → total count
+  var fmSevere = {{}};     // fm → major+critical count
+  var fmMild = {{}};       // fm → minor+moderate count
   filtered.forEach(function(r) {{
     if (r.f) {{
       nWithFm++;
       fmCount[r.f] = (fmCount[r.f] || 0) + 1;
+      if (r.s >= 3) fmSevere[r.f] = (fmSevere[r.f] || 0) + 1;
+      else if (r.s >= 1) fmMild[r.f] = (fmMild[r.f] || 0) + 1;
     }}
     if (r.s >= 3) severe++;
     else if (r.s >= 1) mild++;
   }});
 
-  var nAdv = severe;  // adversity = major + critical
-  var advRate = nAdv / n;
   var sevPct = (severe + mild) > 0 ? (severe / (severe + mild) * 100) : null;
   var escRatio = mild > 0 ? (severe / mild) : (severe > 0 ? Infinity : null);
-  var topFms = Object.entries(fmCount).sort(function(a,b) {{ return b[1] - a[1]; }}).slice(0, 6);
+  var topFms = Object.entries(fmCount).sort(function(a,b) {{ return b[1] - a[1]; }}).slice(0, 7);
 
-  // Corpus baseline
+  // Corpus baseline severity escalation
   var corpusN = R.length;
-  var corpusAdv = R.filter(r => r.s >= 3).length / corpusN;
   var corpusSevere = R.filter(r => r.s >= 3).length;
   var corpusMild = R.filter(r => r.s >= 1 && r.s < 3).length;
   var corpusSev = (corpusSevere + corpusMild) > 0 ? (corpusSevere / (corpusSevere + corpusMild) * 100) : 0;
 
-  // ── Marginal rates for comparison ──────────────────────────
+  // ── Marginal severity escalation for comparison ──────────────
+  function _sevEsc(recs) {{
+    var sv = 0, ml = 0;
+    recs.forEach(function(r) {{ if (r.s >= 3) sv++; else if (r.s >= 1) ml++; }});
+    return (sv + ml) > 0 ? (sv / (sv + ml) * 100) : null;
+  }}
   var marginals = [];
   if (cat) {{
     var mr = R.filter(r => _rrHasCat(r, cat));
-    var ma = mr.filter(r => r.s >= 3).length;
-    marginals.push({{ name: 'Category', label: cat, adv: ma / mr.length, n: mr.length }});
+    marginals.push({{ name: 'Category', label: cat, sev: _sevEsc(mr), n: mr.length }});
   }}
   if (dim) {{
     var mr = R.filter(r => (r.d||[]).indexOf(dim) >= 0);
-    var ma = mr.filter(r => r.s >= 3).length;
-    marginals.push({{ name: 'Dimension', label: DIM_SHORT[dim] || dim, adv: ma / mr.length, n: mr.length }});
+    marginals.push({{ name: 'Dimension', label: DIM_SHORT[dim] || dim, sev: _sevEsc(mr), n: mr.length }});
   }}
   if (pro) {{
     var mr = R.filter(r => r.p === pro);
-    var ma = mr.filter(r => r.s >= 3).length;
-    marginals.push({{ name: 'Proponent', label: pro, adv: ma / mr.length, n: mr.length }});
+    marginals.push({{ name: 'Proponent', label: pro, sev: _sevEsc(mr), n: mr.length }});
   }}
 
-  // ── Score ──────────────────────────────────────────────────
+  // ── Score: based on severity escalation ──────────────────────
+  // Corpus average ~30%, observed range roughly 15–60%
+  // Map [15, 55] to [1, 10]
   var effectiveSev = sevPct != null ? sevPct : corpusSev;
-  var riskIndex = advRate * (effectiveSev / 100);
-  var score = Math.max(1, Math.min(10, 1 + 9 * ((riskIndex - 0.05) / 0.30)));
+  var score = Math.max(1, Math.min(10, 1 + 9 * ((effectiveSev - 15) / 40)));
 
   function scoreColour(s) {{
     if (s <= 3.5) return '#16a34a';
@@ -3904,9 +3907,7 @@ function computeRisk() {{
     + '<div style="flex:1;min-width:200px">'
     + '<div style="font-size:16px;color:#475569;line-height:1.8">'
     + '<strong style="color:#0f172a">Reference class:</strong> ' + refDesc
-    + ' <span style="color:#94a3b8">(<strong>' + n + '</strong> record' + (n !== 1 ? 's' : '') + ')</span><br>'
-    + '<strong style="color:#0f172a">Adversity rate:</strong> ' + (advRate*100).toFixed(0) + '%'
-    + ' <span style="color:#94a3b8">(corpus ' + (corpusAdv*100).toFixed(0) + '%)</span><br>'
+    + ' <span style="color:#94a3b8">(<strong>' + n.toLocaleString() + '</strong> record' + (n !== 1 ? 's' : '') + ', <strong>' + nWithFm + '</strong> with failure mode)</span><br>'
     + '<strong style="color:#0f172a">Severity escalation:</strong> ' + (sevPct != null ? sevPct.toFixed(0) + '%' : 'n/a')
     + ' <span style="color:#94a3b8">(corpus ' + corpusSev.toFixed(0) + '%)</span>';
   if (escRatio != null && escRatio !== Infinity) {{
@@ -3915,56 +3916,70 @@ function computeRisk() {{
   }}
   html += '</div></div></div>';
 
-  // Marginal vs intersection
+  // Marginal vs intersection — severity escalation
   if (marginals.length > 1) {{
     html += '<div class="rr-card">'
-      + '<div style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px">Marginal vs intersection</div>'
-      + '<div style="font-size:14px;color:#64748b;margin-bottom:10px">Each bar shows the adversity rate for that attribute alone. The intersection shows the combined rate.</div>';
+      + '<div style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px">Severity escalation: marginal vs intersection</div>'
+      + '<div style="font-size:14px;color:#64748b;margin-bottom:10px">Each bar shows severity escalation (major+critical as % of all adverse) for that attribute alone. The intersection shows the rate when all filters are applied.</div>';
 
     html += '<div class="rr-dim-row">'
       + '<div class="rr-dim-label" style="color:#94a3b8;font-style:italic">Corpus</div>'
-      + '<div class="rr-dim-bar"><div class="rr-bar"><div class="rr-bar-fill" style="width:' + (corpusAdv*100) + '%;background:#cbd5e1"></div></div></div>'
-      + '<div class="rr-dim-val" style="color:#94a3b8">' + (corpusAdv*100).toFixed(0) + '%</div>'
+      + '<div class="rr-dim-bar"><div class="rr-bar"><div class="rr-bar-fill" style="width:' + corpusSev + '%;background:#cbd5e1"></div></div></div>'
+      + '<div class="rr-dim-val" style="color:#94a3b8">' + corpusSev.toFixed(0) + '%</div>'
       + '<div class="rr-dim-mult" style="color:#94a3b8">n=' + corpusN.toLocaleString() + '</div>'
       + '</div>';
 
     marginals.forEach(function(d) {{
+      var sv = d.sev != null ? d.sev : 0;
       html += '<div class="rr-dim-row">'
         + '<div class="rr-dim-label">' + d.name + '</div>'
-        + '<div class="rr-dim-bar"><div class="rr-bar"><div class="rr-bar-fill" style="width:' + Math.min(d.adv*100,100) + '%;background:#64748b"></div></div></div>'
-        + '<div class="rr-dim-val">' + (d.adv*100).toFixed(0) + '%</div>'
+        + '<div class="rr-dim-bar"><div class="rr-bar"><div class="rr-bar-fill" style="width:' + Math.min(sv,100) + '%;background:#64748b"></div></div></div>'
+        + '<div class="rr-dim-val">' + (d.sev != null ? d.sev.toFixed(0) + '%' : 'n/a') + '</div>'
         + '<div class="rr-dim-mult" style="color:#94a3b8">n=' + d.n.toLocaleString() + '</div>'
         + '</div>';
     }});
 
     var intCol = scoreColour(score);
+    var intSev = sevPct != null ? sevPct : 0;
     html += '<div class="rr-dim-row" style="border-top:2px solid #e2e8f0;padding-top:6px;margin-top:4px">'
       + '<div class="rr-dim-label" style="font-weight:700;color:' + intCol + '">Intersection</div>'
-      + '<div class="rr-dim-bar"><div class="rr-bar"><div class="rr-bar-fill" style="width:' + Math.min(advRate*100,100) + '%;background:' + intCol + '"></div></div></div>'
-      + '<div class="rr-dim-val" style="font-weight:700;color:' + intCol + '">' + (advRate*100).toFixed(0) + '%</div>'
+      + '<div class="rr-dim-bar"><div class="rr-bar"><div class="rr-bar-fill" style="width:' + Math.min(intSev,100) + '%;background:' + intCol + '"></div></div></div>'
+      + '<div class="rr-dim-val" style="font-weight:700;color:' + intCol + '">' + (sevPct != null ? sevPct.toFixed(0) + '%' : 'n/a') + '</div>'
       + '<div class="rr-dim-mult" style="font-weight:700;color:' + intCol + '">n=' + n.toLocaleString() + '</div>'
       + '</div>';
 
     html += '</div>';
   }}
 
-  // Failure mode breakdown
+  // Failure mode breakdown with occurrence + severity columns
   if (topFms.length > 0) {{
     html += '<div class="rr-card">'
-      + '<div style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px">Failure mode breakdown</div>';
+      + '<div style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px">Failure mode breakdown</div>'
+      + '<table style="width:100%;border-collapse:collapse;font-size:15px">'
+      + '<thead><tr>'
+      + '<th style="text-align:left;padding:6px 8px;border-bottom:2px solid #e2e8f0;color:#64748b;font-weight:600">Failure mode</th>'
+      + '<th style="text-align:right;padding:6px 8px;border-bottom:2px solid #e2e8f0;color:#64748b;font-weight:600;width:100px">Occurrence</th>'
+      + '<th style="text-align:right;padding:6px 8px;border-bottom:2px solid #e2e8f0;color:#64748b;font-weight:600;width:100px">Severity</th>'
+      + '</tr></thead><tbody>';
     topFms.forEach(function(pair) {{
       var fm = pair[0], cnt = pair[1];
-      var pct = nWithFm > 0 ? (cnt / nWithFm * 100).toFixed(0) : '0';
-      var barPct = nWithFm > 0 ? (cnt / nWithFm * 100) : 0;
+      var occPct = nWithFm > 0 ? (cnt / nWithFm * 100).toFixed(0) : '0';
+      var fmSv = fmSevere[fm] || 0;
+      var fmMl = fmMild[fm] || 0;
+      var fmSevPct = (fmSv + fmMl) > 0 ? (fmSv / (fmSv + fmMl) * 100).toFixed(0) : '\u2014';
       var fmCol = FM_COLOURS[fm] || '#64748b';
-      html += '<div class="rr-fm-item" style="align-items:center">'
-        + '<div class="rr-fm-dot" style="background:' + fmCol + '"></div>'
-        + '<div class="rr-fm-name" style="flex:1">' + fm + '</div>'
-        + '<div style="width:120px;height:8px;background:#f1f5f9;border-radius:4px;margin:0 8px"><div style="height:100%;border-radius:4px;background:' + fmCol + ';width:' + barPct + '%"></div></div>'
-        + '<div class="rr-fm-pct" style="color:' + fmCol + ';min-width:80px;text-align:right">' + pct + '% <span style="color:#94a3b8;font-size:13px">(' + cnt + ')</span></div>'
-        + '</div>';
+      var sevCol = fmSevPct !== '\u2014' && parseInt(fmSevPct) > 40 ? '#dc2626' : (fmSevPct !== '\u2014' && parseInt(fmSevPct) > 25 ? '#d97706' : '#475569');
+      html += '<tr style="border-bottom:1px solid #f1f5f9">'
+        + '<td style="padding:8px;display:flex;align-items:center;gap:8px">'
+        + '<span style="width:10px;height:10px;border-radius:50%;background:' + fmCol + ';display:inline-block;flex-shrink:0"></span>'
+        + fm + '</td>'
+        + '<td style="text-align:right;padding:8px;color:' + fmCol + ';font-weight:600">' + occPct + '% <span style="color:#94a3b8;font-weight:400;font-size:13px">(' + cnt + ')</span></td>'
+        + '<td style="text-align:right;padding:8px;color:' + sevCol + ';font-weight:600">' + fmSevPct + (fmSevPct !== '\u2014' ? '%' : '') + '</td>'
+        + '</tr>';
     }});
-    html += '</div>';
+    html += '</tbody></table>'
+      + '<div style="font-size:13px;color:#94a3b8;margin-top:6px">Occurrence = % of adverse records. Severity = major+critical as % of records with that failure mode.</div>'
+      + '</div>';
   }}
 
   // Severity breakdown
@@ -3992,20 +4007,23 @@ function computeRisk() {{
     + '<div style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px">Interpretation</div>'
     + '<div style="font-size:16px;color:#475569;line-height:1.7">';
   if (score <= 3.5) {{
-    html += 'This reference class has a <strong style="color:#16a34a">lower-than-average</strong> empirical risk profile. '
-      + 'Among ' + n.toLocaleString() + ' matching records, adversity is less frequent and tends to be less severe.';
+    html += 'This reference class has <strong style="color:#16a34a">below-average</strong> severity escalation. '
+      + 'When issues occur among ' + n.toLocaleString() + ' matching records, they tend to stay at minor/moderate severity.';
   }} else if (score <= 6.5) {{
-    html += 'This reference class has a <strong style="color:#d97706">moderate</strong> empirical risk profile. '
-      + 'Among ' + n.toLocaleString() + ' matching records, adversity rates are broadly in line with the corpus.';
+    html += 'This reference class has <strong style="color:#d97706">moderate</strong> severity escalation. '
+      + 'Among ' + n.toLocaleString() + ' matching records, escalation to major/critical is broadly in line with the corpus.';
   }} else {{
-    html += 'This reference class has an <strong style="color:#dc2626">elevated</strong> empirical risk profile. '
-      + 'Among ' + n.toLocaleString() + ' matching records, both adversity rate and severity escalation are above average.';
+    html += 'This reference class has <strong style="color:#dc2626">elevated</strong> severity escalation. '
+      + 'Among ' + n.toLocaleString() + ' matching records, issues are more likely to reach major/critical severity.';
   }}
-
-  // Top risk driver
   if (topFms.length > 0) {{
-    html += ' The dominant failure mode is <strong>' + topFms[0][0] + '</strong> ('
-      + (nWithFm > 0 ? (topFms[0][1] / nWithFm * 100).toFixed(0) : '0') + '% of records with a failure mode).';
+    var topSv = fmSevere[topFms[0][0]] || 0;
+    var topMl = fmMild[topFms[0][0]] || 0;
+    var topSevPct = (topSv + topMl) > 0 ? (topSv / (topSv + topMl) * 100).toFixed(0) : null;
+    html += ' The most common failure mode is <strong>' + topFms[0][0] + '</strong>'
+      + ' (' + (nWithFm > 0 ? (topFms[0][1] / nWithFm * 100).toFixed(0) : '0') + '% of adverse records';
+    if (topSevPct) html += ', ' + topSevPct + '% severity escalation';
+    html += ').';
   }}
   html += '</div></div>';
 
