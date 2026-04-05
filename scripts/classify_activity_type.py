@@ -12,6 +12,7 @@ No LLM calls required.
 """
 
 import csv
+import html as html_module
 import os
 import re
 import sys
@@ -175,9 +176,21 @@ def classify_project(title, summary, program, total_value_str):
     return None, "unclassified"
 
 
+def _normalise_name(name):
+    """Normalise project name: decode HTML entities, normalise quotes/dashes."""
+    name = html_module.unescape(name)
+    name = re.sub(r'<[^>]+>', '', name)
+    name = name.replace('\u2013', "'").replace('\u2014', "'")
+    name = name.replace('\u2018', "'").replace('\u2019', "'")
+    name = name.replace('\u201c', '"').replace('\u201d', '"')
+    return name.strip()
+
+
 def classify_all_projects(csv_path):
     """
     Classify all projects from the CSV. Returns dict[project_name, dict].
+    Keys are normalised (HTML entities decoded, quotes standardised) to match
+    kb_associated_project values from the KB export.
     """
     results = {}
     with open(csv_path, "r", encoding="utf-8-sig") as f:
@@ -186,6 +199,7 @@ def classify_all_projects(csv_path):
             if not name:
                 continue
             title = name
+            name = _normalise_name(name)
             summary = (row.get("Summary/Information") or "").strip()
             program = (row.get("Arena program") or "").strip()
             total_val = (row.get("Total project value") or "").strip()

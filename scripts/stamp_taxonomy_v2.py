@@ -22,7 +22,7 @@ from arena_category_map import (
     map_kb_categories, build_consortium_reclassification,
     ARENA_CATEGORY_MAP, ARENA_CATEGORIES,
 )
-from classify_activity_type import classify_all_projects
+from classify_activity_type import classify_all_projects, _normalise_name
 
 # ---------------------------------------------------------------------------
 # Config
@@ -92,7 +92,7 @@ def main():
 
             # --- activity_type ---
             pname = rec.get("kb_associated_project") or rec.get("project_name") or ""
-            at = activity_map.get(pname)
+            at = activity_map.get(_normalise_name(pname))
             if at != rec.get("activity_type"):
                 rec["activity_type"] = at
                 modified = True
