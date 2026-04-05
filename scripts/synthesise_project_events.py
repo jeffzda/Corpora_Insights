@@ -175,15 +175,22 @@ def build_user_prompt(records, project_name):
 
 
 def get_all_projects():
-    """Get all projects with their record counts from per_doc files."""
+    """Get all projects with their record counts from per_doc files.
+
+    Uses kb_associated_project ONLY — the canonical name from the KB export.
+    Records without kb_associated_project are excluded because the model-inferred
+    project_name field produces hundreds of spurious variants. There are 499
+    canonical projects in the corpus; project_name inflates this to 1000+.
+    """
     project_records = defaultdict(list)
     for path in sorted(glob.glob(str(PER_DOC_DIR / "doc_*.yaml"))):
         with open(path, encoding="utf-8") as f:
             recs = yaml.safe_load(f)
             if recs:
                 for r in recs:
-                    pname = r.get("kb_associated_project") or r.get("project_name") or "Unknown"
-                    project_records[pname].append(r.get("record_id"))
+                    pname = r.get("kb_associated_project")
+                    if pname:
+                        project_records[pname].append(r.get("record_id"))
     return {k: v for k, v in project_records.items() if len(v) >= 2}
 
 
