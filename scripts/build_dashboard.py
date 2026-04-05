@@ -877,7 +877,7 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
   .stat-label {{ font-size:16px; color: #64748b; margin-top: 2px; }}
 
   /* Filter bar */
-  .filter-bar {{ background: white; border-bottom: 1px solid #e2e8f0; padding: 8px 20px; display: flex; align-items: flex-end; gap: 10px; overflow-x: auto; flex-shrink: 0; white-space: nowrap; }}
+  .filter-bar {{ background: white; border-bottom: 1px solid #e2e8f0; padding: 8px 20px; display: flex; align-items: flex-end; gap: 10px; overflow: visible; flex-shrink: 0; white-space: nowrap; flex-wrap: wrap; }}
   .fi {{ display: inline-flex; flex-direction: column; gap: 2px; }}
   .fi label {{ font-size:13px; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; }}
   .fi select, .fi input {{ font-size:16px; padding: 4px 7px; border: 1px solid #e2e8f0; border-radius: 5px; background: #f8fafc; color: #1e293b; height: 28px; }}
