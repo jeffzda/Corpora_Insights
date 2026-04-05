@@ -57,6 +57,7 @@ FAILURE_MODE_COLOURS = {
 }
 
 FM_V3_DIR = ROOT / "insights" / "per_doc_fm_v3"
+EVENTS_V2_DIR = ROOT / "insights" / "per_project_events_v2"
 
 
 ISSUE_SEVERITY_COLOURS = {
@@ -764,6 +765,59 @@ def load_fm_v3_tags() -> dict:
     return tags
 
 
+def load_events(record_map: dict, dimension_tags: dict, fm_v3_tags: dict) -> list[dict]:
+    """Load events from per_project_events_v2 and enrich with source record metadata."""
+    if not EVENTS_V2_DIR.exists():
+        return []
+    paths = sorted(glob.glob(str(EVENTS_V2_DIR / "*.json")))
+    events = []
+    for path in paths:
+        with open(path) as f:
+            data = json.load(f)
+        if isinstance(data, list):
+            events.extend(data)
+
+    for evt in events:
+        source_rids = [sr["record_id"] for sr in (evt.get("source_records") or [])]
+        source_recs = [record_map[rid] for rid in source_rids if rid in record_map]
+
+        # Normalize severity field
+        evt["issue_severity"] = evt.get("severity", "")
+
+        # Inherit project metadata via majority vote
+        def _majority(field, recs=source_recs):
+            vals = [r.get(field) for r in recs if r.get(field)]
+            if not vals:
+                return None
+            return Counter(vals).most_common(1)[0][0]
+
+        evt["kb_associated_project"] = _majority("kb_associated_project") or evt.get("project_name", "")
+        # arena_category: union of all source record categories
+        evt["arena_category"] = sorted({cat for r in source_recs for cat in (r.get("arena_category") or []) if cat})
+        evt["activity_type"] = _majority("activity_type")
+        evt["proponent_type"] = _majority("proponent_type")
+        evt["is_consortium"] = any(r.get("is_consortium") for r in source_recs)
+        evt["lifecycle_phase"] = _majority("lifecycle_phase")
+        evt["in_arena_portfolio"] = any(r.get("in_arena_portfolio") for r in source_recs)
+
+        # Dimensions: union from source records
+        dims = set()
+        for rid in source_rids:
+            dims.update(dimension_tags.get(rid, []))
+        evt["dimensions"] = sorted(dims)
+
+        # Secondary failure mode from fm_v3 tags
+        sfm_counter: Counter = Counter()
+        for rid in source_rids:
+            tag = fm_v3_tags.get(rid, {})
+            sfm = tag.get("secondary_failure_mode")
+            if sfm and sfm != evt.get("failure_mode"):
+                sfm_counter[sfm] += 1
+        evt["secondary_failure_mode"] = sfm_counter.most_common(1)[0][0] if sfm_counter else None
+
+    return events
+
+
 def clean_record(r: dict) -> dict:
     return {k: (v if v is not None else "") for k, v in r.items()}
 
@@ -775,10 +829,11 @@ def distinct_sorted(records, field):
 
 def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = None,
                qa_results: dict = None, dimension_tags: dict = None,
-               fm_v3_tags: dict = None) -> str:
+               fm_v3_tags: dict = None, events: list[dict] = None) -> str:
     qa_results = qa_results or {}
     dimension_tags = dimension_tags or {}
     fm_v3_tags = fm_v3_tags or {}
+    events = events or []
     # Merge delivery dimension tags onto records
     for r in records:
         rid = r.get("record_id")
@@ -842,6 +897,22 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
     project_profiles = build_project_profiles(records)
     matrix_html = build_reference_class_html(project_profiles) if project_profiles else ""
     risk_records_json = serialize_risk_records(records)
+
+    # Serialize events for client-side analysis (only fields needed for charts)
+    _EVT_FIELDS = {
+        "event_id", "event_title", "event_type", "severity", "failure_mode",
+        "kb_associated_project", "arena_category", "activity_type", "proponent_type",
+        "is_consortium", "lifecycle_phase", "issue_severity", "dimensions",
+        "secondary_failure_mode", "in_arena_portfolio", "corroboration_count",
+        "project_name",
+    }
+    events_slim = []
+    for e in events:
+        slim = {k: (v if v is not None else "") for k, v in e.items() if k in _EVT_FIELDS}
+        events_slim.append(slim)
+    events_json = json.dumps(events_slim, ensure_ascii=False)
+    n_events = len(events)
+    n_rde = sum(1 for e in events if e.get("event_type") == "realised_delivery_event")
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -1309,17 +1380,25 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
 <!-- ── Analysis tab ── -->
 <div class="tab-content" id="tc-analysis">
   <div class="an-page">
+    <div style="background:white;border-bottom:1px solid #e2e8f0;padding:8px 32px;display:flex;align-items:center;gap:16px;flex-shrink:0">
+      <span style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px">Unit of analysis</span>
+      <div id="an-unit-toggle" style="display:inline-flex;border:1px solid #e2e8f0;border-radius:6px;overflow:hidden">
+        <button class="an-toggle-btn" data-unit="records" onclick="setAnalysisUnit('records')" style="padding:6px 16px;font-size:14px;font-weight:600;border:none;cursor:pointer;background:#6366f1;color:white">Records ({n:,})</button>
+        <button class="an-toggle-btn" data-unit="events" onclick="setAnalysisUnit('events')" style="padding:6px 16px;font-size:14px;font-weight:600;border:none;cursor:pointer;background:#f8fafc;color:#64748b">Events ({n_events:,})</button>
+      </div>
+      <span id="an-unit-hint" style="font-size:13px;color:#94a3b8">Record-level: each insight record counted independently</span>
+    </div>
     <div id="an-warn" style="display:none;background:#fef3c7;border:1px solid #f59e0b;border-radius:6px;padding:8px 14px;margin-bottom:10px;font-size:16px;color:#92400e"></div>
     <div class="an-stats" id="an-stats"></div>
     <div class="an-grid">
       <div class="an-card">
         <div class="an-card-title">Failure mode frequency</div>
-        <div class="an-card-sub">Most common failure types across all records</div>
+        <div class="an-card-sub">Most common failure types across all <span class="an-unit">records</span></div>
         <canvas id="an-fm-freq"></canvas>
       </div>
       <div class="an-card">
         <div class="an-card-title">Failure rate by ARENA category</div>
-        <div class="an-card-sub">% of records with any failure mode, by delivery archetype</div>
+        <div class="an-card-sub">% of <span class="an-unit">records</span> with any failure mode, by delivery archetype</div>
         <canvas id="an-type-fail"></canvas>
       </div>
       <div class="an-card">
@@ -1329,12 +1408,12 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
       </div>
       <div class="an-card">
         <div class="an-card-title">Issue severity distribution</div>
-        <div class="an-card-sub">Magnitude of delivery issues across all records</div>
+        <div class="an-card-sub">Magnitude of delivery issues across all <span class="an-unit">records</span></div>
         <canvas id="an-severity"></canvas>
       </div>
       <div class="an-card">
         <div class="an-card-title">Severity % by failure mode</div>
-        <div class="an-card-sub">Major+critical as % of adverse records · Dashed line = corpus baseline</div>
+        <div class="an-card-sub">Major+critical as % of adverse <span class="an-unit">records</span> · Dashed line = corpus baseline</div>
         <canvas id="an-sev-ratio"></canvas>
       </div>
       <div class="an-card an-wide">
@@ -1344,7 +1423,7 @@ def build_html(records: list[dict], portfolio_size: int = 0, benchmarks: dict = 
       </div>
       <div class="an-card an-wide">
         <div class="an-card-title">Failure mode co-occurrence</div>
-        <div class="an-card-sub">Rows = primary failure mode · Columns = secondary failure mode · Cell = record count</div>
+        <div class="an-card-sub">Rows = primary failure mode · Columns = secondary failure mode · Cell = <span class="an-unit" data-singular="1">record</span> count</div>
         <div id="an-cooccur" style="overflow-x:auto;margin-top:4px"></div>
       </div>
       <div class="an-card an-wide">
@@ -1515,12 +1594,43 @@ const DIM_ORDER = {json.dumps(DIMENSION_ORDER)};
 const DIM_SHORT = {json.dumps(DIMENSION_SHORT)};
 const DIM_COLOURS = {json.dumps(DIMENSION_COLOURS)};
 const RISK_RECS = {risk_records_json};
+const EVENTS = {events_json};
 Chart.defaults.font.size = 14;
 Chart.defaults.plugins.legend.labels.font = {{ size: 14 }};
 Chart.defaults.plugins.tooltip.bodyFont = {{ size: 14 }};
 Chart.defaults.plugins.tooltip.titleFont = {{ size: 14 }};
 const ARENA_ROOT = '{arena_root}';
 const BENCHMARKS = {benchmarks_json};
+
+// ── Analysis unit toggle (records vs events) ─────────────────
+let _analysisUnit = 'records';
+function setAnalysisUnit(unit) {{
+  _analysisUnit = unit;
+  document.querySelectorAll('.an-toggle-btn').forEach(b => {{
+    const active = b.dataset.unit === unit;
+    b.style.background = active ? '#6366f1' : '#f8fafc';
+    b.style.color = active ? 'white' : '#64748b';
+  }});
+  const hint = document.getElementById('an-unit-hint');
+  hint.textContent = unit === 'records'
+    ? 'Record-level: each insight record counted independently'
+    : 'Event-level: clustered delivery events ({n_events:,} events from {n:,} records)';
+  document.querySelectorAll('.an-unit').forEach(el => {{
+    const plural = el.dataset.singular ? false : true;
+    el.textContent = unit === 'events' ? (plural ? 'events' : 'event') : (plural ? 'records' : 'record');
+  }});
+  refreshAnalysis();
+}}
+function getAnalysisData() {{
+  if (_analysisUnit === 'events') return EVENTS;
+  return RECORDS;
+}}
+function refreshAnalysis() {{
+  const base = getAnalysisData();
+  const f = getFilters();
+  const filtered = base.filter(r => matchesDimFilters(r, f));
+  renderAnalysis(filtered);
+}}
 
 // ── Tab switching ──────────────────────────────────────────────
 function switchTab(name) {{
@@ -1529,9 +1639,7 @@ function switchTab(name) {{
   document.getElementById('tab-' + name).classList.add('active');
   document.getElementById('tc-' + name).classList.add('active');
   if (name === 'analysis') {{
-    const f = getFilters();
-    const filtered = RECORDS.filter(r => matchesDimFilters(r, f));
-    renderAnalysis(filtered);
+    refreshAnalysis();
   }}
   if (name === 'risk') initRiskRating();
   if (name === 'reports') renderReports();
@@ -2222,7 +2330,8 @@ function applyFilters() {{
   renderProjectSummary(filtered);
   renderProjectList();
   if (document.getElementById('tc-analysis').classList.contains('active')) {{
-    const dimFiltered = RECORDS.filter(r => matchesDimFilters(r, f));
+    const base = getAnalysisData();
+    const dimFiltered = base.filter(r => matchesDimFilters(r, f));
     renderAnalysis(dimFiltered);
   }}
 }}
@@ -2366,7 +2475,9 @@ document.addEventListener('keydown', e => {{ if (e.key === 'Escape') closeModalD
 const _anCharts = {{}};
 
 function renderAnalysis(recs) {{
-  // Activity type filtering now handled by the multi-select filter
+  const isEvents = _analysisUnit === 'events';
+  const baseData = isEvents ? EVENTS : RECORDS;
+  const unitLabel = isEvents ? 'events' : 'records';
   const total = recs.length;
   const projects = new Set(recs.map(r => r.kb_associated_project).filter(Boolean));
   const nProjects = projects.size;
@@ -2376,18 +2487,18 @@ function renderAnalysis(recs) {{
   const sevMinMod = recs.filter(r => r.issue_severity === 'minor' || r.issue_severity === 'moderate').length;
   const sevTotal = sevMajCrit + sevMinMod;
   const sevPct = sevTotal > 0 ? Math.round(sevMajCrit / sevTotal * 100) + '%' : '—';
-  const isFiltered = total < RECORDS.length;
-  const totalLabel = isFiltered ? `${{total.toLocaleString()}} <span style="font-size:18px;color:#64748b">of ${{RECORDS.length.toLocaleString()}}</span>` : total.toLocaleString();
+  const isFiltered = total < baseData.length;
+  const totalLabel = isFiltered ? `${{total.toLocaleString()}} <span style="font-size:18px;color:#64748b">of ${{baseData.length.toLocaleString()}}</span>` : total.toLocaleString();
   document.getElementById('an-stats').innerHTML = `
-    <div class="stat"><span class="stat-value">${{totalLabel}}</span><span class="stat-label">${{isFiltered ? 'Filtered records' : 'Total records'}}</span></div>
+    <div class="stat"><span class="stat-value">${{totalLabel}}</span><span class="stat-label">${{isFiltered ? 'Filtered ' + unitLabel : 'Total ' + unitLabel}}</span></div>
     <div class="stat"><span class="stat-value">${{nProjects.toLocaleString()}}</span><span class="stat-label">Projects covered</span></div>
-    <div class="stat"><span class="stat-value">${{withFailure.toLocaleString()}} <span style="font-size:18px;color:#64748b">(${{failPct}}%)</span></span><span class="stat-label">Records with any failure</span></div>
+    <div class="stat"><span class="stat-value">${{withFailure.toLocaleString()}} <span style="font-size:18px;color:#64748b">(${{failPct}}%)</span></span><span class="stat-label">${{isEvents ? 'Events' : 'Records'}} with any failure</span></div>
     <div class="stat"><span class="stat-value">${{sevPct}}</span><span class="stat-label">Severity % (major+critical of adverse)</span></div>`;
 
   const warnEl = document.getElementById('an-warn');
   if (total > 0 && total < 30) {{
     warnEl.style.display = 'block';
-    warnEl.textContent = 'Only ' + total + ' records match filters — ratios may not be reliable.';
+    warnEl.textContent = 'Only ' + total + ' ' + unitLabel + ' match filters — ratios may not be reliable.';
   }} else {{
     warnEl.style.display = 'none';
   }}
@@ -2430,7 +2541,7 @@ function anFMFreq(recs) {{
         label: ctx => `${{ctx.parsed.x.toFixed(1)}}%`
       }} }} }},
       scales: {{
-        x: {{ max: 100, title: {{ display: true, text: '% of records', font: {{ size: 14 }} }}, grid: {{ color: '#f1f5f9' }} }},
+        x: {{ max: 100, title: {{ display: true, text: '% of ' + (_analysisUnit === 'events' ? 'events' : 'records'), font: {{ size: 14 }} }}, grid: {{ color: '#f1f5f9' }} }},
         y: {{ ticks: {{ font: {{ size: 14 }} }}, grid: {{ display: false }} }}
       }}
     }}
@@ -2477,7 +2588,7 @@ function anTypeFailRate(recs) {{
         }} }}
       }},
       scales: {{
-        x: {{ stacked: true, max: 100, title: {{ display: true, text: '% of records by severity', font: {{ size: 14 }} }}, grid: {{ color: '#f1f5f9' }} }},
+        x: {{ stacked: true, max: 100, title: {{ display: true, text: '% of ' + (_analysisUnit === 'events' ? 'events' : 'records') + ' by severity', font: {{ size: 14 }} }}, grid: {{ color: '#f1f5f9' }} }},
         y: {{ stacked: true, ticks: {{ font: {{ size: 14 }} }}, grid: {{ display: false }} }}
       }}
     }}
@@ -2516,7 +2627,7 @@ function anTechFM(recs) {{
         tooltip: {{ callbacks: {{ label: ctx => `${{ctx.dataset.label}}: ${{ctx.parsed.x.toFixed(1)}}%` }} }}
       }},
       scales: {{
-        x: {{ stacked: true, max: 100, title: {{ display: true, text: '% of adverse records', font: {{ size: 14 }} }}, grid: {{ color: '#f1f5f9' }} }},
+        x: {{ stacked: true, max: 100, title: {{ display: true, text: '% of adverse ' + (_analysisUnit === 'events' ? 'events' : 'records'), font: {{ size: 14 }} }}, grid: {{ color: '#f1f5f9' }} }},
         y: {{ stacked: true, ticks: {{ font: {{ size: 14 }} }}, grid: {{ display: false }} }}
       }}
     }}
@@ -2540,7 +2651,7 @@ function anSeverity(recs) {{
     options: {{
       responsive: true, maintainAspectRatio: true,
       plugins: {{ legend: {{ position: 'right', labels: {{ font: {{ size: 14 }}, boxWidth: 14 }} }},
-        tooltip: {{ callbacks: {{ label: ctx => `${{ctx.label}}: ${{ctx.parsed.toLocaleString()}} (${{(ctx.parsed/RECORDS.length*100).toFixed(1)}}%)` }} }} }}
+        tooltip: {{ callbacks: {{ label: ctx => `${{ctx.label}}: ${{ctx.parsed.toLocaleString()}} (${{(ctx.parsed/getAnalysisData().length*100).toFixed(1)}}%)` }} }} }}
     }}
   }});
 }}
@@ -2585,7 +2696,7 @@ function anDimSevStacked(recs) {{
       const range = globalMaxPct - globalMinPct;
       const alpha = range > 0 ? 0.2 + 0.8 * ((pctRaw - globalMinPct) / range) : 0.5;
       const [r,g,b] = hex2rgb(IS_COLOURS[s]);
-      const tip = `${{cnt}} records (${{pct}}% of dimension)`;
+      const tip = `${{cnt}} ${{_analysisUnit === 'events' ? 'events' : 'records'}} (${{pct}}% of dimension)`;
       h += `<td style="background:rgba(${{r}},${{g}},${{b}},${{alpha.toFixed(2)}});color:#000;font-weight:600" title="${{tip}}">${{pct}}%</td>`;
     }});
     h += `<td class="hm-empty" style="color:#64748b;font-weight:600">${{dimTotals[d]}}</td>`;
@@ -2771,7 +2882,7 @@ function anDimFM(recs) {{
       const sparse = cnt < 5;
       const alpha = sparse ? 0 : (range > 0 ? 0.2 + 0.8 * ((pctRaw - globalMinPct) / range) : 0.5);
       const [r,g,b] = hex2rgb(FM_COLOURS[fm]);
-      const tip = `${{cnt}} records (${{pct}}% of dimension)${{sparse ? ' — sparse (n<5)' : ''}}`;
+      const tip = `${{cnt}} ${{_analysisUnit === 'events' ? 'events' : 'records'}} (${{pct}}% of dimension)${{sparse ? ' — sparse (n<5)' : ''}}`;
       const style = sparse
         ? 'background:#f1f5f9;color:#94a3b8;font-weight:400;font-style:italic'
         : `background:rgba(${{r}},${{g}},${{b}},${{alpha.toFixed(2)}});color:#000;font-weight:600`;
@@ -4155,7 +4266,12 @@ def main():
     print(f"Loaded {len(dimension_tags)} dimension tags from {DIMENSIONS_DIR}")
     print(f"Loaded {len(fm_v3_tags)} v3 failure mode tags from {FM_V3_DIR}")
 
-    html = build_html(records, portfolio_size, benchmarks, qa_results, dimension_tags, fm_v3_tags)
+    # Build record_id → record lookup for event enrichment
+    record_map = {r["record_id"]: r for r in records if r.get("record_id")}
+    events = load_events(record_map, dimension_tags, fm_v3_tags)
+    print(f"Loaded {len(events)} events from {EVENTS_V2_DIR}")
+
+    html = build_html(records, portfolio_size, benchmarks, qa_results, dimension_tags, fm_v3_tags, events)
     output_path.write_text(html, encoding="utf-8")
     print(f"Dashboard written to {output_path}")
 
