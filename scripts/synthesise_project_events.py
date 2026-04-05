@@ -133,7 +133,7 @@ def _tokenise(text):
 def compute_similarity_hints(records, threshold=0.15, max_hints=50):
     """Compute TF-IDF cosine similarity between records and return hint lines."""
     docs = [
-        _tokenise((r.get("what_happened", "") + " " + r.get("lesson_learnt", "")))
+        _tokenise((r.get("what_happened") or "") + " " + (r.get("lesson_learnt") or ""))
         for r in records
     ]
 
