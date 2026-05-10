@@ -2,7 +2,7 @@
 
 A generalised pipeline for extracting structured knowledge from government document corpora. The pipeline takes PDFs (converted to markdown) plus a human-written domain configuration and produces a four-layer queryable artefact: atomic records → mechanism clusters → canonical parents → themes.
 
-The methodology has been built and refined on the **Australian Renewable Energy Agency (ARENA)** Knowledge Bank (1,440 documents) and demonstrated to generalise to the **Australian National Audit Office (ANAO)** performance audit corpus (1,452 documents; N=100 stratified demo) with token-substitution-only configuration changes.
+The pipeline is corpus-agnostic by design. It has been applied to two structurally distinct corpora to date — the **Australian Renewable Energy Agency (ARENA)** Knowledge Bank (1,440 documents, full v3 substrate) and the **Australian National Audit Office (ANAO)** performance audit corpus (1,452 documents; N=100 stratified demo) — using only token-substitution-level changes in domain configuration files. Both applications were instances of the methodology, not the source of it.
 
 ## What's in this repository
 
@@ -45,7 +45,7 @@ Two routes:
 
 ## Generalisability
 
-62.3% of the 1,141 ARENA mechanism clusters describe causal pathways applicable beyond renewable energy contexts (top general domains: program design, infrastructure project delivery, data systems integration, regulatory framework design). The 86-parent layer is a corpus-agnostic diagnostic vocabulary for programme-evaluation work; the ANAO N=100 reproduction is the load-bearing evidence.
+The pipeline was built corpus-agnostic. Empirical confirmation: 62.3% of the 1,141 mechanism clusters produced from the ARENA application describe causal pathways applicable beyond renewable energy contexts (top general domains: program design, infrastructure project delivery, data systems integration, regulatory framework design); the 86-parent layer is a corpus-agnostic diagnostic vocabulary for programme-evaluation work; and the ANAO N=100 reproduction shows the engine runs end-to-end on a structurally distinct corpus with no engine modifications. Neither corpus shaped the methodology — they are validation instances.
 
 ## Cost economics
 
@@ -70,4 +70,6 @@ This separation is the methodology's IP boundary; it is what makes the pipeline 
 
 ## Authorship and licensing
 
-Methodology and code are owned by Broad Learnings (Jeff Cumpston). ARENA-derivative data will be licensed to ARENA in perpetuity, with a licence back to ANU for research purposes pending an adjunct engagement at ANU's Institute for Climate, Energy and Disaster Solutions (ICEDS).
+The methodology and the engine code are the intellectual property of Broad Learnings (Jeff Cumpston) and are corpus-independent. They were authored independently of any specific application corpus.
+
+ARENA-derivative *data* — i.e., the records, clusters, parents, and themes produced from running the methodology over ARENA documents — will be licensed to ARENA in perpetuity, with a licence back to ANU for research purposes pending an adjunct engagement at ANU's Institute for Climate, Energy and Disaster Solutions (ICEDS). The data licence does not transfer ownership of the engine, the methodology, or the parent / theme vocabularies (which apply across corpora).
