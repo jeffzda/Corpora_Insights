@@ -16,10 +16,21 @@ A generalised pipeline for extracting structured knowledge from government docum
 corpora. The pipeline takes a corpus of PDFs (converted to markdown) and a human-written
 domain configuration, and produces a queryable registry of atomic insight records.
 
-The methodology has been proven on the ARENA Knowledge Bank (1,440 documents, 16,931
-records) and is being extended to ANAO performance audit reports (1,450 documents) as
-proof of generalisation. All ANAO data and scripts live under `corpora/anao/` — this
-is the canonical location; do not reach into any sibling `~/ANAO/` tree.
+The methodology has been proven on the ARENA Knowledge Bank (1,440 documents). The
+v3 substrate produced 90,192 atomic records → 1,141 mechanism clusters → 86 canonical
+parents → 16 themes. (The earlier v1 produced 16,931 archetype-classified records;
+v1 outputs are preserved at `corpora/arena/legacy/`.) The methodology has been
+extended to ANAO performance audit reports (1,452 documents) as proof of
+generalisation; an N=100 stratified demo run has produced 4,617 records, 207
+clusters, and 50 parents. All ANAO data and scripts live under `corpora/anao/` —
+this is the canonical location; do not reach into any sibling `~/ANAO/` tree.
+
+The full methodology writeup lives at `pipeline_methods.md` (root). A public-facing
+mirror of the pipeline + ARENA configuration + methods paper is published at
+`https://github.com/jeffzda/Corpora_Insights` (private), with GPG-signed commits and
+an OpenTimestamps proof of HEAD anchored to the Bitcoin blockchain (see
+`timestamps/`). Use signed commits going forward (the local key is configured;
+fingerprint `64E0128D...671FB0ECF38C06BB`, UID `mail@jeffcumpston.com`).
 
 The owner (Jeff) is starting as a portfolio manager at ARENA and plans to pursue an adjunct
 position at ANU (ICEDS) to publish on the methodology. Broad Learnings is the company
@@ -72,14 +83,19 @@ canonical work. See `corpora/arena/PIPELINES.md` for the overarching narrative
 and `corpora/arena/methodology_lessons.md` for cross-cutting findings.
 
 - `corpora/arena/shared/` — extraction code (symlink to `pipeline/extract.py`),
-  the v1 grave prompt (symlink to `domains/arena/prompts/extract.md`), the
-  90,192-record extraction output, and the grave-prompt evolution narrative
-  (the systematic A→B→C→D→D'→E→E2→E3 campaign that produced the prompt).
+  the 90,192-record extraction output, and the grave-prompt evolution
+  narrative (the systematic A→B→C→D→D'→E→E2→E3 campaign that produced the
+  canonical prompt). The grave prompt itself now lives at
+  `pipeline/prompts/extract.md` — domain-agnostic, no per-corpus copy.
 - `corpora/arena/canonical/` — post-extraction pipeline (per-doc grouping →
   6-axis Opus 4.6 record-type tagging → v2 clustering → closure). Code is
-  symlinks to `pipeline/`; the v3 labelling prompt is now at
+  symlinks to `pipeline/`; the v3 labelling prompt is at
   `canonical/prompts/label_record_types_v3.md`. Canonical-decision narrative
   lives in `canonical/narrative/runs/` (8 dated test-run snapshots).
+- `corpora/arena/clustering_v2/closure/` — parent derivation (59-rep ensemble),
+  parent assignment, theme audit, and boundary-mapping ensemble (86×86
+  adjacency, 10-rep blinded validation). Output at
+  `output/parent_derivation_clean_ensemble/blinded_validation/`.
 - `corpora/arena/legacy/` — the older 6-stage failure-mode pipeline (8,311
   records / 660 clusters / 9 themes / 46 parents) plus the interactive HTML
   navigator. Self-contained; superseded `pipeline/*.py` scripts are *copied*
@@ -89,50 +105,78 @@ The dead-code modules at `pipeline/event_type.py` and `pipeline/label_axes.py`
 are kept in `pipeline/` until a follow-up audit verifies safe deletion. They
 are also copied under `legacy/code/pipeline/`.
 
+## Canonical 11-stage pipeline (post-2026-05-04 consolidation)
+
+The generalised engine lives at `pipeline/stages/sNN_<stage>/stage.py` plus
+co-located prompt templates. Stages: s01_extract, s02_group_events,
+s03_label_record_types, s04_cluster_filter, s05_cluster_seed, s06_cluster_sweep,
+s07_cluster_singleton, s08_cluster_residual, s09_parent_derive, s10_parent_assign,
+s11_theme_audit. Glossary build is a parallel sub-pipeline at
+`pipeline/glossary/g01..g11/`. Per-corpus configuration sits in
+`domains/<corpus>/domain.yaml` (with `prompt_tokens` and `stages` blocks);
+extraction prompt is read from `pipeline/prompts/extract.md`.
+
+The original per-corpus scripts that produced ARENA v3 and ANAO N=100 are
+preserved at `pipeline/development/<corpus>_<context>/` (95 .py + 123 .md
+across 6 subfolders) for paper-trail purposes. The methodology decisions
+documented there ground the methods paper at `pipeline_methods.md`.
+
 ## Repository layout
 
 ```
 broadlearnings/
 ├── CLAUDE.md                          — this file
+├── pipeline_methods.md                — full methodology writeup (14k words)
 ├── pipeline/                          — generalised extraction framework (ENGINE)
 │   ├── __init__.py
 │   ├── run.py                         — CLI: python -m pipeline.run --domain <name> --step <step>
+│   ├── config.py                      — DomainConfig loader (prompt_tokens + stages blocks)
 │   ├── ingest/                        — document ingestion sub-pipeline
 │   │   ├── __init__.py                — CLI: python -m pipeline.ingest --domain <name> --phase <phase>
 │   │   ├── base.py                    — BaseScraper + DocumentRecord contract
 │   │   ├── checklist.py               — 7-item scraper validation
-│   │   └── convert.py                 — PDF/DOCX → structured markdown
-│   ├── config.py                      — DomainConfig loader
-│   ├── extract.py                     — per-document insight extraction via Anthropic API
-│   ├── event_type.py                  — classify event_type and consequence_level
-│   ├── verify.py                      — QA verification against source documents
-│   ├── clean.py                       — Tier 1+2 keyword/remap cleaning
-│   ├── reconcile.py                   — Tier 3 LLM reconciliation of contested fields
-│   ├── synthesise.py                  — project-level event synthesis
-│   ├── discover.py                    — failure archetype discovery per category
-│   ├── classify.py                    — failure archetype classification
-│   ├── matrix.py                      — archetype × category cross-reference matrix
-│   ├── prompts/                       — prompt templates (domain-agnostic)
+│   │   └── marker_convert.py          — PDF → structured markdown via marker_single
+│   ├── stages/                        — canonical 11-stage pipeline
+│   │   ├── shared/                    — stream + parse helpers
+│   │   ├── s01_extract/               — atomic record extraction (grave prompt)
+│   │   ├── s02_group_events/          — per-document event grouping
+│   │   ├── s03_label_record_types/    — 6-axis Opus 4.6 multi-label tagging
+│   │   ├── s04_cluster_filter/        — predicate filter (negative + occurrence/mechanism)
+│   │   ├── s05_cluster_seed/          — stratified-sample seed clustering
+│   │   ├── s06_cluster_sweep/         — corpus-wide classify + orphan reconciliation
+│   │   ├── s07_cluster_singleton/     — neutral-prompt singleton sweep
+│   │   ├── s08_cluster_residual/      — residual-orphan clustering
+│   │   ├── s09_parent_derive/         — deliberation-rich 59-rep parent ensemble
+│   │   ├── s10_parent_assign/         — cluster→parent assignment + boundary mapping
+│   │   └── s11_theme_audit/           — single-call theme grouping (16 themes)
+│   ├── glossary/                      — parallel glossary sub-pipeline (g01..g11)
+│   ├── development/                   — preserved per-corpus scripts + paper trail
+│   │   ├── arena_canonical/           — original ARENA canonical scripts + narrative
+│   │   ├── arena_canonical_pilot/     — record-type prompt evolution
+│   │   ├── arena_clustering_v2/       — original v2 clustering scripts + notes
+│   │   ├── arena_closure/             — parent/theme/boundary-mapping work + writeups
+│   │   ├── arena_glossary/            — original glossary scripts + session writeups
+│   │   └── anao_n100_demo/            — ANAO N=100 demo scripts
+│   ├── prompts/                       — domain-agnostic prompt templates
+│   ├── chunk.py, rag.py               — semantic-search-layer (RAG) helpers
+│   ├── extract.py, group_events.py, label_record_types.py — earlier flat-layout
+│   │                                    drivers; canonical engine is in stages/
 │   └── utils/
 ├── domains/                           — per-domain configuration (CONFIG)
 │   ├── anao/                          — ANAO Performance Audits
-│   │   ├── domain.yaml                — settings (estimated_count, rate_limit, models)
-│   │   └── scrape.py                  — paginated listing scraper
 │   ├── arena/                         — ARENA Knowledge Bank
-│   │   ├── domain.yaml                — settings + extraction config
-│   │   ├── scrape.py                  — CSV catalogue + per-page PDF discovery
-│   │   ├── enums.yaml, category_map.yaml, etc. — taxonomy and cleaning rules
-│   │   └── prompts/domain_context.md  — domain description for prompt injection
-│   ├── pc/                            — Productivity Commission
-│   │   ├── domain.yaml
-│   │   └── scrape.py                  — sitemap-based discovery
+│   ├── aph/                           — APH Committee Reports (ingestion in progress)
+│   ├── leg/                           — Legislation
+│   ├── pc/                            — Productivity Commission (RAG only)
 │   └── rc/                            — Royal Commissions
-│       ├── domain.yaml
-│       └── scrape.py                  — central document library scraper
 ├── corpora/                           — runtime output (gitignored)
 │   ├── <domain>/pdfs/                 — downloaded documents
 │   ├── <domain>/markdown/             — converted markdown
 │   └── <domain>/tables/               — extracted table CSVs
+├── timestamps/                        — GPG public key + OpenTimestamps proofs
+│   ├── HEADS_<utc>.txt                — HEAD snapshot for evidence anchor
+│   ├── HEADS_<utc>.txt.ots            — OpenTimestamps proof file
+│   └── jeffzda_pubkey.asc             — GPG public key (mail@jeffcumpston.com)
 └── docs/                              — methodology documentation
 ```
 
@@ -225,29 +269,36 @@ whether taxonomy-level analysis is the goal.
 
 ## Current state
 
-### ARENA corpus (complete)
+### ARENA corpus
 - **Source:** 1,440 regular + 8 oversized documents from ARENA Knowledge Bank
-- **Extraction:** 16,931 records, QA verified (92.2% grounding, 89.6% classification)
-- **Taxonomy:** v2.0 (14 arena_categories, 3 activity_types, 10 proponent_types)
-- **Failure archetypes:** 241 canonical archetypes across 3,136 classified events
-- **Archetype index:** denormalised join from archetype → event → source record
-- **RAG:** indexed in semantic search layer
-- **Dashboard:** deployed to root@85.155.188.202
-- **Original repo:** ~/ARENA/ (pipeline code + data, to be migrated)
-- **Cost:** ~$80 total (extraction + QA + reconciliation + matching)
+- **v3 substrate (canonical):** 90,192 atomic records → 1,141 mechanism clusters
+  → 86 canonical parents (subset of 126 from a 59-rep deliberation-rich Opus 4.7
+  ensemble) → 16 themes. Boundary-mapping ensemble validated at 73.5%
+  ≥top-2 stability across 10 reps; blinded re-review of cluster→parent
+  assignments at 93.8% high-high agreement.
+- **v3 cost:** ~$335 total (tagging $141, dedup $121, clustering ~$73, parent
+  derivation campaign $106, closure substrate $4.59).
+- **v1 (legacy, preserved):** 16,931 records, QA verified (92.2% grounding,
+  89.6% classification); 241 canonical archetypes across 3,136 classified events;
+  v1 cost ~$80. Outputs preserved at `corpora/arena/legacy/`.
+- **Glossary:** 503 project signatures; 1,141-class glossary catalogue.
+- **RAG:** indexed in semantic search layer.
 
-### ANAO corpus (in progress)
+### ANAO corpus
 - **Source:** 1,452 performance audit markdown files in `corpora/anao/markdown/`
 - **Size:** median 169k chars, max 867k, total 250MB
 - **Structure:** highly consistent template across 30 years (1996-2025)
-- **Approach:** two-pass (free-form extraction, then derived taxonomy)
-- **Pre-processing:** regex parser (`corpora/anao/scripts/03_parse_structure.py`) for
-  metadata, recommendations, entity responses, paragraph segmentation, boilerplate
-  stripping (85-90% deterministic extraction). Current run yields 32,617 summary
-  paragraphs across 1,086 files plus 219,409 chapter paragraphs.
-- **Estimated cost:** ~$200-250 for pass 1, ~$5-10 for classification passes
-- **RAG:** indexed in semantic search layer
-- **Status:** structural parser built and validated; follow-up passes TBD
+- **N=100 stratified demo (complete, 2026-05-06):** 4,617 atomic records,
+  4,483 events, 207 mechanism clusters, 50 parents (single Opus 4.7 call, $0.41).
+  Cross-corpus parent-overlap audit identifies 9 cleanly-shared mechanism classes
+  with ARENA. The pipeline reproduced end-to-end with token-substitution-only
+  config changes — no engine modification required. This is the load-bearing
+  evidence for the methodology's generalisability claim.
+- **Pre-processing:** regex parser (`corpora/anao/scripts/03_parse_structure.py`)
+  yields 32,617 summary paragraphs across 1,086 files plus 219,409 chapter
+  paragraphs (85-90% deterministic extraction).
+- **Full-corpus extraction:** estimated $200-250 for pass 1; not yet committed.
+- **RAG:** indexed in semantic search layer.
 
 ### PC corpus (semantic search only)
 - **Source:** ~1,500 Productivity Commission documents in `corpora/pc/markdown/`
