@@ -458,8 +458,6 @@ ARENA glossary: 760 entries, 100 noise rejected, 11 categories. ANAO glossary: 5
 
 A final pass (g11) produces inverse signatures — project vocabulary fingerprints rather than term-by-term cards. ARENA: 489 project signatures from 503 projects; 14 projects had <10 mentions and yield genuinely thin signatures (correctly excluded). Distribution: 44 thin, 119 medium, 199 rich, 127 capped at 25 distinguishing terms.
 
-A cross-corpus polysemy comparison between ARENA and ANAO glossaries identified 69 terms shared by surface form. A hand-inspection of those terms found that approximately 30% are polysemous false friends — the same surface form refers to materially different concepts in the two corpora. Examples: DMO is "Default Market Offer" in ARENA (energy retail) but "Defence Materiel Organisation" in ANAO; TGA is "Therapeutic Goods Administration" in ANAO but a thermogravimetric analysis abbreviation in ARENA technical documents; AEC, MMS, CMS, and ICT-related acronyms have similarly divergent referents. [verify: the explicit 30% computation does not appear in `arena_glossary/SESSION_WRITEUP_2026-05-05.md` directly; the figure has been carried in CLAUDE.md and the v1 paper draft. Worth confirming with the actual cross-corpus polysemy artefact before publication.]
-
 ## 15. Cross-cutting design choices
 
 Several design choices cut across multiple stages. They are surfaced explicitly because each is a methodological commitment with consequences.
@@ -668,11 +666,7 @@ Stage III (per-document grouping) was run as the consensus event graph at ≥2/3
 
 Output schema affects per-axis calibration on loose-boundary tasks (§8). Compressed JSON keys saved 40% output tokens on glossary follow-ups but lose calibration on tagging and parent assignment. The right schema choice is task-dependent and is not yet automated. Verbose schemas were retained for tagging, clustering, and parent assignment; compact schemas were retained for glossary follow-ups (memory note `feedback_output_format_deliberation.md`).
 
-### 19.8 Polysemy detected but not resolved
-
-Cross-corpus glossary polysemy was detected (§14): approximately 30% of the 69 surface-form-shared ARENA/ANAO terms are false friends. The detection is an artefact of the cross-corpus comparison; resolution (e.g., per-corpus disambiguation token, or shared cross-corpus disambiguation glossary) has not been built. Multi-corpus deployments of the pipeline will need to disambiguate.
-
-### 19.9 Mechanism-level causal inference is shallow by design
+### 19.8 Mechanism-level causal inference is shallow by design
 
 The pipeline does not infer cross-record causation. The locked epistemic position (§6.4) restricts the substrate to author-asserted causation. This is a deliberate scope choice; readers who want a corpus-scale causal graph will not find one in the substrate.
 
@@ -775,6 +769,5 @@ All source paths are relative to `/home/jeffzda/broadlearnings/pipeline/developm
 ## Appendix B. Items flagged for verification
 
 - **§13** Theme count of 16: the canonical 86-parent set produces 16 themes (per `EXPERIMENTAL_METHODOLOGY.md` Phase 9 and `full_corpus_ensemble_v3/adjacency_heatmap_themes.md`). An earlier 70-parent build (`INVESTIGATION_NOTES.md` Phase 7) reports 12 themes. This paper uses 16 throughout but the discrepancy should be confirmed before publication.
-- **§14** "~30% polysemy" figure for the 69 cross-corpus shared terms: the figure is reported in CLAUDE.md memory but the explicit computation does not appear in `arena_glossary/SESSION_WRITEUP_2026-05-05.md`. Confirm provenance before publication.
 - **§16.1** Causal-chain coherence at 88% and event-coherence at 98%: figures cited in `EXPERIMENTAL_METHODOLOGY.md` Phase 3 (scripts 25–27) but not re-confirmed against the full `causal_chain_full.md` and `event_coherence_audit.md` in this draft cycle. Worth confirming the exact corpus-level percentages before publication.
 - **§19.1** Cluster-signature drift fix cost: paper cites $170 batched + ~$25 re-ensemble = ~$195 total. The drift gap document (`CLUSTER_SIGNATURE_DRIFT.md`) confirms the $170 batched signature-resynthesis figure but the ~$25 follow-up re-ensemble cost is paraphrased from the blinded-validation README; confirm before publication.
