@@ -181,14 +181,11 @@ def build_prior_events_block(prior_events):
 def load_prompt_template_v2(cfg):
     """Load v2 extraction prompt template (grave-prompt-derived).
 
-    Prefers domains/<name>/prompts/extract_v2.md if present; falls back to
-    pipeline/prompts/extract_v2.md. Returns the raw template with {{double}}
-    placeholders intact — they're substituted per-chunk in build_chunk_prompt.
+    Reads pipeline/prompts/extract.md (the canonical grave prompt). Returns
+    the raw template with {{double}} placeholders intact — they're substituted
+    per-chunk in build_chunk_prompt.
     """
-    domain_path = ROOT / "domains" / cfg.domain.name.lower() / "prompts" / "extract_v2.md"
-    if domain_path.exists():
-        return domain_path.read_text()
-    return (ROOT / "pipeline" / "prompts" / "extract_v2.md").read_text()
+    return (ROOT / "pipeline" / "prompts" / "extract.md").read_text()
 
 
 def build_chunk_prompt(doc, chunk_text, chunk_idx, total_chunks,

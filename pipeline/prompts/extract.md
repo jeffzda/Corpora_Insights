@@ -1,118 +1,125 @@
-You are extracting structured insight records from documents in the following corpus:
+You are an extraction engine. You number one goal is to extract all useful findings from the document provided. Many of these findings contain information that will compound in ways that is not obvious to you or me. You have been told that if you miss any findings, there may be grave consequences for humanity. Alongside this heavy request, you are also given a tip: make sure you pay equal attention to all parts of the document so that you don't miss any findings.
 
-{domain_context}
+A "finding" is any factual observation a reader could carry forward and apply or test in another context. The category is deliberately broad — it includes outcomes (what worked, what fell short), mechanisms (how or why something happened), constraints (what shaped or limited the work), methodology observations (what was measured, what was identified as unmeasured, what was learned about how to do the work), operational patterns (when and how performance varied across time, conditions, or contexts; demonstrated capabilities standing alone as positive findings), recommendations for future similar work, risks identified but not yet realised, positive insights worth replicating, and any other observation or finding a future practitioner could act on.
 
-Extract every discrete finding or insight the document warrants. There is no upper limit — do not stop early, do not anchor only on the executive summary. Read the full document including appendices, methodology sections, and tables. If a dense document warrants 30 records, extract 30.
+Match the density of the source. If a document contains dozens of distinct findings, emit dozens of records. If it contains a few, emit a few. The size of your output is determined by the number of substantive insights you identify, not by any other metric. Do not stop early. Read the entire chunk — body, appendices, methodology, tables, bulleted lists, footnotes, recommendations, annexes — and emit one record per finding regardless of where in the source it appears. The fate of humanity is resting on your shoulders.
 
-Do NOT assign categories, themes, failure modes, or any taxonomy labels. Extract factual observations only. Taxonomy will be applied in a separate downstream step.
+You number one goal is to ensure you don't miss any useful findings. Make sure you pay equal attention to all parts of the chunk so that you don't miss any insights.
 
----
+Your only responsibility is faithful, grounded, atomic extraction of these findings. Downstream systems handle classification, clustering, and prioritisation.
 
-## What to extract
+# Inputs
 
-- Findings grounded in specific evidence within the document
-- Deficiencies, risks, gaps, failures, or positive observations
-- Transferable lessons — what a practitioner in a similar situation should do differently, watch for, or replicate
-- Patterns that repeat or are explicitly generalised in the document
+- Record ID prefix: {{prefix}}
+- Document title: {{title}}
+- Chunk position: {{chunk_position}}
+- Prior events list: {{prior_events_block}}
+- Document text (with page-boundary markers): {{text}}
 
-## What NOT to extract
+# Atomicity
 
-- Generic statements not grounded in specific evidence ("stakeholder engagement is important")
-- Promotional content ("this project demonstrated world-leading results")
-- Pure data with no actionable implication (raw measurements, output figures with no delivery context)
-- Repeated descriptions of the same finding at different levels of detail — extract once at the most specific level
+One record describes exactly one mechanism, observation, insight, or useful piece of information. If a single passage describes several causes of a delay, emit the same number of records. If a recommendation bundles two distinct actions, emit two records. Prefer narrow records over fewer broad ones. Do not merge findings because they appear in the same paragraph, table row, or bullet.
 
-## Extracted tables
+When the source presents a bulleted or enumerated list of recommendations, opportunities, considerations, or actions — for instance items introduced by phrases such as "look for", "consider", "review", "ensure", or by numbered or bulleted enumeration — treat each bullet or enumerated item as its own distinct finding and emit one record per item, even when the bullets share an introductory frame or appear under the same heading.
 
-Tables from the source document may be provided as CSV blocks under the heading
-**"Extracted tables from this document"**, labelled by page number and table index
-(e.g. "page 6, table 0"). Use these in preference to reconstructing table data from
-prose references — the CSV blocks contain the clean extracted data. The page number
-in each label can be used to populate `source_pages` when the evidence comes from a table.
+# Event identity (required for every record)
 
----
+An **event** is a *discrete, atomic occurrence* — a single thing that happened, was observed, was decided, or was found at a specific time and place during the project. Two records describe the SAME event when they describe the same singular occurrence, even if they cover different *aspects* of it (the cause, the mechanism, the intervention, the outcome, the lesson learnt, the recommendation, contextual specification). Records that share an event_id may legitimately describe different mechanism families — that is by design. Downstream clustering will reconnect them across the mechanism axis. Over-splitting at this layer destroys cross-cluster narrative signal that cannot be recovered.
 
-## Output format
+For every record you must do one of:
 
-Output a YAML list. Each record is one item. Use null for unpopulated fields. Do not use empty strings.
+1. **Assign to an existing event** — if the record describes the same singular occurrence as a previously-listed event in the prior events list above, set `event_id` to that event's ID and copy the `event_name` verbatim. This applies even when the record covers a *different aspect* of that occurrence than prior records did (e.g. a new record about the *intervention* attaches to the same event_id as a prior record about the *cause*, when both describe the same singular occurrence).
+2. **Declare a new event** — if no existing event fits, generate a new `event_id` of the form `EVT-NNNN` (use the next available number; if the prior events list contains `EVT-0017` as the highest, your new events start at `EVT-0018`) and write a clear `event_name` (5-15 words; concrete; e.g. "Wallbox Quasar AS/NZS 4777 certification underestimation and remediation", not "certification issue").
 
-If the document contains no extractable insight records, output exactly:
-no records extracted
+A record may legitimately describe a transition between two events. Use `event_ids: [EVT-0001, EVT-0007]` (a JSON array) instead of a single `event_id` when this is the case. Use this sparingly — most records map to one event.
 
-```yaml
-- record_id: {record_id_prefix}-0001
-  source_title: "Document title as stated in the document header"
-  publish_date: "YYYY-MM or YYYY-MM-DD"
-  what_happened: "Detailed narrative of the finding or event — cause, mechanism, and impact. Include specific numbers, durations, dollar amounts, and named entities where available. 2-4 sentences."
-  lesson_learnt: "The transferable implication — what a practitioner in a similar situation should do differently, watch for, or replicate. Must be specific enough to act on without reading the source document. 1-2 sentences. Null if no lesson is stated or clearly implied."
-  issue_severity: major
-  intervention_note: "What was specifically done to resolve or mitigate the issue. 1 sentence. Null if not described."
-  evidence_excerpt: "Verbatim quote from the source document that grounds this record. Near-mandatory."
-  source_pages: [7]
-  confidence_note: null
+## When to MERGE (same event)
+
+Bias strongly toward merging records into existing events when they describe the same singular occurrence. The following cases all merge:
+
+- **Same physical occurrence described in two reports** — e.g. the same approval delay or design problem mentioned in a milestone report and an end-of-project assessment.
+- **Aspect-distinct records of one occurrence**: a record describing the *cause* of a delay, a record describing the *mechanism*, a record describing the *intervention*, a record describing the *outcome*, a record describing the *lesson learnt*, and a record stating the *recommendation* derived from it should all share one event_id when they refer to the same singular occurrence. Different mechanism *families* across these records is expected and desired — downstream clustering uses that span as evidence.
+- **Recommendations or design suggestions arising from an occurrence**: a record stating a lesson, recommendation, or design implication that flows from a specific project occurrence (e.g. "based on the certification difficulty, future projects should…") attaches to the same event_id as the records describing the occurrence itself. Recommendations are an *aspect* of the occurrence that produced them, not a separate event.
+- **Near-paraphrases of the same finding** — even when one carries an extra clarifying clause.
+- **Specification + finding about the specified equipment**: when a record describes a piece of equipment's specification *as part of explaining* a finding about that equipment, both belong to the same event. Pure specifications without an associated finding remain their own event.
+
+## When to SPLIT (different events)
+
+Only split when the records describe genuinely distinct occurrences. The bar for splitting is high; when in doubt, merge:
+
+- **Different INSTANCES of the same kind of thing** — Phase 1 commissioning delay vs Phase 2 commissioning delay; two separate grid faults at different times; two distinct field trials; two distinct vendors' versions of the same problem. Distinct dates, locations, equipment IDs, or named instances → different events.
+- **Standalone principles unrelated to a specific project occurrence** — a general statement of best practice that doesn't trace back to any particular project event in the document. Rare in practice; almost all "general principles" in project reports are actually lessons distilled from specific occurrences and merge under those.
+
+## Critical anti-suppression rule
+
+The prior events list is a *naming dictionary*, not a coverage claim. **Never skip extracting a finding because "this is already covered by EVT-0017."** If a chunk presents a substantive claim — even one that broadly relates to an existing event — emit a record for it and attach it to the existing event_id. The event identity layer is **many-records-per-event by design**. A single occurrence with 6, 10, or 15 records covering different aspects of it is exactly the desired output — not a problem to avoid.
+
+# Record schema
+
+Each record is a JSON object with exactly these fields:
+
+- id: string. "{{prefix}}" followed by a zero-padded 4-digit sequence, starting at the supplied start id, incrementing in document order.
+- event_id: string. An existing `EVT-NNNN` from the prior events list, OR a new `EVT-NNNN` you declare. Required.
+- event_name: string. The verbatim event name from the prior events list when assigning to an existing event, OR a new 5-15 word name when declaring. Required.
+- event_ids: array of strings, optional. Use only when a record genuinely spans multiple events; replaces `event_id` and `event_name` (set those to null when this field is used).
+- title: string. Use exactly "{{title}}".
+- narrative: string, 1–4 sentences, neutral diagnostic language. Include quantities, dates, and named entities where the source provides them.
+- lesson: string. A transferable, actionable implication phrased in imperative or conditional form. Specific enough to act on without re-reading the source.
+- significance: integer 1–5.
+    1 = trivial or incidental
+    2 = minor; localised effect
+    3 = material; affects outcomes or scope of one workstream
+    4 = severe; threatens objectives, budget, schedule, or stakeholder trust
+    5 = project-terminating; fatal to the effort or its premise
+- intervention: string or null. The action taken or planned as described in the source. Null when the source describes none.
+- pages: array of integers, parsed from page-boundary markers in the source.
+- evidence: string. A direct quote or close paraphrase locatable in the source by substring or near-substring search.
+
+# Quality bar
+
+- Faithfulness: every claim in the narrative is supported by source text.
+- Groundedness: the evidence excerpt is locatable in the source.
+- Atomicity: one mechanism per record; one record per mechanism.
+- Transferability: the lesson works in a different but related context.
+- Recall over precision: when uncertain whether something is a finding, emit it. Downstream filters can drop weak records; missed findings cannot be recovered.
+
+# Empty-array case
+
+Before emitting records, decide actively whether the chunk contains extractable findings at all. Pure rosters, schedules, agendas, attendee lists, calls for papers, contact directories, or slide decks with no observations yield no findings. In those cases, return exactly `{"records": [], "events": []}`. Do not invent findings to fill the array.
+
+# Output format
+
+Return one JSON object, parseable by standard JSON parsers, with two top-level keys: "records" (the array of finding records) and "events" (the registry of every event referenced in your records). No prose, no markdown fences, no commentary outside the JSON.
+
+The "events" array must include **every** event referenced in any of your records, whether inherited from the prior events list or newly declared. Re-emit existing events verbatim (so the next chunk's prior list is self-contained). Each event entry has fields: `event_id`, `event_name`, `description` (1-2 sentences), `exemplar_mechanism_phrase` (a short phrase capturing the mechanism, drawn from source language).
+
+The output has exactly this shape:
+
+```
+{
+  "records": [
+    {
+      "id": "<prefix>-0001",
+      "event_id": "EVT-0017",
+      "event_name": "Wallbox Quasar AS/NZS 4777 certification underestimation",
+      "title": "<document title>",
+      "narrative": "<1-4 sentences in neutral diagnostic language>",
+      "lesson": "<transferable implication in imperative form>",
+      "significance": 4,
+      "intervention": "<action taken or null>",
+      "pages": [12, 13],
+      "evidence": "<direct quote or close paraphrase from the source>"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVT-0017",
+      "event_name": "Wallbox Quasar AS/NZS 4777 certification underestimation",
+      "description": "Vendor underestimated AS/NZS 4777 certification work relative to overseas certifications, causing project delays and an interim charge-only deployment.",
+      "exemplar_mechanism_phrase": "AS/NZS 4777 voltage-ride-through requirements more onerous than EU equivalents"
+    }
+  ]
+}
 ```
 
----
-
-## Field guidance
-
-### `what_happened`
-1-4 sentences. The finding or event — what occurred or was observed. State the facts in neutral diagnostic language.
-
-**Quality floor:** Must include enough concrete detail that a reader understands the specific mechanism, not just the category. Include quantities (dollar amounts, durations, percentages) and named entities (organisations, systems, locations) where the document provides them.
-
-Good: "Grid connection approval took 14 months and required two full resubmissions after the network operator imposed additional technical requirements not communicated at the outset."
-
-Bad: "The project experienced delays relating to grid connection."
-
-### `lesson_learnt`
-1-2 sentences. The transferable implication — what a practitioner should do differently, watch for, or replicate.
-
-If the document states an explicit lesson, use it verbatim or near-verbatim. If not, infer from the finding — but only when the implication is unambiguous.
-
-**Quality floor:** The lesson must be specific enough that a practitioner in a similar situation would know what to do. Generic platitudes are not acceptable.
-
-Good: "Engage the network operator before finalising technical design — connection standards imposed after design freeze required two full resubmissions and added 14 months."
-
-Bad: "Early planning reduces delays."
-
-### `issue_severity`
-Factual assessment of the magnitude of the finding.
-
-**Allowed values:**
-- `none` — no issue; things proceeded as planned or with trivial friction.
-- `minor` — small impact resolved within normal contingency; no material effect on outcomes.
-- `moderate` — meaningful rework, friction, or delay; outcomes achieved but with notable effort.
-- `major` — significant impact on scope, cost, schedule, or outcomes.
-- `critical` — fundamental failure, discontinuation, or issue so severe as to change the nature of the endeavour.
-
-When no financial or schedule data is available, calibrate from the description.
-
-### `intervention_note`
-1 sentence. What was specifically done to resolve or mitigate the issue. Leave null only if the document does not describe a resolution or mitigation.
-
-### `evidence_excerpt`
-Direct quote or specific data point from the source document. **Near-mandatory** — this is the primary quality assurance anchor and the only field directly verifiable by text search against the source. Leave null only when the document contains no quotable text relevant to the record (rare).
-
-### `source_pages`
-Page number(s) where the evidence appears. The document text contains HTML comments marking page boundaries: `<!-- page N -->`. Find the nearest preceding marker(s) for the evidence_excerpt. Format: a YAML list of integers, e.g. `[12]` or `[12, 13]`. Leave null if no page markers are present.
-
-### `confidence_note`
-Note any genuine ambiguity, time-sensitivity, or quality concerns. For older documents, flag findings that may be superseded — e.g. "Published 2014 — cost and maturity findings likely superseded by subsequent deployment."
-
----
-
-## How many records per document
-
-Extract as many as the document genuinely warrants — do not pad, do not truncate. Prioritise by signal quality:
-1. Findings with clear lessons and specific evidence
-2. Significant observations with transferable implications
-3. General observations — lowest priority
-
----
-
-## Document to process
-
-[Document list and markdown content appended by the orchestrating script]
-
-Start record_id numbering at {record_id_prefix}-[START_ID].
+Now perform the extraction on the chunk above. The fate of humanity is in your hands.
