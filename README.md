@@ -68,8 +68,6 @@ This separation is the methodology's IP boundary; it is what makes the pipeline 
 - HEAD is anchored to the Bitcoin blockchain via OpenTimestamps; proof file at `timestamps/HEADS_*.ots`.
 - Verify the chain locally: `gpg --verify` on tags + `ots verify` on the proof file.
 
-## Authorship and licensing
+## Authorship
 
-The methodology and the engine code are the intellectual property of Broad Learnings (Jeff Cumpston) and are corpus-independent. They were authored independently of any specific application corpus.
-
-ARENA-derivative *data* — i.e., the records, clusters, parents, and themes produced from running the methodology over ARENA documents — will be licensed to ARENA in perpetuity, with a licence back to ANU for research purposes pending an adjunct engagement at ANU's Institute for Climate, Energy and Disaster Solutions (ICEDS). The data licence does not transfer ownership of the engine, the methodology, or the parent / theme vocabularies (which apply across corpora).
+The methodology and the engine code are the intellectual property of Broad Learnings (Jeff Cumpston) and are corpus-independent. They were authored independently of any specific application corpus. Records, clusters, parents, themes, and other artefacts produced by running the methodology over any input corpus are also owned by Broad Learnings.

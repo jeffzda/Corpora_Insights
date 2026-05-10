@@ -1,6 +1,6 @@
 # A pipeline for layered structured-knowledge extraction from government document corpora
 
-**Jeff Cumpston**, Broad Learnings (with adjunct affiliation pending, ANU Institute for Climate, Energy and Disaster Solutions).
+**Jeff Cumpston**, Broad Learnings.
 
 Working draft, 2026-05-10.
 
@@ -602,7 +602,7 @@ A separate Opus 4.7 call derived a 50-parent ANAO mechanism-class taxonomy from 
 
 The two taxonomies are **substantially independent rather than nested**. ANAO is not a general programme-failure superset with ARENA's clean-energy specifics carved off; it is itself a specialised vocabulary — for accountability and administrative compliance — that omits much of the engineering, market, and behavioural mechanism space ARENA exercises. The shared core (~9–15 parents) sits in the cross-cutting territory: data, IT/security, workforce, coordination, contracting, equity, policy uncertainty.
 
-This is a stronger generalisation finding than "the prompts work on a different corpus." It demonstrates that the engine produces a corpus-faithful mechanism vocabulary in each case — the ANAO taxonomy is not just ARENA's taxonomy with a Westminster suffix, and ARENA's is not ANAO's with a renewable suffix. The engine produces taxonomies that reflect the corpora they ingest. The cross-corpus shared core is itself a finding about which mechanism classes are **domain-agnostic** failure-mode categories — the ones an adjunct researcher could write up as a generalised programme-evaluation vocabulary.
+This is a stronger generalisation finding than "the prompts work on a different corpus." It demonstrates that the engine produces a corpus-faithful mechanism vocabulary in each case — the ANAO taxonomy is not just ARENA's taxonomy with a Westminster suffix, and ARENA's is not ANAO's with a renewable suffix. The engine produces taxonomies that reflect the corpora they ingest. The cross-corpus shared core is itself a finding about which mechanism classes are **domain-agnostic** failure-mode categories — a generalised programme-evaluation vocabulary.
 
 This is what makes the **71-parent layer (or the 86-parent extended set) function as diagnostic vocabulary**: it is corpus-agnostic in design, and its corpus-agnostic surface area is empirically measurable through the cross-corpus overlap audit.
 
@@ -712,7 +712,7 @@ The pipeline has visible next steps. Each is cheap relative to what is already d
 - Additional cluster reports beyond c042 (c016 and c1074 are drafted; the parent_archetypes_register is partially populated).
 - Project-axis retrieval reports for ARENA flagship projects (Neoen Big Battery Western Downs is drafted).
 - Reference-class memo workflow for h2biomass-class evaluations across the portfolio.
-- An adjunct-engagement publication track: 3–5 peer-reviewable case studies built on the substrate (the c042 report, an ANAO-vs-ARENA cross-corpus convergent-validity paper, a methodology paper proper).
+- A publication track: 3–5 peer-reviewable case studies built on the substrate (the c042 report, an ANAO-vs-ARENA cross-corpus convergent-validity paper, a methodology paper proper).
 
 **Cross-corpus extensions** (Productivity Commission, Royal Commissions, APH committee reports). PC is currently a RAG-only corpus and not pursuing taxonomy work; APH is in ingestion. Each cross-corpus extension is an empirical test of the engine-config separation and a richer overlap audit dataset.
 
@@ -739,7 +739,7 @@ The substrate is **not** validated against expert ground truth, against a 10-rep
 
 The strongest single claim is generalisability. The 71-parent layer (or the 86-parent extended set) is a corpus-agnostic diagnostic vocabulary for programme-evaluation work; 62.3% of the 1,141 ARENA mechanism clusters describe causal pathways that apply beyond renewable energy contexts; the ANAO N=100 demonstration reproduces the methodology on a different corpus with token-substitution-only configuration changes. The substrate is best read as a general infrastructure-failure substrate with a renewable-bound layer, and the pipeline is best read as a methodology for producing such substrates rather than a one-off ARENA tool.
 
-This positions the artefact as a research-topic generator and memo producer. The deliverables that follow — publishable case studies, cross-corpus convergent-validity papers, methodology hardening work — are the research programme that an adjunct engagement at ANU's Institute for Climate, Energy and Disaster Solutions would deliver. Each gap above is a publishable extension; together they form a 12–18 month research agenda that would harden the substrate without changing its core architecture.
+This positions the artefact as a research-topic generator and memo producer. The deliverables that follow — publishable case studies, cross-corpus convergent-validity papers, methodology hardening work — form a research programme. Each gap above is a publishable extension; together they form a 12–18 month research agenda that would harden the substrate without changing its core architecture.
 
 ---
 

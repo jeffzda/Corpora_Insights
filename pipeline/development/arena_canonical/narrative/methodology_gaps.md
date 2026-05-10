@@ -20,7 +20,7 @@ The pipeline produces a defensible artefact when measured against the §8 pragma
 
 The gap between *pragmatic-tool-in-comparison-to-counterfactual* and *research-grade-tool-with-well-defined-epistemology* is **enumerable, prioritisable, and tractable**. This document enumerates it.
 
-The framing is deliberate. A grey paper or research-engagement proposal that names its gaps and shows the path to closing them is structurally stronger than one that pretends to fill them. Each gap below is a publishable extension; together they form the research programme an adjunct engagement would deliver.
+The framing is deliberate. A grey paper or research-engagement proposal that names its gaps and shows the path to closing them is structurally stronger than one that pretends to fill them. Each gap below is a publishable extension; together they form the Broad Learnings research programme.
 
 ---
 
@@ -161,7 +161,7 @@ The existence of even one such miss (found incidentally, not via a Stratum A cam
 
 **Dependencies.** ANAO structural parser output (already exists: 32,617 summary paragraphs from 1,086 files). Markdown reconvert (queued but not run).
 
-**Status.** Open. Best framed as the **first deliverable of an adjunct engagement** AND **the first deployment of the v2 architecture**. Doing both via the same workstream is structurally efficient: one extraction run produces the cross-corpus generalisation evidence and the v2-architecture validation.
+**Status.** Open. Best framed as the **first major research deliverable** AND **the first deployment of the v2 architecture**. Doing both via the same workstream is structurally efficient: one extraction run produces the cross-corpus generalisation evidence and the v2-architecture validation.
 
 ---
 
@@ -751,7 +751,7 @@ Extrapolated to the 277 disagreements: ~198 favour Opus, ~79 favour Sonnet. Scal
 | 13 | #6 Within-document failure-mode synthesis | Re-opens the locked epistemic position. Argument first, experiment second. |
 | 14 | #8a-deep Records-vs-events sensitivity rerun | Tests whether v3.5 taxonomy is record-pipeline-artefact vs robust mechanism finding. ~$30 + 1 week. **Obviated by §13/§14 v2 architecture deployed via #5.** |
 
-Items 1–9 are realistically completable inside a 1–4 week window before the grey paper deadline (2026-05-07) or shortly after. Items 10–14 are adjunct-engagement / publication-pipeline work, with item 12 (combined ANAO + v2 deployment) being the single largest forward move and the natural anchor of an adjunct engagement's first deliverable.
+Items 1–9 are realistically completable inside a 1–4 week window before the grey paper deadline (2026-05-07) or shortly after. Items 10–14 are publication-pipeline work, with item 12 (combined ANAO + v2 deployment) being the single largest forward move and the natural anchor of the next research deliverable.
 
 **Note on #13 + #14's relationship to other gaps.** Combined as the v2 extraction architecture, §13 (chronological event-identity) and §14 (bundled per-record axis tagging) dissolve or partially close several other items in this list:
 
@@ -769,8 +769,8 @@ The combined v2 architecture is upstream of multiple downstream gaps, so the pri
 **[Bridging]** — applies to the document as a whole regardless of pipeline.
 
 
-This document is part of the deliverable, not a confession. When presenting the methodology paper or proposing the adjunct engagement:
+This document is part of the deliverable, not a confession. When presenting the methodology paper:
 
-> *"We've built a tool that beats the realistic counterfactual on a hard corpus. Here's the work that turns it into a research instrument with formally validated uncertainty. Each of those steps is a publishable extension. The engagement would deliver them."*
+> *"We've built a tool that beats the realistic counterfactual on a hard corpus. Here's the work that turns it into a research instrument with formally validated uncertainty. Each of those steps is a publishable extension. The research programme will deliver them."*
 
-Reading the gap list as a research roadmap rather than a list of failures is the framing the paper, the proposal, and the methodology document should all share.
+Reading the gap list as a research roadmap rather than a list of failures is the framing the paper and the methodology document should share.

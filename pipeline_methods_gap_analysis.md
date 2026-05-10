@@ -461,13 +461,13 @@
 **Source docs say (delta):**
 - The paper's **cluster-layer boundary mapping cost ($10-20 batched)** is correct per `PILOT_ENSEMBLE_2026-05-08.md`. Good.
 - The paper does not name the **two validation routes** distinction (`feedback_two_validation_routes.md` per CLAUDE.md memory): stage-internal testing vs use-case demos. The latter (e.g. h2biomass reference-class memo, foak rag-vs-v2 demo) can substitute when the goal is utility, not "true" structure. The future-work section could identify which gaps are stage-internal-test-shaped vs use-case-demo-shaped.
-- The **adjunct-engagement positioning** (CLAUDE.md memory `project_v2_positioning_via_adjunct.md`): the substrate is a research-topic generator and memo producer, not a tool to push for adoption; deliverables are publishable case studies. This is consistent with §9 but the paper could explicitly position the future-work items as research-programme deliverables.
+- The **substrate positioning** (CLAUDE.md memory ): the substrate is a research-topic generator and memo producer, not a tool to push for adoption; deliverables are publishable case studies. This is consistent with §9 but the paper could explicitly position the future-work items as research-programme deliverables.
 
 **Gap type:** UNDERSPECIFIED (small).
 
 **Recommended delta:** Add a closing paragraph: "These items partition into stage-internal validation tests (filter-chain calibration; replicate-stability characterisation; per-cluster fit_pct audit) and use-case demonstrations (cluster reports, project reports, reference-class memos). Either route can substantiate the methodology paper's claims; use-case demonstrations are particularly useful when the goal is utility rather than ground-truth verification."
 
-**Source citations:** Jeff's memory notes `feedback_two_validation_routes.md`, `project_v2_positioning_via_adjunct.md` (referenced via CLAUDE.md memory index).
+**Source citations:** Jeff's memory notes `feedback_two_validation_routes.md`,  (referenced via CLAUDE.md memory index).
 
 ---
 

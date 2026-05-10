@@ -319,8 +319,7 @@ itself reproducible from `corpora/arena/marker_output/` via stages 01-03).
   reference-class memos and the glossary.
 - **Public-facing variant.** With BL attribution as research-vehicle (not
   consultancy) — eyebrow-band byline, footer disclosure noting pre-employment
-  IP and ARENA-licensing arrangement. Suitable for LinkedIn / ICEDS adjunct
-  positioning.
+  IP. Suitable for LinkedIn / research positioning.
 
 The methodology paper section on "vocabulary substrate" would lean directly
 on this writeup. Total spend $2 makes the *whole stack* cheap enough that

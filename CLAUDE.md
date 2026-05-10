@@ -32,10 +32,9 @@ an OpenTimestamps proof of HEAD anchored to the Bitcoin blockchain (see
 `timestamps/`). Use signed commits going forward (the local key is configured;
 fingerprint `64E0128D...671FB0ECF38C06BB`, UID `mail@jeffcumpston.com`).
 
-The owner (Jeff) is starting as a portfolio manager at ARENA and plans to pursue an adjunct
-position at ANU (ICEDS) to publish on the methodology. Broad Learnings is the company
-entity. The pipeline and ANAO dataset are owned by Broad Learnings. ARENA derivative
-data will be licensed to ARENA in perpetuity with a licence back to ANU for research.
+The owner (Jeff) is starting as a portfolio manager at ARENA. Broad Learnings is the
+company entity. The pipeline, the ANAO dataset, and any ARENA-derivative data
+produced by running the methodology are all owned by Broad Learnings.
 
 ---
 
