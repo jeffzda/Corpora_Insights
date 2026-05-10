@@ -1,0 +1,29 @@
+# Maps KB raw categories to analysis categories (14 values)
+# Source: scripts/arena_category_map.py
+
+category_map:
+  "Battery storage": "Battery storage"
+  "Bioenergy / Energy from waste": "Bioenergy"
+  "Concentrated solar thermal": "Solar thermal"
+  "Demand response": "Demand response"
+  "Distributed energy resources": "Distributed energy resources"
+  "Electric vehicles": "Electric vehicles"
+  "Geothermal energy": null
+  "Hybrid technologies": "Hybrid technologies"
+  "Hydrogen energy": "Hydrogen"
+  "Solar energy": "Solar PV"
+  "Solar PV R&D": "Solar PV"
+  "Large-scale solar": "Solar PV"
+  "Renewables for industry": "Industrial renewables"
+  "System security and reliability": "Grid stability"
+  "Wind energy": "Wind"
+  "Hydropower / Pumped Hydro Energy Storage": "Pumped hydro"
+  "Renewables in buildings": "Distributed energy resources"
+  "Off grid": "Off grid"
+  "Ocean energy": null
+  "General": null
+
+excluded_raw_categories:
+  - Geothermal energy
+  - Ocean energy
+  - General

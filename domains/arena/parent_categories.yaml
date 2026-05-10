@@ -1,0 +1,185 @@
+# 12 canonical parent categories for failure archetypes
+# Source: scripts/remap_parent_categories.py
+
+canonical:
+  - Technology Performance
+  - Data, Platforms, and Monitoring
+  - Grid Connection, Approvals, and Land
+  - Commercial and Contractual Structure
+  - Market Design and DER Integration
+  - Control Systems and Commissioning
+  - Program and Project Delivery
+  - Construction and Procurement
+  - Customer and Stakeholder Engagement
+  - Operations and Maintenance
+  - Electric Vehicle Infrastructure
+  - Standards, Safety, and Certification
+
+# Maps fine-grained discovery parent categories to canonical 12
+remap:
+  # Technology Performance
+  "Battery Hardware and Integration": "Technology Performance"
+  "Battery Technology Performance": "Technology Performance"
+  "Concentrating Solar Thermal Technology": "Technology Performance"
+  "DER Hardware and Installation": "Technology Performance"
+  "Energy Yield Forecasting and Performance Modelling": "Technology Performance"
+  "Feedstock and Feed System Engineering": "Technology Performance"
+  "Forecasting and Modelling": "Technology Performance"
+  "Grid-Edge Device Technical Performance": "Technology Performance"
+  "Hydrogen End-Use and Application Demonstrations": "Technology Performance"
+  "Inverter and Control System Performance": "Technology Performance"
+  "Performance Modelling & Forecasting": "Technology Performance"
+  "Solar Technology R&D and Commercialisation": "Technology Performance"
+  "Technology & Equipment Performance": "Technology Performance"
+  "Technology Performance and Reliability": "Technology Performance"
+  "Thermal Technology Performance": "Technology Performance"
+  "Wind Resource Measurement and Forecasting": "Technology Performance"
+  "Wind Turbine Technology and Equipment": "Technology Performance"
+  "Wind Turbine Technology and Operations": "Technology Performance"
+  "Research and Development": "Technology Performance"
+  "Research & Laboratory Delivery": "Technology Performance"
+  "Research & Testing Infrastructure": "Technology Performance"
+  "Research and Laboratory Operations": "Technology Performance"
+  "Hybrid and Microgrid System Integration": "Technology Performance"
+  "Field Hardware and Installation": "Technology Performance"
+  "Emissions Control and Air Quality": "Technology Performance"
+
+  # Data, Platforms, and Monitoring
+  "Data & Monitoring Systems": "Data, Platforms, and Monitoring"
+  "Data Platform and Environmental Assessment": "Data, Platforms, and Monitoring"
+  "Data, Modelling, and Analytics Platform Development": "Data, Platforms, and Monitoring"
+  "Data, Monitoring, and Reporting Systems": "Data, Platforms, and Monitoring"
+  "Data, Monitoring, and Software Systems": "Data, Platforms, and Monitoring"
+  "Network Voltage Management Infrastructure": "Data, Platforms, and Monitoring"
+  "Platform and Software Delivery": "Data, Platforms, and Monitoring"
+  "SCADA, Telemetry, and Communications Infrastructure": "Data, Platforms, and Monitoring"
+  "Software Platform and Data Systems": "Data, Platforms, and Monitoring"
+  "Software and Control Systems Development": "Data, Platforms, and Monitoring"
+
+  # Grid Connection, Approvals, and Land
+  "Grid Connection & Regulatory Approvals": "Grid Connection, Approvals, and Land"
+  "Grid Connection and Network Infrastructure": "Grid Connection, Approvals, and Land"
+  "Grid Connection and Network Regulation": "Grid Connection, Approvals, and Land"
+  "Grid Connection and Power Procurement": "Grid Connection, Approvals, and Land"
+  "Grid Connection and Regulatory Compliance": "Grid Connection, Approvals, and Land"
+  "Regulatory and Approvals": "Grid Connection, Approvals, and Land"
+  "Regulatory and Market Framework": "Grid Connection, Approvals, and Land"
+  "Regulatory and Planning Approvals": "Grid Connection, Approvals, and Land"
+  "Regulatory and Policy Barriers": "Grid Connection, Approvals, and Land"
+  "Regulatory and Policy Framework": "Grid Connection, Approvals, and Land"
+  "Regulatory and Standards Compliance": "Grid Connection, Approvals, and Land"
+  "Site Acquisition and Planning Approvals": "Grid Connection, Approvals, and Land"
+  "Transmission and Grid Connection": "Grid Connection, Approvals, and Land"
+  "FCAS Enablement and Grid Services": "Grid Connection, Approvals, and Land"
+
+  # Commercial and Contractual Structure
+  "Commercial Structuring and Offtake": "Commercial and Contractual Structure"
+  "Commercial and Financial Structuring": "Commercial and Contractual Structure"
+  "Commercial and Financial Viability": "Commercial and Contractual Structure"
+  "Commercial and Market": "Commercial and Contractual Structure"
+  "Commercial and Offtake Arrangements": "Commercial and Contractual Structure"
+  "Contracts & Procurement": "Commercial and Contractual Structure"
+  "Contracts, Financing, and Commercial Structure": "Commercial and Contractual Structure"
+  "Cost Estimation & Commercial Viability": "Commercial and Contractual Structure"
+  "Cost Estimation and Business Case": "Commercial and Contractual Structure"
+  "Cost Estimation and Capital Expenditure": "Commercial and Contractual Structure"
+  "Finance & Investment": "Commercial and Contractual Structure"
+  "Market and Commercial Development": "Commercial and Contractual Structure"
+  "Market and Revenue Modelling": "Commercial and Contractual Structure"
+  "Market and Revenue Realisation": "Commercial and Contractual Structure"
+  "Project Financials & Commercial Structuring": "Commercial and Contractual Structure"
+  "Project Scoping and Business Case Development": "Commercial and Contractual Structure"
+
+  # Market Design and DER Integration
+  "DER Aggregation and VPP Platform": "Market Design and DER Integration"
+  "DR Portfolio Delivery": "Market Design and DER Integration"
+  "Demand Flexibility Trials": "Market Design and DER Integration"
+  "Market Design and Regulation": "Market Design and DER Integration"
+  "Policy, Standards and Industry Development": "Market Design and DER Integration"
+  "Residential Demand Response Program Design": "Market Design and DER Integration"
+
+  # Control Systems and Commissioning
+  "Control System and Protection Engineering": "Control Systems and Commissioning"
+  "Testing and Commissioning": "Control Systems and Commissioning"
+
+  # Program and Project Delivery
+  "Organisational Capability and Change Management": "Program and Project Delivery"
+  "Program & Project Governance": "Program and Project Delivery"
+  "Program and Cohort Delivery": "Program and Project Delivery"
+  "Project Delivery and Execution": "Program and Project Delivery"
+  "Project Delivery and Governance": "Program and Project Delivery"
+  "Project Governance and Regulatory Process": "Program and Project Delivery"
+  "Project Governance and Strategy": "Program and Project Delivery"
+  "Project Planning and Governance": "Program and Project Delivery"
+  "Project Schedule and Resourcing": "Program and Project Delivery"
+  "Project Scoping and Planning": "Program and Project Delivery"
+  "Remote and Off-Grid Project Delivery": "Program and Project Delivery"
+  "Workforce Capability and Training": "Program and Project Delivery"
+
+  # Construction and Procurement
+  "Civil and Structural Construction": "Construction and Procurement"
+  "Construction Execution": "Construction and Procurement"
+  "Construction and Commissioning": "Construction and Procurement"
+  "Construction, Commissioning, and Quality Assurance": "Construction and Procurement"
+  "Engineering Design and FEED": "Construction and Procurement"
+  "Engineering Design and Procurement": "Construction and Procurement"
+  "Equipment Procurement and Supply Chain": "Construction and Procurement"
+  "Hardware Procurement and Supply Chain": "Construction and Procurement"
+  "Hybrid System Construction and Commissioning": "Construction and Procurement"
+  "Infrastructure and Site": "Construction and Procurement"
+  "OEM and Vendor Management": "Construction and Procurement"
+  "Procurement & Supply Chain": "Construction and Procurement"
+  "Remote Site Infrastructure and Logistics": "Construction and Procurement"
+  "Remote Site Logistics": "Construction and Procurement"
+  "Site Conditions & Civil Works": "Construction and Procurement"
+  "Site Infrastructure and Integration": "Construction and Procurement"
+  "Site Selection and Pre-Feasibility": "Construction and Procurement"
+  "Underground Civil Construction": "Construction and Procurement"
+  "External Disruption and Force Majeure": "Construction and Procurement"
+  "External Disruptions": "Construction and Procurement"
+
+  # Customer and Stakeholder Engagement
+  "Built Environment and Community Energy Design": "Customer and Stakeholder Engagement"
+  "Community & Stakeholder Engagement": "Customer and Stakeholder Engagement"
+  "Consumer and Stakeholder Engagement": "Customer and Stakeholder Engagement"
+  "Customer Experience and Engagement": "Customer and Stakeholder Engagement"
+  "Customer Recruitment and Engagement": "Customer and Stakeholder Engagement"
+  "Customer and Market Engagement": "Customer and Stakeholder Engagement"
+  "Customer and Market Recruitment": "Customer and Stakeholder Engagement"
+  "Participant and Customer Engagement": "Customer and Stakeholder Engagement"
+
+  # Operations and Maintenance
+  "Asset Reliability and O&M": "Operations and Maintenance"
+  "Existing Asset Operations and Refurbishment": "Operations and Maintenance"
+  "Off-Grid Hybrid System Operations": "Operations and Maintenance"
+  "Operations & Asset Performance": "Operations and Maintenance"
+
+  # Electric Vehicle Infrastructure
+  "Charging Infrastructure Commissioning and Operation": "Electric Vehicle Infrastructure"
+  "EV Charging Infrastructure Deployment": "Electric Vehicle Infrastructure"
+  "EV Fleet Operations and Performance": "Electric Vehicle Infrastructure"
+  "Fleet Electrification Structural Barriers": "Electric Vehicle Infrastructure"
+  "V2G Technology and Regulatory Barriers": "Electric Vehicle Infrastructure"
+
+  # Standards, Safety, and Certification
+  "Process Safety and Hazard Management": "Standards, Safety, and Certification"
+  "Product Certification and Standards": "Standards, Safety, and Certification"
+  "Standards and Certification Gaps": "Standards, Safety, and Certification"
+
+  # Fallback
+  "none": "Technology Performance"
+
+# Colours for parent categories (used in PDF and dashboard)
+colours:
+  "Technology Performance": "#ef4444"
+  "Data, Platforms, and Monitoring": "#06b6d4"
+  "Grid Connection, Approvals, and Land": "#f97316"
+  "Commercial and Contractual Structure": "#14b8a6"
+  "Market Design and DER Integration": "#a855f7"
+  "Control Systems and Commissioning": "#3b82f6"
+  "Program and Project Delivery": "#ec4899"
+  "Construction and Procurement": "#8b5cf6"
+  "Customer and Stakeholder Engagement": "#eab308"
+  "Operations and Maintenance": "#64748b"
+  "Electric Vehicle Infrastructure": "#10b981"
+  "Standards, Safety, and Certification": "#f43f5e"

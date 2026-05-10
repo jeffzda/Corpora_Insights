@@ -1,0 +1,12 @@
+# Remap rules for off-taxonomy values
+# Source: scripts/05_clean_registry.py
+
+project_type:
+  solar thermal: generation
+  solar pv: generation
+  hydrogen: industrial decarbonisation
+  bioenergy: generation
+  programmatic/portfolio-level: enabling infrastructure
+
+failure_mode:
+  procurement/supply chain: resource/capability shortfall

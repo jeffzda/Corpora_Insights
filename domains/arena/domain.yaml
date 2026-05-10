@@ -1,0 +1,315 @@
+name: "ARENA"
+full_name: "Australian Renewable Energy Agency"
+description: "Knowledge Bank reports from ARENA-funded renewable energy and clean technology projects"
+record_id_prefix: "ARENA-DLV"
+ids_per_document: 10
+max_document_chars: 600000
+
+# Field configuration
+project_grouping_field: "kb_associated_project"
+category_field: "arena_category"
+
+# Paths (relative to domain dir)
+taxonomy: "taxonomy.md"
+enums: "enums.yaml"
+portfolio: "portfolio.csv"
+keyword_rules: "keyword_rules.yaml"
+remap_rules: "remap_rules.yaml"
+parent_categories: "parent_categories.yaml"
+category_map: "category_map.yaml"
+do_not_merge: "do_not_merge.yaml"
+excluded_doc_types: "excluded_doc_types.yaml"
+kb_overrides: "kb_overrides.yaml"
+
+# Pipeline flags
+has_portfolio_matching: true
+temporal_relevance_years: 5
+
+archetype_independence_threshold:
+  min_events: 3
+  min_projects: 3
+
+archetype_refine_threshold:
+  min_events: 2
+
+# Models
+extraction_model: "claude-sonnet-4-6"
+classification_model: "claude-haiku-4-5-20251001"
+discovery_model: "claude-sonnet-4-6"
+reconciliation_model: "claude-haiku-4-5-20251001"
+verification_model: "claude-haiku-4-5-20251001"
+synthesis_model: "claude-sonnet-4-6"
+labelling_model: "claude-opus-4-6"  # 6-axis record-type tagging — see canonical/prompts/label_record_types_v3.md
+labelling_temperature: 0.0
+
+# Canonical prompt paths — the single source of truth for which prompt each
+# pipeline stage uses. Stage modules can resolve these via the domain config
+# rather than hardcoding paths.
+prompts:
+  extract: "domains/arena/prompts/extract.md"           # the v1 grave prompt (shared)
+  group_events: "pipeline/prompts/group_events.md"     # canonical post-extract grouping
+  label_record_types: "corpora/arena/canonical/prompts/label_record_types_v3.md"
+
+# Catalogue — metadata CSV produced by the scraper, stamped onto extracted records.
+# field_map: CSV column name -> record field name.
+# See todo.md for deferred scraper work to consolidate into catalogue.csv.
+catalogue:
+  file: manifest.csv
+  join_key: local_path
+  title_field: "Title"
+  field_map:
+    "Link to item": source_url
+    "Link to project page": project_page_url
+    "Category": kb_category
+    "Publish date": kb_publish_date
+    "Year": kb_year
+    "Associated project name": kb_associated_project
+    "Type": kb_document_type
+    "Project Status": kb_project_status
+    "pdf_url": pdf_url
+  # Secondary join for portfolio enrichment (optional)
+  portfolio:
+    file: portfolio.csv
+    join_key: "Associated project name"
+    match_field: "Project"
+    field_map:
+      "Arena funding provided": arena_funding
+      "Total project value": total_project_value
+      "Lead organisation": lead_organisation
+      "Arena program": arena_program
+      "Status": project_status
+      "Start date": project_start_date
+      "Location": location
+      "Project partners": project_partners
+
+source:
+  estimated_count: 1440
+  rate_limit_seconds: 1.0
+
+# Tokens substituted into engine prompt templates via {token_name}.
+# Used by pipeline/stages/sNN_<stage>/prompt.md when DomainConfig.prompt() renders.
+prompt_tokens:
+  audience_persona: "ARENA portfolio manager"
+  audience_use_case: "evaluating a current or prospective renewable energy project"
+  corpus_short_description: "ARENA-funded renewable energy and clean technology projects"
+  primary_grouping_field: "kb_associated_project"
+  topic_axis_examples: "project / equipment / technology / domain"
+  cluster_id_prefix: "c"
+
+# Per-stage execution config. Stage modules read cfg.stage(<name>).
+# All paths repo-relative; absolute paths also accepted.
+stages:
+  extract:
+    model: claude-sonnet-4-6
+    max_tokens: 64000
+    output_dir: corpora/arena/output/per_doc
+
+  group_events:
+    model: claude-sonnet-4-6
+    max_tokens: 32000
+    output_dir: corpora/arena/output/events
+
+  label_record_types:
+    model: claude-opus-4-6
+    temperature: 0.0
+    max_tokens: 128000
+    records_per_call: 30
+    input_records: corpora/arena/output/per_doc
+    output_dir: corpora/arena/output/record_type_tags/opus-4-6-v3-temp0
+
+  cluster_filter:
+    tags_path: corpora/arena/output/record_type_tags/opus-4-6-v3-temp0/tags.json
+    records_path: corpora/arena/output/per_doc
+    events_path: runs/arena/fullcorpus_dedup
+    output_path: corpora/arena/clustering_v2/output/filter_input.jsonl
+    output_summary: corpora/arena/clustering_v2/output/filter_summary.json
+    predicate_valence: negative
+    predicate_axes_any_of: [is_occurrence, is_mechanism]
+    record_meta_fields: [kb_category, kb_associated_project]
+
+  cluster_seed:
+    model: claude-sonnet-4-6
+    max_tokens: 32000
+    seed: 42
+    input_path: corpora/arena/clustering_v2/output/filter_input.jsonl
+    output_catalogue: corpora/arena/clustering_v2/output/cluster_catalogue.json
+    output_sample: corpora/arena/clustering_v2/output/seed_sample.jsonl
+    output_raw: corpora/arena/clustering_v2/output/seed_response_raw.txt
+    stratification_field: kb_category
+    top_n_categories: 8
+    axis_combos: [occ_mech, mech_only, occ_only]
+    per_cell: 15
+
+  cluster_sweep:
+    model: claude-sonnet-4-6
+    max_tokens: 128000
+    batch_size: 200
+    seed: 42
+    input_path: corpora/arena/clustering_v2/output/filter_input.jsonl
+    seed_catalogue_path: corpora/arena/clustering_v2/output/cluster_catalogue.json
+    output_dir: corpora/arena/clustering_v2/output/sweep
+
+  cluster_singleton:
+    model: claude-sonnet-4-6
+    max_tokens: 128000
+    batch_size: 200
+    seed: 42
+    input_path: corpora/arena/clustering_v2/output/filter_input.jsonl
+    catalogue_path: corpora/arena/clustering_v2/output/sweep/cluster_catalogue.json
+    pending_path: corpora/arena/clustering_v2/output/sweep/pending_singletons.json
+    output_dir: corpora/arena/clustering_v2/output/sweep/reclassify
+
+  cluster_residual:
+    model: claude-sonnet-4-6
+    max_tokens: 64000
+    input_path: corpora/arena/clustering_v2/output/filter_input.jsonl
+    catalogue_path: corpora/arena/clustering_v2/output/sweep/cluster_catalogue.json
+    residual_path: corpora/arena/clustering_v2/output/sweep/reclassify/residual_orphans.json
+    output_dir: corpora/arena/clustering_v2/output/sweep/residual
+
+  parent_derive:
+    model: claude-opus-4-7
+    max_tokens: 32000
+    catalogue_path: corpora/arena/clustering_v2/output/sweep/convergence/catalogue_after_convergence.json
+    assignments_paths:
+      - corpora/arena/clustering_v2/output/sweep/corpus_assignments.jsonl
+      - corpora/arena/clustering_v2/output/sweep/reclassify/reclassified_assignments.jsonl
+      - corpora/arena/clustering_v2/output/sweep/residual/residual_assignments.jsonl
+    output_json: corpora/arena/clustering_v2/closure/output/parents_v1.json
+    output_md: corpora/arena/clustering_v2/closure/output/parents_v1.md
+    output_raw: corpora/arena/clustering_v2/closure/output/parents_v1_raw.txt
+
+  parent_assign:
+    model: claude-opus-4-7
+    max_tokens: 128000
+    catalogue_path: corpora/arena/clustering_v2/output/sweep/convergence/catalogue_after_convergence.json
+    parents_path: corpora/arena/clustering_v2/closure/output/parents_v1.json
+    output_path: corpora/arena/clustering_v2/closure/output/cluster_to_parent_assignments.jsonl
+    output_meta: corpora/arena/clustering_v2/closure/output/cluster_to_parent_assignments_meta.json
+
+  theme_audit:
+    model: claude-opus-4-7
+    max_tokens: 128000
+    catalogue_path: corpora/arena/clustering_v2/output/sweep/convergence/catalogue_after_convergence.json
+    parents_path: corpora/arena/clustering_v2/closure/output/parents_v1.json
+    assignments_path: corpora/arena/clustering_v2/closure/output/cluster_to_parent_assignments.jsonl
+    output_path: corpora/arena/clustering_v2/closure/output/themes_and_parent_audit_v1.json
+    output_meta: corpora/arena/clustering_v2/closure/output/themes_and_parent_audit_v1_meta.json
+
+# ----------------------------------------------------------------------------
+# Glossary sub-pipeline (parallel branch — forks from markdown, never rejoins
+# the failure-mode pipeline). See pipeline/glossary/ for the canonical engine.
+# ----------------------------------------------------------------------------
+glossary:
+  prompt_tokens:
+    glossary_purpose: "study-guide companion to ARENA project reports"
+    audience_persona: "ARENA portfolio manager"
+    corpus_full_name: "ARENA (Australian Renewable Energy Agency) project corpus"
+    corpus_short_description: "Australian renewables / electricity-market documentation"
+    style_guidance: "Australian-specific definitions where the global term differs (e.g. FCAS = Frequency Control Ancillary Services in the NEM)."
+    primary_grouping_field: "kb_associated_project"
+    secondary_grouping_field: "kb_category"
+
+  candidate:
+    markdown_dir: corpora/arena/marker_output
+    markdown_glob: "*/*.rendered.md"
+    doc_id_strategy: parent_name
+    stoplist_path: domains/arena/glossary_stoplist.txt
+    title_case_min_words: 2
+    title_case_max_words: 8
+    output_dir: corpora/arena/entity_extraction/output
+
+  ner:
+    spacy_model: en_core_web_sm
+    transformer_model: en_core_web_trf
+    workers: 4
+    output_dir: corpora/arena/entity_extraction/output
+
+  normalise:
+    embedding_model: all-mpnet-base-v2
+    catalogue_path: corpora/arena/snapshots/arena-projects-export_1777810862.csv
+    project_title_column: Project
+    lead_org_column: Lead organisation
+    min_mentions: 3
+    cluster_threshold: 0.85
+    catalogue_match_threshold: 0.80
+    output_path: corpora/arena/entity_extraction/output/entity_index.csv
+
+  define:
+    model: claude-sonnet-4-6
+    max_tokens: 64000
+    top_n: 600
+    min_unique_docs: 5
+    patterns: [acronym]
+    match_status: unmatched
+    input_path: corpora/arena/entity_extraction/output/entity_index.csv
+    output_path: corpora/arena/entity_extraction/output/glossary_define.json
+
+  define_followups:
+    model: claude-sonnet-4-6
+    max_tokens: 64000
+    output_dir: corpora/arena/entity_extraction/output
+    per_doc_dir: corpora/arena/output/per_doc
+    record_text_fields: [narrative, evidence]
+
+  merge:
+    inputs:
+      - corpora/arena/entity_extraction/output/glossary_recovered.json
+      - corpora/arena/entity_extraction/output/glossary_v2_tail.json
+      - corpora/arena/entity_extraction/output/glossary_v2_titlecase.json
+      - corpora/arena/entity_extraction/output/glossary_v2_reground.json
+    entity_index_path: corpora/arena/entity_extraction/output/entity_index.csv
+    output_path: corpora/arena/entity_extraction/output/glossary.json
+    title: "ARENA Corpus Glossary"
+    subtitle: "Auto-generated study-guide companion"
+
+  subcategory:
+    propose_model: claude-sonnet-4-6
+    apply_model: claude-sonnet-4-6
+    max_tokens: 32000
+    refine_categories: [technology, organisation, concept]
+    min_entries_per_category: 30
+    output_dir: corpora/arena/entity_extraction/output
+
+  fingerprint:
+    project_field: kb_associated_project
+    category_field: kb_category
+    programme_field: arena_program
+    lead_org_field: lead_org
+    year_field: kb_year
+    # Catalogue is the canonical metadata source. Slug derives from local_path
+    # (pdfs/<Type>/<slug>.pdf), with the regex capturing the filename stem
+    # which matches marker_output/<slug>/<slug>.rendered.md.
+    catalogue_path: corpora/arena/manifest.csv
+    catalogue_slug_column: local_path
+    catalogue_slug_pattern: '([^/]+)\.[^.]+$'
+    catalogue_project_column: "Associated project name"
+    catalogue_category_column: Category
+    catalogue_year_column: Year
+    portfolio_path: corpora/arena/portfolio.csv
+    portfolio_join_key: Project
+    portfolio_field_map:
+      "Lead organisation": lead_org
+      "Arena program": arena_program
+      "Category": category
+      "Status": status
+      "Location": location
+      "Arena funding provided": arena_funding
+      "Total project value": total_value
+      "Start date": start_date
+    output_path: corpora/arena/entity_extraction/output/glossary_metadata_fingerprint.json
+
+  finalise:
+    output_json: corpora/arena/entity_extraction/output/glossary_v3.json
+    output_md: corpora/arena/entity_extraction/output/glossary_v3.md
+    output_html: corpora/arena/entity_extraction/output/glossary_v3.html
+    title: "ARENA Corpus Glossary v3"
+    subtitle: "Sub-categorised + corpus-fingerprinted"
+
+  inverses:
+    distinctiveness_floor: 3.0
+    min_term_mentions: 2
+    min_project_total_mentions: 10
+    top_n: 25
+    min_corpus_mentions_for_term: 5
+    output_dir: corpora/arena/entity_extraction/output

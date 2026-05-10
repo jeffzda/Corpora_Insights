@@ -1,0 +1,33 @@
+# KB data quality overrides — documents misattributed in the KB export
+# Source: scripts/03b_extract_registry_per_doc.py
+#
+# Keyed by 1-based document index. Each entry maps to field overrides
+# applied after KB stamping.
+
+299:
+  # RMIT solar hydrogen poster tagged as "30MW Concentrating Solar Thermal Power Plant"
+  kb_associated_project: null
+  project_page_url: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null
+
+1278:
+  # UQ Gatton 3.3MW PV connection review tagged as "AGL Solar Project"
+  kb_associated_project: null
+  project_page_url: null
+  in_arena_portfolio: false
+  arena_funding: null
+  total_project_value: null
+  lead_organisation: null
+  arena_program: null
+  project_status: null
+  project_start_date: null
+  location: null
+  project_partners: null

@@ -1,0 +1,152 @@
+# ARENA domain enum values
+# Source: scripts/05_clean_registry.py, 05b_reconcile_contested.py, ARENA_Taxonomy_v2.0.md
+
+technology_domain:
+  - battery storage
+  - hydrogen
+  - solar PV
+  - solar thermal
+  - wind
+  - DER
+  - demand response
+  - EV
+  - bioenergy
+  - industrial renewables
+  - grid/system stability
+  - hybrid systems
+  - pumped hydro
+  - other
+
+project_type:
+  - generation
+  - storage
+  - network/grid
+  - DER/customer-side
+  - transport electrification
+  - industrial decarbonisation
+  - manufacturing/supply chain
+  - software/data/digital
+  - enabling infrastructure
+  - multi-technology/hybrid
+
+project_scale_band:
+  - lab/bench
+  - pilot
+  - demonstration
+  - first commercial/FOAK
+  - commercial expansion
+  - utility/large-scale
+  - programmatic/portfolio-level
+
+lifecycle_phase:
+  - concept/feasibility
+  - development/design
+  - approvals/contracting
+  - procurement
+  - construction/installation
+  - commissioning/integration
+  - operations
+  - close-out/post-project review
+
+proponent_type:
+  - project developer
+  - utility/energy retailer
+  - network business
+  - industrial operator
+  - fleet/logistics operator
+  - manufacturer/OEM
+  - technology vendor
+  - research organisation/university
+  - consortium/multi-party venture
+  - government/public-sector body
+  - community/local body
+
+failure_mode:
+  - no major failure stated
+  - technical underperformance
+  - integration failure
+  - schedule slippage
+  - cost overrun
+  - resource/capability shortfall
+  - commercial/demand failure
+  - regulatory misfit
+  - data quality/measurement failure
+  - design assumption failure
+  - governance/coordination failure
+
+outcome_class:
+  - successful demonstration
+  - partial success
+  - delayed but recoverable
+  - re-scoped/adapted
+  - knowledge generated despite setback
+  - discontinued/not progressed
+  - follow-on scale-up enabled
+  - policy/market influence only
+
+issue_severity:
+  - none
+  - minor
+  - moderate
+  - major
+  - critical
+
+delay_category:
+  - no material delay stated
+  - approvals/regulatory
+  - grid connection/system studies
+  - procurement/supply chain
+  - financing/commercial close
+  - construction/installation
+  - commissioning/integration
+  - data/validation/testing
+  - stakeholder/land/community
+  - internal governance/resourcing
+
+transferability:
+  - narrow
+  - moderate
+  - broad
+
+delay_magnitude:
+  - <1 month
+  - 1\u20133 months
+  - 3\u201312 months
+  - 1\u20133 years
+  - ">3 years"
+  - not quantified
+
+event_type:
+  - realised_delivery_event
+  - design_technical_finding
+  - identified_future_risk
+  - contextual_observation
+
+consequence_level:
+  - adaptation_required
+  - material_impact
+  - project_threatening
+  - project_terminated
+
+activity_type:
+  - Study / feasibility
+  - Pilot / demonstration
+  - Deployment
+  - R&D
+
+# Analysis categories (14 values, mapped from KB categories)
+arena_category:
+  - Battery storage
+  - Bioenergy
+  - Demand response
+  - Distributed energy resources
+  - Electric vehicles
+  - Grid stability
+  - Hybrid technologies
+  - Hydrogen
+  - Industrial renewables
+  - Off grid
+  - Pumped hydro
+  - Solar PV
+  - Solar thermal
+  - Wind

@@ -1,0 +1,115 @@
+# Technology domain keyword matching rules
+# Source: scripts/05_clean_registry.py TECH_DOMAIN_RULES
+# Format: list of {keywords: [...], target: "canonical_value"}
+# First match wins; checked in order
+
+technology_domain_rules:
+  - keywords: ["pumped hydro", "pumped storage hydro", "phes", "pumped storage"]
+    target: "pumped hydro"
+
+  - keywords: ["geothermal", "wave energy", "tidal", "ocean energy", "wave swell"]
+    target: "other"
+
+  - keywords: ["solar thermal", "concentrating solar", "csp", "cst", "heliostat",
+               "linear fresnel", "solar air turbine", "solar dish", "solar tower",
+               "solar fuels", "solar gasification", "thermoelectric", "solar cooling",
+               "solar steam", "solar redox"]
+    target: "solar thermal"
+
+  - keywords: ["hydrogen", "electrolysis", "electrolyser", "pem electrolysis",
+               "alkaline electrolysis", "green hydrogen", "h2xport", "hazer",
+               "power-to-gas", "ammonia synthesis", "electrochemical hydrogen",
+               "water splitting", "hydrogen blending", "hydrogen distribution",
+               "hydrogen pipeline", "hydrogen appliance", "hydrogen storage",
+               "liquefied hydrogen", "hydrogen calcination"]
+    target: "hydrogen"
+
+  - keywords: ["solar pv", "solar cell", "silicon pv", "silicon solar", "perovskite",
+               "photovoltaic", "pv module", "pv manufacturing", "pv thermal",
+               "solar irradiance", "solar forecasting", "solar resource",
+               "monocrystalline", "polysilicon", "topcon", "perc", "hjt", "ibc",
+               "bifacial", "thin-film", "sliver cell", "laser crystallisation",
+               "silicon ingot", "solar construction", "module manufacturing"]
+    target: "solar PV"
+
+  - keywords: ["wind", "wind forecasting", "wind farm", "wind turbine", "lidar",
+               "wind power forecasting", "wind fcas"]
+    target: "wind"
+
+  - keywords: ["electric vehicle", "ev charging", "ev smart charging",
+               "vehicle-to-grid", "v2g", "fleet charging", "ev fleet",
+               "ev fast charging", "dc fast charging", "battery electric", "bev",
+               "phev", "evse", "ocpp", "tesla fleet", "fleet electrification",
+               "charging network", "charging infrastructure", "kerbside ev",
+               "pole-mounted charger"]
+    target: "EV"
+
+  - keywords: ["demand response", "rert", "load control", "load curtailment",
+               "behavioural demand", "behavioural dr", "smart hot water",
+               "controlled load", "ripple control", "hvac control",
+               "direct load control", "demand aggregation", "demand flexibility",
+               "demand management"]
+    target: "demand response"
+
+  - keywords: ["der", "vpp", "virtual power plant", "operating envelope",
+               "dynamic operating envelope", "der orchestration", "der coordination",
+               "der aggregation", "der integration", "cer data",
+               "consumer energy resources", "distribution system operator",
+               "rooftop pv inverter", "behind-the-meter"]
+    target: "DER"
+
+  - keywords: ["bess", "battery storage", "battery energy storage",
+               "grid-scale bess", "grid-forming bess", "grid forming bess",
+               "lithium-ion battery", "lithium ion battery", "vanadium flow",
+               "flow battery", "nas battery", "residential battery",
+               "community battery", "battery test centre", "synthetic inertia",
+               "virtual machine mode", "vmm", "fast frequency response",
+               "grid-forming inverter", "grid forming inverter", "fcas bess",
+               "hornsdale", "wallgrove", "lake bonney", "liddell bess",
+               "battery electric trucks", "bess energy arbitrage"]
+    target: "battery storage"
+
+  - keywords: ["bioenergy", "biomass", "biogas", "biomethane", "biofuel", "bio-oil",
+               "biochar", "anaerobic digestion", "gasification", "pyrolysis",
+               "waste-to-energy", "energy from waste", "hefa", "saf",
+               "sustainable aviation", "renewable diesel", "fischer-tropsch",
+               "biorefinery", "fogo"]
+    target: "bioenergy"
+
+  - keywords: ["industrial", "process heat", "heat pump", "alumina", "steel",
+               "ironmaking", "dri", "iron ore", "ammonia", "fertiliser",
+               "calcination", "electrification of industry",
+               "industrial decarbonisation", "industrial demand response",
+               "industrial heat", "mechanical vapour", "mvr",
+               "electric arc furnace", "high temperature",
+               "thermal energy storage", "aquatic centre",
+               "building electrification", "hvac", "refrigeration",
+               "waste heat recovery"]
+    target: "industrial renewables"
+
+  - keywords: ["grid", "network", "system strength", "frequency control", "inertia",
+               "fcas", "harmonic", "power quality", "grid connection",
+               "emt modelling", "pscad", "protection relay", "islanding",
+               "grid-forming", "inverter-based resources", "grid stability",
+               "causer pays", "primary frequency", "system restart",
+               "ancillary services", "low voltage feeder", "lvft",
+               "dynamic model validation", "voltage management",
+               "network tariff", "distribution network", "transmission"]
+    target: "grid/system stability"
+
+  - keywords: ["hybrid", "microgrid", "off-grid", "remote community",
+               "solar-diesel", "wind-solar hybrid", "battery-solar",
+               "solar pv bess", "containerised hybrid", "hybrid renewable",
+               "hybrid power"]
+    target: "hybrid systems"
+
+# Cross-field inference rules
+project_type_from_technology:
+  "solar thermal": "generation"
+  "solar pv": "generation"
+  "hydrogen": "industrial decarbonisation"
+  "bioenergy": "generation"
+  "programmatic/portfolio-level": "enabling infrastructure"
+
+failure_mode_remap:
+  "procurement/supply chain": "resource/capability shortfall"

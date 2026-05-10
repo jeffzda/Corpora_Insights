@@ -1,0 +1,17 @@
+# KB document types excluded from extraction
+# Source: scripts/03b_extract_registry_per_doc.py
+#
+# Rationale:
+# - InsightNewsletter/Podcast/Videos: zero project linkage, no delivery content
+# - Presentation: 71% unlinked, slide decks convert poorly to markdown
+# - Insights,InsightNewsletter: same as InsightNewsletter
+
+- InsightNewsletter
+- "Insights, InsightNewsletter"
+- Videos
+- "Insights, Videos"
+- "Reports, Videos"
+- Podcast
+- Presentation
+- "Lessons, Presentation"
+- "Insights, Presentation"
