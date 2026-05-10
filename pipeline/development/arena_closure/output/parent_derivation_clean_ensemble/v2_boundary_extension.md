@@ -1,0 +1,39 @@
+# v2 boundary-tier extension
+
+Single Opus 4.7 call. 25 boundary-tier (40-69% rep agreement) mechanism classes judged against the existing 70-parent v2 set.
+**Cost:** $0.17, 67s wall.
+
+**Verdicts:** {'promote': 16, 'merge_into_*': 9, 'reject': 1}
+
+| class | n_reps | verdict | name (if promote) | reason |
+|---|---|---|---|---|
+| bdry_01 | 28/59 | promote | Aggregate correlation and concentration risk | Correlated/common-mode aggregate behaviour is mechanistically distinct from single-point-of-failure (p40) which addresses shared dependency, and PMs scanning for portfolio/fleet-level diversity risk would otherwise miss it. |
+| bdry_02 | 24/59 | promote | Regulatory framework misfit with current reality | Distinct from regulatory absence (p25), ambiguity (p26), or process delay (p27): regulation exists and applies, but is calibrated to a stale paradigm — a structurally different diagnostic. |
+| bdry_03 | 33/59 | merge_into_p36 |  | Knowledge-transfer and institutional-memory loss is the organisational counterpart of personnel turnover/key-person dependency (p36) and is well-served by extending that parent rather than splitting. |
+| bdry_04 | 27/59 | promote | Documentation and configuration management drift | Configuration drift / as-built vs as-documented divergence is a high-frequency operational mechanism distinct from data defects (p02), software fragility (high_05), and visibility (high_25). |
+| bdry_05 | 34/59 | promote | Schedule cascade through sequential dependencies | Critical-path/cascade amplification is structurally distinct from planning inadequacy (p37), late discovery (p38), and supply-chain disruption (p35) — it concerns dependency topology rather than the originating shock. |
+| bdry_06 | 28/59 | merge_into_high_16 |  | Engagement-design failures are the proximate operational form of the trust/social-licence mechanism (high_16) and overlap heavily with bdry_26; not a distinct diagnostic axis. |
+| bdry_07 | 36/59 | promote | End-of-life, recycling, and circularity gaps | Lifecycle/EoL pathway absence is a distinct deployment mechanism not captured by externalities (high_23), supply-chain (p35), or material limits (p08), and is highly salient for climate-tech PMs. |
+| bdry_08 | 34/59 | promote | Safety hazard and risk-classification consequences | Safety/hazard escalation is a distinct mechanism with cascading cost and design implications not covered by material limits (p08) or design envelope (p09); merge bdry_24 into this. |
+| bdry_09 | 39/59 | promote | Auxiliary and parasitic load erosion | Gross-vs-net erosion is a distinct system-boundary performance mechanism not captured by capacity shortfall (p12), trade-offs (p19), or unit-economics (high_08). |
+| bdry_10 | 36/59 | promote | Diminishing returns and saturation effects | Saturation/diminishing-returns dynamics are a distinct scaling mechanism PMs need when assessing whether a successful pilot can keep delivering at higher penetration; not captured by lab-to-field (p07) or trade-offs (p19). |
+| bdry_11 | 27/59 | reject |  | Generic exogenous-shock/force-majeure is too broad and overlaps with environmental exposure (p10), supply-chain disruption (p35), and price volatility (p23) — it would not give a PM a sharper diagnostic axis. |
+| bdry_12 | 29/59 | merge_into_p14 |  | Inertia/system-strength/ancillary-service shortfall is the system-aggregate face of the inverter-based-resource mechanism (p14) and is best handled there; splitting would fragment a closely related power-system diagnostic. |
+| bdry_13 | 36/59 | promote | Aggregation and granularity mismatch | Granularity/resolution loss is mechanistically distinct from measurement limits (p03), data quality (p02), and visibility (high_25): the data exists but is aggregated to a level that defeats the use case. |
+| bdry_14 | 36/59 | merge_into_p20 |  | Regulatory metric/methodology design distortions are a domain-specific instance of optimisation-objective and metric misspecification (p20) plus high_09 (price-signal distortion); not a distinct top-level axis. |
+| bdry_15 | 40/59 | promote | Responsibility and accountability gaps | Unassigned/contested responsibility is structurally distinct from misaligned incentives (p31), coordination overhead (p30), and information asymmetry (p32) — the issue is decision-rights ambiguity itself. |
+| bdry_16 | 24/59 | merge_into_p36 |  | Duplicate of bdry_03; same merge into personnel/key-person dependency (p36). |
+| bdry_17 | 38/59 | promote | Commissioning, handover, and integration discovery | Distinct from validation coverage gaps (p06) and lab-to-field (p07): real-world integration discovery at handover is a recurring transition mechanism PMs need to scan for explicitly. |
+| bdry_18 | 41/59 | promote | Lock-in, switching costs, and stranded-asset risk | Path dependency / stranding is mechanistically distinct from vendor lock-in (p34, which is proprietary closure) and from policy uncertainty (p28); central to climate-tech transition risk. |
+| bdry_19 | 35/59 | merge_into_high_19 |  | First-of-kind precedent absence is the cost/risk premium dimension of technology immaturity (high_19) and is best treated as part of that parent. |
+| bdry_20 | 32/59 | promote | Curtailment and operational headroom conflicts | Distinct from network capacity (high_01), trade-offs (p19), and dispatch — the mechanism is rules/allocation forcing non-utilisation of physically available capacity. |
+| bdry_21 | 27/59 | merge_into_p19 |  | Inverter capacity-allocation across stacked services is a specific instance of coupled trade-offs (p19) on a shared resource; too narrow for its own parent. |
+| bdry_22 | 33/59 | promote | Compliance burden disproportionate to scale | Scale-disproportionate compliance overhead is distinct from regulatory ambiguity (p26), process delay (p27), and unit-economics (high_08): it specifically hits small-scale and distributed activities. |
+| bdry_23 | 31/59 | promote | Computational and algorithmic tractability limits | Tractability ceilings are mechanistically distinct from model representational error (p04) and software fragility (high_05); increasingly relevant for optimisation, AI, and real-time control in energy systems. |
+| bdry_24 | 25/59 | merge_into_p08 |  | Duplicate of bdry_08 in substance; treat as the same promoted parent (Safety hazard and risk-classification consequences) — folding into bdry_08's promotion rather than re-promoting; the closest existing v2 home if not promoting bdry_08 would be material/property limits (p08). |
+| bdry_25 | 37/59 | promote | Legacy infrastructure incompatibility | Legacy/installed-base incompatibility is distinct from interoperability (p16), standards absence (high_04), and architectural rigidity (high_18): it concerns physical/embedded prior assets rather than interface or design choice. |
+| bdry_26 | 30/59 | merge_into_high_16 |  | Duplicate of bdry_06; engagement-design failures collapse into trust/social-licence (high_16) rather than warranting a separate parent. |
+
+## Notes
+
+Several boundary classes are near-duplicates (bdry_03/bdry_16 on knowledge transfer; bdry_06/bdry_26 on stakeholder engagement; bdry_08/bdry_24 on safety hazards) — treated as single mechanisms. Promoted 15 of 26: aggregate correlation, regulatory misfit, documentation drift, schedule cascade, EoL/circularity, safety hazards, parasitic loads, saturation, granularity mismatch, accountability gaps, commissioning discovery, lock-in/stranding, curtailment/headroom, compliance burden, tractability limits, legacy incompatibility. Bar applied: would a PM hit a real blind spot? Rejected bdry_11 as too broad; merged where the mechanism is a sub-instance of an existing parent (p14, p19, p20, p36, high_16, high_19).
